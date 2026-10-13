@@ -83,3 +83,28 @@ country_event = {
 		}
 	}
 }
+
+# Border war won: new territory becomes national MKN land
+country_event = {
+	id = mkn.5
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = mkn.5.a
+		trigger = { tag = MKN }
+		every_owned_state = {
+			limit = { NOT = { is_core_of = MKN } }
+			add_core_of = MKN
+		}
+	}
+}
+
+# No-op: border war ended without capture (lost / cancelled)
+country_event = {
+	id = mkn.6
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = mkn.6.a
+	}
+}

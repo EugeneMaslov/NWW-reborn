@@ -34,10 +34,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 196
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 197
 						num_provinces = 3
 					}
@@ -52,10 +58,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 226
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 197
 						num_provinces = 3
 					}
@@ -71,10 +83,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 197
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 192
 						num_provinces = 3
 					}
@@ -89,10 +107,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 203
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 192
 						num_provinces = 3
 					}
@@ -108,10 +132,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 192
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 834
 						num_provinces = 3
 					}
@@ -126,10 +156,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 198
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 834
 						num_provinces = 3
 					}
@@ -145,10 +181,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 834
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 198
 						num_provinces = 3
 					}
@@ -163,10 +205,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 199
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 198
 						num_provinces = 3
 					}
@@ -182,10 +230,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 198
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 199
 						num_provinces = 3
 					}
@@ -200,10 +254,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 201
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 199
 						num_provinces = 3
 					}
@@ -219,10 +279,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 198
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 201
 						num_provinces = 3
 					}
@@ -237,10 +303,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 199
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 201
 						num_provinces = 3
 					}
@@ -256,10 +328,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 198
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 202
 						num_provinces = 3
 					}
@@ -274,10 +352,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 201
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 202
 						num_provinces = 3
 					}
@@ -293,10 +377,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 202
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 193
 						num_provinces = 3
 					}
@@ -311,10 +401,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 225
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 193
 						num_provinces = 3
 					}
@@ -330,10 +426,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 226
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 203
 						num_provinces = 3
 					}
@@ -348,10 +450,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 197
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 203
 						num_provinces = 3
 					}
@@ -367,10 +475,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 226
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 259
 						num_provinces = 3
 					}
@@ -385,10 +499,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 203
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 259
 						num_provinces = 3
 					}
@@ -404,10 +524,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 259
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 225
 						num_provinces = 3
 					}
@@ -422,10 +548,16 @@ MKN_border_raids = {
 					change_state_after_war = yes
 					minimum_duration_in_days = 40
 					attacker = {
+						on_win = mkn.5
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 193
 						num_provinces = 3
 					}
 					defender = {
+						on_win = mkn.6
+						on_lose = mkn.6
+						on_cancel = mkn.6
 						state = 225
 						num_provinces = 3
 					}
