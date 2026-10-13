@@ -10,14 +10,13 @@ Comintern, communist Baltic satellites, Russia as the RSFSR.
 
 - `common/bookmarks/` — the NWW 1936 scenario (vanilla bookmarks blanked out)
 - `common/countries/`, `country_tags/`, `cosmetic.txt`, `colors.txt` —
-  tags `LTB` `MKN` `BYE` `UKR` `CRO` + cosmetic tags (`SOV_rsfsr`,
-  `LTB_lithuania`, `LTB_belarus`)
+   tags `LTB` `LIT` `BYE` `MKN` `UKR` `CRO` + cosmetic tag `SOV_rsfsr`
 - `common/decisions/` (+ `categories/`) — Makhnovist border raids vs Ukraine
 - `common/ideas/nww_ideas.txt` — national spirits
 - `common/national_focus/` — 12 trees: LTB, LIT, BYE, MKN, UKR, CRO, GER,
   SOV, LAT, EST (+ HUN/AUS stubs awaiting new trees)
 - `common/units/names_divisions/` — division name packs for new tags
-- `events/nww_ltb_mkn.txt` — LitBel crisis / peaceful Divorce, Makhno events
+- `events/nww_ltb_mkn.txt` — LitBel deadline, compromise or full dissolution, Makhno events
 - `gfx/` + `interface/` — flags, leader portraits, sprite definitions
 - `history/countries|states|units/` — the 1936 setup (owners, OOBs, leaders)
 - `localisation/` — English + Russian (`mod_*_l_english.yml`,
@@ -25,9 +24,10 @@ Comintern, communist Baltic satellites, Russia as the RSFSR.
 
 ## Key mechanics
 
-- LitBel national question: compromise, or a peaceful split into Lithuania
-  (LIT) and Belarus (BYE) with a world-news "Great Divorce" event. Each side
-  continues with its own branch; the other side is released with its own tree.
+- LitBel national question: complete the compromise focus before the deadline
+   or dissolve the union into independent Lithuania (LIT) and Belarus (BYE).
+   The player chooses which country to lead; both continue with their own trees
+   and the LTB tag is removed.
 - Makhno: 6 ideological paths (Makhnovshchina, council communism, democracy,
   full communism, fascism, Emperor Nestor I) + repeatable border-raid
   decision chain against Soviet Ukraine (3 states transfer with cores;

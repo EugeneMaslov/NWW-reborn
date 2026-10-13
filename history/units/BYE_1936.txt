@@ -15,9 +15,9 @@ division_template = {
 }
 
 units = {
-	division = { name = "1. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 }
-	division = { name = "2. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 }
-	division = { name = "3. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 }
+	division = { name = "1. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "2. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "3. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
 }
 
 instant_effect = {

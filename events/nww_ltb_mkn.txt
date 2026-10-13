@@ -36,11 +36,9 @@ country_event = {
 	}
 	option = {
 		name = ltb.101.b
+		trigger = { always = no }
 		set_global_flag = LTB_crisis_happened
-		set_global_flag = LTB_split_lithuania
 		remove_ideas = LTB_unresolved_national_question
-		set_country_flag = LTB_lithuania_path
-		set_cosmetic_tag = LTB_lithuania
 		news_event = { id = ltb.110 days = 2 }
 		add_stability = -0.1
 		194 = { transfer_state_to = BYE }
@@ -94,11 +92,9 @@ country_event = {
 	}
 	option = {
 		name = ltb.101.c
+		trigger = { always = no }
 		set_global_flag = LTB_crisis_happened
-		set_global_flag = LTB_split_belarus
 		remove_ideas = LTB_unresolved_national_question
-		set_country_flag = LTB_belarus_path
-		set_cosmetic_tag = LTB_belarus
 		news_event = { id = ltb.110 days = 2 }
 		add_stability = -0.1
 		11 = { transfer_state_to = LIT }
@@ -189,10 +185,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ltb.103.a
-		set_global_flag = LTB_split_lithuania
+		nww_ltb_full_split = yes
+		LIT = { country_event = { id = ltb.105 days = 1 } }
+		switch_tag = LIT
+	}
+	option = {
+		name = ltb.103.b
+		nww_ltb_full_split = yes
+		BYE = { country_event = { id = ltb.105 days = 1 } }
+		switch_tag = BYE
+	}
+	option = {
+		name = ltb.103.a
+		trigger = { always = no }
 		remove_ideas = LTB_unresolved_national_question
-		set_country_flag = LTB_lithuania_path
-		set_cosmetic_tag = LTB_lithuania
 		news_event = { id = ltb.110 days = 2 }
 		add_stability = -0.1
 		194 = { transfer_state_to = BYE }
@@ -246,10 +252,8 @@ country_event = {
 	}
 	option = {
 		name = ltb.103.b
-		set_global_flag = LTB_split_belarus
+		trigger = { always = no }
 		remove_ideas = LTB_unresolved_national_question
-		set_country_flag = LTB_belarus_path
-		set_cosmetic_tag = LTB_belarus
 		news_event = { id = ltb.110 days = 2 }
 		add_stability = -0.1
 		11 = { transfer_state_to = LIT }
@@ -305,6 +309,16 @@ country_event = {
 				traits = { }
 			}
 		}
+	}
+}
+
+# Remove the old union tag after the player has switched to a successor.
+country_event = {
+	id = ltb.105
+	 is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		annex_country = { target = LTB transfer_troops = no }
 	}
 }
 
@@ -387,7 +401,7 @@ country_event = {
 		add_stability = -0.03
 		if = {
 			limit = { has_global_flag = MKN_ukr_angered }
-			create_wargoal = {
+			declare_war_on = {
 				target = MKN
 				type = puppet_wargoal_focus
 			}
@@ -414,7 +428,7 @@ country_event = {
 		add_stability = -0.05
 		set_global_flag = MKN_kiev_quarrel
 		UKR = {
-			create_wargoal = {
+			declare_war_on = {
 				target = MKN
 				type = puppet_wargoal_focus
 			}

@@ -232,7 +232,7 @@ focus_tree = {
 		id = MKN_batko_guards
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_soviet_press }
-		x = 8
+		x = 6
 		y = 5
 		cost = 5
 		completion_reward = {

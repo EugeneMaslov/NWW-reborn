@@ -41,11 +41,11 @@ division_template = {
 }
 
 units = {
-	division = { name = "1. Pjesacka Divizija" location = 624 division_template = "CRO_Pesadija" start_experience_factor = 0.1 }
-	division = { name = "2. Pjesacka Divizija" location = 624 division_template = "CRO_Pesadija" start_experience_factor = 0.1 }
-	division = { name = "3. Pjesacka Divizija" location = 624 division_template = "CRO_Pesadija" start_experience_factor = 0.1 }
-	division = { name = "1. Gorski Odred" location = 624 division_template = "CRO_Gorski" start_experience_factor = 0.1 }
-	division = { name = "1. Konjicka Divizija" location = 624 division_template = "CRO_Konjica" start_experience_factor = 0.1 }
+	division = { name = "1. Pjesacka Divizija" location = 624 division_template = "CRO_Pesadija" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "2. Pjesacka Divizija" location = 624 division_template = "CRO_Pesadija" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "3. Pjesacka Divizija" location = 624 division_template = "CRO_Pesadija" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "1. Gorski Odred" location = 624 division_template = "CRO_Gorski" start_experience_factor = 0.1 start_equipment_factor = 0.45 }
+	division = { name = "1. Konjicka Divizija" location = 624 division_template = "CRO_Konjica" start_experience_factor = 0.1 start_equipment_factor = 0.4 }
 }
 
 instant_effect = {

@@ -5,19 +5,19 @@ MKN_border_raids = {
 		available = {
 			tag = MKN
 			has_completed_focus = MKN_border_tensions
+			exists = UKR
 			NOT = { has_war_with = UKR }
-			check_variable = { MKN_raids_done < 3 }
 			has_political_power > 49
 		}
 
 		visible = {
 			tag = MKN
 			has_completed_focus = MKN_border_tensions
-			check_variable = { MKN_raids_done < 3 }
+			exists = UKR
 		}
 
 		days_remove = 0
-		days_re_enable = 30
+		days_re_enable = 90
 
 		cost = 50
 
@@ -26,30 +26,52 @@ MKN_border_raids = {
 		}
 
 		complete_effect = {
-			add_political_power = -50
 			if = {
-				limit = { check_variable = { MKN_raids_done = 0 } }
-				203 = {
-					transfer_state_to = MKN
-					add_core_of = MKN
-					remove_core_of = UKR
-				}
+				limit = { 197 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 197 }
 			}
-			if = {
-				limit = { check_variable = { MKN_raids_done = 1 } }
-				202 = {
-					transfer_state_to = MKN
-					add_core_of = MKN
-					remove_core_of = UKR
-				}
+			else_if = {
+				limit = { 192 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 192 }
+			}
+			else_if = {
+				limit = { 834 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 834 }
+			}
+			else_if = {
+				limit = { 198 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 198 }
+			}
+			else_if = {
+				limit = { 199 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 199 }
+			}
+			else_if = {
+				limit = { 201 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 201 }
+			}
+			else_if = {
+				limit = { 202 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 202 }
+			}
+			else_if = {
+				limit = { 193 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 193 }
+			}
+			else_if = {
+				limit = { 203 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 203 }
+			}
+			else_if = {
+				limit = { 259 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 259 }
+			}
+			else_if = {
+				limit = { 225 = { is_owned_by = UKR } }
+				start_border_war = { attacker = MKN defender = UKR state = 225 }
 			}
 			if = {
 				limit = { check_variable = { MKN_raids_done = 2 } }
-				192 = {
-					transfer_state_to = MKN
-					add_core_of = MKN
-					remove_core_of = UKR
-				}
 				set_global_flag = MKN_ukr_angered
 			}
 			add_to_variable = { MKN_raids_done = 1 }

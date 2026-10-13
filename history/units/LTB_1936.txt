@@ -26,14 +26,14 @@ division_template = {
 }
 
 units = {
-	division = { name = "1. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 }
-	division = { name = "2. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 }
-	division = { name = "3. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 }
-	division = { name = "4. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 }
-	division = { name = "5. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 }
-	division = { name = "6. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 }
-	division = { name = "1. Kavalerijos Brigada" location = 216 division_template = "LTB_Kavalerija" start_experience_factor = 0.1 }
-	division = { name = "2. Kavalerijos Brigada" location = 216 division_template = "LTB_Kavalerija" start_experience_factor = 0.1 }
+	division = { name = "1. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "2. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "3. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "4. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "5. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "6. Pestininku Divizija" location = 216 division_template = "LTB_Pestininku" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "1. Kavalerijos Brigada" location = 216 division_template = "LTB_Kavalerija" start_experience_factor = 0.1 start_equipment_factor = 0.4 }
+	division = { name = "2. Kavalerijos Brigada" location = 216 division_template = "LTB_Kavalerija" start_experience_factor = 0.1 start_equipment_factor = 0.4 }
 }
 
 instant_effect = {
