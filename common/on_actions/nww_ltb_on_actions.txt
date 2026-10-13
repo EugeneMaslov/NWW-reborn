@@ -1,0 +1,16 @@
+	on_actions = {
+		on_weekly = {
+			effect = {
+				if = {
+					limit = {
+						tag = LTB
+						has_stability < 0.3
+						NOT = { has_country_flag = LTB_split_choice_available }
+					}
+				complete_national_focus = LTB_consolidate_the_union
+					set_country_flag = LTB_split_choice_available
+					complete_national_focus = LTB_face_the_crisis
+				}
+			}
+		}
+	}

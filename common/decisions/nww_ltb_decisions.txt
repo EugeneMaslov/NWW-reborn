@@ -1,0 +1,65 @@
+LTB_national_question = {
+	LTB_vilnius_compromise_deadline = {
+		icon = GFX_decision_generic_political_pressure
+		allowed = {
+			OR = {
+				tag = LTB
+				tag = LIT
+				tag = BYE
+			}
+		}
+		visible = {
+			OR = {
+				tag = LTB
+				AND = {
+					OR = {
+						tag = LIT
+						tag = BYE
+					}
+					has_country_flag = LTB_deadline_active
+					NOT = { has_country_flag = LTB_deadline_resolved }
+				}
+			}
+		}
+		available = { always = no }
+		activation = {
+			AND = {
+				has_country_flag = LTB_deadline_active
+				date > 1937.1.1
+				NOT = { has_country_flag = LTB_deadline_resolved }
+			}
+		}
+		days_mission_timeout = 210
+		cancel_trigger = {
+			OR = {
+				has_country_flag = LTB_split_choice_available
+				has_country_flag = LTB_deadline_resolved
+				AND = {
+					tag = LTB
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
+		fire_only_once = no
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = LTB
+					NOT = { has_completed_focus = LTB_the_vilnius_compromise }
+					NOT = { has_country_flag = LTB_split_choice_available }
+				}
+				set_country_flag = LTB_split_choice_available
+				complete_national_focus = LTB_face_the_crisis
+			}
+			else_if = {
+				limit = {
+					OR = {
+						tag = LIT
+						tag = BYE
+					}
+				}
+				set_country_flag = LTB_deadline_resolved
+			}
+		}
+	}
+}

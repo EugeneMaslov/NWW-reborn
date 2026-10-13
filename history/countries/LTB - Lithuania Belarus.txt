@@ -14,6 +14,9 @@ set_popularities = {
 
 add_ideas = {
 	LTB_unresolved_national_question
+	LTB_semi_agrarian_economy
+	LTB_depression_legacy
+	LTB_disorganized_army
 }
 create_country_leader = {
 	name = "Antanas Smetona"
