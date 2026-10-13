@@ -1,0 +1,100 @@
+focus_tree = {
+	id = UKR_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+
+	focus = {
+		id = UKR_rebuild_kiev
+		icon = GFX_focus_generic_industry_1
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = UKR_collectivization_completed
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = UKR_rebuild_kiev }
+		x = 14
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 60000
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_dnieper_industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = UKR_rebuild_kiev }
+		x = 16
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = { is_capital = no }
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = UKR_guardians_of_the_steppe
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = UKR_rebuild_kiev }
+		x = 18
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = UKR_friends_in_moscow
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = UKR_collectivization_completed }
+		x = 14
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = UKR_the_makhno_question
+		icon = GFX_focus_generic_army_doctrines_2
+		prerequisite = { focus = UKR_guardians_of_the_steppe }
+		x = 18
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_political_power = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = UKR
+			}
+			add_war_support = 0.1
+		}
+	}
+}

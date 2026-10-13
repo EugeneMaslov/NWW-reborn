@@ -1,0 +1,6 @@
+MKN_border_raids = {
+	icon = generic_guerilla_base
+	visible = {
+		tag = MKN
+	}
+}

@@ -1,0 +1,80 @@
+focus_tree = {
+	id = CRO_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRO
+		}
+	}
+
+	focus = {
+		id = CRO_independent_state
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = CRO_bosnian_question
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = CRO_independent_state }
+		x = 14
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 40000
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = CRO_zagreb_works
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = CRO_independent_state }
+		x = 16
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = CRO_serbian_rivalry
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = CRO_bosnian_question }
+		x = 14
+		y = 2
+		cost = 10
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 30000
+			add_war_support = 0.1
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = CRO_adriatic_trade
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = CRO_zagreb_works }
+		x = 16
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = CRO
+			}
+		}
+	}
+}

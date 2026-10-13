@@ -1,0 +1,78 @@
+focus_tree = {
+	id = EST_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EST
+		}
+	}
+
+	focus = {
+		id = EST_tallinn_commune
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 8
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = EST_oil_shale
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = EST_tallinn_commune }
+		x = 7
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = EST_estonian_rifles
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = EST_tallinn_commune }
+		x = 8
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = EST_gulf_patrol
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = EST_oil_shale }
+		x = 7
+		y = 2
+		cost = 5
+		completion_reward = {
+			navy_experience = 20
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = EST_red_baltic
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = EST_estonian_rifles }
+		x = 8
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.05
+		}
+	}
+}

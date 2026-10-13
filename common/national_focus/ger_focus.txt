@@ -1,0 +1,121 @@
+focus_tree = {
+	id = GER_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+
+	focus = {
+		id = GER_the_kaiser_endures
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = GER_prussian_traditions
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = GER_the_kaiser_endures }
+		x = 14
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = GER_krupp_and_thyssen
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = GER_the_kaiser_endures }
+		x = 16
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 300
+				producer = GER
+			}
+		}
+	}
+	focus = {
+		id = GER_the_fleet_question
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GER_the_kaiser_endures }
+		x = 18
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = GER_mitteleuropa_trade
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = GER_krupp_and_thyssen }
+		x = 16
+		y = 2
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_capital = no }
+				add_extra_state_shared_building_slots = 2
+			}
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = GER_the_eastern_question
+		icon = GFX_focus_generic_army_doctrines_2
+		prerequisite = { focus = GER_prussian_traditions }
+		x = 14
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_manpower = 50000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = GER
+			}
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = GER_guardians_of_the_reich
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = GER_the_kaiser_endures }
+		available = {
+			OR = {
+				has_completed_focus = GER_mitteleuropa_trade
+				has_completed_focus = GER_the_eastern_question
+			}
+		}
+		x = 16
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_manpower = 100000
+			add_stability = 0.05
+		}
+	}
+}

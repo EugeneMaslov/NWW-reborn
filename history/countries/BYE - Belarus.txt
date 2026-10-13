@@ -1,0 +1,29 @@
+capital = 206
+set_oob = "BYE_1936"
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = neutrality
+}
+
+set_popularities = {
+	neutrality = 70
+	communism = 20
+	fascism = 10
+}
+
+add_ideas = {
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+}
+create_country_leader = {
+	name = "Vaclaus Lastouski"
+	desc = "BYE_LASTOUSKI_DESC"
+	picture = "GFX_Portrait_lastouski"
+	ideology = oligarchism
+	traits = { }
+}

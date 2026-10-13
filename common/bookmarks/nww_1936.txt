@@ -1,0 +1,218 @@
+bookmarks = {
+	bookmark = {
+		name = "NWW_1936_NAME"
+		desc = "NWW_1936_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		filters = { new_content continent }
+
+		GER = {
+			history = "NWW_GER_DESC"
+			ideology = fascism
+			version = base_game
+			ideas = {
+				GER_mefo_bills_1936_fake_ns
+				GER_army_1936_fake_ns
+				GER_airforce_fake_ns
+			}
+			focuses = {
+				GER_fuhrerprinzip
+				GER_revive_the_kaiserreich
+				GER_reestablish_free_elections
+			}
+		}
+		"FRA" = {
+			history = "NWW_FRA_DESC"
+			ideology = democratic
+			version = base_game
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_form_the_popular_front
+				FRA_revive_the_national_bloc
+				FRA_france_leads
+			}
+		}
+		"ENG" = {
+			history = "NWW_ENG_DESC"
+			ideology = democratic
+			version = base_game
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				ENG_war_with_italy
+			}
+		}
+		"SOV" = {
+			history = "NWW_SOV_DESC"
+			ideology = communism
+			version = base_game
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+				SOV_behead_the_snake
+				SOV_father_of_nations
+				SOV_the_supreme_soviet
+			}
+		}
+		"ITA" = {
+			history = "NWW_ITA_DESC"
+			ideology = fascism
+			version = base_game
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_to_live_as_a_lion
+				ITA_a_colonial_empire
+			}
+		}
+		JAP = {
+			history = "NWW_JAP_DESC"
+			ideology = neutrality
+			version = base_game
+			ideas = {
+				JAP_1936_fake_state_shintoism_idea
+				JAP_1936_fake_industrial_idea
+				JAP_militarism
+			}
+			focuses = {
+				JAP_sea_purge_the_kodoha_faction
+				JAP_the_unthinkable_option
+				JAP_support_the_kodoha_faction
+			}
+		}
+		"USA" = {
+			history = "NWW_USA_DESC"
+			ideology = democratic
+			version = base_game
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
+			}
+		}
+		"CHI" = {
+			history = "NWW_CHI_DESC"
+			ideology = neutrality
+			version = base_game
+			ideas = {
+				CHI_army_corruption_1
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_united_front
+				CHI_army_reform
+				CHI_invite_the_flying_tigers
+			}
+		}
+		"AUS" = {
+			minor = yes
+			history = "NWW_AUS_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		HUN = {
+			minor = yes
+			history = "NWW_HUN_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		TUR = {
+			minor = yes
+			history = "NWW_TUR_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		"YUG" = {
+			minor = yes
+			history = "NWW_YUG_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		CRO = {
+			minor = yes
+			history = "NWW_CRO_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		LTB = {
+			minor = yes
+			history = "NWW_LTB_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		MKN = {
+			minor = yes
+			history = "NWW_MKN_DESC"
+			ideology = communism
+			version = base_game
+		}
+				UKR = {
+			minor = yes
+			history = "NWW_UKR_DESC"
+			ideology = communism
+			version = base_game
+		}
+		LAT = {
+			minor = yes
+			history = "NWW_OTHER_DESC"
+			ideology = communism
+			version = base_game
+		}
+		EST = {
+			minor = yes
+			history = "NWW_OTHER_DESC"
+			ideology = communism
+			version = base_game
+		}
+		BYE = {
+			minor = yes
+			history = "NWW_OTHER_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+"POL" = {
+			minor = yes
+			history = "NWW_POL_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+		"ROM" = {
+			minor = yes
+			history = "NWW_ROM_DESC"
+			ideology = neutrality
+			version = base_game
+		}
+
+		"---" = {
+			history = "NWW_OTHER_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345
+		}
+	}
+}

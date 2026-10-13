@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_LTB_michael_zaretchky"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_michael_zaretchky.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LTB_ales_garun"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_ales_garun.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LTB_anton_levitsky"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_anton_levitsky.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LTB_ivan_melezh"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_ivan_melezh.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LTB_dima_timoshenko_land"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_dima_timoshenko_land.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LTB_matvei_belyatcky"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_matvei_belyatcky.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LTB_aleksey_abramienka"
+		texturefile = "gfx/leaders/LTB/Portrait_LTB_aleksey_abramienka.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_makhno"
+		texturefile = "gfx/leaders/Portrait_makhno.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_lastouski"
+		texturefile = "gfx/leaders/Portrait_lastouski.tga"
+	}
+	spriteType = {
+		name = "GFX_Portrait_volin"
+		texturefile = "gfx/leaders/Portrait_volin.tga"
+	}
+}

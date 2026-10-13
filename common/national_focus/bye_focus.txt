@@ -1,0 +1,411 @@
+focus_tree = {
+	id = BYE_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BYE
+		}
+	}
+
+	focus = {
+		id = BYE_free_minsk
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BYE_belarusian_revival
+		icon = GFX_focus_research
+		prerequisite = { focus = BYE_free_minsk }
+		x = 14
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BYE_forest_brothers
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = BYE_free_minsk }
+		x = 16
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 40000
+		}
+	}
+	focus = {
+		id = BYE_minsk_arsenal
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = BYE_belarusian_revival }
+		x = 14
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+				producer = BYE
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = BYE_look_east
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = BYE_forest_brothers }
+		x = 16
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BYE_general_staff
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 22
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+		}
+	}
+	focus = {
+		id = BYE_vitebsk_arsenal
+		icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = BYE_general_staff }
+		x = 20
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 100
+				producer = BYE
+			}
+		}
+	}
+	focus = {
+		id = BYE_eastern_marshes
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = BYE_general_staff }
+		x = 22
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 40000
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = BYE_partisan_tradition
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = BYE_general_staff }
+		x = 24
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 50000
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = BYE_war_commissariat
+		icon = GFX_focus_generic_army_doctrines_2
+		prerequisite = { focus = BYE_eastern_marshes }
+		x = 22
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = BYE_gomel_works
+		icon = GFX_focus_generic_industry_1
+		x = 30
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = BYE_pripyat_power
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = BYE_gomel_works }
+		x = 28
+		y = 1
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_capital = no }
+				add_extra_state_shared_building_slots = 2
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BYE_flax_and_timber
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = BYE_gomel_works }
+		x = 30
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 70
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = BYE_motol_weavers
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = BYE_gomel_works }
+		x = 32
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = BYE_sky_watch
+		icon = GFX_focus_generic_air_bases
+		x = 36
+		y = 0
+		cost = 5
+		completion_reward = {
+			air_experience = 25
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BYE_minsk_airfield
+		icon = GFX_focus_generic_air_carrier
+		prerequisite = { focus = BYE_sky_watch }
+		x = 36
+		y = 1
+		cost = 5
+		completion_reward = {
+			air_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BYE_pinsk_flotilla
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 40
+		y = 0
+		cost = 5
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BYE_river_monitors
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = BYE_pinsk_flotilla }
+		x = 40
+		y = 1
+		cost = 5
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = BYE_lonely_crossroads
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 44
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BYE_polish_compromise
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = BYE_lonely_crossroads }
+		x = 43
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+				producer = BYE
+			}
+		}
+	}
+	focus = {
+		id = BYE_russian_shadow
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = BYE_lonely_crossroads }
+		x = 45
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 30000
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = BYE_crown_of_the_duchy
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = BYE_free_minsk }
+		available = { date > 1937.1.1 }
+		x = 50
+		y = 0
+		cost = 10
+		completion_reward = {
+			set_politics = { ruling_party = neutrality }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BYE_duchy_in_order
+		icon = GFX_focus_generic_army_doctrines_2
+		prerequisite = { focus = BYE_crown_of_the_duchy }
+		x = 50
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.1
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = BYE_rada_democracy
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = BYE_free_minsk }
+		available = { date > 1937.1.1 }
+		x = 54
+		y = 0
+		cost = 10
+		completion_reward = {
+			set_politics = { ruling_party = democratic }
+			add_popularity = { ideology = democratic popularity = 0.15 }
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = BYE_free_cooperatives
+		icon = GFX_focus_research
+		prerequisite = { focus = BYE_rada_democracy }
+		x = 54
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = BYE_white_eagles
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = BYE_free_minsk }
+		available = { date > 1937.1.1 }
+		x = 58
+		y = 0
+		cost = 10
+		completion_reward = {
+			set_politics = { ruling_party = fascism }
+			add_popularity = { ideology = fascism popularity = 0.15 }
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = BYE_iron_plowshares
+		icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = BYE_white_eagles }
+		x = 58
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 30
+			add_manpower = 30000
+		}
+	}
+	focus = {
+		id = BYE_red_minsk
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = BYE_free_minsk }
+		available = { date > 1937.1.1 }
+		x = 62
+		y = 0
+		cost = 10
+		completion_reward = {
+			set_politics = { ruling_party = communism }
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_manpower = 30000
+		}
+	}
+	focus = {
+		id = BYE_kolkhoz_wave
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = BYE_red_minsk }
+		x = 62
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_stability = 0.05
+		}
+	}
+}

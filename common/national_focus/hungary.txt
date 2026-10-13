@@ -1,0 +1,110 @@
+# NWW stub: full Hungarian tree will be written anew.
+# These stub focuses preserve IDs required by other countries trees and events.
+focus_tree = {
+	id = HUN_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUN
+		}
+	}
+
+	focus = {
+		id = HUN_nww_rebuild
+		icon = GFX_focus_generic_industry_1
+		x = 8
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HUN_nww_army
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = HUN_nww_rebuild }
+		x = 7
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = HUN_nww_industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = HUN_nww_rebuild }
+		x = 9
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = HUN_elect_a_democratic_king
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 14
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HUN_elect_a_fascist_king
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HUN_invite_the_habsburg_prince
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 18
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HUN_proclaim_the_restoration_of_austria_hungary
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 20
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HUN_protect_czechoslovakia
+		icon = GFX_focus_generic_army_attack
+		x = 22
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HUN_elect_a_king
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 24
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+}

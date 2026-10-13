@@ -1,0 +1,33 @@
+division_template = {
+	name = "BYE_Belaruskaya"
+	division_names_group = BYE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division = { name = "1. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 }
+	division = { name = "2. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 }
+	division = { name = "3. Belaruskaya Dyviziya" location = 216 division_template = "BYE_Belaruskaya" start_experience_factor = 0.1 }
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BYE"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

@@ -1,0 +1,120 @@
+# NWW stub: full Austrian tree will be written anew.
+# These stub focuses preserve IDs required by other countries trees and events.
+focus_tree = {
+	id = AUS_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+
+	focus = {
+		id = AUS_nww_rebuild
+		icon = GFX_focus_generic_industry_1
+		x = 8
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = AUS_nww_army
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = AUS_nww_rebuild }
+		x = 7
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = AUS_nww_industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = AUS_nww_rebuild }
+		x = 9
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = AUS_bring_generals_out_of_retirement
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 14
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = AUS_reinstate_the_imperial_council
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = AUS_hold_elections
+		icon = GFX_focus_generic_support_the_left_right
+		x = 18
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = AUS_the_danubian_federation
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 20
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = AUS_via_danube_to_europe
+		icon = GFX_focus_generic_industry_3
+		x = 22
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = AUS_reclaiming_yugoslavian_territories
+		icon = GFX_focus_generic_army_attack
+		x = 24
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = AUS_establish_bohme_plan
+		icon = GFX_focus_generic_industry_2
+		x = 26
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+}

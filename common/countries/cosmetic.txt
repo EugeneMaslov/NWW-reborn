@@ -1,0 +1,12 @@
+LTB_lithuania = {
+	color = rgb { 0 106 68 }
+	color_ui = rgb { 0 140 90 }
+}
+LTB_belarus = {
+	color = rgb { 128 0 0 }
+	color_ui = rgb { 180 40 40 }
+}
+SOV_rsfsr = {
+	color = rgb { 200 16 16 }
+	color_ui = rgb { 230 20 20 }
+}

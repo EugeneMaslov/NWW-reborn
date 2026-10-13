@@ -1,0 +1,35 @@
+division_template = {
+	name = "UKR_Striletska"
+	division_names_group = UKR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division = { name = "1. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 }
+	division = { name = "2. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 }
+	division = { name = "3. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 }
+	division = { name = "4. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 }
+	division = { name = "5. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 }
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

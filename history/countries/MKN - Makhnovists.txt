@@ -1,0 +1,69 @@
+capital = 200
+set_oob = "MKN_1936"
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = communism
+}
+
+set_popularities = {
+	communism = 80
+	neutrality = 20
+}
+
+add_ideas = {
+	MKN_free_territory
+}
+create_country_leader = {
+	name = "Nestor Makhno"
+	desc = "MKN_NESTOR_MAKHNO_DESC"
+	picture = "GFX_Portrait_makhno"
+	ideology = anarchist_communism
+	traits = { }
+}
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+}
+
+create_country_leader = {
+	name = "Viktor Belash"
+	desc = "MKN_BELASH_DESC"
+	picture = "GFX_portrait_LIT_zigmas_angarietis"
+	ideology = leninism
+	traits = { }
+}
+create_corps_commander = {
+	name = "Fedir Shchus"
+	desc = "MKN_SHCHUS_DESC"
+	gfx = "GFX_portrait_LIT_augustinas_voldemaras"
+	traits = { cavalry_leader }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_country_leader = {
+	name = "Fedir Shchus"
+	desc = "MKN_SHCHUS_LEADER_DESC"
+	picture = "GFX_portrait_LIT_augustinas_voldemaras"
+	ideology = fascism_ideology
+	traits = { }
+}
+create_country_leader = {
+	name = "Emperor Nestor I"
+	desc = "MKN_EMPEROR_DESC"
+	picture = "GFX_Portrait_makhno"
+	ideology = despotism
+	traits = { }
+}
+create_country_leader = {
+	name = "Vsevolod Volin"
+	desc = "MKN_VOLIN_DESC"
+	picture = "GFX_Portrait_volin"
+	ideology = liberalism
+	traits = { }
+}

@@ -1,0 +1,98 @@
+capital = 206
+set_oob = "LTB_1936"
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = neutrality
+}
+
+set_popularities = {
+	neutrality = 70
+	communism = 20
+	fascism = 10
+}
+
+add_ideas = {
+	LTB_unresolved_national_question
+}
+create_country_leader = {
+	name = "Antanas Smetona"
+	desc = "LIT_ANTANAS_SMETONA_DESC"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	ideology = despotism
+	traits = { }
+}
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+}
+
+set_convoys = 10
+
+create_country_leader = {
+	name = "Michael Zaretchky"
+	desc = "LTB_ZARETCHKY_DESC"
+	picture = "GFX_Portrait_LTB_michael_zaretchky"
+	ideology = conservatism
+	traits = { }
+}
+create_country_leader = {
+	name = "Ales Garun"
+	desc = "LTB_GARUN_DESC"
+	picture = "GFX_Portrait_LTB_ales_garun"
+	ideology = oligarchism
+	traits = { }
+}
+create_country_leader = {
+	name = "Ivan Melezh"
+	desc = "LTB_MELEZH_DESC"
+	picture = "GFX_Portrait_LTB_ivan_melezh"
+	ideology = stalinism
+	traits = { }
+}
+create_country_leader = {
+	name = "Anton Levitsky"
+	desc = "LTB_LEVITSKY_DESC"
+	picture = "GFX_Portrait_LTB_anton_levitsky"
+	ideology = fascism_ideology
+	traits = { }
+}
+create_corps_commander = {
+	name = "Dima Timoshenko"
+	desc = "LTB_TIMOSHENKO_DESC"
+	gfx = "GFX_Portrait_LTB_dima_timoshenko_land"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Matvei Belyatsky"
+	desc = "LTB_BELYATSKY_DESC"
+	gfx = "GFX_Portrait_LTB_matvei_belyatcky"
+	traits = { offensive_doctrine }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alexey Abramienka"
+	desc = "LTB_ABRAMIENKA_DESC"
+	gfx = "GFX_Portrait_LTB_aleksey_abramienka"
+	traits = { infantry_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}

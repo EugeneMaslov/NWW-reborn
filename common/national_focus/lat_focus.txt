@@ -1,0 +1,82 @@
+focus_tree = {
+	id = LAT_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LAT
+		}
+	}
+
+	focus = {
+		id = LAT_red_riflemen
+		icon = GFX_focus_generic_army_attack
+		x = 8
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 30000
+		}
+	}
+	focus = {
+		id = LAT_riga_works
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = LAT_red_riflemen }
+		x = 7
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = LAT_baltic_soviet
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = LAT_red_riflemen }
+		x = 8
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = LAT_daughava_trade
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = LAT_riga_works }
+		x = 7
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+				producer = LAT
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = LAT_comrades_in_moscow
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = LAT_baltic_soviet }
+		x = 8
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+}

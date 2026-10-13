@@ -1,0 +1,85 @@
+LTB_INF_01 =
+{
+	name = "Infantry Division"
+	for_countries = { LTB }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%s. Divizija"
+	ordered =
+	{
+		1 = { "%s. Divizija" }
+		2 = { "%s. Divizija" }
+		3 = { "%s. Divizija" }
+		4 = { "%s. Divizija" }
+		5 = { "%s. Divizija" }
+		6 = { "%s. Divizija" }
+		7 = { "%s. Divizija" }
+		8 = { "%s. Divizija" }
+		9 = { "%s. Divizija" }
+		10 = { "%s. Divizija" }
+	}
+}
+LTB_CAV_01 =
+{
+	name = "Cavalry Brigade"
+	for_countries = { LTB }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%s. Brigada"
+	ordered =
+	{
+		1 = { "%s. Brigada" }
+		2 = { "%s. Brigada" }
+		3 = { "%s. Brigada" }
+		4 = { "%s. Brigada" }
+	}
+}
+MKN_INF_01 =
+{
+	name = "Rifle Division"
+	for_countries = { MKN }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%s. Rota"
+	ordered =
+	{
+		1 = { "%s. Rota" }
+		2 = { "%s. Rota" }
+		3 = { "%s. Rota" }
+		4 = { "%s. Rota" }
+		5 = { "%s. Rota" }
+		6 = { "%s. Rota" }
+	}
+}
+MKN_CAV_01 =
+{
+	name = "Cavalry Sotnya"
+	for_countries = { MKN }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%s. Sotnya"
+	ordered =
+	{
+		1 = { "%s. Sotnya" }
+		2 = { "%s. Sotnya" }
+		3 = { "%s. Sotnya" }
+		4 = { "%s. Sotnya" }
+	}
+}
+BYE_INF_01 =
+{
+	name = "Infantry Division"
+	for_countries = { BYE }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%s. Dyviziya"
+	ordered =
+	{
+		1 = { "%s. Dyviziya" }
+		2 = { "%s. Dyviziya" }
+		3 = { "%s. Dyviziya" }
+		4 = { "%s. Dyviziya" }
+		5 = { "%s. Dyviziya" }
+		6 = { "%s. Dyviziya" }
+	}
+}

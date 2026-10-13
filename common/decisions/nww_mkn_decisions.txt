@@ -1,0 +1,60 @@
+MKN_border_raids = {
+	MKN_border_raid = {
+		icon = generic_guerilla_base
+
+		available = {
+			tag = MKN
+			has_completed_focus = MKN_border_tensions
+			NOT = { has_war_with = UKR }
+			check_variable = { MKN_raids_done < 3 }
+			has_political_power > 49
+		}
+
+		visible = {
+			tag = MKN
+			has_completed_focus = MKN_border_tensions
+			check_variable = { MKN_raids_done < 3 }
+		}
+
+		days_remove = 0
+		days_re_enable = 30
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			add_political_power = -50
+			if = {
+				limit = { check_variable = { MKN_raids_done = 0 } }
+				203 = {
+					transfer_state_to = MKN
+					add_core_of = MKN
+					remove_core_of = UKR
+				}
+			}
+			if = {
+				limit = { check_variable = { MKN_raids_done = 1 } }
+				202 = {
+					transfer_state_to = MKN
+					add_core_of = MKN
+					remove_core_of = UKR
+				}
+			}
+			if = {
+				limit = { check_variable = { MKN_raids_done = 2 } }
+				192 = {
+					transfer_state_to = MKN
+					add_core_of = MKN
+					remove_core_of = UKR
+				}
+				set_global_flag = MKN_ukr_angered
+			}
+			add_to_variable = { MKN_raids_done = 1 }
+			add_war_support = 0.03
+			UKR = { country_event = { id = mkn.4 days = 1 } }
+		}
+	}
+}
