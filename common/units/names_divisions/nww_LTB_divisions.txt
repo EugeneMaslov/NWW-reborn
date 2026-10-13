@@ -1,0 +1,36 @@
+LTB_INF_01 =
+{
+	name = "Infantry Division"
+	for_countries = { LTB }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%s. Divizija"
+	ordered =
+	{
+		1 = { "%s. Divizija" }
+		2 = { "%s. Divizija" }
+		3 = { "%s. Divizija" }
+		4 = { "%s. Divizija" }
+		5 = { "%s. Divizija" }
+		6 = { "%s. Divizija" }
+		7 = { "%s. Divizija" }
+		8 = { "%s. Divizija" }
+		9 = { "%s. Divizija" }
+		10 = { "%s. Divizija" }
+	}
+}
+LTB_CAV_01 =
+{
+	name = "Cavalry Brigade"
+	for_countries = { LTB }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%s. Brigada"
+	ordered =
+	{
+		1 = { "%s. Brigada" }
+		2 = { "%s. Brigada" }
+		3 = { "%s. Brigada" }
+		4 = { "%s. Brigada" }
+	}
+}

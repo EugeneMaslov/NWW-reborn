@@ -1,0 +1,32 @@
+MKN_INF_01 =
+{
+	name = "Rifle Division"
+	for_countries = { MKN }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%s. Rota"
+	ordered =
+	{
+		1 = { "%s. Rota" }
+		2 = { "%s. Rota" }
+		3 = { "%s. Rota" }
+		4 = { "%s. Rota" }
+		5 = { "%s. Rota" }
+		6 = { "%s. Rota" }
+	}
+}
+MKN_CAV_01 =
+{
+	name = "Cavalry Sotnya"
+	for_countries = { MKN }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%s. Sotnya"
+	ordered =
+	{
+		1 = { "%s. Sotnya" }
+		2 = { "%s. Sotnya" }
+		3 = { "%s. Sotnya" }
+		4 = { "%s. Sotnya" }
+	}
+}

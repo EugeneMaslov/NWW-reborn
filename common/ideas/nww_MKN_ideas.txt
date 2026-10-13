@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+		MKN_free_territory = {
+			picture = gre_agricultural_communes
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = 0.15
+				supply_consumption_factor = -0.15
+				army_attack_factor = 0.10
+				stability_factor = -0.15
+				political_power_gain = -0.50
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.05
+			}
+		}
+		MKN_free_soviets_idea = {
+			picture = generic_constitutional_guarantees
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = 0.15
+				supply_consumption_factor = -0.10
+				army_attack_factor = 0.05
+				stability_factor = -0.05
+				political_power_gain = -0.25
+			}
+		}
+		MKN_tachanka_warfare = {
+			picture = HABSBURG_cavalry
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		MKN_railway_guards = {
+			picture = ARG_invest_in_railways
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

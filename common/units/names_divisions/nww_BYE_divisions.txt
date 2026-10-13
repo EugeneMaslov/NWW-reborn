@@ -1,0 +1,17 @@
+BYE_INF_01 =
+{
+	name = "Infantry Division"
+	for_countries = { BYE }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%s. Dyviziya"
+	ordered =
+	{
+		1 = { "%s. Dyviziya" }
+		2 = { "%s. Dyviziya" }
+		3 = { "%s. Dyviziya" }
+		4 = { "%s. Dyviziya" }
+		5 = { "%s. Dyviziya" }
+		6 = { "%s. Dyviziya" }
+	}
+}
