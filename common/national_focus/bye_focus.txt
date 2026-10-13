@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = BYE_free_minsk
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 16
+		x = 10
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -21,10 +21,42 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BYE_rebuild_minsk
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = BYE_free_minsk }
+		x = 8
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = BYE_agriculture_and_steel
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = BYE_rebuild_minsk }
+		x = 8
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+				producer = BYE
+			}
+		}
+	}
+	focus = {
 		id = BYE_belarusian_revival
 		icon = GFX_focus_research
 		prerequisite = { focus = BYE_free_minsk }
-		x = 14
+		x = 12
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -40,7 +72,7 @@ focus_tree = {
 		id = BYE_forest_brothers
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = BYE_free_minsk }
-		x = 16
+		x = 10
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -52,7 +84,7 @@ focus_tree = {
 		id = BYE_minsk_arsenal
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = BYE_belarusian_revival }
-		x = 14
+		x = 12
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -68,7 +100,7 @@ focus_tree = {
 		id = BYE_look_east
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BYE_forest_brothers }
-		x = 16
+		x = 10
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -146,7 +178,7 @@ focus_tree = {
 	focus = {
 		id = BYE_gomel_works
 		icon = GFX_focus_generic_industry_1
-		x = 30
+		x = 34
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -161,7 +193,7 @@ focus_tree = {
 		id = BYE_pripyat_power
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = BYE_gomel_works }
-		x = 28
+		x = 32
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -176,7 +208,7 @@ focus_tree = {
 		id = BYE_flax_and_timber
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = BYE_gomel_works }
-		x = 30
+		x = 34
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -192,7 +224,7 @@ focus_tree = {
 		id = BYE_motol_weavers
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = BYE_gomel_works }
-		x = 32
+		x = 36
 		y = 1
 		cost = 5
 		completion_reward = {

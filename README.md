@@ -1,46 +1,112 @@
 # NWW Reborn
 
-Alt-history Hearts of Iron IV mod (1.19.*). Neither World War happened:
-Kaiser Germany in 1914 borders, Austria with the Czech lands, Transleithanian
-Hungary, free Croatia holding Bosnia, Ottomans keeping the Levant and Iraq,
-a united China, Lithuania-Belarus, Makhnovist Ukraine, Soviet Ukraine in the
-Comintern, communist Baltic satellites, Russia as the RSFSR.
+![NWW Reborn banner preview](nwwreborn_banner.svg)
 
-## Structure
+A Baltic and East European alternate-history scenario for Hearts of Iron IV, built around one simple idea: the world of 1936 is not the one we know. The Great War was different, borders are softer, governments are younger, and the lands between Germany, Russia, and Poland are still deciding what they are.
 
-- `common/bookmarks/` — the NWW 1936 scenario (vanilla bookmarks blanked out)
-- `common/countries/`, `country_tags/`, `cosmetic.txt`, `colors.txt` —
-   tags `LTB` `LIT` `BYE` `MKN` `UKR` `CRO` + cosmetic tag `SOV_rsfsr`
-- `common/decisions/` (+ `categories/`) — Makhnovist border raids vs Ukraine
-- `common/ideas/nww_ideas.txt` — national spirits
-- `common/national_focus/` — 12 trees: LTB, LIT, BYE, MKN, UKR, CRO, GER,
-  SOV, LAT, EST (+ HUN/AUS stubs awaiting new trees)
-- `common/units/names_divisions/` — division name packs for new tags
-- `events/nww_ltb_mkn.txt` — LitBel deadline, compromise or full dissolution, Makhno events
-- `gfx/` + `interface/` — flags, leader portraits, sprite definitions
-- `history/countries|states|units/` — the 1936 setup (owners, OOBs, leaders)
-- `localisation/` — English + Russian (`mod_*_l_english.yml`,
-  `mod_*_l_russian.yml`)
+The mod follows the fate of the former Lithuanian-Belarusian Union, the anarchist experiment of the Free Territory, the Soviet republics of the eastern border, and the ghosts of old empires that still do not know whether they should die or endure.
 
-## Key mechanics
+## The idea of the world
 
-- LitBel national question: complete the compromise focus before the deadline
-   or dissolve the union into independent Lithuania (LIT) and Belarus (BYE).
-   The player chooses which country to lead; both continue with their own trees
-   and the LTB tag is removed.
-- Makhno: 6 ideological paths (Makhnovshchina, council communism, democracy,
-  full communism, fascism, Emperor Nestor I) + repeatable border-raid
-  decision chain against Soviet Ukraine (3 states transfer with cores;
-  Kiev answers with a wargoal after the third raid).
-- Harsh anarchist starting penalties, gradually reformed through focuses.
+In this timeline:
 
-## Roadmap
+- Kaiser Germany keeps the shape of a stronger and more confident Reich.
+- Austria remains a central European power, but not a master of the entire Danube.
+- Hungary is torn between the old imperial order and the new nationalist claims.
+- Croatia stands as a free state, not a puppet of the Habsburgs.
+- The Ottoman Empire keeps its Levant and Iraq, and is not reduced to a memory of the old world.
+- The Far East is still shaped by a stronger, unified China.
+- The Baltic lands are a contested zone of nationhood, compromise, and violence.
+- Ukraine is not simply a blank Soviet field. It is a contested breadbasket, a border between Russian revolution and anarchist freedom.
+- The Union of Lithuania and Belarus can survive, fracture, or burn itself apart in the middle of a larger European storm.
 
-1. Stability: solve the carrier-variant gate (carriers temporarily unspawned),
-   verify sessions end-to-end (menu + all majors).
-2. New Hungarian and Austrian focus trees (stubs in place, IDs preserved for
-   foreign-tree prerequisites).
-3. Content depth: more events/decisions, AI behavior, balance pass,
-   English proofread.
-4. GFX polish: portraits, idea icons, loading screens.
-5. Steam Workshop release (descriptor `nwwreborn.mod` at repo root).
+This is not a story of clean nations and neat frontiers. It is a story of states born from old kingdoms, new republics, and half-forgotten claims.
+
+## Main branches of the scenario
+
+### Lithuania and Belarus
+
+The Lithuanian-Belarusian Union is the heart of the mod. It starts as a fragile compromise between two nationalisms, two languages, and two visions of the future.
+
+The player may:
+
+- stabilize the Union through compromise,
+- push Kaunas or Minsk to dominance,
+- rebuild the country through industry and administration,
+- or let the crisis erupt and split the state into separate Lithuania and Belarus.
+
+The result is not just a political split. It changes the way the region thinks about war, legitimacy, and the meaning of statehood.
+
+### Makhnovist Ukraine
+
+The Free Territory is a very different story. It is not a nation in the classical sense. It is a network of free soviets, peasant communes, and insurgent armies held together by will rather than a central bureaucracy.
+
+This gives Makhno a special place in the mod:
+
+- the Free Territory begins without the comfort of a stable state machine,
+- it must build legitimacy through the steppe and the rail lines,
+- it can go down ideological paths from anarchist federation to authoritarian state,
+- and it can turn each border raid into a campaign of displacement, pressure, and escalation.
+
+### Soviet and border republics
+
+The broken political map of Eastern Europe is not empty. Soviet Ukraine, Soviet Russia, Latvia, and Estonia all exist as active strategic actors. They are not just props in the background. They are the pressure walls against which the Baltic states and the Free Territory define their survival.
+
+## What is already in the mod
+
+The project already includes:
+
+- separate focus trees for Lithuania, Belarus, the Lithuanian-Belarusian Union, Makhno, Ukraine, Germany, and the Baltic-Soviet states,
+- custom country tags and national spirits,
+- historical OOB setup for 1936,
+- events and decisions tied to the LitBel crisis and the Free Territory,
+- visual identity for flags, portraits, and game interface elements.
+
+The content is intended to feel like a focused scenario, not a generic all-world overhaul. It keeps the spotlight on the Baltic and eastern front rather than cluttering the menu with every possible fictional state.
+
+## Scenario logic
+
+The mod is designed to keep the start-screen and country selection clean:
+
+- the key countries are the ones the scenario revolves around,
+- the map is meant to feel crowded by history, not by decorative tags,
+- the focus trees are built around real political tensions rather than random alternative-history filler.
+
+This means the player sees the world of the scenario as a theatre of conflict, not as a museum of every possible border claim.
+
+## Structure of the project
+
+- `common/bookmarks/` — cleaned scenario bookmarks for 1936
+- `common/countries/` and `country_tags/` — special tags for Lithuania, Belarus, LTB, Makhno, Ukraine, and related states
+- `common/decisions/` — border war and crisis decisions
+- `common/national_focus/` — the actual political and military trees
+- `events/` — crisis events, split decisions, and timeline triggers
+- `history/` — countries, states, and initial unit setup
+- `interface/` and `gfx/` — portraits and mod visuals
+- `localisation/` — English and Russian game text
+
+## Basic campaign rhythm
+
+The mod is meant to be played in this rhythm:
+
+1. Secure your state internally.
+2. Stabilize administration, industry, and security.
+3. Decide whether your nation is built on compromise, radicalism, or survival.
+4. Manage the border crisis while the larger powers watch.
+5. Turn the question of national identity into a military one when the moment comes.
+
+## Development direction
+
+The project is gradually moving toward a clearer identity:
+
+- more cohesive Lore-driven focus trees,
+- stronger distinction between Lithuanian, Belarusian, and LTB branches,
+- more logical paths for Makhno and the Free Territory,
+- cleaner scenario framing without visual noise,
+- better balance and political logic rather than random filler content.
+
+## Notes
+
+This is a political and military alt-history mod built around the broken Baltic frontier. It is not a total-world reset. It is a concentrated story about how fragile states become, how old borders become arguments, and how the steppe, the sea, and the railways decide the fate of nations.
+
+The world does not begin in peace. It begins in waiting.

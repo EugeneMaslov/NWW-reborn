@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = MKN_the_free_territory
 		icon = GFX_focus_generic_support_the_left_right
-		x = 10
+		x = 12
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -21,10 +21,38 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = MKN_farmers_and_workers
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MKN_the_free_territory }
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MKN_shadow_republic
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = MKN_farmers_and_workers }
+		x = 4
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_manpower = 20000
+		}
+	}
+	focus = {
 		id = MKN_free_soviets
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_the_free_territory }
-		x = 8
+		x = 12
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -38,7 +66,7 @@ focus_tree = {
 		id = MKN_tachanka_columns
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_the_free_territory }
-		x = 10
+		x = 8
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -50,7 +78,7 @@ focus_tree = {
 		id = MKN_nabat_federation
 		icon = GFX_focus_research
 		prerequisite = { focus = MKN_the_free_territory }
-		x = 12
+		x = 16
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -66,7 +94,7 @@ focus_tree = {
 		id = MKN_gulyai_polye_commune
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = MKN_free_soviets }
-		x = 6
+		x = 12
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -97,7 +125,7 @@ focus_tree = {
 		id = MKN_black_banner_east
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_nabat_federation }
-		x = 12
+		x = 16
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -111,8 +139,8 @@ focus_tree = {
 		id = MKN_makhno_moves_south
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = MKN_black_banner_east }
-		x = 14
-		y = 2
+		x = 16
+		y = 3
 		cost = 5
 		completion_reward = {
 			add_manpower = 30000
@@ -133,8 +161,8 @@ focus_tree = {
 				has_completed_focus = MKN_makhno_moves_south
 			}
 		}
-		x = 10
-		y = 3
+		x = 12
+		y = 4
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
@@ -145,8 +173,8 @@ focus_tree = {
 		id = MKN_black_sea_flotilla
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_the_free_territory }
-		x = 16
-		y = 0
+		x = 22
+		y = 1
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -161,8 +189,8 @@ focus_tree = {
 		id = MKN_dnieper_patrol
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = MKN_black_sea_flotilla }
-		x = 16
-		y = 1
+		x = 22
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -177,8 +205,8 @@ focus_tree = {
 		id = MKN_steppe_hawks
 		icon = GFX_focus_generic_air_bases
 		prerequisite = { focus = MKN_the_free_territory }
-		x = 18
-		y = 0
+		x = 26
+		y = 1
 		cost = 5
 		completion_reward = {
 			air_experience = 25
@@ -193,8 +221,8 @@ focus_tree = {
 		id = MKN_soviet_press
 		icon = GFX_focus_research
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 8
-		y = 4
+		x = 4
+		y = 5
 		cost = 5
 		completion_reward = {
 			add_political_power = 80
@@ -205,8 +233,8 @@ focus_tree = {
 		id = MKN_anarchist_schools
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 10
-		y = 4
+		x = 8
+		y = 5
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -221,7 +249,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = MKN_the_steppe_holds }
 		x = 12
-		y = 4
+		y = 5
 		cost = 5
 		completion_reward = {
 			add_manpower = 50000
@@ -232,8 +260,8 @@ focus_tree = {
 		id = MKN_batko_guards
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_soviet_press }
-		x = 6
-		y = 5
+		x = 0
+		y = 6
 		cost = 5
 		completion_reward = {
 			army_experience = 20
@@ -244,8 +272,8 @@ focus_tree = {
 		id = MKN_border_tensions
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 14
-		y = 3
+		x = 16
+		y = 5
 		cost = 5
 		completion_reward = {
 			set_variable = { MKN_raids_done = 0 }
@@ -260,7 +288,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = MKN_the_steppe_holds }
 		x = 4
-		y = 5
+		y = 6
 		cost = 10
 		completion_reward = {
 			add_war_support = 0.1
@@ -272,8 +300,8 @@ focus_tree = {
 		id = MKN_soviets_forever
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_everlasting_makhnovshchina }
-		x = 3
-		y = 6
+		x = 2
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
@@ -284,8 +312,8 @@ focus_tree = {
 		id = MKN_tachanka_guards
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_everlasting_makhnovshchina }
-		x = 5
-		y = 6
+		x = 6
+		y = 7
 		cost = 5
 		completion_reward = {
 			army_experience = 30
@@ -302,8 +330,8 @@ focus_tree = {
 		id = MKN_council_communism
 		icon = GFX_focus_research
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 8
-		y = 5
+		x = 12
+		y = 6
 		cost = 10
 		completion_reward = {
 			add_popularity = { ideology = communism popularity = 0.1 }
@@ -318,8 +346,8 @@ focus_tree = {
 		id = MKN_workers_control
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = MKN_council_communism }
-		x = 7
-		y = 6
+		x = 10
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -334,8 +362,8 @@ focus_tree = {
 		id = MKN_commune_federation
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_council_communism }
-		x = 9
-		y = 6
+		x = 14
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_manpower = 40000
@@ -348,8 +376,8 @@ focus_tree = {
 		id = MKN_constituent_assembly
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 12
-		y = 5
+		x = 20
+		y = 6
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = democratic }
@@ -361,8 +389,8 @@ focus_tree = {
 		id = MKN_free_elections_steppe
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_constituent_assembly }
-		x = 11
-		y = 6
+		x = 18
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
@@ -373,8 +401,8 @@ focus_tree = {
 		id = MKN_open_markets
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = MKN_constituent_assembly }
-		x = 13
-		y = 6
+		x = 22
+		y = 7
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -391,8 +419,8 @@ focus_tree = {
 		id = MKN_red_banner_steppe
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 16
-		y = 5
+		x = 8
+		y = 7
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = communism }
@@ -404,8 +432,8 @@ focus_tree = {
 		id = MKN_hand_to_moscow
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_red_banner_steppe }
-		x = 15
-		y = 6
+		x = 6
+		y = 8
 		cost = 5
 		completion_reward = {
 			SOV = { add_to_faction = MKN }
@@ -416,8 +444,8 @@ focus_tree = {
 		id = MKN_collectivize_the_steppe
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = MKN_red_banner_steppe }
-		x = 17
-		y = 6
+		x = 10
+		y = 8
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
@@ -430,8 +458,8 @@ focus_tree = {
 		id = MKN_black_hundreds
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 20
-		y = 5
+		x = 16
+		y = 7
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = fascism }
@@ -443,8 +471,8 @@ focus_tree = {
 		id = MKN_order_through_tachanka
 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = MKN_black_hundreds }
-		x = 19
-		y = 6
+		x = 14
+		y = 8
 		cost = 5
 		completion_reward = {
 			army_experience = 30
@@ -455,8 +483,8 @@ focus_tree = {
 		id = MKN_steppe_legions
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = MKN_black_hundreds }
-		x = 21
-		y = 6
+		x = 18
+		y = 8
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
@@ -470,7 +498,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MKN_the_steppe_holds }
 		x = 24
-		y = 5
+		y = 7
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = neutrality }
@@ -482,8 +510,8 @@ focus_tree = {
 		id = MKN_imperial_coronation
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = MKN_nestor_the_first }
-		x = 23
-		y = 6
+		x = 24
+		y = 8
 		cost = 5
 		completion_reward = {
 			add_political_power = 150
@@ -494,8 +522,8 @@ focus_tree = {
 		id = MKN_steppe_empire
 		icon = GFX_focus_generic_army_doctrines_2
 		prerequisite = { focus = MKN_nestor_the_first }
-		x = 25
-		y = 6
+		x = 28
+		y = 8
 		cost = 5
 		completion_reward = {
 			army_experience = 25

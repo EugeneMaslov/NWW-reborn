@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = LTB_consolidate_the_union
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 8
+		x = 10
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -22,12 +22,44 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = LTB_rebuild_the_bridge
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = LTB_consolidate_the_union }
+		x = 10
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_political_power = 70
+		}
+	}
+	focus = {
+		id = LTB_baltic_bridgehead
+		icon = GFX_focus_generic_army_attack
+		prerequisite = { focus = LTB_rebuild_the_bridge }
+		x = 10
+		y = 4
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = LTB
+			}
+		}
+	}
+	focus = {
 		id = LTB_the_vilnius_compromise
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = LTB_consolidate_the_union }
 		mutually_exclusive = { focus = LTB_kaunas_first }
 		x = 6
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = {
 			remove_ideas = LTB_unresolved_national_question
@@ -41,8 +73,8 @@ focus_tree = {
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_consolidate_the_union }
 		mutually_exclusive = { focus = LTB_the_vilnius_compromise }
-		x = 10
-		y = 1
+		x = 14
+		y = 2
 		cost = 10
 		completion_reward = {
 			add_ideas = LTB_kaunas_centralism
@@ -55,7 +87,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = LTB_the_vilnius_compromise }
 		x = 4
-		y = 2
+		y = 4
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -71,7 +103,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_the_vilnius_compromise }
 		x = 6
-		y = 2
+		y = 4
 		cost = 5
 		completion_reward = {
 			add_manpower = 40000
@@ -82,8 +114,8 @@ focus_tree = {
 		id = LTB_the_seimas_of_kaunas
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LTB_kaunas_first }
-		x = 10
-		y = 2
+		x = 14
+		y = 4
 		cost = 5
 		completion_reward = {
 			add_political_power = 100
@@ -94,8 +126,8 @@ focus_tree = {
 		id = LTB_mobilize_the_sauliai
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_the_seimas_of_kaunas }
-		x = 12
-		y = 2
+		x = 16
+		y = 4
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
@@ -113,8 +145,8 @@ focus_tree = {
 				has_completed_focus = LTB_mobilize_the_sauliai
 			}
 		}
-		x = 8
-		y = 3
+		x = 10
+		y = 6
 		cost = 5
 		completion_reward = {
 			add_political_power = -100

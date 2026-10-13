@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = LIT_free_kaunas
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 16
+		x = 10
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -21,10 +21,38 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = LIT_rebuild_kaunas
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = LIT_free_kaunas }
+		x = 8
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = LIT_baltic_trade_council
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = LIT_rebuild_kaunas }
+		x = 8
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
 		id = LIT_sauliai_veterans
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LIT_free_kaunas }
-		x = 14
+		x = 12
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -36,7 +64,7 @@ focus_tree = {
 		id = LIT_neman_workshops
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = LIT_free_kaunas }
-		x = 16
+		x = 10
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -51,7 +79,7 @@ focus_tree = {
 		id = LIT_watch_on_vilnius
 		icon = GFX_focus_generic_army_doctrines_2
 		prerequisite = { focus = LIT_sauliai_veterans }
-		x = 14
+		x = 12
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -67,7 +95,7 @@ focus_tree = {
 		id = LIT_baltic_friends
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LIT_neman_workshops }
-		x = 16
+		x = 10
 		y = 2
 		cost = 5
 		completion_reward = {
