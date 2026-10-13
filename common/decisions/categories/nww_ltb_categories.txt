@@ -1,0 +1,10 @@
+LTB_national_question = {
+	icon = GFX_decision_generic_political_pressure
+	visible = {
+		OR = {
+			tag = LTB
+			tag = LIT
+			tag = BYE
+		}
+	}
+}

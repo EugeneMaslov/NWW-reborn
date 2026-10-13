@@ -48,5 +48,72 @@ ideas = {
 				army_attack_factor = 0.05
 			}
 		}
+		LTB_semi_agrarian_economy = {
+			picture = generic_production_bonus
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.20
+			}
+		}
+		LTB_semi_agrarian_economy_1 = {
+			picture = generic_production_bonus
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		LTB_semi_agrarian_economy_2 = {
+			picture = generic_production_bonus
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		LTB_semi_agrarian_economy_3 = {
+			picture = generic_production_bonus
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		LTB_depression_legacy = {
+			picture = generic_production_bonus
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		LTB_depression_legacy_1 = {
+			picture = generic_production_bonus
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		LTB_disorganized_army = {
+			picture = generic_army_europe_1
+			allowed = { original_tag = LTB }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.10
+				planning_speed = -0.10
+				army_attack_factor = -0.05
+				recruitable_population_factor = -0.05
+			}
+		}
 	}
 }
