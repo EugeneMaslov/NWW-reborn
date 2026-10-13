@@ -1,0 +1,8 @@
+MKN_free_industry_modifier = { #Improved by industry branch focuses via variables
+	enable = { always = yes }
+	icon = GFX_idea_eng_spirit_of_the_industrial_revolution
+	custom_modifier_tooltip = MKN_free_industry_tt
+	industrial_capacity_factory = MKN_fi_capacity
+	production_speed_buildings_factor = MKN_fi_construction
+	research_speed_factor = MKN_fi_research
+}

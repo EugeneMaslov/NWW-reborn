@@ -9,7 +9,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-capital = 193 #Kiev
+capital = 202 #Kyiv
 
 oob = "UKR_1936"
 

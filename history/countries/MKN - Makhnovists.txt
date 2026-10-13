@@ -1,3 +1,7 @@
+add_ideas = {
+	MKN_anarchic_economy_idea
+}
+
 capital = 200
 set_oob = "MKN_1936"
 set_research_slots = 3
