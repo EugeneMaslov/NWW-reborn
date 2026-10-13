@@ -1,6 +1,14 @@
 focus_tree = {
 	id = LTB_focus
 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LTB
+		}
+	}
+
 	# ================= UNION BRANCH =================
 	focus = {
 		id = LTB_consolidate_the_union
@@ -137,14 +145,6 @@ focus_tree = {
 				has_completed_focus = LTB_mobilize_the_sauliai
 			}
 		}
-		x = 14
-		y = 6
-		cost = 5
-		completion_reward = {
-			add_political_power = -100
-			country_event = { id = ltb.104 days = 1 }
-		}
-	}
 		x = 14
 		y = 6
 		cost = 5
