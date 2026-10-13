@@ -27,3 +27,8 @@ create_country_leader = {
 	ideology = oligarchism
 	traits = { }
 }
+
+recruit_character = NWW_BYE_anton_luckievich
+recruit_character = NWW_BYE_vaclaus_lastouski
+recruit_character = NWW_BYE_radaslau_astrouski
+recruit_character = NWW_BYE_stanislau_bulak_balachowicz

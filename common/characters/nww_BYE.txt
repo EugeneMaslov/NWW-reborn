@@ -1,0 +1,55 @@
+characters = {
+	NWW_BYE_anton_luckievich = {
+		name = "Anton Luckievich"
+		portraits = {
+			civilian = { large = GFX_Portrait_LTB_ales_garun }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_BYE_Anton_Luckievich
+			cost = 150
+			allowed = { original_tag = BYE }
+			traits = { silent_workhorse }
+		}
+	}
+	NWW_BYE_vaclaus_lastouski = {
+		name = "Vaclaus Lastouski"
+		portraits = {
+			civilian = { large = GFX_Portrait_lastouski }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_BYE_Vaclaus_Lastouski
+			cost = 150
+			allowed = { original_tag = BYE }
+			traits = { popular_figurehead }
+		}
+	}
+	NWW_BYE_radaslau_astrouski = {
+		name = "Radaslau Astrouski"
+		portraits = {
+			civilian = { large = GFX_Portrait_LTB_anton_levitsky }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_BYE_Radaslau_Astrouski
+			cost = 150
+			allowed = { original_tag = BYE }
+			traits = { fascist_demagogue }
+		}
+	}
+	NWW_BYE_stanislau_bulak_balachowicz = {
+		name = "Stanislau Bulak-Balachowicz"
+		portraits = {
+			army = { large = GFX_Portrait_LTB_matvei_belyatcky }
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = { cavalry_leader }
+		}
+	}
+}

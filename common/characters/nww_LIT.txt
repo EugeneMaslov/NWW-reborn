@@ -1,0 +1,55 @@
+characters = {
+	NWW_LIT_augustinas_voldemaras = {
+		name = "Augustinas Voldemaras"
+		portraits = {
+			civilian = { large = GFX_portrait_LIT_augustinas_voldemaras }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LIT_Augustinas_Voldemaras
+			cost = 150
+			allowed = { original_tag = LIT }
+			traits = { fascist_demagogue }
+		}
+	}
+	NWW_LIT_ernestas_galvanauskas = {
+		name = "Ernestas Galvanauskas"
+		portraits = {
+			civilian = { large = GFX_Portrait_lithuania_antanas_smetona }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LIT_Ernestas_Galvanauskas
+			cost = 150
+			allowed = { original_tag = LIT }
+			traits = { silent_workhorse }
+		}
+	}
+	NWW_LIT_kazys_skirpa = {
+		name = "Kazys Skirpa"
+		portraits = {
+			civilian = { large = GFX_portrait_LIT_augustinas_voldemaras }
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NWW_LIT_Kazys_Skirpa
+			cost = 150
+			allowed = { original_tag = LIT }
+			traits = { army_chief_defensive_2 }
+		}
+	}
+	NWW_LIT_stasys_rastikis = {
+		name = "Stasys Rastikis"
+		portraits = {
+			army = { large = GFX_portrait_LIT_augustinas_voldemaras }
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_leader }
+		}
+	}
+}

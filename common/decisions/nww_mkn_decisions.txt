@@ -12,8 +12,6 @@ MKN_border_raids = {
 
 		visible = {
 			tag = MKN
-			has_completed_focus = MKN_border_tensions
-			exists = UKR
 		}
 
 		days_remove = 0
