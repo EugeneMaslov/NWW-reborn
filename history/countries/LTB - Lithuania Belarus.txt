@@ -96,3 +96,7 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
+
+recruit_character = NWW_LTB_ales_garun
+recruit_character = NWW_LTB_michael_zaretchky
+recruit_character = NWW_LTB_ivan_melezh

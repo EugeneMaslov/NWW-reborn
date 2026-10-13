@@ -1,19 +1,11 @@
 focus_tree = {
 	id = LTB_focus
 
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = LTB
-		}
-	}
-
 	# ================= UNION BRANCH =================
 	focus = {
 		id = LTB_consolidate_the_union
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 10
+		x = 14
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -25,7 +17,7 @@ focus_tree = {
 		id = LTB_rebuild_the_bridge
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = LTB_consolidate_the_union }
-		x = 10
+		x = 14
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -41,7 +33,7 @@ focus_tree = {
 		id = LTB_baltic_bridgehead
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_rebuild_the_bridge }
-		x = 10
+		x = 14
 		y = 4
 		cost = 5
 		completion_reward = {
@@ -58,7 +50,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = LTB_consolidate_the_union }
 		mutually_exclusive = { focus = LTB_kaunas_first }
-		x = 6
+		x = 10
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -73,7 +65,7 @@ focus_tree = {
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_consolidate_the_union }
 		mutually_exclusive = { focus = LTB_the_vilnius_compromise }
-		x = 14
+		x = 18
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -86,7 +78,7 @@ focus_tree = {
 		id = LTB_belarusian_schools
 		icon = GFX_focus_research
 		prerequisite = { focus = LTB_the_vilnius_compromise }
-		x = 4
+		x = 8
 		y = 4
 		cost = 5
 		completion_reward = {
@@ -102,7 +94,7 @@ focus_tree = {
 		id = LTB_land_for_the_tillers
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_the_vilnius_compromise }
-		x = 6
+		x = 10
 		y = 4
 		cost = 5
 		completion_reward = {
@@ -114,7 +106,7 @@ focus_tree = {
 		id = LTB_the_seimas_of_kaunas
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LTB_kaunas_first }
-		x = 14
+		x = 18
 		y = 4
 		cost = 5
 		completion_reward = {
@@ -126,8 +118,8 @@ focus_tree = {
 		id = LTB_mobilize_the_sauliai
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_the_seimas_of_kaunas }
-		x = 16
-		y = 4
+		x = 22
+		y = 6
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
@@ -145,7 +137,15 @@ focus_tree = {
 				has_completed_focus = LTB_mobilize_the_sauliai
 			}
 		}
-		x = 10
+		x = 14
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_political_power = -100
+			country_event = { id = ltb.104 days = 1 }
+		}
+	}
+		x = 14
 		y = 6
 		cost = 5
 		completion_reward = {
@@ -158,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = LTB_union_general_staff
 		icon = GFX_focus_generic_army_doctrines_2
-		x = 20
+		x = 4
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -170,8 +170,8 @@ focus_tree = {
 		id = LTB_the_minsk_school
 		icon = GFX_focus_generic_army_doctrines_2
 		prerequisite = { focus = LTB_union_general_staff }
-		x = 18
-		y = 1
+		x = 2
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -185,8 +185,8 @@ focus_tree = {
 		id = LTB_timoshenkos_doctrine
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_union_general_staff }
-		x = 20
-		y = 1
+		x = 4
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -200,8 +200,8 @@ focus_tree = {
 		id = LTB_officers_of_two_nations
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_union_general_staff }
-		x = 22
-		y = 1
+		x = 6
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_manpower = 50000
@@ -212,8 +212,8 @@ focus_tree = {
 		id = LTB_fortify_the_dvina
 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = LTB_timoshenkos_doctrine }
-		x = 20
-		y = 2
+		x = 4
+		y = 4
 		cost = 10
 		completion_reward = {
 			army_experience = 20
@@ -229,7 +229,7 @@ focus_tree = {
 	focus = {
 		id = LTB_minsk_arsenal_works
 		icon = GFX_focus_generic_industry_1
-		x = 30
+		x = 24
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -245,8 +245,8 @@ focus_tree = {
 		id = LTB_electrify_the_union
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = LTB_minsk_arsenal_works }
-		x = 28
-		y = 1
+		x = 22
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_political_power = 80
@@ -260,8 +260,8 @@ focus_tree = {
 		id = LTB_neman_trade_company
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = LTB_minsk_arsenal_works }
-		x = 30
-		y = 1
+		x = 24
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -276,8 +276,8 @@ focus_tree = {
 		id = LTB_workers_of_minsk_and_kaunas
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_minsk_arsenal_works }
-		x = 32
-		y = 1
+		x = 26
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -292,7 +292,7 @@ focus_tree = {
 	focus = {
 		id = LTB_balance_between_giants
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 40
+		x = 34
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -303,8 +303,8 @@ focus_tree = {
 		id = LTB_overture_to_moscow
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = LTB_balance_between_giants }
-		x = 38
-		y = 1
+		x = 32
+		y = 2
 		cost = 10
 		completion_reward = {
 			add_political_power = 50
@@ -320,8 +320,8 @@ focus_tree = {
 		id = LTB_the_polish_question
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_balance_between_giants }
-		x = 40
-		y = 1
+		x = 34
+		y = 2
 		cost = 10
 		completion_reward = {
 			army_experience = 25
@@ -336,8 +336,8 @@ focus_tree = {
 		id = LTB_german_engineers
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = LTB_balance_between_giants }
-		x = 42
-		y = 1
+		x = 36
+		y = 2
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -356,7 +356,7 @@ focus_tree = {
 	focus = {
 		id = LTB_observe_the_skies
 		icon = GFX_focus_generic_air_bases
-		x = 46
+		x = 42
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -368,8 +368,8 @@ focus_tree = {
 		id = LTB_kaunas_air_club
 		icon = GFX_focus_generic_air_carrier
 		prerequisite = { focus = LTB_observe_the_skies }
-		x = 45
-		y = 1
+		x = 40
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -384,8 +384,8 @@ focus_tree = {
 		id = LTB_vitebsk_airfield
 		icon = GFX_focus_generic_air_bases
 		prerequisite = { focus = LTB_observe_the_skies }
-		x = 47
-		y = 1
+		x = 44
+		y = 2
 		cost = 5
 		completion_reward = {
 			air_experience = 20
@@ -403,8 +403,8 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LTB_face_the_crisis }
 		available = { has_country_flag = LTB_union_preserved }
-		x = 8
-		y = 4
+		x = 16
+		y = 8
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
@@ -415,8 +415,8 @@ focus_tree = {
 		id = LTB_the_pbmat_pact
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LTB_the_union_endures }
-		x = 6
-		y = 5
+		x = 12
+		y = 12
 		cost = 10
 		completion_reward = {
 			create_faction = "PBMAT"
@@ -427,8 +427,8 @@ focus_tree = {
 		id = LTB_fortress_vitebsk
 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = LTB_the_union_endures }
-		x = 8
-		y = 5
+		x = 16
+		y = 12
 		cost = 5
 		completion_reward = {
 			army_experience = 25
@@ -443,8 +443,8 @@ focus_tree = {
 		id = LTB_two_nations_one_voice
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = LTB_the_union_endures }
-		x = 10
-		y = 5
+		x = 20
+		y = 12
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -457,11 +457,12 @@ focus_tree = {
 		}
 	}
 
+	focus = {
 		id = LTB_the_1926_legacy
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LTB_two_nations_one_voice }
-		x = 10
-		y = 6
+		x = 20
+		y = 14
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -472,7 +473,7 @@ focus_tree = {
 		id = LTB_cavalry_inspectorate
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_fortify_the_dvina }
-		x = 18
+		x = 4
 		y = 6
 		cost = 5
 		completion_reward = {
@@ -484,8 +485,8 @@ focus_tree = {
 		id = LTB_border_guard_corps
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_cavalry_inspectorate }
-		x = 20
-		y = 6
+		x = 0
+		y = 8
 		cost = 5
 		completion_reward = {
 			add_manpower = 80000
@@ -496,8 +497,8 @@ focus_tree = {
 		id = LTB_vilnius_radio
 		icon = GFX_focus_research
 		prerequisite = { focus = LTB_neman_trade_company }
-		x = 28
-		y = 6
+		x = 24
+		y = 4
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -512,7 +513,7 @@ focus_tree = {
 		id = LTB_kaunas_textile
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = LTB_vilnius_radio }
-		x = 30
+		x = 26
 		y = 6
 		cost = 5
 		completion_reward = {
@@ -527,10 +528,10 @@ focus_tree = {
 	focus = {
 		id = LTB_crown_the_regency
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_consolidate_the_union }
+		prerequisite = { focus = LTB_face_the_crisis }
 		available = { date > 1937.1.1 }
-		x = 50
-		y = 0
+		x = 4
+		y = 8
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = neutrality }
@@ -543,8 +544,8 @@ focus_tree = {
 		id = LTB_restore_the_grand_duchy
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_crown_the_regency }
-		x = 49
-		y = 1
+		x = 2
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_war_support = 0.1
@@ -555,8 +556,8 @@ focus_tree = {
 		id = LTB_order_and_tradition
 		icon = GFX_focus_generic_army_doctrines_2
 		prerequisite = { focus = LTB_crown_the_regency }
-		x = 51
-		y = 1
+		x = 6
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -566,10 +567,10 @@ focus_tree = {
 	focus = {
 		id = LTB_free_elections_now
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_consolidate_the_union }
+		prerequisite = { focus = LTB_face_the_crisis }
 		available = { date > 1937.1.1 }
-		x = 54
-		y = 0
+		x = 12
+		y = 8
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = democratic }
@@ -582,8 +583,8 @@ focus_tree = {
 		id = LTB_landtag_democracy
 		icon = GFX_focus_research
 		prerequisite = { focus = LTB_free_elections_now }
-		x = 53
-		y = 1
+		x = 10
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -598,8 +599,8 @@ focus_tree = {
 		id = LTB_free_press_free_union
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = LTB_free_elections_now }
-		x = 55
-		y = 1
+		x = 14
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
@@ -609,10 +610,10 @@ focus_tree = {
 	focus = {
 		id = LTB_the_iron_wolf_calls
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_consolidate_the_union }
+		prerequisite = { focus = LTB_face_the_crisis }
 		available = { date > 1937.1.1 }
-		x = 58
-		y = 0
+		x = 20
+		y = 8
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = fascism }
@@ -625,8 +626,8 @@ focus_tree = {
 		id = LTB_steel_and_blood
 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = LTB_the_iron_wolf_calls }
-		x = 57
-		y = 1
+		x = 18
+		y = 10
 		cost = 5
 		completion_reward = {
 			army_experience = 30
@@ -641,8 +642,8 @@ focus_tree = {
 		id = LTB_one_people_one_leader
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = LTB_the_iron_wolf_calls }
-		x = 59
-		y = 1
+		x = 22
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
@@ -652,10 +653,10 @@ focus_tree = {
 	focus = {
 		id = LTB_red_dawn_over_minsk
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_consolidate_the_union }
+		prerequisite = { focus = LTB_face_the_crisis }
 		available = { date > 1937.1.1 }
-		x = 62
-		y = 0
+		x = 28
+		y = 8
 		cost = 10
 		completion_reward = {
 			set_politics = { ruling_party = communism }
@@ -668,8 +669,8 @@ focus_tree = {
 		id = LTB_soviets_of_workers
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = LTB_red_dawn_over_minsk }
-		x = 61
-		y = 1
+		x = 26
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -684,8 +685,8 @@ focus_tree = {
 		id = LTB_international_brigades
 		icon = GFX_focus_generic_army_attack
 		prerequisite = { focus = LTB_red_dawn_over_minsk }
-		x = 63
-		y = 1
+		x = 30
+		y = 10
 		cost = 5
 		completion_reward = {
 			army_experience = 25

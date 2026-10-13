@@ -1,0 +1,41 @@
+characters = {
+	NWW_LTB_ales_garun = {
+		name = "Ales Garun"
+		portraits = {
+			civilian = { large = GFX_Portrait_LTB_ales_garun }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LTB_Ales_Garun
+			cost = 150
+			allowed = { original_tag = LTB }
+			traits = { silent_workhorse }
+		}
+	}
+	NWW_LTB_michael_zaretchky = {
+		name = "Michael Zaretchky"
+		portraits = {
+			civilian = { large = GFX_Portrait_LTB_michael_zaretchky }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LTB_Michael_Zaretchky
+			cost = 150
+			allowed = { original_tag = LTB }
+			traits = { popular_figurehead }
+		}
+	}
+	NWW_LTB_ivan_melezh = {
+		name = "Ivan Melezh"
+		portraits = {
+			civilian = { large = GFX_Portrait_LTB_ivan_melezh }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LTB_Ivan_Melezh
+			cost = 150
+			allowed = { original_tag = LTB }
+			traits = { communist_revolutionary }
+		}
+	}
+}
