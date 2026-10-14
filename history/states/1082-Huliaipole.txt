@@ -1,0 +1,11 @@
+# MKN-owned split from state 200. Province adjacency checked against installed provinces.bmp.
+state = {
+ id = 1082 name = STATE_1082 manpower = 300000 state_category = rural
+ history = {
+  owner = MKN add_core_of = MKN add_core_of = SOV add_core_of = UKR
+  victory_points = { 429 1 }
+  buildings = { infrastructure = 3 }
+ }
+ provinces = { 429 9571 }
+ local_supplies = 0.0
+}

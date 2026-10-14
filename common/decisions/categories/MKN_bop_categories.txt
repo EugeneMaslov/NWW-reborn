@@ -1,6 +1,19 @@
-MKN_bop_category = {
-	icon = GFX_decision_category_power_struggle
-	allowed = { original_tag = MKN }
-	priority = 90
-	visible = { has_power_balance = { id = MKN_power_balance } }
+MKN_bop_decisions_category = {
+ icon = GFX_decision_category_power_struggle
+ allowed = { original_tag = MKN }
+ priority = 90
+ visible = { has_power_balance = { id = MKN_power_balance } }
+}
+MKN_succession_crisis_category = {
+ icon = generic_political_actions
+ allowed = { tag = MKN }
+ priority = 100
+ visible = { has_country_flag = mkn_batko_departed NOT = { has_country_flag = MKN_crisis_legacy_settled } }
+}
+MKN_steppe_operations_category = {
+ icon = generic_guerilla_base
+ allowed = { tag = MKN }
+ visible = {
+  OR = { has_completed_focus = MKN_black_expansionism has_completed_focus = MKN_propaganda_by_deed has_completed_focus = MKN_railway_sabotage has_completed_focus = MKN_black_international has_completed_focus = MKN_embassy_to_kharkov }
+ }
 }

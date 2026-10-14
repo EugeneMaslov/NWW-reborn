@@ -1,0 +1,21 @@
+# Historical MKN prepares the congress, builds a red mandate and averts collapse.
+MKN_historical = {
+ name = MKN_historical
+ desc = MKN_historical_desc
+ allowed = { tag = MKN }
+ enable = { is_historical_focus_on = yes has_country_flag = MKN_crisis_enabled }
+ abort = { has_country_flag = MKN_collapse_started }
+ ai_national_focuses = {
+  MKN_congress_1936
+  MKN_question_of_supply
+  MKN_question_of_discipline
+  MKN_emergency_revkom
+  MKN_purge_irreconcilables
+  MKN_embassy_to_kharkov
+  MKN_integrate_steel_lines
+  MKN_red_military_specialists
+  MKN_tractors_for_grain
+  MKN_anti_imperialist_front
+  MKN_the_fatal_plenum
+ }
+}
