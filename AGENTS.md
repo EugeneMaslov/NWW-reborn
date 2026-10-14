@@ -1,0 +1,14 @@
+# NWW Reborn: working rules
+
+- Lore: the First World War did not happen. Preserve the LTB compromise, dissolution, successor tags and existing focus/event IDs when extending content.
+- Before designing or changing mechanics, inspect working examples in the installed HOI4 and its DLC. Prefer DLC patterns for national focuses, event choices, advisors, MIO traits, technology sharing and timed decisions. Record the concrete reference files in the change notes. This is an explicit user preference for future work.
+- Also consult the legacy LTB tree and its localization/ideas in `C:/Users/Eugene/Documents/Paradox Interactive/Hearts of Iron IV/mod/noworldwarzhive`. Adapt interesting concepts to the current lore and balance; do not blindly copy old syntax, huge factory rewards or obsolete technology effects.
+- Use the installed game's documentation and definitions for the actual target version, including its resource/energy system. Validate effect, trigger, modifier and MIO-stat names.
+- Treat tooltip evaluation as part of correctness. Keep election and ruling-party changes in a complete `set_politics` block, following the DLC example. Do not claim a runtime crash is verified fixed without a game reproduction.
+- Advisor canvases are 65x67, but their visible artwork must fit inside the card with transparent bottom clearance. Check the occupied alpha bounds, not just the texture dimensions. Keep large leader portraits separate.
+- Keep continuous-focus panels well below the last focus row and check coordinates after adding content.
+- Avoid prerequisite connectors crossing unrelated focus branches. For distant cross-branch gates such as LTB's compromise requirement for the general staff, use explicit `has_completed_focus` conditions in `available`, retain the gameplay restrictions and validate them.
+- LTB army reorganisation must require the Vilnius compromise and a resolved crisis with the Union preserved. Political transitions require at least 40% popularity for the target party, a viable way to build that popularity and preparatory focuses; retain substantive follow-up institutions and policy choices.
+- Give local enterprises distinct roles and focus-gated progression. AAT MIOs and non-AAT designers/industrial concerns should have useful, coherent alternatives; preserve generic template traits when extending MIOs.
+- User preferences authorize project-local technical resizing/cropping and DDS conversion of UI assets. Use imagegen for new or creatively redrawn raster artwork; preserve reference identity and save project-bound originals and prompts in the workspace.
+- Run `python tools/validate_country_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"` and `git diff --check` after content changes. Static validation does not replace checking a new campaign and a fresh game log.

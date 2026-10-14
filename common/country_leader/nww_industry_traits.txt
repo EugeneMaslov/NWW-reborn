@@ -1,0 +1,61 @@
+leader_traits = {
+	NWW_LTB_machine_tool_concern = {
+		random = no
+		sprite = 11
+		production_speed_industrial_complex_factor = 0.04
+		factory_energy_consumption = -0.02
+	}
+	NWW_LTB_machine_tool_concern_advanced = {
+		random = no
+		sprite = 11
+		production_speed_industrial_complex_factor = 0.08
+		production_factory_efficiency_gain_factor = 0.05
+		factory_energy_consumption = -0.04
+	}
+	NWW_LTB_electronics_laboratories = {
+		random = no
+		sprite = 11
+		research_speed_factor = 0.01
+	}
+	NWW_LTB_university_laboratories = {
+		random = no
+		sprite = 11
+		research_speed_factor = 0.03
+		production_factory_max_efficiency_factor = 0.03
+	}
+	NWW_LTB_belmash_designer_specialization = {
+		random = no
+		sprite = 11
+		army_armor_speed_factor = 0.03
+	}
+	NWW_LTB_orshmash_designer_specialization = {
+		random = no
+		sprite = 11
+		production_factory_efficiency_gain_factor = 0.03
+	}
+	NWW_LTB_mogilev_designer_specialization = {
+		random = no
+		sprite = 11
+		army_attack_factor = 0.02
+	}
+	NWW_LTB_minsk_air_designer_specialization = {
+		random = no
+		sprite = 11
+		air_agility_factor = 0.03
+	}
+	NWW_LTB_kurland_air_designer_specialization = {
+		random = no
+		sprite = 11
+		air_range_factor = 0.03
+	}
+	NWW_LTB_kaunas_shipyards_designer_specialization = {
+		random = no
+		sprite = 11
+		industrial_capacity_dockyard = 0.03
+	}
+	NWW_LTB_belaz_designer_specialization = {
+		random = no
+		sprite = 11
+		supply_consumption_factor = -0.03
+	}
+}

@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_Portrait_MKN_viktor_belash
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_viktor_belash
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_viktor_belash.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_fedir_shchus
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_fedir_shchus
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_fedir_shchus.dds"
+	}
+}

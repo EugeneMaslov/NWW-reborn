@@ -1,0 +1,225 @@
+characters = {
+	NWW_MKN_viktor_belash = {
+		name = NWW_MKN_viktor_belash
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MKN_viktor_belash
+				small = GFX_idea_MKN_viktor_belash
+			}
+			army = {
+				large = GFX_Portrait_MKN_viktor_belash
+				small = GFX_idea_MKN_viktor_belash
+			}
+			navy = {
+				large = GFX_Portrait_MKN_viktor_belash
+				small = GFX_idea_MKN_viktor_belash
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NWW_MKN_viktor_belash_army_chief
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	NWW_MKN_fedir_shchus = {
+		name = NWW_MKN_fedir_shchus
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MKN_fedir_shchus
+				small = GFX_idea_MKN_fedir_shchus
+			}
+			army = {
+				large = GFX_Portrait_MKN_fedir_shchus
+				small = GFX_idea_MKN_fedir_shchus
+			}
+			navy = {
+				large = GFX_Portrait_MKN_fedir_shchus
+				small = GFX_idea_MKN_fedir_shchus
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NWW_MKN_fedir_shchus_navy_chief
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_fedir_shchus_high_command
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				army_cavalry_2
+			}
+			ledger = army
+		}
+		corps_commander = {
+			traits = {
+				cavalry_leader
+			}
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	NWW_MKN_volin = {
+		name = NWW_MKN_volin
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_volin
+				small = GFX_idea_volin
+			}
+			army = {
+				large = GFX_Portrait_volin
+				small = GFX_idea_volin
+			}
+			navy = {
+				large = GFX_Portrait_volin
+				small = GFX_idea_volin
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_MKN_volin_political_advisor
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	NWW_MKN_makhno = {
+		name = NWW_MKN_makhno
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_makhno
+				small = GFX_idea_makhno
+			}
+			army = {
+				large = GFX_Portrait_makhno
+				small = GFX_idea_makhno
+			}
+			navy = {
+				large = GFX_Portrait_makhno
+				small = GFX_idea_makhno
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_makhno_high_command
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				army_guerilla_organizer_2
+			}
+			ledger = army
+		}
+	}
+	NWW_MKN_peter_arshinov = {
+		name = NWW_MKN_peter_arshinov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_MKN_peter_arshinov
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	NWW_MKN_school_delegate = {
+		name = NWW_MKN_school_delegate
+		portraits = {
+			army = {
+				small = GFX_idea_generic_air_europe_2
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NWW_MKN_school_delegate
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				air_chief_safety_2
+			}
+		}
+	}
+	NWW_MKN_logistics_delegate = {
+		name = NWW_MKN_logistics_delegate
+		portraits = {
+			army = {
+				small = GFX_idea_generic_army_europe_3
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_logistics_delegate
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				army_logistics_2
+			}
+			ledger = army
+		}
+	}
+	NWW_MKN_military_theorist = {
+		name = NWW_MKN_military_theorist
+		portraits = {
+			army = {
+				small = GFX_idea_generic_army_europe_4
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = NWW_MKN_military_theorist
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			traits = {
+				military_theorist
+			}
+			ledger = army
+		}
+	}
+}

@@ -1,0 +1,323 @@
+ideas = {
+	tank_manufacturer = {
+		designer = yes
+		LTB_belmash_company = {
+			picture = belmashtank
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_belmash_tank_program
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				fast_tank_manufacturer
+				NWW_LTB_belmash_designer_specialization
+			}
+		}
+		MKN_kommunar_company = {
+			picture = generic_tank_manufacturer_1
+			cost = 150
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_steel_horses
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				fast_tank_manufacturer
+			}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		LTB_orshmash_company = {
+			picture = orshmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_minsk_arsenal_works
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				infantry_equipment_manufacturer
+				NWW_LTB_orshmash_designer_specialization
+			}
+		}
+		LTB_mogilev_company = {
+			picture = mogilevmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_armaments_plant
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = {
+				artillery_manufacturer
+				NWW_LTB_mogilev_designer_specialization
+			}
+		}
+		LTB_belaz_company = {
+			picture = minskmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_minsk_machine_works
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = {
+				motorized_equipment_manufacturer
+				NWW_LTB_belaz_designer_specialization
+			}
+		}
+		MKN_artillery_works_company = {
+			picture = generic_artillery_manufacturer_1
+			cost = 150
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_artillery_artels
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = {
+				artillery_manufacturer
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		LTB_minsk_air_company = {
+			picture = minskmashair
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_minsk_aircraft_works
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				light_aircraft_manufacturer
+				NWW_LTB_minsk_air_designer_specialization
+			}
+		}
+		LTB_kurland_air_company = {
+			picture = kurlandmashair
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_army_air_support
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				naval_aircraft_manufacturer
+				NWW_LTB_kurland_air_designer_specialization
+			}
+		}
+		MKN_air_artels_company = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_aircraft_artels
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				light_aircraft_manufacturer
+			}
+		}
+	}
+	naval_manufacturer = {
+		designer = yes
+		LTB_kaunas_shipyards_company = {
+			picture = kaunas
+			cost = 150
+			allowed = {
+				original_tag = LTB
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = LTB_memel_shipyards
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				naval_manufacturer
+				NWW_LTB_kaunas_shipyards_designer_specialization
+			}
+		}
+		MKN_kherson_works_company = {
+			picture = generic_naval_manufacturer_1
+			cost = 150
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_kherson_shipyard
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				naval_manufacturer
+			}
+		}
+	}
+	industrial_concern = {
+		LTB_minsk_industry_company = {
+			picture = minskmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			available = {
+				has_completed_focus = LTB_rebuild_the_bridge
+				NOT = {
+					has_completed_focus = LTB_precision_engineering
+				}
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = {
+				industrial_concern
+				NWW_LTB_machine_tool_concern
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = LTB_precision_engineering
+				}
+			}
+		}
+		LTB_vilnius_university_concern_company = {
+			picture = vilenmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			available = {
+				has_completed_focus = LTB_vilnius_university
+				NOT = {
+					has_completed_focus = LTB_minsk_university
+				}
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+			traits = {
+				electronics_concern
+				NWW_LTB_electronics_laboratories
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = LTB_minsk_university
+				}
+			}
+		}
+		LTB_minsk_industry_company_advanced = {
+			picture = minskmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				industrial_concern
+				NWW_LTB_machine_tool_concern_advanced
+			}
+			available = {
+				has_completed_focus = LTB_precision_engineering
+			}
+			research_bonus = {
+				industry = 0.20
+			}
+			visible = {
+				has_completed_focus = LTB_precision_engineering
+			}
+		}
+		LTB_vilnius_university_concern_company_advanced = {
+			picture = vilenmash
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				electronics_concern
+				NWW_LTB_university_laboratories
+			}
+			available = {
+				has_completed_focus = LTB_minsk_university
+			}
+			research_bonus = {
+				electronics = 0.20
+				industry = 0.05
+			}
+			visible = {
+				has_completed_focus = LTB_minsk_university
+			}
+		}
+	}
+}

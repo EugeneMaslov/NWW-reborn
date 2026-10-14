@@ -1,10 +1,13 @@
 LTB_national_question = {
-	icon = GFX_decision_generic_political_pressure
+	icon = generic_political_actions
 	visible = {
-		OR = {
-			tag = LTB
-			tag = LIT
-			tag = BYE
-		}
+		tag = LTB
+	}
+}
+LTB_political_mandate = {
+	icon = generic_political_actions
+	visible = {
+		tag = LTB
+		has_completed_focus = LTB_public_political_debate
 	}
 }

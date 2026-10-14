@@ -2,40 +2,321 @@ characters = {
 	NWW_LTB_ales_garun = {
 		name = "Ales Garun"
 		portraits = {
-			civilian = { large = GFX_Portrait_LTB_ales_garun }
+			civilian = {
+				large = GFX_Portrait_LTB_ales_garun
+				small = GFX_idea_LTB_ales_garun
+			}
+			army = {
+				small = GFX_idea_LTB_ales_garun
+			}
 		}
 		advisor = {
 			slot = political_advisor
 			idea_token = NWW_LTB_Ales_Garun
 			cost = 150
-			allowed = { original_tag = LTB }
-			traits = { silent_workhorse }
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				silent_workhorse
+			}
 		}
 	}
 	NWW_LTB_michael_zaretchky = {
 		name = "Michael Zaretchky"
 		portraits = {
-			civilian = { large = GFX_Portrait_LTB_michael_zaretchky }
+			civilian = {
+				large = GFX_Portrait_LTB_michael_zaretchky
+				small = GFX_idea_LTB_michael_zaretchky
+			}
+			army = {
+				small = GFX_idea_LTB_michael_zaretchky
+			}
 		}
 		advisor = {
 			slot = political_advisor
 			idea_token = NWW_LTB_Michael_Zaretchky
 			cost = 150
-			allowed = { original_tag = LTB }
-			traits = { popular_figurehead }
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				popular_figurehead
+			}
 		}
 	}
 	NWW_LTB_ivan_melezh = {
 		name = "Ivan Melezh"
 		portraits = {
-			civilian = { large = GFX_Portrait_LTB_ivan_melezh }
+			civilian = {
+				large = GFX_Portrait_LTB_ivan_melezh
+				small = GFX_idea_LTB_ivan_melezh
+			}
+			army = {
+				small = GFX_idea_LTB_ivan_melezh
+			}
 		}
 		advisor = {
 			slot = political_advisor
 			idea_token = NWW_LTB_Ivan_Melezh
 			cost = 150
-			allowed = { original_tag = LTB }
-			traits = { communist_revolutionary }
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+	NWW_LTB_dima_timoshenko = {
+		name = NWW_LTB_dima_timoshenko
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_LTB_dima_timoshenko_land
+				small = GFX_idea_LTB_dima_timoshenko_land
+			}
+			army = {
+				large = GFX_Portrait_LTB_dima_timoshenko_land
+				small = GFX_idea_LTB_dima_timoshenko_land
+			}
+			navy = {
+				large = GFX_Portrait_LTB_dima_timoshenko_land
+				small = GFX_idea_LTB_dima_timoshenko_land
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NWW_LTB_dima_timoshenko_army_chief
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				army_chief_reform_2
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	NWW_LTB_matvei_belyatsky = {
+		name = NWW_LTB_matvei_belyatsky
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_LTB_matvei_belyatcky
+				small = GFX_idea_LTB_matvei_belyatcky
+			}
+			army = {
+				large = GFX_Portrait_LTB_matvei_belyatcky
+				small = GFX_idea_LTB_matvei_belyatcky
+			}
+			navy = {
+				large = GFX_Portrait_LTB_matvei_belyatcky
+				small = GFX_idea_LTB_matvei_belyatcky
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_LTB_matvei_belyatsky_high_command
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				army_regrouping_2
+			}
+			ledger = army
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	NWW_LTB_alexey_abramienka = {
+		name = NWW_LTB_alexey_abramienka
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_LTB_aleksey_abramienka
+				small = GFX_idea_LTB_aleksey_abramienka
+			}
+			army = {
+				large = GFX_Portrait_LTB_aleksey_abramienka
+				small = GFX_idea_LTB_aleksey_abramienka
+			}
+			navy = {
+				large = GFX_Portrait_LTB_aleksey_abramienka
+				small = GFX_idea_LTB_aleksey_abramienka
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_LTB_alexey_abramienka_high_command
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				army_infantry_2
+			}
+			ledger = army
+		}
+		corps_commander = {
+			traits = {
+				infantry_leader
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	NWW_LTB_Andrei_Krichev = {
+		name = NWW_LTB_Andrei_Krichev
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LTB_Andrei_Krichev
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	NWW_LTB_Rim_Kolesnikov = {
+		name = NWW_LTB_Rim_Kolesnikov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_3
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LTB_Rim_Kolesnikov
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				democratic_reformer
+			}
+		}
+	}
+	NWW_LTB_Parel_Vichivich = {
+		name = NWW_LTB_Parel_Vichivich
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_4
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_LTB_Parel_Vichivich
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				fascist_demagogue
+			}
+		}
+	}
+	NWW_LTB_Alexandr_Maslov = {
+		name = NWW_LTB_Alexandr_Maslov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_army_europe_1
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = NWW_LTB_Alexandr_Maslov
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				military_theorist
+			}
+			ledger = army
+		}
+	}
+	NWW_LTB_Pavel_Drachunov = {
+		name = NWW_LTB_Pavel_Drachunov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_navy_europe_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NWW_LTB_Pavel_Drachunov
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+		}
+	}
+	NWW_LTB_Nikita_Novikov = {
+		name = NWW_LTB_Nikita_Novikov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_air_europe_1
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NWW_LTB_Nikita_Novikov
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				air_chief_reform_2
+			}
+		}
+	}
+	NWW_LTB_Pavel_Bursov = {
+		name = NWW_LTB_Pavel_Bursov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_army_europe_3
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_LTB_Pavel_Bursov
+			cost = 150
+			allowed = {
+				original_tag = LTB
+			}
+			traits = {
+				army_logistics_2
+			}
+			ledger = army
 		}
 	}
 }

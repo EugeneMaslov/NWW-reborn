@@ -7,25 +7,20 @@ focus_tree = {
 			tag = LTB
 		}
 	}
-
-	# ================= UNION BRANCH =================
 	focus = {
 		id = LTB_consolidate_the_union
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 24
-		y = 0
 		cost = 5
 		completion_reward = {
-			set_country_flag = LTB_deadline_active
 			add_political_power = 120
 			add_stability = 0.05
 		}
+		x = 7
+		y = 0
 	}
 	focus = {
 		id = LTB_rebuild_the_bridge
 		icon = GFX_focus_generic_industry_1
-		x = 50
-		y = 0
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -34,14 +29,40 @@ focus_tree = {
 				category = industry
 			}
 			add_political_power = 70
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			11 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		x = 30
+		y = 0
 	}
 	focus = {
 		id = LTB_baltic_bridgehead
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_union_general_staff }
-		x = 58
-		y = 2
+		prerequisite = {
+			focus = LTB_union_general_staff
+		}
 		cost = 5
 		completion_reward = {
 			army_experience = 20
@@ -51,43 +72,58 @@ focus_tree = {
 				producer = LTB
 			}
 		}
+		x = 45
+		y = 3
 	}
 	focus = {
 		id = LTB_the_vilnius_compromise
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_consolidate_the_union }
-		mutually_exclusive = { focus = LTB_kaunas_first }
-		x = 22
-		y = 2
+		prerequisite = {
+			focus = LTB_consolidate_the_union
+		}
+		mutually_exclusive = {
+			focus = LTB_kaunas_first
+		}
 		cost = 10
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = LTB_unresolved_national_question
+				add_idea = LTB_vilnius_compromise
+			}
 			set_country_flag = LTB_compromise_chosen
-			remove_ideas = LTB_unresolved_national_question
-			add_ideas = LTB_vilnius_compromise
 			add_stability = 0.05
-			country_event = { id = ltb.100 days = 1 }
+			country_event = {
+				id = ltb.100
+				days = 1
+			}
 		}
+		x = 5
+		y = 1
 	}
 	focus = {
 		id = LTB_kaunas_first
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_consolidate_the_union }
-		mutually_exclusive = { focus = LTB_the_vilnius_compromise }
-		x = 26
-		y = 2
+		prerequisite = {
+			focus = LTB_consolidate_the_union
+		}
+		mutually_exclusive = {
+			focus = LTB_the_vilnius_compromise
+		}
 		cost = 10
 		completion_reward = {
 			add_ideas = LTB_kaunas_centralism
 			add_war_support = 0.1
 			army_experience = 25
 		}
+		x = 9
+		y = 1
 	}
 	focus = {
 		id = LTB_belarusian_schools
 		icon = GFX_focus_research
-		prerequisite = { focus = LTB_the_vilnius_compromise }
-		x = 20
-		y = 4
+		prerequisite = {
+			focus = LTB_the_vilnius_compromise
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -97,113 +133,137 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
+		x = 3
+		y = 2
 	}
 	focus = {
 		id = LTB_land_for_the_tillers
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = LTB_the_vilnius_compromise }
-		x = 22
-		y = 4
+		prerequisite = {
+			focus = LTB_the_vilnius_compromise
+		}
 		cost = 5
 		completion_reward = {
 			add_manpower = 40000
 			add_stability = 0.05
 		}
+		x = 5
+		y = 2
 	}
 	focus = {
 		id = LTB_the_seimas_of_kaunas
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_kaunas_first }
-		x = 26
-		y = 4
+		prerequisite = {
+			focus = LTB_kaunas_first
+		}
 		cost = 5
 		completion_reward = {
 			add_political_power = 100
 			add_war_support = 0.05
 		}
+		x = 9
+		y = 2
 	}
 	focus = {
 		id = LTB_mobilize_the_sauliai
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_the_seimas_of_kaunas }
-		x = 26
-		y = 6
+		prerequisite = {
+			focus = LTB_the_seimas_of_kaunas
+		}
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
 			army_experience = 15
 		}
+		x = 9
+		y = 3
 	}
 	focus = {
 		id = LTB_face_the_crisis
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_consolidate_the_union }
-		available = {
-			OR = {
-				has_country_flag = LTB_split_choice_available
-				AND = {
-					date > 1937.6.1
-					has_completed_focus = LTB_the_vilnius_compromise
-					OR = {
-						has_completed_focus = LTB_land_for_the_tillers
-						has_completed_focus = LTB_mobilize_the_sauliai
-					}
-				}
-			}
-		}
-		x = 24
-		y = 6
 		cost = 5
 		completion_reward = {
 			if = {
 				limit = {
 					has_completed_focus = LTB_the_vilnius_compromise
-					NOT = { has_country_flag = LTB_split_choice_available }
+					NOT = {
+						has_country_flag = LTB_split_choice_available
+					}
 				}
 				set_country_flag = LTB_union_preserved
 			}
 			else = {
 				set_country_flag = LTB_split_choice_available
-				country_event = { id = ltb.103 days = 1 }
+				country_event = {
+					id = ltb.103
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = LTB_union_preserved
+				}
+				set_country_flag = LTB_deadline_resolved
+				clr_country_flag = LTB_deadline_active
+			}
+		}
+		prerequisite = {
+			focus = LTB_land_for_the_tillers
+			focus = LTB_mobilize_the_sauliai
+		}
+		x = 7
+		y = 4
+		available = {
+			OR = {
+				has_country_flag = LTB_split_choice_available
+				date > 1936.6.1
 			}
 		}
 	}
-
-	# ================= ARMY BRANCH =================
 	focus = {
 		id = LTB_union_general_staff
 		icon = GFX_focus_generic_army_doctrines_2
-		available = { has_country_flag = LTB_union_preserved }
-		x = 54
-		y = 0
 		cost = 5
 		completion_reward = {
-			remove_ideas = LTB_disorganized_army
+			swap_ideas = {
+				remove_idea = LTB_disorganized_army
+				add_idea = LTB_union_army_tradition
+			}
 			army_experience = 25
 			add_command_power = 25
+		}
+		x = 42
+		y = 2
+		available = {
+			has_completed_focus = LTB_the_vilnius_compromise
+			has_completed_focus = LTB_face_the_crisis
+			has_country_flag = LTB_union_preserved
 		}
 	}
 	focus = {
 		id = LTB_the_minsk_school
 		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = { focus = LTB_union_general_staff }
-		x = 52
-		y = 2
+		prerequisite = {
+			focus = LTB_union_general_staff
+		}
 		cost = 5
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = NWW_land_doctrine_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
 		}
+		x = 39
+		y = 3
 	}
 	focus = {
 		id = LTB_timoshenkos_doctrine
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_union_general_staff }
-		x = 54
-		y = 2
+		prerequisite = {
+			focus = LTB_union_general_staff
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -212,25 +272,28 @@ focus_tree = {
 				category = infantry_weapons
 			}
 		}
+		x = 41
+		y = 3
 	}
 	focus = {
 		id = LTB_officers_of_two_nations
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = LTB_union_general_staff }
-		x = 56
-		y = 2
+		prerequisite = {
+			focus = LTB_union_general_staff
+		}
 		cost = 5
 		completion_reward = {
 			add_manpower = 50000
 			add_war_support = 0.05
 		}
+		x = 43
+		y = 3
 	}
 	focus = {
 		id = LTB_fortify_the_dvina
-		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = LTB_timoshenkos_doctrine }
-		x = 54
-		y = 4
+		prerequisite = {
+			focus = LTB_timoshenkos_doctrine
+		}
 		cost = 10
 		completion_reward = {
 			army_experience = 20
@@ -239,16 +302,29 @@ focus_tree = {
 				amount = 200
 				producer = LTB
 			}
+			207 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 11220
+					}
+				}
+			}
 		}
+		icon = GFX_goal_generic_defence
+		x = 45
+		y = 4
 	}
-
-	# ================= INDUSTRY BRANCH =================
 	focus = {
 		id = LTB_minsk_arsenal_works
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = LTB_rebuild_the_bridge }
-		x = 50
-		y = 2
+		prerequisite = {
+			focus = LTB_rebuild_the_bridge
+		}
 		cost = 5
 		completion_reward = {
 			add_ideas = LTB_minsk_arsenal
@@ -257,29 +333,53 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 32
+		y = 1
 	}
 	focus = {
 		id = LTB_electrify_the_union
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = LTB_minsk_arsenal_works }
-		x = 48
-		y = 4
 		cost = 5
 		completion_reward = {
 			add_political_power = 80
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 2
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
+		}
+		x = 28
+		y = 1
+		prerequisite = {
+			focus = LTB_rebuild_the_bridge
 		}
 	}
 	focus = {
 		id = LTB_neman_trade_company
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = LTB_minsk_arsenal_works }
-		x = 42
-		y = 6
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -288,14 +388,29 @@ focus_tree = {
 				category = industry
 			}
 			add_political_power = 50
+			189 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		prerequisite = {
+			focus = LTB_rebuild_the_bridge
+		}
+		x = 24
+		y = 1
 	}
 	focus = {
 		id = LTB_workers_of_minsk_and_kaunas
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = LTB_minsk_arsenal_works }
-		x = 44
-		y = 6
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -304,120 +419,174 @@ focus_tree = {
 				popularity = -0.05
 			}
 		}
+		x = 24
+		y = 4
+		prerequisite = {
+			focus = LTB_factory_reconstruction
+		}
 	}
 	focus = {
 		id = LTB_agricultural_mechanization
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = LTB_electrify_the_union }
-		x = 40
-		y = 8
+		prerequisite = {
+			focus = LTB_electrify_the_union
+		}
 		cost = 5
 		completion_reward = {
-			remove_ideas = LTB_semi_agrarian_economy
-			add_ideas = LTB_semi_agrarian_economy_1
+			swap_ideas = {
+				remove_idea = LTB_semi_agrarian_economy
+				add_idea = LTB_semi_agrarian_economy_1
+			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = industry
 			}
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
+			194 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
+		x = 28
+		y = 2
 	}
 	focus = {
 		id = LTB_cooperative_farms
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = LTB_agricultural_mechanization }
-		x = 38
-		y = 10
+		prerequisite = {
+			focus = LTB_agricultural_mechanization
+		}
 		cost = 5
 		completion_reward = {
-			remove_ideas = LTB_semi_agrarian_economy_1
-			add_ideas = LTB_semi_agrarian_economy_2
+			swap_ideas = {
+				remove_idea = LTB_semi_agrarian_economy_1
+				add_idea = LTB_semi_agrarian_economy_2
+			}
 			add_political_power = 50
 		}
+		x = 28
+		y = 3
 	}
 	focus = {
 		id = LTB_rural_electrification
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = LTB_cooperative_farms }
-		x = 42
-		y = 12
+		prerequisite = {
+			focus = LTB_cooperative_farms
+		}
 		cost = 5
 		completion_reward = {
-			remove_ideas = LTB_semi_agrarian_economy_2
-			add_ideas = LTB_semi_agrarian_economy_3
+			swap_ideas = {
+				remove_idea = LTB_semi_agrarian_economy_2
+				add_idea = LTB_semi_agrarian_economy_3
+			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = industry
 			}
+			207 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		x = 28
+		y = 4
 	}
 	focus = {
 		id = LTB_depression_recovery
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = LTB_neman_trade_company }
-		x = 42
-		y = 8
+		prerequisite = {
+			focus = LTB_neman_trade_company
+		}
 		cost = 5
 		completion_reward = {
-			remove_ideas = LTB_depression_legacy
-			add_ideas = LTB_depression_legacy_1
+			swap_ideas = {
+				remove_idea = LTB_depression_legacy
+				add_idea = LTB_depression_legacy_1
+			}
 			add_stability = 0.05
 			add_political_power = 50
 		}
+		x = 24
+		y = 2
 	}
 	focus = {
 		id = LTB_factory_reconstruction
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = LTB_depression_recovery }
-		x = 46
-		y = 10
+		prerequisite = {
+			focus = LTB_depression_recovery
+		}
 		cost = 5
 		completion_reward = {
 			remove_ideas = LTB_depression_legacy_1
 			add_political_power = 50
 			add_stability = 0.05
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			11 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 3
 	}
 	focus = {
 		id = LTB_armaments_plant
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = LTB_minsk_machine_works }
-		x = 46
-		y = 12
+		prerequisite = {
+			focus = LTB_minsk_machine_works
+		}
 		cost = 5
 		completion_reward = {
 			army_experience = 20
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+			207 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 32
+		y = 3
 	}
 	focus = {
 		id = LTB_military_contracts
-		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_armaments_plant }
-		x = 46
-		y = 14
+		prerequisite = {
+			focus = LTB_armaments_plant
+		}
 		cost = 5
 		completion_reward = {
 			add_war_support = 0.05
@@ -426,107 +595,155 @@ focus_tree = {
 				amount = 1000
 				producer = LTB
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_orshmash_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_orshmash_upgrade_1
+				}
+			}
 		}
+		icon = GFX_goal_generic_small_arms
+		x = 32
+		y = 4
 	}
-
-	# ================= FOREIGN BRANCH =================
 	focus = {
 		id = LTB_balance_between_giants
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 14
-		y = 0
 		cost = 5
-		completion_reward = {
-			add_political_power = 100
+		available = {
+			has_country_flag = LTB_union_preserved
+			is_subject = no
 		}
+		icon = GFX_goal_generic_neutrality_focus
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = LTB_diplomatic_service_established
+		}
+		x = 18
+		y = 0
 	}
 	focus = {
 		id = LTB_overture_to_moscow
-		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_balance_between_giants }
-		x = 12
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = industry
+		prerequisite = {
+			focus = LTB_balance_between_giants
+		}
+		cost = 5
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			SOV = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = SOV
 			}
 		}
+		completion_reward = {
+			custom_effect_tooltip = LTB_overture_to_moscow_request_tt
+			SOV = {
+				country_event = {
+					id = ltb.130
+					days = 1
+				}
+			}
+		}
+		x = 16
+		y = 1
 	}
 	focus = {
 		id = LTB_the_polish_question
-		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_balance_between_giants }
-		x = 14
-		y = 2
-		cost = 10
-		completion_reward = {
-			army_experience = 25
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 100
-				producer = LTB
+		prerequisite = {
+			focus = LTB_balance_between_giants
+		}
+		cost = 5
+		icon = GFX_goal_generic_forceful_treaty
+		available = {
+			POL = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = POL
 			}
 		}
+		completion_reward = {
+			custom_effect_tooltip = LTB_the_polish_question_request_tt
+			POL = {
+				country_event = {
+					id = ltb.131
+					days = 1
+				}
+			}
+		}
+		x = 18
+		y = 1
 	}
 	focus = {
 		id = LTB_german_engineers
-		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = LTB_balance_between_giants }
-		x = 16
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
+		prerequisite = {
+			focus = LTB_balance_between_giants
+		}
+		cost = 5
+		icon = GFX_goal_generic_scientific_exchange
+		available = {
+			GER = {
+				exists = yes
+				is_subject = no
 			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 2000
-				producer = LTB
+			NOT = {
+				has_war_with = GER
 			}
 		}
+		completion_reward = {
+			custom_effect_tooltip = LTB_german_engineers_request_tt
+			GER = {
+				country_event = {
+					id = ltb.132
+					days = 1
+				}
+			}
+		}
+		x = 20
+		y = 1
 	}
-	# ================= AIR BRANCH =================
 	focus = {
 		id = LTB_observe_the_skies
 		icon = GFX_focus_generic_air_bases
-		x = 62
-		y = 0
 		cost = 5
 		completion_reward = {
 			air_experience = 25
 			add_political_power = 50
 		}
+		x = 50
+		y = 0
 	}
 	focus = {
 		id = LTB_kaunas_air_club
 		icon = GFX_focus_generic_air_carrier
-		prerequisite = { focus = LTB_observe_the_skies }
-		x = 60
-		y = 2
+		prerequisite = {
+			focus = LTB_observe_the_skies
+		}
 		cost = 5
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = NWW_air_doctrine_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
-			air_experience = 15
 		}
+		x = 49
+		y = 1
 	}
 	focus = {
 		id = LTB_vitebsk_airfield
 		icon = GFX_focus_generic_air_bases
-		prerequisite = { focus = LTB_observe_the_skies }
-		x = 64
-		y = 2
+		prerequisite = {
+			focus = LTB_observe_the_skies
+		}
 		cost = 5
 		completion_reward = {
 			air_experience = 20
@@ -535,81 +752,151 @@ focus_tree = {
 				uses = 1
 				category = electronics
 			}
+			207 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
+		x = 51
+		y = 1
 	}
-	# ================= FLEET BRANCH =================
 	focus = {
 		id = LTB_memel_shipyards
-		icon = GFX_focus_generic_industry_2
-		x = 72
-		y = 0
 		cost = 5
 		completion_reward = {
 			navy_experience = 15
-			add_tech_bonus = {
-				bonus = 0.5
+			190 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = NWW_naval_doctrine_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
 		}
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 56
+		y = 0
 	}
 	focus = {
 		id = LTB_baltic_patrols
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_memel_shipyards }
-		x = 70
-		y = 2
+		prerequisite = {
+			focus = LTB_memel_shipyards
+		}
 		cost = 5
 		completion_reward = {
 			navy_experience = 20
 			add_war_support = 0.05
 		}
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 55
+		y = 1
 	}
 	focus = {
 		id = LTB_coastal_flotilla
-		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_memel_shipyards }
-		x = 74
-		y = 2
+		prerequisite = {
+			focus = LTB_memel_shipyards
+		}
 		cost = 5
 		completion_reward = {
 			navy_experience = 20
 			add_command_power = 10
+			190 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+						province = 9262
+					}
+				}
+			}
 		}
+		icon = GFX_goal_generic_build_navy
+		x = 57
+		y = 1
 	}
-
-	# ================= UNION ENDURES =================
 	focus = {
 		id = LTB_the_union_endures
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_face_the_crisis }
-		available = { has_country_flag = LTB_union_preserved }
-		x = 24
-		y = 12
+		prerequisite = {
+			focus = LTB_face_the_crisis
+		}
+		available = {
+			has_country_flag = LTB_union_preserved
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
 		}
+		x = 7
+		y = 5
 	}
 	focus = {
 		id = LTB_the_pbmat_pact
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_the_union_endures }
-		x = 20
-		y = 14
+		prerequisite = {
+			focus = LTB_the_union_endures
+		}
 		cost = 10
 		completion_reward = {
-			create_faction = "PBMAT"
+			create_faction = PBMAT
 			add_war_support = 0.1
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					has_country_flag = LTB_polish_defense_agreement
+					POL = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+					}
+					NOT = {
+						has_war_with = POL
+					}
+				}
+				POL = {
+					country_event = {
+						id = ltb.134
+						days = 1
+					}
+				}
+			}
 		}
+		available = {
+			is_in_faction = no
+			is_subject = no
+		}
+		x = 18
+		y = 6
 	}
 	focus = {
 		id = LTB_fortress_vitebsk
-		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = LTB_the_union_endures }
-		x = 24
-		y = 14
 		cost = 5
 		completion_reward = {
 			army_experience = 25
@@ -618,14 +905,33 @@ focus_tree = {
 				amount = 150
 				producer = LTB
 			}
+			207 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 11220
+					}
+				}
+			}
+		}
+		icon = GFX_goal_generic_fortify_city
+		x = 45
+		y = 5
+		prerequisite = {
+			focus = LTB_fortify_the_dvina
 		}
 	}
 	focus = {
 		id = LTB_two_nations_one_voice
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_the_union_endures }
-		x = 28
-		y = 14
+		prerequisite = {
+			focus = LTB_the_union_endures
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
@@ -636,50 +942,54 @@ focus_tree = {
 				category = electronics
 			}
 		}
+		x = 12
+		y = 6
 	}
-
 	focus = {
 		id = LTB_the_1926_legacy
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_two_nations_one_voice }
-		x = 28
-		y = 16
+		prerequisite = {
+			focus = LTB_two_nations_one_voice
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
 		}
+		x = 18
+		y = 7
 	}
 	focus = {
 		id = LTB_cavalry_inspectorate
-		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_fortify_the_dvina }
-		x = 54
-		y = 6
 		cost = 5
 		completion_reward = {
 			army_experience = 20
 			add_war_support = 0.05
 		}
+		prerequisite = {
+			focus = LTB_the_minsk_school
+		}
+		icon = GFX_goal_generic_cavalry
+		x = 39
+		y = 4
 	}
 	focus = {
 		id = LTB_border_guard_corps
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = LTB_cavalry_inspectorate }
-		x = 54
-		y = 8
+		prerequisite = {
+			focus = LTB_cavalry_inspectorate
+		}
 		cost = 5
 		completion_reward = {
 			add_manpower = 80000
 			add_political_power = 50
 		}
+		x = 39
+		y = 5
 	}
 	focus = {
 		id = LTB_vilnius_radio
 		icon = GFX_focus_research
-		prerequisite = { focus = LTB_neman_trade_company }
-		x = 44
-		y = 8
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -689,28 +999,40 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
+		prerequisite = {
+			focus = LTB_rebuild_the_bridge
+		}
+		x = 36
+		y = 1
 	}
 	focus = {
 		id = LTB_kaunas_textile
-		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = LTB_vilnius_radio }
-		x = 44
-		y = 10
 		cost = 5
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
-			}
 			add_political_power = 60
+			11 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 5
+		prerequisite = {
+			focus = LTB_workers_of_minsk_and_kaunas
 		}
 	}
 	focus = {
 		id = LTB_minsk_machine_works
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = LTB_agricultural_mechanization }
-		x = 42
-		y = 10
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -719,108 +1041,187 @@ focus_tree = {
 				category = industry
 			}
 			add_political_power = 50
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
+		prerequisite = {
+			focus = LTB_minsk_arsenal_works
+		}
+		icon = GFX_goal_generic_production
+		x = 32
+		y = 2
 	}
 	focus = {
 		id = LTB_union_industrial_plan
 		icon = GFX_focus_generic_industry_3
-		prerequisite = {
-			focus = LTB_rural_electrification
-			focus = LTB_factory_reconstruction
-		}
-		x = 42
-		y = 14
 		cost = 5
 		completion_reward = {
 			remove_ideas = LTB_semi_agrarian_economy_3
 			add_stability = 0.05
-			add_research_slot = 1
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 2
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			11 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
 			}
 		}
+		x = 26
+		prerequisite = {
+			focus = LTB_free_economic_zones
+		}
+		prerequisite = {
+			focus = LTB_union_mining_program
+		}
+		y = 7
 	}
-	# ================= POLITICS: FOUR WAYS =================
 	focus = {
 		id = LTB_crown_the_regency
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_face_the_crisis }
 		mutually_exclusive = {
 			focus = LTB_free_elections_now
 			focus = LTB_the_iron_wolf_calls
 			focus = LTB_red_dawn_over_minsk
 		}
-		available = { date > 1937.1.1 }
-		x = 20
-		y = 8
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = neutrality }
-			add_popularity = { ideology = neutrality popularity = 0.1 }
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 			add_stability = 0.05
 			add_political_power = -50
+			create_country_leader = {
+				name = "Karl Gero von Urach"
+				picture = GFX_portrait_LIT_karl_gero_von_urach
+				ideology = despotism
+				traits = {
+
+				}
+			}
 		}
+		prerequisite = {
+			focus = LTB_public_political_debate
+		}
+		x = 2
+		y = 7
+		available = {
+			has_country_flag = LTB_union_preserved
+			NOT = {
+				neutrality < 0.40
+			}
+			has_political_power > 49
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = LTB_restore_the_grand_duchy
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = LTB_crown_the_regency }
-		x = 18
-		y = 10
+		prerequisite = {
+			focus = LTB_crown_the_regency
+		}
 		cost = 5
 		completion_reward = {
 			add_war_support = 0.1
 			add_manpower = 40000
 		}
+		x = 1
+		y = 8
 	}
 	focus = {
 		id = LTB_order_and_tradition
 		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = { focus = LTB_crown_the_regency }
-		x = 22
-		y = 10
+		prerequisite = {
+			focus = LTB_crown_the_regency
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
 			army_experience = 20
+			add_ideas = LTB_constitutional_crown
+			country_event = {
+				id = ltb.120
+				days = 1
+			}
 		}
+		x = 3
+		y = 8
 	}
 	focus = {
 		id = LTB_free_elections_now
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_face_the_crisis }
 		mutually_exclusive = {
 			focus = LTB_crown_the_regency
 			focus = LTB_the_iron_wolf_calls
 			focus = LTB_red_dawn_over_minsk
 		}
-		available = { date > 1937.1.1 }
-		x = 26
-		y = 8
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = democratic }
-			add_popularity = { ideology = democratic popularity = 0.15 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 			add_stability = -0.05
 			add_political_power = -50
 		}
+		prerequisite = {
+			focus = LTB_public_political_debate
+		}
+		x = 6
+		y = 7
+		available = {
+			has_country_flag = LTB_union_preserved
+			NOT = {
+				democratic < 0.40
+			}
+			has_political_power > 49
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = LTB_landtag_democracy
 		icon = GFX_focus_research
-		prerequisite = { focus = LTB_free_elections_now }
-		x = 24
-		y = 10
+		prerequisite = {
+			focus = LTB_free_elections_now
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -830,45 +1231,67 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
+		x = 6
+		y = 8
 	}
 	focus = {
 		id = LTB_free_press_free_union
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = LTB_free_elections_now }
-		x = 28
-		y = 10
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = -0.05
+			add_ideas = LTB_federal_democracy
+			country_event = {
+				id = ltb.120
+				days = 1
+			}
 		}
+		prerequisite = {
+			focus = LTB_landtag_democracy
+		}
+		x = 6
+		y = 9
 	}
 	focus = {
 		id = LTB_the_iron_wolf_calls
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_face_the_crisis }
 		mutually_exclusive = {
 			focus = LTB_crown_the_regency
 			focus = LTB_free_elections_now
 			focus = LTB_red_dawn_over_minsk
 		}
-		available = { date > 1937.1.1 }
-		x = 32
-		y = 8
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = fascism }
-			add_popularity = { ideology = fascism popularity = 0.15 }
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 			add_war_support = 0.1
 			add_stability = -0.05
+			add_political_power = -50
 		}
+		prerequisite = {
+			focus = LTB_public_political_debate
+		}
+		x = 10
+		y = 7
+		available = {
+			has_country_flag = LTB_union_preserved
+			NOT = {
+				fascism < 0.40
+			}
+			has_political_power > 49
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = LTB_steel_and_blood
 		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = LTB_the_iron_wolf_calls }
-		x = 30
-		y = 10
+		prerequisite = {
+			focus = LTB_the_iron_wolf_calls
+		}
 		cost = 5
 		completion_reward = {
 			army_experience = 30
@@ -878,45 +1301,67 @@ focus_tree = {
 				producer = LTB
 			}
 		}
+		x = 10
+		y = 8
 	}
 	focus = {
 		id = LTB_one_people_one_leader
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = LTB_the_iron_wolf_calls }
-		x = 34
-		y = 10
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
 			add_war_support = 0.05
+			add_ideas = LTB_national_mobilization
+			country_event = {
+				id = ltb.120
+				days = 1
+			}
 		}
+		prerequisite = {
+			focus = LTB_steel_and_blood
+		}
+		x = 10
+		y = 9
 	}
 	focus = {
 		id = LTB_red_dawn_over_minsk
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = LTB_face_the_crisis }
 		mutually_exclusive = {
 			focus = LTB_crown_the_regency
 			focus = LTB_free_elections_now
 			focus = LTB_the_iron_wolf_calls
 		}
-		available = { date > 1937.1.1 }
-		x = 38
-		y = 8
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = communism }
-			add_popularity = { ideology = communism popularity = 0.15 }
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
 			add_stability = -0.05
 			add_manpower = 40000
+			add_political_power = -50
 		}
+		prerequisite = {
+			focus = LTB_public_political_debate
+		}
+		x = 14
+		y = 7
+		available = {
+			has_country_flag = LTB_union_preserved
+			NOT = {
+				communism < 0.40
+			}
+			has_political_power > 49
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = LTB_soviets_of_workers
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = LTB_red_dawn_over_minsk }
-		x = 36
-		y = 10
+		prerequisite = {
+			focus = LTB_red_dawn_over_minsk
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -926,17 +1371,1042 @@ focus_tree = {
 			}
 			add_stability = 0.05
 		}
+		x = 14
+		y = 8
 	}
 	focus = {
 		id = LTB_international_brigades
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = LTB_red_dawn_over_minsk }
-		x = 40
-		y = 10
 		cost = 5
 		completion_reward = {
 			army_experience = 25
 			add_war_support = 0.1
+			add_ideas = LTB_workers_federation
+			country_event = {
+				id = ltb.120
+				days = 1
+			}
 		}
+		prerequisite = {
+			focus = LTB_soviets_of_workers
+		}
+		x = 14
+		y = 9
+	}
+	default = no
+	initial_show_position = {
+		focus = LTB_consolidate_the_union
+	}
+	focus = {
+		id = LTB_vilnius_university
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = LTB_vilnius_radio
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_political_power = 50
+		}
+		x = 36
+		y = 2
+	}
+	focus = {
+		id = LTB_union_research_council
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = LTB_vilnius_university
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		x = 36
+		y = 3
+	}
+	focus = {
+		id = LTB_precision_engineering
+		icon = GFX_goal_generic_production
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			96 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = LTB_minsk_industry_company
+				}
+				swap_ideas = {
+					remove_idea = LTB_minsk_industry_company
+					add_idea = LTB_minsk_industry_company_advanced
+				}
+			}
+			show_ideas_tooltip = LTB_minsk_industry_company_advanced
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_belmash_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_belmash_upgrade_1
+				}
+			}
+		}
+		x = 36
+		y = 5
+		prerequisite = {
+			focus = LTB_minsk_university
+		}
+	}
+	focus = {
+		id = LTB_belmash_tank_program
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		prerequisite = {
+			focus = LTB_military_contracts
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = 32
+		y = 5
+	}
+	focus = {
+		id = LTB_motorized_reserves
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = LTB_officers_of_two_nations
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = motorized_equipment
+			}
+			army_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_belaz_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_belaz_upgrade_1
+				}
+			}
+		}
+		x = 43
+		y = 4
+	}
+	focus = {
+		id = LTB_mogilev_artillery_school
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+		prerequisite = {
+			focus = LTB_timoshenkos_doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			army_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_mogilev_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_mogilev_upgrade_1
+				}
+			}
+		}
+		x = 41
+		y = 4
+	}
+	focus = {
+		id = LTB_joint_maneuvers
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		prerequisite = {
+			focus = LTB_border_guard_corps
+		}
+		prerequisite = {
+			focus = LTB_motorized_reserves
+		}
+		prerequisite = {
+			focus = LTB_mogilev_artillery_school
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_land_doctrine_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 30
+			add_command_power = 20
+		}
+		x = 41
+		y = 6
+	}
+	focus = {
+		id = LTB_minsk_aircraft_works
+		icon = GFX_goal_generic_air_production
+		cost = 5
+		prerequisite = {
+			focus = LTB_kaunas_air_club
+		}
+		prerequisite = {
+			focus = LTB_vitebsk_airfield
+		}
+		completion_reward = {
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = air_equipment
+			}
+		}
+		x = 50
+		y = 2
+	}
+	focus = {
+		id = LTB_fighter_command
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = LTB_minsk_aircraft_works
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = light_air
+			}
+			air_experience = 25
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_minsk_air_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_minsk_air_upgrade_1
+				}
+			}
+		}
+		x = 49
+		y = 3
+	}
+	focus = {
+		id = LTB_army_air_support
+		icon = GFX_goal_generic_CAS
+		cost = 5
+		prerequisite = {
+			focus = LTB_minsk_aircraft_works
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cas_bomber
+			}
+			air_experience = 25
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_kurland_air_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_kurland_air_upgrade_1
+				}
+			}
+		}
+		x = 51
+		y = 3
+	}
+	focus = {
+		id = LTB_baltic_escort_program
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5
+		prerequisite = {
+			focus = LTB_baltic_patrols
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+			190 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_kaunas_shipyards_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_kaunas_shipyards_upgrade_1
+				}
+			}
+		}
+		x = 55
+		y = 2
+	}
+	focus = {
+		id = LTB_coastal_defense_network
+		icon = GFX_goal_generic_defence
+		cost = 5
+		prerequisite = {
+			focus = LTB_coastal_flotilla
+		}
+		completion_reward = {
+			190 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 9262
+					}
+				}
+			}
+			navy_experience = 25
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_kaunas_shipyards_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_kaunas_shipyards_upgrade_2
+				}
+			}
+		}
+		x = 57
+		y = 2
+	}
+	focus = {
+		id = LTB_dvina_border_commission
+		cost = 5
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {
+			focus = LTB_overture_to_moscow
+		}
+		available = {
+			has_country_flag = LTB_moscow_agreement
+			SOV = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			has_non_aggression_pact_with = SOV
+		}
+		completion_reward = {
+			add_stability = 0.03
+			add_timed_idea = {
+				idea = LTB_eastern_trade
+				days = 1095
+			}
+		}
+		x = 16
+		y = 2
+	}
+	focus = {
+		id = LTB_polish_defense_protocol
+		cost = 5
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {
+			focus = LTB_the_polish_question
+		}
+		available = {
+			has_country_flag = LTB_polish_agreement
+			POL = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = POL
+			}
+			has_non_aggression_pact_with = POL
+		}
+		completion_reward = {
+			custom_effect_tooltip = LTB_polish_defense_request_tt
+			POL = {
+				country_event = {
+					id = ltb.133
+					days = 1
+				}
+			}
+		}
+		x = 18
+		y = 2
+	}
+	focus = {
+		id = LTB_german_machine_tools
+		cost = 5
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = LTB_german_engineers
+		}
+		available = {
+			has_country_flag = LTB_german_agreement
+			GER = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = GER
+			}
+			206 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			206 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 20
+		y = 2
+	}
+	focus = {
+		id = LTB_armed_neutrality
+		cost = 5
+		icon = GFX_goal_generic_defence
+		prerequisite = {
+			focus = LTB_balance_between_giants
+		}
+		available = {
+			OR = {
+				has_country_flag = LTB_moscow_agreement
+				has_country_flag = LTB_moscow_rejected
+				has_country_flag = LTB_polish_agreement
+				has_country_flag = LTB_polish_rejected
+				has_country_flag = LTB_german_agreement
+				has_country_flag = LTB_german_rejected
+			}
+			is_subject = no
+			is_in_faction = no
+		}
+		completion_reward = {
+			add_ideas = LTB_armed_neutrality_idea
+			add_war_support = 0.05
+			add_command_power = 15
+		}
+		x = 18
+		y = 3
+	}
+	focus = {
+		id = LTB_free_economic_zones
+		cost = 5
+		icon = GFX_goal_generic_positive_trade_relations
+		completion_reward = {
+			11 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_timed_idea = {
+				idea = LTB_investment_zones
+				days = 1095
+			}
+		}
+		x = 24
+		y = 6
+		prerequisite = {
+			focus = LTB_kaunas_textile
+		}
+	}
+	focus = {
+		id = LTB_polesie_peat
+		cost = 5
+		icon = GFX_goal_generic_production
+		completion_reward = {
+			194 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = coal
+						amount = 8
+					}
+				}
+			}
+			add_ideas = LTB_peat_energy
+		}
+		x = 28
+		y = 5
+		prerequisite = {
+			focus = LTB_rural_electrification
+		}
+	}
+	focus = {
+		id = LTB_union_mining_program
+		cost = 5
+		icon = GFX_goal_generic_production2
+		prerequisite = {
+			focus = LTB_polesie_peat
+		}
+		completion_reward = {
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = steel
+						amount = 8
+					}
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
+		x = 28
+		y = 6
+	}
+	focus = {
+		id = LTB_timoshenko_industrial_board
+		cost = 5
+		icon = GFX_goal_generic_construct_mil_factory
+		completion_reward = {
+			207 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_ideas = LTB_industrial_mobilization_board
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_belmash_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_belmash_upgrade_2
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_orshmash_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_orshmash_upgrade_2
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_mogilev_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_mogilev_upgrade_2
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_belaz_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_belaz_upgrade_2
+				}
+			}
+		}
+		x = 32
+		y = 6
+		prerequisite = {
+			focus = LTB_belmash_tank_program
+		}
+		prerequisite = {
+			focus = LTB_precision_engineering
+		}
+	}
+	focus = {
+		id = LTB_professional_contract_army
+		cost = 5
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = LTB_joint_maneuvers
+		}
+		available = {
+			has_country_flag = LTB_union_preserved
+		}
+		completion_reward = {
+			add_ideas = LTB_contract_officers
+			army_experience = 25
+		}
+		x = 40
+		y = 7
+	}
+	focus = {
+		id = LTB_national_resilience
+		cost = 5
+		icon = GFX_goal_generic_defence
+		prerequisite = {
+			focus = LTB_joint_maneuvers
+		}
+		available = {
+			has_country_flag = LTB_union_preserved
+		}
+		completion_reward = {
+			add_ideas = LTB_national_resilience_idea
+			add_war_support = 0.05
+		}
+		x = 42
+		y = 7
+	}
+	focus = {
+		id = LTB_minsk_university
+		cost = 5
+		icon = GFX_focus_research
+		completion_reward = {
+			add_ideas = LTB_university_network
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			if = {
+				limit = {
+					has_idea = LTB_vilnius_university_concern_company
+				}
+				swap_ideas = {
+					remove_idea = LTB_vilnius_university_concern_company
+					add_idea = LTB_vilnius_university_concern_company_advanced
+				}
+			}
+			show_ideas_tooltip = LTB_vilnius_university_concern_company_advanced
+		}
+		x = 36
+		y = 4
+		prerequisite = {
+			focus = LTB_union_research_council
+		}
+	}
+	focus = {
+		id = LTB_rocket_research
+		cost = 5
+		icon = GFX_goal_generic_secret_weapon
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+			}
+		}
+		x = 36
+		y = 6
+		prerequisite = {
+			focus = LTB_precision_engineering
+		}
+	}
+	focus = {
+		id = LTB_peaceful_atom
+		cost = 5
+		icon = GFX_goal_generic_scientific_exchange
+		available = {
+			date > 1938.1.1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.25
+			}
+		}
+		x = 38
+		y = 6
+		prerequisite = {
+			focus = LTB_precision_engineering
+		}
+	}
+	focus = {
+		id = LTB_french_machine_tools
+		cost = 5
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = LTB_free_economic_zones
+		}
+		available = {
+			FRA = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = FRA
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = LTB_french_machine_tools_request_tt
+			FRA = {
+				country_event = {
+					id = ltb.150
+					days = 1
+				}
+			}
+		}
+		x = 24
+		y = 7
+	}
+	focus = {
+		id = LTB_italian_research_exchange
+		cost = 5
+		icon = GFX_goal_generic_scientific_exchange
+		available = {
+			ITA = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = ITA
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = LTB_italian_research_request_tt
+			ITA = {
+				country_event = {
+					id = ltb.151
+					days = 1
+				}
+			}
+		}
+		x = 34
+		y = 6
+		prerequisite = {
+			focus = LTB_precision_engineering
+		}
+	}
+	focus = {
+		id = LTB_multinational_air_program
+		cost = 5
+		icon = GFX_goal_generic_air_production
+		prerequisite = {
+			focus = LTB_minsk_aircraft_works
+		}
+		available = {
+			OR = {
+				AND = {
+					has_country_flag = LTB_german_agreement
+					GER = {
+						exists = yes
+					}
+					NOT = {
+						has_war_with = GER
+					}
+				}
+				AND = {
+					has_country_flag = LTB_french_machines_agreement
+					FRA = {
+						exists = yes
+					}
+					NOT = {
+						has_war_with = FRA
+					}
+				}
+				AND = {
+					has_country_flag = LTB_italian_research_agreement
+					ITA = {
+						exists = yes
+					}
+					NOT = {
+						has_war_with = ITA
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+			}
+			air_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_minsk_air_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_minsk_air_upgrade_2
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:LTB_kurland_air_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = LTB_kurland_air_upgrade_2
+				}
+			}
+		}
+		x = 50
+		y = 4
+	}
+	focus = {
+		id = LTB_public_political_debate
+		x = 7
+		y = 6
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = LTB_political_campaigns_tt
+		}
+		prerequisite = {
+			focus = LTB_the_union_endures
+		}
+	}
+	focus = {
+		id = LTB_bicameral_union
+		x = 2
+		y = 9
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = LTB_restore_the_grand_duchy
+		}
+		prerequisite = {
+			focus = LTB_order_and_tradition
+		}
+	}
+	focus = {
+		id = LTB_royal_charter
+		x = 2
+		y = 10
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		completion_reward = {
+			country_event = {
+				id = ltb.160
+				days = 1
+			}
+		}
+		available = {
+			has_government = neutrality
+		}
+		prerequisite = {
+			focus = LTB_bicameral_union
+		}
+	}
+	focus = {
+		id = LTB_social_compact
+		x = 6
+		y = 10
+		cost = 5
+		icon = GFX_focus_generic_manpower
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = LTB_free_press_free_union
+		}
+	}
+	focus = {
+		id = LTB_federal_constitution
+		x = 6
+		y = 11
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		completion_reward = {
+			country_event = {
+				id = ltb.161
+				days = 1
+			}
+		}
+		available = {
+			has_government = democratic
+		}
+		prerequisite = {
+			focus = LTB_social_compact
+		}
+	}
+	focus = {
+		id = LTB_unified_administration
+		x = 10
+		y = 10
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = LTB_one_people_one_leader
+		}
+	}
+	focus = {
+		id = LTB_national_defense_state
+		x = 10
+		y = 11
+		cost = 5
+		icon = GFX_focus_generic_army_attack
+		completion_reward = {
+			country_event = {
+				id = ltb.162
+				days = 1
+			}
+		}
+		available = {
+			has_government = fascism
+		}
+		prerequisite = {
+			focus = LTB_unified_administration
+		}
+	}
+	focus = {
+		id = LTB_republics_of_labor
+		x = 14
+		y = 10
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = LTB_international_brigades
+		}
+	}
+	focus = {
+		id = LTB_union_economic_congress
+		x = 14
+		y = 11
+		cost = 5
+		icon = GFX_focus_generic_industry_3
+		completion_reward = {
+			country_event = {
+				id = ltb.163
+				days = 1
+			}
+		}
+		available = {
+			has_government = communism
+		}
+		prerequisite = {
+			focus = LTB_republics_of_labor
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 3000
 	}
 }

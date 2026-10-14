@@ -1,0 +1,527 @@
+LTB_belmash_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_belmashtank
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_belmash_tank_program
+		}
+	}
+	initial_trait = {
+		name = LTB_belmash_specialization
+		equipment_bonus = {
+			maximum_speed = 0.08
+			reliability = 0.05
+			armor_value = -0.03
+		}
+		production_bonus = {
+			production_cost_factor = -0.02
+		}
+	}
+	add_trait = {
+		token = LTB_belmash_upgrade_1
+		name = LTB_belmash_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_precision_engineering
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_belmash_upgrade_2
+		name = LTB_belmash_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_belmash_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_timoshenko_industrial_board
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
+}
+LTB_orshmash_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_orshmash
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_minsk_arsenal_works
+		}
+	}
+	initial_trait = {
+		name = LTB_orshmash_specialization
+		equipment_bonus = {
+			soft_attack = 0.03
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+	add_trait = {
+		token = LTB_orshmash_upgrade_1
+		name = LTB_orshmash_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_military_contracts
+			}
+		}
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_orshmash_upgrade_2
+		name = LTB_orshmash_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_orshmash_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_timoshenko_industrial_board
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
+LTB_mogilev_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_mogilevmash
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_armaments_plant
+		}
+	}
+	initial_trait = {
+		name = LTB_mogilev_specialization
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.01
+		}
+	}
+	add_trait = {
+		token = LTB_mogilev_upgrade_1
+		name = LTB_mogilev_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_mogilev_artillery_school
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_mogilev_upgrade_2
+		name = LTB_mogilev_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_mogilev_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_timoshenko_industrial_board
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
+}
+LTB_minsk_air_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_minskmashair
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_minsk_aircraft_works
+		}
+	}
+	initial_trait = {
+		name = LTB_minsk_air_specialization
+		equipment_bonus = {
+			air_agility = 0.06
+			maximum_speed = 0.04
+			air_attack = 0.02
+		}
+		production_bonus = {
+			production_cost_factor = -0.02
+		}
+	}
+	add_trait = {
+		token = LTB_minsk_air_upgrade_1
+		name = LTB_minsk_air_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_fighter_command
+			}
+		}
+		equipment_bonus = {
+			air_agility = 0.03
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_minsk_air_upgrade_2
+		name = LTB_minsk_air_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_minsk_air_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_multinational_air_program
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+}
+LTB_kurland_air_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_kurlandmashair
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_army_air_support
+		}
+	}
+	initial_trait = {
+		name = LTB_kurland_air_specialization
+		equipment_bonus = {
+			air_range = 0.08
+			naval_strike_attack = 0.03
+		}
+		production_bonus = {
+			production_cost_factor = -0.02
+		}
+	}
+	add_trait = {
+		token = LTB_kurland_air_upgrade_1
+		name = LTB_kurland_air_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_army_air_support
+			}
+		}
+		equipment_bonus = {
+			air_range = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_kurland_air_upgrade_2
+		name = LTB_kurland_air_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_kurland_air_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_multinational_air_program
+			}
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
+LTB_kaunas_shipyards_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_kaunas
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_memel_shipyards
+		}
+	}
+	initial_trait = {
+		name = LTB_kaunas_shipyards_specialization
+		equipment_bonus = {
+			sub_detection = 0.05
+			naval_speed = 0.03
+		}
+		production_bonus = {
+			production_capacity_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_kaunas_shipyards_upgrade_1
+		name = LTB_kaunas_shipyards_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_baltic_escort_program
+			}
+		}
+		equipment_bonus = {
+			sub_detection = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_kaunas_shipyards_upgrade_2
+		name = LTB_kaunas_shipyards_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_kaunas_shipyards_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_coastal_defense_network
+			}
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+	}
+}
+LTB_belaz_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_minskmash
+	allowed = {
+		original_tag = LTB
+	}
+	available = {
+		FROM = {
+			has_completed_focus = LTB_minsk_machine_works
+		}
+	}
+	initial_trait = {
+		name = LTB_belaz_specialization
+		equipment_bonus = {
+			reliability = 0.08
+			maximum_speed = 0.03
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+	add_trait = {
+		token = LTB_belaz_upgrade_1
+		name = LTB_belaz_upgrade_1
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_motorized_reserves
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+	}
+	add_trait = {
+		token = LTB_belaz_upgrade_2
+		name = LTB_belaz_upgrade_2
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 2
+		}
+		parent = {
+			traits = {
+				LTB_belaz_upgrade_1
+			}
+		}
+		available = {
+			FROM = {
+				has_completed_focus = LTB_timoshenko_industrial_board
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
+}
+MKN_kommunar_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_1
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_steel_horses
+		}
+	}
+}
+MKN_air_artels_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_aircraft_artels
+		}
+	}
+}
+MKN_kherson_works_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_kherson_shipyard
+		}
+	}
+}
+MKN_rifle_artels_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_rifle_concern
+		}
+	}
+}
+MKN_artillery_works_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_1
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_artillery_artels
+		}
+	}
+}

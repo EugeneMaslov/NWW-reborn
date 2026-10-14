@@ -1,8 +1,10 @@
 ideas = {
 	country = {
 		LTB_unresolved_national_question = {
-			picture = POL_looming_peasants_strike
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_national_question
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.10
@@ -11,8 +13,10 @@ ideas = {
 			}
 		}
 		LTB_vilnius_compromise = {
-			picture = generic_constitutional_guarantees
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.08
@@ -21,8 +25,10 @@ ideas = {
 			}
 		}
 		LTB_kaunas_centralism = {
-			picture = generic_war_preparation
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_army
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05
@@ -31,8 +37,10 @@ ideas = {
 			}
 		}
 		LTB_minsk_arsenal = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_arsenal
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = 0.10
@@ -40,8 +48,10 @@ ideas = {
 			}
 		}
 		LTB_union_army_tradition = {
-			picture = generic_army_europe_1
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				training_time_factor = -0.10
@@ -49,8 +59,10 @@ ideas = {
 			}
 		}
 		LTB_semi_agrarian_economy = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_agrarian
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = -0.20
@@ -58,8 +70,10 @@ ideas = {
 			}
 		}
 		LTB_semi_agrarian_economy_1 = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_agrarian
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = -0.15
@@ -67,8 +81,10 @@ ideas = {
 			}
 		}
 		LTB_semi_agrarian_economy_2 = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_agrarian
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = -0.10
@@ -76,8 +92,10 @@ ideas = {
 			}
 		}
 		LTB_semi_agrarian_economy_3 = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_agrarian
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = -0.05
@@ -85,8 +103,10 @@ ideas = {
 			}
 		}
 		LTB_depression_legacy = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_depression
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.10
@@ -95,8 +115,10 @@ ideas = {
 			}
 		}
 		LTB_depression_legacy_1 = {
-			picture = generic_production_bonus
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_depression
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -105,14 +127,245 @@ ideas = {
 			}
 		}
 		LTB_disorganized_army = {
-			picture = generic_army_europe_1
-			allowed = { original_tag = LTB }
+			picture = nww_ltb_army
+			allowed = {
+				original_tag = LTB
+			}
 			removal_cost = -1
 			modifier = {
 				army_org_factor = -0.10
 				planning_speed = -0.10
 				army_attack_factor = -0.05
 				recruitable_population_factor = -0.05
+			}
+		}
+		LTB_constitutional_crown = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+			}
+		}
+		LTB_federal_democracy = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				research_speed_factor = 0.03
+			}
+		}
+		LTB_national_mobilization = {
+			picture = nww_ltb_arsenal
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				mobilization_speed = 0.10
+			}
+		}
+		LTB_workers_federation = {
+			picture = nww_ltb_arsenal
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				recruitable_population_factor = 0.05
+			}
+		}
+		LTB_eastern_trade = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		LTB_german_industrial_mission = {
+			picture = nww_ltb_arsenal
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+		LTB_armed_neutrality_idea = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		LTB_investment_zones = {
+			picture = nww_ltb_arsenal
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		LTB_peat_energy = {
+			picture = nww_ltb_agrarian
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				factory_energy_consumption = -0.05
+			}
+		}
+		LTB_industrial_mobilization_board = {
+			picture = nww_ltb_arsenal
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		LTB_contract_officers = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				training_time_factor = -0.10
+				recruitable_population_factor = -0.05
+			}
+		}
+		LTB_national_resilience_idea = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+		LTB_university_network = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		LTB_crown_arbitration = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		LTB_royal_defense_patronage = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+		LTB_federal_civil_rights = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		LTB_public_education = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.02
+				training_time_factor = -0.05
+			}
+		}
+		LTB_professional_officer_state = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.04
+				stability_factor = -0.04
+			}
+		}
+		LTB_directed_industry = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		LTB_autonomous_workers_councils = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+		LTB_state_planning_commission = {
+			picture = nww_ltb_union
+			allowed = {
+				original_tag = LTB
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.03
 			}
 		}
 	}

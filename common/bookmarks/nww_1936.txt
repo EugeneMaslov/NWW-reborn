@@ -1,15 +1,17 @@
 bookmarks = {
 	bookmark = {
-		name = "NWW_1936_NAME"
-		desc = "NWW_1936_DESC"
+		name = NWW_1936_NAME
+		desc = NWW_1936_DESC
 		date = 1936.1.1.12
-		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		picture = GFX_select_date_1936
+		default_country = GER
 		default = yes
-		filters = { new_content continent }
-
+		filters = {
+			new_content
+			continent
+		}
 		GER = {
-			history = "NWW_GER_DESC"
+			history = NWW_GER_DESC
 			ideology = fascism
 			version = base_game
 			ideas = {
@@ -23,8 +25,8 @@ bookmarks = {
 				GER_reestablish_free_elections
 			}
 		}
-		"FRA" = {
-			history = "NWW_FRA_DESC"
+		FRA = {
+			history = NWW_FRA_DESC
 			ideology = democratic
 			version = base_game
 			ideas = {
@@ -38,8 +40,8 @@ bookmarks = {
 				FRA_france_leads
 			}
 		}
-		"ENG" = {
-			history = "NWW_ENG_DESC"
+		ENG = {
+			history = NWW_ENG_DESC
 			ideology = democratic
 			version = base_game
 			ideas = {
@@ -53,8 +55,8 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
-		"SOV" = {
-			history = "NWW_SOV_DESC"
+		SOV = {
+			history = NWW_SOV_DESC
 			ideology = communism
 			version = base_game
 			ideas = {
@@ -68,8 +70,8 @@ bookmarks = {
 				SOV_the_supreme_soviet
 			}
 		}
-		"ITA" = {
-			history = "NWW_ITA_DESC"
+		ITA = {
+			history = NWW_ITA_DESC
 			ideology = fascism
 			version = base_game
 			ideas = {
@@ -84,7 +86,7 @@ bookmarks = {
 			}
 		}
 		JAP = {
-			history = "NWW_JAP_DESC"
+			history = NWW_JAP_DESC
 			ideology = neutrality
 			version = base_game
 			ideas = {
@@ -98,8 +100,8 @@ bookmarks = {
 				JAP_support_the_kodoha_faction
 			}
 		}
-		"USA" = {
-			history = "NWW_USA_DESC"
+		USA = {
+			history = NWW_USA_DESC
 			ideology = democratic
 			version = base_game
 			ideas = {
@@ -113,8 +115,8 @@ bookmarks = {
 				USA_reestablish_the_gold_standard
 			}
 		}
-		"CHI" = {
-			history = "NWW_CHI_DESC"
+		CHI = {
+			history = NWW_CHI_DESC
 			ideology = neutrality
 			version = base_game
 			ideas = {
@@ -127,92 +129,86 @@ bookmarks = {
 				CHI_army_reform
 				CHI_invite_the_flying_tigers
 			}
-		}
-		"AUS" = {
 			minor = yes
-			history = "NWW_AUS_DESC"
+		}
+		AUS = {
+			minor = yes
+			history = NWW_AUS_DESC
 			ideology = neutrality
 			version = base_game
 		}
 		HUN = {
 			minor = yes
-			history = "NWW_HUN_DESC"
+			history = NWW_HUN_DESC
 			ideology = neutrality
 			version = base_game
 		}
 		TUR = {
 			minor = yes
-			history = "NWW_TUR_DESC"
+			history = NWW_TUR_DESC
 			ideology = neutrality
 			version = base_game
 		}
-		"YUG" = {
+		YUG = {
 			minor = yes
-			history = "NWW_YUG_DESC"
+			history = NWW_YUG_DESC
 			ideology = neutrality
 			version = base_game
 		}
 		CRO = {
 			minor = yes
-			history = "NWW_CRO_DESC"
+			history = NWW_CRO_DESC
 			ideology = neutrality
 			version = base_game
 		}
 		LTB = {
 			minor = yes
-			history = "NWW_LTB_DESC"
+			history = NWW_LTB_DESC
 			ideology = neutrality
 			version = base_game
 		}
 		MKN = {
 			minor = yes
-			history = "NWW_MKN_DESC"
+			history = NWW_MKN_DESC
 			ideology = communism
 			version = base_game
 		}
-				UKR = {
+		UKR = {
 			minor = yes
-			history = "NWW_UKR_DESC"
+			history = NWW_UKR_DESC
 			ideology = communism
 			version = base_game
 		}
 		LAT = {
 			minor = yes
-			history = "NWW_OTHER_DESC"
+			history = NWW_OTHER_DESC
 			ideology = communism
 			version = base_game
 		}
 		EST = {
 			minor = yes
-			history = "NWW_OTHER_DESC"
+			history = NWW_OTHER_DESC
 			ideology = communism
 			version = base_game
 		}
-		BYE = {
+		POL = {
 			minor = yes
-			history = "NWW_OTHER_DESC"
+			history = NWW_POL_DESC
 			ideology = neutrality
 			version = base_game
 		}
-"POL" = {
+		ROM = {
 			minor = yes
-			history = "NWW_POL_DESC"
+			history = NWW_ROM_DESC
 			ideology = neutrality
 			version = base_game
 		}
-		"ROM" = {
-			minor = yes
-			history = "NWW_ROM_DESC"
-			ideology = neutrality
-			version = base_game
-		}
-
 		"---" = {
-			history = "NWW_OTHER_DESC"
+			history = NWW_OTHER_DESC
 		}
-
 		effect = {
 			randomize_weather = 22345
 		}
+		scrollable_country_list = yes
 	}
 }

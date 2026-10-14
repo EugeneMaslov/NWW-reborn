@@ -2,7 +2,9 @@ ideas = {
 	country = {
 		MKN_free_territory = {
 			picture = gre_agricultural_communes
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				recruitable_population_factor = 0.15
@@ -16,7 +18,9 @@ ideas = {
 		}
 		MKN_free_soviets_idea = {
 			picture = generic_constitutional_guarantees
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				recruitable_population_factor = 0.15
@@ -28,7 +32,9 @@ ideas = {
 		}
 		MKN_tachanka_warfare = {
 			picture = HABSBURG_cavalry
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				army_attack_factor = 0.1
@@ -36,7 +42,9 @@ ideas = {
 		}
 		MKN_railway_guards = {
 			picture = ARG_invest_in_railways
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -45,7 +53,9 @@ ideas = {
 		}
 		MKN_dneprostroi_power = {
 			picture = por_hydroelectric_power
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.05
@@ -53,7 +63,9 @@ ideas = {
 		}
 		MKN_electrified_steppe = {
 			picture = ETH_ethiopian_electric_power
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
@@ -62,7 +74,9 @@ ideas = {
 		}
 		MKN_steel_horses_idea = {
 			picture = generic_acquire_tanks
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				army_armor_attack_factor = 0.05
@@ -72,7 +86,9 @@ ideas = {
 		}
 		MKN_batko_cavalry_idea = {
 			picture = HABSBURG_cavalry
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				modifier_army_sub_unit_cavalry_attack_factor = 0.1
@@ -82,8 +98,10 @@ ideas = {
 			}
 		}
 		MKN_black_guard_veterans_idea = {
-			picture = yug_local_militias
-			allowed = { original_tag = MKN }
+			picture = YUG_local_militias
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				max_planning = 0.1
@@ -92,7 +110,9 @@ ideas = {
 		}
 		MKN_steppe_quartermasters_idea = {
 			picture = generic_supply_depot
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				supply_consumption_factor = -0.1
@@ -100,7 +120,9 @@ ideas = {
 		}
 		MKN_free_airmen = {
 			picture = generic_air_bonus
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				air_agility_factor = 0.05
@@ -109,17 +131,21 @@ ideas = {
 		}
 		MKN_black_swarm_idea = {
 			picture = air_support_focus
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				air_agility_factor = 0.1
-				air_speed_factor = 0.1
+				air_maximum_speed_factor = 0.1
 				air_accidents_factor = -0.05
 			}
 		}
 		MKN_free_mint_idea = {
 			picture = generic_supply_depot
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.2
@@ -127,7 +153,9 @@ ideas = {
 		}
 		MKN_anarchic_economy_idea = {
 			picture = CHL_near_anarchic_society
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				political_power_gain = -0.15
@@ -139,60 +167,157 @@ ideas = {
 		}
 		MKN_smuggling_network = {
 			picture = COG_transports_et_ports
-			allowed = { original_tag = MKN }
+			allowed = {
+				original_tag = MKN
+			}
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		MKN_communal_federation = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		MKN_federal_republic = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+		MKN_planned_economy = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		MKN_military_directory = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				army_org_factor = 0.05
+			}
+		}
+		MKN_imperial_administration = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+			}
+		}
 	}
 	industrial_concern = {
 		MKN_industry_concern_1 = {
+			visible = { NOT = { has_completed_focus = MKN_steel_concern_union } }
 			picture = generic_industrial_concern_1
-			allowed = { original_tag = MKN }
-			available = { has_completed_focus = MKN_steel_concern }
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_steel_concern
+				NOT = {
+					has_completed_focus = MKN_steel_concern_union
+				}
+			}
 			cost = 100
-			research_bonus = { industry = 0.1 }
+			research_bonus = {
+				industry = 0.1
+			}
 			modifier = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
 		MKN_industry_concern_2 = {
+			visible = { has_completed_focus = MKN_steel_concern_union }
 			name = MKN_industry_concern_1
 			picture = generic_industrial_concern_2
-			allowed = { original_tag = MKN }
-			available = { has_completed_focus = MKN_steel_concern_union }
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_steel_concern_union
+			}
 			cost = 100
-			research_bonus = { industry = 0.15 }
+			research_bonus = {
+				industry = 0.15
+			}
 			modifier = {
 				production_speed_buildings_factor = 0.08
 				industrial_capacity_factory = 0.05
 			}
 		}
 	}
-	materiel_designer = {
+	materiel_manufacturer = {
+		designer = yes
 		MKN_rifle_concern_1 = {
+			visible = { NOT = { has_completed_focus = MKN_rifle_concern_union } }
 			picture = generic_industrial_concern_1
-			allowed = { original_tag = MKN }
-			available = { has_completed_focus = MKN_rifle_concern }
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_rifle_concern
+				NOT = {
+					has_completed_focus = MKN_rifle_concern_union
+				}
+			}
 			cost = 100
-			research_bonus = { infantry_weapons = 0.1 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
 			modifier = {
 				political_power_gain = 0.05
 			}
 		}
 		MKN_rifle_concern_2 = {
+			visible = { has_completed_focus = MKN_rifle_concern_union }
 			name = MKN_rifle_concern_1
 			picture = generic_industrial_concern_2
-			allowed = { original_tag = MKN }
-			available = { has_completed_focus = MKN_rifle_concern_union }
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_rifle_concern_union
+			}
 			cost = 100
-			research_bonus = { infantry_weapons = 0.15 }
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
 			modifier = {
 				political_power_gain = 0.05
 				industrial_capacity_factory = 0.03
 			}
 		}
 	}
-
 }

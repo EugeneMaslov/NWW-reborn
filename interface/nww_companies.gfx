@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_belmashtank
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_belmashtank.dds"
+	}
+	spriteType = {
+		name = GFX_idea_orshmash
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_orshmash.dds"
+	}
+	spriteType = {
+		name = GFX_idea_mogilevmash
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_mogilevmash.dds"
+	}
+	spriteType = {
+		name = GFX_idea_minskmashair
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_minskmashair.dds"
+	}
+	spriteType = {
+		name = GFX_idea_kurlandmashair
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_kurlandmashair.dds"
+	}
+	spriteType = {
+		name = GFX_idea_kaunas
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_kaunas.dds"
+	}
+	spriteType = {
+		name = GFX_idea_minskmash
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_minskmash.dds"
+	}
+	spriteType = {
+		name = GFX_idea_vilenmash
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_company_vilenmash.dds"
+	}
+}

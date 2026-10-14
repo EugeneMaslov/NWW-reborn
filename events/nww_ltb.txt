@@ -7,6 +7,7 @@ country_event = {
 	trigger = {
 		tag = LTB
 		has_stability < 0.3
+		NOT = { has_country_flag = LTB_union_preserved }
 		NOT = { has_country_flag = LTB_split_choice_available }
 	}
 	mean_time_to_happen = { days = 1 }
@@ -180,6 +181,8 @@ country_event = {
 		name = ltb.102.a
 		trigger = { has_completed_focus = LTB_the_vilnius_compromise }
 		set_country_flag = LTB_union_preserved
+		set_country_flag = LTB_deadline_resolved
+		clr_country_flag = LTB_deadline_active
 		remove_ideas = LTB_unresolved_national_question
 		add_ideas = LTB_vilnius_compromise
 		add_stability = 0.1
@@ -233,6 +236,8 @@ country_event = {
 		trigger = { has_completed_focus = LTB_the_vilnius_compromise }
 		set_global_flag = LTB_crisis_happened
 		set_country_flag = LTB_union_preserved
+		set_country_flag = LTB_deadline_resolved
+		clr_country_flag = LTB_deadline_active
 		remove_ideas = LTB_unresolved_national_question
 		add_stability = 0.05
 	}
@@ -257,4 +262,13 @@ news_event = {
 		name = ltb.110.a
 		add_political_power = 20
 	}
+}
+
+country_event = {
+ id = ltb.120
+ title = ltb.120.t
+ desc = ltb.120.d
+ picture = GFX_report_event_election_vote
+ is_triggered_only = yes
+ option = { name = ltb.120.a add_political_power = 25 }
 }

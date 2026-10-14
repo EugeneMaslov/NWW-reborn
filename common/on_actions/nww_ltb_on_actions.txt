@@ -1,16 +1,71 @@
-	on_actions = {
-		on_weekly = {
-			effect = {
+on_actions = {
+	on_startup = {
+		effect = {
+			LTB = {
 				if = {
 					limit = {
-						tag = LTB
-						has_stability < 0.3
-						NOT = { has_country_flag = LTB_split_choice_available }
+						exists = yes
+						NOT = {
+							has_country_flag = LTB_deadline_started
+						}
+						NOT = {
+							has_country_flag = LTB_deadline_resolved
+						}
+						NOT = {
+							has_completed_focus = LTB_the_vilnius_compromise
+						}
+						NOT = {
+							has_country_flag = LTB_union_preserved
+						}
 					}
-				complete_national_focus = LTB_consolidate_the_union
-					set_country_flag = LTB_split_choice_available
-					complete_national_focus = LTB_face_the_crisis
+					set_country_flag = LTB_deadline_started
+					set_country_flag = LTB_deadline_active
+					activate_mission = LTB_vilnius_compromise_deadline
 				}
 			}
 		}
 	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					tag = LTB
+					has_stability < 0.3
+					NOT = {
+						has_country_flag = LTB_union_preserved
+					}
+					NOT = {
+						has_country_flag = LTB_split_choice_available
+					}
+				}
+				complete_national_focus = LTB_consolidate_the_union
+				set_country_flag = LTB_split_choice_available
+				complete_national_focus = LTB_face_the_crisis
+			}
+			if = {
+				limit = {
+					tag = LTB
+					has_war_with = GER
+					has_idea = LTB_german_industrial_mission
+				}
+				remove_ideas = LTB_german_industrial_mission
+			}
+			if = {
+				limit = {
+					tag = LTB
+					has_war_with = SOV
+					has_idea = LTB_eastern_trade
+				}
+				remove_ideas = LTB_eastern_trade
+			}
+			if = {
+				limit = {
+					tag = LTB
+					is_in_faction = yes
+					has_idea = LTB_armed_neutrality_idea
+				}
+				remove_ideas = LTB_armed_neutrality_idea
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "key": "belmashtank",
+    "reference": "references/belmashtank.png",
+    "original": "generated/belmashtank.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_belmashtank.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Belmash tank works in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the compact blue arch and red angular A-like mark; preserve blue and red as key brand accents; add a restrained etched steel gear and a small tracked-vehicle silhouette. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "orshmash",
+    "reference": "references/orshmash.png",
+    "original": "generated/orshmash.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_orshmash.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Orshmash rifle and tool works in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the round green-lined badge and two-line Orsha Mash name; preserve the circular structure and green accent; use engraved steel and a small machinist tool detail. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "mogilevmash",
+    "reference": "references/mogilevmash.png",
+    "original": "generated/mogilevmash.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_mogilevmash.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Mogilev artillery works in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the circular steel-colored industrial badge with its original compact red monogram; preserve the monogram's visual identity and add a restrained artillery-shell detail. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "minskmashair",
+    "reference": "references/minskmashair.png",
+    "original": "generated/minskmashair.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_minskmashair.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Minsk Air aircraft works in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the dark angular aircraft letterform and red wing-like accents; preserve the recognizable silhouette and emphasize a compact metal airplane emblem. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "kurlandmashair",
+    "reference": "references/kurlandmashair.png",
+    "original": "generated/kurlandmashair.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_kurlandmashair.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Courland Air naval aircraft works in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the red angular frame around the Ka letter mark; preserve the square open-frame silhouette and the Ka mark; add a restrained small wave and wing motif. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "kaunas",
+    "reference": "references/kaunas.png",
+    "original": "generated/kaunas.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_kaunas.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Kaunas shipbuilding workshops in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the compact oval corporate badge with Kaunas written inside; preserve the oval shape and the exact Kaunas name; add restrained embossed anchor detailing. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "minskmash",
+    "reference": "references/minskmash.png",
+    "original": "generated/minskmash.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_minskmash.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Minsk Machine Works and BelAZ in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the circular white-red-white badge with the BelAZ wordmark; preserve the round flag-inspired layout and the exact Cyrillic БелАЗ wordmark; refine as an enamel factory badge. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  },
+  {
+    "key": "vilenmash",
+    "reference": "references/vilenmash.png",
+    "original": "generated/vilenmash.png",
+    "game_asset": "gfx/interface/ideas/LTB/idea_nww_company_vilenmash.dds",
+    "prompt": "Redraw the attached tiny legacy logo into ONE high-quality transparent-background industrial-company emblem for Vilnius university and engineering laboratories in NWW Reborn, a Hearts of Iron IV alternate-history mod. Use the attached image as the brand-identity reference: the burgundy circular badge and central BM-shaped monogram; preserve the round structure and monogram, refine in burgundy enamel and aged silver, with restrained book and drafting-compass detail. Keep its recognizable core mark, proportions, and dominant brand accents. The old bitmap is very low quality; recreate clean edges and careful shapes rather than magnifying pixel artifacts. Restrained 1930s painted metal/enamel corporate insignia with subtle aged silver and bronze craftsmanship, professional period industrial design, consistent with HOI4's DLC manufacturer icons. This is a small UI company logo, not a national spirit, so avoid flags on ribbons, elaborate laurels, shield heraldry, portraits and decorative banners. Compact central silhouette, opaque emblem with clean transparent outer background, easily legible when exported to a 64x64 pixel game slot. Preserve explicitly requested original brand lettering; add no slogans, subtitles, watermark or extra words. Produce a single emblem, not a sheet or mockup.",
+    "mode": "built-in imagegen",
+    "transparent_background": true
+  }
+]

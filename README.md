@@ -2,7 +2,7 @@
 
 ![NWW Reborn banner preview](nwwreborn_banner.svg)
 
-A Baltic and East European alternate-history scenario for Hearts of Iron IV, built around one simple idea: the world of 1936 is not the one we know. The Great War was different, borders are softer, governments are younger, and the lands between Germany, Russia, and Poland are still deciding what they are.
+A Baltic and East European alternate-history scenario for Hearts of Iron IV, built around one simple idea: the First World War never happened. The world of 1936 has softer borders and younger governments, and the lands between Germany, Russia, and Poland are still deciding what they are.
 
 The mod follows the fate of the former Lithuanian-Belarusian Union, the anarchist experiment of the Free Territory, the Soviet republics of the eastern border, and the ghosts of old empires that still do not know whether they should die or endure.
 
@@ -96,6 +96,8 @@ The mod is meant to be played in this rhythm:
 5. Turn the question of national identity into a military one when the moment comes.
 
 ## Development direction
+
+The LTB/MKN content revision is documented in [docs/LTB_MKN_changes.md](docs/LTB_MKN_changes.md), with focus-tree diagrams and commands for static validation.
 
 The project is gradually moving toward a clearer identity:
 

@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	NWW_LTB_diplomatic_agreement = {
+		value = 40
+		days = 1095
+	}
+	NWW_LTB_trade_partner = {
+		value = 25
+		trade = yes
+		days = 1095
+	}
+}

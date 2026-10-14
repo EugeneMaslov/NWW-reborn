@@ -1,0 +1,25 @@
+technology_sharing_group = {
+	id = NWW_LTB_italian_research
+	name = NWW_LTB_italian_research_name
+	desc = NWW_LTB_italian_research_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.05
+	available = {
+		OR = {
+			tag = LTB
+			tag = ITA
+		}
+		LTB = {
+			exists = yes
+			has_country_flag = LTB_italian_research_agreement
+		}
+		ITA = {
+			exists = yes
+		}
+		NOT = {
+			LTB = {
+				has_war_with = ITA
+			}
+		}
+	}
+}

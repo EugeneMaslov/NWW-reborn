@@ -1,0 +1,69 @@
+add_namespace = ltb
+country_event = {
+	id = ltb.160
+	title = ltb.160.t
+	desc = ltb.160.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = ltb.160.a
+		add_ideas = LTB_crown_arbitration
+		set_country_flag = LTB_constitutional_settlement
+	}
+	option = {
+		name = ltb.160.b
+		add_ideas = LTB_royal_defense_patronage
+		set_country_flag = LTB_constitutional_settlement
+	}
+}
+country_event = {
+	id = ltb.161
+	title = ltb.161.t
+	desc = ltb.161.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = ltb.161.a
+		add_ideas = LTB_federal_civil_rights
+		set_country_flag = LTB_constitutional_settlement
+	}
+	option = {
+		name = ltb.161.b
+		add_ideas = LTB_public_education
+		set_country_flag = LTB_constitutional_settlement
+	}
+}
+country_event = {
+	id = ltb.162
+	title = ltb.162.t
+	desc = ltb.162.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = ltb.162.a
+		add_ideas = LTB_professional_officer_state
+		set_country_flag = LTB_constitutional_settlement
+	}
+	option = {
+		name = ltb.162.b
+		add_ideas = LTB_directed_industry
+		set_country_flag = LTB_constitutional_settlement
+	}
+}
+country_event = {
+	id = ltb.163
+	title = ltb.163.t
+	desc = ltb.163.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = ltb.163.a
+		add_ideas = LTB_autonomous_workers_councils
+		set_country_flag = LTB_constitutional_settlement
+	}
+	option = {
+		name = ltb.163.b
+		add_ideas = LTB_state_planning_commission
+		set_country_flag = LTB_constitutional_settlement
+	}
+}

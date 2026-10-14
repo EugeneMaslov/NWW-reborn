@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_nww_ltb_agrarian
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_ltb_agrarian.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_ltb_army
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_ltb_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_ltb_arsenal
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_ltb_arsenal.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_ltb_depression
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_ltb_depression.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_ltb_national_question
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_ltb_national_question.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_ltb_union
+		texturefile = "gfx/interface/ideas/LTB/idea_nww_ltb_union.dds"
+	}
+}

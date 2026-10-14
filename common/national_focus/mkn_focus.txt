@@ -1,6 +1,5 @@
 focus_tree = {
 	id = MKN_focus
-
 	country = {
 		factor = 0
 		modifier = {
@@ -8,264 +7,378 @@ focus_tree = {
 			tag = MKN
 		}
 	}
-
-	continuous_focus_position = { x = 50 y = 1150 }
-
-	# =========================== INDUSTRY A: STEEL AND CURRENT (LEFT LADDER) ===========================
-
 	focus = {
 		id = MKN_dneprostroi
 		icon = GFX_focus_generic_hydroelectric_energy
-		mutually_exclusive = { focus = MKN_free_cooperatives }
-		x = 2
-		y = 0
+		mutually_exclusive = {
+			focus = MKN_free_cooperatives
+		}
 		cost = 10
 		completion_reward = {
-			226 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			add_dynamic_modifier = {
+				modifier = MKN_free_industry_modifier
 			}
-			add_dynamic_modifier = { modifier = MKN_free_industry_modifier }
-			set_variable = { MKN_fi_capacity = 0.03 }
-			set_variable = { MKN_fi_construction = 0.03 }
-			set_variable = { MKN_fi_research = 0.00 }
+			set_variable = {
+				MKN_fi_capacity = 0.03
+			}
+			set_variable = {
+				MKN_fi_construction = 0.03
+			}
+			set_variable = {
+				MKN_fi_research = 0.00
+			}
 			custom_effect_tooltip = MKN_fi_b_cap3
 			custom_effect_tooltip = MKN_fi_b_cons3
 			add_political_power = 75
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
+		x = 2
+		y = 0
 	}
 	focus = {
 		id = MKN_manganese_nikopol
 		icon = GFX_focus_generic_mining_industry
-		prerequisite = { focus = MKN_dneprostroi }
-		x = 0
-		y = 1
+		prerequisite = {
+			focus = MKN_dneprostroi
+		}
 		cost = 5
 		completion_reward = {
-			226 = {
-				add_resource = {
-					type = steel
-					amount = 15
-				}
+			add_to_variable = {
+				MKN_fi_construction = 0.02
 			}
-			add_to_variable = { MKN_fi_construction = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_cons2
 			add_political_power = 50
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = steel
+						amount = 15
+					}
+				}
+			}
 		}
+		x = 1
+		y = 1
 	}
 	focus = {
 		id = MKN_kichkas_bridge
 		icon = GFX_focus_generic_railroad
-		prerequisite = { focus = MKN_manganese_nikopol }
-		x = 0
-		y = 2
+		prerequisite = {
+			focus = MKN_manganese_nikopol
+		}
 		cost = 10
 		completion_reward = {
+			add_to_variable = {
+				MKN_fi_construction = 0.02
+			}
+			custom_effect_tooltip = MKN_fi_b_cons2
+			add_political_power = 50
 			196 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			226 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
-			add_to_variable = { MKN_fi_construction = 0.02 }
-			custom_effect_tooltip = MKN_fi_b_cons2
-			add_political_power = 50
 		}
+		x = 1
+		y = 2
 	}
 	focus = {
 		id = MKN_zaporizhstal
 		icon = GFX_focus_generic_steel_mill
-		prerequisite = {
-			focus = MKN_dneprostroi
-			focus = MKN_kichkas_bridge
-		}
-		x = 2
-		y = 2
 		cost = 10
 		completion_reward = {
-			226 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 10
-				}
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_cap2
 			add_political_power = 50
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		prerequisite = {
+			focus = MKN_dneprostroi
+		}
+		prerequisite = {
+			focus = MKN_kichkas_bridge
+		}
+		x = 9
+		y = 3
 	}
 	focus = {
 		id = MKN_steppe_electrification
 		icon = GFX_focus_generic_modernize_industry
-		prerequisite = { focus = MKN_zaporizhstal }
-		x = 2
-		y = 3
+		prerequisite = {
+			focus = MKN_zaporizhstal
+		}
 		cost = 16
 		completion_reward = {
-			196 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_research = 0.03
 			}
-			add_to_variable = { MKN_fi_research = 0.03 }
-			add_to_variable = { MKN_fi_construction = 0.02 }
+			add_to_variable = {
+				MKN_fi_construction = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_res3
 			custom_effect_tooltip = MKN_fi_b_cons2
 			add_political_power = 100
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		x = 2
+		y = 4
 	}
 	focus = {
 		id = MKN_kommunar_tractor
 		icon = GFX_focus_generic_military_industry
-		prerequisite = { focus = MKN_zaporizhstal }
-		x = 4
-		y = 3
+		prerequisite = {
+			focus = MKN_zaporizhstal
+		}
 		cost = 10
 		completion_reward = {
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
+			}
+			custom_effect_tooltip = MKN_fi_b_cap2
 			226 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
 				}
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
-			custom_effect_tooltip = MKN_fi_b_cap2
 		}
+		x = 9
+		y = 4
 	}
 	focus = {
 		id = MKN_dnepro_aluminium
 		icon = GFX_focus_generic_aluminum
-		prerequisite = { focus = MKN_kommunar_tractor }
-		x = 4
-		y = 4
+		prerequisite = {
+			focus = MKN_kommunar_tractor
+		}
 		cost = 10
 		completion_reward = {
-			226 = {
-				add_resource = {
-					type = aluminium
-					amount = 8
-				}
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = air_equipment
 			}
-			add_to_variable = { MKN_fi_research = 0.01 }
+			add_to_variable = {
+				MKN_fi_research = 0.01
+			}
 			custom_effect_tooltip = MKN_fi_b_res1
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = aluminium
+						amount = 8
+					}
+				}
+			}
 		}
+		x = 11
+		y = 5
 	}
 	focus = {
 		id = MKN_nikopol_tube_zavod
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = MKN_kommunar_tractor }
-		x = 2
-		y = 4
+		prerequisite = {
+			focus = MKN_kommunar_tractor
+		}
 		cost = 10
 		completion_reward = {
-			226 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
 				amount = 500
 				producer = MKN
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_cap2
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		x = 9
+		y = 5
 	}
 	focus = {
 		id = MKN_steppe_mech_works
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = MKN_dnepro_aluminium }
-		x = 4
-		y = 5
+		prerequisite = {
+			focus = MKN_dnepro_aluminium
+		}
 		cost = 10
 		completion_reward = {
-			196 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
+			add_to_variable = {
+				MKN_fi_construction = 0.02
 			}
-			add_to_variable = { MKN_fi_construction = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_cons2
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		x = 11
+		y = 6
 	}
 	focus = {
 		id = MKN_grain_export
 		icon = GFX_focus_generic_british_trade
-		prerequisite = {
-			focus = MKN_nikopol_tube_zavod
-			focus = MKN_steppe_mech_works
-		}
-		x = 2
-		y = 6
 		cost = 5
 		completion_reward = {
-			196 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_construction = 0.02
 			}
-			add_to_variable = { MKN_fi_construction = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_cons2
 			add_political_power = 50
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
+		prerequisite = {
+			focus = MKN_steppe_electrification
+		}
+		x = 2
+		y = 5
 	}
 	focus = {
 		id = MKN_steel_concern
 		icon = GFX_focus_generic_money_for_equipment
-		prerequisite = { focus = MKN_zaporizhstal }
-		x = 0
-		y = 5
+		prerequisite = {
+			focus = MKN_zaporizhstal
+		}
 		cost = 5
 		completion_reward = {
 			show_ideas_tooltip = MKN_industry_concern_1
 		}
+		x = 0
+		y = 4
 	}
 	focus = {
 		id = MKN_steel_concern_union
 		icon = GFX_focus_generic_american_investments
-		prerequisite = { focus = MKN_steel_concern }
-		x = 0
-		y = 6
+		prerequisite = {
+			focus = MKN_steel_concern
+		}
 		cost = 10
 		completion_reward = {
 			if = {
-				limit = { has_idea = MKN_industry_concern_1 }
+				limit = {
+					has_idea = MKN_industry_concern_1
+				}
 				swap_ideas = {
 					remove_idea = MKN_industry_concern_1
 					add_idea = MKN_industry_concern_2
@@ -273,139 +386,198 @@ focus_tree = {
 			}
 			custom_effect_tooltip = MKN_steel_concern_union_tt
 		}
+		x = 0
+		y = 5
 	}
 	focus = {
 		id = MKN_steel_volnitsa
 		icon = GFX_focus_generic_stalinist_industry
-		prerequisite = {
-			focus = MKN_grain_export
-			focus = MKN_steel_concern_union
-		}
-		x = 2
-		y = 7
 		cost = 16
 		completion_reward = {
-			226 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
 			}
-			196 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_construction = 0.03
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
-			add_to_variable = { MKN_fi_construction = 0.03 }
 			custom_effect_tooltip = MKN_fi_b_cap2
 			custom_effect_tooltip = MKN_fi_b_cons3
 			add_political_power = 150
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		prerequisite = {
+			focus = MKN_grain_export
+		}
+		prerequisite = {
+			focus = MKN_steel_concern_union
+		}
+		x = 2
+		y = 6
 	}
-
-	# =========================== INDUSTRY B: FREE CRAFTS (NEARBY LADDER) ===========================
-
 	focus = {
 		id = MKN_free_cooperatives
 		icon = GFX_focus_generic_agricultural_subsidies
-		mutually_exclusive = { focus = MKN_dneprostroi }
-		x = 8
-		y = 0
+		mutually_exclusive = {
+			focus = MKN_dneprostroi
+		}
 		cost = 5
 		completion_reward = {
-			add_dynamic_modifier = { modifier = MKN_free_industry_modifier }
-			set_variable = { MKN_fi_capacity = 0.02 }
-			set_variable = { MKN_fi_construction = 0.02 }
-			set_variable = { MKN_fi_research = 0.02 }
+			add_dynamic_modifier = {
+				modifier = MKN_free_industry_modifier
+			}
+			set_variable = {
+				MKN_fi_capacity = 0.02
+			}
+			set_variable = {
+				MKN_fi_construction = 0.02
+			}
+			set_variable = {
+				MKN_fi_research = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_cap2
 			custom_effect_tooltip = MKN_fi_b_cons2
 			custom_effect_tooltip = MKN_fi_b_res2
 			add_stability = 0.05
 			add_political_power = 100
 		}
+		x = 5
+		y = 0
 	}
 	focus = {
 		id = MKN_salt_artsels
 		icon = GFX_focus_generic_mineral_prospecting
-		prerequisite = { focus = MKN_free_cooperatives }
-		x = 6
-		y = 1
+		prerequisite = {
+			focus = MKN_free_cooperatives
+		}
 		cost = 5
 		completion_reward = {
-			add_to_variable = { MKN_fi_construction = 0.02 }
+			add_to_variable = {
+				MKN_fi_construction = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_cons2
 			add_political_power = 75
 		}
+		x = 4
+		y = 1
 	}
 	focus = {
 		id = MKN_grain_brokers
 		icon = GFX_focus_generic_arms_trade
-		prerequisite = { focus = MKN_free_cooperatives }
-		x = 10
-		y = 1
+		prerequisite = {
+			focus = MKN_free_cooperatives
+		}
 		cost = 10
 		completion_reward = {
-			196 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_research = 0.02
 			}
-			add_to_variable = { MKN_fi_research = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_res2
 			add_political_power = 50
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		x = 6
+		y = 1
 	}
 	focus = {
 		id = MKN_village_smithies
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = MKN_salt_artsels }
-		x = 6
-		y = 2
+		prerequisite = {
+			focus = MKN_salt_artsels
+		}
 		cost = 10
 		completion_reward = {
-			196 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_cap2
 			army_experience = 10
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		x = 7
+		y = 2
 	}
 	focus = {
 		id = MKN_wind_mills_steppe
 		icon = GFX_focus_generic_hydroelectric_energy
-		prerequisite = { focus = MKN_grain_brokers }
-		x = 10
-		y = 2
+		prerequisite = {
+			focus = MKN_grain_brokers
+		}
 		cost = 5
 		completion_reward = {
-			add_to_variable = { MKN_fi_construction = 0.01 }
+			add_to_variable = {
+				MKN_fi_construction = 0.01
+			}
 			custom_effect_tooltip = MKN_fi_b_cons1
 			add_stability = 0.03
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		x = 5
+		y = 2
 	}
 	focus = {
 		id = MKN_mobile_workshops
 		icon = GFX_focus_generic_industry_2
-		prerequisite = {
-			focus = MKN_village_smithies
-			focus = MKN_wind_mills_steppe
-		}
-		x = 8
-		y = 3
 		cost = 10
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -413,189 +585,290 @@ focus_tree = {
 				amount = 250
 				producer = MKN
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_cap2
 			army_experience = 15
 		}
+		prerequisite = {
+			focus = MKN_village_smithies
+		}
+		prerequisite = {
+			focus = MKN_wind_mills_steppe
+		}
+		x = 7
+		y = 3
 	}
 	focus = {
 		id = MKN_free_bazaars
 		icon = GFX_focus_generic_industry_investment
-		prerequisite = { focus = MKN_mobile_workshops }
-		x = 8
-		y = 4
 		cost = 10
 		completion_reward = {
-			226 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_research = 0.01
 			}
-			add_to_variable = { MKN_fi_research = 0.01 }
-			add_to_variable = { MKN_fi_construction = 0.01 }
+			add_to_variable = {
+				MKN_fi_construction = 0.01
+			}
 			custom_effect_tooltip = MKN_fi_b_res1
 			custom_effect_tooltip = MKN_fi_b_cons1
 			add_stability = 0.03
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		prerequisite = {
+			focus = MKN_wind_mills_steppe
+		}
+		x = 5
+		y = 3
 	}
 	focus = {
 		id = MKN_rifle_concern
 		icon = GFX_focus_generic_anti_tank_guns
-		prerequisite = { focus = MKN_free_bazaars }
-		x = 6
-		y = 5
 		cost = 5
 		completion_reward = {
-			show_ideas_tooltip = MKN_rifle_concern_1
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				show_mio_tooltip = MKN_rifle_artels_organization
+			}
+			else = {
+				show_ideas_tooltip = MKN_rifle_concern_1
+			}
 		}
+		prerequisite = {
+			focus = MKN_mobile_workshops
+		}
+		x = 7
+		y = 4
 	}
 	focus = {
 		id = MKN_steppe_mint
 		icon = GFX_focus_generic_money_for_equipment
-		prerequisite = { focus = MKN_free_bazaars }
-		x = 10
-		y = 5
+		prerequisite = {
+			focus = MKN_free_bazaars
+		}
 		cost = 10
 		completion_reward = {
 			add_ideas = MKN_free_mint_idea
-			add_to_variable = { MKN_fi_construction = 0.02 }
+			add_to_variable = {
+				MKN_fi_construction = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_cons2
 		}
+		x = 5
+		y = 4
 	}
 	focus = {
 		id = MKN_freight_artels
 		icon = GFX_focus_generic_supply_line
-		prerequisite = { focus = MKN_steppe_mint }
-		x = 10
-		y = 6
+		prerequisite = {
+			focus = MKN_steppe_mint
+		}
 		cost = 10
 		completion_reward = {
-			226 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_capacity = 0.02
 			}
-			add_to_variable = { MKN_fi_capacity = 0.02 }
 			custom_effect_tooltip = MKN_fi_b_cap2
 			add_political_power = 50
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		x = 5
+		y = 5
 	}
 	focus = {
 		id = MKN_rifle_concern_union
 		icon = GFX_focus_generic_money_for_equipment
-		prerequisite = { focus = MKN_rifle_concern }
-		x = 6
-		y = 6
+		prerequisite = {
+			focus = MKN_rifle_concern
+		}
 		cost = 10
 		completion_reward = {
 			if = {
-				limit = { has_idea = MKN_rifle_concern_1 }
+				limit = {
+					has_idea = MKN_rifle_concern_1
+				}
 				swap_ideas = {
 					remove_idea = MKN_rifle_concern_1
 					add_idea = MKN_rifle_concern_2
 				}
 			}
-			custom_effect_tooltip = MKN_rifle_concern_union_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_rifle_artels_organization = {
+					add_mio_size = 1
+					add_mio_research_bonus = 0.05
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Arms Against Tyranny"
+					}
+				}
+				custom_effect_tooltip = MKN_rifle_concern_union_tt
+			}
 		}
+		x = 7
+		y = 5
 	}
 	focus = {
 		id = MKN_workshop_airplane_artels
 		icon = GFX_focus_generic_air_research_boost
-		prerequisite = { focus = MKN_freight_artels }
-		x = 10
-		y = 7
 		cost = 10
 		completion_reward = {
 			air_experience = 20
-			add_to_variable = { MKN_fi_research = 0.02 }
+			add_to_variable = {
+				MKN_fi_research = 0.02
+			}
 			custom_effect_tooltip = MKN_fi_b_res2
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		prerequisite = {
+			focus = MKN_technical_communes
+		}
+		x = 13
+		y = 4
 	}
 	focus = {
 		id = MKN_craft_federation
 		icon = GFX_focus_generic_industry_investment
-		prerequisite = {
-			focus = MKN_rifle_concern_union
-			focus = MKN_workshop_airplane_artels
-		}
-		x = 8
-		y = 8
 		cost = 16
 		completion_reward = {
-			196 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_capacity = 0.03
 			}
-			226 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				MKN_fi_research = 0.03
 			}
-			add_to_variable = { MKN_fi_capacity = 0.03 }
-			add_to_variable = { MKN_fi_research = 0.03 }
 			custom_effect_tooltip = MKN_fi_b_cap3
 			custom_effect_tooltip = MKN_fi_b_res3
 			add_stability = 0.05
 			add_political_power = 100
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
+		prerequisite = {
+			focus = MKN_rifle_concern_union
+		}
+		prerequisite = {
+			focus = MKN_freight_artels
+		}
+		x = 5
+		y = 6
 	}
-
-	# =========================== POLITICS (CENTER, FROM THE ROOT) ===========================
-
 	focus = {
 		id = MKN_the_free_territory
 		icon = GFX_focus_generic_support_the_left_right
-		x = 20
-		y = 0
 		cost = 5
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
 		}
+		x = 20
+		y = 0
 	}
 	focus = {
 		id = MKN_farmers_and_workers
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = MKN_the_free_territory }
-		x = 16
-		y = 1
+		prerequisite = {
+			focus = MKN_the_free_territory
+		}
 		cost = 5
 		completion_reward = {
 			add_political_power = 80
 			add_stability = 0.05
 		}
+		x = 18
+		y = 1
 	}
 	focus = {
 		id = MKN_free_soviets
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_the_free_territory }
-		x = 20
-		y = 1
+		prerequisite = {
+			focus = MKN_the_free_territory
+		}
 		cost = 5
 		completion_reward = {
-			remove_ideas = MKN_free_territory
-			add_ideas = MKN_free_soviets_idea
+			swap_ideas = {
+				remove_idea = MKN_free_territory
+				add_idea = MKN_free_soviets_idea
+			}
 			add_stability = 0.05
 			add_war_support = 0.05
 		}
+		x = 20
+		y = 1
 	}
 	focus = {
 		id = MKN_nabat_federation
 		icon = GFX_focus_research
-		prerequisite = { focus = MKN_the_free_territory }
-		x = 24
-		y = 1
+		prerequisite = {
+			focus = MKN_the_free_territory
+		}
 		cost = 5
 		completion_reward = {
 			add_political_power = 80
@@ -605,13 +878,15 @@ focus_tree = {
 				category = industry
 			}
 		}
+		x = 22
+		y = 1
 	}
 	focus = {
 		id = MKN_shadow_republic
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = MKN_farmers_and_workers }
-		x = 16
-		y = 2
+		prerequisite = {
+			focus = MKN_farmers_and_workers
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -621,42 +896,60 @@ focus_tree = {
 			}
 			add_manpower = 20000
 		}
+		x = 18
+		y = 2
 	}
 	focus = {
 		id = MKN_gulyai_polye_commune
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = MKN_free_soviets }
-		x = 20
-		y = 2
+		prerequisite = {
+			focus = MKN_free_soviets
+		}
 		cost = 5
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
-			}
 			add_political_power = 50
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+		x = 20
+		y = 2
 	}
 	focus = {
 		id = MKN_black_banner_east
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = MKN_nabat_federation }
-		x = 24
-		y = 2
+		prerequisite = {
+			focus = MKN_nabat_federation
+		}
 		cost = 10
 		completion_reward = {
 			army_experience = 20
 			add_political_power = 80
 			add_war_support = 0.1
-			country_event = { id = mkn.1 days = 1 }
+			country_event = {
+				id = mkn.1
+				days = 1
+			}
 		}
+		x = 22
+		y = 2
 	}
 	focus = {
 		id = MKN_anarchist_schools
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = MKN_gulyai_polye_commune }
-		x = 22
-		y = 3
+		prerequisite = {
+			focus = MKN_gulyai_polye_commune
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -665,13 +958,15 @@ focus_tree = {
 				category = industry
 			}
 		}
+		x = 20
+		y = 3
 	}
 	focus = {
 		id = MKN_makhno_moves_south
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = MKN_black_banner_east }
-		x = 24
-		y = 3
+		prerequisite = {
+			focus = MKN_black_banner_east
+		}
 		cost = 5
 		completion_reward = {
 			add_manpower = 30000
@@ -681,93 +976,134 @@ focus_tree = {
 				producer = MKN
 			}
 		}
+		x = 22
+		y = 3
 	}
 	focus = {
 		id = MKN_peasant_militias
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = MKN_anarchist_schools }
-		x = 22
-		y = 4
+		prerequisite = {
+			focus = MKN_anarchist_schools
+		}
 		cost = 5
 		completion_reward = {
 			add_manpower = 50000
 			add_war_support = 0.05
 		}
+		x = 18
+		y = 4
 	}
 	focus = {
 		id = MKN_soviet_press
 		icon = GFX_focus_research
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 16
-		y = 5
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 5
 		completion_reward = {
 			add_political_power = 80
 			add_stability = 0.05
 		}
+		x = 18
+		y = 5
 	}
 	focus = {
 		id = MKN_the_steppe_holds
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_the_free_territory }
-		available = {
-			OR = {
-				has_completed_focus = MKN_makhno_moves_south
-				has_completed_focus = MKN_shadow_republic
-			}
-		}
-		x = 20
-		y = 4
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 150
 		}
+		prerequisite = {
+			focus = MKN_shadow_republic
+			focus = MKN_makhno_moves_south
+		}
+		available = {
+			always = yes
+		}
+		x = 20
+		y = 4
 	}
 	focus = {
 		id = MKN_border_tensions
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 26
-		y = 5
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 5
 		completion_reward = {
-			set_variable = { MKN_raids_done = 0 }
+			set_variable = {
+				MKN_raids_done = 0
+			}
 			add_war_support = 0.05
-			country_event = { id = mkn.3 days = 1 }
+			country_event = {
+				id = mkn.3
+				days = 1
+			}
 		}
+		x = 23
+		y = 5
 	}
 	focus = {
 		id = MKN_everlasting_makhnovshchina
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 14
-		y = 6
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 10
 		completion_reward = {
 			add_war_support = 0.1
 			add_manpower = 50000
 			army_experience = 20
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Nestor Makhno"
+				picture = GFX_Portrait_makhno
+				ideology = anarchist_communism
+				traits = {
+
+				}
+			}
 		}
+		mutually_exclusive = {
+			focus = MKN_council_communism
+			focus = MKN_constituent_assembly
+			focus = MKN_red_banner_steppe
+			focus = MKN_black_hundreds
+			focus = MKN_nestor_the_first
+		}
+		x = 17
+		y = 6
 	}
 	focus = {
 		id = MKN_soviets_forever
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_everlasting_makhnovshchina }
-		x = 14
-		y = 7
+		prerequisite = {
+			focus = MKN_everlasting_makhnovshchina
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
+			remove_ideas = MKN_anarchic_economy_idea
+			add_ideas = MKN_communal_federation
+			country_event = {
+				id = mkn.20
+				days = 1
+			}
+			remove_ideas = MKN_free_territory
+			add_ideas = MKN_free_soviets_idea
 		}
+		x = 17
+		y = 7
 	}
 	focus = {
 		id = MKN_tachanka_guards
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = MKN_everlasting_makhnovshchina }
-		x = 14
-		y = 8
 		cost = 5
 		completion_reward = {
 			army_experience = 30
@@ -777,82 +1113,154 @@ focus_tree = {
 				producer = MKN
 			}
 		}
+		prerequisite = {
+			focus = MKN_soviets_forever
+		}
+		x = 17
+		y = 8
 	}
 	focus = {
 		id = MKN_council_communism
 		icon = GFX_focus_research
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 18
-		y = 6
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 10
 		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
 				category = industry
 			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Nestor Makhno"
+				picture = GFX_Portrait_makhno
+				ideology = anarchist_communism
+				traits = {
+
+				}
+			}
 		}
+		mutually_exclusive = {
+			focus = MKN_everlasting_makhnovshchina
+			focus = MKN_constituent_assembly
+			focus = MKN_red_banner_steppe
+			focus = MKN_black_hundreds
+			focus = MKN_nestor_the_first
+		}
+		x = 19
+		y = 6
 	}
 	focus = {
 		id = MKN_workers_control
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = MKN_council_communism }
-		x = 18
-		y = 7
+		prerequisite = {
+			focus = MKN_council_communism
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 80
-			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 1
+			200 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
+		x = 19
+		y = 7
 	}
 	focus = {
 		id = MKN_commune_federation
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_council_communism }
-		x = 18
-		y = 8
 		cost = 5
 		completion_reward = {
 			add_manpower = 40000
 			add_war_support = 0.05
+			remove_ideas = MKN_anarchic_economy_idea
+			add_ideas = MKN_communal_federation
+			country_event = {
+				id = mkn.20
+				days = 1
+			}
+			remove_ideas = MKN_free_territory
+			add_ideas = MKN_free_soviets_idea
 		}
+		prerequisite = {
+			focus = MKN_workers_control
+		}
+		x = 19
+		y = 8
 	}
 	focus = {
 		id = MKN_constituent_assembly
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 22
-		y = 6
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = democratic }
-			add_popularity = { ideology = democratic popularity = 0.15 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 			add_stability = -0.05
 		}
+		mutually_exclusive = {
+			focus = MKN_everlasting_makhnovshchina
+			focus = MKN_council_communism
+			focus = MKN_red_banner_steppe
+			focus = MKN_black_hundreds
+			focus = MKN_nestor_the_first
+		}
+		x = 21
+		y = 6
 	}
 	focus = {
 		id = MKN_free_elections_steppe
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_constituent_assembly }
-		x = 24
-		y = 7
+		prerequisite = {
+			focus = MKN_constituent_assembly
+		}
 		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
+			remove_ideas = MKN_anarchic_economy_idea
+			add_ideas = MKN_federal_republic
+			country_event = {
+				id = mkn.20
+				days = 1
+			}
+			remove_ideas = MKN_free_territory
+			remove_ideas = MKN_free_soviets_idea
 		}
+		x = 21
+		y = 7
 	}
 	focus = {
 		id = MKN_open_markets
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = MKN_constituent_assembly }
-		x = 24
-		y = 8
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -862,138 +1270,241 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
+		prerequisite = {
+			focus = MKN_free_elections_steppe
+		}
+		x = 21
+		y = 8
 	}
 	focus = {
 		id = MKN_red_banner_steppe
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 26
-		y = 6
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = communism }
-			add_popularity = { ideology = communism popularity = 0.15 }
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
 			add_manpower = 40000
+			create_country_leader = {
+				name = "Viktor Belash"
+				picture = GFX_Portrait_MKN_viktor_belash
+				ideology = leninism
+				traits = {
+
+				}
+			}
 		}
+		mutually_exclusive = {
+			focus = MKN_everlasting_makhnovshchina
+			focus = MKN_council_communism
+			focus = MKN_constituent_assembly
+			focus = MKN_black_hundreds
+			focus = MKN_nestor_the_first
+		}
+		x = 23
+		y = 6
 	}
 	focus = {
 		id = MKN_hand_to_moscow
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_red_banner_steppe }
-		x = 28
-		y = 7
+		prerequisite = {
+			focus = MKN_red_banner_steppe
+		}
 		cost = 5
 		completion_reward = {
-			SOV = { add_to_faction = MKN }
+			SOV = {
+				add_to_faction = MKN
+			}
 			add_political_power = 80
 		}
+		available = {
+			SOV = {
+				exists = yes
+				is_faction_leader = yes
+				has_government = communism
+			}
+			is_in_faction = no
+			is_subject = no
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		x = 23
+		y = 7
 	}
 	focus = {
 		id = MKN_collectivize_the_steppe
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = MKN_red_banner_steppe }
-		x = 30
-		y = 7
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
 			add_stability = 0.05
+			remove_ideas = MKN_anarchic_economy_idea
+			add_ideas = MKN_planned_economy
+			country_event = {
+				id = mkn.20
+				days = 1
+			}
+			remove_ideas = MKN_free_territory
+			remove_ideas = MKN_free_soviets_idea
 		}
+		prerequisite = {
+			focus = MKN_red_banner_steppe
+		}
+		x = 23
+		y = 8
 	}
 	focus = {
 		id = MKN_black_hundreds
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 30
-		y = 6
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = fascism }
-			add_popularity = { ideology = fascism popularity = 0.15 }
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
 			add_war_support = 0.1
 		}
+		mutually_exclusive = {
+			focus = MKN_everlasting_makhnovshchina
+			focus = MKN_council_communism
+			focus = MKN_constituent_assembly
+			focus = MKN_red_banner_steppe
+			focus = MKN_nestor_the_first
+		}
+		x = 25
+		y = 6
 	}
 	focus = {
 		id = MKN_order_through_tachanka
 		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = MKN_black_hundreds }
-		x = 32
-		y = 7
+		prerequisite = {
+			focus = MKN_black_hundreds
+		}
 		cost = 5
 		completion_reward = {
 			army_experience = 30
 			add_war_support = 0.05
 		}
+		x = 25
+		y = 7
 	}
 	focus = {
 		id = MKN_steppe_legions
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = MKN_black_hundreds }
-		x = 34
-		y = 7
 		cost = 5
 		completion_reward = {
 			add_manpower = 60000
 			add_stability = -0.05
+			remove_ideas = MKN_anarchic_economy_idea
+			add_ideas = MKN_military_directory
+			country_event = {
+				id = mkn.20
+				days = 1
+			}
+			remove_ideas = MKN_free_territory
+			remove_ideas = MKN_free_soviets_idea
 		}
+		prerequisite = {
+			focus = MKN_order_through_tachanka
+		}
+		x = 25
+		y = 8
 	}
 	focus = {
 		id = MKN_nestor_the_first
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MKN_the_steppe_holds }
-		x = 34
-		y = 6
+		prerequisite = {
+			focus = MKN_the_steppe_holds
+		}
 		cost = 10
 		completion_reward = {
-			set_politics = { ruling_party = neutrality }
-			add_popularity = { ideology = neutrality popularity = 0.15 }
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 			add_stability = 0.05
 		}
+		mutually_exclusive = {
+			focus = MKN_everlasting_makhnovshchina
+			focus = MKN_council_communism
+			focus = MKN_constituent_assembly
+			focus = MKN_red_banner_steppe
+			focus = MKN_black_hundreds
+		}
+		x = 27
+		y = 6
 	}
 	focus = {
 		id = MKN_imperial_coronation
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = MKN_nestor_the_first }
-		x = 36
-		y = 7
+		prerequisite = {
+			focus = MKN_nestor_the_first
+		}
 		cost = 5
 		completion_reward = {
 			add_political_power = 150
 			add_war_support = 0.1
+			remove_ideas = MKN_anarchic_economy_idea
+			add_ideas = MKN_imperial_administration
+			country_event = {
+				id = mkn.20
+				days = 1
+			}
+			remove_ideas = MKN_free_territory
+			remove_ideas = MKN_free_soviets_idea
 		}
+		x = 27
+		y = 7
 	}
 	focus = {
 		id = MKN_steppe_empire
 		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = { focus = MKN_nestor_the_first }
-		x = 38
-		y = 7
 		cost = 5
 		completion_reward = {
 			army_experience = 25
 			add_manpower = 40000
 		}
+		prerequisite = {
+			focus = MKN_imperial_coronation
+		}
+		x = 27
+		y = 8
 	}
-
-	# =========================== ARMY BRANCH (RIGHT COLUMN, TOP-DOWN) ===========================
-
 	focus = {
 		id = MKN_tachanka_columns
 		icon = GFX_focus_generic_army_attack
-		x = 44
-		y = 0
 		cost = 5
 		completion_reward = {
 			add_ideas = MKN_tachanka_warfare
 			army_experience = 20
 		}
+		x = 32
+		y = 0
 	}
 	focus = {
 		id = MKN_railway_war
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = MKN_tachanka_columns }
-		x = 44
-		y = 1
+		prerequisite = {
+			focus = MKN_tachanka_columns
+		}
 		cost = 5
 		completion_reward = {
 			add_ideas = MKN_railway_guards
@@ -1003,27 +1514,33 @@ focus_tree = {
 				producer = MKN
 			}
 		}
+		x = 32
+		y = 1
 	}
 	focus = {
 		id = MKN_steppe_general_staff
 		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = { focus = MKN_railway_war }
-		x = 44
-		y = 2
+		prerequisite = {
+			focus = MKN_railway_war
+		}
 		cost = 5
 		completion_reward = {
 			army_experience = 25
 			add_command_power = 25
 			add_war_support = 0.05
 		}
+		x = 32
+		y = 2
 	}
 	focus = {
 		id = MKN_steel_horses
 		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = MKN_steppe_general_staff }
-		mutually_exclusive = { focus = MKN_batko_cavalry }
-		x = 42
-		y = 3
+		prerequisite = {
+			focus = MKN_steppe_general_staff
+		}
+		mutually_exclusive = {
+			focus = MKN_batko_cavalry
+		}
 		cost = 16
 		completion_reward = {
 			add_ideas = MKN_steel_horses_idea
@@ -1034,20 +1551,26 @@ focus_tree = {
 			}
 			army_experience = 25
 		}
+		x = 31
+		y = 3
 	}
 	focus = {
 		id = MKN_batko_cavalry
 		icon = GFX_focus_generic_horse_studs
-		prerequisite = { focus = MKN_steppe_general_staff }
-		mutually_exclusive = { focus = MKN_steel_horses }
-		x = 46
-		y = 3
+		prerequisite = {
+			focus = MKN_steppe_general_staff
+		}
+		mutually_exclusive = {
+			focus = MKN_steel_horses
+		}
 		cost = 10
 		completion_reward = {
 			add_ideas = MKN_batko_cavalry_idea
 			add_war_support = 0.05
 			army_experience = 25
 		}
+		x = 33
+		y = 3
 	}
 	focus = {
 		id = MKN_black_guard_veterans
@@ -1056,82 +1579,91 @@ focus_tree = {
 			focus = MKN_steel_horses
 			focus = MKN_batko_cavalry
 		}
-		x = 44
-		y = 4
 		cost = 10
 		completion_reward = {
 			add_ideas = MKN_black_guard_veterans_idea
 			army_experience = 25
 			add_war_support = 0.05
 		}
+		x = 32
+		y = 4
 	}
 	focus = {
 		id = MKN_steppe_quartermasters
 		icon = GFX_focus_generic_supply_line
-		prerequisite = { focus = MKN_steppe_general_staff }
-		x = 48
-		y = 3
+		prerequisite = {
+			focus = MKN_steppe_general_staff
+		}
 		cost = 10
 		completion_reward = {
 			add_ideas = MKN_steppe_quartermasters_idea
 			add_political_power = 50
 			add_war_support = 0.05
 		}
+		x = 35
+		y = 3
 	}
-
-	# =========================== AIR BRANCH (RIGHT COLUMN) ===========================
-
 	focus = {
 		id = MKN_steppe_hawks
 		icon = GFX_focus_generic_air_bases
-		x = 52
-		y = 0
 		cost = 5
 		completion_reward = {
 			air_experience = 25
-			add_tech_bonus = {
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = NWW_air_doctrine_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
 		}
+		x = 38
+		y = 0
 	}
 	focus = {
 		id = MKN_village_airfields
 		icon = GFX_focus_generic_air_bases
-		prerequisite = { focus = MKN_steppe_hawks }
-		x = 52
-		y = 1
+		prerequisite = {
+			focus = MKN_steppe_hawks
+		}
 		cost = 5
 		completion_reward = {
+			air_experience = 15
 			196 = {
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
-			air_experience = 15
 		}
+		x = 38
+		y = 1
 	}
 	focus = {
 		id = MKN_gulyaipole_pilot_school
 		icon = GFX_focus_generic_pilot_training
-		prerequisite = { focus = MKN_village_airfields }
-		x = 52
-		y = 2
+		prerequisite = {
+			focus = MKN_village_airfields
+		}
 		cost = 10
 		completion_reward = {
 			add_ideas = MKN_free_airmen
 			air_experience = 40
 		}
+		x = 38
+		y = 2
 	}
 	focus = {
 		id = MKN_black_swarm
 		icon = GFX_focus_generic_daytime_bombing
-		prerequisite = { focus = MKN_gulyaipole_pilot_school }
-		x = 52
-		y = 3
+		prerequisite = {
+			focus = MKN_gulyaipole_pilot_school
+		}
 		cost = 10
 		completion_reward = {
 			add_ideas = MKN_black_swarm_idea
@@ -1141,31 +1673,31 @@ focus_tree = {
 				category = air_equipment
 			}
 		}
+		x = 38
+		y = 3
 	}
-
-	# =========================== NAVY BRANCH (FAR RIGHT) ===========================
-
 	focus = {
 		id = MKN_black_sea_flotilla
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 58
-		y = 0
 		cost = 5
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = NWW_naval_doctrine_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
-			navy_experience = 25
 		}
+		x = 43
+		y = 0
 	}
 	focus = {
 		id = MKN_dnieper_patrol
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = MKN_black_sea_flotilla }
-		x = 58
-		y = 1
+		prerequisite = {
+			focus = MKN_black_sea_flotilla
+		}
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -1175,57 +1707,67 @@ focus_tree = {
 			}
 			navy_experience = 15
 		}
+		x = 43
+		y = 1
 	}
 	focus = {
 		id = MKN_kherson_shipyard
 		icon = GFX_focus_generic_refit_civilian_ships
-		prerequisite = { focus = MKN_dnieper_patrol }
-		x = 58
-		y = 2
+		prerequisite = {
+			focus = MKN_dnieper_patrol
+		}
 		cost = 10
 		completion_reward = {
+			navy_experience = 20
 			196 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
 				}
 			}
-			navy_experience = 20
 		}
+		x = 43
+		y = 2
 	}
 	focus = {
 		id = MKN_coastal_defense_steppe
 		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = MKN_kherson_shipyard }
-		x = 56
-		y = 3
+		prerequisite = {
+			focus = MKN_kherson_shipyard
+		}
 		cost = 5
 		completion_reward = {
 			196 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					instant_build = yes
-				}
-			}
-			226 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 568
+					}
 				}
 			}
 			navy_experience = 10
 		}
+		x = 42
+		y = 3
 	}
 	focus = {
 		id = MKN_black_sea_smugglers
 		icon = GFX_focus_generic_arms_trade
-		prerequisite = { focus = MKN_kherson_shipyard }
-		x = 60
-		y = 3
+		prerequisite = {
+			focus = MKN_kherson_shipyard
+		}
 		cost = 10
 		completion_reward = {
 			add_timed_idea = {
@@ -1234,13 +1776,15 @@ focus_tree = {
 			}
 			add_political_power = 100
 		}
+		x = 44
+		y = 3
 	}
 	focus = {
 		id = MKN_dnieper_gun_flotilla
 		icon = GFX_focus_generic_escort_efficiency
-		prerequisite = { focus = MKN_kherson_shipyard }
-		x = 58
-		y = 4
+		prerequisite = {
+			focus = MKN_kherson_shipyard
+		}
 		cost = 5
 		completion_reward = {
 			navy_experience = 25
@@ -1250,5 +1794,191 @@ focus_tree = {
 				category = naval_equipment
 			}
 		}
+		x = 43
+		y = 4
+	}
+	default = no
+	initial_show_position = {
+		focus = MKN_the_free_territory
+	}
+	focus = {
+		id = MKN_technical_communes
+		icon = GFX_focus_research
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_political_power = 50
+		}
+		x = 13
+		y = 1
+	}
+	focus = {
+		id = MKN_polytechnic_institute
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = MKN_technical_communes
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+		x = 13
+		y = 2
+	}
+	focus = {
+		id = MKN_communal_research_network
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = MKN_polytechnic_institute
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		x = 13
+		y = 3
+	}
+	focus = {
+		id = MKN_advanced_research
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = MKN_workshop_airplane_artels
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		x = 13
+		y = 5
+	}
+	focus = {
+		id = MKN_artillery_artels
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+		prerequisite = {
+			focus = MKN_black_guard_veterans
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = 32
+		y = 5
+	}
+	focus = {
+		id = MKN_mobile_supply_columns
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = MKN_steppe_quartermasters
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = motorized_equipment
+			}
+			army_experience = 25
+		}
+		x = 35
+		y = 5
+	}
+	focus = {
+		id = MKN_aircraft_artels
+		icon = GFX_goal_generic_air_production
+		cost = 5
+		prerequisite = {
+			focus = MKN_black_swarm
+		}
+		completion_reward = {
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = air_equipment
+			}
+		}
+		x = 38
+		y = 5
+	}
+	focus = {
+		id = MKN_black_sea_escorts
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5
+		prerequisite = {
+			focus = MKN_dnieper_gun_flotilla
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = 43
+		y = 5
+	}
+	continuous_focus_position = {
+		x = 50
+		y = 2400
 	}
 }

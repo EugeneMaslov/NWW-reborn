@@ -1,0 +1,590 @@
+add_namespace = ltb
+country_event = {
+	id = ltb.130
+	title = ltb.130.t
+	desc = ltb.130.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ltb.130.a
+		trigger = {
+			NOT = {
+				has_war_with = LTB
+			}
+			is_subject = no
+		}
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = LTB
+					value > 20
+				}
+			}
+		}
+		diplomatic_relation = {
+			country = LTB
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_opinion_modifier = {
+			target = LTB
+			modifier = NWW_LTB_diplomatic_agreement
+		}
+		LTB = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = NWW_LTB_diplomatic_agreement
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+		LTB = {
+			set_country_flag = LTB_moscow_agreement
+			country_event = {
+				id = ltb.140
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.130.b
+		ai_chance = {
+			base = 40
+		}
+		LTB = {
+			set_country_flag = LTB_moscow_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.131
+	title = ltb.131.t
+	desc = ltb.131.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = POL
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ltb.131.a
+		trigger = {
+			NOT = {
+				has_war_with = LTB
+			}
+			is_subject = no
+		}
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = LTB
+					value > 20
+				}
+			}
+		}
+		diplomatic_relation = {
+			country = LTB
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_opinion_modifier = {
+			target = LTB
+			modifier = NWW_LTB_diplomatic_agreement
+		}
+		every_state = {
+			limit = {
+				is_owned_by = LTB
+				is_core_of = LTB
+			}
+			remove_claim_by = POL
+		}
+		every_state = {
+			limit = {
+				is_owned_by = POL
+			}
+			remove_claim_by = LTB
+		}
+		LTB = {
+			add_opinion_modifier = {
+				target = POL
+				modifier = NWW_LTB_diplomatic_agreement
+			}
+			add_stability = 0.03
+		}
+		LTB = {
+			set_country_flag = LTB_polish_agreement
+			country_event = {
+				id = ltb.141
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.131.b
+		ai_chance = {
+			base = 40
+		}
+		LTB = {
+			set_country_flag = LTB_polish_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.132
+	title = ltb.132.t
+	desc = ltb.132.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = GER
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ltb.132.a
+		trigger = {
+			NOT = {
+				has_war_with = LTB
+			}
+			is_subject = no
+			LTB = {
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = LTB
+					value > 20
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = LTB
+			modifier = NWW_LTB_diplomatic_agreement
+		}
+		add_opinion_modifier = {
+			target = LTB
+			modifier = NWW_LTB_trade_partner
+		}
+		add_political_power = 25
+		LTB = {
+			add_political_power = -50
+			add_opinion_modifier = {
+				target = GER
+				modifier = NWW_LTB_diplomatic_agreement
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = NWW_LTB_trade_partner
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_timed_idea = {
+				idea = LTB_german_industrial_mission
+				days = 1095
+			}
+		}
+		LTB = {
+			set_country_flag = LTB_german_agreement
+			country_event = {
+				id = ltb.142
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.132.b
+		ai_chance = {
+			base = 40
+		}
+		LTB = {
+			set_country_flag = LTB_german_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.133
+	title = ltb.133.t
+	desc = ltb.133.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = POL
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ltb.133.a
+		trigger = {
+			NOT = {
+				has_war_with = LTB
+			}
+			is_subject = no
+			LTB = {
+				has_country_flag = LTB_polish_agreement
+			}
+			OR = {
+				is_in_faction = no
+				is_in_faction_with = LTB
+			}
+		}
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = LTB
+					value > 20
+				}
+			}
+		}
+		give_guarantee = LTB
+		LTB = {
+			give_guarantee = POL
+		}
+		LTB = {
+			set_country_flag = LTB_polish_defense_agreement
+			country_event = {
+				id = ltb.144
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.133.b
+		ai_chance = {
+			base = 40
+		}
+		LTB = {
+			set_country_flag = LTB_polish_defense_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.134
+	title = ltb.134.t
+	desc = ltb.134.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = POL
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ltb.134.a
+		trigger = {
+			NOT = {
+				has_war_with = LTB
+			}
+			is_subject = no
+			is_in_faction = no
+			LTB = {
+				is_faction_leader = yes
+			}
+		}
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = LTB
+					value > 20
+				}
+			}
+		}
+		LTB = {
+			add_to_faction = POL
+		}
+		LTB = {
+			set_country_flag = LTB_pbmat_poland_agreement
+			country_event = {
+				id = ltb.145
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.134.b
+		ai_chance = {
+			base = 40
+		}
+		LTB = {
+			set_country_flag = LTB_pbmat_poland_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.140
+	title = ltb.140.t
+	desc = ltb.140.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.140.a
+	}
+}
+country_event = {
+	id = ltb.141
+	title = ltb.141.t
+	desc = ltb.141.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.141.a
+	}
+}
+country_event = {
+	id = ltb.142
+	title = ltb.142.t
+	desc = ltb.142.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.142.a
+	}
+}
+country_event = {
+	id = ltb.143
+	title = ltb.143.t
+	desc = ltb.143.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.143.a
+	}
+}
+country_event = {
+	id = ltb.144
+	title = ltb.144.t
+	desc = ltb.144.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.144.a
+	}
+}
+country_event = {
+	id = ltb.145
+	title = ltb.145.t
+	desc = ltb.145.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.145.a
+	}
+}
+country_event = {
+	id = ltb.150
+	title = ltb.150.t
+	desc = ltb.150.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = FRA
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ltb.150.a
+		trigger = {
+			is_subject = no
+			NOT = {
+				has_war_with = LTB
+			}
+			LTB = {
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			base = 70
+		}
+		LTB = {
+			add_political_power = -50
+			set_country_flag = LTB_french_machines_agreement
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			206 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = LTB
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		LTB = {
+			country_event = {
+				id = ltb.152
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.150.b
+		ai_chance = {
+			base = 30
+		}
+		LTB = {
+			set_country_flag = LTB_french_machines_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.152
+	title = ltb.152.t
+	desc = ltb.152.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.152.a
+	}
+}
+country_event = {
+	id = ltb.151
+	title = ltb.151.t
+	desc = ltb.151.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = ITA
+		LTB = {
+			exists = yes
+		}
+	}
+	option = {
+		LTB = {
+			set_country_flag = LTB_italian_research_agreement
+		}
+		name = ltb.151.a
+		trigger = {
+			is_subject = no
+			NOT = {
+				has_war_with = LTB
+			}
+		}
+		ai_chance = {
+			base = 70
+		}
+		add_to_tech_sharing_group = NWW_LTB_italian_research
+		LTB = {
+			set_country_flag = LTB_italian_research_agreement
+			add_to_tech_sharing_group = NWW_LTB_italian_research
+		}
+		LTB = {
+			country_event = {
+				id = ltb.153
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ltb.151.b
+		ai_chance = {
+			base = 30
+		}
+		LTB = {
+			set_country_flag = LTB_italian_research_rejected
+			country_event = {
+				id = ltb.143
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ltb.153
+	title = ltb.153.t
+	desc = ltb.153.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = LTB
+	}
+	option = {
+		name = ltb.153.a
+	}
+}
