@@ -8,7 +8,7 @@
 
 ## Двенадцать дополнительных идей из старой версии
 
-Источник: `noworldwarzhive/common/national_focus/LTB_focuses.txt` и `localisation/LTB_focus_l_russian.yml`. Старые названия адаптированы, а нынешние идентификаторы существующих фокусов и кризис Союза сохранены. После последующего завершения политических путей: 96 фокусов LTB. Новые зависимости и порядок описаны в [LTB_progression_revision.md](LTB_progression_revision.md).
+Источник: `old-mod/noworldwarzhive/common/national_focus/LTB_focuses.txt` и `old-mod/noworldwarzhive/localisation/LTB_focus_l_russian.yml`. Старые названия адаптированы, а нынешние идентификаторы существующих фокусов и кризис Союза сохранены. После последующего завершения политических путей: 96 фокусов LTB. Новые зависимости и порядок описаны в [LTB_progression_revision.md](LTB_progression_revision.md).
 
 | Старый фокус | Новый фокус | Смысл награды |
 | --- | --- | --- |

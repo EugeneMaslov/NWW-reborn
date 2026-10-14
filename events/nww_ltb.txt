@@ -7,6 +7,7 @@ country_event = {
 	trigger = {
 		tag = LTB
 		has_stability < 0.3
+		NOT = { has_completed_focus = LTB_the_vilnius_compromise }
 		NOT = { has_country_flag = LTB_union_preserved }
 		NOT = { has_country_flag = LTB_split_choice_available }
 	}

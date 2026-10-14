@@ -34,12 +34,32 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_LTB = {
+		effect = {
+			# Recover an already accepted compromise, including loaded old saves.
+			if = {
+				limit = {
+					tag = LTB
+					has_completed_focus = LTB_the_vilnius_compromise
+					NOT = { has_country_flag = LTB_split_choice_available }
+					OR = {
+						NOT = { has_country_flag = LTB_union_preserved }
+						NOT = { has_country_flag = LTB_deadline_resolved }
+						has_country_flag = LTB_deadline_active
+						has_active_mission = LTB_vilnius_compromise_deadline
+					}
+				}
+				nww_ltb_resolve_compromise = yes
+			}
+		}
+	}
 	on_weekly = {
 		effect = {
 			if = {
 				limit = {
 					tag = LTB
 					has_stability < 0.3
+					NOT = { has_completed_focus = LTB_the_vilnius_compromise }
 					NOT = {
 						has_country_flag = LTB_union_preserved
 					}

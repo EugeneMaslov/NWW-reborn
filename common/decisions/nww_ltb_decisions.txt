@@ -88,7 +88,13 @@ LTB_political_mandate = {
 			}
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			neutrality < 0.40
 			NOT = {
 				has_country_flag = LTB_political_campaign_active
@@ -151,7 +157,13 @@ LTB_political_mandate = {
 			}
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			democratic < 0.40
 			NOT = {
 				has_country_flag = LTB_political_campaign_active
@@ -214,7 +226,13 @@ LTB_political_mandate = {
 			}
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			fascism < 0.40
 			NOT = {
 				has_country_flag = LTB_political_campaign_active
@@ -277,7 +295,13 @@ LTB_political_mandate = {
 			}
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			communism < 0.40
 			NOT = {
 				has_country_flag = LTB_political_campaign_active
