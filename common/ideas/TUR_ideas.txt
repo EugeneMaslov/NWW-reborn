@@ -7,9 +7,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.12
-				planning_speed = -0.12
-				army_attack_factor = -0.06
+				army_org_factor = -0.2
+				planning_speed = -0.2
+				army_attack_factor = -0.1
 			}
 		}
 		tur_silly_army_nowar_1 = {
@@ -19,9 +19,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.105
-				planning_speed = -0.105
-				army_attack_factor = -0.052
+				army_org_factor = -0.15
+				planning_speed = -0.15
+				army_attack_factor = -0.1
 			}
 		}
 		tur_silly_army_nowar_2 = {
@@ -31,9 +31,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.09
-				planning_speed = -0.09
-				army_attack_factor = -0.045
+				army_org_factor = -0.1
+				planning_speed = -0.1
+				army_attack_factor = -0.05
 			}
 		}
 		tur_silly_army_nowar_3 = {
@@ -43,9 +43,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.075
-				planning_speed = -0.075
-				army_attack_factor = -0.037
+				army_org_factor = -0.05
+				planning_speed = -0.05
+				army_attack_factor = -0.05
 			}
 		}
 		tur_good_army_1 = {
@@ -55,9 +55,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.06
-				planning_speed = -0.06
-				army_attack_factor = -0.03
+				army_org_factor = 0
+				planning_speed = 0
+				army_attack_factor = 0
 			}
 		}
 		tur_good_army_2 = {
@@ -67,9 +67,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.045
-				planning_speed = -0.045
-				army_attack_factor = -0.022
+				army_org_factor = 0.05
+				planning_speed = 0.05
+				army_attack_factor = 0.05
 			}
 		}
 		tur_good_army_3 = {
@@ -79,9 +79,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.03
-				planning_speed = -0.03
-				army_attack_factor = -0.015
+				army_org_factor = 0.1
+				planning_speed = 0.1
+				army_attack_factor = 0.05
 			}
 		}
 		tur_good_army_4 = {
@@ -91,9 +91,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = -0.015
-				planning_speed = -0.015
-				army_attack_factor = -0.007
+				army_org_factor = 0.15
+				planning_speed = 0.15
+				army_attack_factor = 0.1
 			}
 		}
 		tur_perfect_army_1 = {
@@ -103,9 +103,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = 0.0
-				planning_speed = 0.0
-				army_attack_factor = 0.0
+				army_org_factor = 0.2
+				planning_speed = 0.2
+				army_attack_factor = 0.1
 			}
 		}
 		tur_perfect_army_2 = {
@@ -115,9 +115,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = 0.015
-				planning_speed = 0.015
-				army_attack_factor = 0.007
+				army_org_factor = 0.25
+				planning_speed = 0.25
+				army_attack_factor = 0.15
 			}
 		}
 		tur_perfect_army_3 = {
@@ -127,9 +127,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = 0.03
-				planning_speed = 0.03
-				army_attack_factor = 0.015
+				army_org_factor = 0.3
+				planning_speed = 0.3
+				army_attack_factor = 0.15
 			}
 		}
 		tur_perfect_army_4 = {
@@ -139,9 +139,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = 0.045
-				planning_speed = 0.045
-				army_attack_factor = 0.022
+				army_org_factor = 0.35
+				planning_speed = 0.35
+				army_attack_factor = 0.2
 			}
 		}
 		tur_agricultural_economic_1 = {
@@ -151,8 +151,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.16
-				production_speed_buildings_factor = -0.16
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.2
 			}
 		}
 		tur_agricultural_economic_2 = {
@@ -162,22 +162,11 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.14
-				production_speed_buildings_factor = -0.14
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
 			}
 		}
 		tur_agricultural_economic_3 = {
-			picture = nww_legacy_tur_agricult
-			removal_cost = -1
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				industrial_capacity_factory = -0.12
-				production_speed_buildings_factor = -0.12
-			}
-		}
-		tur_agricultural_economic_4 = {
 			picture = nww_legacy_tur_agricult
 			removal_cost = -1
 			allowed = {
@@ -188,6 +177,17 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 			}
 		}
+		tur_agricultural_economic_4 = {
+			picture = nww_legacy_tur_agricult
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
 		tur_small_industry_economic_1 = {
 			picture = nww_legacy_tur_small_industy
 			removal_cost = -1
@@ -195,8 +195,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.08
-				production_speed_buildings_factor = -0.08
+				industrial_capacity_factory = 0.0
+				production_speed_buildings_factor = 0.0
 			}
 		}
 		tur_small_industry_economic_2 = {
@@ -206,8 +206,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.06
-				production_speed_buildings_factor = -0.06
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		tur_small_industry_economic_3 = {
@@ -217,8 +217,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.04
-				production_speed_buildings_factor = -0.04
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		tur_small_industry_economic_4 = {
@@ -228,8 +228,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.02
-				production_speed_buildings_factor = -0.02
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
 			}
 		}
 		tur_industry_economic_1 = {
@@ -239,8 +239,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = 0.0
-				production_speed_buildings_factor = 0.0
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.2
 			}
 		}
 		tur_new_democ = {
@@ -291,8 +291,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = 0.04
-				consumer_goods_factor = 0.02
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 		TUR_factory_idea_2 = {
@@ -302,8 +302,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = 0.04
-				production_factory_efficiency_gain_factor = 0.04
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		TUR_capitalism_economic_1 = {
@@ -313,8 +313,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				research_speed_factor = 0.02
-				consumer_goods_factor = 0.02
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 		TUR_capitalism_economic_2 = {
@@ -324,8 +324,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				research_speed_factor = 0.02
-				production_factory_efficiency_gain_factor = 0.03
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		TUR_capitalism_economic_3 = {
@@ -335,8 +335,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				research_speed_factor = 0.03
-				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
 			}
 		}
 		TUR_NFT_1 = {
@@ -347,7 +347,7 @@ ideas = {
 			}
 			modifier = {
 				trade_opinion_factor = 0.10
-				production_speed_industrial_complex_factor = 0.03
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 		TUR_NFT_2 = {
@@ -358,7 +358,7 @@ ideas = {
 			}
 			modifier = {
 				trade_opinion_factor = 0.15
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
 		TUR_IPT_1 = {
@@ -368,8 +368,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				research_speed_factor = 0.02
-				production_factory_max_efficiency_factor = 0.03
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		TUR_gold_1 = {
@@ -379,7 +379,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
@@ -390,7 +390,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 			}
 		}
 		TUR_TAS_2 = {
@@ -400,8 +400,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.03
-				production_factory_efficiency_gain_factor = 0.03
+				consumer_goods_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.10
 			}
 		}
 		TUR_NNSP_1 = {
@@ -421,8 +421,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = 0.04
-				war_support_factor = 0.04
+				stability_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
 		TUR_supply_reform = {
@@ -433,7 +433,7 @@ ideas = {
 			}
 			modifier = {
 				supply_consumption_factor = -0.05
-				army_org_factor = 0.02
+				army_org_factor = 0.05
 			}
 		}
 		TUR_disagree_reform = {
@@ -444,7 +444,7 @@ ideas = {
 			}
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.05
 			}
 		}
 		TUR_universal_army_1 = {
@@ -454,7 +454,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_org_factor = 0.03
+				army_org_factor = 0.05
 				planning_speed = 0.05
 			}
 		}
@@ -487,8 +487,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				research_speed_factor = 0.03
-				production_factory_max_efficiency_factor = 0.03
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		NWW_TUR_federal_constitution = {
@@ -509,39 +509,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = 0.03
-				recruitable_population_factor = 0.03
-			}
-		}
-		NWW_AUS_currency = {
-			picture = generic_industrial_concern_1
-			removal_cost = -1
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				consumer_goods_factor = -0.02
-				production_factory_efficiency_gain_factor = 0.03
-			}
-		}
-		NWW_GER_quality = {
-			picture = generic_industrial_concern_1
-			removal_cost = -1
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.04
-			}
-		}
-		NWW_HUN_workshops = {
-			picture = generic_industrial_concern_1
-			removal_cost = -1
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.04
+				industrial_capacity_factory = 0.05
+				recruitable_population_factor = 0.05
 			}
 		}
 		TUR_national_economic_1 = {
@@ -551,8 +520,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = 0.02
-				consumer_goods_factor = 0.01
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 		TUR_national_economic_2 = {
@@ -562,8 +531,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = 0.04
-				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 		TUR_national_economic_3 = {
@@ -573,8 +542,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = 0.06
-				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.15
 			}
 		}
 		TUR_national_economic_4 = {
@@ -584,8 +553,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = 0.08
-				consumer_goods_factor = 0.04
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = 0.2
 			}
 		}
 	}

@@ -29,7 +29,7 @@ modifiers.update(['democratic_drift','fascism_drift','communism_drift'])
 known_effects=set(re.findall(r'^## ([\w]+)\s*$',(GAME/'documentation/effects_documentation.md').read_text(encoding='utf-8-sig'),re.M))
 scripted={k for p,doc in documents(ROOT,'common/scripted_effects/*.txt') for k,v,o in doc}
 scope=[ROOT/c['destination'] for c in manifest['countries'].values()]
-scope += [ROOT/p for p in ['common/ideas/nww_legacy_ideas.txt','common/scripted_effects/nww_legacy_effects.txt','events/nww_legacy_diplomacy.txt','common/technology_sharing/nww_legacy_research.txt','common/decisions/nww_legacy_campaigns.txt','common/decisions/categories/nww_legacy_categories.txt','history/countries/TUR - Turkey.txt','common/characters/nww_legacy_TUR.txt','interface/nww_legacy.gfx']]
+scope += [ROOT/p for p in manifest['content_files']]
 for path in scope:
     doc=read(path);where=path.relative_to(ROOT)
     for key,value,op in walk(doc):
@@ -43,7 +43,7 @@ for path in scope:
         if key=='add_tech_bonus':
             for cat in values(value,'category'):check(cat in base.categories and not cat.endswith('_doctrine'),f'{where}: obsolete research category {cat}')
         if key=='country_event' and isinstance(value,list):check(one(value,'id') in event_ids,f'{where}: missing event {one(value,"id")}')
-        if key=='modifier' and isinstance(value,list) and path.name=='nww_legacy_ideas.txt':
+        if key=='modifier' and isinstance(value,list) and path.parent.name=='ideas':
             for mod,v,o in value:check(mod in modifiers or mod.startswith('production_speed_'),f'{where}: unknown modifier {mod}')
         check(key not in ('add_offsite_building','add_defense','start_border_war','set_state_owner','set_state_controller','num_of_research_slots'),f'{where}: obsolete or unsafe archive effect {key}')
         if key=='set_politics':
@@ -101,23 +101,47 @@ for path in scope:
             return result
         if reached==by_id.keys():
             for fid in by_id:check(bool(paths(fid)),f'{fid}: requires mutually exclusive paths')
-    if path.name=='nww_legacy_ideas.txt':
+    if path.parent.name=='ideas':
         for token,idea,o in one(one(doc,'ideas'),'country'):local(token,path.name);local(token+'_desc',path.name)
-    if path.name=='nww_legacy_diplomacy.txt':
+    if path.parent.name=='events':
         for event in values(doc,'country_event'):
             local(one(event,'title'),path.name);local(one(event,'desc'),path.name)
             for option in values(event,'option'):local(one(option,'name'),path.name)
-    if path.name in ('nww_legacy_categories.txt','nww_legacy_campaigns.txt'):
+    if path.parent.name in ('categories','decisions'):
         for token,node,o in doc:
             local(token,path.name)
-            if path.name=='nww_legacy_campaigns.txt':
+            if path.parent.name=='decisions':
                 for decision,content,o in node:local(decision,path.name);local(decision+'_desc',path.name)
 for lang in locales:
-    p=ROOT/f'localisation/nww_legacy_l_{lang}.yml';check(p.read_bytes().startswith(b'\xef\xbb\xbf'),f'{p.name}: no UTF-8 BOM')
-    keys=re.findall(r'^\s+([\w.]+):',p.read_text(encoding='utf-8-sig'),re.M);check(len(keys)==len(set(keys)),f'{p.name}: duplicate localization keys')
+    for tag in manifest['countries']:
+        p=ROOT/f'localisation/replace/{tag}_l_{lang}.yml';check(p.read_bytes().startswith(b'\xef\xbb\xbf'),f'{p.name}: no UTF-8 BOM')
+        keys=re.findall(r'^\s+([\w.]+):',p.read_text(encoding='utf-8-sig'),re.M);check(len(keys)==len(set(keys)),f'{p.name}: duplicate localization keys')
+compat={one(v,'id'):v for relative in manifest['compatibility_files'] for k,v,o in read(ROOT/relative)}
 for token in manifest['compatibility_ids']:
-    shared=next(v for k,v,o in read(ROOT/'common/national_focus/nww_legacy_compatibility.txt') if one(v,'id')==token)
+    check(bool(re.fullmatch(r'[A-Za-z_]\w*',token)),f'{token}: a non-focus ID was registered as a compatibility focus')
+    shared=compat[token]
     check(one(one(shared,'allow_branch'),'always')=='no',f'{token}: compatibility focus can appear in gameplay')
+for tag in ('LTB','AUS'):
+    plan=read(ROOT/f'common/ai_strategy_plans/{tag}_historical.txt')[0][1]
+    order=[v for k,v,o in one(plan,'ai_national_focuses')]
+    for fid in order:check(fid in all_focus_ids,f'{tag}: historical plan refers to unknown focus {fid}')
+    if tag=='LTB':check(order[:2]==['LTB_consolidate_the_union','LTB_the_vilnius_compromise'],'LTB: historical opening does not settle the crisis immediately')
+    else:check('AUS_war_with_hun' in order and 'AUS_the_danubian_federation' not in order,'AUS: historical plan does not prefer conquest of Hungary')
+oob=read(ROOT/'history/units/AUS_1936_nww.txt');divisions=values(one(oob,'units'),'division')
+check(len(divisions)==12 and all(one(d,'start_equipment_factor')=='1' for d in divisions),'AUS: starting army is not twelve equipped divisions')
+characters=one(read(ROOT/'common/characters/TUR.txt'),'characters')
+for token,node,o in characters:
+    if not token.startswith('NWW_TUR_'):check(not any(k=='country_leader' for k,v,o in walk(node)),f'{token}: native republican leader competes with Ottoman archive leaders')
+check(len([1 for k,v,o in walk(characters) if k=='country_leader'])==4,'TUR: expected four archive political leaders')
+check(not any(k=='has_idea' and v=='TUR_recep_peker' for k,v,o in walk(characters)),'TUR: obsolete prime-minister idea checks returned')
+tur_ideas=one(one(read(ROOT/'common/ideas/TUR_ideas.txt'),'ideas'),'country')
+for token,node,o in tur_ideas:
+    for stat,value,op in one(node,'modifier',[]):
+        if stat.endswith('_drift') or stat in ('political_power_gain','max_command_power'):continue
+        number=float(value)
+        check(abs(number*20-round(number*20))<1e-6,f'{token}: {stat} is not a five-percentage-point step')
+for node in values(one(read(ROOT/'common/national_focus/AUS_focuses.txt'),'focus_tree'),'focus'):
+    icon=one(node,'icon');check(icon+'_shine' in base.sprites,f'AUS: focus {one(node,"id")} has no shine sprite')
 if errors:
     for err in dict.fromkeys(errors):print('ERROR:',err)
     raise SystemExit(1)

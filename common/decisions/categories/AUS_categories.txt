@@ -1,0 +1,7 @@
+NWW_AUS_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = AUS
+		has_completed_focus = AUS_nww_rebuild
+	}
+}

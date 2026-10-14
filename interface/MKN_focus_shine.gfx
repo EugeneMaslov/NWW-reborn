@@ -1,0 +1,296 @@
+spriteTypes = {
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_kommunar.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_kommunar.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_kommunar_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_kommunar.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_kherson_works.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_kherson_works.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_kherson_works_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_kherson_works.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_artillery_works.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_artillery_works.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_artillery_works_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_artillery_works.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_air_artels.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_air_artels.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_air_artels_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_air_artels.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_rifle_artels.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_rifle_artels.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_rifle_artels_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_rifle_artels.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_attack_air_artels.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_attack_air_artels.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_attack_air_artels_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_attack_air_artels.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_submarine_works.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/ideas/MKN/focus_submarine_works.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_company_submarine_works_shine
+		texturefile = "gfx/interface/ideas/MKN/focus_submarine_works.dds"
+	}
+}

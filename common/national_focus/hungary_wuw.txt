@@ -1,1 +1,1 @@
-# NWW: Gotterdammerung Hungarian tree disabled - see hungary.txt stub.
+# NWW: Gotterdammerung Hungarian tree disabled; see HUN_focuses.txt.

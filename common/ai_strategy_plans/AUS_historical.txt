@@ -1,0 +1,42 @@
+NWW_AUS_historical = {
+	name = "NWW AUS historical plan"
+	desc = ""
+	allowed = {
+		original_tag = AUS
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		AUS_nww_rebuild
+		AUS_political_power
+		AUS_reinstate_the_imperial_council
+		AUS_not_germany
+		AUS_nww_army
+		AUS_army_expierience
+		AUS_nww_industry
+		aus_prom
+		aus_prom_2
+		AUS_bring_generals_out_of_retirement
+		AUS_war_with_hun
+		AUS_establish_bohme_plan
+		aus_prom_3
+		aus_prom_4
+		AUS_war_with_croatia
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		AUS_the_danubian_federation = 0
+		AUS_hold_elections = 0
+	}
+	ai_strategy = {
+		type = conquer
+		id = HUN
+		value = 200
+	}
+}

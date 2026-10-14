@@ -1,0 +1,171 @@
+add_namespace = nww_aus_diplomacy
+country_event = {
+	id = nww_aus_diplomacy.1
+	title = nww_aus_diplomacy.1.t
+	desc = nww_aus_diplomacy.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nww_aus_diplomacy.1.a
+		trigger = {
+			FROM = {
+				exists = yes
+				is_subject = no
+				has_political_power > 49
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		FROM = {
+			add_political_power = -50
+			set_country_flag = NWW_foreign_contract
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = {
+				id = nww_aus_diplomacy.2
+				days = 1
+			}
+		}
+		if = {
+			limit = {
+				tag = GER
+				FROM = {
+					tag = AUS
+				}
+			}
+			FROM = {
+				if = {
+					limit = {
+						amount_research_slots < 5
+					}
+					add_research_slot = 1
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = NWW_legacy_trade
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	option = {
+		name = nww_aus_diplomacy.1.b
+		FROM = {
+			if = {
+				limit = {
+					exists = yes
+				}
+				country_event = {
+					id = nww_aus_diplomacy.4
+					days = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+country_event = {
+	id = nww_aus_diplomacy.2
+	title = nww_aus_diplomacy.2.t
+	desc = nww_aus_diplomacy.2.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nww_aus_diplomacy.2.a
+	}
+}
+country_event = {
+	id = nww_aus_diplomacy.3
+	title = nww_aus_diplomacy.3.t
+	desc = nww_aus_diplomacy.3.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nww_aus_diplomacy.3.a
+		trigger = {
+			is_subject = no
+			NOT = {
+				has_war_with = FROM
+			}
+			FROM = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		set_country_flag = NWW_danubian_agreement
+		FROM = {
+			set_country_flag = NWW_danubian_agreement
+			add_to_tech_sharing_group = NWW_Danubian_research
+		}
+		add_to_tech_sharing_group = NWW_Danubian_research
+		add_opinion_modifier = {
+			target = FROM
+			modifier = NWW_legacy_trade
+		}
+		FROM = {
+			country_event = {
+				id = nww_aus_diplomacy.5
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	option = {
+		name = nww_aus_diplomacy.3.b
+		FROM = {
+			if = {
+				limit = {
+					exists = yes
+				}
+				country_event = {
+					id = nww_aus_diplomacy.4
+					days = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+country_event = {
+	id = nww_aus_diplomacy.4
+	title = nww_aus_diplomacy.4.t
+	desc = nww_aus_diplomacy.4.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nww_aus_diplomacy.4.a
+	}
+}
+country_event = {
+	id = nww_aus_diplomacy.5
+	title = nww_aus_diplomacy.5.t
+	desc = nww_aus_diplomacy.5.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nww_aus_diplomacy.5.a
+	}
+}

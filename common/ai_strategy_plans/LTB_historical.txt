@@ -1,0 +1,28 @@
+NWW_LTB_historical = {
+	name = "NWW LTB historical plan"
+	desc = ""
+	allowed = {
+		original_tag = LTB
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		LTB_consolidate_the_union
+		LTB_the_vilnius_compromise
+		LTB_belarusian_schools
+		LTB_land_for_the_tillers
+		LTB_the_union_endures
+		LTB_union_general_staff
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		LTB_kaunas_first = 0
+		LTB_face_the_crisis = 0
+	}
+}

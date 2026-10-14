@@ -104,12 +104,13 @@ def stages(name,sequence):
     effects.append((name,branches,'='))
 army=['tur_silly_army_nowar',*[f'tur_silly_army_nowar_{i}' for i in range(1,4)],*[f'tur_good_army_{i}' for i in range(1,5)],*[f'tur_perfect_army_{i}' for i in range(1,5)]]
 for i,token in enumerate(army):
-    strength=round(-.12+i*.015,3)
-    idea(token,loc.get(token,'Реформа османской армии'),f'Ottoman army reform {i+1}',f'army_org_factor = {strength} planning_speed = {strength} army_attack_factor = {round(strength/2,3)}', 'silly_army' if i<4 else 'good_army' if i<8 else 'perfect_army',('Согласование командования, снабжения и подготовки поэтапно устраняет слабости османской армии.','Unified command, supply and training gradually overcome weaknesses in the Ottoman army.'))
+    strength=[-.20,-.15,-.10,-.05,0,.05,.10,.15,.20,.25,.30,.35][i]
+    attack=[-.10,-.10,-.05,-.05,0,.05,.05,.10,.10,.15,.15,.20][i]
+    idea(token,loc.get(token,'Реформа османской армии'),f'Ottoman army reform {i+1}',f'army_org_factor = {strength} planning_speed = {strength} army_attack_factor = {attack}', 'silly_army' if i<4 else 'good_army' if i<8 else 'perfect_army',('Согласование командования, снабжения и подготовки поэтапно устраняет слабости османской армии.','Unified command, supply and training gradually overcome weaknesses in the Ottoman army.'))
 stages('nww_legacy_TUR_army_step',army)
 industry=[*[f'tur_agricultural_economic_{i}' for i in range(1,5)],*[f'tur_small_industry_economic_{i}' for i in range(1,5)],'tur_industry_economic_1']
 for i,token in enumerate(industry):
-    strength=round(-.16+i*.02,3)
+    strength=round(-.20+i*.05,2)
     idea(token,loc.get(token,'Османская индустриализация'),f'Ottoman industrialisation {i+1}',f'industrial_capacity_factory = {strength} production_speed_buildings_factor = {strength}', 'tur_agricult' if i<4 else 'tur_small_industy' if i<8 else 'tur_industy',('Обновление предприятий и инфраструктуры поэтапно сокращает отставание аграрной экономики.','Factory and infrastructure investment gradually closes the gap of an agrarian economy.'))
 stages('nww_legacy_TUR_industry_step',industry)
 misc={
@@ -142,8 +143,14 @@ misc={
  'NWW_GER_quality':('Промышленная стандартизация','Industrial standardisation','production_factory_efficiency_gain_factor = 0.04','generic_industrial_concern_1'),
  'NWW_HUN_workshops':('Венгерские производственные мастерские','Hungarian production workshops','production_factory_efficiency_gain_factor = 0.04','generic_industrial_concern_1'),
 }
-for token,(ru,en,mods,picture) in misc.items():idea(token,ru,en,mods,picture)
-for i in range(1,5):idea(f'TUR_national_economic_{i}',f'Государственный хозяйственный план — этап {i}',f'State economic plan — stage {i}',f'industrial_capacity_factory = {0.02*i} consumer_goods_factor = {0.01*i}','national_economic')
+for token,(ru,en,mods,picture) in misc.items():
+    # Percentage modifiers advance in useful five-point steps. Daily drift and PP are absolute values.
+    mods=re.sub(r'(\w+) = (-?0\.0[234])\b',lambda m: m.group(0) if m.group(1).endswith('_drift') else m.group(1)+' = '+('-0.05' if m.group(2).startswith('-') else '0.05'),mods)
+    if token=='TUR_capitalism_economic_3':mods='research_speed_factor = 0.10 production_factory_efficiency_gain_factor = 0.10'
+    if token=='TUR_NFT_2':mods='trade_opinion_factor = 0.15 production_speed_industrial_complex_factor = 0.10'
+    if token=='TUR_TAS_2':mods='consumer_goods_factor = -0.10 production_factory_efficiency_gain_factor = 0.10'
+    idea(token,ru,en,mods,picture)
+for i in range(1,5):idea(f'TUR_national_economic_{i}',f'Государственный хозяйственный план — этап {i}',f'State economic plan — stage {i}',f'industrial_capacity_factory = {round(0.05*i,2)} consumer_goods_factor = {round(0.05*i,2)}','national_economic')
 
 # Turkey: all 68 archived IDs, plus complete democratic and socialist endings.
 t=Tree('TUR','common/national_focus/turkey.txt','TUR_focus.txt')
@@ -292,7 +299,16 @@ for fid,x,y,parents,reward,ru,en in rows:
     desc=('Согласуем реформу с представителями земель и направим ресурсы на укрепление австрийского государства.','Coordinate the reform with the provinces and invest in the Austrian state.')
     if fid in ['aus_prom','aus_prom_2','aus_prom_3','aus_prom_4','aus_prom_5','AUS_new_economic']:desc=('Расширим действующие предприятия и создадим рабочие места на контролируемой территории Австрии.','Expand operating enterprises and create jobs on Austrian-controlled territory.')
     if fid in ['AUS_the_danubian_federation','AUS_join_to_axis','AUS_help_from_eng']:desc=('Предложим партнёру договор. Сотрудничество начнётся только после его согласия; независимость участников сохраняется.','Offer a treaty to our partner. Cooperation requires their consent and preserves the participants\' independence.')
-    a.add(fid,x,y,parents,reward,ru,en,desc,avail,exclusive)
+    icon='GFX_focus_generic_diplomatic_treaty'
+    if fid in ('AUS_nww_rebuild','AUS_reinstate_the_imperial_council'):icon='GFX_focus_generic_support_the_left_right'
+    if fid=='AUS_hold_elections':icon='GFX_focus_research'
+    if fid in ('AUS_war_with_hun','AUS_war_with_croatia','AUS_reclaiming_yugoslavian_territories'):icon='GFX_focus_generic_army_attack'
+    if fid in ('AUS_nww_army','AUS_army_expierience','AUS_bring_generals_out_of_retirement'):icon='GFX_focus_generic_military_academy'
+    if fid=='AUS_establish_bohme_plan':icon='GFX_goal_generic_army_artillery'
+    if fid in ('AUS_nww_industry','aus_prom','aus_prom_3','aus_prom_5'):icon='GFX_focus_generic_industry_1'
+    if fid in ('aus_prom_2','aus_prom_4','AUS_new_economic'):icon='GFX_focus_generic_industry_2'
+    if fid in ('AUS_reform_the_economic','AUS_create_a_new_econimic'):icon='GFX_focus_research2'
+    a.add(fid,x,y,parents,reward,ru,en,desc,avail,exclusive,icon=icon)
 a.finish()
 
 # Afghanistan: preserve the fourteen archive IDs, repair the diplomatic route.
@@ -344,7 +360,7 @@ effects.extend(parse('''nww_legacy_AFG_economic_step = {
 
 # Germany: preserve its seven existing NWW focuses and add all ten old industry IDs.
 g=Tree('GER','common/national_focus/ger_focus.txt','german_focus.txt')
-existing=values(one(read(ROOT/'common/national_focus/ger_focus.txt'),'focus_tree'),'focus')
+existing=values(one(read(ROOT/('common/national_focus/GER_focuses.txt' if (ROOT/'common/national_focus/GER_focuses.txt').exists() else 'common/national_focus/ger_focus.txt')),'focus_tree'),'focus')
 current_loc={}
 for p in ROOT.glob('localisation/*l_russian.yml'):current_loc.update(re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$',p.read_text(encoding='utf-8-sig'),re.M))
 positions_g={'GER_the_kaiser_endures':(5,0),'GER_prussian_traditions':(3,1),'GER_guardians_of_the_reich':(7,1),'GER_the_eastern_question':(3,2),'GER_krupp_and_thyssen':(13,0),'GER_mitteleuropa_trade':(18,1),'GER_the_fleet_question':(23,0)}
@@ -479,23 +495,49 @@ def physical_only(doc):
 history=physical_only(read(GAME/'history/countries/TUR - Turkey.txt'))
 history.extend(parse('set_politics = { ruling_party = neutrality elections_allowed = no } set_popularities = { democratic = 25 fascism = 14 communism = 16 neutrality = 45 } add_ideas = { tur_silly_army_nowar tur_agricultural_economic_1 }'))
 for token in ['NWW_TUR_omar','NWW_TUR_fatma','NWW_TUR_hosnu','NWW_TUR_fethi']:history.append(('recruit_character',token,'='))
-native_chars=one(read(GAME/'common/characters/TUR.txt'),'characters')
+def adapt_native_characters(doc):
+    result=[]
+    for k,v,o in doc:
+        if k=='country_leader':continue
+        if isinstance(v,list):v=adapt_native_characters(v)
+        if k=='has_completed_focus' and v in ('TUR_invite_german_officers_to_izmir','TUR_the_italo_turkish_naval_academy'):v='TUR_Army_3'
+        if k=='advisor':
+            gate={'army_chief':'TUR_Army_3','high_command':'TUR_Army_3','theorist':'TUR_Army_3','air_chief':'TUR_air_5'}.get(one(v,'slot'))
+            setv(v,'available',parse('has_completed_focus = '+gate if gate else 'always = yes'))
+            setv(v,'visible',parse('always = yes'))
+        result.append((k,v,o))
+    return result
+native_chars=adapt_native_characters(one(read(GAME/'common/characters/TUR.txt'),'characters'))
+save('common/characters/TUR.txt',[('characters',native_chars,'=')])
+native_recruits=[]
 for token,char,o in native_chars:
-    if not values(char,'country_leader'):history.append(('recruit_character',token,'='))
+    if any(k in ('advisor','corps_commander','field_marshal','naval_commander','scientist') for k,v,o in walk(char)):
+        history.append(('recruit_character',token,'='));native_recruits.append(token)
+manifest['countries']['TUR']['native_recruits']=native_recruits
+text('TUR_neutrality','Османская империя','Ottoman Empire')
+text('TUR_neutrality_DEF','Османская империя','the Ottoman Empire')
+text('TUR_neutrality_ADJ','Османск.','Ottoman')
 save('history/countries/TUR - Turkey.txt',history)
 
 # Keep disabled vanilla focus IDs registered for cross-country event/character checks.
 # These shared definitions are never attached to a playable tree.
 replaced=['austria.txt','hungary.txt','hungary_wuw.txt','turkey.txt','afghanistan.txt']
 game_focus_docs={name:read(GAME/'common/national_focus'/name) for name in replaced}
-loaded_ids={v for p in ROOT.glob('common/national_focus/*.txt') if p.name!='nww_legacy_compatibility.txt' for k,v,o in walk(read(p)) if k=='id' and isinstance(v,str)}
+loaded_ids=set()
+for p in ROOT.glob('common/national_focus/*.txt'):
+    if 'compatibility' in p.name or p.name in {tag+'_focuses.txt' for tag in manifest['countries']}:continue
+    doc=read(p)
+    loaded_ids.update(one(f,'id') for f in values(doc,'shared_focus'))
+    loaded_ids.update(one(f,'id') for tree in values(doc,'focus_tree') for f in values(tree,'focus'))
 for p in GAME.glob('common/national_focus/*.txt'):
     if not (ROOT/'common/national_focus'/p.name).exists():loaded_ids.update(re.findall(r'\bid\s*=\s*(\w+)',p.read_text(encoding='utf-8-sig')))
 compat=[]
 for filename in ['austria.txt','hungary.txt','hungary_wuw.txt','turkey.txt','afghanistan.txt']:
-    for k,v,o in walk(game_focus_docs.get(filename,[])):
-        if k=='id' and isinstance(v,str) and v not in loaded_ids:
-            if v in [one(t,'id') for t in values(game_focus_docs.get(filename,[]),'focus_tree')]:continue
+    candidates=values(game_focus_docs.get(filename,[]),'shared_focus')
+    for tree in values(game_focus_docs.get(filename,[]),'focus_tree'):candidates+=values(tree,'focus')
+    for node in candidates:
+        v=one(node,'id')
+        if v and v not in loaded_ids:
             compat.extend(parse(f'shared_focus = {{ id = {v} icon = GFX_focus_generic_diplomatic_treaty x = 0 y = 0 cost = 10 allow_branch = {{ always = no }} available = {{ always = no }} completion_reward = {{ }} }}'))
             loaded_ids.add(v)
 save('common/national_focus/nww_legacy_compatibility.txt',compat)
@@ -515,3 +557,5 @@ for lang,entries in texts.items():
     (ROOT/f'localisation/nww_legacy_l_{lang}.yml').write_text('\n'.join(lines)+'\n',encoding='utf-8-sig')
 text_path=ROOT/'docs/legacy_import.json';text_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(', '.join(f'{tag}: {country["total"]} focuses' for tag,country in manifest['countries'].items()))
+import runpy
+runpy.run_path(str(ROOT/'tools/finalize_legacy_content.py'),run_name='__main__')

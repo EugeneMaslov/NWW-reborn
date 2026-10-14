@@ -1,0 +1,7 @@
+NWW_HUN_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = HUN
+		has_completed_focus = HUN_nww_rebuild
+	}
+}

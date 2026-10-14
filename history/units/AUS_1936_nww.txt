@@ -1,0 +1,221 @@
+division_template = {
+	name = "Infanterie Division"
+	division_names_group = AUS_INF_01
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+	}
+}
+division_template = {
+	name = "Alpenjäger Division"
+	division_names_group = AUS_MNT_01
+	regiments = {
+		mountaineers = {
+			x = 0
+			y = 0
+		}
+		mountaineers = {
+			x = 0
+			y = 1
+		}
+		mountaineers = {
+			x = 0
+			y = 2
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+	}
+}
+division_template = {
+	name = "Schnelle Division"
+	division_names_group = AUS_CAV_01
+	regiments = {
+		cavalry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
+		cavalry = {
+			x = 1
+			y = 0
+		}
+		cavalry = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+	}
+}
+units = {
+	division = {
+		name = "Schnelle Division"
+		location = 11666
+		division_template = "Schnelle Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3700
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11666
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9648
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9665
+		division_template = "Alpenjäger Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9648
+		division_template = "Alpenjäger Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "7. Infanterie Division"
+		location = 11666
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "8. Infanterie Division"
+		location = 3700
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "9. Infanterie Division"
+		location = 9648
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "10. Infanterie Division"
+		location = 9665
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "11. Infanterie Division"
+		location = 11666
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "12. Infanterie Division"
+		location = 3700
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = AUS
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = AUS
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

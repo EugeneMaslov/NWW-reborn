@@ -1,0 +1,3216 @@
+shared_focus = {
+	id = AFG_expand_telegraph_network
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_sugar_processing
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_fruit_packing
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_clear_malarial_swamps
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_qargha_dam
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_kajaki_dam
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_iron_mines
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_chromite_mines
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_modern_economy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_infrastructure_construction
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_ministry_of_supply
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_implement_currency_controls
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_karakul_lambskin_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_spinzar_cotton_factory
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_look_to_other_partners
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_renew_soviet_trade_agreement
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_salang_pass
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_truck_factory
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_75_year_oil_concessions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_electrification
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_establish_radio_networks
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_connect_the_cities
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_rail_construction
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_kabul_university
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_state_industries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_maintain_quami
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_asymmetric_warfare
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_quami_template
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_khyber_pass_riflining
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_scavenging
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_militia_cavalry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_encourage_jezail_production
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_mountain_training
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_mountain_training_2
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_cross_border_ties
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_adopt_nufus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_border_guards
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_approach_foreign_inteligence_services
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_utilize_cameleers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_establish_camelry_regiments
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_new_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_officialize_the_turkish_afghan_defense_treaty
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_establish_naval_bases
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_academy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_purchase_tanks
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_purchase_aircraft
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_foreign_military_advisors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_standing_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_equipment_purchases
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_increase_air_purchases
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_prussians_of_the_orient
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_naval_academy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_shipyards
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_research_bonus_1
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_purchase_destroyers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_research_bonus_2
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_purchase_capital_ships
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_against_kabul
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_contact_amanullah_loyalists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_remember_the_khost_rebellion
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_secure_army_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_contact_rural_loyalists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_hold_a_loya_jirga
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_request_german_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_invite_waziristan_rebels
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_stir_unrest_in_the_east
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_the_faqirs_revolt
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_request_japanese_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_crown_the_golden_emir
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_crown_the_bukharan_emir
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_invite_the_mughal_prince
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_unify_the_islamic_world
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_extend_a_hand_to_tokyo
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_the_madrasas
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_promote_muslim_work_ethic
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_rehabilitate_the_saqqawists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_ulugh_beg_academy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_prepare_the_war_industries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_revive_the_workshop_of_the_world
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reorganize_the_royal_guard
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reintroduce_heavy_cavalry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reintroduce_war_elephants
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_timurid_bureaucracy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_hone_the_shamshir
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_restore_herat
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_integrate_the_basmachi_movement
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_proclaim_the_second_afghan_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_ally_the_brahui_khanate
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_the_echoes_of_panipat
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_the_amu_darya_plan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reclaim_the_emperors_lost_domain
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_return_to_delhi
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reclaim_moghulistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_ally_the_sikhs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_the_conquerors_of_persia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reclaim_transoxiana
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_rebuild_the_silk_road
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_restore_the_timurid_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_the_crown_and_the_world
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_enforce_the_pashtunwali
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_form_the_khuddamul_furqan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_instate_a_compulsory_jizya
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_raise_lashkar_regiments
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_support_nort_west_frontier_rebels
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_appraoch_anti_communist_theologians
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_unite_pashtunistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_form_the_turkestan_legion
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_proclaim_a_new_caliphate
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_return_of_the_emir
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_revive_the_1923_constitution
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_education_for_women_and_girls
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_enforce_western_attire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_state_run_factories
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reinforce_the_royal_guard
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_custail_pashtunwali_primacy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_agreement_with_germany
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_renounce_the_durand_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_eyes_on_the_north
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_alliance_with_turkik_peoples
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_red_threat
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_fortify_pakistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_into_the_plains_of_india
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_work_with_gestapo
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_pashtun_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_ally_basmachi_remnants
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_from_the_ashes
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_exploit_turko_persian_heritage
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_topple_iran
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_secure_baghdad
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_savior_of_the_holy_lands
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_increase_land_and_animal_taxes
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_establish_darulaman
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_darulaman_university
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_alternative_partnerships
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_officer_training
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_permit_axis_airbases
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_join_axis
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_axis_airforce
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_axis_equipment
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_kabul_conference
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_support_king_zahir
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_biding_our_time
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_the_kings_powerbase
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_forge_a_national_identity
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_visit_foreign_capitals
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expand_royal_guard
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_retire_the_uncles
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_introduce_national_service
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_placeholder_1
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_seek_british_investment
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reform_2
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_secure_dynasty
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_maintain_neutrality
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expel_axis_nationals
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_expel_allied_nationals
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_pursue_our_own_agenda
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_align_with_the_allies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_anti_soviet_cooperation
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_protector_of_the_tajiks
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_propose_confederation_with_pakistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_afghan_pakistan_cold_War
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_graveyard_of_empires
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_hot_war_with_pakistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_accelerate_integration
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_prepare_for_operation_countenance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_secure_iran
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_repeal_the_durand_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_future_of_balochistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_khorasan_buffer_state
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_linchpin_of_global_defense
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_promote_the_counter_elite
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_gant_refuge_to_jadidists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_ally_the_young_afghans
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_parliamentary_democracy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_gain_religious_support_for_reforms
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reform_1
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_hold_elections
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reform_3
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_concessions_to_pashtuns
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_reform_4
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_recruit_foreign_experts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_seek_american_aid
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_rapprochement_with_non_pashtuns
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_defending_democracy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_follower_of_islam
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_republic_of_afghanistan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_sinkiang_intervention
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_socialist_coup
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_request_soviet_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_international_brigades
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_state_atheism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_soviet_research_cooperation
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_communist_industrialization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_communist_propaganda
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_support_soviets_in_asia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_integrate_tajik_and_uzbek_republics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_sov_iran_war
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_development_in_uzb
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_development_in_taj
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_development_in_tms
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AFG_central_asian_unification
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}

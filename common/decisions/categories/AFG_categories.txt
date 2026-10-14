@@ -1,0 +1,7 @@
+NWW_AFG_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = AFG
+		has_completed_focus = AFG_nww_council
+	}
+}

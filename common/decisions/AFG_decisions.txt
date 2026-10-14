@@ -1,0 +1,166 @@
+NWW_AFG_political_campaigns = {
+	NWW_AFG_campaign_democratic = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = AFG
+		}
+		visible = {
+			tag = AFG
+			has_completed_focus = AFG_nww_council
+		}
+		available = {
+			democratic < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = AFG
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NWW_AFG_campaign_neutrality = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = AFG
+		}
+		visible = {
+			tag = AFG
+			has_completed_focus = AFG_nww_council
+		}
+		available = {
+			neutrality < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = AFG
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NWW_AFG_campaign_fascism = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = AFG
+		}
+		visible = {
+			tag = AFG
+			has_completed_focus = AFG_nww_council
+		}
+		available = {
+			fascism < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = AFG
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NWW_AFG_campaign_communism = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = AFG
+		}
+		visible = {
+			tag = AFG
+			has_completed_focus = AFG_nww_council
+		}
+		available = {
+			communism < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = AFG
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -17,6 +17,13 @@ focus_tree = {
 		}
 		x = 7
 		y = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
+		}
 	}
 	focus = {
 		id = LTB_rebuild_the_bridge
@@ -56,6 +63,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_baltic_bridgehead
@@ -74,6 +91,16 @@ focus_tree = {
 		}
 		x = 45
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_vilnius_compromise
@@ -100,6 +127,13 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
+		}
 	}
 	focus = {
 		id = LTB_kaunas_first
@@ -118,6 +152,20 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 	}
 	focus = {
 		id = LTB_belarusian_schools
@@ -136,6 +184,16 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_land_for_the_tillers
@@ -150,6 +208,16 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_seimas_of_kaunas
@@ -164,6 +232,16 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_mobilize_the_sauliai
@@ -178,6 +256,16 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_face_the_crisis
@@ -222,6 +310,16 @@ focus_tree = {
 				date > 1936.6.1
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_union_general_staff
@@ -246,6 +344,16 @@ focus_tree = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_minsk_school
@@ -264,6 +372,16 @@ focus_tree = {
 		}
 		x = 39
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_timoshenkos_doctrine
@@ -281,6 +399,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_officers_of_two_nations
@@ -295,6 +423,16 @@ focus_tree = {
 		}
 		x = 43
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_fortify_the_dvina
@@ -326,6 +464,16 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		x = 45
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_minsk_arsenal_works
@@ -357,6 +505,16 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 32
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_electrify_the_union
@@ -382,6 +540,16 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = LTB_rebuild_the_bridge
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -414,6 +582,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_workers_of_minsk_and_kaunas
@@ -430,6 +608,16 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = LTB_factory_reconstruction
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -465,6 +653,16 @@ focus_tree = {
 		}
 		x = 28
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_cooperative_farms
@@ -482,6 +680,16 @@ focus_tree = {
 		}
 		x = 28
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_rural_electrification
@@ -516,6 +724,16 @@ focus_tree = {
 		}
 		x = 28
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_depression_recovery
@@ -534,6 +752,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_factory_reconstruction
@@ -562,6 +790,16 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 24
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_armaments_plant
@@ -588,6 +826,16 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 32
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_military_contracts
@@ -615,6 +863,16 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		x = 32
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_balance_between_giants
@@ -636,6 +894,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_overture_to_moscow
@@ -664,6 +932,16 @@ focus_tree = {
 		}
 		x = 16
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_polish_question
@@ -692,6 +970,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_german_engineers
@@ -720,6 +1008,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_observe_the_skies
@@ -731,6 +1029,16 @@ focus_tree = {
 		}
 		x = 50
 		y = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_kaunas_air_club
@@ -750,6 +1058,16 @@ focus_tree = {
 		}
 		x = 49
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_vitebsk_airfield
@@ -780,6 +1098,16 @@ focus_tree = {
 		}
 		x = 51
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_memel_shipyards
@@ -809,6 +1137,16 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 56
 		y = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_baltic_patrols
@@ -823,6 +1161,16 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 55
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_coastal_flotilla
@@ -850,6 +1198,16 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 57
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_union_endures
@@ -873,6 +1231,16 @@ focus_tree = {
 		}
 		x = 7
 		y = 5
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_pbmat_pact
@@ -913,6 +1281,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_fortress_vitebsk
@@ -944,6 +1322,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_fortify_the_dvina
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_two_nations_one_voice
@@ -963,6 +1351,16 @@ focus_tree = {
 		}
 		x = 12
 		y = 6
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_1926_legacy
@@ -977,6 +1375,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_cavalry_inspectorate
@@ -991,6 +1399,16 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		x = 39
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_border_guard_corps
@@ -1005,6 +1423,16 @@ focus_tree = {
 		}
 		x = 39
 		y = 5
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_vilnius_radio
@@ -1023,6 +1451,16 @@ focus_tree = {
 		}
 		x = 36
 		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_kaunas_textile
@@ -1048,6 +1486,16 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = LTB_workers_of_minsk_and_kaunas
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -1080,6 +1528,16 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 32
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_union_industrial_plan
@@ -1129,6 +1587,16 @@ focus_tree = {
 			focus = LTB_union_mining_program
 		}
 		y = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_crown_the_regency
@@ -1175,6 +1643,16 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_restore_the_grand_duchy
@@ -1189,6 +1667,16 @@ focus_tree = {
 		}
 		x = 1
 		y = 8
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_order_and_tradition
@@ -1208,6 +1696,16 @@ focus_tree = {
 		}
 		x = 3
 		y = 8
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_free_elections_now
@@ -1246,6 +1744,16 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_landtag_democracy
@@ -1264,6 +1772,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 8
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_free_press_free_union
@@ -1283,6 +1801,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 9
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_the_iron_wolf_calls
@@ -1322,6 +1850,16 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_steel_and_blood
@@ -1340,6 +1878,16 @@ focus_tree = {
 		}
 		x = 10
 		y = 8
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_one_people_one_leader
@@ -1359,6 +1907,16 @@ focus_tree = {
 		}
 		x = 10
 		y = 9
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_red_dawn_over_minsk
@@ -1398,6 +1956,16 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_soviets_of_workers
@@ -1416,6 +1984,16 @@ focus_tree = {
 		}
 		x = 14
 		y = 8
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_international_brigades
@@ -1435,6 +2013,16 @@ focus_tree = {
 		}
 		x = 14
 		y = 9
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	default = no
 	initial_show_position = {
@@ -1457,6 +2045,16 @@ focus_tree = {
 		}
 		x = 36
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_union_research_council
@@ -1475,6 +2073,16 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_precision_engineering
@@ -1524,6 +2132,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_minsk_university
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_belmash_tank_program
@@ -1554,6 +2172,16 @@ focus_tree = {
 		}
 		x = 32
 		y = 5
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_motorized_reserves
@@ -1581,6 +2209,16 @@ focus_tree = {
 		}
 		x = 43
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_mogilev_artillery_school
@@ -1608,6 +2246,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_joint_maneuvers
@@ -1634,6 +2282,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 6
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_minsk_aircraft_works
@@ -1667,6 +2325,16 @@ focus_tree = {
 		}
 		x = 50
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_fighter_command
@@ -1694,6 +2362,16 @@ focus_tree = {
 		}
 		x = 49
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_army_air_support
@@ -1721,6 +2399,16 @@ focus_tree = {
 		}
 		x = 51
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_baltic_escort_program
@@ -1760,6 +2448,16 @@ focus_tree = {
 		}
 		x = 55
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_coastal_defense_network
@@ -1795,6 +2493,16 @@ focus_tree = {
 		}
 		x = 57
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_dvina_border_commission
@@ -1822,6 +2530,16 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_polish_defense_protocol
@@ -1852,6 +2570,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_german_machine_tools
@@ -1889,6 +2617,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_armed_neutrality
@@ -1916,6 +2654,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_free_economic_zones
@@ -1945,6 +2693,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_kaunas_textile
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_polesie_peat
@@ -1968,6 +2726,16 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = LTB_rural_electrification
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -1997,6 +2765,16 @@ focus_tree = {
 		}
 		x = 28
 		y = 6
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_timoshenko_industrial_board
@@ -2062,6 +2840,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_precision_engineering
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_professional_contract_army
@@ -2085,6 +2873,16 @@ focus_tree = {
 		}
 		x = 40
 		y = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_national_resilience
@@ -2108,6 +2906,16 @@ focus_tree = {
 		}
 		x = 42
 		y = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_minsk_university
@@ -2141,6 +2949,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_union_research_council
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_rocket_research
@@ -2157,6 +2975,16 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = LTB_precision_engineering
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2181,6 +3009,16 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = LTB_precision_engineering
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2210,6 +3048,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_italian_research_exchange
@@ -2237,6 +3085,16 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = LTB_precision_engineering
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2310,6 +3168,16 @@ focus_tree = {
 		}
 		x = 50
 		y = 4
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_public_political_debate
@@ -2323,6 +3191,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LTB_the_union_endures
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2340,6 +3218,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LTB_order_and_tradition
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2360,6 +3248,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_bicameral_union
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_social_compact
@@ -2373,6 +3271,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LTB_free_press_free_union
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2393,6 +3301,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_social_compact
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_unified_administration
@@ -2406,6 +3324,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LTB_one_people_one_leader
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2426,6 +3354,16 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_unified_administration
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
+		}
 	}
 	focus = {
 		id = LTB_republics_of_labor
@@ -2439,6 +3377,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LTB_international_brigades
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	focus = {
@@ -2458,6 +3406,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LTB_republics_of_labor
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					has_completed_focus = LTB_the_vilnius_compromise
+				}
+			}
 		}
 	}
 	continuous_focus_position = {

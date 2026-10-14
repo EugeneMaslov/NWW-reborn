@@ -1,0 +1,5296 @@
+shared_focus = {
+	id = HUN_balanced_budget
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_strengthen_the_monarchists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_demand_a_referendum
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_take_austria_by_force
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_claim_transylvania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_march_to_the_shore
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_reclaim_venetia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_claim_galicia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_claim_the_bucovina
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_reclaim_the_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_responsible_government
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_rapproachement_with_little_entente
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_join_allies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_the_balkan_pact
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_an_unlikely_alliance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_joint_oil_exploitation_company
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_economic_intervention
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_strengthen_fascists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_renounce_the_treaty_of_trianon
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_renew_the_rome_protocols
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_protect_austria
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_alliance_with_italy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_trade_deal_with_germany
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_joint_aluminum_mining_company
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_join_axis
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_reaffirm_territorial_claims
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_demand_transylvania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_demand_southern_slovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_demand_the_vojvodina
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_claim_overlordship_over_slovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_proclaim_greater_hungary
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_council_of_peoples_commissars
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_assassinate_horthy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_the_hungarian_red_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_soviet_hungarian_military_academy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_join_comintern
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_the_revolutionary_council
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_pressure_romania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_intervene_in_czechoslovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_industrial_revitalization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_reintegrate_the_railroads
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_support_domestic_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_support_urbanization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_institute_for_industrial_techniques
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_announce_the_gyor_program
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_civilian_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_invite_foreign_investors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_expand_the_manfred_weiss_steel_works
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_expand_the_aluminum_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_expand_the_technical_university_of_budapest
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_domestic_arms_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_aeronautic_technology_institute
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_boost_hungarian_aviation_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_autarky
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_synthetic_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_secret_rearmament
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_war_games
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_theoretical_air_efforts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_bled_agreement
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_establish_the_air_force
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_indigenous_designs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_heavy_fighter_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_light_fighter_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_cas_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_tac_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_license_foreign_designs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_fighter_competition
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_bomber_competition
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_joint_air_development
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_army_maneuvers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_mobile_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_the_botond
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_motorized_logistics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_develop_tanks
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_assault_gun_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_joint_tank_procurement
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_armored_warfare
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_mobile_corps_doctrine
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_home_defense
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_danuvia_submachine_guns
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_artillery_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_light_infantry_divisions_doctrine
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_form_parachute_battalions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_naval_warfare
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_restauration
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_capital_ships
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_a_new_flagship
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_reform
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_dockyards
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_destroyer
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_cruisers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_submarines
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_carriers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_end_the_regency
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_continue_the_regency
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_end_the_white_terror
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_crack_down_on_radicals
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_subvert_gombos_troops
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reach_out_to_candidates
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reinstate_the_pragmatic_sanction
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_abide_by_the_little_ententes_stipulations
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_aid_the_carlist_struggle
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invite_otto_to_the_throne
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_old_habsburg_king
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_attempt_economic_independence
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_secure_army_loyalty
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_lands_of_the_crown_of_saint_stephen
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_austrian_restoration
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_protect_czechoslovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_seek_an_alliance_with_the_kaiser
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_grand_habsburg_alliance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_old_grand_alliance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_wiedist_restoration
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_habsburg_ascension_in_spain
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_habsburg_poland
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_press_maximilians_and_the_iturbides_claims
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reenlist_the_sich_riflemen
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_kingdom_of_ukraine
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_restore_the_georgian_monarchy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reclaim_transylvania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reintigrate_slovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_restore_the_duchy_of_teschen
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_hungarian_galicia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_triple_kingdom
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_restore_the_lombardo_venetian_kingdom
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reverse_the_risorgimento
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reclaim_the_holy_city
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_holy_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_integrate_bohemian_and_austrian_industries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_multi_ethnic_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_renovato_imperii
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_bastion_of_catholicism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_enact_agrarian_reform
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_honor_the_great_war_veterans
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_royal_hussars
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_purchase_burgenland
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_legacy_of_the_isonzo_front
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_revenge_for_the_brusilov_offensive
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_legacy_of_arpad_andrew_and_matthias
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_establishing_a_new_dynasty
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_elect_a_democratic_king
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_increase_economic_cooperation
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_elect_a_fascist_king
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_volksbund_der_deutschen_in_ungarn
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_cancel_the_german_trade_deal
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_establishing_a_royal_guard
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_dissolve_the_volksbund
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_magyar_cserkeszszovetseg
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_mobile_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_an_airforce_to_be_reckoned_with
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_royalist_education_initiative
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_anglo_hungarian_alliance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_unifying_heritage
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_stage_an_uprising_in_leitha
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_declaration_of_intentions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_undoing_the_yugoslav_mistake
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reclaim_the_slovak_possessions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_revenge_for_1919
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_on_a_high_horse
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_bulwark_against_communism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_responsible_government
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_guarantee_religious_liberties
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_balkan_pact
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_join_the_allies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_joint_oil_exploitation_company
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_hold_territorial_referendums
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_strengthen_horthys_reign
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_undermine_the_admiral
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reestablish_the_rongyos_garda
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_strenghten_the_order_of_vitez
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_pass_statute_xix
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_restrict_voting_rights
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_absolute_rule_of_the_national_unity_party
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_outlaw_the_party_of_national_will
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_spur_on_the_trianon_trauma
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_renounce_the_treaty_of_trianon
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_hungarian_life_and_renewal_party
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_act_of_defense
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_integrate_the_volksbund
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_empower_the_greenshirts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_march_on_budapest
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_government_of_national_unity
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_turul_association
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_carrying_on_arpads_legacy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_institute_corporatism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_roman_catholic_state
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_incorporate_the_hungarian_life_movement
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_heirs_of_the_huns
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_sway_the_count
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_wherever_the_cross_points
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_war_on_atheism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_promote_hungarianism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_strengthen_the_turani_vadaszok
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_our_ancestral_lands
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reaffirm_territorial_claims
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_croatian_reintigration
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_southern_slovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_carpathian_ruthenia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_transylvania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_the_vojvodina
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_burgenland
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_claim_overlordship_over_slovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_the_return_of_slovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_proclaim_greater_hungary
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_seek_german_contracts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_license_fiat_tankettes
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_renew_the_rome_protocols
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invite_german_investors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_joint_aluminum_mining_company
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_join_the_axis
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_protect_austria
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_an_alliance_with_italy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_parade_istvan_bethlens_platform
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_salami_slicing_tactics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_politicize_the_levente_associations
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_undermine_the_volksbund
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reviving_the_spirit_of_1848
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_officialize_the_rakosi_battalion
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_elections_in_the_revolutionary_council
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_join_the_comintern
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_restore_the_socialist_federative_republic
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_establish_the_second_republic
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reverse_the_brain_drain
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_spirit_of_the_aster_revolution
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_uplift_the_dragon_movement
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_promote_entrepreneurship
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_danubian_federation
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_approach_the_diasporas
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_demand_szekely_autonomy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_ward_against_extremism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reclaim_the_pannonian_steppe
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_revive_the_tribal_consolidation
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_cult_of_arpad
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_bringing_down_the_giants
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_restore_the_hungarian_red_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_goulash_communism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_state_protection_authority
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_joint_hungarian_soviet_research_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_soviet_hungarian_war_indsutry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_cult_of_personality
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_kadars_hussars
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_soviet_hungarian_military_academy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_central_military_planning_committee
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_intervene_in_czechoslovakia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_pressure_romania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_bulwark_against_the_west
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reinstate_the_lenin_boys
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_instate_a_socialist_economy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_nationalize_key_industries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invest_in_universal_education
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_promote_revanchist_sentiment
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_second_northern_campaign
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_revenge_for_the_romanian_humiliations
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_march_south
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_revolutionary_greater_hungary
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_hero_of_the_revolution
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = HUN_balkan_ambitions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_denounce_marxism_leninism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_avoid_interventionalist_destablilization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_economic_intervention
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_secret_rearmament
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_forcefully_revitalize_the_industries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reintigrate_the_imperial_railroads
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_promote_increased_urbanization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_ganz_muvek
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_devalue_the_pengo
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_announce_the_gyor_program
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_enlarge_the_ganz_danubius_division
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_support_for_our_finnish_brothers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_undercover_air_maneuvers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_hold_war_games
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_negotiate_the_restrictions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_reinstate_the_navy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_sailing_the_danube
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_make_the_magyar_legiero_known
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_initiate_army_maneuvers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invest_in_ludovica_academy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_diosgyor_machinery_factory
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_manred_weiss_steel_and_metal_works
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_hungarian_academy_of_sciences
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_lignite_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_tap_newfound_oil_deposits
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_hungarian_autarky
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invite_foreign_investors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_hungarian_tradition
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_magyar_allamvasutak
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_aluminum_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_budapest_university_of_technology_and_economics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_matyasfold_fighter_factory
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_on_the_weiss_wm_16
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_develop_the_weiss_wm_21_solyom
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_weiss_manfred_wm_23_ezust_nyil
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_establish_the_mavag_aircraft_factory
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_mavag_heja
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_repulo_muszaki_intezet
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_develop_laszlo_vargas_design
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_joint_air_development
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_arado_ar_96
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_extensive_licensing_programs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_allied_manufacturing_programs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_danuvia_submachine_guns
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_form_the_gyorshadtest
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_establish_the_mavag_army_division
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_doctrinal_studies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_award_military_promotions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_magyar_kiralyi_csendorseg
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_legacy_of_the_black_legion
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_light_infantry_divisions_doctrine
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_szent_laszlo_infantry_division
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_quantity_over_quality
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_botond
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_turan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_assault_gun_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_toldi
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invest_in_the_special_forces
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_construct_the_arpad_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_transylvanian_mountaineers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_expand_the_arpad_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_construct_the_szeretfalva_deda_railway_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_the_szekel_command
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_renew_the_shipping_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_embrace_navy_traditions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_reformed_navy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_invest_in_destroyer_models
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_cruiser_investments
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_wolfs_of_the_sea
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_bringing_the_air_battle_to_the_seas
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_capital_ship_efforts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_a_new_pride_of_the_fleet
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = wuw_HUN_degauss_ship_hulls
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}

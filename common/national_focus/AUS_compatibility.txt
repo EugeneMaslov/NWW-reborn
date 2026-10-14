@@ -1,0 +1,3312 @@
+shared_focus = {
+	id = AUS_repeal_the_may_constitution
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_release_imprisoned_leaders
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_austria_against_fascism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_austromarxism_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_rally_the_people
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_ban_dnsap
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_renounce_the_treaties
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_schutzbund_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_emergency_measaures
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_intervention_in_spain
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invite_spanish_exiles
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_celebrate_spanish_victory
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_revolution
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seek_soviet_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_politicized_general_staff
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_promote_the_worthy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_raid_military_storages
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_peoples_army
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_properly_trained_militias
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_a_new_beginning
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_a_safe_harbor_for_dissidents
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_universitat_wien
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_womens_education_initiative
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_scientific_grants
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_danubian_socialist_communes
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_establish_rote_hilfe
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_cut_ties_with_the_church
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_centralize_the_industrial_sector
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_align_with_ussr
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_join_comintern
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_spur_the_communist_resistance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_rapid_revolutions
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_meticulous_preparations
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_demand_liberation_of_workers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_union_of_danubian_socialist_republics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_correct_communism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seize_galicia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_rebuild_democratic_systems
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_a_new_constitution
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seek_support_from_guarantors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_stabilize_the_political_climate
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_outlaw_the_radicals
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_strengthen_the_cabinet
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_join_the_allies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_industrial_exchange
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_alpine_federation_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invite_the_entente
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_offensive_on_the_fascists
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_pardon_political_exiles
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_right_to_rearm
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_defence_of_the_homeland
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_political_front
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_austrian_aggression
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_at_the_ready
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_form_evidenzburo
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_lawmaking_leniency
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_empowering_the_chancellor
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_join_the_research_program
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_right_to_self_determination
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_our_brothers_in_the_east
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_deal_with_the_german_threat
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_end_european_fascism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invite_danubian_countries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_danubian_unity
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_inviting_the_observers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_unexpected_alliances
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_diplomatic_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_protector_of_the_danube
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_legacy_of_the_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_repeal_the_habsburgergesetz
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_bring_back_the_habsburg_rule
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_rebellious_rearmament
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_strengthen_legitimistische_corps
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_legitimistische_studentenverbindung
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_sturmscharen_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_eiserne_legion
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_legitimistische_jugend
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_repeal_the_adelsaufhebungsgesetz
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_evidenzburo
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_royals_of_liechtenstein
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_osterreichische_akademie
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_royal_scientific_grants
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_war_against_bolshevism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_crusade_on_communism
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_demand_hungarian_submission
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_join_the_axis
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_reforming_the_central_powers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_a_royal_alliance
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_subjugate_lands_of_old
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_silesian_question
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_tighten_control_of_subjects
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_reclaim_habsburg
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_war_against_guarantors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_renew_claims_in_italy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_extend_italian_claims
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_strike_deal_with_italy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_for_a_better_future
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_bring_hungary_back_into_the_fold
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_czechoslovakian_lands
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_take_albania
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_take_back_galicia
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_demand_romanian_lands
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_integrate_northwest
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_integrate_hungary
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_proclaim_austrian_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_beyond_our_old_lands
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_totalitarian_safety
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_clamp_down_on_dnsap
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_supporting_italy_in_ethiopia_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_approach_democratic_guarantors
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_reach_out_to_italy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_refine_vaterlandische_front
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seek_agreement_for_rearmament
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_disregard_the_treaties
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_rapid_rearmament
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_integrate_dnsap_remnants
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_heimwehr_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_spanish_intervention
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_demand_part_of_spanish_winnings
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invite_spanish_refugees
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_frontmiliz_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_fit_for_fight
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_form_nachrichtenabteilun
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_wienfilm_propaganda_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_consolidate_industries
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_universitat_graz
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_recruiting_the_graduates
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_heritage_of_an_empire
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_second_brothers_war
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_an_improved_german_state
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_restoring_our_rightful_flag
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seek_to_purchase_alaska
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_regulate_austrian_finance_sector
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seek_papal_support
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invest_in_erzberg_steel_mines
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_courting_the_princess_of_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_expand_stpoltner_steelworks
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invest_in_semperit_synthetics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_pulverfabrik_skodawerke
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_matzen_oil_fields
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_architechtual_advancements
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_autobahn_west
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_autobahn_south
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_autobahn_east
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_bbo_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_economic_resuscitation
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_devalue_the_schilling
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_bring_phonix_insurance_from_the_ashes
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_great_austrian_economic_push
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_volkschule
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_industrialization_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invest_in_alpen_elektrowerke
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invest_in_kapsch
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_construction_guilds
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_apprentice_programmes
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_osterreichische_luftstreitkrafte
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_preparing_the_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_purchase_foreign_designs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_focus_on_domestic_production
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_flight_schools
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_seek_international_partners
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_air_research_boost
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_revitalize_austrian_air_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_light_specialization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_medium_specialization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_heavy_specialization
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_air_base_intiative
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_wien_anti_air_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_radar_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_neustadter_flugzeugwerke
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_aerial_strategies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_secret_rearmament
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_militarization_effort
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_osterreichische_bundesheer
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_standardized_army_training
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_osterreichische_fallschirmsjager
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_osterreichische_gebirgsjager
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_osterreichische_seebataillon
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_steyr_arms_investment
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_supporting_the_troops
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_improve_army_logistics
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_reinforcing_the_supply_network
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_follow_the_jansa_plan
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_the_homeland_front
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_fortify_the_traun_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_extend_the_traun_line
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_intensify_training_efforts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_heeding_the_call_of_duty
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_strengthen_the_arms_industry
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_improved_warfare_strategies
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_hirtenberger_artillery
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_saurerwerke
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_graf_und_stift_focus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_invite_foreign_tank_designers
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_basic_tanks
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_reestablish_austrian_navy
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_rebuild_the_armada
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_revive_stt
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_streamline_production
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_continue_old_production
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_reclaim_dockyards
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_promote_admirals
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_defending_the_coast
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_elin
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_light_ship_bonus
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_coastal_defence_forts
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = AUS_naval_efficiency
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}

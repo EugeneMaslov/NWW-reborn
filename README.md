@@ -62,6 +62,8 @@ The project already includes:
 - events and decisions tied to the LitBel crisis and the Free Territory,
 - visual identity for flags, portraits, and game interface elements.
 
+Turkey, Austria, Afghanistan and Germany now also include adapted trees from the archived mod. Hungary expands the existing NWW tree: the archive contains no Hungarian focus tree. Country content is kept in separate files, with historical AI openings for LTB's compromise and Austria's Hungarian campaign. See [the migration notes](docs/legacy_focus_migration.md) for coverage, balance, validation and the startup-log audit.
+
 The content is intended to feel like a focused scenario, not a generic all-world overhaul. It keeps the spotlight on the Baltic and eastern front rather than cluttering the menu with every possible fictional state.
 
 ## Scenario logic

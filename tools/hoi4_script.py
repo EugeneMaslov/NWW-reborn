@@ -65,6 +65,8 @@ def dump(node, depth=0):
     for key, value, op in node:
         prefix = '\t' * depth
         if key is None:
+            if not value or any(c.isspace() for c in value) or '/' in value:
+                value = '"' + value.replace('"', '\\"') + '"'
             lines.append(prefix + value)
         elif isinstance(value, list):
             lines.append(f'{prefix}{key} {op} {{')

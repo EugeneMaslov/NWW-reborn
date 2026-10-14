@@ -173,32 +173,3 @@ nww_legacy_TUR_industry_step = {
 		}
 	}
 }
-nww_legacy_AFG_economic_step = {
-	if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = AFG_subsistence_economy_modifier
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = NWW_AFG_industry_complete
-				has_country_flag = NWW_AFG_institute_complete
-			}
-			remove_dynamic_modifier = {
-				modifier = AFG_subsistence_economy_modifier
-			}
-		}
-		else = {
-			set_variable = {
-				AFG_economy_production_efficiency_gain_factor = -0.25
-			}
-			set_variable = {
-				AFG_economy_production_max_efficiency_factor = -0.20
-			}
-			set_variable = {
-				AFG_economy_industrial_capacity_factor = -0.25
-			}
-		}
-	}
-}

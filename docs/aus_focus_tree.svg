@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2630" height="820" viewBox="0 0 2630 820">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>
+<rect width="2630" height="820" fill="#111925"/>
+<text x="32" y="38" font-size="24">AUS: 25 фокусов</text>
+<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>
+<path d="M 1040 160 V 177.5 H 500 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 500 255 V 272.5 H 320 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 500 255 V 272.5 H 680 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 320 350 V 367.5 H 320 V 385" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 680 350 V 367.5 H 320 V 385" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 320 445 V 462.5 H 320 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 320 350 V 367.5 H 680 V 385" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 680 350 V 367.5 H 680 V 385" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 680 445 V 462.5 H 1040 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 445 V 510.0 H 1040 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 445 V 462.5 H 680 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 540 V 557.5 H 680 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 635 V 652.5 H 680 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1040 160 V 177.5 H 1580 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1580 255 V 272.5 H 1580 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1580 350 V 367.5 H 1580 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1580 445 V 462.5 H 1580 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1040 160 V 177.5 H 2300 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 255 V 272.5 H 2120 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 350 V 367.5 H 2120 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 445 V 462.5 H 2120 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 540 V 557.5 H 2030 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 540 V 557.5 H 2210 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 255 V 272.5 H 2480 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2480 350 V 367.5 H 2480 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2480 445 V 462.5 H 2480 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 320 285 Q 500.0 255 680 285" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 320 380 Q 500.0 350 680 475" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<g><title>AUS_nww_rebuild
+
+AUS_nww_rebuild</title><rect x="960" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1040" y="121" text-anchor="middle">AUS_nww_rebuild</text>
+<text class="small" x="1040" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_political_power
+
+AUS_political_power</title><rect x="420" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="500" y="216" text-anchor="middle">AUS_political_power</text>
+<text class="small" x="500" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_reinstate_the_imperial_council
+
+AUS_reinstate_the_imperial_council</title><rect x="240" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="320" y="311" text-anchor="middle">AUS_reinstate_the_impe</text>
+<text class="label" x="320" y="327" text-anchor="middle">rial_council</text>
+<text class="small" x="320" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_hold_elections
+
+AUS_hold_elections</title><rect x="600" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="311" text-anchor="middle">AUS_hold_elections</text>
+<text class="small" x="680" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_the_danubian_federation
+
+AUS_the_danubian_federation</title><rect x="240" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="320" y="406" text-anchor="middle">AUS_the_danubian_feder</text>
+<text class="label" x="320" y="422" text-anchor="middle">ation</text>
+<text class="small" x="320" y="437" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>AUS_via_danube_to_europe
+
+AUS_via_danube_to_europe</title><rect x="240" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="320" y="501" text-anchor="middle">AUS_via_danube_to_euro</text>
+<text class="label" x="320" y="517" text-anchor="middle">pe</text>
+<text class="small" x="320" y="532" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>AUS_not_germany
+
+AUS_not_germany</title><rect x="600" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="406" text-anchor="middle">AUS_not_germany</text>
+<text class="small" x="680" y="437" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_join_to_axis
+
+AUS_join_to_axis</title><rect x="960" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1040" y="501" text-anchor="middle">AUS_join_to_axis</text>
+<text class="small" x="1040" y="532" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>AUS_help_from_eng
+
+AUS_help_from_eng</title><rect x="960" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1040" y="596" text-anchor="middle">AUS_help_from_eng</text>
+<text class="small" x="1040" y="627" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>AUS_war_with_hun
+
+AUS_war_with_hun</title><rect x="600" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="501" text-anchor="middle">AUS_war_with_hun</text>
+<text class="small" x="680" y="532" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_war_with_croatia
+
+AUS_war_with_croatia</title><rect x="600" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="596" text-anchor="middle">AUS_war_with_croatia</text>
+<text class="small" x="680" y="627" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_reclaiming_yugoslavian_territories
+
+AUS_reclaiming_yugoslavian_territories</title><rect x="600" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="691" text-anchor="middle">AUS_reclaiming_yugosla</text>
+<text class="label" x="680" y="707" text-anchor="middle">vian_territories</text>
+<text class="small" x="680" y="722" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_nww_army
+
+AUS_nww_army</title><rect x="1500" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1580" y="216" text-anchor="middle">AUS_nww_army</text>
+<text class="small" x="1580" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_army_expierience
+
+AUS_army_expierience</title><rect x="1500" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1580" y="311" text-anchor="middle">AUS_army_expierience</text>
+<text class="small" x="1580" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_bring_generals_out_of_retirement
+
+AUS_bring_generals_out_of_retirement</title><rect x="1500" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1580" y="406" text-anchor="middle">AUS_bring_generals_out</text>
+<text class="label" x="1580" y="422" text-anchor="middle">_of_retirement</text>
+<text class="small" x="1580" y="437" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_establish_bohme_plan
+
+AUS_establish_bohme_plan</title><rect x="1500" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1580" y="501" text-anchor="middle">AUS_establish_bohme_pl</text>
+<text class="label" x="1580" y="517" text-anchor="middle">an</text>
+<text class="small" x="1580" y="532" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_nww_industry
+
+AUS_nww_industry</title><rect x="2220" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2300" y="216" text-anchor="middle">AUS_nww_industry</text>
+<text class="small" x="2300" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>aus_prom
+
+aus_prom</title><rect x="2040" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2120" y="311" text-anchor="middle">aus_prom</text>
+<text class="small" x="2120" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>aus_prom_2
+
+aus_prom_2</title><rect x="2040" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2120" y="406" text-anchor="middle">aus_prom_2</text>
+<text class="small" x="2120" y="437" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>aus_prom_3
+
+aus_prom_3</title><rect x="2040" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2120" y="501" text-anchor="middle">aus_prom_3</text>
+<text class="small" x="2120" y="532" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>aus_prom_4
+
+aus_prom_4</title><rect x="1950" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2030" y="596" text-anchor="middle">aus_prom_4</text>
+<text class="small" x="2030" y="627" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>aus_prom_5
+
+aus_prom_5</title><rect x="2130" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2210" y="596" text-anchor="middle">aus_prom_5</text>
+<text class="small" x="2210" y="627" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>AUS_new_economic
+
+AUS_new_economic</title><rect x="2400" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2480" y="311" text-anchor="middle">AUS_new_economic</text>
+<text class="small" x="2480" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>AUS_reform_the_economic
+
+AUS_reform_the_economic</title><rect x="2400" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="2480" y="406" text-anchor="middle">AUS_reform_the_economi</text>
+<text class="label" x="2480" y="422" text-anchor="middle">c</text>
+<text class="small" x="2480" y="437" text-anchor="middle">35 дней</text></g>
+<g><title>AUS_create_a_new_econimic
+
+AUS_create_a_new_econimic</title><rect x="2400" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2480" y="501" text-anchor="middle">AUS_create_a_new_econi</text>
+<text class="label" x="2480" y="517" text-anchor="middle">mic</text>
+<text class="small" x="2480" y="532" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+</svg>

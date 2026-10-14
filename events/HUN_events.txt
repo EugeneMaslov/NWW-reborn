@@ -1,12 +1,12 @@
-add_namespace = nww_legacy
+add_namespace = nww_hun_diplomacy
 country_event = {
-	id = nww_legacy.1
-	title = nww_legacy.1.t
-	desc = nww_legacy.1.d
+	id = nww_hun_diplomacy.1
+	title = nww_hun_diplomacy.1.t
+	desc = nww_hun_diplomacy.1.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
 	option = {
-		name = nww_legacy.1.a
+		name = nww_hun_diplomacy.1.a
 		trigger = {
 			FROM = {
 				exists = yes
@@ -37,7 +37,7 @@ country_event = {
 				}
 			}
 			country_event = {
-				id = nww_legacy.2
+				id = nww_hun_diplomacy.2
 				days = 1
 			}
 		}
@@ -66,14 +66,14 @@ country_event = {
 		}
 	}
 	option = {
-		name = nww_legacy.1.b
+		name = nww_hun_diplomacy.1.b
 		FROM = {
 			if = {
 				limit = {
 					exists = yes
 				}
 				country_event = {
-					id = nww_legacy.4
+					id = nww_hun_diplomacy.4
 					days = 1
 				}
 			}
@@ -84,23 +84,23 @@ country_event = {
 	}
 }
 country_event = {
-	id = nww_legacy.2
-	title = nww_legacy.2.t
-	desc = nww_legacy.2.d
+	id = nww_hun_diplomacy.2
+	title = nww_hun_diplomacy.2.t
+	desc = nww_hun_diplomacy.2.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
 	option = {
-		name = nww_legacy.2.a
+		name = nww_hun_diplomacy.2.a
 	}
 }
 country_event = {
-	id = nww_legacy.3
-	title = nww_legacy.3.t
-	desc = nww_legacy.3.d
+	id = nww_hun_diplomacy.3
+	title = nww_hun_diplomacy.3.t
+	desc = nww_hun_diplomacy.3.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
 	option = {
-		name = nww_legacy.3.a
+		name = nww_hun_diplomacy.3.a
 		trigger = {
 			is_subject = no
 			NOT = {
@@ -123,7 +123,7 @@ country_event = {
 		}
 		FROM = {
 			country_event = {
-				id = nww_legacy.5
+				id = nww_hun_diplomacy.5
 				days = 1
 			}
 		}
@@ -132,14 +132,14 @@ country_event = {
 		}
 	}
 	option = {
-		name = nww_legacy.3.b
+		name = nww_hun_diplomacy.3.b
 		FROM = {
 			if = {
 				limit = {
 					exists = yes
 				}
 				country_event = {
-					id = nww_legacy.4
+					id = nww_hun_diplomacy.4
 					days = 1
 				}
 			}
@@ -150,22 +150,22 @@ country_event = {
 	}
 }
 country_event = {
-	id = nww_legacy.4
-	title = nww_legacy.4.t
-	desc = nww_legacy.4.d
+	id = nww_hun_diplomacy.4
+	title = nww_hun_diplomacy.4.t
+	desc = nww_hun_diplomacy.4.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
 	option = {
-		name = nww_legacy.4.a
+		name = nww_hun_diplomacy.4.a
 	}
 }
 country_event = {
-	id = nww_legacy.5
-	title = nww_legacy.5.t
-	desc = nww_legacy.5.d
+	id = nww_hun_diplomacy.5
+	title = nww_hun_diplomacy.5.t
+	desc = nww_hun_diplomacy.5.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
 	option = {
-		name = nww_legacy.5.a
+		name = nww_hun_diplomacy.5.a
 	}
 }

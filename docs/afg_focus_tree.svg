@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="915" viewBox="0 0 1550 915">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>
+<rect width="1550" height="915" fill="#111925"/>
+<text x="32" y="38" font-size="24">AFG: 15 фокусов</text>
+<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>
+<path d="M 680 160 V 177.5 H 500 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 160 V 177.5 H 860 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 500 255 V 272.5 H 860 V 290" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 860 255 V 272.5 H 860 V 290" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 500 255 V 272.5 H 500 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 500 350 V 367.5 H 680 V 385" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 860 350 V 367.5 H 680 V 385" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 680 445 V 462.5 H 680 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 540 V 557.5 H 500 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 860 350 V 462.5 H 500 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 540 V 557.5 H 860 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 500 635 V 652.5 H 680 V 670" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 860 635 V 652.5 H 680 V 670" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 680 730 V 747.5 H 500 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 730 V 747.5 H 860 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1400 160 V 177.5 H 1400 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1400 255 V 272.5 H 1400 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 500 190 Q 680.0 160 860 190" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 860 285 Q 680.0 255 500 285" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 500 570 Q 680.0 540 860 570" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 500 760 Q 680.0 730 860 760" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<g><title>AFG_nww_council
+
+AFG_nww_council</title><rect x="600" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="121" text-anchor="middle">AFG_nww_council</text>
+<text class="small" x="680" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>AFG_new_political
+
+AFG_new_political</title><rect x="420" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="500" y="216" text-anchor="middle">AFG_new_political</text>
+<text class="small" x="500" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>AFG_not_new_political_power
+
+AFG_not_new_political_power</title><rect x="780" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="860" y="216" text-anchor="middle">AFG_not_new_political_</text>
+<text class="label" x="860" y="232" text-anchor="middle">power</text>
+<text class="small" x="860" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>AFG_remove_borders
+
+AFG_remove_borders</title><rect x="780" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="860" y="311" text-anchor="middle">AFG_remove_borders</text>
+<text class="small" x="860" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>AFG_give_free
+
+AFG_give_free</title><rect x="420" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="500" y="311" text-anchor="middle">AFG_give_free</text>
+<text class="small" x="500" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>AFG_industrial_1
+
+AFG_industrial_1</title><rect x="600" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="680" y="406" text-anchor="middle">AFG_industrial_1</text>
+<text class="small" x="680" y="437" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+<g><title>AFG_ready_the_army
+
+AFG_ready_the_army</title><rect x="600" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="680" y="501" text-anchor="middle">AFG_ready_the_army</text>
+<text class="small" x="680" y="532" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+<g><title>AFG_crush_soviet
+
+AFG_crush_soviet</title><rect x="420" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="500" y="596" text-anchor="middle">AFG_crush_soviet</text>
+<text class="small" x="500" y="627" text-anchor="middle">35 дней</text></g>
+<g><title>AFG_good_friend
+
+AFG_good_friend</title><rect x="780" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="860" y="596" text-anchor="middle">AFG_good_friend</text>
+<text class="small" x="860" y="627" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>afg_tashkent
+
+afg_tashkent</title><rect x="600" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="680" y="691" text-anchor="middle">afg_tashkent</text>
+<text class="small" x="680" y="722" text-anchor="middle">35 дней</text></g>
+<g><title>afg_usa
+
+afg_usa</title><rect x="420" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="500" y="786" text-anchor="middle">afg_usa</text>
+<text class="small" x="500" y="817" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>afg_ussr
+
+afg_ussr</title><rect x="780" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="860" y="786" text-anchor="middle">afg_ussr</text>
+<text class="small" x="860" y="817" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>afg_site
+
+afg_site</title><rect x="1320" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1400" y="121" text-anchor="middle">afg_site</text>
+<text class="small" x="1400" y="152" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>afg_anon_ussr
+
+afg_anon_ussr</title><rect x="1320" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1400" y="216" text-anchor="middle">afg_anon_ussr</text>
+<text class="small" x="1400" y="247" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>afg_invest_usa
+
+afg_invest_usa</title><rect x="1320" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1400" y="311" text-anchor="middle">afg_invest_usa</text>
+<text class="small" x="1400" y="342" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+</svg>

@@ -1,0 +1,7 @@
+NWW_TUR_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = TUR
+		has_completed_focus = TUR_political_rw
+	}
+}

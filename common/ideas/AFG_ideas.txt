@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		NWW_AFG_frontier_army = {
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_attack_factor = 0.05
+			}
+			picture = generic_army_europe_1
+		}
+		NWW_AFG_court_industry = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+{
+  "log": "C:\\Users\\Eugene\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\error.log",
+  "total_lines": 4148,
+  "modified": 1791984309.5329876,
+  "categories": {
+    "turkish_advisor_token": 2793,
+    "empty_small_icon": 910,
+    "event_id_parse": 292,
+    "numeric_focus_token": 10,
+    "focus_shine": 7,
+    "missing_turkish_tree": 2,
+    "localization_collision": 1,
+    "core_resistance": 1,
+    "unknown_character": 1,
+    "german_equipment": 3,
+    "german_division_names": 2,
+    "other_mod_versions": 3,
+    "session_commands": 53,
+    "sound_duplicates": 16
+  },
+  "most_repeated": [
+    [
+      "[icon_entry.cpp:38]: Icon definition \"_small\" does neither look like a file path nor a GFX entry as it does not start with \"GFX_\"",
+      910
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:76: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:236: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:2067: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:1924: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:2387: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:1817: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:1873: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:160: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:2543: has_idea: TUR_recep_peker is not A valid Idea",
+      292
+    ],
+    [
+      "[triggerimplementation.cpp:3047]: common/characters/TUR.txt:728: has_idea: TUR_recep_peker is not A valid Idea",
+      165
+    ],
+    [
+      "[session.cpp:362]: Dropped command: naval_mission_move_command, tick: 65535",
+      22
+    ],
+    [
+      "[session.cpp:362]: Dropped command: on_ruling_party_change, tick: 65535",
+      22
+    ],
+    [
+      "[gameidler.cpp:1576]: AI tried to post an invalid command: merge_navies",
+      11
+    ],
+    [
+      "[effectbase.cpp:1601]: common/on_actions/14_sea_on_actions.txt:2297: random_list: all entries in random_list have 0 chance to happen - no effect is executed.",
+      8
+    ],
+    [
+      "[session.cpp:362]: Dropped command: attach_scientist, tick: 65535",
+      4
+    ],
+    [
+      "[pdx_entity.cpp:324]: Failed to find entity \"INS_bicycle_vehicle_entity\" for attachment in bicycle",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: generic.2, near line: 1236\" in file: \"common/scripted_effects/00_scripted_effects.txt\" near line: 1236",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: generic.2, near line: 1241\" in file: \"common/scripted_effects/00_scripted_effects.txt\" near line: 1242",
+      2
+    ],
+    [
+      "[effectimplementation.cpp:375]: Unable to find focus tree with ID: turkish_focus",
+      2
+    ]
+  ]
+}

@@ -1,0 +1,753 @@
+focus_tree = {
+	id = HUN_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = HUN
+		}
+	}
+	default = no
+	focus = {
+		id = HUN_nww_rebuild
+		x = 6
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HUN_elect_a_king
+		x = 6
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = HUN_nww_rebuild
+		}
+	}
+	focus = {
+		id = HUN_elect_a_democratic_king
+		x = 2
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		prerequisite = {
+			focus = HUN_elect_a_king
+		}
+		available = {
+			NOT = {
+				democratic < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = HUN_invite_the_habsburg_prince
+			focus = HUN_elect_a_fascist_king
+		}
+	}
+	focus = {
+		id = HUN_invite_the_habsburg_prince
+		x = 6
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			promote_character = HUN_otto_von_habsburg
+		}
+		prerequisite = {
+			focus = HUN_elect_a_king
+		}
+		available = {
+			NOT = {
+				neutrality < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = HUN_elect_a_democratic_king
+			focus = HUN_elect_a_fascist_king
+		}
+	}
+	focus = {
+		id = HUN_elect_a_fascist_king
+		x = 10
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		prerequisite = {
+			focus = HUN_elect_a_king
+		}
+		available = {
+			NOT = {
+				fascism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = HUN_elect_a_democratic_king
+			focus = HUN_invite_the_habsburg_prince
+		}
+	}
+	focus = {
+		id = HUN_proclaim_the_restoration_of_austria_hungary
+		x = 6
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = nww_hun_diplomacy.3
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = HUN_invite_the_habsburg_prince
+		}
+		available = {
+			AUS = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = AUS
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = HUN_protect_czechoslovakia
+		x = 6
+		y = 4
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = HUN_proclaim_the_restoration_of_austria_hungary
+		}
+		available = {
+			has_country_flag = NWW_danubian_agreement
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = NWW_HUN_sovereign_parliament
+		x = 2
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = HUN_elect_a_democratic_king
+		}
+	}
+	focus = {
+		id = NWW_HUN_national_defence
+		x = 10
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 20
+		}
+		prerequisite = {
+			focus = HUN_elect_a_fascist_king
+		}
+	}
+	focus = {
+		id = HUN_nww_army
+		x = 16
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NWW_HUN_officer_school
+		x = 16
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_legacy_land_doctrine_bonus
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+		}
+		prerequisite = {
+			focus = HUN_nww_army
+		}
+	}
+	focus = {
+		id = NWW_HUN_artillery
+		x = 15
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_officer_school
+		}
+	}
+	focus = {
+		id = NWW_HUN_motorisation
+		x = 17
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = motorized_equipment
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_officer_school
+		}
+	}
+	focus = {
+		id = NWW_HUN_manoeuvres
+		x = 16
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+		}
+		prerequisite = {
+			focus = NWW_HUN_artillery
+		}
+		prerequisite = {
+			focus = NWW_HUN_motorisation
+		}
+	}
+	focus = {
+		id = HUN_nww_industry
+		x = 24
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_HUN_ganz
+		x = 22
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = HUN_nww_industry
+		}
+	}
+	focus = {
+		id = NWW_HUN_weiss
+		x = 26
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = HUN_nww_industry
+		}
+	}
+	focus = {
+		id = NWW_HUN_railways
+		x = 22
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_ganz
+		}
+	}
+	focus = {
+		id = NWW_HUN_machine_tools
+		x = 26
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_ideas = NWW_HUN_workshops
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_weiss
+		}
+	}
+	focus = {
+		id = NWW_HUN_technical_university
+		x = 24
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_railways
+		}
+		prerequisite = {
+			focus = NWW_HUN_machine_tools
+		}
+	}
+	focus = {
+		id = NWW_HUN_research_network
+		x = 24
+		y = 4
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_technical_university
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1620
+	}
+	initial_show_position = {
+		focus = HUN_nww_rebuild
+	}
+	shared_focus = HUN_balanced_budget
+	shared_focus = HUN_strengthen_the_monarchists
+	shared_focus = HUN_demand_a_referendum
+	shared_focus = HUN_take_austria_by_force
+	shared_focus = HUN_claim_transylvania
+	shared_focus = HUN_march_to_the_shore
+	shared_focus = HUN_reclaim_venetia
+	shared_focus = HUN_claim_galicia
+	shared_focus = HUN_claim_the_bucovina
+	shared_focus = HUN_reclaim_the_empire
+	shared_focus = HUN_responsible_government
+	shared_focus = HUN_rapproachement_with_little_entente
+	shared_focus = HUN_join_allies
+	shared_focus = HUN_the_balkan_pact
+	shared_focus = HUN_an_unlikely_alliance
+	shared_focus = HUN_joint_oil_exploitation_company
+	shared_focus = HUN_economic_intervention
+	shared_focus = HUN_strengthen_fascists
+	shared_focus = HUN_renounce_the_treaty_of_trianon
+	shared_focus = HUN_renew_the_rome_protocols
+	shared_focus = HUN_protect_austria
+	shared_focus = HUN_alliance_with_italy
+	shared_focus = HUN_trade_deal_with_germany
+	shared_focus = HUN_joint_aluminum_mining_company
+	shared_focus = HUN_join_axis
+	shared_focus = HUN_reaffirm_territorial_claims
+	shared_focus = HUN_demand_transylvania
+	shared_focus = HUN_demand_southern_slovakia
+	shared_focus = HUN_demand_the_vojvodina
+	shared_focus = HUN_claim_overlordship_over_slovakia
+	shared_focus = HUN_proclaim_greater_hungary
+	shared_focus = HUN_council_of_peoples_commissars
+	shared_focus = HUN_assassinate_horthy
+	shared_focus = HUN_the_hungarian_red_army
+	shared_focus = HUN_soviet_hungarian_military_academy
+	shared_focus = HUN_join_comintern
+	shared_focus = HUN_the_revolutionary_council
+	shared_focus = HUN_pressure_romania
+	shared_focus = HUN_intervene_in_czechoslovakia
+	shared_focus = HUN_industrial_revitalization
+	shared_focus = HUN_reintegrate_the_railroads
+	shared_focus = HUN_support_domestic_industry
+	shared_focus = HUN_support_urbanization
+	shared_focus = HUN_institute_for_industrial_techniques
+	shared_focus = HUN_announce_the_gyor_program
+	shared_focus = HUN_civilian_industry
+	shared_focus = HUN_invite_foreign_investors
+	shared_focus = HUN_expand_the_manfred_weiss_steel_works
+	shared_focus = HUN_expand_the_aluminum_industry
+	shared_focus = HUN_expand_the_technical_university_of_budapest
+	shared_focus = HUN_domestic_arms_industry
+	shared_focus = HUN_aeronautic_technology_institute
+	shared_focus = HUN_boost_hungarian_aviation_industry
+	shared_focus = HUN_autarky
+	shared_focus = HUN_synthetic_industry
+	shared_focus = HUN_secret_rearmament
+	shared_focus = HUN_war_games
+	shared_focus = HUN_theoretical_air_efforts
+	shared_focus = HUN_bled_agreement
+	shared_focus = HUN_establish_the_air_force
+	shared_focus = HUN_indigenous_designs
+	shared_focus = HUN_heavy_fighter_effort
+	shared_focus = HUN_light_fighter_effort
+	shared_focus = HUN_cas_focus
+	shared_focus = HUN_tac_focus
+	shared_focus = HUN_license_foreign_designs
+	shared_focus = HUN_fighter_competition
+	shared_focus = HUN_bomber_competition
+	shared_focus = HUN_joint_air_development
+	shared_focus = HUN_army_maneuvers
+	shared_focus = HUN_mobile_focus
+	shared_focus = HUN_the_botond
+	shared_focus = HUN_motorized_logistics
+	shared_focus = HUN_develop_tanks
+	shared_focus = HUN_assault_gun_focus
+	shared_focus = HUN_joint_tank_procurement
+	shared_focus = HUN_armored_warfare
+	shared_focus = HUN_mobile_corps_doctrine
+	shared_focus = HUN_home_defense
+	shared_focus = HUN_danuvia_submachine_guns
+	shared_focus = HUN_artillery_effort
+	shared_focus = HUN_light_infantry_divisions_doctrine
+	shared_focus = HUN_form_parachute_battalions
+	shared_focus = HUN_naval_warfare
+	shared_focus = HUN_restauration
+	shared_focus = HUN_capital_ships
+	shared_focus = HUN_a_new_flagship
+	shared_focus = HUN_reform
+	shared_focus = HUN_dockyards
+	shared_focus = HUN_destroyer
+	shared_focus = HUN_cruisers
+	shared_focus = HUN_submarines
+	shared_focus = HUN_carriers
+	shared_focus = wuw_HUN_end_the_regency
+	shared_focus = wuw_HUN_continue_the_regency
+	shared_focus = wuw_HUN_end_the_white_terror
+	shared_focus = wuw_HUN_crack_down_on_radicals
+	shared_focus = wuw_HUN_subvert_gombos_troops
+	shared_focus = wuw_HUN_reach_out_to_candidates
+	shared_focus = wuw_HUN_reinstate_the_pragmatic_sanction
+	shared_focus = wuw_HUN_abide_by_the_little_ententes_stipulations
+	shared_focus = wuw_HUN_aid_the_carlist_struggle
+	shared_focus = wuw_HUN_invite_otto_to_the_throne
+	shared_focus = wuw_HUN_the_old_habsburg_king
+	shared_focus = wuw_HUN_attempt_economic_independence
+	shared_focus = wuw_HUN_secure_army_loyalty
+	shared_focus = wuw_HUN_the_lands_of_the_crown_of_saint_stephen
+	shared_focus = wuw_HUN_demand_austrian_restoration
+	shared_focus = wuw_HUN_protect_czechoslovakia
+	shared_focus = wuw_HUN_seek_an_alliance_with_the_kaiser
+	shared_focus = wuw_HUN_a_grand_habsburg_alliance
+	shared_focus = wuw_HUN_the_old_grand_alliance
+	shared_focus = wuw_HUN_demand_wiedist_restoration
+	shared_focus = wuw_HUN_habsburg_ascension_in_spain
+	shared_focus = wuw_HUN_a_habsburg_poland
+	shared_focus = wuw_HUN_press_maximilians_and_the_iturbides_claims
+	shared_focus = wuw_HUN_reenlist_the_sich_riflemen
+	shared_focus = wuw_HUN_the_kingdom_of_ukraine
+	shared_focus = wuw_HUN_restore_the_georgian_monarchy
+	shared_focus = wuw_HUN_reclaim_transylvania
+	shared_focus = wuw_HUN_reintigrate_slovakia
+	shared_focus = wuw_HUN_restore_the_duchy_of_teschen
+	shared_focus = wuw_HUN_a_hungarian_galicia
+	shared_focus = wuw_HUN_the_triple_kingdom
+	shared_focus = wuw_HUN_restore_the_lombardo_venetian_kingdom
+	shared_focus = wuw_HUN_reverse_the_risorgimento
+	shared_focus = wuw_HUN_reclaim_the_holy_city
+	shared_focus = wuw_HUN_a_holy_empire
+	shared_focus = wuw_HUN_integrate_bohemian_and_austrian_industries
+	shared_focus = wuw_HUN_a_multi_ethnic_empire
+	shared_focus = wuw_HUN_renovato_imperii
+	shared_focus = wuw_HUN_the_bastion_of_catholicism
+	shared_focus = wuw_HUN_enact_agrarian_reform
+	shared_focus = wuw_HUN_honor_the_great_war_veterans
+	shared_focus = wuw_HUN_royal_hussars
+	shared_focus = wuw_HUN_purchase_burgenland
+	shared_focus = wuw_HUN_the_legacy_of_the_isonzo_front
+	shared_focus = wuw_HUN_revenge_for_the_brusilov_offensive
+	shared_focus = wuw_HUN_the_legacy_of_arpad_andrew_and_matthias
+	shared_focus = wuw_HUN_establishing_a_new_dynasty
+	shared_focus = wuw_HUN_elect_a_democratic_king
+	shared_focus = wuw_HUN_increase_economic_cooperation
+	shared_focus = wuw_HUN_elect_a_fascist_king
+	shared_focus = wuw_HUN_volksbund_der_deutschen_in_ungarn
+	shared_focus = wuw_HUN_cancel_the_german_trade_deal
+	shared_focus = wuw_HUN_establishing_a_royal_guard
+	shared_focus = wuw_HUN_dissolve_the_volksbund
+	shared_focus = wuw_HUN_magyar_cserkeszszovetseg
+	shared_focus = wuw_HUN_a_mobile_army
+	shared_focus = wuw_HUN_an_airforce_to_be_reckoned_with
+	shared_focus = wuw_HUN_royalist_education_initiative
+	shared_focus = wuw_HUN_anglo_hungarian_alliance
+	shared_focus = wuw_HUN_a_unifying_heritage
+	shared_focus = wuw_HUN_stage_an_uprising_in_leitha
+	shared_focus = wuw_HUN_a_declaration_of_intentions
+	shared_focus = wuw_HUN_undoing_the_yugoslav_mistake
+	shared_focus = wuw_HUN_reclaim_the_slovak_possessions
+	shared_focus = wuw_HUN_revenge_for_1919
+	shared_focus = wuw_HUN_on_a_high_horse
+	shared_focus = wuw_HUN_a_bulwark_against_communism
+	shared_focus = wuw_HUN_a_responsible_government
+	shared_focus = wuw_HUN_guarantee_religious_liberties
+	shared_focus = wuw_HUN_the_balkan_pact
+	shared_focus = wuw_HUN_join_the_allies
+	shared_focus = wuw_HUN_joint_oil_exploitation_company
+	shared_focus = wuw_HUN_hold_territorial_referendums
+	shared_focus = wuw_HUN_strengthen_horthys_reign
+	shared_focus = wuw_HUN_undermine_the_admiral
+	shared_focus = wuw_HUN_reestablish_the_rongyos_garda
+	shared_focus = wuw_HUN_strenghten_the_order_of_vitez
+	shared_focus = wuw_HUN_pass_statute_xix
+	shared_focus = wuw_HUN_restrict_voting_rights
+	shared_focus = wuw_HUN_absolute_rule_of_the_national_unity_party
+	shared_focus = wuw_HUN_outlaw_the_party_of_national_will
+	shared_focus = wuw_HUN_spur_on_the_trianon_trauma
+	shared_focus = wuw_HUN_renounce_the_treaty_of_trianon
+	shared_focus = wuw_HUN_the_hungarian_life_and_renewal_party
+	shared_focus = wuw_HUN_act_of_defense
+	shared_focus = wuw_HUN_integrate_the_volksbund
+	shared_focus = wuw_HUN_empower_the_greenshirts
+	shared_focus = wuw_HUN_the_march_on_budapest
+	shared_focus = wuw_HUN_government_of_national_unity
+	shared_focus = wuw_HUN_the_turul_association
+	shared_focus = wuw_HUN_carrying_on_arpads_legacy
+	shared_focus = wuw_HUN_institute_corporatism
+	shared_focus = wuw_HUN_a_roman_catholic_state
+	shared_focus = wuw_HUN_incorporate_the_hungarian_life_movement
+	shared_focus = wuw_HUN_heirs_of_the_huns
+	shared_focus = wuw_HUN_sway_the_count
+	shared_focus = wuw_HUN_wherever_the_cross_points
+	shared_focus = wuw_HUN_the_war_on_atheism
+	shared_focus = wuw_HUN_promote_hungarianism
+	shared_focus = wuw_HUN_strengthen_the_turani_vadaszok
+	shared_focus = wuw_HUN_our_ancestral_lands
+	shared_focus = wuw_HUN_reaffirm_territorial_claims
+	shared_focus = wuw_HUN_demand_croatian_reintigration
+	shared_focus = wuw_HUN_demand_southern_slovakia
+	shared_focus = wuw_HUN_demand_carpathian_ruthenia
+	shared_focus = wuw_HUN_demand_transylvania
+	shared_focus = wuw_HUN_demand_the_vojvodina
+	shared_focus = wuw_HUN_demand_burgenland
+	shared_focus = wuw_HUN_claim_overlordship_over_slovakia
+	shared_focus = wuw_HUN_demand_the_return_of_slovakia
+	shared_focus = wuw_HUN_proclaim_greater_hungary
+	shared_focus = wuw_HUN_seek_german_contracts
+	shared_focus = wuw_HUN_license_fiat_tankettes
+	shared_focus = wuw_HUN_renew_the_rome_protocols
+	shared_focus = wuw_HUN_invite_german_investors
+	shared_focus = wuw_HUN_joint_aluminum_mining_company
+	shared_focus = wuw_HUN_join_the_axis
+	shared_focus = wuw_HUN_protect_austria
+	shared_focus = wuw_HUN_an_alliance_with_italy
+	shared_focus = wuw_HUN_parade_istvan_bethlens_platform
+	shared_focus = wuw_HUN_salami_slicing_tactics
+	shared_focus = wuw_HUN_politicize_the_levente_associations
+	shared_focus = wuw_HUN_undermine_the_volksbund
+	shared_focus = wuw_HUN_reviving_the_spirit_of_1848
+	shared_focus = wuw_HUN_officialize_the_rakosi_battalion
+	shared_focus = wuw_HUN_elections_in_the_revolutionary_council
+	shared_focus = wuw_HUN_join_the_comintern
+	shared_focus = wuw_HUN_restore_the_socialist_federative_republic
+	shared_focus = wuw_HUN_establish_the_second_republic
+	shared_focus = wuw_HUN_reverse_the_brain_drain
+	shared_focus = wuw_HUN_the_spirit_of_the_aster_revolution
+	shared_focus = wuw_HUN_uplift_the_dragon_movement
+	shared_focus = wuw_HUN_promote_entrepreneurship
+	shared_focus = wuw_HUN_a_danubian_federation
+	shared_focus = wuw_HUN_approach_the_diasporas
+	shared_focus = wuw_HUN_demand_szekely_autonomy
+	shared_focus = wuw_HUN_ward_against_extremism
+	shared_focus = wuw_HUN_reclaim_the_pannonian_steppe
+	shared_focus = wuw_HUN_revive_the_tribal_consolidation
+	shared_focus = wuw_HUN_the_cult_of_arpad
+	shared_focus = wuw_HUN_bringing_down_the_giants
+	shared_focus = wuw_HUN_restore_the_hungarian_red_army
+	shared_focus = wuw_HUN_goulash_communism
+	shared_focus = wuw_HUN_state_protection_authority
+	shared_focus = wuw_HUN_joint_hungarian_soviet_research_effort
+	shared_focus = wuw_HUN_soviet_hungarian_war_indsutry
+	shared_focus = wuw_HUN_a_cult_of_personality
+	shared_focus = wuw_HUN_kadars_hussars
+	shared_focus = wuw_HUN_soviet_hungarian_military_academy
+	shared_focus = wuw_HUN_central_military_planning_committee
+	shared_focus = wuw_HUN_intervene_in_czechoslovakia
+	shared_focus = wuw_HUN_pressure_romania
+	shared_focus = wuw_HUN_the_bulwark_against_the_west
+	shared_focus = wuw_HUN_reinstate_the_lenin_boys
+	shared_focus = wuw_HUN_instate_a_socialist_economy
+	shared_focus = wuw_HUN_nationalize_key_industries
+	shared_focus = wuw_HUN_invest_in_universal_education
+	shared_focus = wuw_HUN_promote_revanchist_sentiment
+	shared_focus = wuw_HUN_the_second_northern_campaign
+	shared_focus = wuw_HUN_revenge_for_the_romanian_humiliations
+	shared_focus = wuw_HUN_march_south
+	shared_focus = wuw_HUN_a_revolutionary_greater_hungary
+	shared_focus = HUN_hero_of_the_revolution
+	shared_focus = HUN_balkan_ambitions
+	shared_focus = wuw_HUN_denounce_marxism_leninism
+	shared_focus = wuw_HUN_avoid_interventionalist_destablilization
+	shared_focus = wuw_HUN_economic_intervention
+	shared_focus = wuw_HUN_secret_rearmament
+	shared_focus = wuw_HUN_forcefully_revitalize_the_industries
+	shared_focus = wuw_HUN_reintigrate_the_imperial_railroads
+	shared_focus = wuw_HUN_promote_increased_urbanization
+	shared_focus = wuw_HUN_expand_the_ganz_muvek
+	shared_focus = wuw_HUN_devalue_the_pengo
+	shared_focus = wuw_HUN_announce_the_gyor_program
+	shared_focus = wuw_HUN_enlarge_the_ganz_danubius_division
+	shared_focus = wuw_HUN_support_for_our_finnish_brothers
+	shared_focus = wuw_HUN_undercover_air_maneuvers
+	shared_focus = wuw_HUN_hold_war_games
+	shared_focus = wuw_HUN_negotiate_the_restrictions
+	shared_focus = wuw_HUN_reinstate_the_navy
+	shared_focus = wuw_HUN_sailing_the_danube
+	shared_focus = wuw_HUN_make_the_magyar_legiero_known
+	shared_focus = wuw_HUN_initiate_army_maneuvers
+	shared_focus = wuw_HUN_invest_in_ludovica_academy
+	shared_focus = wuw_HUN_expand_the_diosgyor_machinery_factory
+	shared_focus = wuw_HUN_manred_weiss_steel_and_metal_works
+	shared_focus = wuw_HUN_expand_the_hungarian_academy_of_sciences
+	shared_focus = wuw_HUN_expand_the_lignite_industry
+	shared_focus = wuw_HUN_tap_newfound_oil_deposits
+	shared_focus = wuw_HUN_hungarian_autarky
+	shared_focus = wuw_HUN_invite_foreign_investors
+	shared_focus = wuw_HUN_hungarian_tradition
+	shared_focus = wuw_HUN_magyar_allamvasutak
+	shared_focus = wuw_HUN_expand_the_aluminum_industry
+	shared_focus = wuw_HUN_budapest_university_of_technology_and_economics
+	shared_focus = wuw_HUN_the_matyasfold_fighter_factory
+	shared_focus = wuw_HUN_expand_on_the_weiss_wm_16
+	shared_focus = wuw_HUN_develop_the_weiss_wm_21_solyom
+	shared_focus = wuw_HUN_weiss_manfred_wm_23_ezust_nyil
+	shared_focus = wuw_HUN_establish_the_mavag_aircraft_factory
+	shared_focus = wuw_HUN_the_mavag_heja
+	shared_focus = wuw_HUN_repulo_muszaki_intezet
+	shared_focus = wuw_HUN_develop_laszlo_vargas_design
+	shared_focus = wuw_HUN_joint_air_development
+	shared_focus = wuw_HUN_the_arado_ar_96
+	shared_focus = wuw_HUN_extensive_licensing_programs
+	shared_focus = wuw_HUN_allied_manufacturing_programs
+	shared_focus = wuw_HUN_danuvia_submachine_guns
+	shared_focus = wuw_HUN_form_the_gyorshadtest
+	shared_focus = wuw_HUN_establish_the_mavag_army_division
+	shared_focus = wuw_HUN_doctrinal_studies
+	shared_focus = wuw_HUN_award_military_promotions
+	shared_focus = wuw_HUN_magyar_kiralyi_csendorseg
+	shared_focus = wuw_HUN_legacy_of_the_black_legion
+	shared_focus = wuw_HUN_light_infantry_divisions_doctrine
+	shared_focus = wuw_HUN_szent_laszlo_infantry_division
+	shared_focus = wuw_HUN_quantity_over_quality
+	shared_focus = wuw_HUN_expand_the_army
+	shared_focus = wuw_HUN_the_botond
+	shared_focus = wuw_HUN_the_turan
+	shared_focus = wuw_HUN_assault_gun_focus
+	shared_focus = wuw_HUN_the_toldi
+	shared_focus = wuw_HUN_invest_in_the_special_forces
+	shared_focus = wuw_HUN_construct_the_arpad_line
+	shared_focus = wuw_HUN_transylvanian_mountaineers
+	shared_focus = wuw_HUN_expand_the_arpad_line
+	shared_focus = wuw_HUN_construct_the_szeretfalva_deda_railway_line
+	shared_focus = wuw_HUN_the_szekel_command
+	shared_focus = wuw_HUN_renew_the_shipping_industry
+	shared_focus = wuw_HUN_embrace_navy_traditions
+	shared_focus = wuw_HUN_a_reformed_navy
+	shared_focus = wuw_HUN_invest_in_destroyer_models
+	shared_focus = wuw_HUN_cruiser_investments
+	shared_focus = wuw_HUN_wolfs_of_the_sea
+	shared_focus = wuw_HUN_bringing_the_air_battle_to_the_seas
+	shared_focus = wuw_HUN_capital_ship_efforts
+	shared_focus = wuw_HUN_a_new_pride_of_the_fleet
+	shared_focus = wuw_HUN_degauss_ship_hulls
+}

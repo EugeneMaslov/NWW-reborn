@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2360" height="820" viewBox="0 0 2360 820">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>
+<rect width="2360" height="820" fill="#111925"/>
+<text x="32" y="38" font-size="24">GER: 17 фокусов</text>
+<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>
+<path d="M 590 160 V 177.5 H 410 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1310 160 V 177.5 H 1760 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 410 255 V 272.5 H 410 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 590 160 V 177.5 H 770 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1310 160 V 177.5 H 1310 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1310 255 V 272.5 H 1130 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1130 350 V 367.5 H 1130 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1130 445 V 462.5 H 1130 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1310 255 V 272.5 H 1490 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1490 350 V 367.5 H 1490 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1490 445 V 462.5 H 1490 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1490 540 V 557.5 H 1310 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1130 540 V 557.5 H 1310 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1310 635 V 652.5 H 1130 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1310 635 V 652.5 H 1490 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<g><title>GER_the_kaiser_endures
+
+GER_the_kaiser_endures</title><rect x="510" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="590" y="121" text-anchor="middle">GER_the_kaiser_endures</text>
+<text class="small" x="590" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>GER_prussian_traditions
+
+GER_prussian_traditions</title><rect x="330" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="410" y="216" text-anchor="middle">GER_prussian_tradition</text>
+<text class="label" x="410" y="232" text-anchor="middle">s</text>
+<text class="small" x="410" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>GER_krupp_and_thyssen
+
+GER_krupp_and_thyssen</title><rect x="1230" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1310" y="121" text-anchor="middle">GER_krupp_and_thyssen</text>
+<text class="small" x="1310" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>GER_the_fleet_question
+
+GER_the_fleet_question</title><rect x="2130" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="2210" y="121" text-anchor="middle">GER_the_fleet_question</text>
+<text class="small" x="2210" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>GER_mitteleuropa_trade
+
+GER_mitteleuropa_trade</title><rect x="1680" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1760" y="216" text-anchor="middle">GER_mitteleuropa_trade</text>
+<text class="small" x="1760" y="247" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_the_eastern_question
+
+GER_the_eastern_question</title><rect x="330" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="410" y="311" text-anchor="middle">GER_the_eastern_questi</text>
+<text class="label" x="410" y="327" text-anchor="middle">on</text>
+<text class="small" x="410" y="342" text-anchor="middle">70 дней</text></g>
+<g><title>GER_guardians_of_the_reich
+
+GER_guardians_of_the_reich
+Дополнительные условия: GER_mitteleuropa_trade, GER_the_eastern_question</title><rect x="690" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="770" y="216" text-anchor="middle">GER_guardians_of_the_r</text>
+<text class="label" x="770" y="232" text-anchor="middle">eich</text>
+<text class="small" x="770" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>GER_1
+
+GER_1</title><rect x="1230" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1310" y="216" text-anchor="middle">GER_1</text>
+<text class="small" x="1310" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>GER_2
+
+GER_2</title><rect x="1050" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1130" y="311" text-anchor="middle">GER_2</text>
+<text class="small" x="1130" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>GER_3
+
+GER_3</title><rect x="1050" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1130" y="406" text-anchor="middle">GER_3</text>
+<text class="small" x="1130" y="437" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_4
+
+GER_4</title><rect x="1050" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1130" y="501" text-anchor="middle">GER_4</text>
+<text class="small" x="1130" y="532" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_5
+
+GER_5</title><rect x="1410" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1490" y="311" text-anchor="middle">GER_5</text>
+<text class="small" x="1490" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_6
+
+GER_6</title><rect x="1410" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1490" y="406" text-anchor="middle">GER_6</text>
+<text class="small" x="1490" y="437" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_7
+
+GER_7</title><rect x="1410" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1490" y="501" text-anchor="middle">GER_7</text>
+<text class="small" x="1490" y="532" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_8
+
+GER_8</title><rect x="1230" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1310" y="596" text-anchor="middle">GER_8</text>
+<text class="small" x="1310" y="627" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+<g><title>GER_9
+
+GER_9</title><rect x="1050" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="1130" y="691" text-anchor="middle">GER_9</text>
+<text class="small" x="1130" y="722" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>GER_10
+
+GER_10</title><rect x="1410" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1490" y="691" text-anchor="middle">GER_10</text>
+<text class="small" x="1490" y="722" text-anchor="middle">35 дней</text></g>
+</svg>

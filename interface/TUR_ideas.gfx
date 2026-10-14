@@ -79,4 +79,8 @@ spriteTypes = {
 		name = GFX_Portrait_NWW_TUR_fethi
 		texturefile = "gfx/leaders/nww_legacy/Portrait_TUR_Okayar_Ali_Fethi.dds"
 	}
+	spriteType = {
+		name = GFX_portrait_tur_nihal_atsiz
+		texturefile = "gfx/leaders/TUR/portrait_tur_nihal_atsiz.dds"
+	}
 }

@@ -1,0 +1,638 @@
+focus_tree = {
+	id = AFG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = AFG
+		}
+	}
+	default = no
+	focus = {
+		id = AFG_nww_council
+		x = 6
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = AFG_new_political
+		x = 4
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = AFG_nww_council
+		}
+		mutually_exclusive = {
+			focus = AFG_not_new_political_power
+		}
+	}
+	focus = {
+		id = AFG_not_new_political_power
+		x = 8
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = AFG_nww_council
+		}
+		mutually_exclusive = {
+			focus = AFG_new_political
+		}
+	}
+	focus = {
+		id = AFG_remove_borders
+		x = 8
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_war_support = 0.05
+		}
+		prerequisite = {
+			focus = AFG_new_political
+			focus = AFG_not_new_political_power
+		}
+		mutually_exclusive = {
+			focus = AFG_give_free
+		}
+	}
+	focus = {
+		id = AFG_give_free
+		x = 4
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = AFG_new_political
+		}
+		available = {
+			NOT = {
+				democratic < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AFG_remove_borders
+		}
+	}
+	focus = {
+		id = AFG_industrial_1
+		x = 6
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			set_country_flag = NWW_AFG_industry_complete
+			nww_legacy_AFG_economic_step = yes
+		}
+		prerequisite = {
+			focus = AFG_give_free
+			focus = AFG_remove_borders
+		}
+	}
+	focus = {
+		id = AFG_ready_the_army
+		x = 6
+		y = 4
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		prerequisite = {
+			focus = AFG_industrial_1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_legacy_land_doctrine_bonus
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			army_experience = 20
+			add_ideas = NWW_AFG_frontier_army
+		}
+	}
+	focus = {
+		id = AFG_crush_soviet
+		x = 4
+		y = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 730
+			}
+		}
+		prerequisite = {
+			focus = AFG_ready_the_army
+		}
+		prerequisite = {
+			focus = AFG_remove_borders
+		}
+		available = {
+			SOV = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			NOT = {
+				is_in_faction_with = SOV
+			}
+			is_subject = no
+			has_war_support > 0.30
+			date > 1937.1.1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AFG_good_friend
+		}
+	}
+	focus = {
+		id = AFG_good_friend
+		x = 8
+		y = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = nww_afg_diplomacy.1
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = AFG_ready_the_army
+		}
+		available = {
+			SOV = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AFG_crush_soviet
+		}
+	}
+	focus = {
+		id = afg_tashkent
+		x = 6
+		y = 6
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = AFG_crush_soviet
+			focus = AFG_good_friend
+		}
+		available = {
+			OR = {
+				has_country_flag = NWW_foreign_contract
+				405 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = afg_usa
+		x = 4
+		y = 7
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			USA = {
+				country_event = {
+					id = nww_afg_diplomacy.1
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = afg_tashkent
+		}
+		available = {
+			USA = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = USA
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = afg_ussr
+		}
+	}
+	focus = {
+		id = afg_ussr
+		x = 8
+		y = 7
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			SOV = {
+				country_event = {
+					id = nww_afg_diplomacy.1
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = afg_tashkent
+		}
+		available = {
+			NOT = {
+				communism < 0.40
+			}
+			SOV = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = afg_usa
+		}
+	}
+	focus = {
+		id = afg_site
+		x = 14
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = afg_anon_ussr
+		x = 14
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		prerequisite = {
+			focus = afg_site
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			add_ideas = NWW_AFG_court_industry
+		}
+	}
+	focus = {
+		id = afg_invest_usa
+		x = 14
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			set_country_flag = NWW_AFG_institute_complete
+			nww_legacy_AFG_economic_step = yes
+		}
+		prerequisite = {
+			focus = afg_anon_ussr
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 2010
+	}
+	initial_show_position = {
+		focus = AFG_nww_council
+	}
+	shared_focus = AFG_expand_telegraph_network
+	shared_focus = AFG_sugar_processing
+	shared_focus = AFG_fruit_packing
+	shared_focus = AFG_clear_malarial_swamps
+	shared_focus = AFG_qargha_dam
+	shared_focus = AFG_kajaki_dam
+	shared_focus = AFG_iron_mines
+	shared_focus = AFG_chromite_mines
+	shared_focus = AFG_modern_economy
+	shared_focus = AFG_infrastructure_construction
+	shared_focus = AFG_ministry_of_supply
+	shared_focus = AFG_implement_currency_controls
+	shared_focus = AFG_expand_karakul_lambskin_industry
+	shared_focus = AFG_spinzar_cotton_factory
+	shared_focus = AFG_look_to_other_partners
+	shared_focus = AFG_renew_soviet_trade_agreement
+	shared_focus = AFG_salang_pass
+	shared_focus = AFG_truck_factory
+	shared_focus = AFG_75_year_oil_concessions
+	shared_focus = AFG_electrification
+	shared_focus = AFG_establish_radio_networks
+	shared_focus = AFG_connect_the_cities
+	shared_focus = AFG_rail_construction
+	shared_focus = AFG_expand_kabul_university
+	shared_focus = AFG_state_industries
+	shared_focus = AFG_maintain_quami
+	shared_focus = AFG_asymmetric_warfare
+	shared_focus = AFG_expand_quami_template
+	shared_focus = AFG_khyber_pass_riflining
+	shared_focus = AFG_scavenging
+	shared_focus = AFG_militia_cavalry
+	shared_focus = AFG_encourage_jezail_production
+	shared_focus = AFG_mountain_training
+	shared_focus = AFG_mountain_training_2
+	shared_focus = AFG_cross_border_ties
+	shared_focus = AFG_adopt_nufus
+	shared_focus = AFG_expand_border_guards
+	shared_focus = AFG_approach_foreign_inteligence_services
+	shared_focus = AFG_utilize_cameleers
+	shared_focus = AFG_establish_camelry_regiments
+	shared_focus = AFG_new_army
+	shared_focus = AFG_officialize_the_turkish_afghan_defense_treaty
+	shared_focus = AFG_establish_naval_bases
+	shared_focus = AFG_expand_academy
+	shared_focus = AFG_purchase_tanks
+	shared_focus = AFG_purchase_aircraft
+	shared_focus = AFG_foreign_military_advisors
+	shared_focus = AFG_expand_standing_army
+	shared_focus = AFG_expand_equipment_purchases
+	shared_focus = AFG_increase_air_purchases
+	shared_focus = AFG_prussians_of_the_orient
+	shared_focus = AFG_naval_academy
+	shared_focus = AFG_shipyards
+	shared_focus = AFG_research_bonus_1
+	shared_focus = AFG_purchase_destroyers
+	shared_focus = AFG_research_bonus_2
+	shared_focus = AFG_purchase_capital_ships
+	shared_focus = AFG_against_kabul
+	shared_focus = AFG_contact_amanullah_loyalists
+	shared_focus = AFG_remember_the_khost_rebellion
+	shared_focus = AFG_secure_army_support
+	shared_focus = AFG_contact_rural_loyalists
+	shared_focus = AFG_hold_a_loya_jirga
+	shared_focus = AFG_request_german_support
+	shared_focus = AFG_invite_waziristan_rebels
+	shared_focus = AFG_stir_unrest_in_the_east
+	shared_focus = AFG_the_faqirs_revolt
+	shared_focus = AFG_request_japanese_support
+	shared_focus = AFG_crown_the_golden_emir
+	shared_focus = AFG_crown_the_bukharan_emir
+	shared_focus = AFG_invite_the_mughal_prince
+	shared_focus = AFG_unify_the_islamic_world
+	shared_focus = AFG_extend_a_hand_to_tokyo
+	shared_focus = AFG_expand_the_madrasas
+	shared_focus = AFG_promote_muslim_work_ethic
+	shared_focus = AFG_rehabilitate_the_saqqawists
+	shared_focus = AFG_ulugh_beg_academy
+	shared_focus = AFG_prepare_the_war_industries
+	shared_focus = AFG_revive_the_workshop_of_the_world
+	shared_focus = AFG_reorganize_the_royal_guard
+	shared_focus = AFG_reintroduce_heavy_cavalry
+	shared_focus = AFG_reintroduce_war_elephants
+	shared_focus = AFG_timurid_bureaucracy
+	shared_focus = AFG_hone_the_shamshir
+	shared_focus = AFG_restore_herat
+	shared_focus = AFG_integrate_the_basmachi_movement
+	shared_focus = AFG_proclaim_the_second_afghan_empire
+	shared_focus = AFG_ally_the_brahui_khanate
+	shared_focus = AFG_the_echoes_of_panipat
+	shared_focus = AFG_the_amu_darya_plan
+	shared_focus = AFG_reclaim_the_emperors_lost_domain
+	shared_focus = AFG_return_to_delhi
+	shared_focus = AFG_reclaim_moghulistan
+	shared_focus = AFG_ally_the_sikhs
+	shared_focus = AFG_the_conquerors_of_persia
+	shared_focus = AFG_reclaim_transoxiana
+	shared_focus = AFG_rebuild_the_silk_road
+	shared_focus = AFG_restore_the_timurid_empire
+	shared_focus = AFG_the_crown_and_the_world
+	shared_focus = AFG_enforce_the_pashtunwali
+	shared_focus = AFG_form_the_khuddamul_furqan
+	shared_focus = AFG_instate_a_compulsory_jizya
+	shared_focus = AFG_raise_lashkar_regiments
+	shared_focus = AFG_support_nort_west_frontier_rebels
+	shared_focus = AFG_appraoch_anti_communist_theologians
+	shared_focus = AFG_unite_pashtunistan
+	shared_focus = AFG_form_the_turkestan_legion
+	shared_focus = AFG_proclaim_a_new_caliphate
+	shared_focus = AFG_return_of_the_emir
+	shared_focus = AFG_revive_the_1923_constitution
+	shared_focus = AFG_education_for_women_and_girls
+	shared_focus = AFG_enforce_western_attire
+	shared_focus = AFG_expand_state_run_factories
+	shared_focus = AFG_reinforce_the_royal_guard
+	shared_focus = AFG_custail_pashtunwali_primacy
+	shared_focus = AFG_agreement_with_germany
+	shared_focus = AFG_renounce_the_durand_line
+	shared_focus = AFG_eyes_on_the_north
+	shared_focus = AFG_alliance_with_turkik_peoples
+	shared_focus = AFG_red_threat
+	shared_focus = AFG_fortify_pakistan
+	shared_focus = AFG_into_the_plains_of_india
+	shared_focus = AFG_work_with_gestapo
+	shared_focus = AFG_pashtun_empire
+	shared_focus = AFG_ally_basmachi_remnants
+	shared_focus = AFG_from_the_ashes
+	shared_focus = AFG_exploit_turko_persian_heritage
+	shared_focus = AFG_topple_iran
+	shared_focus = AFG_secure_baghdad
+	shared_focus = AFG_savior_of_the_holy_lands
+	shared_focus = AFG_increase_land_and_animal_taxes
+	shared_focus = AFG_establish_darulaman
+	shared_focus = AFG_darulaman_university
+	shared_focus = AFG_alternative_partnerships
+	shared_focus = AFG_officer_training
+	shared_focus = AFG_permit_axis_airbases
+	shared_focus = AFG_join_axis
+	shared_focus = AFG_axis_airforce
+	shared_focus = AFG_axis_equipment
+	shared_focus = AFG_kabul_conference
+	shared_focus = AFG_support_king_zahir
+	shared_focus = AFG_biding_our_time
+	shared_focus = AFG_expand_the_kings_powerbase
+	shared_focus = AFG_forge_a_national_identity
+	shared_focus = AFG_visit_foreign_capitals
+	shared_focus = AFG_expand_royal_guard
+	shared_focus = AFG_retire_the_uncles
+	shared_focus = AFG_introduce_national_service
+	shared_focus = AFG_placeholder_1
+	shared_focus = AFG_seek_british_investment
+	shared_focus = AFG_reform_2
+	shared_focus = AFG_secure_dynasty
+	shared_focus = AFG_maintain_neutrality
+	shared_focus = AFG_expel_axis_nationals
+	shared_focus = AFG_expel_allied_nationals
+	shared_focus = AFG_pursue_our_own_agenda
+	shared_focus = AFG_align_with_the_allies
+	shared_focus = AFG_anti_soviet_cooperation
+	shared_focus = AFG_protector_of_the_tajiks
+	shared_focus = AFG_propose_confederation_with_pakistan
+	shared_focus = AFG_afghan_pakistan_cold_War
+	shared_focus = AFG_graveyard_of_empires
+	shared_focus = AFG_hot_war_with_pakistan
+	shared_focus = AFG_accelerate_integration
+	shared_focus = AFG_prepare_for_operation_countenance
+	shared_focus = AFG_secure_iran
+	shared_focus = AFG_repeal_the_durand_line
+	shared_focus = AFG_future_of_balochistan
+	shared_focus = AFG_khorasan_buffer_state
+	shared_focus = AFG_linchpin_of_global_defense
+	shared_focus = AFG_promote_the_counter_elite
+	shared_focus = AFG_gant_refuge_to_jadidists
+	shared_focus = AFG_ally_the_young_afghans
+	shared_focus = AFG_parliamentary_democracy
+	shared_focus = AFG_gain_religious_support_for_reforms
+	shared_focus = AFG_reform_1
+	shared_focus = AFG_hold_elections
+	shared_focus = AFG_reform_3
+	shared_focus = AFG_concessions_to_pashtuns
+	shared_focus = AFG_reform_4
+	shared_focus = AFG_recruit_foreign_experts
+	shared_focus = AFG_seek_american_aid
+	shared_focus = AFG_rapprochement_with_non_pashtuns
+	shared_focus = AFG_defending_democracy
+	shared_focus = AFG_follower_of_islam
+	shared_focus = AFG_republic_of_afghanistan
+	shared_focus = AFG_sinkiang_intervention
+	shared_focus = AFG_socialist_coup
+	shared_focus = AFG_request_soviet_support
+	shared_focus = AFG_international_brigades
+	shared_focus = AFG_state_atheism
+	shared_focus = AFG_soviet_research_cooperation
+	shared_focus = AFG_communist_industrialization
+	shared_focus = AFG_communist_propaganda
+	shared_focus = AFG_support_soviets_in_asia
+	shared_focus = AFG_integrate_tajik_and_uzbek_republics
+	shared_focus = AFG_sov_iran_war
+	shared_focus = AFG_development_in_uzb
+	shared_focus = AFG_development_in_taj
+	shared_focus = AFG_development_in_tms
+	shared_focus = AFG_central_asian_unification
+}

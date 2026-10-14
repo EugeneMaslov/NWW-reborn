@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2630" height="630" viewBox="0 0 2630 630">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>
+<rect width="2630" height="630" fill="#111925"/>
+<text x="32" y="38" font-size="24">HUN: 21 фокусов</text>
+<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>
+<path d="M 680 160 V 177.5 H 680 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 255 V 272.5 H 320 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 255 V 272.5 H 680 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 255 V 272.5 H 1040 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 350 V 367.5 H 680 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 445 V 462.5 H 680 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 320 350 V 367.5 H 320 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1040 350 V 367.5 H 1040 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1580 160 V 177.5 H 1580 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1580 255 V 272.5 H 1490 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1580 255 V 272.5 H 1670 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1490 350 V 367.5 H 1580 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1670 350 V 367.5 H 1580 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 160 V 177.5 H 2120 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 160 V 177.5 H 2480 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 255 V 272.5 H 2120 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2480 255 V 272.5 H 2480 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 350 V 367.5 H 2300 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2480 350 V 367.5 H 2300 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 445 V 462.5 H 2300 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 320 285 Q 500.0 255 680 285" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 320 285 Q 680.0 255 1040 285" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 680 285 Q 860.0 255 1040 285" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<g><title>HUN_nww_rebuild
+
+HUN_nww_rebuild</title><rect x="600" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="121" text-anchor="middle">HUN_nww_rebuild</text>
+<text class="small" x="680" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_elect_a_king
+
+HUN_elect_a_king</title><rect x="600" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="216" text-anchor="middle">HUN_elect_a_king</text>
+<text class="small" x="680" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_elect_a_democratic_king
+
+HUN_elect_a_democratic_king</title><rect x="240" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="320" y="311" text-anchor="middle">HUN_elect_a_democratic</text>
+<text class="label" x="320" y="327" text-anchor="middle">_king</text>
+<text class="small" x="320" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_invite_the_habsburg_prince
+
+HUN_invite_the_habsburg_prince</title><rect x="600" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="311" text-anchor="middle">HUN_invite_the_habsbur</text>
+<text class="label" x="680" y="327" text-anchor="middle">g_prince</text>
+<text class="small" x="680" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_elect_a_fascist_king
+
+HUN_elect_a_fascist_king</title><rect x="960" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1040" y="311" text-anchor="middle">HUN_elect_a_fascist_ki</text>
+<text class="label" x="1040" y="327" text-anchor="middle">ng</text>
+<text class="small" x="1040" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_proclaim_the_restoration_of_austria_hungary
+
+HUN_proclaim_the_restoration_of_austria_hungary</title><rect x="600" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="406" text-anchor="middle">HUN_proclaim_the_resto</text>
+<text class="label" x="680" y="422" text-anchor="middle">ration_of_austria_hung</text>
+<text class="small" x="680" y="437" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>HUN_protect_czechoslovakia
+
+HUN_protect_czechoslovakia</title><rect x="600" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="680" y="501" text-anchor="middle">HUN_protect_czechoslov</text>
+<text class="label" x="680" y="517" text-anchor="middle">akia</text>
+<text class="small" x="680" y="532" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_sovereign_parliament
+
+NWW_HUN_sovereign_parliament</title><rect x="240" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="320" y="406" text-anchor="middle">NWW_HUN_sovereign_parl</text>
+<text class="label" x="320" y="422" text-anchor="middle">iament</text>
+<text class="small" x="320" y="437" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_national_defence
+
+NWW_HUN_national_defence</title><rect x="960" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1040" y="406" text-anchor="middle">NWW_HUN_national_defen</text>
+<text class="label" x="1040" y="422" text-anchor="middle">ce</text>
+<text class="small" x="1040" y="437" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_nww_army
+
+HUN_nww_army</title><rect x="1500" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1580" y="121" text-anchor="middle">HUN_nww_army</text>
+<text class="small" x="1580" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_officer_school
+
+NWW_HUN_officer_school</title><rect x="1500" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1580" y="216" text-anchor="middle">NWW_HUN_officer_school</text>
+<text class="small" x="1580" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_artillery
+
+NWW_HUN_artillery</title><rect x="1410" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1490" y="311" text-anchor="middle">NWW_HUN_artillery</text>
+<text class="small" x="1490" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_motorisation
+
+NWW_HUN_motorisation</title><rect x="1590" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1670" y="311" text-anchor="middle">NWW_HUN_motorisation</text>
+<text class="small" x="1670" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_manoeuvres
+
+NWW_HUN_manoeuvres</title><rect x="1500" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1580" y="406" text-anchor="middle">NWW_HUN_manoeuvres</text>
+<text class="small" x="1580" y="437" text-anchor="middle">35 дней</text></g>
+<g><title>HUN_nww_industry
+
+HUN_nww_industry</title><rect x="2220" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2300" y="121" text-anchor="middle">HUN_nww_industry</text>
+<text class="small" x="2300" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_ganz
+
+NWW_HUN_ganz</title><rect x="2040" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2120" y="216" text-anchor="middle">NWW_HUN_ganz</text>
+<text class="small" x="2120" y="247" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>NWW_HUN_weiss
+
+NWW_HUN_weiss</title><rect x="2400" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2480" y="216" text-anchor="middle">NWW_HUN_weiss</text>
+<text class="small" x="2480" y="247" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>NWW_HUN_railways
+
+NWW_HUN_railways</title><rect x="2040" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2120" y="311" text-anchor="middle">NWW_HUN_railways</text>
+<text class="small" x="2120" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>NWW_HUN_machine_tools
+
+NWW_HUN_machine_tools</title><rect x="2400" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2480" y="311" text-anchor="middle">NWW_HUN_machine_tools</text>
+<text class="small" x="2480" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>NWW_HUN_technical_university
+
+NWW_HUN_technical_university</title><rect x="2220" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2300" y="406" text-anchor="middle">NWW_HUN_technical_univ</text>
+<text class="label" x="2300" y="422" text-anchor="middle">ersity</text>
+<text class="small" x="2300" y="437" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+<g><title>NWW_HUN_research_network
+
+NWW_HUN_research_network</title><rect x="2220" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2300" y="501" text-anchor="middle">NWW_HUN_research_netwo</text>
+<text class="label" x="2300" y="517" text-anchor="middle">rk</text>
+<text class="small" x="2300" y="532" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
+</svg>

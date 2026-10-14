@@ -1,0 +1,166 @@
+NWW_TUR_political_campaigns = {
+	NWW_TUR_campaign_democratic = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+		}
+		available = {
+			democratic < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = TUR
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NWW_TUR_campaign_neutrality = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+		}
+		available = {
+			neutrality < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = TUR
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NWW_TUR_campaign_fascism = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+		}
+		available = {
+			fascism < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = TUR
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NWW_TUR_campaign_communism = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+		}
+		available = {
+			communism < 0.40
+			NOT = {
+				has_country_flag = NWW_legacy_campaign_active
+			}
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 15
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_legacy_campaign_active
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		cancel_trigger = {
+			NOT = {
+				tag = TUR
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_legacy_campaign_active
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

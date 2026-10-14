@@ -135,7 +135,7 @@ LTB_baltic_bridgehead</title><rect x="4110" y="384" width="160" height="62" rx="
 Широкая автономия для Беларуси в составе Союза. В школах Минска будут учить по-белорусски.
 LTB_the_vilnius_compromise</title><rect x="510" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="590" y="216" text-anchor="middle">Виленский компромисс</text>
-<text class="small" x="590" y="247" text-anchor="middle">70 дней</text></g>
+<text class="small" x="590" y="247" text-anchor="middle">70 дней • реформа духа</text></g>
 <g><title>Каунас — прежде всего
 Союз держится, лишь пока Каунас держит вожжи. Литва ведёт, Беларусь следует.
 LTB_kaunas_first</title><rect x="870" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -165,12 +165,13 @@ LTB_mobilize_the_sauliai</title><rect x="870" y="384" width="160" height="62" rx
 Если национальный вопрос остаётся нерешённым, кризис потребует выбора государства-преемника. Виленский компромисс урегулирует спор мирно: тогда этот фокус будет автоматически пропущен.
 LTB_face_the_crisis</title><rect x="690" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="770" y="501" text-anchor="middle">Встретить кризис</text>
-<text class="small" x="770" y="532" text-anchor="middle">35 дней</text></g>
+<text class="small" x="770" y="532" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Генеральный штаб Союза
 После Виленского компромисса и разрешения кризиса создадим единое командование двух республик. Общий штаб сможет преодолеть дезорганизацию армии и согласовать подготовку офицеров.
-LTB_union_general_staff</title><rect x="3840" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_union_general_staff
+Дополнительные условия: Виленский компромисс</title><rect x="3840" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3920" y="311" text-anchor="middle">Генеральный штаб Союза</text>
-<text class="small" x="3920" y="342" text-anchor="middle">35 дней</text></g>
+<text class="small" x="3920" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Минская школа
 Белорусские офицеры принесли суровые уроки восточных войн.
 LTB_the_minsk_school</title><rect x="3570" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -218,23 +219,23 @@ LTB_workers_of_minsk_and_kaunas</title><rect x="2220" y="479" width="160" height
 LTB_agricultural_mechanization</title><rect x="2580" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="2660" y="311" text-anchor="middle">Механизация сельского</text>
 <text class="label" x="2660" y="327" text-anchor="middle">хозяйства</text>
-<text class="small" x="2660" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<text class="small" x="2660" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Сельскохозяйственные кооперативы
 Общие машины и склады сократят потери и наладят поставки продовольствия в города.
 LTB_cooperative_farms</title><rect x="2580" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="2660" y="406" text-anchor="middle">Сельскохозяйственные</text>
 <text class="label" x="2660" y="422" text-anchor="middle">кооперативы</text>
-<text class="small" x="2660" y="437" text-anchor="middle">35 дней</text></g>
+<text class="small" x="2660" y="437" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Электрификация деревни
 Подключим сельскую местность и её мастерские к промышленной сети.
 LTB_rural_electrification</title><rect x="2580" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="2660" y="501" text-anchor="middle">Электрификация деревни</text>
-<text class="small" x="2660" y="532" text-anchor="middle">35 дней • строительство</text></g>
+<text class="small" x="2660" y="532" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Выход из депрессии
 Государственные заказы и общественные работы вернут бездействующие мастерские к жизни.
 LTB_depression_recovery</title><rect x="2220" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="2300" y="311" text-anchor="middle">Выход из депрессии</text>
-<text class="small" x="2300" y="342" text-anchor="middle">35 дней</text></g>
+<text class="small" x="2300" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Восстановление заводов
 Новое оборудование и стабильные заказы завершат восстановление производства после депрессии.
 LTB_factory_reconstruction</title><rect x="2220" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -253,24 +254,25 @@ LTB_military_contracts</title><rect x="2940" y="479" width="160" height="62" rx=
 <text class="small" x="3020" y="532" text-anchor="middle">35 дней</text></g>
 <g><title>Баланс между гигантами
 Сохранив Союз, создадим дипломатическую службу для переговоров с Москвой, Варшавой и Берлином. Каждый договор потребует согласия другой стороны. Сотрудничество даст торговлю, оборудование и безопасность, сохраняя право Союза на самостоятельный курс.
-LTB_balance_between_giants</title><rect x="1680" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_balance_between_giants
+Дополнительные условия: Виленский компромисс</title><rect x="1680" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1760" y="121" text-anchor="middle">Баланс между гигантами</text>
 <text class="small" x="1760" y="152" text-anchor="middle">35 дней</text></g>
 <g><title>Пакт с Москвой
 Предложим Москве пакт о ненападении и технический обмен. Её согласие откроет восточную торговую программу; отказ оставит нам другие дипломатические направления.
 LTB_overture_to_moscow</title><rect x="1500" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1580" y="216" text-anchor="middle">Пакт с Москвой</text>
-<text class="small" x="1580" y="247" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1580" y="247" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Польский вопрос
 Предложим Варшаве признать существующую границу и снять взаимные территориальные претензии. Если Польша согласится, пакт о ненападении станет основой переговоров о взаимных гарантиях.
 LTB_the_polish_question</title><rect x="1680" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1760" y="216" text-anchor="middle">Польский вопрос</text>
-<text class="small" x="1760" y="247" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1760" y="247" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Германские инженеры
 Предложим германским предприятиям промышленный договор. При согласии Берлина Союз оплатит инженерную миссию и получит доступ к станкам, технологиям и программе модернизации Минска.
 LTB_german_engineers</title><rect x="1860" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1940" y="216" text-anchor="middle">Германские инженеры</text>
-<text class="small" x="1940" y="247" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1940" y="247" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Смотреть в небо
 Сегодня пара самолётов, завтра — воздушный флот.
 LTB_observe_the_skies</title><rect x="4560" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -304,14 +306,15 @@ LTB_coastal_flotilla</title><rect x="5190" y="194" width="160" height="62" rx="8
 <text class="small" x="5270" y="247" text-anchor="middle">35 дней • строительство</text></g>
 <g><title>Союз выстоял
 Вопреки всему Каунас и Минск всё ещё вместе.
-LTB_the_union_endures</title><rect x="690" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_the_union_endures
+Дополнительные условия: Виленский компромисс</title><rect x="690" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="770" y="596" text-anchor="middle">Союз выстоял</text>
 <text class="small" x="770" y="627" text-anchor="middle">35 дней</text></g>
 <g><title>Пакт ПБМАТ
 Военный союз земель между Германией и Россией.
 LTB_the_pbmat_pact</title><rect x="1680" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1760" y="691" text-anchor="middle">Пакт ПБМАТ</text>
-<text class="small" x="1760" y="722" text-anchor="middle">70 дней</text></g>
+<text class="small" x="1760" y="722" text-anchor="middle">70 дней • решение съезда</text></g>
 <g><title>Крепость Витебск
 Восточные ворота Союза должны держать.
 LTB_fortress_vitebsk</title><rect x="4110" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -364,7 +367,8 @@ LTB_union_industrial_plan</title><rect x="2400" y="764" width="160" height="62" 
 <text class="small" x="2480" y="817" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
 <g><title>Короновать регентство
 Получив поддержку не менее 40% граждан, сторонники короны смогут провести решение о союзной монархии. Коронование закрепит общую власть над обеими республиками.
-LTB_crown_the_regency</title><rect x="240" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_crown_the_regency
+Дополнительные условия: Виленский компромисс</title><rect x="240" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="320" y="786" text-anchor="middle">Короновать регентство</text>
 <text class="small" x="320" y="817" text-anchor="middle">70 дней</text></g>
 <g><title>Восстановить Великое княжество
@@ -377,10 +381,11 @@ LTB_restore_the_grand_duchy</title><rect x="150" y="859" width="160" height="62"
 Что держалось веками, удержится вновь.
 LTB_order_and_tradition</title><rect x="330" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="410" y="881" text-anchor="middle">Порядок и традиция</text>
-<text class="small" x="410" y="912" text-anchor="middle">35 дней</text></g>
+<text class="small" x="410" y="912" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Свободные выборы — сейчас
 Демократическое движение должно заручиться поддержкой не менее 40% граждан. Только после этого проведём свободные выборы и передадим власть избранному правительству.
-LTB_free_elections_now</title><rect x="600" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_free_elections_now
+Дополнительные условия: Виленский компромисс</title><rect x="600" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="680" y="786" text-anchor="middle">Свободные выборы —</text>
 <text class="label" x="680" y="802" text-anchor="middle">сейчас</text>
 <text class="small" x="680" y="817" text-anchor="middle">70 дней</text></g>
@@ -394,10 +399,11 @@ LTB_landtag_democracy</title><rect x="600" y="859" width="160" height="62" rx="8
 LTB_free_press_free_union</title><rect x="600" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="680" y="976" text-anchor="middle">Свободная пресса,</text>
 <text class="label" x="680" y="992" text-anchor="middle">вольный Союз</text>
-<text class="small" x="680" y="1007" text-anchor="middle">35 дней</text></g>
+<text class="small" x="680" y="1007" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Железный волк зовёт
 Национальное движение требует общей власти и мобилизации Союза. Для принятия нового курса ему предстоит получить поддержку не менее 40% граждан.
-LTB_the_iron_wolf_calls</title><rect x="960" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_the_iron_wolf_calls
+Дополнительные условия: Виленский компромисс</title><rect x="960" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1040" y="786" text-anchor="middle">Железный волк зовёт</text>
 <text class="small" x="1040" y="817" text-anchor="middle">70 дней</text></g>
 <g><title>Сталь и кровь
@@ -409,10 +415,11 @@ LTB_steel_and_blood</title><rect x="960" y="859" width="160" height="62" rx="8" 
 Два народа, одна воля, один вождь.
 LTB_one_people_one_leader</title><rect x="960" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1040" y="976" text-anchor="middle">Один народ, один вождь</text>
-<text class="small" x="1040" y="1007" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1040" y="1007" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Красный рассвет над Минском
 Рабочие союзы и левые организации должны добиться поддержки не менее 40% граждан. Этот мандат позволит передать власть общесоюзному правительству труда.
-LTB_red_dawn_over_minsk</title><rect x="1320" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_red_dawn_over_minsk
+Дополнительные условия: Виленский компромисс</title><rect x="1320" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1400" y="786" text-anchor="middle">Красный рассвет над</text>
 <text class="label" x="1400" y="802" text-anchor="middle">Минском</text>
 <text class="small" x="1400" y="817" text-anchor="middle">70 дней</text></g>
@@ -426,7 +433,7 @@ LTB_soviets_of_workers</title><rect x="1320" y="859" width="160" height="62" rx=
 LTB_international_brigades</title><rect x="1320" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1400" y="976" text-anchor="middle">Интернациональные</text>
 <text class="label" x="1400" y="992" text-anchor="middle">бригады</text>
-<text class="small" x="1400" y="1007" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1400" y="1007" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Виленский университет
 Виленский университет объединит кафедры, лаборатории и подготовку инженеров для обоих народов Союза.
 LTB_vilnius_university</title><rect x="3300" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -442,7 +449,7 @@ LTB_union_research_council</title><rect x="3300" y="384" width="160" height="62"
 Радиотехника и станкостроение превратят университетские разработки в серийное производство.
 LTB_precision_engineering</title><rect x="3300" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="3380" y="596" text-anchor="middle">Точное машиностроение</text>
-<text class="small" x="3380" y="627" text-anchor="middle">35 дней • строительство</text></g>
+<text class="small" x="3380" y="627" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Танковая программа «Белмаш»
 «Белмаш» наладит производство лёгких бронированных машин и создаст ремонтную базу армии Союза.
 LTB_belmash_tank_program</title><rect x="2940" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -503,7 +510,7 @@ LTB_dvina_border_commission</title><rect x="1500" y="289" width="160" height="62
 LTB_polish_defense_protocol</title><rect x="1680" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1760" y="311" text-anchor="middle">Протокол взаимной</text>
 <text class="label" x="1760" y="327" text-anchor="middle">обороны</text>
-<text class="small" x="1760" y="342" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1760" y="342" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Станки из Германии
 Заключённый промышленный договор обеспечит минские мастерские современными станками. На этой базе откроем новое гражданское предприятие и обучим собственных инженеров.
 LTB_german_machine_tools</title><rect x="1860" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -540,12 +547,14 @@ LTB_timoshenko_industrial_board</title><rect x="2940" y="669" width="160" height
 <text class="small" x="3020" y="722" text-anchor="middle">35 дней • строительство</text></g>
 <g><title>Контрактная армия
 Меньший, но лучше подготовленный кадровый состав станет основой армии Союза. Повышенная организация и сокращённая подготовка будут оплачены ограничением доступного призывного контингента.
-LTB_professional_contract_army</title><rect x="3660" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_professional_contract_army
+Дополнительные условия: Виленский компромисс</title><rect x="3660" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3740" y="786" text-anchor="middle">Контрактная армия</text>
 <text class="small" x="3740" y="817" text-anchor="middle">35 дней</text></g>
 <g><title>Укрепить национальное сознание
 Защита общего государства не должна стирать литовскую и белорусскую идентичность. Подготовим местные органы гражданской обороны и укрепим решимость защищать национальные территории Союза.
-LTB_national_resilience</title><rect x="3840" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+LTB_national_resilience
+Дополнительные условия: Виленский компромисс</title><rect x="3840" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3920" y="786" text-anchor="middle">Укрепить национальное</text>
 <text class="label" x="3920" y="802" text-anchor="middle">сознание</text>
 <text class="small" x="3920" y="817" text-anchor="middle">35 дней</text></g>
@@ -553,7 +562,7 @@ LTB_national_resilience</title><rect x="3840" y="764" width="160" height="62" rx
 Минские кафедры дополнят Виленский университет общей сетью лабораторий и инженерных школ. Исследования получат постоянную поддержку, а университетский концерн — улучшенную программу.
 LTB_minsk_university</title><rect x="3300" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
 <text class="label" x="3380" y="501" text-anchor="middle">Минский университет</text>
-<text class="small" x="3380" y="532" text-anchor="middle">35 дней</text></g>
+<text class="small" x="3380" y="532" text-anchor="middle">35 дней • реформа духа</text></g>
 <g><title>Ракетные технологии
 Объединим исследования двигателей и ракетных систем в университетскую программу. Нашим инженерам нужны испытания и расчёты, прежде чем эти технологии смогут служить стране.
 LTB_rocket_research</title><rect x="3300" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -569,13 +578,13 @@ LTB_peaceful_atom</title><rect x="3480" y="669" width="160" height="62" rx="8" f
 LTB_french_machine_tools</title><rect x="2220" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="2300" y="786" text-anchor="middle">Закупка французских</text>
 <text class="label" x="2300" y="802" text-anchor="middle">станков</text>
-<text class="small" x="2300" y="817" text-anchor="middle">35 дней</text></g>
+<text class="small" x="2300" y="817" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Исследовательский договор с Италией
 Предложим Италии обмен исследованиями. Если Рим согласится, обе страны получат бонус при изучении уже известных партнёру технологий; война остановит сотрудничество.
 LTB_italian_research_exchange</title><rect x="3120" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3200" y="691" text-anchor="middle">Исследовательский</text>
 <text class="label" x="3200" y="707" text-anchor="middle">договор с Италией</text>
-<text class="small" x="3200" y="722" text-anchor="middle">35 дней</text></g>
+<text class="small" x="3200" y="722" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Международная авиационная программа
 Используем действующее германское, французское или итальянское соглашение для работы над авиационными технологиями. Минские и курляндские авиастроители получат доступ к отдельным программам развития.
 LTB_multinational_air_program</title><rect x="4560" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -597,7 +606,7 @@ LTB_bicameral_union</title><rect x="240" y="954" width="160" height="62" rx="8" 
 LTB_royal_charter</title><rect x="240" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="320" y="1071" text-anchor="middle">Союзная королевская</text>
 <text class="label" x="320" y="1087" text-anchor="middle">хартия</text>
-<text class="small" x="320" y="1102" text-anchor="middle">35 дней</text></g>
+<text class="small" x="320" y="1102" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Общественный договор
 Согласуем права местных парламентов, профсоюзов и общесоюзного правительства. Республика должна опираться на доверие жителей обеих земель.
 LTB_social_compact</title><rect x="600" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -607,7 +616,7 @@ LTB_social_compact</title><rect x="600" y="1049" width="160" height="62" rx="8" 
 Примем конституцию и определим приоритет новой республики: защиту гражданских прав или развитие всеобщего образования.
 LTB_federal_constitution</title><rect x="600" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="680" y="1166" text-anchor="middle">Конституция федерации</text>
-<text class="small" x="680" y="1197" text-anchor="middle">35 дней</text></g>
+<text class="small" x="680" y="1197" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Единая государственная служба
 Заменим конкурирующие ведомства общей системой управления. Согласованные полномочия позволят проводить единый курс по обе стороны Немана.
 LTB_unified_administration</title><rect x="960" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -619,7 +628,7 @@ LTB_unified_administration</title><rect x="960" y="1049" width="160" height="62"
 LTB_national_defense_state</title><rect x="960" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1040" y="1166" text-anchor="middle">Государство</text>
 <text class="label" x="1040" y="1182" text-anchor="middle">национальной обороны</text>
-<text class="small" x="1040" y="1197" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1040" y="1197" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Республики труда
 Закрепим представительство рабочих и крестьян обеих республик. Общесоюзные решения должны учитывать местные советы.
 LTB_republics_of_labor</title><rect x="1320" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -630,5 +639,5 @@ LTB_republics_of_labor</title><rect x="1320" y="1049" width="160" height="62" rx
 LTB_union_economic_congress</title><rect x="1320" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1400" y="1166" text-anchor="middle">Хозяйственный съезд</text>
 <text class="label" x="1400" y="1182" text-anchor="middle">Союза</text>
-<text class="small" x="1400" y="1197" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1400" y="1197" text-anchor="middle">35 дней • решение съезда</text></g>
 </svg>

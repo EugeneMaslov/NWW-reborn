@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		NWW_HUN_workshops = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+}
