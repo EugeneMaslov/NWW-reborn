@@ -1,12 +1,39 @@
-# Existing game artwork is used until the commissioned images in docs/MKN_art_prompts.md are supplied.
+# Project-bound MKN artwork; sources and prompts: docs/art/mkn_crisis/.
 spriteTypes = {
- spriteType = { name = GFX_report_event_makhno_funeral texturefile = "gfx/event_pictures/report_event_generic_funeral.dds" }
- spriteType = { name = GFX_news_event_makhno_death texturefile = "gfx/event_pictures/news_event_generic_funeral.dds" }
- spriteType = { name = GFX_focus_MKN_departure_of_batko texturefile = "gfx/interface/goals/focus_generic_diplomatic_treaty.dds" }
- spriteType = { name = GFX_focus_MKN_the_black_horde texturefile = "gfx/interface/goals/focus_generic_army_attack.dds" }
- spriteType = { name = GFX_focus_MKN_beacon_of_statelessness texturefile = "gfx/interface/goals/focus_generic_diplomatic_treaty.dds" }
- spriteType = { name = GFX_focus_MKN_impregnable_granary texturefile = "gfx/interface/goals/focus_generic_agricultural_subsidies.dds" }
- spriteType = { name = GFX_focus_MKN_iron_fist_trains texturefile = "gfx/interface/goals/focus_generic_railroad.dds" }
- spriteType = { name = GFX_Portrait_MKN_peasant_council texturefile = "gfx/leaders/MKN/communal_council.dds" }
- spriteType = { name = GFX_Portrait_MKN_revkom texturefile = "gfx/leaders/MKN/communal_council.dds" }
+	spriteType = {
+		name = GFX_report_event_makhno_funeral
+		texturefile = "gfx/event_pictures/MKN/report_event_makhno_funeral.dds"
+	}
+	spriteType = {
+		name = GFX_news_event_makhno_death
+		texturefile = "gfx/event_pictures/MKN/news_event_makhno_death.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_departure_of_batko
+		texturefile = "gfx/interface/goals/MKN/focus_departure_of_batko.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_the_black_horde
+		texturefile = "gfx/interface/goals/MKN/focus_black_horde.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_beacon_of_statelessness
+		texturefile = "gfx/interface/goals/MKN/focus_beacon_of_statelessness.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_impregnable_granary
+		texturefile = "gfx/interface/goals/MKN/focus_impregnable_granary.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_iron_fist_trains
+		texturefile = "gfx/interface/goals/MKN/focus_iron_fist_trains.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_peasant_council
+		texturefile = "gfx/leaders/MKN/communal_council.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_revkom
+		texturefile = "gfx/leaders/MKN/communal_council.dds"
+	}
 }

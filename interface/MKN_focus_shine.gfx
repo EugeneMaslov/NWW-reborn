@@ -293,4 +293,214 @@ spriteTypes = {
 		name = GFX_focus_MKN_company_submarine_works_shine
 		texturefile = "gfx/interface/ideas/MKN/focus_submarine_works.dds"
 	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_black_horde.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_black_horde.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_the_black_horde_shine
+		texturefile = "gfx/interface/goals/MKN/focus_black_horde.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_iron_fist_trains.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_iron_fist_trains.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_iron_fist_trains_shine
+		texturefile = "gfx/interface/goals/MKN/focus_iron_fist_trains.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_impregnable_granary.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_impregnable_granary.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_impregnable_granary_shine
+		texturefile = "gfx/interface/goals/MKN/focus_impregnable_granary.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_beacon_of_statelessness.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_beacon_of_statelessness.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_beacon_of_statelessness_shine
+		texturefile = "gfx/interface/goals/MKN/focus_beacon_of_statelessness.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_departure_of_batko.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN/focus_departure_of_batko.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_departure_of_batko_shine
+		texturefile = "gfx/interface/goals/MKN/focus_departure_of_batko.dds"
+	}
 }
