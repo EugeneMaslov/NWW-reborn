@@ -1,0 +1,1 @@
+# NWW Ottoman plans are defined in TUR_historical.txt and TUR_alternatives.txt.

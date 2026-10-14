@@ -173,3 +173,427 @@ nww_legacy_TUR_industry_step = {
 		}
 	}
 }
+nww_TUR_update_imperial_crisis = {
+	if = {
+		limit = {
+			has_country_flag = NWW_TUR_council_settled
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis
+			}
+			remove_ideas = NWW_TUR_imperial_crisis
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_1
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_1
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_2
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_2
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = NWW_TUR_imperial_compact
+				}
+			}
+			add_ideas = NWW_TUR_imperial_compact
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				AND = {
+					has_country_flag = NWW_TUR_officer_accord
+					has_country_flag = NWW_TUR_ulema_accord
+				}
+				AND = {
+					has_country_flag = NWW_TUR_officer_accord
+					has_country_flag = NWW_TUR_provincial_accord
+				}
+				AND = {
+					has_country_flag = NWW_TUR_ulema_accord
+					has_country_flag = NWW_TUR_provincial_accord
+				}
+			}
+			NOT = {
+				has_idea = NWW_TUR_imperial_crisis_2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis
+			}
+			remove_ideas = NWW_TUR_imperial_crisis
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_1
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_1
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_2
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_2
+		}
+		add_ideas = NWW_TUR_imperial_crisis_2
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_country_flag = NWW_TUR_officer_accord
+				has_country_flag = NWW_TUR_ulema_accord
+				has_country_flag = NWW_TUR_provincial_accord
+			}
+			NOT = {
+				OR = {
+					AND = {
+						has_country_flag = NWW_TUR_officer_accord
+						has_country_flag = NWW_TUR_ulema_accord
+					}
+					AND = {
+						has_country_flag = NWW_TUR_officer_accord
+						has_country_flag = NWW_TUR_provincial_accord
+					}
+					AND = {
+						has_country_flag = NWW_TUR_ulema_accord
+						has_country_flag = NWW_TUR_provincial_accord
+					}
+				}
+			}
+			NOT = {
+				has_idea = NWW_TUR_imperial_crisis_1
+			}
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis
+			}
+			remove_ideas = NWW_TUR_imperial_crisis
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_1
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_1
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_2
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_2
+		}
+		add_ideas = NWW_TUR_imperial_crisis_1
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_country_flag = NWW_TUR_officer_accord
+					has_country_flag = NWW_TUR_ulema_accord
+					has_country_flag = NWW_TUR_provincial_accord
+				}
+			}
+			NOT = {
+				has_idea = NWW_TUR_imperial_crisis
+			}
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis
+			}
+			remove_ideas = NWW_TUR_imperial_crisis
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_1
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_1
+		}
+		if = {
+			limit = {
+				has_idea = NWW_TUR_imperial_crisis_2
+			}
+			remove_ideas = NWW_TUR_imperial_crisis_2
+		}
+		add_ideas = NWW_TUR_imperial_crisis
+	}
+}
+nww_TUR_prepare_bul_campaign = {
+	if = {
+		limit = {
+			tag = TUR
+			is_subject = no
+			BUL = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = BUL
+			}
+		}
+		add_state_claim = 48
+		add_state_claim = 211
+		add_state_claim = 212
+		add_state_claim = 801
+		BUL = {
+			every_owned_state = {
+				add_claim_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = BUL
+				}
+				NOT = {
+					has_wargoal_against = BUL
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BUL
+			}
+		}
+	}
+}
+nww_TUR_prepare_gre_campaign = {
+	if = {
+		limit = {
+			tag = TUR
+			is_subject = no
+			GRE = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = GRE
+			}
+		}
+		add_state_claim = 47
+		add_state_claim = 182
+		add_state_claim = 184
+		add_state_claim = 185
+		add_state_claim = 186
+		add_state_claim = 187
+		add_state_claim = 731
+		GRE = {
+			every_owned_state = {
+				add_claim_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = GRE
+				}
+				NOT = {
+					has_wargoal_against = GRE
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GRE
+			}
+		}
+	}
+}
+nww_TUR_prepare_yug_campaign = {
+	if = {
+		limit = {
+			tag = TUR
+			is_subject = no
+			YUG = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = YUG
+			}
+		}
+		add_state_claim = 105
+		add_state_claim = 106
+		add_state_claim = 107
+		add_state_claim = 108
+		add_state_claim = 802
+		add_state_claim = 803
+		add_state_claim = 970
+		YUG = {
+			every_owned_state = {
+				add_claim_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = YUG
+				}
+				NOT = {
+					has_wargoal_against = YUG
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YUG
+			}
+		}
+	}
+}
+nww_TUR_prepare_alb_campaign = {
+	if = {
+		limit = {
+			tag = TUR
+			is_subject = no
+			ALB = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = ALB
+			}
+		}
+		add_state_claim = 44
+		add_state_claim = 805
+		add_state_claim = 934
+		ALB = {
+			every_owned_state = {
+				add_claim_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = ALB
+				}
+				NOT = {
+					has_wargoal_against = ALB
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ALB
+			}
+		}
+	}
+}
+nww_TUR_prepare_rom_campaign = {
+	if = {
+		limit = {
+			tag = TUR
+			is_subject = no
+			ROM = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = ROM
+			}
+		}
+		add_state_claim = 46
+		add_state_claim = 77
+		add_state_claim = 78
+		add_state_claim = 79
+		add_state_claim = 80
+		add_state_claim = 81
+		add_state_claim = 766
+		add_state_claim = 971
+		ROM = {
+			every_owned_state = {
+				add_claim_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = ROM
+				}
+				NOT = {
+					has_wargoal_against = ROM
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ROM
+			}
+		}
+	}
+}
+nww_TUR_prepare_cro_campaign = {
+	if = {
+		limit = {
+			tag = TUR
+			is_subject = no
+			CRO = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = CRO
+			}
+		}
+		add_state_claim = 103
+		add_state_claim = 104
+		add_state_claim = 109
+		add_state_claim = 163
+		add_state_claim = 804
+		CRO = {
+			every_owned_state = {
+				add_claim_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = CRO
+				}
+				NOT = {
+					has_wargoal_against = CRO
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CRO
+			}
+		}
+	}
+}
+nww_TUR_select_ai_path = {
+	if = {
+		limit = {
+			is_ai = yes
+			nww_TUR_random_ai_mode = yes
+			NOT = {
+				OR = {
+					has_country_flag = TUR_AI_RANDOM_NEUTRALITY_HISTORICAL
+					has_country_flag = TUR_AI_RANDOM_OTTOMAN
+					has_country_flag = TUR_AI_RANDOM_ALT_KEMALIST
+					has_country_flag = TUR_AI_RANDOM_BALKAN_ENTENTE
+					has_country_flag = TUR_AI_RANDOM_DEMOCRATIC
+					has_country_flag = TUR_AI_RANDOM_DEMOCRATIC_ALTERNATE
+					has_country_flag = TUR_AI_RANDOM_COMMUNISM
+					has_country_flag = TUR_AI_RANDOM_COMMUNISM_ALTERNATE
+					has_country_flag = TUR_AI_RANDOM_FASCISM
+					has_country_flag = TUR_AI_RANDOM_FASCISM_ALTERNATE
+				}
+			}
+		}
+		random_list = {
+			25 = {
+				set_country_flag = TUR_AI_RANDOM_OTTOMAN
+			}
+			15 = {
+				set_country_flag = TUR_AI_RANDOM_ALT_KEMALIST
+			}
+			20 = {
+				set_country_flag = TUR_AI_RANDOM_DEMOCRATIC
+			}
+			20 = {
+				set_country_flag = TUR_AI_RANDOM_COMMUNISM
+			}
+			20 = {
+				set_country_flag = TUR_AI_RANDOM_FASCISM
+			}
+		}
+	}
+}

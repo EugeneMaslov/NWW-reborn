@@ -1,0 +1,66 @@
+{
+  "BUL": [
+    "TUR_war_with_bulgaria",
+    [
+      48,
+      211,
+      212,
+      801
+    ]
+  ],
+  "GRE": [
+    "TUR_snova_copi",
+    [
+      47,
+      182,
+      184,
+      185,
+      186,
+      187,
+      731
+    ]
+  ],
+  "YUG": [
+    "NWW_TUR_serbian_campaign",
+    [
+      105,
+      106,
+      107,
+      108,
+      802,
+      803,
+      970
+    ]
+  ],
+  "ALB": [
+    "NWW_TUR_albanian_campaign",
+    [
+      44,
+      805,
+      934
+    ]
+  ],
+  "ROM": [
+    "NWW_TUR_romanian_campaign",
+    [
+      46,
+      77,
+      78,
+      79,
+      80,
+      81,
+      766,
+      971
+    ]
+  ],
+  "CRO": [
+    "NWW_TUR_adriatic_campaign",
+    [
+      103,
+      104,
+      109,
+      163,
+      804
+    ]
+  ]
+}

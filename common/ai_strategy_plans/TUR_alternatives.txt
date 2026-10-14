@@ -1,0 +1,132 @@
+NWW_TUR_democratic_alternative = {
+	name = "NWW TUR democratic"
+	desc = ""
+	allowed = {
+		original_tag = TUR
+		has_focus_tree = turkish_focus
+	}
+	enable = {
+		nww_TUR_ai_democratic_path = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		TUR_political_rw
+		TUR_prom
+		TUR_new_dem
+		NWW_TUR_civil_assembly
+		NWW_TUR_federal_charter
+		NWW_TUR_ottoman_bourgeoisie
+		NWW_TUR_imperial_compact
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		TUR_new_fascism = 0
+		TUR_new_communism = 0
+		TUR_not_fascism = 0
+	}
+}
+NWW_TUR_communism_alternative = {
+	name = "NWW TUR communism"
+	desc = ""
+	allowed = {
+		original_tag = TUR
+		has_focus_tree = turkish_focus
+	}
+	enable = {
+		nww_TUR_ai_communism_path = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		TUR_political_rw
+		TUR_prom
+		TUR_new_communism
+		NWW_TUR_workers_congress
+		NWW_TUR_workers_union
+		NWW_TUR_agrarian_reform
+		NWW_TUR_imperial_compact
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		TUR_new_fascism = 0
+		TUR_new_dem = 0
+		TUR_not_fascism = 0
+	}
+}
+NWW_TUR_fascism_alternative = {
+	name = "NWW TUR fascism"
+	desc = ""
+	allowed = {
+		original_tag = TUR
+		has_focus_tree = turkish_focus
+	}
+	enable = {
+		nww_TUR_ai_fascism_path = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		TUR_political_rw
+		TUR_prom
+		TUR_new_fascism
+		TUR_set_capital
+		TUR_dux_national
+		NWW_TUR_imperial_compact
+		TUR_reform_the_army
+		TUR_Army_1
+		TUR_Army_3
+		TUR_proper_stoper
+		TUR_kosa_smerti
+		NWW_TUR_rumelian_logistics
+		TUR_war_with_bulgaria
+		afg_bolgi
+		TUR_snova_copi
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		TUR_new_dem = 0
+		TUR_new_communism = 0
+		TUR_not_fascism = 0
+	}
+}
+NWW_TUR_neutrality_alternative = {
+	name = "NWW TUR neutrality"
+	desc = ""
+	allowed = {
+		original_tag = TUR
+		has_focus_tree = turkish_focus
+	}
+	enable = {
+		nww_TUR_ai_peaceful_path = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		TUR_political_rw
+		TUR_not_fascism
+		NWW_TUR_sultans_shadow
+		tur_bred
+		tur_polos
+		NWW_TUR_imperial_compact
+		TUR_store_eng
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		TUR_new_fascism = 0
+		TUR_new_dem = 0
+		TUR_new_communism = 0
+	}
+}

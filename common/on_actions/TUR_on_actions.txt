@@ -1,0 +1,204 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = BUL
+					exists = yes
+					FROM = {
+						tag = TUR
+						has_focus_tree = turkish_focus
+						has_completed_focus = TUR_war_with_bulgaria
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GRE
+					exists = yes
+					FROM = {
+						tag = TUR
+						has_focus_tree = turkish_focus
+						has_completed_focus = TUR_snova_copi
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = YUG
+					exists = yes
+					FROM = {
+						tag = TUR
+						has_focus_tree = turkish_focus
+						has_completed_focus = NWW_TUR_serbian_campaign
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = ALB
+					exists = yes
+					FROM = {
+						tag = TUR
+						has_focus_tree = turkish_focus
+						has_completed_focus = NWW_TUR_albanian_campaign
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = ROM
+					exists = yes
+					FROM = {
+						tag = TUR
+						has_focus_tree = turkish_focus
+						has_completed_focus = NWW_TUR_romanian_campaign
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CRO
+					exists = yes
+					FROM = {
+						tag = TUR
+						has_focus_tree = turkish_focus
+						has_completed_focus = NWW_TUR_adriatic_campaign
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			TUR = {
+				if = {
+					limit = {
+						has_focus_tree = turkish_focus
+					}
+					nww_TUR_select_ai_path = yes
+					nww_TUR_update_imperial_crisis = yes
+					if = {
+						limit = {
+							has_completed_focus = TUR_war_with_bulgaria
+						}
+						nww_TUR_prepare_bul_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = TUR_snova_copi
+						}
+						nww_TUR_prepare_gre_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = NWW_TUR_serbian_campaign
+						}
+						nww_TUR_prepare_yug_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = NWW_TUR_albanian_campaign
+						}
+						nww_TUR_prepare_alb_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = NWW_TUR_romanian_campaign
+						}
+						nww_TUR_prepare_rom_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = NWW_TUR_adriatic_campaign
+						}
+						nww_TUR_prepare_cro_campaign = yes
+					}
+				}
+			}
+		}
+	}
+	on_daily_TUR = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = turkish_focus
+				}
+				nww_TUR_select_ai_path = yes
+				nww_TUR_update_imperial_crisis = yes
+				if = {
+					limit = {
+						has_completed_focus = TUR_war_with_bulgaria
+					}
+					nww_TUR_prepare_bul_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = TUR_snova_copi
+					}
+					nww_TUR_prepare_gre_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = NWW_TUR_serbian_campaign
+					}
+					nww_TUR_prepare_yug_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = NWW_TUR_albanian_campaign
+					}
+					nww_TUR_prepare_alb_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = NWW_TUR_romanian_campaign
+					}
+					nww_TUR_prepare_rom_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = NWW_TUR_adriatic_campaign
+					}
+					nww_TUR_prepare_cro_campaign = yes
+				}
+			}
+		}
+	}
+}

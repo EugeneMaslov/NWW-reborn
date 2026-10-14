@@ -1,0 +1,207 @@
+nww_TUR_random_ai_mode = {
+	OR = {
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = RANDOM
+		}
+		AND = {
+			is_historical_focus_on = no
+			NOT = {
+				OR = {
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = HISTORICAL
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = OTTOMAN
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = ALTERNATE_KEMALIST
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = BALKAN_ENTENTE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_DEMOCRATIC_KEMALIST
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_DEMOCRATIC_ALTERNATE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = COMMUNIST_TUR_AI
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_COMMUNISM_ALTERNATE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = FASCISM_TUR_AI
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_FASCISM_ALTERNATE
+					}
+				}
+			}
+		}
+	}
+}
+nww_TUR_ai_historical_path = {
+	OR = {
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = HISTORICAL
+		}
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = OTTOMAN
+		}
+		AND = {
+			is_historical_focus_on = yes
+			NOT = {
+				OR = {
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = HISTORICAL
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = OTTOMAN
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = ALTERNATE_KEMALIST
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = BALKAN_ENTENTE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_DEMOCRATIC_KEMALIST
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_DEMOCRATIC_ALTERNATE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = COMMUNIST_TUR_AI
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_COMMUNISM_ALTERNATE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = FASCISM_TUR_AI
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_FASCISM_ALTERNATE
+					}
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = RANDOM
+					}
+				}
+			}
+		}
+		AND = {
+			nww_TUR_random_ai_mode = yes
+			OR = {
+				has_country_flag = TUR_AI_RANDOM_NEUTRALITY_HISTORICAL
+				has_country_flag = TUR_AI_RANDOM_OTTOMAN
+			}
+		}
+	}
+}
+nww_TUR_ai_peaceful_path = {
+	OR = {
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = ALTERNATE_KEMALIST
+		}
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = BALKAN_ENTENTE
+		}
+		AND = {
+			nww_TUR_random_ai_mode = yes
+			OR = {
+				has_country_flag = TUR_AI_RANDOM_ALT_KEMALIST
+				has_country_flag = TUR_AI_RANDOM_BALKAN_ENTENTE
+			}
+		}
+	}
+}
+nww_TUR_ai_democratic_path = {
+	OR = {
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_DEMOCRATIC_KEMALIST
+		}
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_DEMOCRATIC_ALTERNATE
+		}
+		AND = {
+			nww_TUR_random_ai_mode = yes
+			OR = {
+				has_country_flag = TUR_AI_RANDOM_DEMOCRATIC
+				has_country_flag = TUR_AI_RANDOM_DEMOCRATIC_ALTERNATE
+			}
+		}
+	}
+}
+nww_TUR_ai_communism_path = {
+	OR = {
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = COMMUNIST_TUR_AI
+		}
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_COMMUNISM_ALTERNATE
+		}
+		AND = {
+			nww_TUR_random_ai_mode = yes
+			OR = {
+				has_country_flag = TUR_AI_RANDOM_COMMUNISM
+				has_country_flag = TUR_AI_RANDOM_COMMUNISM_ALTERNATE
+			}
+		}
+	}
+}
+nww_TUR_ai_fascism_path = {
+	OR = {
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = FASCISM_TUR_AI
+		}
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_FASCISM_ALTERNATE
+		}
+		AND = {
+			nww_TUR_random_ai_mode = yes
+			OR = {
+				has_country_flag = TUR_AI_RANDOM_FASCISM
+				has_country_flag = TUR_AI_RANDOM_FASCISM_ALTERNATE
+			}
+		}
+	}
+}
+nww_TUR_ai_neutrality_path = {
+	OR = {
+		nww_TUR_ai_historical_path = yes
+		nww_TUR_ai_peaceful_path = yes
+	}
+}

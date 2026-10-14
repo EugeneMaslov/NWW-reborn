@@ -1,0 +1,54 @@
+NWW_TUR_historical = {
+	name = "NWW Ottoman historical plan"
+	desc = ""
+	allowed = {
+		original_tag = TUR
+		has_focus_tree = turkish_focus
+	}
+	enable = {
+		nww_TUR_ai_historical_path = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		TUR_political_rw
+		TUR_not_fascism
+		NWW_TUR_sultans_shadow
+		TUR_reform_the_army
+		TUR_prom
+		tur_bred
+		TUR_Army_1
+		TUR_Army_3
+		tur_polos
+		TUR_new_economic
+		NWW_TUR_imperial_compact
+		TUR_proper_stoper
+		TUR_Infantry_1
+		TUR_Doctrine_1
+		TUR_Artillery_1
+		TUR_kosa_smerti
+		NWW_TUR_rumelian_logistics
+		NWW_TUR_war_industry_program
+		TUR_war_with_bulgaria
+		afg_bolgi
+		TUR_snova_copi
+		NWW_TUR_greek_settlement
+		NWW_TUR_balkan_mandate
+		NWW_TUR_albanian_campaign
+		NWW_TUR_serbian_campaign
+		NWW_TUR_romanian_campaign
+		NWW_TUR_adriatic_campaign
+		NWW_TUR_rumelian_governorates
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		TUR_new_fascism = 0
+		TUR_new_dem = 0
+		TUR_new_communism = 0
+		TUR_store_eng = 0
+		TUR_Army_2 = 0
+	}
+}

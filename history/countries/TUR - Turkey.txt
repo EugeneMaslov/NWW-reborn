@@ -339,3 +339,6 @@ recruit_character = TUR_nazim_hikmet
 recruit_character = GER_hans_von_luck
 recruit_character = GER_wilhelm_ritter_von_thoma
 recruit_character = TUR_vecihi_hurkus
+add_ideas = {
+	NWW_TUR_imperial_crisis
+}

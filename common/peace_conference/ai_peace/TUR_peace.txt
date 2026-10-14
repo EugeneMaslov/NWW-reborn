@@ -1,0 +1,98 @@
+peace_ai_desires = {
+	NWW_TUR_BUL_full_conquest = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = TUR
+				has_completed_focus = TUR_war_with_bulgaria
+			}
+			FROM = {
+				tag = TUR
+			}
+			FROM.FROM = {
+				original_tag = BUL
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_TUR_GRE_full_conquest = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = TUR
+				has_completed_focus = TUR_snova_copi
+			}
+			FROM = {
+				tag = TUR
+			}
+			FROM.FROM = {
+				original_tag = GRE
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_TUR_YUG_full_conquest = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = TUR
+				has_completed_focus = NWW_TUR_serbian_campaign
+			}
+			FROM = {
+				tag = TUR
+			}
+			FROM.FROM = {
+				original_tag = YUG
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_TUR_ALB_full_conquest = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = TUR
+				has_completed_focus = NWW_TUR_albanian_campaign
+			}
+			FROM = {
+				tag = TUR
+			}
+			FROM.FROM = {
+				original_tag = ALB
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_TUR_ROM_full_conquest = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = TUR
+				has_completed_focus = NWW_TUR_romanian_campaign
+			}
+			FROM = {
+				tag = TUR
+			}
+			FROM.FROM = {
+				original_tag = ROM
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_TUR_CRO_full_conquest = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = TUR
+				has_completed_focus = NWW_TUR_adriatic_campaign
+			}
+			FROM = {
+				tag = TUR
+			}
+			FROM.FROM = {
+				original_tag = CRO
+			}
+		}
+		ai_desire = 1000
+	}
+}

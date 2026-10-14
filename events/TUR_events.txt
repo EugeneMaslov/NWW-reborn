@@ -1,4 +1,39 @@
 add_namespace = nww_tur_diplomacy
+add_namespace = nww_tur_council
+
+# Institutions bargain inside a surviving Ottoman Empire; these events are flavor only.
+country_event = {
+	id = nww_tur_council.1
+	title = nww_tur_council.1.t
+	desc = nww_tur_council.1.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	option = { name = nww_tur_council.1.a }
+}
+country_event = {
+	id = nww_tur_council.2
+	title = nww_tur_council.2.t
+	desc = nww_tur_council.2.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = { name = nww_tur_council.2.a }
+}
+country_event = {
+	id = nww_tur_council.3
+	title = nww_tur_council.3.t
+	desc = nww_tur_council.3.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = { name = nww_tur_council.3.a }
+}
+country_event = {
+	id = nww_tur_council.4
+	title = nww_tur_council.4.t
+	desc = nww_tur_council.4.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = { name = nww_tur_council.4.a }
+}
 country_event = {
 	id = nww_tur_diplomacy.1
 	title = nww_tur_diplomacy.1.t
