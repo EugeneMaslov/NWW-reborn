@@ -15,7 +15,7 @@ on_actions = {
 					limit = {
 						exists = yes
 						NOT = {
-							has_country_flag = MKN_services_unified_v2
+							has_country_flag = MKN_services_redesign_v3
 						}
 					}
 					nww_mkn_rebuild_services = yes
@@ -37,6 +37,18 @@ on_actions = {
 				}
 				retire_character = NWW_MKN_makhno
 				set_country_flag = MKN_makhno_command_retired
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MKN_services_redesign_v3
+					}
+				}
+				nww_mkn_rebuild_services = yes
 			}
 		}
 	}

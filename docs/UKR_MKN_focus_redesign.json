@@ -1,0 +1,1710 @@
+{
+  "MKN_tachanka_columns": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.04
+    },
+    "one_off": "xp:20 equip:infantry_equipment_0:800",
+    "icon": "GFX_goal_generic_cavalry"
+  },
+  "MKN_railway_war": {
+    "service": "army",
+    "stats": {
+      "supply_consumption_factor": -0.05
+    },
+    "one_off": "tech:train_tech tech:logistics_tech",
+    "icon": "GFX_focus_generic_railroad"
+  },
+  "MKN_steppe_general_staff": {
+    "service": "army",
+    "stats": {
+      "max_planning": 0.05
+    },
+    "one_off": "xp:25 cp:20 doctrine:.35:2",
+    "icon": "GFX_focus_generic_military_academy"
+  },
+  "MKN_steel_horses": {
+    "service": "army",
+    "stats": {
+      "army_armor_attack_factor": 0.05
+    },
+    "one_off": "tech:armor:.75",
+    "icon": "GFX_focus_MKN_company_kommunar"
+  },
+  "MKN_tank_crews": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.04
+    },
+    "one_off": "xp:20 tech:maintenance_company_tech",
+    "icon": "GFX_focus_generic_tank_assembly",
+    "mastery": {
+      "track": "armor",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "MKN_steppe_quartermasters": {
+    "service": "army",
+    "stats": {
+      "supply_consumption_factor": -0.05
+    },
+    "one_off": "tech:logistics_tech",
+    "icon": "GFX_focus_generic_reinforcing_the_supply_network"
+  },
+  "MKN_radio_sections": {
+    "service": "army",
+    "stats": {
+      "land_reinforce_rate": 0.02
+    },
+    "one_off": "tech:signal_company_tech",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_mobile_supply_columns": {
+    "service": "army",
+    "stats": {
+      "army_fuel_consumption_factor": -0.08
+    },
+    "one_off": "equip:motorized_equipment_1:120",
+    "icon": "GFX_focus_generic_truck"
+  },
+  "MKN_recovery_tractors": {
+    "service": "army",
+    "stats": {
+      "attrition": -0.08
+    },
+    "one_off": "tech:maintenance_company_tech",
+    "icon": "GFX_focus_generic_purchase_mechanized_equipment"
+  },
+  "MKN_tank_maintenance": {
+    "service": "army",
+    "stats": {
+      "repair_speed_factor": 0.1
+    },
+    "one_off": "build:226:arms_factory",
+    "icon": "GFX_focus_generic_industrial_experts"
+  },
+  "MKN_artillery_artels": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_infantry_attack_factor": 0.04
+    },
+    "one_off": "tech:artillery:.75",
+    "icon": "GFX_focus_MKN_company_artillery_works"
+  },
+  "MKN_fire_tables": {
+    "service": "army",
+    "stats": {
+      "max_planning": 0.05
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_goal_generic_army_artillery2"
+  },
+  "MKN_black_guard_veterans": {
+    "service": "army",
+    "stats": {
+      "experience_loss_factor": -0.1
+    },
+    "one_off": "xp:25",
+    "icon": "GFX_focus_generic_soldier_salute"
+  },
+  "MKN_motorized_infantry": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_infantry_speed_factor": 0.05
+    },
+    "one_off": "tech:cat_mechanized_equipment:.75",
+    "icon": "GFX_goal_generic_army_motorized"
+  },
+  "MKN_bridge_columns": {
+    "service": "army",
+    "stats": {
+      "army_speed_factor": 0.04
+    },
+    "one_off": "tech:engineers_tech",
+    "icon": "GFX_focus_generic_land_reclamation"
+  },
+  "MKN_fuel_discipline": {
+    "service": "army",
+    "stats": {
+      "army_fuel_consumption_factor": -0.1
+    },
+    "one_off": "build:200:fuel_silo",
+    "icon": "GFX_focus_generic_stockpile_fuel"
+  },
+  "MKN_staff_games": {
+    "service": "army",
+    "stats": {
+      "planning_speed": 0.15
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_focus_generic_advanced_military_studies"
+  },
+  "MKN_mobile_medical": {
+    "service": "army",
+    "stats": {
+      "casualty_trickleback": 0.05
+    },
+    "one_off": "tech:hospital_tech",
+    "icon": "GFX_focus_generic_field_hostpital"
+  },
+  "MKN_combined_arms": {
+    "service": "army",
+    "stats": {
+      "army_armor_attack_factor": 0.05
+    },
+    "one_off": "xp:25 doctrine:.5",
+    "icon": "GFX_focus_generic_combined_arms"
+  },
+  "MKN_deep_reserves": {
+    "service": "army",
+    "stats": {
+      "land_reinforce_rate": 0.02
+    },
+    "one_off": "equip:infantry_equipment_0:1000",
+    "icon": "GFX_focus_generic_manpower"
+  },
+  "MKN_breakthrough_workshops": {
+    "service": "army",
+    "stats": {
+      "army_armor_attack_factor": 0.04
+    },
+    "one_off": "build:200:arms_factory",
+    "icon": "GFX_focus_generic_tank_production"
+  },
+  "MKN_armoured_manoeuvres": {
+    "service": "army",
+    "stats": {
+      "org_loss_when_moving": -0.1
+    },
+    "one_off": "xp:30",
+    "icon": "GFX_focus_generic_tank_assault"
+  },
+  "MKN_mechanized_compact": {
+    "service": "army",
+    "stats": {
+      "army_armor_attack_factor": 0.06,
+      "army_org_factor": 0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_focus_generic_mechanized"
+  },
+  "MKN_batko_cavalry": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_cavalry_attack_factor": 0.08
+    },
+    "one_off": "equip:infantry_equipment_0:600",
+    "icon": "GFX_goal_generic_cavalry"
+  },
+  "MKN_village_muster": {
+    "service": "army",
+    "stats": {
+      "mobilization_speed": 0.15
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_manpower"
+  },
+  "MKN_remount_artels": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_cavalry_speed_factor": 0.08
+    },
+    "one_off": "tech:logistics_tech",
+    "icon": "GFX_focus_generic_horse_studs"
+  },
+  "MKN_machinegun_carts": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_cavalry_attack_factor": 0.07
+    },
+    "one_off": "equip:infantry_equipment_0:800 tech:infantry_weapons",
+    "icon": "GFX_goal_generic_small_arms"
+  },
+  "MKN_local_guides": {
+    "service": "army",
+    "stats": {
+      "recon_factor": 0.1
+    },
+    "one_off": "tech:recon_tech",
+    "icon": "GFX_focus_generic_infiltration"
+  },
+  "MKN_scout_parties": {
+    "service": "army",
+    "stats": {
+      "army_speed_factor": 0.05
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_forest_brothers"
+  },
+  "MKN_field_veterinary": {
+    "service": "army",
+    "stats": {
+      "attrition": -0.08
+    },
+    "one_off": "tech:logistics_tech",
+    "icon": "GFX_focus_generic_agricultural_subsidies"
+  },
+  "MKN_militia_signals": {
+    "service": "army",
+    "stats": {
+      "land_reinforce_rate": 0.02
+    },
+    "one_off": "tech:signal_company_tech",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_night_marches": {
+    "service": "army",
+    "stats": {
+      "org_loss_when_moving": -0.1
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_nighttime_bombing"
+  },
+  "MKN_militia_junior_leaders": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.05
+    },
+    "one_off": "doctrine:.5",
+    "icon": "GFX_focus_generic_military_academy",
+    "mastery": {
+      "track": "infantry",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "MKN_hidden_depots": {
+    "service": "army",
+    "stats": {
+      "supply_consumption_factor": -0.08
+    },
+    "one_off": "equip:support_equipment_1:150",
+    "icon": "GFX_focus_generic_supply_line"
+  },
+  "MKN_militia_engineers": {
+    "service": "army",
+    "stats": {
+      "dig_in_speed_factor": 0.2
+    },
+    "one_off": "tech:engineers_tech",
+    "icon": "GFX_focus_generic_land_reclamation"
+  },
+  "MKN_militia_hospitals": {
+    "service": "army",
+    "stats": {
+      "casualty_trickleback": 0.06
+    },
+    "one_off": "tech:hospital_tech",
+    "icon": "GFX_focus_generic_field_hostpital"
+  },
+  "MKN_flexible_orders": {
+    "service": "army",
+    "stats": {
+      "planning_speed": 0.15
+    },
+    "one_off": "doctrine:.5",
+    "icon": "GFX_focus_generic_army_doctrines_2"
+  },
+  "MKN_rural_reserve": {
+    "service": "army",
+    "stats": {
+      "recruitable_population": 0.005
+    },
+    "one_off": "equip:infantry_equipment_0:1000",
+    "icon": "GFX_focus_generic_full_social_mobilization"
+  },
+  "MKN_tachanka_tactics": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_cavalry_defence_factor": 0.08
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_goal_generic_cavalry"
+  },
+  "MKN_steppe_camouflage": {
+    "service": "army",
+    "stats": {
+      "max_dig_in": 2.0
+    },
+    "one_off": "tech:recon_tech",
+    "icon": "GFX_focus_generic_infiltration"
+  },
+  "MKN_mobile_rearguard": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_infantry_defence_factor": 0.05
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_defensive_reorganization"
+  },
+  "MKN_free_column_exercises": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.05
+    },
+    "one_off": "xp:30 doctrine:.5",
+    "icon": "GFX_focus_generic_diverse_army"
+  },
+  "MKN_free_army_compact": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_cavalry_attack_factor": 0.05,
+      "supply_consumption_factor": -0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_focus_generic_freedom_council"
+  },
+  "MKN_steppe_hawks": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.03
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_swooping_falcon"
+  },
+  "MKN_village_airfields": {
+    "service": "air",
+    "stats": {
+      "air_range_factor": 0.05
+    },
+    "one_off": "build:226:air_base:2",
+    "icon": "GFX_focus_generic_air_bases"
+  },
+  "MKN_gulyaipole_pilot_school": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.05
+    },
+    "one_off": "xp:25 doctrine:.35:2",
+    "icon": "GFX_focus_generic_pilot_training"
+  },
+  "MKN_black_swarm": {
+    "service": "air",
+    "stats": {
+      "air_intercept_efficiency": 0.1
+    },
+    "one_off": "tech:light_fighter:.75",
+    "icon": "GFX_goal_generic_air_fighter"
+  },
+  "MKN_aircraft_artels": {
+    "service": "air",
+    "stats": {
+      "air_agility_factor": 0.04
+    },
+    "one_off": "tech:light_air:.75",
+    "icon": "GFX_focus_MKN_company_air_artels"
+  },
+  "MKN_observation_posts": {
+    "service": "air",
+    "stats": {
+      "air_interception_detect_factor": 0.1
+    },
+    "one_off": "tech:radar_tech",
+    "icon": "GFX_focus_generic_air_defense"
+  },
+  "MKN_fighter_instructors": {
+    "service": "air",
+    "stats": {
+      "air_ace_generation_chance_factor": 0.15
+    },
+    "one_off": "xp:20 ace",
+    "icon": "GFX_focus_generic_flight_instructors"
+  },
+  "MKN_air_warning": {
+    "service": "air",
+    "stats": {
+      "air_intercept_efficiency": 0.05
+    },
+    "one_off": "tech:electronics",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_radio_beacons": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.05
+    },
+    "one_off": "tech:signal_company_tech",
+    "icon": "GFX_focus_generic_phone"
+  },
+  "MKN_airframe_jigs": {
+    "service": "air",
+    "stats": {
+      "air_attack_factor": 0.04
+    },
+    "one_off": "build:200:arms_factory",
+    "icon": "GFX_focus_generic_aircraft_production"
+  },
+  "MKN_interceptor_pairs": {
+    "service": "air",
+    "stats": {
+      "air_agility_factor": 0.04
+    },
+    "one_off": "xp:20 doctrine:.5",
+    "icon": "GFX_goal_generic_air_fighter2"
+  },
+  "MKN_aircraft_recovery": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.05
+    },
+    "one_off": "tech:maintenance_company_tech",
+    "icon": "GFX_focus_generic_industrial_experts"
+  },
+  "MKN_air_dispersal": {
+    "service": "air",
+    "stats": {
+      "air_home_defence_factor": 0.1
+    },
+    "one_off": "build:226:air_base:2",
+    "icon": "GFX_focus_generic_air_bases"
+  },
+  "MKN_fighter_patrols": {
+    "service": "air",
+    "stats": {
+      "air_range_factor": 0.05
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_swooping_falcon"
+  },
+  "MKN_air_radar_school": {
+    "service": "air",
+    "stats": {
+      "air_interception_detect_factor": 0.1
+    },
+    "one_off": "tech:radar_tech:.75",
+    "icon": "GFX_goal_generic_radar"
+  },
+  "MKN_night_interceptors": {
+    "service": "air",
+    "stats": {
+      "air_intercept_efficiency": 0.05
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_nighttime_bombing"
+  },
+  "MKN_aircraft_spares": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.05
+    },
+    "one_off": "tech:plane_modules_tech",
+    "icon": "GFX_focus_generic_mass_production"
+  },
+  "MKN_fighter_conversion": {
+    "service": "air",
+    "stats": {
+      "air_agility_factor": 0.04
+    },
+    "one_off": "tech:light_fighter:.75",
+    "icon": "GFX_focus_generic_air_research_boost",
+    "mastery": {
+      "track": "fighter_aircraft",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "MKN_air_rescue": {
+    "service": "air",
+    "stats": {
+      "air_ace_generation_chance_factor": 0.1
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_field_hostpital"
+  },
+  "MKN_fighter_controllers": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.05
+    },
+    "one_off": "doctrine:.5",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_air_home_defence": {
+    "service": "air",
+    "stats": {
+      "air_home_defence_factor": 0.1
+    },
+    "one_off": "build:200:anti_air:2",
+    "icon": "GFX_focus_generic_home_defense"
+  },
+  "MKN_sky_watch_exercises": {
+    "service": "air",
+    "stats": {
+      "air_attack_factor": 0.04
+    },
+    "one_off": "xp:30 doctrine:.5",
+    "icon": "GFX_goal_generic_air_doctrine"
+  },
+  "MKN_free_sky_compact": {
+    "service": "air",
+    "stats": {
+      "air_intercept_efficiency": 0.1,
+      "air_agility_factor": 0.04
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_goal_generic_build_airforce"
+  },
+  "MKN_close_support_program": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.1
+    },
+    "one_off": "tech:cas_bomber:.75",
+    "icon": "GFX_focus_generic_cas_aircraft"
+  },
+  "MKN_attack_air_artels": {
+    "service": "air",
+    "stats": {
+      "air_attack_factor": 0.04
+    },
+    "one_off": "tech:light_air:.75",
+    "icon": "GFX_focus_MKN_company_attack_air_artels"
+  },
+  "MKN_air_ground_liaisons": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.05
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_bombing_ranges": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.04
+    },
+    "one_off": "xp:20 doctrine:.5",
+    "icon": "GFX_goal_generic_air_bomber"
+  },
+  "MKN_forward_airstrips": {
+    "service": "air",
+    "stats": {
+      "air_range_factor": 0.08
+    },
+    "one_off": "build:226:air_base:2",
+    "icon": "GFX_focus_generic_air_bases"
+  },
+  "MKN_air_map_bureau": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.04
+    },
+    "one_off": "tech:cat_scout_plane",
+    "icon": "GFX_focus_generic_advanced_military_studies"
+  },
+  "MKN_cas_maintenance": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.08
+    },
+    "one_off": "build:226:arms_factory",
+    "icon": "GFX_focus_generic_industrial_experts"
+  },
+  "MKN_target_markers": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.05
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_daytime_bombing"
+  },
+  "MKN_flying_artillery": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.05
+    },
+    "one_off": "tech:cat_air_bombs:.75",
+    "icon": "GFX_focus_generic_armored_air_support"
+  },
+  "MKN_airfield_fuel": {
+    "service": "air",
+    "stats": {
+      "air_fuel_consumption_factor": -0.1
+    },
+    "one_off": "build:226:fuel_silo",
+    "icon": "GFX_focus_generic_stockpile_fuel"
+  },
+  "MKN_tactical_recon": {
+    "service": "air",
+    "stats": {
+      "recon_factor": 0.1
+    },
+    "one_off": "tech:cat_scout_plane",
+    "icon": "GFX_focus_generic_swooping_falcon"
+  },
+  "MKN_bomber_navigation": {
+    "service": "air",
+    "stats": {
+      "air_range_factor": 0.07
+    },
+    "one_off": "tech:tactical_bomber",
+    "icon": "GFX_focus_generic_long_range_aircraft"
+  },
+  "MKN_air_supply_lift": {
+    "service": "air",
+    "stats": {
+      "supply_consumption_factor": -0.03
+    },
+    "one_off": "tech:air_equipment",
+    "icon": "GFX_focus_generic_supply_line"
+  },
+  "MKN_air_coastal_support": {
+    "service": "air",
+    "stats": {
+      "naval_strike_attack_factor": 0.1
+    },
+    "one_off": "tech:naval_bomber",
+    "icon": "GFX_goal_generic_air_naval_bomber"
+  },
+  "MKN_cas_replacement_crews": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.05
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_pilot_training"
+  },
+  "MKN_joint_target_planning": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_focus_generic_combined_arms"
+  },
+  "MKN_air_weather_service": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.04
+    },
+    "one_off": "tech:electronics",
+    "icon": "GFX_focus_generic_air_research_boost"
+  },
+  "MKN_attack_wing_rotations": {
+    "service": "air",
+    "stats": {
+      "air_fuel_consumption_factor": -0.05
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_flight_instructors"
+  },
+  "MKN_cas_joint_exercises": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.05
+    },
+    "one_off": "xp:30 doctrine:.5",
+    "icon": "GFX_focus_generic_tank_air_support",
+    "mastery": {
+      "track": "strike_aircraft",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "MKN_air_support_compact": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.05,
+      "air_mission_efficiency": 0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_goal_generic_CAS"
+  },
+  "MKN_black_sea_flotilla": {
+    "service": "navy",
+    "stats": {
+      "naval_defense_factor": 0.03
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_black_sea_focus"
+  },
+  "MKN_dnieper_patrol": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.05
+    },
+    "one_off": "tech:dd_tech",
+    "icon": "GFX_goal_generic_navy_doctrines_tactics"
+  },
+  "MKN_kherson_shipyard": {
+    "service": "navy",
+    "stats": {
+      "industrial_capacity_dockyard": 0.05
+    },
+    "one_off": "build:196:dockyard",
+    "icon": "GFX_goal_generic_construct_naval_dockyard"
+  },
+  "MKN_coastal_defense_steppe": {
+    "service": "navy",
+    "stats": {
+      "convoy_escort_efficiency": 0.1
+    },
+    "one_off": "build:196:coastal_bunker:1:568",
+    "icon": "GFX_focus_generic_coastal_fort"
+  },
+  "MKN_dnieper_gun_flotilla": {
+    "service": "navy",
+    "stats": {
+      "naval_defense_factor": 0.05
+    },
+    "one_off": "tech:dd_tech:.75",
+    "icon": "GFX_goal_generic_navy_cruiser"
+  },
+  "MKN_black_sea_escorts": {
+    "service": "navy",
+    "stats": {
+      "screening_efficiency": 0.08
+    },
+    "one_off": "tech:asw_tech",
+    "icon": "GFX_focus_MKN_company_kherson_works"
+  },
+  "MKN_coastal_signal_posts": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.08
+    },
+    "one_off": "tech:radar_tech",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_escort_crews": {
+    "service": "navy",
+    "stats": {
+      "convoy_escort_efficiency": 0.05
+    },
+    "one_off": "xp:20 doctrine:.5",
+    "icon": "GFX_focus_generic_naval_discipline"
+  },
+  "MKN_harbour_dredging": {
+    "service": "navy",
+    "stats": {
+      "navy_fuel_consumption_factor": -0.08
+    },
+    "one_off": "build:196:naval_base:1:568",
+    "icon": "GFX_focus_generic_public_works"
+  },
+  "MKN_hull_repair_artels": {
+    "service": "navy",
+    "stats": {
+      "repair_speed_factor": 0.15
+    },
+    "one_off": "navaltech:ship_modules_tech:dd_tech",
+    "icon": "GFX_focus_generic_refit_civilian_ships"
+  },
+  "MKN_depth_charge_school": {
+    "service": "navy",
+    "stats": {
+      "navy_submarine_detection_factor": 0.15
+    },
+    "one_off": "tech:asw_tech:.75 xp:15",
+    "icon": "GFX_goal_generic_navy_anti_submarine"
+  },
+  "MKN_convoy_schedules": {
+    "service": "navy",
+    "stats": {
+      "convoy_escort_efficiency": 0.05
+    },
+    "one_off": "equip:convoy_1:20",
+    "icon": "GFX_focus_generic_merchant_fleet"
+  },
+  "MKN_fleet_damage_control": {
+    "service": "navy",
+    "stats": {
+      "naval_ship_recovery_chance_factor": 0.1
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_industrial_experts"
+  },
+  "MKN_coastal_watch": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.08
+    },
+    "one_off": "tech:radar_tech:.75",
+    "icon": "GFX_goal_generic_radar"
+  },
+  "MKN_sweeper_sections": {
+    "service": "navy",
+    "stats": {
+      "mines_sweeping_by_fleets_factor": 0.25
+    },
+    "one_off": "navaltech:naval_minesweeping:dd_tech",
+    "icon": "GFX_focus_generic_mine_warfare"
+  },
+  "MKN_escort_radio_net": {
+    "service": "navy",
+    "stats": {
+      "screening_efficiency": 0.07
+    },
+    "one_off": "tech:electronics",
+    "icon": "GFX_focus_generic_phone"
+  },
+  "MKN_coastal_depots": {
+    "service": "navy",
+    "stats": {
+      "navy_fuel_consumption_factor": -0.1
+    },
+    "one_off": "build:196:fuel_silo",
+    "icon": "GFX_focus_generic_supply_line"
+  },
+  "MKN_river_sea_coordination": {
+    "service": "navy",
+    "stats": {
+      "naval_coordination": 0.08
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_goal_generic_navy_doctrines_tactics"
+  },
+  "MKN_anti_submarine_patrols": {
+    "service": "navy",
+    "stats": {
+      "navy_submarine_detection_factor": 0.15
+    },
+    "one_off": "tech:asw_tech xp:20",
+    "icon": "GFX_goal_generic_navy_anti_submarine"
+  },
+  "MKN_convoy_rescue": {
+    "service": "navy",
+    "stats": {
+      "navy_casualty_on_sink": -0.1
+    },
+    "one_off": "xp:15",
+    "icon": "GFX_focus_generic_field_hostpital"
+  },
+  "MKN_escort_reserves": {
+    "service": "navy",
+    "stats": {
+      "naval_defense_factor": 0.05
+    },
+    "one_off": "build:196:dockyard",
+    "icon": "GFX_focus_generic_manpower"
+  },
+  "MKN_coastal_fleet_exercises": {
+    "service": "navy",
+    "stats": {
+      "convoy_escort_efficiency": 0.05
+    },
+    "one_off": "xp:30 doctrine:.5",
+    "icon": "GFX_focus_generic_escort_efficiency",
+    "mastery": {
+      "track": "screens",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "MKN_escort_compact": {
+    "service": "navy",
+    "stats": {
+      "convoy_escort_efficiency": 0.05,
+      "screening_efficiency": 0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_focus_generic_merchant_fleet"
+  },
+  "MKN_black_sea_smugglers": {
+    "service": "navy",
+    "stats": {
+      "convoy_raiding_efficiency_factor": 0.1
+    },
+    "one_off": "tech:ss_tech:.75",
+    "icon": "GFX_focus_generic_smugglers"
+  },
+  "MKN_torpedo_artels": {
+    "service": "navy",
+    "stats": {
+      "naval_torpedo_hit_chance_factor": 0.05
+    },
+    "one_off": "navaltech:cat_torpedoes:ss_tech",
+    "icon": "GFX_focus_generic_torpedo_production"
+  },
+  "MKN_submarine_crews": {
+    "service": "navy",
+    "stats": {
+      "navy_submarine_attack_factor": 0.05
+    },
+    "one_off": "xp:20 doctrine:.5",
+    "icon": "GFX_focus_MKN_company_submarine_works"
+  },
+  "MKN_hidden_anchorages": {
+    "service": "navy",
+    "stats": {
+      "naval_torpedo_reveal_chance_factor": -0.08
+    },
+    "one_off": "build:196:naval_base:1:568",
+    "icon": "GFX_focus_generic_infiltration"
+  },
+  "MKN_naval_intelligence": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.08
+    },
+    "one_off": "tech:decryption_tech",
+    "icon": "GFX_goal_generic_intelligence_exchange"
+  },
+  "MKN_raider_dockyard": {
+    "service": "navy",
+    "stats": {
+      "industrial_capacity_dockyard": 0.05
+    },
+    "one_off": "build:196:dockyard",
+    "icon": "GFX_goal_generic_construct_naval_dockyard"
+  },
+  "MKN_torpedo_trials": {
+    "service": "navy",
+    "stats": {
+      "naval_torpedo_hit_chance_factor": 0.05
+    },
+    "one_off": "navaltech:cat_torpedoes:ss_tech xp:15",
+    "icon": "GFX_focus_generic_navy_research_bonus"
+  },
+  "MKN_night_sorties": {
+    "service": "navy",
+    "stats": {
+      "naval_torpedo_reveal_chance_factor": -0.07
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_nighttime_bombing"
+  },
+  "MKN_raider_supply": {
+    "service": "navy",
+    "stats": {
+      "navy_fuel_consumption_factor": -0.1
+    },
+    "one_off": "build:196:fuel_silo",
+    "icon": "GFX_focus_generic_stockpile_fuel"
+  },
+  "MKN_submarine_listening": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.08
+    },
+    "one_off": "navaltech:asw_tech:ss_tech",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "MKN_fast_attack_craft": {
+    "service": "navy",
+    "stats": {
+      "naval_speed_factor": 0.08
+    },
+    "one_off": "tech:dd_tech",
+    "icon": "GFX_focus_generic_destroyer"
+  },
+  "MKN_raider_radio_discipline": {
+    "service": "navy",
+    "stats": {
+      "naval_torpedo_reveal_chance_factor": -0.08
+    },
+    "one_off": "tech:encryption_tech",
+    "icon": "GFX_focus_generic_phone"
+  },
+  "MKN_submarine_repair": {
+    "service": "navy",
+    "stats": {
+      "repair_speed_factor": 0.15
+    },
+    "one_off": "navaltech:ship_modules_tech:ss_tech",
+    "icon": "GFX_focus_generic_refit_civilian_ships"
+  },
+  "MKN_raider_weather": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.05
+    },
+    "one_off": "tech:electronics",
+    "icon": "GFX_focus_generic_long_range_aircraft"
+  },
+  "MKN_raider_replacement_crews": {
+    "service": "navy",
+    "stats": {
+      "navy_submarine_defence_factor": 0.08
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_naval_discipline"
+  },
+  "MKN_torpedo_ambushes": {
+    "service": "navy",
+    "stats": {
+      "naval_torpedo_hit_chance_factor": 0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_focus_generic_torpedo_production"
+  },
+  "MKN_disrupt_enemy_trade": {
+    "service": "navy",
+    "stats": {
+      "convoy_raiding_efficiency_factor": 0.1
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_trade_interdiction"
+  },
+  "MKN_raider_escape_routes": {
+    "service": "navy",
+    "stats": {
+      "naval_retreat_speed": 0.15
+    },
+    "one_off": "tech:recon_tech",
+    "icon": "GFX_focus_generic_supply_line"
+  },
+  "MKN_raider_exercises": {
+    "service": "navy",
+    "stats": {
+      "navy_submarine_attack_factor": 0.05
+    },
+    "one_off": "xp:30 doctrine:.5",
+    "icon": "GFX_goal_generic_wolf_pack",
+    "mastery": {
+      "track": "submarines",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "MKN_raider_compact": {
+    "service": "navy",
+    "stats": {
+      "convoy_raiding_efficiency_factor": 0.1,
+      "navy_submarine_attack_factor": 0.05
+    },
+    "one_off": "doctrine:.5:2",
+    "icon": "GFX_goal_generic_navy_submarine"
+  },
+  "UKR_rebuild_kiev": {
+    "service": "civic",
+    "stats": {
+      "political_power_gain": 0.05
+    },
+    "one_off": "pp:75",
+    "icon": "GFX_focus_generic_improve_the_administration"
+  },
+  "UKR_local_congress": {
+    "service": "civic",
+    "stats": {
+      "stability_factor": 0.03
+    },
+    "one_off": "pp:50",
+    "icon": "GFX_focus_generic_freedom_council"
+  },
+  "UKR_public_debate": {
+    "service": "civic",
+    "stats": {
+      "political_power_gain": 0.05
+    },
+    "one_off": "pp:75",
+    "icon": "GFX_focus_generic_public_meetings"
+  },
+  "UKR_mandate_commission": {
+    "service": "civic",
+    "stats": {
+      "stability_factor": 0.03
+    },
+    "one_off": "pp:50",
+    "icon": "GFX_focus_generic_commission"
+  },
+  "UKR_council_mandate": {
+    "service": "civic",
+    "stats": {
+      "political_power_gain": 0.05
+    },
+    "one_off": "war:.05",
+    "icon": "GFX_focus_generic_workers_and_farmers_rise"
+  },
+  "UKR_cooperative_land": {
+    "service": "civic",
+    "stats": {
+      "consumer_goods_factor": -0.04
+    },
+    "one_off": "build:203:industrial_complex",
+    "icon": "GFX_focus_generic_land_redistribution"
+  },
+  "UKR_elected_factory_boards": {
+    "service": "civic",
+    "stats": {
+      "industrial_capacity_factory": 0.06
+    },
+    "one_off": "tech:cat_production",
+    "icon": "GFX_focus_generic_self_management"
+  },
+  "UKR_council_courts": {
+    "service": "civic",
+    "stats": {
+      "stability_factor": 0.05
+    },
+    "one_off": "pp:40",
+    "icon": "GFX_focus_generic_court"
+  },
+  "UKR_social_republic": {
+    "service": "civic",
+    "stats": {
+      "casualty_trickleback": 0.03,
+      "recruitable_population_factor": 0.05
+    },
+    "one_off": "stability:.03",
+    "icon": "GFX_focus_generic_welfare"
+  },
+  "UKR_constituent_mandate": {
+    "service": "civic",
+    "stats": {
+      "stability_factor": 0.05
+    },
+    "one_off": "pp:50",
+    "icon": "GFX_focus_generic_election"
+  },
+  "UKR_land_titles": {
+    "service": "civic",
+    "stats": {
+      "production_speed_industrial_complex_factor": 0.08
+    },
+    "one_off": "tech:construction_tech",
+    "icon": "GFX_focus_generic_farmland"
+  },
+  "UKR_elected_municipalities": {
+    "service": "civic",
+    "stats": {
+      "production_speed_infrastructure_factor": 0.15
+    },
+    "one_off": "build:198:infrastructure",
+    "icon": "GFX_focus_generic_public_works"
+  },
+  "UKR_independent_courts": {
+    "service": "civic",
+    "stats": {
+      "trade_opinion_factor": 0.15
+    },
+    "one_off": "stability:.04",
+    "icon": "GFX_focus_generic_sympathetic_judges"
+  },
+  "UKR_federal_republic": {
+    "service": "civic",
+    "stats": {
+      "research_speed_factor": 0.04
+    },
+    "one_off": "tech:computing_tech",
+    "icon": "GFX_focus_generic_social_democracy"
+  },
+  "UKR_state_mandate": {
+    "service": "civic",
+    "stats": {
+      "political_power_gain": 0.1
+    },
+    "one_off": "war:.05",
+    "icon": "GFX_focus_generic_improve_the_administration_2"
+  },
+  "UKR_rural_compact": {
+    "service": "civic",
+    "stats": {
+      "mobilization_speed": 0.15
+    },
+    "one_off": "equip:infantry_equipment_0:800",
+    "icon": "GFX_focus_generic_agricultural_subsidies"
+  },
+  "UKR_professional_civil_service": {
+    "service": "civic",
+    "stats": {
+      "production_speed_buildings_factor": 0.05
+    },
+    "one_off": "pp:75",
+    "icon": "GFX_focus_generic_advisors"
+  },
+  "UKR_state_arbitration": {
+    "service": "civic",
+    "stats": {
+      "production_factory_max_efficiency_factor": 0.05
+    },
+    "one_off": "tech:industry",
+    "icon": "GFX_focus_generic_central_planning"
+  },
+  "UKR_constitutional_directory": {
+    "service": "civic",
+    "stats": {
+      "recruitable_population": 0.005
+    },
+    "one_off": "stability:.05 cp:25",
+    "icon": "GFX_focus_generic_national_security"
+  },
+  "UKR_public_accountability": {
+    "service": "civic",
+    "stats": {
+      "political_power_gain": 0.05,
+      "stability_factor": 0.03
+    },
+    "one_off": "pp:50",
+    "icon": "GFX_focus_generic_printing_press"
+  },
+  "UKR_dnieper_industry": {
+    "service": "economy",
+    "stats": {
+      "production_speed_buildings_factor": 0.04
+    },
+    "one_off": "tech:industry",
+    "icon": "GFX_focus_generic_industry_investment"
+  },
+  "UKR_grain_exports": {
+    "service": "economy",
+    "stats": {
+      "trade_opinion_factor": 0.15,
+      "production_factory_max_efficiency_factor": 0.05
+    },
+    "one_off": "tech:cat_production",
+    "icon": "GFX_focus_generic_merchant_fleet"
+  },
+  "UKR_domestic_grain": {
+    "service": "economy",
+    "stats": {
+      "consumer_goods_factor": -0.05,
+      "factory_energy_consumption": -0.05
+    },
+    "one_off": "stability:.04",
+    "icon": "GFX_focus_generic_price_controls"
+  },
+  "UKR_land_survey": {
+    "service": "economy",
+    "stats": {
+      "production_speed_infrastructure_factor": 0.1
+    },
+    "one_off": "build:259:infrastructure",
+    "icon": "GFX_focus_generic_farmland"
+  },
+  "UKR_coal_contracts": {
+    "service": "economy",
+    "stats": {
+      "factory_energy_consumption": -0.05
+    },
+    "one_off": "resource:259:coal:8",
+    "icon": "GFX_focus_generic_coal_mining"
+  },
+  "UKR_collectivization_completed": {
+    "service": "economy",
+    "stats": {
+      "consumer_goods_factor": -0.03
+    },
+    "one_off": "tech:industry",
+    "icon": "GFX_focus_generic_modernizing_agriculture"
+  },
+  "UKR_machine_tool_imports": {
+    "service": "economy",
+    "stats": {
+      "production_factory_efficiency_gain_factor": 0.08
+    },
+    "one_off": "tech:cat_production:.75",
+    "icon": "GFX_focus_generic_license_production"
+  },
+  "UKR_seed_funds": {
+    "service": "economy",
+    "stats": {
+      "stability_factor": 0.02
+    },
+    "one_off": "pp:50",
+    "icon": "GFX_focus_generic_agricultural_subsidies"
+  },
+  "UKR_railway_accounting": {
+    "service": "economy",
+    "stats": {
+      "supply_consumption_factor": -0.05
+    },
+    "one_off": "build:259:infrastructure tech:train_tech",
+    "icon": "GFX_focus_generic_railroad"
+  },
+  "UKR_rural_workshops": {
+    "service": "economy",
+    "stats": {
+      "industry_repair_factor": 0.15
+    },
+    "one_off": "build:198:industrial_complex",
+    "icon": "GFX_focus_generic_industrial_experts"
+  },
+  "UKR_kyiv_machine_building": {
+    "service": "economy",
+    "stats": {
+      "production_factory_max_efficiency_factor": 0.05
+    },
+    "one_off": "build:202:arms_factory",
+    "icon": "GFX_focus_generic_military_industry"
+  },
+  "UKR_grain_insurance": {
+    "service": "economy",
+    "stats": {
+      "consumer_goods_factor": -0.04
+    },
+    "one_off": "stability:.03",
+    "icon": "GFX_focus_generic_stockpile_currency"
+  },
+  "UKR_power_network": {
+    "service": "economy",
+    "stats": {
+      "factory_energy_consumption": -0.08
+    },
+    "one_off": "build:202:infrastructure",
+    "icon": "GFX_focus_generic_electrification"
+  },
+  "UKR_agricultural_schools": {
+    "service": "economy",
+    "stats": {
+      "research_speed_factor": 0.02
+    },
+    "one_off": "tech:industry",
+    "icon": "GFX_focus_generic_education"
+  },
+  "UKR_odessa_trade_houses": {
+    "service": "economy",
+    "stats": {
+      "trade_opinion_factor": 0.1
+    },
+    "one_off": "build:192:industrial_complex",
+    "icon": "GFX_goal_generic_trade"
+  },
+  "UKR_cherkasy_food_processing": {
+    "service": "economy",
+    "stats": {
+      "consumer_goods_factor": -0.03
+    },
+    "one_off": "build:203:industrial_complex",
+    "icon": "GFX_focus_generic_modernizing_agriculture"
+  },
+  "UKR_industrial_standards": {
+    "service": "economy",
+    "stats": {
+      "production_factory_efficiency_gain_factor": 0.08
+    },
+    "one_off": "tech:cat_production",
+    "icon": "GFX_focus_generic_mass_production"
+  },
+  "UKR_polytechnic_network": {
+    "service": "economy",
+    "stats": {
+      "research_speed_factor": 0.03
+    },
+    "one_off": "slot",
+    "icon": "GFX_focus_generic_university_2"
+  },
+  "UKR_precision_workshops": {
+    "service": "economy",
+    "stats": {
+      "production_speed_buildings_factor": 0.08
+    },
+    "one_off": "build:202:arms_factory tech:electronics",
+    "icon": "GFX_focus_generic_industry_3"
+  },
+  "UKR_balanced_economic_compact": {
+    "service": "economy",
+    "stats": {
+      "production_factory_efficiency_gain_factor": 0.04,
+      "production_speed_buildings_factor": 0.04
+    },
+    "one_off": "pp:75",
+    "icon": "GFX_focus_generic_economic_recovery"
+  },
+  "UKR_guardians_of_the_steppe": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.04
+    },
+    "one_off": "xp:20 cp:20",
+    "icon": "GFX_goal_generic_defence"
+  },
+  "UKR_defence_in_depth": {
+    "service": "army",
+    "stats": {
+      "max_dig_in": 3.0,
+      "modifier_army_sub_unit_infantry_defence_factor": 0.08
+    },
+    "one_off": "tech:engineers_tech",
+    "icon": "GFX_focus_generic_home_defense"
+  },
+  "UKR_mobile_reserves": {
+    "service": "army",
+    "stats": {
+      "army_speed_factor": 0.08,
+      "org_loss_when_moving": -0.1
+    },
+    "one_off": "tech:motorized_equipment:.75",
+    "icon": "GFX_focus_generic_mechanized"
+  },
+  "UKR_army_depots": {
+    "service": "army",
+    "stats": {
+      "supply_consumption_factor": -0.05
+    },
+    "one_off": "equip:infantry_equipment_1:1000",
+    "icon": "GFX_focus_generic_supply_line"
+  },
+  "UKR_officer_school": {
+    "service": "army",
+    "stats": {
+      "max_planning": 0.05
+    },
+    "one_off": "xp:25 doctrine:.5",
+    "icon": "GFX_focus_generic_military_academy",
+    "mastery": {
+      "track": "infantry",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "UKR_rifle_standardization": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_infantry_attack_factor": 0.05
+    },
+    "one_off": "tech:infantry_weapons:.75",
+    "icon": "GFX_goal_generic_small_arms"
+  },
+  "UKR_field_engineers": {
+    "service": "army",
+    "stats": {
+      "dig_in_speed_factor": 0.2
+    },
+    "one_off": "tech:engineers_tech",
+    "icon": "GFX_focus_generic_land_reclamation"
+  },
+  "UKR_artillery_tables": {
+    "service": "army",
+    "stats": {
+      "modifier_army_sub_unit_infantry_attack_factor": 0.04
+    },
+    "one_off": "tech:artillery:.75",
+    "icon": "GFX_goal_generic_army_artillery"
+  },
+  "UKR_army_medical": {
+    "service": "army",
+    "stats": {
+      "casualty_trickleback": 0.05,
+      "experience_loss_factor": -0.05
+    },
+    "one_off": "tech:hospital_tech",
+    "icon": "GFX_focus_generic_field_hostpital"
+  },
+  "UKR_motorized_train": {
+    "service": "army",
+    "stats": {
+      "supply_consumption_factor": -0.05,
+      "army_fuel_consumption_factor": -0.08
+    },
+    "one_off": "equip:motorized_equipment_1:150",
+    "icon": "GFX_focus_generic_truck"
+  },
+  "UKR_border_scouts": {
+    "service": "army",
+    "stats": {
+      "recon_factor": 0.15
+    },
+    "one_off": "tech:recon_tech",
+    "icon": "GFX_focus_generic_infiltration"
+  },
+  "UKR_army_signals": {
+    "service": "army",
+    "stats": {
+      "land_reinforce_rate": 0.02
+    },
+    "one_off": "tech:signal_company_tech",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "UKR_reserve_exercises": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.05
+    },
+    "one_off": "xp:25 doctrine:.5",
+    "icon": "GFX_focus_generic_diverse_army"
+  },
+  "UKR_combined_operations": {
+    "service": "army",
+    "stats": {
+      "max_planning": 0.05
+    },
+    "one_off": "xp:25 doctrine:.5:2",
+    "icon": "GFX_focus_generic_combined_arms"
+  },
+  "UKR_army_repair_network": {
+    "service": "army",
+    "stats": {
+      "attrition": -0.1
+    },
+    "one_off": "tech:maintenance_company_tech equip:support_equipment_1:200",
+    "icon": "GFX_focus_generic_industrial_experts"
+  },
+  "UKR_prepared_defence": {
+    "service": "army",
+    "stats": {
+      "army_org_factor": 0.05,
+      "land_reinforce_rate": 0.02
+    },
+    "one_off": "xp:30",
+    "icon": "GFX_focus_generic_advanced_military_studies"
+  },
+  "UKR_air_service": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.03
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_goal_generic_build_airforce"
+  },
+  "UKR_interceptor_command": {
+    "service": "air",
+    "stats": {
+      "air_intercept_efficiency": 0.15,
+      "air_agility_factor": 0.08
+    },
+    "one_off": "tech:light_fighter:.75",
+    "icon": "GFX_goal_generic_air_fighter"
+  },
+  "UKR_assault_aviation": {
+    "service": "air",
+    "stats": {
+      "air_cas_efficiency": 0.2
+    },
+    "one_off": "tech:cas_bomber:.75",
+    "icon": "GFX_focus_generic_cas_aircraft"
+  },
+  "UKR_pilot_schools": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.08
+    },
+    "one_off": "xp:25 ace",
+    "icon": "GFX_focus_generic_pilot_training"
+  },
+  "UKR_air_workshops": {
+    "service": "air",
+    "stats": {
+      "air_attack_factor": 0.05
+    },
+    "one_off": "build:202:arms_factory tech:light_air",
+    "icon": "GFX_focus_generic_aircraft_production"
+  },
+  "UKR_air_observers": {
+    "service": "air",
+    "stats": {
+      "air_interception_detect_factor": 0.15
+    },
+    "one_off": "tech:radar_tech",
+    "icon": "GFX_goal_generic_radar"
+  },
+  "UKR_fighter_patrols": {
+    "service": "air",
+    "stats": {
+      "air_agility_factor": 0.05
+    },
+    "one_off": "xp:20 doctrine:.5",
+    "icon": "GFX_focus_generic_swooping_falcon"
+  },
+  "UKR_ground_support": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.07
+    },
+    "one_off": "tech:signal_company_tech",
+    "icon": "GFX_focus_generic_radio_communication"
+  },
+  "UKR_air_spares": {
+    "service": "air",
+    "stats": {
+      "air_accidents_factor": -0.05,
+      "air_fuel_consumption_factor": -0.08
+    },
+    "one_off": "tech:plane_modules_tech",
+    "icon": "GFX_focus_generic_mass_production"
+  },
+  "UKR_integrated_air_service": {
+    "service": "air",
+    "stats": {
+      "air_mission_efficiency": 0.05,
+      "air_range_factor": 0.08
+    },
+    "one_off": "xp:30 doctrine:.5:2",
+    "icon": "GFX_focus_generic_air_partners",
+    "mastery": {
+      "track": "fighter_aircraft",
+      "bonus": 0.1,
+      "days": 240
+    }
+  },
+  "UKR_odessa_naval_service": {
+    "service": "navy",
+    "stats": {
+      "naval_defense_factor": 0.04
+    },
+    "one_off": "xp:20",
+    "icon": "GFX_focus_generic_black_sea_focus"
+  },
+  "UKR_merchant_escorts": {
+    "service": "navy",
+    "stats": {
+      "convoy_escort_efficiency": 0.2,
+      "screening_efficiency": 0.1
+    },
+    "one_off": "tech:dd_tech:.75 equip:convoy_1:20",
+    "icon": "GFX_focus_generic_escort_efficiency"
+  },
+  "UKR_sea_denial": {
+    "service": "navy",
+    "stats": {
+      "convoy_raiding_efficiency_factor": 0.2,
+      "naval_torpedo_hit_chance_factor": 0.08
+    },
+    "one_off": "tech:ss_tech:.75",
+    "icon": "GFX_goal_generic_navy_submarine"
+  },
+  "UKR_odessa_shipyards": {
+    "service": "navy",
+    "stats": {
+      "industrial_capacity_dockyard": 0.08
+    },
+    "one_off": "build:192:dockyard",
+    "icon": "GFX_goal_generic_construct_naval_dockyard"
+  },
+  "UKR_naval_crew_school": {
+    "service": "navy",
+    "stats": {
+      "naval_coordination": 0.08
+    },
+    "one_off": "xp:25 doctrine:.5",
+    "icon": "GFX_focus_generic_naval_discipline"
+  },
+  "UKR_coastal_watch": {
+    "service": "navy",
+    "stats": {
+      "naval_detection": 0.15
+    },
+    "one_off": "tech:radar_tech",
+    "icon": "GFX_goal_generic_radar"
+  },
+  "UKR_convoy_escort": {
+    "service": "navy",
+    "stats": {
+      "navy_submarine_detection_factor": 0.15
+    },
+    "one_off": "tech:asw_tech",
+    "icon": "GFX_goal_generic_navy_anti_submarine"
+  },
+  "UKR_naval_minesweepers": {
+    "service": "navy",
+    "stats": {
+      "mines_sweeping_by_fleets_factor": 0.3
+    },
+    "one_off": "navaltech:naval_minesweeping:dd_tech",
+    "icon": "GFX_focus_generic_mine_warfare"
+  },
+  "UKR_naval_logistics": {
+    "service": "navy",
+    "stats": {
+      "repair_speed_factor": 0.15,
+      "navy_fuel_consumption_factor": -0.1
+    },
+    "one_off": "build:192:fuel_silo",
+    "icon": "GFX_focus_generic_refit_civilian_ships"
+  },
+  "UKR_safe_trade_routes": {
+    "service": "navy",
+    "stats": {
+      "naval_defense_factor": 0.06,
+      "naval_coordination": 0.07
+    },
+    "one_off": "xp:30 doctrine:.5:2",
+    "icon": "GFX_goal_generic_navy_doctrines_tactics",
+    "mastery": {
+      "track": "screens",
+      "bonus": 0.1,
+      "days": 240
+    }
+  }
+}

@@ -9,15 +9,18 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_rebuild_kiev
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 0
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		icon = GFX_focus_generic_improve_the_administration
 		completion_reward = {
+			add_to_variable = {
+				UKR_civic_political_power_gain = 0.05
+				tooltip = UKR_civic_political_power_gain_tt
+			}
 			add_political_power = 75
 			if = {
 				limit = {
@@ -32,89 +35,78 @@ focus_tree = {
 				}
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_local_congress
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_to_variable = {
-				UKR_civic_political_power_gain = 0.0250
-				tooltip = UKR_civic_political_power_gain_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_rebuild_kiev
 		}
+		icon = GFX_focus_generic_freedom_council
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_stability_factor = 0.03
+				tooltip = UKR_civic_stability_factor_tt
+			}
+			add_political_power = 50
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_public_debate
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_to_variable = {
-				UKR_civic_political_power_gain = 0.0250
-				tooltip = UKR_civic_political_power_gain_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_local_congress
 		}
+		icon = GFX_focus_generic_public_meetings
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_political_power_gain = 0.05
+				tooltip = UKR_civic_political_power_gain_tt
+			}
+			add_political_power = 75
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_mandate_commission
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_to_variable = {
-				UKR_civic_political_power_gain = 0.0250
-				tooltip = UKR_civic_political_power_gain_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_public_debate
 		}
+		icon = GFX_focus_generic_commission
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_stability_factor = 0.03
+				tooltip = UKR_civic_stability_factor_tt
+			}
+			add_political_power = 50
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_council_mandate
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 4
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
 		}
 		prerequisite = {
 			focus = UKR_mandate_commission
@@ -132,113 +124,132 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = UKR_state_mandate
 		}
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_political_power_gain = 0.05
+				tooltip = UKR_civic_political_power_gain_tt
+			}
+			add_war_support = .05
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_cooperative_land
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 5
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_council_mandate
 		}
+		icon = GFX_focus_generic_land_redistribution
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_consumer_goods_factor = -0.04
+				tooltip = UKR_civic_consumer_goods_factor_tt
+			}
+			203 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		cost = 10
 	}
 	focus = {
 		id = UKR_elected_factory_boards
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 6
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_political_power = 50
 		}
 		prerequisite = {
 			focus = UKR_cooperative_land
 		}
+		icon = GFX_focus_generic_self_management
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_industrial_capacity_factory = 0.06
+				tooltip = UKR_civic_industrial_capacity_factory_tt
+			}
+			add_tech_bonus = {
+				name = UKR_elected_factory_boards
+				bonus = .5
+				uses = 1
+				category = cat_production
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_council_courts
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_elected_factory_boards
 		}
+		icon = GFX_focus_generic_court
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_stability_factor = 0.05
+				tooltip = UKR_civic_stability_factor_tt
+			}
+			add_political_power = 40
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_social_republic
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_to_variable = {
-				UKR_civic_political_power_gain = 0.0500
-				tooltip = UKR_civic_political_power_gain_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_council_courts
 		}
+		icon = GFX_focus_generic_welfare
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_casualty_trickleback = 0.03
+				tooltip = UKR_civic_casualty_trickleback_tt
+			}
+			add_to_variable = {
+				UKR_civic_recruitable_population_factor = 0.05
+				tooltip = UKR_civic_recruitable_population_factor_tt
+			}
+			add_stability = .03
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_constituent_mandate
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 4
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-				last_election = 1936.1.1
-				election_frequency = 48
-			}
 		}
 		prerequisite = {
 			focus = UKR_mandate_commission
@@ -256,111 +267,134 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = UKR_state_mandate
 		}
+		icon = GFX_focus_generic_election
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_stability_factor = 0.05
+				tooltip = UKR_civic_stability_factor_tt
+			}
+			add_political_power = 50
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = 1936.1.1
+				election_frequency = 48
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_land_titles
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 5
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_constituent_mandate
 		}
+		icon = GFX_focus_generic_farmland
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_production_speed_industrial_complex_factor = 0.08
+				tooltip = UKR_civic_production_speed_industrial_complex_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_land_titles
+				bonus = .5
+				uses = 1
+				category = construction_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_elected_municipalities
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 6
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_political_power = 50
 		}
 		prerequisite = {
 			focus = UKR_land_titles
 		}
+		icon = GFX_focus_generic_public_works
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_production_speed_infrastructure_factor = 0.15
+				tooltip = UKR_civic_production_speed_infrastructure_factor_tt
+			}
+			198 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_independent_courts
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_elected_municipalities
 		}
+		icon = GFX_focus_generic_sympathetic_judges
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_trade_opinion_factor = 0.15
+				tooltip = UKR_civic_trade_opinion_factor_tt
+			}
+			add_stability = .04
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_federal_republic
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_to_variable = {
-				UKR_civic_political_power_gain = 0.0500
-				tooltip = UKR_civic_political_power_gain_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_independent_courts
 		}
+		icon = GFX_focus_generic_social_democracy
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_research_speed_factor = 0.04
+				tooltip = UKR_civic_research_speed_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_federal_republic
+				bonus = .5
+				uses = 1
+				category = computing_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_state_mandate
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 12
 		y = 4
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
 		}
 		prerequisite = {
 			focus = UKR_mandate_commission
@@ -378,129 +412,160 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = UKR_constituent_mandate
 		}
+		icon = GFX_focus_generic_improve_the_administration_2
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_political_power_gain = 0.1
+				tooltip = UKR_civic_political_power_gain_tt
+			}
+			add_war_support = .05
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_rural_compact
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 12
 		y = 5
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_state_mandate
 		}
+		icon = GFX_focus_generic_agricultural_subsidies
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_mobilization_speed = 0.15
+				tooltip = UKR_civic_mobilization_speed_tt
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 800
+				producer = ROOT
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_professional_civil_service
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 12
 		y = 6
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_political_power = 50
 		}
 		prerequisite = {
 			focus = UKR_rural_compact
 		}
+		icon = GFX_focus_generic_advisors
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_production_speed_buildings_factor = 0.05
+				tooltip = UKR_civic_production_speed_buildings_factor_tt
+			}
+			add_political_power = 75
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_state_arbitration
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 12
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_professional_civil_service
 		}
+		icon = GFX_focus_generic_central_planning
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_production_factory_max_efficiency_factor = 0.05
+				tooltip = UKR_civic_production_factory_max_efficiency_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_state_arbitration
+				bonus = .5
+				uses = 1
+				category = industry
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_constitutional_directory
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 12
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0150
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_to_variable = {
-				UKR_civic_political_power_gain = 0.0500
-				tooltip = UKR_civic_political_power_gain_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_state_arbitration
 		}
+		icon = GFX_focus_generic_national_security
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_recruitable_population = 0.005
+				tooltip = UKR_civic_recruitable_population_tt
+			}
+			add_stability = .05
+			add_command_power = 25
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_public_accountability
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 6
 		y = 9
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_civic_stability_factor = 0.0250
-				tooltip = UKR_civic_stability_factor_tt
-			}
-			add_political_power = 50
 		}
 		prerequisite = {
 			focus = UKR_social_republic
 			focus = UKR_federal_republic
 			focus = UKR_constitutional_directory
 		}
+		icon = GFX_focus_generic_printing_press
+		completion_reward = {
+			add_to_variable = {
+				UKR_civic_political_power_gain = 0.05
+				tooltip = UKR_civic_political_power_gain_tt
+			}
+			add_to_variable = {
+				UKR_civic_stability_factor = 0.03
+				tooltip = UKR_civic_stability_factor_tt
+			}
+			add_political_power = 50
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_dnieper_industry
-		icon = GFX_focus_generic_industry_1
 		x = 22
 		y = 0
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		icon = GFX_focus_generic_industry_investment
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_production_speed_buildings_factor = 0.0200
+				UKR_economy_production_speed_buildings_factor = 0.04
 				tooltip = UKR_economy_production_speed_buildings_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_dnieper_industry
+				bonus = .5
+				uses = 1
+				category = industry
 			}
 			if = {
 				limit = {
@@ -515,41 +580,58 @@ focus_tree = {
 				}
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_land_survey
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_grain_exports
+			focus = UKR_domestic_grain
+		}
+		icon = GFX_focus_generic_farmland
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_production_factory_efficiency_gain_factor = 0.0200
-				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
+				UKR_economy_production_speed_infrastructure_factor = 0.1
+				tooltip = UKR_economy_production_speed_infrastructure_factor_tt
+			}
+			259 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
-		prerequisite = {
-			focus = UKR_dnieper_industry
-		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_coal_contracts
-		icon = GFX_focus_generic_industry_1
 		x = 24
-		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_grain_exports
+			focus = UKR_domestic_grain
+		}
+		icon = GFX_focus_generic_coal_mining
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_consumer_goods_factor = -0.0200
-				tooltip = UKR_economy_consumer_goods_factor_tt
+				UKR_economy_factory_energy_consumption = -0.05
+				tooltip = UKR_economy_factory_energy_consumption_tt
 			}
 			259 = {
 				if = {
@@ -558,172 +640,142 @@ focus_tree = {
 					}
 					add_resource = {
 						type = coal
-						amount = 12
+						amount = 8
 					}
 				}
 			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = excavation_tech
-			}
 		}
-		prerequisite = {
-			focus = UKR_dnieper_industry
-		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_collectivization_completed
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_research_speed_factor = 0.0200
-				tooltip = UKR_economy_research_speed_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = industry
-			}
 		}
 		prerequisite = {
 			focus = UKR_land_survey
 		}
+		y = 4
+		icon = GFX_focus_generic_modernizing_agriculture
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_consumer_goods_factor = -0.03
+				tooltip = UKR_economy_consumer_goods_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_collectivization_completed
+				bonus = .5
+				uses = 1
+				category = industry
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_machine_tool_imports
-		icon = GFX_focus_generic_industry_1
 		x = 24
-		y = 2
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_production_speed_buildings_factor = 0.0200
-				tooltip = UKR_economy_production_speed_buildings_factor_tt
-			}
-			202 = {
-				if = {
-					limit = {
-						is_owned_and_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 		}
 		prerequisite = {
 			focus = UKR_coal_contracts
 		}
+		y = 4
+		icon = GFX_focus_generic_license_production
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_production_factory_efficiency_gain_factor = 0.08
+				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_machine_tool_imports
+				bonus = .75
+				uses = 1
+				category = cat_production
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_seed_funds
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_production_factory_efficiency_gain_factor = 0.0200
-				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_collectivization_completed
 		}
+		y = 5
+		icon = GFX_focus_generic_agricultural_subsidies
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_stability_factor = 0.02
+				tooltip = UKR_economy_stability_factor_tt
+			}
+			add_political_power = 50
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_railway_accounting
-		icon = GFX_focus_generic_industry_1
 		x = 24
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = UKR_machine_tool_imports
+		}
+		y = 5
+		icon = GFX_focus_generic_railroad
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_consumer_goods_factor = -0.0200
-				tooltip = UKR_economy_consumer_goods_factor_tt
+				UKR_economy_supply_consumption_factor = -0.05
+				tooltip = UKR_economy_supply_consumption_factor_tt
 			}
-			193 = {
+			259 = {
 				if = {
 					limit = {
 						is_owned_and_controlled_by = ROOT
 					}
-					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
-						type = arms_factory
+						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
 			}
+			add_tech_bonus = {
+				name = UKR_railway_accounting
+				bonus = .5
+				uses = 1
+				category = train_tech
+			}
 		}
-		prerequisite = {
-			focus = UKR_machine_tool_imports
-		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_rural_workshops
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 4
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_research_speed_factor = 0.0200
-				tooltip = UKR_economy_research_speed_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = industry
-			}
 		}
 		prerequisite = {
 			focus = UKR_seed_funds
 		}
-	}
-	focus = {
-		id = UKR_kyiv_machine_building
-		icon = GFX_focus_generic_industry_1
-		x = 24
-		y = 4
-		cost = 10
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
+		y = 6
+		icon = GFX_focus_generic_industrial_experts
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_production_speed_buildings_factor = 0.0200
-				tooltip = UKR_economy_production_speed_buildings_factor_tt
+				UKR_economy_industry_repair_factor = 0.15
+				tooltip = UKR_economy_industry_repair_factor_tt
 			}
-			193 = {
+			198 = {
 				if = {
 					limit = {
 						is_owned_and_controlled_by = ROOT
@@ -737,44 +789,24 @@ focus_tree = {
 				}
 			}
 		}
+		cost = 10
+	}
+	focus = {
+		id = UKR_kyiv_machine_building
+		x = 24
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		prerequisite = {
 			focus = UKR_railway_accounting
 		}
-	}
-	focus = {
-		id = UKR_grain_insurance
-		icon = GFX_focus_generic_industry_1
-		x = 20
-		y = 5
-		cost = 5
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
+		y = 6
+		icon = GFX_focus_generic_military_industry
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_production_factory_efficiency_gain_factor = 0.0200
-				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
-			}
-		}
-		prerequisite = {
-			focus = UKR_rural_workshops
-		}
-	}
-	focus = {
-		id = UKR_power_network
-		icon = GFX_focus_generic_industry_1
-		x = 24
-		y = 5
-		cost = 5
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_consumer_goods_factor = -0.0200
-				tooltip = UKR_economy_consumer_goods_factor_tt
+				UKR_economy_production_factory_max_efficiency_factor = 0.05
+				tooltip = UKR_economy_production_factory_max_efficiency_factor_tt
 			}
 			202 = {
 				if = {
@@ -789,54 +821,104 @@ focus_tree = {
 					}
 				}
 			}
+		}
+		cost = 10
+	}
+	focus = {
+		id = UKR_grain_insurance
+		x = 20
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = UKR_rural_workshops
+		}
+		y = 7
+		icon = GFX_focus_generic_stockpile_currency
+		completion_reward = {
 			add_to_variable = {
-				UKR_economy_factory_energy_consumption = -0.0800
-				tooltip = UKR_economy_factory_energy_consumption_tt
+				UKR_economy_consumer_goods_factor = -0.04
+				tooltip = UKR_economy_consumer_goods_factor_tt
 			}
+			add_stability = .03
+		}
+		cost = 5
+	}
+	focus = {
+		id = UKR_power_network
+		x = 24
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
 		prerequisite = {
 			focus = UKR_kyiv_machine_building
 		}
+		y = 7
+		icon = GFX_focus_generic_electrification
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_factory_energy_consumption = -0.08
+				tooltip = UKR_economy_factory_energy_consumption_tt
+			}
+			202 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_agricultural_schools
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 6
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_research_speed_factor = 0.0200
-				tooltip = UKR_economy_research_speed_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = industry
-			}
 		}
 		prerequisite = {
 			focus = UKR_grain_insurance
 		}
+		y = 8
+		icon = GFX_focus_generic_education
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_research_speed_factor = 0.02
+				tooltip = UKR_economy_research_speed_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_agricultural_schools
+				bonus = .5
+				uses = 1
+				category = industry
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_odessa_trade_houses
-		icon = GFX_focus_generic_industry_1
 		x = 24
-		y = 6
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = UKR_power_network
+		}
+		y = 8
+		icon = GFX_goal_generic_trade
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_production_speed_buildings_factor = 0.0200
-				tooltip = UKR_economy_production_speed_buildings_factor_tt
+				UKR_economy_trade_opinion_factor = 0.1
+				tooltip = UKR_economy_trade_opinion_factor_tt
 			}
 			192 = {
 				if = {
@@ -852,167 +934,178 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = UKR_power_network
-		}
+		cost = 10
 	}
 	focus = {
 		id = UKR_cherkasy_food_processing
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_production_factory_efficiency_gain_factor = 0.0200
-				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_agricultural_schools
 		}
+		y = 9
+		icon = GFX_focus_generic_modernizing_agriculture
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_consumer_goods_factor = -0.03
+				tooltip = UKR_economy_consumer_goods_factor_tt
+			}
+			203 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		cost = 10
 	}
 	focus = {
 		id = UKR_industrial_standards
-		icon = GFX_focus_generic_industry_1
 		x = 24
-		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_consumer_goods_factor = -0.0200
-				tooltip = UKR_economy_consumer_goods_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_odessa_trade_houses
 		}
+		y = 9
+		icon = GFX_focus_generic_mass_production
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_production_factory_efficiency_gain_factor = 0.08
+				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_industrial_standards
+				bonus = .5
+				uses = 1
+				category = cat_production
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_polytechnic_network
-		icon = GFX_focus_generic_industry_1
 		x = 20
-		y = 8
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_research_speed_factor = 0.0200
-				tooltip = UKR_economy_research_speed_factor_tt
-			}
-			if = {
-				limit = {
-					amount_research_slots < 4
-				}
-				add_research_slot = 1
-			}
 		}
 		prerequisite = {
 			focus = UKR_cherkasy_food_processing
 		}
+		icon = GFX_focus_generic_university_2
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_research_speed_factor = 0.03
+				tooltip = UKR_economy_research_speed_factor_tt
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		cost = 10
+		y = 11
 	}
 	focus = {
 		id = UKR_precision_workshops
-		icon = GFX_focus_generic_industry_1
 		x = 24
-		y = 8
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = UKR_industrial_standards
+		}
+		icon = GFX_focus_generic_industry_3
 		completion_reward = {
 			add_to_variable = {
-				UKR_economy_production_speed_buildings_factor = 0.0200
+				UKR_economy_production_speed_buildings_factor = 0.08
 				tooltip = UKR_economy_production_speed_buildings_factor_tt
 			}
+			202 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = UKR_precision_workshops
+				bonus = .5
+				uses = 1
+				category = electronics
+			}
+		}
+		cost = 10
+		y = 11
+	}
+	focus = {
+		id = UKR_balanced_economic_compact
+		x = 22
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_generic_economic_recovery
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_production_factory_efficiency_gain_factor = 0.04
+				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				UKR_economy_production_speed_buildings_factor = 0.04
+				tooltip = UKR_economy_production_speed_buildings_factor_tt
+			}
+			add_political_power = 75
+		}
+		cost = 10
+		y = 10
+		prerequisite = {
+			focus = UKR_cherkasy_food_processing
 		}
 		prerequisite = {
 			focus = UKR_industrial_standards
 		}
 	}
 	focus = {
-		id = UKR_balanced_economic_compact
-		icon = GFX_focus_generic_industry_1
-		x = 22
-		y = 9
-		cost = 10
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_economy_production_factory_efficiency_gain_factor = 0.0200
-				tooltip = UKR_economy_production_factory_efficiency_gain_factor_tt
-			}
-			set_variable = {
-				UKR_economy_production_speed_buildings_factor = 0.08
-			}
-			set_variable = {
-				UKR_economy_production_factory_efficiency_gain_factor = 0.1
-			}
-			set_variable = {
-				UKR_economy_consumer_goods_factor = -0.05
-			}
-			set_variable = {
-				UKR_economy_research_speed_factor = 0.05
-			}
-		}
-		prerequisite = {
-			focus = UKR_polytechnic_network
-		}
-		prerequisite = {
-			focus = UKR_precision_workshops
-		}
-		available = {
-			has_completed_focus = UKR_dnieper_industry
-			has_completed_focus = UKR_land_survey
-			has_completed_focus = UKR_coal_contracts
-			has_completed_focus = UKR_collectivization_completed
-			has_completed_focus = UKR_machine_tool_imports
-			has_completed_focus = UKR_seed_funds
-			has_completed_focus = UKR_railway_accounting
-			has_completed_focus = UKR_rural_workshops
-			has_completed_focus = UKR_kyiv_machine_building
-			has_completed_focus = UKR_grain_insurance
-			has_completed_focus = UKR_power_network
-			has_completed_focus = UKR_agricultural_schools
-			has_completed_focus = UKR_odessa_trade_houses
-			has_completed_focus = UKR_cherkasy_food_processing
-			has_completed_focus = UKR_industrial_standards
-			has_completed_focus = UKR_polytechnic_network
-			has_completed_focus = UKR_precision_workshops
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-	}
-	focus = {
 		id = UKR_guardians_of_the_steppe
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 34
 		y = 0
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		icon = GFX_goal_generic_defence
 		completion_reward = {
 			add_to_variable = {
-				UKR_army_army_org_factor = 0.0120
+				UKR_army_army_org_factor = 0.04
 				tooltip = UKR_army_army_org_factor_tt
 			}
+			army_experience = 20
+			add_command_power = 20
 			if = {
 				limit = {
 					NOT = {
@@ -1026,356 +1119,387 @@ focus_tree = {
 				}
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_army_depots
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 32
-		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_defence_in_depth
+			focus = UKR_mobile_reserves
+		}
+		icon = GFX_focus_generic_supply_line
 		completion_reward = {
 			add_to_variable = {
-				UKR_army_supply_consumption_factor = -0.0120
+				UKR_army_supply_consumption_factor = -0.05
 				tooltip = UKR_army_supply_consumption_factor_tt
 			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = infantry_weapons
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = ROOT
 			}
 		}
-		prerequisite = {
-			focus = UKR_guardians_of_the_steppe
-		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_officer_school
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 36
-		y = 1
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_defence_in_depth
+			focus = UKR_mobile_reserves
+		}
+		icon = GFX_focus_generic_military_academy
 		completion_reward = {
 			add_to_variable = {
-				UKR_army_max_planning = 0.0120
+				UKR_army_max_planning = 0.05
 				tooltip = UKR_army_max_planning_tt
 			}
-			army_experience = 15
-		}
-		prerequisite = {
-			focus = UKR_guardians_of_the_steppe
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = UKR_officer_school
+				cost_reduction = .5
+				uses = 1
+				category = land_doctrine
+			}
+			add_mastery_bonus = {
+				bonus = 0.1
+				days = 240
+				track = infantry
+				name = UKR_officer_school
+			}
 		}
 		cost = 5
 	}
 	focus = {
 		id = UKR_rifle_standardization
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 32
-		y = 2
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_army_org_factor = 0.0120
-				tooltip = UKR_army_army_org_factor_tt
-			}
-			add_doctrine_cost_reduction = {
-				name = UKR_rifle_standardization
-				cost_reduction = 0.35
-				uses = 1
-				category = land_doctrine
-			}
-			193 = {
-				if = {
-					limit = {
-						is_owned_and_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 		}
 		prerequisite = {
 			focus = UKR_army_depots
 		}
-		cost = 10
-	}
-	focus = {
-		id = UKR_field_engineers
-		icon = GFX_focus_generic_army_doctrines_2
-		x = 36
-		y = 2
-		cost = 5
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
+		y = 4
+		icon = GFX_goal_generic_small_arms
 		completion_reward = {
 			add_to_variable = {
-				UKR_army_supply_consumption_factor = -0.0120
-				tooltip = UKR_army_supply_consumption_factor_tt
+				UKR_army_modifier_army_sub_unit_infantry_attack_factor = 0.05
+				tooltip = UKR_army_modifier_army_sub_unit_infantry_attack_factor_tt
 			}
 			add_tech_bonus = {
-				bonus = 0.35
+				name = UKR_rifle_standardization
+				bonus = .75
 				uses = 1
 				category = infantry_weapons
 			}
+		}
+		cost = 5
+	}
+	focus = {
+		id = UKR_field_engineers
+		x = 36
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
 		prerequisite = {
 			focus = UKR_officer_school
 		}
+		y = 4
+		icon = GFX_focus_generic_land_reclamation
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_dig_in_speed_factor = 0.2
+				tooltip = UKR_army_dig_in_speed_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_field_engineers
+				bonus = .5
+				uses = 1
+				category = engineers_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_artillery_tables
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 32
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_max_planning = 0.0120
-				tooltip = UKR_army_max_planning_tt
-			}
-			army_experience = 15
 		}
 		prerequisite = {
 			focus = UKR_rifle_standardization
 		}
+		y = 5
+		icon = GFX_goal_generic_army_artillery
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_modifier_army_sub_unit_infantry_attack_factor = 0.04
+				tooltip = UKR_army_modifier_army_sub_unit_infantry_attack_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_artillery_tables
+				bonus = .75
+				uses = 1
+				category = artillery
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_army_medical
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 36
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_army_org_factor = 0.0120
-				tooltip = UKR_army_army_org_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_field_engineers
 		}
+		y = 5
+		icon = GFX_focus_generic_field_hostpital
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_casualty_trickleback = 0.05
+				tooltip = UKR_army_casualty_trickleback_tt
+			}
+			add_to_variable = {
+				UKR_army_experience_loss_factor = -0.05
+				tooltip = UKR_army_experience_loss_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_army_medical
+				bonus = .5
+				uses = 1
+				category = hospital_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_motorized_train
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 32
-		y = 4
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_supply_consumption_factor = -0.0120
-				tooltip = UKR_army_supply_consumption_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = infantry_weapons
-			}
 		}
 		prerequisite = {
 			focus = UKR_artillery_tables
 		}
+		y = 6
+		icon = GFX_focus_generic_truck
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_supply_consumption_factor = -0.05
+				tooltip = UKR_army_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				UKR_army_army_fuel_consumption_factor = -0.08
+				tooltip = UKR_army_army_fuel_consumption_factor_tt
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 150
+				producer = ROOT
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_border_scouts
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 36
-		y = 4
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_max_planning = 0.0120
-				tooltip = UKR_army_max_planning_tt
-			}
-			army_experience = 15
 		}
 		prerequisite = {
 			focus = UKR_army_medical
 		}
+		y = 6
+		icon = GFX_focus_generic_infiltration
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_recon_factor = 0.15
+				tooltip = UKR_army_recon_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_border_scouts
+				bonus = .5
+				uses = 1
+				category = recon_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_army_signals
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 32
-		y = 5
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_army_org_factor = 0.0120
-				tooltip = UKR_army_army_org_factor_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_motorized_train
 		}
+		y = 7
+		icon = GFX_focus_generic_radio_communication
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_land_reinforce_rate = 0.02
+				tooltip = UKR_army_land_reinforce_rate_tt
+			}
+			add_tech_bonus = {
+				name = UKR_army_signals
+				bonus = .5
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_reserve_exercises
-		icon = GFX_focus_generic_army_doctrines_2
 		x = 36
-		y = 5
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_supply_consumption_factor = -0.0120
-				tooltip = UKR_army_supply_consumption_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = infantry_weapons
-			}
 		}
 		prerequisite = {
 			focus = UKR_border_scouts
 		}
-	}
-	focus = {
-		id = UKR_combined_operations
-		icon = GFX_focus_generic_army_doctrines_2
-		x = 32
-		y = 6
-		cost = 5
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
+		y = 7
+		icon = GFX_focus_generic_diverse_army
 		completion_reward = {
 			add_to_variable = {
-				UKR_army_max_planning = 0.0120
-				tooltip = UKR_army_max_planning_tt
-			}
-			army_experience = 15
-		}
-		prerequisite = {
-			focus = UKR_army_signals
-		}
-	}
-	focus = {
-		id = UKR_army_repair_network
-		icon = GFX_focus_generic_army_doctrines_2
-		x = 36
-		y = 6
-		cost = 5
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_army_org_factor = 0.0120
+				UKR_army_army_org_factor = 0.05
 				tooltip = UKR_army_army_org_factor_tt
 			}
-		}
-		prerequisite = {
-			focus = UKR_reserve_exercises
-		}
-	}
-	focus = {
-		id = UKR_prepared_defence
-		icon = GFX_focus_generic_army_doctrines_2
-		x = 34
-		y = 7
-		cost = 10
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_army_supply_consumption_factor = -0.0120
-				tooltip = UKR_army_supply_consumption_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = infantry_weapons
-			}
+			army_experience = 25
 			add_doctrine_cost_reduction = {
-				name = UKR_prepared_defence
-				cost_reduction = 0.35
+				name = UKR_reserve_exercises
+				cost_reduction = .5
 				uses = 1
 				category = land_doctrine
 			}
 		}
-		prerequisite = {
-			focus = UKR_combined_operations
-		}
-		prerequisite = {
-			focus = UKR_army_repair_network
-		}
-		available = {
-			has_completed_focus = UKR_guardians_of_the_steppe
-			has_completed_focus = UKR_army_depots
-			has_completed_focus = UKR_officer_school
-			has_completed_focus = UKR_rifle_standardization
-			has_completed_focus = UKR_field_engineers
-			has_completed_focus = UKR_artillery_tables
-			has_completed_focus = UKR_army_medical
-			has_completed_focus = UKR_motorized_train
-			has_completed_focus = UKR_border_scouts
-			has_completed_focus = UKR_army_signals
-			has_completed_focus = UKR_reserve_exercises
-			has_completed_focus = UKR_combined_operations
-			has_completed_focus = UKR_army_repair_network
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
-		id = UKR_air_service
-		icon = GFX_goal_generic_air_fighter
-		x = 44
-		y = 0
-		cost = 5
+		id = UKR_combined_operations
+		x = 32
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = UKR_army_signals
+		}
+		icon = GFX_focus_generic_combined_arms
 		completion_reward = {
 			add_to_variable = {
-				UKR_air_air_mission_efficiency = 0.0120
+				UKR_army_max_planning = 0.05
+				tooltip = UKR_army_max_planning_tt
+			}
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = UKR_combined_operations
+				cost_reduction = .5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		cost = 5
+		y = 9
+	}
+	focus = {
+		id = UKR_army_repair_network
+		x = 36
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = UKR_reserve_exercises
+		}
+		icon = GFX_focus_generic_industrial_experts
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_attrition = -0.1
+				tooltip = UKR_army_attrition_tt
+			}
+			add_tech_bonus = {
+				name = UKR_army_repair_network
+				bonus = .5
+				uses = 1
+				category = maintenance_company_tech
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 200
+				producer = ROOT
+			}
+		}
+		cost = 5
+		y = 9
+	}
+	focus = {
+		id = UKR_prepared_defence
+		x = 34
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_generic_advanced_military_studies
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_army_org_factor = 0.05
+				tooltip = UKR_army_army_org_factor_tt
+			}
+			add_to_variable = {
+				UKR_army_land_reinforce_rate = 0.02
+				tooltip = UKR_army_land_reinforce_rate_tt
+			}
+			army_experience = 30
+		}
+		prerequisite = {
+			focus = UKR_army_signals
+		}
+		prerequisite = {
+			focus = UKR_reserve_exercises
+		}
+		cost = 10
+		y = 8
+	}
+	focus = {
+		id = UKR_air_service
+		x = 44
+		y = 0
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_goal_generic_build_airforce
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_mission_efficiency = 0.03
 				tooltip = UKR_air_air_mission_efficiency_tt
 			}
+			air_experience = 20
 			if = {
 				limit = {
 					NOT = {
@@ -1389,49 +1513,55 @@ focus_tree = {
 				}
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_pilot_schools
-		icon = GFX_goal_generic_air_fighter
 		x = 42
-		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_interceptor_command
+			focus = UKR_assault_aviation
+		}
+		icon = GFX_focus_generic_pilot_training
 		completion_reward = {
 			add_to_variable = {
-				UKR_air_air_agility_factor = 0.0120
-				tooltip = UKR_air_air_agility_factor_tt
+				UKR_air_air_accidents_factor = -0.08
+				tooltip = UKR_air_air_accidents_factor_tt
 			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = light_fighter
+			air_experience = 25
+			add_ace = {
+				name = Mykola
+				surname = Horbenko
+				callsign = Dnipro
+				type = fighter_genius
 			}
 		}
-		prerequisite = {
-			focus = UKR_air_service
-		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_air_workshops
-		icon = GFX_goal_generic_air_fighter
 		x = 46
-		y = 1
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_interceptor_command
+			focus = UKR_assault_aviation
+		}
+		icon = GFX_focus_generic_aircraft_production
 		completion_reward = {
 			add_to_variable = {
-				UKR_air_air_accidents_factor = -0.0120
-				tooltip = UKR_air_air_accidents_factor_tt
+				UKR_air_air_attack_factor = 0.05
+				tooltip = UKR_air_air_attack_factor_tt
 			}
-			air_experience = 15
-			193 = {
+			202 = {
 				if = {
 					limit = {
 						is_owned_and_controlled_by = ROOT
@@ -1444,128 +1574,182 @@ focus_tree = {
 					}
 				}
 			}
+			add_tech_bonus = {
+				name = UKR_air_workshops
+				bonus = .5
+				uses = 1
+				category = light_air
+			}
 		}
-		prerequisite = {
-			focus = UKR_air_service
-		}
+		cost = 10
 	}
 	focus = {
 		id = UKR_air_observers
-		icon = GFX_goal_generic_air_fighter
 		x = 42
-		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_air_air_mission_efficiency = 0.0120
-				tooltip = UKR_air_air_mission_efficiency_tt
-			}
-			add_doctrine_cost_reduction = {
-				name = UKR_air_observers
-				cost_reduction = 0.35
-				uses = 1
-				category = air_doctrine
-			}
 		}
 		prerequisite = {
 			focus = UKR_pilot_schools
 		}
+		y = 4
+		icon = GFX_goal_generic_radar
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_interception_detect_factor = 0.15
+				tooltip = UKR_air_air_interception_detect_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_air_observers
+				bonus = .5
+				uses = 1
+				category = radar_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_fighter_patrols
-		icon = GFX_goal_generic_air_fighter
 		x = 46
-		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_air_air_agility_factor = 0.0120
-				tooltip = UKR_air_air_agility_factor_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = light_fighter
-			}
 		}
 		prerequisite = {
 			focus = UKR_air_workshops
 		}
+		y = 4
+		icon = GFX_focus_generic_swooping_falcon
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_agility_factor = 0.05
+				tooltip = UKR_air_air_agility_factor_tt
+			}
+			air_experience = 20
+			add_doctrine_cost_reduction = {
+				name = UKR_fighter_patrols
+				cost_reduction = .5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_ground_support
-		icon = GFX_goal_generic_air_fighter
 		x = 42
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_air_air_accidents_factor = -0.0120
-				tooltip = UKR_air_air_accidents_factor_tt
-			}
-			air_experience = 15
 		}
 		prerequisite = {
 			focus = UKR_air_observers
 		}
+		y = 5
+		icon = GFX_focus_generic_radio_communication
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_mission_efficiency = 0.07
+				tooltip = UKR_air_air_mission_efficiency_tt
+			}
+			add_tech_bonus = {
+				name = UKR_ground_support
+				bonus = .5
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_air_spares
-		icon = GFX_goal_generic_air_fighter
 		x = 46
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_air_air_mission_efficiency = 0.0120
-				tooltip = UKR_air_air_mission_efficiency_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_fighter_patrols
 		}
+		y = 5
+		icon = GFX_focus_generic_mass_production
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_accidents_factor = -0.05
+				tooltip = UKR_air_air_accidents_factor_tt
+			}
+			add_to_variable = {
+				UKR_air_air_fuel_consumption_factor = -0.08
+				tooltip = UKR_air_air_fuel_consumption_factor_tt
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = UKR_air_spares
+					bonus = .5
+					uses = 1
+					category = plane_modules_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = UKR_air_spares
+					bonus = .5
+					uses = 1
+					category = light_air
+				}
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_integrated_air_service
-		icon = GFX_goal_generic_air_fighter
 		x = 44
-		y = 4
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		y = 6
+		icon = GFX_focus_generic_air_partners
 		completion_reward = {
 			add_to_variable = {
-				UKR_air_air_agility_factor = 0.0120
-				tooltip = UKR_air_air_agility_factor_tt
+				UKR_air_air_mission_efficiency = 0.05
+				tooltip = UKR_air_air_mission_efficiency_tt
 			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = light_fighter
+			add_to_variable = {
+				UKR_air_air_range_factor = 0.08
+				tooltip = UKR_air_air_range_factor_tt
 			}
+			air_experience = 30
 			add_doctrine_cost_reduction = {
 				name = UKR_integrated_air_service
-				cost_reduction = 0.35
-				uses = 1
+				cost_reduction = .5
+				uses = 2
 				category = air_doctrine
+			}
+			if = {
+				limit = {
+					has_completed_focus = UKR_assault_aviation
+				}
+				add_mastery_bonus = {
+					bonus = 0.1
+					days = 240
+					track = strike_aircraft
+					name = UKR_integrated_air_service
+				}
+			}
+			else = {
+				add_mastery_bonus = {
+					bonus = 0.1
+					days = 240
+					track = fighter_aircraft
+					name = UKR_integrated_air_service
+				}
 			}
 		}
 		prerequisite = {
@@ -1574,33 +1758,23 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_air_spares
 		}
-		available = {
-			has_completed_focus = UKR_air_service
-			has_completed_focus = UKR_pilot_schools
-			has_completed_focus = UKR_air_workshops
-			has_completed_focus = UKR_air_observers
-			has_completed_focus = UKR_fighter_patrols
-			has_completed_focus = UKR_ground_support
-			has_completed_focus = UKR_air_spares
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cost = 10
 	}
 	focus = {
 		id = UKR_odessa_naval_service
-		icon = GFX_goal_generic_build_navy
 		x = 54
 		y = 0
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		icon = GFX_focus_generic_black_sea_focus
 		completion_reward = {
 			add_to_variable = {
-				UKR_navy_convoy_escort_efficiency = 0.0120
-				tooltip = UKR_navy_convoy_escort_efficiency_tt
+				UKR_navy_naval_defense_factor = 0.04
+				tooltip = UKR_navy_naval_defense_factor_tt
 			}
+			navy_experience = 20
 			if = {
 				limit = {
 					NOT = {
@@ -1614,25 +1788,32 @@ focus_tree = {
 				}
 			}
 		}
+		cost = 5
+		available = {
+			192 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = UKR_odessa_shipyards
-		icon = GFX_goal_generic_build_navy
 		x = 52
-		y = 1
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_merchant_escorts
+			focus = UKR_sea_denial
+		}
+		icon = GFX_goal_generic_construct_naval_dockyard
 		completion_reward = {
 			add_to_variable = {
-				UKR_navy_naval_detection = 0.0120
-				tooltip = UKR_navy_naval_detection_tt
-			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = dd_tech
+				UKR_navy_industrial_capacity_dockyard = 0.08
+				tooltip = UKR_navy_industrial_capacity_dockyard_tt
 			}
 			192 = {
 				if = {
@@ -1648,149 +1829,215 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = UKR_odessa_naval_service
-		}
 		cost = 10
+		available = {
+			192 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = UKR_naval_crew_school
-		icon = GFX_goal_generic_build_navy
 		x = 56
-		y = 1
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		y = 3
+		prerequisite = {
+			focus = UKR_merchant_escorts
+			focus = UKR_sea_denial
+		}
+		icon = GFX_focus_generic_naval_discipline
 		completion_reward = {
 			add_to_variable = {
-				UKR_navy_naval_defense_factor = 0.0120
-				tooltip = UKR_navy_naval_defense_factor_tt
+				UKR_navy_naval_coordination = 0.08
+				tooltip = UKR_navy_naval_coordination_tt
 			}
-			navy_experience = 15
-		}
-		prerequisite = {
-			focus = UKR_odessa_naval_service
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = UKR_naval_crew_school
+				cost_reduction = .5
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 		cost = 5
 	}
 	focus = {
 		id = UKR_coastal_watch
-		icon = GFX_goal_generic_build_navy
 		x = 52
-		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_navy_convoy_escort_efficiency = 0.0120
-				tooltip = UKR_navy_convoy_escort_efficiency_tt
-			}
-			add_doctrine_cost_reduction = {
-				name = UKR_coastal_watch
-				cost_reduction = 0.35
-				uses = 1
-				category = naval_doctrine
-			}
 		}
 		prerequisite = {
 			focus = UKR_odessa_shipyards
 		}
-	}
-	focus = {
-		id = UKR_convoy_escort
-		icon = GFX_goal_generic_build_navy
-		x = 56
-		y = 2
-		cost = 5
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
-		}
+		y = 4
+		icon = GFX_goal_generic_radar
 		completion_reward = {
 			add_to_variable = {
-				UKR_navy_naval_detection = 0.0120
+				UKR_navy_naval_detection = 0.15
 				tooltip = UKR_navy_naval_detection_tt
 			}
 			add_tech_bonus = {
-				bonus = 0.35
+				name = UKR_coastal_watch
+				bonus = .5
 				uses = 1
-				category = dd_tech
+				category = radar_tech
 			}
+		}
+		cost = 5
+	}
+	focus = {
+		id = UKR_convoy_escort
+		x = 56
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
 		prerequisite = {
 			focus = UKR_naval_crew_school
 		}
+		y = 4
+		icon = GFX_goal_generic_navy_anti_submarine
+		completion_reward = {
+			add_to_variable = {
+				UKR_navy_navy_submarine_detection_factor = 0.15
+				tooltip = UKR_navy_navy_submarine_detection_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_convoy_escort
+				bonus = .5
+				uses = 1
+				category = asw_tech
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_naval_minesweepers
-		icon = GFX_goal_generic_build_navy
 		x = 52
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_navy_naval_defense_factor = 0.0120
-				tooltip = UKR_navy_naval_defense_factor_tt
-			}
-			navy_experience = 15
 		}
 		prerequisite = {
 			focus = UKR_coastal_watch
 		}
+		y = 5
+		icon = GFX_focus_generic_mine_warfare
+		completion_reward = {
+			add_to_variable = {
+				UKR_navy_mines_sweeping_by_fleets_factor = 0.3
+				tooltip = UKR_navy_mines_sweeping_by_fleets_factor_tt
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = UKR_naval_minesweepers
+					bonus = .5
+					uses = 1
+					category = naval_minesweeping
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = UKR_naval_minesweepers
+					bonus = .5
+					uses = 1
+					category = dd_tech
+				}
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_naval_logistics
-		icon = GFX_goal_generic_build_navy
 		x = 56
-		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_to_variable = {
-				UKR_navy_convoy_escort_efficiency = 0.0120
-				tooltip = UKR_navy_convoy_escort_efficiency_tt
-			}
 		}
 		prerequisite = {
 			focus = UKR_convoy_escort
 		}
+		y = 5
+		icon = GFX_focus_generic_refit_civilian_ships
+		completion_reward = {
+			add_to_variable = {
+				UKR_navy_repair_speed_factor = 0.15
+				tooltip = UKR_navy_repair_speed_factor_tt
+			}
+			add_to_variable = {
+				UKR_navy_navy_fuel_consumption_factor = -0.1
+				tooltip = UKR_navy_navy_fuel_consumption_factor_tt
+			}
+			192 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = fuel_silo
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		cost = 5
 	}
 	focus = {
 		id = UKR_safe_trade_routes
-		icon = GFX_goal_generic_build_navy
 		x = 54
-		y = 4
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		y = 6
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		completion_reward = {
 			add_to_variable = {
-				UKR_navy_naval_detection = 0.0120
-				tooltip = UKR_navy_naval_detection_tt
+				UKR_navy_naval_defense_factor = 0.06
+				tooltip = UKR_navy_naval_defense_factor_tt
 			}
-			add_tech_bonus = {
-				bonus = 0.35
-				uses = 1
-				category = dd_tech
+			add_to_variable = {
+				UKR_navy_naval_coordination = 0.07
+				tooltip = UKR_navy_naval_coordination_tt
 			}
+			navy_experience = 30
 			add_doctrine_cost_reduction = {
 				name = UKR_safe_trade_routes
-				cost_reduction = 0.35
-				uses = 1
+				cost_reduction = .5
+				uses = 2
 				category = naval_doctrine
+			}
+			if = {
+				limit = {
+					has_completed_focus = UKR_sea_denial
+				}
+				add_mastery_bonus = {
+					bonus = 0.1
+					days = 240
+					track = submarines
+					name = UKR_safe_trade_routes
+				}
+			}
+			else = {
+				add_mastery_bonus = {
+					bonus = 0.1
+					days = 240
+					track = screens
+					name = UKR_safe_trade_routes
+				}
 			}
 		}
 		prerequisite = {
@@ -1799,23 +2046,10 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_naval_logistics
 		}
-		available = {
-			has_completed_focus = UKR_odessa_naval_service
-			has_completed_focus = UKR_odessa_shipyards
-			has_completed_focus = UKR_naval_crew_school
-			has_completed_focus = UKR_coastal_watch
-			has_completed_focus = UKR_convoy_escort
-			has_completed_focus = UKR_naval_minesweepers
-			has_completed_focus = UKR_naval_logistics
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cost = 10
 	}
 	focus = {
 		id = UKR_friends_in_moscow
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 62
-		y = 0
 		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
@@ -1840,12 +2074,12 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 60
+		y = 0
+		icon = GFX_goal_generic_scientific_exchange
 	}
 	focus = {
 		id = UKR_polish_trade
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 62
-		y = 1
 		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
@@ -1860,9 +2094,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = UKR_friends_in_moscow
-		}
 		available = {
 			POL = {
 				exists = yes
@@ -1873,29 +2104,27 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 64
+		y = 0
+		icon = GFX_goal_generic_trade
 	}
 	focus = {
 		id = UKR_the_makhno_question
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 62
-		y = 2
 		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		x = 68
+		y = 0
+		icon = GFX_focus_generic_conference
 		completion_reward = {
-			add_political_power = 25
-		}
-		prerequisite = {
-			focus = UKR_polish_trade
+			add_political_power = 75
+			add_command_power = 20
 		}
 	}
 	focus = {
 		id = UKR_border_compact
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 62
-		y = 3
 		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
@@ -1923,6 +2152,9 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 68
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
 	}
 	default = no
 	initial_show_position = {
@@ -1931,5 +2163,273 @@ focus_tree = {
 	continuous_focus_position = {
 		x = 900
 		y = 2600
+	}
+
+	focus = {
+		id = UKR_grain_exports
+		x = 20
+		y = 1
+		prerequisite = {
+			focus = UKR_dnieper_industry
+		}
+		mutually_exclusive = {
+			focus = UKR_domestic_grain
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_focus_generic_merchant_fleet
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_trade_opinion_factor = 0.15
+				tooltip = UKR_economy_trade_opinion_factor_tt
+			}
+			add_to_variable = {
+				UKR_economy_production_factory_max_efficiency_factor = 0.05
+				tooltip = UKR_economy_production_factory_max_efficiency_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_grain_exports
+				bonus = .5
+				uses = 1
+				category = cat_production
+			}
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_domestic_grain
+		x = 24
+		y = 1
+		prerequisite = {
+			focus = UKR_dnieper_industry
+		}
+		mutually_exclusive = {
+			focus = UKR_grain_exports
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_focus_generic_price_controls
+		completion_reward = {
+			add_to_variable = {
+				UKR_economy_consumer_goods_factor = -0.05
+				tooltip = UKR_economy_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				UKR_economy_factory_energy_consumption = -0.05
+				tooltip = UKR_economy_factory_energy_consumption_tt
+			}
+			add_stability = .04
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_defence_in_depth
+		x = 32
+		y = 1
+		prerequisite = {
+			focus = UKR_guardians_of_the_steppe
+		}
+		mutually_exclusive = {
+			focus = UKR_mobile_reserves
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_focus_generic_home_defense
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_max_dig_in = 3.0
+				tooltip = UKR_army_max_dig_in_tt
+			}
+			add_to_variable = {
+				UKR_army_modifier_army_sub_unit_infantry_defence_factor = 0.08
+				tooltip = UKR_army_modifier_army_sub_unit_infantry_defence_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_defence_in_depth
+				bonus = .5
+				uses = 1
+				category = engineers_tech
+			}
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_mobile_reserves
+		x = 36
+		y = 1
+		prerequisite = {
+			focus = UKR_guardians_of_the_steppe
+		}
+		mutually_exclusive = {
+			focus = UKR_defence_in_depth
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_focus_generic_mechanized
+		completion_reward = {
+			add_to_variable = {
+				UKR_army_army_speed_factor = 0.08
+				tooltip = UKR_army_army_speed_factor_tt
+			}
+			add_to_variable = {
+				UKR_army_org_loss_when_moving = -0.1
+				tooltip = UKR_army_org_loss_when_moving_tt
+			}
+			add_tech_bonus = {
+				name = UKR_mobile_reserves
+				bonus = .75
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_interceptor_command
+		x = 42
+		y = 1
+		prerequisite = {
+			focus = UKR_air_service
+		}
+		mutually_exclusive = {
+			focus = UKR_assault_aviation
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_goal_generic_air_fighter
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_intercept_efficiency = 0.15
+				tooltip = UKR_air_air_intercept_efficiency_tt
+			}
+			add_to_variable = {
+				UKR_air_air_agility_factor = 0.08
+				tooltip = UKR_air_air_agility_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_interceptor_command
+				bonus = .75
+				uses = 1
+				category = light_fighter
+			}
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_assault_aviation
+		x = 46
+		y = 1
+		prerequisite = {
+			focus = UKR_air_service
+		}
+		mutually_exclusive = {
+			focus = UKR_interceptor_command
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_focus_generic_cas_aircraft
+		completion_reward = {
+			add_to_variable = {
+				UKR_air_air_cas_efficiency = 0.2
+				tooltip = UKR_air_air_cas_efficiency_tt
+			}
+			add_tech_bonus = {
+				name = UKR_assault_aviation
+				bonus = .75
+				uses = 1
+				category = cas_bomber
+			}
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_merchant_escorts
+		x = 52
+		y = 1
+		prerequisite = {
+			focus = UKR_odessa_naval_service
+		}
+		mutually_exclusive = {
+			focus = UKR_sea_denial
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_focus_generic_escort_efficiency
+		completion_reward = {
+			add_to_variable = {
+				UKR_navy_convoy_escort_efficiency = 0.2
+				tooltip = UKR_navy_convoy_escort_efficiency_tt
+			}
+			add_to_variable = {
+				UKR_navy_screening_efficiency = 0.1
+				tooltip = UKR_navy_screening_efficiency_tt
+			}
+			add_tech_bonus = {
+				name = UKR_merchant_escorts
+				bonus = .75
+				uses = 1
+				category = dd_tech
+			}
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 20
+				producer = ROOT
+			}
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = UKR_sea_denial
+		x = 56
+		y = 1
+		prerequisite = {
+			focus = UKR_odessa_naval_service
+		}
+		mutually_exclusive = {
+			focus = UKR_merchant_escorts
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		icon = GFX_goal_generic_navy_submarine
+		completion_reward = {
+			add_to_variable = {
+				UKR_navy_convoy_raiding_efficiency_factor = 0.2
+				tooltip = UKR_navy_convoy_raiding_efficiency_factor_tt
+			}
+			add_to_variable = {
+				UKR_navy_naval_torpedo_hit_chance_factor = 0.08
+				tooltip = UKR_navy_naval_torpedo_hit_chance_factor_tt
+			}
+			add_tech_bonus = {
+				name = UKR_sea_denial
+				bonus = .75
+				uses = 1
+				category = ss_tech
+			}
+		}
+		cost = 5
 	}
 }
