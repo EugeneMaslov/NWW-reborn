@@ -1,1 +1,1 @@
-MKN_public_mandate = { icon = generic_political_actions allowed = { original_tag = MKN } visible = { has_completed_focus = MKN_soviet_press } }
+MKN_public_mandate = { icon = generic_political_actions allowed = { original_tag = MKN } visible = { OR = { has_completed_focus = MKN_congress_1936 has_completed_focus = MKN_soviet_press } } }

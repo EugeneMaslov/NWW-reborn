@@ -489,7 +489,6 @@ nww_mkn_rebuild_industry = {
 		MKN_federal_republic
 		MKN_imperial_administration
 		MKN_planned_economy
-
 		MKN_accountable_militias
 		MKN_anarchic_economy_idea
 		MKN_artel_logistics
@@ -517,9 +516,84 @@ nww_mkn_rebuild_industry = {
 		modifier = MKN_free_industry_modifier
 	}
 	set_country_flag = MKN_industry_unified_v2
+	if = {
+		limit = {
+			has_completed_focus = MKN_militarize_communes
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_standardize_workshops
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.15
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_autonomous_rail_crews
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_sever_urban_ties
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tractors_for_grain
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.1
+		}
+	}
 }
 nww_mkn_rebuild_services = {
-	set_variable = { MKN_army_war_support_factor = 0 }
+	set_variable = {
+		MKN_army_enemy_attrition = 0
+	}
+	set_variable = {
+		MKN_army_motorized_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_enemy_army_bonus_air_superiority_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_defence_factor = 0
+	}
+	set_variable = {
+		MKN_army_resistance_damage_to_garrison_on_our_occupied_states = 0
+	}
+	set_variable = {
+		MKN_army_army_core_defence_factor = 0
+	}
+	set_variable = {
+		MKN_army_send_volunteers_tension = 0
+	}
+	set_variable = {
+		MKN_army_send_volunteer_size = 0
+	}
+	set_variable = {
+		MKN_army_breakthrough_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_war_support_factor = 0
+	}
 	set_variable = {
 		MKN_army_army_armor_attack_factor = 0
 	}
@@ -1814,7 +1888,6 @@ nww_mkn_rebuild_services = {
 	}
 	remove_ideas = {
 		MKN_military_directory
-
 		MKN_tachanka_warfare
 		MKN_railway_guards
 		MKN_steel_horses_idea
@@ -1825,4 +1898,127 @@ nww_mkn_rebuild_services = {
 		MKN_black_swarm_idea
 	}
 	set_country_flag = MKN_services_redesign_v4
+	if = {
+		limit = {
+			has_completed_focus = MKN_abolish_election_of_commanders
+		}
+		add_to_variable = {
+			MKN_army_planning_speed = 0.1
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_militarize_communes
+		}
+		add_to_variable = {
+			MKN_army_recruitable_population = 0.01
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_iron_fist_trains
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_the_black_horde
+		}
+		add_to_variable = {
+			MKN_army_army_attack_factor = 0.25
+		}
+		add_to_variable = {
+			MKN_army_breakthrough_factor = 0.3
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_abolish_general_staff
+		}
+		add_to_variable = {
+			MKN_army_land_reinforce_rate = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_arms_to_the_people
+		}
+		add_to_variable = {
+			MKN_army_recruitable_population = 0.01
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_international
+		}
+		add_to_variable = {
+			MKN_army_send_volunteer_size = 3
+		}
+		add_to_variable = {
+			MKN_army_send_volunteers_tension = -0.5
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_beacon_of_statelessness
+		}
+		add_to_variable = {
+			MKN_army_army_core_defence_factor = 0.35
+		}
+		add_to_variable = {
+			MKN_army_resistance_damage_to_garrison_on_our_occupied_states = 0.75
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_snipers
+		}
+		add_to_variable = {
+			MKN_army_army_defence_factor = 0.15
+		}
+		add_to_variable = {
+			MKN_army_recon_factor = 0.2
+		}
+		add_to_variable = {
+			MKN_army_enemy_army_bonus_air_superiority_factor = -0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_cavalry_ambush
+		}
+		add_to_variable = {
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.3
+		}
+		add_to_variable = {
+			MKN_army_motorized_attack_factor = 0.3
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_impregnable_granary
+		}
+		add_to_variable = {
+			MKN_army_army_core_defence_factor = 0.5
+		}
+		add_to_variable = {
+			MKN_army_enemy_attrition = 0.4
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_red_military_specialists
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.15
+		}
+		add_to_variable = {
+			MKN_army_planning_speed = 0.15
+		}
+	}
 }

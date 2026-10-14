@@ -6,11 +6,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 80
-	neutrality = 20
+	communism = 25
+	democratic = 25
+	fascism = 25
+	neutrality = 25
 }
 add_ideas = {
 	MKN_free_territory
+	MKN_decaying_batko
+	MKN_steppes_freedom
+	MKN_cult_of_railways
 }
 create_country_leader = {
 	name = "Nestor Makhno"
@@ -83,4 +88,4 @@ recruit_character = NWW_MKN_ivan_bondarenko
 
 recruit_character = NWW_MKN_serhii_melnyk
 
-set_power_balance = { id = MKN_power_balance set_value = 0 }
+set_country_flag = MKN_crisis_enabled
