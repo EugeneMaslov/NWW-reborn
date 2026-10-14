@@ -1,0 +1,10 @@
+# State scope: only actual UKR-owned border factories suffer agitation.
+# 1.19.3 has no state factory-output modifier; local_factories reduces available
+# local capacity (SEA_dynamic_modifiers.txt), rather than a country-wide penalty.
+MKN_ukr_miners_state_disruption = {
+ enable = {
+  is_owned_by = UKR
+  MKN = { exists = yes NOT = { has_country_flag = mkn_ukr_frontier_concluded } }
+ }
+ local_factories = -0.10
+}

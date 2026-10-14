@@ -23,13 +23,32 @@ country_event = {
 	trigger = {
 		tag = MKN
 		date > 1938.1.1
-		UKR = { exists = yes has_war = no }
-		NOT = { has_war_with = UKR }
-		NOT = { is_ally_with = UKR }
-		NOT = { has_global_flag = MKN_kiev_quarrel }
-		NOT = { has_country_flag = UKR_MKN_border_settled }
+		UKR = {
+			exists = yes
+			has_war = no
+		}
+		NOT = {
+			has_war_with = UKR
+		}
+		NOT = {
+			is_ally_with = UKR
+		}
+		NOT = {
+			has_global_flag = MKN_kiev_quarrel
+		}
+		NOT = {
+			has_country_flag = UKR_MKN_border_settled
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_initialized
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
 	}
-	mean_time_to_happen = { days = 120 }
+	mean_time_to_happen = {
+		days = 120
+	}
 	fire_only_once = yes
 	option = {
 		name = mkn.2.a
@@ -38,7 +57,28 @@ country_event = {
 		set_global_flag = MKN_kiev_quarrel
 		UKR = {
 			if = {
-				limit = { MKN = { exists = yes } NOT = { is_ally_with = MKN } NOT = { has_war_with = MKN } }
+				limit = {
+					MKN = {
+						exists = yes
+					}
+					NOT = {
+						is_ally_with = MKN
+					}
+					NOT = {
+						has_war_with = MKN
+					}
+					MKN = {
+						NOT = {
+							has_country_flag = mkn_ukr_frontier_initialized
+						}
+						NOT = {
+							has_country_flag = mkn_ukr_frontier_concluded
+						}
+						NOT = {
+							has_country_flag = UKR_MKN_border_settled
+						}
+					}
+				}
 				declare_war_on = {
 					target = MKN
 					type = puppet_wargoal_focus
@@ -75,7 +115,9 @@ country_event = {
 	desc = mkn.4.d
 	picture = GFX_report_event_gathering_protest
 	is_triggered_only = yes
-	trigger = { tag = UKR }
+	trigger = {
+		tag = UKR
+	}
 	option = {
 		name = mkn.4.a
 		add_political_power = -50
@@ -83,9 +125,26 @@ country_event = {
 		if = {
 			limit = {
 				has_global_flag = MKN_ukr_angered
-				MKN = { exists = yes }
-				NOT = { has_war_with = MKN }
-				NOT = { is_ally_with = MKN }
+				MKN = {
+					exists = yes
+				}
+				NOT = {
+					has_war_with = MKN
+				}
+				NOT = {
+					is_ally_with = MKN
+				}
+				MKN = {
+					NOT = {
+						has_country_flag = mkn_ukr_frontier_initialized
+					}
+					NOT = {
+						has_country_flag = mkn_ukr_frontier_concluded
+					}
+					NOT = {
+						has_country_flag = UKR_MKN_border_settled
+					}
+				}
 			}
 			declare_war_on = {
 				target = MKN
@@ -100,13 +159,8 @@ country_event = {
 	id = mkn.5
 	hidden = yes
 	is_triggered_only = yes
-	option = {
-		name = mkn.5.a
-		trigger = { tag = MKN }
-		every_owned_state = {
-			limit = { NOT = { is_core_of = MKN } }
-			add_core_of = MKN
-		}
+	immediate = {
+		mkn_ukr_border_victory = yes
 	}
 }
 
@@ -115,8 +169,26 @@ country_event = {
 	id = mkn.6
 	hidden = yes
 	is_triggered_only = yes
-	option = {
-		name = mkn.6.a
+	immediate = {
+		if = {
+			limit = {
+				tag = MKN
+				FROM.FROM = {
+					tag = UKR
+				}
+				FROM = {
+					is_owned_by = UKR
+				}
+			}
+			FROM = {
+				MKN = {
+					set_variable = {
+						mkn_ukr_last_contested_state = PREV
+					}
+				}
+			}
+			mkn_ukr_record_border_battle = yes
+		}
 	}
 }
 

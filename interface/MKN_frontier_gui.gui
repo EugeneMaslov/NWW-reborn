@@ -1,0 +1,142 @@
+# BBA war_escalation_scripted_gui.gui pattern: embedded category status panel.
+# The original native decision controls follow this panel and pay their own costs.
+guiTypes = {
+	containerWindowType = {
+		name = "MKN_frontier_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 246 }
+
+		iconType = {
+			name = "MKN_frontier_emblem"
+			spriteType = "GFX_icon_frontier_ukr"
+			position = { x = 8 y = 2 }
+			pdx_tooltip = MKN_frontier_meter_tt
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_header"
+			position = { x = 76 y = 8 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_gui_title"
+			format = left
+			maxWidth = 365
+			maxHeight = 26
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_current_level_text"
+			position = { x = 76 y = 36 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_current_level"
+			format = left
+			maxWidth = 365
+			maxHeight = 26
+			pdx_tooltip = MKN_frontier_meter_tt
+		}
+
+		iconType = {
+			name = "MKN_frontier_meter"
+			spriteType = "GFX_frontier_escalation_meter"
+			position = { x = 30 y = 83 }
+			pdx_tooltip = MKN_frontier_meter_tt
+		}
+		iconType = {
+			name = "MKN_frontier_marker_1"
+			spriteType = "GFX_frontier_stage_marker"
+			position = { x = 60 y = 65 }
+		}
+		iconType = {
+			name = "MKN_frontier_marker_2"
+			spriteType = "GFX_frontier_stage_marker"
+			position = { x = 138 y = 65 }
+		}
+		iconType = {
+			name = "MKN_frontier_marker_3"
+			spriteType = "GFX_frontier_stage_marker"
+			position = { x = 216 y = 65 }
+		}
+		iconType = {
+			name = "MKN_frontier_marker_4"
+			spriteType = "GFX_frontier_stage_marker"
+			position = { x = 294 y = 65 }
+		}
+		iconType = {
+			name = "MKN_frontier_marker_5"
+			spriteType = "GFX_frontier_stage_marker"
+			position = { x = 372 y = 65 }
+		}
+
+		instantTextBoxType = {
+			name = "MKN_frontier_stage_text_1"
+			position = { x = 14 y = 125 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_stage_1"
+			format = center
+			maxWidth = 434
+			maxHeight = 26
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_stage_text_2"
+			position = { x = 14 y = 125 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_stage_2"
+			format = center
+			maxWidth = 434
+			maxHeight = 26
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_stage_text_3"
+			position = { x = 14 y = 125 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_stage_3"
+			format = center
+			maxWidth = 434
+			maxHeight = 26
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_stage_text_4"
+			position = { x = 14 y = 125 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_stage_4"
+			format = center
+			maxWidth = 434
+			maxHeight = 26
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_stage_text_5"
+			position = { x = 14 y = 125 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_stage_5"
+			format = center
+			maxWidth = 434
+			maxHeight = 26
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_war_locked_status"
+			position = { x = 14 y = 155 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_war_locked_tt"
+			format = center
+			maxWidth = 434
+			maxHeight = 46
+			pdx_tooltip = MKN_frontier_war_locked_tt
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_frozen_status"
+			position = { x = 14 y = 155 }
+			font = "hoi_18mbs"
+			text = "MKN_frontier_frozen_tt"
+			format = center
+			maxWidth = 434
+			maxHeight = 46
+			pdx_tooltip = MKN_frontier_frozen_tt
+		}
+		instantTextBoxType = {
+			name = "MKN_frontier_orders_hint"
+			position = { x = 14 y = 208 }
+			font = "hoi_16mbs"
+			text = "MKN_frontier_native_orders_hint"
+			format = center
+			maxWidth = 434
+			maxHeight = 36
+		}
+	}
+}

@@ -1,0 +1,16 @@
+# Country-independent daily pulse includes Dxx countries created by civil war.
+# Explicit iteration also works when the daily pulse has no country ROOT.
+on_actions = {
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					original_tag = MKN
+					has_country_flag = MKN_collapse_started
+					has_country_flag = MKN_collapse_participant
+				}
+				MKN_repair_soviet_intervention = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,298 @@
+MKN_ukr_border_category = {
+	mkn_escalate_steppe_alarm = {
+		icon = frontier_ukr
+		cost = mkn_ukr_alarm_cost
+		days_re_enable = 14
+		available = {
+			mkn_ukr_frontier_action_available = yes
+			check_variable = {
+				mkn_ukr_escalation_level < 5
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				mkn_ukr_escalation_level = 1
+			}
+			clamp_variable = {
+				var = mkn_ukr_escalation_level
+				min = 1
+				max = 5
+			}
+			remove_ideas = MKN_border_relaxation_debuff
+			add_timed_idea = {
+				idea = MKN_border_fury_buff
+				days = 14
+			}
+			mkn_ukr_check_escalation = yes
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				check_variable = {
+					mkn_consecutive_border_wars >= 2
+				}
+			}
+		}
+	}
+	mkn_deescalate_pull_back = {
+		icon = frontier_ukr
+		cost = mkn_ukr_pullback_cost
+		days_re_enable = 30
+		available = {
+			mkn_ukr_frontier_action_available = yes
+			check_variable = {
+				mkn_ukr_escalation_level > 1
+			}
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				mkn_ukr_escalation_level = 1
+			}
+			clamp_variable = {
+				var = mkn_ukr_escalation_level
+				min = 1
+				max = 5
+			}
+			remove_ideas = MKN_border_fury_buff
+			add_timed_idea = {
+				idea = MKN_border_relaxation_debuff
+				days = 90
+			}
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+	mkn_raid_soviet_depots = {
+		icon = frontier_ukr
+		cost = mkn_ukr_depot_cost
+		days_re_enable = 45
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = UKR
+				any_neighbor_state = {
+					is_owned_and_controlled_by = MKN
+				}
+			}
+		}
+		available = {
+			mkn_ukr_frontier_action_available = yes
+			FROM = {
+				is_owned_and_controlled_by = UKR
+			}
+			check_variable = {
+				mkn_ukr_escalation_level >= 1
+			}
+			UKR = {
+				has_equipment = {
+					infantry_equipment > 399
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = UKR
+					}
+					UKR = {
+						has_equipment = {
+							infantry_equipment > 399
+						}
+					}
+				}
+				UKR = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -400
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 400
+					producer = UKR
+				}
+				FROM = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				add_to_variable = {
+					mkn_ukr_escalation_level = 1
+				}
+				clamp_variable = {
+					var = mkn_ukr_escalation_level
+					min = 1
+					max = 5
+				}
+				mkn_ukr_check_escalation = yes
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	mkn_launch_border_battle = {
+		icon = frontier_ukr
+		cost = mkn_ukr_battle_cost
+		days_re_enable = 30
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = UKR
+				has_border_war = no
+				any_neighbor_state = {
+					is_owned_and_controlled_by = MKN
+					has_border_war = no
+				}
+			}
+		}
+		available = {
+			mkn_ukr_frontier_action_available = yes
+			FROM = {
+				is_owned_and_controlled_by = UKR
+				has_border_war = no
+			}
+			check_variable = {
+				mkn_ukr_escalation_level >= 3
+			}
+			check_variable = {
+				num_owned_states > 1
+			}
+			UKR = {
+				check_variable = {
+					num_owned_states > 1
+				}
+			}
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_border_war = no
+				any_neighbor_state = {
+					state = FROM
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = mkn_ukr_border_battle_active
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_border_war = no
+					any_neighbor_state = {
+						state = FROM
+					}
+				}
+				save_event_target_as = mkn_ukr_border_attacker_state
+			}
+			set_variable = {
+				mkn_ukr_attacking_state = event_target:mkn_ukr_border_attacker_state
+			}
+			set_variable = {
+				mkn_ukr_defending_state = FROM
+			}
+			if = {
+				limit = {
+					has_country_flag = mkn_ukr_first_shot
+				}
+				start_border_war = {
+					change_state_after_war = no
+					minimum_duration_in_days = 30
+					attacker = {
+						state = event_target:mkn_ukr_border_attacker_state
+						num_provinces = 1
+						modifier = 0.15
+						on_win = mkn_ukr_border.20
+						on_lose = mkn_ukr_border.21
+						on_cancel = mkn_ukr_border.23
+					}
+					defender = {
+						state = FROM
+						num_provinces = 1
+						on_win = mkn_ukr_border.22
+						on_lose = mkn_ukr_border.22
+						on_cancel = mkn_ukr_border.22
+					}
+				}
+			}
+			else = {
+				start_border_war = {
+					change_state_after_war = no
+					minimum_duration_in_days = 30
+					attacker = {
+						state = event_target:mkn_ukr_border_attacker_state
+						num_provinces = 1
+						on_win = mkn_ukr_border.20
+						on_lose = mkn_ukr_border.21
+						on_cancel = mkn_ukr_border.23
+					}
+					defender = {
+						state = FROM
+						num_provinces = 1
+						on_win = mkn_ukr_border.22
+						on_lose = mkn_ukr_border.22
+						on_cancel = mkn_ukr_border.22
+					}
+				}
+			}
+			custom_effect_tooltip = MKN_frontier_core_integration_tt
+		}
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 0
+				check_variable = {
+					mkn_consecutive_border_wars >= 2
+				}
+			}
+		}
+	}
+	mkn_sign_kharkiv_pact = {
+		icon = frontier_ukr
+		cost = mkn_ukr_pact_cost
+		days_re_enable = 90
+		available = {
+			mkn_ukr_frontier_action_available = yes
+			check_variable = {
+				mkn_ukr_escalation_level <= 1
+			}
+			mkn_ukr_priority_states_held = yes
+		}
+		complete_effect = {
+			set_country_flag = mkn_ukr_pact_pending
+			UKR = {
+				country_event = {
+					id = mkn_ukr_border.3
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	MKN_frontier_year_countdown_mission = {
+		icon = frontier_ukr
+		allowed = {
+			tag = MKN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = mkn_frontier_year_running
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 365
+		timeout_effect = {
+			mkn_ukr_year_timeout = yes
+		}
+	}
+}

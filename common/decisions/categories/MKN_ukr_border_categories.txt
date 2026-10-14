@@ -1,0 +1,14 @@
+MKN_ukr_border_category = {
+	icon = GFX_decision_category_frontier_ukr
+	scripted_gui = MKN_frontier_decision_ui
+	allowed = {
+		tag = MKN
+	}
+	priority = 95
+	visible = {
+		OR = {
+			has_country_flag = mkn_frontier_conflict_active
+			has_country_flag = mkn_ukr_frontier_unlocked
+		}
+	}
+}

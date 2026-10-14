@@ -8005,4 +8005,7 @@ focus_tree = {
 			has_country_flag = MKN_crisis_enabled
 		}
 	}
+	shared_focus = MKN_ukrainian_frontier_root
+	shared_focus = MKN_conclude_total_war
+	shared_focus = MKN_conclude_kharkiv_treaty
 }

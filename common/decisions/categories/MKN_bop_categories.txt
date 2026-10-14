@@ -17,3 +17,16 @@ MKN_steppe_operations_category = {
   OR = { has_completed_focus = MKN_black_expansionism has_completed_focus = MKN_propaganda_by_deed has_completed_focus = MKN_railway_sabotage has_completed_focus = MKN_black_international has_completed_focus = MKN_embassy_to_kharkov }
  }
 }
+
+MKN_soviet_intervention_category = {
+	icon = GFX_decision_generic_military
+	allowed = { original_tag = MKN }
+	visible = {
+		has_country_flag = MKN_collapse_started
+		has_country_flag = MKN_collapse_participant
+		has_country_flag = MKN_soviet_intervention_initialized
+		NOT = { has_country_flag = MKN_soviet_intervention_resolved }
+		NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+		NOT = { has_global_flag = MKN_collapse_reunified }
+	}
+}

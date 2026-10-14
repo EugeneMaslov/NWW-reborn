@@ -1,0 +1,211 @@
+# MKN owns this intervention; only the four-way crisis explicitly enrolls tags.
+# References: vanilla common/decisions/SPR.txt; AAT common/decisions/FIN.txt;
+# TAOG common/scripted_effects/AST_scripted_effects.txt; effects documentation.
+
+# Call on each surviving participant only AFTER all civil-war countries exist.
+# Do not call this initializer from daily repair: an expired mission stays spent.
+MKN_initialize_soviet_intervention = {
+	if = {
+		limit = {
+			original_tag = MKN
+			has_country_flag = MKN_collapse_started
+			num_owned_states > 0
+			NOT = { has_country_flag = MKN_soviet_intervention_initialized }
+			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+			NOT = { has_global_flag = MKN_collapse_reunified }
+		}
+		set_country_flag = MKN_collapse_participant
+		set_country_flag = MKN_soviet_intervention_initialized
+		activate_mission = MKN_soviet_intervention_mission
+	}
+}
+
+# Works from any scope. A surviving participant is unified only when no OTHER
+# living, land-owning, explicitly enrolled collapse participant remains.
+MKN_check_soviet_intervention_unification = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+			NOT = { has_global_flag = MKN_collapse_reunified }
+		}
+		every_country = {
+			limit = {
+				original_tag = MKN
+				has_country_flag = MKN_collapse_started
+				has_country_flag = MKN_collapse_participant
+				num_owned_states > 0
+				NOT = {
+					any_other_country = {
+						original_tag = MKN
+						has_country_flag = MKN_collapse_started
+						has_country_flag = MKN_collapse_participant
+						num_owned_states > 0
+					}
+				}
+			}
+			set_global_flag = MKN_collapse_reunified
+		}
+	}
+	if = {
+		limit = { has_global_flag = MKN_collapse_reunified }
+		clr_global_flag = MKN_soviet_intervention_pending
+		every_country = {
+			limit = {
+				original_tag = MKN
+				has_country_flag = MKN_collapse_started
+				has_country_flag = MKN_collapse_participant
+			}
+			set_country_flag = MKN_soviet_intervention_resolved
+			remove_mission = MKN_soviet_intervention_mission
+		}
+	}
+}
+
+MKN_repair_soviet_intervention = {
+	if = {
+		limit = {
+			original_tag = MKN
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_collapse_participant
+		}
+		MKN_check_soviet_intervention_unification = yes
+		if = {
+			limit = {
+				OR = {
+					num_owned_states < 1
+					has_global_flag = MKN_soviet_intervention_triggered
+					has_global_flag = MKN_collapse_reunified
+					has_country_flag = MKN_soviet_intervention_resolved
+				}
+			}
+			set_country_flag = MKN_soviet_intervention_resolved
+			remove_mission = MKN_soviet_intervention_mission
+		}
+		# If the first requesting faction lost its last state before its queued
+		# event could run, dispatch from a surviving faction without a new timer.
+		if = {
+			limit = {
+				num_owned_states > 0
+				has_global_flag = MKN_soviet_intervention_pending
+				NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+				NOT = { has_global_flag = MKN_collapse_reunified }
+				NOT = {
+					any_country = {
+						original_tag = MKN
+						has_country_flag = MKN_collapse_started
+						has_country_flag = MKN_collapse_participant
+						has_country_flag = MKN_soviet_intervention_dispatch_owner
+						num_owned_states > 0
+					}
+				}
+			}
+			set_country_flag = MKN_soviet_intervention_dispatch_owner
+			country_event = { id = mkn_crisis.200 }
+		}
+	}
+}
+
+# A global dispatch latch prevents multiple factions expiring on one day from
+# scheduling the same intervention event. Event immediate rechecks unification.
+MKN_request_soviet_intervention = {
+	MKN_check_soviet_intervention_unification = yes
+	if = {
+		limit = {
+			original_tag = MKN
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_collapse_participant
+			num_owned_states > 0
+			NOT = { has_global_flag = MKN_soviet_intervention_pending }
+			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+			NOT = { has_global_flag = MKN_collapse_reunified }
+			any_other_country = {
+				original_tag = MKN
+				has_country_flag = MKN_collapse_started
+				has_country_flag = MKN_collapse_participant
+				num_owned_states > 0
+			}
+		}
+		set_global_flag = MKN_soviet_intervention_pending
+		set_country_flag = MKN_soviet_intervention_dispatch_owner
+		country_event = { id = mkn_crisis.200 }
+	}
+}
+
+# Executed in an independent Soviet aggressor. Shared factions are split by
+# their leader before war is declared; a target leading that faction expels
+# the aggressor instead. No faction is dismantled and no territory is moved.
+MKN_soviet_intervention_attack_participants = {
+	save_event_target_as = MKN_intervention_aggressor
+	every_country = {
+		limit = {
+			original_tag = MKN
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_collapse_participant
+			num_owned_states > 0
+		}
+		save_event_target_as = MKN_intervention_target
+		if = {
+			limit = { is_in_faction_with = event_target:MKN_intervention_aggressor }
+			if = {
+				limit = { is_faction_leader = yes }
+				remove_from_faction = event_target:MKN_intervention_aggressor
+			}
+			else = {
+				faction_leader = { remove_from_faction = event_target:MKN_intervention_target }
+			}
+		}
+		event_target:MKN_intervention_aggressor = {
+			if = {
+				limit = {
+					# The normal four participants are independent. An actor cannot
+					# legally declare war on its own subject in a modified save.
+					NOT = { is_ally_with = event_target:MKN_intervention_target }
+				}
+				create_wargoal = { type = annex_everything target = event_target:MKN_intervention_target }
+				if = {
+					limit = { NOT = { has_war_with = event_target:MKN_intervention_target } }
+					declare_war_on = { type = annex_everything target = event_target:MKN_intervention_target }
+				}
+			}
+		}
+	}
+}
+
+MKN_execute_soviet_intervention = {
+	MKN_check_soviet_intervention_unification = yes
+	if = {
+		limit = {
+			original_tag = MKN
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_collapse_participant
+			num_owned_states > 0
+			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+			NOT = { has_global_flag = MKN_collapse_reunified }
+			any_other_country = {
+				original_tag = MKN
+				has_country_flag = MKN_collapse_started
+				has_country_flag = MKN_collapse_participant
+				num_owned_states > 0
+			}
+		}
+		set_global_flag = MKN_soviet_intervention_triggered
+		clr_global_flag = MKN_soviet_intervention_pending
+		every_country = {
+			limit = {
+				original_tag = MKN
+				has_country_flag = MKN_collapse_started
+				has_country_flag = MKN_collapse_participant
+			}
+			set_country_flag = MKN_soviet_intervention_resolved
+			remove_mission = MKN_soviet_intervention_mission
+		}
+		if = {
+			limit = { exists = SOV SOV = { is_subject = no } }
+			SOV = { MKN_soviet_intervention_attack_participants = yes }
+		}
+		if = {
+			limit = { exists = UKR UKR = { is_subject = no } }
+			UKR = { MKN_soviet_intervention_attack_participants = yes }
+		}
+	}
+}

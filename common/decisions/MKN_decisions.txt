@@ -454,3 +454,43 @@ MKN_steppe_operations_category = {
 		}
 	}
 }
+
+MKN_soviet_intervention_category = {
+	MKN_soviet_intervention_mission = {
+		icon = generic_ignite_civil_war
+		allowed = { original_tag = MKN }
+		activation = { always = no }
+		available = { always = no }
+		visible = {
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_collapse_participant
+			has_country_flag = MKN_soviet_intervention_initialized
+			NOT = { has_country_flag = MKN_soviet_intervention_resolved }
+			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+			NOT = { has_global_flag = MKN_collapse_reunified }
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = yes
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 100
+		cancel_trigger = {
+			OR = {
+				num_owned_states < 1
+				has_country_flag = MKN_soviet_intervention_resolved
+				has_global_flag = MKN_soviet_intervention_triggered
+				has_global_flag = MKN_collapse_reunified
+				NOT = {
+					any_other_country = {
+						original_tag = MKN
+						has_country_flag = MKN_collapse_started
+						has_country_flag = MKN_collapse_participant
+						num_owned_states > 0
+					}
+				}
+			}
+		}
+		cancel_effect = { MKN_repair_soviet_intervention = yes }
+		timeout_effect = { MKN_request_soviet_intervention = yes }
+	}
+}

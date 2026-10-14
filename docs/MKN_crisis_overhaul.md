@@ -2,7 +2,7 @@
 
 ## Scope and ownership
 
-Implemented the 1936 congress, Makhno’s death, an event-only 180-day mission, four exclusive eight-focus paths, native BoP, border battles, volunteers, foreign strikes, scorched railways and consent-based Soviet diplomacy. All new/changed display text is owned by `localisation/english/MKN_l_english.yml` and its Russian counterpart. Standard ideology groups remain unchanged; existing country-scoped scripted display names rename only MKN.
+Implemented the 1936 congress, Makhno’s death, an event-only 180-day mission, four exclusive eight-focus paths, native BoP, border battles, volunteers, foreign strikes, scorched railways and consent-based Soviet diplomacy. Political display text is owned by `localisation/english/MKN_l_english.yml` and its Russian counterpart; frontier/intervention additions use `MKN_frontier_l_english.yml` and `MKN_frontier_l_russian.yml`. Standard ideology groups remain unchanged; existing country-scoped scripted display names rename only MKN.
 
 Existing focus/event IDs, industrial and service branches, MIOs, portraits and archived monarch Makhno are retained. New campaigns start after the congress, last 30 days, give 10 percentage points of support for 50 PP, and can repeat after seven days. Each new political entry requires 40% support and either supply or discipline preparation. Historical AI favors the red compromise and its settlement. The 22 archived political path focuses are hidden and unavailable in new campaigns; their old-save behavior remains defined. New campaigns begin with the revolutionary Makhno, equal 25% program support and all three requested starting spirits. Death installs named Belash and Volin leaders and institutional peasant/revkom councils, with no random monarchs. Makhno’s old monarch definition/portrait remain available to archived saves; the new funeral naturally retires his living roles in new campaigns.
 
@@ -61,3 +61,9 @@ The prescribed Windows-path command was attempted; that path does not exist on t
 [Политическая ветка](mkn_crisis_focus_preview.png) и [полное дерево](mkn_focus_tree.svg) построены из реальных координат.
 
 Static validation is not a game reproduction. Before release, start a fresh 1936 campaign and inspect a fresh game log; exercise the funeral, all lifesavers, timeout with different support shares, border-war callbacks, both plenum outcomes, no-DLC commune guards, BoP locking and destruction/repair tooltips. Runtime stability and final balance are not claimed verified here.
+
+## Ukrainian frontier and intervention extension
+
+The funeral starts a guarded seven-day delay to `mkn_ukr_border.10`. Its 365-day mission freezes frontier interaction through a 730-day UKR pact unless full war with UKR/SOV has already stopped the clock. The display remains visible in both terminal states. The four-way collapse cancels the frontier timer before spawning countries and enrolls every surviving participant in a new 100-day intervention mission. Timely reunification cancels it; otherwise independent SOV/UKR declare war on all surviving registered factions. Existing political settlement paths and the original 180-day timer are preserved.
+
+[Русские заметки, точные области callback, ограничения движка, конкретные образцы DLC и проверка](MKN_UKR_frontier.md). The combined checks now pass 124 collapse, 24 intervention and 43 frontier source-script scenarios. This remains static verification; no fresh campaign or game log has been inspected.

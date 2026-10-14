@@ -34,9 +34,36 @@ country_event = {
 		news_event = {
 			id = mkn_news.1
 		}
+		# Start from the actual death, even if the funeral popup stays open.
+		# The option repeats this guarded schedule for compatibility, never twice.
+		if = {
+			limit = {
+				NOT = { has_country_flag = mkn_ukr_incident_fired }
+				NOT = { has_country_flag = mkn_ukr_incident_scheduled }
+			}
+			set_country_flag = mkn_ukr_incident_scheduled
+			country_event = { id = mkn_ukr_border.10 days = 7 }
+		}
 	}
 	option = {
 		name = mkn_crisis.1.a
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = mkn_ukr_incident_fired
+					}
+					NOT = {
+						has_country_flag = mkn_ukr_incident_scheduled
+					}
+				}
+				set_country_flag = mkn_ukr_incident_scheduled
+				country_event = {
+					id = mkn_ukr_border.10
+					days = 7
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -447,5 +474,33 @@ country_event = {
 			clr_country_flag = MKN_border_clash_active
 			add_war_support = -0.05
 		}
+	}
+}
+
+country_event = {
+	id = mkn_crisis.200
+	title = mkn_crisis.200.t
+	desc = mkn_crisis.200.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+	trigger = {
+		original_tag = MKN
+		has_country_flag = MKN_collapse_started
+		has_country_flag = MKN_collapse_participant
+		num_owned_states > 0
+		has_global_flag = MKN_soviet_intervention_pending
+		NOT = { has_global_flag = MKN_soviet_intervention_triggered }
+		NOT = { has_global_flag = MKN_collapse_reunified }
+		any_other_country = {
+			original_tag = MKN
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_collapse_participant
+			num_owned_states > 0
+		}
+	}
+	immediate = { MKN_execute_soviet_intervention = yes }
+	option = {
+		name = mkn_crisis.200.a
+		custom_effect_tooltip = MKN_soviet_intervention_tt
 	}
 }

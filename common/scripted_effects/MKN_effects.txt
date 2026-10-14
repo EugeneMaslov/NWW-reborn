@@ -102,6 +102,17 @@ MKN_install_communism_successor = {
 
 MKN_execute_four_way_collapse = {
  set_country_flag = MKN_collapse_started
+ # Cancel the frontier deadline before civil-war countries inherit our flags.
+ clr_country_flag = mkn_frontier_year_running
+ remove_mission = MKN_frontier_year_countdown_mission
+ set_country_flag = mkn_ukr_frontier_concluded
+ set_country_flag = mkn_ukr_frontier_aborted
+ clr_country_flag = mkn_ukr_war_pending
+ clr_country_flag = mkn_ukr_pact_pending
+ if = {
+  limit = { has_border_war_with = UKR }
+  mkn_ukr_stop_border_battle = yes
+ }
  clr_country_flag = MKN_crisis_active
  remove_mission = MKN_civil_war_timer_mission
  MKN_dismantle_bop = yes
@@ -339,4 +350,9 @@ MKN_execute_four_way_collapse = {
   event_target:MKN_cw_neutrality = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
  }
  every_owned_state = { clr_state_flag = MKN_cw_assigned }
+ # Enroll only after all three new civil-war countries have been created.
+ every_country = {
+  limit = { original_tag = MKN has_country_flag = MKN_collapse_started num_owned_states > 0 }
+  MKN_initialize_soviet_intervention = yes
+ }
 }

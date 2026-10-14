@@ -194,11 +194,23 @@ MKN_border_raids = {
 					}
 				}
 			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_initialized
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
 		}
 		visible = {
 			tag = MKN
 			UKR = {
 				exists = yes
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_initialized
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
 			}
 		}
 		days_remove = 0
@@ -1039,6 +1051,7 @@ MKN_border_raids = {
 			else = {
 				add_political_power = 50
 			}
+			custom_effect_tooltip = MKN_frontier_core_integration_tt
 		}
 	}
 }
