@@ -5,7 +5,9 @@ nww_GER_disable_mefo = {
 				modifier = GER_mefo_bills_modifier
 			}
 		}
-		remove_dynamic_modifier = GER_mefo_bills_modifier
+		remove_dynamic_modifier = {
+			modifier = GER_mefo_bills_modifier
+		}
 	}
 	if = {
 		limit = {
@@ -13,7 +15,9 @@ nww_GER_disable_mefo = {
 				modifier = GER_economy_of_conquest_modifier
 			}
 		}
-		remove_dynamic_modifier = GER_economy_of_conquest_modifier
+		remove_dynamic_modifier = {
+			modifier = GER_economy_of_conquest_modifier
+		}
 	}
 	if = {
 		limit = {

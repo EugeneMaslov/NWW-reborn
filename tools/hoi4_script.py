@@ -20,6 +20,9 @@ def parse(text):
                 if not nested:
                     raise ValueError('Unexpected closing brace')
                 return result
+            if key == '{':
+                result.append((None, block(True), None))
+                continue
             if key in ('{', '=', '<', '>'):
                 raise ValueError(f'Unexpected token {key}')
             if pos < len(tokens) and tokens[pos] in ('=', '<', '>', '<=', '>=', '!=', '=='):

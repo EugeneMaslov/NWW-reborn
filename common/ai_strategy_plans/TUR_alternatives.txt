@@ -3,9 +3,9 @@ NWW_TUR_democratic_alternative = {
 	desc = ""
 	allowed = {
 		original_tag = TUR
-		has_focus_tree = turkish_focus
 	}
 	enable = {
+		has_focus_tree = turkish_focus
 		nww_TUR_ai_democratic_path = yes
 	}
 	abort = {
@@ -34,9 +34,9 @@ NWW_TUR_communism_alternative = {
 	desc = ""
 	allowed = {
 		original_tag = TUR
-		has_focus_tree = turkish_focus
 	}
 	enable = {
+		has_focus_tree = turkish_focus
 		nww_TUR_ai_communism_path = yes
 	}
 	abort = {
@@ -65,9 +65,9 @@ NWW_TUR_fascism_alternative = {
 	desc = ""
 	allowed = {
 		original_tag = TUR
-		has_focus_tree = turkish_focus
 	}
 	enable = {
+		has_focus_tree = turkish_focus
 		nww_TUR_ai_fascism_path = yes
 	}
 	abort = {
@@ -104,9 +104,9 @@ NWW_TUR_neutrality_alternative = {
 	desc = ""
 	allowed = {
 		original_tag = TUR
-		has_focus_tree = turkish_focus
 	}
 	enable = {
+		has_focus_tree = turkish_focus
 		nww_TUR_ai_peaceful_path = yes
 	}
 	abort = {

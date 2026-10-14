@@ -3,9 +3,9 @@ NWW_TUR_historical = {
 	desc = ""
 	allowed = {
 		original_tag = TUR
-		has_focus_tree = turkish_focus
 	}
 	enable = {
+		has_focus_tree = turkish_focus
 		nww_TUR_ai_historical_path = yes
 	}
 	abort = {
