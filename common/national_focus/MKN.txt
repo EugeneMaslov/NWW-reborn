@@ -801,7 +801,10 @@ focus_tree = {
 			add_stability = 0.05
 		}
 		x = 34
-		y = 0
+		y = 2
+		prerequisite = {
+			focus = MKN_departure_of_batko
+		}
 	}
 	focus = {
 		id = MKN_farmers_and_workers
@@ -815,7 +818,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 		x = 32
-		y = 1
+		y = 3
 	}
 	focus = {
 		id = MKN_free_soviets
@@ -833,7 +836,7 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 		x = 34
-		y = 1
+		y = 3
 	}
 	focus = {
 		id = MKN_nabat_federation
@@ -851,7 +854,7 @@ focus_tree = {
 			}
 		}
 		x = 36
-		y = 1
+		y = 3
 	}
 	focus = {
 		id = MKN_shadow_republic
@@ -869,7 +872,7 @@ focus_tree = {
 			add_manpower = 20000
 		}
 		x = 32
-		y = 2
+		y = 4
 	}
 	focus = {
 		id = MKN_gulyai_polye_commune
@@ -895,7 +898,7 @@ focus_tree = {
 			}
 		}
 		x = 34
-		y = 2
+		y = 4
 	}
 	focus = {
 		id = MKN_black_banner_east
@@ -914,7 +917,7 @@ focus_tree = {
 			}
 		}
 		x = 36
-		y = 2
+		y = 4
 	}
 	focus = {
 		id = MKN_anarchist_schools
@@ -931,7 +934,7 @@ focus_tree = {
 			}
 		}
 		x = 34
-		y = 3
+		y = 5
 	}
 	focus = {
 		id = MKN_makhno_moves_south
@@ -949,7 +952,7 @@ focus_tree = {
 			}
 		}
 		x = 36
-		y = 3
+		y = 5
 	}
 	focus = {
 		id = MKN_peasant_militias
@@ -963,7 +966,7 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 		x = 32
-		y = 4
+		y = 6
 	}
 	focus = {
 		id = MKN_soviet_press
@@ -977,7 +980,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 		x = 32
-		y = 5
+		y = 7
 	}
 	focus = {
 		id = MKN_the_steppe_holds
@@ -987,15 +990,18 @@ focus_tree = {
 			add_stability = 0.1
 			add_political_power = 150
 		}
+		x = 34
+		y = 6
 		prerequisite = {
-			focus = MKN_shadow_republic
+			focus = MKN_anarchist_schools
 			focus = MKN_makhno_moves_south
 		}
 		available = {
-			always = yes
+			OR = {
+				has_completed_focus = MKN_shadow_republic
+				has_completed_focus = MKN_makhno_moves_south
+			}
 		}
-		x = 34
-		y = 4
 	}
 	focus = {
 		id = MKN_border_tensions
@@ -1015,49 +1021,57 @@ focus_tree = {
 			}
 		}
 		x = 37
-		y = 5
+		y = 7
 	}
 	focus = {
 		id = MKN_everlasting_makhnovshchina
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = {
-			focus = MKN_the_steppe_holds
-		}
 		cost = 10
 		completion_reward = {
 			add_war_support = 0.1
 			add_manpower = 50000
 			army_experience = 20
 			set_politics = {
-				ruling_party = communism
+				ruling_party = democratic
 				elections_allowed = no
 			}
 			create_country_leader = {
 				name = "Nestor Makhno"
 				picture = GFX_Portrait_makhno
-				ideology = anarchist_communism
 				traits = {
 
 				}
+				ideology = socialism
 			}
-		}
-		mutually_exclusive = {
-			focus = MKN_council_communism
-			focus = MKN_constituent_assembly
-			focus = MKN_red_banner_steppe
-			focus = MKN_black_hundreds
-			focus = MKN_nestor_the_first
-		}
-		x = 31
-		y = 6
-		available = {
-			has_completed_focus = MKN_soviet_press
-			NOT = {
-				communism < 0.40
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = 0.2
+					tooltip_side = MKN_free_soviets_side
+				}
 			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 31
+		y = 10
+		prerequisite = {
+			focus = MKN_free_elections_steppe
+		}
+		mutually_exclusive = {
+			focus = MKN_council_communism
+		}
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				democratic < 0.40
+			}
+		}
 	}
 	focus = {
 		id = MKN_soviets_forever
@@ -1069,16 +1083,23 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
-			add_ideas = MKN_communal_federation
 			country_event = {
 				id = mkn.20
 				days = 1
 			}
 			remove_ideas = MKN_free_territory
 			add_ideas = MKN_free_soviets_idea
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.05
+				tooltip = MKN_unified_stability_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.05
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
 		}
 		x = 31
-		y = 7
+		y = 11
 	}
 	focus = {
 		id = MKN_tachanka_guards
@@ -1096,14 +1117,11 @@ focus_tree = {
 			focus = MKN_soviets_forever
 		}
 		x = 31
-		y = 8
+		y = 12
 	}
 	focus = {
 		id = MKN_council_communism
 		icon = GFX_focus_research
-		prerequisite = {
-			focus = MKN_the_steppe_holds
-		}
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -1112,35 +1130,46 @@ focus_tree = {
 				category = industry
 			}
 			set_politics = {
-				ruling_party = communism
+				ruling_party = democratic
 				elections_allowed = no
 			}
 			create_country_leader = {
 				name = "Nestor Makhno"
 				picture = GFX_Portrait_makhno
-				ideology = anarchist_communism
 				traits = {
 
 				}
+				ideology = socialism
 			}
-		}
-		mutually_exclusive = {
-			focus = MKN_everlasting_makhnovshchina
-			focus = MKN_constituent_assembly
-			focus = MKN_red_banner_steppe
-			focus = MKN_black_hundreds
-			focus = MKN_nestor_the_first
-		}
-		x = 33
-		y = 6
-		available = {
-			has_completed_focus = MKN_soviet_press
-			NOT = {
-				communism < 0.40
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = 0.2
+					tooltip_side = MKN_free_soviets_side
+				}
 			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 35
+		y = 10
+		prerequisite = {
+			focus = MKN_free_elections_steppe
+		}
+		mutually_exclusive = {
+			focus = MKN_everlasting_makhnovshchina
+		}
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				democratic < 0.40
+			}
+		}
 	}
 	focus = {
 		id = MKN_workers_control
@@ -1166,8 +1195,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 33
-		y = 7
+		x = 35
+		y = 11
 	}
 	focus = {
 		id = MKN_commune_federation
@@ -1176,44 +1205,51 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 40000
 			add_war_support = 0.05
-			add_ideas = MKN_communal_federation
 			country_event = {
 				id = mkn.20
 				days = 1
 			}
 			remove_ideas = MKN_free_territory
 			add_ideas = MKN_free_soviets_idea
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.05
+				tooltip = MKN_unified_stability_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.05
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_workers_control
 		}
-		x = 33
-		y = 8
+		x = 35
+		y = 12
 	}
 	focus = {
 		id = MKN_constituent_assembly
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = {
-			focus = MKN_the_steppe_holds
-		}
 		cost = 10
 		completion_reward = {
 			set_politics = {
 				ruling_party = democratic
-				elections_allowed = yes
+				elections_allowed = no
 			}
 			add_stability = -0.05
 			retire_character = NWW_MKN_makhno
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = 0.45
+					tooltip_side = MKN_free_soviets_side
+				}
+			}
 		}
-		mutually_exclusive = {
-			focus = MKN_everlasting_makhnovshchina
-			focus = MKN_council_communism
-			focus = MKN_red_banner_steppe
-			focus = MKN_black_hundreds
-			focus = MKN_nestor_the_first
-		}
-		x = 35
-		y = 6
 		available = {
 			has_completed_focus = MKN_soviet_press
 			NOT = {
@@ -1222,6 +1258,16 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 33
+		y = 8
+		prerequisite = {
+			focus = MKN_soviet_press
+		}
+		mutually_exclusive = {
+			focus = MKN_black_hundreds
+			focus = MKN_nestor_the_first
+			focus = MKN_red_banner_steppe
+		}
 	}
 	focus = {
 		id = MKN_free_elections_steppe
@@ -1233,16 +1279,35 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
-			add_ideas = MKN_federal_republic
 			country_event = {
 				id = mkn.20
 				days = 1
 			}
 			remove_ideas = MKN_free_territory
 			remove_ideas = MKN_free_soviets_idea
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = 0.2
+					tooltip_side = MKN_free_soviets_side
+				}
+			}
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.1
+				tooltip = MKN_unified_stability_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1
+				tooltip = MKN_unified_political_power_gain_tt
+			}
 		}
-		x = 35
-		y = 7
+		x = 33
+		y = 9
 	}
 	focus = {
 		id = MKN_open_markets
@@ -1259,15 +1324,12 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_free_elections_steppe
 		}
-		x = 35
-		y = 8
+		x = 33
+		y = 10
 	}
 	focus = {
 		id = MKN_red_banner_steppe
 		icon = GFX_focus_generic_army_attack
-		prerequisite = {
-			focus = MKN_the_steppe_holds
-		}
 		cost = 10
 		completion_reward = {
 			set_politics = {
@@ -1283,24 +1345,64 @@ focus_tree = {
 
 				}
 			}
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = 0.35
+					tooltip_side = MKN_free_soviets_side
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						exists = yes
+						has_government = communism
+						is_subject = no
+					}
+					is_subject = no
+					is_in_faction = no
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				set_country_flag = MKN_moscow_request_pending
+				SOV = {
+					country_event = {
+						id = mkn_bop.1
+						days = 1
+					}
+				}
+			}
 		}
-		mutually_exclusive = {
-			focus = MKN_everlasting_makhnovshchina
-			focus = MKN_council_communism
-			focus = MKN_constituent_assembly
-			focus = MKN_black_hundreds
-			focus = MKN_nestor_the_first
-		}
-		x = 37
-		y = 6
 		available = {
 			has_completed_focus = MKN_soviet_press
 			NOT = {
 				communism < 0.40
 			}
+			NOT = {
+				OR = {
+					has_completed_focus = MKN_everlasting_makhnovshchina
+					has_completed_focus = MKN_council_communism
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 38
+		y = 8
+		prerequisite = {
+			focus = MKN_soviet_press
+		}
+		mutually_exclusive = {
+			focus = MKN_black_hundreds
+			focus = MKN_constituent_assembly
+			focus = MKN_nestor_the_first
+		}
 	}
 	focus = {
 		id = MKN_hand_to_moscow
@@ -1309,26 +1411,38 @@ focus_tree = {
 			focus = MKN_red_banner_steppe
 		}
 		cost = 5
-		completion_reward = {
-			SOV = {
-				add_to_faction = MKN
-			}
-			add_political_power = 80
-		}
+		x = 36
+		y = 9
 		available = {
 			SOV = {
 				exists = yes
-				is_faction_leader = yes
 				has_government = communism
+				is_subject = no
 			}
 			is_in_faction = no
 			is_subject = no
 			NOT = {
 				has_war_with = SOV
 			}
+			NOT = {
+				has_country_flag = MKN_moscow_request_pending
+			}
+			NOT = {
+				has_country_flag = MKN_moscow_betrayal
+			}
 		}
-		x = 37
-		y = 7
+		completion_reward = {
+			set_country_flag = MKN_moscow_request_pending
+			SOV = {
+				country_event = {
+					id = mkn_bop.1
+					days = 1
+				}
+			}
+		}
+		bypass = {
+			has_country_flag = MKN_moscow_alliance
+		}
 	}
 	focus = {
 		id = MKN_collectivize_the_steppe
@@ -1337,26 +1451,42 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 60000
 			add_stability = 0.05
-			add_ideas = MKN_planned_economy
 			country_event = {
 				id = mkn.20
 				days = 1
 			}
 			remove_ideas = MKN_free_territory
 			remove_ideas = MKN_free_soviets_idea
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = 0.2
+					tooltip_side = MKN_free_soviets_side
+				}
+			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.08
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.03
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_red_banner_steppe
 		}
-		x = 37
-		y = 8
+		x = 38
+		y = 10
 	}
 	focus = {
 		id = MKN_black_hundreds
 		icon = GFX_focus_generic_army_attack
-		prerequisite = {
-			focus = MKN_the_steppe_holds
-		}
 		cost = 10
 		completion_reward = {
 			set_politics = {
@@ -1365,24 +1495,43 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 			retire_character = NWW_MKN_makhno
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = -0.45
+					tooltip_side = MKN_military_command_side
+				}
+			}
 		}
-		mutually_exclusive = {
-			focus = MKN_everlasting_makhnovshchina
-			focus = MKN_council_communism
-			focus = MKN_constituent_assembly
-			focus = MKN_red_banner_steppe
-			focus = MKN_nestor_the_first
-		}
-		x = 39
-		y = 6
 		available = {
 			has_completed_focus = MKN_soviet_press
 			NOT = {
 				fascism < 0.40
 			}
+			NOT = {
+				OR = {
+					has_completed_focus = MKN_everlasting_makhnovshchina
+					has_completed_focus = MKN_council_communism
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 29
+		y = 8
+		prerequisite = {
+			focus = MKN_soviet_press
+		}
+		mutually_exclusive = {
+			focus = MKN_constituent_assembly
+			focus = MKN_nestor_the_first
+			focus = MKN_red_banner_steppe
+		}
 	}
 	focus = {
 		id = MKN_order_through_tachanka
@@ -1394,9 +1543,21 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 30
 			add_war_support = 0.05
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = -0.2
+					tooltip_side = MKN_military_command_side
+				}
+			}
 		}
-		x = 39
-		y = 7
+		x = 29
+		y = 9
 	}
 	focus = {
 		id = MKN_steppe_legions
@@ -1405,26 +1566,65 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 60000
 			add_stability = -0.05
-			add_ideas = MKN_military_directory
 			country_event = {
 				id = mkn.20
 				days = 1
 			}
 			remove_ideas = MKN_free_territory
 			remove_ideas = MKN_free_soviets_idea
+			if = {
+				limit = {
+					has_power_balance = {
+						id = MKN_power_balance
+					}
+				}
+				add_power_balance_value = {
+					id = MKN_power_balance
+					value = -0.1
+					tooltip_side = MKN_military_command_side
+				}
+			}
+			add_to_variable = {
+				MKN_army_army_org_factor = 0.05
+				tooltip = MKN_army_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_army_war_support_factor = 0.1
+				tooltip = MKN_army_war_support_factor_tt
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = MKN_army_development
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = MKN_army_development
+				}
+			}
 		}
 		prerequisite = {
 			focus = MKN_order_through_tachanka
 		}
-		x = 39
-		y = 8
+		x = 29
+		y = 10
+		available = {
+			has_power_balance = {
+				id = MKN_power_balance
+			}
+			power_balance_value = {
+				id = MKN_power_balance
+				value < -0.6
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_nestor_the_first
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = {
-			focus = MKN_the_steppe_holds
-		}
 		cost = 10
 		completion_reward = {
 			set_politics = {
@@ -1433,24 +1633,35 @@ focus_tree = {
 			}
 			add_stability = 0.05
 			retire_character = NWW_MKN_makhno
+			remove_power_balance = {
+				id = MKN_power_balance
+			}
+			set_country_flag = MKN_bop_abandoned
 		}
-		mutually_exclusive = {
-			focus = MKN_everlasting_makhnovshchina
-			focus = MKN_council_communism
-			focus = MKN_constituent_assembly
-			focus = MKN_red_banner_steppe
-			focus = MKN_black_hundreds
-		}
-		x = 41
-		y = 6
 		available = {
 			has_completed_focus = MKN_soviet_press
 			NOT = {
 				neutrality < 0.40
 			}
+			NOT = {
+				OR = {
+					has_completed_focus = MKN_everlasting_makhnovshchina
+					has_completed_focus = MKN_council_communism
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		x = 41
+		y = 8
+		prerequisite = {
+			focus = MKN_soviet_press
+		}
+		mutually_exclusive = {
+			focus = MKN_black_hundreds
+			focus = MKN_constituent_assembly
+			focus = MKN_red_banner_steppe
+		}
 	}
 	focus = {
 		id = MKN_imperial_coronation
@@ -1462,16 +1673,23 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 			add_war_support = 0.1
-			add_ideas = MKN_imperial_administration
 			country_event = {
 				id = mkn.20
 				days = 1
 			}
 			remove_ideas = MKN_free_territory
 			remove_ideas = MKN_free_soviets_idea
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.1
+				tooltip = MKN_unified_stability_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.15
+				tooltip = MKN_unified_political_power_gain_tt
+			}
 		}
 		x = 41
-		y = 7
+		y = 9
 	}
 	focus = {
 		id = MKN_steppe_empire
@@ -1485,7 +1703,7 @@ focus_tree = {
 			focus = MKN_imperial_coronation
 		}
 		x = 41
-		y = 8
+		y = 10
 	}
 	focus = {
 		id = MKN_tachanka_columns
@@ -6242,6 +6460,150 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 3
+		}
+	}
+	focus = {
+		id = MKN_congress_1936
+		icon = GFX_focus_generic_support_the_left_right
+		x = 34
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			nww_mkn_initialize_bop = yes
+		}
+	}
+	focus = {
+		id = MKN_departure_of_batko
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 34
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = MKN_congress_1936
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = MKN_ataman_directorate
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 29
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = MKN_steppe_legions
+		}
+		available = {
+			has_power_balance = {
+				id = MKN_power_balance
+			}
+			power_balance_value = {
+				id = MKN_power_balance
+				value < -0.6
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			add_to_variable = {
+				MKN_army_planning_speed = 0.05
+				tooltip = MKN_army_planning_speed_tt
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = MKN_army_development
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = MKN_army_development
+				}
+			}
+		}
+	}
+	focus = {
+		id = MKN_recallable_delegates
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 33
+		y = 13
+		cost = 5
+		prerequisite = {
+			focus = MKN_tachanka_guards
+			focus = MKN_commune_federation
+		}
+		available = {
+			has_power_balance = {
+				id = MKN_power_balance
+			}
+			power_balance_value = {
+				id = MKN_power_balance
+				value > 0.6
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.03
+				tooltip = MKN_unified_stability_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = MKN_peasant_charter
+		icon = GFX_focus_generic_support_the_left_right
+		x = 41
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = MKN_steppe_empire
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.02
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.03
+				tooltip = MKN_unified_stability_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = MKN_red_compromise_institutions
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 38
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = MKN_collectivize_the_steppe
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.05
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.05
+				tooltip = MKN_unified_political_power_gain_tt
+			}
 		}
 	}
 }

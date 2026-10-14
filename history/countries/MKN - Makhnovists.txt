@@ -82,3 +82,5 @@ recruit_character = NWW_MKN_petro_stepanenko
 recruit_character = NWW_MKN_ivan_bondarenko
 
 recruit_character = NWW_MKN_serhii_melnyk
+
+set_power_balance = { id = MKN_power_balance set_value = 0 }

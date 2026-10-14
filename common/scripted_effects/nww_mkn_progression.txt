@@ -396,7 +396,100 @@ nww_mkn_rebuild_industry = {
 			MKN_unified_production_speed_buildings_factor = 0.0500
 		}
 	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_soviets_forever
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.05
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_commune_federation
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.05
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_free_elections_steppe
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.1
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_collectivize_the_steppe
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.08
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_imperial_coronation
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.1
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_recallable_delegates
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_peasant_charter
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.02
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_red_compromise_institutions
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.05
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.05
+		}
+	}
 	remove_ideas = {
+		MKN_communal_federation
+		MKN_federal_republic
+		MKN_imperial_administration
+		MKN_planned_economy
+
 		MKN_accountable_militias
 		MKN_anarchic_economy_idea
 		MKN_artel_logistics
@@ -423,9 +516,10 @@ nww_mkn_rebuild_industry = {
 	add_dynamic_modifier = {
 		modifier = MKN_free_industry_modifier
 	}
-	set_country_flag = MKN_industry_unified_v1
+	set_country_flag = MKN_industry_unified_v2
 }
 nww_mkn_rebuild_services = {
+	set_variable = { MKN_army_war_support_factor = 0 }
 	set_variable = {
 		MKN_army_army_armor_attack_factor = 0
 	}
@@ -1686,7 +1780,41 @@ nww_mkn_rebuild_services = {
 			modifier = MKN_navy_development
 		}
 	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_legions
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			MKN_army_war_support_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_ataman_directorate
+		}
+		add_to_variable = {
+			MKN_army_planning_speed = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_legions
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = MKN_army_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = MKN_army_development
+		}
+	}
 	remove_ideas = {
+		MKN_military_directory
+
 		MKN_tachanka_warfare
 		MKN_railway_guards
 		MKN_steel_horses_idea
@@ -1696,5 +1824,5 @@ nww_mkn_rebuild_services = {
 		MKN_free_airmen
 		MKN_black_swarm_idea
 	}
-	set_country_flag = MKN_services_redesign_v3
+	set_country_flag = MKN_services_redesign_v4
 }

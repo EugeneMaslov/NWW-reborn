@@ -25,6 +25,7 @@ MKN_army_development = {
 		always = yes
 	}
 	icon = GFX_idea_YUG_local_militias
+	war_support_factor = MKN_army_war_support_factor
 	army_armor_attack_factor = MKN_army_army_armor_attack_factor
 	army_fuel_consumption_factor = MKN_army_army_fuel_consumption_factor
 	army_org_factor = MKN_army_army_org_factor

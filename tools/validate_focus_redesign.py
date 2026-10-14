@@ -9,7 +9,7 @@ from hoi4_script import read, one, values, walk
 
 def validate_redesign(root, game, check, localized):
     trees = {
-        tag: {one(f, 'id'): f for f in values(one(read(root / f'common/national_focus/{tag.lower()}_focus.txt'), 'focus_tree'), 'focus')}
+        tag: {one(f, 'id'): f for f in values(one(read(root / ('common/national_focus/MKN.txt' if tag == 'MKN' else f'common/national_focus/{tag.lower()}_focus.txt')), 'focus_tree'), 'focus')}
         for tag in ('UKR', 'MKN')
     }
     uf = trees['UKR']
@@ -25,11 +25,29 @@ def validate_redesign(root, game, check, localized):
         ['UKR_state_mandate', 'UKR_rural_compact', 'UKR_professional_civil_service', 'UKR_state_arbitration', 'UKR_constitutional_directory'],
     ]
 
+    def focus_conditions(nodes, done):
+        # Evaluate focus gates, including negated legacy paths. Other game state
+        # (popularity, flags, BoP, diplomacy) remains unknown to this graph check.
+        results = []
+        for key, value, op in nodes:
+            if key == 'has_completed_focus':
+                results.append(value in done)
+            elif key in ('NOT', 'AND', 'OR', 'custom_trigger_tooltip'):
+                children = [focus_conditions([item], done) for item in value]
+                if key == 'OR':
+                    result = True if True in children else None if None in children else False
+                else:
+                    result = False if False in children else None if None in children else True
+                    if key == 'NOT' and result is not None:
+                        result = not result
+                results.append(result)
+            else:
+                results.append(None)
+        return False if False in results else None if None in results else True
+
     def gates_ready(f, done):
-        # Compound political mandate triggers are checked in validate_expansion.
         groups = values(f, 'prerequisite')
-        explicit = {v for k, v, o in walk(one(f, 'available', [])) if k == 'has_completed_focus'}
-        return all(set(values(g, 'focus')) & done for g in groups) and explicit <= done
+        return all(set(values(g, 'focus')) & done for g in groups) and focus_conditions(one(f, 'available', []), done) is not False
 
     def reachable(fs, excluded):
         done = set()
@@ -124,7 +142,7 @@ def validate_redesign(root, game, check, localized):
                     again[var] += amount
             check(all(isclose(again[k], migrated[k], abs_tol=1e-9) for k in initial), f'{effect}: repeated repair stacks bonuses')
         on = one(read(root / f'common/on_actions/nww_{tag.lower()}_progression.txt'), 'on_actions')
-        flag = 'MKN_services_redesign_v3' if tag == 'MKN' else 'UKR_focus_redesign_v1'
+        flag = 'MKN_services_redesign_v4' if tag == 'MKN' else 'UKR_focus_redesign_v1'
         for hook in ('on_startup', 'on_daily_' + tag):
             node = one(on, hook, [])
             check(any(k == effect for k, v, o in walk(node)), f'{tag}: missing {hook} migration')

@@ -1,0 +1,6 @@
+MKN_bop_category = {
+	icon = GFX_decision_category_power_struggle
+	allowed = { original_tag = MKN }
+	priority = 90
+	visible = { has_power_balance = { id = MKN_power_balance } }
+}

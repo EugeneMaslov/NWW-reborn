@@ -1,0 +1,37 @@
+# Idempotent initialization and old-save repair. Never replay focus rewards,
+# government changes, diplomacy or character retirement during migration.
+nww_mkn_initialize_bop = {
+	if = {
+		limit = { has_completed_focus = MKN_nestor_the_first }
+		if = {
+			limit = { has_power_balance = { id = MKN_power_balance } }
+			remove_power_balance = { id = MKN_power_balance }
+		}
+		set_country_flag = MKN_bop_abandoned
+	}
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = MKN_bop_abandoned }
+			NOT = { has_power_balance = { id = MKN_power_balance } }
+		}
+		set_power_balance = { id = MKN_power_balance set_value = 0 }
+		if = {
+			limit = { has_completed_focus = MKN_black_hundreds }
+			set_power_balance = { id = MKN_power_balance set_value = -0.65 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_completed_focus = MKN_constituent_assembly
+					has_completed_focus = MKN_everlasting_makhnovshchina
+					has_completed_focus = MKN_council_communism
+				}
+			}
+			set_power_balance = { id = MKN_power_balance set_value = 0.65 }
+		}
+		else_if = {
+			limit = { has_completed_focus = MKN_red_banner_steppe }
+			set_power_balance = { id = MKN_power_balance set_value = 0.35 }
+		}
+	}
+}
