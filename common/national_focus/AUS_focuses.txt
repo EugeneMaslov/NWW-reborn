@@ -269,15 +269,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = HUN
-				expire = 730
+			hidden_effect = {
+				nww_AUS_prepare_hun_campaign = yes
 			}
-			add_ai_strategy = {
-				type = conquer
-				id = HUN
-				value = 200
+			custom_effect_tooltip = NWW_AUS_HUN_full_conquest_tt
+			hidden_effect = {
+				nww_AUS_prepare_hun_campaign = yes
 			}
 		}
 	}
@@ -285,13 +282,6 @@ focus_tree = {
 		id = AUS_war_with_croatia
 		icon = GFX_focus_generic_army_attack
 		cost = 5
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = CRO
-				expire = 730
-			}
-		}
 		prerequisite = {
 			focus = AUS_war_with_hun
 		}
@@ -313,6 +303,15 @@ focus_tree = {
 		continue_if_invalid = no
 		x = 6
 		y = 5
+		completion_reward = {
+			hidden_effect = {
+				nww_AUS_prepare_cro_campaign = yes
+			}
+			custom_effect_tooltip = NWW_AUS_CRO_full_conquest_tt
+			hidden_effect = {
+				nww_AUS_prepare_cro_campaign = yes
+			}
+		}
 	}
 	focus = {
 		id = AUS_reclaiming_yugoslavian_territories
@@ -596,10 +595,6 @@ focus_tree = {
 		x = 26
 		y = 4
 	}
-	continuous_focus_position = {
-		x = 100
-		y = 1880
-	}
 	initial_show_position = {
 		focus = AUS_nww_rebuild
 	}
@@ -810,4 +805,165 @@ focus_tree = {
 	shared_focus = AUS_light_ship_bonus
 	shared_focus = AUS_coastal_defence_forts
 	shared_focus = AUS_naval_efficiency
+	focus = {
+		id = NWW_AUS_restore_dual_monarchy
+		x = 6
+		y = 7
+		cost = 10
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		prerequisite = {
+			focus = AUS_reclaiming_yugoslavian_territories
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				HUN = {
+					exists = yes
+				}
+			}
+			NOT = {
+				CRO = {
+					exists = yes
+				}
+			}
+			4 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			43 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			45 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			70 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			71 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			73 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			76 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			82 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			83 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			84 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			103 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			104 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			109 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			154 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			155 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			163 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			664 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			764 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			804 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			973 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			974 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_cosmetic_tag = HUN_EMPIRE
+			set_country_flag = NWW_AUS_dual_monarchy_restored
+			add_stability = 0.05
+			add_political_power = 100
+			43 = {
+				add_core_of = ROOT
+			}
+			45 = {
+				add_core_of = ROOT
+			}
+			70 = {
+				add_core_of = ROOT
+			}
+			71 = {
+				add_core_of = ROOT
+			}
+			73 = {
+				add_core_of = ROOT
+			}
+			76 = {
+				add_core_of = ROOT
+			}
+			82 = {
+				add_core_of = ROOT
+			}
+			83 = {
+				add_core_of = ROOT
+			}
+			84 = {
+				add_core_of = ROOT
+			}
+			103 = {
+				add_core_of = ROOT
+			}
+			104 = {
+				add_core_of = ROOT
+			}
+			109 = {
+				add_core_of = ROOT
+			}
+			154 = {
+				add_core_of = ROOT
+			}
+			155 = {
+				add_core_of = ROOT
+			}
+			163 = {
+				add_core_of = ROOT
+			}
+			664 = {
+				add_core_of = ROOT
+			}
+			764 = {
+				add_core_of = ROOT
+			}
+			804 = {
+				add_core_of = ROOT
+			}
+			973 = {
+				add_core_of = ROOT
+			}
+			974 = {
+				add_core_of = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 2400
+	}
 }

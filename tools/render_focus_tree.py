@@ -13,6 +13,7 @@ from hoi4_script import read, one, values, walk
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 targets={tag:f'common/national_focus/{tag.lower()}_focus.txt' for tag in ('LTB','MKN','UKR')}
+if (ROOT/'common/national_focus/MKN.txt').exists():targets['MKN']='common/national_focus/MKN.txt'
 if (ROOT/'docs/legacy_import.json').exists():
     targets.update({tag:c['destination'] for tag,c in json.loads((ROOT/'docs/legacy_import.json').read_text(encoding='utf-8'))['countries'].items()})
 parser.add_argument('--tag', choices=tuple(targets), help='Render only the selected country')
@@ -25,8 +26,8 @@ for path in ROOT.glob('localisation/**/*l_russian.yml'):
 selected_tags = (args.tag,) if args.tag else tuple(targets)
 illustrations = {}
 if args.game:
-    needed = {one(f, 'icon') for tag in ((args.tag,) if args.tag else ('LTB', 'MKN', 'UKR'))
-              for f in values(one(read(ROOT / ('common/national_focus/MKN.txt' if tag == 'MKN' else f'common/national_focus/{tag.lower()}_focus.txt')), 'focus_tree'), 'focus')}
+    needed = {one(f, 'icon') for tag in selected_tags
+              for f in values(one(read(ROOT / targets[tag]), 'focus_tree'), 'focus')}
     roots = [args.game, *sorted(args.game.glob('dlc/*')), ROOT]
     for root in roots:
         for path in root.glob('interface/**/*.gfx'):
@@ -58,8 +59,8 @@ if args.game:
             img.save(output, format='PNG')
             illustrations[name] = base64.b64encode(output.getvalue()).decode()
 
-for tag in ((args.tag,) if args.tag else ('LTB', 'MKN', 'UKR')):
-    tree = one(read(ROOT/('common/national_focus/MKN.txt' if tag == 'MKN' else f'common/national_focus/{tag.lower()}_focus.txt')), 'focus_tree')
+for tag in selected_tags:
+    tree = one(read(ROOT/targets[tag]), 'focus_tree')
     focuses = values(tree, 'focus')
     positions = {one(f, 'id'): (int(one(f, 'x'))*90+140, int(one(f, 'y'))*95+130) for f in focuses}
     width = max(x for x, y in positions.values())+150
@@ -77,6 +78,9 @@ for tag in ((args.tag,) if args.tag else ('LTB', 'MKN', 'UKR')):
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'UKR':
         for column, title in [(6,'Политические мандаты'),(22,'Хозяйство'),(34,'Армия'),(44,'Авиация'),(54,'Флот'),(64,'Дипломатия')]:
+            result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
+    elif tag == 'AUS':
+        for column,title in [(4,'Политика и Дунайская монархия'),(10,'Внешние связи'),(16,'Армия'),(24,'Промышленность')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     # Prerequisite edges underneath the cards.
     for f in focuses:

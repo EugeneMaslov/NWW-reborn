@@ -1,0 +1,90 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = HUN
+					exists = yes
+					FROM = {
+						tag = AUS
+						has_completed_focus = AUS_war_with_hun
+						NOT = {
+							has_country_flag = NWW_AUS_dual_monarchy_restored
+						}
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					set_country_flag = NWW_AUS_HUN_incorporated
+				}
+			}
+			if = {
+				limit = {
+					tag = CRO
+					exists = yes
+					FROM = {
+						tag = AUS
+						has_completed_focus = AUS_war_with_croatia
+						NOT = {
+							has_country_flag = NWW_AUS_dual_monarchy_restored
+						}
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					set_country_flag = NWW_AUS_CRO_incorporated
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			AUS = {
+				if = {
+					limit = {
+						has_focus_tree = AUS_focus
+					}
+					if = {
+						limit = {
+							has_completed_focus = AUS_war_with_hun
+						}
+						nww_AUS_prepare_hun_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = AUS_war_with_croatia
+						}
+						nww_AUS_prepare_cro_campaign = yes
+					}
+				}
+			}
+		}
+	}
+	on_daily_AUS = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = AUS_focus
+				}
+				if = {
+					limit = {
+						has_completed_focus = AUS_war_with_hun
+					}
+					nww_AUS_prepare_hun_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = AUS_war_with_croatia
+					}
+					nww_AUS_prepare_cro_campaign = yes
+				}
+			}
+		}
+	}
+}

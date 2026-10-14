@@ -1,0 +1,100 @@
+nww_AUS_prepare_hun_campaign = {
+	if = {
+		limit = {
+			tag = AUS
+			NOT = {
+				has_country_flag = NWW_AUS_dual_monarchy_restored
+			}
+			HUN = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = HUN
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = NWW_AUS_HUN_campaign_prepared
+				}
+			}
+			set_country_flag = NWW_AUS_HUN_campaign_prepared
+			add_ai_strategy = {
+				type = conquer
+				id = HUN
+				value = 200
+			}
+		}
+		HUN = {
+			every_owned_state = {
+				add_claim_by = AUS
+				set_state_flag = NWW_AUS_HUN_objective
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = HUN
+				}
+				NOT = {
+					has_wargoal_against = HUN
+				}
+				is_subject = no
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HUN
+			}
+		}
+	}
+}
+nww_AUS_prepare_cro_campaign = {
+	if = {
+		limit = {
+			tag = AUS
+			NOT = {
+				has_country_flag = NWW_AUS_dual_monarchy_restored
+			}
+			CRO = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = CRO
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = NWW_AUS_CRO_campaign_prepared
+				}
+			}
+			set_country_flag = NWW_AUS_CRO_campaign_prepared
+			add_ai_strategy = {
+				type = conquer
+				id = CRO
+				value = 200
+			}
+		}
+		CRO = {
+			every_owned_state = {
+				add_claim_by = AUS
+				set_state_flag = NWW_AUS_CRO_objective
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = CRO
+				}
+				NOT = {
+					has_wargoal_against = CRO
+				}
+				is_subject = no
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CRO
+			}
+		}
+	}
+}

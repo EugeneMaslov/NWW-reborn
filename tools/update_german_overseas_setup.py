@@ -21,6 +21,12 @@ for region,ids in territories.items():
         updated=re.sub(r'\b(owner|controller)(\s*=\s*)[A-Z]{3}\b',lambda m:m[1]+m[2]+'GER',original)
         updated=re.sub(r'^\s*add_core_of\s*=\s*(?:SAF|JAP)\s*(?:#[^\n]*)?$', '',updated,flags=re.M)
         updated=re.sub(r'^(\s*(?:owner|controller)\s*=\s*GER)[ \t]+$',r'\1',updated,flags=re.M)
+        if sid in (768,769):
+            # WUW's original state initializer transfers these Belgian colonies to Congo
+            # after reading owner, so updating the owner alone cannot fix the start.
+            doc=parse(updated);state=one(doc,'state');setup=one(state,'history')
+            setup[:]=[(k,v,o) for k,v,o in setup if not (isinstance(v,list) and any(key=='transfer_state_to' and target=='COG' for key,target,op in walk(v)))]
+            updated=dump(doc)+'\n'
         p.write_text(updated,encoding='utf-8')
         changes.append({'state':sid,'region':region,'file':str(p.relative_to(ROOT)).replace('\\','/'),'previous_owner':previous})
 

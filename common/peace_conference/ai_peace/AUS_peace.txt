@@ -1,0 +1,80 @@
+peace_ai_desires = {
+	NWW_AUS_HUN_take_entire_country = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = AUS
+				has_completed_focus = AUS_war_with_hun
+				NOT = {
+					has_country_flag = NWW_AUS_dual_monarchy_restored
+				}
+			}
+			FROM = {
+				tag = AUS
+			}
+			FROM.FROM = {
+				original_tag = HUN
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_AUS_HUN_no_fragmentation = {
+		peace_action_type = {
+			puppet
+			liberate
+			force_government
+		}
+		enable = {
+			ROOT = {
+				tag = AUS
+				has_completed_focus = AUS_war_with_hun
+				NOT = {
+					has_country_flag = NWW_AUS_dual_monarchy_restored
+				}
+			}
+			FROM.FROM = {
+				original_tag = HUN
+			}
+		}
+		ai_desire = -1000
+	}
+	NWW_AUS_CRO_take_entire_country = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = AUS
+				has_completed_focus = AUS_war_with_croatia
+				NOT = {
+					has_country_flag = NWW_AUS_dual_monarchy_restored
+				}
+			}
+			FROM = {
+				tag = AUS
+			}
+			FROM.FROM = {
+				original_tag = CRO
+			}
+		}
+		ai_desire = 1000
+	}
+	NWW_AUS_CRO_no_fragmentation = {
+		peace_action_type = {
+			puppet
+			liberate
+			force_government
+		}
+		enable = {
+			ROOT = {
+				tag = AUS
+				has_completed_focus = AUS_war_with_croatia
+				NOT = {
+					has_country_flag = NWW_AUS_dual_monarchy_restored
+				}
+			}
+			FROM.FROM = {
+				original_tag = CRO
+			}
+		}
+		ai_desire = -1000
+	}
+}

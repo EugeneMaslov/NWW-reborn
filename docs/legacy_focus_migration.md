@@ -5,7 +5,7 @@
 | Страна | Фокусы архива | Фокусы нового дерева | Файл |
 | --- | ---: | ---: | --- |
 | Турция / Османская империя | 68 | 72 | `common/national_focus/TUR_focuses.txt` |
-| Австрия | 15 | 25 | `common/national_focus/AUS_focuses.txt` |
+| Австрия | 15 | 26 | `common/national_focus/AUS_focuses.txt` |
 | Афганистан | 14 | 15 | `common/national_focus/AFG_focuses.txt` |
 | Германия | 10 | 17 | `common/national_focus/GER_focuses.txt` |
 | Венгрия | Дерева нет | 21 | `common/national_focus/HUN_focuses.txt` |

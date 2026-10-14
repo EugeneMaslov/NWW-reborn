@@ -15,6 +15,7 @@ for territory in report['territories']:
     check(one(history,'owner')=='GER',f'{territory["state"]}: overseas owner is not GER')
     check('GER' not in values(history,'add_core_of'),f'{territory["state"]}: colony wrongly became a German national core')
     check(all(v=='GER' for k,v,o in walk(history) if k in ('owner','controller')),f'{territory["state"]}: later bookmark overwrites German ownership')
+    check(not any(k=='transfer_state_to' and v!='GER' for k,v,o in walk(history)),f'{territory["state"]}: a DLC initializer transfers the German colony away')
 for sid in (523,1073,1072,638,669,1057):
     file=next(p for p in (ROOT/'history/states').glob('*.txt') if int(one(one(read(p),'state'),'id'))==sid)
     check(one(one(one(read(file),'state'),'history'),'owner')!='GER',f'{sid}: British/Dutch Papuan or American island territory was wrongly transferred')

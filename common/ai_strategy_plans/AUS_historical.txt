@@ -26,6 +26,8 @@ NWW_AUS_historical = {
 		aus_prom_3
 		aus_prom_4
 		AUS_war_with_croatia
+		AUS_reclaiming_yugoslavian_territories
+		NWW_AUS_restore_dual_monarchy
 	}
 	weight = {
 		factor = 100

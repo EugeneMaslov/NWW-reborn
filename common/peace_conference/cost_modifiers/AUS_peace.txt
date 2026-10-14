@@ -1,0 +1,42 @@
+peace_action_modifiers = {
+	NWW_AUS_HUN_imperial_claims = {
+		category = treaties_or_conferences
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = AUS
+				has_completed_focus = AUS_war_with_hun
+				NOT = {
+					has_country_flag = NWW_AUS_dual_monarchy_restored
+				}
+			}
+			FROM = {
+				tag = AUS
+			}
+			FROM.FROM = {
+				original_tag = HUN
+			}
+		}
+		cost_multiplier = 0.5
+	}
+	NWW_AUS_CRO_imperial_claims = {
+		category = treaties_or_conferences
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = AUS
+				has_completed_focus = AUS_war_with_croatia
+				NOT = {
+					has_country_flag = NWW_AUS_dual_monarchy_restored
+				}
+			}
+			FROM = {
+				tag = AUS
+			}
+			FROM.FROM = {
+				original_tag = CRO
+			}
+		}
+		cost_multiplier = 0.5
+	}
+}

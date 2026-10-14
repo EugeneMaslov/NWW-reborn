@@ -363,6 +363,7 @@ diplomatic_events = {one(e,'id'):e for e in values(read(ROOT/'events/nww_ltb_dip
 # Crisis and politics regression: army reform waits for the compromise and
 # crisis settlement; a new ruling party must have a genuine public mandate.
 staff = ltb_focuses['LTB_union_general_staff']
+check(one(staff, 'y') == '0', 'LTB army root must align with the other branches at row zero')
 check(any(k == 'has_completed_focus' and v == 'LTB_the_vilnius_compromise' for k,v,o in walk(one(staff, 'available', []))), 'General staff no longer requires the Vilnius compromise')
 check(not values(staff, 'prerequisite'), 'General staff draws a connection across unrelated branches; use availability conditions for the crisis gates')
 check('LTB_face_the_crisis' not in values(one(staff, 'available', []), 'has_completed_focus'), 'General staff still needs a redundant crisis focus after the peaceful settlement')

@@ -1,0 +1,34 @@
+{
+  "target_states": {
+    "HUN": [
+      43,
+      45,
+      70,
+      71,
+      73,
+      76,
+      82,
+      83,
+      84,
+      154,
+      155,
+      664,
+      764,
+      973,
+      974
+    ],
+    "CRO": [
+      103,
+      104,
+      109,
+      163,
+      804
+    ]
+  },
+  "formation_focus": "NWW_AUS_restore_dual_monarchy",
+  "capitulation_reference": "04_mtg_on_actions.txt: USA/CSA",
+  "peace_references": [
+    "ai_peace/RAJ.txt",
+    "cost_modifiers/AFG_peace.txt"
+  ]
+}
