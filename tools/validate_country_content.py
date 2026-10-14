@@ -469,4 +469,4 @@ if errors:
     print(f'FAILED: {len(set(errors))} distinct errors')
     sys.exit(1)
 print('PASS:', ', '.join(f'{key}: {value} focuses' for key, value in counts.items()))
-print('PASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates')
+print('PASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, old-save settlement scenarios and daily repair, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates')
