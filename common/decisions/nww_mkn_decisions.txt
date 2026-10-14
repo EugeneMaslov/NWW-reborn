@@ -1,575 +1,1044 @@
 MKN_border_raids = {
 	MKN_border_raid = {
 		icon = generic_guerilla_base
-
 		available = {
 			has_completed_focus = MKN_border_tensions
-			UKR = { exists = yes }
-			NOT = { has_war_with = UKR }
+			UKR = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = UKR
+			}
+			NOT = {
+				is_ally_with = UKR
+			}
+			NOT = {
+				has_country_flag = UKR_MKN_border_settled
+			}
 			has_political_power > 49
+			OR = {
+				AND = {
+					197 = {
+						is_owned_and_controlled_by = UKR
+					}
+					196 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					197 = {
+						is_owned_and_controlled_by = UKR
+					}
+					226 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					192 = {
+						is_owned_and_controlled_by = UKR
+					}
+					197 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					192 = {
+						is_owned_and_controlled_by = UKR
+					}
+					203 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					834 = {
+						is_owned_and_controlled_by = UKR
+					}
+					192 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					834 = {
+						is_owned_and_controlled_by = UKR
+					}
+					198 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					198 = {
+						is_owned_and_controlled_by = UKR
+					}
+					834 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					198 = {
+						is_owned_and_controlled_by = UKR
+					}
+					199 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					199 = {
+						is_owned_and_controlled_by = UKR
+					}
+					198 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					199 = {
+						is_owned_and_controlled_by = UKR
+					}
+					201 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					201 = {
+						is_owned_and_controlled_by = UKR
+					}
+					198 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					201 = {
+						is_owned_and_controlled_by = UKR
+					}
+					199 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					202 = {
+						is_owned_and_controlled_by = UKR
+					}
+					198 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					202 = {
+						is_owned_and_controlled_by = UKR
+					}
+					201 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					193 = {
+						is_owned_and_controlled_by = UKR
+					}
+					202 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					193 = {
+						is_owned_and_controlled_by = UKR
+					}
+					225 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					203 = {
+						is_owned_and_controlled_by = UKR
+					}
+					226 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					203 = {
+						is_owned_and_controlled_by = UKR
+					}
+					197 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					259 = {
+						is_owned_and_controlled_by = UKR
+					}
+					226 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					259 = {
+						is_owned_and_controlled_by = UKR
+					}
+					203 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					225 = {
+						is_owned_and_controlled_by = UKR
+					}
+					259 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+				AND = {
+					225 = {
+						is_owned_and_controlled_by = UKR
+					}
+					193 = {
+						is_owned_and_controlled_by = MKN
+					}
+				}
+			}
 		}
-
 		visible = {
 			tag = MKN
-			UKR = { exists = yes }
+			UKR = {
+				exists = yes
+			}
 		}
-
 		days_remove = 0
 		days_re_enable = 90
-
 		cost = 50
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		complete_effect = {
-			# Mykolaiv
 			if = {
 				limit = {
-					197 = { is_owned_by = UKR }
-					196 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 196
-						num_provinces = 3
+					UKR = {
+						exists = yes
 					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 197
-						num_provinces = 3
+					NOT = {
+						is_ally_with = UKR
+					}
+					NOT = {
+						has_war_with = UKR
+					}
+					NOT = {
+						has_country_flag = UKR_MKN_border_settled
+					}
+					OR = {
+						AND = {
+							197 = {
+								is_owned_and_controlled_by = UKR
+							}
+							196 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							197 = {
+								is_owned_and_controlled_by = UKR
+							}
+							226 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							192 = {
+								is_owned_and_controlled_by = UKR
+							}
+							197 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							192 = {
+								is_owned_and_controlled_by = UKR
+							}
+							203 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							834 = {
+								is_owned_and_controlled_by = UKR
+							}
+							192 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							834 = {
+								is_owned_and_controlled_by = UKR
+							}
+							198 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							198 = {
+								is_owned_and_controlled_by = UKR
+							}
+							834 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							198 = {
+								is_owned_and_controlled_by = UKR
+							}
+							199 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							199 = {
+								is_owned_and_controlled_by = UKR
+							}
+							198 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							199 = {
+								is_owned_and_controlled_by = UKR
+							}
+							201 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							201 = {
+								is_owned_and_controlled_by = UKR
+							}
+							198 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							201 = {
+								is_owned_and_controlled_by = UKR
+							}
+							199 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							202 = {
+								is_owned_and_controlled_by = UKR
+							}
+							198 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							202 = {
+								is_owned_and_controlled_by = UKR
+							}
+							201 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							193 = {
+								is_owned_and_controlled_by = UKR
+							}
+							202 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							193 = {
+								is_owned_and_controlled_by = UKR
+							}
+							225 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							203 = {
+								is_owned_and_controlled_by = UKR
+							}
+							226 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							203 = {
+								is_owned_and_controlled_by = UKR
+							}
+							197 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							259 = {
+								is_owned_and_controlled_by = UKR
+							}
+							226 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							259 = {
+								is_owned_and_controlled_by = UKR
+							}
+							203 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							225 = {
+								is_owned_and_controlled_by = UKR
+							}
+							259 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+						AND = {
+							225 = {
+								is_owned_and_controlled_by = UKR
+							}
+							193 = {
+								is_owned_and_controlled_by = MKN
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						197 = {
+							is_owned_and_controlled_by = UKR
+						}
+						196 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 196
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 197
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						197 = {
+							is_owned_and_controlled_by = UKR
+						}
+						226 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 226
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 197
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						192 = {
+							is_owned_and_controlled_by = UKR
+						}
+						197 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 197
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 192
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						192 = {
+							is_owned_and_controlled_by = UKR
+						}
+						203 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 203
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 192
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						834 = {
+							is_owned_and_controlled_by = UKR
+						}
+						192 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 192
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 834
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						834 = {
+							is_owned_and_controlled_by = UKR
+						}
+						198 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 198
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 834
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						198 = {
+							is_owned_and_controlled_by = UKR
+						}
+						834 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 834
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 198
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						198 = {
+							is_owned_and_controlled_by = UKR
+						}
+						199 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 199
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 198
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						199 = {
+							is_owned_and_controlled_by = UKR
+						}
+						198 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 198
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 199
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						199 = {
+							is_owned_and_controlled_by = UKR
+						}
+						201 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 201
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 199
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						201 = {
+							is_owned_and_controlled_by = UKR
+						}
+						198 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 198
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 201
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						201 = {
+							is_owned_and_controlled_by = UKR
+						}
+						199 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 199
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 201
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						202 = {
+							is_owned_and_controlled_by = UKR
+						}
+						198 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 198
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 202
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						202 = {
+							is_owned_and_controlled_by = UKR
+						}
+						201 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 201
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 202
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						193 = {
+							is_owned_and_controlled_by = UKR
+						}
+						202 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 202
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 193
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						193 = {
+							is_owned_and_controlled_by = UKR
+						}
+						225 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 225
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 193
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						203 = {
+							is_owned_and_controlled_by = UKR
+						}
+						226 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 226
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 203
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						203 = {
+							is_owned_and_controlled_by = UKR
+						}
+						197 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 197
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 203
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						259 = {
+							is_owned_and_controlled_by = UKR
+						}
+						226 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 226
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 259
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						259 = {
+							is_owned_and_controlled_by = UKR
+						}
+						203 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 203
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 259
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						225 = {
+							is_owned_and_controlled_by = UKR
+						}
+						259 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 259
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 225
+							num_provinces = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						225 = {
+							is_owned_and_controlled_by = UKR
+						}
+						193 = {
+							is_owned_and_controlled_by = MKN
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						minimum_duration_in_days = 40
+						attacker = {
+							on_win = mkn.5
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 193
+							num_provinces = 3
+						}
+						defender = {
+							on_win = mkn.6
+							on_lose = mkn.6
+							on_cancel = mkn.6
+							state = 225
+							num_provinces = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MKN_raids_done = 2
+						}
+					}
+					set_global_flag = MKN_ukr_angered
+				}
+				add_to_variable = {
+					MKN_raids_done = 1
+				}
+				add_war_support = 0.03
+				UKR = {
+					country_event = {
+						id = mkn.4
+						days = 1
 					}
 				}
 			}
-			else_if = {
-				limit = {
-					197 = { is_owned_by = UKR }
-					226 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 226
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 197
-						num_provinces = 3
-					}
-				}
+			else = {
+				add_political_power = 50
 			}
-			# Odessa
-			else_if = {
-				limit = {
-					192 = { is_owned_by = UKR }
-					197 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 197
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 192
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					192 = { is_owned_by = UKR }
-					203 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 203
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 192
-						num_provinces = 3
-					}
-				}
-			}
-			# Balta
-			else_if = {
-				limit = {
-					834 = { is_owned_by = UKR }
-					192 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 192
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 834
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					834 = { is_owned_by = UKR }
-					198 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 198
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 834
-						num_provinces = 3
-					}
-				}
-			}
-			# Vinnytsia
-			else_if = {
-				limit = {
-					198 = { is_owned_by = UKR }
-					834 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 834
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 198
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					198 = { is_owned_by = UKR }
-					199 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 199
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 198
-						num_provinces = 3
-					}
-				}
-			}
-			# Khmelnytskyi
-			else_if = {
-				limit = {
-					199 = { is_owned_by = UKR }
-					198 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 198
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 199
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					199 = { is_owned_by = UKR }
-					201 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 201
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 199
-						num_provinces = 3
-					}
-				}
-			}
-			# Zhytomyr
-			else_if = {
-				limit = {
-					201 = { is_owned_by = UKR }
-					198 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 198
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 201
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					201 = { is_owned_by = UKR }
-					199 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 199
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 201
-						num_provinces = 3
-					}
-				}
-			}
-			# Western Kiev
-			else_if = {
-				limit = {
-					202 = { is_owned_by = UKR }
-					198 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 198
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 202
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					202 = { is_owned_by = UKR }
-					201 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 201
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 202
-						num_provinces = 3
-					}
-				}
-			}
-			# Kiev
-			else_if = {
-				limit = {
-					193 = { is_owned_by = UKR }
-					202 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 202
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 193
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					193 = { is_owned_by = UKR }
-					225 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 225
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 193
-						num_provinces = 3
-					}
-				}
-			}
-			# Cherkasy
-			else_if = {
-				limit = {
-					203 = { is_owned_by = UKR }
-					226 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 226
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 203
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					203 = { is_owned_by = UKR }
-					197 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 197
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 203
-						num_provinces = 3
-					}
-				}
-			}
-			# Liski
-			else_if = {
-				limit = {
-					259 = { is_owned_by = UKR }
-					226 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 226
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 259
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					259 = { is_owned_by = UKR }
-					203 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 203
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 259
-						num_provinces = 3
-					}
-				}
-			}
-			# Glukhov
-			else_if = {
-				limit = {
-					225 = { is_owned_by = UKR }
-					259 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 259
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 225
-						num_provinces = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					225 = { is_owned_by = UKR }
-					193 = { is_owned_by = MKN }
-				}
-				start_border_war = {
-					change_state_after_war = yes
-					minimum_duration_in_days = 40
-					attacker = {
-						on_win = mkn.5
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 193
-						num_provinces = 3
-					}
-					defender = {
-						on_win = mkn.6
-						on_lose = mkn.6
-						on_cancel = mkn.6
-						state = 225
-						num_provinces = 3
-					}
-				}
-			}
-			if = {
-				limit = { check_variable = { MKN_raids_done = 2 } }
-				set_global_flag = MKN_ukr_angered
-			}
-			add_to_variable = { MKN_raids_done = 1 }
-			add_war_support = 0.03
-			UKR = { country_event = { id = mkn.4 days = 1 } }
 		}
 	}
 }

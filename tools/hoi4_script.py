@@ -73,6 +73,8 @@ def dump(node, depth=0):
             lines.append(dump(value, depth + 1))
             lines.append(prefix + '}')
         else:
+            if re.fullmatch(r'-?\.\d+', value):
+                value = '-0' + value[1:] if value.startswith('-') else '0' + value
             if not value or any(c.isspace() for c in value) or '/' in value:
                 value = '"' + value.replace('"', '\\"') + '"'
             lines.append(f'{prefix}{key} {op} {value}')

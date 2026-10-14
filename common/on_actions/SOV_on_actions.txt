@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SOV = {
+				if = {
+					limit = {
+						has_focus_tree = SOV_focus
+					}
+					nww_SOV_suspend_detached_purges = yes
+				}
+			}
+		}
+	}
+	on_daily_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = SOV_focus
+					OR = {
+						has_country_flag = SOV_paranoia_system_active_flag
+						has_country_flag = SOV_paranoia_modifier_active_flag
+					}
+				}
+				nww_SOV_suspend_detached_purges = yes
+			}
+		}
+	}
+}

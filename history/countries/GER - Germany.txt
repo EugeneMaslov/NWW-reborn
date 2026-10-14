@@ -275,9 +275,6 @@ set_variable = {
 set_variable = {
 	GER_economic_crash_consumer_goods = 0.75
 }
-add_dynamic_modifier = {
-	modifier = GER_mefo_bills_modifier
-}
 set_variable = {
 	GER_wunderwaffen_special_project_speed_factor = 0
 }
@@ -2101,3 +2098,4 @@ if = {
 		obsolete = yes
 	}
 }
+nww_GER_disable_mefo = yes

@@ -1,0 +1,148 @@
+{
+  "territories": [
+    {
+      "state": 541,
+      "region": "German South-West Africa",
+      "file": "history/states/541-South West Africa.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 893,
+      "region": "German South-West Africa",
+      "file": "history/states/893-Karas.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 894,
+      "region": "German South-West Africa",
+      "file": "history/states/894-Kuneme.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 895,
+      "region": "German South-West Africa",
+      "file": "history/states/895-Kavango.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 546,
+      "region": "German East Africa",
+      "file": "history/states/546-Tanganyika.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 768,
+      "region": "German East Africa",
+      "file": "history/states/768-Rwanda.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 769,
+      "region": "German East Africa",
+      "file": "history/states/769-Burundi.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 773,
+      "region": "Cameroon",
+      "file": "history/states/773-Cameroon.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 777,
+      "region": "Togoland",
+      "file": "history/states/777-Togo.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 979,
+      "region": "German New Guinea and Bismarck Archipelago",
+      "file": "history/states/979 - Kaiser Wilhelms Land.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 737,
+      "region": "German New Guinea and Bismarck Archipelago",
+      "file": "history/states/737-New Britain.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 1070,
+      "region": "German New Guinea and Bismarck Archipelago",
+      "file": "history/states/1070 - Bougainville.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 633,
+      "region": "Pacific islands",
+      "file": "history/states/633-Marshall Islands.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 646,
+      "region": "Pacific islands",
+      "file": "history/states/646-Saipan.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 647,
+      "region": "Pacific islands",
+      "file": "history/states/647-Palau.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 684,
+      "region": "Pacific islands",
+      "file": "history/states/684-Caroline Islands.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 725,
+      "region": "Pacific islands",
+      "file": "history/states/725-Nauru.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 726,
+      "region": "German Samoa",
+      "file": "history/states/726-Samoa.txt",
+      "previous_owner": "GER"
+    },
+    {
+      "state": 743,
+      "region": "Kiautschou lease",
+      "file": "history/states/743-Qingdao.txt",
+      "previous_owner": "GER"
+    }
+  ],
+  "total_states": 19,
+  "no_ger_colonial_cores": true,
+  "mefo_ideas": [
+    "GER_mefo_bills_1",
+    "GER_mefo_bills_2",
+    "GER_mefo_bills_3",
+    "GER_mefo_bills_4",
+    "GER_mefo_bills_5",
+    "GER_mefo_bills_6",
+    "GER_mefo_bills_7",
+    "GER_mefo_bills_8",
+    "GER_mefo_bills_9",
+    "GER_mefo_bills_10",
+    "GER_mefo_bills_11",
+    "GER_mefo_bills_12",
+    "GER_mefo_bills_13",
+    "GER_mefo_bills_14",
+    "GER_mefo_bills_15",
+    "GER_mefo_bills_16",
+    "GER_mefo_bills_17",
+    "GER_mefo_bills_18",
+    "GER_mefo_bills_ended",
+    "GER_mefo_bills_1936_fake_ns",
+    "GER_mefo_bills_1939_fake_ns"
+  ],
+  "historical_sources": [
+    "https://www.dhm.de/lemo/kapitel/kaiserreich/aussenpolitik/statistische-angaben-zu-den-deutschen-kolonien",
+    "https://www.dhm.de/lemo/kapitel/kaiserreich/aussenpolitik/kolonialpolitik",
+    "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/geschichtsgalerien/die-entstehung-der-musterkolonie-kiautschou/"
+  ]
+}

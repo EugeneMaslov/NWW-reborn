@@ -1,0 +1,278 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_NWW_LTB_consolidate_union
+		texturefile = "gfx/interface/goals/LTB/focus_consolidate_union.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_consolidate_union.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_consolidate_union.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_LTB_consolidate_union_shine
+		texturefile = "gfx/interface/goals/LTB/focus_consolidate_union.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_LTB_vilnius_compromise
+		texturefile = "gfx/interface/goals/LTB/focus_vilnius_compromise.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_vilnius_compromise.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_vilnius_compromise.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_LTB_vilnius_compromise_shine
+		texturefile = "gfx/interface/goals/LTB/focus_vilnius_compromise.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_LTB_face_crisis
+		texturefile = "gfx/interface/goals/LTB/focus_face_crisis.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_face_crisis.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_face_crisis.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_LTB_face_crisis_shine
+		texturefile = "gfx/interface/goals/LTB/focus_face_crisis.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_LTB_general_staff
+		texturefile = "gfx/interface/goals/LTB/focus_general_staff.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_general_staff.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_general_staff.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_LTB_general_staff_shine
+		texturefile = "gfx/interface/goals/LTB/focus_general_staff.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_LTB_rebuild_bridge
+		texturefile = "gfx/interface/goals/LTB/focus_rebuild_bridge.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_rebuild_bridge.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_rebuild_bridge.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_LTB_rebuild_bridge_shine
+		texturefile = "gfx/interface/goals/LTB/focus_rebuild_bridge.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_LTB_union_endures
+		texturefile = "gfx/interface/goals/LTB/focus_union_endures.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_union_endures.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/LTB/focus_union_endures.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_LTB_union_endures_shine
+		texturefile = "gfx/interface/goals/LTB/focus_union_endures.dds"
+	}
+}
