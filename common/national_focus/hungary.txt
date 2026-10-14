@@ -1,110 +1,422 @@
-# NWW stub: full Hungarian tree will be written anew.
-# These stub focuses preserve IDs required by other countries trees and events.
 focus_tree = {
 	id = HUN_focus
-
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = HUN
 		}
 	}
-
+	default = no
 	focus = {
 		id = HUN_nww_rebuild
-		icon = GFX_focus_generic_industry_1
-		x = 8
+		x = 6
 		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HUN_elect_a_king
+		x = 6
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
 		completion_reward = {
 			add_political_power = 50
 		}
+		prerequisite = {
+			focus = HUN_nww_rebuild
+		}
+	}
+	focus = {
+		id = HUN_elect_a_democratic_king
+		x = 2
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		prerequisite = {
+			focus = HUN_elect_a_king
+		}
+		available = {
+			NOT = {
+				democratic < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = HUN_invite_the_habsburg_prince
+			focus = HUN_elect_a_fascist_king
+		}
+	}
+	focus = {
+		id = HUN_invite_the_habsburg_prince
+		x = 6
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			promote_character = HUN_otto_von_habsburg
+		}
+		prerequisite = {
+			focus = HUN_elect_a_king
+		}
+		available = {
+			NOT = {
+				neutrality < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = HUN_elect_a_democratic_king
+			focus = HUN_elect_a_fascist_king
+		}
+	}
+	focus = {
+		id = HUN_elect_a_fascist_king
+		x = 10
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		prerequisite = {
+			focus = HUN_elect_a_king
+		}
+		available = {
+			NOT = {
+				fascism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = HUN_elect_a_democratic_king
+			focus = HUN_invite_the_habsburg_prince
+		}
+	}
+	focus = {
+		id = HUN_proclaim_the_restoration_of_austria_hungary
+		x = 6
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = nww_legacy.3
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = HUN_invite_the_habsburg_prince
+		}
+		available = {
+			AUS = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = AUS
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = HUN_protect_czechoslovakia
+		x = 6
+		y = 4
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = HUN_proclaim_the_restoration_of_austria_hungary
+		}
+		available = {
+			has_country_flag = NWW_danubian_agreement
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = NWW_HUN_sovereign_parliament
+		x = 2
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = HUN_elect_a_democratic_king
+		}
+	}
+	focus = {
+		id = NWW_HUN_national_defence
+		x = 10
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 20
+		}
+		prerequisite = {
+			focus = HUN_elect_a_fascist_king
+		}
 	}
 	focus = {
 		id = HUN_nww_army
-		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = HUN_nww_rebuild }
-		x = 7
-		y = 1
+		x = 16
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
 		completion_reward = {
 			army_experience = 15
 		}
 	}
 	focus = {
-		id = HUN_nww_industry
-		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = HUN_nww_rebuild }
-		x = 9
+		id = NWW_HUN_officer_school
+		x = 16
 		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_legacy_land_doctrine_bonus
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+		}
+		prerequisite = {
+			focus = HUN_nww_army
+		}
+	}
+	focus = {
+		id = NWW_HUN_artillery
+		x = 15
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				category = artillery
 				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_officer_school
+		}
+	}
+	focus = {
+		id = NWW_HUN_motorisation
+		x = 17
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = motorized_equipment
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_officer_school
+		}
+	}
+	focus = {
+		id = NWW_HUN_manoeuvres
+		x = 16
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+		}
+		prerequisite = {
+			focus = NWW_HUN_artillery
+		}
+		prerequisite = {
+			focus = NWW_HUN_motorisation
+		}
+	}
+	focus = {
+		id = HUN_nww_industry
+		x = 24
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
 				category = industry
+				uses = 1
+				bonus = 0.5
 			}
 		}
 	}
 	focus = {
-		id = HUN_elect_a_democratic_king
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 14
-		y = 0
-		cost = 5
-		completion_reward = {
-			add_political_power = 20
-		}
-	}
-	focus = {
-		id = HUN_elect_a_fascist_king
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 16
-		y = 0
-		cost = 5
-		completion_reward = {
-			add_political_power = 20
-		}
-	}
-	focus = {
-		id = HUN_invite_the_habsburg_prince
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 18
-		y = 0
-		cost = 5
-		completion_reward = {
-			add_political_power = 20
-		}
-	}
-	focus = {
-		id = HUN_proclaim_the_restoration_of_austria_hungary
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 20
-		y = 0
-		cost = 5
-		completion_reward = {
-			add_political_power = 20
-		}
-	}
-	focus = {
-		id = HUN_protect_czechoslovakia
-		icon = GFX_focus_generic_army_attack
+		id = NWW_HUN_ganz
 		x = 22
-		y = 0
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
 		completion_reward = {
-			add_political_power = 20
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = HUN_nww_industry
 		}
 	}
 	focus = {
-		id = HUN_elect_a_king
+		id = NWW_HUN_weiss
+		x = 26
+		y = 1
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 24
-		y = 0
 		cost = 5
 		completion_reward = {
-			add_political_power = 20
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
+		prerequisite = {
+			focus = HUN_nww_industry
+		}
+	}
+	focus = {
+		id = NWW_HUN_railways
+		x = 22
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_ganz
+		}
+	}
+	focus = {
+		id = NWW_HUN_machine_tools
+		x = 26
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_ideas = NWW_HUN_workshops
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_weiss
+		}
+	}
+	focus = {
+		id = NWW_HUN_technical_university
+		x = 24
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_railways
+		}
+		prerequisite = {
+			focus = NWW_HUN_machine_tools
+		}
+	}
+	focus = {
+		id = NWW_HUN_research_network
+		x = 24
+		y = 4
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		prerequisite = {
+			focus = NWW_HUN_technical_university
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1620
+	}
+	initial_show_position = {
+		focus = HUN_nww_rebuild
 	}
 }

@@ -1,0 +1,204 @@
+nww_legacy_TUR_army_step = {
+	if = {
+		limit = {
+			has_idea = tur_perfect_army_3
+		}
+		swap_ideas = {
+			remove_idea = tur_perfect_army_3
+			add_idea = tur_perfect_army_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_perfect_army_2
+		}
+		swap_ideas = {
+			remove_idea = tur_perfect_army_2
+			add_idea = tur_perfect_army_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_perfect_army_1
+		}
+		swap_ideas = {
+			remove_idea = tur_perfect_army_1
+			add_idea = tur_perfect_army_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_good_army_4
+		}
+		swap_ideas = {
+			remove_idea = tur_good_army_4
+			add_idea = tur_perfect_army_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_good_army_3
+		}
+		swap_ideas = {
+			remove_idea = tur_good_army_3
+			add_idea = tur_good_army_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_good_army_2
+		}
+		swap_ideas = {
+			remove_idea = tur_good_army_2
+			add_idea = tur_good_army_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_good_army_1
+		}
+		swap_ideas = {
+			remove_idea = tur_good_army_1
+			add_idea = tur_good_army_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_silly_army_nowar_3
+		}
+		swap_ideas = {
+			remove_idea = tur_silly_army_nowar_3
+			add_idea = tur_good_army_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_silly_army_nowar_2
+		}
+		swap_ideas = {
+			remove_idea = tur_silly_army_nowar_2
+			add_idea = tur_silly_army_nowar_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_silly_army_nowar_1
+		}
+		swap_ideas = {
+			remove_idea = tur_silly_army_nowar_1
+			add_idea = tur_silly_army_nowar_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_silly_army_nowar
+		}
+		swap_ideas = {
+			remove_idea = tur_silly_army_nowar
+			add_idea = tur_silly_army_nowar_1
+		}
+	}
+}
+nww_legacy_TUR_industry_step = {
+	if = {
+		limit = {
+			has_idea = tur_small_industry_economic_4
+		}
+		swap_ideas = {
+			remove_idea = tur_small_industry_economic_4
+			add_idea = tur_industry_economic_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_small_industry_economic_3
+		}
+		swap_ideas = {
+			remove_idea = tur_small_industry_economic_3
+			add_idea = tur_small_industry_economic_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_small_industry_economic_2
+		}
+		swap_ideas = {
+			remove_idea = tur_small_industry_economic_2
+			add_idea = tur_small_industry_economic_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_small_industry_economic_1
+		}
+		swap_ideas = {
+			remove_idea = tur_small_industry_economic_1
+			add_idea = tur_small_industry_economic_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_agricultural_economic_4
+		}
+		swap_ideas = {
+			remove_idea = tur_agricultural_economic_4
+			add_idea = tur_small_industry_economic_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_agricultural_economic_3
+		}
+		swap_ideas = {
+			remove_idea = tur_agricultural_economic_3
+			add_idea = tur_agricultural_economic_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_agricultural_economic_2
+		}
+		swap_ideas = {
+			remove_idea = tur_agricultural_economic_2
+			add_idea = tur_agricultural_economic_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = tur_agricultural_economic_1
+		}
+		swap_ideas = {
+			remove_idea = tur_agricultural_economic_1
+			add_idea = tur_agricultural_economic_2
+		}
+	}
+}
+nww_legacy_AFG_economic_step = {
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = AFG_subsistence_economy_modifier
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = NWW_AFG_industry_complete
+				has_country_flag = NWW_AFG_institute_complete
+			}
+			remove_dynamic_modifier = {
+				modifier = AFG_subsistence_economy_modifier
+			}
+		}
+		else = {
+			set_variable = {
+				AFG_economy_production_efficiency_gain_factor = -0.25
+			}
+			set_variable = {
+				AFG_economy_production_max_efficiency_factor = -0.20
+			}
+			set_variable = {
+				AFG_economy_industrial_capacity_factor = -0.25
+			}
+		}
+	}
+}

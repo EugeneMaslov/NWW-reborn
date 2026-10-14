@@ -1,43 +1,41 @@
 focus_tree = {
 	id = GER_focus
-
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = GER
 		}
 	}
-
+	default = no
 	focus = {
 		id = GER_the_kaiser_endures
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 16
-		y = 0
 		cost = 5
 		completion_reward = {
 			add_political_power = 120
 			add_stability = 0.05
 		}
+		x = 5
+		y = 0
 	}
 	focus = {
 		id = GER_prussian_traditions
 		icon = GFX_focus_generic_army_attack
-		prerequisite = { focus = GER_the_kaiser_endures }
-		x = 14
-		y = 1
+		prerequisite = {
+			focus = GER_the_kaiser_endures
+		}
 		cost = 5
 		completion_reward = {
 			army_experience = 25
 			add_war_support = 0.05
 		}
+		x = 3
+		y = 1
 	}
 	focus = {
 		id = GER_krupp_and_thyssen
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = GER_the_kaiser_endures }
-		x = 16
-		y = 1
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -51,44 +49,55 @@ focus_tree = {
 				producer = GER
 			}
 		}
+		x = 13
+		y = 0
 	}
 	focus = {
 		id = GER_the_fleet_question
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = GER_the_kaiser_endures }
-		x = 18
-		y = 1
 		cost = 5
+		x = 23
+		y = 0
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = NWW_legacy_naval_doctrine_bonus
 				category = naval_doctrine
+				uses = 1
+				cost_reduction = 0.5
 			}
-			add_political_power = 50
+			navy_experience = 15
 		}
 	}
 	focus = {
 		id = GER_mitteleuropa_trade
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = GER_krupp_and_thyssen }
-		x = 16
-		y = 2
+		prerequisite = {
+			focus = GER_krupp_and_thyssen
+		}
 		cost = 5
+		x = 18
+		y = 1
 		completion_reward = {
 			random_owned_controlled_state = {
-				limit = { is_capital = no }
-				add_extra_state_shared_building_slots = 2
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
-			add_political_power = 80
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = GER_the_eastern_question
 		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = { focus = GER_prussian_traditions }
-		x = 14
-		y = 2
+		prerequisite = {
+			focus = GER_prussian_traditions
+		}
 		cost = 10
 		completion_reward = {
 			add_manpower = 50000
@@ -99,23 +108,284 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 		}
+		x = 3
+		y = 2
 	}
 	focus = {
 		id = GER_guardians_of_the_reich
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = GER_the_kaiser_endures }
+		prerequisite = {
+			focus = GER_the_kaiser_endures
+		}
 		available = {
 			OR = {
 				has_completed_focus = GER_mitteleuropa_trade
 				has_completed_focus = GER_the_eastern_question
 			}
 		}
-		x = 16
-		y = 3
 		cost = 5
 		completion_reward = {
 			add_manpower = 100000
 			add_stability = 0.05
 		}
+		x = 7
+		y = 1
+	}
+	focus = {
+		id = GER_1
+		x = 13
+		y = 1
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		completion_reward = {
+			42 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = coal
+						amount = 8
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = GER_krupp_and_thyssen
+		}
+	}
+	focus = {
+		id = GER_2
+		x = 11
+		y = 2
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		completion_reward = {
+			546 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = rubber
+						amount = 8
+					}
+				}
+			}
+			541 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = chromium
+						amount = 6
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = GER_1
+		}
+	}
+	focus = {
+		id = GER_3
+		x = 11
+		y = 3
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = GER_2
+		}
+	}
+	focus = {
+		id = GER_4
+		x = 11
+		y = 4
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = infantry_weapons
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = GER_3
+		}
+	}
+	focus = {
+		id = GER_5
+		x = 15
+		y = 2
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = GER_1
+		}
+	}
+	focus = {
+		id = GER_6
+		x = 15
+		y = 3
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = GER_5
+		}
+	}
+	focus = {
+		id = GER_7
+		x = 15
+		y = 4
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = NWW_GER_quality
+		}
+		prerequisite = {
+			focus = GER_6
+		}
+	}
+	focus = {
+		id = GER_8
+		x = 13
+		y = 5
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		prerequisite = {
+			focus = GER_7
+		}
+		prerequisite = {
+			focus = GER_4
+		}
+	}
+	focus = {
+		id = GER_9
+		x = 11
+		y = 6
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = GER_8
+		}
+	}
+	focus = {
+		id = GER_10
+		x = 15
+		y = 6
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				uses = 2
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = GER_8
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1880
+	}
+	initial_show_position = {
+		focus = GER_the_kaiser_endures
 	}
 }

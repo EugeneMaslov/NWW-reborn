@@ -1,0 +1,435 @@
+focus_tree = {
+	id = AFG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = AFG
+		}
+	}
+	default = no
+	focus = {
+		id = AFG_nww_council
+		x = 6
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = AFG_new_political
+		x = 4
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = AFG_nww_council
+		}
+		mutually_exclusive = {
+			focus = AFG_not_new_political_power
+		}
+	}
+	focus = {
+		id = AFG_not_new_political_power
+		x = 8
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = AFG_nww_council
+		}
+		mutually_exclusive = {
+			focus = AFG_new_political
+		}
+	}
+	focus = {
+		id = AFG_remove_borders
+		x = 8
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_war_support = 0.05
+		}
+		prerequisite = {
+			focus = AFG_new_political
+			focus = AFG_not_new_political_power
+		}
+		mutually_exclusive = {
+			focus = AFG_give_free
+		}
+	}
+	focus = {
+		id = AFG_give_free
+		x = 4
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = AFG_new_political
+		}
+		available = {
+			NOT = {
+				democratic < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AFG_remove_borders
+		}
+	}
+	focus = {
+		id = AFG_industrial_1
+		x = 6
+		y = 3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			set_country_flag = NWW_AFG_industry_complete
+			nww_legacy_AFG_economic_step = yes
+		}
+		prerequisite = {
+			focus = AFG_give_free
+			focus = AFG_remove_borders
+		}
+	}
+	focus = {
+		id = AFG_ready_the_army
+		x = 6
+		y = 4
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_legacy_land_doctrine_bonus
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			army_experience = 20
+		}
+		prerequisite = {
+			focus = AFG_industrial_1
+		}
+	}
+	focus = {
+		id = AFG_crush_soviet
+		x = 4
+		y = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 730
+			}
+		}
+		prerequisite = {
+			focus = AFG_ready_the_army
+		}
+		prerequisite = {
+			focus = AFG_remove_borders
+		}
+		available = {
+			SOV = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			NOT = {
+				is_in_faction_with = SOV
+			}
+			is_subject = no
+			has_war_support > 0.30
+			date > 1937.1.1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AFG_good_friend
+		}
+	}
+	focus = {
+		id = AFG_good_friend
+		x = 8
+		y = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = nww_legacy.1
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = AFG_ready_the_army
+		}
+		available = {
+			SOV = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AFG_crush_soviet
+		}
+	}
+	focus = {
+		id = afg_tashkent
+		x = 6
+		y = 6
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			add_political_power = 50
+		}
+		prerequisite = {
+			focus = AFG_crush_soviet
+			focus = AFG_good_friend
+		}
+		available = {
+			OR = {
+				has_country_flag = NWW_foreign_contract
+				405 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = afg_usa
+		x = 4
+		y = 7
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			USA = {
+				country_event = {
+					id = nww_legacy.1
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = afg_tashkent
+		}
+		available = {
+			USA = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = USA
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = afg_ussr
+		}
+	}
+	focus = {
+		id = afg_ussr
+		x = 8
+		y = 7
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			SOV = {
+				country_event = {
+					id = nww_legacy.1
+					days = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = afg_tashkent
+		}
+		available = {
+			NOT = {
+				communism < 0.40
+			}
+			SOV = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			is_subject = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = afg_usa
+		}
+	}
+	focus = {
+		id = afg_site
+		x = 14
+		y = 0
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = afg_anon_ussr
+		x = 14
+		y = 1
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+		prerequisite = {
+			focus = afg_site
+		}
+	}
+	focus = {
+		id = afg_invest_usa
+		x = 14
+		y = 2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			set_country_flag = NWW_AFG_institute_complete
+			nww_legacy_AFG_economic_step = yes
+		}
+		prerequisite = {
+			focus = afg_anon_ussr
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 2010
+	}
+	initial_show_position = {
+		focus = AFG_nww_council
+	}
+}

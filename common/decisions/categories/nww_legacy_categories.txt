@@ -1,0 +1,28 @@
+NWW_TUR_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = TUR
+		has_completed_focus = TUR_political_rw
+	}
+}
+NWW_AFG_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = AFG
+		has_completed_focus = AFG_nww_council
+	}
+}
+NWW_AUS_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = AUS
+		has_completed_focus = AUS_nww_rebuild
+	}
+}
+NWW_HUN_political_campaigns = {
+	icon = generic_political_actions
+	visible = {
+		tag = HUN
+		has_completed_focus = HUN_nww_rebuild
+	}
+}
