@@ -1,0 +1,592 @@
+ideas = {
+	country = {
+		tur_silly_army_nowar = {
+			picture = nww_legacy_silly_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.12
+				planning_speed = -0.12
+				army_attack_factor = -0.06
+			}
+		}
+		tur_silly_army_nowar_1 = {
+			picture = nww_legacy_silly_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.105
+				planning_speed = -0.105
+				army_attack_factor = -0.052
+			}
+		}
+		tur_silly_army_nowar_2 = {
+			picture = nww_legacy_silly_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.09
+				planning_speed = -0.09
+				army_attack_factor = -0.045
+			}
+		}
+		tur_silly_army_nowar_3 = {
+			picture = nww_legacy_silly_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.075
+				planning_speed = -0.075
+				army_attack_factor = -0.037
+			}
+		}
+		tur_good_army_1 = {
+			picture = nww_legacy_good_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.06
+				planning_speed = -0.06
+				army_attack_factor = -0.03
+			}
+		}
+		tur_good_army_2 = {
+			picture = nww_legacy_good_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.045
+				planning_speed = -0.045
+				army_attack_factor = -0.022
+			}
+		}
+		tur_good_army_3 = {
+			picture = nww_legacy_good_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.03
+				planning_speed = -0.03
+				army_attack_factor = -0.015
+			}
+		}
+		tur_good_army_4 = {
+			picture = nww_legacy_good_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.015
+				planning_speed = -0.015
+				army_attack_factor = -0.007
+			}
+		}
+		tur_perfect_army_1 = {
+			picture = nww_legacy_perfect_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.0
+				planning_speed = 0.0
+				army_attack_factor = 0.0
+			}
+		}
+		tur_perfect_army_2 = {
+			picture = nww_legacy_perfect_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.015
+				planning_speed = 0.015
+				army_attack_factor = 0.007
+			}
+		}
+		tur_perfect_army_3 = {
+			picture = nww_legacy_perfect_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.03
+				planning_speed = 0.03
+				army_attack_factor = 0.015
+			}
+		}
+		tur_perfect_army_4 = {
+			picture = nww_legacy_perfect_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.045
+				planning_speed = 0.045
+				army_attack_factor = 0.022
+			}
+		}
+		tur_agricultural_economic_1 = {
+			picture = nww_legacy_tur_agricult
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.16
+				production_speed_buildings_factor = -0.16
+			}
+		}
+		tur_agricultural_economic_2 = {
+			picture = nww_legacy_tur_agricult
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.14
+				production_speed_buildings_factor = -0.14
+			}
+		}
+		tur_agricultural_economic_3 = {
+			picture = nww_legacy_tur_agricult
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.12
+				production_speed_buildings_factor = -0.12
+			}
+		}
+		tur_agricultural_economic_4 = {
+			picture = nww_legacy_tur_agricult
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		tur_small_industry_economic_1 = {
+			picture = nww_legacy_tur_small_industy
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.08
+				production_speed_buildings_factor = -0.08
+			}
+		}
+		tur_small_industry_economic_2 = {
+			picture = nww_legacy_tur_small_industy
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.06
+				production_speed_buildings_factor = -0.06
+			}
+		}
+		tur_small_industry_economic_3 = {
+			picture = nww_legacy_tur_small_industy
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.04
+				production_speed_buildings_factor = -0.04
+			}
+		}
+		tur_small_industry_economic_4 = {
+			picture = nww_legacy_tur_small_industy
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.02
+				production_speed_buildings_factor = -0.02
+			}
+		}
+		tur_industry_economic_1 = {
+			picture = nww_legacy_tur_industy
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.0
+				production_speed_buildings_factor = 0.0
+			}
+		}
+		tur_new_democ = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				democratic_drift = 0.02
+			}
+		}
+		tur_comun_d = {
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.02
+			}
+		}
+		tur_fascism_d = {
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.02
+			}
+		}
+		tur_not_fascism_d = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		TUR_factory_idea_1 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+		TUR_factory_idea_2 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+			}
+		}
+		TUR_capitalism_economic_1 = {
+			picture = nww_legacy_capitalism_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.02
+				consumer_goods_factor = 0.02
+			}
+		}
+		TUR_capitalism_economic_2 = {
+			picture = nww_legacy_capitalism_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		TUR_capitalism_economic_3 = {
+			picture = nww_legacy_capitalism_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		TUR_NFT_1 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				trade_opinion_factor = 0.10
+				production_speed_industrial_complex_factor = 0.03
+			}
+		}
+		TUR_NFT_2 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				trade_opinion_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		TUR_IPT_1 = {
+			picture = generic_industrial_concern_3
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.02
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		TUR_gold_1 = {
+			picture = nww_legacy_tur_gold
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		TUR_TAS_1 = {
+			picture = nww_legacy_tur_TAS
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		TUR_TAS_2 = {
+			picture = nww_legacy_tur_TAS
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		TUR_NNSP_1 = {
+			picture = generic_industrial_concern_3
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		TUR_religion_1 = {
+			picture = generic_industrial_concern_3
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = 0.04
+			}
+		}
+		TUR_supply_reform = {
+			picture = nww_legacy_supply_reform
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				supply_consumption_factor = -0.05
+				army_org_factor = 0.02
+			}
+		}
+		TUR_disagree_reform = {
+			picture = nww_legacy_disagree_reform
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		TUR_universal_army_1 = {
+			picture = nww_legacy_universal_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.03
+				planning_speed = 0.05
+			}
+		}
+		tur_closed_cities_1 = {
+			picture = nww_legacy_closed_cities
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = -0.05
+				max_command_power = 10
+			}
+		}
+		TUR_TNPA_1 = {
+			picture = nww_legacy_tur_TNPA
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				air_accidents_factor = -0.10
+				air_training_xp_gain_factor = 0.10
+			}
+		}
+		tur_dominatuim_turco_1 = {
+			picture = nww_legacy_dominatium_turcorum
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		NWW_TUR_federal_constitution = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		NWW_TUR_workers_federation = {
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.03
+				recruitable_population_factor = 0.03
+			}
+		}
+		NWW_AUS_currency = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		NWW_GER_quality = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.04
+			}
+		}
+		NWW_HUN_workshops = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.04
+			}
+		}
+		TUR_national_economic_1 = {
+			picture = nww_legacy_national_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.02
+				consumer_goods_factor = 0.01
+			}
+		}
+		TUR_national_economic_2 = {
+			picture = nww_legacy_national_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+		TUR_national_economic_3 = {
+			picture = nww_legacy_national_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.06
+				consumer_goods_factor = 0.03
+			}
+		}
+		TUR_national_economic_4 = {
+			picture = nww_legacy_national_economic
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = 0.04
+			}
+		}
+	}
+}

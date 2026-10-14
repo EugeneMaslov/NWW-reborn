@@ -1,0 +1,26 @@
+technology_sharing_group = {
+	id = NWW_Danubian_research
+	name = NWW_Danubian_research_name
+	desc = NWW_Danubian_research_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.05
+	available = {
+		OR = {
+			tag = AUS
+			tag = HUN
+		}
+		AUS = {
+			exists = yes
+			has_country_flag = NWW_danubian_agreement
+		}
+		HUN = {
+			exists = yes
+			has_country_flag = NWW_danubian_agreement
+		}
+		NOT = {
+			AUS = {
+				has_war_with = HUN
+			}
+		}
+	}
+}

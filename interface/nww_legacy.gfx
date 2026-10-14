@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_nww_legacy_silly_army
+		texturefile = "gfx/interface/ideas/nww_legacy/silly_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_good_army
+		texturefile = "gfx/interface/ideas/nww_legacy/good_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_perfect_army
+		texturefile = "gfx/interface/ideas/nww_legacy/perfect_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_tur_agricult
+		texturefile = "gfx/interface/ideas/nww_legacy/tur_agricult.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_tur_small_industy
+		texturefile = "gfx/interface/ideas/nww_legacy/tur_small_industy.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_tur_industy
+		texturefile = "gfx/interface/ideas/nww_legacy/tur_industy.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_capitalism_economic
+		texturefile = "gfx/interface/ideas/nww_legacy/capitalism_economic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_tur_gold
+		texturefile = "gfx/interface/ideas/nww_legacy/tur_gold.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_tur_TAS
+		texturefile = "gfx/interface/ideas/nww_legacy/tur_TAS.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_supply_reform
+		texturefile = "gfx/interface/ideas/nww_legacy/supply_reform.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_disagree_reform
+		texturefile = "gfx/interface/ideas/nww_legacy/disagree_reform.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_universal_army
+		texturefile = "gfx/interface/ideas/nww_legacy/universal_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_closed_cities
+		texturefile = "gfx/interface/ideas/nww_legacy/closed_cities.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_tur_TNPA
+		texturefile = "gfx/interface/ideas/nww_legacy/tur_TNPA.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_dominatium_turcorum
+		texturefile = "gfx/interface/ideas/nww_legacy/dominatium_turcorum.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nww_legacy_national_economic
+		texturefile = "gfx/interface/ideas/nww_legacy/national_economic.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_NWW_TUR_omar
+		texturefile = "gfx/leaders/nww_legacy/Portrait_TUR_omar_faruh_osmanoglu.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_NWW_TUR_fatma
+		texturefile = "gfx/leaders/nww_legacy/Portrait_TUR_Fatma_Alie_Topuz.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_NWW_TUR_hosnu
+		texturefile = "gfx/leaders/nww_legacy/Portrait_TUR_Shephik_Hosnu.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_NWW_TUR_fethi
+		texturefile = "gfx/leaders/nww_legacy/Portrait_TUR_Okayar_Ali_Fethi.dds"
+	}
+}

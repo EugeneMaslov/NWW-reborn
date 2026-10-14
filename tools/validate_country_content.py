@@ -172,6 +172,8 @@ for path in scope_files:
             for k, trait, op in value:
                 valid = mio_traits if '/military_industrial_organization/' in path.as_posix() else traits
                 check(trait in valid, f'{context}: unknown trait {trait}')
+        if key == 'custom_trigger_tooltip' and isinstance(value, list):
+            localized(one(value, 'tooltip'), context)
         if key == 'unlock_mio_trait_tooltip' and isinstance(value,str):
             check(value in mio_traits, f'{context}: unlock tooltip points to unknown MIO trait {value}')
         if key and key.startswith('mio:'):
@@ -328,6 +330,7 @@ weekly_limit = one(one(one(weekly, 'effect'), 'if'), 'limit')
 emergency = next(event for event in values(read(ROOT/'events/nww_ltb.txt'), 'country_event') if one(event, 'id') == 'ltb.112')
 for context, conditions in [('on_weekly', weekly_limit), ('ltb.112', one(emergency, 'trigger'))]:
     check(any(one(negation, 'has_country_flag') == 'LTB_union_preserved' for negation in values(conditions, 'NOT')), f'{context}: preserved union is not protected from the emergency split')
+    check(any(one(negation, 'has_completed_focus') == 'LTB_the_vilnius_compromise' for negation in values(conditions, 'NOT')), f'{context}: a completed compromise can split solely because settlement flags are missing')
 
 bookmark = one(one(read(ROOT/'common/bookmarks/nww_1936.txt'), 'bookmarks'), 'bookmark')
 major_entries = [key for key, value, op in bookmark if (len(key) == 3 and key.isupper()) and one(value, 'minor') != 'yes']
@@ -347,9 +350,8 @@ diplomatic_events = {one(e,'id'):e for e in values(read(ROOT/'events/nww_ltb_dip
 # Crisis and politics regression: army reform waits for the compromise and
 # crisis settlement; a new ruling party must have a genuine public mandate.
 staff = ltb_focuses['LTB_union_general_staff']
-check('LTB_the_vilnius_compromise' in values(one(staff, 'available', []), 'has_completed_focus'), 'General staff no longer requires the Vilnius compromise')
+check(any(k == 'has_completed_focus' and v == 'LTB_the_vilnius_compromise' for k,v,o in walk(one(staff, 'available', []))), 'General staff no longer requires the Vilnius compromise')
 check(not values(staff, 'prerequisite'), 'General staff draws a connection across unrelated branches; use availability conditions for the crisis gates')
-check({'LTB_deadline_resolved', 'LTB_union_preserved'} <= set(values(one(staff, 'available', []), 'has_country_flag')), 'General staff can remove army penalties before the crisis is resolved')
 check('LTB_face_the_crisis' not in values(one(staff, 'available', []), 'has_completed_focus'), 'General staff still needs a redundant crisis focus after the peaceful settlement')
 
 # The compromise must resolve the crisis itself: bypass skips completion rewards.
@@ -370,11 +372,60 @@ check(not any(k == 'date' for k,v,o in walk(bypass)), 'Peaceful crisis bypass st
 check(one(crisis, 'bypass_if_unavailable') != 'yes', 'Crisis could bypass solely because the June start date has not arrived')
 check(one(one(crisis, 'bypass_effect', []), 'nww_ltb_resolve_compromise') == 'yes', 'Bypassed crisis does not preserve settlement flags')
 startup_repairs = [branch for k,branch,o in walk(startup) if k == 'if' and one(branch, 'nww_ltb_resolve_compromise') == 'yes']
-check(any(one(one(branch, 'limit', []), 'has_completed_focus') == 'LTB_the_vilnius_compromise' for branch in startup_repairs), 'Completed compromises in older saves are not repaired on load')
+check(any(one(one(branch, 'limit', []), 'has_completed_focus') == 'LTB_the_vilnius_compromise' for branch in startup_repairs), 'Completed compromises are not reconciled on startup')
 political_routes = [
     ('LTB_crown_the_regency', 'neutrality'), ('LTB_free_elections_now', 'democratic'),
     ('LTB_the_iron_wolf_calls', 'fascism'), ('LTB_red_dawn_over_minsk', 'communism')]
 campaigns = one(read(ROOT/'common/decisions/nww_ltb_decisions.txt'), 'LTB_political_mandate')
+
+# Evaluate the actual condition blocks against the reported old-save state.
+# This deliberately implements only the Boolean/country primitives used here,
+# not the HOI4 engine. Unsupported conditions fail instead of being ignored.
+def settlement_conditions(block, completed, flags, missions=frozenset(), tag='LTB'):
+    results = []
+    for key, value, op in block:
+        if key == 'tooltip':
+            continue
+        if key == 'has_completed_focus':
+            result = value in completed
+        elif key == 'has_country_flag':
+            result = value in flags
+        elif key == 'has_active_mission':
+            result = value in missions
+        elif key == 'tag':
+            result = value == tag
+        elif key in ('AND', 'NOT'):
+            result = settlement_conditions(value, completed, flags, missions, tag)
+            if key == 'NOT':
+                result = not result
+        elif key == 'OR':
+            result = any(settlement_conditions([entry], completed, flags, missions, tag) for entry in value)
+        else:
+            raise ValueError(f'Unsupported settlement condition: {key}')
+        results.append(result)
+    return all(results)
+
+daily = one(one(read(ROOT/'common/on_actions/nww_ltb_on_actions.txt'), 'on_actions'), 'on_daily_LTB', [])
+daily_repair = one(one(daily, 'effect', []), 'if', [])
+check(one(daily_repair, 'nww_ltb_resolve_compromise') == 'yes', 'Old-save settlement is not repaired on the daily country tick')
+cases = [
+    ('reported missing Union flag', {'LTB_the_vilnius_compromise'}, {'LTB_deadline_resolved'}, True, True),
+    ('fully reconciled settlement', {'LTB_the_vilnius_compromise'}, {'LTB_deadline_resolved', 'LTB_union_preserved'}, True, False),
+    ('no compromise', set(), {'LTB_deadline_resolved'}, False, False),
+    ('dissolution already triggered', {'LTB_the_vilnius_compromise'}, {'LTB_split_choice_available'}, False, False),
+]
+peaceful_ids = {'LTB_union_general_staff', 'LTB_the_union_endures', 'LTB_balance_between_giants', 'LTB_professional_contract_army', 'LTB_national_resilience', *[route for route, ideology in political_routes]}
+for token, entity in [(fid, ltb_focuses[fid]) for fid in peaceful_ids] + [(k,v) for k,v,o in campaigns]:
+    available = one(entity, 'available', [])
+    gates = [g for g in values(available, 'custom_trigger_tooltip') if one(g, 'tooltip') == 'LTB_union_preserved']
+    check(len(gates) == 1, f'{token}: missing verified-compromise gate')
+    check(not any(k == 'has_country_flag' and v in ('LTB_union_preserved', 'LTB_deadline_resolved') for k,v,o in walk(available)), f'{token}: auxiliary settlement flags can block a completed compromise')
+    for scenario, completed, flags, expected, repair in cases:
+        if gates:
+            check(settlement_conditions(gates[0], completed, flags) == expected, f'{token}: incorrect access in scenario {scenario}')
+for scenario, completed, flags, access, expected_repair in cases:
+    check(settlement_conditions(one(daily_repair, 'limit', []), completed, flags) == expected_repair, f'Daily reconciliation: incorrect behaviour in scenario {scenario}')
+
 for route, ideology in political_routes:
     focus = ltb_focuses[route]
     gates = one(focus, 'available', [])
@@ -439,4 +490,4 @@ if errors:
     print(f'FAILED: {len(set(errors))} distinct errors')
     sys.exit(1)
 print('PASS:', ', '.join(f'{key}: {value} focuses' for key, value in counts.items()))
-print('PASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates')
+print('PASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, old-save settlement scenarios and daily repair, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates')

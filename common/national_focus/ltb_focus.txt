@@ -185,7 +185,9 @@ focus_tree = {
 		cost = 5
 		bypass = {
 			has_completed_focus = LTB_the_vilnius_compromise
-			NOT = { has_country_flag = LTB_split_choice_available }
+			NOT = {
+				has_country_flag = LTB_split_choice_available
+			}
 		}
 		bypass_effect = {
 			nww_ltb_resolve_compromise = yes
@@ -236,9 +238,13 @@ focus_tree = {
 		x = 42
 		y = 2
 		available = {
-			has_completed_focus = LTB_the_vilnius_compromise
-			has_country_flag = LTB_deadline_resolved
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 		}
 	}
 	focus = {
@@ -614,7 +620,13 @@ focus_tree = {
 		id = LTB_balance_between_giants
 		cost = 5
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			is_subject = no
 		}
 		icon = GFX_goal_generic_neutrality_focus
@@ -846,7 +858,13 @@ focus_tree = {
 			focus = LTB_face_the_crisis
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 		}
 		cost = 5
 		completion_reward = {
@@ -1143,7 +1161,13 @@ focus_tree = {
 		x = 2
 		y = 7
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			NOT = {
 				neutrality < 0.40
 			}
@@ -1208,7 +1232,13 @@ focus_tree = {
 		x = 6
 		y = 7
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			NOT = {
 				democratic < 0.40
 			}
@@ -1278,7 +1308,13 @@ focus_tree = {
 		x = 10
 		y = 7
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			NOT = {
 				fascism < 0.40
 			}
@@ -1348,7 +1384,13 @@ focus_tree = {
 		x = 14
 		y = 7
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 			NOT = {
 				communism < 0.40
 			}
@@ -2029,7 +2071,13 @@ focus_tree = {
 			focus = LTB_joint_maneuvers
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 		}
 		completion_reward = {
 			add_ideas = LTB_contract_officers
@@ -2046,7 +2094,13 @@ focus_tree = {
 			focus = LTB_joint_maneuvers
 		}
 		available = {
-			has_country_flag = LTB_union_preserved
+			custom_trigger_tooltip = {
+				tooltip = LTB_union_preserved
+				has_completed_focus = LTB_the_vilnius_compromise
+				NOT = {
+					has_country_flag = LTB_split_choice_available
+				}
+			}
 		}
 		completion_reward = {
 			add_ideas = LTB_national_resilience_idea

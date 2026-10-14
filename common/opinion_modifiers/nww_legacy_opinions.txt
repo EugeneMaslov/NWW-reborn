@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	NWW_legacy_trade = {
+		value = 30
+		days = 1095
+	}
+}
