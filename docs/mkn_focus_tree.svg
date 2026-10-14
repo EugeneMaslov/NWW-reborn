@@ -1,15 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="5510" height="1105" viewBox="0 0 5510 1105">
+<svg xmlns="http://www.w3.org/2000/svg" width="8210" height="1485" viewBox="0 0 8210 1485">
 <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>
-<rect width="5510" height="1105" fill="#111925"/>
-<text x="32" y="38" font-size="24">MKN: 105 фокусов</text>
+<rect width="8210" height="1485" fill="#111925"/>
+<text x="32" y="38" font-size="24">MKN: 213 фокусов</text>
 <text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>
 <text x="500" y="90" font-size="14" text-anchor="middle">Днепрострой: 24 фокуса</text>
 <text x="1580" y="90" font-size="14" text-anchor="middle">Вольные кооперативы: 24 фокуса</text>
 <text x="2570" y="90" font-size="14" text-anchor="middle">Наука</text>
 <text x="3200" y="90" font-size="14" text-anchor="middle">Политика</text>
-<text x="4280" y="90" font-size="14" text-anchor="middle">Армия</text>
-<text x="4820" y="90" font-size="14" text-anchor="middle">Авиация</text>
-<text x="5270" y="90" font-size="14" text-anchor="middle">Флот</text>
+<text x="4280" y="90" font-size="14" text-anchor="middle">Механизация: 20</text>
+<text x="5000" y="90" font-size="14" text-anchor="middle">Вольные колонны: 20</text>
+<text x="5720" y="90" font-size="14" text-anchor="middle">Защита неба: 20</text>
+<text x="6440" y="90" font-size="14" text-anchor="middle">Авиация поддержки: 20</text>
+<text x="7160" y="90" font-size="14" text-anchor="middle">Эскорты: 20</text>
+<text x="7880" y="90" font-size="14" text-anchor="middle">Рейдеры: 20</text>
 <path d="M 500 255 V 272.5 H 140 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 140 350 V 367.5 H 140 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 500 350 V 367.5 H 500 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
@@ -69,28 +72,27 @@
 <path d="M 3200 540 V 605.0 H 3830 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 3830 730 V 747.5 H 3830 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 3830 825 V 842.5 H 3830 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4280 160 V 177.5 H 4280 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4280 255 V 272.5 H 4280 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4280 350 V 367.5 H 4190 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4280 350 V 367.5 H 4370 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4190 445 V 462.5 H 4280 V 480" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
-<path d="M 4370 445 V 462.5 H 4280 V 480" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
-<path d="M 4280 350 V 367.5 H 4550 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4820 160 V 177.5 H 4820 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4820 255 V 272.5 H 4820 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4820 350 V 367.5 H 4820 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 5270 160 V 177.5 H 5270 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 5270 255 V 272.5 H 5270 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 5270 350 V 367.5 H 5180 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 5270 350 V 367.5 H 5360 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 5270 350 V 415.0 H 5270 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4640 160 V 177.5 H 4640 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4640 255 V 272.5 H 4640 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4640 350 V 367.5 H 4280 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4640 350 V 367.5 H 5000 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 825 V 842.5 H 4100 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4280 445 V 462.5 H 4460 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6080 160 V 177.5 H 6080 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6080 255 V 272.5 H 6080 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6080 350 V 367.5 H 5720 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7520 160 V 177.5 H 7520 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7520 255 V 272.5 H 7520 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7520 350 V 367.5 H 7160 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7520 350 V 367.5 H 7880 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7160 445 V 462.5 H 6980 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 2570 255 V 272.5 H 2570 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 2570 350 V 367.5 H 2570 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 2570 540 V 557.5 H 2570 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4280 540 V 557.5 H 4280 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4550 445 V 510.0 H 4550 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 4820 445 V 510.0 H 4820 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
-<path d="M 5270 540 V 557.5 H 5270 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 730 V 747.5 H 4100 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 540 V 557.5 H 4460 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5720 445 V 462.5 H 5540 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7160 445 V 462.5 H 7340 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 500 160 V 177.5 H 500 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 500 255 V 272.5 H 500 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 500 255 V 272.5 H 860 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
@@ -114,6 +116,120 @@
 <path d="M 1220 825 V 842.5 H 1220 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 1580 825 V 842.5 H 1580 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 1940 825 V 842.5 H 1940 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4280 445 V 462.5 H 4100 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 540 V 557.5 H 4100 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 635 V 652.5 H 4100 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 635 V 652.5 H 4460 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 730 V 747.5 H 4460 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 825 V 842.5 H 4460 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 920 V 937.5 H 4100 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 920 V 937.5 H 4460 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 1015 V 1032.5 H 4100 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 1015 V 1032.5 H 4460 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 1110 V 1127.5 H 4100 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 1110 V 1127.5 H 4460 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 1205 V 1222.5 H 4100 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 1205 V 1222.5 H 4460 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 1300 V 1317.5 H 4280 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4460 1300 V 1317.5 H 4280 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5000 445 V 462.5 H 4820 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5000 445 V 462.5 H 5180 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 540 V 557.5 H 4820 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 540 V 557.5 H 5180 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 635 V 652.5 H 4820 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 635 V 652.5 H 5180 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 730 V 747.5 H 4820 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 730 V 747.5 H 5180 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 825 V 842.5 H 4820 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 825 V 842.5 H 5180 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 920 V 937.5 H 4820 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 920 V 937.5 H 5180 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 1015 V 1032.5 H 4820 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 1015 V 1032.5 H 5180 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 1110 V 1127.5 H 4820 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 1110 V 1127.5 H 5180 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 1205 V 1222.5 H 4820 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 1205 V 1222.5 H 5180 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 1300 V 1317.5 H 5000 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 1300 V 1317.5 H 5000 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5720 445 V 462.5 H 5900 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 540 V 557.5 H 5540 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 540 V 557.5 H 5900 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 635 V 652.5 H 5540 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 635 V 652.5 H 5900 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 730 V 747.5 H 5540 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 730 V 747.5 H 5900 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 825 V 842.5 H 5540 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 825 V 842.5 H 5900 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 920 V 937.5 H 5540 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 920 V 937.5 H 5900 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 1015 V 1032.5 H 5540 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 1015 V 1032.5 H 5900 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 1110 V 1127.5 H 5540 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 1110 V 1127.5 H 5900 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 1205 V 1222.5 H 5540 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 1205 V 1222.5 H 5900 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5540 1300 V 1317.5 H 5720 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5900 1300 V 1317.5 H 5720 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6080 350 V 367.5 H 6440 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6440 445 V 462.5 H 6260 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6440 445 V 462.5 H 6620 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 540 V 557.5 H 6260 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 540 V 557.5 H 6620 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 635 V 652.5 H 6260 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 635 V 652.5 H 6620 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 730 V 747.5 H 6260 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 730 V 747.5 H 6620 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 825 V 842.5 H 6260 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 825 V 842.5 H 6620 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 920 V 937.5 H 6260 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 920 V 937.5 H 6620 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 1015 V 1032.5 H 6260 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 1015 V 1032.5 H 6620 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 1110 V 1127.5 H 6260 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 1110 V 1127.5 H 6620 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 1205 V 1222.5 H 6260 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 1205 V 1222.5 H 6620 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6260 1300 V 1317.5 H 6440 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6620 1300 V 1317.5 H 6440 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 540 V 557.5 H 6980 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 540 V 557.5 H 7340 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 635 V 652.5 H 6980 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 635 V 652.5 H 7340 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 730 V 747.5 H 6980 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 730 V 747.5 H 7340 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 825 V 842.5 H 6980 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 825 V 842.5 H 7340 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 920 V 937.5 H 6980 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 920 V 937.5 H 7340 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 1015 V 1032.5 H 6980 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 1015 V 1032.5 H 7340 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 1110 V 1127.5 H 6980 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 1110 V 1127.5 H 7340 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 1205 V 1222.5 H 6980 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 1205 V 1222.5 H 7340 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 6980 1300 V 1317.5 H 7160 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7340 1300 V 1317.5 H 7160 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7880 445 V 462.5 H 7700 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7880 445 V 462.5 H 8060 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 540 V 557.5 H 7700 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 540 V 557.5 H 8060 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 635 V 652.5 H 7700 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 635 V 652.5 H 8060 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 730 V 747.5 H 7700 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 730 V 747.5 H 8060 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 825 V 842.5 H 7700 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 825 V 842.5 H 8060 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 920 V 937.5 H 7700 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 920 V 937.5 H 8060 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 1015 V 1032.5 H 7700 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 1015 V 1032.5 H 8060 V 1050" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 1110 V 1127.5 H 7700 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 1110 V 1127.5 H 8060 V 1145" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 1205 V 1222.5 H 7700 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 1205 V 1222.5 H 8060 V 1240" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 7700 1300 V 1317.5 H 7880 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 8060 1300 V 1317.5 H 7880 V 1335" fill="none" stroke="#68809a" stroke-width="1.4" />
 <path d="M 500 95 Q 1040.0 65 1580 95" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
 <path d="M 2930 665 Q 3020.0 635 3110 665" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
 <path d="M 2930 665 Q 3110.0 635 3290 665" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
@@ -130,12 +246,14 @@
 <path d="M 3470 665 Q 3560.0 635 3650 665" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
 <path d="M 3470 665 Q 3650.0 635 3830 665" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
 <path d="M 3650 665 Q 3740.0 635 3830 665" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
-<path d="M 4190 380 Q 4280.0 350 4370 380" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 4280 380 Q 4640.0 350 5000 380" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 5720 380 Q 6080.0 350 6440 380" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 7160 380 Q 7520.0 350 7880 380" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
 <g><title>Днепрострой
 Коммуны выберут путь крупных предприятий и общего промышленного плана. Первый договор ослабит хозяйственный кризис; программа вольных кооперативов станет недоступна.
 MKN_dneprostroi</title><rect x="420" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="500" y="121" text-anchor="middle">Днепрострой</text>
-<text class="small" x="500" y="152" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="500" y="152" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Никопольский марганец
 Руды Никопольского бассейна — металл для вольных заводов и валюта для вольных рук.
 MKN_manganese_nikopol</title><rect x="60" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -145,18 +263,18 @@ MKN_manganese_nikopol</title><rect x="60" y="289" width="160" height="62" rx="8"
 Восстановим инфраструктуру и согласуем первые сквозные маршруты. Это ослабит перебои снабжения, но не заменит диспетчерскую сеть.
 MKN_kichkas_bridge</title><rect x="60" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="140" y="406" text-anchor="middle">Кичкасский мост</text>
-<text class="small" x="140" y="437" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="140" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Запорожсталь
 После восстановления перевозок инженерные делегаты согласуют металлургическую программу. Хозяйственные ограничения уменьшатся ещё на одну ступень.
 MKN_zaporizhstal
 Дополнительные условия: Кичкасский мост</title><rect x="420" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="500" y="406" text-anchor="middle">Запорожсталь</text>
-<text class="small" x="500" y="437" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="500" y="437" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Электрификация степи
 Общая сеть свяжет предприятия и сельские поселения. Дух электрификации снизит потребление энергии заводами.
 MKN_steppe_electrification</title><rect x="60" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="140" y="501" text-anchor="middle">Электрификация степи</text>
-<text class="small" x="140" y="532" text-anchor="middle">70 дней • строительство</text></g>
+<text class="small" x="140" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Тракторный завод «Коммунар»
 Запорожский «Коммунар» сыграет трактора, а когда потребуется — корпуса для пушек.
 MKN_kommunar_tractor</title><rect x="420" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -174,7 +292,7 @@ MKN_dnepro_aluminium</title><rect x="420" y="669" width="160" height="62" rx="8"
 MKN_nikopol_tube_zavod</title><rect x="420" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="500" y="596" text-anchor="middle">Никопольский трубный</text>
 <text class="label" x="500" y="612" text-anchor="middle">завод</text>
-<text class="small" x="500" y="627" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="500" y="627" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Механические заводы волостей
 Станки на вольной земле, вольными руками.
 MKN_steppe_mech_works</title><rect x="420" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -201,12 +319,12 @@ MKN_steel_concern_union</title><rect x="780" y="574" width="160" height="62" rx=
 Завершим промышленную программу после реформы производства, семейных касс и хозяйственного договора. Подготовленные склады и расписания превратят перебои снабжения в преимущество.
 MKN_steel_volnitsa</title><rect x="420" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="500" y="976" text-anchor="middle">Стальная вольница</text>
-<text class="small" x="500" y="1007" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="500" y="1007" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Вольные кооперативы
 Сеть самостоятельных артелей примет взаимные обязательства. Хозяйственный кризис ослабнет; путь Днепростроя станет недоступен.
 MKN_free_cooperatives</title><rect x="1500" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1580" y="121" text-anchor="middle">Вольные кооперативы</text>
-<text class="small" x="1580" y="152" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1580" y="152" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Соляные артели
 Соль степи — верная валюта волостей.
 MKN_salt_artsels</title><rect x="1140" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -221,7 +339,7 @@ MKN_grain_brokers</title><rect x="1140" y="384" width="160" height="62" rx="8" f
 Учтём станки и навыки сельских мастеров. Оружейные артели станут первым звеном реформы разрозненного производства.
 MKN_village_smithies</title><rect x="1500" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="1580" y="311" text-anchor="middle">Сельские кузницы</text>
-<text class="small" x="1580" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1580" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Ветряки вольных хуторов
 Ветер в степи бесплатный, как свобода.
 MKN_wind_mills_steppe
@@ -233,7 +351,7 @@ MKN_wind_mills_steppe
 Обмен инструментом и ремонтные поездки укрепят общие договоры. Хозяйственный кризис ослабнет ещё на одну ступень.
 MKN_mobile_workshops</title><rect x="1500" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1580" y="406" text-anchor="middle">Передвижные мастерские</text>
-<text class="small" x="1580" y="437" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="1580" y="437" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Вольные базары
 Торговля без газетных гонок размещает содержание страны. Все ждут базарного дня.
 MKN_free_bazaars</title><rect x="1140" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
@@ -249,12 +367,12 @@ MKN_rifle_concern</title><rect x="1500" y="479" width="160" height="62" rx="8" f
 Свободная чеканка на свободной земле. Никто не мешает печатать собственные билеты...
 MKN_steppe_mint</title><rect x="1140" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1220" y="691" text-anchor="middle">Степной монетный двор</text>
-<text class="small" x="1220" y="722" text-anchor="middle">35 дней</text></g>
+<text class="small" x="1220" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Грузовые артели
 Перевозчики нанесут склады и маршруты на общую карту. Перебои снабжения уменьшатся, но съезд ещё должен согласовать регулярные рейсы.
 MKN_freight_artels</title><rect x="1500" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="1580" y="596" text-anchor="middle">Грузовые артели</text>
-<text class="small" x="1580" y="627" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1580" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Расширение оружейных артелей
 Артели получили общий инструмент и школы мастеров.
 MKN_rifle_concern_union</title><rect x="1500" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -272,7 +390,7 @@ MKN_workshop_airplane_artels</title><rect x="2490" y="479" width="160" height="6
 MKN_craft_federation</title><rect x="1500" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
 <text class="label" x="1580" y="976" text-anchor="middle">Федерация ремесленных</text>
 <text class="label" x="1580" y="992" text-anchor="middle">коммун</text>
-<text class="small" x="1580" y="1007" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="1580" y="1007" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Вольная территория
 Ни господ, ни государств — только вольные советы крестьян и рабочих.
 MKN_the_free_territory</title><rect x="3120" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -340,7 +458,8 @@ MKN_border_tensions</title><rect x="3390" y="574" width="160" height="62" rx="8"
 <text class="small" x="3470" y="627" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Вечная махновщина
 Ни богов, ни господ, ни конца.
-MKN_everlasting_makhnovshchina</title><rect x="2850" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+MKN_everlasting_makhnovshchina
+Дополнительные условия: Советская печать</title><rect x="2850" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="2930" y="691" text-anchor="middle">Вечная махновщина</text>
 <text class="small" x="2930" y="722" text-anchor="middle">70 дней</text></g>
 <g><title>Советы навсегда
@@ -355,7 +474,8 @@ MKN_tachanka_guards</title><rect x="2850" y="859" width="160" height="62" rx="8"
 <text class="small" x="2930" y="912" text-anchor="middle">35 дней</text></g>
 <g><title>Советский коммунизм
 Маркс без Москвы.
-MKN_council_communism</title><rect x="3030" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+MKN_council_communism
+Дополнительные условия: Советская печать</title><rect x="3030" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
 <text class="label" x="3110" y="691" text-anchor="middle">Советский коммунизм</text>
 <text class="small" x="3110" y="722" text-anchor="middle">70 дней</text></g>
 <g><title>Рабочий контроль
@@ -370,7 +490,8 @@ MKN_commune_federation</title><rect x="3030" y="859" width="160" height="62" rx=
 <text class="small" x="3110" y="912" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Учредительное собрание
 Даже анархисты иногда голосуют.
-MKN_constituent_assembly</title><rect x="3210" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+MKN_constituent_assembly
+Дополнительные условия: Советская печать</title><rect x="3210" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3290" y="691" text-anchor="middle">Учредительное собрание</text>
 <text class="small" x="3290" y="722" text-anchor="middle">70 дней</text></g>
 <g><title>Вольные выборы в степи
@@ -385,7 +506,8 @@ MKN_open_markets</title><rect x="3210" y="859" width="160" height="62" rx="8" fi
 <text class="small" x="3290" y="912" text-anchor="middle">35 дней</text></g>
 <g><title>Красное знамя над степью
 Чёрное блекнет до красного.
-MKN_red_banner_steppe</title><rect x="3390" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+MKN_red_banner_steppe
+Дополнительные условия: Советская печать</title><rect x="3390" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3470" y="691" text-anchor="middle">Красное знамя над</text>
 <text class="label" x="3470" y="707" text-anchor="middle">степью</text>
 <text class="small" x="3470" y="722" text-anchor="middle">70 дней</text></g>
@@ -402,7 +524,8 @@ MKN_collectivize_the_steppe</title><rect x="3390" y="859" width="160" height="62
 <text class="small" x="3470" y="912" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Чёрные сотни
 Порядок будет восстановлен. Жестоко.
-MKN_black_hundreds</title><rect x="3570" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+MKN_black_hundreds
+Дополнительные условия: Советская печать</title><rect x="3570" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3650" y="691" text-anchor="middle">Чёрные сотни</text>
 <text class="small" x="3650" y="722" text-anchor="middle">70 дней</text></g>
 <g><title>Порядок через тачанку
@@ -417,7 +540,8 @@ MKN_steppe_legions</title><rect x="3570" y="859" width="160" height="62" rx="8" 
 <text class="small" x="3650" y="912" text-anchor="middle">35 дней • решение съезда</text></g>
 <g><title>Нестор Первый
 Почему нет? У всех остальных есть царь.
-MKN_nestor_the_first</title><rect x="3750" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+MKN_nestor_the_first
+Дополнительные условия: Советская печать</title><rect x="3750" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="3830" y="691" text-anchor="middle">Нестор Первый</text>
 <text class="small" x="3830" y="722" text-anchor="middle">70 дней</text></g>
 <g><title>Императорская коронация
@@ -432,93 +556,95 @@ MKN_steppe_empire</title><rect x="3750" y="859" width="160" height="62" rx="8" f
 <text class="label" x="3830" y="881" text-anchor="middle">Степная империя</text>
 <text class="small" x="3830" y="912" text-anchor="middle">35 дней</text></g>
 <g><title>Тачаночные колонны
-Пулемёты на тачанках — быстрее любой кавалерии старых империй.
-MKN_tachanka_columns</title><rect x="4200" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4280" y="121" text-anchor="middle">Тачаночные колонны</text>
-<text class="small" x="4280" y="152" text-anchor="middle">35 дней</text></g>
-<g><title>Рельсовая война
-Бронепоезда и летучие отряды — степь принадлежит тому, кто держит рельсы.
-MKN_railway_war</title><rect x="4200" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4280" y="216" text-anchor="middle">Рельсовая война</text>
-<text class="small" x="4280" y="247" text-anchor="middle">35 дней</text></g>
-<g><title>Штаб Степной армии
-Батько мыслит набегами. Штаб учится мыслить фронтами.
-MKN_steppe_general_staff</title><rect x="4200" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4280" y="311" text-anchor="middle">Штаб Степной армии</text>
-<text class="small" x="4280" y="342" text-anchor="middle">35 дней</text></g>
-<g><title>Стальные кони Махно
-Бронеавтомобили и танки — пулемёт крепится к стали, а не к коню.
-MKN_steel_horses</title><rect x="4110" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
-<text class="label" x="4190" y="406" text-anchor="middle">Стальные кони Махно</text>
-<text class="small" x="4190" y="437" text-anchor="middle">112 дней</text></g>
+Программа «Тачаночные колонны» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_tachanka_columns</title><rect x="4560" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4640" y="121" text-anchor="middle">Тачаночные колонны</text>
+<text class="small" x="4640" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>Железнодорожная война
+Программа «Железнодорожная война» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_railway_war</title><rect x="4560" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4640" y="216" text-anchor="middle">Железнодорожная война</text>
+<text class="small" x="4640" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>Штаб степных армий
+Программа «Штаб степных армий» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_steppe_general_staff</title><rect x="4560" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4640" y="311" text-anchor="middle">Штаб степных армий</text>
+<text class="small" x="4640" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>Стальные кони
+Крупные соединения получат лёгкую броню, моторизованный тыл и общий штаб. Этот выбор направит ресурсы в механизацию и закроет программу вольных конных колонн.
+MKN_steel_horses</title><rect x="4200" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4280" y="406" text-anchor="middle">Стальные кони</text>
+<text class="small" x="4280" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Конница Батьки
-Конь и степь — древние союзники анархии.
-MKN_batko_cavalry</title><rect x="4290" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4370" y="406" text-anchor="middle">Конница Батьки</text>
-<text class="small" x="4370" y="437" text-anchor="middle">70 дней</text></g>
+Опора на конницу, сельский резерв и самостоятельных младших командиров позволит обходить противника и беречь снабжение. Механизированная модель армии станет недоступна.
+MKN_batko_cavalry</title><rect x="4920" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5000" y="406" text-anchor="middle">Конница Батьки</text>
+<text class="small" x="5000" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Ветераны Чёрной гвардии
-Опыт, которого не заменит никакая академия.
-MKN_black_guard_veterans</title><rect x="4200" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4280" y="501" text-anchor="middle">Ветераны Чёрной</text>
-<text class="label" x="4280" y="517" text-anchor="middle">гвардии</text>
-<text class="small" x="4280" y="532" text-anchor="middle">70 дней</text></g>
-<g><title>Степные интенданты
-Полный мешок — тоже оружие.
-MKN_steppe_quartermasters</title><rect x="4470" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4550" y="406" text-anchor="middle">Степные интенданты</text>
-<text class="small" x="4550" y="437" text-anchor="middle">70 дней</text></g>
-<g><title>Степные ястребы
-Пара ящиков, пара смельчаков — своего рода авиация.
-MKN_steppe_hawks</title><rect x="4740" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4820" y="121" text-anchor="middle">Степные ястребы</text>
-<text class="small" x="4820" y="152" text-anchor="middle">35 дней</text></g>
-<g><title>Аэродромы волостей
-Ровные поля Гуляй-Поля — отличные полосы.
-MKN_village_airfields</title><rect x="4740" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
-<text class="label" x="4820" y="216" text-anchor="middle">Аэродромы волостей</text>
-<text class="small" x="4820" y="247" text-anchor="middle">35 дней • строительство</text></g>
-<g><title>Школа вольных лётчиков
-Небо не делится на сословия.
-MKN_gulyaipole_pilot_school</title><rect x="4740" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="4820" y="311" text-anchor="middle">Школа вольных лётчиков</text>
-<text class="small" x="4820" y="342" text-anchor="middle">70 дней</text></g>
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_black_guard_veterans</title><rect x="4020" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4100" y="881" text-anchor="middle">Ветераны Чёрной</text>
+<text class="label" x="4100" y="897" text-anchor="middle">гвардии</text>
+<text class="small" x="4100" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа степных квартирмейстеров
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_steppe_quartermasters</title><rect x="4380" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="501" text-anchor="middle">Школа степных</text>
+<text class="label" x="4460" y="517" text-anchor="middle">квартирмейстеров</text>
+<text class="small" x="4460" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Степные соколы
+Программа «Степные соколы» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_steppe_hawks</title><rect x="6000" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6080" y="121" text-anchor="middle">Степные соколы</text>
+<text class="small" x="6080" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>Сельские аэродромы
+Программа «Сельские аэродромы» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_village_airfields</title><rect x="6000" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="6080" y="216" text-anchor="middle">Сельские аэродромы</text>
+<text class="small" x="6080" y="247" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>Гуляйпольская школа лётчиков
+Программа «Гуляйпольская школа лётчиков» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_gulyaipole_pilot_school</title><rect x="6000" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6080" y="311" text-anchor="middle">Гуляйпольская школа</text>
+<text class="label" x="6080" y="327" text-anchor="middle">лётчиков</text>
+<text class="small" x="6080" y="342" text-anchor="middle">35 дней</text></g>
 <g><title>Чёрный рой
-Рой мелких, юрких машин над головами врагов.
-MKN_black_swarm</title><rect x="4740" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
-<text class="label" x="4820" y="406" text-anchor="middle">Чёрный рой</text>
-<text class="small" x="4820" y="437" text-anchor="middle">70 дней</text></g>
+В первую очередь защитим переправы, заводы и собственные аэродромы. Истребительные артели и сеть воздушного дозора получат приоритет над программой ударной поддержки.
+MKN_black_swarm</title><rect x="5640" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5720" y="406" text-anchor="middle">Чёрный рой</text>
+<text class="small" x="5720" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Черноморская флотилия
-Даже анархистам нужны лодки для охраны берега.
-MKN_black_sea_flotilla</title><rect x="5190" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="5270" y="121" text-anchor="middle">Черноморская флотилия</text>
-<text class="small" x="5270" y="152" text-anchor="middle">35 дней</text></g>
+Программа «Черноморская флотилия» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_black_sea_flotilla</title><rect x="7440" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="7520" y="121" text-anchor="middle">Черноморская флотилия</text>
+<text class="small" x="7520" y="152" text-anchor="middle">35 дней • строительство</text></g>
 <g><title>Днепровский дозор
-Канонерки на реке.
-MKN_dnieper_patrol</title><rect x="5190" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
-<text class="label" x="5270" y="216" text-anchor="middle">Днепровский дозор</text>
-<text class="small" x="5270" y="247" text-anchor="middle">35 дней</text></g>
-<g><title>Херсонская верфь
-На лимане — стапели вольных: баркасы и канонерки.
-MKN_kherson_shipyard</title><rect x="5190" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
-<text class="label" x="5270" y="311" text-anchor="middle">Херсонская верфь</text>
-<text class="small" x="5270" y="342" text-anchor="middle">70 дней • строительство</text></g>
-<g><title>Оборона лиманов
-Батареи на косах и лиманах: к берегу Вольной территории со двора не заходить.
-MKN_coastal_defense_steppe</title><rect x="5100" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
-<text class="label" x="5180" y="406" text-anchor="middle">Оборона лиманов</text>
-<text class="small" x="5180" y="437" text-anchor="middle">35 дней • строительство</text></g>
-<g><title>Черноморская контрабанда
-Соль, спички и патроны ходят морем в обход всех блокад.
-MKN_black_sea_smugglers</title><rect x="5280" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
-<text class="label" x="5360" y="406" text-anchor="middle">Черноморская</text>
-<text class="label" x="5360" y="422" text-anchor="middle">контрабанда</text>
-<text class="small" x="5360" y="437" text-anchor="middle">70 дней</text></g>
-<g><title>Днепровская канонерская флотилия
-Мелкосидящие канонерки от Кичкаса до лимана.
-MKN_dnieper_gun_flotilla</title><rect x="5190" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
-<text class="label" x="5270" y="501" text-anchor="middle">Днепровская</text>
-<text class="label" x="5270" y="517" text-anchor="middle">канонерская флотилия</text>
-<text class="small" x="5270" y="532" text-anchor="middle">35 дней</text></g>
+Программа «Днепровский дозор» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_dnieper_patrol</title><rect x="7440" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7520" y="216" text-anchor="middle">Днепровский дозор</text>
+<text class="small" x="7520" y="247" text-anchor="middle">35 дней</text></g>
+<g><title>Херсонские верфи
+Программа «Херсонские верфи» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+MKN_kherson_shipyard</title><rect x="7440" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="7520" y="311" text-anchor="middle">Херсонские верфи</text>
+<text class="small" x="7520" y="342" text-anchor="middle">35 дней • строительство</text></g>
+<g><title>Береговой защитный пояс
+Верфи будут строить охранные корабли, а флотилия — защищать зерновые конвои и подходы к портам. Самостоятельная рейдерская программа станет недоступна.
+MKN_coastal_defense_steppe</title><rect x="7080" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="7160" y="406" text-anchor="middle">Береговой защитный</text>
+<text class="label" x="7160" y="422" text-anchor="middle">пояс</text>
+<text class="small" x="7160" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа черноморских рейдеров
+Знание бухт и торговых путей превратим в школу скрытных рейдеров. Подлодки и торпедные катера получат приоритет над крупной программой береговых эскортов.
+MKN_black_sea_smugglers</title><rect x="7800" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7880" y="406" text-anchor="middle">Школа черноморских</text>
+<text class="label" x="7880" y="422" text-anchor="middle">рейдеров</text>
+<text class="small" x="7880" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Днепровские канонерки
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_dnieper_gun_flotilla</title><rect x="6900" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="6980" y="501" text-anchor="middle">Днепровские канонерки</text>
+<text class="small" x="6980" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Технические коммуны
 Учёные и мастера создадут общую сеть технических школ, доступную при любой форме хозяйства.
 MKN_technical_communes</title><rect x="2490" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -542,26 +668,25 @@ MKN_advanced_research</title><rect x="2490" y="574" width="160" height="62" rx="
 <text class="label" x="2570" y="612" text-anchor="middle">школа</text>
 <text class="small" x="2570" y="627" text-anchor="middle">35 дней • исследовательская ячейка</text></g>
 <g><title>Артиллерийские артели
-Повстанческой армии нужны ремонтируемые орудия и устойчивое производство боеприпасов.
-MKN_artillery_artels</title><rect x="4200" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
-<text class="label" x="4280" y="596" text-anchor="middle">Артиллерийские артели</text>
-<text class="small" x="4280" y="627" text-anchor="middle">35 дней • строительство</text></g>
-<g><title>Подвижные колонны снабжения
-Автомобильные обозы позволят степным колоннам действовать вдали от железной дороги.
-MKN_mobile_supply_columns</title><rect x="4470" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
-<text class="label" x="4550" y="596" text-anchor="middle">Подвижные колонны</text>
-<text class="label" x="4550" y="612" text-anchor="middle">снабжения</text>
-<text class="small" x="4550" y="627" text-anchor="middle">35 дней</text></g>
-<g><title>Артели авиастроителей
-Создадим собственную производственную базу для степной авиации.
-MKN_aircraft_artels</title><rect x="4740" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
-<text class="label" x="4820" y="596" text-anchor="middle">Артели авиастроителей</text>
-<text class="small" x="4820" y="627" text-anchor="middle">35 дней • строительство</text></g>
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_artillery_artels</title><rect x="4020" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="4100" y="786" text-anchor="middle">Артиллерийские артели</text>
+<text class="small" x="4100" y="817" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Моторизованные обозы
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_mobile_supply_columns</title><rect x="4380" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="596" text-anchor="middle">Моторизованные обозы</text>
+<text class="small" x="4460" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Артели истребителей
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_aircraft_artels</title><rect x="5460" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="5540" y="501" text-anchor="middle">Артели истребителей</text>
+<text class="small" x="5540" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Черноморские эскорты
-Торговле коммун нужна защита морских путей и ремонтная база.
-MKN_black_sea_escorts</title><rect x="5190" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
-<text class="label" x="5270" y="596" text-anchor="middle">Черноморские эскорты</text>
-<text class="small" x="5270" y="627" text-anchor="middle">35 дней • строительство</text></g>
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_black_sea_escorts</title><rect x="7260" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="501" text-anchor="middle">Черноморские эскорты</text>
+<text class="small" x="7340" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Открытые сметы Днепростроя
 Съезд проверит расходы прежде, чем начнутся большие стройки. Делегаты выберут напряжённый строительный сезон или бережливое переоснащение; оба решения действуют один год.
 MKN_dnieper_audit</title><rect x="420" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -573,18 +698,18 @@ MKN_dnieper_audit</title><rect x="420" y="194" width="160" height="62" rx="8" fi
 MKN_engineering_delegates</title><rect x="420" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
 <text class="label" x="500" y="311" text-anchor="middle">Инженеры с мандатом</text>
 <text class="label" x="500" y="327" text-anchor="middle">коммун</text>
-<text class="small" x="500" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="500" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Выборные бригадиры
 Рабочие и сельские отряды изберут командиров, обязанных регулярно отчитываться. Право отзыва совместимо с ясными обязанностями в бою.
 MKN_elected_brigadiers</title><rect x="780" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="860" y="311" text-anchor="middle">Выборные бригадиры</text>
-<text class="small" x="860" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="860" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Инструкторы при заводах
 Учебные смены дадут ополченцам навыки связи и взаимодействия. Выпускать оружие и уметь им пользоваться должны одни и те же сообщества.
 MKN_factory_instructors</title><rect x="780" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="860" y="406" text-anchor="middle">Инструкторы при</text>
 <text class="label" x="860" y="422" text-anchor="middle">заводах</text>
-<text class="small" x="860" y="437" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="860" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Угольные промыслы степи
 Небольшие промыслы и подвоз топлива обеспечат новые заводы энергией. Развиваем угольную добычу, не подменяя её нефтяными запасами.
 MKN_steppe_coal_contracts</title><rect x="60" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -596,13 +721,13 @@ MKN_steppe_coal_contracts</title><rect x="60" y="669" width="160" height="62" rx
 MKN_dnieper_dispatch</title><rect x="60" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
 <text class="label" x="140" y="786" text-anchor="middle">Единая днепровская</text>
 <text class="label" x="140" y="802" text-anchor="middle">диспетчерская</text>
-<text class="small" x="140" y="817" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="140" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Рабочие батальоны резерва
 Закрепим учебные сборы, сменяемость командиров и защиту рабочего места за ополченцем. Подготовленный резерв завершит военную реформу.
 MKN_worker_battalions</title><rect x="780" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="860" y="691" text-anchor="middle">Рабочие батальоны</text>
 <text class="label" x="860" y="707" text-anchor="middle">резерва</text>
-<text class="small" x="860" y="722" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="860" y="722" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Общие допуски и калибры
 Заводские советы примут общие стандарты вместо несовместимых партий деталей. Артели сохранят свои мастерские, но будут работать по понятным чертежам.
 MKN_dnieper_standards</title><rect x="780" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -615,7 +740,7 @@ MKN_production_cycles
 Дополнительные условия: Никопольский трубный завод, Общие допуски и калибры</title><rect x="60" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="140" y="881" text-anchor="middle">Согласованные</text>
 <text class="label" x="140" y="897" text-anchor="middle">производственные циклы</text>
-<text class="small" x="140" y="912" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="140" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Кассы рабочих семей
 Общие кассы поддержат семьи строителей и резервистов. Промышленный договор не получит доверия, если его успех измеряется только тоннажем стали.
 MKN_workers_welfare</title><rect x="420" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -627,7 +752,7 @@ MKN_industrial_compact
 Дополнительные условия: Кассы рабочих семей</title><rect x="780" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="860" y="881" text-anchor="middle">Днепровский</text>
 <text class="label" x="860" y="897" text-anchor="middle">хозяйственный договор</text>
-<text class="small" x="860" y="912" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="860" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Реестр взаимных обязательств
 Артели запишут, чем располагают и что обещают соседям. Учёт не требует начальника над каждой мастерской.
 MKN_artel_register</title><rect x="1500" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -638,12 +763,12 @@ MKN_artel_register</title><rect x="1500" y="194" width="160" height="62" rx="8" 
 Сельские сходы установят сроки мандатов и ответственность полевых командиров. Добровольность службы не означает неопределённости приказа.
 MKN_recallable_commanders</title><rect x="1860" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1940" y="311" text-anchor="middle">Отзывные командиры</text>
-<text class="small" x="1940" y="342" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1940" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Полевые школы коммун
 Передвижные инструкторы обучат отряды связи, маскировке и совместному манёвру, не отрывая деревни от посевной на месяцы.
 MKN_field_schools</title><rect x="1860" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1940" y="406" text-anchor="middle">Полевые школы коммун</text>
-<text class="small" x="1940" y="437" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1940" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Хлеб для обмена и резерва
 Съезд решит, направить излишки на экспортные договоры или оставить их в страховых кладовых. Выбранная мера действует один год.
 MKN_harvest_reserves</title><rect x="1860" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -659,7 +784,7 @@ MKN_mutual_credit</title><rect x="1860" y="574" width="160" height="62" rx="8" f
 Сельские резервы объединятся в подготовленные мобильные отряды с общими сборами и сменяемым командованием.
 MKN_mobile_self_defence</title><rect x="1860" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1940" y="691" text-anchor="middle">Подвижная самооборона</text>
-<text class="small" x="1940" y="722" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="1940" y="722" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Биржи инструмента и ремонта
 Артели обменяются оснасткой, запчастями и топливом для мастерских. Малые угольные промыслы поддержат местную энергетику.
 MKN_repair_exchanges</title><rect x="1140" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
@@ -671,19 +796,19 @@ MKN_repair_exchanges</title><rect x="1140" y="764" width="160" height="62" rx="8
 MKN_workshop_standards</title><rect x="1500" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
 <text class="label" x="1580" y="786" text-anchor="middle">Договор о</text>
 <text class="label" x="1580" y="802" text-anchor="middle">взаимозаменяемости</text>
-<text class="small" x="1580" y="817" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1580" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Съезд обозных артелей
 Перевозчики согласуют резервные маршруты и помощь пострадавшим обозам. Военные перевозки получат устойчивый порядок.
 MKN_supply_congress
 Дополнительные условия: Грузовые артели</title><rect x="1860" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
 <text class="label" x="1940" y="786" text-anchor="middle">Съезд обозных артелей</text>
-<text class="small" x="1940" y="817" text-anchor="middle">35 дней • реформа духа</text></g>
+<text class="small" x="1940" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
 <g><title>Общий портфель заказов
 Общие стандарты и обмен инструментом позволят распределять заказы между мастерскими. Разрозненность сменится гибким освоением производства.
 MKN_shared_orders
 Дополнительные условия: Договор о взаимозаменяемости</title><rect x="1140" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1220" y="881" text-anchor="middle">Общий портфель заказов</text>
-<text class="small" x="1220" y="912" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="1220" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
 <g><title>Страховая касса коммун
 Взносы артелей защитят семьи от неурожая, травм и потери кормильца. Общая безопасность сделает взаимопомощь надёжнее случайных пожертвований.
 MKN_social_fund</title><rect x="1500" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
@@ -695,5 +820,620 @@ MKN_communal_compact
 Дополнительные условия: Страховая касса коммун</title><rect x="1860" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
 <text class="label" x="1940" y="881" text-anchor="middle">Хартия хозяйственной</text>
 <text class="label" x="1940" y="897" text-anchor="middle">взаимопомощи</text>
-<text class="small" x="1940" y="912" text-anchor="middle">70 дней • реформа духа</text></g>
+<text class="small" x="1940" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Артель танковых экипажей
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_tank_crews</title><rect x="4020" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4100" y="501" text-anchor="middle">Артель танковых</text>
+<text class="label" x="4100" y="517" text-anchor="middle">экипажей</text>
+<text class="small" x="4100" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Радиостанция в каждом штабе
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_radio_sections</title><rect x="4020" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4100" y="596" text-anchor="middle">Радиостанция в каждом</text>
+<text class="label" x="4100" y="612" text-anchor="middle">штабе</text>
+<text class="small" x="4100" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Тягачи для эвакуации
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_recovery_tractors</title><rect x="4020" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4100" y="691" text-anchor="middle">Тягачи для эвакуации</text>
+<text class="small" x="4100" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Полевой ремонт брони
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_tank_maintenance</title><rect x="4380" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="691" text-anchor="middle">Полевой ремонт брони</text>
+<text class="small" x="4460" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Общие таблицы огня
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_fire_tables</title><rect x="4380" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="786" text-anchor="middle">Общие таблицы огня</text>
+<text class="small" x="4460" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Пехота вслед за бронёй
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_motorized_infantry</title><rect x="4380" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="881" text-anchor="middle">Пехота вслед за бронёй</text>
+<text class="small" x="4460" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Мостовые колонны
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_bridge_columns</title><rect x="4020" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4100" y="976" text-anchor="middle">Мостовые колонны</text>
+<text class="small" x="4100" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учёт горючего в походе
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_fuel_discipline</title><rect x="4380" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="976" text-anchor="middle">Учёт горючего в походе</text>
+<text class="small" x="4460" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Штабные игры на Днепре
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_staff_games</title><rect x="4020" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4100" y="1071" text-anchor="middle">Штабные игры на Днепре</text>
+<text class="small" x="4100" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Подвижные санитарные пункты
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_mobile_medical</title><rect x="4380" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="1071" text-anchor="middle">Подвижные санитарные</text>
+<text class="label" x="4460" y="1087" text-anchor="middle">пункты</text>
+<text class="small" x="4460" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Единый боевой порядок
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_combined_arms</title><rect x="4020" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4100" y="1166" text-anchor="middle">Единый боевой порядок</text>
+<text class="small" x="4100" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Резерв второго эшелона
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_deep_reserves</title><rect x="4380" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="1166" text-anchor="middle">Резерв второго эшелона</text>
+<text class="small" x="4460" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Мастерские прорыва
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_breakthrough_workshops</title><rect x="4020" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="4100" y="1261" text-anchor="middle">Мастерские прорыва</text>
+<text class="small" x="4100" y="1292" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Манёвры механизированных колонн
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_armoured_manoeuvres</title><rect x="4380" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4460" y="1261" text-anchor="middle">Манёвры</text>
+<text class="label" x="4460" y="1277" text-anchor="middle">механизированных</text>
+<text class="small" x="4460" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Механизированная армия коммун
+Завершённая подготовка всех служб закрепит выбранную военную модель. Финальный договор требует прохождения всей программы, а не только одного её направления.
+MKN_mechanized_compact
+Дополнительные условия: Стальные кони, Артель танковых экипажей, Школа степных квартирмейстеров, Радиостанция в каждом штабе, Моторизованные обозы, Тягачи для эвакуации, Полевой ремонт брони, Артиллерийские артели, Общие таблицы огня, Ветераны Чёрной гвардии, Пехота вслед за бронёй, Мостовые колонны, Учёт горючего в походе, Штабные игры на Днепре, Подвижные санитарные пункты, Единый боевой порядок, Резерв второго эшелона, Мастерские прорыва, Манёвры механизированных колонн</title><rect x="4200" y="1334" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4280" y="1356" text-anchor="middle">Механизированная армия</text>
+<text class="label" x="4280" y="1372" text-anchor="middle">коммун</text>
+<text class="small" x="4280" y="1387" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Сельские сборные пункты
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_village_muster</title><rect x="4740" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4820" y="501" text-anchor="middle">Сельские сборные</text>
+<text class="label" x="4820" y="517" text-anchor="middle">пункты</text>
+<text class="small" x="4820" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Артели ремонтных лошадей
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_remount_artels</title><rect x="5100" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="501" text-anchor="middle">Артели ремонтных</text>
+<text class="label" x="5180" y="517" text-anchor="middle">лошадей</text>
+<text class="small" x="5180" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Пулемётные повозки
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_machinegun_carts</title><rect x="4740" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="4820" y="596" text-anchor="middle">Пулемётные повозки</text>
+<text class="small" x="4820" y="627" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Проводники родной степи
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_local_guides</title><rect x="5100" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="596" text-anchor="middle">Проводники родной</text>
+<text class="label" x="5180" y="612" text-anchor="middle">степи</text>
+<text class="small" x="5180" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Разведка малыми отрядами
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_scout_parties</title><rect x="4740" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4820" y="691" text-anchor="middle">Разведка малыми</text>
+<text class="label" x="4820" y="707" text-anchor="middle">отрядами</text>
+<text class="small" x="4820" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ветеринарная служба колонн
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_field_veterinary</title><rect x="5100" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="691" text-anchor="middle">Ветеринарная служба</text>
+<text class="label" x="5180" y="707" text-anchor="middle">колонн</text>
+<text class="small" x="5180" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Связь между волостями
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_militia_signals</title><rect x="4740" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4820" y="786" text-anchor="middle">Связь между волостями</text>
+<text class="small" x="4820" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ночные переходы
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_night_marches</title><rect x="5100" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="786" text-anchor="middle">Ночные переходы</text>
+<text class="small" x="5180" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Выборные младшие командиры
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_militia_junior_leaders</title><rect x="4740" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4820" y="881" text-anchor="middle">Выборные младшие</text>
+<text class="label" x="4820" y="897" text-anchor="middle">командиры</text>
+<text class="small" x="4820" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Скрытые сельские склады
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_hidden_depots</title><rect x="5100" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="881" text-anchor="middle">Скрытые сельские</text>
+<text class="label" x="5180" y="897" text-anchor="middle">склады</text>
+<text class="small" x="5180" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сапёрные десятки
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_militia_engineers</title><rect x="4740" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4820" y="976" text-anchor="middle">Сапёрные десятки</text>
+<text class="small" x="4820" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Санитарные артели
+Согласуем подвоз, ремонт и помощь отрядам в походе. Возвращённая в строй техника и своевременные запасы важнее очередного сбора неподготовленных бойцов.
+MKN_militia_hospitals</title><rect x="5100" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="976" text-anchor="middle">Санитарные артели</text>
+<text class="small" x="5180" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Задача вместо длинного приказа
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_flexible_orders</title><rect x="4740" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4820" y="1071" text-anchor="middle">Задача вместо длинного</text>
+<text class="label" x="4820" y="1087" text-anchor="middle">приказа</text>
+<text class="small" x="4820" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сменяемый сельский резерв
+Согласуем ответственность командиров, связь и подготовку операций. Отряд должен понимать задачу соседей, сохраняя право местного решения.
+MKN_rural_reserve</title><rect x="5100" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="1071" text-anchor="middle">Сменяемый сельский</text>
+<text class="label" x="5180" y="1087" text-anchor="middle">резерв</text>
+<text class="small" x="5180" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Тачанки и пеший заслон
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_tachanka_tactics</title><rect x="4740" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="4820" y="1166" text-anchor="middle">Тачанки и пеший заслон</text>
+<text class="small" x="4820" y="1197" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Степная маскировка
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_steppe_camouflage</title><rect x="5100" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="1166" text-anchor="middle">Степная маскировка</text>
+<text class="small" x="5180" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Подвижный арьергард
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_mobile_rearguard</title><rect x="4740" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4820" y="1261" text-anchor="middle">Подвижный арьергард</text>
+<text class="small" x="4820" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сборы вольных колонн
+Отработаем собственный способ боя на общих сборах. Новые образцы и приёмы будут проверены вместе с теми, кто должен применять их в степи.
+MKN_free_column_exercises</title><rect x="5100" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="1261" text-anchor="middle">Сборы вольных колонн</text>
+<text class="small" x="5180" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Армия вольных колонн
+Завершённая подготовка всех служб закрепит выбранную военную модель. Финальный договор требует прохождения всей программы, а не только одного её направления.
+MKN_free_army_compact
+Дополнительные условия: Конница Батьки, Сельские сборные пункты, Артели ремонтных лошадей, Пулемётные повозки, Проводники родной степи, Разведка малыми отрядами, Ветеринарная служба колонн, Связь между волостями, Ночные переходы, Выборные младшие командиры, Скрытые сельские склады, Сапёрные десятки, Санитарные артели, Задача вместо длинного приказа, Сменяемый сельский резерв, Тачанки и пеший заслон, Степная маскировка, Подвижный арьергард, Сборы вольных колонн</title><rect x="4920" y="1334" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5000" y="1356" text-anchor="middle">Армия вольных колонн</text>
+<text class="small" x="5000" y="1387" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Сеть наблюдательных постов
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_observation_posts</title><rect x="5820" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="501" text-anchor="middle">Сеть наблюдательных</text>
+<text class="label" x="5900" y="517" text-anchor="middle">постов</text>
+<text class="small" x="5900" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Инструкторы воздушного боя
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_fighter_instructors</title><rect x="5460" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5540" y="596" text-anchor="middle">Инструкторы воздушного</text>
+<text class="label" x="5540" y="612" text-anchor="middle">боя</text>
+<text class="small" x="5540" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Единая воздушная тревога
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_warning</title><rect x="5820" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="596" text-anchor="middle">Единая воздушная</text>
+<text class="label" x="5900" y="612" text-anchor="middle">тревога</text>
+<text class="small" x="5900" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Радиомаяки полевых полос
+Наземные посты, штабы и экипажи получат общий порядок связи. Быстрый обмен сведениями позволит использовать небольшие воздушные силы там, где они нужны.
+MKN_radio_beacons</title><rect x="5460" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="5540" y="691" text-anchor="middle">Радиомаяки полевых</text>
+<text class="label" x="5540" y="707" text-anchor="middle">полос</text>
+<text class="small" x="5540" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Оснастка для лёгких планеров
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_airframe_jigs</title><rect x="5820" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="5900" y="691" text-anchor="middle">Оснастка для лёгких</text>
+<text class="label" x="5900" y="707" text-anchor="middle">планеров</text>
+<text class="small" x="5900" y="722" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Перехват парами
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_interceptor_pairs</title><rect x="5460" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5540" y="786" text-anchor="middle">Перехват парами</text>
+<text class="small" x="5540" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Возвращать повреждённые машины
+Согласуем ремонт, подготовку и возвращение экипажей. Каждая исправная машина и каждый опытный лётчик нужны стране с небольшой авиационной промышленностью.
+MKN_aircraft_recovery</title><rect x="5820" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="786" text-anchor="middle">Возвращать</text>
+<text class="label" x="5900" y="802" text-anchor="middle">повреждённые машины</text>
+<text class="small" x="5900" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Рассредоточенные аэродромы
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_dispersal</title><rect x="5460" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="5540" y="881" text-anchor="middle">Рассредоточенные</text>
+<text class="label" x="5540" y="897" text-anchor="middle">аэродромы</text>
+<text class="small" x="5540" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Патрули над переправами
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_fighter_patrols</title><rect x="5820" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="881" text-anchor="middle">Патрули над</text>
+<text class="label" x="5900" y="897" text-anchor="middle">переправами</text>
+<text class="small" x="5900" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа радиолокации
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_radar_school</title><rect x="5460" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5540" y="976" text-anchor="middle">Школа радиолокации</text>
+<text class="small" x="5540" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ночной перехват
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_night_interceptors</title><rect x="5820" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="976" text-anchor="middle">Ночной перехват</text>
+<text class="small" x="5900" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Общий запас авиационных деталей
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_aircraft_spares</title><rect x="5460" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="5540" y="1071" text-anchor="middle">Общий запас</text>
+<text class="label" x="5540" y="1087" text-anchor="middle">авиационных деталей</text>
+<text class="small" x="5540" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Переучивание лётчиков
+Наземные посты, штабы и экипажи получат общий порядок связи. Быстрый обмен сведениями позволит использовать небольшие воздушные силы там, где они нужны.
+MKN_fighter_conversion</title><rect x="5820" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="1071" text-anchor="middle">Переучивание лётчиков</text>
+<text class="small" x="5900" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Спасение сбитых лётчиков
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_rescue</title><rect x="5460" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5540" y="1166" text-anchor="middle">Спасение сбитых</text>
+<text class="label" x="5540" y="1182" text-anchor="middle">лётчиков</text>
+<text class="small" x="5540" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Диспетчеры воздушного боя
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_fighter_controllers</title><rect x="5820" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="1166" text-anchor="middle">Диспетчеры воздушного</text>
+<text class="label" x="5900" y="1182" text-anchor="middle">боя</text>
+<text class="small" x="5900" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Защита промышленных районов
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_home_defence</title><rect x="5460" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="5540" y="1261" text-anchor="middle">Защита промышленных</text>
+<text class="label" x="5540" y="1277" text-anchor="middle">районов</text>
+<text class="small" x="5540" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учения воздушного дозора
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_sky_watch_exercises</title><rect x="5820" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5900" y="1261" text-anchor="middle">Учения воздушного</text>
+<text class="label" x="5900" y="1277" text-anchor="middle">дозора</text>
+<text class="small" x="5900" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Небо под защитой коммун
+Завершённая подготовка всех служб закрепит выбранную военную модель. Финальный договор требует прохождения всей программы, а не только одного её направления.
+MKN_free_sky_compact
+Дополнительные условия: Чёрный рой, Артели истребителей, Сеть наблюдательных постов, Инструкторы воздушного боя, Единая воздушная тревога, Радиомаяки полевых полос, Оснастка для лёгких планеров, Перехват парами, Возвращать повреждённые машины, Рассредоточенные аэродромы, Патрули над переправами, Школа радиолокации, Ночной перехват, Общий запас авиационных деталей, Переучивание лётчиков, Спасение сбитых лётчиков, Диспетчеры воздушного боя, Защита промышленных районов, Учения воздушного дозора</title><rect x="5640" y="1334" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5720" y="1356" text-anchor="middle">Небо под защитой</text>
+<text class="label" x="5720" y="1372" text-anchor="middle">коммун</text>
+<text class="small" x="5720" y="1387" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Авиация поддержки
+Сосредоточим подготовку на совместных действиях лётчиков и наземных колонн. Ради точной поддержки фронта откажемся от отдельной программы массового истребительного прикрытия.
+MKN_close_support_program</title><rect x="6360" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6440" y="406" text-anchor="middle">Авиация поддержки</text>
+<text class="small" x="6440" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Артели штурмовой авиации
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_attack_air_artels</title><rect x="6180" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="6260" y="501" text-anchor="middle">Артели штурмовой</text>
+<text class="label" x="6260" y="517" text-anchor="middle">авиации</text>
+<text class="small" x="6260" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Связные при наземных штабах
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_ground_liaisons</title><rect x="6540" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="501" text-anchor="middle">Связные при наземных</text>
+<text class="label" x="6620" y="517" text-anchor="middle">штабах</text>
+<text class="small" x="6620" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Полигоны точного бомбометания
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_bombing_ranges</title><rect x="6180" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6260" y="596" text-anchor="middle">Полигоны точного</text>
+<text class="label" x="6260" y="612" text-anchor="middle">бомбометания</text>
+<text class="small" x="6260" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Передовые посадочные полосы
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_forward_airstrips</title><rect x="6540" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="596" text-anchor="middle">Передовые посадочные</text>
+<text class="label" x="6620" y="612" text-anchor="middle">полосы</text>
+<text class="small" x="6620" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Общее картографическое бюро
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_map_bureau</title><rect x="6180" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6260" y="691" text-anchor="middle">Общее картографическое</text>
+<text class="label" x="6260" y="707" text-anchor="middle">бюро</text>
+<text class="small" x="6260" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ремонт штурмовиков у фронта
+Согласуем ремонт, подготовку и возвращение экипажей. Каждая исправная машина и каждый опытный лётчик нужны стране с небольшой авиационной промышленностью.
+MKN_cas_maintenance</title><rect x="6540" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="6620" y="691" text-anchor="middle">Ремонт штурмовиков у</text>
+<text class="label" x="6620" y="707" text-anchor="middle">фронта</text>
+<text class="small" x="6620" y="722" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Обозначение целей с земли
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_target_markers</title><rect x="6180" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6260" y="786" text-anchor="middle">Обозначение целей с</text>
+<text class="label" x="6260" y="802" text-anchor="middle">земли</text>
+<text class="small" x="6260" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Летающая артиллерия
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_flying_artillery</title><rect x="6540" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="786" text-anchor="middle">Летающая артиллерия</text>
+<text class="small" x="6620" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Топливные склады эскадрилий
+Согласуем ремонт, подготовку и возвращение экипажей. Каждая исправная машина и каждый опытный лётчик нужны стране с небольшой авиационной промышленностью.
+MKN_airfield_fuel</title><rect x="6180" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6260" y="881" text-anchor="middle">Топливные склады</text>
+<text class="label" x="6260" y="897" text-anchor="middle">эскадрилий</text>
+<text class="small" x="6260" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Тактическая воздушная разведка
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_tactical_recon</title><rect x="6540" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="881" text-anchor="middle">Тактическая воздушная</text>
+<text class="label" x="6620" y="897" text-anchor="middle">разведка</text>
+<text class="small" x="6620" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа штурманов
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_bomber_navigation</title><rect x="6180" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6260" y="976" text-anchor="middle">Школа штурманов</text>
+<text class="small" x="6260" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Доставка срочных грузов
+Согласуем ремонт, подготовку и возвращение экипажей. Каждая исправная машина и каждый опытный лётчик нужны стране с небольшой авиационной промышленностью.
+MKN_air_supply_lift</title><rect x="6540" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="976" text-anchor="middle">Доставка срочных</text>
+<text class="label" x="6620" y="992" text-anchor="middle">грузов</text>
+<text class="small" x="6620" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Поддержка приморского фронта
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_coastal_support</title><rect x="6180" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6260" y="1071" text-anchor="middle">Поддержка приморского</text>
+<text class="label" x="6260" y="1087" text-anchor="middle">фронта</text>
+<text class="small" x="6260" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Резерв экипажей штурмовиков
+Наземные посты, штабы и экипажи получат общий порядок связи. Быстрый обмен сведениями позволит использовать небольшие воздушные силы там, где они нужны.
+MKN_cas_replacement_crews</title><rect x="6540" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="1071" text-anchor="middle">Резерв экипажей</text>
+<text class="label" x="6620" y="1087" text-anchor="middle">штурмовиков</text>
+<text class="small" x="6620" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Совместное планирование ударов
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_joint_target_planning</title><rect x="6180" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6260" y="1166" text-anchor="middle">Совместное</text>
+<text class="label" x="6260" y="1182" text-anchor="middle">планирование ударов</text>
+<text class="small" x="6260" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Степная метеослужба
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_air_weather_service</title><rect x="6540" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="1166" text-anchor="middle">Степная метеослужба</text>
+<text class="small" x="6620" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сменяемые ударные группы
+Наземные посты, штабы и экипажи получат общий порядок связи. Быстрый обмен сведениями позволит использовать небольшие воздушные силы там, где они нужны.
+MKN_attack_wing_rotations</title><rect x="6180" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6260" y="1261" text-anchor="middle">Сменяемые ударные</text>
+<text class="label" x="6260" y="1277" text-anchor="middle">группы</text>
+<text class="small" x="6260" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учения лётчиков и артиллеристов
+Обучим экипажи приёмам выбранной воздушной программы. Действующие школы и мастерские превратят новые образцы в пригодные для службы машины.
+MKN_cas_joint_exercises</title><rect x="6540" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6620" y="1261" text-anchor="middle">Учения лётчиков и</text>
+<text class="label" x="6620" y="1277" text-anchor="middle">артиллеристов</text>
+<text class="small" x="6620" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Крылья над вольными колоннами
+Завершённая подготовка всех служб закрепит выбранную военную модель. Финальный договор требует прохождения всей программы, а не только одного её направления.
+MKN_air_support_compact
+Дополнительные условия: Авиация поддержки, Артели штурмовой авиации, Связные при наземных штабах, Полигоны точного бомбометания, Передовые посадочные полосы, Общее картографическое бюро, Ремонт штурмовиков у фронта, Обозначение целей с земли, Летающая артиллерия, Топливные склады эскадрилий, Тактическая воздушная разведка, Школа штурманов, Доставка срочных грузов, Поддержка приморского фронта, Резерв экипажей штурмовиков, Совместное планирование ударов, Степная метеослужба, Сменяемые ударные группы, Учения лётчиков и артиллеристов</title><rect x="6360" y="1334" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6440" y="1356" text-anchor="middle">Крылья над вольными</text>
+<text class="label" x="6440" y="1372" text-anchor="middle">колоннами</text>
+<text class="small" x="6440" y="1387" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Береговые сигнальные посты
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_coastal_signal_posts</title><rect x="6900" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6980" y="596" text-anchor="middle">Береговые сигнальные</text>
+<text class="label" x="6980" y="612" text-anchor="middle">посты</text>
+<text class="small" x="6980" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа экипажей эскортов
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_escort_crews</title><rect x="7260" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="596" text-anchor="middle">Школа экипажей</text>
+<text class="label" x="7340" y="612" text-anchor="middle">эскортов</text>
+<text class="small" x="7340" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Расчистка портовых фарватеров
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_harbour_dredging</title><rect x="6900" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6980" y="691" text-anchor="middle">Расчистка портовых</text>
+<text class="label" x="6980" y="707" text-anchor="middle">фарватеров</text>
+<text class="small" x="6980" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Артели судового ремонта
+Мастерские и портовые артели подготовят возвращение кораблей в строй. Ремонт, запасы и спасение экипажей позволят ограниченному флоту служить дольше.
+MKN_hull_repair_artels</title><rect x="7260" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="691" text-anchor="middle">Артели судового</text>
+<text class="label" x="7340" y="707" text-anchor="middle">ремонта</text>
+<text class="small" x="7340" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа глубинных бомб
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_depth_charge_school</title><rect x="6900" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6980" y="786" text-anchor="middle">Школа глубинных бомб</text>
+<text class="small" x="6980" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Расписания зерновых конвоев
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_convoy_schedules</title><rect x="7260" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="786" text-anchor="middle">Расписания зерновых</text>
+<text class="label" x="7340" y="802" text-anchor="middle">конвоев</text>
+<text class="small" x="7340" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Артели аварийного ремонта
+Судостроители создадут ремонтные мощности и обучат экипажи борьбе за живучесть. Повреждённый эскорт должен вернуться в строй, а не занять единственный причал на весь сезон.
+MKN_fleet_damage_control</title><rect x="6900" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="6980" y="881" text-anchor="middle">Артели аварийного</text>
+<text class="label" x="6980" y="897" text-anchor="middle">ремонта</text>
+<text class="small" x="6980" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Постоянный береговой дозор
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_coastal_watch</title><rect x="7260" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="881" text-anchor="middle">Постоянный береговой</text>
+<text class="label" x="7340" y="897" text-anchor="middle">дозор</text>
+<text class="small" x="7340" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Тральные отряды
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_sweeper_sections</title><rect x="6900" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6980" y="976" text-anchor="middle">Тральные отряды</text>
+<text class="small" x="6980" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Радиосеть охранения
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_escort_radio_net</title><rect x="7260" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="976" text-anchor="middle">Радиосеть охранения</text>
+<text class="small" x="7340" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Портовые склады снабжения
+Мастерские и портовые артели подготовят возвращение кораблей в строй. Ремонт, запасы и спасение экипажей позволят ограниченному флоту служить дольше.
+MKN_coastal_depots</title><rect x="6900" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6980" y="1071" text-anchor="middle">Портовые склады</text>
+<text class="label" x="6980" y="1087" text-anchor="middle">снабжения</text>
+<text class="small" x="6980" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>От реки к морскому эскорту
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_river_sea_coordination</title><rect x="7260" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="1071" text-anchor="middle">От реки к морскому</text>
+<text class="label" x="7340" y="1087" text-anchor="middle">эскорту</text>
+<text class="small" x="7340" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Противолодочные патрули
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_anti_submarine_patrols</title><rect x="6900" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="6980" y="1166" text-anchor="middle">Противолодочные</text>
+<text class="label" x="6980" y="1182" text-anchor="middle">патрули</text>
+<text class="small" x="6980" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Спасательная служба конвоев
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_convoy_rescue</title><rect x="7260" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="1166" text-anchor="middle">Спасательная служба</text>
+<text class="label" x="7340" y="1182" text-anchor="middle">конвоев</text>
+<text class="small" x="7340" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Резерв портовых экипажей
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_escort_reserves</title><rect x="6900" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="6980" y="1261" text-anchor="middle">Резерв портовых</text>
+<text class="label" x="6980" y="1277" text-anchor="middle">экипажей</text>
+<text class="small" x="6980" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учения береговой флотилии
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_coastal_fleet_exercises</title><rect x="7260" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7340" y="1261" text-anchor="middle">Учения береговой</text>
+<text class="label" x="7340" y="1277" text-anchor="middle">флотилии</text>
+<text class="small" x="7340" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Море для хлебных конвоев
+Завершённая подготовка всех служб закрепит выбранную военную модель. Финальный договор требует прохождения всей программы, а не только одного её направления.
+MKN_escort_compact
+Дополнительные условия: Береговой защитный пояс, Днепровские канонерки, Черноморские эскорты, Береговые сигнальные посты, Школа экипажей эскортов, Расчистка портовых фарватеров, Артели судового ремонта, Школа глубинных бомб, Расписания зерновых конвоев, Артели аварийного ремонта, Постоянный береговой дозор, Тральные отряды, Радиосеть охранения, Портовые склады снабжения, От реки к морскому эскорту, Противолодочные патрули, Спасательная служба конвоев, Резерв портовых экипажей, Учения береговой флотилии</title><rect x="7080" y="1334" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7160" y="1356" text-anchor="middle">Море для хлебных</text>
+<text class="label" x="7160" y="1372" text-anchor="middle">конвоев</text>
+<text class="small" x="7160" y="1387" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Торпедные мастерские
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_torpedo_artels</title><rect x="7620" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="7700" y="501" text-anchor="middle">Торпедные мастерские</text>
+<text class="small" x="7700" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа подводных экипажей
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_submarine_crews</title><rect x="7980" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="501" text-anchor="middle">Школа подводных</text>
+<text class="label" x="8060" y="517" text-anchor="middle">экипажей</text>
+<text class="small" x="8060" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Скрытые рейдерские стоянки
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_hidden_anchorages</title><rect x="7620" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7700" y="596" text-anchor="middle">Скрытые рейдерские</text>
+<text class="label" x="7700" y="612" text-anchor="middle">стоянки</text>
+<text class="small" x="7700" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Карты торговых маршрутов
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_naval_intelligence</title><rect x="7980" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="596" text-anchor="middle">Карты торговых</text>
+<text class="label" x="8060" y="612" text-anchor="middle">маршрутов</text>
+<text class="small" x="8060" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Мастерская малых подлодок
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_raider_dockyard</title><rect x="7620" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="7700" y="691" text-anchor="middle">Мастерская малых</text>
+<text class="label" x="7700" y="707" text-anchor="middle">подлодок</text>
+<text class="small" x="7700" y="722" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Испытания торпед
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_torpedo_trials</title><rect x="7980" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="691" text-anchor="middle">Испытания торпед</text>
+<text class="small" x="8060" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ночные выходы
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_night_sorties</title><rect x="7620" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7700" y="786" text-anchor="middle">Ночные выходы</text>
+<text class="small" x="7700" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Снабжение в тайных бухтах
+Мастерские и портовые артели подготовят возвращение кораблей в строй. Ремонт, запасы и спасение экипажей позволят ограниченному флоту служить дольше.
+MKN_raider_supply</title><rect x="7980" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="786" text-anchor="middle">Снабжение в тайных</text>
+<text class="label" x="8060" y="802" text-anchor="middle">бухтах</text>
+<text class="small" x="8060" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школа гидроакустиков
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_submarine_listening</title><rect x="7620" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="7700" y="881" text-anchor="middle">Школа гидроакустиков</text>
+<text class="small" x="7700" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Быстрые торпедные катера
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_fast_attack_craft</title><rect x="7980" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="881" text-anchor="middle">Быстрые торпедные</text>
+<text class="label" x="8060" y="897" text-anchor="middle">катера</text>
+<text class="small" x="8060" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Радиодисциплина рейдеров
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_raider_radio_discipline</title><rect x="7620" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7700" y="976" text-anchor="middle">Радиодисциплина</text>
+<text class="label" x="7700" y="992" text-anchor="middle">рейдеров</text>
+<text class="small" x="7700" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ремонт подводного флота
+Мастерские и портовые артели подготовят возвращение кораблей в строй. Ремонт, запасы и спасение экипажей позволят ограниченному флоту служить дольше.
+MKN_submarine_repair</title><rect x="7980" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="8060" y="976" text-anchor="middle">Ремонт подводного</text>
+<text class="label" x="8060" y="992" text-anchor="middle">флота</text>
+<text class="small" x="8060" y="1007" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Погода как союзник
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_raider_weather</title><rect x="7620" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="7700" y="1071" text-anchor="middle">Погода как союзник</text>
+<text class="small" x="7700" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Резерв рейдерских экипажей
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_raider_replacement_crews</title><rect x="7980" y="1049" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="1071" text-anchor="middle">Резерв рейдерских</text>
+<text class="label" x="8060" y="1087" text-anchor="middle">экипажей</text>
+<text class="small" x="8060" y="1102" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Торпедные засады
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_torpedo_ambushes</title><rect x="7620" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7700" y="1166" text-anchor="middle">Торпедные засады</text>
+<text class="small" x="7700" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Срыв вражеской торговли
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_disrupt_enemy_trade</title><rect x="7980" y="1144" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="1166" text-anchor="middle">Срыв вражеской</text>
+<text class="label" x="8060" y="1182" text-anchor="middle">торговли</text>
+<text class="small" x="8060" y="1197" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Маршруты отхода
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_raider_escape_routes</title><rect x="7620" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="7700" y="1261" text-anchor="middle">Маршруты отхода</text>
+<text class="small" x="7700" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учения скрытного флота
+Общие карты, сигналы и учебные выходы согласуют работу экипажей. Местные моряки знают берег, но нуждаются в порядке совместных действий.
+MKN_raider_exercises</title><rect x="7980" y="1239" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="8060" y="1261" text-anchor="middle">Учения скрытного флота</text>
+<text class="small" x="8060" y="1292" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Море для вольных рейдеров
+Завершённая подготовка всех служб закрепит выбранную военную модель. Финальный договор требует прохождения всей программы, а не только одного её направления.
+MKN_raider_compact
+Дополнительные условия: Школа черноморских рейдеров, Торпедные мастерские, Школа подводных экипажей, Скрытые рейдерские стоянки, Карты торговых маршрутов, Мастерская малых подлодок, Испытания торпед, Ночные выходы, Снабжение в тайных бухтах, Школа гидроакустиков, Быстрые торпедные катера, Радиодисциплина рейдеров, Ремонт подводного флота, Погода как союзник, Резерв рейдерских экипажей, Торпедные засады, Срыв вражеской торговли, Маршруты отхода, Учения скрытного флота</title><rect x="7800" y="1334" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="7880" y="1356" text-anchor="middle">Море для вольных</text>
+<text class="label" x="7880" y="1372" text-anchor="middle">рейдеров</text>
+<text class="small" x="7880" y="1387" text-anchor="middle">70 дней • развитие духа</text></g>
 </svg>

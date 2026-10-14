@@ -142,6 +142,23 @@ characters = {
 				army_guerilla_organizer_2
 			}
 			ledger = army
+			available = {
+				has_government = communism
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			traits = {
+				offensive_doctrine
+				cavalry_leader
+			}
+			visible = {
+				has_government = communism
+			}
 		}
 	}
 	NWW_MKN_peter_arshinov = {
@@ -220,6 +237,348 @@ characters = {
 				military_theorist
 			}
 			ledger = army
+		}
+	}
+	NWW_MKN_oleksandr_hordiienko = {
+		name = NWW_MKN_oleksandr_hordiienko
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_oleksandr_hordiienko
+				small = GFX_idea_MKN_oleksandr_hordiienko
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_oleksandr_hordiienko
+				small = GFX_idea_MKN_oleksandr_hordiienko
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_oleksandr_hordiienko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_steppe_general_staff
+			}
+			traits = {
+				NWW_MKN_oleksandr_hordiienko_specialty
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				engineer_officer
+			}
+		}
+	}
+	NWW_MKN_andrii_dorosh = {
+		name = NWW_MKN_andrii_dorosh
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_andrii_dorosh
+				small = GFX_idea_MKN_andrii_dorosh
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_andrii_dorosh
+				small = GFX_idea_MKN_andrii_dorosh
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NWW_MKN_andrii_dorosh_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_steppe_general_staff
+			}
+			traits = {
+				NWW_MKN_andrii_dorosh_specialty
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				inflexible_strategist
+			}
+		}
+	}
+	NWW_MKN_mykola_kovalenko = {
+		name = NWW_MKN_mykola_kovalenko
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_mykola_kovalenko
+				small = GFX_idea_MKN_mykola_kovalenko
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_mykola_kovalenko
+				small = GFX_idea_MKN_mykola_kovalenko
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = NWW_MKN_mykola_kovalenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_tachanka_columns
+			}
+			traits = {
+				NWW_MKN_mykola_kovalenko_specialty
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				cavalry_officer
+			}
+		}
+	}
+	NWW_MKN_roman_danylenko = {
+		name = NWW_MKN_roman_danylenko
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_roman_danylenko
+				small = GFX_idea_MKN_roman_danylenko
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_roman_danylenko
+				small = GFX_idea_MKN_roman_danylenko
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_roman_danylenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_steppe_general_staff
+			}
+			traits = {
+				NWW_MKN_roman_danylenko_specialty
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			traits = {
+				brilliant_strategist
+			}
+		}
+	}
+	NWW_MKN_olena_hrytsenko = {
+		name = NWW_MKN_olena_hrytsenko
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_olena_hrytsenko
+				small = GFX_idea_MKN_olena_hrytsenko
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_olena_hrytsenko
+				small = GFX_idea_MKN_olena_hrytsenko
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_olena_hrytsenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_steppe_general_staff
+			}
+			traits = {
+				NWW_MKN_olena_hrytsenko_specialty
+			}
+			ledger = army
+		}
+		gender = female
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				organizer
+			}
+		}
+	}
+	NWW_MKN_dmytro_savchenko = {
+		name = NWW_MKN_dmytro_savchenko
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_dmytro_savchenko
+				small = GFX_idea_MKN_dmytro_savchenko
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_dmytro_savchenko
+				small = GFX_idea_MKN_dmytro_savchenko
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NWW_MKN_dmytro_savchenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_gulyaipole_pilot_school
+			}
+			traits = {
+				NWW_MKN_dmytro_savchenko_specialty
+			}
+			ledger = air
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				infantry_officer
+			}
+		}
+	}
+	NWW_MKN_yakiv_levchenko = {
+		name = NWW_MKN_yakiv_levchenko
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_yakiv_levchenko
+				small = GFX_idea_MKN_yakiv_levchenko
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_yakiv_levchenko
+				small = GFX_idea_MKN_yakiv_levchenko
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NWW_MKN_yakiv_levchenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_kherson_shipyard
+			}
+			traits = {
+				NWW_MKN_yakiv_levchenko_specialty
+			}
+			ledger = navy
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
+				infantry_officer
+			}
+		}
+	}
+	NWW_MKN_petro_stepanenko = {
+		name = NWW_MKN_petro_stepanenko
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_MKN_petro_stepanenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_technical_communes
+			}
+			traits = {
+				NWW_MKN_petro_stepanenko_specialty
+			}
+		}
+	}
+	NWW_MKN_ivan_bondarenko = {
+		name = NWW_MKN_ivan_bondarenko
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_MKN_ivan_bondarenko_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_the_free_territory
+			}
+			traits = {
+				NWW_MKN_ivan_bondarenko_specialty
+			}
+		}
+	}
+	NWW_MKN_serhii_melnyk = {
+		name = NWW_MKN_serhii_melnyk
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_3
+			}
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_3
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NWW_MKN_serhii_melnyk_advisor
+			cost = 125
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_completed_focus = MKN_technical_communes
+			}
+			traits = {
+				NWW_MKN_serhii_melnyk_specialty
+			}
 		}
 	}
 }

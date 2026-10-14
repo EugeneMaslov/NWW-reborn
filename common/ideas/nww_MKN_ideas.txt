@@ -490,7 +490,11 @@ ideas = {
 	}
 	industrial_concern = {
 		MKN_industry_concern_1 = {
-			visible = { NOT = { has_completed_focus = MKN_steel_concern_union } }
+			visible = {
+				NOT = {
+					has_completed_focus = MKN_steel_concern_union
+				}
+			}
 			picture = generic_industrial_concern_1
 			allowed = {
 				original_tag = MKN
@@ -510,7 +514,9 @@ ideas = {
 			}
 		}
 		MKN_industry_concern_2 = {
-			visible = { has_completed_focus = MKN_steel_concern_union }
+			visible = {
+				has_completed_focus = MKN_steel_concern_union
+			}
 			name = MKN_industry_concern_1
 			picture = generic_industrial_concern_2
 			allowed = {
@@ -532,8 +538,11 @@ ideas = {
 	materiel_manufacturer = {
 		designer = yes
 		MKN_rifle_concern_1 = {
-			visible = { NOT = { has_completed_focus = MKN_rifle_concern_union } }
-			picture = generic_industrial_concern_1
+			visible = {
+				NOT = {
+					has_completed_focus = MKN_rifle_concern_union
+				}
+			}
 			allowed = {
 				original_tag = MKN
 				NOT = {
@@ -541,9 +550,12 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_rifle_concern
 				NOT = {
 					has_completed_focus = MKN_rifle_concern_union
+				}
+				OR = {
+					has_completed_focus = MKN_rifle_concern
+					has_completed_focus = MKN_village_muster
 				}
 			}
 			cost = 100
@@ -553,11 +565,13 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.05
 			}
+			picture = MKN_company_rifle_artels
 		}
 		MKN_rifle_concern_2 = {
-			visible = { has_completed_focus = MKN_rifle_concern_union }
+			visible = {
+				has_completed_focus = MKN_rifle_concern_union
+			}
 			name = MKN_rifle_concern_1
-			picture = generic_industrial_concern_2
 			allowed = {
 				original_tag = MKN
 				NOT = {
@@ -565,6 +579,10 @@ ideas = {
 				}
 			}
 			available = {
+				OR = {
+					has_completed_focus = MKN_rifle_concern
+					has_completed_focus = MKN_village_muster
+				}
 				has_completed_focus = MKN_rifle_concern_union
 			}
 			cost = 100
@@ -575,6 +593,7 @@ ideas = {
 				political_power_gain = 0.05
 				industrial_capacity_factory = 0.03
 			}
+			picture = MKN_company_rifle_artels
 		}
 	}
 }

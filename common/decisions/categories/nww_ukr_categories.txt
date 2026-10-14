@@ -1,0 +1,1 @@
+UKR_public_mandate = { icon = generic_political_actions allowed = { original_tag = UKR } visible = { has_completed_focus = UKR_public_debate } }

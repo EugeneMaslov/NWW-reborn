@@ -1,0 +1,505 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5870" height="1105" viewBox="0 0 5870 1105">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>
+<rect width="5870" height="1105" fill="#111925"/>
+<text x="32" y="38" font-size="24">UKR: 72 фокусов</text>
+<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>
+<text x="680" y="90" font-size="14" text-anchor="middle">Политические мандаты</text>
+<text x="2120" y="90" font-size="14" text-anchor="middle">Хозяйство</text>
+<text x="3200" y="90" font-size="14" text-anchor="middle">Армия</text>
+<text x="4100" y="90" font-size="14" text-anchor="middle">Авиация</text>
+<text x="5000" y="90" font-size="14" text-anchor="middle">Флот</text>
+<text x="5720" y="90" font-size="14" text-anchor="middle">Дипломатия</text>
+<path d="M 680 160 V 177.5 H 680 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 255 V 272.5 H 680 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 350 V 367.5 H 680 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 445 V 462.5 H 140 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 140 540 V 557.5 H 140 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 140 635 V 652.5 H 140 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 140 730 V 747.5 H 140 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 140 825 V 842.5 H 140 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 445 V 462.5 H 680 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 540 V 557.5 H 680 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 635 V 652.5 H 680 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 730 V 747.5 H 680 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 825 V 842.5 H 680 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 680 445 V 462.5 H 1220 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1220 540 V 557.5 H 1220 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1220 635 V 652.5 H 1220 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1220 730 V 747.5 H 1220 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1220 825 V 842.5 H 1220 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 140 920 V 937.5 H 680 V 955" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 680 920 V 937.5 H 680 V 955" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 1220 920 V 937.5 H 680 V 955" fill="none" stroke="#68809a" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M 2120 160 V 177.5 H 1940 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2120 160 V 177.5 H 2300 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 255 V 272.5 H 1940 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 255 V 272.5 H 2300 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 350 V 367.5 H 1940 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 350 V 367.5 H 2300 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 445 V 462.5 H 1940 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 445 V 462.5 H 2300 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 540 V 557.5 H 1940 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 540 V 557.5 H 2300 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 635 V 652.5 H 1940 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 635 V 652.5 H 2300 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 730 V 747.5 H 1940 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 730 V 747.5 H 2300 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 825 V 842.5 H 1940 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 825 V 842.5 H 2300 V 860" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 1940 920 V 937.5 H 2120 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 2300 920 V 937.5 H 2120 V 955" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3200 160 V 177.5 H 3020 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3200 160 V 177.5 H 3380 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3020 255 V 272.5 H 3020 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3380 255 V 272.5 H 3380 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3020 350 V 367.5 H 3020 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3380 350 V 367.5 H 3380 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3020 445 V 462.5 H 3020 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3380 445 V 462.5 H 3380 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3020 540 V 557.5 H 3020 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3380 540 V 557.5 H 3380 V 575" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3020 635 V 652.5 H 3020 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3380 635 V 652.5 H 3380 V 670" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3020 730 V 747.5 H 3200 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3380 730 V 747.5 H 3200 V 765" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 160 V 177.5 H 3920 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4100 160 V 177.5 H 4280 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3920 255 V 272.5 H 3920 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4280 255 V 272.5 H 4280 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3920 350 V 367.5 H 3920 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4280 350 V 367.5 H 4280 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 3920 445 V 462.5 H 4100 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4280 445 V 462.5 H 4100 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5000 160 V 177.5 H 4820 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5000 160 V 177.5 H 5180 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 255 V 272.5 H 4820 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 255 V 272.5 H 5180 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 350 V 367.5 H 4820 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 350 V 367.5 H 5180 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 4820 445 V 462.5 H 5000 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5180 445 V 462.5 H 5000 V 480" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5720 160 V 177.5 H 5720 V 195" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5720 255 V 272.5 H 5720 V 290" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 5720 350 V 367.5 H 5720 V 385" fill="none" stroke="#68809a" stroke-width="1.4" />
+<path d="M 140 475 Q 410.0 445 680 475" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 140 475 Q 680.0 445 1220 475" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<path d="M 680 475 Q 950.0 445 1220 475" stroke="#be6066" stroke-width="1" fill="none" opacity="0.45"/>
+<g><title>Восстановить киевские службы
+Местные службы получат открытые полномочия. Восстановить киевские службы подготовит обсуждение будущего устройства Украины и работающий способ собирать общественную поддержку.
+UKR_rebuild_kiev</title><rect x="600" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="121" text-anchor="middle">Восстановить киевские</text>
+<text class="label" x="680" y="137" text-anchor="middle">службы</text>
+<text class="small" x="680" y="152" text-anchor="middle">35 дней</text></g>
+<g><title>Съезд местных советов
+Местные службы получат открытые полномочия. Съезд местных советов подготовит обсуждение будущего устройства Украины и работающий способ собирать общественную поддержку.
+UKR_local_congress</title><rect x="600" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="216" text-anchor="middle">Съезд местных советов</text>
+<text class="small" x="680" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Открытые политические собрания
+Местные службы получат открытые полномочия. Открытые политические собрания подготовит обсуждение будущего устройства Украины и работающий способ собирать общественную поддержку.
+UKR_public_debate</title><rect x="600" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="311" text-anchor="middle">Открытые политические</text>
+<text class="label" x="680" y="327" text-anchor="middle">собрания</text>
+<text class="small" x="680" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Комиссия общественного мандата
+Местные службы получат открытые полномочия. Комиссия общественного мандата подготовит обсуждение будущего устройства Украины и работающий способ собирать общественную поддержку.
+UKR_mandate_commission</title><rect x="600" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="406" text-anchor="middle">Комиссия общественного</text>
+<text class="label" x="680" y="422" text-anchor="middle">мандата</text>
+<text class="small" x="680" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Мандат рабочих и крестьян
+Мандат рабочих и крестьян станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_council_mandate</title><rect x="60" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="140" y="501" text-anchor="middle">Мандат рабочих и</text>
+<text class="label" x="140" y="517" text-anchor="middle">крестьян</text>
+<text class="small" x="140" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Земельные соглашения советов
+Земельные соглашения советов станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_cooperative_land</title><rect x="60" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="140" y="596" text-anchor="middle">Земельные соглашения</text>
+<text class="label" x="140" y="612" text-anchor="middle">советов</text>
+<text class="small" x="140" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Выборные заводские правления
+Выборные заводские правления станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_elected_factory_boards</title><rect x="60" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="140" y="691" text-anchor="middle">Выборные заводские</text>
+<text class="label" x="140" y="707" text-anchor="middle">правления</text>
+<text class="small" x="140" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Открытые суды советов
+Открытые суды советов станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_council_courts</title><rect x="60" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="140" y="786" text-anchor="middle">Открытые суды советов</text>
+<text class="small" x="140" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Социальная республика советов
+Социальная республика советов станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_social_republic</title><rect x="60" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="140" y="881" text-anchor="middle">Социальная республика</text>
+<text class="label" x="140" y="897" text-anchor="middle">советов</text>
+<text class="small" x="140" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Мандат Учредительного собрания
+Мандат Учредительного собрания станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_constituent_mandate</title><rect x="600" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="501" text-anchor="middle">Мандат Учредительного</text>
+<text class="label" x="680" y="517" text-anchor="middle">собрания</text>
+<text class="small" x="680" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Гарантии земельных прав
+Гарантии земельных прав станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_land_titles</title><rect x="600" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="596" text-anchor="middle">Гарантии земельных</text>
+<text class="label" x="680" y="612" text-anchor="middle">прав</text>
+<text class="small" x="680" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Выборные муниципалитеты
+Выборные муниципалитеты станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_elected_municipalities</title><rect x="600" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="691" text-anchor="middle">Выборные</text>
+<text class="label" x="680" y="707" text-anchor="middle">муниципалитеты</text>
+<text class="small" x="680" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Независимый суд
+Независимый суд станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_independent_courts</title><rect x="600" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="786" text-anchor="middle">Независимый суд</text>
+<text class="small" x="680" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Федеративная республика
+Федеративная республика станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_federal_republic</title><rect x="600" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="881" text-anchor="middle">Федеративная</text>
+<text class="label" x="680" y="897" text-anchor="middle">республика</text>
+<text class="small" x="680" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Мандат государственного совета
+Мандат государственного совета станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_state_mandate</title><rect x="1140" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1220" y="501" text-anchor="middle">Мандат</text>
+<text class="label" x="1220" y="517" text-anchor="middle">государственного</text>
+<text class="small" x="1220" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Договор с сельскими общинами
+Договор с сельскими общинами станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_rural_compact</title><rect x="1140" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1220" y="596" text-anchor="middle">Договор с сельскими</text>
+<text class="label" x="1220" y="612" text-anchor="middle">общинами</text>
+<text class="small" x="1220" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Профессиональная гражданская служба
+Профессиональная гражданская служба станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_professional_civil_service</title><rect x="1140" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1220" y="691" text-anchor="middle">Профессиональная</text>
+<text class="label" x="1220" y="707" text-anchor="middle">гражданская служба</text>
+<text class="small" x="1220" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Государственный арбитраж
+Государственный арбитраж станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_state_arbitration</title><rect x="1140" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1220" y="786" text-anchor="middle">Государственный</text>
+<text class="label" x="1220" y="802" text-anchor="middle">арбитраж</text>
+<text class="small" x="1220" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Конституционная директория
+Конституционная директория станет обязательством нового правительства перед общинами. Сначала нужен общественный мандат; затем — земельные правила, гражданские учреждения и суд, способный защищать принятые соглашения.
+UKR_constitutional_directory</title><rect x="1140" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1220" y="881" text-anchor="middle">Конституционная</text>
+<text class="label" x="1220" y="897" text-anchor="middle">директория</text>
+<text class="small" x="1220" y="912" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Отчётность перед общинами
+Программа «Отчётность перед общинами» закрепит подготовку кадров и снабжение местных подразделений. Коммуны распределят обязанности, чтобы новые возможности опирались на действующие службы.
+UKR_public_accountability</title><rect x="600" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="680" y="976" text-anchor="middle">Отчётность перед</text>
+<text class="label" x="680" y="992" text-anchor="middle">общинами</text>
+<text class="small" x="680" y="1007" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Хозяйственный совет Днепра
+Хозяйственный совет Днепра свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_dnieper_industry</title><rect x="2040" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="2120" y="121" text-anchor="middle">Хозяйственный совет</text>
+<text class="label" x="2120" y="137" text-anchor="middle">Днепра</text>
+<text class="small" x="2120" y="152" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Открытая земельная перепись
+Открытая земельная перепись свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_land_survey</title><rect x="1860" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1940" y="216" text-anchor="middle">Открытая земельная</text>
+<text class="label" x="1940" y="232" text-anchor="middle">перепись</text>
+<text class="small" x="1940" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Угольные договоры востока
+Угольные договоры востока свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_coal_contracts</title><rect x="2220" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="2300" y="216" text-anchor="middle">Угольные договоры</text>
+<text class="label" x="2300" y="232" text-anchor="middle">востока</text>
+<text class="small" x="2300" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Согласовать сельские кооперативы
+Согласовать сельские кооперативы свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_collectivization_completed</title><rect x="1860" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1940" y="311" text-anchor="middle">Согласовать сельские</text>
+<text class="label" x="1940" y="327" text-anchor="middle">кооперативы</text>
+<text class="small" x="1940" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Контракты на станки
+Контракты на станки свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_machine_tool_imports</title><rect x="2220" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2300" y="311" text-anchor="middle">Контракты на станки</text>
+<text class="small" x="2300" y="342" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Общие семенные фонды
+Общие семенные фонды свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_seed_funds</title><rect x="1860" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1940" y="406" text-anchor="middle">Общие семенные фонды</text>
+<text class="small" x="1940" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учёт железнодорожных грузов
+Учёт железнодорожных грузов свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_railway_accounting</title><rect x="2220" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2300" y="406" text-anchor="middle">Учёт железнодорожных</text>
+<text class="label" x="2300" y="422" text-anchor="middle">грузов</text>
+<text class="small" x="2300" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ремонтные мастерские сёл
+Ремонтные мастерские сёл свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_rural_workshops</title><rect x="1860" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1940" y="501" text-anchor="middle">Ремонтные мастерские</text>
+<text class="label" x="1940" y="517" text-anchor="middle">сёл</text>
+<text class="small" x="1940" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Киевское машиностроение
+Киевское машиностроение свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_kyiv_machine_building</title><rect x="2220" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2300" y="501" text-anchor="middle">Киевское</text>
+<text class="label" x="2300" y="517" text-anchor="middle">машиностроение</text>
+<text class="small" x="2300" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Страхование урожая
+Страхование урожая свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_grain_insurance</title><rect x="1860" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1940" y="596" text-anchor="middle">Страхование урожая</text>
+<text class="small" x="1940" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Общая энергетическая сеть
+Общая энергетическая сеть свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_power_network</title><rect x="2220" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2300" y="596" text-anchor="middle">Общая энергетическая</text>
+<text class="label" x="2300" y="612" text-anchor="middle">сеть</text>
+<text class="small" x="2300" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сельскохозяйственные школы
+Сельскохозяйственные школы свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_agricultural_schools</title><rect x="1860" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1940" y="691" text-anchor="middle">Сельскохозяйственные</text>
+<text class="label" x="1940" y="707" text-anchor="middle">школы</text>
+<text class="small" x="1940" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Одесские торговые дома
+Одесские торговые дома свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_odessa_trade_houses</title><rect x="2220" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="2300" y="691" text-anchor="middle">Одесские торговые дома</text>
+<text class="small" x="2300" y="722" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Черкасские пищевые артели
+Черкасские пищевые артели свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_cherkasy_food_processing</title><rect x="1860" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="1940" y="786" text-anchor="middle">Черкасские пищевые</text>
+<text class="label" x="1940" y="802" text-anchor="middle">артели</text>
+<text class="small" x="1940" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Украинские промышленные стандарты
+Украинские промышленные стандарты свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_industrial_standards</title><rect x="2220" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="2300" y="786" text-anchor="middle">Украинские</text>
+<text class="label" x="2300" y="802" text-anchor="middle">промышленные стандарты</text>
+<text class="small" x="2300" y="817" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сеть политехнических школ
+Сеть политехнических школ свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_polytechnic_network</title><rect x="1860" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="1940" y="881" text-anchor="middle">Сеть политехнических</text>
+<text class="label" x="1940" y="897" text-anchor="middle">школ</text>
+<text class="small" x="1940" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Мастерские точного машиностроения
+Мастерские точного машиностроения свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_precision_workshops</title><rect x="2220" y="859" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="2300" y="881" text-anchor="middle">Мастерские точного</text>
+<text class="label" x="2300" y="897" text-anchor="middle">машиностроения</text>
+<text class="small" x="2300" y="912" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Сбалансированный хозяйственный договор
+Сбалансированный хозяйственный договор свяжет местное хозяйство с общей программой. Сельские общины получат надёжные расчёты, а города — оборудование и квалифицированные кадры без чрезмерных обещаний немедленного промышленного роста.
+UKR_balanced_economic_compact
+Дополнительные условия: Хозяйственный совет Днепра, Открытая земельная перепись, Угольные договоры востока, Согласовать сельские кооперативы, Контракты на станки, Общие семенные фонды, Учёт железнодорожных грузов, Ремонтные мастерские сёл, Киевское машиностроение, Страхование урожая, Общая энергетическая сеть, Сельскохозяйственные школы, Одесские торговые дома, Черкасские пищевые артели, Украинские промышленные стандарты, Сеть политехнических школ, Мастерские точного машиностроения</title><rect x="2040" y="954" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="2120" y="976" text-anchor="middle">Сбалансированный</text>
+<text class="label" x="2120" y="992" text-anchor="middle">хозяйственный договор</text>
+<text class="small" x="2120" y="1007" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Стражи украинской степи
+Стражи украинской степи обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_guardians_of_the_steppe</title><rect x="3120" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3200" y="121" text-anchor="middle">Стражи украинской</text>
+<text class="label" x="3200" y="137" text-anchor="middle">степи</text>
+<text class="small" x="3200" y="152" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Окружные склады армии
+Окружные склады армии обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_army_depots</title><rect x="2940" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="3020" y="216" text-anchor="middle">Окружные склады армии</text>
+<text class="small" x="3020" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Украинская офицерская школа
+Украинская офицерская школа обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_officer_school</title><rect x="3300" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3380" y="216" text-anchor="middle">Украинская офицерская</text>
+<text class="label" x="3380" y="232" text-anchor="middle">школа</text>
+<text class="small" x="3380" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Единые армейские калибры
+Единые армейские калибры обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_rifle_standardization</title><rect x="2940" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="3020" y="311" text-anchor="middle">Единые армейские</text>
+<text class="label" x="3020" y="327" text-anchor="middle">калибры</text>
+<text class="small" x="3020" y="342" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Полевые сапёры
+Полевые сапёры обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_field_engineers</title><rect x="3300" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="3380" y="311" text-anchor="middle">Полевые сапёры</text>
+<text class="small" x="3380" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Артиллерийские таблицы
+Артиллерийские таблицы обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_artillery_tables</title><rect x="2940" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3020" y="406" text-anchor="middle">Артиллерийские таблицы</text>
+<text class="small" x="3020" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Военная санитарная служба
+Военная санитарная служба обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_army_medical</title><rect x="3300" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3380" y="406" text-anchor="middle">Военная санитарная</text>
+<text class="label" x="3380" y="422" text-anchor="middle">служба</text>
+<text class="small" x="3380" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Моторизованное снабжение
+Моторизованное снабжение обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_motorized_train</title><rect x="2940" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="3020" y="501" text-anchor="middle">Моторизованное</text>
+<text class="label" x="3020" y="517" text-anchor="middle">снабжение</text>
+<text class="small" x="3020" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Разведчики приграничья
+Разведчики приграничья обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_border_scouts</title><rect x="3300" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3380" y="501" text-anchor="middle">Разведчики приграничья</text>
+<text class="small" x="3380" y="532" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Связь окружных штабов
+Связь окружных штабов обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_army_signals</title><rect x="2940" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3020" y="596" text-anchor="middle">Связь окружных штабов</text>
+<text class="small" x="3020" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Учения территориального резерва
+Учения территориального резерва обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_reserve_exercises</title><rect x="3300" y="574" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="3380" y="596" text-anchor="middle">Учения</text>
+<text class="label" x="3380" y="612" text-anchor="middle">территориального</text>
+<text class="small" x="3380" y="627" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Совместные операции родов войск
+Совместные операции родов войск обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_combined_operations</title><rect x="2940" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3020" y="691" text-anchor="middle">Совместные операции</text>
+<text class="label" x="3020" y="707" text-anchor="middle">родов войск</text>
+<text class="small" x="3020" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ремонтная сеть армии
+Ремонтная сеть армии обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_army_repair_network</title><rect x="3300" y="669" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3380" y="691" text-anchor="middle">Ремонтная сеть армии</text>
+<text class="small" x="3380" y="722" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Подготовленная национальная оборона
+Подготовленная национальная оборона обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_prepared_defence
+Дополнительные условия: Стражи украинской степи, Окружные склады армии, Украинская офицерская школа, Единые армейские калибры, Полевые сапёры, Артиллерийские таблицы, Военная санитарная служба, Моторизованное снабжение, Разведчики приграничья, Связь окружных штабов, Учения территориального резерва, Совместные операции родов войск, Ремонтная сеть армии</title><rect x="3120" y="764" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="3200" y="786" text-anchor="middle">Подготовленная</text>
+<text class="label" x="3200" y="802" text-anchor="middle">национальная оборона</text>
+<text class="small" x="3200" y="817" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Украинская воздушная служба
+Украинская воздушная служба обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_air_service</title><rect x="4020" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4100" y="121" text-anchor="middle">Украинская воздушная</text>
+<text class="label" x="4100" y="137" text-anchor="middle">служба</text>
+<text class="small" x="4100" y="152" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Школы украинских лётчиков
+Школы украинских лётчиков обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_pilot_schools</title><rect x="3840" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="3920" y="216" text-anchor="middle">Школы украинских</text>
+<text class="label" x="3920" y="232" text-anchor="middle">лётчиков</text>
+<text class="small" x="3920" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Киевские авиамастерские
+Киевские авиамастерские обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_air_workshops</title><rect x="4200" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="4280" y="216" text-anchor="middle">Киевские</text>
+<text class="label" x="4280" y="232" text-anchor="middle">авиамастерские</text>
+<text class="small" x="4280" y="247" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Сеть воздушных наблюдателей
+Сеть воздушных наблюдателей обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_air_observers</title><rect x="3840" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3920" y="311" text-anchor="middle">Сеть воздушных</text>
+<text class="label" x="3920" y="327" text-anchor="middle">наблюдателей</text>
+<text class="small" x="3920" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Патрули над Днепром
+Патрули над Днепром обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_fighter_patrols</title><rect x="4200" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4280" y="311" text-anchor="middle">Патрули над Днепром</text>
+<text class="small" x="4280" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Связь с наземными штабами
+Связь с наземными штабами обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_ground_support</title><rect x="3840" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="3920" y="406" text-anchor="middle">Связь с наземными</text>
+<text class="label" x="3920" y="422" text-anchor="middle">штабами</text>
+<text class="small" x="3920" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Запас авиационных деталей
+Запас авиационных деталей обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_air_spares</title><rect x="4200" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4280" y="406" text-anchor="middle">Запас авиационных</text>
+<text class="label" x="4280" y="422" text-anchor="middle">деталей</text>
+<text class="small" x="4280" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Единая система воздушной защиты
+Единая система воздушной защиты обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_integrated_air_service
+Дополнительные условия: Украинская воздушная служба, Школы украинских лётчиков, Киевские авиамастерские, Сеть воздушных наблюдателей, Патрули над Днепром, Связь с наземными штабами, Запас авиационных деталей</title><rect x="4020" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="4100" y="501" text-anchor="middle">Единая система</text>
+<text class="label" x="4100" y="517" text-anchor="middle">воздушной защиты</text>
+<text class="small" x="4100" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Одесская морская служба
+Одесская морская служба обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_odessa_naval_service</title><rect x="4920" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5000" y="121" text-anchor="middle">Одесская морская</text>
+<text class="label" x="5000" y="137" text-anchor="middle">служба</text>
+<text class="small" x="5000" y="152" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Ремонтные верфи Одессы
+Ремонтные верфи Одессы обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_odessa_shipyards</title><rect x="4740" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#327a65" stroke-width="2"/>
+<text class="label" x="4820" y="216" text-anchor="middle">Ремонтные верфи Одессы</text>
+<text class="small" x="4820" y="247" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Школа морских экипажей
+Школа морских экипажей обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_naval_crew_school</title><rect x="5100" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="216" text-anchor="middle">Школа морских экипажей</text>
+<text class="small" x="5180" y="247" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Украинский береговой дозор
+Украинский береговой дозор обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_coastal_watch</title><rect x="4740" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4820" y="311" text-anchor="middle">Украинский береговой</text>
+<text class="label" x="4820" y="327" text-anchor="middle">дозор</text>
+<text class="small" x="4820" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Охрана экспортных конвоев
+Охрана экспортных конвоев обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_convoy_escort</title><rect x="5100" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="5180" y="311" text-anchor="middle">Охрана экспортных</text>
+<text class="label" x="5180" y="327" text-anchor="middle">конвоев</text>
+<text class="small" x="5180" y="342" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Тральщики портовых подходов
+Тральщики портовых подходов обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_naval_minesweepers</title><rect x="4740" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="4820" y="406" text-anchor="middle">Тральщики портовых</text>
+<text class="label" x="4820" y="422" text-anchor="middle">подходов</text>
+<text class="small" x="4820" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Снабжение приморских гарнизонов
+Снабжение приморских гарнизонов обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_naval_logistics</title><rect x="5100" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5180" y="406" text-anchor="middle">Снабжение приморских</text>
+<text class="label" x="5180" y="422" text-anchor="middle">гарнизонов</text>
+<text class="small" x="5180" y="437" text-anchor="middle">35 дней • развитие духа</text></g>
+<g><title>Безопасные морские пути
+Безопасные морские пути обеспечит подготовку людей, материальную часть и связь служб. Национальная программа будет опираться на местные предприятия и регулярные учения.
+UKR_safe_trade_routes
+Дополнительные условия: Одесская морская служба, Ремонтные верфи Одессы, Школа морских экипажей, Украинский береговой дозор, Охрана экспортных конвоев, Тральщики портовых подходов, Снабжение приморских гарнизонов</title><rect x="4920" y="479" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#6655a2" stroke-width="2"/>
+<text class="label" x="5000" y="501" text-anchor="middle">Безопасные морские</text>
+<text class="label" x="5000" y="517" text-anchor="middle">пути</text>
+<text class="small" x="5000" y="532" text-anchor="middle">70 дней • развитие духа</text></g>
+<g><title>Переговоры с Москвой
+Украина предложит соглашение соседу. Ответ зависит от его правительства; отклонённое предложение не даёт договорных наград и не меняет владельцев территорий.
+UKR_friends_in_moscow</title><rect x="5640" y="99" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5720" y="121" text-anchor="middle">Переговоры с Москвой</text>
+<text class="small" x="5720" y="152" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>Хлеб и станки через Варшаву
+Украина предложит соглашение соседу. Ответ зависит от его правительства; отклонённое предложение не даёт договорных наград и не меняет владельцев территорий.
+UKR_polish_trade</title><rect x="5640" y="194" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5720" y="216" text-anchor="middle">Хлеб и станки через</text>
+<text class="label" x="5720" y="232" text-anchor="middle">Варшаву</text>
+<text class="small" x="5720" y="247" text-anchor="middle">35 дней • решение съезда</text></g>
+<g><title>Махновский вопрос
+Украина предложит соглашение соседу. Ответ зависит от его правительства; отклонённое предложение не даёт договорных наград и не меняет владельцев территорий.
+UKR_the_makhno_question</title><rect x="5640" y="289" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5720" y="311" text-anchor="middle">Махновский вопрос</text>
+<text class="small" x="5720" y="342" text-anchor="middle">35 дней</text></g>
+<g><title>Договор с вольной территорией
+Украина предложит соглашение соседу. Ответ зависит от его правительства; отклонённое предложение не даёт договорных наград и не меняет владельцев территорий.
+UKR_border_compact</title><rect x="5640" y="384" width="160" height="62" rx="8" fill="#1c2a3a" stroke="#416487" stroke-width="2"/>
+<text class="label" x="5720" y="406" text-anchor="middle">Договор с вольной</text>
+<text class="label" x="5720" y="422" text-anchor="middle">территорией</text>
+<text class="small" x="5720" y="437" text-anchor="middle">35 дней • решение съезда</text></g>
+</svg>

@@ -1,0 +1,58 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_MKN_company_kommunar
+		texturefile = "gfx/interface/ideas/MKN/company_kommunar.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_kommunar
+		texturefile = "gfx/interface/ideas/MKN/focus_kommunar.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_company_rifle_artels
+		texturefile = "gfx/interface/ideas/MKN/company_rifle_artels.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_rifle_artels
+		texturefile = "gfx/interface/ideas/MKN/focus_rifle_artels.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_company_artillery_works
+		texturefile = "gfx/interface/ideas/MKN/company_artillery_works.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_artillery_works
+		texturefile = "gfx/interface/ideas/MKN/focus_artillery_works.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_company_air_artels
+		texturefile = "gfx/interface/ideas/MKN/company_air_artels.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_air_artels
+		texturefile = "gfx/interface/ideas/MKN/focus_air_artels.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_company_attack_air_artels
+		texturefile = "gfx/interface/ideas/MKN/company_attack_air_artels.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_attack_air_artels
+		texturefile = "gfx/interface/ideas/MKN/focus_attack_air_artels.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_company_kherson_works
+		texturefile = "gfx/interface/ideas/MKN/company_kherson_works.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_kherson_works
+		texturefile = "gfx/interface/ideas/MKN/focus_kherson_works.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_company_submarine_works
+		texturefile = "gfx/interface/ideas/MKN/company_submarine_works.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_company_submarine_works
+		texturefile = "gfx/interface/ideas/MKN/focus_submarine_works.dds"
+	}
+}

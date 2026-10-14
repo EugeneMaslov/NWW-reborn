@@ -1,0 +1,1487 @@
+nww_mkn_rebuild_industry = {
+	set_variable = {
+		MKN_unified_army_org_factor = -0.1500
+	}
+	set_variable = {
+		MKN_unified_army_org_regain = -0.1500
+	}
+	set_variable = {
+		MKN_unified_army_speed_factor = 0.0000
+	}
+	set_variable = {
+		MKN_unified_attrition = 0.0000
+	}
+	set_variable = {
+		MKN_unified_consumer_goods_factor = 0.1500
+	}
+	set_variable = {
+		MKN_unified_factory_energy_consumption = 0.0000
+	}
+	set_variable = {
+		MKN_unified_industrial_capacity_factory = -0.1500
+	}
+	set_variable = {
+		MKN_unified_max_planning = -0.1000
+	}
+	set_variable = {
+		MKN_unified_political_power_gain = -0.2500
+	}
+	set_variable = {
+		MKN_unified_production_factory_efficiency_gain_factor = -0.2000
+	}
+	set_variable = {
+		MKN_unified_production_factory_max_efficiency_factor = 0.0000
+	}
+	set_variable = {
+		MKN_unified_production_speed_buildings_factor = -0.1500
+	}
+	set_variable = {
+		MKN_unified_research_speed_factor = -0.0500
+	}
+	set_variable = {
+		MKN_unified_stability_factor = 0.0000
+	}
+	set_variable = {
+		MKN_unified_supply_consumption_factor = 0.2000
+	}
+	set_variable = {
+		MKN_unified_training_time_army_factor = 0.2000
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_communal_compact
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.1000
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_craft_federation
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.1300
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.0400
+		}
+		add_to_variable = {
+			MKN_unified_attrition = -0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dneprostroi
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dnieper_dispatch
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.0700
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.0600
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_elected_brigadiers
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.0800
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.0400
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_engineering_delegates
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0800
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_factory_instructors
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.0600
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.0700
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.0300
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_field_schools
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.0600
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.0700
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.0300
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_free_cooperatives
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_freight_artels
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.0800
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_industrial_compact
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.1300
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_kichkas_bridge
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.0800
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mobile_self_defence
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.0800
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.1000
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.0300
+		}
+		add_to_variable = {
+			MKN_unified_army_speed_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mobile_workshops
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_nikopol_tube_zavod
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0700
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_production_cycles
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0100
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_max_efficiency_factor = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_recallable_commanders
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.0800
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.0400
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_shared_orders
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.1100
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.2000
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0400
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steel_volnitsa
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.1500
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.0900
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_electrification
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_factory_energy_consumption = -0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_mint
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.2000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_supply_congress
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.0700
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.0600
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_village_smithies
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0800
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_worker_battalions
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.0800
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_workshop_standards
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0700
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_zaporizhstal
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+	}
+	remove_ideas = {
+		MKN_accountable_militias
+		MKN_anarchic_economy_idea
+		MKN_artel_logistics
+		MKN_broken_supply
+		MKN_catalogued_workshops
+		MKN_cooperative_production
+		MKN_coordinated_supply
+		MKN_dneprostroi_power
+		MKN_dnieper_economy
+		MKN_dnieper_logistics
+		MKN_drilled_militias
+		MKN_economic_coordination
+		MKN_economic_recovery
+		MKN_fragmented_workshops
+		MKN_free_mint_idea
+		MKN_mapped_supply
+		MKN_mobile_self_defence_idea
+		MKN_mutual_aid_economy
+		MKN_serial_production
+		MKN_standardized_workshops
+		MKN_untrained_militias
+		MKN_worker_battalions_idea
+	}
+	add_dynamic_modifier = {
+		modifier = MKN_free_industry_modifier
+	}
+	set_country_flag = MKN_industry_unified_v1
+}
+nww_mkn_rebuild_services = {
+	set_variable = {
+		MKN_army_army_armor_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_org_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_speed_factor = 0
+	}
+	set_variable = {
+		MKN_army_attrition = 0
+	}
+	set_variable = {
+		MKN_army_max_planning = 0
+	}
+	set_variable = {
+		MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_supply_consumption_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steel_horses
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_batko_cavalry
+		}
+		add_to_variable = {
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_guard_veterans
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_quartermasters
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_artillery_artels
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mobile_supply_columns
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tank_crews
+		}
+		add_to_variable = {
+			MKN_army_max_planning = 0.0100
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_radio_sections
+		}
+		add_to_variable = {
+			MKN_army_max_planning = 0.0100
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_recovery_tractors
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tank_maintenance
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fire_tables
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_motorized_infantry
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_bridge_columns
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fuel_discipline
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_staff_games
+		}
+		add_to_variable = {
+			MKN_army_max_planning = 0.0100
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mobile_medical
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_combined_arms
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_deep_reserves
+		}
+		add_to_variable = {
+			MKN_army_max_planning = 0.0100
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_breakthrough_workshops
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_armoured_manoeuvres
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mechanized_compact
+		}
+		add_to_variable = {
+			MKN_army_army_armor_attack_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_village_muster
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_remount_artels
+		}
+		add_to_variable = {
+			MKN_army_attrition = -0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_machinegun_carts
+		}
+		add_to_variable = {
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_local_guides
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_scout_parties
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_field_veterinary
+		}
+		add_to_variable = {
+			MKN_army_attrition = -0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_militia_signals
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_night_marches
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_militia_junior_leaders
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_hidden_depots
+		}
+		add_to_variable = {
+			MKN_army_attrition = -0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_militia_engineers
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_militia_hospitals
+		}
+		add_to_variable = {
+			MKN_army_attrition = -0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_flexible_orders
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_rural_reserve
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tachanka_tactics
+		}
+		add_to_variable = {
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_camouflage
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mobile_rearguard
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_free_column_exercises
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_free_army_compact
+		}
+		add_to_variable = {
+			MKN_army_army_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tachanka_columns
+		}
+		add_dynamic_modifier = {
+			modifier = MKN_army_development
+		}
+	}
+	set_variable = {
+		MKN_air_air_accidents_factor = 0
+	}
+	set_variable = {
+		MKN_air_air_agility_factor = 0
+	}
+	set_variable = {
+		MKN_air_air_attack_factor = 0
+	}
+	set_variable = {
+		MKN_air_air_cas_efficiency = 0
+	}
+	set_variable = {
+		MKN_air_air_mission_efficiency = 0
+	}
+	set_variable = {
+		MKN_air_air_range_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_swarm
+		}
+		add_to_variable = {
+			MKN_air_air_agility_factor = 0.0140
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_aircraft_artels
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_observation_posts
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fighter_instructors
+		}
+		add_to_variable = {
+			MKN_air_air_agility_factor = 0.0140
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_warning
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_radio_beacons
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_airframe_jigs
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_interceptor_pairs
+		}
+		add_to_variable = {
+			MKN_air_air_agility_factor = 0.0140
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_aircraft_recovery
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_dispersal
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fighter_patrols
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_radar_school
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_night_interceptors
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_aircraft_spares
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fighter_conversion
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_rescue
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fighter_controllers
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_home_defence
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_sky_watch_exercises
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_free_sky_compact
+		}
+		add_to_variable = {
+			MKN_air_air_attack_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_close_support_program
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_attack_air_artels
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_ground_liaisons
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_bombing_ranges
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_forward_airstrips
+		}
+		add_to_variable = {
+			MKN_air_air_range_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_map_bureau
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_cas_maintenance
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_target_markers
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_flying_artillery
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_airfield_fuel
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tactical_recon
+		}
+		add_to_variable = {
+			MKN_air_air_range_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_bomber_navigation
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_supply_lift
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_coastal_support
+		}
+		add_to_variable = {
+			MKN_air_air_range_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_cas_replacement_crews
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_joint_target_planning
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_weather_service
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_attack_wing_rotations
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_cas_joint_exercises
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_support_compact
+		}
+		add_to_variable = {
+			MKN_air_air_cas_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_hawks
+		}
+		add_dynamic_modifier = {
+			modifier = MKN_air_development
+		}
+	}
+	set_variable = {
+		MKN_navy_convoy_escort_efficiency = 0
+	}
+	set_variable = {
+		MKN_navy_convoy_raiding_efficiency_factor = 0
+	}
+	set_variable = {
+		MKN_navy_naval_defense_factor = 0
+	}
+	set_variable = {
+		MKN_navy_naval_detection = 0
+	}
+	set_variable = {
+		MKN_navy_naval_speed_factor = 0
+	}
+	set_variable = {
+		MKN_navy_naval_torpedo_hit_chance_factor = 0
+	}
+	set_variable = {
+		MKN_navy_naval_torpedo_reveal_chance_factor = 0
+	}
+	set_variable = {
+		MKN_navy_screening_efficiency = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_coastal_defense_steppe
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_sea_smugglers
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dnieper_gun_flotilla
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_sea_escorts
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_coastal_signal_posts
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_escort_crews
+		}
+		add_to_variable = {
+			MKN_navy_naval_defense_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_harbour_dredging
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_hull_repair_artels
+		}
+		add_to_variable = {
+			MKN_navy_naval_defense_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_depth_charge_school
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_convoy_schedules
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fleet_damage_control
+		}
+		add_to_variable = {
+			MKN_navy_naval_defense_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_coastal_watch
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_sweeper_sections
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_escort_radio_net
+		}
+		add_to_variable = {
+			MKN_navy_screening_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_coastal_depots
+		}
+		add_to_variable = {
+			MKN_navy_naval_defense_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_river_sea_coordination
+		}
+		add_to_variable = {
+			MKN_navy_screening_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_anti_submarine_patrols
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_convoy_rescue
+		}
+		add_to_variable = {
+			MKN_navy_naval_defense_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_escort_reserves
+		}
+		add_to_variable = {
+			MKN_navy_screening_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_coastal_fleet_exercises
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_escort_compact
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_torpedo_artels
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_submarine_crews
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_hidden_anchorages
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_naval_intelligence
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_dockyard
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_torpedo_trials
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_night_sorties
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_supply
+		}
+		add_to_variable = {
+			MKN_navy_naval_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_submarine_listening
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_fast_attack_craft
+		}
+		add_to_variable = {
+			MKN_navy_naval_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_radio_discipline
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_submarine_repair
+		}
+		add_to_variable = {
+			MKN_navy_naval_speed_factor = 0.0160
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_weather
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_replacement_crews
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_torpedo_ambushes
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_disrupt_enemy_trade
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_escape_routes
+		}
+		add_to_variable = {
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_exercises
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_compact
+		}
+		add_to_variable = {
+			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_sea_flotilla
+		}
+		add_dynamic_modifier = {
+			modifier = MKN_navy_development
+		}
+	}
+	remove_ideas = {
+		MKN_tachanka_warfare
+		MKN_railway_guards
+		MKN_steel_horses_idea
+		MKN_batko_cavalry_idea
+		MKN_black_guard_veterans_idea
+		MKN_steppe_quartermasters_idea
+		MKN_free_airmen
+		MKN_black_swarm_idea
+	}
+	set_country_flag = MKN_services_unified_v2
+}

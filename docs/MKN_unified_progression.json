@@ -1,0 +1,188 @@
+{
+  "initial": {
+    "political_power_gain": -0.25,
+    "consumer_goods_factor": 0.15,
+    "production_speed_buildings_factor": -0.15,
+    "industrial_capacity_factory": -0.15,
+    "production_factory_efficiency_gain_factor": -0.2,
+    "research_speed_factor": -0.05,
+    "supply_consumption_factor": 0.2,
+    "army_org_regain": -0.15,
+    "army_org_factor": -0.15,
+    "training_time_army_factor": 0.2,
+    "max_planning": -0.1
+  },
+  "industry_changes": {
+    "MKN_dnieper_standards": {},
+    "MKN_nikopol_tube_zavod": {
+      "industrial_capacity_factory": 0.05,
+      "production_factory_efficiency_gain_factor": 0.07,
+      "research_speed_factor": 0.02
+    },
+    "MKN_production_cycles": {
+      "industrial_capacity_factory": 0.15,
+      "production_factory_efficiency_gain_factor": 0.05,
+      "research_speed_factor": 0.01,
+      "production_factory_max_efficiency_factor": 0.1
+    },
+    "MKN_harvest_reserves": {},
+    "MKN_kichkas_bridge": {
+      "supply_consumption_factor": -0.08,
+      "army_org_regain": 0.05
+    },
+    "MKN_free_bazaars": {},
+    "MKN_dnieper_dispatch": {
+      "supply_consumption_factor": -0.07,
+      "army_org_regain": 0.06
+    },
+    "MKN_mutual_credit": {},
+    "MKN_rifle_concern_union": {},
+    "MKN_salt_artsels": {},
+    "MKN_steel_concern": {},
+    "MKN_grain_export": {},
+    "MKN_dnieper_audit": {},
+    "MKN_rifle_concern": {},
+    "MKN_social_fund": {},
+    "MKN_repair_exchanges": {},
+    "MKN_steppe_mech_works": {},
+    "MKN_steppe_electrification": {
+      "production_speed_buildings_factor": 0.05,
+      "factory_energy_consumption": -0.1
+    },
+    "MKN_free_cooperatives": {
+      "political_power_gain": 0.1,
+      "consumer_goods_factor": -0.05,
+      "production_speed_buildings_factor": 0.05
+    },
+    "MKN_steppe_mint": {
+      "political_power_gain": 0.2
+    },
+    "MKN_shared_orders": {
+      "industrial_capacity_factory": 0.11,
+      "production_factory_efficiency_gain_factor": 0.2,
+      "research_speed_factor": 0.04
+    },
+    "MKN_industrial_compact": {
+      "political_power_gain": 0.15,
+      "consumer_goods_factor": -0.05,
+      "production_speed_buildings_factor": 0.13
+    },
+    "MKN_field_schools": {
+      "army_org_factor": 0.06,
+      "training_time_army_factor": -0.07,
+      "max_planning": 0.03
+    },
+    "MKN_wind_mills_steppe": {},
+    "MKN_recallable_commanders": {
+      "army_org_factor": 0.05,
+      "training_time_army_factor": -0.08,
+      "max_planning": 0.04
+    },
+    "MKN_elected_brigadiers": {
+      "army_org_factor": 0.05,
+      "training_time_army_factor": -0.08,
+      "max_planning": 0.04
+    },
+    "MKN_manganese_nikopol": {},
+    "MKN_workshop_standards": {
+      "industrial_capacity_factory": 0.05,
+      "production_factory_efficiency_gain_factor": 0.07,
+      "research_speed_factor": 0.02
+    },
+    "MKN_engineering_delegates": {
+      "industrial_capacity_factory": 0.05,
+      "production_factory_efficiency_gain_factor": 0.08,
+      "research_speed_factor": 0.02
+    },
+    "MKN_freight_artels": {
+      "supply_consumption_factor": -0.08,
+      "army_org_regain": 0.05
+    },
+    "MKN_communal_compact": {
+      "political_power_gain": 0.15,
+      "consumer_goods_factor": -0.1,
+      "production_speed_buildings_factor": 0.05,
+      "stability_factor": 0.05
+    },
+    "MKN_craft_federation": {
+      "supply_consumption_factor": -0.13,
+      "army_org_regain": 0.04,
+      "attrition": -0.05
+    },
+    "MKN_steel_volnitsa": {
+      "supply_consumption_factor": -0.15,
+      "army_org_regain": 0.09
+    },
+    "MKN_supply_congress": {
+      "supply_consumption_factor": -0.07,
+      "army_org_regain": 0.06
+    },
+    "MKN_mobile_workshops": {
+      "political_power_gain": 0.1,
+      "consumer_goods_factor": -0.05,
+      "production_speed_buildings_factor": 0.05
+    },
+    "MKN_dnepro_aluminium": {},
+    "MKN_artel_register": {},
+    "MKN_village_smithies": {
+      "industrial_capacity_factory": 0.05,
+      "production_factory_efficiency_gain_factor": 0.08,
+      "research_speed_factor": 0.02
+    },
+    "MKN_steppe_coal_contracts": {},
+    "MKN_mobile_self_defence": {
+      "army_org_factor": 0.08,
+      "training_time_army_factor": -0.1,
+      "max_planning": 0.03,
+      "army_speed_factor": 0.05
+    },
+    "MKN_worker_battalions": {
+      "army_org_factor": 0.1,
+      "training_time_army_factor": -0.05,
+      "max_planning": 0.08
+    },
+    "MKN_grain_brokers": {},
+    "MKN_dneprostroi": {
+      "political_power_gain": 0.1,
+      "consumer_goods_factor": -0.05,
+      "production_speed_buildings_factor": 0.05
+    },
+    "MKN_factory_instructors": {
+      "army_org_factor": 0.06,
+      "training_time_army_factor": -0.07,
+      "max_planning": 0.03
+    },
+    "MKN_zaporizhstal": {
+      "political_power_gain": 0.1,
+      "consumer_goods_factor": -0.05,
+      "production_speed_buildings_factor": 0.05
+    },
+    "MKN_steel_concern_union": {},
+    "MKN_workers_welfare": {},
+    "MKN_kommunar_tractor": {}
+  },
+  "legacy_spirits": [
+    "MKN_accountable_militias",
+    "MKN_anarchic_economy_idea",
+    "MKN_artel_logistics",
+    "MKN_broken_supply",
+    "MKN_catalogued_workshops",
+    "MKN_cooperative_production",
+    "MKN_coordinated_supply",
+    "MKN_dneprostroi_power",
+    "MKN_dnieper_economy",
+    "MKN_dnieper_logistics",
+    "MKN_drilled_militias",
+    "MKN_economic_coordination",
+    "MKN_economic_recovery",
+    "MKN_fragmented_workshops",
+    "MKN_free_mint_idea",
+    "MKN_mapped_supply",
+    "MKN_mobile_self_defence_idea",
+    "MKN_mutual_aid_economy",
+    "MKN_serial_production",
+    "MKN_standardized_workshops",
+    "MKN_untrained_militias",
+    "MKN_worker_battalions_idea"
+  ]
+}

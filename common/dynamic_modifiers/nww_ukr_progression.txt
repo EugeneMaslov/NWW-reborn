@@ -1,0 +1,26 @@
+UKR_civic_development = { enable = { always = yes } icon = GFX_idea_generic_constitutional_guarantees
+ political_power_gain = UKR_civic_political_power_gain
+ stability_factor = UKR_civic_stability_factor
+}
+UKR_economy_development = { enable = { always = yes } icon = GFX_idea_generic_industrial_concern_1
+ consumer_goods_factor = UKR_economy_consumer_goods_factor
+ factory_energy_consumption = UKR_economy_factory_energy_consumption
+ production_factory_efficiency_gain_factor = UKR_economy_production_factory_efficiency_gain_factor
+ production_speed_buildings_factor = UKR_economy_production_speed_buildings_factor
+ research_speed_factor = UKR_economy_research_speed_factor
+}
+UKR_army_development = { enable = { always = yes } icon = GFX_idea_YUG_local_militias
+ army_org_factor = UKR_army_army_org_factor
+ max_planning = UKR_army_max_planning
+ supply_consumption_factor = UKR_army_supply_consumption_factor
+}
+UKR_air_development = { enable = { always = yes } icon = GFX_idea_generic_air_bonus
+ air_accidents_factor = UKR_air_air_accidents_factor
+ air_agility_factor = UKR_air_air_agility_factor
+ air_mission_efficiency = UKR_air_air_mission_efficiency
+}
+UKR_navy_development = { enable = { always = yes } icon = GFX_idea_generic_naval_manufacturer_1
+ convoy_escort_efficiency = UKR_navy_convoy_escort_efficiency
+ naval_defense_factor = UKR_navy_naval_defense_factor
+ naval_detection = UKR_navy_naval_detection
+}

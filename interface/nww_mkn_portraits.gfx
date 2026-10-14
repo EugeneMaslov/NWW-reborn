@@ -15,4 +15,60 @@ spriteTypes = {
 		name = GFX_idea_MKN_fedir_shchus
 		texturefile = "gfx/interface/ideas/nww_portraits/MKN_fedir_shchus.dds"
 	}
+	spriteType = {
+		name = GFX_Portrait_MKN_oleksandr_hordiienko
+		texturefile = "gfx/leaders/MKN/oleksandr_hordiienko.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_oleksandr_hordiienko
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_oleksandr_hordiienko.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_andrii_dorosh
+		texturefile = "gfx/leaders/MKN/andrii_dorosh.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_andrii_dorosh
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_andrii_dorosh.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_mykola_kovalenko
+		texturefile = "gfx/leaders/MKN/mykola_kovalenko.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_mykola_kovalenko
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_mykola_kovalenko.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_roman_danylenko
+		texturefile = "gfx/leaders/MKN/roman_danylenko.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_roman_danylenko
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_roman_danylenko.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_olena_hrytsenko
+		texturefile = "gfx/leaders/MKN/olena_hrytsenko.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_olena_hrytsenko
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_olena_hrytsenko.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_dmytro_savchenko
+		texturefile = "gfx/leaders/MKN/dmytro_savchenko.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_dmytro_savchenko
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_dmytro_savchenko.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_yakiv_levchenko
+		texturefile = "gfx/leaders/MKN/yakiv_levchenko.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_yakiv_levchenko
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_yakiv_levchenko.dds"
+	}
 }

@@ -1,0 +1,61 @@
+leader_traits = {
+	NWW_MKN_oleksandr_hordiienko_specialty = {
+		sprite = 15
+		max_dig_in_factor = 0.06
+		production_speed_bunker_factor = 0.10
+		random = no
+	}
+	NWW_MKN_andrii_dorosh_specialty = {
+		sprite = 15
+		army_defence_factor = 0.05
+		army_org_factor = 0.03
+		random = no
+	}
+	NWW_MKN_mykola_kovalenko_specialty = {
+		sprite = 15
+		experience_gain_army = 0.05
+		land_doctrine_cost_factor = -0.05
+		random = no
+	}
+	NWW_MKN_roman_danylenko_specialty = {
+		sprite = 15
+		army_artillery_attack_factor = 0.07
+		army_artillery_defence_factor = 0.04
+		random = no
+	}
+	NWW_MKN_olena_hrytsenko_specialty = {
+		sprite = 15
+		supply_consumption_factor = -0.06
+		attrition = -0.04
+		random = no
+	}
+	NWW_MKN_dmytro_savchenko_specialty = {
+		sprite = 15
+		air_cas_efficiency = 0.06
+		air_mission_efficiency = 0.03
+		random = no
+	}
+	NWW_MKN_yakiv_levchenko_specialty = {
+		sprite = 15
+		convoy_escort_efficiency = 0.08
+		repair_speed_factor = 0.05
+		random = no
+	}
+	NWW_MKN_petro_stepanenko_specialty = {
+		sprite = 15
+		production_speed_buildings_factor = 0.05
+		factory_energy_consumption = -0.05
+		random = no
+	}
+	NWW_MKN_ivan_bondarenko_specialty = {
+		sprite = 15
+		political_power_gain = 0.10
+		consumer_goods_factor = -0.04
+		random = no
+	}
+	NWW_MKN_serhii_melnyk_specialty = {
+		sprite = 15
+		research_speed_factor = 0.04
+		random = no
+	}
+}

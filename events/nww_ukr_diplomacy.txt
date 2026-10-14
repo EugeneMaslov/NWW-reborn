@@ -1,0 +1,195 @@
+add_namespace = ukr
+country_event = {
+	id = ukr.50
+	title = ukr.50.t
+	desc = ukr.50.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = MKN
+		UKR = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ukr.50.a
+		ai_chance = {
+			factor = 60
+		}
+		trigger = {
+			UKR = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = UKR
+			}
+		}
+		set_country_flag = UKR_MKN_border_settled
+		UKR = {
+			set_country_flag = UKR_MKN_border_settled
+			add_stability = 0.03
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+		diplomatic_relation = {
+			country = UKR
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_stability = 0.03
+		UKR = {
+			country_event = {
+				id = ukr.60
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ukr.50.b
+		ai_chance = {
+			factor = 40
+		}
+		UKR = {
+			set_country_flag = UKR_MKN_border_settled_rejected
+			country_event = {
+				id = ukr.61
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ukr.51
+	title = ukr.51.t
+	desc = ukr.51.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		UKR = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ukr.51.a
+		ai_chance = {
+			factor = 60
+		}
+		trigger = {
+			UKR = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = UKR
+			}
+		}
+		set_country_flag = UKR_moscow_trade
+		UKR = {
+			set_country_flag = UKR_moscow_trade
+			add_stability = 0.03
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+		UKR = {
+			country_event = {
+				id = ukr.60
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ukr.51.b
+		ai_chance = {
+			factor = 40
+		}
+		UKR = {
+			set_country_flag = UKR_moscow_trade_rejected
+			country_event = {
+				id = ukr.61
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ukr.52
+	title = ukr.52.t
+	desc = ukr.52.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = POL
+		UKR = {
+			exists = yes
+		}
+	}
+	option = {
+		name = ukr.52.a
+		ai_chance = {
+			factor = 60
+		}
+		trigger = {
+			UKR = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = UKR
+			}
+		}
+		set_country_flag = UKR_polish_trade
+		UKR = {
+			set_country_flag = UKR_polish_trade
+			add_stability = 0.03
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+		UKR = {
+			country_event = {
+				id = ukr.60
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ukr.52.b
+		ai_chance = {
+			factor = 40
+		}
+		UKR = {
+			set_country_flag = UKR_polish_trade_rejected
+			country_event = {
+				id = ukr.61
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ukr.60
+	title = ukr.60.t
+	desc = ukr.60.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = ukr.60.a
+	}
+}
+country_event = {
+	id = ukr.61
+	title = ukr.61.t
+	desc = ukr.61.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = ukr.61.a
+	}
+}

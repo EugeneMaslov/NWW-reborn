@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		MKN_kommunar_company = {
-			picture = generic_tank_manufacturer_1
+			picture = MKN_company_kommunar
 			cost = 150
 			allowed = {
 				original_tag = MKN
@@ -34,10 +34,10 @@ ideas = {
 				has_completed_focus = MKN_steel_horses
 			}
 			research_bonus = {
-				armor = 0.15
+				armor = 0.10
 			}
 			traits = {
-				fast_tank_manufacturer
+				MKN_kommunar_company_specialization
 			}
 		}
 	}
@@ -104,7 +104,7 @@ ideas = {
 			}
 		}
 		MKN_artillery_works_company = {
-			picture = generic_artillery_manufacturer_1
+			picture = MKN_company_artillery_works
 			cost = 150
 			allowed = {
 				original_tag = MKN
@@ -113,13 +113,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_artillery_artels
+				OR = {
+					has_completed_focus = MKN_artillery_artels
+					has_completed_focus = MKN_machinegun_carts
+				}
 			}
 			research_bonus = {
-				artillery = 0.15
+				artillery = 0.10
 			}
 			traits = {
-				artillery_manufacturer
+				MKN_artillery_works_company_specialization
 			}
 		}
 	}
@@ -166,7 +169,7 @@ ideas = {
 			}
 		}
 		MKN_air_artels_company = {
-			picture = generic_air_manufacturer_1
+			picture = MKN_company_air_artels
 			cost = 150
 			allowed = {
 				original_tag = MKN
@@ -178,10 +181,29 @@ ideas = {
 				has_completed_focus = MKN_aircraft_artels
 			}
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			traits = {
-				light_aircraft_manufacturer
+				MKN_air_artels_company_specialization
+			}
+		}
+		MKN_attack_air_artels_company = {
+			picture = MKN_company_attack_air_artels
+			cost = 150
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_attack_air_artels
+			}
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			traits = {
+				MKN_attack_air_artels_company_specialization
 			}
 		}
 	}
@@ -208,7 +230,7 @@ ideas = {
 			}
 		}
 		MKN_kherson_works_company = {
-			picture = generic_naval_manufacturer_1
+			picture = MKN_company_kherson_works
 			cost = 150
 			allowed = {
 				original_tag = MKN
@@ -220,10 +242,29 @@ ideas = {
 				has_completed_focus = MKN_kherson_shipyard
 			}
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.10
 			}
 			traits = {
-				naval_manufacturer
+				MKN_kherson_works_company_specialization
+			}
+		}
+		MKN_submarine_works_company = {
+			picture = MKN_company_submarine_works
+			cost = 150
+			allowed = {
+				original_tag = MKN
+				NOT = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+			available = {
+				has_completed_focus = MKN_submarine_crews
+			}
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			traits = {
+				MKN_submarine_works_company_specialization
 			}
 		}
 	}

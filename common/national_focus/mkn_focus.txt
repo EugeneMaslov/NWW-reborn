@@ -14,11 +14,19 @@ focus_tree = {
 			focus = MKN_free_cooperatives
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_anarchic_economy_idea
-				add_idea = MKN_economic_coordination
-			}
 			add_political_power = 50
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1000
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.0500
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.0500
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
 		}
 		x = 4
 		y = 0
@@ -77,9 +85,13 @@ focus_tree = {
 					}
 				}
 			}
-			swap_ideas = {
-				remove_idea = MKN_broken_supply
-				add_idea = MKN_mapped_supply
+			add_to_variable = {
+				MKN_unified_supply_consumption_factor = -0.0800
+				tooltip = MKN_unified_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_org_regain = 0.0500
+				tooltip = MKN_unified_army_org_regain_tt
 			}
 		}
 		x = 0
@@ -111,9 +123,17 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			swap_ideas = {
-				remove_idea = MKN_economic_coordination
-				add_idea = MKN_economic_recovery
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1000
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.0500
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.0500
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
 		}
 		x = 4
@@ -146,7 +166,14 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			add_ideas = MKN_dneprostroi_power
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.0500
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_factory_energy_consumption = -0.1000
+				tooltip = MKN_unified_factory_energy_consumption_tt
+			}
 		}
 		x = 0
 		y = 4
@@ -212,10 +239,6 @@ focus_tree = {
 		id = MKN_nikopol_tube_zavod
 		icon = GFX_focus_generic_industry_2
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_catalogued_workshops
-				add_idea = MKN_standardized_workshops
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -233,6 +256,18 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0500
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.0700
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = 0.0200
+				tooltip = MKN_unified_research_speed_factor_tt
 			}
 		}
 		x = 4
@@ -345,10 +380,6 @@ focus_tree = {
 		id = MKN_steel_volnitsa
 		icon = GFX_focus_generic_stalinist_industry
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_coordinated_supply
-				add_idea = MKN_dnieper_logistics
-			}
 			226 = {
 				if = {
 					limit = {
@@ -363,6 +394,14 @@ focus_tree = {
 				}
 			}
 			add_stability = 0.03
+			add_to_variable = {
+				MKN_unified_supply_consumption_factor = -0.1500
+				tooltip = MKN_unified_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_org_regain = 0.0900
+				tooltip = MKN_unified_army_org_regain_tt
+			}
 		}
 		x = 4
 		y = 9
@@ -384,11 +423,19 @@ focus_tree = {
 			focus = MKN_dneprostroi
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_anarchic_economy_idea
-				add_idea = MKN_economic_coordination
-			}
 			add_political_power = 50
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1000
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.0500
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.0500
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
 		}
 		x = 16
 		y = 0
@@ -451,9 +498,17 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			swap_ideas = {
-				remove_idea = MKN_fragmented_workshops
-				add_idea = MKN_catalogued_workshops
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0500
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.0800
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = 0.0200
+				tooltip = MKN_unified_research_speed_factor_tt
 			}
 		}
 		x = 16
@@ -498,16 +553,24 @@ focus_tree = {
 		id = MKN_mobile_workshops
 		icon = GFX_focus_generic_industry_2
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_economic_coordination
-				add_idea = MKN_economic_recovery
-			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
 				amount = 100
 				producer = MKN
 			}
 			army_experience = 10
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1000
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.0500
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.0500
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
 		}
 		x = 16
 		y = 3
@@ -567,7 +630,10 @@ focus_tree = {
 		id = MKN_steppe_mint
 		icon = GFX_focus_generic_money_for_equipment
 		completion_reward = {
-			add_ideas = MKN_free_mint_idea
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.2000
+				tooltip = MKN_unified_political_power_gain_tt
+			}
 		}
 		x = 12
 		y = 6
@@ -580,10 +646,6 @@ focus_tree = {
 		id = MKN_freight_artels
 		icon = GFX_focus_generic_supply_line
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_broken_supply
-				add_idea = MKN_mapped_supply
-			}
 			226 = {
 				if = {
 					limit = {
@@ -600,6 +662,14 @@ focus_tree = {
 						}
 					}
 				}
+			}
+			add_to_variable = {
+				MKN_unified_supply_consumption_factor = -0.0800
+				tooltip = MKN_unified_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_org_regain = 0.0500
+				tooltip = MKN_unified_army_org_regain_tt
 			}
 		}
 		x = 16
@@ -682,10 +752,6 @@ focus_tree = {
 		id = MKN_craft_federation
 		icon = GFX_focus_generic_industry_investment
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_coordinated_supply
-				add_idea = MKN_artel_logistics
-			}
 			196 = {
 				if = {
 					limit = {
@@ -700,6 +766,18 @@ focus_tree = {
 				}
 			}
 			add_stability = 0.03
+			add_to_variable = {
+				MKN_unified_supply_consumption_factor = -0.1300
+				tooltip = MKN_unified_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_org_regain = 0.0400
+				tooltip = MKN_unified_army_org_regain_tt
+			}
+			add_to_variable = {
+				MKN_unified_attrition = -0.0500
+				tooltip = MKN_unified_attrition_tt
+			}
 		}
 		x = 16
 		y = 9
@@ -972,6 +1050,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 6
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				communism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_soviets_forever
@@ -1020,10 +1106,6 @@ focus_tree = {
 		}
 		cost = 10
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -1051,6 +1133,14 @@ focus_tree = {
 		}
 		x = 33
 		y = 6
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				communism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_workers_control
@@ -1112,11 +1202,8 @@ focus_tree = {
 				ruling_party = democratic
 				elections_allowed = yes
 			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
 			add_stability = -0.05
+			retire_character = NWW_MKN_makhno
 		}
 		mutually_exclusive = {
 			focus = MKN_everlasting_makhnovshchina
@@ -1127,6 +1214,14 @@ focus_tree = {
 		}
 		x = 35
 		y = 6
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				democratic < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_free_elections_steppe
@@ -1179,10 +1274,6 @@ focus_tree = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.15
-			}
 			add_manpower = 40000
 			create_country_leader = {
 				name = "Viktor Belash"
@@ -1202,6 +1293,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 6
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				communism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_hand_to_moscow
@@ -1262,12 +1361,10 @@ focus_tree = {
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
+				elections_allowed = no
 			}
 			add_war_support = 0.1
+			retire_character = NWW_MKN_makhno
 		}
 		mutually_exclusive = {
 			focus = MKN_everlasting_makhnovshchina
@@ -1278,6 +1375,14 @@ focus_tree = {
 		}
 		x = 39
 		y = 6
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				fascism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_order_through_tachanka
@@ -1324,12 +1429,10 @@ focus_tree = {
 		completion_reward = {
 			set_politics = {
 				ruling_party = neutrality
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.15
+				elections_allowed = no
 			}
 			add_stability = 0.05
+			retire_character = NWW_MKN_makhno
 		}
 		mutually_exclusive = {
 			focus = MKN_everlasting_makhnovshchina
@@ -1340,6 +1443,14 @@ focus_tree = {
 		}
 		x = 41
 		y = 6
+		available = {
+			has_completed_focus = MKN_soviet_press
+			NOT = {
+				neutrality < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = MKN_imperial_coronation
@@ -1378,145 +1489,194 @@ focus_tree = {
 	}
 	focus = {
 		id = MKN_tachanka_columns
-		icon = GFX_focus_generic_army_attack
-		cost = 5
-		completion_reward = {
-			add_ideas = MKN_tachanka_warfare
-			army_experience = 20
-		}
-		x = 46
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 50
 		y = 0
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = MKN_army_development
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = MKN_army_development
+				}
+			}
+		}
 	}
 	focus = {
 		id = MKN_railway_war
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 50
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+		}
 		prerequisite = {
 			focus = MKN_tachanka_columns
 		}
-		cost = 5
-		completion_reward = {
-			add_ideas = MKN_railway_guards
-			add_equipment_to_stockpile = {
-				type = motorized_equipment_1
-				amount = 300
-				producer = MKN
-			}
-		}
-		x = 46
-		y = 1
 	}
 	focus = {
 		id = MKN_steppe_general_staff
 		icon = GFX_focus_generic_army_doctrines_2
+		x = 50
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+		}
 		prerequisite = {
 			focus = MKN_railway_war
 		}
-		cost = 5
-		completion_reward = {
-			army_experience = 25
-			add_command_power = 25
-			add_war_support = 0.05
-		}
-		x = 46
-		y = 2
 	}
 	focus = {
 		id = MKN_steel_horses
-		icon = GFX_focus_generic_army_tanks2
+		x = 46
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
 		prerequisite = {
 			focus = MKN_steppe_general_staff
 		}
 		mutually_exclusive = {
 			focus = MKN_batko_cavalry
 		}
-		cost = 16
-		completion_reward = {
-			add_ideas = MKN_steel_horses_idea
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = armor
-			}
-			army_experience = 25
-		}
-		x = 45
-		y = 3
+		icon = GFX_focus_MKN_company_kommunar
 	}
 	focus = {
 		id = MKN_batko_cavalry
 		icon = GFX_focus_generic_horse_studs
+		x = 54
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+				tooltip = MKN_army_modifier_army_sub_unit_cavalry_attack_factor_tt
+			}
+		}
 		prerequisite = {
 			focus = MKN_steppe_general_staff
 		}
 		mutually_exclusive = {
 			focus = MKN_steel_horses
 		}
-		cost = 10
-		completion_reward = {
-			add_ideas = MKN_batko_cavalry_idea
-			add_war_support = 0.05
-			army_experience = 25
-		}
-		x = 47
-		y = 3
 	}
 	focus = {
 		id = MKN_black_guard_veterans
-		icon = GFX_focus_generic_army_attack
-		prerequisite = {
-			focus = MKN_steel_horses
-			focus = MKN_batko_cavalry
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 8
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
-		cost = 10
 		completion_reward = {
-			add_ideas = MKN_black_guard_veterans_idea
-			army_experience = 25
-			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = armor
+			}
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
 		}
-		x = 46
-		y = 4
+		prerequisite = {
+			focus = MKN_artillery_artels
+		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_quartermasters
-		icon = GFX_focus_generic_supply_line
-		prerequisite = {
-			focus = MKN_steppe_general_staff
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
-		cost = 10
 		completion_reward = {
-			add_ideas = MKN_steppe_quartermasters_idea
-			add_political_power = 50
-			add_war_support = 0.05
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
 		}
-		x = 49
-		y = 3
+		prerequisite = {
+			focus = MKN_steel_horses
+		}
 	}
 	focus = {
 		id = MKN_steppe_hawks
-		icon = GFX_focus_generic_air_bases
+		x = 66
+		y = 0
 		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
-			air_experience = 25
-			add_doctrine_cost_reduction = {
-				name = NWW_air_doctrine_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
+			air_experience = 15
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = MKN_air_development
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = MKN_air_development
+				}
 			}
 		}
-		x = 52
-		y = 0
+		icon = GFX_goal_generic_air_fighter
 	}
 	focus = {
 		id = MKN_village_airfields
-		icon = GFX_focus_generic_air_bases
-		prerequisite = {
-			focus = MKN_steppe_hawks
-		}
+		x = 66
+		y = 1
 		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			air_experience = 15
-			196 = {
+			226 = {
 				if = {
 					limit = {
 						is_owned_and_controlled_by = ROOT
@@ -1529,109 +1689,151 @@ focus_tree = {
 				}
 			}
 		}
-		x = 52
-		y = 1
+		prerequisite = {
+			focus = MKN_steppe_hawks
+		}
+		icon = GFX_goal_generic_air_fighter
 	}
 	focus = {
 		id = MKN_gulyaipole_pilot_school
-		icon = GFX_focus_generic_pilot_training
+		x = 66
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 15
+		}
 		prerequisite = {
 			focus = MKN_village_airfields
 		}
-		cost = 10
-		completion_reward = {
-			add_ideas = MKN_free_airmen
-			air_experience = 40
-		}
-		x = 52
-		y = 2
+		icon = GFX_goal_generic_air_fighter
 	}
 	focus = {
 		id = MKN_black_swarm
-		icon = GFX_focus_generic_daytime_bombing
+		x = 62
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_agility_factor = 0.0140
+				tooltip = MKN_air_air_agility_factor_tt
+			}
+		}
 		prerequisite = {
 			focus = MKN_gulyaipole_pilot_school
 		}
-		cost = 10
-		completion_reward = {
-			add_ideas = MKN_black_swarm_idea
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = air_equipment
-			}
+		mutually_exclusive = {
+			focus = MKN_close_support_program
 		}
-		x = 52
-		y = 3
+		icon = GFX_goal_generic_air_fighter
 	}
 	focus = {
 		id = MKN_black_sea_flotilla
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 5
-		completion_reward = {
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = NWW_naval_doctrine_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = naval_doctrine
-			}
-		}
-		x = 57
+		x = 82
 		y = 0
-	}
-	focus = {
-		id = MKN_dnieper_patrol
-		icon = GFX_focus_generic_industry_3
-		prerequisite = {
-			focus = MKN_black_sea_flotilla
-		}
 		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = dd_tech
-			}
 			navy_experience = 15
-		}
-		x = 57
-		y = 1
-	}
-	focus = {
-		id = MKN_kherson_shipyard
-		icon = GFX_focus_generic_refit_civilian_ships
-		prerequisite = {
-			focus = MKN_dnieper_patrol
-		}
-		cost = 10
-		completion_reward = {
-			navy_experience = 20
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = MKN_navy_development
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = MKN_navy_development
+				}
+			}
 			196 = {
 				if = {
 					limit = {
 						is_owned_and_controlled_by = ROOT
 					}
 					add_building_construction = {
-						type = dockyard
-						level = 2
+						type = naval_base
+						province = 568
+						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 2
 				}
 			}
 		}
-		x = 57
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_dnieper_patrol
+		x = 82
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 15
+		}
+		prerequisite = {
+			focus = MKN_black_sea_flotilla
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_kherson_shipyard
+		x = 82
 		y = 2
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 15
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_dnieper_patrol
+		}
+		icon = GFX_focus_MKN_company_kherson_works
 	}
 	focus = {
 		id = MKN_coastal_defense_steppe
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = {
-			focus = MKN_kherson_shipyard
-		}
+		x = 78
+		y = 3
 		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
+			}
 			196 = {
 				if = {
 					limit = {
@@ -1639,51 +1841,94 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
-						instant_build = yes
 						province = 568
+						level = 1
+						instant_build = yes
 					}
 				}
 			}
-			navy_experience = 10
 		}
-		x = 56
-		y = 3
-	}
-	focus = {
-		id = MKN_black_sea_smugglers
-		icon = GFX_focus_generic_arms_trade
 		prerequisite = {
 			focus = MKN_kherson_shipyard
 		}
-		cost = 10
+		mutually_exclusive = {
+			focus = MKN_black_sea_smugglers
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_black_sea_smugglers
+		x = 86
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
 			add_timed_idea = {
 				idea = MKN_smuggling_network
 				days = 720
 			}
 			add_political_power = 100
 		}
-		x = 58
-		y = 3
-	}
-	focus = {
-		id = MKN_dnieper_gun_flotilla
-		icon = GFX_focus_generic_escort_efficiency
 		prerequisite = {
 			focus = MKN_kherson_shipyard
 		}
-		cost = 5
+		mutually_exclusive = {
+			focus = MKN_coastal_defense_steppe
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_dnieper_gun_flotilla
+		x = 76
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.35
 				uses = 1
-				category = naval_equipment
+				category = dd_tech
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kherson_works_organization = {
+					add_mio_size = 1
+				}
+			}
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
 			}
 		}
-		x = 57
-		y = 4
+		prerequisite = {
+			focus = MKN_coastal_defense_steppe
+		}
+		icon = GFX_goal_generic_build_navy
 	}
 	default = no
 	initial_show_position = {
@@ -1759,16 +2004,17 @@ focus_tree = {
 	}
 	focus = {
 		id = MKN_artillery_artels
-		icon = GFX_goal_generic_army_artillery
-		cost = 5
-		prerequisite = {
-			focus = MKN_black_guard_veterans
+		x = 44
+		y = 7
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = artillery
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
 			}
 			226 = {
 				if = {
@@ -1784,35 +2030,47 @@ focus_tree = {
 				}
 			}
 		}
-		x = 46
-		y = 5
+		prerequisite = {
+			focus = MKN_recovery_tractors
+		}
+		icon = GFX_focus_MKN_company_artillery_works
+		cost = 10
 	}
 	focus = {
 		id = MKN_mobile_supply_columns
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 5
 		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_supply_consumption_factor = -0.0120
+				tooltip = MKN_army_supply_consumption_factor_tt
+			}
+		}
 		prerequisite = {
 			focus = MKN_steppe_quartermasters
 		}
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = motorized_equipment
-			}
-			army_experience = 25
-		}
-		x = 49
-		y = 5
 	}
 	focus = {
 		id = MKN_aircraft_artels
-		icon = GFX_goal_generic_air_production
-		cost = 5
-		prerequisite = {
-			focus = MKN_black_swarm
+		x = 60
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = light_fighter
+			}
 			226 = {
 				if = {
 					limit = {
@@ -1826,50 +2084,49 @@ focus_tree = {
 					}
 				}
 			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = air_equipment
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_air_artels_organization = {
+					add_mio_size = 1
+				}
+			}
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
 			}
 		}
-		x = 52
-		y = 5
+		prerequisite = {
+			focus = MKN_black_swarm
+		}
+		icon = GFX_focus_MKN_company_air_artels
 	}
 	focus = {
 		id = MKN_black_sea_escorts
-		icon = GFX_goal_generic_navy_anti_submarine
+		x = 80
+		y = 4
 		cost = 5
-		prerequisite = {
-			focus = MKN_dnieper_gun_flotilla
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = dd_tech
-			}
-			196 = {
-				if = {
-					limit = {
-						is_owned_and_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
+			navy_experience = 10
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
 			}
 		}
-		x = 57
-		y = 5
+		prerequisite = {
+			focus = MKN_coastal_defense_steppe
+		}
+		icon = GFX_goal_generic_build_navy
 	}
 	continuous_focus_position = {
 		x = 50
-		y = 2800
+		y = 3400
 	}
-
 	focus = {
 		id = MKN_dnieper_audit
 		icon = GFX_focus_generic_money_for_equipment
@@ -1907,14 +2164,22 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_fragmented_workshops
-				add_idea = MKN_catalogued_workshops
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = industry
+			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0500
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.0800
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = 0.0200
+				tooltip = MKN_unified_research_speed_factor_tt
 			}
 		}
 		prerequisite = {
@@ -1935,11 +2200,19 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_untrained_militias
-				add_idea = MKN_accountable_militias
-			}
 			army_experience = 10
+			add_to_variable = {
+				MKN_unified_army_org_factor = 0.0500
+				tooltip = MKN_unified_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.0800
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_max_planning = 0.0400
+				tooltip = MKN_unified_max_planning_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_dnieper_audit
@@ -1959,11 +2232,19 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_accountable_militias
-				add_idea = MKN_drilled_militias
-			}
 			army_experience = 15
+			add_to_variable = {
+				MKN_unified_army_org_factor = 0.0600
+				tooltip = MKN_unified_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.0700
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_max_planning = 0.0300
+				tooltip = MKN_unified_max_planning_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_elected_brigadiers
@@ -2018,14 +2299,18 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_mapped_supply
-				add_idea = MKN_coordinated_supply
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = train_tech
+			}
+			add_to_variable = {
+				MKN_unified_supply_consumption_factor = -0.0700
+				tooltip = MKN_unified_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_org_regain = 0.0600
+				tooltip = MKN_unified_army_org_regain_tt
 			}
 		}
 		prerequisite = {
@@ -2046,11 +2331,19 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_drilled_militias
-				add_idea = MKN_worker_battalions_idea
-			}
 			army_experience = 15
+			add_to_variable = {
+				MKN_unified_army_org_factor = 0.1000
+				tooltip = MKN_unified_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.0500
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_max_planning = 0.0800
+				tooltip = MKN_unified_max_planning_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_steel_concern_union
@@ -2095,9 +2388,21 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_standardized_workshops
-				add_idea = MKN_serial_production
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.1500
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = 0.0100
+				tooltip = MKN_unified_research_speed_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_max_efficiency_factor = 0.1000
+				tooltip = MKN_unified_production_factory_max_efficiency_factor_tt
 			}
 		}
 		prerequisite = {
@@ -2145,9 +2450,17 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_economic_recovery
-				add_idea = MKN_dnieper_economy
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1500
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.0500
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.1300
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
 		}
 		prerequisite = {
@@ -2193,11 +2506,19 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_untrained_militias
-				add_idea = MKN_accountable_militias
-			}
 			army_experience = 10
+			add_to_variable = {
+				MKN_unified_army_org_factor = 0.0500
+				tooltip = MKN_unified_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.0800
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_max_planning = 0.0400
+				tooltip = MKN_unified_max_planning_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_artel_register
@@ -2217,11 +2538,19 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_accountable_militias
-				add_idea = MKN_drilled_militias
-			}
 			army_experience = 15
+			add_to_variable = {
+				MKN_unified_army_org_factor = 0.0600
+				tooltip = MKN_unified_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.0700
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_max_planning = 0.0300
+				tooltip = MKN_unified_max_planning_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_recallable_commanders
@@ -2285,11 +2614,23 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_drilled_militias
-				add_idea = MKN_mobile_self_defence_idea
-			}
 			army_experience = 15
+			add_to_variable = {
+				MKN_unified_army_org_factor = 0.0800
+				tooltip = MKN_unified_army_org_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.1000
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_max_planning = 0.0300
+				tooltip = MKN_unified_max_planning_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_speed_factor = 0.0500
+				tooltip = MKN_unified_army_speed_factor_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_mutual_credit
@@ -2344,14 +2685,22 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_catalogued_workshops
-				add_idea = MKN_standardized_workshops
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
+			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0500
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.0700
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = 0.0200
+				tooltip = MKN_unified_research_speed_factor_tt
 			}
 		}
 		prerequisite = {
@@ -2372,14 +2721,18 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_mapped_supply
-				add_idea = MKN_coordinated_supply
-			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = train_tech
+			}
+			add_to_variable = {
+				MKN_unified_supply_consumption_factor = -0.0700
+				tooltip = MKN_unified_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_army_org_regain = 0.0600
+				tooltip = MKN_unified_army_org_regain_tt
 			}
 		}
 		prerequisite = {
@@ -2405,9 +2758,17 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_standardized_workshops
-				add_idea = MKN_cooperative_production
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.1100
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_factory_efficiency_gain_factor = 0.2000
+				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = 0.0400
+				tooltip = MKN_unified_research_speed_factor_tt
 			}
 		}
 		prerequisite = {
@@ -2454,9 +2815,21 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MKN_economic_recovery
-				add_idea = MKN_mutual_aid_economy
+			add_to_variable = {
+				MKN_unified_political_power_gain = 0.1500
+				tooltip = MKN_unified_political_power_gain_tt
+			}
+			add_to_variable = {
+				MKN_unified_consumer_goods_factor = -0.1000
+				tooltip = MKN_unified_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_production_speed_buildings_factor = 0.0500
+				tooltip = MKN_unified_production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_stability_factor = 0.0500
+				tooltip = MKN_unified_stability_factor_tt
 			}
 		}
 		prerequisite = {
@@ -2467,5 +2840,2896 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+	}
+	focus = {
+		id = MKN_tank_crews
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 4
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = armor
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kommunar_organization = {
+					add_mio_size = 1
+				}
+			}
+			add_to_variable = {
+				MKN_army_max_planning = 0.0100
+				tooltip = MKN_army_max_planning_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_steel_horses
+		}
+		cost = 5
+	}
+	focus = {
+		id = MKN_radio_sections
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_max_planning = 0.0100
+				tooltip = MKN_army_max_planning_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_tank_crews
+		}
+	}
+	focus = {
+		id = MKN_recovery_tractors
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = armor
+			}
+			add_doctrine_cost_reduction = {
+				name = MKN_recovery_tractors
+				cost_reduction = 0.35
+				uses = 1
+				category = land_doctrine
+			}
+			add_to_variable = {
+				MKN_army_supply_consumption_factor = -0.0120
+				tooltip = MKN_army_supply_consumption_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_radio_sections
+		}
+	}
+	focus = {
+		id = MKN_tank_maintenance
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kommunar_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_kommunar_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kommunar_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_kommunar_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_army_supply_consumption_factor = -0.0120
+				tooltip = MKN_army_supply_consumption_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_mobile_supply_columns
+		}
+	}
+	focus = {
+		id = MKN_fire_tables
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_artillery_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_artillery_works_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_artillery_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_artillery_works_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_tank_maintenance
+		}
+	}
+	focus = {
+		id = MKN_motorized_infantry
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fire_tables
+		}
+	}
+	focus = {
+		id = MKN_bridge_columns
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_black_guard_veterans
+		}
+	}
+	focus = {
+		id = MKN_fuel_discipline
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_supply_consumption_factor = -0.0120
+				tooltip = MKN_army_supply_consumption_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_motorized_infantry
+		}
+	}
+	focus = {
+		id = MKN_staff_games
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = armor
+			}
+			add_to_variable = {
+				MKN_army_max_planning = 0.0100
+				tooltip = MKN_army_max_planning_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_bridge_columns
+		}
+	}
+	focus = {
+		id = MKN_mobile_medical
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MKN_mobile_medical
+				cost_reduction = 0.35
+				uses = 1
+				category = land_doctrine
+			}
+			add_to_variable = {
+				MKN_army_supply_consumption_factor = -0.0120
+				tooltip = MKN_army_supply_consumption_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fuel_discipline
+		}
+	}
+	focus = {
+		id = MKN_combined_arms
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_staff_games
+		}
+	}
+	focus = {
+		id = MKN_deep_reserves
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_max_planning = 0.0100
+				tooltip = MKN_army_max_planning_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_mobile_medical
+		}
+	}
+	focus = {
+		id = MKN_breakthrough_workshops
+		icon = GFX_focus_generic_army_tanks2
+		x = 44
+		y = 12
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = armor
+			}
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_combined_arms
+		}
+		cost = 10
+	}
+	focus = {
+		id = MKN_armoured_manoeuvres
+		icon = GFX_focus_generic_army_tanks2
+		x = 48
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_deep_reserves
+		}
+	}
+	focus = {
+		id = MKN_mechanized_compact
+		icon = GFX_focus_generic_army_tanks2
+		x = 46
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kommunar_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_kommunar_organization_mature
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_artillery_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_artillery_works_organization_mature
+				}
+			}
+			add_to_variable = {
+				MKN_army_army_armor_attack_factor = 0.0160
+				tooltip = MKN_army_army_armor_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_breakthrough_workshops
+		}
+		prerequisite = {
+			focus = MKN_armoured_manoeuvres
+		}
+		available = {
+			has_completed_focus = MKN_steel_horses
+			has_completed_focus = MKN_tank_crews
+			has_completed_focus = MKN_steppe_quartermasters
+			has_completed_focus = MKN_radio_sections
+			has_completed_focus = MKN_mobile_supply_columns
+			has_completed_focus = MKN_recovery_tractors
+			has_completed_focus = MKN_tank_maintenance
+			has_completed_focus = MKN_artillery_artels
+			has_completed_focus = MKN_fire_tables
+			has_completed_focus = MKN_black_guard_veterans
+			has_completed_focus = MKN_motorized_infantry
+			has_completed_focus = MKN_bridge_columns
+			has_completed_focus = MKN_fuel_discipline
+			has_completed_focus = MKN_staff_games
+			has_completed_focus = MKN_mobile_medical
+			has_completed_focus = MKN_combined_arms
+			has_completed_focus = MKN_deep_reserves
+			has_completed_focus = MKN_breakthrough_workshops
+			has_completed_focus = MKN_armoured_manoeuvres
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = MKN_village_muster
+		x = 52
+		y = 4
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = infantry_weapons
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_rifle_artels_organization = {
+					add_mio_size = 1
+				}
+			}
+			add_to_variable = {
+				MKN_army_army_org_factor = 0.0120
+				tooltip = MKN_army_army_org_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_batko_cavalry
+		}
+		icon = GFX_focus_MKN_company_rifle_artels
+		cost = 5
+	}
+	focus = {
+		id = MKN_remount_artels
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_attrition = -0.0160
+				tooltip = MKN_army_attrition_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_batko_cavalry
+		}
+	}
+	focus = {
+		id = MKN_machinegun_carts
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_rifle_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_rifle_artels_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_rifle_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_rifle_artels_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+				tooltip = MKN_army_modifier_army_sub_unit_cavalry_attack_factor_tt
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_village_muster
+		}
+		cost = 10
+	}
+	focus = {
+		id = MKN_local_guides
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_remount_artels
+		}
+	}
+	focus = {
+		id = MKN_scout_parties
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = infantry_weapons
+			}
+			add_doctrine_cost_reduction = {
+				name = MKN_scout_parties
+				cost_reduction = 0.35
+				uses = 1
+				category = land_doctrine
+			}
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_machinegun_carts
+		}
+	}
+	focus = {
+		id = MKN_field_veterinary
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_attrition = -0.0160
+				tooltip = MKN_army_attrition_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_local_guides
+		}
+	}
+	focus = {
+		id = MKN_militia_signals
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_army_org_factor = 0.0120
+				tooltip = MKN_army_army_org_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_scout_parties
+		}
+	}
+	focus = {
+		id = MKN_night_marches
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_field_veterinary
+		}
+	}
+	focus = {
+		id = MKN_militia_junior_leaders
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 8
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = infantry_weapons
+			}
+			add_to_variable = {
+				MKN_army_army_org_factor = 0.0120
+				tooltip = MKN_army_army_org_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_militia_signals
+		}
+		cost = 5
+	}
+	focus = {
+		id = MKN_hidden_depots
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_attrition = -0.0160
+				tooltip = MKN_army_attrition_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_night_marches
+		}
+	}
+	focus = {
+		id = MKN_militia_engineers
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_militia_junior_leaders
+		}
+	}
+	focus = {
+		id = MKN_militia_hospitals
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_attrition = -0.0160
+				tooltip = MKN_army_attrition_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_hidden_depots
+		}
+	}
+	focus = {
+		id = MKN_flexible_orders
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = infantry_weapons
+			}
+			add_to_variable = {
+				MKN_army_army_org_factor = 0.0120
+				tooltip = MKN_army_army_org_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_militia_engineers
+		}
+	}
+	focus = {
+		id = MKN_rural_reserve
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MKN_rural_reserve
+				cost_reduction = 0.35
+				uses = 1
+				category = land_doctrine
+			}
+			add_to_variable = {
+				MKN_army_army_org_factor = 0.0120
+				tooltip = MKN_army_army_org_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_militia_hospitals
+		}
+	}
+	focus = {
+		id = MKN_tachanka_tactics
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 11
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+				tooltip = MKN_army_modifier_army_sub_unit_cavalry_attack_factor_tt
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_flexible_orders
+		}
+		cost = 10
+	}
+	focus = {
+		id = MKN_steppe_camouflage
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_rural_reserve
+		}
+	}
+	focus = {
+		id = MKN_mobile_rearguard
+		icon = GFX_focus_generic_horse_studs
+		x = 52
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = infantry_weapons
+			}
+			army_experience = 10
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_tachanka_tactics
+		}
+	}
+	focus = {
+		id = MKN_free_column_exercises
+		icon = GFX_focus_generic_horse_studs
+		x = 56
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_steppe_camouflage
+		}
+	}
+	focus = {
+		id = MKN_free_army_compact
+		icon = GFX_focus_generic_horse_studs
+		x = 54
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_rifle_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_rifle_artels_organization_mature
+				}
+			}
+			add_to_variable = {
+				MKN_army_army_speed_factor = 0.0160
+				tooltip = MKN_army_army_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_mobile_rearguard
+		}
+		prerequisite = {
+			focus = MKN_free_column_exercises
+		}
+		available = {
+			has_completed_focus = MKN_batko_cavalry
+			has_completed_focus = MKN_village_muster
+			has_completed_focus = MKN_remount_artels
+			has_completed_focus = MKN_machinegun_carts
+			has_completed_focus = MKN_local_guides
+			has_completed_focus = MKN_scout_parties
+			has_completed_focus = MKN_field_veterinary
+			has_completed_focus = MKN_militia_signals
+			has_completed_focus = MKN_night_marches
+			has_completed_focus = MKN_militia_junior_leaders
+			has_completed_focus = MKN_hidden_depots
+			has_completed_focus = MKN_militia_engineers
+			has_completed_focus = MKN_militia_hospitals
+			has_completed_focus = MKN_flexible_orders
+			has_completed_focus = MKN_rural_reserve
+			has_completed_focus = MKN_tachanka_tactics
+			has_completed_focus = MKN_steppe_camouflage
+			has_completed_focus = MKN_mobile_rearguard
+			has_completed_focus = MKN_free_column_exercises
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = MKN_observation_posts
+		x = 64
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_black_swarm
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_fighter_instructors
+		x = 60
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_agility_factor = 0.0140
+				tooltip = MKN_air_air_agility_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_aircraft_artels
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_air_warning
+		x = 64
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_observation_posts
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_radio_beacons
+		x = 60
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = light_fighter
+			}
+			add_doctrine_cost_reduction = {
+				name = MKN_radio_beacons
+				cost_reduction = 0.35
+				uses = 1
+				category = air_doctrine
+			}
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fighter_instructors
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_airframe_jigs
+		x = 64
+		y = 6
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_warning
+		}
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+	}
+	focus = {
+		id = MKN_interceptor_pairs
+		x = 60
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_air_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_air_artels_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_air_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_air_artels_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_air_air_agility_factor = 0.0140
+				tooltip = MKN_air_air_agility_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_radio_beacons
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_aircraft_recovery
+		x = 64
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_airframe_jigs
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_air_dispersal
+		x = 60
+		y = 8
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = light_fighter
+			}
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_interceptor_pairs
+		}
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+	}
+	focus = {
+		id = MKN_fighter_patrols
+		x = 64
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_aircraft_recovery
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_air_radar_school
+		x = 60
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_dispersal
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_night_interceptors
+		x = 64
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fighter_patrols
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_aircraft_spares
+		x = 60
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = light_fighter
+			}
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_radar_school
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_fighter_conversion
+		x = 64
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MKN_fighter_conversion
+				cost_reduction = 0.35
+				uses = 1
+				category = air_doctrine
+			}
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_night_interceptors
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_air_rescue
+		x = 60
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_aircraft_spares
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_fighter_controllers
+		x = 64
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fighter_conversion
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_air_home_defence
+		x = 60
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = light_fighter
+			}
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_rescue
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_sky_watch_exercises
+		x = 64
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fighter_controllers
+		}
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_free_sky_compact
+		x = 62
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_air_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_air_artels_organization_mature
+				}
+			}
+			add_to_variable = {
+				MKN_air_air_attack_factor = 0.0120
+				tooltip = MKN_air_air_attack_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_home_defence
+		}
+		prerequisite = {
+			focus = MKN_sky_watch_exercises
+		}
+		available = {
+			has_completed_focus = MKN_black_swarm
+			has_completed_focus = MKN_aircraft_artels
+			has_completed_focus = MKN_observation_posts
+			has_completed_focus = MKN_fighter_instructors
+			has_completed_focus = MKN_air_warning
+			has_completed_focus = MKN_radio_beacons
+			has_completed_focus = MKN_airframe_jigs
+			has_completed_focus = MKN_interceptor_pairs
+			has_completed_focus = MKN_aircraft_recovery
+			has_completed_focus = MKN_air_dispersal
+			has_completed_focus = MKN_fighter_patrols
+			has_completed_focus = MKN_air_radar_school
+			has_completed_focus = MKN_night_interceptors
+			has_completed_focus = MKN_aircraft_spares
+			has_completed_focus = MKN_fighter_conversion
+			has_completed_focus = MKN_air_rescue
+			has_completed_focus = MKN_fighter_controllers
+			has_completed_focus = MKN_air_home_defence
+			has_completed_focus = MKN_sky_watch_exercises
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_goal_generic_air_fighter
+	}
+	focus = {
+		id = MKN_close_support_program
+		x = 70
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_gulyaipole_pilot_school
+		}
+		mutually_exclusive = {
+			focus = MKN_black_swarm
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_attack_air_artels
+		x = 68
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = cas_bomber
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_attack_air_artels_organization = {
+					add_mio_size = 1
+				}
+			}
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_close_support_program
+		}
+		icon = GFX_focus_MKN_company_attack_air_artels
+	}
+	focus = {
+		id = MKN_air_ground_liaisons
+		x = 72
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_close_support_program
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_bombing_ranges
+		x = 68
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_attack_air_artels
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_forward_airstrips
+		x = 72
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_range_factor = 0.0200
+				tooltip = MKN_air_air_range_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_ground_liaisons
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_air_map_bureau
+		x = 68
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = cas_bomber
+			}
+			add_doctrine_cost_reduction = {
+				name = MKN_air_map_bureau
+				cost_reduction = 0.35
+				uses = 1
+				category = air_doctrine
+			}
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_bombing_ranges
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_cas_maintenance
+		x = 72
+		y = 6
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+			226 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_forward_airstrips
+		}
+		icon = GFX_goal_generic_air_bomber
+		cost = 10
+	}
+	focus = {
+		id = MKN_target_markers
+		x = 68
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_map_bureau
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_flying_artillery
+		x = 72
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_attack_air_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_attack_air_artels_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_attack_air_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_attack_air_artels_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_cas_maintenance
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_airfield_fuel
+		x = 68
+		y = 8
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = cas_bomber
+			}
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_target_markers
+		}
+		icon = GFX_goal_generic_air_bomber
+		cost = 5
+	}
+	focus = {
+		id = MKN_tactical_recon
+		x = 72
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_range_factor = 0.0200
+				tooltip = MKN_air_air_range_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_flying_artillery
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_bomber_navigation
+		x = 68
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_airfield_fuel
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_air_supply_lift
+		x = 72
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_tactical_recon
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_air_coastal_support
+		x = 68
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = cas_bomber
+			}
+			add_to_variable = {
+				MKN_air_air_range_factor = 0.0200
+				tooltip = MKN_air_air_range_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_bomber_navigation
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_cas_replacement_crews
+		x = 72
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MKN_cas_replacement_crews
+				cost_reduction = 0.35
+				uses = 1
+				category = air_doctrine
+			}
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_supply_lift
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_joint_target_planning
+		x = 68
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_coastal_support
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_air_weather_service
+		x = 72
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_accidents_factor = -0.0120
+				tooltip = MKN_air_air_accidents_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_cas_replacement_crews
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_attack_wing_rotations
+		x = 68
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = cas_bomber
+			}
+			air_experience = 10
+			add_to_variable = {
+				MKN_air_air_mission_efficiency = 0.0120
+				tooltip = MKN_air_air_mission_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_joint_target_planning
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_cas_joint_exercises
+		x = 72
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_air_weather_service
+		}
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_air_support_compact
+		x = 70
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_attack_air_artels_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_attack_air_artels_organization_mature
+				}
+			}
+			add_to_variable = {
+				MKN_air_air_cas_efficiency = 0.0200
+				tooltip = MKN_air_air_cas_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_attack_wing_rotations
+		}
+		prerequisite = {
+			focus = MKN_cas_joint_exercises
+		}
+		available = {
+			has_completed_focus = MKN_close_support_program
+			has_completed_focus = MKN_attack_air_artels
+			has_completed_focus = MKN_air_ground_liaisons
+			has_completed_focus = MKN_bombing_ranges
+			has_completed_focus = MKN_forward_airstrips
+			has_completed_focus = MKN_air_map_bureau
+			has_completed_focus = MKN_cas_maintenance
+			has_completed_focus = MKN_target_markers
+			has_completed_focus = MKN_flying_artillery
+			has_completed_focus = MKN_airfield_fuel
+			has_completed_focus = MKN_tactical_recon
+			has_completed_focus = MKN_bomber_navigation
+			has_completed_focus = MKN_air_supply_lift
+			has_completed_focus = MKN_air_coastal_support
+			has_completed_focus = MKN_cas_replacement_crews
+			has_completed_focus = MKN_joint_target_planning
+			has_completed_focus = MKN_air_weather_service
+			has_completed_focus = MKN_attack_wing_rotations
+			has_completed_focus = MKN_cas_joint_exercises
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_goal_generic_air_bomber
+	}
+	focus = {
+		id = MKN_coastal_signal_posts
+		x = 76
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_detection = 0.0120
+				tooltip = MKN_navy_naval_detection_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_dnieper_gun_flotilla
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_escort_crews
+		x = 80
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_defense_factor = 0.0120
+				tooltip = MKN_navy_naval_defense_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_black_sea_escorts
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_harbour_dredging
+		x = 76
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = dd_tech
+			}
+			add_doctrine_cost_reduction = {
+				name = MKN_harbour_dredging
+				cost_reduction = 0.35
+				uses = 1
+				category = naval_doctrine
+			}
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_coastal_signal_posts
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_hull_repair_artels
+		x = 80
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_defense_factor = 0.0120
+				tooltip = MKN_navy_naval_defense_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_escort_crews
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_depth_charge_school
+		x = 76
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 10
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kherson_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_kherson_works_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kherson_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_kherson_works_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_navy_naval_detection = 0.0120
+				tooltip = MKN_navy_naval_detection_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_harbour_dredging
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_convoy_schedules
+		x = 80
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_hull_repair_artels
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_fleet_damage_control
+		x = 76
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = dd_tech
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_to_variable = {
+				MKN_navy_naval_defense_factor = 0.0120
+				tooltip = MKN_navy_naval_defense_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_depth_charge_school
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_coastal_watch
+		x = 80
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_detection = 0.0120
+				tooltip = MKN_navy_naval_detection_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_convoy_schedules
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_sweeper_sections
+		x = 76
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_detection = 0.0120
+				tooltip = MKN_navy_naval_detection_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_fleet_damage_control
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_escort_radio_net
+		x = 80
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_to_variable = {
+				MKN_navy_screening_efficiency = 0.0200
+				tooltip = MKN_navy_screening_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_coastal_watch
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_coastal_depots
+		x = 76
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = dd_tech
+			}
+			add_to_variable = {
+				MKN_navy_naval_defense_factor = 0.0120
+				tooltip = MKN_navy_naval_defense_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_sweeper_sections
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_river_sea_coordination
+		x = 80
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MKN_river_sea_coordination
+				cost_reduction = 0.35
+				uses = 1
+				category = naval_doctrine
+			}
+			add_to_variable = {
+				MKN_navy_screening_efficiency = 0.0200
+				tooltip = MKN_navy_screening_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_escort_radio_net
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_anti_submarine_patrols
+		x = 76
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_detection = 0.0120
+				tooltip = MKN_navy_naval_detection_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_coastal_depots
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_convoy_rescue
+		x = 80
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_defense_factor = 0.0120
+				tooltip = MKN_navy_naval_defense_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_river_sea_coordination
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_escort_reserves
+		x = 76
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = dd_tech
+			}
+			navy_experience = 10
+			add_to_variable = {
+				MKN_navy_screening_efficiency = 0.0200
+				tooltip = MKN_navy_screening_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_anti_submarine_patrols
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_coastal_fleet_exercises
+		x = 80
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_convoy_rescue
+		}
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_escort_compact
+		x = 78
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_kherson_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_kherson_works_organization_mature
+				}
+			}
+			add_to_variable = {
+				MKN_navy_convoy_escort_efficiency = 0.0200
+				tooltip = MKN_navy_convoy_escort_efficiency_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_escort_reserves
+		}
+		prerequisite = {
+			focus = MKN_coastal_fleet_exercises
+		}
+		available = {
+			has_completed_focus = MKN_coastal_defense_steppe
+			has_completed_focus = MKN_dnieper_gun_flotilla
+			has_completed_focus = MKN_black_sea_escorts
+			has_completed_focus = MKN_coastal_signal_posts
+			has_completed_focus = MKN_escort_crews
+			has_completed_focus = MKN_harbour_dredging
+			has_completed_focus = MKN_hull_repair_artels
+			has_completed_focus = MKN_depth_charge_school
+			has_completed_focus = MKN_convoy_schedules
+			has_completed_focus = MKN_fleet_damage_control
+			has_completed_focus = MKN_coastal_watch
+			has_completed_focus = MKN_sweeper_sections
+			has_completed_focus = MKN_escort_radio_net
+			has_completed_focus = MKN_coastal_depots
+			has_completed_focus = MKN_river_sea_coordination
+			has_completed_focus = MKN_anti_submarine_patrols
+			has_completed_focus = MKN_convoy_rescue
+			has_completed_focus = MKN_escort_reserves
+			has_completed_focus = MKN_coastal_fleet_exercises
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_goal_generic_build_navy
+	}
+	focus = {
+		id = MKN_torpedo_artels
+		x = 84
+		y = 4
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_submarine_works_organization = {
+					add_mio_size = 1
+				}
+			}
+			add_to_variable = {
+				MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+				tooltip = MKN_navy_naval_torpedo_hit_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_black_sea_smugglers
+		}
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+	}
+	focus = {
+		id = MKN_submarine_crews
+		x = 88
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_black_sea_smugglers
+		}
+		icon = GFX_focus_MKN_company_submarine_works
+	}
+	focus = {
+		id = MKN_hidden_anchorages
+		x = 84
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+				tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_torpedo_artels
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_naval_intelligence
+		x = 88
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_submarine_crews
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_dockyard
+		x = 84
+		y = 6
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = ss_tech
+			}
+			add_doctrine_cost_reduction = {
+				name = MKN_raider_dockyard
+				cost_reduction = 0.35
+				uses = 1
+				category = naval_doctrine
+			}
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_hidden_anchorages
+		}
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+	}
+	focus = {
+		id = MKN_torpedo_trials
+		x = 88
+		y = 6
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+				tooltip = MKN_navy_naval_torpedo_hit_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_naval_intelligence
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_night_sorties
+		x = 84
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 10
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_submarine_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_submarine_works_organization_specialization_a
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_submarine_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_submarine_works_organization_specialization_b
+				}
+			}
+			add_to_variable = {
+				MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+				tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_raider_dockyard
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_supply
+		x = 88
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_speed_factor = 0.0160
+				tooltip = MKN_navy_naval_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_torpedo_trials
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_submarine_listening
+		x = 84
+		y = 8
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = ss_tech
+			}
+			add_to_variable = {
+				MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+				tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_night_sorties
+		}
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+	}
+	focus = {
+		id = MKN_fast_attack_craft
+		x = 88
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_speed_factor = 0.0160
+				tooltip = MKN_navy_naval_speed_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_raider_supply
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_radio_discipline
+		x = 84
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+				tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_submarine_listening
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_submarine_repair
+		x = 88
+		y = 9
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_to_variable = {
+				MKN_navy_naval_speed_factor = 0.0160
+				tooltip = MKN_navy_naval_speed_factor_tt
+			}
+			196 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = MKN_fast_attack_craft
+		}
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+	}
+	focus = {
+		id = MKN_raider_weather
+		x = 84
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = ss_tech
+			}
+			add_to_variable = {
+				MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+				tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_raider_radio_discipline
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_replacement_crews
+		x = 88
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MKN_raider_replacement_crews
+				cost_reduction = 0.35
+				uses = 1
+				category = naval_doctrine
+			}
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_submarine_repair
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_torpedo_ambushes
+		x = 84
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+				tooltip = MKN_navy_naval_torpedo_hit_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_raider_weather
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_disrupt_enemy_trade
+		x = 88
+		y = 11
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_raider_replacement_crews
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_escape_routes
+		x = 84
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = ss_tech
+			}
+			navy_experience = 10
+			add_to_variable = {
+				MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+				tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_torpedo_ambushes
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_exercises
+		x = 88
+		y = 12
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_disrupt_enemy_trade
+		}
+		icon = GFX_goal_generic_navy_submarine
+	}
+	focus = {
+		id = MKN_raider_compact
+		x = 86
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 20
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:MKN_submarine_works_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = MKN_submarine_works_organization_mature
+				}
+			}
+			add_to_variable = {
+				MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+				tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+			}
+		}
+		prerequisite = {
+			focus = MKN_raider_escape_routes
+		}
+		prerequisite = {
+			focus = MKN_raider_exercises
+		}
+		available = {
+			has_completed_focus = MKN_black_sea_smugglers
+			has_completed_focus = MKN_torpedo_artels
+			has_completed_focus = MKN_submarine_crews
+			has_completed_focus = MKN_hidden_anchorages
+			has_completed_focus = MKN_naval_intelligence
+			has_completed_focus = MKN_raider_dockyard
+			has_completed_focus = MKN_torpedo_trials
+			has_completed_focus = MKN_night_sorties
+			has_completed_focus = MKN_raider_supply
+			has_completed_focus = MKN_submarine_listening
+			has_completed_focus = MKN_fast_attack_craft
+			has_completed_focus = MKN_raider_radio_discipline
+			has_completed_focus = MKN_submarine_repair
+			has_completed_focus = MKN_raider_weather
+			has_completed_focus = MKN_raider_replacement_crews
+			has_completed_focus = MKN_torpedo_ambushes
+			has_completed_focus = MKN_disrupt_enemy_trade
+			has_completed_focus = MKN_raider_escape_routes
+			has_completed_focus = MKN_raider_exercises
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_goal_generic_navy_submarine
 	}
 }

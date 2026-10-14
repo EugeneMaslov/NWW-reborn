@@ -1,0 +1,68 @@
+UKR_public_mandate = {
+	UKR_campaign_communism = {
+		icon = generic_political_discourse
+		cost = 50
+		days_remove = 60
+		days_re_enable = 30
+		available = {
+			NOT = {
+				has_country_flag = UKR_campaign_active
+			}
+			communism < 0.70
+		}
+		complete_effect = {
+			set_country_flag = UKR_campaign_active
+		}
+		remove_effect = {
+			clr_country_flag = UKR_campaign_active
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+	}
+	UKR_campaign_democratic = {
+		icon = generic_political_discourse
+		cost = 50
+		days_remove = 60
+		days_re_enable = 30
+		available = {
+			NOT = {
+				has_country_flag = UKR_campaign_active
+			}
+			democratic < 0.70
+		}
+		complete_effect = {
+			set_country_flag = UKR_campaign_active
+		}
+		remove_effect = {
+			clr_country_flag = UKR_campaign_active
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+	}
+	UKR_campaign_neutrality = {
+		icon = generic_political_discourse
+		cost = 50
+		days_remove = 60
+		days_re_enable = 30
+		available = {
+			NOT = {
+				has_country_flag = UKR_campaign_active
+			}
+			neutrality < 0.70
+		}
+		complete_effect = {
+			set_country_flag = UKR_campaign_active
+		}
+		remove_effect = {
+			clr_country_flag = UKR_campaign_active
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+}

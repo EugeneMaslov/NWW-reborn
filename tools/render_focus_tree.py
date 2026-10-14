@@ -8,13 +8,13 @@ from hoi4_script import read, one, values, walk
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--tag', choices=('LTB', 'MKN'), help='Render only the selected country')
+parser.add_argument('--tag', choices=('LTB', 'MKN', 'UKR'), help='Render only the selected country')
 args = parser.parse_args()
 labels = {}
 for path in ROOT.glob('localisation/*l_russian.yml'):
     labels.update(re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$', path.read_text(encoding='utf-8-sig'), re.M))
 
-for tag in ((args.tag,) if args.tag else ('LTB', 'MKN')):
+for tag in ((args.tag,) if args.tag else ('LTB', 'MKN', 'UKR')):
     tree = one(read(ROOT/f'common/national_focus/{tag.lower()}_focus.txt'), 'focus_tree')
     focuses = values(tree, 'focus')
     positions = {one(f, 'id'): (int(one(f, 'x'))*90+140, int(one(f, 'y'))*95+130) for f in focuses}
@@ -28,8 +28,11 @@ for tag in ((args.tag,) if args.tag else ('LTB', 'MKN')):
     if tag == 'LTB':
         for column, title in [(7,'Политика'),(18,'Дипломатия'),(24,'Гражданская промышленность'),(28,'Сельское хозяйство и сырьё'),(32,'Военная промышленность'),(36,'Наука'),(42,'Армия'),(50,'Авиация'),(56,'Флот')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
+    elif tag == 'MKN':
+        for column, title in [(4,'Днепрострой: 24 фокуса'),(16,'Вольные кооперативы: 24 фокуса'),(27,'Наука'),(34,'Политика'),(46,'Механизация: 20'),(54,'Вольные колонны: 20'),(62,'Защита неба: 20'),(70,'Авиация поддержки: 20'),(78,'Эскорты: 20'),(86,'Рейдеры: 20')]:
+            result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     else:
-        for column, title in [(4,'Днепрострой: 24 фокуса'),(16,'Вольные кооперативы: 24 фокуса'),(27,'Наука'),(34,'Политика'),(46,'Армия'),(52,'Авиация'),(57,'Флот')]:
+        for column, title in [(6,'Политические мандаты'),(22,'Хозяйство'),(34,'Армия'),(44,'Авиация'),(54,'Флот'),(62,'Дипломатия')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     # Prerequisite edges underneath the cards.
     for f in focuses:
@@ -63,7 +66,7 @@ for tag in ((args.tag,) if args.tag else ('LTB', 'MKN')):
         for i,line in enumerate(textwrap.wrap(title,width=22)[:2]):
             result.append(f'<text class="label" x="{x}" y="{y-9+i*16}" text-anchor="middle">{escape(line)}</text>')
         cost = int(one(f, 'cost'))*7
-        rewards = (' • реформа духа' if 'swap_ideas' in keys else ' • исследовательская ячейка' if 'add_research_slot' in keys else ' • строительство' if 'add_building_construction' in keys else ' • решение съезда' if 'country_event' in keys else '')
+        rewards = (' • развитие духа' if 'add_to_variable' in keys else ' • реформа духа' if 'swap_ideas' in keys else ' • исследовательская ячейка' if 'add_research_slot' in keys else ' • строительство' if 'add_building_construction' in keys else ' • решение съезда' if 'country_event' in keys else '')
         result.append(f'<text class="small" x="{x}" y="{y+22}" text-anchor="middle">{cost} дней{escape(rewards)}</text></g>')
     result.append('</svg>')
     dest=ROOT/f'docs/{tag.lower()}_focus_tree.svg';dest.parent.mkdir(exist_ok=True)

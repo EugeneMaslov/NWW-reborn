@@ -467,7 +467,7 @@ LTB_belaz_organization = {
 }
 MKN_kommunar_organization = {
 	include = generic_mobile_tank_organization
-	icon = GFX_idea_generic_tank_manufacturer_1
+	icon = GFX_idea_MKN_company_kommunar
 	allowed = {
 		original_tag = MKN
 	}
@@ -476,10 +476,280 @@ MKN_kommunar_organization = {
 			has_completed_focus = MKN_steel_horses
 		}
 	}
+	initial_trait = {
+		name = MKN_kommunar_organization_initial
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = 0.04
+		}
+	}
+	add_trait = {
+		token = MKN_kommunar_organization_specialization_a
+		name = MKN_kommunar_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_kommunar_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_tank_maintenance
+			}
+		}
+		equipment_bonus = {
+			maximum_speed = 0.08
+			armor_value = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_kommunar_organization_specialization_b
+		name = MKN_kommunar_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_kommunar_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_tank_maintenance
+			}
+		}
+		equipment_bonus = {
+			armor_value = 0.08
+			maximum_speed = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_kommunar_organization_mature
+		name = MKN_kommunar_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_kommunar_organization_specialization_a
+				MKN_kommunar_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_mechanized_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
+}
+MKN_rifle_artels_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_MKN_company_rifle_artels
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			OR = {
+				has_completed_focus = MKN_village_muster
+				has_completed_focus = MKN_rifle_concern
+			}
+		}
+	}
+	initial_trait = {
+		name = MKN_rifle_artels_organization_initial
+		equipment_bonus = {
+			reliability = 0.06
+			soft_attack = 0.02
+		}
+	}
+	add_trait = {
+		token = MKN_rifle_artels_organization_specialization_a
+		name = MKN_rifle_artels_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_rifle_artels_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_machinegun_carts
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.08
+			soft_attack = -0.02
+		}
+	}
+	add_trait = {
+		token = MKN_rifle_artels_organization_specialization_b
+		name = MKN_rifle_artels_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_rifle_artels_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_machinegun_carts
+			}
+		}
+		equipment_bonus = {
+			soft_attack = 0.08
+			build_cost_ic = 0.03
+		}
+	}
+	add_trait = {
+		token = MKN_rifle_artels_organization_mature
+		name = MKN_rifle_artels_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_rifle_artels_organization_specialization_a
+				MKN_rifle_artels_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_free_army_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
+}
+MKN_artillery_works_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_MKN_company_artillery_works
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			OR = {
+				has_completed_focus = MKN_artillery_artels
+				has_completed_focus = MKN_machinegun_carts
+			}
+		}
+	}
+	initial_trait = {
+		name = MKN_artillery_works_organization_initial
+		equipment_bonus = {
+			reliability = 0.05
+			soft_attack = 0.03
+		}
+	}
+	add_trait = {
+		token = MKN_artillery_works_organization_specialization_a
+		name = MKN_artillery_works_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_artillery_works_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_fire_tables
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.06
+			reliability = 0.05
+		}
+	}
+	add_trait = {
+		token = MKN_artillery_works_organization_specialization_b
+		name = MKN_artillery_works_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_artillery_works_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_fire_tables
+			}
+		}
+		equipment_bonus = {
+			soft_attack = 0.08
+			build_cost_ic = 0.03
+		}
+	}
+	add_trait = {
+		token = MKN_artillery_works_organization_mature
+		name = MKN_artillery_works_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_artillery_works_organization_specialization_a
+				MKN_artillery_works_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_mechanized_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
 }
 MKN_air_artels_organization = {
 	include = generic_light_aircraft_organization
-	icon = GFX_idea_generic_air_manufacturer_1
+	icon = GFX_idea_MKN_company_air_artels
 	allowed = {
 		original_tag = MKN
 	}
@@ -488,10 +758,182 @@ MKN_air_artels_organization = {
 			has_completed_focus = MKN_aircraft_artels
 		}
 	}
+	initial_trait = {
+		name = MKN_air_artels_organization_initial
+		equipment_bonus = {
+			air_agility = 0.05
+			maximum_speed = 0.03
+		}
+	}
+	add_trait = {
+		token = MKN_air_artels_organization_specialization_a
+		name = MKN_air_artels_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_air_artels_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_interceptor_pairs
+			}
+		}
+		equipment_bonus = {
+			air_agility = 0.08
+			air_range = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_air_artels_organization_specialization_b
+		name = MKN_air_artels_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_air_artels_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_interceptor_pairs
+			}
+		}
+		equipment_bonus = {
+			maximum_speed = 0.08
+			air_agility = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_air_artels_organization_mature
+		name = MKN_air_artels_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_air_artels_organization_specialization_a
+				MKN_air_artels_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_free_sky_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
+}
+MKN_attack_air_artels_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_MKN_company_attack_air_artels
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_attack_air_artels
+		}
+	}
+	initial_trait = {
+		name = MKN_attack_air_artels_organization_initial
+		equipment_bonus = {
+			air_ground_attack = 0.05
+			reliability = 0.04
+		}
+	}
+	add_trait = {
+		token = MKN_attack_air_artels_organization_specialization_a
+		name = MKN_attack_air_artels_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_attack_air_artels_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_flying_artillery
+			}
+		}
+		equipment_bonus = {
+			air_defence = 0.08
+			maximum_speed = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_attack_air_artels_organization_specialization_b
+		name = MKN_attack_air_artels_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_attack_air_artels_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_flying_artillery
+			}
+		}
+		equipment_bonus = {
+			air_range = 0.10
+			air_defence = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_attack_air_artels_organization_mature
+		name = MKN_attack_air_artels_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_attack_air_artels_organization_specialization_a
+				MKN_attack_air_artels_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_air_support_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
+		}
+	}
 }
 MKN_kherson_works_organization = {
 	include = generic_escort_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_1
+	icon = GFX_idea_MKN_company_kherson_works
 	allowed = {
 		original_tag = MKN
 	}
@@ -500,28 +942,176 @@ MKN_kherson_works_organization = {
 			has_completed_focus = MKN_kherson_shipyard
 		}
 	}
-}
-MKN_rifle_artels_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
-	allowed = {
-		original_tag = MKN
+	initial_trait = {
+		name = MKN_kherson_works_organization_initial
+		equipment_bonus = {
+			sub_detection = 0.05
+			naval_speed = 0.03
+		}
 	}
-	available = {
-		FROM = {
-			has_completed_focus = MKN_rifle_concern
+	add_trait = {
+		token = MKN_kherson_works_organization_specialization_a
+		name = MKN_kherson_works_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_kherson_works_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_depth_charge_school
+			}
+		}
+		equipment_bonus = {
+			sub_detection = 0.10
+			naval_speed = -0.02
+		}
+	}
+	add_trait = {
+		token = MKN_kherson_works_organization_specialization_b
+		name = MKN_kherson_works_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_kherson_works_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_depth_charge_school
+			}
+		}
+		equipment_bonus = {
+			naval_speed = 0.08
+			sub_detection = -0.03
+		}
+	}
+	add_trait = {
+		token = MKN_kherson_works_organization_mature
+		name = MKN_kherson_works_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_kherson_works_organization_specialization_a
+				MKN_kherson_works_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_escort_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
 		}
 	}
 }
-MKN_artillery_works_organization = {
-	include = generic_artillery_organization
-	icon = GFX_idea_generic_artillery_manufacturer_1
+MKN_submarine_works_organization = {
+	include = generic_submarine_organization
+	icon = GFX_idea_MKN_company_submarine_works
 	allowed = {
 		original_tag = MKN
 	}
 	available = {
 		FROM = {
-			has_completed_focus = MKN_artillery_artels
+			has_completed_focus = MKN_submarine_crews
+		}
+	}
+	initial_trait = {
+		name = MKN_submarine_works_organization_initial
+		equipment_bonus = {
+			sub_visibility = -0.05
+			reliability = 0.04
+		}
+	}
+	add_trait = {
+		token = MKN_submarine_works_organization_specialization_a
+		name = MKN_submarine_works_organization_specialization_a
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_submarine_works_organization_specialization_b
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_night_sorties
+			}
+		}
+		equipment_bonus = {
+			sub_visibility = -0.10
+			naval_range = -0.04
+		}
+	}
+	add_trait = {
+		token = MKN_submarine_works_organization_specialization_b
+		name = MKN_submarine_works_organization_specialization_b
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 15
+			y = 0
+		}
+		mutually_exclusive = {
+			MKN_submarine_works_organization_specialization_a
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_night_sorties
+			}
+		}
+		equipment_bonus = {
+			naval_range = 0.10
+			sub_visibility = 0.03
+		}
+	}
+	add_trait = {
+		token = MKN_submarine_works_organization_mature
+		name = MKN_submarine_works_organization_mature
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 14
+			y = 2
+		}
+		parent = {
+			traits = {
+				MKN_submarine_works_organization_specialization_a
+				MKN_submarine_works_organization_specialization_b
+			}
+			num_parents_needed = 1
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_raider_compact
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_cost_factor = -0.03
 		}
 	}
 }

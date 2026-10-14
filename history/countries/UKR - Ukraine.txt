@@ -111,3 +111,20 @@ recruit_character = UKR_pavlo_shandruk
 
 
 
+
+set_variable = { UKR_civic_political_power_gain = 0 }
+set_variable = { UKR_civic_stability_factor = 0 }
+set_variable = { UKR_economy_consumer_goods_factor = 0.1 }
+set_variable = { UKR_economy_factory_energy_consumption = 0 }
+set_variable = { UKR_economy_production_factory_efficiency_gain_factor = -0.1 }
+set_variable = { UKR_economy_production_speed_buildings_factor = -0.1 }
+set_variable = { UKR_economy_research_speed_factor = -0.03 }
+set_variable = { UKR_army_army_org_factor = 0 }
+set_variable = { UKR_army_max_planning = 0 }
+set_variable = { UKR_army_supply_consumption_factor = 0 }
+set_variable = { UKR_air_air_accidents_factor = 0 }
+set_variable = { UKR_air_air_agility_factor = 0 }
+set_variable = { UKR_air_air_mission_efficiency = 0 }
+set_variable = { UKR_navy_convoy_escort_efficiency = 0 }
+set_variable = { UKR_navy_naval_defense_factor = 0 }
+set_variable = { UKR_navy_naval_detection = 0 }

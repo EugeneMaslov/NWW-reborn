@@ -1,0 +1,43 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							has_country_flag = MKN_industry_unified_v1
+						}
+					}
+					nww_mkn_rebuild_industry = yes
+				}
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							has_country_flag = MKN_services_unified_v2
+						}
+					}
+					nww_mkn_rebuild_services = yes
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					tag = MKN
+					NOT = {
+						has_government = communism
+					}
+					NOT = {
+						has_country_flag = MKN_makhno_command_retired
+					}
+				}
+				retire_character = NWW_MKN_makhno
+				set_country_flag = MKN_makhno_command_retired
+			}
+		}
+	}
+}
