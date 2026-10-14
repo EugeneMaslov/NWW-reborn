@@ -430,6 +430,9 @@ nww_mkn_rebuild_services = {
 		MKN_army_army_armor_attack_factor = 0
 	}
 	set_variable = {
+		MKN_army_army_fuel_consumption_factor = 0
+	}
+	set_variable = {
 		MKN_army_army_org_factor = 0
 	}
 	set_variable = {
@@ -439,20 +442,92 @@ nww_mkn_rebuild_services = {
 		MKN_army_attrition = 0
 	}
 	set_variable = {
+		MKN_army_casualty_trickleback = 0
+	}
+	set_variable = {
+		MKN_army_dig_in_speed_factor = 0
+	}
+	set_variable = {
+		MKN_army_experience_loss_factor = 0
+	}
+	set_variable = {
+		MKN_army_land_reinforce_rate = 0
+	}
+	set_variable = {
+		MKN_army_max_dig_in = 0
+	}
+	set_variable = {
 		MKN_army_max_planning = 0
 	}
 	set_variable = {
+		MKN_army_mobilization_speed = 0
+	}
+	set_variable = {
 		MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_modifier_army_sub_unit_cavalry_defence_factor = 0
+	}
+	set_variable = {
+		MKN_army_modifier_army_sub_unit_cavalry_speed_factor = 0
+	}
+	set_variable = {
+		MKN_army_modifier_army_sub_unit_infantry_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_modifier_army_sub_unit_infantry_defence_factor = 0
+	}
+	set_variable = {
+		MKN_army_modifier_army_sub_unit_infantry_speed_factor = 0
+	}
+	set_variable = {
+		MKN_army_org_loss_when_moving = 0
+	}
+	set_variable = {
+		MKN_army_planning_speed = 0
+	}
+	set_variable = {
+		MKN_army_recon_factor = 0
+	}
+	set_variable = {
+		MKN_army_recruitable_population = 0
+	}
+	set_variable = {
+		MKN_army_repair_speed_factor = 0
 	}
 	set_variable = {
 		MKN_army_supply_consumption_factor = 0
 	}
 	if = {
 		limit = {
+			has_completed_focus = MKN_tachanka_columns
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_railway_war
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_general_staff
+		}
+		add_to_variable = {
+			MKN_army_max_planning = 0.05
+		}
+	}
+	if = {
+		limit = {
 			has_completed_focus = MKN_steel_horses
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_army_armor_attack_factor = 0.05
 		}
 	}
 	if = {
@@ -460,7 +535,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_batko_cavalry
 		}
 		add_to_variable = {
-			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.08
 		}
 	}
 	if = {
@@ -468,7 +543,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_black_guard_veterans
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_experience_loss_factor = -0.1
 		}
 	}
 	if = {
@@ -476,7 +551,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_steppe_quartermasters
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_supply_consumption_factor = -0.05
 		}
 	}
 	if = {
@@ -484,7 +559,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_artillery_artels
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_modifier_army_sub_unit_infantry_attack_factor = 0.04
 		}
 	}
 	if = {
@@ -492,7 +567,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_mobile_supply_columns
 		}
 		add_to_variable = {
-			MKN_army_supply_consumption_factor = -0.0120
+			MKN_army_army_fuel_consumption_factor = -0.08
 		}
 	}
 	if = {
@@ -500,7 +575,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_tank_crews
 		}
 		add_to_variable = {
-			MKN_army_max_planning = 0.0100
+			MKN_army_army_org_factor = 0.04
 		}
 	}
 	if = {
@@ -508,7 +583,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_radio_sections
 		}
 		add_to_variable = {
-			MKN_army_max_planning = 0.0100
+			MKN_army_land_reinforce_rate = 0.02
 		}
 	}
 	if = {
@@ -516,7 +591,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_recovery_tractors
 		}
 		add_to_variable = {
-			MKN_army_supply_consumption_factor = -0.0120
+			MKN_army_attrition = -0.08
 		}
 	}
 	if = {
@@ -524,7 +599,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_tank_maintenance
 		}
 		add_to_variable = {
-			MKN_army_supply_consumption_factor = -0.0120
+			MKN_army_repair_speed_factor = 0.1
 		}
 	}
 	if = {
@@ -532,7 +607,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fire_tables
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_max_planning = 0.05
 		}
 	}
 	if = {
@@ -540,7 +615,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_motorized_infantry
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_modifier_army_sub_unit_infantry_speed_factor = 0.05
 		}
 	}
 	if = {
@@ -548,7 +623,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_bridge_columns
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_army_speed_factor = 0.04
 		}
 	}
 	if = {
@@ -556,7 +631,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fuel_discipline
 		}
 		add_to_variable = {
-			MKN_army_supply_consumption_factor = -0.0120
+			MKN_army_army_fuel_consumption_factor = -0.1
 		}
 	}
 	if = {
@@ -564,7 +639,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_staff_games
 		}
 		add_to_variable = {
-			MKN_army_max_planning = 0.0100
+			MKN_army_planning_speed = 0.15
 		}
 	}
 	if = {
@@ -572,7 +647,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_mobile_medical
 		}
 		add_to_variable = {
-			MKN_army_supply_consumption_factor = -0.0120
+			MKN_army_casualty_trickleback = 0.05
 		}
 	}
 	if = {
@@ -580,7 +655,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_combined_arms
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_army_armor_attack_factor = 0.05
 		}
 	}
 	if = {
@@ -588,7 +663,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_deep_reserves
 		}
 		add_to_variable = {
-			MKN_army_max_planning = 0.0100
+			MKN_army_land_reinforce_rate = 0.02
 		}
 	}
 	if = {
@@ -596,7 +671,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_breakthrough_workshops
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_army_armor_attack_factor = 0.04
 		}
 	}
 	if = {
@@ -604,7 +679,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_armoured_manoeuvres
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_org_loss_when_moving = -0.1
 		}
 	}
 	if = {
@@ -612,7 +687,10 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_mechanized_compact
 		}
 		add_to_variable = {
-			MKN_army_army_armor_attack_factor = 0.0160
+			MKN_army_army_armor_attack_factor = 0.06
+		}
+		add_to_variable = {
+			MKN_army_army_org_factor = 0.05
 		}
 	}
 	if = {
@@ -620,7 +698,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_village_muster
 		}
 		add_to_variable = {
-			MKN_army_army_org_factor = 0.0120
+			MKN_army_mobilization_speed = 0.15
 		}
 	}
 	if = {
@@ -628,7 +706,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_remount_artels
 		}
 		add_to_variable = {
-			MKN_army_attrition = -0.0160
+			MKN_army_modifier_army_sub_unit_cavalry_speed_factor = 0.08
 		}
 	}
 	if = {
@@ -636,7 +714,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_machinegun_carts
 		}
 		add_to_variable = {
-			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.07
 		}
 	}
 	if = {
@@ -644,7 +722,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_local_guides
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_recon_factor = 0.1
 		}
 	}
 	if = {
@@ -652,7 +730,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_scout_parties
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_army_speed_factor = 0.05
 		}
 	}
 	if = {
@@ -660,7 +738,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_field_veterinary
 		}
 		add_to_variable = {
-			MKN_army_attrition = -0.0160
+			MKN_army_attrition = -0.08
 		}
 	}
 	if = {
@@ -668,7 +746,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_militia_signals
 		}
 		add_to_variable = {
-			MKN_army_army_org_factor = 0.0120
+			MKN_army_land_reinforce_rate = 0.02
 		}
 	}
 	if = {
@@ -676,7 +754,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_night_marches
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_org_loss_when_moving = -0.1
 		}
 	}
 	if = {
@@ -684,7 +762,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_militia_junior_leaders
 		}
 		add_to_variable = {
-			MKN_army_army_org_factor = 0.0120
+			MKN_army_army_org_factor = 0.05
 		}
 	}
 	if = {
@@ -692,7 +770,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_hidden_depots
 		}
 		add_to_variable = {
-			MKN_army_attrition = -0.0160
+			MKN_army_supply_consumption_factor = -0.08
 		}
 	}
 	if = {
@@ -700,7 +778,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_militia_engineers
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_dig_in_speed_factor = 0.2
 		}
 	}
 	if = {
@@ -708,7 +786,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_militia_hospitals
 		}
 		add_to_variable = {
-			MKN_army_attrition = -0.0160
+			MKN_army_casualty_trickleback = 0.06
 		}
 	}
 	if = {
@@ -716,7 +794,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_flexible_orders
 		}
 		add_to_variable = {
-			MKN_army_army_org_factor = 0.0120
+			MKN_army_planning_speed = 0.15
 		}
 	}
 	if = {
@@ -724,7 +802,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_rural_reserve
 		}
 		add_to_variable = {
-			MKN_army_army_org_factor = 0.0120
+			MKN_army_recruitable_population = 0.005
 		}
 	}
 	if = {
@@ -732,7 +810,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_tachanka_tactics
 		}
 		add_to_variable = {
-			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.0200
+			MKN_army_modifier_army_sub_unit_cavalry_defence_factor = 0.08
 		}
 	}
 	if = {
@@ -740,7 +818,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_steppe_camouflage
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_max_dig_in = 2.0
 		}
 	}
 	if = {
@@ -748,7 +826,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_mobile_rearguard
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_modifier_army_sub_unit_infantry_defence_factor = 0.05
 		}
 	}
 	if = {
@@ -756,7 +834,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_free_column_exercises
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_army_org_factor = 0.05
 		}
 	}
 	if = {
@@ -764,12 +842,20 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_free_army_compact
 		}
 		add_to_variable = {
-			MKN_army_army_speed_factor = 0.0160
+			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.05
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = -0.05
 		}
 	}
 	if = {
 		limit = {
 			has_completed_focus = MKN_tachanka_columns
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = MKN_army_development
+				}
+			}
 		}
 		add_dynamic_modifier = {
 			modifier = MKN_army_development
@@ -777,6 +863,9 @@ nww_mkn_rebuild_services = {
 	}
 	set_variable = {
 		MKN_air_air_accidents_factor = 0
+	}
+	set_variable = {
+		MKN_air_air_ace_generation_chance_factor = 0
 	}
 	set_variable = {
 		MKN_air_air_agility_factor = 0
@@ -788,17 +877,62 @@ nww_mkn_rebuild_services = {
 		MKN_air_air_cas_efficiency = 0
 	}
 	set_variable = {
+		MKN_air_air_fuel_consumption_factor = 0
+	}
+	set_variable = {
+		MKN_air_air_home_defence_factor = 0
+	}
+	set_variable = {
+		MKN_air_air_intercept_efficiency = 0
+	}
+	set_variable = {
+		MKN_air_air_interception_detect_factor = 0
+	}
+	set_variable = {
 		MKN_air_air_mission_efficiency = 0
 	}
 	set_variable = {
 		MKN_air_air_range_factor = 0
+	}
+	set_variable = {
+		MKN_air_naval_strike_attack_factor = 0
+	}
+	set_variable = {
+		MKN_air_recon_factor = 0
+	}
+	set_variable = {
+		MKN_air_supply_consumption_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_hawks
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_village_airfields
+		}
+		add_to_variable = {
+			MKN_air_air_range_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_gulyaipole_pilot_school
+		}
+		add_to_variable = {
+			MKN_air_air_accidents_factor = -0.05
+		}
 	}
 	if = {
 		limit = {
 			has_completed_focus = MKN_black_swarm
 		}
 		add_to_variable = {
-			MKN_air_air_agility_factor = 0.0140
+			MKN_air_air_intercept_efficiency = 0.1
 		}
 	}
 	if = {
@@ -806,7 +940,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_aircraft_artels
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_agility_factor = 0.04
 		}
 	}
 	if = {
@@ -814,7 +948,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_observation_posts
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_interception_detect_factor = 0.1
 		}
 	}
 	if = {
@@ -822,7 +956,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fighter_instructors
 		}
 		add_to_variable = {
-			MKN_air_air_agility_factor = 0.0140
+			MKN_air_air_ace_generation_chance_factor = 0.15
 		}
 	}
 	if = {
@@ -830,7 +964,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_warning
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_intercept_efficiency = 0.05
 		}
 	}
 	if = {
@@ -838,7 +972,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_radio_beacons
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_mission_efficiency = 0.05
 		}
 	}
 	if = {
@@ -846,7 +980,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_airframe_jigs
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_attack_factor = 0.04
 		}
 	}
 	if = {
@@ -854,7 +988,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_interceptor_pairs
 		}
 		add_to_variable = {
-			MKN_air_air_agility_factor = 0.0140
+			MKN_air_air_agility_factor = 0.04
 		}
 	}
 	if = {
@@ -862,7 +996,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_aircraft_recovery
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_accidents_factor = -0.05
 		}
 	}
 	if = {
@@ -870,7 +1004,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_dispersal
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_home_defence_factor = 0.1
 		}
 	}
 	if = {
@@ -878,7 +1012,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fighter_patrols
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_range_factor = 0.05
 		}
 	}
 	if = {
@@ -886,7 +1020,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_radar_school
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_interception_detect_factor = 0.1
 		}
 	}
 	if = {
@@ -894,7 +1028,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_night_interceptors
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_intercept_efficiency = 0.05
 		}
 	}
 	if = {
@@ -902,7 +1036,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_aircraft_spares
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_accidents_factor = -0.05
 		}
 	}
 	if = {
@@ -910,7 +1044,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fighter_conversion
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_agility_factor = 0.04
 		}
 	}
 	if = {
@@ -918,7 +1052,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_rescue
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_ace_generation_chance_factor = 0.1
 		}
 	}
 	if = {
@@ -926,7 +1060,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fighter_controllers
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_mission_efficiency = 0.05
 		}
 	}
 	if = {
@@ -934,7 +1068,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_home_defence
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_home_defence_factor = 0.1
 		}
 	}
 	if = {
@@ -942,7 +1076,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_sky_watch_exercises
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_attack_factor = 0.04
 		}
 	}
 	if = {
@@ -950,7 +1084,10 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_free_sky_compact
 		}
 		add_to_variable = {
-			MKN_air_air_attack_factor = 0.0120
+			MKN_air_air_intercept_efficiency = 0.1
+		}
+		add_to_variable = {
+			MKN_air_air_agility_factor = 0.04
 		}
 	}
 	if = {
@@ -958,7 +1095,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_close_support_program
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_cas_efficiency = 0.1
 		}
 	}
 	if = {
@@ -966,7 +1103,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_attack_air_artels
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_attack_factor = 0.04
 		}
 	}
 	if = {
@@ -974,7 +1111,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_ground_liaisons
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_cas_efficiency = 0.05
 		}
 	}
 	if = {
@@ -982,7 +1119,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_bombing_ranges
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_mission_efficiency = 0.04
 		}
 	}
 	if = {
@@ -990,7 +1127,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_forward_airstrips
 		}
 		add_to_variable = {
-			MKN_air_air_range_factor = 0.0200
+			MKN_air_air_range_factor = 0.08
 		}
 	}
 	if = {
@@ -998,7 +1135,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_map_bureau
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_mission_efficiency = 0.04
 		}
 	}
 	if = {
@@ -1006,7 +1143,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_cas_maintenance
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_accidents_factor = -0.08
 		}
 	}
 	if = {
@@ -1014,7 +1151,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_target_markers
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_cas_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1022,7 +1159,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_flying_artillery
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_cas_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1030,7 +1167,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_airfield_fuel
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_fuel_consumption_factor = -0.1
 		}
 	}
 	if = {
@@ -1038,7 +1175,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_tactical_recon
 		}
 		add_to_variable = {
-			MKN_air_air_range_factor = 0.0200
+			MKN_air_recon_factor = 0.1
 		}
 	}
 	if = {
@@ -1046,7 +1183,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_bomber_navigation
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_range_factor = 0.07
 		}
 	}
 	if = {
@@ -1054,7 +1191,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_supply_lift
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_supply_consumption_factor = -0.03
 		}
 	}
 	if = {
@@ -1062,7 +1199,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_coastal_support
 		}
 		add_to_variable = {
-			MKN_air_air_range_factor = 0.0200
+			MKN_air_naval_strike_attack_factor = 0.1
 		}
 	}
 	if = {
@@ -1070,7 +1207,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_cas_replacement_crews
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_accidents_factor = -0.05
 		}
 	}
 	if = {
@@ -1078,7 +1215,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_joint_target_planning
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_cas_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1086,7 +1223,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_weather_service
 		}
 		add_to_variable = {
-			MKN_air_air_accidents_factor = -0.0120
+			MKN_air_air_mission_efficiency = 0.04
 		}
 	}
 	if = {
@@ -1094,7 +1231,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_attack_wing_rotations
 		}
 		add_to_variable = {
-			MKN_air_air_mission_efficiency = 0.0120
+			MKN_air_air_fuel_consumption_factor = -0.05
 		}
 	}
 	if = {
@@ -1102,7 +1239,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_cas_joint_exercises
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_cas_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1110,12 +1247,20 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_air_support_compact
 		}
 		add_to_variable = {
-			MKN_air_air_cas_efficiency = 0.0200
+			MKN_air_air_cas_efficiency = 0.05
+		}
+		add_to_variable = {
+			MKN_air_air_mission_efficiency = 0.05
 		}
 	}
 	if = {
 		limit = {
 			has_completed_focus = MKN_steppe_hawks
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = MKN_air_development
+				}
+			}
 		}
 		add_dynamic_modifier = {
 			modifier = MKN_air_development
@@ -1128,10 +1273,25 @@ nww_mkn_rebuild_services = {
 		MKN_navy_convoy_raiding_efficiency_factor = 0
 	}
 	set_variable = {
+		MKN_navy_industrial_capacity_dockyard = 0
+	}
+	set_variable = {
+		MKN_navy_mines_sweeping_by_fleets_factor = 0
+	}
+	set_variable = {
+		MKN_navy_naval_coordination = 0
+	}
+	set_variable = {
 		MKN_navy_naval_defense_factor = 0
 	}
 	set_variable = {
 		MKN_navy_naval_detection = 0
+	}
+	set_variable = {
+		MKN_navy_naval_retreat_speed = 0
+	}
+	set_variable = {
+		MKN_navy_naval_ship_recovery_chance_factor = 0
 	}
 	set_variable = {
 		MKN_navy_naval_speed_factor = 0
@@ -1143,14 +1303,56 @@ nww_mkn_rebuild_services = {
 		MKN_navy_naval_torpedo_reveal_chance_factor = 0
 	}
 	set_variable = {
+		MKN_navy_navy_fuel_consumption_factor = 0
+	}
+	set_variable = {
+		MKN_navy_navy_submarine_attack_factor = 0
+	}
+	set_variable = {
+		MKN_navy_navy_submarine_defence_factor = 0
+	}
+	set_variable = {
+		MKN_navy_navy_submarine_detection_factor = 0
+	}
+	set_variable = {
+		MKN_navy_repair_speed_factor = 0
+	}
+	set_variable = {
 		MKN_navy_screening_efficiency = 0
+	}
+	set_variable = {
+		MKN_navy_navy_casualty_on_sink = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_black_sea_flotilla
+		}
+		add_to_variable = {
+			MKN_navy_naval_defense_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dnieper_patrol
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_kherson_shipyard
+		}
+		add_to_variable = {
+			MKN_navy_industrial_capacity_dockyard = 0.05
+		}
 	}
 	if = {
 		limit = {
 			has_completed_focus = MKN_coastal_defense_steppe
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_convoy_escort_efficiency = 0.1
 		}
 	}
 	if = {
@@ -1158,7 +1360,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_black_sea_smugglers
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_convoy_raiding_efficiency_factor = 0.1
 		}
 	}
 	if = {
@@ -1166,7 +1368,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_dnieper_gun_flotilla
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_naval_defense_factor = 0.05
 		}
 	}
 	if = {
@@ -1174,7 +1376,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_black_sea_escorts
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_screening_efficiency = 0.08
 		}
 	}
 	if = {
@@ -1182,7 +1384,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_coastal_signal_posts
 		}
 		add_to_variable = {
-			MKN_navy_naval_detection = 0.0120
+			MKN_navy_naval_detection = 0.08
 		}
 	}
 	if = {
@@ -1190,7 +1392,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_escort_crews
 		}
 		add_to_variable = {
-			MKN_navy_naval_defense_factor = 0.0120
+			MKN_navy_convoy_escort_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1198,7 +1400,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_harbour_dredging
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_navy_fuel_consumption_factor = -0.08
 		}
 	}
 	if = {
@@ -1206,7 +1408,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_hull_repair_artels
 		}
 		add_to_variable = {
-			MKN_navy_naval_defense_factor = 0.0120
+			MKN_navy_repair_speed_factor = 0.15
 		}
 	}
 	if = {
@@ -1214,7 +1416,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_depth_charge_school
 		}
 		add_to_variable = {
-			MKN_navy_naval_detection = 0.0120
+			MKN_navy_navy_submarine_detection_factor = 0.15
 		}
 	}
 	if = {
@@ -1222,7 +1424,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_convoy_schedules
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_convoy_escort_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1230,7 +1432,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fleet_damage_control
 		}
 		add_to_variable = {
-			MKN_navy_naval_defense_factor = 0.0120
+			MKN_navy_naval_ship_recovery_chance_factor = 0.1
 		}
 	}
 	if = {
@@ -1238,7 +1440,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_coastal_watch
 		}
 		add_to_variable = {
-			MKN_navy_naval_detection = 0.0120
+			MKN_navy_naval_detection = 0.08
 		}
 	}
 	if = {
@@ -1246,7 +1448,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_sweeper_sections
 		}
 		add_to_variable = {
-			MKN_navy_naval_detection = 0.0120
+			MKN_navy_mines_sweeping_by_fleets_factor = 0.25
 		}
 	}
 	if = {
@@ -1254,7 +1456,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_escort_radio_net
 		}
 		add_to_variable = {
-			MKN_navy_screening_efficiency = 0.0200
+			MKN_navy_screening_efficiency = 0.07
 		}
 	}
 	if = {
@@ -1262,7 +1464,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_coastal_depots
 		}
 		add_to_variable = {
-			MKN_navy_naval_defense_factor = 0.0120
+			MKN_navy_navy_fuel_consumption_factor = -0.1
 		}
 	}
 	if = {
@@ -1270,7 +1472,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_river_sea_coordination
 		}
 		add_to_variable = {
-			MKN_navy_screening_efficiency = 0.0200
+			MKN_navy_naval_coordination = 0.08
 		}
 	}
 	if = {
@@ -1278,7 +1480,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_anti_submarine_patrols
 		}
 		add_to_variable = {
-			MKN_navy_naval_detection = 0.0120
+			MKN_navy_navy_submarine_detection_factor = 0.15
 		}
 	}
 	if = {
@@ -1286,7 +1488,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_convoy_rescue
 		}
 		add_to_variable = {
-			MKN_navy_naval_defense_factor = 0.0120
+			MKN_navy_navy_casualty_on_sink = -0.1
 		}
 	}
 	if = {
@@ -1294,7 +1496,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_escort_reserves
 		}
 		add_to_variable = {
-			MKN_navy_screening_efficiency = 0.0200
+			MKN_navy_naval_defense_factor = 0.05
 		}
 	}
 	if = {
@@ -1302,7 +1504,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_coastal_fleet_exercises
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_convoy_escort_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1310,7 +1512,10 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_escort_compact
 		}
 		add_to_variable = {
-			MKN_navy_convoy_escort_efficiency = 0.0200
+			MKN_navy_convoy_escort_efficiency = 0.05
+		}
+		add_to_variable = {
+			MKN_navy_screening_efficiency = 0.05
 		}
 	}
 	if = {
@@ -1318,7 +1523,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_torpedo_artels
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+			MKN_navy_naval_torpedo_hit_chance_factor = 0.05
 		}
 	}
 	if = {
@@ -1326,7 +1531,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_submarine_crews
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_navy_submarine_attack_factor = 0.05
 		}
 	}
 	if = {
@@ -1334,7 +1539,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_hidden_anchorages
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.08
 		}
 	}
 	if = {
@@ -1342,7 +1547,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_naval_intelligence
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_naval_detection = 0.08
 		}
 	}
 	if = {
@@ -1350,7 +1555,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_dockyard
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_industrial_capacity_dockyard = 0.05
 		}
 	}
 	if = {
@@ -1358,7 +1563,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_torpedo_trials
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+			MKN_navy_naval_torpedo_hit_chance_factor = 0.05
 		}
 	}
 	if = {
@@ -1366,7 +1571,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_night_sorties
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.07
 		}
 	}
 	if = {
@@ -1374,7 +1579,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_supply
 		}
 		add_to_variable = {
-			MKN_navy_naval_speed_factor = 0.0160
+			MKN_navy_navy_fuel_consumption_factor = -0.1
 		}
 	}
 	if = {
@@ -1382,7 +1587,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_submarine_listening
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+			MKN_navy_naval_detection = 0.08
 		}
 	}
 	if = {
@@ -1390,7 +1595,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_fast_attack_craft
 		}
 		add_to_variable = {
-			MKN_navy_naval_speed_factor = 0.0160
+			MKN_navy_naval_speed_factor = 0.08
 		}
 	}
 	if = {
@@ -1398,7 +1603,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_radio_discipline
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+			MKN_navy_naval_torpedo_reveal_chance_factor = -0.08
 		}
 	}
 	if = {
@@ -1406,7 +1611,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_submarine_repair
 		}
 		add_to_variable = {
-			MKN_navy_naval_speed_factor = 0.0160
+			MKN_navy_repair_speed_factor = 0.15
 		}
 	}
 	if = {
@@ -1414,7 +1619,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_weather
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+			MKN_navy_naval_detection = 0.05
 		}
 	}
 	if = {
@@ -1422,7 +1627,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_replacement_crews
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_navy_submarine_defence_factor = 0.08
 		}
 	}
 	if = {
@@ -1430,7 +1635,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_torpedo_ambushes
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_hit_chance_factor = 0.0120
+			MKN_navy_naval_torpedo_hit_chance_factor = 0.05
 		}
 	}
 	if = {
@@ -1438,7 +1643,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_disrupt_enemy_trade
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_convoy_raiding_efficiency_factor = 0.1
 		}
 	}
 	if = {
@@ -1446,7 +1651,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_escape_routes
 		}
 		add_to_variable = {
-			MKN_navy_naval_torpedo_reveal_chance_factor = -0.0120
+			MKN_navy_naval_retreat_speed = 0.15
 		}
 	}
 	if = {
@@ -1454,7 +1659,7 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_exercises
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_navy_submarine_attack_factor = 0.05
 		}
 	}
 	if = {
@@ -1462,12 +1667,20 @@ nww_mkn_rebuild_services = {
 			has_completed_focus = MKN_raider_compact
 		}
 		add_to_variable = {
-			MKN_navy_convoy_raiding_efficiency_factor = 0.0200
+			MKN_navy_convoy_raiding_efficiency_factor = 0.1
+		}
+		add_to_variable = {
+			MKN_navy_navy_submarine_attack_factor = 0.05
 		}
 	}
 	if = {
 		limit = {
 			has_completed_focus = MKN_black_sea_flotilla
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = MKN_navy_development
+				}
+			}
 		}
 		add_dynamic_modifier = {
 			modifier = MKN_navy_development
@@ -1483,5 +1696,5 @@ nww_mkn_rebuild_services = {
 		MKN_free_airmen
 		MKN_black_swarm_idea
 	}
-	set_country_flag = MKN_services_unified_v2
+	set_country_flag = MKN_services_redesign_v3
 }

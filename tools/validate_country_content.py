@@ -107,7 +107,7 @@ for p, doc in documents(ROOT, 'common/ideas/*.txt'):
     for group, ideas, op in one(doc, 'ideas', []):
         if isinstance(ideas, list):
             idea_ids.update(k for k, v, op in ideas if isinstance(v, list))
-characters = {k for p, doc in documents(ROOT, 'common/characters/*.txt') for k, v, op in one(doc, 'characters', [])}
+characters = {k for root in (GAME, ROOT) for p, doc in documents(root, 'common/characters/*.txt') for k, v, op in one(doc, 'characters', [])}
 organizations = {k for p, doc in documents(ROOT, 'common/military_industrial_organization/organizations/*.txt') for k, v, op in doc}
 sharing_groups = {one(v, 'id') for root in (GAME, ROOT) for p, doc in documents(root, 'common/technology_sharing/*.txt') for k, v, op in doc if k == 'technology_sharing_group'}
 event_ids = {v for p, doc in documents(ROOT, 'events/*.txt') for k, v, op in walk(doc) if k == 'id' and isinstance(v, str)}
@@ -135,6 +135,8 @@ scope_files += [ROOT / relative for relative in (
     'common/scripted_effects/nww_mkn_progression.txt',
     'common/on_actions/nww_mkn_progression.txt',
     'common/on_actions/nww_ukr_progression.txt',
+    'common/scripted_effects/nww_ukr_progression.txt',
+    'history/countries/UKR - Ukraine.txt',
     'common/country_leader/nww_mkn_industry_traits.txt',
     'common/country_leader/nww_mkn_advisor_traits.txt',
     'interface/nww_mkn_companies.gfx',
@@ -483,6 +485,8 @@ for request, event_id, accepted_flag, rejected_flag, continuation in [
 
 from validate_expanded_content import validate_expansion
 validate_expansion(ROOT, GAME, check, localized)
+from validate_focus_redesign import validate_redesign
+validate_redesign(ROOT, GAME, check, localized)
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

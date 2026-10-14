@@ -6,15 +6,23 @@ on_actions = {
 					limit = {
 						exists = yes
 						NOT = {
-							has_dynamic_modifier = {
-								modifier = UKR_economy_development
-							}
+							has_country_flag = UKR_focus_redesign_v1
 						}
 					}
-					add_dynamic_modifier = {
-						modifier = UKR_economy_development
+					nww_ukr_rebuild_progression = yes
+				}
+			}
+		}
+	}
+	on_daily_UKR = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = UKR_focus_redesign_v1
 					}
 				}
+				nww_ukr_rebuild_progression = yes
 			}
 		}
 	}

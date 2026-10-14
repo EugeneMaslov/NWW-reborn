@@ -1,0 +1,910 @@
+nww_ukr_rebuild_progression = {
+	set_variable = {
+		UKR_civic_casualty_trickleback = 0
+	}
+	set_variable = {
+		UKR_civic_consumer_goods_factor = 0
+	}
+	set_variable = {
+		UKR_civic_industrial_capacity_factory = 0
+	}
+	set_variable = {
+		UKR_civic_mobilization_speed = 0
+	}
+	set_variable = {
+		UKR_civic_political_power_gain = 0
+	}
+	set_variable = {
+		UKR_civic_production_factory_max_efficiency_factor = 0
+	}
+	set_variable = {
+		UKR_civic_production_speed_buildings_factor = 0
+	}
+	set_variable = {
+		UKR_civic_production_speed_industrial_complex_factor = 0
+	}
+	set_variable = {
+		UKR_civic_production_speed_infrastructure_factor = 0
+	}
+	set_variable = {
+		UKR_civic_recruitable_population = 0
+	}
+	set_variable = {
+		UKR_civic_recruitable_population_factor = 0
+	}
+	set_variable = {
+		UKR_civic_research_speed_factor = 0
+	}
+	set_variable = {
+		UKR_civic_stability_factor = 0
+	}
+	set_variable = {
+		UKR_civic_trade_opinion_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_rebuild_kiev
+		}
+		add_to_variable = {
+			UKR_civic_political_power_gain = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_local_congress
+		}
+		add_to_variable = {
+			UKR_civic_stability_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_public_debate
+		}
+		add_to_variable = {
+			UKR_civic_political_power_gain = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_mandate_commission
+		}
+		add_to_variable = {
+			UKR_civic_stability_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_council_mandate
+		}
+		add_to_variable = {
+			UKR_civic_political_power_gain = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_cooperative_land
+		}
+		add_to_variable = {
+			UKR_civic_consumer_goods_factor = -0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_elected_factory_boards
+		}
+		add_to_variable = {
+			UKR_civic_industrial_capacity_factory = 0.06
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_council_courts
+		}
+		add_to_variable = {
+			UKR_civic_stability_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_social_republic
+		}
+		add_to_variable = {
+			UKR_civic_casualty_trickleback = 0.03
+		}
+		add_to_variable = {
+			UKR_civic_recruitable_population_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_constituent_mandate
+		}
+		add_to_variable = {
+			UKR_civic_stability_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_land_titles
+		}
+		add_to_variable = {
+			UKR_civic_production_speed_industrial_complex_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_elected_municipalities
+		}
+		add_to_variable = {
+			UKR_civic_production_speed_infrastructure_factor = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_independent_courts
+		}
+		add_to_variable = {
+			UKR_civic_trade_opinion_factor = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_federal_republic
+		}
+		add_to_variable = {
+			UKR_civic_research_speed_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_state_mandate
+		}
+		add_to_variable = {
+			UKR_civic_political_power_gain = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_rural_compact
+		}
+		add_to_variable = {
+			UKR_civic_mobilization_speed = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_professional_civil_service
+		}
+		add_to_variable = {
+			UKR_civic_production_speed_buildings_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_state_arbitration
+		}
+		add_to_variable = {
+			UKR_civic_production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_constitutional_directory
+		}
+		add_to_variable = {
+			UKR_civic_recruitable_population = 0.005
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_public_accountability
+		}
+		add_to_variable = {
+			UKR_civic_political_power_gain = 0.05
+		}
+		add_to_variable = {
+			UKR_civic_stability_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_rebuild_kiev
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = UKR_civic_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = UKR_civic_development
+		}
+	}
+	set_variable = {
+		UKR_economy_consumer_goods_factor = 0.1
+	}
+	set_variable = {
+		UKR_economy_factory_energy_consumption = 0
+	}
+	set_variable = {
+		UKR_economy_industry_repair_factor = 0
+	}
+	set_variable = {
+		UKR_economy_production_factory_efficiency_gain_factor = -0.1
+	}
+	set_variable = {
+		UKR_economy_production_factory_max_efficiency_factor = 0
+	}
+	set_variable = {
+		UKR_economy_production_speed_buildings_factor = -0.1
+	}
+	set_variable = {
+		UKR_economy_production_speed_infrastructure_factor = 0
+	}
+	set_variable = {
+		UKR_economy_research_speed_factor = -0.03
+	}
+	set_variable = {
+		UKR_economy_stability_factor = 0
+	}
+	set_variable = {
+		UKR_economy_supply_consumption_factor = 0
+	}
+	set_variable = {
+		UKR_economy_trade_opinion_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_dnieper_industry
+		}
+		add_to_variable = {
+			UKR_economy_production_speed_buildings_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_land_survey
+		}
+		add_to_variable = {
+			UKR_economy_production_speed_infrastructure_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_coal_contracts
+		}
+		add_to_variable = {
+			UKR_economy_factory_energy_consumption = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_collectivization_completed
+		}
+		add_to_variable = {
+			UKR_economy_consumer_goods_factor = -0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_machine_tool_imports
+		}
+		add_to_variable = {
+			UKR_economy_production_factory_efficiency_gain_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_seed_funds
+		}
+		add_to_variable = {
+			UKR_economy_stability_factor = 0.02
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_railway_accounting
+		}
+		add_to_variable = {
+			UKR_economy_supply_consumption_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_rural_workshops
+		}
+		add_to_variable = {
+			UKR_economy_industry_repair_factor = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_kyiv_machine_building
+		}
+		add_to_variable = {
+			UKR_economy_production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_grain_insurance
+		}
+		add_to_variable = {
+			UKR_economy_consumer_goods_factor = -0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_power_network
+		}
+		add_to_variable = {
+			UKR_economy_factory_energy_consumption = -0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_agricultural_schools
+		}
+		add_to_variable = {
+			UKR_economy_research_speed_factor = 0.02
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_odessa_trade_houses
+		}
+		add_to_variable = {
+			UKR_economy_trade_opinion_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_cherkasy_food_processing
+		}
+		add_to_variable = {
+			UKR_economy_consumer_goods_factor = -0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_industrial_standards
+		}
+		add_to_variable = {
+			UKR_economy_production_factory_efficiency_gain_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_polytechnic_network
+		}
+		add_to_variable = {
+			UKR_economy_research_speed_factor = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_precision_workshops
+		}
+		add_to_variable = {
+			UKR_economy_production_speed_buildings_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_balanced_economic_compact
+		}
+		add_to_variable = {
+			UKR_economy_production_factory_efficiency_gain_factor = 0.04
+		}
+		add_to_variable = {
+			UKR_economy_production_speed_buildings_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_grain_exports
+		}
+		add_to_variable = {
+			UKR_economy_trade_opinion_factor = 0.15
+		}
+		add_to_variable = {
+			UKR_economy_production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_domestic_grain
+		}
+		add_to_variable = {
+			UKR_economy_consumer_goods_factor = -0.05
+		}
+		add_to_variable = {
+			UKR_economy_factory_energy_consumption = -0.05
+		}
+	}
+	if = {
+		limit = {
+			always = yes
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = UKR_economy_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = UKR_economy_development
+		}
+	}
+	set_variable = {
+		UKR_army_army_fuel_consumption_factor = 0
+	}
+	set_variable = {
+		UKR_army_army_org_factor = 0
+	}
+	set_variable = {
+		UKR_army_army_speed_factor = 0
+	}
+	set_variable = {
+		UKR_army_attrition = 0
+	}
+	set_variable = {
+		UKR_army_casualty_trickleback = 0
+	}
+	set_variable = {
+		UKR_army_dig_in_speed_factor = 0
+	}
+	set_variable = {
+		UKR_army_experience_loss_factor = 0
+	}
+	set_variable = {
+		UKR_army_land_reinforce_rate = 0
+	}
+	set_variable = {
+		UKR_army_max_dig_in = 0
+	}
+	set_variable = {
+		UKR_army_max_planning = 0
+	}
+	set_variable = {
+		UKR_army_modifier_army_sub_unit_infantry_attack_factor = 0
+	}
+	set_variable = {
+		UKR_army_modifier_army_sub_unit_infantry_defence_factor = 0
+	}
+	set_variable = {
+		UKR_army_org_loss_when_moving = 0
+	}
+	set_variable = {
+		UKR_army_recon_factor = 0
+	}
+	set_variable = {
+		UKR_army_supply_consumption_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_guardians_of_the_steppe
+		}
+		add_to_variable = {
+			UKR_army_army_org_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_army_depots
+		}
+		add_to_variable = {
+			UKR_army_supply_consumption_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_officer_school
+		}
+		add_to_variable = {
+			UKR_army_max_planning = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_rifle_standardization
+		}
+		add_to_variable = {
+			UKR_army_modifier_army_sub_unit_infantry_attack_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_field_engineers
+		}
+		add_to_variable = {
+			UKR_army_dig_in_speed_factor = 0.2
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_artillery_tables
+		}
+		add_to_variable = {
+			UKR_army_modifier_army_sub_unit_infantry_attack_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_army_medical
+		}
+		add_to_variable = {
+			UKR_army_casualty_trickleback = 0.05
+		}
+		add_to_variable = {
+			UKR_army_experience_loss_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_motorized_train
+		}
+		add_to_variable = {
+			UKR_army_supply_consumption_factor = -0.05
+		}
+		add_to_variable = {
+			UKR_army_army_fuel_consumption_factor = -0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_border_scouts
+		}
+		add_to_variable = {
+			UKR_army_recon_factor = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_army_signals
+		}
+		add_to_variable = {
+			UKR_army_land_reinforce_rate = 0.02
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_reserve_exercises
+		}
+		add_to_variable = {
+			UKR_army_army_org_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_combined_operations
+		}
+		add_to_variable = {
+			UKR_army_max_planning = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_army_repair_network
+		}
+		add_to_variable = {
+			UKR_army_attrition = -0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_prepared_defence
+		}
+		add_to_variable = {
+			UKR_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			UKR_army_land_reinforce_rate = 0.02
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_defence_in_depth
+		}
+		add_to_variable = {
+			UKR_army_max_dig_in = 3.0
+		}
+		add_to_variable = {
+			UKR_army_modifier_army_sub_unit_infantry_defence_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_mobile_reserves
+		}
+		add_to_variable = {
+			UKR_army_army_speed_factor = 0.08
+		}
+		add_to_variable = {
+			UKR_army_org_loss_when_moving = -0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_guardians_of_the_steppe
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = UKR_army_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = UKR_army_development
+		}
+	}
+	set_variable = {
+		UKR_air_air_accidents_factor = 0
+	}
+	set_variable = {
+		UKR_air_air_agility_factor = 0
+	}
+	set_variable = {
+		UKR_air_air_attack_factor = 0
+	}
+	set_variable = {
+		UKR_air_air_cas_efficiency = 0
+	}
+	set_variable = {
+		UKR_air_air_fuel_consumption_factor = 0
+	}
+	set_variable = {
+		UKR_air_air_intercept_efficiency = 0
+	}
+	set_variable = {
+		UKR_air_air_interception_detect_factor = 0
+	}
+	set_variable = {
+		UKR_air_air_mission_efficiency = 0
+	}
+	set_variable = {
+		UKR_air_air_range_factor = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_air_service
+		}
+		add_to_variable = {
+			UKR_air_air_mission_efficiency = 0.03
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_pilot_schools
+		}
+		add_to_variable = {
+			UKR_air_air_accidents_factor = -0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_air_workshops
+		}
+		add_to_variable = {
+			UKR_air_air_attack_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_air_observers
+		}
+		add_to_variable = {
+			UKR_air_air_interception_detect_factor = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_fighter_patrols
+		}
+		add_to_variable = {
+			UKR_air_air_agility_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_ground_support
+		}
+		add_to_variable = {
+			UKR_air_air_mission_efficiency = 0.07
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_air_spares
+		}
+		add_to_variable = {
+			UKR_air_air_accidents_factor = -0.05
+		}
+		add_to_variable = {
+			UKR_air_air_fuel_consumption_factor = -0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_integrated_air_service
+		}
+		add_to_variable = {
+			UKR_air_air_mission_efficiency = 0.05
+		}
+		add_to_variable = {
+			UKR_air_air_range_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_interceptor_command
+		}
+		add_to_variable = {
+			UKR_air_air_intercept_efficiency = 0.15
+		}
+		add_to_variable = {
+			UKR_air_air_agility_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_assault_aviation
+		}
+		add_to_variable = {
+			UKR_air_air_cas_efficiency = 0.2
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_air_service
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = UKR_air_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = UKR_air_development
+		}
+	}
+	set_variable = {
+		UKR_navy_convoy_escort_efficiency = 0
+	}
+	set_variable = {
+		UKR_navy_convoy_raiding_efficiency_factor = 0
+	}
+	set_variable = {
+		UKR_navy_industrial_capacity_dockyard = 0
+	}
+	set_variable = {
+		UKR_navy_mines_sweeping_by_fleets_factor = 0
+	}
+	set_variable = {
+		UKR_navy_naval_coordination = 0
+	}
+	set_variable = {
+		UKR_navy_naval_defense_factor = 0
+	}
+	set_variable = {
+		UKR_navy_naval_detection = 0
+	}
+	set_variable = {
+		UKR_navy_naval_torpedo_hit_chance_factor = 0
+	}
+	set_variable = {
+		UKR_navy_navy_fuel_consumption_factor = 0
+	}
+	set_variable = {
+		UKR_navy_navy_submarine_detection_factor = 0
+	}
+	set_variable = {
+		UKR_navy_repair_speed_factor = 0
+	}
+	set_variable = {
+		UKR_navy_screening_efficiency = 0
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_odessa_naval_service
+		}
+		add_to_variable = {
+			UKR_navy_naval_defense_factor = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_odessa_shipyards
+		}
+		add_to_variable = {
+			UKR_navy_industrial_capacity_dockyard = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_naval_crew_school
+		}
+		add_to_variable = {
+			UKR_navy_naval_coordination = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_coastal_watch
+		}
+		add_to_variable = {
+			UKR_navy_naval_detection = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_convoy_escort
+		}
+		add_to_variable = {
+			UKR_navy_navy_submarine_detection_factor = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_naval_minesweepers
+		}
+		add_to_variable = {
+			UKR_navy_mines_sweeping_by_fleets_factor = 0.3
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_naval_logistics
+		}
+		add_to_variable = {
+			UKR_navy_repair_speed_factor = 0.15
+		}
+		add_to_variable = {
+			UKR_navy_navy_fuel_consumption_factor = -0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_safe_trade_routes
+		}
+		add_to_variable = {
+			UKR_navy_naval_defense_factor = 0.06
+		}
+		add_to_variable = {
+			UKR_navy_naval_coordination = 0.07
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_merchant_escorts
+		}
+		add_to_variable = {
+			UKR_navy_convoy_escort_efficiency = 0.2
+		}
+		add_to_variable = {
+			UKR_navy_screening_efficiency = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_sea_denial
+		}
+		add_to_variable = {
+			UKR_navy_convoy_raiding_efficiency_factor = 0.2
+		}
+		add_to_variable = {
+			UKR_navy_naval_torpedo_hit_chance_factor = 0.08
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = UKR_odessa_naval_service
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = UKR_navy_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = UKR_navy_development
+		}
+	}
+	set_country_flag = UKR_focus_redesign_v1
+}

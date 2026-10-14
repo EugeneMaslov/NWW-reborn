@@ -1,6 +1,7 @@
 """Checks for MKN single-spirit progression and expanded country content."""
 from hoi4_script import read, one, values, walk
 import re
+import json
 
 def validate_expansion(root, game, check, localized):
     tree=one(read(root/'common/national_focus/mkn_focus.txt'),'focus_tree')
@@ -85,10 +86,14 @@ def validate_expansion(root, game, check, localized):
                 more={fid for fid,f in fs.items() if any(parent in branch for g in values(f,'prerequisite') for parent in values(g,'focus'))}-branch
                 if not more:break
                 branch|=more
-            check(len(branch)>=20,f'{entry}: fewer than twenty dedicated military focuses')
+            spec=next(p for p in json.loads((root/'docs/MKN_military_programs.json').read_text()) if p['entry']==entry)
+            core=set(spec['core']);optional=set(spec['optional'])
+            check(len(core)==10 and len(optional)==10 and not core & optional and core | optional==branch,f'{entry}: expected ten core and ten optional focuses')
             check(other in {p for g in values(fs[entry],'mutually_exclusive') for p in values(g,'focus')},f'{entry}: opposite military program is not excluded')
             required={v for k,v,o in walk(one(fs[finale],'available',[])) if k=='has_completed_focus'}
-            check(branch-{finale}<=required,f'{finale}: can finish without all military institutions')
+            check(required==core-{finale},f'{finale}: must require only the nine core institutions')
+            check(len({one(fs[fid],'icon') for fid in branch})>=15,f'{entry}: insufficient illustration variety')
+            check(len({str(one(fs[fid],'completion_reward')) for fid in branch})==len(branch),f'{entry}: duplicated military rewards')
             deps={fid:({p for g in values(fs[fid],'prerequisite') for p in values(g,'focus')}|{v for k,v,o in walk(one(fs[fid],'available',[])) if k=='has_completed_focus'}) & branch for fid in branch}
             done=set()
             while done!=branch:
@@ -99,7 +104,8 @@ def validate_expansion(root, game, check, localized):
                 reward=one(fs[fid],'completion_reward')
                 check(not any(k=='add_ideas' and isinstance(v,str) for k,v,o in walk(reward)),f'{fid}: creates another permanent military spirit')
                 check(any(k=='add_to_variable' and any(a and a.startswith('MKN_'+service+'_') for a,b,o in v) for k,v,o in reward),f'{fid}: does not develop its service spirit')
-            print(f'PASS: {entry}: {len(branch)} dedicated focuses, exclusive program, one service spirit')
+            check(all(not deps[fid] & optional for fid in core),f'{entry}: optional focus blocks the core programme')
+            print(f'PASS: {entry}: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit')
 
     # Preserve the central templates while suppressing their generic instances only for MKN.
     generic='common/military_industrial_organization/organizations/00_generic_organization.txt'
@@ -159,7 +165,7 @@ def validate_expansion(root, game, check, localized):
         for option in options:localized(one(option,'name'),eid)
         check(flag in {v for k,v,o in walk(options[0]) if k=='set_country_flag'},f'{eid}: acceptance does not settle the proposal')
         check(flag not in {v for k,v,o in walk(options[1]) if k=='set_country_flag'},f'{eid}: refusal grants acceptance')
-    print('PASS: Ukraine 72 focuses, genuine political mandates and foreign acceptance/refusal')
+    print(f'PASS: Ukraine {len(uf)} focuses, genuine political mandates and foreign acceptance/refusal')
 
     chars=one(read(root/'common/characters/nww_MKN.txt'),'characters')
     advisors=[k for k,v,o in chars if values(v,'advisor')]

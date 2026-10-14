@@ -5,6 +5,9 @@ import argparse
 import re
 import textwrap
 import json
+import base64
+import io
+from PIL import Image
 from hoi4_script import read, one, values, walk
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,12 +16,49 @@ targets={tag:f'common/national_focus/{tag.lower()}_focus.txt' for tag in ('LTB',
 if (ROOT/'docs/legacy_import.json').exists():
     targets.update({tag:c['destination'] for tag,c in json.loads((ROOT/'docs/legacy_import.json').read_text(encoding='utf-8'))['countries'].items()})
 parser.add_argument('--tag', choices=tuple(targets), help='Render only the selected country')
+parser.add_argument('--game', type=Path, help='Include actual focus illustrations from this installed copy')
 args = parser.parse_args()
 labels = {}
 for path in ROOT.glob('localisation/*l_russian.yml'):
     labels.update(re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$', path.read_text(encoding='utf-8-sig'), re.M))
 
-for tag in ((args.tag,) if args.tag else tuple(targets)):
+selected_tags = (args.tag,) if args.tag else tuple(targets)
+illustrations = {}
+if args.game:
+    needed = {one(f, 'icon') for tag in selected_tags
+              for f in values(one(read(ROOT / targets[tag]), 'focus_tree'), 'focus')}
+    roots = [args.game, *sorted(args.game.glob('dlc/*')), ROOT]
+    for root in roots:
+        for path in root.glob('interface/**/*.gfx'):
+            try:
+                nodes = read(path)
+            except (ValueError, UnicodeError):
+                continue
+            for key, node, op in walk(nodes):
+                if key and key.lower() == 'spritetype':
+                    name = one(node, 'name')
+                    texture = one(node, 'texturefile')
+                    if name in needed and texture:
+                        illustrations[name] = (texture, int(one(node, 'noOfFrames', '1')))
+    for name, (texture, frames) in list(illustrations.items()):
+        path = next((root / texture for root in reversed(roots) if (root / texture).is_file()), None)
+        if not path:
+            del illustrations[name]
+            continue
+        # Only decode the focus sprites, avoiding portraits and unrelated atlases.
+        if not name.startswith(('GFX_focus_', 'GFX_goal_')):
+            del illustrations[name]
+            continue
+        with Image.open(path) as source:
+            img = source.convert('RGBA')
+            if frames > 1:
+                img = img.crop((0, 0, img.width // frames, img.height))
+            img.thumbnail((64, 64))
+            output = io.BytesIO()
+            img.save(output, format='PNG')
+            illustrations[name] = base64.b64encode(output.getvalue()).decode()
+
+for tag in selected_tags:
     tree = one(read(ROOT/targets[tag]), 'focus_tree')
     focuses = values(tree, 'focus')
     positions = {one(f, 'id'): (int(one(f, 'x'))*90+140, int(one(f, 'y'))*95+130) for f in focuses}
@@ -33,10 +73,10 @@ for tag in ((args.tag,) if args.tag else tuple(targets)):
         for column, title in [(7,'Политика'),(18,'Дипломатия'),(24,'Гражданская промышленность'),(28,'Сельское хозяйство и сырьё'),(32,'Военная промышленность'),(36,'Наука'),(42,'Армия'),(50,'Авиация'),(56,'Флот')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'MKN':
-        for column, title in [(4,'Днепрострой: 24 фокуса'),(16,'Вольные кооперативы: 24 фокуса'),(27,'Наука'),(34,'Политика'),(46,'Механизация: 20'),(54,'Вольные колонны: 20'),(62,'Защита неба: 20'),(70,'Авиация поддержки: 20'),(78,'Эскорты: 20'),(86,'Рейдеры: 20')]:
+        for column, title in [(4,'Днепрострой: 24 фокуса'),(16,'Вольные кооперативы: 24 фокуса'),(27,'Наука'),(34,'Политика'),(46,'Механизация: 10 + 10 доп.'),(54,'Вольные колонны: 10 + 10 доп.'),(62,'Защита неба: 10 + 10 доп.'),(70,'Авиация поддержки: 10 + 10 доп.'),(78,'Эскорты: 10 + 10 доп.'),(86,'Рейдеры: 10 + 10 доп.')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'UKR':
-        for column, title in [(6,'Политические мандаты'),(22,'Хозяйство'),(34,'Армия'),(44,'Авиация'),(54,'Флот'),(62,'Дипломатия')]:
+        for column, title in [(6,'Политические мандаты'),(22,'Хозяйство'),(34,'Армия'),(44,'Авиация'),(54,'Флот'),(64,'Дипломатия')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     # Prerequisite edges underneath the cards.
     for f in focuses:
@@ -67,10 +107,14 @@ for tag in ((args.tag,) if args.tag else tuple(targets)):
         if gates:
             tooltip += '\nДополнительные условия: ' + ', '.join(labels.get(gate, gate) for gate in gates)
         result.append(f'<g><title>{escape(tooltip)}</title><rect x="{x-80}" y="{y-31}" width="160" height="62" rx="8" fill="#1c2a3a" stroke="{color}" stroke-width="2"/>')
-        for i,line in enumerate(textwrap.wrap(title,width=22)[:2]):
-            result.append(f'<text class="label" x="{x}" y="{y-9+i*16}" text-anchor="middle">{escape(line)}</text>')
+        illustration = illustrations.get(one(f, 'icon'))
+        if illustration:
+            result.append(f'<image x="{x-77}" y="{y-28}" width="44" height="44" href="data:image/png;base64,{illustration}"/>')
+        label_x = x + 20 if illustration else x
+        for i,line in enumerate(textwrap.wrap(title,width=17 if illustration else 22)[:2]):
+            result.append(f'<text class="label" x="{label_x}" y="{y-9+i*16}" text-anchor="middle">{escape(line)}</text>')
         cost = int(one(f, 'cost'))*7
-        rewards = (' • развитие духа' if 'add_to_variable' in keys else ' • реформа духа' if 'swap_ideas' in keys else ' • исследовательская ячейка' if 'add_research_slot' in keys else ' • строительство' if 'add_building_construction' in keys else ' • решение съезда' if 'country_event' in keys else '')
+        rewards = (' • строительство' if 'add_building_construction' in keys else ' • наука' if 'add_research_slot' in keys else ' • подготовка' if 'add_mastery_bonus' in keys else ' • исследования' if 'add_tech_bonus' in keys else ' • развитие духа' if 'add_to_variable' in keys else ' • реформа духа' if 'swap_ideas' in keys else ' • решение съезда' if 'country_event' in keys else '')
         result.append(f'<text class="small" x="{x}" y="{y+22}" text-anchor="middle">{cost} дней{escape(rewards)}</text></g>')
     result.append('</svg>')
     dest=ROOT/f'docs/{tag.lower()}_focus_tree.svg';dest.parent.mkdir(exist_ok=True)
