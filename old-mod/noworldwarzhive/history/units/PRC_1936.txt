@@ -1,0 +1,663 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	division_names_group = PRC_INF_01
+									#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
+	division = {
+		name = "115 Bubing Shi"
+		location = 12331
+		division_template = "Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "120 Bubing Shi"
+		location = 12331
+		division_template = "Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "129 Bubing Shi"
+		location = 12331
+		division_template = "Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	
+	### Provincial Forces ###
+	division = { #  "1 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12331
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "2 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12331
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+	        start_experience_factor = 0.5
+                start_equipment_factor = 1
+
+	}
+	division = { #  "3 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7048
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "4 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7048
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "5 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7048
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "6 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7048
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "7 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7048
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "8 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12403
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "9 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12403
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "10 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12403
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "11 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12403
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "12 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12403
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "13 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7158
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "14 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7158
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "15 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7158
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "16 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7158
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "17 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7158
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "18 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10480
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "19 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10480
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "20 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10480
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "21 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10480
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "22 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10480
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "23 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8049
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "24 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8049
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "25 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8049
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "26 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8049
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "27 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8049
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "28 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1027
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "29 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1203
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "30 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12078
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "31 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4538
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "32 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10421
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "33 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1180
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "34 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7571
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "35 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1575
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "36 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 5007
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "37 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12156
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "38 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10733
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "39 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10733
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "40 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1933
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "41 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7911
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "42 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 531
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "43 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12882
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "44 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11448
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "45 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10817
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "46 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1882
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "47 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1519
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "48 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12732
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "49 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4709
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "50 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4964
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "51 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7659
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "52 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1647
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "53 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1034
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { #  "54 Shensi Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7158
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+}
+
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}

@@ -1,0 +1,1006 @@
+focus_tree = {
+	id = LTB_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LTB
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 70 y = 2200 }
+
+	focus = {
+		id = LTB_1
+		icon = GFX_focus_generic_industry_1
+		cost = 10,00
+		x = 5
+		y = 0
+			completion_reward = {
+			    add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_19
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		x = 17
+		y = 0
+			completion_reward = {
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = LTB_3
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_1
+		}
+		x = 1
+		y = 1
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_6
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_3
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_9
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_6
+		}
+		x = 1
+		y = 3
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 1
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_13
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_9
+		}
+		x = 1
+		y = 4
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_2
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_1
+		}
+		x = 9
+		y = 1
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_4
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_2
+		}
+		prerequisite = {
+			focus = LTB_3
+		}
+		x = 5
+		y = 2
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 1
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 1
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_7
+		icon = GFX_focus_generic_aluminum
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_4
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_10
+		icon = GFX_focus_generic_rubber
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_7
+		}
+		x = 5
+		y = 4
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_5
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_2
+		}
+		x = 9
+		y = 2
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_8
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_5
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 1
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_12
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_8
+		}
+		x = 9
+		y = 4
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_21
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_19
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					army_experience = 30
+				}
+
+	}
+	focus = {
+		id = LTB_20
+		icon = GFX_focus_chi_army_reform
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_21
+		}
+		x = 15
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_24
+		icon = GFX_focus_generic_combined_arms
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_20
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 3
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_22
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_8
+		}
+		prerequisite = {
+			focus = LTB_24
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = LTB_14
+		icon = GFX_focus_generic_tank_production
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_10
+		}
+		x = 3
+		y = 5
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_15
+		icon = GFX_focus_generic_tungsten
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_10
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_16
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_10
+		}
+		x = 7
+		y = 5
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 4
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_17
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_12
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_18
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_13
+		}
+		x = 1
+		y = 5
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_23
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_22
+		}
+		x = 12
+		y = 5
+			available = {
+					num_of_factories > 70
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = LTB_25
+		icon = GFX_focus_generic_concessions
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_41
+		}
+		x = 36
+		y = 1
+			completion_reward = {
+					add_political_power = 50 
+				}
+
+	}	
+		focus = {
+		id = LTB_26
+		text = LTB_26
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_25
+		}
+		mutually_exclusive = {
+			focus = LTB_27
+			focus = LTB_28
+			focus = LTB_29	
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		     		    add_popularity = {
+							ideology = fascism
+							popularity = 0.2
+						}
+                        add_ideas = LTB_fascism_1
+		}
+
+	}
+	focus = {
+		id = LTB_27
+		text = LTB_27
+		icon = GFX_focus_spa_caudillo_of_spain
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_25
+		}
+		mutually_exclusive = {
+			focus = LTB_26
+			focus = LTB_28	
+			focus = LTB_29
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+		     		    add_popularity = {
+							ideology = democratic
+							popularity = 0.2
+						}
+                        add_ideas = LTB_democratic_1
+                        add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = LTB_28
+		text = LTB_28
+		icon = GFX_goal_continuos_boost_freedom
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_25
+		}
+		mutually_exclusive = {
+			focus = LTB_26
+			focus = LTB_27
+			focus = LTB_29	
+		}
+		x = 40
+		y = 2
+		completion_reward = {
+		     		    add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}
+                        add_ideas = LTB_neutrality_1
+		}
+
+	}	
+	focus = {
+		id = LTB_29
+		text = LTB_29
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_25
+		}
+		mutually_exclusive = {
+		    focus = LTB_26
+			focus = LTB_27
+			focus = LTB_28	
+		}
+		x = 48
+		y = 2
+		completion_reward = {
+		     		    add_popularity = {
+							ideology = communism
+							popularity = 0.2
+						}
+                        add_ideas = LTB_communism_1
+		}
+
+	}
+	focus = {
+		id = LTB_30
+		text = LTB_30
+		icon = GFX_focus_generic_tungsten
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_14
+
+		}
+				prerequisite = {
+			focus = LTB_15
+		}
+				prerequisite = {
+			focus = LTB_16
+		}
+		x = 5
+		y = 6
+			available = {
+					num_of_factories > 80
+				}
+		completion_reward = {
+                        add_ideas = LTB_rost_1
+		}
+
+	}
+	focus = {
+		id = LTB_31
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_30
+		}
+		x = 5
+		y = 7
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 1
+						}
+				    add_offsite_building = {
+							type = arms_factory
+							level = 1
+						}
+				    add_political_power = -50
+				}
+
+	}
+	focus = {
+		id = LTB_32
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_30
+		}
+		x = 7
+		y = 7
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					add_political_power = -50
+				}
+
+	}
+	focus = {
+		id = LTB_33
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_30
+		}
+		x = 3
+		y = 7
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+					add_political_power = -50
+				}
+
+	}
+	focus = {
+		id = LTB_34
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_31
+		}
+		prerequisite = {
+			focus = LTB_32
+		}
+		prerequisite = {
+			focus = LTB_33
+		}
+		x = 5
+		y = 8
+			completion_reward = {
+			    add_tech_bonus = {
+				name = air_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_air
+				category = medium_air
+				category = heavy_air
+				category = naval_air
+			       }
+			    add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			    }
+				}
+
+	}
+	focus = {
+		id = LTB_35
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_34
+		}
+		x = 5
+		y = 9
+			completion_reward = {
+			    94 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+							type = oil
+							amount = 34
+							state = 94
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_36
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_26
+		}
+		x = 24
+		y = 3
+			completion_reward = {
+                 add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = LTB_37
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_36
+		}
+		x = 26
+		y = 4
+			completion_reward = {
+                 		 add_popularity = {
+							ideology = fascism
+							popularity = 0.2
+						}
+				}
+
+	}
+	focus = {
+		id = LTB_38
+		text = LTB_38
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_36
+		}
+		x = 22
+		y = 4
+           			completion_reward = {
+                         			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
+				}
+	}
+	focus = {
+		id = LTB_39
+		text = LTB_39
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		x = 22
+		y = 22
+		available = {
+			is_puppet = no
+			has_government = fascism
+			has_army_manpower = { size > 499999 } 
+			SOV = {
+				NOT = { has_war_with = LTB }
+				country_exists = SOV
+			}
+		}
+		cancel = {
+			OR = {
+				has_war_with = SOV
+				NOT = { country_exists = SOV }
+			}
+		}
+           			completion_reward = {
+                    create_wargoal = {
+					type = annex_everything
+					target = SOV
+					expire = 0
+				}
+				}
+	}
+	focus = {
+		id = LTB_40
+		text = LTB_40
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_38
+		}
+		x = 22
+		y = 5
+           			completion_reward = {
+                add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1.0
+				uses = 4
+				category = artillery
+			}
+				}
+	}
+	focus = {
+		id = LTB_41
+		text = LTB_41
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		x = 36
+		y = 0
+           			completion_reward = {
+           			add_political_power = 15
+				}
+	}
+	focus = {
+		id = LTB_42
+		text = LTB_42
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_35
+		}
+		x = 5
+		y = 10
+			available = {
+					num_of_factories > 100
+				}
+           			completion_reward = {
+           			remove_ideas = LTB_rost_1
+           			add_ideas = LTB_rost_2
+				}
+	}
+	focus = {
+		id = LTB_11
+		icon = GER_extra_tech_slot
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_23
+		}		
+		x = 12
+		y = 6
+			completion_reward = {
+			add_tech_bonus = {
+				name = LTB_rocketry_focus
+				bonus = 1.0
+				uses = 3
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = LTB_rocketry_focus
+				bonus = 1.0
+				uses = 3
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = LTB_43
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_11
+		}		
+		x = 12
+		y = 7
+			completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = LTB_44
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_19
+		}
+		x = 19
+		y = 1
+			completion_reward = {
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 1.0
+				uses = 2
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+				category = shbb_tech
+			}
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = LTB_45
+		icon = GER_air_innovation
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_44
+		}
+		x = 19
+		y = 2
+			completion_reward = {
+			add_tech_bonus = {
+				name = op_dest_bonus
+				bonus = 1.0
+				uses = 2
+				category = battlefield_support_tree
+			}			
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+				category = cas_bomber			
+			}
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1.0
+				uses = 2
+				category = battlefield_support_tree
+			}
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = LTB_46
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_37
+		}
+		x = 26
+		y = 5
+		available = {
+			is_puppet = no
+			has_government = fascism
+		}
+	completion_reward = {
+	                    add_political_power = 50
+	                    add_ideas = LTB_fascism_2
+	                    remove_ideas = LTB_fascism_1
+		}
+	}
+	focus = {
+		id = LTB_47
+		text = LTB_47
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_42
+		}
+		x = 5
+		y = 11
+			available = {
+					num_of_factories > 150
+				}
+           			completion_reward = {
+           			remove_ideas = LTB_rost_2
+           			add_ideas = LTB_rost_3
+				}
+	}
+	focus = {
+		id = LTB_48
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+	    ai_will_do = {
+			factor = 12
+		}
+		prerequisite = {
+			focus = LTB_46
+		}
+		prerequisite = {
+			focus = LTB_40
+		}
+		x = 24
+		y = 6
+	completion_reward = {
+	                    add_political_power = 20
+                        add_ideas = LTB_fascism_3
+		}
+	}
+	focus = {
+		id = LTB_49
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = LTB_48
+		}
+		x = 23
+		y = 7
+		mutually_exclusive = {
+		    focus = LTB_50
+		}
+	completion_reward = {
+          ROM = { country_event = { days = 1 id = ltb.1 } }   
+		}
+	}
+	focus = {
+		id = LTB_50
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = LTB_48
+		}
+		x = 25
+		y = 7
+		mutually_exclusive = {
+		    focus = LTB_49
+		}
+	completion_reward = {
+                    create_wargoal = {
+					type = annex_everything
+					target = ROM
+					expire = 0
+				}  
+		}
+	}
+}

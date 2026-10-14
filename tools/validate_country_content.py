@@ -332,7 +332,28 @@ diplomatic_events = {one(e,'id'):e for e in values(read(ROOT/'events/nww_ltb_dip
 staff = ltb_focuses['LTB_union_general_staff']
 check('LTB_the_vilnius_compromise' in values(one(staff, 'available', []), 'has_completed_focus'), 'General staff no longer requires the Vilnius compromise')
 check(not values(staff, 'prerequisite'), 'General staff draws a connection across unrelated branches; use availability conditions for the crisis gates')
-check('LTB_face_the_crisis' in values(one(staff, 'available', []), 'has_completed_focus') and 'LTB_union_preserved' in values(one(staff, 'available', []), 'has_country_flag'), 'General staff can remove army penalties before the crisis is resolved')
+check({'LTB_deadline_resolved', 'LTB_union_preserved'} <= set(values(one(staff, 'available', []), 'has_country_flag')), 'General staff can remove army penalties before the crisis is resolved')
+check('LTB_face_the_crisis' not in values(one(staff, 'available', []), 'has_completed_focus'), 'General staff still needs a redundant crisis focus after the peaceful settlement')
+
+# The compromise must resolve the crisis itself: bypass skips completion rewards.
+# In particular, a January settlement must not wait for the crisis's June availability.
+crisis = ltb_focuses['LTB_face_the_crisis']
+settlement = one(read(ROOT/'common/scripted_effects/nww_ltb_effects.txt'), 'nww_ltb_resolve_compromise', [])
+settlement_branch = one(settlement, 'if', [])
+settlement_limit = one(settlement_branch, 'limit', [])
+check(one(one(ltb_focuses['LTB_the_vilnius_compromise'], 'completion_reward'), 'nww_ltb_resolve_compromise') == 'yes', 'Compromise does not settle the crisis in its own reward')
+check({'LTB_union_preserved', 'LTB_deadline_resolved'} <= set(values(settlement_branch, 'set_country_flag')), 'Peaceful settlement leaves the Union or deadline unresolved')
+check('LTB_deadline_active' in values(settlement_branch, 'clr_country_flag'), 'Peaceful settlement leaves the deadline active')
+check(any(k == 'remove_mission' and v == 'LTB_vilnius_compromise_deadline' for k,v,o in walk(settlement)), 'Peaceful settlement does not stop the mission')
+check(any(one(n, 'has_country_flag') == 'LTB_split_choice_available' for n in values(settlement_limit, 'NOT')), 'Peaceful settlement can override a dissolution already triggered')
+check(not any(k in ('country_event', 'news_event', 'complete_national_focus') for k,v,o in walk(settlement)), 'Peaceful settlement executes crisis events or completion rewards')
+bypass = one(crisis, 'bypass', [])
+check(one(bypass, 'has_completed_focus') == 'LTB_the_vilnius_compromise' and any(one(n, 'has_country_flag') == 'LTB_split_choice_available' for n in values(bypass, 'NOT')), 'Crisis bypass is missing or bypasses an unresolved dissolution')
+check(not any(k == 'date' for k,v,o in walk(bypass)), 'Peaceful crisis bypass still waits for June')
+check(one(crisis, 'bypass_if_unavailable') != 'yes', 'Crisis could bypass solely because the June start date has not arrived')
+check(one(one(crisis, 'bypass_effect', []), 'nww_ltb_resolve_compromise') == 'yes', 'Bypassed crisis does not preserve settlement flags')
+startup_repairs = [branch for k,branch,o in walk(startup) if k == 'if' and one(branch, 'nww_ltb_resolve_compromise') == 'yes']
+check(any(one(one(branch, 'limit', []), 'has_completed_focus') == 'LTB_the_vilnius_compromise' for branch in startup_repairs), 'Completed compromises in older saves are not repaired on load')
 political_routes = [
     ('LTB_crown_the_regency', 'neutrality'), ('LTB_free_elections_now', 'democratic'),
     ('LTB_the_iron_wolf_calls', 'fascism'), ('LTB_red_dawn_over_minsk', 'communism')]

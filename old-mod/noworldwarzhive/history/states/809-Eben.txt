@@ -1,0 +1,21 @@
+state={
+	id=809
+	name="STATE_809"
+	manpower = 6600
+	
+	state_category = rural
+
+	history={
+		owner = GER
+		add_core_of = BEL
+                add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		3488
+	}
+}

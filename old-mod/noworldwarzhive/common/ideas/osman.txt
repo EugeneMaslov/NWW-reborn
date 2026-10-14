@@ -1,0 +1,1017 @@
+ideas = {	
+    country = { 
+    tur_silly_army_nowar = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = silly_army
+
+           modifier = {
+             war_support_factor = -0.5
+             army_attack_factor = -0.2
+             army_defence_factor = -0.3
+             army_speed_factor = -0.05
+             army_org_factor = -0.5
+            }          
+        }          
+    }
+    country = { 
+    tur_silly_army_nowar_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = silly_army
+
+           modifier = {
+             war_support_factor = -0.45
+             army_attack_factor = -0.15
+             army_defence_factor = -0.25
+             army_speed_factor = -0.025
+             army_org_factor = -0.45
+            }          
+        }          
+    }
+    country = {
+    tur_silly_army_nowar_2 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = silly_army
+
+           modifier = {
+             war_support_factor = -0.4
+             army_attack_factor = -0.1
+             army_defence_factor = -0.2
+             army_speed_factor = -0.01
+             army_org_factor = -0.4
+            }          
+        }          
+    }
+    country = {
+    tur_silly_army_nowar_3 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = silly_army
+
+           modifier = {
+             war_support_factor = -0.35
+             army_attack_factor = -0.05
+             army_defence_factor = -0.05
+             army_org_factor = -0.35
+            }          
+        }          
+    }
+    country = {
+    tur_good_army_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = good_army
+
+           modifier = {
+             war_support_factor = -0.25
+             army_attack_factor = -0.025
+             army_defence_factor = -0.025
+             army_org_factor = -0.25
+            }          
+        }          
+    }
+    country = {
+    tur_good_army_2 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = good_army
+
+           modifier = {
+             war_support_factor = -0.15
+             army_org_factor = -0.15
+            }          
+        }          
+    }
+    country = {
+    tur_good_army_3 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = good_army
+
+           modifier = {
+             war_support_factor = -0.05
+             army_org_factor = -0.05
+            }          
+        }          
+    }
+    country = {
+    tur_good_army_4 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = good_army
+
+           modifier = {
+             army_org_factor = 0.01
+            }          
+        }          
+    }
+    country = {
+    tur_perfect_army_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = perfect_army
+
+           modifier = {
+             war_support_factor = 0.025
+             army_attack_factor = 0.025
+             army_defence_factor = 0.025
+             army_speed_factor = 0.025
+             army_org_factor = 0.025
+            }          
+        }          
+    }
+    country = {
+    tur_perfect_army_2 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = perfect_army
+
+           modifier = {
+             war_support_factor = 0.05
+             army_attack_factor = 0.05
+             army_defence_factor = 0.05
+             army_speed_factor = 0.035
+             army_org_factor = 0.05
+            }          
+        }          
+    }
+    country = {
+    tur_perfect_army_3 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = perfect_army
+
+           modifier = {
+             war_support_factor = 0.075
+             army_attack_factor = 0.075
+             army_defence_factor = 0.05
+             army_speed_factor = 0.05
+             army_org_factor = 0.075
+            }          
+        }          
+    }
+    country = {
+    tur_perfect_army_4 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = perfect_army
+
+           modifier = {
+             war_support_factor = 0.1
+             army_attack_factor = 0.1
+             army_defence_factor = 0.075
+             army_speed_factor = 0.075
+             army_org_factor = 0.1
+            }          
+        }          
+    }
+    country = {
+    tur_closed_cities_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = closed_cities
+
+           modifier = {
+           		max_command_power_mult = 0.5
+            	war_support_factor = 0.01
+            }          
+        }          
+    }
+    country = {
+    tur_closed_cities_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = closed_cities
+
+           modifier = {
+           		max_command_power_mult = 0.5
+            	war_support_factor = 0.01
+            }          
+        }          
+    }
+    country = {
+    tur_dominatuim_turco_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = dominatium_turcorum
+
+           modifier = {
+            	war_support_factor = 0.05
+            	army_org_factor = 0.05
+            	production_factory_max_efficiency_factor = 0.5
+       			line_change_production_efficiency_factor = 0.25
+       			production_factory_efficiency_gain_factor = 0.25
+       			production_speed_buildings_factor = 0.2
+       			stability_weekly_factor = 0.001
+            }          
+        }          
+    }   
+    country = { 
+    tur_agricultural_economic_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_agricult
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.5
+       			line_change_production_efficiency_factor = -0.5
+       			production_factory_efficiency_gain_factor = -0.5
+       			production_speed_buildings_factor = -0.15
+       			stability_weekly_factor = -0.001
+            }          
+        }          
+    }
+    country = { 
+    tur_agricultural_economic_2 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_agricult
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.45
+       			line_change_production_efficiency_factor = -0.45
+       			production_factory_efficiency_gain_factor = -0.45
+       			production_speed_buildings_factor = -0.125
+       			stability_weekly_factor = -0.001
+            }          
+        }          
+    }
+    country = {
+    tur_agricultural_economic_3 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_agricult
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.40
+       			line_change_production_efficiency_factor = -0.40
+       			production_factory_efficiency_gain_factor = -0.40
+       			production_speed_buildings_factor = -0.1
+            }          
+        }          
+    }  
+    country = {
+    tur_agricultural_economic_4 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_agricult
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.35
+       			line_change_production_efficiency_factor = -0.35
+       			production_factory_efficiency_gain_factor = -0.35
+       			production_speed_buildings_factor = -0.075
+            }          
+        }          
+    }
+    country = {
+    tur_small_industry_economic_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_small_industy
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.30
+       			line_change_production_efficiency_factor = -0.30
+       			production_factory_efficiency_gain_factor = -0.30
+       			production_speed_buildings_factor = -0.05
+            }          
+        }          
+    }
+    country = {
+    tur_small_industry_economic_2 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_small_industy
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.25
+       			line_change_production_efficiency_factor = -0.25
+       			production_factory_efficiency_gain_factor = -0.20
+            }          
+        }          
+    }   
+    country = {
+    tur_small_industry_economic_3 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_small_industy
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.15
+       			line_change_production_efficiency_factor = -0.15
+       			production_factory_efficiency_gain_factor = -0.10
+       			production_speed_buildings_factor = 0.05
+            }          
+        }          
+    }
+    country = {
+    tur_small_industry_economic_4 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_small_industy
+
+           modifier = {
+            	production_factory_max_efficiency_factor = -0.05
+       			line_change_production_efficiency_factor = -0.05
+       			production_factory_efficiency_gain_factor = 0.05
+       			production_speed_buildings_factor = 0.1
+            }          
+        }          
+    } 
+    country = {
+    tur_industry_economic_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = tur_industy
+
+           modifier = {
+            	production_factory_max_efficiency_factor = 0.025
+       			line_change_production_efficiency_factor = 0.025
+       			production_factory_efficiency_gain_factor = 0.075
+       			production_speed_buildings_factor = 0.125
+            }          
+        }          
+    }   	
+    country = { 
+		tur_new_democ = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_democratic_drift_bonus
+
+           modifier = {
+            democratic_drift = 0.05        
+           }
+        }
+    }			
+	country = { 
+		tur_comun_d = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_communism_drift_bonus
+
+           modifier = {
+            communism_drift = 0.05        
+           }					
+		}
+	}
+	country = { 
+		tur_fascism_d = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_fascism_drift_bonus
+
+           modifier = {
+            fascism_drift = 0.05        
+           }					
+		}	
+	}
+	country = { 
+		tur_not_fascism_d = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_fascism_drift_bonus
+
+           modifier = {
+            fascism_drift = -0.1        
+           }					
+		}	
+	}
+	country = { 
+		TUR_factory_idea_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_1
+
+           modifier = {
+            stability_factor = 0.1      
+            consumer_goods_factor = 0.01
+            production_factory_max_efficiency_factor = 0.01
+       		line_change_production_efficiency_factor = 0.01
+           }					
+		}	
+	}   
+	country = { 
+		TUR_factory_idea_2 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_1
+
+           modifier = {
+            stability_factor = 0.075 
+            consumer_goods_factor = -0.01
+            production_factory_max_efficiency_factor = 0.025
+       		line_change_production_efficiency_factor = 0.025     
+           }					
+		}	
+	}
+	country = { 
+		TUR_capitalism_economic_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = capitalism_economic
+
+           modifier = {
+            stability_factor = -0.05
+            consumer_goods_factor = 0.05
+            production_factory_max_efficiency_factor = 0.05
+       		line_change_production_efficiency_factor = 0.05
+       		research_speed_factor = 0.075   
+       		production_speed_buildings_factor = 0.025
+           }					
+		}	
+	}
+	country = { 
+		TUR_capitalism_economic_2 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = capitalism_economic
+
+           modifier = {
+            stability_factor = -0.025
+            consumer_goods_factor = 0.025
+            production_factory_max_efficiency_factor = 0.075
+       		line_change_production_efficiency_factor = 0.075
+       		research_speed_factor = 0.1
+       		production_speed_buildings_factor = 0.05
+           }					
+		}	
+	}
+	country = { 
+		TUR_capitalism_economic_3 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = capitalism_economic
+
+           modifier = {
+            consumer_goods_factor = 0.03
+            production_factory_max_efficiency_factor = 0.1
+       		line_change_production_efficiency_factor = 0.1
+       		research_speed_factor = 0.1
+       		production_speed_buildings_factor = 0.075
+       		trade_opinion_factor = 0.25
+           }					
+		}	
+	}
+	country = { 
+		TUR_NFT_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_1
+
+           modifier = {
+           	stability_factor = 0.05
+       		research_speed_factor = 0.01
+       		production_speed_buildings_factor = 0.01
+       		trade_opinion_factor = 0.45
+           }					
+		}	
+	}
+	country = { 
+		TUR_NFT_2 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_1
+
+           modifier = {
+           	stability_factor = 0.05
+       		research_speed_factor = 0.025
+       		production_speed_buildings_factor = 0.025
+       		trade_opinion_factor = 0.55
+           }					
+		}	
+	}
+	country = { 
+		TUR_IPT_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_3
+
+           modifier = {
+       		research_speed_factor = 0.01
+       		production_speed_buildings_factor = 0.1
+       		trade_opinion_factor = 0.15
+           }					
+		}	
+	}
+	country = { 
+		TUR_gold_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	}
+       		removal_cost = -1
+       
+       		picture = tur_gold
+
+           modifier = {
+       		research_speed_factor = 0.01
+       		production_speed_buildings_factor = 0.1
+       		trade_opinion_factor = 0.15
+           }					
+		}	
+	}
+	country = { 
+		TUR_national_economic_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = national_economic
+
+           modifier = {
+            stability_factor = 0.1
+            consumer_goods_factor = -0.075
+            production_factory_max_efficiency_factor = -0.025
+       		line_change_production_efficiency_factor = -0.025
+       		research_speed_factor = -0.025   
+           }					
+		}	
+	}
+	country = { 
+		TUR_national_economic_2 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = national_economic
+
+           modifier = {
+            stability_factor = 0.1
+            consumer_goods_factor = -0.075
+            production_factory_max_efficiency_factor = -0.01
+       		line_change_production_efficiency_factor = -0.01
+       		research_speed_factor = -0.01  
+           }					
+		}	
+	}
+	country = { 
+		TUR_national_economic_3 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = national_economic
+
+           modifier = {
+            stability_factor = 0.15
+            consumer_goods_factor = -0.085
+            production_factory_max_efficiency_factor = -0.025
+       		line_change_production_efficiency_factor = -0.025
+       		research_speed_factor = -0.015  
+           }					
+		}	
+	}	
+	country = { 
+		TUR_national_economic_4 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = national_economic
+
+           modifier = {
+            stability_factor = 0.15
+            consumer_goods_factor = -0.15
+            production_factory_max_efficiency_factor = -0.05
+       		line_change_production_efficiency_factor = -0.05
+       		research_speed_factor = -0.025  
+           }					
+		}	
+	}	
+	country = { 
+		TUR_TNPA_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = tur_TNPA
+
+            modifier = {
+            	air_equipment_upgrade_xp_cost = -0.75
+            	air_accidents_factor = -0.5
+            	air_ace_generation_chance_factor = 0.75
+            	air_attack_factor = 0.1
+            	air_defence_factor = 0.1
+            	experience_gain_factor = 0.25
+            	air_training_xp_gain_factor = 0.5
+            }					
+		}	
+	}
+	country = { 
+		TUR_TAS_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = tur_TAS
+
+           modifier = {
+            stability_factor = -0.01
+            consumer_goods_factor = -0.025  
+           }					
+		}	
+	}
+	country = { 
+		TUR_TAS_2 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = tur_TAS
+
+           modifier = {
+            stability_factor = -0.025
+            consumer_goods_factor = -0.05 
+            research_speed_factor = 0.025  
+           }					
+		}	
+	}
+	country = { 
+		TUR_NNSP_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_3
+
+           modifier = {
+            stability_factor = 0.025
+            consumer_goods_factor = 0.01 
+            research_speed_factor = 0.025  
+            production_speed_buildings_factor = 0.05
+           }					
+		}	
+	}
+	country = { 
+		TUR_religion_1 = {
+       		allowed = {
+          	original_tag = TUR
+          	always = yes
+        	}
+      		allowed_civil_war = {
+          	always = yes
+       		}
+       		removal_cost = -1
+       
+       		picture = generic_industrial_concern_3
+
+           modifier = {
+            stability_factor = 0.025
+            consumer_goods_factor = 0.01 
+            research_speed_factor = 0.025  
+            production_speed_buildings_factor = 0.05
+            war_support_factor = 0.25
+            army_speed_factor = 0.05
+            army_org_factor = 0.05
+           }					
+		}	
+	}
+	country = { 
+		TUR_supply_reform = {
+       		allowed = {
+          	original_tag = TUR
+        	}
+       		removal_cost = -1
+       
+       		picture = supply_reform
+
+           modifier = {
+            	stability_factor = 0.05
+            	consumer_goods_factor = 0.025
+            	war_support_factor = 0.25
+             	army_speed_factor = 0.05
+             	army_org_factor = 0.025
+           }					
+		}	
+	}
+	country = { 
+		TUR_disagree_reform = {
+       		allowed = {
+          	original_tag = TUR
+        	}
+       		removal_cost = -1
+       
+       		picture = disagree_reform
+
+           modifier = {
+            	stability_factor = -0.05
+            	consumer_goods_factor = -0.05
+            	production_factory_max_efficiency_factor = 0.025
+       			line_change_production_efficiency_factor = 0.025
+       			research_speed_factor = 0.05    	
+           }					
+		}	
+	}
+    country = { 
+    TUR_universal_army_1 = {
+          allowed = {
+            original_tag = TUR
+            always = yes
+          }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+       
+          picture = universal_army
+
+           modifier = {
+             war_support_factor = 0.05
+             army_attack_factor = 0.025
+             army_defence_factor = 0.025
+             army_speed_factor = 0.05
+             army_org_factor = 0.025
+            }          
+        }          
+    }	
+}

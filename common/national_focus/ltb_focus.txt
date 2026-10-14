@@ -91,6 +91,7 @@ focus_tree = {
 				add_idea = LTB_vilnius_compromise
 			}
 			set_country_flag = LTB_compromise_chosen
+			nww_ltb_resolve_compromise = yes
 			add_stability = 0.05
 			country_event = {
 				id = ltb.100
@@ -182,6 +183,13 @@ focus_tree = {
 		id = LTB_face_the_crisis
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 5
+		bypass = {
+			has_completed_focus = LTB_the_vilnius_compromise
+			NOT = { has_country_flag = LTB_split_choice_available }
+		}
+		bypass_effect = {
+			nww_ltb_resolve_compromise = yes
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -190,7 +198,7 @@ focus_tree = {
 						has_country_flag = LTB_split_choice_available
 					}
 				}
-				set_country_flag = LTB_union_preserved
+				nww_ltb_resolve_compromise = yes
 			}
 			else = {
 				set_country_flag = LTB_split_choice_available
@@ -198,13 +206,6 @@ focus_tree = {
 					id = ltb.103
 					days = 1
 				}
-			}
-			if = {
-				limit = {
-					has_country_flag = LTB_union_preserved
-				}
-				set_country_flag = LTB_deadline_resolved
-				clr_country_flag = LTB_deadline_active
 			}
 		}
 		prerequisite = {
@@ -236,7 +237,7 @@ focus_tree = {
 		y = 2
 		available = {
 			has_completed_focus = LTB_the_vilnius_compromise
-			has_completed_focus = LTB_face_the_crisis
+			has_country_flag = LTB_deadline_resolved
 			has_country_flag = LTB_union_preserved
 		}
 	}

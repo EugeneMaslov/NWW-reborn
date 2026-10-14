@@ -1,0 +1,290 @@
+ideas = {
+    
+    country = {
+        LTB_ed = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = ed
+
+           modifier = {
+                political_power_factor = 0.1
+                stability_factor = 0.1
+           }
+        }
+    }
+  country = {
+       LTB_two = {
+       allowed = {
+          original_tag = LTB
+          always = yes
+        }
+       allowed_civil_war = {
+          always = yes
+       }
+       removal_cost = -1
+       
+       picture = generic_victors_of_ww1
+       
+       modifier = {
+          army_core_attack_factor = 0.2
+          army_core_defence_factor = 0.1
+       }
+       }
+  }
+  country = {
+    LTB_uni = {
+     allowed = {
+       original_tag = LTB
+       always = yes 
+     }
+     allowed_civil_war = {
+     always = yes
+     }
+     removal_cost = -1
+
+     picture = generic_research_bonus
+
+     modifier = {
+       production_factory_max_efficiency_factor = 0.1
+       line_change_production_efficiency_factor = 0.1
+       research_speed_factor = 0.1
+     }
+    }
+  }
+  country = {
+    LTB_fort = {
+     allowed = {
+       original_tag = LTB
+       always = yes 
+     }
+     allowed_civil_war = {
+     always = yes
+     }
+     removal_cost = -1
+
+     picture = generic_manpower_bonus
+
+     modifier = {
+       MONTHLY_POPULATION = 0.8
+     }
+    }
+  }
+    country = {
+        LTB_pbp = {          
+           allowed = {
+            original_tag = LTB
+            original_tag = POL
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_research_bonus
+
+           modifier = {
+                stability_factor = 0.1
+           }
+        }
+    } 
+    country = {
+        LTB_pbpr = {          
+           allowed = {
+            original_tag = LTB
+            original_tag = POL
+            original_tag = ROM
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_research_bonus
+
+           modifier = {
+                stability_factor = 0.2
+           }
+        }
+    }  
+    country = {
+        LTB_rost_1 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_neutrality_drift_bonus
+
+           modifier = {
+            research_speed_factor = 0.1
+            production_speed_buildings_factor = 0.1  
+            political_power_factor = 0.1  
+            fuel_gain_factor = 0.1    
+           }
+        }
+    } 
+    country = {
+        LTB_rost_2 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_neutrality_drift_bonus
+
+           modifier = {
+            research_speed_factor = 0.2
+            production_speed_buildings_factor = 0.2  
+            political_power_factor = 0.2
+            fuel_gain_factor = 0.2
+           }
+        }
+    } 
+    country = {
+        LTB_rost_3 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_neutrality_drift_bonus
+
+           modifier = {
+            research_speed_factor = 0.4
+            production_speed_buildings_factor = 0.6  
+            political_power_factor = 0.4
+            fuel_gain_factor = 0.5
+           }
+        }
+    } 
+    country = {
+        LTB_fascism_1 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_fascism_drift_bonus
+
+           modifier = {
+            fascism_drift = 0.05        
+           }
+        }
+    }
+    country = {
+        LTB_fascism_2 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_army_war_college
+
+           modifier = {
+            planning_speed = 0.3 
+           }
+        }
+    }
+    country = {
+        LTB_fascism_3 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_manpower_bonus
+
+           modifier = {
+            conscription = 0.05
+            training_time_factor = -0.2
+           }
+        }
+    }
+    country = {
+        LTB_democratic_1 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_democratic_drift_bonus
+
+           modifier = {
+            democratic_drift = 0.05        
+           }
+        }
+    }
+    country = {
+        LTB_neutrality_1 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_neutrality_drift_bonus
+
+           modifier = {
+            neutrality_drift = 0.05        
+           }
+        }
+    }
+    country = {
+        LTB_communism_1 = {          
+           allowed = {
+            original_tag = LTB
+            always = yes
+           }
+           allowed_civil_war = {
+            always = yes
+           }
+           removal_cost = -1
+
+           picture = generic_communism_drift_bonus
+
+           modifier = {
+            communism_drift = 0.05        
+           }
+        }
+    }
+}

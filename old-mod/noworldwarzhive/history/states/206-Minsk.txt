@@ -1,0 +1,35 @@
+
+state={
+	id=206
+	name="STATE_206"
+	manpower =  7163163
+	
+	state_category = large_city
+
+	history={
+		owner = LTB
+		victory_points = {
+			11370 25
+		}
+		victory_points = {
+			9289 10
+		}
+		buildings = {
+			infrastructure = 9
+                        arms_factory = 1
+			industrial_complex = 6
+			air_base = 8
+		}
+		add_core_of = LTB
+		add_core_of = BLR
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 8
+			}
+		}
+	}
+
+	provinces={
+		216 294 342 3267 3378 6292 9289 11216 11322 11370 
+	}
+}

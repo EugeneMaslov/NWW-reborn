@@ -1,0 +1,98 @@
+add_namespace = ltb
+
+
+country_event = {
+ id = ltb.1 
+ title = ltb.1.t
+ desc = ltb.1.d
+ picture = GFX_report_event_soviet_tanks
+
+ is_triggered_only = yes
+
+ trigger = {
+  tag = ROM
+ }
+
+ mean_time_to_happen = {
+   days = 1
+ }
+ 
+ option = {
+   name = ltb.1.a
+   ai_chance = { factor = 100 }
+   LTB = { country_event = { days = 1 id = ltb.2 } }
+ }
+
+ option = {
+   name = ltb.1.b
+   ai_chance = { factor = 0 }
+   LTB = { country_event = { days = 1 id = ltb.3 } } 
+ }
+
+}
+
+
+country_event = {
+ id = ltb.2 
+ title = ltb.2.t
+ desc = ltb.2.d
+ picture = GFX_report_event_soviet_tanks
+
+ is_triggered_only = yes
+
+ trigger = {
+  tag = LTB
+ }
+
+ mean_time_to_happen = {
+   days = 1
+ }
+ 
+ option = {
+   name = ltb.2.a
+   ai_chance = { factor = 100 } 
+   add_to_faction = ROM
+   LTB = {
+   set_faction_name = LTB_Faction
+   remove_ideas = LTB_pbp
+   add_ideas = LTB_pbpr
+   }
+   POL = {
+   remove_ideas = LTB_pbp
+   add_ideas = LTB_pbpr
+   }
+   ROM = {
+   add_ideas = LTB_pbpr
+   }
+ }
+
+}
+
+country_event = {
+ id = ltb.3 
+ title = ltb.3.t
+ desc = ltb.3.d
+ picture = GFX_report_event_soviet_tanks
+
+ is_triggered_only = yes
+
+ trigger = {
+  tag = LTB
+ }
+
+ mean_time_to_happen = {
+   days = 1
+ }
+ 
+ option = {
+   name = ltb.3.a
+   ai_chance = { factor = 100 }
+   LTB = {
+   create_wargoal = {
+	target = ROM
+	type = puppet_wargoal_focus
+	}
+   }
+ }
+
+}

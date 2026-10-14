@@ -1,0 +1,192 @@
+﻿capital = 49
+
+oob = "TUR_1936"
+
+add_ideas = {
+		tur_silly_army_nowar
+		tur_agricultural_economic_1
+}
+
+#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
+#TUR_communism
+#TUR_democratic
+#TUR_fascism
+#TUR_neutrality
+set_cosmetic_tag = TUR_neutrality
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+    superior_firepower = 1
+	fleet_in_being = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "TUR_1936_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+		improved_airplane_launcher = 1
+	}
+	set_naval_oob = "TUR_1936_naval_mtg"
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.7.7"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	fascism = 14
+	communism = 16
+	neutrality = 45
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = 
+		last_election = "1935.7.7"
+		elections_allowed = no
+	}
+}
+
+create_country_leader = {
+	name = "Fatma Alie Topuz"
+	desc = "Fatma_Aile_Topuz_desc"
+	picture = "GFX_Portrait_TUR_Fatma_Alie_Topuz"
+	expire = "1956.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Omar Faruh Osmanoglu"
+	desc = "Omar_Faruh_Osmanoglu_desc"
+	picture = "GFX_Portrait_TUR_omar_faruh_osmanoglu"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shephik Hosnu"
+	desc = "Shephik_Hosnu_desc"
+	picture = "GFX_Portrait_TUR_Shephik_Hosnu"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Okayar 	Ali Fethi"
+	desc = "Okayar_Ali_Fethi_desc"
+	picture = "GFX_Portrait_TUR_Okayar_Ali_Fethi"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Muhammad Osmanoglu"
+	picture = ""
+	traits = { swamp_fox hill_fighter infantry_leader }
+	skill = 3
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Oreyad Yamir"
+	picture = ""
+	traits = { 
+		offensive_doctrine
+		politically_connected
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kalir Yamad"
+	picture = ""
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 5
+}

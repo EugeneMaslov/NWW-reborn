@@ -1,0 +1,232 @@
+﻿division_template = {
+	name = "Pakistan"			#Infantry Division - In 1936, Albania only had one triangular division.	They did have some tankettes and infantry support tanks, so 1 recon
+	division_names_group = PAK_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	#Ushtria Shqipëtarë
+	division = { # "1 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "2 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "3 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "4 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "5 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "6 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "7 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "8 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1910
+		division_template = "Pakistan"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+
+	}
+	division = { # "9 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "10 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "11 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "12 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "13 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "14 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "15 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "16 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3456
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = { # "17 Pakistan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4979
+		division_template = "Pakistan"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 3
+		progress = 0.86
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 100
+	}
+}

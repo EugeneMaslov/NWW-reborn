@@ -1,0 +1,184 @@
+focus_tree = {
+	id = german_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = GER_1
+		icon = GFX_focus_generic_industry_1
+		cost = 10,00
+		x = 2
+		y = 0
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 50
+							state = 42						
+							}
+				}
+
+	}
+	focus = {
+		id = GER_2
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = GER_1
+		}
+		x = 1
+		y = 1
+			completion_reward = {
+					add_resource = {
+							type = rubber
+							amount = 15
+							state = 773
+						}
+					add_resource = {
+							type = rubber
+							amount = 20
+							state = 546
+						}
+					add_resource = {
+							type = chromium
+							amount = 20
+							state = 541
+						}
+				}
+	}
+	focus = {
+	id = GER_3
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_2
+	}
+	 x = 1
+	 y = 2
+	   completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+	     }
+	}
+	focus = {
+	id = GER_4
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_3
+	}
+	 x = 1
+	 y = 3
+	   completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+	     }
+	}
+	focus = {
+	id = GER_5
+	icon = GFX_focus_generic_industry_2
+	cost = 10,00
+	prerequisite = {
+	focus = GER_1
+	}
+	 x = 3
+	 y = 1
+	   completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+	     }
+	}
+    focus = {
+	id = GER_6
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_5
+	}
+	 x = 3
+	 y = 2
+	   completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+	     }
+	}
+	focus = {
+	id = GER_7
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_6
+	}
+	 x = 3
+	 y = 3
+	   completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+	     }
+	}
+	focus = {
+	id = GER_8
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_7
+	}
+	prerequisite = {
+	focus = GER_4
+	}
+	 x = 2
+	 y = 4
+	   completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+	     }
+	}
+	focus = {
+	id = GER_9
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_8
+	}
+	 x = 1
+	 y = 5
+	   completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+	     }
+	}
+	focus = {
+	id = GER_10
+	icon = GFX_focus_generic_industry_3
+	cost = 10,00
+	prerequisite = {
+	focus = GER_8
+	}
+	 x = 3
+	 y = 5
+	   completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+	     }
+	}
+}

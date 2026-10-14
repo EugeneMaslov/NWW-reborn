@@ -1,0 +1,2964 @@
+focus_tree = {
+	id = TUR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 70 y = 2200 }
+	focus = {
+		id = TUR_reform_the_army
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10,00
+		x = 47
+		y = 0
+			ai_will_do = {
+					factor = 100
+				}
+			completion_reward = {
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar
+									add_idea = tur_silly_army_nowar_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_political_rw
+		icon = GFX_goal_generic_demand_territory
+		cost = 10,00
+		x = 12
+		y = 0
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = TUR_prom
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10,00
+		x = 31
+		y = 0
+			ai_will_do = {
+					factor = 99
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 1
+							category = industry
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_1
+									add_idea = tur_agricultural_economic_2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_air_1
+		icon = GFX_goal_generic_build_airforce
+		cost = 10,00
+		x = 54
+		y = 0
+			completion_reward = {
+					add_tech_bonus = {
+							name = TUR_air_bonus_1
+							bonus = 1.0
+							uses = 2
+							category = light_fighter
+							category = cat_heavy_fighter
+							category = tactical_bomber
+							category = cat_strategic_bomber
+							category = naval_bomber
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_new_fascism
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_political_rw
+		}
+		mutually_exclusive = {
+			focus = TUR_not_fascism
+			focus = TUR_new_dem
+			focus = TUR_new_communism
+		}
+		x = 3
+		y = 1
+			completion_reward = {
+					add_ideas = tur_fascism_d
+					add_political_power = 5
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_set_capital
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_new_fascism
+		}
+		x = 3
+		y = 2
+			available = {
+					OR = {
+							TUR = {
+									has_capitulated = no
+								}
+						}
+					OR = {
+							has_full_control_of_state = 797
+						}
+				}
+			cancel_if_invalid = yes
+			completion_reward = {
+					set_capital = 797
+				}
+
+	}
+	focus = {
+		id = TUR_dux_national
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_set_capital
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.05
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = TUR_not_fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_political_rw
+		}
+		mutually_exclusive = {
+			focus = TUR_new_fascism
+			focus = TUR_new_dem
+			focus = TUR_new_communism
+		}
+		x = 9
+		y = 1
+			ai_will_do = {
+					factor = 99
+				}
+			completion_reward = {
+					add_political_power = 5
+					add_ideas = tur_not_fascism_d
+					add_opinion_modifier = {
+							target = CRO
+							modifier = large_decrease
+						}
+					add_opinion_modifier = {
+							target = ITA
+							modifier = large_decrease
+						}
+					add_opinion_modifier = {
+							target = JAP
+							modifier = large_decrease
+						}
+				}
+
+	}
+	focus = {
+		id = tur_bred
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_not_fascism
+		}
+		x = 9
+		y = 2
+			completion_reward = {
+					add_political_power = 30
+					add_stability = 0.05
+					add_war_support = -0.1
+				}
+
+	}
+	focus = {
+		id = tur_polos
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = tur_bred
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = TUR_proper_stoper
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_dux_national
+			focus = tur_polos
+		}
+		mutually_exclusive = {
+			focus = TUR_store_eng
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					add_manpower = 15000
+					army_experience = 50
+					add_political_power = 20
+				}
+
+	}
+	focus = {
+		id = TUR_kosa_smerti
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_dux_national
+		}
+		prerequisite = {
+			focus = TUR_proper_stoper
+		}
+		x = 3
+		y = 6
+			available = {
+					NOT = {
+							TUR = {
+									has_capitulated = yes
+								}
+						}
+					NOT = {
+							has_full_control_of_state = 50
+							has_full_control_of_state = 48
+							has_full_control_of_state = 211
+							has_full_control_of_state = 212
+							has_full_control_of_state = 731
+							has_full_control_of_state = 184
+							has_full_control_of_state = 812
+						}
+				}
+			cancel_if_invalid = yes
+			completion_reward = {
+					add_political_power = 50
+					add_state_core = 48
+					add_state_core = 211
+					add_state_core = 212
+					add_state_core = 731
+					add_state_core = 184
+					add_state_core = 812
+				}
+
+	}
+	focus = {
+		id = TUR_store_eng
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10,00
+		prerequisite = {
+			focus = tur_polos
+		}
+		mutually_exclusive = {
+			focus = TUR_proper_stoper
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					add_manpower = 15000
+					army_experience = 70
+					add_political_power = -20
+				}
+
+	}
+	focus = {
+		id = TUR_new_dem
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_political_rw
+		}
+		mutually_exclusive = {
+			focus = TUR_new_fascism
+			focus = TUR_not_fascism
+			focus = TUR_new_communism
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					add_ideas = tur_new_democ
+				}
+
+	}
+	focus = {
+		id = TUR_new_communism
+		icon = GFX_goal_support_communism
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_political_rw
+		}
+		mutually_exclusive = {
+			focus = TUR_new_fascism
+			focus = TUR_not_fascism
+			focus = TUR_new_dem
+		}
+		x = 21
+		y = 1
+			completion_reward = {
+					add_ideas = tur_comun_d
+				}
+
+	}
+	focus = {
+		id = TUR_new_economic
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_prom
+		}
+		x = 31
+		y = 1
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_2
+									add_idea = tur_agricultural_economic_3
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_resourse_icons
+		icon = GFX_focus_generic_steel
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_new_economic
+		}
+		x = 25
+		y = 2
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 15
+							state = 49
+						}
+					add_resource = {
+							type = steel
+							amount = 20
+							state = 49
+						}
+					add_resource = {
+							type = tungsten
+							amount = 25
+							state = 49
+						}
+					add_resource = {
+							type = rubber
+							amount = 30
+							state = 49
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_2
+		icon = GFX_goal_generic_position_armies
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_resourse_icons
+		}
+		x = 25
+		y = 3
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Infrastructure_up
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_new_economic
+		}
+		x = 31
+		y = 2
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 3
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 3
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_1
+		icon = GFX_goal_generic_production
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_Infrastructure_up
+		}
+		x = 29
+		y = 3
+			completion_reward = {
+					add_timed_idea = {
+							idea = TUR_factory_idea_1
+							days = 180
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_5
+		icon = GFX_goal_generic_production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_2
+		}
+		prerequisite = {
+			focus = TUR_Factory_1
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					IF = {
+							limit = {
+									has_idea = TUR_factory_idea_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_factory_idea_1
+									add_idea = TUR_factory_idea_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_Factory_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_5
+		}
+		x = 25
+		y = 5
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_civ_factory_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_5
+		}
+		x = 29
+		y = 5
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_civ_factory_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_civ_factory_1
+		}
+		x = 29
+		y = 6
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_new_order
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_new_economic
+		}
+		x = 37
+		y = 2
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					add_research_slot = 1
+					add_political_power = 50
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_3
+		icon = GFX_focus_generic_military_academy
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_new_order
+		}
+		mutually_exclusive = {
+			focus = TUR_Factory_4
+		}
+		x = 34
+		y = 3
+			completion_reward = {
+					add_ideas = TUR_capitalism_economic_1
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 4
+									instant_build = yes
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_6
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_3
+		}
+		prerequisite = {
+			focus = TUR_Factory_1
+		}
+		x = 34
+		y = 4
+			completion_reward = {
+					add_ideas = free_trade
+					IF = {
+							limit = {
+									has_idea = TUR_capitalism_economic_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_capitalism_economic_1
+									add_idea = TUR_capitalism_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_capitalism_1
+		icon = GFX_goal_generic_trade
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_6
+		}
+		x = 32
+		y = 5
+			completion_reward = {
+					IF = {
+							limit = {
+									has_idea = TUR_capitalism_economic_2
+								}
+							swap_ideas = {
+									remove_idea = TUR_capitalism_economic_2
+									add_idea = TUR_capitalism_economic_3
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_capitalism_4
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_capitalism_1
+		}
+		x = 32
+		y = 6
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 10.0
+							uses = 2
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_capitalism_2
+		icon = GFX_focus_mex_privatisation
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_6
+		}
+		x = 36
+		y = 5
+			completion_reward = {
+					add_ideas = TUR_NFT_1
+				}
+
+	}
+	focus = {
+		id = TUR_capitalism_3
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_capitalism_2
+		}
+		x = 36
+		y = 6
+			completion_reward = {
+					add_political_power = 100
+					IF = {
+							limit = {
+									has_idea = TUR_NFT_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_NFT_1
+									add_idea = TUR_NFT_2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_capitalism_5
+		icon = GFX_focus_mex_soldaderas
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_capitalism_4
+		}
+		prerequisite = {
+			focus = TUR_capitalism_3
+		}
+		x = 34
+		y = 7
+			completion_reward = {
+					add_ideas = TUR_IPT_1
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_4
+		icon = GFX_goal_generic_construction
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_new_order
+		}
+		mutually_exclusive = {
+			focus = TUR_Factory_3
+		}
+		x = 40
+		y = 3
+			completion_reward = {
+					add_ideas = TUR_national_economic_1
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 6
+							add_building_construction = {
+									type = industrial_complex
+									level = 6
+									instant_build = yes
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = TUR_factory_idea_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_factory_idea_1
+									add_idea = TUR_factory_idea_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Factory_7
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_4
+		}
+		x = 40
+		y = 4
+			completion_reward = {
+					add_ideas = TUR_TAS_1
+					IF = {
+							limit = {
+									has_idea = TUR_national_economic_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_national_economic_1
+									add_idea = TUR_national_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = TUR_factory_idea_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_factory_idea_1
+									add_idea = TUR_factory_idea_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_4
+									add_idea = tur_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_3
+									add_idea = tur_small_industry_economic_4
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_2
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_2
+									add_idea = tur_small_industry_economic_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_small_industry_economic_1
+								}
+							swap_ideas = {
+									remove_idea = tur_small_industry_economic_1
+									add_idea = tur_small_industry_economic_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_4
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_4
+									add_idea = tur_small_industry_economic_1
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_agricultural_economic_3
+								}
+							swap_ideas = {
+									remove_idea = tur_agricultural_economic_3
+									add_idea = tur_agricultural_economic_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_nationalist_1
+		icon = GFX_goal_generic_build_tank
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_7
+		}
+		x = 38
+		y = 5
+			completion_reward = {
+					add_stability = 0.1
+					IF = {
+							limit = {
+									has_idea = TUR_national_economic_2
+								}
+							swap_ideas = {
+									remove_idea = TUR_national_economic_2
+									add_idea = TUR_national_economic_3
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_nationalist_3
+		icon = GFX_goal_generic_production
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_nationalist_1
+		}
+		x = 38
+		y = 6
+			completion_reward = {
+					add_ideas = TUR_NNSP_1
+				}
+
+	}
+	focus = {
+		id = TUR_nationalist_2
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Factory_7
+		}
+		x = 42
+		y = 5
+			completion_reward = {
+					add_stability = -0.025
+					IF = {
+							limit = {
+									has_idea = TUR_TAS_1
+								}
+							swap_ideas = {
+									remove_idea = TUR_TAS_1
+									add_idea = TUR_TAS_2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_nationalist_4
+		icon = GFX_focus_TUR_turanist_ambition
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_nationalist_2
+		}
+		x = 42
+		y = 6
+			completion_reward = {
+					add_stability = 0.1
+					add_ideas = TUR_religion_1
+				}
+
+	}
+	focus = {
+		id = TUR_nationalist_5
+		icon = GFX_goal_generic_position_armies
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_nationalist_3
+		}
+		prerequisite = {
+			focus = TUR_nationalist_4
+		}
+		x = 40
+		y = 7
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 15
+							state = 49
+						}
+					add_resource = {
+							type = steel
+							amount = 20
+							state = 49
+						}
+					add_resource = {
+							type = tungsten
+							amount = 25
+							state = 49
+						}
+					add_resource = {
+							type = rubber
+							amount = 30
+							state = 49
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_1
+		icon = GFX_focus_generic_befriend_turkey
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_reform_the_army
+		}
+		mutually_exclusive = {
+			focus = TUR_Army_2
+		}
+		x = 45
+		y = 1
+			ai_will_do = {
+					factor = 99
+				}
+			completion_reward = {
+					army_experience = 20
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar_1
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar_1
+									add_idea = tur_silly_army_nowar_2
+								}
+						}
+					add_timed_idea = {
+							idea = TUR_supply_reform
+							days = 180
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_reform_the_army
+		}
+		mutually_exclusive = {
+			focus = TUR_Army_1
+		}
+		x = 49
+		y = 1
+			completion_reward = {
+					army_experience = 15
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar_1
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar_1
+									add_idea = tur_silly_army_nowar_2
+								}
+						}
+					add_timed_idea = {
+							idea = TUR_disagree_reform
+							days = 180
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_3
+		icon = GFX_focus_generic_combined_arms
+		cost = 17,00
+		prerequisite = {
+			focus = TUR_Army_1
+			focus = TUR_Army_2
+		}
+		x = 47
+		y = 2
+			completion_reward = {
+					army_experience = 30
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar_2
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar_2
+									add_idea = tur_silly_army_nowar_3
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Infantry_1
+		icon = GFX_focus_mex_soldaderas
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_Army_3
+		}
+		x = 45
+		y = 3
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = tur_infantry_bonus_1
+							bonus = 1.0
+							uses = 2
+							category = infantry_weapons
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_2
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_2
+									add_idea = tur_good_army_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_1
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_1
+									add_idea = tur_good_army_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar_3
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar_3
+									add_idea = tur_good_army_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Doctrine_1
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_Army_3
+		}
+		x = 47
+		y = 3
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = tur_doctrine_bonus_1
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_2
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_2
+									add_idea = tur_good_army_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_1
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_1
+									add_idea = tur_good_army_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar_3
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar_3
+									add_idea = tur_good_army_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Artillery_1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 3,00
+		prerequisite = {
+			focus = TUR_Army_3
+		}
+		x = 49
+		y = 3
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = tur_artillery_bonus_1
+							bonus = 1.0
+							uses = 2
+							category = artillery
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_2
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_2
+									add_idea = tur_good_army_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_1
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_1
+									add_idea = tur_good_army_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_silly_army_nowar_3
+								}
+							swap_ideas = {
+									remove_idea = tur_silly_army_nowar_3
+									add_idea = tur_good_army_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_4
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Infantry_1
+		}
+		prerequisite = {
+			focus = TUR_Doctrine_1
+		}
+		prerequisite = {
+			focus = TUR_Artillery_1
+		}
+		x = 47
+		y = 4
+			completion_reward = {
+					add_ideas = TUR_universal_army_1
+					IF = {
+							limit = {
+									has_idea = tur_good_army_3
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_3
+									add_idea = tur_good_army_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_6
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Army_4
+		}
+		x = 47
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = tur_doctrine_bonus_2
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_2
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_2
+									add_idea = tur_perfect_army_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_1
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_1
+									add_idea = tur_perfect_army_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_4
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_4
+									add_idea = tur_perfect_army_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_5
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Army_4
+		}
+		x = 45
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = tur_motor_bonus_1
+							bonus = 1.0
+							uses = 2
+							category = motorized_equipment
+							category = cat_mechanized_equipment
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_2
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_2
+									add_idea = tur_perfect_army_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_1
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_1
+									add_idea = tur_perfect_army_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_4
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_4
+									add_idea = tur_perfect_army_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_8
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Army_4
+		}
+		x = 49
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = tur_tank_bonus_1
+							bonus = 10.0
+							uses = 1
+							category = armor
+							category = cat_light_armor
+							category = cat_medium_armor
+							category = cat_heavy_armor
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_2
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_2
+									add_idea = tur_perfect_army_3
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_1
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_1
+									add_idea = tur_perfect_army_2
+								}
+						}
+					IF = {
+							limit = {
+									has_idea = tur_good_army_4
+								}
+							swap_ideas = {
+									remove_idea = tur_good_army_4
+									add_idea = tur_perfect_army_1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_7
+		icon = GFX_goal_generic_fortify_city
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Army_6
+		}
+		prerequisite = {
+			focus = TUR_Army_5
+		}
+		prerequisite = {
+			focus = TUR_Army_8
+		}
+		x = 47
+		y = 6
+			completion_reward = {
+					army_experience = 25
+					add_ideas = tur_closed_cities_1
+					add_tech_bonus = {
+							name = tur_tank_bonus_2
+							bonus = 1.0
+							uses = 2
+							category = cat_light_armor
+							category = cat_medium_armor
+							category = cat_heavy_armor
+						}
+					add_tech_bonus = {
+							name = tur_motor_bonus_2
+							bonus = 2.0
+							uses = 1
+							category = motorized_equipment
+							category = cat_mechanized_equipment
+						}
+					add_tech_bonus = {
+							name = tur_doctrine_bonus_2
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+					IF = {
+							limit = {
+									has_idea = tur_perfect_army_3
+								}
+							swap_ideas = {
+									remove_idea = tur_perfect_army_3
+									add_idea = tur_perfect_army_4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_air_2
+		icon = GFX_goal_generic_air_fighter
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_1
+		}
+		x = 52
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = TUR_air_bonus_2
+							bonus = 2.0
+							uses = 2
+							category = light_fighter
+							category = cat_heavy_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_air_3
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_1
+		}
+		x = 54
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = TUR_air_bonus_3
+							bonus = 2.0
+							uses = 2
+							category = cas_bomber
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_air_4
+		icon = GFX_goal_generic_air_bomber
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_1
+		}
+		x = 56
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = TUR_air_bonus_4
+							bonus = 2.0
+							uses = 2
+							category = tactical_bomber
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_air_5
+		icon = GFX_goal_continuous_air_production
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_2
+		}
+		prerequisite = {
+			focus = TUR_air_3
+		}
+		prerequisite = {
+			focus = TUR_air_4
+		}
+		x = 54
+		y = 2
+		completion_reward = {
+			air_experience = 50
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	focus = {
+		id = TUR_air_6
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_5
+		}
+		x = 54
+		y = 3
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 2.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = TUR_air_7
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_6
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+			air_experience = 25
+			add_ideas = TUR_TNPA_1
+		}
+	}
+	focus = {
+		id = TUR_war_with_bulgaria
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_kosa_smerti
+		}
+		x = 3
+		y = 7
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = BUL
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_snova_copi
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 10,00
+		prerequisite = {
+			focus = afg_bolgi
+		}
+		x = 3
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = GRE
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = afg_bolgi
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_war_with_bulgaria
+		}
+		x = 3
+		y = 8
+			available = {
+					OR = {
+							is_puppet = no
+						}
+					AND = {
+							has_full_control_of_state = 812
+							has_full_control_of_state = 811
+							has_full_control_of_state = 212
+							has_full_control_of_state = 211
+							has_full_control_of_state = 48
+						}
+					NOT = {
+							has_war_with = BUL
+						}
+				}
+			cancel_if_invalid = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					48 = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															48 = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					212 = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															212 = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_Army_Factory_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Army_Factory_1
+		}
+		x = 25
+		y = 6
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_infrastructure_up_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_Army_Factory_2
+		}
+		prerequisite = {
+			focus = TUR_civ_factory_2
+		}
+		x = 27
+		y = 7
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 3
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 3
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 3
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_research_1
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_infrastructure_up_2
+		}
+		x = 27
+		y = 8
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = TUR_research_2
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_research_1
+		}
+		x = 27
+		y = 9
+			available = {
+					num_of_factories > 100
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = TUR_rocketly_1
+		icon = GFX_focus_rocketry
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_research_1
+		}
+		x = 25
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = TUR_rocketry_focus
+							bonus = 1.0
+							uses = 1
+							category = rocketry
+						}
+					add_tech_bonus = {
+							name = TUR_rocketry_focus
+							bonus = 1.0
+							uses = 1
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_nuclear_1
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_research_1
+		}
+		x = 29
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = TUR_tech_nuclear_bonus_1
+							bonus = 1.0
+							uses = 1
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_supereq_1
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_rocketly_1
+		}
+		prerequisite = {
+			focus = TUR_research_2
+		}
+		prerequisite = {
+			focus = TUR_nuclear_1
+		}
+		x = 27
+		y = 10
+			available = {
+					num_of_factories > 200
+				}
+			completion_reward = {
+					add_ideas = tur_dominatuim_turco_1
+					add_tech_bonus = {
+							name = TUR_rocketry_focus_1
+							bonus = 1.0
+							uses = 1
+							category = rocketry
+						}
+					add_tech_bonus = {
+							name = TUR_rocketry_focus_1
+							bonus = 1.0
+							uses = 1
+							category = jet_technology
+						}
+					add_tech_bonus = {
+							name = TUR_rocketry_focus_1
+							bonus = 1.0
+							uses = 2
+							category = nuclear
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_capitalism_6
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_capitalism_5
+		}
+		x = 34
+		y = 8
+			completion_reward = {
+					add_timed_idea = {
+							idea = TUR_gold_1
+							days = 365
+						}
+				}
+
+	}
+	focus = {
+		id = TUR_nationalist_6
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_nationalist_5
+		}
+		x = 40
+		y = 8
+			completion_reward = {
+					IF = {
+							limit = {
+									has_idea = TUR_national_economic_3
+								}
+							swap_ideas = {
+									remove_idea = TUR_national_economic_3
+									add_idea = TUR_national_economic_4
+								}
+						}
+				}
+
+	}
+}

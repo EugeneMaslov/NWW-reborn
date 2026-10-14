@@ -1,0 +1,305 @@
+focus_tree = {
+	id = AUS_gnida
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	default = no
+	focus = {
+		id = AUS_political_power
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		x = 3
+		y = 0
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = AUS_army_expierience
+		icon = GFX_focus_proclaim_the_restauration_of_austria_hungary
+		cost = 1,00
+		x = 5
+		y = 0
+			completion_reward = {
+					army_experience = 50
+					add_manpower = 25000
+				}
+
+	}
+	focus = {
+		id = AUS_new_economic
+		icon = GFX_focus_generic_self_management
+		cost = 1,00
+		x = 7
+		y = 0
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = aus_prom
+		icon = GFX_focus_generic_industry_1
+		cost = 10,00
+		x = 12
+		y = 0
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = AUS_join_to_axis
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = AUS_political_power
+		}
+		prerequisite = {
+			focus = AUS_army_expierience
+		}
+		x = 3
+		y = 1
+			completion_reward = {
+					add_research_slot = 2
+					FACTION_LEADER_TAG = {
+							add_to_faction = GER_TO_ADD
+						}
+				}
+
+	}
+	focus = {
+		id = AUS_war_with_hun
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = AUS_join_to_axis
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = HUN
+					expire = 0
+				}
+				}
+
+	}
+	focus = {
+		id = AUS_reform_the_economic
+		icon = GFX_focus_generic_treaty
+		cost = 3,00
+		prerequisite = {
+			focus = AUS_new_economic
+		}
+		x = 7
+		y = 1
+			completion_reward = {
+					add_political_power = 100
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.9
+						}
+					add_resource = {
+							type = steel
+							amount = 50
+							state = 9
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = AUS_create_a_new_econimic
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = AUS_reform_the_economic
+		}
+		x = 7
+		y = 2
+			completion_reward = {
+					create_faction = The_Great_Austria
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+				}
+
+	}
+	focus = {
+		id = AUS_war_with_croatia
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = AUS_war_with_hun
+		}
+		prerequisite = {
+			focus = AUS_create_a_new_econimic
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = CRO
+					expire = 0
+				}
+				}
+
+	}
+	focus = {
+		id = aus_prom_2
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = aus_prom
+		}
+		x = 12
+		y = 1
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 4
+						}
+				}
+
+	}
+	focus = {
+		id = aus_prom_3
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = aus_prom_2
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 5
+						}
+					add_offsite_building = {
+							type = industrial_complex
+							level = 5
+						}
+				}
+
+	}
+	focus = {
+		id = aus_prom_4
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10,00
+		prerequisite = {
+			focus = aus_prom_3
+		}
+		x = 10
+		y = 3
+			completion_reward = {
+					add_offsite_building = {
+							type = arms_factory
+							level = 5
+						}
+				}
+
+	}
+	focus = {
+		id = AUS_not_germany
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = AUS_war_with_croatia
+		}
+		x = 3
+		y = 4
+			completion_reward = {
+					add_political_power = 525
+					add_stability = 0.3
+					add_war_support = 0.3
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 20000
+							producer = AUS
+						}
+					add_manpower = 500000
+					army_experience = 100
+					navy_experience = 100
+					air_experience = 100
+					add_defense = 5
+					add_offsite_building = {
+							type = arms_factory
+							level = 5
+						}
+				}
+
+	}
+	focus = {
+		id = AUS_help_from_eng
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10,00
+		prerequisite = {
+			focus = AUS_war_with_croatia
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					add_political_power = 300
+					add_stability = 0.2
+					add_war_support = 0.2
+					add_resource = {
+							type = oil
+							amount = 90
+							state = 9
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 5
+						}
+					add_tech_bonus = {
+							bonus = 1
+							uses = 5
+							category = infantry_tech
+						}
+					add_manpower = 300000
+					army_experience = 300
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 10000
+							producer = FRA
+						}
+				}
+
+	}
+	focus = {
+		id = aus_prom_5
+		icon = GFX_goal_continuous_repairments
+		cost = 10,00
+		prerequisite = {
+			focus = aus_prom_3
+		}
+		x = 14
+		y = 3
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 5
+						}
+				}
+
+	}
+}

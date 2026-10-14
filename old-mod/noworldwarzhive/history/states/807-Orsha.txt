@@ -1,0 +1,29 @@
+state={
+	id=807
+	name="STATE_807"
+	manpower = 1060000
+	
+	state_category = town
+
+               	resources={
+                chromium = 14 # was: 18
+	        }
+	history={
+		owner = LTB
+		add_core_of = BLR
+                add_core_of = LTB
+		victory_points = {
+			3331 5
+		}
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+                        arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		3331 6220 6371 9241
+	}
+}

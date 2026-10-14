@@ -1,3 +1,22 @@
+# Shared, idempotent settlement for focus completion and older saves.
+# Never reverse a dissolution which has already been triggered.
+nww_ltb_resolve_compromise = {
+	if = {
+		limit = {
+			tag = LTB
+			NOT = { has_country_flag = LTB_split_choice_available }
+		}
+		set_country_flag = LTB_compromise_chosen
+		set_country_flag = LTB_union_preserved
+		set_country_flag = LTB_deadline_resolved
+		clr_country_flag = LTB_deadline_active
+		if = {
+			limit = { has_active_mission = LTB_vilnius_compromise_deadline }
+			remove_mission = LTB_vilnius_compromise_deadline
+		}
+	}
+}
+
 nww_ltb_full_split = {
 	set_global_flag = LTB_crisis_happened
 	set_global_flag = LTB_split_complete

@@ -1,0 +1,402 @@
+﻿division_template = {
+	name = "Infantria Divisiya"
+	division_names_group = LTB_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+                infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Pagonya"
+	division_names_group = LTB_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+                infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Maskolyakoboy"		# Marines
+	division_names_group = LTB_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+	}
+	priority = 2
+}
+
+units = {
+	# 1e Legerkorps
+	division= {	# "Minskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3320
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Mogilevskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3331
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	# 2e Legerkorps
+	division= {	# "Orshanskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6296
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Gomelskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9483
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	# 3e Legerkorps
+	division= {	# "Brestkaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3392
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Belostokskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3393
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	# 4e Legerkorps
+	division= {	# "Novogrudskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11313
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Vilenskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6232
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Shaulyaiskaya Divizia"
+		location = 3350
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Mozyrskaya Divizia"
+		location = 9289
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Force Divisia"
+		location = 3331
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Verify Divizia"
+		location = 3320
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Pervi Divizia"
+		location = 11313
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Pobort Divizia"
+		location = 6314
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Pervomay Divizia"
+		location = 6232
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Communist Divizia"
+		location = 3320
+		division_template = "Pagonya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Prervo Divizia"
+		location = 3392
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Polevskaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3320
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Daremnaya Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3331
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	# 5e Legerkorps
+	division= {	# "Koroleust Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6296
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Pervel"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9483
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+
+	# 6e Legerkorps
+	division= {	# "Stend Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3392
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "Farts Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3393
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	# 7e Legerkorps
+	division= {	# "Pichs Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11313
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	# "FSS Divizia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6232
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "LTB Divizia"
+		location = 3350
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "MSDS Divizia"
+		location = 9289
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Fss Divisia"
+		location = 3331
+		division_template = "Infantria Divisiya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Verifdss Divizia"
+		location = 3320
+		division_template = "Pagonya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Pervivos Divizia"
+		location = 11313
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Pobortss Divizia"
+		location = 6314
+		division_template = "Pagonya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Pervom22ay Divizia"
+		location = 6232
+		division_template = "Pagonya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "US Divizia"
+		location = 3320
+		division_template = "Pagonya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "PrervoSS Divizia"
+		location = 3392
+		division_template = "Pagonya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TLB"
+		}
+		requested_factories = 2
+		progress = 0.58
+		efficiency = 100
+	}
+}

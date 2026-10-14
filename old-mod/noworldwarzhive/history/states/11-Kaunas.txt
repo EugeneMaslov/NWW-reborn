@@ -1,0 +1,27 @@
+
+state={
+	id=11
+	name="STATE_11"
+	manpower = 4353130
+	
+	state_category = town
+	
+	history={
+		owner = LTB
+		victory_points = {
+			6296 5
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 7
+		}
+		add_core_of = LIT
+                add_core_of = LTB
+	}
+
+	provinces={
+		327 3272 6281 6296 6407 9246 9357 9374 9404 9438 11226 11312 11498 
+	}
+}

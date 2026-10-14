@@ -1,0 +1,864 @@
+ideas = {
+	political_advisor = {
+		Kastus_Kalinovski = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = LTB
+			}
+				
+			traits = { popular_figurehead }
+		}
+
+		Pavel_Covel = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = LTB
+			}
+			
+			traits = { ideological_crusader }
+		}
+
+		Andrei_Polander = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = LTB
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		Andrei_Krichev = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LTB
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		Andrei_Potolot = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = LTB
+			}
+
+			traits = { prince_of_terror }
+		}
+
+		Marel_Orunsky = {
+			
+            picture = generic_political_advisor_europe_1         			
+
+			allowed = {
+				original_tag = LTB
+			}
+					
+			traits = { communist_revolutionary }
+		}	
+			
+		Rim_Kolesnikov = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = LTB
+			}
+						
+     		traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Parel_Vichivich = {
+			
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LTB
+			}
+				
+			traits = { fascist_demagogue }
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+		
+	army_chief = {
+		
+		
+		Alexandr_Maslov = {
+			
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LTB
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_1_group_b }
+			}
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Parfirii_Petrovich = {
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = LTB
+			}
+						
+        	traits = { army_chief_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Kreosan_Bafulo = {
+			
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LTB
+			}
+						
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Konstantin_Pavlovsky = {
+			
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = LTB
+
+			}
+			
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	navy_chief = {
+		
+		Karol_Petrov = {
+			
+			picture = generic_political_advisor_europe_4
+
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { navy_chief_naval_aviation_1 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		Pavel_Drachunov = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		Alexey_Abramovich = {
+			
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		Ivan_Kizey = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}	
+	}
+	
+	air_chief = {
+		
+		
+		Nikita_Novikov = {
+			
+            picture = generic_political_advisor_europe_3
+
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Pavel_Mironov = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Yan_Porevich = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { air_chief_safety_2 } 
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Olga_Racheva = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	
+	high_command = {
+	
+		Eugene_Maslov = {
+			
+            picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = LTB
+			}
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Pavel_Bursov = {
+			
+            picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LTB
+
+			}
+	
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Pardon_Iamgay = {
+			
+            picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		Stanislav_Rogaten = {
+			
+			picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = LTB
+
+			}
+			
+			traits = { air_airborne_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Nikita_Karpovich = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Maksim_Sereda = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		Vladimir_Vovchenko = {
+			
+            picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = LTB
+
+			}
+		
+			traits = { navy_submarine_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		Korney_Korneich = {
+			
+            picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		Evrei_Evreich = {
+			
+            picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = LTB
+
+			}
+
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}	
+	}
+		
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		Belmach_tank = {
+			
+			picture = belmashtank
+			
+			allowed = {
+			    original_tag = LTB
+	
+		    }
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		Orshmach_tank = {
+			
+			picture = orshmashtank
+			
+			allowed = {
+				original_tag = LTB
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Vilenmach_tank = {
+			
+			picture = vilenmashtank
+			
+			allowed = {
+				original_tag = LTB
+			}
+				
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+
+		Minskmach_air = {
+			
+			picture = minskmashair
+
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Orshmach_air = {
+			
+            picture = orshmashair
+
+			allowed = {
+				original_tag = LTB
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Vilenmach_air = {
+			
+			picture = vilenmashair
+			
+			allowed = {
+				original_tag = LTB
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Kurland_air = {
+			
+            picture = kurlandmashair
+
+			allowed = {
+				original_tag = LTB
+			}
+						
+     		research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}	
+	
+	
+	industrial_concern = {
+				
+		Minskmach_auto = {
+		    
+            picture = minskmash
+
+			allowed = {
+				original_tag = LTB
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		Vilenmach_ltb = {
+			
+			picture = vilenmash
+
+			allowed = {
+				original_tag = LTB
+			}
+					
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		Mogilev_ltb = {
+            
+            picture = mogilevmash
+			
+			allowed = {
+				original_tag = LTB
+			}
+						
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}	
+				
+		Orshmach_indst = {
+            
+            picture = orshmash
+
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Belmach_ltb = {
+			
+			picture = belmash
+
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+				mot_rockets = 0.50
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+    naval_manufacturer = { 			
+		
+		designer = yes
+		
+		Kaunas = {
+			
+			picture = kaunas
+
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# cant find enough info 
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	theorist = {	
+
+		Anton_Marchenko = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				cat_mass_assault = 0.15
+			}
+
+			traits = { mass_assault_expert }
+		}
+		
+		Egor_Chegodaev = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = LTB
+			}
+	
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		Anton_Fedosenko = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = LTB
+			}	
+			
+			research_bonus = {
+				cat_mass_assault = 0.15
+			}
+			
+			traits = { mass_assault_expert }
+		}
+		
+		Paros_Volvovich = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		Tribis = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				cat_fleet_in_being = 0.15
+			}
+			
+			traits = { grand_fleet_proponent}
+		}
+		
+		Andrei_Fares = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = LTB
+
+			}
+			
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+		
+		Kirill_Gerasin = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = LTB
+			}
+					
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		Matvei_Belyatski = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = LTB
+			}
+				
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		Maksim_Lekomchev = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = LTB
+			}
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+		
+			traits = { rocket_scientist }
+		}
+	}
+}

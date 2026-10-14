@@ -2,6 +2,15 @@ on_actions = {
 	on_startup = {
 		effect = {
 			LTB = {
+				# Restore the peaceful settlement in saves from the earlier focus logic.
+				if = {
+					limit = {
+						exists = yes
+						has_completed_focus = LTB_the_vilnius_compromise
+						NOT = { has_country_flag = LTB_split_choice_available }
+					}
+					nww_ltb_resolve_compromise = yes
+				}
 				if = {
 					limit = {
 						exists = yes

@@ -1,0 +1,141 @@
+﻿capital = 784
+
+oob = "LTB_1936"
+
+set_research_slots = 4
+
+add_ideas = {
+    LTB_ed
+    LTB_two
+    LTB_uni
+    LTB_fort
+    LTB_pbp
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+        superior_firepower = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 78
+	fascism = 12
+	communism = 5
+	neutrality = 5
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.6.10"
+		election_frequency = 120
+		elections_allowed = yes
+	}
+}
+
+create_faction = PBMAT
+add_to_faction = LTB
+add_to_faction = POL
+
+create_country_leader = {
+	name = "Michael Zaretchky"
+	desc = "Michael_Zaretchky_desc"
+	picture = "GFX_Portrait_LTB_michael_zaretchky"
+	expire = "1956.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alexey Garun"
+	desc = "Alexey_Garun_desc"
+	picture = "GFX_Portrait_LTB_ales_garun"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Melezh"
+	desc = "Ivan_Melezh_desc"
+	picture = "GFX_Portrait_LTB_ivan_melezh"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anton Levitchky"
+	desc = "Anton_Levitchky_desc"
+	picture = "GFX_Portrait_LTB_anton_levitsky"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Dima Timoshenko"
+	picture = "Portrait_LTB_dima_timoshenko_land.dds"
+	traits = { swamp_fox hill_fighter infantry_leader }
+	skill = 3
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Matvei Belyatsky"
+	picture = "Portrait_LTB_matvei_belyatcky.dds"
+	traits = { 
+		offensive_doctrine
+		politically_connected
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Alexey Abramienka"
+	picture = "Portrait_LTB_aleksey_abramienka.dds"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 5
+}

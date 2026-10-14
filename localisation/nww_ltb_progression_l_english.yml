@@ -63,6 +63,7 @@
  ltb.163.a:0 "Trust the workers' councils"
  ltb.163.b:0 "Establish the union planning commission"
  LTB_union_preserved:0 "The crisis has been resolved and the Union preserved"
+ LTB_deadline_resolved:0 "The national crisis has been settled"
  LTB_split_choice_available:0 "The crisis has reached the dissolution decision"
  LTB_moscow_agreement:0 "Moscow accepted the treaty"
  LTB_moscow_rejected:0 "Moscow rejected the proposal"

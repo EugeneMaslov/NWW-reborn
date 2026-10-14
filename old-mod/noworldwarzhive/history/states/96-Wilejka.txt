@@ -1,0 +1,27 @@
+state={
+	id=96
+	name="STATE_96"
+	manpower = 1726000
+	resources={
+		steel=4 # was: 6
+		rubber = 20 # was: 40
+	}
+	
+	state_category = town
+	
+	history={
+		victory_points = {
+			406 10
+		}
+		owner = LTB
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = LTB
+		add_core_of = BLR
+	}
+
+	provinces={
+		233 277 358 406 6340 9341 11391 
+	}
+}
