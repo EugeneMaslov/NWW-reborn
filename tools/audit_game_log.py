@@ -9,7 +9,8 @@ a=p.parse_args();lines=a.log.read_text(encoding='utf-8-sig',errors='replace').sp
 patterns={
  'turkish_advisor_token':'TUR_recep_peker is not A valid Idea',
  'empty_small_icon':'Icon definition "_small"',
- 'event_id_parse':r'Malformed token|Expected start of list reading CID',
+ 'event_id_parse':r'Malformed token: (?!-?\.\d)|Expected start of list reading CID',
+ 'leading_decimal':r'Malformed token: -?\.\d',
  'numeric_focus_token':r'Creation of dynamic token',
  'focus_shine':r'Missing icon shine for focus',
  'missing_turkish_tree':r'Unable to find focus tree with ID: turkish_focus',
@@ -21,6 +22,10 @@ patterns={
  'other_mod_versions':r'Invalid supported_version',
  'session_commands':r'Dropped command:',
  'sound_duplicates':r'Sound.*already|SoundEffect.*already|Could not load sound file',
+ 'soviet_purge_idea':r'common/scripted_effects/SOV_scripted_effects.txt:.*has_idea:',
+ 'operation_dynamic_token':r'common/scripted_effects/operation_strat_effects.txt:.*invalid operation',
+ 'italian_production_mio':r'MIO ITA_crda_organization has been incorrectly attached',
+ 'database_hot_reload':r'gameitemdatabase.h:',
 }
 counts={k:sum(bool(re.search(pattern,line)) for line in lines) for k,pattern in patterns.items()}
 repeat=Counter(re.sub(r'^\[[^]]*\]\[[^]]*\]','',line) for line in lines)

@@ -130,7 +130,7 @@ focus_tree = {
 				UKR_civic_political_power_gain = 0.05
 				tooltip = UKR_civic_political_power_gain_tt
 			}
-			add_war_support = .05
+			add_war_support = 0.05
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -190,7 +190,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_elected_factory_boards
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = cat_production
 			}
@@ -239,7 +239,7 @@ focus_tree = {
 				UKR_civic_recruitable_population_factor = 0.05
 				tooltip = UKR_civic_recruitable_population_factor_tt
 			}
-			add_stability = .03
+			add_stability = 0.03
 		}
 		cost = 5
 	}
@@ -302,7 +302,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_land_titles
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = construction_tech
 			}
@@ -358,7 +358,7 @@ focus_tree = {
 				UKR_civic_trade_opinion_factor = 0.15
 				tooltip = UKR_civic_trade_opinion_factor_tt
 			}
-			add_stability = .04
+			add_stability = 0.04
 		}
 		cost = 5
 	}
@@ -381,7 +381,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_federal_republic
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = computing_tech
 			}
@@ -418,7 +418,7 @@ focus_tree = {
 				UKR_civic_political_power_gain = 0.1
 				tooltip = UKR_civic_political_power_gain_tt
 			}
-			add_war_support = .05
+			add_war_support = 0.05
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -491,7 +491,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_state_arbitration
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -515,7 +515,7 @@ focus_tree = {
 				UKR_civic_recruitable_population = 0.005
 				tooltip = UKR_civic_recruitable_population_tt
 			}
-			add_stability = .05
+			add_stability = 0.05
 			add_command_power = 25
 		}
 		cost = 5
@@ -563,7 +563,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_dnieper_industry
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -666,7 +666,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_collectivization_completed
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -692,7 +692,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_machine_tool_imports
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = cat_production
 			}
@@ -751,7 +751,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_railway_accounting
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = train_tech
 			}
@@ -841,7 +841,7 @@ focus_tree = {
 				UKR_economy_consumer_goods_factor = -0.04
 				tooltip = UKR_economy_consumer_goods_factor_tt
 			}
-			add_stability = .03
+			add_stability = 0.03
 		}
 		cost = 5
 	}
@@ -896,7 +896,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_agricultural_schools
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -988,7 +988,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_industrial_standards
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = cat_production
 			}
@@ -1052,7 +1052,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_precision_workshops
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -1168,7 +1168,7 @@ focus_tree = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = UKR_officer_school
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1200,7 +1200,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_rifle_standardization
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1226,7 +1226,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_field_engineers
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = engineers_tech
 			}
@@ -1252,7 +1252,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_artillery_tables
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = artillery
 			}
@@ -1282,7 +1282,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_army_medical
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = hospital_tech
 			}
@@ -1337,7 +1337,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_border_scouts
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = recon_tech
 			}
@@ -1363,7 +1363,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_army_signals
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = signal_company_tech
 			}
@@ -1390,7 +1390,7 @@ focus_tree = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = UKR_reserve_exercises
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1416,7 +1416,7 @@ focus_tree = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = UKR_combined_operations
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1442,7 +1442,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_army_repair_network
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = maintenance_company_tech
 			}
@@ -1576,7 +1576,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_air_workshops
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}
@@ -1602,7 +1602,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_air_observers
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = radar_tech
 			}
@@ -1629,7 +1629,7 @@ focus_tree = {
 			air_experience = 20
 			add_doctrine_cost_reduction = {
 				name = UKR_fighter_patrols
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1655,7 +1655,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_ground_support
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = signal_company_tech
 			}
@@ -1689,7 +1689,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = UKR_air_spares
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = plane_modules_tech
 				}
@@ -1697,7 +1697,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = UKR_air_spares
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = light_air
 				}
@@ -1728,7 +1728,7 @@ focus_tree = {
 			air_experience = 30
 			add_doctrine_cost_reduction = {
 				name = UKR_integrated_air_service
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1859,7 +1859,7 @@ focus_tree = {
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = UKR_naval_crew_school
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1885,7 +1885,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_coastal_watch
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = radar_tech
 			}
@@ -1911,7 +1911,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_convoy_escort
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = asw_tech
 			}
@@ -1941,7 +1941,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = UKR_naval_minesweepers
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = naval_minesweeping
 				}
@@ -1949,7 +1949,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = UKR_naval_minesweepers
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = dd_tech
 				}
@@ -2016,7 +2016,7 @@ focus_tree = {
 			navy_experience = 30
 			add_doctrine_cost_reduction = {
 				name = UKR_safe_trade_routes
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -2191,7 +2191,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_grain_exports
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = cat_production
 			}
@@ -2223,7 +2223,7 @@ focus_tree = {
 				UKR_economy_factory_energy_consumption = -0.05
 				tooltip = UKR_economy_factory_energy_consumption_tt
 			}
-			add_stability = .04
+			add_stability = 0.04
 		}
 		cost = 5
 	}
@@ -2254,7 +2254,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_defence_in_depth
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = engineers_tech
 			}
@@ -2288,7 +2288,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_mobile_reserves
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2322,7 +2322,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_interceptor_command
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = light_fighter
 			}
@@ -2352,7 +2352,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_assault_aviation
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = cas_bomber
 			}
@@ -2386,7 +2386,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_merchant_escorts
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = dd_tech
 			}
@@ -2425,7 +2425,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UKR_sea_denial
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = ss_tech
 			}

@@ -1,0 +1,163 @@
+nww_GER_disable_mefo = {
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = GER_mefo_bills_modifier
+			}
+		}
+		remove_dynamic_modifier = GER_mefo_bills_modifier
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = GER_economy_of_conquest_modifier
+			}
+		}
+		remove_dynamic_modifier = GER_economy_of_conquest_modifier
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_1
+		}
+		remove_ideas = GER_mefo_bills_1
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_2
+		}
+		remove_ideas = GER_mefo_bills_2
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_3
+		}
+		remove_ideas = GER_mefo_bills_3
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_4
+		}
+		remove_ideas = GER_mefo_bills_4
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_5
+		}
+		remove_ideas = GER_mefo_bills_5
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_6
+		}
+		remove_ideas = GER_mefo_bills_6
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_7
+		}
+		remove_ideas = GER_mefo_bills_7
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_8
+		}
+		remove_ideas = GER_mefo_bills_8
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_9
+		}
+		remove_ideas = GER_mefo_bills_9
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_10
+		}
+		remove_ideas = GER_mefo_bills_10
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_11
+		}
+		remove_ideas = GER_mefo_bills_11
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_12
+		}
+		remove_ideas = GER_mefo_bills_12
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_13
+		}
+		remove_ideas = GER_mefo_bills_13
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_14
+		}
+		remove_ideas = GER_mefo_bills_14
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_15
+		}
+		remove_ideas = GER_mefo_bills_15
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_16
+		}
+		remove_ideas = GER_mefo_bills_16
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_17
+		}
+		remove_ideas = GER_mefo_bills_17
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_18
+		}
+		remove_ideas = GER_mefo_bills_18
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_ended
+		}
+		remove_ideas = GER_mefo_bills_ended
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_1936_fake_ns
+		}
+		remove_ideas = GER_mefo_bills_1936_fake_ns
+	}
+	if = {
+		limit = {
+			has_idea = GER_mefo_bills_1939_fake_ns
+		}
+		remove_ideas = GER_mefo_bills_1939_fake_ns
+	}
+	if = {
+		limit = {
+			has_active_mission = GER_mefo_bills_mission
+		}
+		remove_mission = GER_mefo_bills_mission
+	}
+	clr_country_flag = ger_has_cancelled_mefo
+	clr_country_flag = paid_for_mefo
+	clr_country_flag = GER_mefo_bills_penalty_flag
+	set_variable = {
+		GER_mefo_bill_counter = 0
+	}
+	set_variable = {
+		GER_monthly_consumer_goods_increase = 0
+	}
+	set_variable = {
+		GER_industrial_consumer_goods_factor = 0
+	}
+	set_country_flag = NWW_GER_no_mefo
+}

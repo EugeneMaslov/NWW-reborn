@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		owner = NZL
+		owner = GER
 		add_core_of = SAM
 
 		buildings = {

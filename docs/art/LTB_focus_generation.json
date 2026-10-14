@@ -1,0 +1,60 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "key": "consolidate_union",
+      "prompt": "Use case: stylized-concept. Asset type: a single Hearts of Iron IV national-focus game icon for the alternate-history Lithuanian-Belarusian Union LTB, circa 1936. Primary request: one polished hand-painted military-strategy UI emblem, richly shaded embossed bronze and aged gold trim, muted steel, deep crimson accents, ivory-red-ivory ceremonial ribbon. Composition: one compact symmetrical centered emblem occupying 78% of a square canvas, generously separated from all edges. Fine but readable at 95 pixels, strong clear silhouette, bold central symbol, subtle historical metal texture, frontal view, soft upper-left highlights. Genuinely transparent background; no backdrop, no checkerboard, no landscape, no text, no numerals, no letters, no watermark. No Nazi imagery, no modern logos. Match the existing HOI4 focus style and LTB heraldic white mounted-knight motif. Subject: two distinct small heraldic red shields, each containing an ivory mounted knight, united by clasped hands, backed by a compact golden laurel wreath. Symbolizes strengthening the Lithuanian-Belarusian Union. Keep the handshake and two shields clear.",
+      "source": "C:\\Users\\Eugene\\.codex\\generated_images\\01a13984-83bc-7db3-b9f9-85f18e88e4e9\\exec-cd59dcee-3808-47cb-92d1-725c6af47763.png",
+      "saved_source": "docs/art/ltb_focuses/consolidate_union.png",
+      "texture": "gfx/interface/goals/LTB/focus_consolidate_union.dds",
+      "focus": "LTB_consolidate_the_union",
+      "sprite": "GFX_focus_NWW_LTB_consolidate_union"
+    },
+    {
+      "key": "vilnius_compromise",
+      "prompt": "Use case: stylized-concept. Asset type: a single Hearts of Iron IV national-focus game icon for the alternate-history Lithuanian-Belarusian Union LTB, circa 1936. Primary request: one polished hand-painted military-strategy UI emblem, richly shaded embossed bronze and aged gold trim, muted steel, deep crimson accents, ivory-red-ivory ceremonial ribbon. Composition: one compact symmetrical centered emblem occupying 78% of a square canvas, generously separated from all edges. Fine but readable at 95 pixels, strong clear silhouette, bold central symbol, subtle historical metal texture, frontal view, soft upper-left highlights. Genuinely transparent background; no backdrop, no checkerboard, no landscape, no text, no numerals, no letters, no watermark. No Nazi imagery, no modern logos. Match the existing HOI4 focus style and LTB heraldic white mounted-knight motif. Subject: an open ivory parchment treaty with a single red wax seal, two opposing quill pens crossed underneath, crowned by a small red shield with an ivory mounted knight, bronze laurel sides. Symbolizes a negotiated Vilnius compromise and equal partnership.",
+      "source": "C:\\Users\\Eugene\\.codex\\generated_images\\01a13984-83bc-7db3-b9f9-85f18e88e4e9\\exec-f82aab47-15c1-4123-a300-e81aa5b606aa.png",
+      "saved_source": "docs/art/ltb_focuses/vilnius_compromise.png",
+      "texture": "gfx/interface/goals/LTB/focus_vilnius_compromise.dds",
+      "focus": "LTB_the_vilnius_compromise",
+      "sprite": "GFX_focus_NWW_LTB_vilnius_compromise"
+    },
+    {
+      "key": "face_crisis",
+      "prompt": "Use case: stylized-concept. Asset type: a single Hearts of Iron IV national-focus game icon for the alternate-history Lithuanian-Belarusian Union LTB, circa 1936. Primary request: one polished hand-painted military-strategy UI emblem, richly shaded embossed bronze and aged gold trim, muted steel, deep crimson accents, ivory-red-ivory ceremonial ribbon. Composition: one compact symmetrical centered emblem occupying 78% of a square canvas, generously separated from all edges. Fine but readable at 95 pixels, strong clear silhouette, bold central symbol, subtle historical metal texture, frontal view, soft upper-left highlights. Genuinely transparent background; no backdrop, no checkerboard, no landscape, no text, no numerals, no letters, no watermark. No Nazi imagery, no modern logos. Match the existing HOI4 focus style and LTB heraldic white mounted-knight motif. Subject: a cracked red heraldic shield with an ivory mounted knight, held together by two bronze bands, balanced above crossed steel broken chain links, sparse dark laurel. Symbolizes the national crisis, threatened unity, and a decision still to be made.",
+      "source": "C:\\Users\\Eugene\\.codex\\generated_images\\01a13984-83bc-7db3-b9f9-85f18e88e4e9\\exec-8b53312d-b431-4818-8060-424c21396616.png",
+      "saved_source": "docs/art/ltb_focuses/face_crisis.png",
+      "texture": "gfx/interface/goals/LTB/focus_face_crisis.dds",
+      "focus": "LTB_face_the_crisis",
+      "sprite": "GFX_focus_NWW_LTB_face_crisis"
+    },
+    {
+      "key": "general_staff",
+      "prompt": "Use case: stylized-concept. Asset type: a single Hearts of Iron IV national-focus game icon for the alternate-history Lithuanian-Belarusian Union LTB, circa 1936. Primary request: one polished hand-painted military-strategy UI emblem, richly shaded embossed bronze and aged gold trim, muted steel, deep crimson accents, ivory-red-ivory ceremonial ribbon. Composition: one compact symmetrical centered emblem occupying 78% of a square canvas, generously separated from all edges. Fine but readable at 95 pixels, strong clear silhouette, bold central symbol, subtle historical metal texture, frontal view, soft upper-left highlights. Genuinely transparent background; no backdrop, no checkerboard, no landscape, no text, no numerals, no letters, no watermark. No Nazi imagery, no modern logos. Match the existing HOI4 focus style and LTB heraldic white mounted-knight motif. Subject: a folded military map in ivory parchment, crossed ceremonial steel swords, bronze officer insignia, crowned by a small red knight shield, restrained symmetrical golden laurel. Symbolizes the union's general staff; bold clear military silhouette.",
+      "source": "C:\\Users\\Eugene\\.codex\\generated_images\\01a13984-83bc-7db3-b9f9-85f18e88e4e9\\exec-955a6147-0b64-492f-958b-0106ef150584.png",
+      "saved_source": "docs/art/ltb_focuses/general_staff.png",
+      "texture": "gfx/interface/goals/LTB/focus_general_staff.dds",
+      "focus": "LTB_union_general_staff",
+      "sprite": "GFX_focus_NWW_LTB_general_staff"
+    },
+    {
+      "key": "rebuild_bridge",
+      "prompt": "Use case: stylized-concept. Asset type: a single Hearts of Iron IV national-focus game icon for the alternate-history Lithuanian-Belarusian Union LTB, circa 1936. Primary request: one polished hand-painted military-strategy UI emblem, richly shaded embossed bronze and aged gold trim, muted steel, deep crimson accents, ivory-red-ivory ceremonial ribbon. Composition: one compact symmetrical centered emblem occupying 78% of a square canvas, generously separated from all edges. Fine but readable at 95 pixels, strong clear silhouette, bold central symbol, subtle historical metal texture, frontal view, soft upper-left highlights. Genuinely transparent background; no backdrop, no checkerboard, no landscape, no text, no numerals, no letters, no watermark. No Nazi imagery, no modern logos. Match the existing HOI4 focus style and LTB heraldic white mounted-knight motif. Subject: a compact steel and brick arch bridge spanning a stylized river, with a large bronze gear behind it and two small gilt grain ears beside it. Ribbon below. Symbolizes rebuilding transport, civil industry and connections between the union's two peoples.",
+      "source": "C:\\Users\\Eugene\\.codex\\generated_images\\01a13984-83bc-7db3-b9f9-85f18e88e4e9\\exec-2e9cc5d7-47f1-469e-8ce6-c27624d1cbe2.png",
+      "saved_source": "docs/art/ltb_focuses/rebuild_bridge.png",
+      "texture": "gfx/interface/goals/LTB/focus_rebuild_bridge.dds",
+      "focus": "LTB_rebuild_the_bridge",
+      "sprite": "GFX_focus_NWW_LTB_rebuild_bridge"
+    },
+    {
+      "key": "union_endures",
+      "prompt": "Use case: stylized-concept. Asset type: a single Hearts of Iron IV national-focus game icon for the alternate-history Lithuanian-Belarusian Union LTB, circa 1936. Primary request: one polished hand-painted military-strategy UI emblem, richly shaded embossed bronze and aged gold trim, muted steel, deep crimson accents, ivory-red-ivory ceremonial ribbon. Composition: one compact symmetrical centered emblem occupying 78% of a square canvas, generously separated from all edges. Fine but readable at 95 pixels, strong clear silhouette, bold central symbol, subtle historical metal texture, frontal view, soft upper-left highlights. Genuinely transparent background; no backdrop, no checkerboard, no landscape, no text, no numerals, no letters, no watermark. No Nazi imagery, no modern logos. Match the existing HOI4 focus style and LTB heraldic white mounted-knight motif. Subject: a strong intact red heraldic shield with a proud ivory mounted knight, encircled by a complete golden laurel wreath and supported by two clasped hands above the ribbon. Symbolizes the union having survived its crisis. Clearly different from the two-shield opening icon.",
+      "source": "C:\\Users\\Eugene\\.codex\\generated_images\\01a13984-83bc-7db3-b9f9-85f18e88e4e9\\exec-0e059fdf-ea18-49c6-ad3f-ce568dcfdf64.png",
+      "saved_source": "docs/art/ltb_focuses/union_endures.png",
+      "texture": "gfx/interface/goals/LTB/focus_union_endures.dds",
+      "focus": "LTB_the_union_endures",
+      "sprite": "GFX_focus_NWW_LTB_union_endures"
+    }
+  ]
+}

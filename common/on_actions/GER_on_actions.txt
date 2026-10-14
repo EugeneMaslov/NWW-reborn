@@ -1,0 +1,36 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GER = {
+				if = {
+					limit = {
+						has_focus_tree = GER_focus
+					}
+					nww_GER_disable_mefo = yes
+				}
+			}
+		}
+	}
+	on_daily_GER = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = GER_focus
+					OR = {
+						NOT = {
+							has_country_flag = NWW_GER_no_mefo
+						}
+						has_dynamic_modifier = {
+							modifier = GER_mefo_bills_modifier
+						}
+						has_dynamic_modifier = {
+							modifier = GER_economy_of_conquest_modifier
+						}
+						has_active_mission = GER_mefo_bills_mission
+					}
+				}
+				nww_GER_disable_mefo = yes
+			}
+		}
+	}
+}

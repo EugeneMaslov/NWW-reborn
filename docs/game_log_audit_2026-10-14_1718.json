@@ -1,0 +1,108 @@
+{
+  "log": "C:\\Users\\Eugene\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\error.log",
+  "total_lines": 350,
+  "modified": 1791988682.9492848,
+  "categories": {
+    "turkish_advisor_token": 0,
+    "empty_small_icon": 0,
+    "event_id_parse": 0,
+    "leading_decimal": 266,
+    "numeric_focus_token": 0,
+    "focus_shine": 0,
+    "missing_turkish_tree": 0,
+    "localization_collision": 1,
+    "core_resistance": 0,
+    "unknown_character": 0,
+    "german_equipment": 0,
+    "german_division_names": 0,
+    "other_mod_versions": 3,
+    "session_commands": 0,
+    "sound_duplicates": 16,
+    "soviet_purge_idea": 0,
+    "operation_dynamic_token": 0,
+    "italian_production_mio": 4,
+    "database_hot_reload": 21
+  },
+  "most_repeated": [
+    [
+      "[gameitemdatabase.h:336]: =============================",
+      8
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Non assign effect is not enclosed in {}: remove_dynamic_modifier, near line: 8\" in file: \"common/scripted_effects/GER_effects.txt\" near line: 9",
+      4
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Non assign effect is not enclosed in {}: remove_dynamic_modifier, near line: 16\" in file: \"common/scripted_effects/GER_effects.txt\" near line: 17",
+      4
+    ],
+    [
+      "[gameitemdatabase.h:324]: 2 errors.",
+      4
+    ],
+    [
+      "[effectimplementation.cpp:19558]: common/scripted_effects/GER_effects.txt:8: remove_dynamic_modifier Invalid dynamic modifier ",
+      4
+    ],
+    [
+      "[effectimplementation.cpp:19558]: common/scripted_effects/GER_effects.txt:16: remove_dynamic_modifier Invalid dynamic modifier ",
+      4
+    ],
+    [
+      "[gameitemdatabase.h:331]: no errors.",
+      3
+    ],
+    [
+      "[pdx_entity.cpp:324]: Failed to find entity \"INS_bicycle_vehicle_entity\" for attachment in bicycle",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .5, near line: 1762\" in file: \"common/national_focus/MKN.txt\" near line: 1765",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .5, near line: 1768\" in file: \"common/national_focus/MKN.txt\" near line: 1771",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .35, near line: 1796\" in file: \"common/national_focus/MKN.txt\" near line: 1799",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .75, near line: 1822\" in file: \"common/national_focus/MKN.txt\" near line: 1825",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .5, near line: 1892\" in file: \"common/national_focus/MKN.txt\" near line: 1895",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .35, near line: 1989\" in file: \"common/national_focus/MKN.txt\" near line: 1992",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .75, near line: 2015\" in file: \"common/national_focus/MKN.txt\" near line: 2018",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .5, near line: 2081\" in file: \"common/national_focus/MKN.txt\" near line: 2084",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .75, near line: 2183\" in file: \"common/national_focus/MKN.txt\" near line: 2186",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .75, near line: 2204\" in file: \"common/national_focus/MKN.txt\" near line: 2207",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .75, near line: 2310\" in file: \"common/national_focus/MKN.txt\" near line: 2313",
+      2
+    ],
+    [
+      "[effect.cpp:358]: Error: \"Malformed token: .75, near line: 2361\" in file: \"common/national_focus/MKN.txt\" near line: 2364",
+      2
+    ]
+  ]
+}

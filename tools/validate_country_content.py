@@ -9,7 +9,7 @@ from pathlib import Path
 import re
 import sys
 from PIL import Image
-from hoi4_script import read, one, values, walk
+from hoi4_script import read, one, values, walk, TOKEN
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
@@ -19,6 +19,7 @@ GAME = args.game
 if not GAME.is_dir():
     parser.error(f'Installed HOI4 directory does not exist: {GAME}')
 errors = []
+numeric_checked = set()
 
 
 def check(condition, message):
@@ -29,6 +30,10 @@ def check(condition, message):
 def documents(root, glob):
     for path in root.glob(glob):
         try:
+            if root == ROOT and path.suffix == '.txt' and path not in numeric_checked:
+                numeric_checked.add(path)
+                text = path.read_text(encoding='utf-8-sig')
+                check(not any(re.fullmatch(r'-?\.\d+',m.group()) for m in TOKEN.finditer(text)), f'{path.relative_to(ROOT)}: decimal value requires a leading zero')
             yield path, read(path)
         except (ValueError, UnicodeError) as exc:
             # Only files under review are required to parse; unrelated base assets can contain shader syntax.

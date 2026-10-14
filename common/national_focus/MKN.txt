@@ -1759,13 +1759,13 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_railway_war
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = train_tech
 			}
 			add_tech_bonus = {
 				name = MKN_railway_war
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = logistics_tech
 			}
@@ -1793,7 +1793,7 @@ focus_tree = {
 			add_command_power = 20
 			add_doctrine_cost_reduction = {
 				name = MKN_steppe_general_staff
-				cost_reduction = .35
+				cost_reduction = 0.35
 				uses = 2
 				category = land_doctrine
 			}
@@ -1819,7 +1819,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_steel_horses
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = armor
 			}
@@ -1889,7 +1889,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_steppe_quartermasters
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = logistics_tech
 			}
@@ -1986,7 +1986,7 @@ focus_tree = {
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = MKN_gulyaipole_pilot_school
-				cost_reduction = .35
+				cost_reduction = 0.35
 				uses = 2
 				category = air_doctrine
 			}
@@ -2012,7 +2012,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_black_swarm
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = light_fighter
 			}
@@ -2078,7 +2078,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_dnieper_patrol
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = dd_tech
 			}
@@ -2180,7 +2180,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_black_sea_smugglers
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = ss_tech
 			}
@@ -2201,7 +2201,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_dnieper_gun_flotilla
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = dd_tech
 			}
@@ -2307,7 +2307,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_artillery_artels
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = artillery
 			}
@@ -2358,7 +2358,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_aircraft_artels
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = light_air
 			}
@@ -2392,7 +2392,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_black_sea_escorts
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = asw_tech
 			}
@@ -3137,7 +3137,7 @@ focus_tree = {
 			army_experience = 20
 			add_tech_bonus = {
 				name = MKN_tank_crews
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = maintenance_company_tech
 			}
@@ -3177,7 +3177,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_radio_sections
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = signal_company_tech
 			}
@@ -3203,7 +3203,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_recovery_tractors
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = maintenance_company_tech
 			}
@@ -3319,7 +3319,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_motorized_infantry
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -3345,7 +3345,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_bridge_columns
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = engineers_tech
 			}
@@ -3403,7 +3403,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_staff_games
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -3429,7 +3429,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_mobile_medical
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = hospital_tech
 			}
@@ -3456,7 +3456,7 @@ focus_tree = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = MKN_combined_arms
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3567,7 +3567,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_mechanized_compact
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -3654,7 +3654,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_remount_artels
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = logistics_tech
 			}
@@ -3685,7 +3685,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_machinegun_carts
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -3729,7 +3729,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_local_guides
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = recon_tech
 			}
@@ -3776,7 +3776,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_field_veterinary
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = logistics_tech
 			}
@@ -3802,7 +3802,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_militia_signals
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = signal_company_tech
 			}
@@ -3849,7 +3849,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_militia_junior_leaders
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3906,7 +3906,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_militia_engineers
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = engineers_tech
 			}
@@ -3932,7 +3932,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_militia_hospitals
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = hospital_tech
 			}
@@ -3958,7 +3958,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_flexible_orders
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -4030,7 +4030,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_steppe_camouflage
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = recon_tech
 			}
@@ -4078,7 +4078,7 @@ focus_tree = {
 			army_experience = 30
 			add_doctrine_cost_reduction = {
 				name = MKN_free_column_exercises
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -4110,7 +4110,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_free_army_compact
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -4159,7 +4159,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_observation_posts
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = radar_tech
 			}
@@ -4212,7 +4212,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_air_warning
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -4238,7 +4238,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_radio_beacons
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = signal_company_tech
 			}
@@ -4298,7 +4298,7 @@ focus_tree = {
 			air_experience = 20
 			add_doctrine_cost_reduction = {
 				name = MKN_interceptor_pairs
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -4342,7 +4342,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_aircraft_recovery
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = maintenance_company_tech
 			}
@@ -4421,7 +4421,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_air_radar_school
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = radar_tech
 			}
@@ -4472,7 +4472,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_aircraft_spares
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = plane_modules_tech
 				}
@@ -4480,7 +4480,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_aircraft_spares
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = light_air
 				}
@@ -4507,7 +4507,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_fighter_conversion
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = light_fighter
 			}
@@ -4560,7 +4560,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_fighter_controllers
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -4619,7 +4619,7 @@ focus_tree = {
 			air_experience = 30
 			add_doctrine_cost_reduction = {
 				name = MKN_sky_watch_exercises
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -4651,7 +4651,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_free_sky_compact
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -4708,7 +4708,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_close_support_program
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = cas_bomber
 			}
@@ -4729,7 +4729,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_attack_air_artels
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = light_air
 			}
@@ -4785,7 +4785,7 @@ focus_tree = {
 			air_experience = 20
 			add_doctrine_cost_reduction = {
 				name = MKN_bombing_ranges
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -4847,7 +4847,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_air_map_bureau
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = cat_scout_plane
 				}
@@ -4855,7 +4855,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_air_map_bureau
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = tactical_bomber
 				}
@@ -4940,7 +4940,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_flying_artillery
-					bonus = .75
+					bonus = 0.75
 					uses = 1
 					category = cat_air_bombs
 				}
@@ -4948,7 +4948,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_flying_artillery
-					bonus = .75
+					bonus = 0.75
 					uses = 1
 					category = cas_bomber
 				}
@@ -5029,7 +5029,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_tactical_recon
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = cat_scout_plane
 				}
@@ -5037,7 +5037,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_tactical_recon
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = tactical_bomber
 				}
@@ -5064,7 +5064,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_bomber_navigation
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
 			}
@@ -5090,7 +5090,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_air_supply_lift
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = air_equipment
 			}
@@ -5116,7 +5116,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_air_coastal_support
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = naval_bomber
 			}
@@ -5163,7 +5163,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_joint_target_planning
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -5189,7 +5189,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_air_weather_service
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -5237,7 +5237,7 @@ focus_tree = {
 			air_experience = 30
 			add_doctrine_cost_reduction = {
 				name = MKN_cas_joint_exercises
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -5275,7 +5275,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_air_support_compact
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -5324,7 +5324,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_coastal_signal_posts
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = radar_tech
 			}
@@ -5351,7 +5351,7 @@ focus_tree = {
 			navy_experience = 20
 			add_doctrine_cost_reduction = {
 				name = MKN_escort_crews
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -5414,7 +5414,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_hull_repair_artels
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = ship_modules_tech
 				}
@@ -5422,7 +5422,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_hull_repair_artels
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = dd_tech
 				}
@@ -5449,7 +5449,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_depth_charge_school
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = asw_tech
 			}
@@ -5540,7 +5540,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_coastal_watch
-				bonus = .75
+				bonus = 0.75
 				uses = 1
 				category = radar_tech
 			}
@@ -5570,7 +5570,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_sweeper_sections
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = naval_minesweeping
 				}
@@ -5578,7 +5578,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_sweeper_sections
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = dd_tech
 				}
@@ -5605,7 +5605,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_escort_radio_net
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -5663,7 +5663,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_river_sea_coordination
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -5689,7 +5689,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_anti_submarine_patrols
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = asw_tech
 			}
@@ -5771,7 +5771,7 @@ focus_tree = {
 			navy_experience = 30
 			add_doctrine_cost_reduction = {
 				name = MKN_coastal_fleet_exercises
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -5809,7 +5809,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_escort_compact
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -5862,7 +5862,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_torpedo_artels
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = cat_torpedoes
 				}
@@ -5870,7 +5870,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_torpedo_artels
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = ss_tech
 				}
@@ -5906,7 +5906,7 @@ focus_tree = {
 			navy_experience = 20
 			add_doctrine_cost_reduction = {
 				name = MKN_submarine_crews
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -5965,7 +5965,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_naval_intelligence
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = decryption_tech
 			}
@@ -6028,7 +6028,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_torpedo_trials
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = cat_torpedoes
 				}
@@ -6036,7 +6036,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_torpedo_trials
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = ss_tech
 				}
@@ -6139,7 +6139,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_submarine_listening
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = asw_tech
 				}
@@ -6147,7 +6147,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_submarine_listening
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = ss_tech
 				}
@@ -6174,7 +6174,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_fast_attack_craft
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = dd_tech
 			}
@@ -6200,7 +6200,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_raider_radio_discipline
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = encryption_tech
 			}
@@ -6230,7 +6230,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = MKN_submarine_repair
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = ship_modules_tech
 				}
@@ -6238,7 +6238,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = MKN_submarine_repair
-					bonus = .5
+					bonus = 0.5
 					uses = 1
 					category = ss_tech
 				}
@@ -6265,7 +6265,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_raider_weather
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -6312,7 +6312,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_torpedo_ambushes
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -6359,7 +6359,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = MKN_raider_escape_routes
-				bonus = .5
+				bonus = 0.5
 				uses = 1
 				category = recon_tech
 			}
@@ -6386,7 +6386,7 @@ focus_tree = {
 			navy_experience = 30
 			add_doctrine_cost_reduction = {
 				name = MKN_raider_exercises
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -6424,7 +6424,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = MKN_raider_compact
-				cost_reduction = .5
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

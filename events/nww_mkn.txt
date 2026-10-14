@@ -25,6 +25,7 @@ country_event = {
 		date > 1938.1.1
 		UKR = { exists = yes has_war = no }
 		NOT = { has_war_with = UKR }
+		NOT = { is_ally_with = UKR }
 		NOT = { has_global_flag = MKN_kiev_quarrel }
 		NOT = { has_country_flag = UKR_MKN_border_settled }
 	}
@@ -36,9 +37,12 @@ country_event = {
 		add_stability = -0.05
 		set_global_flag = MKN_kiev_quarrel
 		UKR = {
-			declare_war_on = {
-				target = MKN
-				type = puppet_wargoal_focus
+			if = {
+				limit = { MKN = { exists = yes } NOT = { is_ally_with = MKN } NOT = { has_war_with = MKN } }
+				declare_war_on = {
+					target = MKN
+					type = puppet_wargoal_focus
+				}
 			}
 		}
 	}
@@ -81,6 +85,7 @@ country_event = {
 				has_global_flag = MKN_ukr_angered
 				MKN = { exists = yes }
 				NOT = { has_war_with = MKN }
+				NOT = { is_ally_with = MKN }
 			}
 			declare_war_on = {
 				target = MKN

@@ -1,0 +1,13 @@
+nww_SOV_suspend_detached_purges = {
+	clr_country_flag = SOV_paranoia_system_active_flag
+	clr_country_flag = SOV_paranoia_modifier_active_flag
+	set_variable = {
+		SOV_paranoia = 0
+	}
+	set_variable = {
+		SOV_paranoia_weekly_bucket = 0
+	}
+	set_variable = {
+		SOV_paranoia_modifier_increase = 0
+	}
+}

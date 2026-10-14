@@ -9,7 +9,6 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_consolidate_the_union
-		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
 		completion_reward = {
 			add_political_power = 120
@@ -24,10 +23,10 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		icon = GFX_focus_NWW_LTB_consolidate_union
 	}
 	focus = {
 		id = LTB_rebuild_the_bridge
-		icon = GFX_focus_generic_industry_1
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -73,6 +72,7 @@ focus_tree = {
 				}
 			}
 		}
+		icon = GFX_focus_NWW_LTB_rebuild_bridge
 	}
 	focus = {
 		id = LTB_baltic_bridgehead
@@ -104,7 +104,6 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_the_vilnius_compromise
-		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = {
 			focus = LTB_consolidate_the_union
 		}
@@ -134,6 +133,7 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		icon = GFX_focus_NWW_LTB_vilnius_compromise
 	}
 	focus = {
 		id = LTB_kaunas_first
@@ -269,7 +269,6 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_face_the_crisis
-		icon = GFX_focus_generic_support_the_left_right
 		cost = 5
 		bypass = {
 			has_completed_focus = LTB_the_vilnius_compromise
@@ -320,10 +319,10 @@ focus_tree = {
 				}
 			}
 		}
+		icon = GFX_focus_NWW_LTB_face_crisis
 	}
 	focus = {
 		id = LTB_union_general_staff
-		icon = GFX_focus_generic_army_doctrines_2
 		cost = 5
 		completion_reward = {
 			swap_ideas = {
@@ -354,6 +353,7 @@ focus_tree = {
 				}
 			}
 		}
+		icon = GFX_focus_NWW_LTB_general_staff
 	}
 	focus = {
 		id = LTB_the_minsk_school
@@ -1211,7 +1211,6 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_the_union_endures
-		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = {
 			focus = LTB_face_the_crisis
 		}
@@ -1241,6 +1240,7 @@ focus_tree = {
 				}
 			}
 		}
+		icon = GFX_focus_NWW_LTB_union_endures
 	}
 	focus = {
 		id = LTB_the_pbmat_pact
