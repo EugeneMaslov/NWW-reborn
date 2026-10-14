@@ -1,0 +1,210 @@
+NWW_TUR_BUL_campaign = {
+	enable = {
+		tag = TUR
+		has_focus_tree = turkish_focus
+		is_subject = no
+		has_completed_focus = TUR_war_with_bulgaria
+		BUL = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = BUL
+		}
+		NOT = {
+			has_war_with = BUL
+		}
+		has_wargoal_against = BUL
+		can_declare_war_on = BUL
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = BUL
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = BUL
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = BUL
+		value = 300
+	}
+}
+NWW_TUR_GRE_campaign = {
+	enable = {
+		tag = TUR
+		has_focus_tree = turkish_focus
+		is_subject = no
+		has_completed_focus = TUR_snova_copi
+		GRE = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = GRE
+		}
+		NOT = {
+			has_war_with = GRE
+		}
+		has_wargoal_against = GRE
+		can_declare_war_on = GRE
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = GRE
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = GRE
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = GRE
+		value = 300
+	}
+}
+NWW_TUR_YUG_campaign = {
+	enable = {
+		tag = TUR
+		has_focus_tree = turkish_focus
+		is_subject = no
+		has_completed_focus = NWW_TUR_serbian_campaign
+		YUG = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = YUG
+		}
+		NOT = {
+			has_war_with = YUG
+		}
+		has_wargoal_against = YUG
+		can_declare_war_on = YUG
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = YUG
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = YUG
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = YUG
+		value = 300
+	}
+}
+NWW_TUR_ALB_campaign = {
+	enable = {
+		tag = TUR
+		has_focus_tree = turkish_focus
+		is_subject = no
+		has_completed_focus = NWW_TUR_albanian_campaign
+		ALB = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = ALB
+		}
+		NOT = {
+			has_war_with = ALB
+		}
+		has_wargoal_against = ALB
+		can_declare_war_on = ALB
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = ALB
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = ALB
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = ALB
+		value = 300
+	}
+}
+NWW_TUR_ROM_campaign = {
+	enable = {
+		tag = TUR
+		has_focus_tree = turkish_focus
+		is_subject = no
+		has_completed_focus = NWW_TUR_romanian_campaign
+		ROM = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = ROM
+		}
+		NOT = {
+			has_war_with = ROM
+		}
+		has_wargoal_against = ROM
+		can_declare_war_on = ROM
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = ROM
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = ROM
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = ROM
+		value = 300
+	}
+}
+NWW_TUR_CRO_campaign = {
+	enable = {
+		tag = TUR
+		has_focus_tree = turkish_focus
+		is_subject = no
+		has_completed_focus = NWW_TUR_adriatic_campaign
+		CRO = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = CRO
+		}
+		NOT = {
+			has_war_with = CRO
+		}
+		has_wargoal_against = CRO
+		can_declare_war_on = CRO
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = CRO
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = CRO
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = CRO
+		value = 300
+	}
+}

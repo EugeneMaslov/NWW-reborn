@@ -1,5 +1,64 @@
 ideas = {
 	country = {
+		# The court, officer corps and provincial councils settle this shared crisis in stages.
+		NWW_TUR_imperial_crisis = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = { original_tag = TUR }
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.10
+				resistance_target = 0.10
+			}
+		}
+		NWW_TUR_imperial_crisis_1 = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = { original_tag = TUR }
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+				resistance_target = 0.05
+			}
+		}
+		NWW_TUR_imperial_crisis_2 = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = { original_tag = TUR }
+			modifier = {
+				political_power_gain = -0.05
+				resistance_target = 0.05
+			}
+		}
+		NWW_TUR_imperial_compact = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = { original_tag = TUR }
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				resistance_target = -0.05
+			}
+		}
+		NWW_TUR_balkan_administration = {
+			picture = nww_legacy_supply_reform
+			removal_cost = -1
+			allowed = { original_tag = TUR }
+			modifier = {
+				resistance_target = -0.10
+				compliance_growth = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		NWW_TUR_war_industry = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			allowed = { original_tag = TUR }
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
 		tur_silly_army_nowar = {
 			picture = nww_legacy_silly_army
 			removal_cost = -1

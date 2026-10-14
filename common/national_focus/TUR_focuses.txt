@@ -144,7 +144,6 @@ focus_tree = {
 		id = TUR_not_fascism
 		x = 6
 		y = 1
-		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 5
 		completion_reward = {
 			set_politics = {
@@ -168,78 +167,86 @@ focus_tree = {
 			focus = TUR_new_dem
 			focus = TUR_new_communism
 		}
+		icon = GFX_focus_TUR_pivot_to_the_past
 	}
 	focus = {
 		id = tur_bred
 		x = 6
-		y = 2
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
 		}
+		y = 3
 		prerequisite = {
-			focus = TUR_not_fascism
+			focus = NWW_TUR_sultans_shadow
 		}
 	}
 	focus = {
 		id = tur_polos
 		x = 6
-		y = 3
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
+		prerequisite = {
+			focus = tur_bred
+		}
+		y = 4
 		completion_reward = {
 			set_politics = {
 				ruling_party = neutrality
-				elections_allowed = yes
+				elections_allowed = no
 			}
 			add_stability = 0.05
-		}
-		prerequisite = {
-			focus = tur_bred
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = TUR_proper_stoper
-		x = 2
-		y = 4
 		icon = GFX_focus_hun_elect_a_king
 		cost = 5
 		completion_reward = {
 			army_experience = 20
 			add_command_power = 15
 		}
+		mutually_exclusive = {
+			focus = TUR_store_eng
+		}
+		x = 6
+		y = 6
 		prerequisite = {
 			focus = TUR_dux_national
 			focus = tur_polos
 		}
-		mutually_exclusive = {
-			focus = TUR_store_eng
+		prerequisite = {
+			focus = NWW_TUR_imperial_compact
 		}
 	}
 	focus = {
 		id = TUR_kosa_smerti
-		x = 2
-		y = 5
-		icon = GFX_focus_ger_oppose_hitler
 		cost = 5
-		completion_reward = {
-			add_war_support = 0.05
-			add_state_claim = 48
-			add_state_claim = 184
+		x = 6
+		y = 7
+		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = NWW_TUR_modern_war_ministry_tt
+				has_completed_focus = TUR_Army_3
+			}
 		}
-		prerequisite = {
-			focus = TUR_dux_national
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.05
 		}
 		prerequisite = {
 			focus = TUR_proper_stoper
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = TUR_store_eng
-		x = 6
-		y = 4
 		icon = GFX_focus_chi_reach_out_to_france
 		cost = 5
 		completion_reward = {
@@ -268,6 +275,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR_proper_stoper
 		}
+		x = 4
+		y = 6
 	}
 	focus = {
 		id = TUR_new_dem
@@ -1177,76 +1186,133 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_war_with_bulgaria
-		x = 2
-		y = 6
-		icon = GFX_goal_generic_major_war
 		cost = 5
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = BUL
-				expire = 730
-			}
-		}
+		x = 6
+		y = 8
 		prerequisite = {
 			focus = TUR_kosa_smerti
 		}
+		prerequisite = {
+			focus = NWW_TUR_rumelian_logistics
+		}
 		available = {
+			is_subject = no
 			BUL = {
 				exists = yes
 			}
 			NOT = {
-				has_war_with = BUL
+				is_ally_with = BUL
 			}
 			NOT = {
-				is_in_faction_with = BUL
+				has_war_with = BUL
 			}
-			is_subject = no
 			has_war_support > 0.30
 			date > 1937.1.1
 		}
+		bypass = {
+			48 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			211 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			212 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			801 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NWW_TUR_BUL_campaign_tt
+			hidden_effect = {
+				nww_TUR_prepare_bul_campaign = yes
+			}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		icon = GFX_focus_generic_attack_bulgaria
 	}
 	focus = {
 		id = TUR_snova_copi
-		x = 2
-		y = 8
-		icon = GFX_focus_generic_army_attack
 		cost = 5
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = GRE
-				expire = 730
-			}
-		}
 		prerequisite = {
 			focus = afg_bolgi
 		}
+		x = 6
+		y = 10
 		available = {
+			is_subject = no
 			GRE = {
 				exists = yes
 			}
 			NOT = {
-				has_war_with = GRE
+				is_ally_with = GRE
 			}
 			NOT = {
-				is_in_faction_with = GRE
+				has_war_with = GRE
 			}
-			is_subject = no
 			has_war_support > 0.30
 			date > 1937.1.1
 		}
+		bypass = {
+			47 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			182 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			184 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			185 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			186 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			187 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			731 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NWW_TUR_GRE_campaign_tt
+			hidden_effect = {
+				nww_TUR_prepare_gre_campaign = yes
+			}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		icon = GFX_focus_generic_attack_greece
 	}
 	focus = {
 		id = afg_bolgi
-		x = 2
-		y = 7
-		icon = GFX_goal_continuous_increase_nu
 		cost = 5
+		prerequisite = {
+			focus = TUR_war_with_bulgaria
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		x = 6
+		y = 9
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		available = {
+			48 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			211 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			212 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			801 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
 		completion_reward = {
 			48 = {
 				if = {
@@ -1261,25 +1327,20 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					48 = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-				add_state_core = 48
-			}
-		}
-		prerequisite = {
-			focus = TUR_war_with_bulgaria
-		}
-		available = {
+			set_country_flag = NWW_TUR_bulgaria_settled
 			48 = {
-				is_owned_and_controlled_by = ROOT
+				add_compliance = 10
+			}
+			211 = {
+				add_compliance = 10
+			}
+			212 = {
+				add_compliance = 10
+			}
+			801 = {
+				add_compliance = 10
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 	}
 	focus = {
 		id = TUR_Army_Factory_2
@@ -1521,7 +1582,7 @@ focus_tree = {
 	}
 	continuous_focus_position = {
 		x = 100
-		y = 2140
+		y = 2800
 	}
 	initial_show_position = {
 		focus = TUR_reform_the_army
@@ -1728,4 +1789,559 @@ focus_tree = {
 	shared_focus = TUR_fortified_defensive_bases
 	shared_focus = TUR_turk_silahli_kuvvetleri
 	id = turkish_focus
+	focus = {
+		id = NWW_TUR_sultans_shadow
+		x = 6
+		y = 2
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		prerequisite = {
+			focus = TUR_not_fascism
+		}
+	}
+	focus = {
+		id = NWW_TUR_ottoman_bourgeoisie
+		x = 10
+		y = 4
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		completion_reward = {
+			49 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = NWW_TUR_federal_charter
+		}
+	}
+	focus = {
+		id = NWW_TUR_agrarian_reform
+		x = 14
+		y = 4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		completion_reward = {
+			nww_legacy_TUR_industry_step = yes
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = NWW_TUR_workers_union
+		}
+	}
+	focus = {
+		id = NWW_TUR_imperial_compact
+		x = 8
+		y = 5
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 5
+		completion_reward = {
+			set_country_flag = NWW_TUR_council_settled
+			nww_TUR_update_imperial_crisis = yes
+			add_political_power = 50
+			country_event = {
+				id = nww_tur_council.4
+				days = 1
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = {
+			is_subject = no
+			NOT = {
+				has_country_flag = NWW_TUR_council_negotiation_active
+			}
+			custom_trigger_tooltip = {
+				tooltip = NWW_TUR_officer_accord
+				has_country_flag = NWW_TUR_officer_accord
+			}
+			custom_trigger_tooltip = {
+				tooltip = NWW_TUR_ulema_accord
+				has_country_flag = NWW_TUR_ulema_accord
+			}
+			custom_trigger_tooltip = {
+				tooltip = NWW_TUR_provincial_accord
+				has_country_flag = NWW_TUR_provincial_accord
+			}
+		}
+		prerequisite = {
+			focus = tur_polos
+			focus = TUR_dux_national
+			focus = NWW_TUR_ottoman_bourgeoisie
+			focus = NWW_TUR_agrarian_reform
+		}
+	}
+	focus = {
+		id = NWW_TUR_rumelian_logistics
+		x = 4
+		y = 7
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		completion_reward = {
+			797 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_ideas = TUR_supply_reform
+			army_experience = 10
+		}
+		prerequisite = {
+			focus = TUR_proper_stoper
+		}
+	}
+	focus = {
+		id = NWW_TUR_war_industry_program
+		x = 8
+		y = 7
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		completion_reward = {
+			49 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_ideas = NWW_TUR_war_industry
+		}
+		prerequisite = {
+			focus = TUR_proper_stoper
+		}
+	}
+	focus = {
+		id = NWW_TUR_greek_settlement
+		x = 6
+		y = 11
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		cost = 5
+		completion_reward = {
+			set_country_flag = NWW_TUR_greece_settled
+			add_stability = 0.05
+			47 = {
+				add_compliance = 10
+			}
+			182 = {
+				add_compliance = 10
+			}
+			184 = {
+				add_compliance = 10
+			}
+			185 = {
+				add_compliance = 10
+			}
+			186 = {
+				add_compliance = 10
+			}
+			187 = {
+				add_compliance = 10
+			}
+			731 = {
+				add_compliance = 10
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = {
+			47 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			182 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			184 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			185 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			186 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			187 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			731 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		prerequisite = {
+			focus = TUR_snova_copi
+		}
+	}
+	focus = {
+		id = NWW_TUR_balkan_mandate
+		x = 6
+		y = 12
+		icon = GFX_focus_generic_balkans_focus
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_command_power = 20
+			add_state_claim = 44
+			add_state_claim = 46
+			add_state_claim = 47
+			add_state_claim = 48
+			add_state_claim = 77
+			add_state_claim = 78
+			add_state_claim = 79
+			add_state_claim = 80
+			add_state_claim = 81
+			add_state_claim = 103
+			add_state_claim = 104
+			add_state_claim = 105
+			add_state_claim = 106
+			add_state_claim = 107
+			add_state_claim = 108
+			add_state_claim = 109
+			add_state_claim = 163
+			add_state_claim = 182
+			add_state_claim = 184
+			add_state_claim = 185
+			add_state_claim = 186
+			add_state_claim = 187
+			add_state_claim = 211
+			add_state_claim = 212
+			add_state_claim = 731
+			add_state_claim = 766
+			add_state_claim = 801
+			add_state_claim = 802
+			add_state_claim = 803
+			add_state_claim = 804
+			add_state_claim = 805
+			add_state_claim = 934
+			add_state_claim = 970
+			add_state_claim = 971
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = {
+			is_subject = no
+			48 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			211 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			212 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			801 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			47 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			182 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			184 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			185 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			186 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			187 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			731 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		prerequisite = {
+			focus = NWW_TUR_greek_settlement
+		}
+	}
+	focus = {
+		id = NWW_TUR_serbian_campaign
+		x = 2
+		y = 13
+		icon = GFX_focus_generic_balkans_focus
+		cost = 5
+		prerequisite = {
+			focus = NWW_TUR_balkan_mandate
+		}
+		available = {
+			is_subject = no
+			YUG = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = YUG
+			}
+			NOT = {
+				has_war_with = YUG
+			}
+			has_war_support > 0.30
+			date > 1937.1.1
+		}
+		bypass = {
+			105 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			106 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			107 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			108 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			802 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			803 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			970 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NWW_TUR_YUG_campaign_tt
+			hidden_effect = {
+				nww_TUR_prepare_yug_campaign = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = NWW_TUR_albanian_campaign
+		x = 6
+		y = 13
+		icon = GFX_focus_generic_balkan_diplomacy
+		cost = 5
+		prerequisite = {
+			focus = NWW_TUR_balkan_mandate
+		}
+		available = {
+			is_subject = no
+			ALB = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = ALB
+			}
+			NOT = {
+				has_war_with = ALB
+			}
+			has_war_support > 0.30
+			date > 1937.1.1
+		}
+		bypass = {
+			44 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			805 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			934 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NWW_TUR_ALB_campaign_tt
+			hidden_effect = {
+				nww_TUR_prepare_alb_campaign = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = NWW_TUR_romanian_campaign
+		x = 10
+		y = 13
+		icon = GFX_focus_generic_attack_romania
+		cost = 5
+		prerequisite = {
+			focus = NWW_TUR_balkan_mandate
+		}
+		available = {
+			is_subject = no
+			ROM = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = ROM
+			}
+			NOT = {
+				has_war_with = ROM
+			}
+			has_war_support > 0.30
+			date > 1937.1.1
+		}
+		bypass = {
+			46 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			77 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			78 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			79 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			80 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			81 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			766 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			971 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NWW_TUR_ROM_campaign_tt
+			hidden_effect = {
+				nww_TUR_prepare_rom_campaign = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = NWW_TUR_adriatic_campaign
+		x = 14
+		y = 13
+		icon = GFX_focus_generic_balkans_focus
+		cost = 5
+		prerequisite = {
+			focus = NWW_TUR_balkan_mandate
+		}
+		available = {
+			is_subject = no
+			CRO = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = CRO
+			}
+			NOT = {
+				has_war_with = CRO
+			}
+			has_war_support > 0.30
+			date > 1937.1.1
+		}
+		bypass = {
+			103 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			104 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			109 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			163 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			804 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NWW_TUR_CRO_campaign_tt
+			hidden_effect = {
+				nww_TUR_prepare_cro_campaign = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = NWW_TUR_rumelian_governorates
+		x = 6
+		y = 14
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		cost = 5
+		completion_reward = {
+			add_ideas = NWW_TUR_balkan_administration
+			add_stability = 0.05
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = {
+			48 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			211 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			212 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			801 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			47 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			182 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			184 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			185 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			186 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			187 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			731 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		prerequisite = {
+			focus = NWW_TUR_balkan_mandate
+		}
+	}
 }

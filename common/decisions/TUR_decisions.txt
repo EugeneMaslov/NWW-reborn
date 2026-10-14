@@ -1,3 +1,5 @@
+# Country-owned political campaigns and timed council bargaining.
+# Reference: installed BFT common/decisions/TUR.txt (etatism stabilization).
 NWW_TUR_political_campaigns = {
 	NWW_TUR_campaign_democratic = {
 		icon = generic_political_discourse
@@ -37,7 +39,17 @@ NWW_TUR_political_campaigns = {
 			clr_country_flag = NWW_legacy_campaign_active
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 10
+				nww_TUR_ai_democratic_path = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					nww_TUR_ai_democratic_path = yes
+				}
+			}
 		}
 	}
 	NWW_TUR_campaign_neutrality = {
@@ -78,7 +90,17 @@ NWW_TUR_political_campaigns = {
 			clr_country_flag = NWW_legacy_campaign_active
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 10
+				nww_TUR_ai_neutrality_path = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					nww_TUR_ai_neutrality_path = yes
+				}
+			}
 		}
 	}
 	NWW_TUR_campaign_fascism = {
@@ -119,7 +141,17 @@ NWW_TUR_political_campaigns = {
 			clr_country_flag = NWW_legacy_campaign_active
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 10
+				nww_TUR_ai_fascism_path = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					nww_TUR_ai_fascism_path = yes
+				}
+			}
 		}
 	}
 	NWW_TUR_campaign_communism = {
@@ -160,7 +192,215 @@ NWW_TUR_political_campaigns = {
 			clr_country_flag = NWW_legacy_campaign_active
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 10
+				nww_TUR_ai_communism_path = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					nww_TUR_ai_communism_path = yes
+				}
+			}
+		}
+	}
+}
+NWW_TUR_imperial_councils = {
+	NWW_TUR_negotiate_officers = {
+		icon = generic_army_support
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+			NOT = {
+				has_country_flag = NWW_TUR_officer_accord
+			}
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				has_country_flag = NWW_TUR_council_negotiation_active
+			}
+		}
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_TUR_council_negotiation_active
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					tag = TUR
+					is_subject = no
+				}
+				set_country_flag = NWW_TUR_officer_accord
+				clr_country_flag = NWW_TUR_council_negotiation_active
+				nww_TUR_update_imperial_crisis = yes
+				army_experience = 10
+				add_war_support = 0.05
+				country_event = {
+					id = nww_tur_council.1
+					days = 1
+				}
+			}
+			else = {
+				clr_country_flag = NWW_TUR_council_negotiation_active
+				add_political_power = 50
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					tag = TUR
+				}
+				is_subject = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_TUR_council_negotiation_active
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+				has_government = neutrality
+			}
+		}
+	}
+	NWW_TUR_negotiate_ulema = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+			NOT = {
+				has_country_flag = NWW_TUR_ulema_accord
+			}
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				has_country_flag = NWW_TUR_council_negotiation_active
+			}
+		}
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_TUR_council_negotiation_active
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					tag = TUR
+					is_subject = no
+				}
+				set_country_flag = NWW_TUR_ulema_accord
+				clr_country_flag = NWW_TUR_council_negotiation_active
+				nww_TUR_update_imperial_crisis = yes
+				add_stability = 0.05
+				country_event = {
+					id = nww_tur_council.2
+					days = 1
+				}
+			}
+			else = {
+				clr_country_flag = NWW_TUR_council_negotiation_active
+				add_political_power = 50
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					tag = TUR
+				}
+				is_subject = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_TUR_council_negotiation_active
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+				has_government = neutrality
+			}
+		}
+	}
+	NWW_TUR_negotiate_provinces = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = TUR
+		}
+		visible = {
+			tag = TUR
+			has_completed_focus = TUR_political_rw
+			NOT = {
+				has_country_flag = NWW_TUR_provincial_accord
+			}
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				has_country_flag = NWW_TUR_council_negotiation_active
+			}
+		}
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = NWW_TUR_council_negotiation_active
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					tag = TUR
+					is_subject = no
+				}
+				set_country_flag = NWW_TUR_provincial_accord
+				clr_country_flag = NWW_TUR_council_negotiation_active
+				nww_TUR_update_imperial_crisis = yes
+				add_political_power = 25
+				country_event = {
+					id = nww_tur_council.3
+					days = 1
+				}
+			}
+			else = {
+				clr_country_flag = NWW_TUR_council_negotiation_active
+				add_political_power = 50
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					tag = TUR
+				}
+				is_subject = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = NWW_TUR_council_negotiation_active
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+				has_government = neutrality
+			}
 		}
 	}
 }

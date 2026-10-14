@@ -70,7 +70,10 @@ for tag in selected_tags:
               f'<rect width="{width}" height="{height}" fill="#111925"/>',
               f'<text x="32" y="38" font-size="24">{tag}: {len(focuses)} фокусов</text>',
               '<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>']
-    if tag == 'LTB':
+    if tag == 'TUR':
+        for column, title in [(8, 'Политика и имперский совет'), (6, 'Балканские кампании — ниже политики'), (22, 'Промышленность'), (34, 'Наука'), (42, 'Армия'), (50, 'Авиация')]:
+            result.append(f'<text x="{column*90+140}" y="{90 if column != 6 else height-20}" font-size="14" text-anchor="middle">{title}</text>')
+    elif tag == 'LTB':
         for column, title in [(7,'Политика'),(18,'Дипломатия'),(24,'Гражданская промышленность'),(28,'Сельское хозяйство и сырьё'),(32,'Военная промышленность'),(36,'Наука'),(42,'Армия'),(50,'Авиация'),(56,'Флот')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'MKN':
