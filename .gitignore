@@ -1,6 +1,10 @@
-﻿Thumbs.db
+Thumbs.db
 desktop.ini
 *.tmp
 __pycache__/
 
 .kilo
+*.pyc
+*.pyo
+.DS_Store
+thumbs.db

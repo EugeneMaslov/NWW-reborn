@@ -1,0 +1,16 @@
+# Keep engine input bytes identical on Windows and Linux, regardless of
+# core.autocrlf. Preserve the committed BOM and existing line endings.
+/common/** -text
+/events/** -text
+/history/** -text
+/map/** -text
+/interface/** -text
+/localisation/** -text
+/gfx/** -text
+
+/tools/** text eol=lf
+/docs/** text eol=lf
+*.dds binary
+*.png binary
+*.bmp binary
+*.tga binary
