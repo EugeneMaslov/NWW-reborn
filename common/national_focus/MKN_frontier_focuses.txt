@@ -9,7 +9,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		has_completed_focus = MKN_congress_1936
-		exists = UKR
+		UKR = { exists = yes }
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
 		}
@@ -45,7 +45,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		check_variable = {
-			mkn_ukr_escalation_level >= 2
+			var = mkn_ukr_escalation_level value = 2 compare = greater_than_or_equals
 		}
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
@@ -80,7 +80,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		check_variable = {
-			mkn_ukr_escalation_level >= 2
+			var = mkn_ukr_escalation_level value = 2 compare = greater_than_or_equals
 		}
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
@@ -115,7 +115,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		check_variable = {
-			mkn_ukr_escalation_level >= 3
+			var = mkn_ukr_escalation_level value = 3 compare = greater_than_or_equals
 		}
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
@@ -149,7 +149,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		check_variable = {
-			mkn_ukr_escalation_level >= 3
+			var = mkn_ukr_escalation_level value = 3 compare = greater_than_or_equals
 		}
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
@@ -186,7 +186,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		check_variable = {
-			mkn_ukr_escalation_level >= 4
+			var = mkn_ukr_escalation_level value = 4 compare = greater_than_or_equals
 		}
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
@@ -220,13 +220,13 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		has_completed_focus = MKN_ukrainian_frontier_root
-		exists = UKR
+		UKR = { exists = yes }
 		NOT = {
 			has_country_flag = mkn_ukr_pact_signed
 		}
 		OR = {
 			check_variable = {
-				mkn_ukr_escalation_level >= 5
+				var = mkn_ukr_escalation_level value = 5 compare = greater_than_or_equals
 			}
 			has_country_flag = mkn_ukr_total_war
 		}

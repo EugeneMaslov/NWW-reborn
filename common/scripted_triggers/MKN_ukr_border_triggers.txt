@@ -87,7 +87,7 @@ mkn_ukr_pact_context_valid = {
 			has_border_war_with = UKR
 		}
 		check_variable = {
-			mkn_ukr_escalation_level <= 1
+			var = mkn_ukr_escalation_level value = 1 compare = less_than_or_equals
 		}
 		mkn_ukr_priority_states_held = yes
 	}

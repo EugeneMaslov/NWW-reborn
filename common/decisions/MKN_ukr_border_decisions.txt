@@ -30,7 +30,7 @@ MKN_ukr_border_category = {
 			modifier = {
 				factor = 0
 				check_variable = {
-					mkn_consecutive_border_wars >= 2
+					var = mkn_consecutive_border_wars value = 2 compare = greater_than_or_equals
 				}
 			}
 		}
@@ -83,7 +83,7 @@ MKN_ukr_border_category = {
 				is_owned_and_controlled_by = UKR
 			}
 			check_variable = {
-				mkn_ukr_escalation_level >= 1
+				var = mkn_ukr_escalation_level value = 1 compare = greater_than_or_equals
 			}
 			UKR = {
 				has_equipment = {
@@ -157,7 +157,7 @@ MKN_ukr_border_category = {
 				has_border_war = no
 			}
 			check_variable = {
-				mkn_ukr_escalation_level >= 3
+				var = mkn_ukr_escalation_level value = 3 compare = greater_than_or_equals
 			}
 			check_variable = {
 				num_owned_states > 1
@@ -244,7 +244,7 @@ MKN_ukr_border_category = {
 			modifier = {
 				factor = 0
 				check_variable = {
-					mkn_consecutive_border_wars >= 2
+					var = mkn_consecutive_border_wars value = 2 compare = greater_than_or_equals
 				}
 			}
 		}
@@ -256,7 +256,7 @@ MKN_ukr_border_category = {
 		available = {
 			mkn_ukr_frontier_action_available = yes
 			check_variable = {
-				mkn_ukr_escalation_level <= 1
+				var = mkn_ukr_escalation_level value = 1 compare = less_than_or_equals
 			}
 			mkn_ukr_priority_states_held = yes
 		}

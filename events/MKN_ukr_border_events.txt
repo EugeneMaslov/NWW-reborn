@@ -7,7 +7,7 @@ country_event = {
   NOT = { has_country_flag = mkn_ukr_frontier_concluded }
   NOT = { has_border_war_with = UKR }
   NOT = { is_ally_with = UKR }
-  OR = { check_variable = { mkn_consecutive_border_wars >= 3 } check_variable = { mkn_ukr_escalation_level >= 5 } }
+  OR = { check_variable = { var = mkn_consecutive_border_wars value = 3 compare = greater_than_or_equals } check_variable = { var = mkn_ukr_escalation_level value = 5 compare = greater_than_or_equals } }
  }
  immediate = { mkn_ukr_conclude_total_war = yes }
  option = { name = mkn_ukr_border.1.a }

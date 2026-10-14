@@ -10,7 +10,7 @@ import re
 
 from PIL import Image
 
-from hoi4_script import read, one, values, walk
+from hoi4_script import read, one, values, walk, variable_check, engine_script_errors
 
 
 class FrontierModel:
@@ -128,8 +128,9 @@ class FrontierModel:
             elif key == 'is_owned_and_controlled_by':
                 answer = data['owner'] == value and data['controller'] == value
             elif key == 'check_variable':
-                answer = all(self.compare(data['variables'].get(k, 0), self.number(v, current, previous), op)
-                             for k, v, op in value)
+                var, operand, comparator = variable_check(value)
+                left = sum(s['owner'] == current for s in self.states.values()) if var == 'num_owned_states' else data['variables'].get(var, 0)
+                answer = self.compare(left, self.number(operand, current, previous), comparator)
             elif key == 'has_equipment':
                 answer = all(self.compare(data['equipment'], float(v), op) for k, v, op in value)
             elif key == 'any_neighbor_state':
@@ -255,6 +256,9 @@ def validate_frontier(root, game, check, localized):
         'on_actions': 'common/on_actions/MKN_ukr_border_on_actions.txt',
     }
     parsed = {name: read(root / filename) for name, filename in files.items()}
+    for filename in files.values():
+        for error in engine_script_errors(read(root / filename)):
+            check(False, f'{filename}: {error}')
     effects = {k: v for k, v, op in parsed['effects']}
     triggers = {k: v for k, v, op in parsed['triggers']}
     events = {one(e, 'id'): e for e in values(parsed['events'], 'country_event')}

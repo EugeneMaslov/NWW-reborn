@@ -11,7 +11,7 @@ from math import isclose
 from pathlib import Path
 import re
 
-from hoi4_script import read, one, values, walk
+from hoi4_script import read, one, values, walk, variable_check
 
 
 def validate_crisis(root, game, check, localized):
@@ -135,11 +135,13 @@ def validate_crisis(root, game, check, localized):
             self.cancelled_border_wars = []
         def number(self, val, country):
             if val.startswith('var:'): val = val[4:]
+            if val == 'num_owned_states': return sum(s['owner'] is country for s in self.states)
             if val.startswith('party_popularity@'): return country['support'][val.split('@')[1]]
             try: return float(val)
             except ValueError: return country['vars'][val]
         def compare(self, left, right, op):
             return {'=': left == right, '>': left > right, '<': left < right,
+                    '>=': left >= right, '<=': left <= right, '!=': left != right,
                     'equals': left == right, 'greater_than': left > right,
                     'greater_than_or_equals': left >= right}[op]
         def triggers(self, nodes, scope):
@@ -154,8 +156,6 @@ def validate_crisis(root, game, check, localized):
                 elif k == 'has_variable': answers.append(v in scope['vars'])
                 elif k == 'has_border_war_with': answers.append(v in self.border_wars)
                 elif k == 'original_tag': answers.append(scope['original_tag'] == v)
-                elif k == 'num_owned_states':
-                    answers.append(self.compare(sum(s['owner'] is scope for s in self.states), float(v), op))
                 elif k in ('any_country', 'any_other_country'):
                     answers.append(any(self.triggers(v, c) for c in self.countries if k == 'any_country' or c is not scope))
                 elif k == 'is_controlled_by':
@@ -163,13 +163,12 @@ def validate_crisis(root, game, check, localized):
                     answers.append(scope['owner'] is self.root)
                 elif k == 'has_power_balance': answers.append(scope['bop'])
                 elif k == 'has_war_with': answers.append(frozenset((scope['name'], self.targets[v]['name'])) in self.wars)
-                elif k == 'exists': answers.append(v in self.targets)
+                elif k == 'exists': answers.append((scope in self.countries) == (v == 'yes'))
+                elif k == 'has_event_target': answers.append('event_target:' + v in self.targets)
                 elif k == 'any_owned_state': answers.append(any(self.triggers(v, s) for s in self.states if s['owner'] is scope))
                 elif k == 'check_variable':
-                    if one(v, 'var') is not None:
-                        a = self.number(one(v, 'var'), scope); b = self.number(one(v, 'value'), scope); comparison = one(v, 'compare')
-                    else:
-                        key, value, comparison = v[0]; a = self.number(key, scope); b = self.number(value, scope)
+                    key, value, comparison = variable_check(v)
+                    a = self.number(key, scope); b = self.number(value, scope)
                     answers.append(self.compare(a, b, comparison))
                 else: raise AssertionError(f'Unsupported collapse trigger {k}')
             return all(answers)
@@ -334,11 +333,13 @@ def validate_intervention(root, check, localized):
                 elif k == 'original_tag': q = c['origin'] == v
                 elif k == 'has_country_flag': q = v in c['flags']
                 elif k == 'has_global_flag': q = v in self.globals
-                elif k == 'num_owned_states':
-                    n = int(v); q = {'>': c['states'] > n, '<': c['states'] < n}[op]
+                elif k == 'check_variable':
+                    variable, value, comparator = variable_check(v)
+                    assert variable == 'num_owned_states'
+                    n = float(value); q = {'>': c['states'] > n, '<': c['states'] < n, '=': c['states'] == n}[comparator]
                 elif k in ('any_country', 'any_other_country'):
                     q = any(self.trig(v, d) for d in self.cs if d['alive'] and (k == 'any_country' or d is not c))
-                elif k == 'exists': q = self.ref(v)['alive']
+                elif k == 'exists': q = c['alive'] == (v == 'yes')
                 elif k == 'is_subject': q = c['subject'] == (v == 'yes')
                 elif k == 'is_faction_leader': q = c['leader'] == (v == 'yes')
                 elif k == 'is_ally_with': q = self.allied(c, self.ref(v))

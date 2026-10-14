@@ -203,14 +203,16 @@ MKN_steppe_operations_category = {
 		}
 		state_target = yes
 		target_trigger = {
-			is_owned_by = ROOT
-			is_controlled_by = ROOT
-			any_neighbor_state = {
-				controller = {
-					has_war_with = ROOT
+			FROM = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+				any_neighbor_state = {
+					controller = {
+						has_war_with = ROOT
+					}
 				}
+				infrastructure > 0
 			}
-			infrastructure > 0
 		}
 		available = {
 			has_war = yes
@@ -245,9 +247,11 @@ MKN_steppe_operations_category = {
 			}
 		}
 		target_trigger = {
-			is_owned_and_controlled_by = LTB
-			any_neighbor_state = {
-				is_owned_and_controlled_by = ROOT
+			FROM = {
+				is_owned_and_controlled_by = LTB
+				any_neighbor_state = {
+					is_owned_and_controlled_by = ROOT
+				}
 			}
 		}
 		available = {
@@ -319,9 +323,11 @@ MKN_steppe_operations_category = {
 			}
 		}
 		target_trigger = {
-			is_owned_and_controlled_by = SOV
-			any_neighbor_state = {
-				is_owned_and_controlled_by = ROOT
+			FROM = {
+				is_owned_and_controlled_by = SOV
+				any_neighbor_state = {
+					is_owned_and_controlled_by = ROOT
+				}
 			}
 		}
 		available = {
@@ -476,7 +482,7 @@ MKN_soviet_intervention_category = {
 		days_mission_timeout = 100
 		cancel_trigger = {
 			OR = {
-				num_owned_states < 1
+				check_variable = { num_owned_states < 1 }
 				has_country_flag = MKN_soviet_intervention_resolved
 				has_global_flag = MKN_soviet_intervention_triggered
 				has_global_flag = MKN_collapse_reunified
@@ -485,7 +491,7 @@ MKN_soviet_intervention_category = {
 						original_tag = MKN
 						has_country_flag = MKN_collapse_started
 						has_country_flag = MKN_collapse_participant
-						num_owned_states > 0
+						check_variable = { num_owned_states > 0 }
 					}
 				}
 			}

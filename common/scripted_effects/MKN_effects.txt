@@ -331,28 +331,28 @@ MKN_execute_four_way_collapse = {
   subtract_from_variable = { MKN_cw_remaining_share = MKN_cw_share_communism }
  }
  else_if = { limit = { has_government = communism } save_event_target_as = MKN_cw_communism }
- if = { limit = { exists = event_target:MKN_cw_fascism exists = event_target:MKN_cw_democratic }
+ if = { limit = { has_event_target = MKN_cw_fascism has_event_target = MKN_cw_democratic }
   event_target:MKN_cw_fascism = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_democratic } } declare_war_on = { target = event_target:MKN_cw_democratic type = annex_everything } } }
  }
- if = { limit = { exists = event_target:MKN_cw_fascism exists = event_target:MKN_cw_neutrality }
+ if = { limit = { has_event_target = MKN_cw_fascism has_event_target = MKN_cw_neutrality }
   event_target:MKN_cw_fascism = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_neutrality } } declare_war_on = { target = event_target:MKN_cw_neutrality type = annex_everything } } }
  }
- if = { limit = { exists = event_target:MKN_cw_fascism exists = event_target:MKN_cw_communism }
+ if = { limit = { has_event_target = MKN_cw_fascism has_event_target = MKN_cw_communism }
   event_target:MKN_cw_fascism = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
  }
- if = { limit = { exists = event_target:MKN_cw_democratic exists = event_target:MKN_cw_neutrality }
+ if = { limit = { has_event_target = MKN_cw_democratic has_event_target = MKN_cw_neutrality }
   event_target:MKN_cw_democratic = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_neutrality } } declare_war_on = { target = event_target:MKN_cw_neutrality type = annex_everything } } }
  }
- if = { limit = { exists = event_target:MKN_cw_democratic exists = event_target:MKN_cw_communism }
+ if = { limit = { has_event_target = MKN_cw_democratic has_event_target = MKN_cw_communism }
   event_target:MKN_cw_democratic = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
  }
- if = { limit = { exists = event_target:MKN_cw_neutrality exists = event_target:MKN_cw_communism }
+ if = { limit = { has_event_target = MKN_cw_neutrality has_event_target = MKN_cw_communism }
   event_target:MKN_cw_neutrality = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
  }
  every_owned_state = { clr_state_flag = MKN_cw_assigned }
  # Enroll only after all three new civil-war countries have been created.
  every_country = {
-  limit = { original_tag = MKN has_country_flag = MKN_collapse_started num_owned_states > 0 }
+  limit = { original_tag = MKN has_country_flag = MKN_collapse_started check_variable = { num_owned_states > 0 } }
   MKN_initialize_soviet_intervention = yes
  }
 }

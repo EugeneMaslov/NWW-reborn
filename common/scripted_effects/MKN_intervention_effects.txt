@@ -9,7 +9,7 @@ MKN_initialize_soviet_intervention = {
 		limit = {
 			original_tag = MKN
 			has_country_flag = MKN_collapse_started
-			num_owned_states > 0
+			check_variable = { num_owned_states > 0 }
 			NOT = { has_country_flag = MKN_soviet_intervention_initialized }
 			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
 			NOT = { has_global_flag = MKN_collapse_reunified }
@@ -33,13 +33,13 @@ MKN_check_soviet_intervention_unification = {
 				original_tag = MKN
 				has_country_flag = MKN_collapse_started
 				has_country_flag = MKN_collapse_participant
-				num_owned_states > 0
+				check_variable = { num_owned_states > 0 }
 				NOT = {
 					any_other_country = {
 						original_tag = MKN
 						has_country_flag = MKN_collapse_started
 						has_country_flag = MKN_collapse_participant
-						num_owned_states > 0
+						check_variable = { num_owned_states > 0 }
 					}
 				}
 			}
@@ -72,7 +72,7 @@ MKN_repair_soviet_intervention = {
 		if = {
 			limit = {
 				OR = {
-					num_owned_states < 1
+					check_variable = { num_owned_states < 1 }
 					has_global_flag = MKN_soviet_intervention_triggered
 					has_global_flag = MKN_collapse_reunified
 					has_country_flag = MKN_soviet_intervention_resolved
@@ -85,7 +85,7 @@ MKN_repair_soviet_intervention = {
 		# event could run, dispatch from a surviving faction without a new timer.
 		if = {
 			limit = {
-				num_owned_states > 0
+				check_variable = { num_owned_states > 0 }
 				has_global_flag = MKN_soviet_intervention_pending
 				NOT = { has_global_flag = MKN_soviet_intervention_triggered }
 				NOT = { has_global_flag = MKN_collapse_reunified }
@@ -95,7 +95,7 @@ MKN_repair_soviet_intervention = {
 						has_country_flag = MKN_collapse_started
 						has_country_flag = MKN_collapse_participant
 						has_country_flag = MKN_soviet_intervention_dispatch_owner
-						num_owned_states > 0
+						check_variable = { num_owned_states > 0 }
 					}
 				}
 			}
@@ -114,7 +114,7 @@ MKN_request_soviet_intervention = {
 			original_tag = MKN
 			has_country_flag = MKN_collapse_started
 			has_country_flag = MKN_collapse_participant
-			num_owned_states > 0
+			check_variable = { num_owned_states > 0 }
 			NOT = { has_global_flag = MKN_soviet_intervention_pending }
 			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
 			NOT = { has_global_flag = MKN_collapse_reunified }
@@ -122,7 +122,7 @@ MKN_request_soviet_intervention = {
 				original_tag = MKN
 				has_country_flag = MKN_collapse_started
 				has_country_flag = MKN_collapse_participant
-				num_owned_states > 0
+				check_variable = { num_owned_states > 0 }
 			}
 		}
 		set_global_flag = MKN_soviet_intervention_pending
@@ -141,7 +141,7 @@ MKN_soviet_intervention_attack_participants = {
 			original_tag = MKN
 			has_country_flag = MKN_collapse_started
 			has_country_flag = MKN_collapse_participant
-			num_owned_states > 0
+			check_variable = { num_owned_states > 0 }
 		}
 		save_event_target_as = MKN_intervention_target
 		if = {
@@ -178,14 +178,14 @@ MKN_execute_soviet_intervention = {
 			original_tag = MKN
 			has_country_flag = MKN_collapse_started
 			has_country_flag = MKN_collapse_participant
-			num_owned_states > 0
+			check_variable = { num_owned_states > 0 }
 			NOT = { has_global_flag = MKN_soviet_intervention_triggered }
 			NOT = { has_global_flag = MKN_collapse_reunified }
 			any_other_country = {
 				original_tag = MKN
 				has_country_flag = MKN_collapse_started
 				has_country_flag = MKN_collapse_participant
-				num_owned_states > 0
+				check_variable = { num_owned_states > 0 }
 			}
 		}
 		set_global_flag = MKN_soviet_intervention_triggered
@@ -200,11 +200,11 @@ MKN_execute_soviet_intervention = {
 			remove_mission = MKN_soviet_intervention_mission
 		}
 		if = {
-			limit = { exists = SOV SOV = { is_subject = no } }
+			limit = { SOV = { exists = yes } SOV = { is_subject = no } }
 			SOV = { MKN_soviet_intervention_attack_participants = yes }
 		}
 		if = {
-			limit = { exists = UKR UKR = { is_subject = no } }
+			limit = { UKR = { exists = yes } UKR = { is_subject = no } }
 			UKR = { MKN_soviet_intervention_attack_participants = yes }
 		}
 	}

@@ -9,7 +9,7 @@ from pathlib import Path
 import re
 import sys
 from PIL import Image
-from hoi4_script import read, one, values, walk, focus_registry, tree_focuses, TOKEN
+from hoi4_script import read, one, values, walk, focus_registry, tree_focuses, TOKEN, engine_script_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
@@ -34,7 +34,11 @@ def documents(root, glob):
                 numeric_checked.add(path)
                 text = path.read_text(encoding='utf-8-sig')
                 check(not any(re.fullmatch(r'-?\.\d+',m.group()) for m in TOKEN.finditer(text)), f'{path.relative_to(ROOT)}: decimal value requires a leading zero')
-            yield path, read(path)
+            doc = read(path)
+            if root == ROOT and path.name.startswith('MKN'):
+                for error in engine_script_errors(doc):
+                    errors.append(f'{path.relative_to(ROOT)}: {error}')
+            yield path, doc
         except (ValueError, UnicodeError) as exc:
             # Only files under review are required to parse; unrelated base assets can contain shader syntax.
             if root == ROOT:

@@ -63,6 +63,49 @@ def walk(node):
             yield from walk(value)
 
 
+def variable_check(node):
+    """Read the engine's named or single-operator check_variable syntax."""
+    comparisons = {
+        'equals': '=', 'not_equals': '!=', 'less_than': '<',
+        'less_than_or_equals': '<=', 'greater_than': '>',
+        'greater_than_or_equals': '>=',
+    }
+    if one(node, 'var') is not None:
+        var, value = one(node, 'var'), one(node, 'value')
+        compare = one(node, 'compare', 'equals')
+        if value is None or compare not in comparisons:
+            raise ValueError('Invalid named check_variable comparison')
+        return var, value, comparisons[compare]
+    operands = [entry for entry in node if entry[0] != 'tooltip']
+    if len(operands) != 1 or operands[0][2] not in ('=', '<', '>'):
+        raise ValueError('check_variable shorthand requires =, < or >; use named compare for inclusive comparisons')
+    return operands[0]
+
+
+def engine_script_errors(node, parents=()):
+    """Catch native loader errors a permissive Clausewitz reader can miss."""
+    for key, value, op in node:
+        context = '/'.join((*parents, str(key)))
+        if op not in (None, '=', '<', '>'):
+            yield f'{context}: unsupported raw operator {op}; use a named variable comparison'
+        if key == 'exists' and value not in ('yes', 'no'):
+            yield f'{context}: exists requires yes/no in country scope'
+        if key == 'num_owned_states' and (not parents or parents[-1] != 'check_variable'):
+            yield f'{context}: num_owned_states is a dynamic variable, not a native trigger'
+        if key == 'check_variable' and isinstance(value, list):
+            try:
+                variable_check(value)
+            except ValueError as exc:
+                yield f'{context}: {exc}'
+        if key == 'target_trigger' and isinstance(value, list):
+            state_only = {'is_owned_by', 'is_controlled_by', 'is_owned_and_controlled_by', 'any_neighbor_state'}
+            for name, operand, operator in value:
+                if name in state_only:
+                    yield f'{context}/{name}: target_trigger is country scope; enter the target state through FROM'
+        if isinstance(value, list):
+            yield from engine_script_errors(value, (*parents, str(key)))
+
+
 def focus_registry(directory):
     """Collect only direct focus/shared_focus definitions, never nested IDs."""
     registry = {}
