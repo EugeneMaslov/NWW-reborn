@@ -122,3 +122,39 @@ country_event = {
  is_triggered_only = yes
  option = { name = mkn.20.a add_political_power = 25 }
 }
+
+# Economic reform congresses; focus-triggered, each policy lasts one year.
+country_event = {
+ id = mkn.30
+ title = mkn.30.t
+ desc = mkn.30.d
+ picture = GFX_report_event_election_vote
+ is_triggered_only = yes
+ option = {
+  name = mkn.30.a
+  ai_chance = { factor = 50 }
+  add_timed_idea = { idea = MKN_construction_drive days = 365 }
+ }
+ option = {
+  name = mkn.30.b
+  ai_chance = { factor = 50 }
+  add_timed_idea = { idea = MKN_careful_investment days = 365 }
+ }
+}
+country_event = {
+ id = mkn.31
+ title = mkn.31.t
+ desc = mkn.31.d
+ picture = GFX_report_event_election_vote
+ is_triggered_only = yes
+ option = {
+  name = mkn.31.a
+  ai_chance = { factor = 50 }
+  add_timed_idea = { idea = MKN_export_contracts days = 365 }
+ }
+ option = {
+  name = mkn.31.b
+  ai_chance = { factor = 50 }
+  add_timed_idea = { idea = MKN_local_reserves days = 365 }
+ }
+}
