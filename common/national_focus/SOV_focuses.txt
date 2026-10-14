@@ -1,0 +1,1383 @@
+focus_tree = {
+	id = SOV_focus
+	default = no
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SOV
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 2500
+	}
+	focus = {
+		id = SOV_the_revolution_endures
+		x = 8
+		y = 0
+		cost = 10
+		icon = GFX_goal_support_communism
+		completion_reward = {
+			add_political_power = 100
+			country_event = {
+				id = nww_sov.1
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = SOV_russian_socialism
+		x = 6
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = SOV_the_revolution_endures
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SOV_the_new_constitution
+		x = 10
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = SOV_the_revolution_endures
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_country_flag = SOV_the_new_constitution_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = SOV_brotherhood_of_peoples
+		x = 10
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = {
+			focus = SOV_the_new_constitution
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = SOV_brotherhood_of_peoples_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = NWW_SOV_union_congress
+		x = 8
+		y = 3
+		cost = 5
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = SOV_russian_socialism
+		}
+		prerequisite = {
+			focus = SOV_brotherhood_of_peoples
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = NWW_SOV_party_coordination
+		x = 6
+		y = 4
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {
+			focus = NWW_SOV_union_congress
+		}
+		completion_reward = {
+			add_ideas = NWW_SOV_party_coordination_idea
+		}
+		mutually_exclusive = {
+			focus = NWW_SOV_republican_charters
+		}
+	}
+	focus = {
+		id = NWW_SOV_republican_charters
+		x = 10
+		y = 4
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {
+			focus = NWW_SOV_union_congress
+		}
+		completion_reward = {
+			add_ideas = NWW_SOV_republican_charters_idea
+		}
+		mutually_exclusive = {
+			focus = NWW_SOV_party_coordination
+		}
+	}
+	focus = {
+		id = NWW_SOV_budget_accountability
+		x = 8
+		y = 5
+		cost = 5
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = NWW_SOV_party_coordination
+			focus = NWW_SOV_republican_charters
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = NWW_SOV_civil_peace
+		x = 8
+		y = 6
+		cost = 10
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = NWW_SOV_budget_accountability
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_country_flag = NWW_SOV_civil_peace_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = SOV_second_five_year_plan
+		x = 22
+		y = 0
+		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 2
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_industrial_survey
+		x = 22
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = SOV_second_five_year_plan
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NWW_SOV_agricultural_credit
+		x = 22
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = NWW_SOV_industrial_survey
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_magnitogorsk
+		x = 20
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = NWW_SOV_agricultural_credit
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = SOV_magnitogorsk_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = SOV_urals_industry
+		x = 24
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = NWW_SOV_agricultural_credit
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = SOV_urals_industry_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = NWW_SOV_railway_bottlenecks
+		x = 22
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = SOV_magnitogorsk
+		}
+		prerequisite = {
+			focus = SOV_urals_industry
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_power_stations
+		x = 20
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = NWW_SOV_railway_bottlenecks
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_standardized_armaments
+		x = 24
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = NWW_SOV_railway_bottlenecks
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_plan_fulfilled
+		x = 22
+		y = 6
+		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = NWW_SOV_power_stations
+		}
+		prerequisite = {
+			focus = NWW_SOV_standardized_armaments
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_country_flag = NWW_SOV_plan_fulfilled_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = NWW_SOV_scientific_network
+		x = 32
+		y = 0
+		cost = 10
+		icon = GFX_goal_generic_scientific_exchange
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_technical_colleges
+		x = 32
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {
+			focus = NWW_SOV_scientific_network
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_research_council
+		x = 32
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {
+			focus = NWW_SOV_technical_colleges
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_atomic_laboratories
+		x = 30
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {
+			focus = NWW_SOV_research_council
+		}
+		available = {
+			date > 1938.1.1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_tech_bonus = {
+				category = nuclear
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_rocket_bureau
+		x = 34
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {
+			focus = NWW_SOV_research_council
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = rocketry
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = SOV_deep_battle
+		x = 42
+		y = 0
+		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_SOV_doctrine_bonus
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NWW_SOV_unified_command
+		x = 42
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = SOV_deep_battle
+		}
+		completion_reward = {
+			add_command_power = 20
+			set_country_flag = NWW_SOV_unified_command_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = SOV_workers_and_peasants_army
+		x = 42
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = NWW_SOV_unified_command
+		}
+		completion_reward = {
+			add_manpower = 100000
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = SOV_red_artillery
+		x = 40
+		y = 3
+		cost = 5
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = {
+			focus = SOV_workers_and_peasants_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				uses = 2
+				bonus = 0.5
+			}
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NWW_SOV_professional_officers
+		x = 42
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = SOV_workers_and_peasants_army
+		}
+		completion_reward = {
+			army_experience = 20
+			set_country_flag = NWW_SOV_professional_officers_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = NWW_SOV_mechanized_reserve
+		x = 46
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = {
+			focus = SOV_workers_and_peasants_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_field_radios
+		x = 42
+		y = 4
+		cost = 5
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = NWW_SOV_professional_officers
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_motorized_columns
+		x = 46
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = {
+			focus = NWW_SOV_mechanized_reserve
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = motorized_equipment
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_army_logistics
+		x = 42
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = NWW_SOV_field_radios
+		}
+		completion_reward = {
+			add_ideas = NWW_SOV_regular_logistics
+		}
+	}
+	focus = {
+		id = NWW_SOV_army_maneuvers
+		x = 42
+		y = 6
+		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = NWW_SOV_army_logistics
+		}
+		prerequisite = {
+			focus = SOV_red_artillery
+		}
+		completion_reward = {
+			army_experience = 25
+			set_country_flag = NWW_SOV_army_maneuvers_reform_done
+			nww_SOV_update_reconstruction = yes
+		}
+	}
+	focus = {
+		id = NWW_SOV_regular_army
+		x = 42
+		y = 7
+		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = NWW_SOV_army_maneuvers
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_SOV_doctrine_bonus
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = SOV_red_wings
+		x = 54
+		y = 0
+		cost = 10
+		icon = GFX_goal_generic_build_airforce
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_SOV_doctrine_bonus
+				category = air_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			air_experience = 15
+		}
+	}
+	focus = {
+		id = NWW_SOV_fighter_schools
+		x = 54
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = {
+			focus = SOV_red_wings
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = light_air
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_ground_support
+		x = 52
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_CAS
+		prerequisite = {
+			focus = NWW_SOV_fighter_schools
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cas_bomber
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = SOV_ilya_muromets_spirit
+		x = 56
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = {
+			focus = NWW_SOV_fighter_schools
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = heavy_air
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_air_service
+		x = 54
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = {
+			focus = NWW_SOV_ground_support
+		}
+		prerequisite = {
+			focus = SOV_ilya_muromets_spirit
+		}
+		completion_reward = {
+			add_ideas = NWW_SOV_air_service_idea
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SOV_red_banner_fleet
+		x = 64
+		y = 0
+		cost = 10
+		icon = GFX_goal_generic_build_navy
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_SOV_doctrine_bonus
+				category = naval_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			navy_experience = 15
+		}
+	}
+	focus = {
+		id = NWW_SOV_baltic_bases
+		x = 62
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {
+			focus = SOV_red_banner_fleet
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_black_sea_bases
+		x = 66
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {
+			focus = SOV_red_banner_fleet
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_escort_fleet
+		x = 62
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_build_navy
+		prerequisite = {
+			focus = NWW_SOV_baltic_bases
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_coastal_submarines
+		x = 66
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = {
+			focus = NWW_SOV_black_sea_bases
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_fleet_readiness
+		x = 64
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_build_navy
+		prerequisite = {
+			focus = NWW_SOV_escort_fleet
+		}
+		prerequisite = {
+			focus = NWW_SOV_coastal_submarines
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = NWW_SOV_doctrine_bonus
+				category = naval_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = SOV_comintern_calls
+		x = 76
+		y = 0
+		cost = 5
+		icon = GFX_focus_generic_diplomatic_treaty
+		available = {
+			has_completed_focus = SOV_russian_socialism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NWW_SOV_strategic_pause
+		x = 76
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {
+			focus = SOV_comintern_calls
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NWW_SOV_reconstruction_ready_tt
+				has_completed_focus = NWW_SOV_union_congress
+				has_completed_focus = SOV_magnitogorsk
+				has_completed_focus = SOV_urals_industry
+				has_completed_focus = NWW_SOV_professional_officers
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = NWW_SOV_frontier_review
+		x = 76
+		y = 2
+		cost = 5
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {
+			focus = NWW_SOV_strategic_pause
+		}
+		available = {
+			date > 1938.1.1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_command_power = 15
+		}
+	}
+	focus = {
+		id = NWW_SOV_western_command
+		x = 76
+		y = 3
+		cost = 5
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {
+			focus = NWW_SOV_frontier_review
+		}
+		available = {
+			is_subject = no
+			has_government = communism
+			custom_trigger_tooltip = {
+				tooltip = NWW_SOV_campaign_ready_tt
+				has_completed_focus = NWW_SOV_civil_peace
+				has_completed_focus = NWW_SOV_army_maneuvers
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = NWW_SOV_litbel_ultimatum
+		x = 74
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {
+			focus = NWW_SOV_western_command
+		}
+		available = {
+			date > 1939.1.1
+			is_subject = no
+			LTB = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				is_ally_with = LTB
+			}
+			NOT = {
+				has_war_with = LTB
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			LTB = {
+				country_event = {
+					id = nww_sov.10
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_litbel_campaign
+		x = 74
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = NWW_SOV_litbel_ultimatum
+		}
+		available = {
+			is_subject = no
+			has_government = communism
+			custom_trigger_tooltip = {
+				tooltip = NWW_SOV_campaign_ready_tt
+				has_completed_focus = NWW_SOV_civil_peace
+				has_completed_focus = NWW_SOV_army_maneuvers
+			}
+			date > 1939.6.1
+			has_war_support > 0.30
+			has_country_flag = NWW_SOV_LTB_rejected
+			NOT = {
+				has_country_flag = NWW_SOV_LTB_settlement
+			}
+			LTB = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = LTB
+			}
+			NOT = {
+				has_war_with = LTB
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = NWW_SOV_litbel_war_tt
+			hidden_effect = {
+				nww_SOV_prepare_litbel_campaign = yes
+			}
+		}
+		bypass = {
+			OR = {
+				is_ally_with = LTB
+				has_country_flag = NWW_SOV_LTB_settlement
+				LTB = {
+					exists = no
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_steppe_conference
+		x = 80
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {
+			focus = NWW_SOV_frontier_review
+		}
+		available = {
+			date > 1939.1.1
+			is_subject = no
+			MKN = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = MKN
+			}
+			NOT = {
+				has_country_flag = NWW_SOV_MKN_settlement
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			MKN = {
+				country_event = {
+					id = nww_sov.20
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = NWW_SOV_steppe_campaign
+		x = 80
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = NWW_SOV_steppe_conference
+		}
+		available = {
+			is_subject = no
+			has_government = communism
+			custom_trigger_tooltip = {
+				tooltip = NWW_SOV_campaign_ready_tt
+				has_completed_focus = NWW_SOV_civil_peace
+				has_completed_focus = NWW_SOV_army_maneuvers
+			}
+			date > 1940.1.1
+			has_war_support > 0.30
+			has_country_flag = NWW_SOV_MKN_rejected
+			NOT = {
+				has_country_flag = NWW_SOV_MKN_settlement
+			}
+			MKN = {
+				exists = yes
+				NOT = {
+					has_country_flag = MKN_equal_autonomy
+				}
+			}
+			NOT = {
+				is_ally_with = MKN
+			}
+			NOT = {
+				has_war_with = MKN
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = NWW_SOV_steppe_war_tt
+			hidden_effect = {
+				nww_SOV_prepare_steppe_campaign = yes
+			}
+		}
+		bypass = {
+			OR = {
+				is_ally_with = MKN
+				has_country_flag = NWW_SOV_MKN_settlement
+				MKN = {
+					exists = no
+				}
+				MKN = {
+					has_country_flag = MKN_equal_autonomy
+				}
+			}
+		}
+	}
+	shared_focus = SOV_infrastructure_effort_nsb
+	shared_focus = SOV_heavy_industry
+	shared_focus = SOV_finish_the_five_year_plan
+	shared_focus = SOV_improve_railway_network
+	shared_focus = SOV_third_five_year_plan
+	shared_focus = SOV_reorganize_the_pc_of_heavy_industry
+	shared_focus = SOV_industrial_modernization
+	shared_focus = SOV_increase_state_reserves
+	shared_focus = SOV_shift_to_armaments_production
+	shared_focus = SOV_optimize_production_lines
+	shared_focus = SOV_steel_casting_industry
+	shared_focus = SOV_synthetic_rubber
+	shared_focus = SOV_oil_production
+	shared_focus = SOV_restoration_and_development
+	shared_focus = SOV_fourth_five_year_plan
+	shared_focus = SOV_found_the_comecon
+	shared_focus = SOV_the_common_economic_space_initiative
+	shared_focus = SOV_found_the_warsaw_pact
+	shared_focus = SOV_no_time_for_peace
+	shared_focus = SOV_national_specialists
+	shared_focus = SOV_foreign_experts
+	shared_focus = SOV_eastern_development
+	shared_focus = SOV_develop_the_urals
+	shared_focus = SOV_the_ussr_academy_of_sciences
+	shared_focus = SOV_national_academies_of_sciences
+	shared_focus = SOV_transformation_of_nature
+	shared_focus = SOV_transformation_of_nature_alt
+	shared_focus = SOV_transpolar_flights
+	shared_focus = SOV_expand_the_aircraft_industry
+	shared_focus = SOV_modernize_aircraft_facilities
+	shared_focus = SOV_merge_aircraft_plants
+	shared_focus = SOV_found_the_jet_institute
+	shared_focus = SOV_increase_aircraft_production
+	shared_focus = SOV_foster_flying_clubs
+	shared_focus = SOV_women_in_aviation
+	shared_focus = SOV_raskovas_aviation_group
+	shared_focus = SOV_intensify_pilot_training_program
+	shared_focus = SOV_expand_aviation_institutes
+	shared_focus = SOV_ground_support
+	shared_focus = SOV_long_range_aircraft
+	shared_focus = SOV_the_modern_war_in_the_skies
+	shared_focus = SOV_expand_the_red_fleet
+	shared_focus = SOV_reinforce_western_naval_bases
+	shared_focus = SOV_reinforce_northern_naval_bases
+	shared_focus = SOV_reinforce_southern_naval_bases
+	shared_focus = SOV_reinforce_eastern_naval_bases
+	shared_focus = SOV_expand_shipbuilding_plants
+	shared_focus = SOV_merge_naval_plants
+	shared_focus = SOV_pc_of_the_ussr_navy
+	shared_focus = SOV_surface_warfare
+	shared_focus = SOV_submarine_warfare
+	shared_focus = SOV_offensive_maritime_strategy
+	shared_focus = SOV_an_oceangoing_navy
+	shared_focus = SOV_mine_warfare
+	shared_focus = SOV_long_range_raiders
+	shared_focus = SOV_advanced_maneuvers
+	shared_focus = SOV_expand_the_morskaya_aviatsiya
+	shared_focus = SOV_naval_infantry
+	shared_focus = SOV_found_the_pcdi
+	shared_focus = SOV_pc_of_mechanical_engineering
+	shared_focus = SOV_superior_war_machines
+	shared_focus = SOV_the_means_to_wage_war
+	shared_focus = SOV_soviet_artillery
+	shared_focus = SOV_pc_of_mortar_armament
+	shared_focus = SOV_development_of_tankograd
+	shared_focus = SOV_merge_tank_and_materiel_plants
+	shared_focus = SOV_strengthen_the_mobilization_plan
+	shared_focus = SOV_military_engineering_university
+	shared_focus = SOV_leningrad_polytechnical_institute
+	shared_focus = SOV_soviet_atomic_bomb_project
+	shared_focus = SOV_move_industry_to_the_urals
+	shared_focus = SOV_the_road_of_life
+	shared_focus = SOV_the_molotov_line
+	shared_focus = SOV_improve_the_stalin_line
+	shared_focus = SOV_the_defense_of_moscow
+	shared_focus = SOV_impregnable_forts
+	shared_focus = SOV_protect_the_white_sea_baltic_canal
+	shared_focus = SOV_far_east_fortification
+	shared_focus = SOV_restore_cossack_units
+	shared_focus = SOV_cohesion_first
+	shared_focus = SOV_rehabilitated_military
+	shared_focus = SOV_military_reorganization
+	shared_focus = SOV_desperate_measures
+	shared_focus = SOV_an_adaptable_army
+	shared_focus = SOV_lessons_of_war
+	shared_focus = SOV_penal_battalions
+	shared_focus = SOV_organization_of_the_partisans
+	shared_focus = SOV_smersh
+	shared_focus = SOV_barrier_troops
+	shared_focus = SOV_experts_in_camouflage
+	shared_focus = SOV_keep_commissars_organization
+	shared_focus = SOV_adjoined_battle_priests
+	shared_focus = SOV_swap_to_political_advisors
+	shared_focus = SOV_the_glory_of_the_red_army
+	shared_focus = SOV_the_glory_of_the_red_army_alt
+	shared_focus = SOV_the_path_of_marxism_leninism
+	shared_focus = SOV_the_centre
+	shared_focus = SOV_socialism_in_one_country
+	shared_focus = SOV_the_stalin_constitution
+	shared_focus = SOV_the_zinovyevite_terrorist_center
+	shared_focus = SOV_secure_the_administration
+	shared_focus = SOV_the_collectivization_process
+	shared_focus = SOV_the_anti_soviet_trotskyist_center
+	shared_focus = SOV_the_workers_dictatorship
+	shared_focus = SOV_organization_centralization_discipline
+	shared_focus = SOV_war_economy
+	shared_focus = SOV_the_military_conspiracy
+	shared_focus = SOV_the_bloc_of_rights_and_trotskyites
+	shared_focus = SOV_behead_the_snake
+	shared_focus = SOV_stalins_cult_of_personality
+	shared_focus = SOV_they_will_know_fear
+	shared_focus = SOV_inheritor_of_the_mantle_of_lenin
+	shared_focus = SOV_brilliant_genius
+	shared_focus = SOV_the_faithful_servant_of_lenin
+	shared_focus = SOV_ban_excessive_hero_worship
+	shared_focus = SOV_leader_of_the_party_and_the_people
+	shared_focus = SOV_great_commander
+	shared_focus = SOV_architect_of_communism
+	shared_focus = SOV_father_of_nations
+	shared_focus = SOV_freedom_of_debate_unity_of_action
+	shared_focus = SOV_the_construction_of_communism
+	shared_focus = SOV_the_left_opposition
+	shared_focus = SOV_the_fourth_international
+	shared_focus = SOV_bring_old_trotskyists_back
+	shared_focus = SOV_organize_the_wreckers
+	shared_focus = SOV_integrate_smirnovs_bloc
+	shared_focus = SOV_left_eliminate_right
+	shared_focus = SOV_committee_in_exile
+	shared_focus = SOV_approach_tukhachevsky
+	shared_focus = SOV_approach_primakov
+	shared_focus = SOV_funds_for_the_cause
+	shared_focus = SOV_left_opposition_coup
+	shared_focus = SOV_the_vanguard_of_the_true_revolution
+	shared_focus = SOV_long_live_the_workers_government
+	shared_focus = SOV_left_purges
+	shared_focus = SOV_the_builder_of_the_red_army
+	shared_focus = SOV_reigniting_the_revolutionary_spirit
+	shared_focus = SOV_the_permanent_revolution
+	shared_focus = SOV_depoliticize_the_military
+	shared_focus = SOV_system_decentralization
+	shared_focus = SOV_strengthen_heavy_industry
+	shared_focus = SOV_a_global_class_struggle
+	shared_focus = SOV_all_power_to_the_soviets
+	shared_focus = SOV_regional_development
+	shared_focus = SOV_autonomous_soviet_republics
+	shared_focus = SOV_international_union_of_soviet_republics
+	shared_focus = SOV_the_onslaught_on_colonialism
+	shared_focus = SOV_carry_revolution_east
+	shared_focus = SOV_the_end_of_the_imperialist_era
+	shared_focus = SOV_the_right_opposition
+	shared_focus = SOV_the_need_for_policy_changes
+	shared_focus = SOV_reverse_the_collectivization_process
+	shared_focus = SOV_organize_uprisings_in_the_country
+	shared_focus = SOV_dissent_in_the_party
+	shared_focus = SOV_eliminate_the_left
+	shared_focus = SOV_concessions_to_foreign_powers
+	shared_focus = SOV_covert_support_for_spanish_poum
+	shared_focus = SOV_undermine_stalins_authority
+	shared_focus = SOV_clandestine_cells
+	shared_focus = SOV_the_plan_for_the_coup
+	shared_focus = SOV_the_socialist_bulwark
+	shared_focus = SOV_coup_detat
+	shared_focus = SOV_right_purges
+	shared_focus = SOV_the_power_of_the_peasantry
+	shared_focus = SOV_curtailment_of_the_collective_farms
+	shared_focus = SOV_administrative_reforms
+	shared_focus = SOV_a_new_theory_of_revolution
+	shared_focus = SOV_back_to_the_nep
+	shared_focus = SOV_planned_economy
+	shared_focus = SOV_paced_industrialization
+	shared_focus = SOV_the_trade_union_as_labor_organizer
+	shared_focus = SOV_incorporate_local_organizations
+	shared_focus = SOV_for_the_common_good
+	shared_focus = SOV_victory_over_devastation
+	shared_focus = SOV_socialist_humanism
+	shared_focus = SOV_international_revolutionary_marxist_centre
+	shared_focus = SOV_a_sustainable_economy
+	shared_focus = SOV_the_enemies_of_the_people
+	shared_focus = SOV_proclaim_soviet_hegemony
+	shared_focus = SOV_military_support
+	shared_focus = SOV_divert_attention_towards_military
+	shared_focus = SOV_gain_support_from_party_members
+	shared_focus = SOV_sway_the_railway_workers
+	shared_focus = SOV_infiltrate_the_nkvd
+	shared_focus = SOV_cooperation_against_stalin
+	shared_focus = SOV_align_the_zinovyevites
+	shared_focus = SOV_liberate_ryutin
+	shared_focus = SOV_return_democracy_to_the_party
+	shared_focus = SOV_strengthen_the_trade_unions
+	shared_focus = SOV_the_peoples_revolution
+	shared_focus = SOV_the_supreme_soviet
+	shared_focus = SOV_addressing_internal_affairs
+	shared_focus = SOV_nkvd_primacy
+	shared_focus = SOV_the_new_soviet_woman
+	shared_focus = SOV_expand_the_agitprop
+	shared_focus = SOV_positive_heroism
+	shared_focus = SOV_revive_the_stakhanovite_movement
+	shared_focus = SOV_war_heroes
+	shared_focus = SOV_collectivist_propaganda
+	shared_focus = SOV_socialist_emulation
+	shared_focus = SOV_socialist_realism
+	shared_focus = SOV_the_komsomol
+	shared_focus = SOV_patriarch_of_all_russia
+	shared_focus = SOV_the_comintern
+	shared_focus = SOV_development_aid_for_eastern_allies
+	shared_focus = SOV_war_measures_in_the_east
+	shared_focus = SOV_annex_tannu_tuva
+	shared_focus = SOV_fortify_mongolian_border
+	shared_focus = SOV_send_military_advisors_to_spain
+	shared_focus = SOV_policy_of_collective_security
+	shared_focus = SOV_anti_fascist_policies
+	shared_focus = SOV_seek_a_defense_pact_with_the_allies
+	shared_focus = SOV_the_khakimov_proposal
+	shared_focus = SOV_eradicate_western_fascism
+	shared_focus = SOV_policy_of_individual_security
+	shared_focus = SOV_approach_germany
+	shared_focus = SOV_liberation_of_the_european_proletariat
+	shared_focus = SOV_anti_capitalist_policies
+	shared_focus = SOV_recover_alaska
+	shared_focus = SOV_the_fight_for_the_pacific
+	shared_focus = SOV_baltic_security
+	shared_focus = SOV_respect_baltic_self_determination
+	shared_focus = SOV_claims_in_baltic
+	shared_focus = SOV_secure_leningrad
+	shared_focus = SOV_control_scandinavia
+	shared_focus = SOV_claims_on_poland
+	shared_focus = SOV_demand_eastern_poland
+	shared_focus = SOV_offer_poland_protection
+	shared_focus = SOV_claim_on_bessarabia
+	shared_focus = SOV_demand_balkan_submission
+	shared_focus = SOV_seek_balkan_cooperation
+	shared_focus = SOV_middle_east_diplomacy
+	shared_focus = SOV_the_southern_thrust
+	shared_focus = SOV_support_afghan_ideology
+	shared_focus = SOV_preemptive_invasion_of_iran
+	shared_focus = SOV_the_threat_from_the_land_of_the_rising_sun
+	shared_focus = SOV_the_gobi_gambit
+	shared_focus = SOV_two_red_flags
+	shared_focus = SOV_support_the_kuomintang
+	shared_focus = SOV_intervention_in_china
+	shared_focus = SOV_prepare_a_war_with_japan
+	shared_focus = SOV_end_the_khalkhin_gol_conflict
+	shared_focus = SOV_recover_the_kuril_islands
+	shared_focus = SOV_reconcile_japan
+	shared_focus = SOV_spheres_of_influence_in_china
+	shared_focus = SOV_soviet_japanese_pact_against_usa_focus
+	shared_focus = SOV_beaten_but_not_defeated
+	shared_focus = SOV_unification_of_the_exiles
+	shared_focus = SOV_womens_fascist_movement
+	shared_focus = SOV_the_true_tsars
+	shared_focus = SOV_national_unification
+	shared_focus = SOV_embrace_the_black_hundreds
+	shared_focus = SOV_covert_operations
+	shared_focus = SOV_muster_the_old_guard
+	shared_focus = SOV_approach_semyonov
+	shared_focus = SOV_fascist_youth_union
+	shared_focus = SOV_tolkachi
+	shared_focus = SOV_south_manchuria_railway
+	shared_focus = SOV_organize_wreckers
+	shared_focus = SOV_the_eyes_fear
+	shared_focus = SOV_the_hands_do
+	shared_focus = SOV_call_for_aid
+	shared_focus = SOV_request_imperial_protection
+	shared_focus = SOV_sabotage_behind_enemy_lines
+	shared_focus = SOV_aristocratic_investments
+	shared_focus = SOV_consolidate_power
+	shared_focus = SOV_rebuild_the_nation
+	shared_focus = SOV_bringing_breakaways_back_to_the_fold
+	shared_focus = SOV_offer_autonomy_to_former_soviet_republics
+	shared_focus = SOV_restore_the_glory_of_the_motherland
+	shared_focus = SOV_article_124
+	shared_focus = SOV_reopen_novodevichi
+	shared_focus = SOV_rebuild_the_savior_cathedral
+	shared_focus = SOV_the_synod
+	shared_focus = SOV_the_declaration
+	shared_focus = SOV_return_of_the_rocor
+	shared_focus = SOV_reformalize_the_role_of_the_patriarchate
+	shared_focus = SOV_reconvene_the_zemsky_sobor
+	shared_focus = SOV_dismantle_the_zemsky_sobor
+	shared_focus = SOV_russian_corporate_state
+	shared_focus = SOV_romanov_reconstruction
+	shared_focus = SOV_capital_of_the_tsars
+	shared_focus = SOV_church_candidates
+	shared_focus = SOV_reinstitute_the_mestnichestvo
+	shared_focus = SOV_the_iron_wall_of_russian_resolve
+	shared_focus = SOV_my_brothers_keeper
+	shared_focus = SOV_the_rightful_heir_to_the_empire
+	shared_focus = SOV_the_third_rome
+	shared_focus = SOV_vengeance_for_the_yoke
+	shared_focus = SOV_reclaim_uryankhay_krai
+	shared_focus = SOV_westward_bound
+	shared_focus = SOV_the_triple_entente
+	shared_focus = SOV_our_slavic_commitments
+	shared_focus = SOV_the_old_enemy
+	shared_focus = SOV_secure_finland
+	shared_focus = SOV_secure_the_baltics
+	shared_focus = SOV_panslavic_nationalism
+	shared_focus = SOV_the_fate_of_romania
+	shared_focus = SOV_pacify_the_rim
+	shared_focus = SOV_eastern_expansion
+	shared_focus = SOV_intervention_in_the_americas
+	shared_focus = SOV_restore_the_old_eastern_empire
+	shared_focus = SOV_into_central_asia
+	shared_focus = SOV_the_last_break_southward
+	shared_focus = SOV_rebuild_the_far_eastern_fleet
+	shared_focus = SOV_modernize_the_far_eastern_fleet
+	shared_focus = SOV_memories_of_1905
+	shared_focus = SOV_the_lonely_island
+	shared_focus = SOV_an_empire_in_the_pacific
+	shared_focus = SOV_the_berlin_moscow_axis
+	shared_focus = SOV_japanese_overtures
+}

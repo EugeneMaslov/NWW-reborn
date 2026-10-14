@@ -1,0 +1,6 @@
+NWW_SOV_disabled_subsystems = {
+	icon = generic_political_actions
+	visible = {
+		always = no
+	}
+}

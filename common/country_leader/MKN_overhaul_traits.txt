@@ -1,0 +1,188 @@
+leader_traits = {
+	mkn_iron_warlord = {
+		sprite = 15
+		random = no
+		army_attack_factor = 0.15
+		war_support_factor = 0.15
+		stability_factor = -0.15
+	}
+	mkn_idealist_philosopher = {
+		sprite = 15
+		random = no
+		stability_factor = 0.25
+		political_power_gain = 0.30
+		war_support_factor = -0.10
+	}
+	mkn_granary_overseer = {
+		sprite = 15
+		random = no
+		army_defence_factor = 0.20
+		trade_opinion_factor = -0.20
+		global_building_slots_factor = 0.20
+	}
+	mkn_paralyzed_committee = {
+		sprite = 15
+		random = no
+		political_power_gain = -0.10
+	}
+	mkn_syndicalist_organizer = {
+		sprite = 15
+		random = no
+		industrial_capacity_factory = 0.10
+		army_org_factor = 0.10
+	}
+	mkn_batko_advisor = {
+		sprite = 15
+		random = no
+		army_org_factor = 0.25
+		org_loss_when_moving = -0.20
+		planning_speed = 0.20
+	}
+	mkn_infantry_specialist = {
+		sprite = 15
+		random = no
+		army_infantry_attack_factor = 0.10
+		army_infantry_defence_factor = 0.10
+	}
+	mkn_tachanka_expert = {
+		sprite = 15
+		random = no
+		army_speed_factor = 0.15
+		modifier_army_sub_unit_cavalry_attack_factor = 0.10
+		modifier_army_sub_unit_motorized_attack_factor = 0.10
+	}
+	mkn_armored_train_commander = {
+		sprite = 15
+		random = no
+	}
+	mkn_steppe_logistics_officer = {
+		sprite = 15
+		random = no
+		supply_consumption_factor = -0.15
+	}
+	mkn_entrenchment_specialist = {
+		sprite = 15
+		random = no
+		dig_in_speed_factor = 0.15
+	}
+	mkn_weapons_broker = {
+		sprite = 15
+		random = no
+		production_speed_arms_factory_factor = 0.10
+	}
+	mkn_recruiting_commissar = {
+		sprite = 15
+		random = no
+		conscription = 0.02
+	}
+	mkn_military_orator = {
+		sprite = 15
+		random = no
+		war_support_factor = 0.10
+	}
+	mkn_frontline_delegate = {
+		sprite = 15
+		random = no
+		army_org_factor = 0.05
+	}
+	mkn_arsenal_coordinator = {
+		sprite = 15
+		random = no
+		industrial_capacity_factory = 0.10
+	}
+	mkn_veterans_organizer = {
+		sprite = 15
+		random = no
+		experience_gain_army_factor = 0.10
+	}
+	mkn_education_delegate = {
+		sprite = 15
+		random = no
+		research_speed_factor = 0.05
+	}
+	mkn_commune_secretary = {
+		sprite = 15
+		random = no
+		political_power_gain = 0.20
+	}
+	mkn_anti_statist_theorist = {
+		sprite = 15
+		random = no
+		stability_factor = 0.10
+	}
+	mkn_cooperative_treasurer = {
+		sprite = 15
+		random = no
+		consumer_goods_factor = -0.05
+	}
+	mkn_literacy_organizer = {
+		sprite = 15
+		random = no
+		research_speed_factor = 0.05
+	}
+	mkn_free_press_editor = {
+		sprite = 15
+		random = no
+		democratic_drift = 0.05
+	}
+	mkn_grain_distributor = {
+		sprite = 15
+		random = no
+		supply_consumption_factor = -0.10
+	}
+	mkn_rural_defender = {
+		sprite = 15
+		random = no
+		army_core_defence_factor = 0.10
+	}
+	mkn_militia_delegate = {
+		sprite = 15
+		random = no
+		conscription = 0.02
+	}
+	mkn_agronomist = {
+		sprite = 15
+		random = no
+		production_speed_infrastructure_factor = 0.10
+	}
+	mkn_village_mediator = {
+		sprite = 15
+		random = no
+		stability_factor = 0.10
+	}
+	mkn_market_keeper = {
+		sprite = 15
+		random = no
+		trade_opinion_factor = 0.10
+	}
+	mkn_industrial_organizer = {
+		sprite = 15
+		random = no
+		industrial_capacity_factory = 0.10
+	}
+	mkn_rail_dispatcher = {
+		sprite = 15
+		random = no
+		production_speed_rail_way_factor = 0.15
+	}
+	mkn_union_secretary = {
+		sprite = 15
+		random = no
+		political_power_gain = 0.20
+	}
+	mkn_workshop_engineer = {
+		sprite = 15
+		random = no
+		production_factory_max_efficiency_factor = 0.05
+	}
+	mkn_labor_delegate = {
+		sprite = 15
+		random = no
+		production_speed_buildings_factor = 0.10
+	}
+	mkn_syndicalist_theorist = {
+		sprite = 15
+		random = no
+		communism_drift = 0.05
+	}
+}

@@ -7,6 +7,19 @@ on_actions = {
 						has_focus_tree = SOV_focus
 					}
 					nww_SOV_suspend_detached_purges = yes
+					nww_SOV_update_reconstruction = yes
+					if = {
+						limit = {
+							has_completed_focus = NWW_SOV_litbel_campaign
+						}
+						nww_SOV_prepare_litbel_campaign = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = NWW_SOV_steppe_campaign
+						}
+						nww_SOV_prepare_steppe_campaign = yes
+					}
 				}
 			}
 		}
@@ -16,12 +29,21 @@ on_actions = {
 			if = {
 				limit = {
 					has_focus_tree = SOV_focus
-					OR = {
-						has_country_flag = SOV_paranoia_system_active_flag
-						has_country_flag = SOV_paranoia_modifier_active_flag
-					}
 				}
 				nww_SOV_suspend_detached_purges = yes
+				nww_SOV_update_reconstruction = yes
+				if = {
+					limit = {
+						has_completed_focus = NWW_SOV_litbel_campaign
+					}
+					nww_SOV_prepare_litbel_campaign = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = NWW_SOV_steppe_campaign
+					}
+					nww_SOV_prepare_steppe_campaign = yes
+				}
 			}
 		}
 	}

@@ -1,0 +1,6 @@
+leader_traits = {
+	NWW_SOV_general_secretary = {
+		random = no
+		political_power_gain = 0.10
+	}
+}

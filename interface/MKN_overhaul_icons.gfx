@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_MKN_militarism
+		texturefile = "gfx/interface/goals/MKN_militarism.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_nabat
+		texturefile = "gfx/interface/goals/MKN_nabat.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_agrarian
+		texturefile = "gfx/interface/goals/MKN_agrarian.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_revkom
+		texturefile = "gfx/interface/goals/MKN_revkom.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_revkom
+		texturefile = "gfx/interface/goals/MKN_revkom.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_free_workshops
+		texturefile = "gfx/interface/goals/MKN_workshops.dds"
+	}
+}

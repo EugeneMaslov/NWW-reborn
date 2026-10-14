@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_rebuild_the_bridge
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -323,7 +323,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_union_general_staff
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = LTB_disorganized_army
@@ -361,7 +361,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_union_general_staff
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = NWW_land_doctrine_bonus
@@ -389,7 +389,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_union_general_staff
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -416,7 +416,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_union_general_staff
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_manpower = 50000
 			add_war_support = 0.05
@@ -480,7 +480,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_rebuild_the_bridge
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_ideas = LTB_minsk_arsenal
 			add_tech_bonus = {
@@ -626,7 +626,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_electrify_the_union
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = LTB_semi_agrarian_economy
@@ -670,7 +670,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_agricultural_mechanization
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = LTB_semi_agrarian_economy_1
@@ -697,7 +697,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_cooperative_farms
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = LTB_semi_agrarian_economy_2
@@ -741,7 +741,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_neman_trade_company
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = LTB_depression_legacy
@@ -768,7 +768,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_depression_recovery
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			remove_ideas = LTB_depression_legacy_1
 			add_political_power = 50
@@ -806,7 +806,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_minsk_machine_works
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			army_experience = 20
 			207 = {
@@ -842,7 +842,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_armaments_plant
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_war_support = 0.05
 			add_equipment_to_stockpile = {
@@ -1111,7 +1111,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_memel_shipyards
-		cost = 5
+		cost = 10
 		completion_reward = {
 			navy_experience = 15
 			190 = {
@@ -1294,7 +1294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_fortress_vitebsk
-		cost = 5
+		cost = 10
 		completion_reward = {
 			army_experience = 25
 			add_equipment_to_stockpile = {
@@ -1388,7 +1388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_cavalry_inspectorate
-		cost = 5
+		cost = 10
 		completion_reward = {
 			army_experience = 20
 			add_war_support = 0.05
@@ -1416,7 +1416,7 @@ focus_tree = {
 		prerequisite = {
 			focus = LTB_cavalry_inspectorate
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_manpower = 80000
 			add_political_power = 50
@@ -1500,7 +1500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_minsk_machine_works
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1542,7 +1542,7 @@ focus_tree = {
 	focus = {
 		id = LTB_union_industrial_plan
 		icon = GFX_focus_generic_industry_3
-		cost = 5
+		cost = 10
 		completion_reward = {
 			remove_ideas = LTB_semi_agrarian_economy_3
 			add_stability = 0.05
@@ -2031,7 +2031,7 @@ focus_tree = {
 	focus = {
 		id = LTB_vilnius_university
 		icon = GFX_focus_research
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_vilnius_radio
 		}
@@ -2059,7 +2059,7 @@ focus_tree = {
 	focus = {
 		id = LTB_union_research_council
 		icon = GFX_focus_research
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_vilnius_university
 		}
@@ -2087,7 +2087,7 @@ focus_tree = {
 	focus = {
 		id = LTB_precision_engineering
 		icon = GFX_goal_generic_production
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -2146,7 +2146,7 @@ focus_tree = {
 	focus = {
 		id = LTB_belmash_tank_program
 		icon = GFX_goal_generic_army_tanks
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_military_contracts
 		}
@@ -2186,7 +2186,7 @@ focus_tree = {
 	focus = {
 		id = LTB_motorized_reserves
 		icon = GFX_goal_generic_army_motorized
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_officers_of_two_nations
 		}
@@ -2223,7 +2223,7 @@ focus_tree = {
 	focus = {
 		id = LTB_mogilev_artillery_school
 		icon = GFX_goal_generic_army_artillery
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_timoshenkos_doctrine
 		}
@@ -2260,7 +2260,7 @@ focus_tree = {
 	focus = {
 		id = LTB_joint_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_border_guard_corps
 		}
@@ -2296,7 +2296,7 @@ focus_tree = {
 	focus = {
 		id = LTB_minsk_aircraft_works
 		icon = GFX_goal_generic_air_production
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_kaunas_air_club
 		}
@@ -2339,7 +2339,7 @@ focus_tree = {
 	focus = {
 		id = LTB_fighter_command
 		icon = GFX_goal_generic_air_fighter
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_minsk_aircraft_works
 		}
@@ -2376,7 +2376,7 @@ focus_tree = {
 	focus = {
 		id = LTB_army_air_support
 		icon = GFX_goal_generic_CAS
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_minsk_aircraft_works
 		}
@@ -2413,7 +2413,7 @@ focus_tree = {
 	focus = {
 		id = LTB_baltic_escort_program
 		icon = GFX_goal_generic_navy_anti_submarine
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_baltic_patrols
 		}
@@ -2462,7 +2462,7 @@ focus_tree = {
 	focus = {
 		id = LTB_coastal_defense_network
 		icon = GFX_goal_generic_defence
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = LTB_coastal_flotilla
 		}
@@ -2740,7 +2740,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_union_mining_program
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_production2
 		prerequisite = {
 			focus = LTB_polesie_peat
@@ -2778,7 +2778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_timoshenko_industrial_board
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_construct_mil_factory
 		completion_reward = {
 			207 = {
@@ -2853,7 +2853,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_professional_contract_army
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
 			focus = LTB_joint_maneuvers
@@ -2886,7 +2886,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_national_resilience
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_defence
 		prerequisite = {
 			focus = LTB_joint_maneuvers
@@ -2919,7 +2919,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_minsk_university
-		cost = 5
+		cost = 10
 		icon = GFX_focus_research
 		completion_reward = {
 			add_ideas = LTB_university_network
@@ -2962,7 +2962,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_rocket_research
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_secret_weapon
 		completion_reward = {
 			add_tech_bonus = {
@@ -2989,7 +2989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_peaceful_atom
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_scientific_exchange
 		available = {
 			date > 1938.1.1
@@ -3023,7 +3023,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_french_machine_tools
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_production
 		prerequisite = {
 			focus = LTB_free_economic_zones
@@ -3099,7 +3099,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LTB_multinational_air_program
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_air_production
 		prerequisite = {
 			focus = LTB_minsk_aircraft_works

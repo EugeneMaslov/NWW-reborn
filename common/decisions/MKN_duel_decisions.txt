@@ -1,0 +1,45 @@
+MKN_duel_category = {
+	MKN_support_established_order = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			has_country_flag = MKN_duel_choice_pending
+		}
+		available = {
+			has_country_flag = MKN_duel_choice_pending
+		}
+		complete_effect = {
+			clr_country_flag = MKN_duel_choice_pending
+			set_country_flag = MKN_duel_support_incumbent
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	MKN_rally_to_challenger = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			has_country_flag = MKN_duel_choice_pending
+		}
+		available = {
+			has_country_flag = MKN_duel_choice_pending
+			event_target:MKN_duel_challenger = {
+				exists = yes
+				has_country_flag = MKN_duel_participant
+			}
+		}
+		complete_effect = {
+			clr_country_flag = MKN_duel_choice_pending
+			set_country_flag = MKN_duel_support_rebels
+			event_target:MKN_duel_challenger = {
+				change_tag_from = ROOT
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

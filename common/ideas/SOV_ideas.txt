@@ -1,0 +1,193 @@
+ideas = {
+	country = {
+		NWW_SOV_state_0 = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+		NWW_SOV_state_1 = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		NWW_SOV_state_2 = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+		NWW_SOV_state_3 = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		NWW_SOV_economy_0 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		NWW_SOV_economy_1 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		NWW_SOV_economy_2 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		NWW_SOV_economy_3 = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NWW_SOV_army_0 = {
+			picture = generic_communist_army
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				army_org_factor = -0.15
+				planning_speed = -0.1
+				army_attack_factor = -0.05
+			}
+		}
+		NWW_SOV_army_1 = {
+			picture = generic_communist_army
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				army_org_factor = -0.1
+				planning_speed = -0.05
+				army_attack_factor = -0.05
+			}
+		}
+		NWW_SOV_army_2 = {
+			picture = generic_communist_army
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				army_org_factor = -0.05
+			}
+		}
+		NWW_SOV_army_3 = {
+			picture = generic_communist_army
+			removal_cost = -1
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		NWW_SOV_party_coordination_idea = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		NWW_SOV_republican_charters_idea = {
+			picture = generic_political_support
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.10
+				resistance_target = -0.05
+			}
+		}
+		NWW_SOV_regular_logistics = {
+			picture = generic_communist_army
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				supply_consumption_factor = -0.10
+			}
+		}
+		NWW_SOV_air_service_idea = {
+			picture = generic_aircraft_support
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				air_accidents_factor = -0.10
+				air_training_xp_gain_factor = 0.10
+			}
+		}
+		NWW_SOV_steppe_exchange = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+}

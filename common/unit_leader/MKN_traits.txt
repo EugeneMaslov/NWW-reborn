@@ -1,0 +1,15 @@
+leader_traits = {
+	mkn_batko_legend = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no
+		}
+		modifier = {
+			army_speed_factor = 0.25
+			modifier_army_sub_unit_cavalry_attack_factor = 0.25
+			modifier_army_sub_unit_motorized_attack_factor = 0.25
+			breakthrough_factor = 0.20
+		}
+	}
+}

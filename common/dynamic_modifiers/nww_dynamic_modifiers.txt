@@ -19,6 +19,7 @@ MKN_free_industry_modifier = {
 	stability_factor = MKN_unified_stability_factor
 	supply_consumption_factor = MKN_unified_supply_consumption_factor
 	training_time_army_factor = MKN_unified_training_time_army_factor
+	global_building_slots_factor = MKN_unified_global_building_slots_factor
 }
 MKN_army_development = {
 	enable = {

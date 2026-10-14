@@ -1,0 +1,34 @@
+peace_ai_desires = {
+	NWW_SOV_litbel_peace = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = SOV
+				has_completed_focus = NWW_SOV_litbel_campaign
+			}
+			FROM = {
+				tag = SOV
+			}
+			FROM.FROM = {
+				original_tag = LTB
+			}
+		}
+		ai_desire = 300
+	}
+	NWW_SOV_steppe_peace = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				tag = SOV
+				has_completed_focus = NWW_SOV_steppe_campaign
+			}
+			FROM = {
+				tag = SOV
+			}
+			FROM.FROM = {
+				original_tag = MKN
+			}
+		}
+		ai_desire = 300
+	}
+}

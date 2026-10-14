@@ -10,5 +10,8 @@ MKN_ukr_border_category = {
 			has_country_flag = mkn_frontier_conflict_active
 			has_country_flag = mkn_ukr_frontier_unlocked
 		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
 	}
 }

@@ -23,6 +23,9 @@ country_event = {
 			NOT = {
 				has_war_with = UKR
 			}
+			203 = {
+				is_owned_and_controlled_by = UKR
+			}
 		}
 		set_country_flag = UKR_MKN_border_settled
 		UKR = {
@@ -56,6 +59,11 @@ country_event = {
 			mkn_ukr_integrate_won_state = yes
 		}
 		custom_effect_tooltip = MKN_frontier_core_integration_tt
+		203 = {
+			transfer_state_to = ROOT
+			add_core_of = ROOT
+			set_state_flag = mkn_ukr_integrated_frontier_state
+		}
 	}
 	option = {
 		name = ukr.50.b

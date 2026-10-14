@@ -1,0 +1,24 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					original_tag = MKN
+					exists = yes
+				}
+				MKN_repair_overhaul = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					original_tag = MKN
+					exists = yes
+				}
+				MKN_repair_overhaul = yes
+			}
+		}
+	}
+}

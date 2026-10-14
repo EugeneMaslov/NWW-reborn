@@ -18,7 +18,7 @@ MKN_power_balance = {
   }
   range = {
    id = MKN_bop_militarist_lean min = -0.6 max = -0.1
-   modifier = { army_attack_factor = 0.075 recruitable_population_factor = 0.005 stability_factor = -0.15 }
+   modifier = { army_attack_factor = 0.075 conscription = 0.02 stability_factor = -0.15 }
   }
  }
  side = {

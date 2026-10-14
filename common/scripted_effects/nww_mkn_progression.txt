@@ -1,5 +1,8 @@
 nww_mkn_rebuild_industry = {
 	set_variable = {
+		MKN_unified_global_building_slots_factor = 0
+	}
+	set_variable = {
 		MKN_unified_army_org_factor = -0.1500
 	}
 	set_variable = {
@@ -18,7 +21,7 @@ nww_mkn_rebuild_industry = {
 		MKN_unified_factory_energy_consumption = 0.0000
 	}
 	set_variable = {
-		MKN_unified_industrial_capacity_factory = -0.1500
+		MKN_unified_industrial_capacity_factory = -0.2500
 	}
 	set_variable = {
 		MKN_unified_max_planning = -0.1000
@@ -63,6 +66,9 @@ nww_mkn_rebuild_industry = {
 		add_to_variable = {
 			MKN_unified_stability_factor = 0.0500
 		}
+		add_to_variable = {
+			MKN_unified_global_building_slots_factor = 0.3000
+		}
 	}
 	if = {
 		limit = {
@@ -90,6 +96,9 @@ nww_mkn_rebuild_industry = {
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
 		}
 	}
 	if = {
@@ -122,13 +131,13 @@ nww_mkn_rebuild_industry = {
 			has_completed_focus = MKN_engineering_delegates
 		}
 		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-		add_to_variable = {
 			MKN_unified_production_factory_efficiency_gain_factor = 0.0800
 		}
 		add_to_variable = {
 			MKN_unified_research_speed_factor = 0.0200
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0700
 		}
 	}
 	if = {
@@ -172,6 +181,9 @@ nww_mkn_rebuild_industry = {
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.0500
 		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
+		}
 	}
 	if = {
 		limit = {
@@ -196,6 +208,9 @@ nww_mkn_rebuild_industry = {
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.1300
+		}
+		add_to_variable = {
+			MKN_unified_global_building_slots_factor = 0.3000
 		}
 	}
 	if = {
@@ -238,6 +253,9 @@ nww_mkn_rebuild_industry = {
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
 		}
 	}
 	if = {
@@ -345,13 +363,13 @@ nww_mkn_rebuild_industry = {
 			has_completed_focus = MKN_village_smithies
 		}
 		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-		add_to_variable = {
 			MKN_unified_production_factory_efficiency_gain_factor = 0.0800
 		}
 		add_to_variable = {
 			MKN_unified_research_speed_factor = 0.0200
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0700
 		}
 	}
 	if = {
@@ -394,6 +412,9 @@ nww_mkn_rebuild_industry = {
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
 		}
 	}
 	if = {
@@ -557,6 +578,38 @@ nww_mkn_rebuild_industry = {
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_artel_register
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dnieper_audit
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_kommunar_tractor
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_rifle_concern
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0200
 		}
 	}
 }

@@ -7,7 +7,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				recruitable_population_factor = 0.10
+				conscription = 0.02
 				supply_consumption_factor = -0.05
 				army_attack_factor = 0.05
 			}
@@ -19,7 +19,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				recruitable_population_factor = 0.10
+				conscription = 0.02
 				supply_consumption_factor = -0.05
 				stability_factor = 0.03
 				political_power_gain = 0.05
@@ -90,7 +90,7 @@ ideas = {
 				modifier_army_sub_unit_cavalry_attack_factor = 0.1
 				modifier_army_sub_unit_cavalry_speed_factor = 0.1
 				modifier_army_sub_unit_cavalry_defence_factor = 0.05
-				recruitable_population_factor = 0.05
+				conscription = 0.02
 			}
 		}
 		MKN_black_guard_veterans_idea = {

@@ -1,358 +1,675 @@
 MKN_resolve_succession_crisis = {
- set_country_flag = MKN_crisis_settled
- clr_country_flag = MKN_crisis_active
- remove_mission = MKN_civil_war_timer_mission
+	set_country_flag = MKN_crisis_settled
+	clr_country_flag = MKN_crisis_active
+	remove_mission = MKN_civil_war_timer_mission
 }
 MKN_dismantle_bop = {
- set_country_flag = MKN_bop_abandoned
- if = { limit = { has_power_balance = { id = MKN_power_balance } } remove_power_balance = { id = MKN_power_balance } }
+	set_country_flag = MKN_bop_abandoned
+	if = {
+		limit = {
+			has_power_balance = {
+				id = MKN_power_balance
+			}
+		}
+		remove_power_balance = {
+			id = MKN_power_balance
+		}
+	}
 }
 MKN_repair_succession_crisis = {
- # Archived saves keep their completed political settlement and living monarch.
- if = {
-  limit = { NOT = { has_country_flag = MKN_crisis_enabled } }
-  set_country_flag = MKN_crisis_legacy_settled
- }
- if = {
-  limit = {
-   has_country_flag = MKN_crisis_enabled
-   NOT = { has_country_flag = MKN_collapse_started }
-   OR = { has_completed_focus = MKN_arrest_demagogues has_completed_focus = MKN_pact_of_free_communes has_completed_focus = MKN_grain_ultimatum has_completed_focus = MKN_purge_irreconcilables }
-  }
-  if = { limit = { NOT = { has_country_flag = MKN_crisis_settled } } MKN_resolve_succession_crisis = yes }
- }
- # Daily hard deadline complements MTTH=0 and prevents a delayed Jan 1937 funeral.
- if = {
-  limit = { has_country_flag = MKN_crisis_enabled date > 1936.12.30 NOT = { has_country_flag = mkn_batko_departed } }
-  country_event = { id = mkn_crisis.1 }
- }
- if = {
-  limit = { NOT = { has_country_flag = MKN_political_reconstruction_v1 } }
-  nww_mkn_rebuild_industry = yes
-  nww_mkn_rebuild_services = yes
-  set_country_flag = MKN_political_reconstruction_v1
- }
- if = {
-  limit = {
-   OR = { NOT = { SOV = { exists = yes has_government = communism is_subject = no } } NOT = { has_government = communism } is_subject = yes has_war_with = SOV }
-  }
-  clr_country_flag = MKN_soviet_front_pending
-  clr_country_flag = MKN_plenum_pending
- }
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = MKN_crisis_enabled
+			}
+		}
+		set_country_flag = MKN_crisis_legacy_settled
+	}
+	if = {
+		limit = {
+			has_country_flag = MKN_crisis_enabled
+			NOT = {
+				has_country_flag = MKN_collapse_started
+			}
+			OR = {
+				has_completed_focus = MKN_arrest_demagogues
+				has_completed_focus = MKN_pact_of_free_communes
+				has_completed_focus = MKN_grain_ultimatum
+				has_completed_focus = MKN_purge_irreconcilables
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = MKN_crisis_settled
+				}
+			}
+			MKN_resolve_succession_crisis = yes
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = MKN_crisis_enabled
+			date > 1936.12.30
+			NOT = {
+				has_country_flag = mkn_batko_departed
+			}
+		}
+		country_event = {
+			id = mkn_crisis.1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = MKN_political_reconstruction_v1
+			}
+		}
+		nww_mkn_rebuild_industry = yes
+		nww_mkn_rebuild_services = yes
+		set_country_flag = MKN_political_reconstruction_v1
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = {
+					SOV = {
+						exists = yes
+						has_government = communism
+						is_subject = no
+					}
+				}
+				NOT = {
+					has_government = communism
+				}
+				is_subject = yes
+				has_war_with = SOV
+			}
+		}
+		clr_country_flag = MKN_soviet_front_pending
+		clr_country_flag = MKN_plenum_pending
+	}
 }
 MKN_raise_communal_militias = {
- division_template = {
-  name = MKN_Commune_Guard
-  regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } }
- }
- add_manpower = 9000
- add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 900 producer = MKN }
- create_unit = { division = "name = \"1. Commune Guard\" division_template = \"MKN_Commune_Guard\" start_experience_factor = 0.10 start_equipment_factor = 1" owner = ROOT }
- create_unit = { division = "name = \"2. Commune Guard\" division_template = \"MKN_Commune_Guard\" start_experience_factor = 0.10 start_equipment_factor = 1" owner = ROOT }
- create_unit = { division = "name = \"3. Commune Guard\" division_template = \"MKN_Commune_Guard\" start_experience_factor = 0.10 start_equipment_factor = 1" owner = ROOT }
+	division_template = {
+		name = MKN_Commune_Guard
+		regiments = {
+			infantry = {
+				x = 0
+				y = 0
+			}
+			infantry = {
+				x = 0
+				y = 1
+			}
+			infantry = {
+				x = 0
+				y = 2
+			}
+		}
+	}
+	add_manpower = 9000
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 900
+		producer = MKN
+	}
+	create_unit = {
+		division = "name = \\"
+		1.
+		Commune
+		Guard\\
+		" division_template = \\"
+		MKN_Commune_Guard\\
+		" start_experience_factor = 0.10 start_equipment_factor = 1"
+		owner = ROOT
+	}
+	create_unit = {
+		division = "name = \\"
+		2.
+		Commune
+		Guard\\
+		" division_template = \\"
+		MKN_Commune_Guard\\
+		" start_experience_factor = 0.10 start_equipment_factor = 1"
+		owner = ROOT
+	}
+	create_unit = {
+		division = "name = \\"
+		3.
+		Commune
+		Guard\\
+		" division_template = \\"
+		MKN_Commune_Guard\\
+		" start_experience_factor = 0.10 start_equipment_factor = 1"
+		owner = ROOT
+	}
 }
 MKN_build_border_forts = {
- every_neighbor_country = {
-  limit = { NOT = { original_tag = MKN } }
-  save_event_target_as = MKN_fort_neighbor
-  ROOT = {
-   every_owned_state = {
-    limit = { is_controlled_by = ROOT any_neighbor_state = { is_owned_by = event_target:MKN_fort_neighbor } }
-    add_building_construction = { type = bunker level = 2 instant_build = yes province = { all_provinces = yes limit_to_border_country = event_target:MKN_fort_neighbor } }
-   }
-  }
- }
+	every_neighbor_country = {
+		limit = {
+			NOT = {
+				original_tag = MKN
+			}
+		}
+		save_event_target_as = MKN_fort_neighbor
+		ROOT = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						is_owned_by = event_target:MKN_fort_neighbor
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = event_target:MKN_fort_neighbor
+					}
+				}
+			}
+		}
+	}
 }
 MKN_build_soviet_rail_link = {
- # Never build through hostile or unrelated neutral land. Adjacent cross-border rail link.
- random_owned_state = {
-  limit = { is_controlled_by = ROOT any_neighbor_state = { is_owned_and_controlled_by = SOV } }
-  save_event_target_as = MKN_rail_start
-  random_neighbor_state = {
-   limit = { is_owned_and_controlled_by = SOV }
-   save_event_target_as = MKN_rail_end
-  }
- }
- build_railway = {
-  level = 2 start_state = event_target:MKN_rail_start target_state = event_target:MKN_rail_end
-  controller_priority = { base = -1 modifier = { add = 2 OR = { tag = MKN tag = SOV } } }
- }
- add_equipment_to_stockpile = { type = train_equipment_1 amount = 10 producer = SOV }
+	random_owned_state = {
+		limit = {
+			is_controlled_by = ROOT
+			any_neighbor_state = {
+				is_owned_and_controlled_by = SOV
+			}
+		}
+		save_event_target_as = MKN_rail_start
+		random_neighbor_state = {
+			limit = {
+				is_owned_and_controlled_by = SOV
+			}
+			save_event_target_as = MKN_rail_end
+		}
+	}
+	build_railway = {
+		level = 2
+		start_state = event_target:MKN_rail_start
+		target_state = event_target:MKN_rail_end
+		controller_priority = {
+			base = -1
+			modifier = {
+				add = 2
+				OR = {
+					tag = MKN
+					tag = SOV
+				}
+			}
+		}
+	}
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 10
+		producer = SOV
+	}
 }
-
 MKN_install_fascism_successor = {
- retire_ideology_leader = fascism
- create_country_leader = { name = NWW_MKN_viktor_belash desc = MKN_fascism_successor_desc picture = GFX_Portrait_MKN_viktor_belash ideology = fascism_ideology traits = { } }
+	retire_ideology_leader = fascism
+	create_country_leader = {
+		name = NWW_MKN_viktor_belash
+		desc = MKN_fascism_successor_desc
+		picture = GFX_Portrait_MKN_viktor_belash
+		ideology = fascism_ideology
+		traits = {
+			mkn_iron_warlord
+		}
+	}
 }
-
 MKN_install_democratic_successor = {
- retire_ideology_leader = democratic
- create_country_leader = { name = NWW_MKN_volin desc = MKN_democratic_successor_desc picture = GFX_Portrait_volin ideology = liberalism traits = { } }
+	retire_ideology_leader = democratic
+	create_country_leader = {
+		name = NWW_MKN_volin
+		desc = MKN_democratic_successor_desc
+		picture = GFX_Portrait_volin
+		ideology = liberalism
+		traits = {
+			mkn_idealist_philosopher
+		}
+	}
 }
-
 MKN_install_neutrality_successor = {
- retire_ideology_leader = neutrality
- create_country_leader = { name = MKN_peasant_council_leader desc = MKN_neutrality_successor_desc picture = GFX_Portrait_MKN_peasant_council ideology = despotism traits = { } }
+	retire_ideology_leader = neutrality
+	create_country_leader = {
+		name = MKN_peasant_council_leader
+		desc = MKN_neutrality_successor_desc
+		picture = GFX_Portrait_MKN_peasant_council
+		ideology = despotism
+		traits = {
+			mkn_granary_overseer
+		}
+	}
 }
-
 MKN_install_communism_successor = {
- retire_ideology_leader = communism
- create_country_leader = { name = MKN_revkom_leader desc = MKN_communism_successor_desc picture = GFX_Portrait_MKN_revkom ideology = leninism traits = { } }
+	retire_ideology_leader = communism
+	create_country_leader = {
+		name = MKN_revkom_leader
+		desc = MKN_communism_successor_desc
+		picture = GFX_Portrait_MKN_revkom
+		ideology = leninism
+		traits = {
+			mkn_paralyzed_committee
+		}
+	}
+	add_ideas = MKN_revkom_terror
 }
-
+MKN_install_tsebriy = {
+	retire_ideology_leader = communism
+	create_country_leader = {
+		name = MKN_osyp_tsebriy
+		picture = GFX_Portrait_MKN_revkom
+		ideology = leninism
+		traits = {
+			mkn_syndicalist_organizer
+		}
+	}
+	remove_ideas = MKN_revkom_terror
+}
 MKN_execute_four_way_collapse = {
- set_country_flag = MKN_collapse_started
- # Cancel the frontier deadline before civil-war countries inherit our flags.
- clr_country_flag = mkn_frontier_year_running
- remove_mission = MKN_frontier_year_countdown_mission
- set_country_flag = mkn_ukr_frontier_concluded
- set_country_flag = mkn_ukr_frontier_aborted
- clr_country_flag = mkn_ukr_war_pending
- clr_country_flag = mkn_ukr_pact_pending
- if = {
-  limit = { has_border_war_with = UKR }
-  mkn_ukr_stop_border_battle = yes
- }
- clr_country_flag = MKN_crisis_active
- remove_mission = MKN_civil_war_timer_mission
- MKN_dismantle_bop = yes
- set_variable = { MKN_cw_total_support = 0 }
- set_variable = { MKN_cw_state_count = 0 }
- every_owned_state = {
-  clr_state_flag = MKN_cw_assigned
-  clr_state_flag = MKN_cw_land_fascism
-  clr_state_flag = MKN_cw_land_democratic
-  clr_state_flag = MKN_cw_land_neutrality
-  clr_state_flag = MKN_cw_land_communism
-  if = { limit = { is_controlled_by = ROOT } ROOT = { add_to_variable = { MKN_cw_state_count = 1 } } }
- }
- set_variable = { MKN_cw_share_fascism = party_popularity@fascism }
- clamp_variable = { var = MKN_cw_share_fascism min = 0 max = 1 }
- add_to_variable = { MKN_cw_total_support = MKN_cw_share_fascism }
- set_variable = { MKN_cw_share_democratic = party_popularity@democratic }
- clamp_variable = { var = MKN_cw_share_democratic min = 0 max = 1 }
- add_to_variable = { MKN_cw_total_support = MKN_cw_share_democratic }
- set_variable = { MKN_cw_share_neutrality = party_popularity@neutrality }
- clamp_variable = { var = MKN_cw_share_neutrality min = 0 max = 1 }
- add_to_variable = { MKN_cw_total_support = MKN_cw_share_neutrality }
- set_variable = { MKN_cw_share_communism = party_popularity@communism }
- clamp_variable = { var = MKN_cw_share_communism min = 0 max = 1 }
- add_to_variable = { MKN_cw_total_support = MKN_cw_share_communism }
- set_variable = { MKN_cw_extra = MKN_cw_state_count }
- subtract_from_variable = { MKN_cw_extra = 4 }
- clamp_variable = { var = MKN_cw_extra min = 0 max = 10000 }
- set_variable = { MKN_cw_leftover = MKN_cw_extra }
- divide_variable = { MKN_cw_share_fascism = MKN_cw_total_support }
- set_variable = { MKN_cw_quota_fascism = MKN_cw_extra }
- multiply_variable = { MKN_cw_quota_fascism = MKN_cw_share_fascism }
- set_variable = { MKN_cw_remainder_fascism = MKN_cw_quota_fascism }
- round_variable = MKN_cw_quota_fascism
- if = { limit = { check_variable = { var = MKN_cw_quota_fascism value = MKN_cw_remainder_fascism compare = greater_than } } subtract_from_variable = { MKN_cw_quota_fascism = 1 } }
- subtract_from_variable = { MKN_cw_remainder_fascism = MKN_cw_quota_fascism }
- subtract_from_variable = { MKN_cw_leftover = MKN_cw_quota_fascism }
- add_to_variable = { MKN_cw_quota_fascism = 1 }
- divide_variable = { MKN_cw_share_democratic = MKN_cw_total_support }
- set_variable = { MKN_cw_quota_democratic = MKN_cw_extra }
- multiply_variable = { MKN_cw_quota_democratic = MKN_cw_share_democratic }
- set_variable = { MKN_cw_remainder_democratic = MKN_cw_quota_democratic }
- round_variable = MKN_cw_quota_democratic
- if = { limit = { check_variable = { var = MKN_cw_quota_democratic value = MKN_cw_remainder_democratic compare = greater_than } } subtract_from_variable = { MKN_cw_quota_democratic = 1 } }
- subtract_from_variable = { MKN_cw_remainder_democratic = MKN_cw_quota_democratic }
- subtract_from_variable = { MKN_cw_leftover = MKN_cw_quota_democratic }
- add_to_variable = { MKN_cw_quota_democratic = 1 }
- divide_variable = { MKN_cw_share_neutrality = MKN_cw_total_support }
- set_variable = { MKN_cw_quota_neutrality = MKN_cw_extra }
- multiply_variable = { MKN_cw_quota_neutrality = MKN_cw_share_neutrality }
- set_variable = { MKN_cw_remainder_neutrality = MKN_cw_quota_neutrality }
- round_variable = MKN_cw_quota_neutrality
- if = { limit = { check_variable = { var = MKN_cw_quota_neutrality value = MKN_cw_remainder_neutrality compare = greater_than } } subtract_from_variable = { MKN_cw_quota_neutrality = 1 } }
- subtract_from_variable = { MKN_cw_remainder_neutrality = MKN_cw_quota_neutrality }
- subtract_from_variable = { MKN_cw_leftover = MKN_cw_quota_neutrality }
- add_to_variable = { MKN_cw_quota_neutrality = 1 }
- divide_variable = { MKN_cw_share_communism = MKN_cw_total_support }
- set_variable = { MKN_cw_quota_communism = MKN_cw_extra }
- multiply_variable = { MKN_cw_quota_communism = MKN_cw_share_communism }
- set_variable = { MKN_cw_remainder_communism = MKN_cw_quota_communism }
- round_variable = MKN_cw_quota_communism
- if = { limit = { check_variable = { var = MKN_cw_quota_communism value = MKN_cw_remainder_communism compare = greater_than } } subtract_from_variable = { MKN_cw_quota_communism = 1 } }
- subtract_from_variable = { MKN_cw_remainder_communism = MKN_cw_quota_communism }
- subtract_from_variable = { MKN_cw_leftover = MKN_cw_quota_communism }
- add_to_variable = { MKN_cw_quota_communism = 1 }
- while_loop_effect = { limit = { check_variable = { MKN_cw_leftover > 0 } }
- if = { limit = { check_variable = { var = MKN_cw_remainder_fascism value = MKN_cw_remainder_democratic compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_fascism value = MKN_cw_remainder_neutrality compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_fascism value = MKN_cw_remainder_communism compare = greater_than_or_equals } } add_to_variable = { MKN_cw_quota_fascism = 1 } set_variable = { MKN_cw_remainder_fascism = -1 } }
- else_if = { limit = { check_variable = { var = MKN_cw_remainder_democratic value = MKN_cw_remainder_fascism compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_democratic value = MKN_cw_remainder_neutrality compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_democratic value = MKN_cw_remainder_communism compare = greater_than_or_equals } } add_to_variable = { MKN_cw_quota_democratic = 1 } set_variable = { MKN_cw_remainder_democratic = -1 } }
- else_if = { limit = { check_variable = { var = MKN_cw_remainder_neutrality value = MKN_cw_remainder_fascism compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_neutrality value = MKN_cw_remainder_democratic compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_neutrality value = MKN_cw_remainder_communism compare = greater_than_or_equals } } add_to_variable = { MKN_cw_quota_neutrality = 1 } set_variable = { MKN_cw_remainder_neutrality = -1 } }
- else_if = { limit = { check_variable = { var = MKN_cw_remainder_communism value = MKN_cw_remainder_fascism compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_communism value = MKN_cw_remainder_democratic compare = greater_than_or_equals } check_variable = { var = MKN_cw_remainder_communism value = MKN_cw_remainder_neutrality compare = greater_than_or_equals } } add_to_variable = { MKN_cw_quota_communism = 1 } set_variable = { MKN_cw_remainder_communism = -1 } }
- subtract_from_variable = { MKN_cw_leftover = 1 }
- }
- capital_scope = { set_state_flag = MKN_cw_assigned }
- if = {
-  limit = { NOT = { has_government = fascism } }
-  set_variable = { MKN_cw_allocate = MKN_cw_quota_fascism }
-  while_loop_effect = {
-   limit = { check_variable = { MKN_cw_allocate > 0 } any_owned_state = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } }
-   random_owned_state = { limit = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } set_state_flag = MKN_cw_assigned set_state_flag = MKN_cw_land_fascism }
-   subtract_from_variable = { MKN_cw_allocate = 1 }
-  }
- }
- if = {
-  limit = { NOT = { has_government = democratic } }
-  set_variable = { MKN_cw_allocate = MKN_cw_quota_democratic }
-  while_loop_effect = {
-   limit = { check_variable = { MKN_cw_allocate > 0 } any_owned_state = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } }
-   random_owned_state = { limit = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } set_state_flag = MKN_cw_assigned set_state_flag = MKN_cw_land_democratic }
-   subtract_from_variable = { MKN_cw_allocate = 1 }
-  }
- }
- if = {
-  limit = { NOT = { has_government = neutrality } }
-  set_variable = { MKN_cw_allocate = MKN_cw_quota_neutrality }
-  while_loop_effect = {
-   limit = { check_variable = { MKN_cw_allocate > 0 } any_owned_state = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } }
-   random_owned_state = { limit = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } set_state_flag = MKN_cw_assigned set_state_flag = MKN_cw_land_neutrality }
-   subtract_from_variable = { MKN_cw_allocate = 1 }
-  }
- }
- if = {
-  limit = { NOT = { has_government = communism } }
-  set_variable = { MKN_cw_allocate = MKN_cw_quota_communism }
-  while_loop_effect = {
-   limit = { check_variable = { MKN_cw_allocate > 0 } any_owned_state = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } }
-   random_owned_state = { limit = { is_controlled_by = ROOT NOT = { has_state_flag = MKN_cw_assigned } } set_state_flag = MKN_cw_assigned set_state_flag = MKN_cw_land_communism }
-   subtract_from_variable = { MKN_cw_allocate = 1 }
-  }
- }
- set_variable = { MKN_cw_remaining_share = 1 }
- if = {
-  limit = { NOT = { has_government = fascism } any_owned_state = { has_state_flag = MKN_cw_land_fascism } }
-  set_variable = { MKN_cw_ratio = MKN_cw_share_fascism }
-  if = { limit = { check_variable = { MKN_cw_remaining_share > 0 } } divide_variable = { MKN_cw_ratio = MKN_cw_remaining_share } }
-  else = { set_variable = { MKN_cw_ratio = 0 } }
-  clamp_variable = { var = MKN_cw_ratio min = 0 max = 1 }
-  start_civil_war = {
-   ideology = fascism
-   size = var:MKN_cw_ratio army_ratio = var:MKN_cw_ratio navy_ratio = var:MKN_cw_ratio air_ratio = var:MKN_cw_ratio
-   states = all states_filter = { has_state_flag = MKN_cw_land_fascism }
-   keep_all_characters = yes
-   set_country_flag = MKN_collapse_started
-   set_country_flag = MKN_crisis_enabled
-   set_country_flag = mkn_batko_departed
-   clr_country_flag = MKN_crisis_active
-   set_country_flag = MKN_bop_abandoned
-   remove_mission = MKN_civil_war_timer_mission
-   if = { limit = { has_power_balance = { id = MKN_power_balance } } remove_power_balance = { id = MKN_power_balance } }
-   MKN_install_fascism_successor = yes
-   set_politics = { ruling_party = fascism elections_allowed = no }
-   set_popularities = { fascism = 100 }
-   set_cosmetic_tag = MKN_cw_fascism
-   save_event_target_as = MKN_cw_fascism
-  }
-  subtract_from_variable = { MKN_cw_remaining_share = MKN_cw_share_fascism }
- }
- else_if = { limit = { has_government = fascism } save_event_target_as = MKN_cw_fascism }
- if = {
-  limit = { NOT = { has_government = democratic } any_owned_state = { has_state_flag = MKN_cw_land_democratic } }
-  set_variable = { MKN_cw_ratio = MKN_cw_share_democratic }
-  if = { limit = { check_variable = { MKN_cw_remaining_share > 0 } } divide_variable = { MKN_cw_ratio = MKN_cw_remaining_share } }
-  else = { set_variable = { MKN_cw_ratio = 0 } }
-  clamp_variable = { var = MKN_cw_ratio min = 0 max = 1 }
-  start_civil_war = {
-   ideology = democratic
-   size = var:MKN_cw_ratio army_ratio = var:MKN_cw_ratio navy_ratio = var:MKN_cw_ratio air_ratio = var:MKN_cw_ratio
-   states = all states_filter = { has_state_flag = MKN_cw_land_democratic }
-   keep_all_characters = yes
-   set_country_flag = MKN_collapse_started
-   set_country_flag = MKN_crisis_enabled
-   set_country_flag = mkn_batko_departed
-   clr_country_flag = MKN_crisis_active
-   set_country_flag = MKN_bop_abandoned
-   remove_mission = MKN_civil_war_timer_mission
-   if = { limit = { has_power_balance = { id = MKN_power_balance } } remove_power_balance = { id = MKN_power_balance } }
-   MKN_install_democratic_successor = yes
-   set_politics = { ruling_party = democratic elections_allowed = no }
-   set_popularities = { democratic = 100 }
-   set_cosmetic_tag = MKN_cw_democratic
-   save_event_target_as = MKN_cw_democratic
-  }
-  subtract_from_variable = { MKN_cw_remaining_share = MKN_cw_share_democratic }
- }
- else_if = { limit = { has_government = democratic } save_event_target_as = MKN_cw_democratic }
- if = {
-  limit = { NOT = { has_government = neutrality } any_owned_state = { has_state_flag = MKN_cw_land_neutrality } }
-  set_variable = { MKN_cw_ratio = MKN_cw_share_neutrality }
-  if = { limit = { check_variable = { MKN_cw_remaining_share > 0 } } divide_variable = { MKN_cw_ratio = MKN_cw_remaining_share } }
-  else = { set_variable = { MKN_cw_ratio = 0 } }
-  clamp_variable = { var = MKN_cw_ratio min = 0 max = 1 }
-  start_civil_war = {
-   ideology = neutrality
-   size = var:MKN_cw_ratio army_ratio = var:MKN_cw_ratio navy_ratio = var:MKN_cw_ratio air_ratio = var:MKN_cw_ratio
-   states = all states_filter = { has_state_flag = MKN_cw_land_neutrality }
-   keep_all_characters = yes
-   set_country_flag = MKN_collapse_started
-   set_country_flag = MKN_crisis_enabled
-   set_country_flag = mkn_batko_departed
-   clr_country_flag = MKN_crisis_active
-   set_country_flag = MKN_bop_abandoned
-   remove_mission = MKN_civil_war_timer_mission
-   if = { limit = { has_power_balance = { id = MKN_power_balance } } remove_power_balance = { id = MKN_power_balance } }
-   MKN_install_neutrality_successor = yes
-   set_politics = { ruling_party = neutrality elections_allowed = no }
-   set_popularities = { neutrality = 100 }
-   set_cosmetic_tag = MKN_cw_neutrality
-   save_event_target_as = MKN_cw_neutrality
-  }
-  subtract_from_variable = { MKN_cw_remaining_share = MKN_cw_share_neutrality }
- }
- else_if = { limit = { has_government = neutrality } save_event_target_as = MKN_cw_neutrality }
- if = {
-  limit = { NOT = { has_government = communism } any_owned_state = { has_state_flag = MKN_cw_land_communism } }
-  set_variable = { MKN_cw_ratio = MKN_cw_share_communism }
-  if = { limit = { check_variable = { MKN_cw_remaining_share > 0 } } divide_variable = { MKN_cw_ratio = MKN_cw_remaining_share } }
-  else = { set_variable = { MKN_cw_ratio = 0 } }
-  clamp_variable = { var = MKN_cw_ratio min = 0 max = 1 }
-  start_civil_war = {
-   ideology = communism
-   size = var:MKN_cw_ratio army_ratio = var:MKN_cw_ratio navy_ratio = var:MKN_cw_ratio air_ratio = var:MKN_cw_ratio
-   states = all states_filter = { has_state_flag = MKN_cw_land_communism }
-   keep_all_characters = yes
-   set_country_flag = MKN_collapse_started
-   set_country_flag = MKN_crisis_enabled
-   set_country_flag = mkn_batko_departed
-   clr_country_flag = MKN_crisis_active
-   set_country_flag = MKN_bop_abandoned
-   remove_mission = MKN_civil_war_timer_mission
-   if = { limit = { has_power_balance = { id = MKN_power_balance } } remove_power_balance = { id = MKN_power_balance } }
-   MKN_install_communism_successor = yes
-   set_politics = { ruling_party = communism elections_allowed = no }
-   set_popularities = { communism = 100 }
-   set_cosmetic_tag = MKN_cw_communism
-   save_event_target_as = MKN_cw_communism
-  }
-  subtract_from_variable = { MKN_cw_remaining_share = MKN_cw_share_communism }
- }
- else_if = { limit = { has_government = communism } save_event_target_as = MKN_cw_communism }
- if = { limit = { has_event_target = MKN_cw_fascism has_event_target = MKN_cw_democratic }
-  event_target:MKN_cw_fascism = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_democratic } } declare_war_on = { target = event_target:MKN_cw_democratic type = annex_everything } } }
- }
- if = { limit = { has_event_target = MKN_cw_fascism has_event_target = MKN_cw_neutrality }
-  event_target:MKN_cw_fascism = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_neutrality } } declare_war_on = { target = event_target:MKN_cw_neutrality type = annex_everything } } }
- }
- if = { limit = { has_event_target = MKN_cw_fascism has_event_target = MKN_cw_communism }
-  event_target:MKN_cw_fascism = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
- }
- if = { limit = { has_event_target = MKN_cw_democratic has_event_target = MKN_cw_neutrality }
-  event_target:MKN_cw_democratic = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_neutrality } } declare_war_on = { target = event_target:MKN_cw_neutrality type = annex_everything } } }
- }
- if = { limit = { has_event_target = MKN_cw_democratic has_event_target = MKN_cw_communism }
-  event_target:MKN_cw_democratic = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
- }
- if = { limit = { has_event_target = MKN_cw_neutrality has_event_target = MKN_cw_communism }
-  event_target:MKN_cw_neutrality = { if = { limit = { NOT = { has_war_with = event_target:MKN_cw_communism } } declare_war_on = { target = event_target:MKN_cw_communism type = annex_everything } } }
- }
- every_owned_state = { clr_state_flag = MKN_cw_assigned }
- # Enroll only after all three new civil-war countries have been created.
- every_country = {
-  limit = { original_tag = MKN has_country_flag = MKN_collapse_started check_variable = { num_owned_states > 0 } }
-  MKN_initialize_soviet_intervention = yes
- }
+	set_country_flag = MKN_collapse_started
+	set_country_flag = mkn_collapsed
+	set_country_flag = MKN_duel_participant
+	set_country_flag = MKN_collapse_participant
+	set_country_flag = MKN_crisis_enabled
+	set_country_flag = mkn_ukr_frontier_concluded
+	set_country_flag = mkn_ukr_frontier_aborted
+	clr_country_flag = mkn_frontier_year_running
+	clr_country_flag = mkn_ukr_border_battle_active
+	remove_mission = MKN_passive_escalation_drift
+	remove_mission = MKN_frontier_year_countdown_mission
+	remove_mission = MKN_civil_war_timer_mission
+	clr_country_flag = MKN_crisis_active
+	clr_country_flag = mkn_ukr_war_pending
+	clr_country_flag = mkn_ukr_pact_pending
+	mkn_ukr_stop_border_battle = yes
+	MKN_dismantle_bop = yes
+	save_global_event_target_as = MKN_duel_incumbent
+	set_variable = {
+		MKN_duel_best_support = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = fascism
+			}
+			check_variable = {
+				var = party_popularity@fascism
+				value = MKN_duel_best_support
+				compare = greater_than
+			}
+		}
+		set_variable = {
+			MKN_duel_best_support = party_popularity@fascism
+		}
+		set_variable = {
+			MKN_duel_challenger = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = democratic
+			}
+			check_variable = {
+				var = party_popularity@democratic
+				value = MKN_duel_best_support
+				compare = greater_than
+			}
+		}
+		set_variable = {
+			MKN_duel_best_support = party_popularity@democratic
+		}
+		set_variable = {
+			MKN_duel_challenger = 1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = neutrality
+			}
+			check_variable = {
+				var = party_popularity@neutrality
+				value = MKN_duel_best_support
+				compare = greater_than
+			}
+		}
+		set_variable = {
+			MKN_duel_best_support = party_popularity@neutrality
+		}
+		set_variable = {
+			MKN_duel_challenger = 2
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = communism
+			}
+			check_variable = {
+				var = party_popularity@communism
+				value = MKN_duel_best_support
+				compare = greater_than
+			}
+		}
+		set_variable = {
+			MKN_duel_best_support = party_popularity@communism
+		}
+		set_variable = {
+			MKN_duel_challenger = 3
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				MKN_duel_challenger = 0
+			}
+		}
+		start_civil_war = {
+			ideology = fascism
+			size = 0.50
+			keep_all_characters = yes
+			set_country_flag = MKN_crisis_enabled
+			set_country_flag = MKN_collapse_started
+			set_country_flag = mkn_collapsed
+			set_country_flag = MKN_duel_participant
+			set_country_flag = MKN_collapse_participant
+			set_country_flag = mkn_ukr_frontier_concluded
+			load_focus_tree = {
+				tree = MKN_focus
+				keep_completed = yes
+			}
+			MKN_install_fascism_successor = yes
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			save_global_event_target_as = MKN_duel_challenger
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				MKN_duel_challenger = 1
+			}
+		}
+		start_civil_war = {
+			ideology = democratic
+			size = 0.50
+			keep_all_characters = yes
+			set_country_flag = MKN_crisis_enabled
+			set_country_flag = MKN_collapse_started
+			set_country_flag = mkn_collapsed
+			set_country_flag = MKN_duel_participant
+			set_country_flag = MKN_collapse_participant
+			set_country_flag = mkn_ukr_frontier_concluded
+			load_focus_tree = {
+				tree = MKN_focus
+				keep_completed = yes
+			}
+			MKN_install_democratic_successor = yes
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			save_global_event_target_as = MKN_duel_challenger
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				MKN_duel_challenger = 2
+			}
+		}
+		start_civil_war = {
+			ideology = neutrality
+			size = 0.50
+			keep_all_characters = yes
+			set_country_flag = MKN_crisis_enabled
+			set_country_flag = MKN_collapse_started
+			set_country_flag = mkn_collapsed
+			set_country_flag = MKN_duel_participant
+			set_country_flag = MKN_collapse_participant
+			set_country_flag = mkn_ukr_frontier_concluded
+			load_focus_tree = {
+				tree = MKN_focus
+				keep_completed = yes
+			}
+			MKN_install_neutrality_successor = yes
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			save_global_event_target_as = MKN_duel_challenger
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				MKN_duel_challenger = 3
+			}
+		}
+		start_civil_war = {
+			ideology = communism
+			size = 0.50
+			keep_all_characters = yes
+			set_country_flag = MKN_crisis_enabled
+			set_country_flag = MKN_collapse_started
+			set_country_flag = mkn_collapsed
+			set_country_flag = MKN_duel_participant
+			set_country_flag = MKN_collapse_participant
+			set_country_flag = mkn_ukr_frontier_concluded
+			load_focus_tree = {
+				tree = MKN_focus
+				keep_completed = yes
+			}
+			MKN_install_communism_successor = yes
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			save_global_event_target_as = MKN_duel_challenger
+		}
+	}
+	if = {
+		limit = {
+			is_ai = no
+		}
+		set_country_flag = MKN_duel_choice_pending
+	}
+	set_country_flag = MKN_duel_started
+}
+MKN_recover_duel_winner = {
+	set_country_flag = MKN_duel_recovered
+	clr_country_flag = mkn_collapsed
+	clr_country_flag = MKN_collapse_started
+	clr_country_flag = MKN_duel_choice_pending
+	clr_country_flag = MKN_collapse_participant
+	clr_country_flag = MKN_crisis_legacy_settled
+	remove_mission = MKN_soviet_intervention_mission
+	MKN_resolve_succession_crisis = yes
+	set_country_flag = MKN_crisis_enabled
+	set_global_flag = MKN_collapse_reunified
+	load_focus_tree = {
+		tree = MKN_focus
+		keep_completed = yes
+	}
+	if = {
+		limit = {
+			has_government = fascism
+		}
+		uncomplete_national_focus = {
+			focus = MKN_triumph_of_free_soviets
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_peasant_delegates
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_emergency_revkom
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		set_popularities = {
+			fascism = 100
+			democratic = 0
+			neutrality = 0
+			communism = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_departure_of_batko
+				}
+			}
+			complete_national_focus = MKN_departure_of_batko
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_military_takes_charge
+				}
+			}
+			complete_national_focus = MKN_military_takes_charge
+		}
+	}
+	if = {
+		limit = {
+			has_government = democratic
+		}
+		uncomplete_national_focus = {
+			focus = MKN_military_takes_charge
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_peasant_delegates
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_emergency_revkom
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		set_popularities = {
+			fascism = 0
+			democratic = 100
+			neutrality = 0
+			communism = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_departure_of_batko
+				}
+			}
+			complete_national_focus = MKN_departure_of_batko
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_triumph_of_free_soviets
+				}
+			}
+			complete_national_focus = MKN_triumph_of_free_soviets
+		}
+	}
+	if = {
+		limit = {
+			has_government = neutrality
+		}
+		uncomplete_national_focus = {
+			focus = MKN_military_takes_charge
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_triumph_of_free_soviets
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_emergency_revkom
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		set_popularities = {
+			fascism = 0
+			democratic = 0
+			neutrality = 100
+			communism = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_departure_of_batko
+				}
+			}
+			complete_national_focus = MKN_departure_of_batko
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_peasant_delegates
+				}
+			}
+			complete_national_focus = MKN_peasant_delegates
+		}
+	}
+	if = {
+		limit = {
+			has_government = communism
+		}
+		uncomplete_national_focus = {
+			focus = MKN_military_takes_charge
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_triumph_of_free_soviets
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		uncomplete_national_focus = {
+			focus = MKN_peasant_delegates
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		set_popularities = {
+			fascism = 0
+			democratic = 0
+			neutrality = 0
+			communism = 100
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_departure_of_batko
+				}
+			}
+			complete_national_focus = MKN_departure_of_batko
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = MKN_emergency_revkom
+				}
+			}
+			complete_national_focus = MKN_emergency_revkom
+		}
+	}
+	nww_mkn_rebuild_industry = yes
+	nww_mkn_rebuild_services = yes
+	mark_focus_tree_layout_dirty = yes
 }

@@ -1,0 +1,124 @@
+NWW_SOV_litbel_attack = {
+	enable = {
+		tag = SOV
+		has_focus_tree = SOV_focus
+		is_subject = no
+		has_completed_focus = NWW_SOV_litbel_campaign
+		LTB = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = LTB
+		}
+		NOT = {
+			has_war_with = LTB
+		}
+		NOT = {
+			has_country_flag = NWW_SOV_LTB_settlement
+		}
+		has_wargoal_against = LTB
+		can_declare_war_on = LTB
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = LTB
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = LTB
+		value = 300
+	}
+	ai_strategy = {
+		type = conquer
+		id = LTB
+		value = 300
+	}
+}
+NWW_SOV_litbel_restraint = {
+	enable = {
+		tag = SOV
+		has_focus_tree = SOV_focus
+		LTB = {
+			exists = yes
+		}
+		OR = {
+			date < 1939.6.2
+			is_ally_with = LTB
+			has_country_flag = NWW_SOV_LTB_settlement
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = LTB
+		value = -1000
+	}
+}
+NWW_SOV_steppe_attack = {
+	enable = {
+		tag = SOV
+		has_focus_tree = SOV_focus
+		is_subject = no
+		has_completed_focus = NWW_SOV_steppe_campaign
+		MKN = {
+			exists = yes
+		}
+		NOT = {
+			is_ally_with = MKN
+		}
+		NOT = {
+			has_war_with = MKN
+		}
+		MKN = {
+			NOT = {
+				has_country_flag = MKN_equal_autonomy
+			}
+		}
+		NOT = {
+			has_country_flag = NWW_SOV_MKN_settlement
+		}
+		has_wargoal_against = MKN
+		can_declare_war_on = MKN
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = MKN
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = MKN
+		value = 300
+	}
+	ai_strategy = {
+		type = conquer
+		id = MKN
+		value = 300
+	}
+}
+NWW_SOV_steppe_restraint = {
+	enable = {
+		tag = SOV
+		has_focus_tree = SOV_focus
+		MKN = {
+			exists = yes
+		}
+		OR = {
+			date < 1940.1.2
+			is_ally_with = MKN
+			has_country_flag = NWW_SOV_MKN_settlement
+			MKN = {
+				has_country_flag = MKN_equal_autonomy
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = MKN
+		value = -1000
+	}
+}

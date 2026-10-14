@@ -35,7 +35,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_local_congress
@@ -56,7 +56,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_public_debate
@@ -77,7 +77,7 @@ focus_tree = {
 			}
 			add_political_power = 75
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_mandate_commission
@@ -98,7 +98,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_council_mandate
@@ -136,7 +136,7 @@ focus_tree = {
 				elections_allowed = no
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_cooperative_land
@@ -195,7 +195,7 @@ focus_tree = {
 				category = cat_production
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_council_courts
@@ -216,7 +216,7 @@ focus_tree = {
 			}
 			add_political_power = 40
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_social_republic
@@ -241,7 +241,7 @@ focus_tree = {
 			}
 			add_stability = 0.03
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_constituent_mandate
@@ -281,7 +281,7 @@ focus_tree = {
 				election_frequency = 48
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_land_titles
@@ -307,7 +307,7 @@ focus_tree = {
 				category = construction_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_elected_municipalities
@@ -339,7 +339,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_independent_courts
@@ -360,7 +360,7 @@ focus_tree = {
 			}
 			add_stability = 0.04
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_federal_republic
@@ -386,7 +386,7 @@ focus_tree = {
 				category = computing_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_state_mandate
@@ -424,7 +424,7 @@ focus_tree = {
 				elections_allowed = no
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_rural_compact
@@ -449,7 +449,7 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_professional_civil_service
@@ -470,7 +470,7 @@ focus_tree = {
 			}
 			add_political_power = 75
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_state_arbitration
@@ -496,7 +496,7 @@ focus_tree = {
 				category = industry
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_constitutional_directory
@@ -518,7 +518,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_command_power = 25
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_public_accountability
@@ -545,7 +545,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_dnieper_industry
@@ -580,7 +580,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_land_survey
@@ -613,7 +613,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_coal_contracts
@@ -645,7 +645,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_collectivization_completed
@@ -671,7 +671,7 @@ focus_tree = {
 				category = industry
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_machine_tool_imports
@@ -697,7 +697,7 @@ focus_tree = {
 				category = cat_production
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_seed_funds
@@ -718,7 +718,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_railway_accounting
@@ -756,7 +756,7 @@ focus_tree = {
 				category = train_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_rural_workshops
@@ -843,7 +843,7 @@ focus_tree = {
 			}
 			add_stability = 0.03
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_power_network
@@ -875,7 +875,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_agricultural_schools
@@ -901,7 +901,7 @@ focus_tree = {
 				category = industry
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_odessa_trade_houses
@@ -993,7 +993,7 @@ focus_tree = {
 				category = cat_production
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_polytechnic_network
@@ -1018,8 +1018,8 @@ focus_tree = {
 				add_research_slot = 1
 			}
 		}
-		cost = 10
 		y = 11
+		cost = 10
 	}
 	focus = {
 		id = UKR_precision_workshops
@@ -1057,8 +1057,8 @@ focus_tree = {
 				category = electronics
 			}
 		}
-		cost = 10
 		y = 11
+		cost = 10
 	}
 	focus = {
 		id = UKR_balanced_economic_compact
@@ -1081,7 +1081,6 @@ focus_tree = {
 			}
 			add_political_power = 75
 		}
-		cost = 10
 		y = 10
 		prerequisite = {
 			focus = UKR_cherkasy_food_processing
@@ -1089,6 +1088,7 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_industrial_standards
 		}
+		cost = 10
 	}
 	focus = {
 		id = UKR_guardians_of_the_steppe
@@ -1119,7 +1119,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_army_depots
@@ -1145,7 +1145,7 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_officer_school
@@ -1179,7 +1179,7 @@ focus_tree = {
 				name = UKR_officer_school
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_rifle_standardization
@@ -1205,7 +1205,7 @@ focus_tree = {
 				category = infantry_weapons
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_field_engineers
@@ -1231,7 +1231,7 @@ focus_tree = {
 				category = engineers_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_artillery_tables
@@ -1257,7 +1257,7 @@ focus_tree = {
 				category = artillery
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_army_medical
@@ -1287,7 +1287,7 @@ focus_tree = {
 				category = hospital_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_motorized_train
@@ -1316,7 +1316,7 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_border_scouts
@@ -1342,7 +1342,7 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_army_signals
@@ -1368,7 +1368,7 @@ focus_tree = {
 				category = signal_company_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_reserve_exercises
@@ -1395,7 +1395,7 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_combined_operations
@@ -1421,8 +1421,8 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		cost = 5
 		y = 9
+		cost = 10
 	}
 	focus = {
 		id = UKR_army_repair_network
@@ -1452,8 +1452,8 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		y = 9
+		cost = 10
 	}
 	focus = {
 		id = UKR_prepared_defence
@@ -1482,8 +1482,8 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_reserve_exercises
 		}
-		cost = 10
 		y = 8
+		cost = 10
 	}
 	focus = {
 		id = UKR_air_service
@@ -1513,7 +1513,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_pilot_schools
@@ -1541,7 +1541,7 @@ focus_tree = {
 				type = fighter_genius
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_air_workshops
@@ -1607,7 +1607,7 @@ focus_tree = {
 				category = radar_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_fighter_patrols
@@ -1634,7 +1634,7 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_ground_support
@@ -1660,7 +1660,7 @@ focus_tree = {
 				category = signal_company_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_air_spares
@@ -1703,7 +1703,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_integrated_air_service
@@ -1788,7 +1788,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		available = {
 			192 = {
 				is_owned_and_controlled_by = ROOT
@@ -1796,6 +1795,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 10
 	}
 	focus = {
 		id = UKR_odessa_shipyards
@@ -1829,7 +1829,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		available = {
 			192 = {
 				is_owned_and_controlled_by = ROOT
@@ -1837,6 +1836,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 10
 	}
 	focus = {
 		id = UKR_naval_crew_school
@@ -1864,7 +1864,7 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_coastal_watch
@@ -1890,7 +1890,7 @@ focus_tree = {
 				category = radar_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_convoy_escort
@@ -1916,7 +1916,7 @@ focus_tree = {
 				category = asw_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_naval_minesweepers
@@ -1955,7 +1955,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_naval_logistics
@@ -1991,7 +1991,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 	focus = {
 		id = UKR_safe_trade_routes
@@ -2050,7 +2050,6 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_friends_in_moscow
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2077,10 +2076,10 @@ focus_tree = {
 		x = 60
 		y = 0
 		icon = GFX_goal_generic_scientific_exchange
+		cost = 10
 	}
 	focus = {
 		id = UKR_polish_trade
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2107,10 +2106,10 @@ focus_tree = {
 		x = 64
 		y = 0
 		icon = GFX_goal_generic_trade
+		cost = 10
 	}
 	focus = {
 		id = UKR_the_makhno_question
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2122,10 +2121,10 @@ focus_tree = {
 			add_political_power = 75
 			add_command_power = 20
 		}
+		cost = 10
 	}
 	focus = {
 		id = UKR_border_compact
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2155,6 +2154,7 @@ focus_tree = {
 		x = 68
 		y = 1
 		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
 	}
 	default = no
 	initial_show_position = {
@@ -2164,7 +2164,6 @@ focus_tree = {
 		x = 900
 		y = 2600
 	}
-
 	focus = {
 		id = UKR_grain_exports
 		x = 20
@@ -2196,9 +2195,8 @@ focus_tree = {
 				category = cat_production
 			}
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_domestic_grain
 		x = 24
@@ -2225,9 +2223,8 @@ focus_tree = {
 			}
 			add_stability = 0.04
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_defence_in_depth
 		x = 32
@@ -2259,9 +2256,8 @@ focus_tree = {
 				category = engineers_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_mobile_reserves
 		x = 36
@@ -2293,9 +2289,8 @@ focus_tree = {
 				category = motorized_equipment
 			}
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_interceptor_command
 		x = 42
@@ -2327,9 +2322,8 @@ focus_tree = {
 				category = light_fighter
 			}
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_assault_aviation
 		x = 46
@@ -2357,9 +2351,8 @@ focus_tree = {
 				category = cas_bomber
 			}
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_merchant_escorts
 		x = 52
@@ -2396,9 +2389,8 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
+		cost = 10
 	}
-
 	focus = {
 		id = UKR_sea_denial
 		x = 56
@@ -2430,6 +2422,6 @@ focus_tree = {
 				category = ss_tech
 			}
 		}
-		cost = 5
+		cost = 10
 	}
 }

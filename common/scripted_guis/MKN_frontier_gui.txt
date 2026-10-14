@@ -1,47 +1,67 @@
-# Attached by scripted_gui = MKN_frontier_decision_ui in the decision category.
-# The native decision rows retain engine costs, availability, cooldowns and AI.
-# No GUI click effect can bypass those controls or grant a duplicate free reward.
 scripted_gui = {
 	MKN_frontier_decision_ui = {
 		context_type = decision_category
-		window_name = "MKN_frontier_decision_ui_window"
+		window_name = MKN_frontier_decision_ui_window
 		visible = {
 			tag = MKN
 			OR = {
 				has_country_flag = mkn_frontier_conflict_active
 				has_country_flag = mkn_ukr_frontier_unlocked
 			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
 		}
 		triggers = {
 			MKN_frontier_marker_1_visible = {
-				check_variable = { mkn_ukr_escalation_level = 1 }
+				check_variable = {
+					mkn_ukr_escalation_level = 1
+				}
 			}
 			MKN_frontier_marker_2_visible = {
-				check_variable = { mkn_ukr_escalation_level = 2 }
+				check_variable = {
+					mkn_ukr_escalation_level = 2
+				}
 			}
 			MKN_frontier_marker_3_visible = {
-				check_variable = { mkn_ukr_escalation_level = 3 }
+				check_variable = {
+					mkn_ukr_escalation_level = 3
+				}
 			}
 			MKN_frontier_marker_4_visible = {
-				check_variable = { mkn_ukr_escalation_level = 4 }
+				check_variable = {
+					mkn_ukr_escalation_level = 4
+				}
 			}
 			MKN_frontier_marker_5_visible = {
-				check_variable = { mkn_ukr_escalation_level = 5 }
+				check_variable = {
+					mkn_ukr_escalation_level = 5
+				}
 			}
 			MKN_frontier_stage_text_1_visible = {
-				check_variable = { mkn_ukr_escalation_level = 1 }
+				check_variable = {
+					mkn_ukr_escalation_level = 1
+				}
 			}
 			MKN_frontier_stage_text_2_visible = {
-				check_variable = { mkn_ukr_escalation_level = 2 }
+				check_variable = {
+					mkn_ukr_escalation_level = 2
+				}
 			}
 			MKN_frontier_stage_text_3_visible = {
-				check_variable = { mkn_ukr_escalation_level = 3 }
+				check_variable = {
+					mkn_ukr_escalation_level = 3
+				}
 			}
 			MKN_frontier_stage_text_4_visible = {
-				check_variable = { mkn_ukr_escalation_level = 4 }
+				check_variable = {
+					mkn_ukr_escalation_level = 4
+				}
 			}
 			MKN_frontier_stage_text_5_visible = {
-				check_variable = { mkn_ukr_escalation_level = 5 }
+				check_variable = {
+					mkn_ukr_escalation_level = 5
+				}
 			}
 			MKN_frontier_war_locked_status_visible = {
 				OR = {

@@ -92,8 +92,9 @@ traits = set()
 for root in (GAME, ROOT):
     for p, doc in documents(root, 'common/country_leader/*.txt'):
         traits.update(k for k, v, op in one(doc,'leader_traits',[]) if k and isinstance(v,list))
-for p, doc in documents(GAME, 'common/unit_leader/*.txt'):
-    traits.update(k for k, v, op in walk(doc) if k and isinstance(v, list))
+for root in (GAME, ROOT):
+    for p, doc in documents(root, 'common/unit_leader/*.txt'):
+        traits.update(k for k, v, op in one(doc, 'leader_traits', []) if k and isinstance(v, list))
 categories = set()
 for p, doc in documents(GAME, 'common/technology_tags/*.txt'):
     categories.update(v for k, v, op in walk(doc) if k is None)

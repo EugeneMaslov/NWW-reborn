@@ -13,6 +13,7 @@ from hoi4_script import read, one, values, walk, tree_focuses
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 targets={tag:f'common/national_focus/{tag.lower()}_focus.txt' for tag in ('LTB','MKN','UKR')}
+if (ROOT/'common/national_focus/SOV_focuses.txt').exists():targets['SOV']='common/national_focus/SOV_focuses.txt'
 if (ROOT/'common/national_focus/MKN.txt').exists():targets['MKN']='common/national_focus/MKN.txt'
 if (ROOT/'docs/legacy_import.json').exists():
     targets.update({tag:c['destination'] for tag,c in json.loads((ROOT/'docs/legacy_import.json').read_text(encoding='utf-8'))['countries'].items()})
@@ -24,10 +25,14 @@ for path in ROOT.glob('localisation/**/*l_russian.yml'):
     labels.update(re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$', path.read_text(encoding='utf-8-sig'), re.M))
 
 selected_tags = (args.tag,) if args.tag else tuple(targets)
+def visible_focuses(tag):
+    return [f for f in tree_focuses(one(read(ROOT / targets[tag]), 'focus_tree'), ROOT / 'common/national_focus')
+            if one(f, 'x') is not None and one(f, 'y') is not None
+            and one(one(f, 'allow_branch', []), 'always') != 'no']
 illustrations = {}
 if args.game:
     needed = {one(f, 'icon') for tag in selected_tags
-              for f in tree_focuses(one(read(ROOT / targets[tag]), 'focus_tree'), ROOT / 'common/national_focus')}
+              for f in visible_focuses(tag)}
     roots = [args.game, *sorted(args.game.glob('dlc/*')), ROOT]
     for root in roots:
         for path in root.glob('interface/**/*.gfx'):
@@ -61,7 +66,7 @@ if args.game:
 
 for tag in selected_tags:
     tree = one(read(ROOT/targets[tag]), 'focus_tree')
-    focuses = tree_focuses(tree, ROOT / 'common/national_focus')
+    focuses = visible_focuses(tag)
     positions = {one(f, 'id'): (int(one(f, 'x'))*90+140, int(one(f, 'y'))*95+130) for f in focuses}
     width = max(x for x, y in positions.values())+150
     height = max(y for x, y in positions.values())+120
@@ -70,7 +75,10 @@ for tag in selected_tags:
               f'<rect width="{width}" height="{height}" fill="#111925"/>',
               f'<text x="32" y="38" font-size="24">{tag}: {len(focuses)} фокусов</text>',
               '<text x="32" y="64" font-size="13">Координаты и связи из кода • пунктир: альтернативные предпосылки • красные линии: взаимоисключение</text>']
-    if tag == 'TUR':
+    if tag == 'SOV':
+        for column, title in [(8,'Союзный договор'),(22,'Хозяйственный план'),(32,'Наука'),(42,'Регулярная армия'),(54,'Авиация'),(64,'Флот'),(77,'Запад и вольная степь')]:
+            result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
+    elif tag == 'TUR':
         for column, title in [(8, 'Политика и имперский совет'), (6, 'Балканские кампании — ниже политики'), (22, 'Промышленность'), (34, 'Наука'), (42, 'Армия'), (50, 'Авиация')]:
             result.append(f'<text x="{column*90+140}" y="{90 if column != 6 else height-20}" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'LTB':
@@ -125,5 +133,5 @@ for tag in selected_tags:
         result.append(f'<text class="small" x="{x}" y="{y+22}" text-anchor="middle">{cost} дней{escape(rewards)}</text></g>')
     result.append('</svg>')
     dest=ROOT/f'docs/{tag.lower()}_focus_tree.svg';dest.parent.mkdir(exist_ok=True)
-    dest.write_text('\n'.join(result)+'\n',encoding='utf-8')
+    dest.write_text('\n'.join(result)+'\n',encoding='utf-8',newline='\n')
     print(dest.relative_to(ROOT))

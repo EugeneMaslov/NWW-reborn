@@ -1,0 +1,31 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					original_tag = MKN
+					has_country_flag = MKN_duel_participant
+					NOT = {
+						has_country_flag = MKN_duel_recovered
+					}
+					check_variable = {
+						num_owned_states > 0
+					}
+					NOT = {
+						any_other_country = {
+							original_tag = MKN
+							has_country_flag = MKN_duel_participant
+							check_variable = {
+								num_owned_states > 0
+							}
+						}
+					}
+					NOT = {
+						has_civil_war = yes
+					}
+				}
+				MKN_recover_duel_winner = yes
+			}
+		}
+	}
+}

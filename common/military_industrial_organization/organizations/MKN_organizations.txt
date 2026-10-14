@@ -1,0 +1,21 @@
+MKN_free_workshops = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_MKN_free_workshops
+	allowed = {
+		original_tag = MKN
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_free_workshops_focus
+		}
+	}
+	initial_trait = {
+		name = MKN_free_workshops_initial_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.15
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}

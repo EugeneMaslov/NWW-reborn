@@ -96,6 +96,8 @@ class FrontierModel:
                 answer = value == 'yes'
             elif key == 'tag':
                 answer = current == value
+            elif key == 'state':
+                answer = current == value
             elif key == 'exists':
                 answer = data['exists'] == (value == 'yes')
             elif key == 'is_subject':
@@ -179,7 +181,7 @@ class FrontierModel:
             elif key == 'add_core_of':
                 data['cores'].add(value)
             elif key == 'transfer_state_to':
-                data['owner'] = data['controller'] = value
+                data['owner'] = data['controller'] = self.scope(value, current, previous) or value
             elif key == 'every_owned_state':
                 for sid, state in self.states.items():
                     if state['owner'] == current and self.test(one(value, 'limit'), sid, current):
@@ -238,6 +240,8 @@ class FrontierModel:
                 self.border = False
             elif key == 'custom_effect_tooltip':
                 pass  # Presentation only; it cannot alter modeled game state.
+            elif key == 'complete_national_focus':
+                data['focuses'].add(value)
             else:
                 raise AssertionError(f'Unhandled frontier regression effect {key}')
 
@@ -275,7 +279,7 @@ def validate_frontier(root, game, check, localized):
     for filename in files.values():
         for key, value, op in walk(read(root / filename)):
             if key and re.match(r'^(add_|set_|clr_|remove_|create_|start_|activate_|damage_|declare_|clamp_|subtract_|multiply_)', key):
-                check(key in native['effects'] or key in ('add_namespace',), f'{filename}: undocumented command {key}')
+                check(key in native['effects'] or key in ('add_namespace', 'remove_effect'), f'{filename}: undocumented command {key}')
             if key == 'add_core_of':
                 check(value != 'UKR', f'{filename}: grants a new UKR core')
             if key == 'custom_effect_tooltip':
@@ -293,9 +297,13 @@ def validate_frontier(root, game, check, localized):
         localized(token + '_desc', 'MKN frontier decision')
     for token in ('mkn_raid_soviet_depots', 'mkn_launch_border_battle'):
         target = one(one(decisions, token), 'target_trigger')
-        check(one(one(target, 'FROM', []), 'is_owned_and_controlled_by') == 'UKR', f'{token}: country-scope target_trigger does not enter the target state through FROM')
+        entered = one(target,'FROM',[])
+        check(one(entered,'MKN_valid_frontier_target') == 'yes' if token == 'mkn_launch_border_battle' else one(entered,'is_owned_and_controlled_by') == 'UKR', f'{token}: country-scope target_trigger does not enter the target state through FROM')
     fury = one(one(decisions, 'mkn_escalate_steppe_alarm'), 'complete_effect')
-    relaxation = one(one(decisions, 'mkn_deescalate_pull_back'), 'complete_effect')
+    pullback = one(decisions, 'mkn_deescalate_pull_back')
+    relaxation = one(one(pullback, 'remove_effect'), 'if')
+    check(one(pullback,'days_remove') == '20' and one(pullback,'days_re_enable') == '0', 'MKN frontier: pullback is not a repeatable 20-day action')
+    check(not one(pullback,'complete_effect'), 'MKN frontier: pullback reduces tension before its 20 days expire')
     check(one(one(fury, 'add_timed_idea'), 'days') == '14', 'MKN frontier: fury has wrong duration')
     check(one(one(relaxation, 'add_timed_idea'), 'days') == '90', 'MKN frontier: relaxation has wrong duration')
     for event in events.values():
@@ -340,7 +348,7 @@ def validate_frontier(root, game, check, localized):
     imports = set(values(tree, 'shared_focus'))
     check({'MKN_ukrainian_frontier_root', 'MKN_conclude_total_war', 'MKN_conclude_kharkiv_treaty'} <= imports, 'MKN frontier: disconnected shared roots are not imported')
     root_gate = one(focuses['MKN_ukrainian_frontier_root'], 'available')
-    check(one(root_gate, 'has_completed_focus') == 'MKN_congress_1936', 'MKN frontier: root lacks Congress requirement')
+    check(one(root_gate, 'always') == 'no', 'MKN frontier: incident root must be event-completed')
     for a, b in (('MKN_conclude_total_war', 'MKN_conclude_kharkiv_treaty'), ('MKN_conclude_kharkiv_treaty', 'MKN_conclude_total_war')):
         check(one(one(focuses[a], 'mutually_exclusive'), 'focus') == b, f'{a}: endings are not exclusive')
 

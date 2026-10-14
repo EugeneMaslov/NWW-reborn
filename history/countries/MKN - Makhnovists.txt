@@ -1,4 +1,3 @@
-capital = 200
 set_oob = MKN_1936
 set_research_slots = 3
 set_politics = {
@@ -67,25 +66,39 @@ recruit_character = NWW_MKN_peter_arshinov
 recruit_character = NWW_MKN_school_delegate
 recruit_character = NWW_MKN_logistics_delegate
 recruit_character = NWW_MKN_military_theorist
-
 recruit_character = NWW_MKN_oleksandr_hordiienko
-
 recruit_character = NWW_MKN_andrii_dorosh
-
 recruit_character = NWW_MKN_mykola_kovalenko
-
 recruit_character = NWW_MKN_roman_danylenko
-
 recruit_character = NWW_MKN_olena_hrytsenko
-
 recruit_character = NWW_MKN_dmytro_savchenko
-
 recruit_character = NWW_MKN_yakiv_levchenko
-
 recruit_character = NWW_MKN_petro_stepanenko
-
 recruit_character = NWW_MKN_ivan_bondarenko
-
 recruit_character = NWW_MKN_serhii_melnyk
-
 set_country_flag = MKN_crisis_enabled
+recruit_character = MKN_advisor_weapons_broker
+recruit_character = MKN_advisor_recruiting_commissar
+recruit_character = MKN_advisor_military_orator
+recruit_character = MKN_advisor_frontline_delegate
+recruit_character = MKN_advisor_arsenal_coordinator
+recruit_character = MKN_advisor_veterans_organizer
+recruit_character = MKN_advisor_education_delegate
+recruit_character = MKN_advisor_commune_secretary
+recruit_character = MKN_advisor_anti_statist_theorist
+recruit_character = MKN_advisor_cooperative_treasurer
+recruit_character = MKN_advisor_literacy_organizer
+recruit_character = MKN_advisor_free_press_editor
+recruit_character = MKN_advisor_grain_distributor
+recruit_character = MKN_advisor_rural_defender
+recruit_character = MKN_advisor_militia_delegate
+recruit_character = MKN_advisor_agronomist
+recruit_character = MKN_advisor_village_mediator
+recruit_character = MKN_advisor_market_keeper
+recruit_character = MKN_advisor_industrial_organizer
+recruit_character = MKN_advisor_rail_dispatcher
+recruit_character = MKN_advisor_union_secretary
+recruit_character = MKN_advisor_workshop_engineer
+recruit_character = MKN_advisor_labor_delegate
+recruit_character = MKN_advisor_syndicalist_theorist
+capital = 1082

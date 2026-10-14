@@ -71,10 +71,10 @@ characters = {
 			allowed = {
 				original_tag = MKN
 			}
-			traits = {
-				army_cavalry_2
-			}
 			ledger = army
+			traits = {
+				mkn_tachanka_expert
+			}
 		}
 		corps_commander = {
 			traits = {
@@ -103,17 +103,6 @@ characters = {
 				small = GFX_idea_volin
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = NWW_MKN_volin_political_advisor
-			cost = 150
-			allowed = {
-				original_tag = MKN
-			}
-			traits = {
-				silent_workhorse
-			}
-		}
 	}
 	NWW_MKN_makhno = {
 		name = NWW_MKN_makhno
@@ -138,26 +127,41 @@ characters = {
 			allowed = {
 				original_tag = MKN
 			}
-			traits = {
-				army_guerilla_organizer_2
-			}
 			ledger = army
 			available = {
 				has_government = communism
 			}
+			traits = {
+				mkn_batko_advisor
+			}
 		}
 		field_marshal = {
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 4
-			traits = {
-				offensive_doctrine
-				cavalry_leader
-			}
 			visible = {
 				has_government = communism
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			traits = {
+				trickster
+				cavalry_officer
+				skirmisher
+				mkn_batko_legend
+			}
+		}
+		corps_commander = {
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			traits = {
+				trickster
+				cavalry_officer
+				skirmisher
+				mkn_batko_legend
 			}
 		}
 	}
@@ -166,17 +170,6 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_idea_generic_political_advisor_europe_2
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = NWW_MKN_peter_arshinov
-			cost = 150
-			allowed = {
-				original_tag = MKN
-			}
-			traits = {
-				popular_figurehead
 			}
 		}
 	}
@@ -261,10 +254,10 @@ characters = {
 			available = {
 				has_completed_focus = MKN_steppe_general_staff
 			}
-			traits = {
-				NWW_MKN_oleksandr_hordiienko_specialty
-			}
 			ledger = army
+			traits = {
+				mkn_entrenchment_specialist
+			}
 		}
 		corps_commander = {
 			skill = 3
@@ -312,6 +305,18 @@ characters = {
 			logistics_skill = 2
 			traits = {
 				inflexible_strategist
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_andrii_dorosh_high_command
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			ledger = army
+			traits = {
+				mkn_infantry_specialist
 			}
 		}
 	}
@@ -375,10 +380,16 @@ characters = {
 			available = {
 				has_completed_focus = MKN_steppe_general_staff
 			}
-			traits = {
-				NWW_MKN_roman_danylenko_specialty
-			}
 			ledger = army
+			traits = {
+				mkn_armored_train_commander
+			}
+			on_add = {
+				add_ideas = MKN_armored_train_staff_bonus
+			}
+			on_remove = {
+				remove_ideas = MKN_armored_train_staff_bonus
+			}
 		}
 		corps_commander = {
 			skill = 3
@@ -413,10 +424,10 @@ characters = {
 			available = {
 				has_completed_focus = MKN_steppe_general_staff
 			}
-			traits = {
-				NWW_MKN_olena_hrytsenko_specialty
-			}
 			ledger = army
+			traits = {
+				mkn_steppe_logistics_officer
+			}
 		}
 		gender = female
 		corps_commander = {
@@ -516,20 +527,6 @@ characters = {
 				small = GFX_idea_generic_political_advisor_europe_1
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = NWW_MKN_petro_stepanenko_advisor
-			cost = 125
-			allowed = {
-				original_tag = MKN
-			}
-			available = {
-				has_completed_focus = MKN_technical_communes
-			}
-			traits = {
-				NWW_MKN_petro_stepanenko_specialty
-			}
-		}
 	}
 	NWW_MKN_ivan_bondarenko = {
 		name = NWW_MKN_ivan_bondarenko
@@ -539,20 +536,6 @@ characters = {
 			}
 			civilian = {
 				small = GFX_idea_generic_political_advisor_europe_2
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = NWW_MKN_ivan_bondarenko_advisor
-			cost = 125
-			allowed = {
-				original_tag = MKN
-			}
-			available = {
-				has_completed_focus = MKN_the_free_territory
-			}
-			traits = {
-				NWW_MKN_ivan_bondarenko_specialty
 			}
 		}
 	}
@@ -566,18 +549,532 @@ characters = {
 				small = GFX_idea_generic_political_advisor_europe_3
 			}
 		}
+	}
+	MKN_advisor_weapons_broker = {
+		name = MKN_advisor_weapons_broker
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
 		advisor = {
 			slot = political_advisor
-			idea_token = NWW_MKN_serhii_melnyk_advisor
-			cost = 125
+			idea_token = MKN_advisor_weapons_broker
+			cost = 150
 			allowed = {
 				original_tag = MKN
 			}
 			available = {
-				has_completed_focus = MKN_technical_communes
+				has_government = fascism
 			}
 			traits = {
-				NWW_MKN_serhii_melnyk_specialty
+				mkn_weapons_broker
+			}
+		}
+	}
+	MKN_advisor_recruiting_commissar = {
+		name = MKN_advisor_recruiting_commissar
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_recruiting_commissar
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				mkn_recruiting_commissar
+			}
+		}
+	}
+	MKN_advisor_military_orator = {
+		name = MKN_advisor_military_orator
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_military_orator
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				mkn_military_orator
+			}
+		}
+	}
+	MKN_advisor_frontline_delegate = {
+		name = MKN_advisor_frontline_delegate
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_frontline_delegate
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				mkn_frontline_delegate
+			}
+		}
+	}
+	MKN_advisor_arsenal_coordinator = {
+		name = MKN_advisor_arsenal_coordinator
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_arsenal_coordinator
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				mkn_arsenal_coordinator
+			}
+		}
+	}
+	MKN_advisor_veterans_organizer = {
+		name = MKN_advisor_veterans_organizer
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_veterans_organizer
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				mkn_veterans_organizer
+			}
+		}
+	}
+	MKN_advisor_education_delegate = {
+		name = MKN_advisor_education_delegate
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_education_delegate
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				mkn_education_delegate
+			}
+		}
+	}
+	MKN_advisor_commune_secretary = {
+		name = MKN_advisor_commune_secretary
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_commune_secretary
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				mkn_commune_secretary
+			}
+		}
+	}
+	MKN_advisor_anti_statist_theorist = {
+		name = MKN_advisor_anti_statist_theorist
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_anti_statist_theorist
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				mkn_anti_statist_theorist
+			}
+		}
+	}
+	MKN_advisor_cooperative_treasurer = {
+		name = MKN_advisor_cooperative_treasurer
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_cooperative_treasurer
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				mkn_cooperative_treasurer
+			}
+		}
+	}
+	MKN_advisor_literacy_organizer = {
+		name = MKN_advisor_literacy_organizer
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_literacy_organizer
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				mkn_literacy_organizer
+			}
+		}
+	}
+	MKN_advisor_free_press_editor = {
+		name = MKN_advisor_free_press_editor
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_free_press_editor
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				mkn_free_press_editor
+			}
+		}
+	}
+	MKN_advisor_grain_distributor = {
+		name = MKN_advisor_grain_distributor
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_grain_distributor
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				mkn_grain_distributor
+			}
+		}
+	}
+	MKN_advisor_rural_defender = {
+		name = MKN_advisor_rural_defender
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_rural_defender
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				mkn_rural_defender
+			}
+		}
+	}
+	MKN_advisor_militia_delegate = {
+		name = MKN_advisor_militia_delegate
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_militia_delegate
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				mkn_militia_delegate
+			}
+		}
+	}
+	MKN_advisor_agronomist = {
+		name = MKN_advisor_agronomist
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_agronomist
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				mkn_agronomist
+			}
+		}
+	}
+	MKN_advisor_village_mediator = {
+		name = MKN_advisor_village_mediator
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_village_mediator
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				mkn_village_mediator
+			}
+		}
+	}
+	MKN_advisor_market_keeper = {
+		name = MKN_advisor_market_keeper
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_market_keeper
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				mkn_market_keeper
+			}
+		}
+	}
+	MKN_advisor_industrial_organizer = {
+		name = MKN_advisor_industrial_organizer
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_industrial_organizer
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				mkn_industrial_organizer
+			}
+		}
+	}
+	MKN_advisor_rail_dispatcher = {
+		name = MKN_advisor_rail_dispatcher
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_rail_dispatcher
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				mkn_rail_dispatcher
+			}
+		}
+	}
+	MKN_advisor_union_secretary = {
+		name = MKN_advisor_union_secretary
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_union_secretary
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				mkn_union_secretary
+			}
+		}
+	}
+	MKN_advisor_workshop_engineer = {
+		name = MKN_advisor_workshop_engineer
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_workshop_engineer
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				mkn_workshop_engineer
+			}
+		}
+	}
+	MKN_advisor_labor_delegate = {
+		name = MKN_advisor_labor_delegate
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_labor_delegate
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				mkn_labor_delegate
+			}
+		}
+	}
+	MKN_advisor_syndicalist_theorist = {
+		name = MKN_advisor_syndicalist_theorist
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MKN_advisor_syndicalist_theorist
+			cost = 150
+			allowed = {
+				original_tag = MKN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				mkn_syndicalist_theorist
 			}
 		}
 	}

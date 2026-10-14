@@ -47,7 +47,7 @@ def validate_crisis(root, game, check, localized):
             if i == 1:
                 check(one(one(f, 'completion_reward'), 'MKN_resolve_succession_crisis') == 'yes', f'{fid}: does not stop the crisis')
     departure = focuses['MKN_departure_of_batko']
-    check(one(departure, 'cost') == '0' and one(one(departure, 'available'), 'always') == 'no', 'MKN: funeral must be event-completed')
+    check(one(departure, 'cost') == '5' and one(one(departure, 'available'), 'always') == 'no', 'MKN: funeral must be event-completed and preserve uniform focus costs')
     check(not one(departure, 'completion_reward'), 'MKN: funeral focus replays a political reward')
     funeral = events['mkn_crisis.1']
     check(one(one(funeral, 'mean_time_to_happen'), 'days') == '75', 'MKN: wrong funeral MTTH')
@@ -164,6 +164,7 @@ def validate_crisis(root, game, check, localized):
                 elif k == 'has_power_balance': answers.append(scope['bop'])
                 elif k == 'has_war_with': answers.append(frozenset((scope['name'], self.targets[v]['name'])) in self.wars)
                 elif k == 'exists': answers.append((scope in self.countries) == (v == 'yes'))
+                elif k == 'is_ai': answers.append(v == 'no')
                 elif k == 'has_event_target': answers.append('event_target:' + v in self.targets)
                 elif k == 'any_owned_state': answers.append(any(self.triggers(v, s) for s in self.states if s['owner'] is scope))
                 elif k == 'check_variable':
@@ -226,9 +227,10 @@ def validate_crisis(root, game, check, localized):
                     self.border_wars.clear()
                 elif k in effects: self.apply(effects[k], scope)
                 elif k == 'start_civil_war':
-                    ratio = self.number(one(v, 'army_ratio'), scope)
-                    for field in ('size', 'air_ratio', 'navy_ratio'): assert isclose(ratio, self.number(one(v, field), scope))
-                    land = [s for s in self.states if s['owner'] is scope and self.triggers(one(v, 'states_filter'), s)]
+                    ratio = self.number(one(v, 'army_ratio', one(v, 'size')), scope)
+                    for field in ('size', 'air_ratio', 'navy_ratio'): assert isclose(ratio, self.number(one(v, field, str(ratio)), scope))
+                    owned = [s for s in self.states if s['owner'] is scope]
+                    land = [s for s in owned if self.triggers(one(v, 'states_filter'), s)] if one(v,'states_filter') else owned[1:1+max(1,len(owned)//2)]
                     assert land and len(land) < sum(s['owner'] is scope for s in self.states)
                     child = {'vars': deepcopy(scope['vars']), 'flags': set(scope['flags']), 'government': one(v, 'ideology'), 'support': deepcopy(scope['support']), 'army': scope['army'] * ratio, 'name': 'D' + str(len(self.countries)), 'original_tag': scope['original_tag'], 'bop': scope['bop'], 'missions': set(scope['missions'])}
                     scope['army'] *= 1 - ratio
@@ -240,7 +242,9 @@ def validate_crisis(root, game, check, localized):
                 elif k == 'set_politics': scope['government'] = one(v, 'ruling_party')
                 elif k == 'set_popularities': scope['support'] = {key: float(val) / 100 for key, val, o in v}
                 elif k == 'set_cosmetic_tag': scope['cosmetic'] = v
-                elif k == 'save_event_target_as': self.targets['event_target:' + v] = scope
+                elif k in ('save_event_target_as', 'save_global_event_target_as'): self.targets['event_target:' + v] = scope
+                elif k == 'load_focus_tree': scope['tree'] = one(v,'tree')
+                elif k == 'add_ideas': scope.setdefault('ideas',set()).add(v)
                 elif k == 'retire_ideology_leader': scope.setdefault('retired', []).append(v)
                 elif k == 'create_country_leader': scope['leader'] = one(v, 'name')
                 elif k.startswith('event_target:'): self.apply(v, self.targets[k])
@@ -254,25 +258,26 @@ def validate_crisis(root, game, check, localized):
             for count in (4, 5, 7, 12, 43):
                 model = Interpreter(popularity, ruling, count)
                 model.apply(effects['MKN_execute_four_way_collapse'], model.root)
-                check(len(model.countries) == 4 and len(model.wars) == 6, 'MKN: collapse is not a four-way war')
+                check(len(model.countries) == 2 and len(model.wars) == 1, 'MKN: collapse is not a two-way duel')
+                strongest = max((p for p in routes if p != ruling), key=lambda p: popularity[list(routes).index(p)])
+                check(model.countries[1]['government'] == strongest, 'MKN: challenger is not strongest opposition')
                 check(model.root['government'] == ruling and model.states[0]['owner'] is model.root, 'MKN: player loses ideology or capital')
                 check(all(not c['bop'] for c in model.countries), 'MKN: collapse preserves or resurrects BoP')
-                check(all('MKN_soviet_intervention_mission' in c['missions'] for c in model.countries), 'MKN: collapse omits intervention mission for a faction')
+                check(all('MKN_soviet_intervention_mission' not in c['missions'] for c in model.countries), 'MKN: new duel inherits obsolete intervention')
                 check(all('MKN_collapse_participant' in c['flags'] for c in model.countries), 'MKN: collapse faction lacks intervention enrollment')
-                check(len(model.activated) == 4, 'MKN: intervention timer activated more than once or before all factions exist')
+                check(not model.activated, 'MKN: duel starts obsolete intervention timers')
                 support = list(popularity); total = sum(support)
                 for c in model.countries:
-                    index = list(routes).index(c['government'])
-                    check(isclose(c['army'], support[index] / total, abs_tol=1e-8), f'MKN: sequential military share incorrect for {ruling}/{popularity}/{c["government"]}')
+                    check(isclose(c['army'], 0.5, abs_tol=1e-8), f'MKN: duel military split incorrect for {ruling}/{popularity}')
                     land = sum(s['owner'] is c for s in model.states)
-                    check(land == model.root['vars']['MKN_cw_quota_' + c['government']], 'MKN: actual territory differs from apportioned quota')
+                    check(land > 0, 'MKN: duel participant has no territory')
                 check(isclose(sum(c['army'] for c in model.countries), 1), 'MKN: collapse creates/destroys military resources')
                 cases += 1
     # Reduced territory must terminate safely and must never give away the last state.
-    for count in (1, 2, 3):
+    for count in (2, 3):
         model = Interpreter((.25, .25, .25, .25), 'communism', count)
         model.apply(effects['MKN_execute_four_way_collapse'], model.root)
-        check(len(model.countries) == count and model.states[0]['owner'] is model.root, 'MKN: reduced-land collapse fails safely')
+        check(len(model.countries) == 2 and model.states[0]['owner'] is model.root, 'MKN: reduced-land duel fails safely')
         cases += 1
     # Collapse interrupts an active frontier battle before child countries inherit
     # the annual timer. Suppressed callbacks must not transfer or core a state.

@@ -1,319 +1,704 @@
-# MKN owns all bilateral frontier effects. Native callback scope references:
-# WTT_border_conflict_events.txt: ROOT country, FROM its state, FROM.FROM opponent,
-# FROM.FROM.FROM opposing state. Inline on_win effect blocks are not supported.
 mkn_ukr_update_decision_costs = {
- set_variable = { mkn_ukr_alarm_cost = 30 }
- set_variable = { mkn_ukr_pullback_cost = 25 }
- set_variable = { mkn_ukr_depot_cost = 25 }
- set_variable = { mkn_ukr_battle_cost = 50 }
- set_variable = { mkn_ukr_pact_cost = 50 }
- if = {
-  limit = { has_country_flag = mkn_ukr_recon_discount }
-  multiply_variable = { mkn_ukr_alarm_cost = 0.50 }
-  multiply_variable = { mkn_ukr_pullback_cost = 0.50 }
-  multiply_variable = { mkn_ukr_depot_cost = 0.50 }
-  multiply_variable = { mkn_ukr_battle_cost = 0.50 }
-  multiply_variable = { mkn_ukr_pact_cost = 0.50 }
- }
+	set_variable = {
+		mkn_ukr_alarm_cost = 30
+	}
+	set_variable = {
+		mkn_ukr_pullback_cost = 25
+	}
+	set_variable = {
+		mkn_ukr_depot_cost = 25
+	}
+	set_variable = {
+		mkn_ukr_battle_cost = 50
+	}
+	set_variable = {
+		mkn_ukr_pact_cost = 50
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_recon_discount
+		}
+		multiply_variable = {
+			mkn_ukr_alarm_cost = 0.50
+		}
+		multiply_variable = {
+			mkn_ukr_pullback_cost = 0.50
+		}
+		multiply_variable = {
+			mkn_ukr_depot_cost = 0.50
+		}
+		multiply_variable = {
+			mkn_ukr_battle_cost = 0.50
+		}
+		multiply_variable = {
+			mkn_ukr_pact_cost = 0.50
+		}
+	}
 }
 mkn_ukr_initialize_frontier = {
- if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_frontier_initialized } }
-  set_variable = { mkn_ukr_escalation_level = 1 }
-  set_variable = { mkn_consecutive_border_wars = 0 }
-  set_country_flag = mkn_ukr_frontier_initialized
- }
- if = {
-  limit = { has_completed_focus = MKN_ukrainian_frontier_root }
-  set_country_flag = mkn_ukr_frontier_unlocked
- }
- if = {
-  limit = { has_completed_focus = MKN_tachanka_deep_recon }
-  set_country_flag = mkn_ukr_recon_discount
- }
- clamp_variable = { var = mkn_ukr_escalation_level min = 1 max = 5 }
- mkn_ukr_update_decision_costs = yes
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_initialized
+			}
+		}
+		set_variable = {
+			mkn_ukr_escalation_level = 1
+		}
+		set_variable = {
+			mkn_consecutive_border_wars = 0
+		}
+		set_country_flag = mkn_ukr_frontier_initialized
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_ukrainian_frontier_root
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+		}
+		set_country_flag = mkn_ukr_frontier_unlocked
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_tachanka_deep_recon
+		}
+		set_country_flag = mkn_ukr_recon_discount
+	}
+	clamp_variable = {
+		var = mkn_ukr_escalation_level
+		min = 1
+		max = 5
+	}
+	mkn_ukr_update_decision_costs = yes
 }
 mkn_ukr_check_escalation = {
- if = {
-  limit = {
-   NOT = { has_country_flag = mkn_ukr_frontier_concluded }
-   OR = { check_variable = { var = mkn_ukr_escalation_level value = 5 compare = greater_than_or_equals } check_variable = { var = mkn_consecutive_border_wars value = 3 compare = greater_than_or_equals } }
-  }
-  set_variable = { mkn_ukr_escalation_level = 5 }
-  set_country_flag = mkn_ukr_war_pending
- }
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			OR = {
+				check_variable = {
+					var = mkn_ukr_escalation_level
+					value = 5
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = mkn_consecutive_border_wars
+					value = 3
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = {
+			mkn_ukr_escalation_level = 5
+		}
+		set_country_flag = mkn_ukr_war_pending
+	}
 }
 mkn_ukr_record_border_battle = {
- if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_frontier_concluded } }
-  # A completed battle, won or lost, starts a new 180-day cooling interval.
-  if = { limit = { NOT = { has_country_flag = mkn_ukr_recent_border_battle } } set_variable = { mkn_consecutive_border_wars = 0 } }
-  add_to_variable = { mkn_consecutive_border_wars = 1 }
-  set_country_flag = { flag = mkn_ukr_recent_border_battle days = 180 }
-  set_variable = { mkn_ukr_escalation_level = 1 }
-  clr_country_flag = mkn_ukr_border_battle_active
-  mkn_ukr_check_escalation = yes
- }
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = mkn_ukr_recent_border_battle
+				}
+			}
+			set_variable = {
+				mkn_consecutive_border_wars = 0
+			}
+		}
+		add_to_variable = {
+			mkn_consecutive_border_wars = 1
+		}
+		set_country_flag = {
+			flag = mkn_ukr_recent_border_battle
+			days = 180
+		}
+		set_variable = {
+			mkn_ukr_escalation_level = 1
+		}
+		clr_country_flag = mkn_ukr_border_battle_active
+		mkn_ukr_check_escalation = yes
+	}
 }
-# STATE effect used by victory callbacks and treaty ratification. Exact state only.
 mkn_ukr_integrate_won_state = {
- add_core_of = MKN
- transfer_state_to = MKN
- set_state_flag = mkn_ukr_integrated_frontier_state
+	add_core_of = MKN
+	transfer_state_to = MKN
+	set_state_flag = mkn_ukr_integrated_frontier_state
 }
 mkn_ukr_border_victory = {
- if = {
-  limit = {
-   tag = MKN
-   NOT = { has_country_flag = mkn_ukr_frontier_concluded }
-   FROM.FROM = { tag = UKR }
-   FROM.FROM.FROM = { OR = { is_owned_by = UKR is_owned_by = MKN } }
-  }
-  # Do this immediately, before the player dismisses any notification.
-  FROM.FROM.FROM = {
-   mkn_ukr_integrate_won_state = yes
-   MKN = { set_variable = { mkn_ukr_last_contested_state = PREV } }
-  }
-  custom_effect_tooltip = MKN_frontier_core_integration_tt
-  add_war_support = 0.10
-  set_country_flag = mkn_ukr_last_battle_won
-  mkn_ukr_record_border_battle = yes
-  country_event = { id = mkn_ukr_border.2 }
- }
+	if = {
+		limit = {
+			tag = MKN
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			FROM.FROM = {
+				OR = {
+					tag = UKR
+					tag = SOV
+				}
+			}
+			FROM.FROM.FROM = {
+				NOT = {
+					state = 202
+				}
+				OR = {
+					AND = {
+						FROM.FROM = {
+							tag = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							is_owned_by = MKN
+						}
+					}
+					AND = {
+						FROM.FROM = {
+							tag = SOV
+						}
+						OR = {
+							is_owned_by = SOV
+							is_owned_by = MKN
+						}
+						OR = {
+							state = 227
+							state = 221
+							state = 137
+						}
+						MKN = {
+							has_completed_focus = MKN_donbas_miners_agitation
+						}
+					}
+				}
+			}
+		}
+		FROM.FROM.FROM = {
+			mkn_ukr_integrate_won_state = yes
+			MKN = {
+				set_variable = {
+					mkn_ukr_last_contested_state = PREV
+				}
+			}
+		}
+		custom_effect_tooltip = MKN_frontier_core_integration_tt
+		add_war_support = 0.10
+		set_country_flag = mkn_ukr_last_battle_won
+		mkn_ukr_record_border_battle = yes
+		country_event = {
+			id = mkn_ukr_border.2
+		}
+	}
 }
 mkn_ukr_border_defeat = {
- if = {
-  limit = { tag = MKN NOT = { has_country_flag = mkn_ukr_frontier_concluded } FROM.FROM = { tag = UKR } }
-  # The defender may reclaim the participating MKN state; never create UKR cores.
-  FROM = {
-   if = {
-    limit = { OR = { is_owned_by = MKN is_owned_by = UKR } }
-    transfer_state_to = UKR
-    MKN = { set_variable = { mkn_ukr_last_contested_state = PREV } }
-   }
-  }
-  add_stability = -0.10
-  clr_country_flag = mkn_ukr_last_battle_won
-  mkn_ukr_record_border_battle = yes
-  country_event = { id = mkn_ukr_border.2 }
- }
+	if = {
+		limit = {
+			tag = MKN
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			FROM.FROM = {
+				OR = {
+					tag = UKR
+					tag = SOV
+				}
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = MKN
+						is_owned_by = UKR
+					}
+				}
+				transfer_state_to = FROM.FROM
+				MKN = {
+					set_variable = {
+						mkn_ukr_last_contested_state = PREV
+					}
+				}
+			}
+		}
+		add_stability = -0.10
+		clr_country_flag = mkn_ukr_last_battle_won
+		mkn_ukr_record_border_battle = yes
+		country_event = {
+			id = mkn_ukr_border.2
+		}
+	}
 }
 mkn_ukr_border_cancelled = {
- if = {
-  limit = { tag = MKN }
-  clr_country_flag = mkn_ukr_border_battle_active
-  # Cancelled clashes capture no state and do not count as completed battles.
- }
+	if = {
+		limit = {
+			tag = MKN
+		}
+		clr_country_flag = mkn_ukr_border_battle_active
+	}
 }
 mkn_ukr_apply_miners_agitation = {
- UKR = {
-  every_owned_state = {
-   limit = { any_neighbor_state = { is_owned_by = MKN } }
-   add_dynamic_modifier = { modifier = MKN_ukr_miners_state_disruption days = 180 }
-  }
- }
+	UKR = {
+		every_owned_state = {
+			limit = {
+				any_neighbor_state = {
+					is_owned_by = MKN
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = MKN_ukr_miners_state_disruption
+				days = 180
+			}
+		}
+	}
 }
 mkn_ukr_enable_train_interceptors = {
- if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_train_interceptors_applied } }
-  if = { limit = { NOT = { has_tech = armored_train } } set_technology = { armored_train = 1 } }
-  add_equipment_bonus = { name = MKN_armored_train_interceptors bonus = { train_equipment_3 = { instant = yes armor_value = 0.20 air_attack = 0.20 } } }
-  add_equipment_to_stockpile = { type = train_equipment_3 amount = 10 producer = MKN }
-  set_country_flag = mkn_ukr_train_interceptors_applied
- }
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_train_interceptors_applied
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = armored_train
+				}
+			}
+			set_technology = {
+				armored_train = 1
+			}
+		}
+		add_equipment_bonus = {
+			name = MKN_armored_train_interceptors
+			bonus = {
+				train_equipment_3 = {
+					instant = yes
+					armor_value = 0.20
+					air_attack = 0.20
+				}
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment_3
+			amount = 10
+			producer = MKN
+		}
+		set_country_flag = mkn_ukr_train_interceptors_applied
+	}
 }
 mkn_ukr_build_frontier_forts = {
- every_owned_state = {
-  limit = { is_controlled_by = ROOT any_neighbor_state = { is_owned_by = UKR } }
-  add_building_construction = {
-   type = bunker level = 2 instant_build = yes
-   province = { all_provinces = yes limit_to_border_country = UKR }
-  }
- }
+	every_owned_state = {
+		limit = {
+			is_controlled_by = ROOT
+			any_neighbor_state = {
+				is_owned_by = UKR
+			}
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = {
+				all_provinces = yes
+				limit_to_border_country = UKR
+			}
+		}
+	}
 }
 mkn_ukr_conclude_total_war = {
- if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_pact_signed } }
-  set_variable = { mkn_ukr_escalation_level = 5 }
-  set_country_flag = mkn_ukr_frontier_concluded
-  mkn_ukr_stop_border_battle = yes
-  set_country_flag = mkn_ukr_total_war
-  clr_country_flag = mkn_frontier_year_running
-  remove_mission = MKN_frontier_year_countdown_mission
-  clr_country_flag = mkn_ukr_war_pending
-  clr_country_flag = mkn_ukr_pact_pending
-  clr_country_flag = mkn_ukr_border_battle_active
-  if = { limit = { NOT = { has_idea = MKN_war_for_the_steppe } } add_ideas = MKN_war_for_the_steppe }
-  UKR = {
-   if = {
-    limit = { exists = yes MKN = { exists = yes } NOT = { has_war_with = MKN } NOT = { is_ally_with = MKN } }
-    declare_war_on = { target = MKN type = annex_everything }
-   }
-  }
- }
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_pact_signed
+			}
+		}
+		set_variable = {
+			mkn_ukr_escalation_level = 5
+		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		mkn_ukr_stop_border_battle = yes
+		set_country_flag = mkn_ukr_total_war
+		clr_country_flag = mkn_frontier_year_running
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_ukr_war_pending
+		clr_country_flag = mkn_ukr_pact_pending
+		clr_country_flag = mkn_ukr_border_battle_active
+		if = {
+			limit = {
+				NOT = {
+					has_idea = MKN_war_for_the_steppe
+				}
+			}
+			add_ideas = MKN_war_for_the_steppe
+		}
+		UKR = {
+			if = {
+				limit = {
+					exists = yes
+					MKN = {
+						exists = yes
+					}
+					NOT = {
+						has_war_with = MKN
+					}
+					NOT = {
+						is_ally_with = MKN
+					}
+				}
+				declare_war_on = {
+					target = MKN
+					type = annex_everything
+				}
+			}
+		}
+	}
 }
 mkn_ukr_finalize_pact = {
- if = {
-  limit = { mkn_ukr_pact_context_valid = yes }
-  set_country_flag = mkn_ukr_frontier_concluded
-  set_country_flag = mkn_ukr_pact_signed
-  set_country_flag = UKR_MKN_border_settled
-  clr_country_flag = mkn_ukr_pact_pending
-  clr_country_flag = mkn_ukr_war_pending
-  UKR = { set_country_flag = UKR_MKN_border_settled }
-  # Ratify only territory already won by this frontier; no foreign land is taken.
-  every_owned_state = {
-   limit = { has_state_flag = mkn_ukr_integrated_frontier_state }
-   mkn_ukr_integrate_won_state = yes
-  }
-  custom_effect_tooltip = MKN_frontier_core_integration_tt
-  diplomatic_relation = { country = UKR relation = non_aggression_pact active = yes }
-  set_country_flag = mkn_ukr_frontier_pact_owned
-  set_country_flag = { flag = mkn_ukr_frontier_pact_term days = 730 }
-  set_variable = { mkn_ukr_escalation_level = 1 }
-  set_variable = { mkn_consecutive_border_wars = 0 }
-  clr_country_flag = mkn_ukr_recent_border_battle
- }
+	if = {
+		limit = {
+			mkn_ukr_pact_context_valid = yes
+		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		set_country_flag = mkn_ukr_pact_signed
+		set_country_flag = UKR_MKN_border_settled
+		clr_country_flag = mkn_ukr_pact_pending
+		clr_country_flag = mkn_ukr_war_pending
+		UKR = {
+			set_country_flag = UKR_MKN_border_settled
+		}
+		every_owned_state = {
+			limit = {
+				has_state_flag = mkn_ukr_integrated_frontier_state
+			}
+			mkn_ukr_integrate_won_state = yes
+		}
+		custom_effect_tooltip = MKN_frontier_core_integration_tt
+		diplomatic_relation = {
+			country = UKR
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = mkn_ukr_frontier_pact_owned
+		set_country_flag = {
+			flag = mkn_ukr_frontier_pact_term
+			days = 730
+		}
+		set_variable = {
+			mkn_ukr_escalation_level = 1
+		}
+		set_variable = {
+			mkn_consecutive_border_wars = 0
+		}
+		clr_country_flag = mkn_ukr_recent_border_battle
+	}
 }
 mkn_ukr_frontier_daily = {
- mkn_ukr_initialize_frontier = yes
- if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_frontier_concluded } OR = { has_country_flag = MKN_collapse_started NOT = { UKR = { exists = yes } } } }
-  set_country_flag = mkn_ukr_frontier_concluded
-  set_country_flag = mkn_ukr_frontier_aborted
-  clr_country_flag = mkn_frontier_year_running
-  remove_mission = MKN_frontier_year_countdown_mission
-  clr_country_flag = mkn_ukr_pact_pending
-  clr_country_flag = mkn_ukr_war_pending
- }
- if = {
-  limit = { OR = { has_war_with = UKR has_war_with = SOV } }
-  set_country_flag = mkn_ukr_frontier_concluded
-  mkn_ukr_stop_border_battle = yes
-  set_country_flag = mkn_ukr_total_war
-  clr_country_flag = mkn_frontier_year_running
-  remove_mission = MKN_frontier_year_countdown_mission
-  set_variable = { mkn_ukr_escalation_level = 5 }
-  clr_country_flag = mkn_ukr_pact_pending
-  clr_country_flag = mkn_ukr_war_pending
-  if = { limit = { NOT = { has_idea = MKN_war_for_the_steppe } } add_ideas = MKN_war_for_the_steppe }
- }
- if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_frontier_concluded } has_border_war_with = UKR }
-  # There is no cooling-off while a native border battle is still being fought.
-  set_country_flag = { flag = mkn_ukr_recent_border_battle days = 180 }
- }
- else_if = {
-  limit = { NOT = { has_country_flag = mkn_ukr_recent_border_battle } }
-  set_variable = { mkn_consecutive_border_wars = 0 }
- }
- if = {
-  limit = { has_country_flag = mkn_ukr_border_battle_active NOT = { has_border_war_with = UKR } }
-  clr_country_flag = mkn_ukr_border_battle_active
- }
- if = {
-  limit = { has_country_flag = mkn_ukr_pact_pending NOT = { mkn_ukr_pact_context_valid = yes } }
-  clr_country_flag = mkn_ukr_pact_pending
- }
- if = {
-  limit = { has_country_flag = UKR_MKN_border_settled NOT = { has_country_flag = mkn_ukr_frontier_concluded } }
-  set_country_flag = mkn_ukr_frontier_concluded
-  set_country_flag = mkn_ukr_pact_signed
-  clr_country_flag = mkn_ukr_war_pending
- }
- if = {
-  limit = {
-   has_country_flag = mkn_ukr_frontier_pact_owned
-   NOT = { has_country_flag = mkn_ukr_frontier_pact_term }
-  }
-  diplomatic_relation = { country = UKR relation = non_aggression_pact active = no }
-  clr_country_flag = mkn_ukr_frontier_pact_owned
- }
- mkn_ukr_check_escalation = yes
- if = {
-  limit = {
-   has_country_flag = mkn_ukr_war_pending
-   NOT = { has_border_war_with = UKR }
-   UKR = { exists = yes }
-   NOT = { is_ally_with = UKR }
-  }
-  country_event = { id = mkn_ukr_border.1 }
- }
+	mkn_ukr_initialize_frontier = yes
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			OR = {
+				has_country_flag = MKN_collapse_started
+				NOT = {
+					UKR = {
+						exists = yes
+					}
+				}
+			}
+		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		set_country_flag = mkn_ukr_frontier_aborted
+		clr_country_flag = mkn_frontier_year_running
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_ukr_pact_pending
+		clr_country_flag = mkn_ukr_war_pending
+	}
+	if = {
+		limit = {
+			OR = {
+				has_war_with = UKR
+				has_war_with = SOV
+			}
+		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		mkn_ukr_stop_border_battle = yes
+		set_country_flag = mkn_ukr_total_war
+		clr_country_flag = mkn_frontier_year_running
+		remove_mission = MKN_frontier_year_countdown_mission
+		set_variable = {
+			mkn_ukr_escalation_level = 5
+		}
+		clr_country_flag = mkn_ukr_pact_pending
+		clr_country_flag = mkn_ukr_war_pending
+		if = {
+			limit = {
+				NOT = {
+					has_idea = MKN_war_for_the_steppe
+				}
+			}
+			add_ideas = MKN_war_for_the_steppe
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			has_border_war_with = UKR
+		}
+		set_country_flag = {
+			flag = mkn_ukr_recent_border_battle
+			days = 180
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_country_flag = mkn_ukr_recent_border_battle
+			}
+		}
+		set_variable = {
+			mkn_consecutive_border_wars = 0
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_border_battle_active
+			NOT = {
+				has_border_war_with = UKR
+			}
+		}
+		clr_country_flag = mkn_ukr_border_battle_active
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_pact_pending
+			NOT = {
+				mkn_ukr_pact_context_valid = yes
+			}
+		}
+		clr_country_flag = mkn_ukr_pact_pending
+	}
+	if = {
+		limit = {
+			has_country_flag = UKR_MKN_border_settled
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		set_country_flag = mkn_ukr_pact_signed
+		clr_country_flag = mkn_ukr_war_pending
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_frontier_pact_owned
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_pact_term
+			}
+		}
+		diplomatic_relation = {
+			country = UKR
+			relation = non_aggression_pact
+			active = no
+		}
+		clr_country_flag = mkn_ukr_frontier_pact_owned
+	}
+	mkn_ukr_check_escalation = yes
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_war_pending
+			NOT = {
+				has_border_war_with = UKR
+			}
+			UKR = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = UKR
+			}
+		}
+		country_event = {
+			id = mkn_ukr_border.1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+		remove_mission = MKN_passive_escalation_drift
+		clr_country_flag = mkn_ukr_frontier_unlocked
+		clr_country_flag = mkn_frontier_conflict_active
+	}
 }
-
-# Stop only an MKN/UKR conflict. The fallback handles a legacy raid already
-# running in an older save, before modern launch variables were ever populated.
 mkn_ukr_stop_border_battle = {
- if = {
-  limit = { has_border_war_with = UKR }
-  if = {
-   limit = { has_variable = mkn_ukr_attacking_state has_variable = mkn_ukr_defending_state }
-   cancel_border_war = {
-    attacker = var:mkn_ukr_attacking_state
-    defender = var:mkn_ukr_defending_state
-    dont_fire_events = yes
-   }
-  }
-  else = {
-   every_owned_state = {
-    limit = { is_controlled_by = ROOT has_border_war = yes }
-    MKN = { set_variable = { mkn_ukr_attacking_state = PREV } }
-    every_neighbor_state = {
-     limit = { is_owned_and_controlled_by = UKR has_border_war = yes }
-     MKN = {
-      set_variable = { mkn_ukr_defending_state = PREV }
-      cancel_border_war = {
-       attacker = var:mkn_ukr_attacking_state
-       defender = var:mkn_ukr_defending_state
-       dont_fire_events = yes
-      }
-     }
-    }
-   }
-  }
- }
- clr_country_flag = mkn_ukr_border_battle_active
+	if = {
+		limit = {
+			OR = {
+				OR = {
+					OR = {
+						OR = {
+							OR = {
+								has_border_war_with = UKR
+								has_border_war_with = SOV
+							}
+							has_border_war_with = SOV
+						}
+						has_border_war_with = SOV
+					}
+					has_border_war_with = SOV
+				}
+				has_border_war_with = SOV
+			}
+		}
+		if = {
+			limit = {
+				has_variable = mkn_ukr_attacking_state
+				has_variable = mkn_ukr_defending_state
+			}
+			cancel_border_war = {
+				attacker = var:mkn_ukr_attacking_state
+				defender = var:mkn_ukr_defending_state
+				dont_fire_events = yes
+			}
+		}
+		else = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_border_war = yes
+				}
+				MKN = {
+					set_variable = {
+						mkn_ukr_attacking_state = PREV
+					}
+				}
+				every_neighbor_state = {
+					limit = {
+						is_owned_and_controlled_by = UKR
+						has_border_war = yes
+					}
+					MKN = {
+						set_variable = {
+							mkn_ukr_defending_state = PREV
+						}
+						cancel_border_war = {
+							attacker = var:mkn_ukr_attacking_state
+							defender = var:mkn_ukr_defending_state
+							dont_fire_events = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	clr_country_flag = mkn_ukr_border_battle_active
 }
-
-# Hard annual limit overrides the voluntary treaty negotiation: ceasefire by exhaustion.
 mkn_ukr_year_timeout = {
- # Stop the exact live native conflict before ratifying the hard ceasefire.
- mkn_ukr_stop_border_battle = yes
- clr_country_flag = mkn_frontier_year_running
- if = {
-  limit = {
-   UKR = { exists = yes }
-   NOT = { has_war_with = UKR } NOT = { has_war_with = SOV }
-   NOT = { has_country_flag = MKN_collapse_started }
-  }
-  set_country_flag = mkn_frontier_frozen
-  set_country_flag = mkn_ukr_frontier_concluded
-  set_country_flag = mkn_ukr_pact_signed
-  set_country_flag = UKR_MKN_border_settled
-  UKR = { set_country_flag = UKR_MKN_border_settled }
-  clr_country_flag = mkn_ukr_war_pending
-  clr_country_flag = mkn_ukr_pact_pending
-  diplomatic_relation = { country = UKR relation = non_aggression_pact active = yes }
-  set_country_flag = mkn_ukr_frontier_pact_owned
-  set_country_flag = { flag = mkn_ukr_frontier_pact_term days = 730 }
-  every_owned_state = {
-   limit = { has_state_flag = mkn_ukr_integrated_frontier_state }
-   mkn_ukr_integrate_won_state = yes
-  }
-  custom_effect_tooltip = MKN_frontier_core_integration_tt
- }
+	mkn_ukr_stop_border_battle = yes
+	clr_country_flag = mkn_frontier_year_running
+	if = {
+		limit = {
+			UKR = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = UKR
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			NOT = {
+				has_country_flag = MKN_collapse_started
+			}
+		}
+		set_country_flag = mkn_frontier_frozen
+		set_country_flag = mkn_ukr_frontier_concluded
+		set_country_flag = mkn_ukr_pact_signed
+		set_country_flag = UKR_MKN_border_settled
+		UKR = {
+			set_country_flag = UKR_MKN_border_settled
+		}
+		clr_country_flag = mkn_ukr_war_pending
+		clr_country_flag = mkn_ukr_pact_pending
+		diplomatic_relation = {
+			country = UKR
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = mkn_ukr_frontier_pact_owned
+		set_country_flag = {
+			flag = mkn_ukr_frontier_pact_term
+			days = 730
+		}
+		every_owned_state = {
+			limit = {
+				has_state_flag = mkn_ukr_integrated_frontier_state
+			}
+			mkn_ukr_integrate_won_state = yes
+		}
+		custom_effect_tooltip = MKN_frontier_core_integration_tt
+	}
 }
 mkn_ukr_schedule_old_save_incident = {
- # Only on startup: never reset the seven-day delay on the daily tick.
- if = {
-  limit = {
-   has_country_flag = mkn_batko_departed
-   NOT = { has_country_flag = mkn_ukr_incident_fired }
-   NOT = { has_country_flag = mkn_ukr_incident_scheduled }
-   NOT = { has_country_flag = MKN_collapse_started }
-  }
-  set_country_flag = mkn_ukr_incident_scheduled
-  country_event = { id = mkn_ukr_border.10 days = 7 }
- }
+	if = {
+		limit = {
+			has_country_flag = mkn_batko_departed
+			NOT = {
+				has_country_flag = mkn_ukr_incident_fired
+			}
+			NOT = {
+				has_country_flag = mkn_ukr_incident_scheduled
+			}
+			NOT = {
+				has_country_flag = MKN_collapse_started
+			}
+		}
+		set_country_flag = mkn_ukr_incident_scheduled
+		country_event = {
+			id = mkn_ukr_border.10
+			days = 7
+		}
+	}
+}
+MKN_annex_encircled_ukraine = {
+	UKR = {
+		every_owned_state = {
+			set_state_flag = MKN_kyiv_capitulation_claim
+		}
+	}
+	annex_country = {
+		target = UKR
+		transfer_troops = no
+	}
+	every_owned_state = {
+		limit = {
+			has_state_flag = MKN_kyiv_capitulation_claim
+		}
+		add_core_of = ROOT
+		clr_state_flag = MKN_kyiv_capitulation_claim
+	}
+	set_country_flag = mkn_ukr_frontier_concluded
+	clr_country_flag = mkn_ukr_war_pending
+	remove_mission = MKN_passive_escalation_drift
+	remove_mission = MKN_frontier_year_countdown_mission
+	mkn_ukr_stop_border_battle = yes
 }

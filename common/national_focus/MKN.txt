@@ -27,6 +27,10 @@ focus_tree = {
 				MKN_unified_production_speed_buildings_factor = 0.0500
 				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 4
 		y = 0
@@ -51,10 +55,10 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 5
 		prerequisite = {
 			focus = MKN_dnieper_audit
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_kichkas_bridge
@@ -96,10 +100,10 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-		cost = 5
 		prerequisite = {
 			focus = MKN_manganese_nikopol
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_zaporizhstal
@@ -135,10 +139,13 @@ focus_tree = {
 				MKN_unified_production_speed_buildings_factor = 0.0500
 				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 4
 		y = 3
-		cost = 10
 		prerequisite = {
 			focus = MKN_engineering_delegates
 		}
@@ -147,6 +154,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_electrification
@@ -177,10 +185,10 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-		cost = 10
 		prerequisite = {
 			focus = MKN_kichkas_bridge
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_kommunar_tractor
@@ -199,13 +207,17 @@ focus_tree = {
 					}
 				}
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 4
 		y = 4
-		cost = 10
 		prerequisite = {
 			focus = MKN_zaporizhstal
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_dnepro_aluminium
@@ -230,10 +242,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 6
-		cost = 10
 		prerequisite = {
 			focus = MKN_nikopol_tube_zavod
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_nikopol_tube_zavod
@@ -272,10 +284,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
-		cost = 10
 		prerequisite = {
 			focus = MKN_kommunar_tractor
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_mech_works
@@ -310,10 +322,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
-		cost = 10
 		prerequisite = {
 			focus = MKN_dnepro_aluminium
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_grain_export
@@ -336,10 +348,10 @@ focus_tree = {
 		}
 		x = 0
 		y = 5
-		cost = 5
 		prerequisite = {
 			focus = MKN_steppe_electrification
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steel_concern
@@ -349,10 +361,10 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
-		cost = 5
 		prerequisite = {
 			focus = MKN_factory_instructors
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steel_concern_union
@@ -371,10 +383,10 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
-		cost = 10
 		prerequisite = {
 			focus = MKN_steel_concern
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steel_volnitsa
@@ -405,7 +417,6 @@ focus_tree = {
 		}
 		x = 4
 		y = 9
-		cost = 10
 		prerequisite = {
 			focus = MKN_production_cycles
 		}
@@ -415,6 +426,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_industrial_compact
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_cooperatives
@@ -436,6 +448,10 @@ focus_tree = {
 				MKN_unified_production_speed_buildings_factor = 0.0500
 				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 16
 		y = 0
@@ -449,10 +465,10 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-		cost = 5
 		prerequisite = {
 			focus = MKN_artel_register
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_grain_brokers
@@ -475,10 +491,10 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-		cost = 5
 		prerequisite = {
 			focus = MKN_salt_artsels
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_village_smithies
@@ -499,10 +515,6 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				MKN_unified_industrial_capacity_factory = 0.0500
-				tooltip = MKN_unified_industrial_capacity_factory_tt
-			}
-			add_to_variable = {
 				MKN_unified_production_factory_efficiency_gain_factor = 0.0800
 				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
 			}
@@ -510,13 +522,17 @@ focus_tree = {
 				MKN_unified_research_speed_factor = 0.0200
 				tooltip = MKN_unified_research_speed_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0700
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 16
 		y = 2
-		cost = 5
 		prerequisite = {
 			focus = MKN_artel_register
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_wind_mills_steppe
@@ -539,7 +555,6 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-		cost = 5
 		prerequisite = {
 			focus = MKN_grain_brokers
 		}
@@ -548,6 +563,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_mobile_workshops
@@ -571,13 +587,17 @@ focus_tree = {
 				MKN_unified_production_speed_buildings_factor = 0.0500
 				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 16
 		y = 3
-		cost = 10
 		prerequisite = {
 			focus = MKN_village_smithies
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_bazaars
@@ -600,10 +620,10 @@ focus_tree = {
 		}
 		x = 12
 		y = 5
-		cost = 5
 		prerequisite = {
 			focus = MKN_wind_mills_steppe
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_rifle_concern
@@ -618,13 +638,17 @@ focus_tree = {
 			else = {
 				show_ideas_tooltip = MKN_rifle_concern_1
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		x = 16
 		y = 4
-		cost = 5
 		prerequisite = {
 			focus = MKN_mobile_workshops
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_mint
@@ -637,10 +661,10 @@ focus_tree = {
 		}
 		x = 12
 		y = 6
-		cost = 5
 		prerequisite = {
 			focus = MKN_free_bazaars
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_freight_artels
@@ -674,10 +698,10 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-		cost = 5
 		prerequisite = {
 			focus = MKN_rifle_concern
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_rifle_concern_union
@@ -712,15 +736,14 @@ focus_tree = {
 		}
 		x = 16
 		y = 6
-		cost = 10
 		prerequisite = {
 			focus = MKN_freight_artels
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_workshop_airplane_artels
 		icon = GFX_focus_generic_air_research_boost
-		cost = 10
 		completion_reward = {
 			air_experience = 20
 			226 = {
@@ -747,6 +770,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
+		cost = 5
 	}
 	focus = {
 		id = MKN_craft_federation
@@ -781,7 +805,6 @@ focus_tree = {
 		}
 		x = 16
 		y = 9
-		cost = 10
 		prerequisite = {
 			focus = MKN_shared_orders
 		}
@@ -791,11 +814,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_communal_compact
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_the_free_territory
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 5
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
@@ -805,6 +828,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = MKN_congress_1936
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_farmers_and_workers
@@ -812,13 +836,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_the_free_territory
 		}
-		cost = 5
 		completion_reward = {
 			add_political_power = 80
 			add_stability = 0.05
 		}
 		x = 32
 		y = 3
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_soviets
@@ -826,7 +850,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_the_free_territory
 		}
-		cost = 5
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MKN_free_territory
@@ -837,6 +860,7 @@ focus_tree = {
 		}
 		x = 34
 		y = 3
+		cost = 5
 	}
 	focus = {
 		id = MKN_nabat_federation
@@ -844,7 +868,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_the_free_territory
 		}
-		cost = 5
 		completion_reward = {
 			add_political_power = 80
 			add_tech_bonus = {
@@ -855,6 +878,7 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
+		cost = 5
 	}
 	focus = {
 		id = MKN_shadow_republic
@@ -862,7 +886,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_farmers_and_workers
 		}
-		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -873,6 +896,7 @@ focus_tree = {
 		}
 		x = 32
 		y = 4
+		cost = 5
 	}
 	focus = {
 		id = MKN_gulyai_polye_commune
@@ -880,7 +904,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_free_soviets
 		}
-		cost = 5
 		completion_reward = {
 			add_political_power = 50
 			226 = {
@@ -899,6 +922,7 @@ focus_tree = {
 		}
 		x = 34
 		y = 4
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_banner_east
@@ -906,7 +930,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_nabat_federation
 		}
-		cost = 10
 		completion_reward = {
 			army_experience = 20
 			add_political_power = 80
@@ -918,6 +941,7 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
+		cost = 5
 	}
 	focus = {
 		id = MKN_anarchist_schools
@@ -925,7 +949,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_gulyai_polye_commune
 		}
-		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -935,6 +958,7 @@ focus_tree = {
 		}
 		x = 34
 		y = 5
+		cost = 5
 	}
 	focus = {
 		id = MKN_makhno_moves_south
@@ -942,7 +966,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_black_banner_east
 		}
-		cost = 5
 		completion_reward = {
 			add_manpower = 30000
 			add_equipment_to_stockpile = {
@@ -953,6 +976,7 @@ focus_tree = {
 		}
 		x = 36
 		y = 5
+		cost = 5
 	}
 	focus = {
 		id = MKN_peasant_militias
@@ -960,13 +984,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_anarchist_schools
 		}
-		cost = 5
 		completion_reward = {
 			add_manpower = 50000
 			add_war_support = 0.05
 		}
 		x = 32
 		y = 6
+		cost = 5
 	}
 	focus = {
 		id = MKN_soviet_press
@@ -974,18 +998,17 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_the_steppe_holds
 		}
-		cost = 5
 		completion_reward = {
 			add_political_power = 80
 			add_stability = 0.05
 		}
 		x = 32
 		y = 7
+		cost = 5
 	}
 	focus = {
 		id = MKN_the_steppe_holds
 		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 150
@@ -1002,6 +1025,7 @@ focus_tree = {
 				has_completed_focus = MKN_makhno_moves_south
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_border_tensions
@@ -1009,7 +1033,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_the_steppe_holds
 		}
-		cost = 5
 		completion_reward = {
 			set_variable = {
 				MKN_raids_done = 0
@@ -1022,11 +1045,11 @@ focus_tree = {
 		}
 		x = 37
 		y = 7
+		cost = 5
 	}
 	focus = {
 		id = MKN_everlasting_makhnovshchina
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
 		completion_reward = {
 			add_war_support = 0.1
 			add_manpower = 50000
@@ -1080,6 +1103,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_soviets_forever
@@ -1087,7 +1111,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_everlasting_makhnovshchina
 		}
-		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
@@ -1113,11 +1136,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_tachanka_guards
 		icon = GFX_focus_generic_army_attack
-		cost = 5
 		completion_reward = {
 			army_experience = 30
 			add_equipment_to_stockpile = {
@@ -1136,11 +1159,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_council_communism
 		icon = GFX_focus_research
-		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1196,6 +1219,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_workers_control
@@ -1203,7 +1227,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_council_communism
 		}
-		cost = 5
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 80
@@ -1228,11 +1251,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_commune_federation
 		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 5
 		completion_reward = {
 			add_manpower = 40000
 			add_war_support = 0.05
@@ -1261,11 +1284,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_constituent_assembly
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
 		completion_reward = {
 			set_politics = {
 				ruling_party = democratic
@@ -1315,6 +1338,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_elections_steppe
@@ -1322,7 +1346,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_constituent_assembly
 		}
-		cost = 5
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
@@ -1363,11 +1386,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_open_markets
 		icon = GFX_focus_generic_industry_2
-		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1386,11 +1409,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_red_banner_steppe
 		icon = GFX_focus_generic_army_attack
-		cost = 10
 		completion_reward = {
 			set_politics = {
 				ruling_party = communism
@@ -1474,6 +1497,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_hand_to_moscow
@@ -1481,7 +1505,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_red_banner_steppe
 		}
-		cost = 5
 		x = 36
 		y = 9
 		available = {
@@ -1519,11 +1542,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_collectivize_the_steppe
 		icon = GFX_focus_generic_manpower
-		cost = 5
 		completion_reward = {
 			add_manpower = 60000
 			add_stability = 0.05
@@ -1567,11 +1590,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_hundreds
 		icon = GFX_focus_generic_army_attack
-		cost = 10
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
@@ -1627,6 +1650,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_order_through_tachanka
@@ -1634,7 +1658,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_black_hundreds
 		}
-		cost = 5
 		completion_reward = {
 			army_experience = 30
 			add_war_support = 0.05
@@ -1661,11 +1684,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_legions
 		icon = GFX_focus_generic_manpower
-		cost = 5
 		completion_reward = {
 			add_manpower = 60000
 			add_stability = -0.05
@@ -1732,11 +1755,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_nestor_the_first
 		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10
 		completion_reward = {
 			set_politics = {
 				ruling_party = neutrality
@@ -1781,6 +1804,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_imperial_coronation
@@ -1788,7 +1812,6 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_nestor_the_first
 		}
-		cost = 5
 		completion_reward = {
 			add_political_power = 150
 			add_war_support = 0.1
@@ -1814,11 +1837,11 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_empire
 		icon = GFX_focus_generic_army_doctrines_2
-		cost = 5
 		completion_reward = {
 			army_experience = 25
 			add_manpower = 40000
@@ -1833,6 +1856,7 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_tachanka_columns
@@ -1953,10 +1977,10 @@ focus_tree = {
 				category = armor
 			}
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_batko_cavalry
@@ -1981,10 +2005,10 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_guard_veterans
@@ -1997,7 +2021,6 @@ focus_tree = {
 			}
 			army_experience = 25
 		}
-		cost = 5
 		x = 44
 		y = 9
 		prerequisite = {
@@ -2006,6 +2029,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_quartermasters
@@ -2023,7 +2047,6 @@ focus_tree = {
 				category = logistics_tech
 			}
 		}
-		cost = 5
 		x = 48
 		y = 4
 		prerequisite = {
@@ -2032,6 +2055,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_hawks
@@ -2146,10 +2170,10 @@ focus_tree = {
 				category = light_fighter
 			}
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_sea_flotilla
@@ -2179,7 +2203,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		available = {
 			196 = {
 				is_owned_and_controlled_by = ROOT
@@ -2187,6 +2210,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_dnieper_patrol
@@ -2245,7 +2269,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		available = {
 			196 = {
 				is_owned_and_controlled_by = ROOT
@@ -2253,6 +2276,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_coastal_defense_steppe
@@ -2285,10 +2309,10 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_sea_smugglers
@@ -2314,10 +2338,10 @@ focus_tree = {
 				category = ss_tech
 			}
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_dnieper_gun_flotilla
@@ -2343,7 +2367,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 76
 		y = 4
 		prerequisite = {
@@ -2352,6 +2375,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	default = no
 	initial_show_position = {
@@ -2360,7 +2384,6 @@ focus_tree = {
 	focus = {
 		id = MKN_technical_communes
 		icon = GFX_focus_research
-		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -2371,11 +2394,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 1
+		cost = 5
 	}
 	focus = {
 		id = MKN_polytechnic_institute
 		icon = GFX_focus_research
-		cost = 5
 		prerequisite = {
 			focus = MKN_technical_communes
 		}
@@ -2388,11 +2411,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 2
+		cost = 5
 	}
 	focus = {
 		id = MKN_communal_research_network
 		icon = GFX_focus_research
-		cost = 5
 		prerequisite = {
 			focus = MKN_polytechnic_institute
 		}
@@ -2406,11 +2429,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 3
+		cost = 5
 	}
 	focus = {
 		id = MKN_advanced_research
 		icon = GFX_focus_research
-		cost = 5
 		prerequisite = {
 			focus = MKN_workshop_airplane_artels
 		}
@@ -2424,6 +2447,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 5
+		cost = 5
 	}
 	focus = {
 		id = MKN_artillery_artels
@@ -2441,7 +2465,6 @@ focus_tree = {
 				category = artillery
 			}
 		}
-		cost = 5
 		x = 44
 		y = 7
 		prerequisite = {
@@ -2450,6 +2473,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_mobile_supply_columns
@@ -2466,7 +2490,6 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		x = 48
 		y = 5
 		prerequisite = {
@@ -2475,6 +2498,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_aircraft_artels
@@ -2500,7 +2524,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 60
 		y = 4
 		prerequisite = {
@@ -2509,6 +2532,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_sea_escorts
@@ -2526,7 +2550,6 @@ focus_tree = {
 				category = asw_tech
 			}
 		}
-		cost = 5
 		x = 80
 		y = 4
 		prerequisite = {
@@ -2535,6 +2558,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	continuous_focus_position = {
 		x = 50
@@ -2545,7 +2569,6 @@ focus_tree = {
 		icon = GFX_focus_generic_money_for_equipment
 		x = 4
 		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2558,17 +2581,21 @@ focus_tree = {
 				id = mkn.30
 				days = 1
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_dneprostroi
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_engineering_delegates
 		icon = GFX_focus_research
 		x = 4
 		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2583,10 +2610,6 @@ focus_tree = {
 				category = industry
 			}
 			add_to_variable = {
-				MKN_unified_industrial_capacity_factory = 0.0500
-				tooltip = MKN_unified_industrial_capacity_factory_tt
-			}
-			add_to_variable = {
 				MKN_unified_production_factory_efficiency_gain_factor = 0.0800
 				tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
 			}
@@ -2594,17 +2617,21 @@ focus_tree = {
 				MKN_unified_research_speed_factor = 0.0200
 				tooltip = MKN_unified_research_speed_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0700
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_dnieper_audit
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_elected_brigadiers
 		icon = GFX_focus_generic_manpower
 		x = 8
 		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2630,13 +2657,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_dnieper_audit
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_factory_instructors
 		icon = GFX_focus_generic_army_doctrines_2
 		x = 8
 		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2662,13 +2689,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_elected_brigadiers
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_coal_contracts
 		icon = GFX_focus_generic_mining_industry
 		x = 0
 		y = 6
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2697,13 +2724,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_grain_export
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_dnieper_dispatch
 		icon = GFX_focus_generic_railroad
 		x = 0
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2729,13 +2756,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_steppe_coal_contracts
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_worker_battalions
 		icon = GFX_focus_generic_manpower
 		x = 8
 		y = 6
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2761,13 +2788,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_steel_concern_union
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_dnieper_standards
 		icon = GFX_focus_generic_industry_2
 		x = 8
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2786,13 +2813,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_worker_battalions
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_production_cycles
 		icon = GFX_focus_generic_military_industry
 		x = 0
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2827,13 +2854,13 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_workers_welfare
 		icon = GFX_focus_generic_agricultural_subsidies
 		x = 4
 		y = 8
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2848,13 +2875,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_steppe_mech_works
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_industrial_compact
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 8
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2875,6 +2902,10 @@ focus_tree = {
 				MKN_unified_production_speed_buildings_factor = 0.1300
 				tooltip = MKN_unified_production_speed_buildings_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_global_building_slots_factor = 0.3000
+				tooltip = MKN_unified_global_building_slots_factor_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_dnieper_standards
@@ -2884,13 +2915,13 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_artel_register
 		icon = GFX_focus_generic_money_for_equipment
 		x = 16
 		y = 1
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2900,17 +2931,21 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 50
+			add_to_variable = {
+				MKN_unified_industrial_capacity_factory = 0.0200
+				tooltip = MKN_unified_industrial_capacity_factory_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_free_cooperatives
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_recallable_commanders
 		icon = GFX_focus_generic_manpower
 		x = 20
 		y = 2
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2936,13 +2971,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_artel_register
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_field_schools
 		icon = GFX_focus_generic_army_doctrines_2
 		x = 20
 		y = 3
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2968,13 +3003,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_recallable_commanders
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_harvest_reserves
 		icon = GFX_focus_generic_agricultural_subsidies
 		x = 20
 		y = 4
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -2991,13 +3026,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_field_schools
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_mutual_credit
 		icon = GFX_focus_generic_money_for_equipment
 		x = 20
 		y = 5
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3012,13 +3047,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_harvest_reserves
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_mobile_self_defence
 		icon = GFX_focus_generic_horse_studs
 		x = 20
 		y = 6
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3048,13 +3083,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_mutual_credit
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_repair_exchanges
 		icon = GFX_focus_generic_industry_1
 		x = 12
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3083,13 +3118,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_steppe_mint
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_workshop_standards
 		icon = GFX_focus_generic_industry_2
 		x = 16
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3119,13 +3154,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_rifle_concern_union
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_supply_congress
 		icon = GFX_focus_generic_supply_line
 		x = 20
 		y = 7
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3156,13 +3191,13 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_shared_orders
 		icon = GFX_focus_generic_military_industry
 		x = 12
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3192,13 +3227,13 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_social_fund
 		icon = GFX_focus_generic_agricultural_subsidies
 		x = 16
 		y = 8
-		cost = 5
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3213,13 +3248,13 @@ focus_tree = {
 		prerequisite = {
 			focus = MKN_workshop_standards
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_communal_compact
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 20
 		y = 8
-		cost = 10
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -3244,6 +3279,10 @@ focus_tree = {
 				MKN_unified_stability_factor = 0.0500
 				tooltip = MKN_unified_stability_factor_tt
 			}
+			add_to_variable = {
+				MKN_unified_global_building_slots_factor = 0.3000
+				tooltip = MKN_unified_global_building_slots_factor_tt
+			}
 		}
 		prerequisite = {
 			focus = MKN_supply_congress
@@ -3253,6 +3292,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cost = 5
 	}
 	focus = {
 		id = MKN_tank_crews
@@ -3285,7 +3325,6 @@ focus_tree = {
 				name = MKN_tank_crews
 			}
 		}
-		cost = 5
 		x = 44
 		y = 4
 		prerequisite = {
@@ -3294,6 +3333,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_radio_sections
@@ -3311,7 +3351,6 @@ focus_tree = {
 				category = signal_company_tech
 			}
 		}
-		cost = 5
 		x = 44
 		y = 5
 		prerequisite = {
@@ -3320,6 +3359,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_recovery_tractors
@@ -3337,7 +3377,6 @@ focus_tree = {
 				category = maintenance_company_tech
 			}
 		}
-		cost = 5
 		x = 44
 		y = 6
 		prerequisite = {
@@ -3346,6 +3385,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_tank_maintenance
@@ -3388,7 +3428,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		x = 48
 		y = 6
 		prerequisite = {
@@ -3397,6 +3436,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fire_tables
@@ -3427,7 +3467,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 48
 		y = 7
 		prerequisite = {
@@ -3436,6 +3475,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_motorized_infantry
@@ -3453,7 +3493,6 @@ focus_tree = {
 				category = cat_mechanized_equipment
 			}
 		}
-		cost = 5
 		x = 48
 		y = 9
 		prerequisite = {
@@ -3462,6 +3501,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_bridge_columns
@@ -3479,7 +3519,6 @@ focus_tree = {
 				category = engineers_tech
 			}
 		}
-		cost = 5
 		x = 44
 		y = 10
 		prerequisite = {
@@ -3488,6 +3527,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fuel_discipline
@@ -3511,7 +3551,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 48
 		y = 10
 		prerequisite = {
@@ -3520,6 +3559,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_staff_games
@@ -3537,7 +3577,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		cost = 5
 		x = 44
 		y = 11
 		prerequisite = {
@@ -3546,6 +3585,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_mobile_medical
@@ -3563,7 +3603,6 @@ focus_tree = {
 				category = hospital_tech
 			}
 		}
-		cost = 5
 		x = 48
 		y = 11
 		prerequisite = {
@@ -3572,6 +3611,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_combined_arms
@@ -3590,7 +3630,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		cost = 5
 		x = 44
 		y = 12
 		prerequisite = {
@@ -3599,6 +3638,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_deep_reserves
@@ -3615,7 +3655,6 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		x = 48
 		y = 12
 		prerequisite = {
@@ -3624,6 +3663,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_breakthrough_workshops
@@ -3648,7 +3688,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		x = 44
 		y = 13
 		prerequisite = {
@@ -3657,6 +3696,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_armoured_manoeuvres
@@ -3669,7 +3709,6 @@ focus_tree = {
 			}
 			army_experience = 30
 		}
-		cost = 5
 		x = 48
 		y = 13
 		prerequisite = {
@@ -3678,6 +3717,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_mechanized_compact
@@ -3721,7 +3761,6 @@ focus_tree = {
 		}
 		x = 46
 		y = 8
-		cost = 10
 		prerequisite = {
 			focus = MKN_artillery_artels
 		}
@@ -3742,6 +3781,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_village_muster
@@ -3762,7 +3802,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 52
 		y = 4
 		prerequisite = {
@@ -3771,6 +3810,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_remount_artels
@@ -3788,7 +3828,6 @@ focus_tree = {
 				category = logistics_tech
 			}
 		}
-		cost = 5
 		x = 56
 		y = 4
 		prerequisite = {
@@ -3797,6 +3836,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_machinegun_carts
@@ -3837,7 +3877,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 52
 		y = 5
 		prerequisite = {
@@ -3846,6 +3885,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_local_guides
@@ -3863,7 +3903,6 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
-		cost = 5
 		x = 56
 		y = 5
 		prerequisite = {
@@ -3872,6 +3911,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_scout_parties
@@ -3884,7 +3924,6 @@ focus_tree = {
 			}
 			army_experience = 15
 		}
-		cost = 5
 		x = 52
 		y = 6
 		prerequisite = {
@@ -3893,6 +3932,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_field_veterinary
@@ -3910,7 +3950,6 @@ focus_tree = {
 				category = logistics_tech
 			}
 		}
-		cost = 5
 		x = 56
 		y = 6
 		prerequisite = {
@@ -3919,6 +3958,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_militia_signals
@@ -3936,7 +3976,6 @@ focus_tree = {
 				category = signal_company_tech
 			}
 		}
-		cost = 5
 		x = 52
 		y = 7
 		prerequisite = {
@@ -3945,6 +3984,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_night_marches
@@ -3957,7 +3997,6 @@ focus_tree = {
 			}
 			army_experience = 20
 		}
-		cost = 5
 		x = 56
 		y = 7
 		prerequisite = {
@@ -3966,6 +4005,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_militia_junior_leaders
@@ -3989,7 +4029,6 @@ focus_tree = {
 				name = MKN_militia_junior_leaders
 			}
 		}
-		cost = 5
 		x = 52
 		y = 9
 		prerequisite = {
@@ -3998,6 +4037,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_hidden_depots
@@ -4014,7 +4054,6 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		x = 56
 		y = 9
 		prerequisite = {
@@ -4023,6 +4062,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_militia_engineers
@@ -4040,7 +4080,6 @@ focus_tree = {
 				category = engineers_tech
 			}
 		}
-		cost = 5
 		x = 52
 		y = 10
 		prerequisite = {
@@ -4049,6 +4088,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_militia_hospitals
@@ -4066,7 +4106,6 @@ focus_tree = {
 				category = hospital_tech
 			}
 		}
-		cost = 5
 		x = 56
 		y = 10
 		prerequisite = {
@@ -4075,6 +4114,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_flexible_orders
@@ -4092,7 +4132,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		cost = 5
 		x = 52
 		y = 11
 		prerequisite = {
@@ -4101,6 +4140,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_rural_reserve
@@ -4117,7 +4157,6 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		x = 56
 		y = 11
 		prerequisite = {
@@ -4126,6 +4165,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_tachanka_tactics
@@ -4138,7 +4178,6 @@ focus_tree = {
 			}
 			army_experience = 20
 		}
-		cost = 5
 		x = 52
 		y = 12
 		prerequisite = {
@@ -4147,6 +4186,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_camouflage
@@ -4164,7 +4204,6 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
-		cost = 5
 		x = 56
 		y = 12
 		prerequisite = {
@@ -4173,6 +4212,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_mobile_rearguard
@@ -4185,7 +4225,6 @@ focus_tree = {
 			}
 			army_experience = 20
 		}
-		cost = 5
 		x = 52
 		y = 13
 		prerequisite = {
@@ -4194,6 +4233,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_column_exercises
@@ -4212,7 +4252,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		cost = 5
 		x = 56
 		y = 13
 		prerequisite = {
@@ -4221,6 +4260,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_army_compact
@@ -4255,7 +4295,6 @@ focus_tree = {
 		}
 		x = 54
 		y = 8
-		cost = 10
 		prerequisite = {
 			focus = MKN_militia_signals
 		}
@@ -4276,6 +4315,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_observation_posts
@@ -4293,7 +4333,6 @@ focus_tree = {
 				category = radar_tech
 			}
 		}
-		cost = 5
 		x = 64
 		y = 4
 		prerequisite = {
@@ -4302,6 +4341,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fighter_instructors
@@ -4320,7 +4360,6 @@ focus_tree = {
 				type = fighter_genius
 			}
 		}
-		cost = 5
 		x = 60
 		y = 5
 		prerequisite = {
@@ -4329,6 +4368,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_warning
@@ -4346,7 +4386,6 @@ focus_tree = {
 				category = electronics
 			}
 		}
-		cost = 5
 		x = 64
 		y = 5
 		prerequisite = {
@@ -4355,6 +4394,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_radio_beacons
@@ -4372,7 +4412,6 @@ focus_tree = {
 				category = signal_company_tech
 			}
 		}
-		cost = 5
 		x = 60
 		y = 6
 		prerequisite = {
@@ -4381,6 +4420,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_airframe_jigs
@@ -4405,7 +4445,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		x = 64
 		y = 6
 		prerequisite = {
@@ -4414,6 +4453,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_interceptor_pairs
@@ -4450,7 +4490,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 60
 		y = 7
 		prerequisite = {
@@ -4459,6 +4498,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_aircraft_recovery
@@ -4476,7 +4516,6 @@ focus_tree = {
 				category = maintenance_company_tech
 			}
 		}
-		cost = 5
 		x = 64
 		y = 7
 		prerequisite = {
@@ -4485,6 +4524,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_dispersal
@@ -4508,7 +4548,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 60
 		y = 9
 		prerequisite = {
@@ -4517,6 +4556,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fighter_patrols
@@ -4529,7 +4569,6 @@ focus_tree = {
 			}
 			air_experience = 15
 		}
-		cost = 5
 		x = 64
 		y = 9
 		prerequisite = {
@@ -4538,6 +4577,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_radar_school
@@ -4555,7 +4595,6 @@ focus_tree = {
 				category = radar_tech
 			}
 		}
-		cost = 5
 		x = 60
 		y = 10
 		prerequisite = {
@@ -4564,6 +4603,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_night_interceptors
@@ -4576,7 +4616,6 @@ focus_tree = {
 			}
 			air_experience = 20
 		}
-		cost = 5
 		x = 64
 		y = 10
 		prerequisite = {
@@ -4585,6 +4624,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_aircraft_spares
@@ -4615,7 +4655,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 60
 		y = 11
 		prerequisite = {
@@ -4624,6 +4663,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fighter_conversion
@@ -4647,7 +4687,6 @@ focus_tree = {
 				name = MKN_fighter_conversion
 			}
 		}
-		cost = 5
 		x = 64
 		y = 11
 		prerequisite = {
@@ -4656,6 +4695,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_rescue
@@ -4668,7 +4708,6 @@ focus_tree = {
 			}
 			air_experience = 15
 		}
-		cost = 5
 		x = 60
 		y = 12
 		prerequisite = {
@@ -4677,6 +4716,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fighter_controllers
@@ -4694,7 +4734,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		cost = 5
 		x = 64
 		y = 12
 		prerequisite = {
@@ -4703,6 +4742,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_home_defence
@@ -4726,7 +4766,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 60
 		y = 13
 		prerequisite = {
@@ -4735,6 +4774,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_sky_watch_exercises
@@ -4753,7 +4793,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		cost = 5
 		x = 64
 		y = 13
 		prerequisite = {
@@ -4762,6 +4801,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_free_sky_compact
@@ -4796,7 +4836,6 @@ focus_tree = {
 		}
 		x = 62
 		y = 8
-		cost = 10
 		prerequisite = {
 			focus = MKN_interceptor_pairs
 		}
@@ -4817,6 +4856,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_close_support_program
@@ -4842,10 +4882,10 @@ focus_tree = {
 				category = cas_bomber
 			}
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_attack_air_artels
@@ -4871,7 +4911,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 68
 		y = 4
 		prerequisite = {
@@ -4880,6 +4919,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_ground_liaisons
@@ -4892,7 +4932,6 @@ focus_tree = {
 			}
 			air_experience = 20
 		}
-		cost = 5
 		x = 72
 		y = 4
 		prerequisite = {
@@ -4901,6 +4940,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_bombing_ranges
@@ -4919,7 +4959,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		cost = 5
 		x = 68
 		y = 5
 		prerequisite = {
@@ -4928,6 +4967,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_forward_airstrips
@@ -4951,7 +4991,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 72
 		y = 5
 		prerequisite = {
@@ -4960,6 +4999,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_map_bureau
@@ -4990,7 +5030,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 68
 		y = 6
 		prerequisite = {
@@ -4999,6 +5038,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_cas_maintenance
@@ -5023,7 +5063,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		x = 72
 		y = 6
 		prerequisite = {
@@ -5032,6 +5071,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_target_markers
@@ -5044,7 +5084,6 @@ focus_tree = {
 			}
 			air_experience = 15
 		}
-		cost = 5
 		x = 68
 		y = 7
 		prerequisite = {
@@ -5053,6 +5092,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_flying_artillery
@@ -5101,7 +5141,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 72
 		y = 7
 		prerequisite = {
@@ -5110,6 +5149,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_airfield_fuel
@@ -5133,7 +5173,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 68
 		y = 9
 		prerequisite = {
@@ -5142,6 +5181,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_tactical_recon
@@ -5172,7 +5212,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 72
 		y = 9
 		prerequisite = {
@@ -5181,6 +5220,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_bomber_navigation
@@ -5198,7 +5238,6 @@ focus_tree = {
 				category = tactical_bomber
 			}
 		}
-		cost = 5
 		x = 68
 		y = 10
 		prerequisite = {
@@ -5207,6 +5246,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_supply_lift
@@ -5224,7 +5264,6 @@ focus_tree = {
 				category = air_equipment
 			}
 		}
-		cost = 5
 		x = 72
 		y = 10
 		prerequisite = {
@@ -5233,6 +5272,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_coastal_support
@@ -5250,7 +5290,6 @@ focus_tree = {
 				category = naval_bomber
 			}
 		}
-		cost = 5
 		x = 68
 		y = 11
 		prerequisite = {
@@ -5259,6 +5298,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_cas_replacement_crews
@@ -5271,7 +5311,6 @@ focus_tree = {
 			}
 			air_experience = 20
 		}
-		cost = 5
 		x = 72
 		y = 11
 		prerequisite = {
@@ -5280,6 +5319,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_joint_target_planning
@@ -5297,7 +5337,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		cost = 5
 		x = 68
 		y = 12
 		prerequisite = {
@@ -5306,6 +5345,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_weather_service
@@ -5323,7 +5363,6 @@ focus_tree = {
 				category = electronics
 			}
 		}
-		cost = 5
 		x = 72
 		y = 12
 		prerequisite = {
@@ -5332,6 +5371,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_attack_wing_rotations
@@ -5344,7 +5384,6 @@ focus_tree = {
 			}
 			air_experience = 20
 		}
-		cost = 5
 		x = 68
 		y = 13
 		prerequisite = {
@@ -5353,6 +5392,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_cas_joint_exercises
@@ -5377,7 +5417,6 @@ focus_tree = {
 				name = MKN_cas_joint_exercises
 			}
 		}
-		cost = 5
 		x = 72
 		y = 13
 		prerequisite = {
@@ -5386,6 +5425,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_air_support_compact
@@ -5420,7 +5460,6 @@ focus_tree = {
 		}
 		x = 70
 		y = 8
-		cost = 10
 		prerequisite = {
 			focus = MKN_target_markers
 		}
@@ -5441,6 +5480,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_coastal_signal_posts
@@ -5458,7 +5498,6 @@ focus_tree = {
 				category = radar_tech
 			}
 		}
-		cost = 5
 		x = 76
 		y = 5
 		prerequisite = {
@@ -5467,6 +5506,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_escort_crews
@@ -5485,7 +5525,6 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-		cost = 5
 		x = 80
 		y = 5
 		prerequisite = {
@@ -5494,6 +5533,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_harbour_dredging
@@ -5518,7 +5558,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 76
 		y = 6
 		prerequisite = {
@@ -5527,6 +5566,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_hull_repair_artels
@@ -5557,7 +5597,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 80
 		y = 6
 		prerequisite = {
@@ -5566,6 +5605,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_depth_charge_school
@@ -5602,7 +5642,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 76
 		y = 7
 		prerequisite = {
@@ -5611,6 +5650,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_convoy_schedules
@@ -5627,7 +5667,6 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
-		cost = 5
 		x = 80
 		y = 7
 		prerequisite = {
@@ -5636,6 +5675,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fleet_damage_control
@@ -5648,7 +5688,6 @@ focus_tree = {
 			}
 			navy_experience = 15
 		}
-		cost = 5
 		x = 76
 		y = 9
 		prerequisite = {
@@ -5657,6 +5696,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_coastal_watch
@@ -5674,7 +5714,6 @@ focus_tree = {
 				category = radar_tech
 			}
 		}
-		cost = 5
 		x = 80
 		y = 9
 		prerequisite = {
@@ -5683,6 +5722,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_sweeper_sections
@@ -5713,7 +5753,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 76
 		y = 10
 		prerequisite = {
@@ -5722,6 +5761,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_escort_radio_net
@@ -5739,7 +5779,6 @@ focus_tree = {
 				category = electronics
 			}
 		}
-		cost = 5
 		x = 80
 		y = 10
 		prerequisite = {
@@ -5748,6 +5787,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_coastal_depots
@@ -5771,7 +5811,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 76
 		y = 11
 		prerequisite = {
@@ -5780,6 +5819,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_river_sea_coordination
@@ -5797,7 +5837,6 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-		cost = 5
 		x = 80
 		y = 11
 		prerequisite = {
@@ -5806,6 +5845,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_anti_submarine_patrols
@@ -5824,7 +5864,6 @@ focus_tree = {
 			}
 			navy_experience = 20
 		}
-		cost = 5
 		x = 76
 		y = 12
 		prerequisite = {
@@ -5833,6 +5872,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_convoy_rescue
@@ -5845,7 +5885,6 @@ focus_tree = {
 			}
 			navy_experience = 15
 		}
-		cost = 5
 		x = 80
 		y = 12
 		prerequisite = {
@@ -5854,6 +5893,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_escort_reserves
@@ -5878,7 +5918,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		x = 76
 		y = 13
 		prerequisite = {
@@ -5887,6 +5926,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_coastal_fleet_exercises
@@ -5911,7 +5951,6 @@ focus_tree = {
 				name = MKN_coastal_fleet_exercises
 			}
 		}
-		cost = 5
 		x = 80
 		y = 13
 		prerequisite = {
@@ -5920,6 +5959,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_escort_compact
@@ -5954,7 +5994,6 @@ focus_tree = {
 		}
 		x = 78
 		y = 8
-		cost = 10
 		prerequisite = {
 			focus = MKN_depth_charge_school
 		}
@@ -5975,6 +6014,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_torpedo_artels
@@ -6013,7 +6053,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 84
 		y = 4
 		prerequisite = {
@@ -6022,6 +6061,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_submarine_crews
@@ -6040,7 +6080,6 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-		cost = 5
 		x = 88
 		y = 4
 		prerequisite = {
@@ -6049,6 +6088,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_hidden_anchorages
@@ -6073,7 +6113,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 84
 		y = 5
 		prerequisite = {
@@ -6082,6 +6121,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_naval_intelligence
@@ -6099,7 +6139,6 @@ focus_tree = {
 				category = decryption_tech
 			}
 		}
-		cost = 5
 		x = 88
 		y = 5
 		prerequisite = {
@@ -6108,6 +6147,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_dockyard
@@ -6132,7 +6172,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 10
 		x = 84
 		y = 6
 		prerequisite = {
@@ -6141,6 +6180,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_torpedo_trials
@@ -6172,7 +6212,6 @@ focus_tree = {
 			}
 			navy_experience = 15
 		}
-		cost = 5
 		x = 88
 		y = 6
 		prerequisite = {
@@ -6181,6 +6220,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_night_sorties
@@ -6211,7 +6251,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 84
 		y = 7
 		prerequisite = {
@@ -6220,6 +6259,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_supply
@@ -6243,7 +6283,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 88
 		y = 7
 		prerequisite = {
@@ -6252,6 +6291,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_submarine_listening
@@ -6282,7 +6322,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 84
 		y = 9
 		prerequisite = {
@@ -6291,6 +6330,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_fast_attack_craft
@@ -6308,7 +6348,6 @@ focus_tree = {
 				category = dd_tech
 			}
 		}
-		cost = 5
 		x = 88
 		y = 9
 		prerequisite = {
@@ -6317,6 +6356,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_radio_discipline
@@ -6334,7 +6374,6 @@ focus_tree = {
 				category = encryption_tech
 			}
 		}
-		cost = 5
 		x = 84
 		y = 10
 		prerequisite = {
@@ -6343,6 +6382,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_submarine_repair
@@ -6373,7 +6413,6 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
 		x = 88
 		y = 10
 		prerequisite = {
@@ -6382,6 +6421,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_weather
@@ -6399,7 +6439,6 @@ focus_tree = {
 				category = electronics
 			}
 		}
-		cost = 5
 		x = 84
 		y = 11
 		prerequisite = {
@@ -6408,6 +6447,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_replacement_crews
@@ -6420,7 +6460,6 @@ focus_tree = {
 			}
 			navy_experience = 20
 		}
-		cost = 5
 		x = 88
 		y = 11
 		prerequisite = {
@@ -6429,6 +6468,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_torpedo_ambushes
@@ -6446,7 +6486,6 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-		cost = 5
 		x = 84
 		y = 12
 		prerequisite = {
@@ -6455,6 +6494,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_disrupt_enemy_trade
@@ -6467,7 +6507,6 @@ focus_tree = {
 			}
 			navy_experience = 20
 		}
-		cost = 5
 		x = 88
 		y = 12
 		prerequisite = {
@@ -6476,6 +6515,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_escape_routes
@@ -6493,7 +6533,6 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
-		cost = 5
 		x = 84
 		y = 13
 		prerequisite = {
@@ -6502,6 +6541,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_exercises
@@ -6526,7 +6566,6 @@ focus_tree = {
 				name = MKN_raider_exercises
 			}
 		}
-		cost = 5
 		x = 88
 		y = 13
 		prerequisite = {
@@ -6535,6 +6574,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_raider_compact
@@ -6569,7 +6609,6 @@ focus_tree = {
 		}
 		x = 86
 		y = 8
-		cost = 10
 		prerequisite = {
 			focus = MKN_night_sorties
 		}
@@ -6590,12 +6629,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_congress_1936
 		icon = GFX_focus_generic_support_the_left_right
 		y = 0
-		cost = 5
 		x = 108
 		completion_reward = {
 			add_political_power = 100
@@ -6607,6 +6646,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_departure_of_batko
@@ -6615,7 +6655,6 @@ focus_tree = {
 		}
 		x = 108
 		y = 2
-		cost = 0
 		icon = GFX_focus_MKN_departure_of_batko
 		available = {
 			always = no
@@ -6623,13 +6662,13 @@ focus_tree = {
 		completion_reward = {
 
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_ataman_directorate
 		icon = GFX_focus_generic_army_doctrines_2
 		x = 29
 		y = 11
-		cost = 5
 		prerequisite = {
 			focus = MKN_steppe_legions
 		}
@@ -6669,13 +6708,13 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_recallable_delegates
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 33
 		y = 13
-		cost = 5
 		prerequisite = {
 			focus = MKN_tachanka_guards
 			focus = MKN_commune_federation
@@ -6708,13 +6747,13 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_peasant_charter
 		icon = GFX_focus_generic_support_the_left_right
 		x = 41
 		y = 11
-		cost = 5
 		prerequisite = {
 			focus = MKN_steppe_empire
 		}
@@ -6735,13 +6774,13 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_red_compromise_institutions
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 38
 		y = 11
-		cost = 5
 		prerequisite = {
 			focus = MKN_collectivize_the_steppe
 		}
@@ -6762,13 +6801,13 @@ focus_tree = {
 				has_country_flag = MKN_crisis_enabled
 			}
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_question_of_supply
 		icon = GFX_focus_generic_railroad
 		x = 106
 		y = 1
-		cost = 5
 		completion_reward = {
 			add_power_balance_value = {
 				id = MKN_power_balance
@@ -6783,13 +6822,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_question_of_discipline
 		icon = GFX_focus_generic_army_doctrines_2
 		x = 110
 		y = 1
-		cost = 5
 		completion_reward = {
 			add_power_balance_value = {
 				id = MKN_power_balance
@@ -6804,13 +6843,12 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_military_takes_charge
-		icon = GFX_focus_generic_army_attack
 		x = 100
 		y = 3
-		cost = 5
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
@@ -6855,13 +6893,14 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
+		icon = GFX_focus_MKN_militarism
 	}
 	focus = {
 		id = MKN_arrest_demagogues
 		icon = GFX_focus_generic_army_attack
 		x = 100
 		y = 4
-		cost = 5
 		completion_reward = {
 			MKN_resolve_succession_crisis = yes
 			add_stability = 0.10
@@ -6887,13 +6926,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_abolish_election_of_commanders
 		icon = GFX_focus_generic_army_attack
 		x = 100
 		y = 5
-		cost = 5
 		completion_reward = {
 			MKN_dismantle_bop = yes
 			add_to_variable = {
@@ -6922,13 +6961,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_militarize_communes
 		icon = GFX_focus_generic_army_attack
 		x = 100
 		y = 6
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_army_recruitable_population = 0.01
@@ -6956,13 +6995,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_standardize_workshops
 		icon = GFX_focus_generic_army_attack
 		x = 100
 		y = 7
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_unified_industrial_capacity_factory = 0.15
@@ -6990,13 +7029,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_iron_fist_trains
 		icon = GFX_focus_MKN_iron_fist_trains
 		x = 100
 		y = 8
-		cost = 5
 		completion_reward = {
 			if = {
 				limit = {
@@ -7033,13 +7072,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_expansionism
 		icon = GFX_focus_generic_army_attack
 		x = 100
 		y = 9
-		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = MKN_unlock_border_clashes_tt
 			add_war_support = 0.05
@@ -7061,13 +7100,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_the_black_horde
 		icon = GFX_focus_MKN_the_black_horde
 		x = 100
 		y = 10
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_army_army_attack_factor = 0.25
@@ -7115,13 +7154,12 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_triumph_of_free_soviets
-		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 3
-		cost = 5
 		completion_reward = {
 			set_politics = {
 				ruling_party = democratic
@@ -7163,13 +7201,14 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
+		icon = GFX_focus_MKN_nabat
 	}
 	focus = {
 		id = MKN_pact_of_free_communes
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 4
-		cost = 5
 		completion_reward = {
 			MKN_resolve_succession_crisis = yes
 			add_stability = 0.10
@@ -7192,13 +7231,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_abolish_general_staff
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 5
-		cost = 5
 		completion_reward = {
 			set_power_balance = {
 				id = MKN_power_balance
@@ -7227,13 +7266,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_arms_to_the_people
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 6
-		cost = 5
 		completion_reward = {
 			MKN_raise_communal_militias = yes
 			add_to_variable = {
@@ -7258,13 +7297,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_black_international
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 7
-		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = MKN_unlock_volunteers_tt
 			add_to_variable = {
@@ -7296,13 +7335,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_propaganda_by_deed
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 8
-		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = MKN_unlock_strikes_tt
 			add_political_power = 75
@@ -7324,13 +7363,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_autonomous_rail_crews
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 106
 		y = 9
-		cost = 5
 		completion_reward = {
 			add_ideas = MKN_autonomous_rail_crews_idea
 			add_to_variable = {
@@ -7355,13 +7394,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_beacon_of_statelessness
 		icon = GFX_focus_MKN_beacon_of_statelessness
 		x = 106
 		y = 10
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_army_army_core_defence_factor = 0.35
@@ -7389,13 +7428,12 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_peasant_delegates
-		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 3
-		cost = 5
 		completion_reward = {
 			set_politics = {
 				ruling_party = neutrality
@@ -7432,13 +7470,14 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
+		icon = GFX_focus_MKN_agrarian
 	}
 	focus = {
 		id = MKN_grain_ultimatum
 		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 4
-		cost = 5
 		completion_reward = {
 			MKN_resolve_succession_crisis = yes
 			add_stability = 0.10
@@ -7461,13 +7500,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_sever_urban_ties
 		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 5
-		cost = 5
 		completion_reward = {
 			MKN_dismantle_bop = yes
 			add_ideas = closed_economy
@@ -7493,13 +7532,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_every_farm_a_fortress
 		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 6
-		cost = 5
 		completion_reward = {
 			MKN_build_border_forts = yes
 		}
@@ -7520,13 +7559,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_steppe_snipers
 		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 7
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_army_army_defence_factor = 0.15
@@ -7558,13 +7597,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_railway_sabotage
 		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 8
-		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = MKN_unlock_sabotage_tt
 		}
@@ -7585,13 +7624,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_cavalry_ambush
 		icon = GFX_focus_generic_manpower
 		x = 112
 		y = 9
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.3
@@ -7619,13 +7658,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_impregnable_granary
 		icon = GFX_focus_MKN_impregnable_granary
 		x = 112
 		y = 10
-		cost = 5
 		completion_reward = {
 			add_to_variable = {
 				MKN_army_army_core_defence_factor = 0.5
@@ -7653,13 +7692,12 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_emergency_revkom
-		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 3
-		cost = 5
 		completion_reward = {
 			set_politics = {
 				ruling_party = communism
@@ -7699,17 +7737,19 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
+		icon = GFX_focus_MKN_revkom
 	}
 	focus = {
 		id = MKN_purge_irreconcilables
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 4
-		cost = 5
 		completion_reward = {
 			MKN_resolve_succession_crisis = yes
 			add_stability = 0.10
 			add_political_power = 50
+			MKN_install_tsebriy = yes
 		}
 		prerequisite = {
 			focus = MKN_emergency_revkom
@@ -7731,13 +7771,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_embassy_to_kharkov
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 5
-		cost = 5
 		completion_reward = {
 			MKN_dismantle_bop = yes
 			SOV = {
@@ -7773,13 +7813,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_integrate_steel_lines
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 6
-		cost = 5
 		completion_reward = {
 			MKN_build_soviet_rail_link = yes
 			add_timed_idea = {
@@ -7818,13 +7858,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_red_military_specialists
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 7
-		cost = 5
 		completion_reward = {
 			army_experience = 30
 			add_mastery = {
@@ -7857,13 +7897,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_tractors_for_grain
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 8
-		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -7903,13 +7943,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_anti_imperialist_front
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 9
-		cost = 5
 		completion_reward = {
 			set_country_flag = MKN_soviet_front_pending
 			SOV = {
@@ -7958,13 +7998,13 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	focus = {
 		id = MKN_the_fatal_plenum
 		icon = GFX_focus_generic_industry_2
 		x = 118
 		y = 10
-		cost = 5
 		completion_reward = {
 			set_country_flag = MKN_plenum_pending
 			SOV = {
@@ -8004,8 +8044,28 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = MKN_crisis_enabled
 		}
+		cost = 5
 	}
 	shared_focus = MKN_ukrainian_frontier_root
 	shared_focus = MKN_conclude_total_war
 	shared_focus = MKN_conclude_kharkiv_treaty
+	focus = {
+		id = MKN_free_workshops_focus
+		icon = GFX_idea_MKN_free_workshops
+		x = 24
+		y = 13
+		cost = 5
+		available = {
+			OR = {
+				has_completed_focus = MKN_industrial_compact
+				has_completed_focus = MKN_communal_compact
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = MKN_free_workshops_unlock_tt
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
 }

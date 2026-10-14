@@ -1,0 +1,52 @@
+MKN_repair_overhaul = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = MKN_overhaul_v3
+			}
+		}
+		nww_mkn_rebuild_industry = yes
+		nww_mkn_rebuild_services = yes
+		set_country_flag = MKN_overhaul_v3
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_purge_irreconcilables
+			has_government = communism
+			has_country_leader_with_trait = mkn_paralyzed_committee
+		}
+		MKN_install_tsebriy = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_incident_fired
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			NOT = {
+				has_completed_focus = MKN_ukrainian_frontier_root
+			}
+		}
+		complete_national_focus = MKN_ukrainian_frontier_root
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_frontier_conflict_active
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
+			NOT = {
+				has_active_mission = MKN_passive_escalation_drift
+			}
+		}
+		activate_mission = MKN_passive_escalation_drift
+	}
+	if = {
+		limit = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+		remove_mission = MKN_passive_escalation_drift
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
+	}
+}

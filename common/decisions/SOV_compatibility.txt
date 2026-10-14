@@ -1,0 +1,3670 @@
+NWW_SOV_disabled_subsystems = {
+	SOV_debug_show_paranoia_system = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_show_propaganda_system = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_TEST_ULTIMATE_CONTINENTS = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_forge_production_reports = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_inspection_in_the_administration = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_inspection_in_the_army = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_inspection_in_the_navy = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_inspection_in_the_airforce = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_loosen_prohibitions_in_military_academies_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_reinforce_army_officer_ranks_with_veterans_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_reinforce_navy_officer_ranks_with_veterans_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_reinstate_mig_design_bureau = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_reinstate_ilyushin_design_bureau = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_reinstate_tupolev_design_bureau = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_reinstate_yakovlev_design_bureau = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_ACTIVATE_PARANOIA = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_DEACTIVATE_PARANOIA = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_show_debug_purge_decisions = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_hide_debug_purge_decisions = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_MAKE_PURGE_DECISIONS_FASTER_HERE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_REGULAR_PURGE_DECISIONS_DURATION_HERE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_trial_of_the_generals_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_army_junior_officers_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_random_army_great_purge_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_general_accused_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_conspiracy_in_the_academy_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_anti_saboteur_campaign_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_general_accuses_general_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_moscow_trial_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_advisor_accused_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_civil_servants_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_nkvd_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_trial_of_the_admirals_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_junior_naval_officers_effect = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_admiral_accused_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_naval_conspiracy_in_the_academys_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_naval_anti_saboteur_campaign_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_airforce_chiefs_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_great_purge_airforce_design_bureau_dissolved_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_airforce_conspiracy_in_the_academys_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_trigger_regular_purge_airforce_anti_saboteur_campaign_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_low_paranoia_increase_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_medium_paranoia_increase_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_high_paranoia_increase_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_low_paranoia_decrease_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_medium_paranoia_decrease_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_high_paranoia_decrease_dec = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_DEBUG_show_all_purged_portraits = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_unlock_slot = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_MAKE_CAMPAIGNS_FASTER_HERE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_REGULAR_CAMPAIGN_DURATION_HERE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_UNLOCK_ALL_CAMPAIGNS = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_motherland_calls = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_victory_at_hand = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_defend_moscow = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_fight_to_the_last = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_hit_of_hammer = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_transport = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_oil_for_the_motherland = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_more_metal = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_high_yield = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_for_the_motherland = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_heroes_forward = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_anti_capitalism = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_anti_fascism = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_treacherous_enemy = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_do_not_blab = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_sweep_scum_out = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_knowledge = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_builders_of_communism = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_glory_to_partisans = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_death_to_invaders = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_stalin = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_rebuild_to_glory = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_peace = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_propaganda_happy_life = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_gosproyektstroy_bring_foreign_experts = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_gosproyektstroy_focus_civ = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_gosproyektstroy_focus_mil = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_gosproyektstroy_focus_dock = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_organize_covert_depots_poum = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_send_infantry_equipment_poum = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_organize_popular_brigades_poum = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_send_elite_commandos_poum = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_organize_popular_speeches_poum = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_infiltrate_stalinist_plans_in_spain_poum = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_pressure_country_government_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_promote_ideology_rallies_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_send_ultimatum_to_country_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_fight_alongside_country_comrades_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_pressure_country_government_nordic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_promote_ideology_rallies_nordic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_fight_alongside_country_comrades_nordic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_pressure_country_government_balkan = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_promote_ideology_rallies_balkan = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_send_ultimatum_to_country_balkan = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_fight_alongside_country_comrades_balkan = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_pressure_country_government_middle_east = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_promote_ideology_rallies_middle_east = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_send_ultimatum_to_country_middle_east = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_fight_alongside_country_comrades_middle_east = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_preparations_for_operation_countenance = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_operation_countenance = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_send_infantry_equipment_asia = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_peace_deal_for_south_sakhalin_and_kuril_islands = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_peace_deal_for_hokkaido = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_cancel_the_japanese_resource_rights_to_sakhalin_decision = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sinkiang_mineral_prospection_sik = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sinkiang_oil_prospection_sik = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sinkiang_military_aid_sik = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sinkiang_support_expansion_sik = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_formalize_of_the_soviet_republic_of_sinkiang = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sinkiang_mineral_prospection_mission_dummy = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_sinkiang_oil_prospection_mission_dummy = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_sinkiang_military_aid_mission_dummy = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_sinkiang_support_expansion_mission_dummy = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_sinkiang_mineral_prospection = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sinkiang_oil_prospection = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_jiuquan_oil_prospection = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_merge_designers_FASTER_AND_FREE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_merge_designers_BACK_TO_REGULAR_STUFF = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_tank_plant = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_tank_plant_2 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_tank_plant_3 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_1_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_2_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_3_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_4_baltic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_1_black_sea = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_2_black_sea = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_3_black_sea = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_ship_plant_4_black_sea = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_aircraft_plant_1 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_aircraft_plant_2 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_aircraft_plant_3 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_materiel_plant_1_artillery = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_materiel_plant_1_infantry = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_materiel_plant_1_motorized = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_materiel_plant_2 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_merge_materiel_plant_3 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_FASTER_AND_FREE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_debug_BACK_TO_REGULAR_STUFF = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_independent_republic = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_BLR = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_UKR = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_KAZ = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_GEO = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_ARM = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_AZR = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_UZB = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_TMS = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_KYR = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_TAJ = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_EST = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_LAT = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_LIT = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_POL = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_FIN = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_TAN = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_build_national_academy_of_sciences_integrated_republic_MON = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_raid_trotskys_villa = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_carefully_planned_assassination = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_generic_industry_relocation = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_infiltrate_atomic_program = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_comecon_industrialization_program = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_comecon_joint_military_program = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_raise_penal_units = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_factory_worker_militias = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_civilian_labor_in_defense = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_staggered_retreat = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_order_227 = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_military_offensive_ongoing = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_military_offensive = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_operation_iskra_ongoing = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_operation_iskra = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_the_rush_for_berlin = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_hold_stalingrad = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_hold_leningrad = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_hold_moscow = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_scorched_earth = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_scorched_earth_baltics = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_scorched_earth_byelorussia = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_scorched_earth_ukraine = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_scorched_earth_caucasus = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_scorched_earth_stalingrad = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_scorched_earth_moscow = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_the_head_of_the_nkvd_yezhov = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_the_head_of_the_nkvd_yagoda = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_assassinate_stalin = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_send_supporters_abroad = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_wreckers_sabotage_contruction = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_wreckers_sabotage_military_production = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_wreckers_sabotage_dockyards = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_wreckers_sabotage_railways = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_secure_moscow_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_secure_leningrad_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_army_framejob = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_navy_framejob = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_recruit_general_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_recruit_admiral_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_expand_nkvd_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_influence_army_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_influence_navy_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_influence_airforce_opposition = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_dismiss_the_counter_revolution = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_concessions_japan_vladivostok_SCW = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_concessions_japan_sakhalin_SCW = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_concessions_germany_baku_SCW = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_concessions_germany_ukraininan_oil_SCW = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_concessions_uk_belarus_SCW = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_sabotage_behind_enemy_lines_decision = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_recruit_manchurian_cavalry_exiles = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_recruit_cavalry_exiles = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_archangelsk = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_odessa = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_omsk = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_tashkent = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_ufa = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_chita = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_plan_start_of_uprising_irkutsk = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_states_siberia_csw = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_states_far_east_csw = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_states_northern_csw = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_states_ukraine_csw = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_states_steppe_csw = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_states_urals_csw = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_align_general_stalin = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_align_admiral_stalin = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_ukraine_crackdown_timer = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_steppe_crackdown_timer = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_northern_crackdown_timer = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_siberian_crackdown_timer = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_urals_crackdown_timer = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_the_stalin_constitution_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_the_zinovyevite_terrorist_center_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_the_anti_soviet_trotskyist_center_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_the_workers_dictatorship_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_the_military_conspiracy_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_socialism_in_one_country_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_secure_the_administration_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_the_bloc_of_rights_and_trotskyites_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_behead_the_snake_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_organize_fifth_columnists_in_enemy_neighbor = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_ignite_revolutionary_uprisings = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_ignite_uprising_timer_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 1
+		timeout_effect = {
+
+		}
+	}
+	SOV_seize_manchuria = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_return_manchuria = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_set_up_puppet_state_in_turkey = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_integrate_czechoslovakia = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_integrate_bulgaria = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_integrate_poland = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_integrate_yugoslavia = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_declare_the_pan_slavic_union = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+	SOV_return_states_to_poland = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+	}
+}

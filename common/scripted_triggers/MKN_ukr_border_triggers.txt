@@ -87,7 +87,9 @@ mkn_ukr_pact_context_valid = {
 			has_border_war_with = UKR
 		}
 		check_variable = {
-			var = mkn_ukr_escalation_level value = 1 compare = less_than_or_equals
+			var = mkn_ukr_escalation_level
+			value = 1
+			compare = less_than_or_equals
 		}
 		mkn_ukr_priority_states_held = yes
 	}
@@ -95,5 +97,35 @@ mkn_ukr_pact_context_valid = {
 		exists = yes
 		is_subject = no
 		has_war = no
+	}
+}
+MKN_valid_frontier_target = {
+	NOT = {
+		state = 202
+	}
+	has_border_war = no
+	any_neighbor_state = {
+		is_owned_and_controlled_by = MKN
+		has_border_war = no
+	}
+	OR = {
+		is_owned_and_controlled_by = UKR
+		AND = {
+			is_owned_and_controlled_by = SOV
+			OR = {
+				state = 227
+				state = 221
+				state = 137
+			}
+			MKN = {
+				has_completed_focus = MKN_donbas_miners_agitation
+				NOT = {
+					is_ally_with = SOV
+				}
+				NOT = {
+					has_non_aggression_pact_with = SOV
+				}
+			}
+		}
 	}
 }

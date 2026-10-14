@@ -1,0 +1,58 @@
+NWW_SOV_historical = {
+	name = "NWW Soviet Reconstruction"
+	desc = ""
+	allowed = {
+		original_tag = SOV
+		has_focus_tree = SOV_focus
+	}
+	enable = {
+		has_focus_tree = SOV_focus
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		SOV_the_revolution_endures
+		SOV_russian_socialism
+		SOV_the_new_constitution
+		SOV_brotherhood_of_peoples
+		NWW_SOV_union_congress
+		NWW_SOV_party_coordination
+		SOV_second_five_year_plan
+		NWW_SOV_industrial_survey
+		NWW_SOV_agricultural_credit
+		SOV_magnitogorsk
+		SOV_urals_industry
+		SOV_deep_battle
+		NWW_SOV_unified_command
+		SOV_workers_and_peasants_army
+		NWW_SOV_professional_officers
+		SOV_red_artillery
+		NWW_SOV_field_radios
+		NWW_SOV_army_logistics
+		NWW_SOV_army_maneuvers
+		NWW_SOV_budget_accountability
+		NWW_SOV_civil_peace
+		SOV_comintern_calls
+		NWW_SOV_strategic_pause
+		NWW_SOV_frontier_review
+		NWW_SOV_western_command
+		NWW_SOV_litbel_ultimatum
+		NWW_SOV_litbel_campaign
+		NWW_SOV_steppe_conference
+		NWW_SOV_steppe_campaign
+		NWW_SOV_railway_bottlenecks
+		NWW_SOV_power_stations
+		NWW_SOV_standardized_armaments
+		NWW_SOV_plan_fulfilled
+		NWW_SOV_scientific_network
+		SOV_red_wings
+		SOV_red_banner_fleet
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		NWW_SOV_republican_charters = 0
+	}
+}

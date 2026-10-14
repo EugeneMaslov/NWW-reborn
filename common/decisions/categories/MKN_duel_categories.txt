@@ -1,0 +1,12 @@
+MKN_duel_category = {
+	icon = GFX_decision_category_SOV_civil_war
+	allowed = {
+		original_tag = MKN
+	}
+	visible = {
+		has_country_flag = MKN_duel_choice_pending
+		NOT = {
+			has_country_flag = MKN_duel_recovered
+		}
+	}
+}
