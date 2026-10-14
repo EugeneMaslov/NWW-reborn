@@ -46,6 +46,16 @@ country_event = {
 				days = 1
 			}
 		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		set_country_flag = mkn_ukr_pact_signed
+		clr_country_flag = mkn_ukr_war_pending
+		every_owned_state = {
+			limit = {
+				has_state_flag = mkn_ukr_integrated_frontier_state
+			}
+			mkn_ukr_integrate_won_state = yes
+		}
+		custom_effect_tooltip = MKN_frontier_core_integration_tt
 	}
 	option = {
 		name = ukr.50.b

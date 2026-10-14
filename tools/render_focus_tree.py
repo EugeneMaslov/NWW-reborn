@@ -8,7 +8,7 @@ import json
 import base64
 import io
 from PIL import Image
-from hoi4_script import read, one, values, walk
+from hoi4_script import read, one, values, walk, tree_focuses
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
@@ -27,7 +27,7 @@ selected_tags = (args.tag,) if args.tag else tuple(targets)
 illustrations = {}
 if args.game:
     needed = {one(f, 'icon') for tag in selected_tags
-              for f in values(one(read(ROOT / targets[tag]), 'focus_tree'), 'focus')}
+              for f in tree_focuses(one(read(ROOT / targets[tag]), 'focus_tree'), ROOT / 'common/national_focus')}
     roots = [args.game, *sorted(args.game.glob('dlc/*')), ROOT]
     for root in roots:
         for path in root.glob('interface/**/*.gfx'):
@@ -61,7 +61,7 @@ if args.game:
 
 for tag in selected_tags:
     tree = one(read(ROOT/targets[tag]), 'focus_tree')
-    focuses = values(tree, 'focus')
+    focuses = tree_focuses(tree, ROOT / 'common/national_focus')
     positions = {one(f, 'id'): (int(one(f, 'x'))*90+140, int(one(f, 'y'))*95+130) for f in focuses}
     width = max(x for x, y in positions.values())+150
     height = max(y for x, y in positions.values())+120
@@ -77,7 +77,7 @@ for tag in selected_tags:
         for column, title in [(7,'Политика'),(18,'Дипломатия'),(24,'Гражданская промышленность'),(28,'Сельское хозяйство и сырьё'),(32,'Военная промышленность'),(36,'Наука'),(42,'Армия'),(50,'Авиация'),(56,'Флот')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'MKN':
-        for column, title in [(4,'Днепрострой: 24 фокуса'),(16,'Вольные кооперативы: 24 фокуса'),(27,'Наука'),(34,'Подготовка и архив'),(46,'Механизация: 10 + 10 доп.'),(54,'Вольные колонны: 10 + 10 доп.'),(62,'Защита неба: 10 + 10 доп.'),(70,'Авиация поддержки: 10 + 10 доп.'),(78,'Эскорты: 10 + 10 доп.'),(86,'Рейдеры: 10 + 10 доп.'),(108,'Кризис 1936 года: четыре пути')]:
+        for column, title in [(4,'Днепрострой: 24 фокуса'),(16,'Вольные кооперативы: 24 фокуса'),(27,'Наука'),(34,'Подготовка и архив'),(46,'Механизация: 10 + 10 доп.'),(54,'Вольные колонны: 10 + 10 доп.'),(62,'Защита неба: 10 + 10 доп.'),(70,'Авиация поддержки: 10 + 10 доп.'),(78,'Эскорты: 10 + 10 доп.'),(86,'Рейдеры: 10 + 10 доп.'),(108,'Кризис 1936 года: четыре пути'),(131,'Украинский рубеж')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'UKR':
         for column, title in [(6,'Политические мандаты'),(22,'Хозяйство'),(34,'Армия'),(44,'Авиация'),(54,'Флот'),(64,'Дипломатия')]:

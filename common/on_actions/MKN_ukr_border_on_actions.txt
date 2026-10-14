@@ -1,0 +1,4 @@
+on_actions = {
+ on_startup = { effect = { MKN = { if = { limit = { exists = yes } mkn_ukr_initialize_frontier = yes mkn_ukr_schedule_old_save_incident = yes } } } }
+ on_daily_MKN = { effect = { mkn_ukr_frontier_daily = yes } }
+}

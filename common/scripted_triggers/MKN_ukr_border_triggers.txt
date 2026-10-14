@@ -1,0 +1,99 @@
+mkn_ukr_frontier_diplomacy_valid = {
+	tag = MKN
+	UKR = {
+		exists = yes
+		is_subject = no
+	}
+	is_subject = no
+	has_war = no
+	UKR = {
+		has_war = no
+	}
+	NOT = {
+		is_ally_with = UKR
+	}
+	NOT = {
+		has_non_aggression_pact_with = UKR
+	}
+	NOT = {
+		has_country_flag = UKR_MKN_border_settled
+	}
+	NOT = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	NOT = {
+		has_country_flag = mkn_ukr_pact_pending
+	}
+	NOT = {
+		has_country_flag = mkn_ukr_war_pending
+	}
+	NOT = {
+		has_country_flag = MKN_collapse_started
+	}
+	NOT = {
+		has_war_with = SOV
+	}
+	NOT = {
+		has_country_flag = mkn_frontier_frozen
+	}
+}
+mkn_ukr_frontier_action_available = {
+	custom_trigger_tooltip = {
+		tooltip = MKN_frontier_war_locked_tt
+		NOT = {
+			OR = {
+				has_war_with = UKR
+				has_war_with = SOV
+			}
+		}
+	}
+	custom_trigger_tooltip = {
+		tooltip = MKN_frontier_frozen_tt
+		NOT = {
+			has_country_flag = mkn_frontier_frozen
+		}
+	}
+	custom_trigger_tooltip = {
+		tooltip = MKN_frontier_incident_required_tt
+		has_country_flag = mkn_frontier_conflict_active
+	}
+	mkn_ukr_frontier_diplomacy_valid = yes
+	has_country_flag = mkn_ukr_frontier_unlocked
+	NOT = {
+		has_border_war_with = UKR
+	}
+}
+mkn_ukr_priority_states_held = {
+	197 = {
+		is_owned_and_controlled_by = MKN
+	}
+	203 = {
+		is_owned_and_controlled_by = MKN
+	}
+}
+mkn_ukr_pact_context_valid = {
+	MKN = {
+		exists = yes
+		is_subject = no
+		has_war = no
+		has_country_flag = mkn_ukr_pact_pending
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_war_pending
+		}
+		NOT = {
+			has_border_war_with = UKR
+		}
+		check_variable = {
+			mkn_ukr_escalation_level <= 1
+		}
+		mkn_ukr_priority_states_held = yes
+	}
+	UKR = {
+		exists = yes
+		is_subject = no
+		has_war = no
+	}
+}

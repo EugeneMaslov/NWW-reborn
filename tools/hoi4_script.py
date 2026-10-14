@@ -63,6 +63,39 @@ def walk(node):
             yield from walk(value)
 
 
+def focus_registry(directory):
+    """Collect only direct focus/shared_focus definitions, never nested IDs."""
+    registry = {}
+    for path in Path(directory).glob('*.txt'):
+        doc = read(path)
+        nodes = values(doc, 'shared_focus')
+        nodes += [f for tree in values(doc, 'focus_tree') for f in values(tree, 'focus')]
+        for node in nodes:
+            registry[one(node, 'id')] = node
+    return registry
+
+
+def tree_focuses(tree, directory):
+    """Expand imported shared roots and their shared-focus descendants."""
+    direct = list(values(tree, 'focus'))
+    registry = {}
+    for path in Path(directory).glob('*.txt'):
+        for node in values(read(path), 'shared_focus'):
+            registry[one(node, 'id')] = node
+    imported = set(values(tree, 'shared_focus'))
+    missing = imported - registry.keys()
+    if missing:
+        raise ValueError('Undefined shared focus imports: ' + ', '.join(sorted(missing)))
+    while True:
+        children = {fid for fid, node in registry.items() if fid not in imported
+                    and any(set(values(group, 'focus')) & imported for group in values(node, 'prerequisite'))}
+        if not children:
+            break
+        imported |= children
+    present = {one(node, 'id') for node in direct}
+    return direct + [node for fid, node in registry.items() if fid in imported and fid not in present]
+
+
 def dump(node, depth=0):
     lines = []
     for key, value, op in node:

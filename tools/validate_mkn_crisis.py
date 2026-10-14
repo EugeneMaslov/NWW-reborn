@@ -6,6 +6,7 @@ and geography still require a fresh-campaign reproduction.
 """
 from collections import Counter
 from copy import deepcopy
+from itertools import product
 from math import isclose
 from pathlib import Path
 import re
@@ -15,6 +16,8 @@ from hoi4_script import read, one, values, walk
 
 def validate_crisis(root, game, check, localized):
     effects = dict((k, v) for k, v, o in read(root / 'common/scripted_effects/MKN_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root / 'common/scripted_effects/MKN_intervention_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root / 'common/scripted_effects/MKN_ukr_border_effects.txt'))
     tree = one(read(root / 'common/national_focus/MKN.txt'), 'focus_tree')
     focuses = {one(f, 'id'): f for f in values(tree, 'focus')}
     events = {one(e, 'id'): e for e in values(read(root / 'events/MKN_events.txt'), 'country_event')}
@@ -79,7 +82,7 @@ def validate_crisis(root, game, check, localized):
 
     # Fail on misspelled native commands, including rewards absent from the older validator.
     native_effects = set(re.findall(r'^## (\w+)', (game / 'documentation/effects_documentation.md').read_text(), re.M))
-    command_files = ('common/scripted_effects/MKN_effects.txt', 'events/MKN_events.txt', 'events/MKN_news_events.txt', 'common/decisions/MKN_decisions.txt')
+    command_files = ('common/scripted_effects/MKN_effects.txt', 'common/scripted_effects/MKN_intervention_effects.txt', 'events/MKN_events.txt', 'events/MKN_news_events.txt', 'common/decisions/MKN_decisions.txt')
     native_arguments = {'start_state', 'add_namespace', 'set_value'}
     for filename in command_files:
         for key, value, op in walk(read(root / filename)):
@@ -119,12 +122,17 @@ def validate_crisis(root, game, check, localized):
         """Evaluate the actual script, including flags, allocation and native split ratios."""
         def __init__(self, popularity, ruling, count):
             self.root = {'vars': {}, 'flags': {'MKN_crisis_active'}, 'government': ruling,
-                         'support': dict(zip(routes, popularity)), 'army': 1.0, 'name': 'MKN', 'bop': True}
+                         'support': dict(zip(routes, popularity)), 'army': 1.0, 'name': 'MKN',
+                         'original_tag': 'MKN', 'bop': True, 'missions': set()}
             self.countries = [self.root]
             self.states = [{'id': n, 'owner': self.root, 'flags': set()} for n in range(count)]
             self.targets = {}
             self.wars = set()
             self.removed = []
+            self.activated = []
+            self.global_flags = set()
+            self.border_wars = set()
+            self.cancelled_border_wars = []
         def number(self, val, country):
             if val.startswith('var:'): val = val[4:]
             if val.startswith('party_popularity@'): return country['support'][val.split('@')[1]]
@@ -142,6 +150,14 @@ def validate_crisis(root, game, check, localized):
                 elif k == 'has_government': answers.append(scope['government'] == v)
                 elif k == 'has_state_flag': answers.append(v in scope['flags'])
                 elif k == 'has_country_flag': answers.append(v in scope['flags'])
+                elif k == 'has_global_flag': answers.append(v in self.global_flags)
+                elif k == 'has_variable': answers.append(v in scope['vars'])
+                elif k == 'has_border_war_with': answers.append(v in self.border_wars)
+                elif k == 'original_tag': answers.append(scope['original_tag'] == v)
+                elif k == 'num_owned_states':
+                    answers.append(self.compare(sum(s['owner'] is scope for s in self.states), float(v), op))
+                elif k in ('any_country', 'any_other_country'):
+                    answers.append(any(self.triggers(v, c) for c in self.countries if k == 'any_country' or c is not scope))
                 elif k == 'is_controlled_by':
                     assert v == 'ROOT'
                     answers.append(scope['owner'] is self.root)
@@ -186,21 +202,36 @@ def validate_crisis(root, game, check, localized):
                 elif k == 'round_variable': scope['vars'][v] = int(scope['vars'][v] + .5)
                 elif k in ('set_state_flag', 'set_country_flag'): scope['flags'].add(v)
                 elif k in ('clr_state_flag', 'clr_country_flag'): scope['flags'].discard(v)
+                elif k == 'set_global_flag': self.global_flags.add(v)
+                elif k == 'clr_global_flag': self.global_flags.discard(v)
                 elif k == 'ROOT': self.apply(v, self.root)
+                elif k == 'every_country':
+                    for country in self.countries:
+                        if self.triggers(one(v, 'limit', []), country):
+                            self.apply([n for n in v if n[0] != 'limit'], country)
                 elif k in ('every_owned_state', 'random_owned_state'):
                     owned = [s for s in self.states if s['owner'] is scope and self.triggers(one(v, 'limit', []), s)]
                     for s in owned if k == 'every_owned_state' else owned[:1]:
                         self.apply([n for n in v if n[0] != 'limit'], s)
                 elif k == 'capital_scope': self.apply(v, self.states[0])
-                elif k == 'remove_mission': self.removed.append((scope['name'], v))
+                elif k == 'activate_mission':
+                    scope['missions'].add(v)
+                    self.activated.append((scope['name'], v))
+                elif k == 'remove_mission':
+                    scope['missions'].discard(v)
+                    self.removed.append((scope['name'], v))
                 elif k == 'remove_power_balance': scope['bop'] = False
+                elif k == 'cancel_border_war':
+                    assert one(v, 'dont_fire_events') == 'yes', 'MKN: ending the frontier replays victory callbacks'
+                    self.cancelled_border_wars.append((self.number(one(v, 'attacker'), scope), self.number(one(v, 'defender'), scope)))
+                    self.border_wars.clear()
                 elif k in effects: self.apply(effects[k], scope)
                 elif k == 'start_civil_war':
                     ratio = self.number(one(v, 'army_ratio'), scope)
                     for field in ('size', 'air_ratio', 'navy_ratio'): assert isclose(ratio, self.number(one(v, field), scope))
                     land = [s for s in self.states if s['owner'] is scope and self.triggers(one(v, 'states_filter'), s)]
                     assert land and len(land) < sum(s['owner'] is scope for s in self.states)
-                    child = {'vars': deepcopy(scope['vars']), 'flags': set(scope['flags']), 'government': one(v, 'ideology'), 'support': deepcopy(scope['support']), 'army': scope['army'] * ratio, 'name': 'D' + str(len(self.countries)), 'bop': scope['bop']}
+                    child = {'vars': deepcopy(scope['vars']), 'flags': set(scope['flags']), 'government': one(v, 'ideology'), 'support': deepcopy(scope['support']), 'army': scope['army'] * ratio, 'name': 'D' + str(len(self.countries)), 'original_tag': scope['original_tag'], 'bop': scope['bop'], 'missions': set(scope['missions'])}
                     scope['army'] *= 1 - ratio
                     for s in land: s['owner'] = child
                     self.countries.append(child)
@@ -227,6 +258,9 @@ def validate_crisis(root, game, check, localized):
                 check(len(model.countries) == 4 and len(model.wars) == 6, 'MKN: collapse is not a four-way war')
                 check(model.root['government'] == ruling and model.states[0]['owner'] is model.root, 'MKN: player loses ideology or capital')
                 check(all(not c['bop'] for c in model.countries), 'MKN: collapse preserves or resurrects BoP')
+                check(all('MKN_soviet_intervention_mission' in c['missions'] for c in model.countries), 'MKN: collapse omits intervention mission for a faction')
+                check(all('MKN_collapse_participant' in c['flags'] for c in model.countries), 'MKN: collapse faction lacks intervention enrollment')
+                check(len(model.activated) == 4, 'MKN: intervention timer activated more than once or before all factions exist')
                 support = list(popularity); total = sum(support)
                 for c in model.countries:
                     index = list(routes).index(c['government'])
@@ -241,4 +275,184 @@ def validate_crisis(root, game, check, localized):
         model.apply(effects['MKN_execute_four_way_collapse'], model.root)
         check(len(model.countries) == count and model.states[0]['owner'] is model.root, 'MKN: reduced-land collapse fails safely')
         cases += 1
+    # Collapse interrupts an active frontier battle before child countries inherit
+    # the annual timer. Suppressed callbacks must not transfer or core a state.
+    model = Interpreter((0.25, 0.25, 0.25, 0.25), 'fascism', 4)
+    model.root['flags'].update({'mkn_frontier_year_running', 'mkn_ukr_border_battle_active', 'mkn_ukr_war_pending', 'mkn_ukr_pact_pending'})
+    model.root['missions'].add('MKN_frontier_year_countdown_mission')
+    model.root['vars'].update(mkn_ukr_attacking_state=1, mkn_ukr_defending_state=99)
+    model.border_wars.add('UKR')
+    model.apply(effects['MKN_execute_four_way_collapse'], model.root)
+    check(not model.border_wars and model.cancelled_border_wars == [(1, 99)], 'MKN: collapse leaves its native border battle running')
+    check(all('MKN_frontier_year_countdown_mission' not in c['missions'] for c in model.countries), 'MKN: collapse factions inherit the frontier deadline')
+    pending = {'mkn_frontier_year_running', 'mkn_ukr_border_battle_active', 'mkn_ukr_war_pending', 'mkn_ukr_pact_pending'}
+    check(all(not pending & c['flags'] for c in model.countries), 'MKN: collapse factions inherit active frontier negotiations or countdown flags')
+    check(all({'mkn_ukr_frontier_concluded', 'mkn_ukr_frontier_aborted'} <= c['flags'] for c in model.countries), 'MKN: collapse does not close the frontier for every faction')
+    cases += 1
     print(f'PASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and {cases} real-script collapse scenarios')
+    validate_intervention(root, check, localized)
+
+
+def validate_intervention(root, check, localized):
+    """Execute real mission/event/effects scripts with strict country diplomacy."""
+    effects = dict((k, v) for k, v, o in read(root / 'common/scripted_effects/MKN_intervention_effects.txt'))
+    events = {one(e, 'id'): e for e in values(read(root / 'events/MKN_events.txt'), 'country_event')}
+    event = events['mkn_crisis.200']
+    decisions = read(root / 'common/decisions/MKN_decisions.txt')
+    mission = one(one(decisions, 'MKN_soviet_intervention_category'), 'MKN_soviet_intervention_mission')
+    check(one(mission, 'days_mission_timeout') == '100', 'MKN: wrong Soviet intervention deadline')
+    check(one(one(mission, 'activation'), 'always') == 'no', 'MKN: Soviet intervention mission auto-starts')
+    check(one(mission, 'fire_only_once') == 'yes', 'MKN: Soviet intervention mission can restart')
+    check(not any(k == 'activate_mission' for k, v, o in walk(effects['MKN_repair_soviet_intervention'])), 'MKN: daily intervention repair resets its deadline')
+    for key in ('MKN_soviet_intervention_category', 'MKN_soviet_intervention_category_desc',
+                'MKN_soviet_intervention_mission', 'MKN_soviet_intervention_mission_desc',
+                'mkn_crisis.200.t', 'mkn_crisis.200.d', 'mkn_crisis.200.a', 'MKN_soviet_intervention_tt'):
+        localized(key, 'MKN Soviet intervention')
+    daily = one(one(read(root / 'common/on_actions/MKN_intervention_on_actions.txt'), 'on_actions'), 'on_daily')
+    check(one(one(daily, 'effect'), 'every_country') is not None, 'MKN: intervention daily repair omits dynamic civil-war tags')
+    class Model:
+        def __init__(self):
+            self.cs = [dict(name=n, origin='MKN', states=1, flags={'MKN_collapse_started'},
+                            faction=None, leader=False, subject=False, alive=True, mission=False)
+                       for n in ('MKN', 'D01', 'D02', 'D03')]
+            self.cs += [dict(name=n, origin=n, states=10, flags=set(), faction=None,
+                             leader=False, subject=False, alive=True, mission=False)
+                        for n in ('SOV', 'UKR', 'GER')]
+            self.globals, self.targets, self.queue = set(), {}, []
+            self.wars, self.goals, self.displayed, self.activations = set(), set(), 0, []
+            for c in self.cs[:4]: self.apply(effects['MKN_initialize_soviet_intervention'], c)
+        def ref(self, s):
+            if s.startswith('event_target:'): return self.targets[s.split(':', 1)[1]]
+            return next(c for c in self.cs if c['name'] == s)
+        def allied(self, a, b):
+            return a is b or bool(a['faction'] and a['faction'] == b['faction']) or a.get('master') is b or b.get('master') is a
+        def trig(self, nodes, c):
+            results = []
+            for k, v, op in nodes:
+                if k == 'NOT': q = not self.trig(v, c)
+                elif k == 'OR': q = any(self.trig([n], c) for n in v)
+                elif k == 'original_tag': q = c['origin'] == v
+                elif k == 'has_country_flag': q = v in c['flags']
+                elif k == 'has_global_flag': q = v in self.globals
+                elif k == 'num_owned_states':
+                    n = int(v); q = {'>': c['states'] > n, '<': c['states'] < n}[op]
+                elif k in ('any_country', 'any_other_country'):
+                    q = any(self.trig(v, d) for d in self.cs if d['alive'] and (k == 'any_country' or d is not c))
+                elif k == 'exists': q = self.ref(v)['alive']
+                elif k == 'is_subject': q = c['subject'] == (v == 'yes')
+                elif k == 'is_faction_leader': q = c['leader'] == (v == 'yes')
+                elif k == 'is_ally_with': q = self.allied(c, self.ref(v))
+                elif k == 'is_in_faction_with':
+                    d = self.ref(v); q = bool(c['faction'] and c['faction'] == d['faction'])
+                elif k == 'has_war_with': q = frozenset((c['name'], self.ref(v)['name'])) in self.wars
+                elif k == 'always': q = v == 'yes'
+                elif k in ('SOV', 'UKR'): q = self.trig(v, self.ref(k))
+                else: raise AssertionError(('unsupported trigger', k))
+                results.append(q)
+            return all(results)
+        def apply(self, nodes, c):
+            matched = False
+            for k, v, op in nodes:
+                if k in ('if', 'else_if'):
+                    if k == 'if': matched = False
+                    if not matched and self.trig(one(v, 'limit', []), c):
+                        self.apply([n for n in v if n[0] != 'limit'], c); matched = True
+                elif k == 'else':
+                    if not matched: self.apply(v, c)
+                elif k == 'every_country':
+                    for d in self.cs:
+                        if d['alive'] and self.trig(one(v, 'limit', []), d):
+                            self.apply([n for n in v if n[0] != 'limit'], d)
+                elif k == 'set_country_flag': c['flags'].add(v)
+                elif k == 'set_global_flag': self.globals.add(v)
+                elif k == 'clr_global_flag': self.globals.discard(v)
+                elif k == 'activate_mission':
+                    c['mission'] = True; self.activations.append(c['name'])
+                elif k == 'remove_mission': c['mission'] = False
+                elif k == 'save_event_target_as': self.targets[v] = c
+                elif k == 'country_event':
+                    assert one(v, 'id') == 'mkn_crisis.200'; self.queue.append(c)
+                elif k == 'remove_from_faction':
+                    d = self.ref(v); assert c['leader'] and c['faction'] == d['faction']
+                    d['faction'], d['leader'] = None, False
+                elif k == 'faction_leader':
+                    d = next(d for d in self.cs if d['faction'] == c['faction'] and d['leader'])
+                    self.apply(v, d)
+                elif k == 'create_wargoal':
+                    assert one(v, 'type') == 'annex_everything'; self.goals.add((c['name'], self.ref(one(v, 'target'))['name']))
+                elif k == 'declare_war_on':
+                    d = self.ref(one(v, 'target')); assert not self.allied(c, d)
+                    self.wars.add(frozenset((c['name'], d['name'])))
+                elif k in effects: self.apply(effects[k], c)
+                elif k.startswith('event_target:') or k in ('SOV', 'UKR'): self.apply(v, self.ref(k))
+                else: raise AssertionError(('unsupported effect', k))
+        def timeout(self, c): self.apply(one(mission, 'timeout_effect'), c)
+        def repair(self):
+            for c in self.cs[:4]:
+                if c['alive']: self.apply(effects['MKN_repair_soviet_intervention'], c)
+        def flush(self):
+            queued, self.queue = self.queue, []
+            for c in queued:
+                if c['alive'] and self.trig(one(event, 'trigger'), c):
+                    self.displayed += 1; self.apply(one(event, 'immediate'), c)
+
+    checks = 0
+    for active in product((False, True), repeat=4):
+        m = Model()
+        for c, alive in zip(m.cs[:4], active): c['states'] = int(alive)
+        m.repair()
+        for c in m.cs[:4]: m.timeout(c)
+        m.flush()
+        if sum(active) < 2:
+            assert not m.wars and m.displayed == 0
+            assert ('MKN_collapse_reunified' in m.globals) == (sum(active) == 1)
+        else:
+            assert m.displayed == 1 and len(m.wars) == 2 * sum(active)
+        assert not any(c['mission'] for c in m.cs[:4])
+        assert m.activations == ['MKN', 'D01', 'D02', 'D03']
+        checks += 1
+
+    # Reunification between queued timeout and event execution wins the deadline race.
+    m = Model()
+    for c in m.cs[:4]: m.timeout(c)
+    for c in m.cs[1:4]: c['states'] = 0
+    m.flush()
+    assert not m.wars and not m.displayed
+    m.repair()
+    assert not any(c['mission'] for c in m.cs[:4])
+    assert m.activations == ['MKN', 'D01', 'D02', 'D03']
+    checks += 1
+
+    # The first dispatch owner can die; the surviving tags resume the same deadline.
+    m = Model(); m.timeout(m.cs[0]); m.cs[0]['states'] = 0; m.cs[0]['alive'] = False
+    m.flush(); m.repair(); m.flush()
+    assert m.displayed == 1 and len(m.wars) == 6
+    assert m.activations == ['MKN', 'D01', 'D02', 'D03']
+    checks += 1
+
+    # Shared faction cases: Soviet leader, MKN participant leader, foreign leader.
+    for leader in ('SOV', 'MKN', 'GER'):
+        m = Model()
+        for c in m.cs: c['faction'], c['leader'] = 'test', c['name'] == leader
+        m.timeout(m.cs[0]); m.flush()
+        assert m.displayed == 1 and len(m.wars) == 8 and len(m.goals) == 8
+        checks += 1
+
+    # An unavailable aggressor does not affect declarations by the other actor.
+    for inactive in ('dead', 'subject'):
+        m = Model(); u = m.ref('UKR')
+        if inactive == 'dead': u['alive'] = False
+        else: u['subject'] = True
+        m.timeout(m.cs[0]); m.flush()
+        assert len(m.wars) == 4 and all('SOV' in w for w in m.wars)
+        checks += 1
+
+    # Old generic tags lacking participant enrollment cannot count as an heir.
+    m = Model()
+    extra = dict(m.cs[1], name='D99', flags={'MKN_collapse_started'})
+    m.cs.append(extra)
+    for c in m.cs[1:4]: c['states'] = 0
+    m.repair(); m.timeout(m.cs[0]); m.flush()
+    assert not m.wars and 'MKN_collapse_reunified' in m.globals
+    checks += 1
+    print(f'PASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and {checks} real-script scenarios')

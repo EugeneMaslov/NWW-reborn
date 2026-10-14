@@ -9,7 +9,7 @@ from pathlib import Path
 import re
 import sys
 from PIL import Image
-from hoi4_script import read, one, values, walk, TOKEN
+from hoi4_script import read, one, values, walk, focus_registry, tree_focuses, TOKEN
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
@@ -106,7 +106,7 @@ for p, doc in documents(ROOT, 'history/states/*.txt'):
     if state:
         state_provinces[one(state, 'id')] = {v for k, v, op in one(state, 'provinces', [])}
 
-all_focus_ids = {v for p, doc in documents(ROOT, 'common/national_focus/*.txt') for k, v, op in walk(doc) if k == 'id' and isinstance(v, str)}
+all_focus_ids = set(focus_registry(ROOT / 'common/national_focus'))
 idea_ids = set()
 for content_root in (GAME, ROOT):
     for p, doc in documents(content_root, 'common/ideas/*.txt'):
@@ -143,6 +143,21 @@ scope_files += [ROOT / relative for relative in (
     'events/MKN_events.txt',
     'events/MKN_news_events.txt',
     'interface/MKN_custom.gfx',
+    'common/national_focus/MKN_frontier_focuses.txt',
+    'common/decisions/MKN_ukr_border_decisions.txt',
+    'common/decisions/categories/MKN_ukr_border_categories.txt',
+    'common/scripted_effects/MKN_ukr_border_effects.txt',
+    'common/scripted_triggers/MKN_ukr_border_triggers.txt',
+    'common/on_actions/MKN_ukr_border_on_actions.txt',
+    'common/ideas/MKN_ukr_border_ideas.txt',
+    'common/dynamic_modifiers/MKN_ukr_border_modifiers.txt',
+    'common/scripted_effects/MKN_intervention_effects.txt',
+    'common/on_actions/MKN_intervention_on_actions.txt',
+    'common/scripted_guis/MKN_frontier_gui.txt',
+    'interface/MKN_frontier_gui.gui',
+    'events/MKN_ukr_border_events.txt',
+    'interface/MKN_frontier_gui.gfx',
+    'interface/MKN_frontier_focus_icons.gfx',
 	'common/decisions/MKN_bop_decisions.txt',
 	'common/decisions/categories/MKN_bop_categories.txt',
 	'common/scripted_effects/MKN_bop_effects.txt',
@@ -226,7 +241,7 @@ for path in scope_files:
             check_slots(value)
     tree = one(doc, 'focus_tree')
     if tree:
-        focuses = values(tree, 'focus')
+        focuses = tree_focuses(tree, ROOT / 'common/national_focus')
         by_id = {one(f, 'id'): f for f in focuses}
         check(len(by_id) == len(focuses), f'{context}: duplicate focus IDs')
         counts[one(tree, 'id')] = len(focuses)
@@ -296,9 +311,12 @@ for path in scope_files:
         for kind, event, op in doc:
             if kind in ('country_event', 'news_event') and one(event, 'hidden') != 'yes':
                 for field in ('title', 'desc'):
-                    key = one(event, field)
-                    if isinstance(key, str):
-                        localized(key, context)
+                    for key in values(event, field):
+                        if isinstance(key, str):
+                            localized(key, context)
+                        elif isinstance(key, list):
+                            for text in values(key, 'text'):
+                                localized(text, context)
                 for option in values(event, 'option'):
                     localized(one(option, 'name'), context)
     if '/military_industrial_organization/' in path.as_posix():
@@ -510,6 +528,8 @@ from validate_mkn_bop import validate_bop
 validate_bop(ROOT, GAME, check, localized)
 from validate_mkn_crisis import validate_crisis
 validate_crisis(ROOT, GAME, check, localized)
+from validate_mkn_frontier import validate_frontier
+validate_frontier(ROOT, GAME, check, localized)
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

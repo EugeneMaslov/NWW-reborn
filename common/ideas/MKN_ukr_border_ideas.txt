@@ -1,0 +1,22 @@
+ideas = {
+ country = {
+  MKN_border_fury_buff = {
+   picture = generic_manpower_bonus
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = { army_attack_factor = 0.15 army_speed_factor = 0.10 breakthrough_factor = 0.15 }
+  }
+  MKN_border_relaxation_debuff = {
+   picture = generic_constitutional_guarantees
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = { army_attack_factor = -0.10 army_org_regain = -0.15 stability_factor = 0.05 }
+  }
+  MKN_war_for_the_steppe = {
+   picture = generic_manpower_bonus
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = { army_core_attack_factor = 0.10 }
+  }
+ }
+}

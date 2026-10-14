@@ -1,0 +1,23 @@
+# Deterministic Pillow originals and DDS files: tools/generate_frontier_gui_assets.py.
+spriteTypes = {
+	spriteType = {
+		name = GFX_frontier_escalation_meter
+		texturefile = "gfx/interface/frontier_conflicts/frontier_escalation_meter.dds"
+	}
+	spriteType = {
+		name = GFX_frontier_stage_marker
+		texturefile = "gfx/interface/frontier_conflicts/frontier_stage_marker.dds"
+	}
+	spriteType = {
+		name = GFX_icon_frontier_ukr
+		texturefile = "gfx/interface/frontier_conflicts/icon_frontier_ukr.dds"
+	}
+	spriteType = {
+		name = GFX_decision_category_frontier_ukr
+		texturefile = "gfx/interface/frontier_conflicts/icon_frontier_ukr.dds"
+	}
+	spriteType = {
+		name = GFX_decision_frontier_ukr
+		texturefile = "gfx/interface/frontier_conflicts/icon_frontier_ukr.dds"
+	}
+}

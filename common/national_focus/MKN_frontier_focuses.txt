@@ -1,0 +1,306 @@
+shared_focus = {
+	id = MKN_ukrainian_frontier_root
+	icon = GFX_focus_MKN_ukrainian_frontier_root
+	x = 131
+	y = 0
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		has_completed_focus = MKN_congress_1936
+		exists = UKR
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		set_country_flag = mkn_ukr_frontier_unlocked
+		custom_effect_tooltip = MKN_ukrainian_frontier_root_tt
+	}
+	ai_will_do = {
+		factor = 3
+	}
+	bypass = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+}
+shared_focus = {
+	id = MKN_tachanka_deep_recon
+	icon = GFX_focus_MKN_tachanka_deep_recon
+	prerequisite = {
+		focus = MKN_ukrainian_frontier_root
+	}
+	x = 128
+	y = 1
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		check_variable = {
+			mkn_ukr_escalation_level >= 2
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		set_country_flag = mkn_ukr_recon_discount
+		mkn_ukr_update_decision_costs = yes
+		custom_effect_tooltip = MKN_tachanka_deep_recon_tt
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+shared_focus = {
+	id = MKN_donbas_miners_agitation
+	icon = GFX_focus_MKN_donbas_miners_agitation
+	prerequisite = {
+		focus = MKN_ukrainian_frontier_root
+	}
+	x = 134
+	y = 1
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		check_variable = {
+			mkn_ukr_escalation_level >= 2
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		mkn_ukr_apply_miners_agitation = yes
+		custom_effect_tooltip = MKN_donbas_miners_agitation_tt
+	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+shared_focus = {
+	id = MKN_right_of_first_shot
+	icon = GFX_focus_MKN_right_of_first_shot
+	prerequisite = {
+		focus = MKN_tachanka_deep_recon
+	}
+	x = 128
+	y = 3
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		check_variable = {
+			mkn_ukr_escalation_level >= 3
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	search_filters = {
+		FOCUS_FILTER_WAR_SUPPORT
+	}
+	completion_reward = {
+		set_country_flag = mkn_ukr_first_shot
+		custom_effect_tooltip = MKN_right_of_first_shot_tt
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+shared_focus = {
+	id = MKN_armored_train_interceptors
+	icon = GFX_focus_MKN_armored_train_interceptors
+	prerequisite = {
+		focus = MKN_donbas_miners_agitation
+	}
+	x = 134
+	y = 3
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		check_variable = {
+			mkn_ukr_escalation_level >= 3
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	completion_reward = {
+		mkn_ukr_enable_train_interceptors = yes
+		custom_effect_tooltip = MKN_frontier_train_effect_tt
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+shared_focus = {
+	id = MKN_dnieper_trenches
+	icon = GFX_focus_MKN_dnieper_trenches
+	prerequisite = {
+		focus = MKN_right_of_first_shot
+	}
+	prerequisite = {
+		focus = MKN_armored_train_interceptors
+	}
+	x = 131
+	y = 4
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		check_variable = {
+			mkn_ukr_escalation_level >= 4
+		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_frontier_concluded
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	completion_reward = {
+		mkn_ukr_build_frontier_forts = yes
+		custom_effect_tooltip = MKN_dnieper_trenches_tt
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+shared_focus = {
+	id = MKN_conclude_total_war
+	icon = GFX_focus_MKN_conclude_total_war
+	mutually_exclusive = {
+		focus = MKN_conclude_kharkiv_treaty
+	}
+	x = 128
+	y = 6
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		has_completed_focus = MKN_ukrainian_frontier_root
+		exists = UKR
+		NOT = {
+			has_country_flag = mkn_ukr_pact_signed
+		}
+		OR = {
+			check_variable = {
+				mkn_ukr_escalation_level >= 5
+			}
+			has_country_flag = mkn_ukr_total_war
+		}
+	}
+	cancel = {
+		has_country_flag = mkn_ukr_pact_signed
+	}
+	search_filters = {
+		FOCUS_FILTER_WAR_SUPPORT
+	}
+	completion_reward = {
+		mkn_ukr_conclude_total_war = yes
+		custom_effect_tooltip = MKN_conclude_total_war_tt
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+shared_focus = {
+	id = MKN_conclude_kharkiv_treaty
+	icon = GFX_focus_MKN_conclude_kharkiv_treaty
+	mutually_exclusive = {
+		focus = MKN_conclude_total_war
+	}
+	x = 134
+	y = 6
+	cost = 5
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		has_completed_focus = MKN_ukrainian_frontier_root
+		has_country_flag = mkn_ukr_frontier_concluded
+		has_country_flag = mkn_ukr_pact_signed
+		NOT = { has_war_with = UKR }
+		NOT = { has_war_with = SOV }
+		any_owned_state = {
+			is_controlled_by = ROOT
+			is_core_of = ROOT
+		}
+	}
+	cancel = {
+		OR = {
+			NOT = { has_country_flag = mkn_ukr_pact_signed }
+			has_war_with = UKR
+			has_war_with = SOV
+		}
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_STABILITY
+	}
+	completion_reward = {
+		add_stability = 0.10
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			prioritize = {
+				1082
+				226
+				196
+				225
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		set_country_flag = mkn_ukr_treaty_reconstruction_completed
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
