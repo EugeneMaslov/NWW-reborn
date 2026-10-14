@@ -15,13 +15,13 @@ parser.add_argument('--tag', choices=('LTB', 'MKN', 'UKR'), help='Render only th
 parser.add_argument('--game', type=Path, help='Include actual focus illustrations from this installed copy')
 args = parser.parse_args()
 labels = {}
-for path in ROOT.glob('localisation/*l_russian.yml'):
+for path in ROOT.glob('localisation/**/*l_russian.yml'):
     labels.update(re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$', path.read_text(encoding='utf-8-sig'), re.M))
 
 illustrations = {}
 if args.game:
     needed = {one(f, 'icon') for tag in ((args.tag,) if args.tag else ('LTB', 'MKN', 'UKR'))
-              for f in values(one(read(ROOT / f'common/national_focus/{tag.lower()}_focus.txt'), 'focus_tree'), 'focus')}
+              for f in values(one(read(ROOT / ('common/national_focus/MKN.txt' if tag == 'MKN' else f'common/national_focus/{tag.lower()}_focus.txt')), 'focus_tree'), 'focus')}
     roots = [args.game, *sorted(args.game.glob('dlc/*')), ROOT]
     for root in roots:
         for path in root.glob('interface/**/*.gfx'):
@@ -54,7 +54,7 @@ if args.game:
             illustrations[name] = base64.b64encode(output.getvalue()).decode()
 
 for tag in ((args.tag,) if args.tag else ('LTB', 'MKN', 'UKR')):
-    tree = one(read(ROOT/f'common/national_focus/{tag.lower()}_focus.txt'), 'focus_tree')
+    tree = one(read(ROOT/('common/national_focus/MKN.txt' if tag == 'MKN' else f'common/national_focus/{tag.lower()}_focus.txt')), 'focus_tree')
     focuses = values(tree, 'focus')
     positions = {one(f, 'id'): (int(one(f, 'x'))*90+140, int(one(f, 'y'))*95+130) for f in focuses}
     width = max(x for x, y in positions.values())+150

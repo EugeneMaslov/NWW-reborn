@@ -1,0 +1,50 @@
+MKN_bop_category = {
+	MKN_empower_atamans = {
+		icon = generic_army_support
+		cost = 50
+		days_re_enable = 60
+		available = { power_balance_value = { id = MKN_power_balance value > -0.95 } }
+		complete_effect = {
+			add_power_balance_value = { id = MKN_power_balance value = -0.15 tooltip_side = MKN_military_command_side }
+		}
+		ai_will_do = {
+			base = 0
+			modifier = { add = 2 has_completed_focus = MKN_black_hundreds }
+		}
+	}
+	MKN_convene_local_communes = {
+		icon = generic_political_discourse
+		cost = 50
+		days_re_enable = 60
+		available = { power_balance_value = { id = MKN_power_balance value < 0.95 } }
+		complete_effect = {
+			add_power_balance_value = { id = MKN_power_balance value = 0.15 tooltip_side = MKN_free_soviets_side }
+		}
+		ai_will_do = {
+			base = 0
+			modifier = { add = 2 has_completed_focus = MKN_constituent_assembly }
+			modifier = { add = 1 has_completed_focus = MKN_red_banner_steppe }
+		}
+	}
+	MKN_joint_defence_congress = {
+		icon = generic_political_discourse
+		cost = 75
+		days_re_enable = 90
+		available = {
+			OR = {
+				power_balance_value = { id = MKN_power_balance value < -0.1 }
+				power_balance_value = { id = MKN_power_balance value > 0.1 }
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { power_balance_value = { id = MKN_power_balance value < 0 } }
+				add_power_balance_value = { id = MKN_power_balance value = 0.10 tooltip_side = MKN_free_soviets_side }
+			}
+			else = {
+				add_power_balance_value = { id = MKN_power_balance value = -0.10 tooltip_side = MKN_military_command_side }
+			}
+		}
+		ai_will_do = { base = 0 }
+	}
+}

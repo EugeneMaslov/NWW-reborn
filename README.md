@@ -99,6 +99,8 @@ The mod is meant to be played in this rhythm:
 
 The LTB/MKN content revision is documented in [docs/LTB_MKN_changes.md](docs/LTB_MKN_changes.md), with focus-tree diagrams and commands for static validation.
 
+MKN's four political paths, native Balance of Power, RU/EN localization and save migration are documented in [docs/MKN_BoP_politics.md](docs/MKN_BoP_politics.md).
+
 The project is gradually moving toward a clearer identity:
 
 - more cohesive Lore-driven focus trees,

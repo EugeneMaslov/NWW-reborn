@@ -42,7 +42,7 @@ def localization(lang):
         for p in root.glob(f'localisation/**/*l_{lang}.yml'):
             text = p.read_text(encoding='utf-8-sig', errors='replace')
             for key, value in re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$', text, re.M):
-                if root == ROOT and (p.name.lower().startswith(('nww_ltb', 'nww_mkn', 'nww_ukr')) or p.name.startswith('nww_country_expansion')):
+                if root == ROOT and (p.name.lower().startswith(('nww_ltb', 'nww_mkn', 'nww_ukr', 'mkn_')) or p.name.startswith('nww_country_expansion')):
                     check(p.read_bytes().startswith(b'\xef\xbb\xbf'), f'{p.name}: missing UTF-8 BOM')
                     check(key not in result or key not in custom_keys[lang], f'{p.name}: duplicate localization {key}')
                     check(not re.search(r'\?{2,}', value), f'{p.name}: damaged text encoding for {key}')
@@ -114,7 +114,7 @@ event_ids = {v for p, doc in documents(ROOT, 'events/*.txt') for k, v, op in wal
 opinion_ids = {k for p,doc in documents(ROOT,'common/opinion_modifiers/*.txt') for k,v,o in one(doc,'opinion_modifiers',[])}
 counts = {}
 scope_files = [
-    *[ROOT / f'common/national_focus/{tag}_focus.txt' for tag in ('ltb', 'mkn', 'ukr')],
+    *[ROOT / ('common/national_focus/MKN.txt' if tag == 'mkn' else f'common/national_focus/{tag}_focus.txt') for tag in ('ltb', 'mkn', 'ukr')],
     *[ROOT / f'common/characters/nww_{tag}.txt' for tag in ('LTB', 'MKN')],
     *[ROOT / f'common/ideas/nww_{tag}_ideas.txt' for tag in ('LTB', 'MKN')],
     ROOT / 'common/ideas/nww_companies.txt',
@@ -130,6 +130,12 @@ scope_files = [
     ROOT / 'common/decisions/categories/nww_ltb_categories.txt'
 ]
 scope_files += [ROOT / relative for relative in (
+	'common/bop/MKN_bop.txt',
+	'common/decisions/MKN_bop_decisions.txt',
+	'common/decisions/categories/MKN_bop_categories.txt',
+	'common/scripted_effects/MKN_bop_effects.txt',
+	'common/scripted_localisation/MKN_ideology_names.txt',
+	'events/MKN_bop_events.txt',
     'common/dynamic_modifiers/nww_dynamic_modifiers.txt',
     'common/dynamic_modifiers/nww_ukr_progression.txt',
     'common/scripted_effects/nww_mkn_progression.txt',
@@ -461,7 +467,7 @@ for organization_id, organization, op in read(ROOT/'common/military_industrial_o
         gates = values(one(one(trait, 'available', []), 'FROM', []), 'has_completed_focus')
         check(bool(gates), f'{token}: local enterprise upgrade has no country focus gate')
         for gate in gates:
-            enterprise_focuses = {**ltb_focuses, **{one(f, 'id'): f for f in values(one(read(ROOT/'common/national_focus/mkn_focus.txt'), 'focus_tree'), 'focus')}}
+            enterprise_focuses = {**ltb_focuses, **{one(f, 'id'): f for f in values(one(read(ROOT/'common/national_focus/MKN.txt'), 'focus_tree'), 'focus')}}
             reward = one(enterprise_focuses.get(gate, []), 'completion_reward', [])
             scopes = [value for key, value, op in walk(reward) if key == 'mio:' + organization_id]
             check(any(one(scope, 'unlock_mio_trait_tooltip') == token and int(one(scope, 'add_mio_size', '0')) > 0 for scope in scopes), f'{token}: {gate} does not announce and fund this enterprise upgrade')
@@ -487,6 +493,8 @@ from validate_expanded_content import validate_expansion
 validate_expansion(ROOT, GAME, check, localized)
 from validate_focus_redesign import validate_redesign
 validate_redesign(ROOT, GAME, check, localized)
+from validate_mkn_bop import validate_bop
+validate_bop(ROOT, GAME, check, localized)
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

@@ -4,7 +4,7 @@ import re
 import json
 
 def validate_expansion(root, game, check, localized):
-    tree=one(read(root/'common/national_focus/mkn_focus.txt'),'focus_tree')
+    tree=one(read(root/'common/national_focus/MKN.txt'),'focus_tree')
     fs={one(f,'id'):f for f in values(tree,'focus')}
     effects=read(root/'common/scripted_effects/nww_mkn_progression.txt')
     initialize=one(effects,'nww_mkn_rebuild_industry')
@@ -142,7 +142,7 @@ def validate_expansion(root, game, check, localized):
     ukr=one(read(root/'common/national_focus/ukr_focus.txt'),'focus_tree')
     uf={one(f,'id'):f for f in values(ukr,'focus')}
     check(60<=len(uf)<=80,'Ukraine focus count must be between sixty and eighty')
-    mandates={'MKN': [('MKN_everlasting_makhnovshchina','communism'),('MKN_council_communism','communism'),('MKN_constituent_assembly','democratic'),('MKN_red_banner_steppe','communism'),('MKN_black_hundreds','fascism'),('MKN_nestor_the_first','neutrality')],
+    mandates={'MKN': [('MKN_everlasting_makhnovshchina','democratic'),('MKN_council_communism','democratic'),('MKN_constituent_assembly','democratic'),('MKN_red_banner_steppe','communism'),('MKN_black_hundreds','fascism'),('MKN_nestor_the_first','neutrality')],
               'UKR': [('UKR_council_mandate','communism'),('UKR_constituent_mandate','democratic'),('UKR_state_mandate','neutrality')]}
     for tag,routes in mandates.items():
         focuses=fs if tag=='MKN' else uf

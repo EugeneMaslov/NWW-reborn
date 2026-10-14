@@ -1,0 +1,13 @@
+﻿l_english:
+ fascism:0 "[GetNwwMknFascismName]"
+ fascism_noun:0 "[GetNwwMknFascismNameNoun]"
+ democratic:0 "[GetNwwMknDemocraticName]"
+ democratic_noun:0 "[GetNwwMknDemocraticNameNoun]"
+ neutrality:0 "[GetNwwMknNeutralityName]"
+ neutrality_noun:0 "[GetNwwMknNeutralityNameNoun]"
+ communism:0 "[GetNwwMknCommunismName]"
+ communism_noun:0 "[GetNwwMknCommunismNameNoun]"
+ fascism_desc:0 "[GetNwwMknFascismNameDesc]"
+ democratic_desc:0 "[GetNwwMknDemocraticNameDesc]"
+ neutrality_desc:0 "[GetNwwMknNeutralityNameDesc]"
+ communism_desc:0 "[GetNwwMknCommunismNameDesc]"

@@ -1,0 +1,70 @@
+# Country-scoped display names, following BBA scripted-localization fallbacks.
+# Internal ideology groups and rules stay the standard four groups.
+defined_text = {
+	name = GetNwwMknFascismName
+	text = { trigger = { tag = MKN } localization_key = MKN_anarcho_militarism }
+	text = { localization_key = NWW_default_fascism }
+}
+defined_text = {
+	name = GetNwwMknDemocraticName
+	text = { trigger = { tag = MKN } localization_key = MKN_anarcho_communism }
+	text = { localization_key = NWW_default_democratic }
+}
+defined_text = {
+	name = GetNwwMknNeutralityName
+	text = { trigger = { tag = MKN } localization_key = MKN_agrarian_isolationism }
+	text = { localization_key = NWW_default_neutrality }
+}
+defined_text = {
+	name = GetNwwMknCommunismName
+	text = { trigger = { tag = MKN } localization_key = MKN_state_socialism }
+	text = { localization_key = NWW_default_communism }
+}
+
+defined_text = {
+	name = GetNwwMknFascismNameNoun
+	text = { trigger = { tag = MKN } localization_key = MKN_anarcho_militarism }
+	text = { localization_key = NWW_default_fascism_noun }
+}
+
+defined_text = {
+	name = GetNwwMknDemocraticNameNoun
+	text = { trigger = { tag = MKN } localization_key = MKN_anarcho_communism }
+	text = { localization_key = NWW_default_democratic_noun }
+}
+
+defined_text = {
+	name = GetNwwMknNeutralityNameNoun
+	text = { trigger = { tag = MKN } localization_key = MKN_agrarian_isolationism }
+	text = { localization_key = NWW_default_neutrality_noun }
+}
+
+defined_text = {
+	name = GetNwwMknCommunismNameNoun
+	text = { trigger = { tag = MKN } localization_key = MKN_state_socialism }
+	text = { localization_key = NWW_default_communism_noun }
+}
+
+defined_text = {
+	name = GetNwwMknFascismNameDesc
+	text = { trigger = { tag = MKN } localization_key = MKN_anarcho_militarism_regime }
+	text = { localization_key = NWW_default_fascism_desc }
+}
+
+defined_text = {
+	name = GetNwwMknDemocraticNameDesc
+	text = { trigger = { tag = MKN } localization_key = MKN_anarcho_communism_regime }
+	text = { localization_key = NWW_default_democratic_desc }
+}
+
+defined_text = {
+	name = GetNwwMknNeutralityNameDesc
+	text = { trigger = { tag = MKN } localization_key = MKN_agrarian_isolationism_regime }
+	text = { localization_key = NWW_default_neutrality_desc }
+}
+
+defined_text = {
+	name = GetNwwMknCommunismNameDesc
+	text = { trigger = { tag = MKN } localization_key = MKN_state_socialism_regime }
+	text = { localization_key = NWW_default_communism_desc }
+}
