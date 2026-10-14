@@ -51,6 +51,16 @@ MKN_army_development = {
 	repair_speed_factor = MKN_army_repair_speed_factor
 	supply_consumption_factor = MKN_army_supply_consumption_factor
 	custom_modifier_tooltip = MKN_army_development_summary
+	army_attack_factor = MKN_army_army_attack_factor
+	breakthrough_factor = MKN_army_breakthrough_factor
+	send_volunteer_size = MKN_army_send_volunteer_size
+	send_volunteers_tension = MKN_army_send_volunteers_tension
+	army_core_defence_factor = MKN_army_army_core_defence_factor
+	resistance_damage_to_garrison_on_our_occupied_states = MKN_army_resistance_damage_to_garrison_on_our_occupied_states
+	army_defence_factor = MKN_army_army_defence_factor
+	enemy_army_bonus_air_superiority_factor = MKN_army_enemy_army_bonus_air_superiority_factor
+	motorized_attack_factor = MKN_army_motorized_attack_factor
+	enemy_attrition = MKN_army_enemy_attrition
 }
 MKN_air_development = {
 	enable = {

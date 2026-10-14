@@ -108,10 +108,11 @@ for p, doc in documents(ROOT, 'history/states/*.txt'):
 
 all_focus_ids = {v for p, doc in documents(ROOT, 'common/national_focus/*.txt') for k, v, op in walk(doc) if k == 'id' and isinstance(v, str)}
 idea_ids = set()
-for p, doc in documents(ROOT, 'common/ideas/*.txt'):
-    for group, ideas, op in one(doc, 'ideas', []):
-        if isinstance(ideas, list):
-            idea_ids.update(k for k, v, op in ideas if isinstance(v, list))
+for content_root in (GAME, ROOT):
+    for p, doc in documents(content_root, 'common/ideas/*.txt'):
+        for group, ideas, op in one(doc, 'ideas', []):
+            if isinstance(ideas, list):
+                idea_ids.update(k for k, v, op in ideas if isinstance(v, list))
 characters = {k for root in (GAME, ROOT) for p, doc in documents(root, 'common/characters/*.txt') for k, v, op in one(doc, 'characters', [])}
 organizations = {k for p, doc in documents(ROOT, 'common/military_industrial_organization/organizations/*.txt') for k, v, op in doc}
 sharing_groups = {one(v, 'id') for root in (GAME, ROOT) for p, doc in documents(root, 'common/technology_sharing/*.txt') for k, v, op in doc if k == 'technology_sharing_group'}
@@ -136,6 +137,12 @@ scope_files = [
 ]
 scope_files += [ROOT / relative for relative in (
 	'common/bop/MKN_bop.txt',
+    'common/ideas/MKN_ideas.txt',
+    'common/decisions/MKN_decisions.txt',
+    'common/scripted_effects/MKN_effects.txt',
+    'events/MKN_events.txt',
+    'events/MKN_news_events.txt',
+    'interface/MKN_custom.gfx',
 	'common/decisions/MKN_bop_decisions.txt',
 	'common/decisions/categories/MKN_bop_categories.txt',
 	'common/scripted_effects/MKN_bop_effects.txt',
@@ -500,6 +507,8 @@ from validate_focus_redesign import validate_redesign
 validate_redesign(ROOT, GAME, check, localized)
 from validate_mkn_bop import validate_bop
 validate_bop(ROOT, GAME, check, localized)
+from validate_mkn_crisis import validate_crisis
+validate_crisis(ROOT, GAME, check, localized)
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

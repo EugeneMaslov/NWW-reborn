@@ -2,8 +2,8 @@ MKN_public_mandate = {
 	MKN_campaign_communism = {
 		icon = generic_political_discourse
 		cost = 50
-		days_remove = 60
-		days_re_enable = 30
+		days_remove = 30
+		days_re_enable = 7
 		available = {
 			NOT = {
 				has_country_flag = MKN_campaign_active
@@ -20,12 +20,19 @@ MKN_public_mandate = {
 				popularity = 0.10
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 20
+				has_government = communism
+			}
+		}
 	}
 	MKN_campaign_democratic = {
 		icon = generic_political_discourse
 		cost = 50
-		days_remove = 60
-		days_re_enable = 30
+		days_remove = 30
+		days_re_enable = 7
 		available = {
 			NOT = {
 				has_country_flag = MKN_campaign_active
@@ -42,12 +49,19 @@ MKN_public_mandate = {
 				popularity = 0.10
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 20
+				has_government = democratic
+			}
+		}
 	}
 	MKN_campaign_fascism = {
 		icon = generic_political_discourse
 		cost = 50
-		days_remove = 60
-		days_re_enable = 30
+		days_remove = 30
+		days_re_enable = 7
 		available = {
 			NOT = {
 				has_country_flag = MKN_campaign_active
@@ -64,12 +78,19 @@ MKN_public_mandate = {
 				popularity = 0.10
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 20
+				has_government = fascism
+			}
+		}
 	}
 	MKN_campaign_neutrality = {
 		icon = generic_political_discourse
 		cost = 50
-		days_remove = 60
-		days_re_enable = 30
+		days_remove = 30
+		days_re_enable = 7
 		available = {
 			NOT = {
 				has_country_flag = MKN_campaign_active
@@ -84,6 +105,13 @@ MKN_public_mandate = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 20
+				has_government = neutrality
 			}
 		}
 	}

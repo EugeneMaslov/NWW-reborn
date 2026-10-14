@@ -1,0 +1,72 @@
+ideas = {
+ country = {
+  MKN_decaying_batko = {
+   picture = generic_constitutional_guarantees
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = {
+    political_power_gain = -0.30
+    stability_factor = -0.20
+    war_support_factor = -0.15
+    army_org_factor = -0.10
+    org_loss_when_moving = 0.15
+   }
+  }
+  MKN_steppes_freedom = {
+   picture = HABSBURG_cavalry
+   allowed = { original_tag = MKN }
+   allowed_civil_war = { always = yes }
+   removal_cost = -1
+   modifier = {
+    modifier_army_sub_unit_cavalry_speed_factor = 0.15
+    supply_consumption_factor = -0.20
+    resistance_damage_to_garrison_on_our_occupied_states = 0.25
+    industrial_capacity_factory = -0.10
+   }
+   equipment_bonus = { motorized_equipment = { instant = yes maximum_speed = 0.15 } }
+  }
+  MKN_cult_of_railways = {
+   picture = generic_railroads
+   allowed = { original_tag = MKN }
+   allowed_civil_war = { always = yes }
+   removal_cost = -1
+   modifier = {
+    railway_gun_bombardment_factor = 0.25
+    production_speed_rail_way_factor = 0.35
+    production_speed_supply_node_factor = 0.35
+   }
+   equipment_bonus = {
+    train_equipment_3 = { instant = yes build_cost_ic = -0.35 }
+    railway_gun_equipment = { instant = yes build_cost_ic = -0.25 }
+   }
+  }
+  MKN_autonomous_rail_crews_idea = {
+   picture = generic_railroads
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = {
+    production_speed_rail_way_factor = 0.25
+    production_speed_infrastructure_factor = 0.20
+   }
+   equipment_bonus = { train_equipment = { instant = yes build_cost_ic = -0.25 } }
+  }
+  MKN_soviet_supply_agreement = {
+   picture = generic_railroads
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = { supply_consumption_factor = -0.10 army_org_regain = 0.10 }
+  }
+  MKN_neighbor_strikes = {
+   picture = FRA_factory_strikes
+   allowed = { always = yes }
+   removal_cost = -1
+   modifier = { industrial_capacity_factory = -0.15 production_speed_buildings_factor = -0.15 stability_factor = -0.05 }
+  }
+  MKN_betrayed_twice = {
+   picture = generic_manpower_bonus
+   allowed = { original_tag = MKN }
+   removal_cost = -1
+   modifier = { army_core_defence_factor = 0.30 army_org_regain = 0.20 war_support_factor = 0.25 surrender_limit = 0.15 }
+  }
+ }
+}

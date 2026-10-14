@@ -153,7 +153,7 @@ def validate_expansion(root, game, check, localized):
             check(one(focus,'cancel_if_invalid')=='yes' and one(focus,'continue_if_invalid')=='no',f'{fid}: cannot cancel an invalid mandate')
             check(not values(one(focus,'completion_reward'),'add_popularity'),f'{fid}: transition supplies its own popularity')
             campaign=one(category,tag+'_campaign_'+ideology,[])
-            check(one(campaign,'days_remove')=='60' and one(campaign,'cost')=='50',f'{tag}/{ideology}: campaign timing or cost differs')
+            check(one(campaign,'days_remove')==('30' if tag=='MKN' else '60') and one(campaign,'cost')=='50',f'{tag}/{ideology}: campaign timing or cost differs')
             check(not values(one(campaign,'complete_effect',[]),'add_popularity'),f'{tag}/{ideology}: campaign grants immediate popularity')
             check(one(one(one(campaign,'remove_effect',[]),'add_popularity',[]),'popularity')=='0.10',f'{tag}/{ideology}: campaign does not build a viable mandate')
     foreign={one(e,'id'):e for e in values(read(root/'events/nww_ukr_diplomacy.txt'),'country_event')}

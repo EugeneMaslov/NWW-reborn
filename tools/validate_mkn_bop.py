@@ -45,7 +45,7 @@ def validate_bop(root, game, check, localized):
                 direction = float(one(v, 'value'))
                 check(one(v, 'tooltip_side') == ('MKN_military_command_side' if direction < 0 else 'MKN_free_soviets_side'), f'{filename}: incorrect tooltip direction')
 
-    decisions = one(read(root / 'common/decisions/MKN_bop_decisions.txt'), 'MKN_bop_category')
+    decisions = one(read(root / 'common/decisions/MKN_decisions.txt'), 'MKN_bop_decisions_category')
     check(len(decisions) >= 3, 'MKN BoP: fewer than three decisions')
     for token, decision, op in decisions:
         check(float(one(decision, 'cost')) > 0 and int(one(decision, 'days_re_enable')) > 0, f'{token}: missing PP cost or repeat cooldown')
