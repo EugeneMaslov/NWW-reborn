@@ -1,0 +1,206 @@
+{
+  "generator": "built-in imagegen",
+  "references": [
+    {
+      "original": "docs/black-horde.jpg",
+      "archive": "docs/art/mkn_crisis/references/black-horde.jpg",
+      "original_prompt": "Not supplied by the user",
+      "sha256": "727957866745a21cceccb6ffb318a5b82897bd89da5668607f2af678ee9ceefc"
+    },
+    {
+      "original": "docs/iron-fist-train.jpg",
+      "archive": "docs/art/mkn_crisis/references/iron-fist-train.jpg",
+      "original_prompt": "Not supplied by the user",
+      "sha256": "b920da5fdff41d32f1fcda4ba91b883042874e36169eb6c2cfbfe027575037c5"
+    },
+    {
+      "original": "docs/mahno-death.jpg",
+      "archive": "docs/art/mkn_crisis/references/mahno-death.jpg",
+      "original_prompt": "Not supplied by the user",
+      "sha256": "930aa36bf80db9c5575fe19b1cf1fe2a1fffb7cc4a00201d485faa9103d37734"
+    }
+  ],
+  "assets": [
+    {
+      "key": "black_horde",
+      "source": "docs/art/mkn_crisis/black_horde.png",
+      "prompt": "docs/art/mkn_crisis/black_horde.prompt.txt",
+      "generation_mode": "edit",
+      "reference": "docs/black-horde.jpg",
+      "focus": "MKN_the_black_horde",
+      "sprite": "GFX_focus_MKN_the_black_horde",
+      "texture": "gfx/interface/goals/MKN/focus_black_horde.dds",
+      "size": [
+        96,
+        96
+      ],
+      "occupied": [
+        84,
+        84
+      ],
+      "source_sha256": "e2ff2b5e240578b71bca6677f74ef53888b46a8eff5abe1762a3a4d2a8e87666",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        15,
+        6,
+        83,
+        90
+      ]
+    },
+    {
+      "key": "iron_fist_trains",
+      "source": "docs/art/mkn_crisis/iron_fist_trains.png",
+      "prompt": "docs/art/mkn_crisis/iron_fist_trains.prompt.txt",
+      "generation_mode": "edit",
+      "reference": "docs/iron-fist-train.jpg",
+      "focus": "MKN_iron_fist_trains",
+      "sprite": "GFX_focus_MKN_iron_fist_trains",
+      "texture": "gfx/interface/goals/MKN/focus_iron_fist_trains.dds",
+      "size": [
+        96,
+        96
+      ],
+      "occupied": [
+        84,
+        84
+      ],
+      "source_sha256": "0746a1dad13afc35d0ffae2c9496dd5f87f183313d683846ff236ebaaebe52d2",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        85
+      ]
+    },
+    {
+      "key": "impregnable_granary",
+      "source": "docs/art/mkn_crisis/impregnable_granary.png",
+      "prompt": "docs/art/mkn_crisis/impregnable_granary.prompt.txt",
+      "generation_mode": "generate",
+      "focus": "MKN_impregnable_granary",
+      "sprite": "GFX_focus_MKN_impregnable_granary",
+      "texture": "gfx/interface/goals/MKN/focus_impregnable_granary.dds",
+      "size": [
+        96,
+        96
+      ],
+      "occupied": [
+        84,
+        84
+      ],
+      "source_sha256": "d14b9fa262b5c703cd4769ec4876a962f4e26aad94df36a4e4efd2ed120c12b1",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        8,
+        7,
+        89,
+        89
+      ]
+    },
+    {
+      "key": "beacon_of_statelessness",
+      "source": "docs/art/mkn_crisis/beacon_of_statelessness.png",
+      "prompt": "docs/art/mkn_crisis/beacon_of_statelessness.prompt.txt",
+      "generation_mode": "generate",
+      "focus": "MKN_beacon_of_statelessness",
+      "sprite": "GFX_focus_MKN_beacon_of_statelessness",
+      "texture": "gfx/interface/goals/MKN/focus_beacon_of_statelessness.dds",
+      "size": [
+        96,
+        96
+      ],
+      "occupied": [
+        84,
+        84
+      ],
+      "source_sha256": "72e0762f01a366d023e02251b484dd6af6bb6b9a158642218933f3641b968ac7",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        89
+      ]
+    },
+    {
+      "key": "departure_of_batko",
+      "source": "docs/art/mkn_crisis/departure_of_batko.png",
+      "prompt": "docs/art/mkn_crisis/departure_of_batko.prompt.txt",
+      "generation_mode": "edit",
+      "reference": "docs/mahno-death.jpg",
+      "focus": "MKN_departure_of_batko",
+      "sprite": "GFX_focus_MKN_departure_of_batko",
+      "texture": "gfx/interface/goals/MKN/focus_departure_of_batko.dds",
+      "size": [
+        96,
+        96
+      ],
+      "occupied": [
+        84,
+        84
+      ],
+      "source_sha256": "53a7ea57fced2028dd90ca43352c9f7eb134ee70ca40ea5b2195463a9e1d65ab",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        18,
+        7,
+        80,
+        89
+      ]
+    },
+    {
+      "key": "makhno_funeral",
+      "source": "docs/art/mkn_crisis/makhno_funeral.png",
+      "prompt": "docs/art/mkn_crisis/makhno_funeral.prompt.txt",
+      "generation_mode": "edit",
+      "reference": "docs/mahno-death.jpg",
+      "events": [
+        {
+          "sprite": "GFX_report_event_makhno_funeral",
+          "texture": "gfx/event_pictures/MKN/report_event_makhno_funeral.dds",
+          "size": [
+            210,
+            176
+          ],
+          "centering": [
+            0.15,
+            0.5
+          ]
+        },
+        {
+          "sprite": "GFX_news_event_makhno_death",
+          "texture": "gfx/event_pictures/MKN/news_event_makhno_death.dds",
+          "size": [
+            397,
+            153
+          ],
+          "centering": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "source_sha256": "5c813120757b98b12611457e6e4cfe1559f799697cd801af150a6624c881fc2e",
+      "source_size": [
+        2022,
+        778
+      ]
+    }
+  ]
+}

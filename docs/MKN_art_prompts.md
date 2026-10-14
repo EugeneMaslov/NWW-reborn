@@ -1,13 +1,15 @@
 # MKN: commissioned artwork prompts
 
-These prompts describe new artwork; no generated images are claimed. The live sprites currently use shipped HOI4 art, with real existing texture paths in `interface/MKN_custom.gfx`. Replace the corresponding texture paths when the commissioned assets are ready. The council portraits are a technical resize of the existing MKN flag, not invented people.
+The five special political focus icons and both funeral-event pictures now use project-bound artwork through `interface/MKN_custom.gfx`, including `_shine` variants for the focuses. The user supplied `docs/black-horde.jpg`, `docs/iron-fist-train.jpg` and `docs/mahno-death.jpg`; their original generation prompts were not supplied. Built-in **imagegen** prepared those references and generated the missing artwork. [Saved PNGs, exact execution prompts and provenance](art/mkn_crisis/README.md), [in-game-size preview](mkn_crisis_art_preview.png), [export manifest](art/mkn_crisis/assets.json).
+
+The structured commissions below remain the initial art direction. The exact prompts actually used are saved beside each resulting PNG. The train icon preserves the supplied locomotive; it does not add the weapons described in the earlier commissioning concept. The council portraits remain a technical resize of the existing MKN flag, not invented people.
 
 ## Common art direction
 
 - World: NWW Reborn, 1936; the First World War never happened. Southern Ukrainian Free Territory, village assemblies, insurgent cavalry and railway workshops. Makhno is a recognizable historical revolutionary, never a crowned fantasy ruler.
 - Visual language: 1930s woodcut and lithographic propaganda, rough ink, engraved edges, restrained black, warm ivory and muted ochre. Event pictures use documentary realism with the same palette. Avoid modern uniforms, Soviet state emblems on anarchist scenes, lettering, watermarks and glossy fantasy styling.
 - Icons: one readable central silhouette, generous clearance for the focus frame, no edge-to-edge background. Deliver an archival PNG and a transparent PNG, then convert locally to DDS. Inspect alpha bounds before export.
-- Event targets: inspect the installed event picture’s dimensions before conversion; typical country-event art is 450 × 150, news art 465 × 150. Compose a wider master with crop clearance. Keep masters and exact prompts under `docs/art/mkn_crisis/` if generation is commissioned.
+- Event targets: the installed funeral country-event texture is 210 × 176 and its news counterpart is 397 × 153. The saved panoramic master supports separate crops at those actual native dimensions. Masters and exact prompts are under `docs/art/mkn_crisis/`.
 - Midjourney v6: append `--v 6 --style raw --s 100`, `--ar 3:1` for events or `--ar 1:1` for icons. Request a flat plain background and remove it during the export process; do not assume Midjourney supplies alpha.
 - Flux: use the full subject, lighting and composition prompt as positive text. Use the exclusions as a negative prompt when the workflow supports one.
 - DALL·E 3: use the complete prompt as natural language, including explicit negative constraints and composition; request transparent delivery only in a workflow that supports it.
@@ -51,3 +53,19 @@ These prompts describe new artwork; no generated images are claimed. The live sp
 > A hopeful but resolute 1930s agrarian revolutionary lithograph emblem of the Free Commune’s grain harvest in the Ukrainian steppe. Golden wheat sheaves form a compact protective circle around three period bolt-action rifles stacked like harvested sheaves. A sickle and a small black cloth pennant are secondary details; no hammer-and-sickle emblem. Two small figures, a woman harvester and a peasant defender, stand behind the central stack without crowding it. Low warm harvest sunlight from upper left, deep charcoal engraved contours, warm ivory paper highlights, muted golden ochre grain, matte black metal. Front-facing monumental propaganda composition, one strong central silhouette, small-scale readable wheat ears and rifle barrels, isolated plain background with generous border clearance. No lettering, no crowns, no modern machinery, no Soviet state insignia, no fantasy weapons, no frame, no watermark.
 
 **Composition:** Keep the rifle stack central, wheat forming the lower two thirds. Avoid fine filigree that disappears at game-icon resolution.
+
+## 5. Icon: the Departure of the Batko
+
+**Sprite:** `GFX_focus_MKN_departure_of_batko`.
+
+**Executed prompt:** [departure_of_batko.prompt.txt](art/mkn_crisis/departure_of_batko.prompt.txt).
+
+**Direction:** A respectful 1930s engraved memorial medallion, preserving the face, cap, moustache and coat collar from the supplied Makhno portrait. Narrow aged brass oval rim, folded black mourning ribbon, warm ivory and charcoal shading. Transparent exterior, no crown or lettering, readable as a 96×96 icon. The PNG and icon are separate from Makhno's existing leader portrait.
+
+## 6. Icon: the Beacon of Statelessness
+
+**Sprite:** `GFX_focus_MKN_beacon_of_statelessness`.
+
+**Executed prompt:** [beacon_of_statelessness.prompt.txt](art/mkn_crisis/beacon_of_statelessness.prompt.txt).
+
+**Direction:** A black anarchist flag above a glowing railway lantern sheltered by two open hands, with wheat at the base representing mutual aid between villages. 1930s woodcut and lithographic texture, warm ivory, aged brass and ochre; compact connected silhouette on a genuinely transparent background. No government seal, crown, lettering or Soviet state emblem.
