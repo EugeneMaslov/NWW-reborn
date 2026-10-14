@@ -1,11 +1,15 @@
 add_ideas = {
 	MKN_anarchic_economy_idea
+	MKN_fragmented_workshops
+	MKN_broken_supply
+	MKN_untrained_militias
 }
 capital = 200
 set_oob = MKN_1936
 set_research_slots = 3
 set_politics = {
 	ruling_party = communism
+	elections_allowed = no
 }
 set_popularities = {
 	communism = 80

@@ -16,6 +16,8 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--game', required=True, type=Path)
 args = parser.parse_args()
 GAME = args.game
+if not GAME.is_dir():
+    parser.error(f'Installed HOI4 directory does not exist: {GAME}')
 errors = []
 
 
@@ -462,6 +464,109 @@ for request, event_id, accepted_flag, rejected_flag, continuation in [
     check(accepted_flag in accepted and accepted_flag not in rejected, f'{event_id}: rejected proposal can mark agreement accepted')
     check(rejected_flag in rejected, f'{event_id}: rejection cannot unlock independent neutrality')
     check(accepted_flag in values(one(ltb_focuses[continuation],'available'),'has_country_flag'), f'{continuation}: foreign consent is not required')
+
+# MKN reforms: include availability gates in reachability and replacement order.
+# A structurally valid prerequisite tree alone cannot catch skipped spirit tiers.
+mkn_tree = one(read(ROOT/'common/national_focus/mkn_focus.txt'), 'focus_tree')
+mkn_focuses = {one(f, 'id'): f for f in values(mkn_tree, 'focus')}
+mkn_ideas = dict((key, value) for key, value, op in one(one(read(ROOT/'common/ideas/nww_MKN_ideas.txt'), 'ideas'), 'country'))
+mkn_history = read(ROOT/'history/countries/MKN - Makhnovists.txt')
+mkn_start = {value for group in values(mkn_history, 'add_ideas') for key, value, op in group}
+crises = {
+    'economy': ('MKN_anarchic_economy_idea', 'MKN_economic_coordination', 'MKN_economic_recovery'),
+    'workshops': ('MKN_fragmented_workshops', 'MKN_catalogued_workshops', 'MKN_standardized_workshops'),
+    'supply': ('MKN_broken_supply', 'MKN_mapped_supply', 'MKN_coordinated_supply'),
+    'militias': ('MKN_untrained_militias', 'MKN_accountable_militias', 'MKN_drilled_militias')
+}
+crisis_ids = {idea for tiers in crises.values() for idea in tiers}
+modifier_documentation = (GAME/'documentation/modifiers_documentation.md').read_text(encoding='utf-8-sig')
+documented_modifiers = set(re.findall(r'^## (\w+)', modifier_documentation, re.M))
+effects_documentation = (GAME/'documentation/effects_documentation.md').read_text(encoding='utf-8-sig')
+for effect in ('swap_ideas', 'add_timed_idea', 'add_resource', 'add_tech_bonus'):
+    check(f'## {effect}\n' in effects_documentation, f'MKN: effect {effect} is absent from installed documentation')
+# All new crisis/benefit modifiers are country-level scalar modifiers.
+new_spirits = crisis_ids | {
+    'MKN_dnieper_economy', 'MKN_mutual_aid_economy', 'MKN_serial_production',
+    'MKN_cooperative_production', 'MKN_dnieper_logistics', 'MKN_artel_logistics',
+    'MKN_worker_battalions_idea', 'MKN_mobile_self_defence_idea',
+    'MKN_construction_drive', 'MKN_careful_investment', 'MKN_export_contracts',
+    'MKN_local_reserves', 'MKN_dneprostroi_power'
+}
+for idea in new_spirits:
+    localized(idea, 'MKN spirit'); localized(idea + '_desc', 'MKN spirit')
+    modifiers = one(mkn_ideas[idea], 'modifier', [])
+    for key, value, op in modifiers:
+        check(key in documented_modifiers, f'{idea}: modifier {key} is absent from installed documentation')
+
+for crisis, tiers in crises.items():
+    check(tiers[0] in mkn_start, f'MKN: starting {crisis} debuff is missing')
+    for early, late in zip(tiers, tiers[1:]):
+        a = {key: float(value) for key, value, op in one(mkn_ideas[early], 'modifier')}
+        b = {key: float(value) for key, value, op in one(mkn_ideas[late], 'modifier')}
+        check(a.keys() == b.keys() and all(abs(b[key]) < abs(a[key]) and a[key]*b[key] > 0 for key in a), f'MKN: {early} -> {late} does not strictly reduce every penalty')
+
+for route, finale, benefits in [
+    ('MKN_dneprostroi', 'MKN_steel_volnitsa', {'MKN_dnieper_economy', 'MKN_serial_production', 'MKN_dnieper_logistics', 'MKN_worker_battalions_idea'}),
+    ('MKN_free_cooperatives', 'MKN_craft_federation', {'MKN_mutual_aid_economy', 'MKN_cooperative_production', 'MKN_artel_logistics', 'MKN_mobile_self_defence_idea'})
+]:
+    branch = {route}
+    while True:
+        more = {fid for fid, f in mkn_focuses.items() if any(parent in branch for group in values(f, 'prerequisite') for parent in values(group, 'focus'))} - branch
+        if not more:
+            break
+        branch |= more
+    check(len(branch) >= 20, f'{route}: fewer than 20 dedicated focuses')
+    dependencies = {}
+    for fid in branch:
+        focus = mkn_focuses[fid]
+        dependencies[fid] = {parent for group in values(focus, 'prerequisite') for parent in values(group, 'focus')}
+        dependencies[fid] |= {value for key, value, op in walk(one(focus, 'available', [])) if key == 'has_completed_focus'}
+        check(dependencies[fid] <= branch, f'{fid}: economic reform depends on another branch')
+    done = set(); owned_ideas = set(mkn_start); elapsed = 0
+    while done != branch:
+        ready = sorted(fid for fid in branch - done if dependencies[fid] <= done)
+        if not ready:
+            check(False, f'{route}: availability gates create an unreachable reform sequence')
+            break
+        for fid in ready:
+            for key, value, op in walk(one(mkn_focuses[fid], 'completion_reward')):
+                if key == 'swap_ideas':
+                    old, new = one(value, 'remove_idea'), one(value, 'add_idea')
+                    if old in crisis_ids:
+                        check(old in owned_ideas, f'{fid}: replaces an absent crisis tier {old}')
+                        owned_ideas.discard(old); owned_ideas.add(new)
+                elif key == 'add_ideas' and isinstance(value, str):
+                    owned_ideas.add(value)
+            elapsed += int(one(mkn_focuses[fid], 'cost'))*7
+            done.add(fid)
+    check(not (owned_ideas & crisis_ids), f'{route}: completed branch retains crisis spirits {owned_ideas & crisis_ids}')
+    check(benefits <= owned_ideas, f'{route}: completed branch lacks its permanent benefits')
+    reductions = {'consumer_goods_factor', 'supply_consumption_factor', 'attrition', 'training_time_army_factor'}
+    for benefit in benefits:
+        check(all(float(value) < 0 if key in reductions else float(value) > 0 for key, value, op in one(mkn_ideas[benefit], 'modifier')), f'{benefit}: permanent reform reward still contains a penalty')
+    # Every reform producer must precede its consumer in ALL valid orders.
+    for fid in branch:
+        ancestors = set(dependencies[fid]); previous = None
+        while ancestors != previous:
+            previous = set(ancestors)
+            ancestors |= {parent for ancestor in previous for parent in dependencies[ancestor]}
+        for key, value, op in walk(one(mkn_focuses[fid], 'completion_reward')):
+            if key == 'swap_ideas' and one(value, 'remove_idea') in crisis_ids - mkn_start:
+                old = one(value, 'remove_idea')
+                producers = {other for other in branch for effect, replacement, operator in walk(one(mkn_focuses[other], 'completion_reward')) if effect == 'swap_ideas' and one(replacement, 'add_idea') == old}
+                check(len(producers) == 1 and producers <= ancestors, f'{fid}: can bypass the previous spirit tier {old}')
+    print(f'PASS: {route}: {len(branch)} focuses, {elapsed} base days, all four crises resolved')
+
+for fid, focus in mkn_focuses.items():
+    check(not any(key == 'remove_ideas' and value in crisis_ids for key, value, op in walk(one(focus, 'completion_reward'))), f'{fid}: removes an economic crisis outside the reform progression')
+mkn_events = {one(event, 'id'): event for event in values(read(ROOT/'events/nww_mkn.txt'), 'country_event')}
+for event_id in ('mkn.30', 'mkn.31'):
+    event = mkn_events[event_id]
+    localized(one(event, 'title'), event_id); localized(one(event, 'desc'), event_id)
+    check(one(event, 'is_triggered_only') == 'yes' and len(values(event, 'option')) == 2, f'{event_id}: reform congress is not a one-time focus choice')
+    for option in values(event, 'option'):
+        localized(one(option, 'name'), event_id)
+        check(one(one(option, 'add_timed_idea', []), 'days') == '365', f'{event_id}: congress policy must last one year')
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

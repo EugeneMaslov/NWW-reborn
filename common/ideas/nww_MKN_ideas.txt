@@ -7,13 +7,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				recruitable_population_factor = 0.15
-				supply_consumption_factor = -0.15
-				army_attack_factor = 0.10
-				stability_factor = -0.15
-				political_power_gain = -0.50
-				production_speed_buildings_factor = -0.15
-				research_speed_factor = -0.05
+				recruitable_population_factor = 0.10
+				supply_consumption_factor = -0.05
+				army_attack_factor = 0.05
 			}
 		}
 		MKN_free_soviets_idea = {
@@ -23,11 +19,10 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				recruitable_population_factor = 0.15
-				supply_consumption_factor = -0.10
-				army_attack_factor = 0.05
-				stability_factor = -0.05
-				political_power_gain = -0.25
+				recruitable_population_factor = 0.10
+				supply_consumption_factor = -0.05
+				stability_factor = 0.03
+				political_power_gain = 0.05
 			}
 		}
 		MKN_tachanka_warfare = {
@@ -59,6 +54,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.05
+				factory_energy_consumption = -0.10
 			}
 		}
 		MKN_electrified_steppe = {
@@ -158,11 +154,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_gain = -0.15
-				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.1
-				research_speed_factor = -0.05
-				custom_modifier_tooltip = MKN_anarchic_economy_tt
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
 			}
 		}
 		MKN_smuggling_network = {
@@ -228,6 +222,269 @@ ideas = {
 			modifier = {
 				stability_factor = 0.10
 				political_power_gain = 0.15
+			}
+		}
+		MKN_economic_coordination = {
+			picture = CHL_near_anarchic_society
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		MKN_economic_recovery = {
+			picture = CHL_near_anarchic_society
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		MKN_fragmented_workshops = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_factory_efficiency_gain_factor = -0.20
+				research_speed_factor = -0.05
+			}
+		}
+		MKN_catalogued_workshops = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_factory_efficiency_gain_factor = -0.12
+				research_speed_factor = -0.03
+			}
+		}
+		MKN_standardized_workshops = {
+			picture = generic_industrial_concern_2
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				research_speed_factor = -0.01
+			}
+		}
+		MKN_broken_supply = {
+			picture = generic_supply_depot
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = 0.20
+				army_org_regain = -0.15
+			}
+		}
+		MKN_mapped_supply = {
+			picture = generic_supply_depot
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = 0.12
+				army_org_regain = -0.10
+			}
+		}
+		MKN_coordinated_supply = {
+			picture = generic_supply_depot
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = 0.05
+				army_org_regain = -0.04
+			}
+		}
+		MKN_untrained_militias = {
+			picture = YUG_local_militias
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.15
+				training_time_army_factor = 0.20
+				max_planning = -0.10
+			}
+		}
+		MKN_accountable_militias = {
+			picture = YUG_local_militias
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.10
+				training_time_army_factor = 0.12
+				max_planning = -0.06
+			}
+		}
+		MKN_drilled_militias = {
+			picture = YUG_local_militias
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.04
+				training_time_army_factor = 0.05
+				max_planning = -0.03
+			}
+		}
+		MKN_dnieper_economy = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.10
+			}
+		}
+		MKN_mutual_aid_economy = {
+			picture = gre_agricultural_communes
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		MKN_serial_production = {
+			picture = generic_industrial_concern_2
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		MKN_cooperative_production = {
+			picture = generic_industrial_concern_2
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.06
+				production_factory_efficiency_gain_factor = 0.15
+				research_speed_factor = 0.03
+			}
+		}
+		MKN_dnieper_logistics = {
+			picture = ARG_invest_in_railways
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.10
+				army_org_regain = 0.05
+			}
+		}
+		MKN_artel_logistics = {
+			picture = generic_supply_depot
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.08
+				attrition = -0.05
+			}
+		}
+		MKN_worker_battalions_idea = {
+			picture = YUG_local_militias
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.06
+				max_planning = 0.05
+			}
+		}
+		MKN_mobile_self_defence_idea = {
+			picture = HABSBURG_cavalry
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.04
+				army_speed_factor = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+		MKN_construction_drive = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		MKN_careful_investment = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+			}
+		}
+		MKN_export_contracts = {
+			picture = generic_supply_depot
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+		MKN_local_reserves = {
+			picture = gre_agricultural_communes
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				supply_consumption_factor = -0.05
 			}
 		}
 	}
