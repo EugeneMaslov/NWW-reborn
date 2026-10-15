@@ -1,0 +1,5 @@
+mkn_black_international_category = {
+	icon = generic_political_actions
+	allowed = { original_tag = MKN }
+	visible = { has_completed_focus = MKN_black_international }
+}

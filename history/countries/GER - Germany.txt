@@ -1072,12 +1072,14 @@ set_popularities = {
 	communism = 5
 	neutrality = 65
 }
-create_faction_from_template = faction_template_axis
-add_to_faction = GER
+# NWW Germany starts without a faction. Mitteleuropa is a later diplomatic choice.
 add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	GER_imperial_overstretch
+	GER_master_of_mitteleuropa
+	GER_prussian_martial_spirit
 }
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
@@ -2055,22 +2057,15 @@ if = {
 		}
 	}
 }
-create_country_leader = {
-	name = "Wilhelm II"
-	desc = GER_WILHELM_II_DESC
-	picture = GFX_portrait_ger_wilhelm_ii
-	ideology = despotism
-	traits = {
-
-	}
-}
-create_country_leader = {
-	name = "Wilhelm III"
-	desc = GER_WILHELM_III_DESC
-	picture = GFX_portrait_ger_wilhelm_iii
-	ideology = despotism
-	traits = {
-
+# Use the recruited native character; Wilhelm III receives his role only at succession.
+GER_wilhelm_ii = {
+	add_country_leader_role = {
+		country_leader = {
+			ideology = GER_imperial_autocracy
+			expire = "1965.1.1"
+			traits = { ger_aging_monarch }
+		}
+		promote_leader = yes
 	}
 }
 if = {
@@ -2099,3 +2094,4 @@ if = {
 	}
 }
 nww_GER_disable_mefo = yes
+nww_GER_initialize_politics = yes

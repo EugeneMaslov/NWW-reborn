@@ -1,0 +1,1 @@
+# Native German alternate plans target a different tree. NWW Phase 1 uses focus weights.

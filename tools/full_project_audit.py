@@ -501,7 +501,11 @@ class Audit:
                     continue
                 valid = isinstance(value, str) and bool(re.fullmatch(r'-?\d+(?:\.\d+)?', value))
                 if valid:
-                    valid = float(value) > 0 if field == 'cost' else float(value).is_integer()
+                    if field == 'cost':
+                        event_only = get(get(n.value, 'available', []), 'always') == 'no'
+                        valid = float(value) > 0 or (float(value) == 0 and event_only)
+                    else:
+                        valid = float(value).is_integer()
                 if not valid:
                     self.issue('focus', 'grid_or_cost', path, n.line, f'{fid}: {field}={value}')
             for g in items(n.value, 'prerequisite') + items(n.value, 'mutually_exclusive'):

@@ -1,0 +1,366 @@
+[
+  {
+    "focus": "GER_the_gilded_colossus",
+    "sprite": "GFX_focus_GER_the_gilded_colossus",
+    "texture": "gfx/interface/goals/GER_the_gilded_colossus.dds",
+    "source": "docs/art/GER_placeholders/GER_the_gilded_colossus.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "f20a74c291360124822ad47bccf6505048531fbe2d3bf8e7615c052680ab6b08"
+  },
+  {
+    "focus": "GER_fund_the_reichswehr",
+    "sprite": "GFX_focus_GER_fund_the_reichswehr",
+    "texture": "gfx/interface/goals/GER_fund_the_reichswehr.dds",
+    "source": "docs/art/GER_placeholders/GER_fund_the_reichswehr.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "c2f8824adeacf41ada7e7524373d03dbf6671e05cc8398c56cff584c47059620"
+  },
+  {
+    "focus": "GER_empower_the_chancellor",
+    "sprite": "GFX_focus_GER_empower_the_chancellor",
+    "texture": "gfx/interface/goals/GER_empower_the_chancellor.dds",
+    "source": "docs/art/GER_placeholders/GER_empower_the_chancellor.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "8704cf4d930d4e937cf7a6d053f47d0ec50176a73cae195c58d2003e560745df"
+  },
+  {
+    "focus": "GER_end_of_an_era",
+    "sprite": "GFX_focus_GER_end_of_an_era",
+    "texture": "gfx/interface/goals/GER_end_of_an_era.dds",
+    "source": "docs/art/GER_placeholders/GER_end_of_an_era.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "9455f1e6e751fb5848e38a7235db14a10efea2142c4d04ca19f688b7602d33a3"
+  },
+  {
+    "focus": "GER_the_potsdam_coup",
+    "sprite": "GFX_focus_GER_the_potsdam_coup",
+    "texture": "gfx/interface/goals/GER_the_potsdam_coup.dds",
+    "source": "docs/art/GER_placeholders/GER_the_potsdam_coup.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "ccf90b87a92b063a0700a64abb9cfdaf41fe4f79c4d084b4b947e2e0d9f32a94"
+  },
+  {
+    "focus": "GER_dissolve_the_reichstag",
+    "sprite": "GFX_focus_GER_dissolve_the_reichstag",
+    "texture": "gfx/interface/goals/GER_dissolve_the_reichstag.dds",
+    "source": "docs/art/GER_placeholders/GER_dissolve_the_reichstag.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "05bd9fb8416e121cdb1572ae16998a3493a54651def8d6e9125d5d3567f793a5"
+  },
+  {
+    "focus": "GER_reign_in_mitteleuropa",
+    "sprite": "GFX_focus_GER_reign_in_mitteleuropa",
+    "texture": "gfx/interface/goals/GER_reign_in_mitteleuropa.dds",
+    "source": "docs/art/GER_placeholders/GER_reign_in_mitteleuropa.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "85548d9afd8c5278753c831380a568da3365be4058ebadc0488c74e813e03d9c"
+  },
+  {
+    "focus": "GER_the_austrian_question",
+    "sprite": "GFX_focus_GER_the_austrian_question",
+    "texture": "gfx/interface/goals/GER_the_austrian_question.dds",
+    "source": "docs/art/GER_placeholders/GER_the_austrian_question.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "92a3eb720fda5c9e510ae9041841bfb8089c864ee98b6713959312dfefc381d8"
+  },
+  {
+    "focus": "GER_crush_eastern_syndicates",
+    "sprite": "GFX_focus_GER_crush_eastern_syndicates",
+    "texture": "gfx/interface/goals/GER_crush_eastern_syndicates.dds",
+    "source": "docs/art/GER_placeholders/GER_crush_eastern_syndicates.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "12903299d38f7c1445947df7f9dc418775b76a4177f7f1e9b1035a462b29d87f"
+  },
+  {
+    "focus": "GER_gott_mit_uns",
+    "sprite": "GFX_focus_GER_gott_mit_uns",
+    "texture": "gfx/interface/goals/GER_gott_mit_uns.dds",
+    "source": "docs/art/GER_placeholders/GER_gott_mit_uns.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "12ab066c060faa17427bc062e2eb358aa8a9b9053855c1fd6fe7efd545e1522a"
+  },
+  {
+    "focus": "GER_pan_german_leagues",
+    "sprite": "GFX_focus_GER_pan_german_leagues",
+    "texture": "gfx/interface/goals/GER_pan_german_leagues.dds",
+    "source": "docs/art/GER_placeholders/GER_pan_german_leagues.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "7f96fe164e23a775f23b5a9119b32a95a49f9b1e04fa1a977fc74e5ddf433d57"
+  },
+  {
+    "focus": "GER_organize_ruhr_workers",
+    "sprite": "GFX_focus_GER_organize_ruhr_workers",
+    "texture": "gfx/interface/goals/GER_organize_ruhr_workers.dds",
+    "source": "docs/art/GER_placeholders/GER_organize_ruhr_workers.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "61cfbbfcff632094cc2d18cd926f2d7634c34afe828af1e9fd972ca13ea0683b"
+  },
+  {
+    "focus": "GER_parliamentary_spring",
+    "sprite": "GFX_focus_GER_parliamentary_spring",
+    "texture": "gfx/interface/goals/GER_parliamentary_spring.dds",
+    "source": "docs/art/GER_placeholders/GER_parliamentary_spring.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "71f46d670a0708679984878aac34dd67028b964dfa812d95c2a271b1cf5cf18e"
+  },
+  {
+    "focus": "GER_true_constitutional_monarchy",
+    "sprite": "GFX_focus_GER_true_constitutional_monarchy",
+    "texture": "gfx/interface/goals/GER_true_constitutional_monarchy.dds",
+    "source": "docs/art/GER_placeholders/GER_true_constitutional_monarchy.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "5f667ed8dfe04a55f3e31a17537806f6fde944e0ad6b3d1ebed35b2f1b07aefe"
+  },
+  {
+    "focus": "GER_mitteleuropa_economic_community",
+    "sprite": "GFX_focus_GER_mitteleuropa_economic_community",
+    "texture": "gfx/interface/goals/GER_mitteleuropa_economic_community.dds",
+    "source": "docs/art/GER_placeholders/GER_mitteleuropa_economic_community.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "9bd36a63e655a14b17aff89e07d852173db6090db47411525b4abd3c830f89e6"
+  },
+  {
+    "focus": "GER_the_austrian_referendum",
+    "sprite": "GFX_focus_GER_the_austrian_referendum",
+    "texture": "gfx/interface/goals/GER_the_austrian_referendum.dds",
+    "source": "docs/art/GER_placeholders/GER_the_austrian_referendum.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "a99aa8734e872a5f5cc4db0a1cc6060b75c595129f39d836186f629dec2f261d"
+  },
+  {
+    "focus": "GER_arsenal_of_democracy",
+    "sprite": "GFX_focus_GER_arsenal_of_democracy",
+    "texture": "gfx/interface/goals/GER_arsenal_of_democracy.dds",
+    "source": "docs/art/GER_placeholders/GER_arsenal_of_democracy.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "f9d2d6400ad0e2236f19ed1c1e5125052d20f83566d9f079e9e553bc8ea58f84"
+  },
+  {
+    "focus": "GER_the_pan_germanic_triumph",
+    "sprite": "GFX_focus_GER_the_pan_germanic_triumph",
+    "texture": "gfx/interface/goals/GER_the_pan_germanic_triumph.dds",
+    "source": "docs/art/GER_placeholders/GER_the_pan_germanic_triumph.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "321c899b62291408ec1a6f72f23511bc62ec1aa59e9c0a315c2551b787d7fe91"
+  },
+  {
+    "focus": "GER_abolish_the_hohenzollerns",
+    "sprite": "GFX_focus_GER_abolish_the_hohenzollerns",
+    "texture": "gfx/interface/goals/GER_abolish_the_hohenzollerns.dds",
+    "source": "docs/art/GER_placeholders/GER_abolish_the_hohenzollerns.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "07e4b5a2183d9e9098aee658b286e583f6325da473a4c1d23617739610433dd4"
+  },
+  {
+    "focus": "GER_anschluss_by_force",
+    "sprite": "GFX_focus_GER_anschluss_by_force",
+    "texture": "gfx/interface/goals/GER_anschluss_by_force.dds",
+    "source": "docs/art/GER_placeholders/GER_anschluss_by_force.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "5f6e79f8ebff917915ef2a3e800dd0245401d4d24361445dcd148a602967ed7a"
+  },
+  {
+    "focus": "GER_lebensraum_in_the_east",
+    "sprite": "GFX_focus_GER_lebensraum_in_the_east",
+    "texture": "gfx/interface/goals/GER_lebensraum_in_the_east.dds",
+    "source": "docs/art/GER_placeholders/GER_lebensraum_in_the_east.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "73849cddbf0f69f5b48a4cf7e4f6aea8cc1ecdb2d303765a8291329bc283bebf"
+  },
+  {
+    "focus": "GER_the_new_reich",
+    "sprite": "GFX_focus_GER_the_new_reich",
+    "texture": "gfx/interface/goals/GER_the_new_reich.dds",
+    "source": "docs/art/GER_placeholders/GER_the_new_reich.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "76967a685bc252a8498df737d0c945c7000dcc1de8b13cdf4181b6c7d49273b6"
+  },
+  {
+    "focus": "GER_the_spartacist_uprising",
+    "sprite": "GFX_focus_GER_the_spartacist_uprising",
+    "texture": "gfx/interface/goals/GER_the_spartacist_uprising.dds",
+    "source": "docs/art/GER_placeholders/GER_the_spartacist_uprising.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "78001221e8b7e407176fcd6d684cbcb68260542fab75c596a6bfdd070744e420"
+  },
+  {
+    "focus": "GER_german_soviet_republic",
+    "sprite": "GFX_focus_GER_german_soviet_republic",
+    "texture": "gfx/interface/goals/GER_german_soviet_republic.dds",
+    "source": "docs/art/GER_placeholders/GER_german_soviet_republic.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "115b5c0110d3b26b9b56aed39bca773e515f5d02147b2a372d9873a583bfbad6"
+  },
+  {
+    "focus": "GER_workers_militias",
+    "sprite": "GFX_focus_GER_workers_militias",
+    "texture": "gfx/interface/goals/GER_workers_militias.dds",
+    "source": "docs/art/GER_placeholders/GER_workers_militias.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "b5334de5d5f520c6a9736084c4a2764958bb585e8bcd866d6cc9d4beb2014fca"
+  },
+  {
+    "focus": "GER_dismantle_imperial_borders",
+    "sprite": "GFX_focus_GER_dismantle_imperial_borders",
+    "texture": "gfx/interface/goals/GER_dismantle_imperial_borders.dds",
+    "source": "docs/art/GER_placeholders/GER_dismantle_imperial_borders.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "1400d72a50e4040dae3d3d63d52dd9df19d4dfdeb036f80f3818f112abb31bcc"
+  },
+  {
+    "focus": "GER_berlin_moscow_axis",
+    "sprite": "GFX_focus_GER_berlin_moscow_axis",
+    "texture": "gfx/interface/goals/GER_berlin_moscow_axis.dds",
+    "source": "docs/art/GER_placeholders/GER_berlin_moscow_axis.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "f156ca49667f892f43587f225f053218718e240c03fcbe7f85d387f717e11845"
+  },
+  {
+    "focus": "GER_world_revolution",
+    "sprite": "GFX_focus_GER_world_revolution",
+    "texture": "gfx/interface/goals/GER_world_revolution.dds",
+    "source": "docs/art/GER_placeholders/GER_world_revolution.png",
+    "alpha_bounds": [
+      6,
+      6,
+      89,
+      89
+    ],
+    "sha256": "895482806f3717aee279731b230dc44aff150f65b37a26fbb27cdc09294ba9de"
+  }
+]

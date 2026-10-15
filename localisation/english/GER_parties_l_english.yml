@@ -1,0 +1,18 @@
+﻿l_english:
+ # GER-only party labels and leader subtypes; standard global groups retain their rules.
+ GER_fascism_party:0 "Pan-Germanism"
+ GER_fascism_party_long:0 "Pan-Germanism"
+ GER_pan_germanism:0 "Pan-Germanism"
+ GER_pan_germanism_desc:0 "A radical nationalist movement seeking a greater German state."
+ GER_democratic_party:0 "Social Democracy"
+ GER_democratic_party_long:0 "Social Democracy"
+ GER_social_democracy:0 "Social Democracy"
+ GER_social_democracy_desc:0 "Parliamentary government, social reform and voluntary international cooperation."
+ GER_communism_party:0 "Spartacism"
+ GER_communism_party_long:0 "Spartacism"
+ GER_spartacism:0 "Spartacism"
+ GER_spartacism_desc:0 "A revolutionary German workers council movement."
+ GER_neutrality_party:0 "Imperial Autocracy"
+ GER_neutrality_party_long:0 "Imperial Autocracy"
+ GER_imperial_autocracy:0 "Imperial Autocracy"
+ GER_imperial_autocracy_desc:0 "Imperial authority rests in the crown and its military institutions."

@@ -761,14 +761,6 @@ nww_mkn_rebuild_services = {
 	}
 	if = {
 		limit = {
-			has_completed_focus = MKN_black_guard_veterans
-		}
-		add_to_variable = {
-			MKN_army_experience_loss_factor = -0.1
-		}
-	}
-	if = {
-		limit = {
 			has_completed_focus = MKN_steppe_quartermasters
 		}
 		add_to_variable = {

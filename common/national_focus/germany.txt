@@ -1,0 +1,2 @@
+# Owner: GER. Playable tree: GER_focuses.txt and GER_political.txt.
+# Native IDs: GER_native_compatibility.txt; native politics and economy stay detached.

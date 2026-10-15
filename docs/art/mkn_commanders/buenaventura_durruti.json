@@ -1,0 +1,78 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-15",
+  "subject": "Buenaventura Durruti",
+  "source": "docs/art/mkn_commanders/buenaventura_durruti.png",
+  "source_sha256": "ebf8ce1ede85d500f78c61dd5e6bf91986ee1d090564af5442f96b0c3b68400c",
+  "source_size": [
+    1080,
+    1456
+  ],
+  "prompt": "docs/art/mkn_commanders/buenaventura_durruti.prompt.txt",
+  "identity_reference": {
+    "path": "docs/art/mkn_commanders/references/durruti_1936.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Jose_Buenaventura_Durruti_Dumange_1936.jpg",
+    "original_archive": "https://www.szukajwarchiwach.gov.pl/en/jednostka/-/jednostka/5917513/obiekty/342331",
+    "author": "Unknown",
+    "date": "1936",
+    "commons_license_tags": [
+      "PD-Poland",
+      "PD-Spain-photo"
+    ],
+    "role": "Identity and period clothing only; output is a generated illustration, not an authentic color photograph."
+  },
+  "style_reference": "docs/art/mkn_commanders/oleksandr_hordiienko.png",
+  "technical_export": "Pillow: Lanczos resize/crop; native neutral matte on large DDS only; small card retains alpha and bottom clearance. No painting or facial edits.",
+  "small_crop": [
+    0,
+    31,
+    1080,
+    1092
+  ],
+  "small_visible_limit": [
+    57,
+    59
+  ],
+  "small_top": 2,
+  "outputs": [
+    {
+      "path": "gfx/leaders/MKN/buenaventura_durruti.dds",
+      "size": [
+        156,
+        210
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        156,
+        210
+      ],
+      "sha256": "c36df9974b84e61e9d5a7fab0cf629d8f9177b02d1462cc4a629ba79b0c06b81",
+      "background": [
+        37,
+        39,
+        36,
+        255
+      ]
+    },
+    {
+      "path": "gfx/interface/ideas/nww_portraits/MKN_buenaventura_durruti.dds",
+      "size": [
+        65,
+        67
+      ],
+      "alpha_bounds": [
+        4,
+        2,
+        60,
+        58
+      ],
+      "sha256": "bcf749012f3071066cc26890535c53a5e97123e179b0ef4b2335b2ed571d9fda"
+    }
+  ],
+  "native_references": [
+    "common/characters/SPR.txt: SPR_vicente_rojo_lluch army large/small",
+    "interface/_leader_portraits.gfx: GFX_portrait_SPR_vicente_rojo_lluch_small",
+    "dlc/dlc028_la_resistance/interface/lar_portraits.gfx: GFX_portrait_SPR_vicente_rojo_lluch"
+  ]
+}

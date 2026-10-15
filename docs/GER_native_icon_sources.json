@@ -1,0 +1,170 @@
+[
+  {
+    "focus": "GER_the_gilded_colossus",
+    "native": "GFX_focus_GER_our_place_in_the_sun",
+    "texture": "gfx/interface/goals/focus_GER_our_place_in_the_sun.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_fund_the_reichswehr",
+    "native": "GFX_focus_GER_prussian_legacy",
+    "texture": "gfx/interface/goals/focus_GER_prussian_legacy.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_empower_the_chancellor",
+    "native": "GFX_focus_GER_monarchy_compromise",
+    "texture": "gfx/interface/goals/focus_GER_monarchy_compromise.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_end_of_an_era",
+    "native": "GFX_focus_GER_tend_to_the_future",
+    "texture": "gfx/interface/goals/focus_GER_tend_to_the_future.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_the_potsdam_coup",
+    "native": "GFX_focus_GER_glory_to_the_imperial_army",
+    "texture": "gfx/interface/goals/focus_GER_glory_to_the_imperial_army.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_dissolve_the_reichstag",
+    "native": "GFX_focus_GER_realpolitik",
+    "texture": "gfx/interface/goals/focus_GER_realpolitik.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_reign_in_mitteleuropa",
+    "native": "GFX_focus_GER_extend_mitteleuropa",
+    "texture": "gfx/interface/goals/focus_GER_extend_mitteleuropa.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_the_austrian_question",
+    "native": "GFX_focus_GER_the_austrian_question",
+    "texture": "gfx/interface/goals/focus_GER_the_austrian_question.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_crush_eastern_syndicates",
+    "native": "GFX_focus_GER_end_european_communism",
+    "texture": "gfx/interface/goals/focus_GER_end_european_communism.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_gott_mit_uns",
+    "native": "GFX_focus_GER_army",
+    "texture": "gfx/interface/goals/focus_GER_army.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_pan_german_leagues",
+    "native": "GFX_focus_GER_brothers_in_arms",
+    "texture": "gfx/interface/goals/focus_GER_brothers_in_arms.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_organize_ruhr_workers",
+    "native": "GFX_focus_GER_legacy_of_the_spartacus_league",
+    "texture": "gfx/interface/goals/focus_GER_legacy_of_the_spartacus_league.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_parliamentary_spring",
+    "native": "GFX_focus_GER_defender_of_democracy",
+    "texture": "gfx/interface/goals/focus_GER_defender_of_democracy.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_true_constitutional_monarchy",
+    "native": "GFX_focus_GER_monarchy_compromise",
+    "texture": "gfx/interface/goals/focus_GER_monarchy_compromise.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_mitteleuropa_economic_community",
+    "native": "GFX_focus_GER_customs_union",
+    "texture": "gfx/interface/goals/focus_GER_customs_union.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_the_austrian_referendum",
+    "native": "GFX_focus_GER_european_confederation",
+    "texture": "gfx/interface/goals/focus_GER_european_confederation.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_arsenal_of_democracy",
+    "native": "GFX_focus_GER_integrated_economies",
+    "texture": "gfx/interface/goals/focus_GER_integrated_economies.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_the_pan_germanic_triumph",
+    "native": "GFX_focus_GER_hegemony_over_europe",
+    "texture": "gfx/interface/goals/focus_GER_hegemony_over_europe.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_abolish_the_hohenzollerns",
+    "native": "GFX_focus_GER_the_supreme_leader",
+    "texture": "gfx/interface/goals/focus_GER_the_supreme_leader.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_anschluss_by_force",
+    "native": "GFX_focus_GER_anschluss",
+    "texture": "gfx/interface/goals/focus_GER_anschluss.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_lebensraum_in_the_east",
+    "native": "GFX_focus_GER_the_eastern_border",
+    "texture": "gfx/interface/goals/focus_GER_the_eastern_border.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_the_new_reich",
+    "native": "GFX_focus_GER_german_army_invincible",
+    "texture": "gfx/interface/goals/focus_GER_german_army_invincible.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_the_spartacist_uprising",
+    "native": "GFX_focus_GER_support_the_proletarian_uprising",
+    "texture": "gfx/interface/goals/focus_GER_support_the_proletarian_uprising.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_german_soviet_republic",
+    "native": "GFX_focus_GER_the_peoples_victory",
+    "texture": "gfx/interface/goals/focus_GER_the_peoples_victory.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_workers_militias",
+    "native": "GFX_focus_GER_proletarian_solidarity",
+    "texture": "gfx/interface/goals/focus_GER_proletarian_solidarity.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_dismantle_imperial_borders",
+    "native": "GFX_focus_GER_liberate_exploited_colonial_workers",
+    "texture": "gfx/interface/goals/focus_GER_liberate_exploited_colonial_workers.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_berlin_moscow_axis",
+    "native": "GFX_focus_GER_SOV_treaty",
+    "texture": "gfx/interface/goals/focus_GER_SOV_treaty.dds",
+    "definition": "interface/goals.gfx"
+  },
+  {
+    "focus": "GER_world_revolution",
+    "native": "GFX_focus_GER_strengthen_the_proletarian_international",
+    "texture": "gfx/interface/goals/focus_GER_strengthen_the_proletarian_international.dds",
+    "definition": "interface/goals.gfx"
+  }
+]

@@ -13,7 +13,6 @@
       "MKN_tank_maintenance",
       "MKN_artillery_artels",
       "MKN_fire_tables",
-      "MKN_black_guard_veterans",
       "MKN_motorized_infantry",
       "MKN_bridge_columns",
       "MKN_fuel_discipline",
@@ -38,7 +37,6 @@
       "MKN_mechanized_compact"
     ],
     "optional": [
-      "MKN_black_guard_veterans",
       "MKN_motorized_infantry",
       "MKN_bridge_columns",
       "MKN_fuel_discipline",

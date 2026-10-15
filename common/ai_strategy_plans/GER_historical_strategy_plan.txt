@@ -1,0 +1,2 @@
+# Native German historical plans target a different tree and economy.
+# NWW's plan is owned by GER_historical.txt.

@@ -1,0 +1,26 @@
+# ROOT = MKN origin; FROM = target. Keep continuing-operation checks separate
+# from the one-attempt gate: setting the start flag must not cancel our own job.
+MKN_expropriation_geographic_target = {
+ FROM = {
+  exists = yes
+  NOT = { original_tag = MKN }
+  NOT = { is_subject_of = ROOT }
+  OR = { original_tag = TUR capital_scope = { is_on_continent = europe } }
+ }
+}
+MKN_valid_expropriation_target = {
+ MKN_expropriation_geographic_target = yes
+ custom_trigger_tooltip = {
+  tooltip = MKN_heist_unused_tt
+  FROM = { NOT = { has_country_flag = MKN_expropriation_attempted } }
+ }
+}
+MKN_expropriation_outcome_allowed = {
+ original_tag = MKN
+ has_dlc = "La Resistance"
+ MKN_expropriation_geographic_target = yes
+ FROM = {
+  has_country_flag = MKN_expropriation_attempted
+  NOT = { has_country_flag = MKN_expropriation_resolved }
+ }
+}

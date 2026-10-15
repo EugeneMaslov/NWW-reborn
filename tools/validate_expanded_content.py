@@ -88,7 +88,8 @@ def validate_expansion(root, game, check, localized):
                 branch|=more
             spec=next(p for p in json.loads((root/'docs/MKN_military_programs.json').read_text()) if p['entry']==entry)
             core=set(spec['core']);optional=set(spec['optional'])
-            check(len(core)==10 and len(optional)==10 and not core & optional and core | optional==branch,f'{entry}: expected ten core and ten optional focuses')
+            expected_optional = 9 if entry == 'MKN_steel_horses' else 10
+            check(len(core)==10 and len(optional)==expected_optional and not core & optional and core | optional==branch,f'{entry}: expected ten core and {expected_optional} optional focuses')
             check(other in {p for g in values(fs[entry],'mutually_exclusive') for p in values(g,'focus')},f'{entry}: opposite military program is not excluded')
             required={v for k,v,o in walk(one(fs[finale],'available',[])) if k=='has_completed_focus'}
             check(required==core-{finale},f'{finale}: must require only the nine core institutions')
@@ -102,10 +103,17 @@ def validate_expansion(root, game, check, localized):
                 done|=ready
             for fid in branch:
                 reward=one(fs[fid],'completion_reward')
-                check(not any(k=='add_ideas' and isinstance(v,str) for k,v,o in walk(reward)),f'{fid}: creates another permanent military spirit')
-                check(any(k=='add_to_variable' and any(a and a.startswith('MKN_'+service+'_') for a,b,o in v) for k,v,o in reward),f'{fid}: does not develop its service spirit')
+                # Explicitly requested memorial and two elite formations are the
+                # only exceptions; ordinary programmes still develop one spirit.
+                memorial = fid == 'MKN_memory_of_atamansha_marusya'
+                formations = fid == 'MKN_the_black_guard_battalions'
+                added_ideas = {v for k,v,o in walk(reward) if k=='add_ideas' and isinstance(v,str)}
+                check(added_ideas == ({'MKN_marusyas_legacy'} if memorial else set()),f'{fid}: creates an unapproved permanent military spirit')
+                if not (memorial or formations):
+                    check(any(k=='add_to_variable' and any(a and a.startswith('MKN_'+service+'_') for a,b,o in v) for k,v,o in reward),f'{fid}: does not develop its service spirit')
             check(all(not deps[fid] & optional for fid in core),f'{entry}: optional focus blocks the core programme')
-            print(f'PASS: {entry}: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit')
+            memorial_note = '; Marusya and the Black Guard are in the common army branch' if entry == 'MKN_steel_horses' else ''
+            print(f'PASS: {entry}: ten core and {expected_optional} optional focuses, varied icons/rewards, exclusive program, one service spirit{memorial_note}')
 
     # Preserve the central templates while suppressing their generic instances only for MKN.
     generic='common/military_industrial_organization/organizations/00_generic_organization.txt'

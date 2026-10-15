@@ -151,6 +151,18 @@ class WorkspaceTests(unittest.TestCase):
         audit.focus()
         self.assertEqual({i.code for i in audit.issues}, {'cycle', 'exclusion'})
 
+    def test_zero_cost_is_reserved_for_unselectable_event_focuses(self):
+        self.put(self.mod, 'common/national_focus/a.txt', '''focus_tree = {
+            id = tree
+            focus = { id = EVENT_ONLY cost = 0 x = 0 y = 0 available = { always = no } }
+            focus = { id = FREE_SELECTABLE cost = 0 x = 2 y = 0 }
+        }''')
+        audit = Audit(self.mod, self.game)
+        audit.definitions()
+        audit.focus()
+        errors = [i.message for i in audit.issues if i.code == 'grid_or_cost']
+        self.assertEqual(errors, ['FREE_SELECTABLE: cost=0'])
+
     def test_missing_parent_in_selected_tree_is_detected(self):
         self.put(self.mod, 'common/national_focus/a.txt', '''
             focus_tree = { id = tree_a focus = { id = A cost = 5 x = 0 y = 1 prerequisite = { focus = B } } }

@@ -1,0 +1,18 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { original_tag = MKN has_focus_tree = MKN_focus }
+				MKN_repair_international_content = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = { original_tag = MKN has_focus_tree = MKN_focus }
+				MKN_repair_international_content = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+# Retain the renamed focus token for old saves and external compiled references.
+# It is not imported into the playable tree and has no rewards.
+shared_focus = {
+	id = MKN_black_guard_veterans
+	cost = 5
+	allow_branch = { always = no }
+	available = { always = no }
+	completion_reward = {}
+}

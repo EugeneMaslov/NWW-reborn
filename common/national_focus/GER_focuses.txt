@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	shared_focus = GER_the_gilded_colossus
 	focus = {
 		id = GER_the_kaiser_endures
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -16,8 +17,8 @@ focus_tree = {
 			add_political_power = 120
 			add_stability = 0.05
 		}
-		x = 5
 		y = 0
+		x = 43
 	}
 	focus = {
 		id = GER_prussian_traditions
@@ -30,8 +31,8 @@ focus_tree = {
 			army_experience = 25
 			add_war_support = 0.05
 		}
-		x = 3
 		y = 1
+		x = 41
 	}
 	focus = {
 		id = GER_krupp_and_thyssen
@@ -49,14 +50,13 @@ focus_tree = {
 				producer = GER
 			}
 		}
-		x = 13
 		y = 0
+		x = 51
 	}
 	focus = {
 		id = GER_the_fleet_question
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
-		x = 23
 		y = 0
 		completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -67,6 +67,7 @@ focus_tree = {
 			}
 			navy_experience = 15
 		}
+		x = 61
 	}
 	focus = {
 		id = GER_mitteleuropa_trade
@@ -75,7 +76,6 @@ focus_tree = {
 			focus = GER_krupp_and_thyssen
 		}
 		cost = 5
-		x = 18
 		y = 1
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -91,6 +91,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
+		x = 56
 	}
 	focus = {
 		id = GER_the_eastern_question
@@ -108,8 +109,8 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 		}
-		x = 3
 		y = 2
+		x = 41
 	}
 	focus = {
 		id = GER_guardians_of_the_reich
@@ -128,12 +129,11 @@ focus_tree = {
 			add_manpower = 100000
 			add_stability = 0.05
 		}
-		x = 7
 		y = 1
+		x = 45
 	}
 	focus = {
 		id = GER_1
-		x = 13
 		y = 1
 		icon = GFX_focus_generic_industry_1
 		cost = 5
@@ -153,10 +153,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_krupp_and_thyssen
 		}
+		x = 51
 	}
 	focus = {
 		id = GER_2
-		x = 11
 		y = 2
 		icon = GFX_focus_generic_industry_2
 		cost = 5
@@ -187,10 +187,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_1
 		}
+		x = 49
 	}
 	focus = {
 		id = GER_3
-		x = 11
 		y = 3
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -210,10 +210,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_2
 		}
+		x = 49
 	}
 	focus = {
 		id = GER_4
-		x = 11
 		y = 4
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -238,10 +238,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_3
 		}
+		x = 49
 	}
 	focus = {
 		id = GER_5
-		x = 15
 		y = 2
 		icon = GFX_focus_generic_industry_2
 		cost = 5
@@ -261,10 +261,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_1
 		}
+		x = 53
 	}
 	focus = {
 		id = GER_6
-		x = 15
 		y = 3
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -284,10 +284,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_5
 		}
+		x = 53
 	}
 	focus = {
 		id = GER_7
-		x = 15
 		y = 4
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -308,10 +308,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_6
 		}
+		x = 53
 	}
 	focus = {
 		id = GER_8
-		x = 13
 		y = 5
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -340,10 +340,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_4
 		}
+		x = 51
 	}
 	focus = {
 		id = GER_9
-		x = 11
 		y = 6
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -363,10 +363,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_8
 		}
+		x = 49
 	}
 	focus = {
 		id = GER_10
-		x = 15
 		y = 6
 		icon = GFX_focus_generic_industry_3
 		cost = 5
@@ -380,12 +380,13 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_8
 		}
+		x = 53
 	}
 	continuous_focus_position = {
 		x = 100
-		y = 1880
+		y = 2240
 	}
 	initial_show_position = {
-		focus = GER_the_kaiser_endures
+		focus = GER_the_gilded_colossus
 	}
 }

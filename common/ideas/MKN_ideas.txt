@@ -140,6 +140,50 @@ ideas = {
 				}
 			}
 		}
+		MKN_mobile_patrols = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.10
+				supply_consumption_factor = 0.05
+			}
+		}
+		MKN_seed_cooperatives = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		MKN_extra_workshop_shifts = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		MKN_recallable_front_delegates = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.10
+				political_power_gain = -0.10
+			}
+		}
 	}
 	industrial_concern = {
 		MKN_free_workshops = {

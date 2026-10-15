@@ -1,0 +1,982 @@
+# Owner: GER. One shared political root, imported by GER_focuses.txt.
+shared_focus = {
+	id = GER_the_gilded_colossus
+	icon = GFX_focus_GER_our_place_in_the_sun
+	cost = 5
+	completion_reward = {
+		add_political_power = 75
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 18
+	y = 0
+}
+shared_focus = {
+	id = GER_fund_the_reichswehr
+	icon = GFX_focus_GER_prussian_legacy
+	cost = 5
+	prerequisite = {
+		focus = GER_the_gilded_colossus
+	}
+	available = {
+		NOT = {
+			has_country_flag = ger_bop_frozen
+		}
+	}
+	completion_reward = {
+		army_experience = 15
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = ger_bop_frozen
+				}
+			}
+			add_power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value = -0.20
+				tooltip_side = GER_ohl_and_crown_side
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 10
+	y = 1
+}
+shared_focus = {
+	id = GER_empower_the_chancellor
+	icon = GFX_focus_GER_monarchy_compromise
+	cost = 5
+	prerequisite = {
+		focus = GER_the_gilded_colossus
+	}
+	available = {
+		NOT = {
+			has_country_flag = ger_bop_frozen
+		}
+	}
+	completion_reward = {
+		add_political_power = 50
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = ger_bop_frozen
+				}
+			}
+			add_power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value = 0.20
+				tooltip_side = GER_reichstag_side
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+	}
+	x = 14
+	y = 1
+}
+shared_focus = {
+	id = GER_end_of_an_era
+	icon = GFX_focus_GER_tend_to_the_future
+	cost = 0
+	prerequisite = {
+		focus = GER_the_gilded_colossus
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	x = 18
+	y = 3
+}
+shared_focus = {
+	id = GER_the_potsdam_coup
+	icon = GFX_focus_GER_glory_to_the_imperial_army
+	cost = 10
+	prerequisite = {
+		focus = GER_end_of_an_era
+	}
+	available = {
+		has_completed_focus = GER_the_gilded_colossus
+		has_completed_focus = GER_fund_the_reichswehr
+		has_country_flag = ger_wilhelm_ii_dead
+		NOT = {
+			neutrality < 0.40
+		}
+		power_balance_value = {
+			id = GER_kaiser_vs_reichstag
+			value < -0.10
+		}
+		nww_GER_no_political_path = yes
+		NOT = {
+			has_civil_war = yes
+		}
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			election_frequency = 48
+		}
+		GER_wilhelm_iii = {
+			promote_character = yes
+		}
+		set_country_flag = ger_iron_kaiserreich
+		add_stability = -0.10
+		add_war_support = 0.20
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 6
+	y = 4
+	mutually_exclusive = {
+		focus = GER_parliamentary_spring
+		focus = GER_the_pan_germanic_triumph
+		focus = GER_the_spartacist_uprising
+	}
+}
+shared_focus = {
+	id = GER_dissolve_the_reichstag
+	icon = GFX_focus_GER_realpolitik
+	cost = 10
+	prerequisite = {
+		focus = GER_the_potsdam_coup
+	}
+	available = {
+		has_government = neutrality
+	}
+	completion_reward = {
+		set_country_flag = ger_bop_frozen
+		set_power_balance = {
+			id = GER_kaiser_vs_reichstag
+			set_value = -1
+		}
+		custom_effect_tooltip = GER_bop_frozen_tt
+		remove_advisor_role = {
+			character = GER_julius_leber
+			slot = political_advisor
+		}
+		remove_advisor_role = {
+			character = GER_kurt_schumacher
+			slot = political_advisor
+		}
+		remove_advisor_role = {
+			character = GER_theodor_heuss
+			slot = political_advisor
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 6
+	y = 5
+}
+shared_focus = {
+	id = GER_reign_in_mitteleuropa
+	icon = GFX_focus_GER_extend_mitteleuropa
+	cost = 10
+	prerequisite = {
+		focus = GER_dissolve_the_reichstag
+	}
+	available = {
+		has_government = neutrality
+		is_subject = no
+		date > 1938.12.31
+		custom_trigger_tooltip = {
+			tooltip = GER_eastern_1939_gate_tt
+			date > 1938.12.31
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = GER_eastern_1939_gate_tt
+		custom_effect_tooltip = GER_mitteleuropa_demand_tt
+		hidden_effect = {
+			LTB = {
+				nww_GER_mitteleuropa_demand = yes
+			}
+			POL = {
+				nww_GER_mitteleuropa_demand = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 4
+	y = 6
+}
+shared_focus = {
+	id = GER_the_austrian_question
+	icon = GFX_focus_GER_the_austrian_question
+	cost = 10
+	prerequisite = {
+		focus = GER_dissolve_the_reichstag
+	}
+	bypass = {
+		OR = {
+			AUS = {
+				exists = no
+			}
+			AUS = {
+				is_subject_of = GER
+			}
+		}
+	}
+	available = {
+		has_government = neutrality
+		is_subject = no
+		AUS = {
+			exists = yes
+			is_subject = no
+		}
+		NOT = {
+			has_war_with = AUS
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				AUS = {
+					exists = yes
+					is_subject = no
+				}
+				is_subject = no
+				NOT = {
+					has_war_with = AUS
+				}
+			}
+			AUS = {
+				country_event = {
+					id = ger_crisis.10
+					days = 1
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	x = 8
+	y = 6
+}
+shared_focus = {
+	id = GER_crush_eastern_syndicates
+	icon = GFX_focus_GER_end_european_communism
+	cost = 10
+	prerequisite = {
+		focus = GER_reign_in_mitteleuropa
+	}
+	available = {
+		has_government = neutrality
+		is_subject = no
+		date > 1938.12.31
+		custom_trigger_tooltip = {
+			tooltip = GER_eastern_1939_gate_tt
+			date > 1938.12.31
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = GER_eastern_1939_gate_tt
+		nww_GER_eastern_wargoals = yes
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	x = 4
+	y = 7
+}
+shared_focus = {
+	id = GER_gott_mit_uns
+	icon = GFX_focus_GER_army
+	cost = 10
+	prerequisite = {
+		focus = GER_crush_eastern_syndicates
+	}
+	prerequisite = {
+		focus = GER_the_austrian_question
+	}
+	available = {
+		has_government = neutrality
+	}
+	completion_reward = {
+		add_ideas = GER_gott_mit_uns
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 6
+	y = 8
+}
+shared_focus = {
+	id = GER_pan_german_leagues
+	icon = GFX_focus_GER_brothers_in_arms
+	x = 22
+	y = 1
+	cost = 5
+	prerequisite = {
+		focus = GER_the_gilded_colossus
+	}
+	available = {
+		nww_GER_no_political_path = yes
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+	}
+}
+shared_focus = {
+	id = GER_organize_ruhr_workers
+	icon = GFX_focus_GER_legacy_of_the_spartacus_league
+	x = 26
+	y = 1
+	cost = 5
+	prerequisite = {
+		focus = GER_the_gilded_colossus
+	}
+	available = {
+		nww_GER_no_political_path = yes
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+	}
+}
+shared_focus = {
+	id = GER_parliamentary_spring
+	icon = GFX_focus_GER_defender_of_democracy
+	x = 14
+	y = 4
+	cost = 10
+	prerequisite = {
+		focus = GER_end_of_an_era
+	}
+	available = {
+		nww_GER_no_political_path = yes
+		has_completed_focus = GER_empower_the_chancellor
+		has_country_flag = ger_wilhelm_ii_dead
+		NOT = {
+			democratic < 0.40
+		}
+		NOT = {
+			has_civil_war = yes
+		}
+		power_balance_value = {
+			id = GER_kaiser_vs_reichstag
+			value > 0.10
+		}
+	}
+	completion_reward = {
+		set_country_flag = ger_parliamentary_spring
+		set_country_flag = ger_bop_frozen
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_character = GER_hans_vogel
+				}
+			}
+			recruit_character = GER_hans_vogel
+		}
+		GER_hans_vogel = {
+			set_portraits = {
+				civilian = {
+					large = GFX_NWW_GER_hans_vogel
+				}
+			}
+			add_country_leader_role = {
+				country_leader = {
+					ideology = GER_social_democracy
+					expire = 1965.1.1
+					traits = {
+
+					}
+				}
+				promote_leader = yes
+			}
+		}
+		set_power_balance = {
+			id = GER_kaiser_vs_reichstag
+			set_value = 1
+		}
+		custom_effect_tooltip = GER_reichstag_locked_tt
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+	}
+	mutually_exclusive = {
+		focus = GER_the_potsdam_coup
+		focus = GER_the_pan_germanic_triumph
+		focus = GER_the_spartacist_uprising
+	}
+}
+shared_focus = {
+	id = GER_true_constitutional_monarchy
+	icon = GFX_focus_GER_monarchy_compromise
+	x = 14
+	y = 5
+	cost = 10
+	prerequisite = {
+		focus = GER_parliamentary_spring
+	}
+	available = {
+		has_government = democratic
+	}
+	completion_reward = {
+		remove_country_leader_role = {
+			character = GER_wilhelm_iii
+			ideology = GER_imperial_autocracy
+		}
+		set_country_flag = ger_constitutional_crown
+		add_ideas = GER_constitutional_monarchy
+	}
+}
+shared_focus = {
+	id = GER_mitteleuropa_economic_community
+	icon = GFX_focus_GER_customs_union
+	x = 12
+	y = 6
+	cost = 10
+	prerequisite = {
+		focus = GER_true_constitutional_monarchy
+	}
+	available = {
+		has_government = democratic
+		is_subject = no
+		OR = {
+			is_in_faction = no
+			is_faction_leader = yes
+		}
+		has_war = no
+	}
+	completion_reward = {
+		nww_GER_establish_mitteleuropa = yes
+		LTB = {
+			nww_GER_democratic_community_offer = yes
+		}
+		POL = {
+			nww_GER_democratic_community_offer = yes
+		}
+		custom_effect_tooltip = GER_economic_community_tt
+	}
+}
+shared_focus = {
+	id = GER_the_austrian_referendum
+	icon = GFX_focus_GER_european_confederation
+	x = 16
+	y = 6
+	cost = 10
+	prerequisite = {
+		focus = GER_true_constitutional_monarchy
+	}
+	bypass = {
+		OR = {
+			AUS = {
+				exists = no
+			}
+			AUS = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+	available = {
+		has_government = democratic
+		is_subject = no
+		has_war = no
+		AUS = {
+			exists = yes
+			is_subject = no
+			has_war = no
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_government = democratic
+				is_subject = no
+				has_war = no
+				AUS = {
+					exists = yes
+					is_subject = no
+					has_war = no
+				}
+			}
+			AUS = {
+				country_event = {
+					id = ger_crisis.30
+					days = 1
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GER_arsenal_of_democracy
+	icon = GFX_focus_GER_integrated_economies
+	x = 14
+	y = 7
+	cost = 10
+	prerequisite = {
+		focus = GER_mitteleuropa_economic_community
+	}
+	prerequisite = {
+		focus = GER_the_austrian_referendum
+	}
+	available = {
+		has_government = democratic
+		is_subject = no
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GER_constitutional_monarchy
+			add_idea = GER_arsenal_of_democracy
+		}
+		if = {
+			limit = {
+				LTB = {
+					exists = yes
+					is_subject = no
+				}
+				NOT = {
+					has_war_with = LTB
+				}
+			}
+			give_guarantee = LTB
+		}
+		if = {
+			limit = {
+				POL = {
+					exists = yes
+					is_subject = no
+				}
+				NOT = {
+					has_war_with = POL
+				}
+			}
+			give_guarantee = POL
+		}
+	}
+}
+shared_focus = {
+	id = GER_the_pan_germanic_triumph
+	icon = GFX_focus_GER_hegemony_over_europe
+	x = 22
+	y = 4
+	cost = 10
+	prerequisite = {
+		focus = GER_end_of_an_era
+	}
+	available = {
+		nww_GER_no_political_path = yes
+		has_completed_focus = GER_pan_german_leagues
+		has_country_flag = ger_wilhelm_ii_dead
+		NOT = {
+			fascism < 0.40
+		}
+		NOT = {
+			has_civil_war = yes
+		}
+		NOT = {
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value < -0.30
+			}
+		}
+		NOT = {
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value > 0.30
+			}
+		}
+	}
+	completion_reward = {
+		set_country_flag = ger_pan_germanic_path
+		set_country_flag = ger_bop_frozen
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			election_frequency = 48
+		}
+		GER_wilhelm_iii = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = GER_pan_germanism
+					expire = 1965.1.1
+					traits = {
+
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+	}
+	mutually_exclusive = {
+		focus = GER_the_potsdam_coup
+		focus = GER_parliamentary_spring
+		focus = GER_the_spartacist_uprising
+	}
+}
+shared_focus = {
+	id = GER_abolish_the_hohenzollerns
+	icon = GFX_focus_GER_the_supreme_leader
+	x = 22
+	y = 5
+	cost = 10
+	prerequisite = {
+		focus = GER_the_pan_germanic_triumph
+	}
+	available = {
+		has_government = fascism
+	}
+	completion_reward = {
+		retire_character = GER_wilhelm_iii
+		GER_alfred_hugenberg = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = GER_pan_germanism
+					expire = 1965.1.1
+					traits = {
+
+					}
+				}
+				promote_leader = yes
+			}
+		}
+		set_country_flag = ger_bop_removed
+		if = {
+			limit = {
+				has_power_balance = {
+					id = GER_kaiser_vs_reichstag
+				}
+			}
+			remove_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GER_anschluss_by_force
+	icon = GFX_focus_GER_anschluss
+	x = 22
+	y = 6
+	cost = 10
+	prerequisite = {
+		focus = GER_abolish_the_hohenzollerns
+	}
+	bypass = {
+		AUS = {
+			exists = no
+		}
+	}
+	available = {
+		has_government = fascism
+		is_subject = no
+		AUS = {
+			exists = yes
+			is_subject = no
+		}
+		NOT = {
+			has_war_with = AUS
+		}
+		has_war = no
+		AUS = {
+			has_war = no
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_government = fascism
+				is_subject = no
+				AUS = {
+					exists = yes
+					is_subject = no
+				}
+				NOT = {
+					has_war_with = AUS
+				}
+				has_war = no
+				AUS = {
+					has_war = no
+				}
+			}
+			AUS = {
+				country_event = {
+					id = ger_crisis.40
+					days = 1
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GER_lebensraum_in_the_east
+	icon = GFX_focus_GER_the_eastern_border
+	x = 22
+	y = 7
+	cost = 10
+	prerequisite = {
+		focus = GER_anschluss_by_force
+	}
+	available = {
+		has_government = fascism
+		is_subject = no
+		date > 1938.12.31
+		custom_trigger_tooltip = {
+			tooltip = GER_eastern_1939_gate_tt
+			date > 1938.12.31
+		}
+	}
+	completion_reward = {
+		nww_GER_pan_german_eastern_wargoals = yes
+	}
+}
+shared_focus = {
+	id = GER_the_new_reich
+	icon = GFX_focus_GER_german_army_invincible
+	x = 22
+	y = 8
+	cost = 10
+	prerequisite = {
+		focus = GER_lebensraum_in_the_east
+	}
+	available = {
+		has_government = fascism
+	}
+	completion_reward = {
+		add_ideas = GER_the_new_reich
+	}
+}
+shared_focus = {
+	id = GER_the_spartacist_uprising
+	icon = GFX_focus_GER_support_the_proletarian_uprising
+	x = 30
+	y = 4
+	cost = 10
+	prerequisite = {
+		focus = GER_end_of_an_era
+	}
+	bypass = {
+		has_country_flag = ger_spartacist_side
+	}
+	available = {
+		nww_GER_no_political_path = yes
+		has_completed_focus = GER_organize_ruhr_workers
+		has_country_flag = ger_wilhelm_ii_dead
+		NOT = {
+			communism < 0.40
+		}
+		NOT = {
+			has_civil_war = yes
+		}
+		is_subject = no
+	}
+	completion_reward = {
+		nww_GER_start_spartacist_civil_war = yes
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+	}
+	mutually_exclusive = {
+		focus = GER_the_potsdam_coup
+		focus = GER_parliamentary_spring
+		focus = GER_the_pan_germanic_triumph
+	}
+}
+shared_focus = {
+	id = GER_german_soviet_republic
+	icon = GFX_focus_GER_the_peoples_victory
+	x = 30
+	y = 5
+	cost = 10
+	prerequisite = {
+		focus = GER_the_spartacist_uprising
+	}
+	available = {
+		has_country_flag = ger_spartacist_side
+		has_country_flag = ger_spartacist_victory
+		has_government = communism
+		NOT = {
+			has_civil_war = yes
+		}
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			election_frequency = 48
+		}
+		GER_ernst_thalmann = {
+			set_portraits = {
+				civilian = {
+					large = GFX_NWW_GER_ernst_thalmann
+				}
+			}
+			add_country_leader_role = {
+				country_leader = {
+					ideology = GER_spartacism
+					expire = 1965.1.1
+					traits = {
+
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GER_workers_militias
+	icon = GFX_focus_GER_proletarian_solidarity
+	x = 30
+	y = 6
+	cost = 10
+	prerequisite = {
+		focus = GER_german_soviet_republic
+	}
+	available = {
+		has_government = communism
+	}
+	completion_reward = {
+		add_ideas = GER_workers_militias
+	}
+}
+shared_focus = {
+	id = GER_dismantle_imperial_borders
+	icon = GFX_focus_GER_liberate_exploited_colonial_workers
+	x = 30
+	y = 7
+	cost = 10
+	prerequisite = {
+		focus = GER_workers_militias
+	}
+	available = {
+		has_government = communism
+		is_subject = no
+	}
+	completion_reward = {
+		nww_GER_free_eastern_subjects = yes
+	}
+}
+shared_focus = {
+	id = GER_berlin_moscow_axis
+	icon = GFX_focus_GER_SOV_treaty
+	x = 30
+	y = 8
+	cost = 10
+	prerequisite = {
+		focus = GER_dismantle_imperial_borders
+	}
+	available = {
+		has_government = communism
+		is_subject = no
+		SOV = {
+			exists = yes
+			has_government = communism
+			is_subject = no
+		}
+		NOT = {
+			has_war_with = SOV
+		}
+		OR = {
+			is_in_faction = no
+			is_in_faction_with = SOV
+		}
+		SOV = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_government = communism
+				is_subject = no
+				SOV = {
+					exists = yes
+					has_government = communism
+					is_subject = no
+				}
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			SOV = {
+				country_event = {
+					id = ger_crisis.60
+					days = 1
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GER_world_revolution
+	icon = GFX_focus_GER_strengthen_the_proletarian_international
+	x = 30
+	y = 9
+	cost = 10
+	prerequisite = {
+		focus = GER_berlin_moscow_axis
+	}
+	available = {
+		has_government = communism
+		is_subject = no
+	}
+	completion_reward = {
+		nww_GER_western_revolution_wargoals = yes
+	}
+}

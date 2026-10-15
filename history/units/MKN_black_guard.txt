@@ -1,0 +1,42 @@
+# Native OOB uses province locations and start_* factors, not state/experience fields.
+division_template = {
+	name = "Штурмовой отряд Маруси"
+	is_locked = yes
+	force_allow_recruiting = no
+	division_cap = 2
+	priority = 2
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1-й штурмовой отряд Маруси"
+		location = 429
+		division_template = "Штурмовой отряд Маруси"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2-й штурмовой отряд Маруси"
+		location = 429
+		division_template = "Штурмовой отряд Маруси"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

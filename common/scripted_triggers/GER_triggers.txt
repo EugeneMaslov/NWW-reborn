@@ -1,0 +1,7 @@
+# Four path entries use this guard as well as reciprocal focus exclusions.
+nww_GER_no_political_path = {
+	NOT = { has_country_flag = ger_iron_kaiserreich }
+	NOT = { has_country_flag = ger_parliamentary_spring }
+	NOT = { has_country_flag = ger_pan_germanic_path }
+	NOT = { has_country_flag = ger_spartacist_civil_war_started }
+}

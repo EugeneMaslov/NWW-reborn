@@ -1,0 +1,20 @@
+characters = {
+	MKN_buenaventura_durruti = {
+		name = MKN_buenaventura_durruti
+		portraits = {
+			# Generated from the 1936 photograph; source and prompt in docs/art/mkn_commanders.
+			army = {
+				large = GFX_Portrait_MKN_buenaventura_durruti
+				small = GFX_Portrait_MKN_buenaventura_durruti_small
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { urban_assault_specialist commando trait_mountaineer }
+		}
+	}
+}

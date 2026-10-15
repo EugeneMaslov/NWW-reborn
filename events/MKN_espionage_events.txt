@@ -1,0 +1,17 @@
+add_namespace = mkn_espionage
+country_event = {
+	id = mkn_espionage.1
+	title = mkn_espionage.1.t
+	desc = mkn_espionage.1.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = { name = mkn_espionage.1.a }
+}
+country_event = {
+	id = mkn_espionage.2
+	title = mkn_espionage.2.t
+	desc = mkn_espionage.2.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = { name = mkn_espionage.2.a }
+}

@@ -1,0 +1,94 @@
+{
+  "GER": [
+    [
+      "GER_imperial_field_exercises",
+      60,
+      180,
+      120,
+      "left",
+      "generic_army_support",
+      "GER_staff_manoeuvres",
+      "add_stability = -0.05 add_war_support = 0.05",
+      "planning_speed = 0.15 army_morale_factor = 0.05"
+    ],
+    [
+      "GER_reichstag_social_compact",
+      50,
+      180,
+      120,
+      "right",
+      "generic_political_discourse",
+      "GER_social_budget",
+      "add_stability = 0.05 add_war_support = -0.05",
+      "production_speed_industrial_complex_factor = 0.10"
+    ],
+    [
+      "GER_publish_military_audit",
+      35,
+      150,
+      90,
+      "right_small",
+      "generic_political_discourse",
+      "GER_military_accounts",
+      "add_stability = 0.05",
+      "political_power_gain = 0.15 army_attack_factor = -0.05"
+    ],
+    [
+      "GER_mediate_crown_and_chamber",
+      75,
+      180,
+      90,
+      "center",
+      "generic_political_discourse",
+      "GER_constitutional_truce",
+      "add_stability = 0.05 add_war_support = -0.05",
+      "consumer_goods_factor = -0.05"
+    ]
+  ],
+  "MKN": [
+    [
+      "MKN_tachanka_patrols",
+      45,
+      150,
+      90,
+      "left",
+      "generic_army_support",
+      "MKN_mobile_patrols",
+      "add_stability = -0.05 add_war_support = 0.05",
+      "army_speed_factor = 0.10 supply_consumption_factor = 0.05"
+    ],
+    [
+      "MKN_communal_seed_reserves",
+      40,
+      180,
+      120,
+      "right",
+      "generic_industry",
+      "MKN_seed_cooperatives",
+      "add_war_support = -0.05",
+      "consumer_goods_factor = -0.05 production_factory_efficiency_gain_factor = 0.10"
+    ],
+    [
+      "MKN_requisition_workshop_shifts",
+      50,
+      180,
+      120,
+      "left_small",
+      "generic_industry",
+      "MKN_extra_workshop_shifts",
+      "add_stability = -0.05",
+      "industrial_capacity_factory = 0.10 consumer_goods_factor = 0.05"
+    ],
+    [
+      "MKN_reconcile_village_and_front",
+      60,
+      150,
+      90,
+      "center",
+      "generic_political_discourse",
+      "MKN_recallable_front_delegates",
+      "add_stability = 0.05 army_experience = 10",
+      "army_morale_factor = 0.10 political_power_gain = -0.10"
+    ]
+  ]
+}

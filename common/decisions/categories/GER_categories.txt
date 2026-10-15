@@ -1,0 +1,5 @@
+GER_bop_decisions_category = {
+	icon = GFX_focus_GER_our_place_in_the_sun
+	allowed = { original_tag = GER }
+	visible = { has_focus_tree = GER_focus }
+}

@@ -1,0 +1,22 @@
+# No phase-level equipment costs: the operation's base cost is 200 rifles.
+mkn_expropriation_infiltrate = {
+	name = mkn_expropriation_infiltrate
+	desc = mkn_expropriation_infiltrate_desc
+	outcome = mkn_expropriation_infiltrate_outcome
+	picture = GFX_phase_targeted_sabotage_organize_more_meetings
+	icon = GFX_phase_targeted_sabotage_organize_more_meetings_small
+}
+mkn_expropriation_open_vault = {
+	name = mkn_expropriation_open_vault
+	desc = mkn_expropriation_open_vault_desc
+	outcome = mkn_expropriation_open_vault_outcome
+	picture = GFX_phase_targeted_sabotage_plant_explosives
+	icon = GFX_phase_targeted_sabotage_plant_explosives_small
+}
+mkn_expropriation_escape = {
+	name = mkn_expropriation_escape
+	desc = mkn_expropriation_escape_desc
+	outcome = mkn_expropriation_escape_outcome
+	picture = GFX_phase_targeted_sabotage_immobilize_rolling_stock
+	icon = GFX_phase_targeted_sabotage_immobilize_rolling_stock_small
+}

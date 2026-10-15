@@ -1,18 +1,47 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			GER = {
-				if = {
-					limit = {
-						has_focus_tree = GER_focus
-					}
-					nww_GER_disable_mefo = yes
+			every_country = {
+				limit = {
+					original_tag = GER
+					has_focus_tree = GER_focus
 				}
+				nww_GER_disable_mefo = yes
+				nww_GER_initialize_politics = yes
+				nww_GER_spartacist_victory_repair = yes
 			}
 		}
 	}
 	on_daily_GER = {
 		effect = {
+			nww_GER_spartacist_victory_repair = yes
+			if = {
+				limit = {
+					has_focus_tree = GER_focus
+				}
+				nww_GER_initialize_politics = yes
+				nww_GER_mitteleuropa_refusal_wargoals = yes
+				if = {
+					limit = {
+						date > 1936.12.30
+						NOT = {
+							has_country_flag = ger_wilhelm_ii_dead
+						}
+					}
+					country_event = {
+						id = ger_crisis.1
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = ger_wilhelm_ii_dead
+						NOT = {
+							has_completed_focus = GER_end_of_an_era
+						}
+					}
+					complete_national_focus = GER_end_of_an_era
+				}
+			}
 			if = {
 				limit = {
 					has_focus_tree = GER_focus
@@ -30,6 +59,44 @@ on_actions = {
 					}
 				}
 				nww_GER_disable_mefo = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					original_tag = GER
+					has_focus_tree = GER_focus
+					NOT = {
+						tag = GER
+					}
+				}
+				nww_GER_disable_mefo = yes
+				nww_GER_initialize_politics = yes
+				nww_GER_spartacist_victory_repair = yes
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GER
+					has_country_flag = ger_spartacist_side
+					has_government = communism
+					FROM = {
+						original_tag = GER
+						has_country_flag = ger_spartacist_loyalists
+					}
+				}
+				set_country_flag = ger_spartacist_victory
+				load_focus_tree = {
+					tree = GER_focus
+					keep_completed = yes
+				}
+				nww_GER_disable_mefo = yes
+				nww_GER_initialize_politics = yes
 			}
 		}
 	}

@@ -1,0 +1,7 @@
+leader_traits = {
+	ger_aging_monarch = {
+		random = no
+		stability_factor = -0.10
+		political_advisor_cost_factor = 0.25
+	}
+}

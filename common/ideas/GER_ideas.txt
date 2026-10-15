@@ -1,5 +1,98 @@
 ideas = {
 	country = {
+		GER_constitutional_monarchy = {
+			picture = generic_flexible_foreign_policy
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.20
+			}
+		}
+		GER_arsenal_of_democracy = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.20
+				industrial_capacity_factory = 0.20
+				army_defence_factor = 0.10
+			}
+		}
+		GER_the_new_reich = {
+			picture = generic_artillery_regiments
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.20
+				army_speed_factor = 0.10
+			}
+		}
+		GER_workers_militias = {
+			picture = generic_reserve_divisions
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+				army_morale_factor = 0.10
+			}
+		}
+		GER_imperial_overstretch = {
+			picture = generic_oppression
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.08
+				war_support_factor = -0.15
+			}
+		}
+		GER_master_of_mitteleuropa = {
+			picture = generic_flexible_foreign_policy
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				trade_laws_cost_factor = -0.20
+				master_ideology_drift = 0.05
+			}
+		}
+		GER_prussian_martial_spirit = {
+			picture = generic_artillery_regiments
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				planning_speed = 0.15
+			}
+		}
+		GER_gott_mit_uns = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.10
+				breakthrough_factor = 0.10
+			}
+		}
 		NWW_GER_quality = {
 			picture = generic_industrial_concern_1
 			removal_cost = -1
@@ -8,6 +101,48 @@ ideas = {
 			}
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GER_staff_manoeuvres = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.15
+				army_morale_factor = 0.05
+			}
+		}
+		GER_social_budget = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		GER_military_accounts = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				army_attack_factor = -0.05
+			}
+		}
+		GER_constitutional_truce = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

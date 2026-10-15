@@ -1,0 +1,14 @@
+[
+  {
+    "source": "dlc/dlc043_gotterdammerung/gfx/leaders/GER/portrait_GER_hans_vogel.dds",
+    "destination": "gfx/leaders/GER/NWW_hans_vogel.dds",
+    "sha256": "6cad09564efd9a3d99a51c8be861f96f2ee8a19992df7e1e1a838ffe367205da",
+    "operation": "byte-identical technical copy"
+  },
+  {
+    "source": "dlc/dlc043_gotterdammerung/gfx/leaders/GER/portrait_GER_ernst_thalmann.dds",
+    "destination": "gfx/leaders/GER/NWW_ernst_thalmann.dds",
+    "sha256": "850257eb954ebfb9c4251562f344589de9bc983426e0d7e4ba6212184fd59265",
+    "operation": "byte-identical technical copy"
+  }
+]

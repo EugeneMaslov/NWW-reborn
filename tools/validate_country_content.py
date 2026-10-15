@@ -149,6 +149,20 @@ scope_files += [ROOT / relative for relative in (
     'common/scripted_effects/MKN_effects.txt',
     'events/MKN_events.txt',
     'events/MKN_news_events.txt',
+    'events/MKN_espionage_events.txt',
+    'common/characters/MKN.txt',
+    'common/operations/MKN_operations.txt',
+    'common/operation_phases/MKN_operation_phases.txt',
+    'common/decisions/MKN_international_decisions.txt',
+    'common/decisions/categories/MKN_international_categories.txt',
+    'common/ideas/MKN_international_ideas.txt',
+    'common/scripted_effects/MKN_international_effects.txt',
+    'common/scripted_triggers/MKN_international_triggers.txt',
+    'common/on_actions/MKN_international_on_actions.txt',
+    'common/scripted_effects/GER_diplomacy_effects.txt',
+    'common/on_actions/GER_diplomacy_on_actions.txt',
+    'common/technologies/MKN_technologies.txt',
+    'interface/MKN_international.gfx',
     'interface/MKN_custom.gfx',
     'common/national_focus/MKN_frontier_focuses.txt',
     'common/decisions/MKN_ukr_border_decisions.txt',
@@ -539,10 +553,14 @@ from validate_mkn_frontier import validate_frontier
 validate_frontier(ROOT, GAME, check, localized)
 from validate_mkn_personnel import validate_personnel
 validate_personnel(ROOT, GAME, check, localized)
+from validate_mkn_international import validate_international
+validate_international(ROOT, GAME, check, localized)
 from validate_map_initialization import validate_map_initialization
 validate_map_initialization(ROOT, GAME, check)
 from validate_repository_layout import validate_layout
 validate_layout(ROOT, check)
+from validate_germany_politics import validate_germany
+validate_germany(ROOT, GAME, check)
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

@@ -39,3 +39,73 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+ id = mkn_news.10 title = mkn_news.10.t desc = mkn_news.10.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.10.a }
+}
+
+news_event = {
+ id = mkn_news.11 title = mkn_news.11.t desc = mkn_news.11.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.11.a }
+}
+
+news_event = {
+ id = mkn_news.12 title = mkn_news.12.t desc = mkn_news.12.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.12.a }
+}
+
+news_event = {
+ id = mkn_news.13 title = mkn_news.13.t desc = mkn_news.13.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.13.a }
+}
+
+news_event = {
+ id = mkn_news.14 title = mkn_news.14.t desc = mkn_news.14.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.14.a }
+}
+
+news_event = {
+ id = mkn_news.15 title = mkn_news.15.t desc = mkn_news.15.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.15.a }
+}
+
+news_event = {
+ id = mkn_news.16 title = mkn_news.16.t desc = mkn_news.16.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.16.a }
+}
+
+news_event = {
+ id = mkn_news.17 title = mkn_news.17.t desc = mkn_news.17.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.17.a }
+}
+
+news_event = {
+ id = mkn_news.18 title = mkn_news.18.t desc = mkn_news.18.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.18.a }
+}
+
+news_event = {
+ id = mkn_news.19 title = mkn_news.19.t desc = mkn_news.19.d
+ picture = GFX_report_event_generic_conference
+ major = yes is_triggered_only = yes
+ option = { name = mkn_news.19.a }
+}

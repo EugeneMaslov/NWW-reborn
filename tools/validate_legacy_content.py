@@ -26,6 +26,12 @@ event_ids={one(event,'id') for p,doc in documents(ROOT,'events/*.txt') for kind,
 modifiers=set(re.findall(r'^## ([\w]+)\s*$',(GAME/'documentation/modifiers_documentation.md').read_text(encoding='utf-8-sig'),re.M))
 # Ideology modifiers are generated dynamically; the installed advisor traits use them.
 modifiers.update(['democratic_drift','fascism_drift','communism_drift'])
+# The engine generates group cost modifiers from idea categories, e.g. trade_laws.
+# They are used by installed DLC but absent from modifiers_documentation.md.
+for root in (GAME, ROOT):
+    for p, doc in documents(root, 'common/ideas/*.txt'):
+        modifiers.update(group + '_cost_factor' for group, node, op in one(doc, 'ideas', [])
+                         if group and isinstance(node, list) and group != 'country')
 known_effects=set(re.findall(r'^## ([\w]+)\s*$',(GAME/'documentation/effects_documentation.md').read_text(encoding='utf-8-sig'),re.M))
 scripted={k for p,doc in documents(ROOT,'common/scripted_effects/*.txt') for k,v,o in doc}
 scope=[ROOT/c['destination'] for c in manifest['countries'].values()]

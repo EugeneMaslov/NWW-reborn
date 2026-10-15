@@ -26,7 +26,7 @@ def validate_crisis(root, game, check, localized):
     mission = one(one(decisions, 'MKN_succession_crisis_category'), 'MKN_civil_war_timer_mission')
     routes = {
         'fascism': ['military_takes_charge', 'arrest_demagogues', 'abolish_election_of_commanders', 'militarize_communes', 'standardize_workshops', 'iron_fist_trains', 'black_expansionism', 'the_black_horde'],
-        'democratic': ['triumph_of_free_soviets', 'pact_of_free_communes', 'abolish_general_staff', 'arms_to_the_people', 'black_international', 'propaganda_by_deed', 'autonomous_rail_crews', 'beacon_of_statelessness'],
+        'democratic': ['triumph_of_free_soviets', 'pact_of_free_communes', 'abolish_general_staff', 'arms_to_the_people', 'propaganda_by_deed', 'autonomous_rail_crews', 'beacon_of_statelessness'],
         'neutrality': ['peasant_delegates', 'grain_ultimatum', 'sever_urban_ties', 'every_farm_a_fortress', 'steppe_snipers', 'railway_sabotage', 'cavalry_ambush', 'impregnable_granary'],
         'communism': ['emergency_revkom', 'purge_irreconcilables', 'embassy_to_kharkov', 'integrate_steel_lines', 'red_military_specialists', 'tractors_for_grain', 'anti_imperialist_front', 'the_fatal_plenum'],
     }
@@ -46,6 +46,12 @@ def validate_crisis(root, game, check, localized):
                 check(one(one(one(f, 'completion_reward'), 'set_politics'), 'elections_allowed') == 'no', f'{fid}: incomplete election tooltip')
             if i == 1:
                 check(one(one(f, 'completion_reward'), 'MKN_resolve_succession_crisis') == 'yes', f'{fid}: does not stop the crisis')
+    international = focuses['MKN_black_international']
+    localized('MKN_black_international', 'MKN shared International')
+    localized('MKN_black_international_desc', 'MKN shared International')
+    check(not values(international, 'prerequisite'), 'MKN International: shared gate must avoid cross-branch connectors')
+    prepared = set(values(one(one(international, 'available'), 'OR'), 'has_completed_focus'))
+    check(prepared == {'MKN_arms_to_the_people', 'MKN_every_farm_a_fortress'}, 'MKN International: missing syndicalist/agrarian preparation')
     departure = focuses['MKN_departure_of_batko']
     check(one(departure, 'cost') == '5' and one(one(departure, 'available'), 'always') == 'no', 'MKN: funeral must be event-completed and preserve uniform focus costs')
     check(not one(departure, 'completion_reward'), 'MKN: funeral focus replays a political reward')

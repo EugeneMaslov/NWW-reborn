@@ -1,0 +1,18 @@
+﻿l_russian:
+ # GER-only party labels and leader subtypes; standard global groups retain their rules.
+ GER_fascism_party:0 "Пангерманизм"
+ GER_fascism_party_long:0 "Пангерманизм"
+ GER_pan_germanism:0 "Пангерманизм"
+ GER_pan_germanism_desc:0 "Радикальное националистическое движение за расширенное германское государство."
+ GER_democratic_party:0 "Социал-демократия"
+ GER_democratic_party_long:0 "Социал-демократия"
+ GER_social_democracy:0 "Социал-демократия"
+ GER_social_democracy_desc:0 "Парламентское правление, социальные реформы и добровольное международное сотрудничество."
+ GER_communism_party:0 "Спартакизм"
+ GER_communism_party_long:0 "Спартакизм"
+ GER_spartacism:0 "Спартакизм"
+ GER_spartacism_desc:0 "Революционное германское движение рабочих советов."
+ GER_neutrality_party:0 "Имперская автократия"
+ GER_neutrality_party_long:0 "Имперская автократия"
+ GER_imperial_autocracy:0 "Имперская автократия"
+ GER_imperial_autocracy_desc:0 "Имперская власть принадлежит короне и её военным учреждениям."

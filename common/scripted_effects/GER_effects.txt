@@ -1,3 +1,4 @@
+# Owner: GER. Native effects and guarded lifecycle repair.
 nww_GER_disable_mefo = {
 	if = {
 		limit = {
@@ -164,4 +165,612 @@ nww_GER_disable_mefo = {
 		GER_industrial_consumer_goods_factor = 0
 	}
 	set_country_flag = NWW_GER_no_mefo
+}
+nww_GER_initialize_politics = {
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = GER_abolish_the_hohenzollerns
+				has_country_flag = ger_spartacist_side
+				has_country_flag = ger_bop_removed
+			}
+		}
+		set_country_flag = ger_bop_removed
+		if = {
+			limit = {
+				has_power_balance = {
+					id = GER_kaiser_vs_reichstag
+				}
+			}
+			remove_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = {
+					has_power_balance = {
+						id = GER_kaiser_vs_reichstag
+					}
+				}
+			}
+			set_power_balance = {
+				id = GER_kaiser_vs_reichstag
+				set_default = yes
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_completed_focus = GER_parliamentary_spring
+					has_country_flag = ger_parliamentary_spring
+				}
+			}
+			set_country_flag = ger_bop_frozen
+			if = {
+				limit = {
+					NOT = {
+						power_balance_value = {
+							id = GER_kaiser_vs_reichstag
+							value = 1
+						}
+					}
+				}
+				set_power_balance = {
+					id = GER_kaiser_vs_reichstag
+					set_value = 1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = GER_dissolve_the_reichstag
+			}
+			set_country_flag = ger_bop_frozen
+			if = {
+				limit = {
+					NOT = {
+						power_balance_value = {
+							id = GER_kaiser_vs_reichstag
+							value = -1
+						}
+					}
+				}
+				set_power_balance = {
+					id = GER_kaiser_vs_reichstag
+					set_value = -1
+				}
+			}
+		}
+	}
+	nww_GER_eastern_war_guard = yes
+	nww_GER_set_party_labels = yes
+}
+nww_GER_litbel_war_guard = {
+	nww_GER_eastern_war_guard = yes
+}
+nww_GER_mitteleuropa_demand = {
+	if = {
+		limit = {
+			exists = yes
+			NOT = {
+				has_war_with = GER
+			}
+			GER = {
+				exists = yes
+				is_subject = no
+				has_government = neutrality
+			}
+			date > 1938.12.31
+		}
+		if = {
+			limit = {
+				is_subject_of = GER
+				NOT = {
+					has_autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				GER = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_integrated_puppet
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+			}
+			else = {
+				GER = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_puppet
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				is_subject = no
+			}
+			country_event = {
+				id = ger_crisis.20
+				days = 1
+			}
+		}
+	}
+}
+nww_GER_mitteleuropa_refusal_wargoals = {
+	if = {
+		limit = {
+			has_completed_focus = GER_reign_in_mitteleuropa
+			has_government = neutrality
+			is_subject = no
+			NOT = {
+				date < 1939.1.1
+			}
+			LTB = {
+				exists = yes
+				is_subject = no
+				has_country_flag = ger_mitteleuropa_refused
+			}
+			NOT = {
+				has_war_with = LTB
+			}
+			NOT = {
+				is_ally_with = LTB
+			}
+			NOT = {
+				has_wargoal_against = LTB
+			}
+			date > 1938.12.31
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = LTB
+		}
+		LTB = {
+			clr_country_flag = ger_mitteleuropa_refused
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = GER_reign_in_mitteleuropa
+			has_government = neutrality
+			is_subject = no
+			POL = {
+				exists = yes
+				is_subject = no
+				has_country_flag = ger_mitteleuropa_refused
+			}
+			NOT = {
+				has_war_with = POL
+			}
+			NOT = {
+				is_ally_with = POL
+			}
+			NOT = {
+				has_wargoal_against = POL
+			}
+			date > 1938.12.31
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = POL
+		}
+		POL = {
+			clr_country_flag = ger_mitteleuropa_refused
+		}
+	}
+}
+nww_GER_eastern_wargoals = {
+	if = {
+		limit = {
+			MKN = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = MKN
+			}
+			NOT = {
+				is_ally_with = MKN
+			}
+			NOT = {
+				has_wargoal_against = MKN
+			}
+			date > 1938.12.31
+			has_government = neutrality
+			is_subject = no
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = MKN
+		}
+	}
+	if = {
+		limit = {
+			UKR = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = UKR
+			}
+			NOT = {
+				is_ally_with = UKR
+			}
+			NOT = {
+				has_wargoal_against = UKR
+			}
+			date > 1938.12.31
+			has_government = neutrality
+			is_subject = no
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = UKR
+		}
+	}
+}
+nww_GER_eastern_war_guard = {
+	if = {
+		limit = {
+			date < 1939.1.1
+			NOT = {
+				has_country_flag = ger_eastern_war_guard
+			}
+		}
+		add_relation_rule_override = {
+			target = LTB
+			usage_desc = GER_eastern_war_guard_tt
+			can_not_declare_war = yes
+		}
+		add_relation_rule_override = {
+			target = POL
+			usage_desc = GER_eastern_war_guard_tt
+			can_not_declare_war = yes
+		}
+		add_relation_rule_override = {
+			target = UKR
+			usage_desc = GER_eastern_war_guard_tt
+			can_not_declare_war = yes
+		}
+		add_relation_rule_override = {
+			target = MKN
+			usage_desc = GER_eastern_war_guard_tt
+			can_not_declare_war = yes
+		}
+		add_relation_rule_override = {
+			target = SOV
+			usage_desc = GER_eastern_war_guard_tt
+			can_not_declare_war = yes
+		}
+		set_country_flag = ger_eastern_war_guard
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				date < 1939.1.1
+			}
+			has_country_flag = ger_eastern_war_guard
+		}
+		remove_relation_rule_override = {
+			target = LTB
+			can_not_declare_war = yes
+		}
+		remove_relation_rule_override = {
+			target = POL
+			can_not_declare_war = yes
+		}
+		remove_relation_rule_override = {
+			target = UKR
+			can_not_declare_war = yes
+		}
+		remove_relation_rule_override = {
+			target = MKN
+			can_not_declare_war = yes
+		}
+		remove_relation_rule_override = {
+			target = SOV
+			can_not_declare_war = yes
+		}
+		clr_country_flag = ger_eastern_war_guard
+	}
+	if = {
+		limit = {
+			NOT = {
+				date < 1939.1.1
+			}
+			has_country_flag = ger_litbel_war_guard
+		}
+		remove_relation_rule_override = {
+			target = LTB
+			can_not_declare_war = yes
+		}
+		clr_country_flag = ger_litbel_war_guard
+	}
+}
+nww_GER_set_party_labels = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = ger_party_labels_set
+			}
+		}
+		set_party_name = {
+			ideology = neutrality
+			name = GER_neutrality_party
+			long_name = GER_neutrality_party_long
+		}
+		set_party_name = {
+			ideology = democratic
+			name = GER_democratic_party
+			long_name = GER_democratic_party_long
+		}
+		set_party_name = {
+			ideology = fascism
+			name = GER_fascism_party
+			long_name = GER_fascism_party_long
+		}
+		set_party_name = {
+			ideology = communism
+			name = GER_communism_party
+			long_name = GER_communism_party_long
+		}
+		set_country_flag = ger_party_labels_set
+	}
+}
+nww_GER_establish_mitteleuropa = {
+	if = {
+		limit = {
+			is_in_faction = no
+		}
+		create_faction_from_template = {
+			template = faction_template_GER_mitteleuropa
+			name = GER_mitteleuropa_faction
+		}
+	}
+	else_if = {
+		limit = {
+			is_faction_leader = yes
+		}
+		set_faction_name = GER_mitteleuropa_faction
+		set_faction_manifest = faction_manifest_defense_of_democracy_allies
+		set_faction_rule = joining_rule_non_fascist
+		set_faction_rule = joining_rule_has_no_offensive_war
+		set_faction_rule = faction_peace_rule_liberation_focus
+	}
+}
+nww_GER_free_eastern_subjects = {
+	if = {
+		limit = {
+			LTB = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		set_autonomy = {
+			target = LTB
+			autonomy_state = autonomy_free
+			end_wars = no
+			end_civil_wars = no
+		}
+	}
+	if = {
+		limit = {
+			POL = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		set_autonomy = {
+			target = POL
+			autonomy_state = autonomy_free
+			end_wars = no
+			end_civil_wars = no
+		}
+	}
+}
+nww_GER_democratic_community_offer = {
+	if = {
+		limit = {
+			exists = yes
+			NOT = {
+				has_war_with = ROOT
+			}
+		}
+		if = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_subject = no
+				NOT = {
+					has_country_flag = ger_economic_community_accepted
+				}
+			}
+			country_event = {
+				id = ger_crisis.50
+				days = 1
+			}
+		}
+	}
+}
+nww_GER_start_spartacist_civil_war = {
+	set_country_flag = ger_spartacist_civil_war_started
+	set_country_flag = ger_spartacist_loyalists
+	set_country_flag = ger_bop_frozen
+	start_civil_war = {
+		ideology = communism
+		size = 0.40
+		set_country_flag = ger_spartacist_civil_war_started
+		set_country_flag = ger_spartacist_side
+		set_cosmetic_tag = GER
+		if = {
+			limit = {
+				is_in_faction = yes
+			}
+			leave_faction = yes
+		}
+		clr_country_flag = ger_spartacist_loyalists
+		set_country_flag = ger_wilhelm_ii_dead
+		set_country_flag = ger_bop_removed
+		load_focus_tree = {
+			tree = GER_focus
+			keep_completed = yes
+			copy_completed_from = ROOT
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			election_frequency = 48
+		}
+		GER_wilhelm_pieck = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = GER_spartacism
+					expire = 1965.1.1
+					traits = {
+
+					}
+				}
+				promote_leader = yes
+			}
+		}
+		clr_country_flag = ger_eastern_war_guard
+		nww_GER_disable_mefo = yes
+		nww_GER_initialize_politics = yes
+		change_tag_from = ROOT
+		ROOT = {
+			GER_ernst_thalmann = {
+				set_nationality = PREV.PREV
+			}
+		}
+	}
+}
+nww_GER_spartacist_victory_repair = {
+	if = {
+		limit = {
+			has_country_flag = ger_spartacist_side
+			has_completed_focus = GER_german_soviet_republic
+			has_government = communism
+		}
+		set_country_flag = ger_spartacist_victory
+	}
+}
+nww_GER_pan_german_eastern_wargoals = {
+	if = {
+		limit = {
+			has_government = fascism
+			is_subject = no
+			date > 1938.12.31
+			LTB = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = LTB
+			}
+			NOT = {
+				is_ally_with = LTB
+			}
+			NOT = {
+				has_wargoal_against = LTB
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = LTB
+		}
+	}
+	if = {
+		limit = {
+			has_government = fascism
+			is_subject = no
+			date > 1938.12.31
+			POL = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = POL
+			}
+			NOT = {
+				is_ally_with = POL
+			}
+			NOT = {
+				has_wargoal_against = POL
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = POL
+		}
+	}
+}
+nww_GER_western_revolution_wargoals = {
+	if = {
+		limit = {
+			has_government = communism
+			is_subject = no
+			FRA = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = FRA
+			}
+			NOT = {
+				is_ally_with = FRA
+			}
+			NOT = {
+				has_wargoal_against = FRA
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FRA
+		}
+	}
+	if = {
+		limit = {
+			has_government = communism
+			is_subject = no
+			ENG = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = ENG
+			}
+			NOT = {
+				is_ally_with = ENG
+			}
+			NOT = {
+				has_wargoal_against = ENG
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		}
+	}
 }

@@ -1,0 +1,11 @@
+# Owner: MKN. Native army large/small pattern: common/characters/SPR.txt.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_MKN_buenaventura_durruti"
+		texturefile = "gfx/leaders/MKN/buenaventura_durruti.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MKN_buenaventura_durruti_small"
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_buenaventura_durruti.dds"
+	}
+}

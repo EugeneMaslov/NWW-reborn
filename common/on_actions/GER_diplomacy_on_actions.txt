@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { original_tag = GER has_focus_tree = GER_focus }
+				nww_GER_remove_starting_axis = yes
+			}
+		}
+	}
+	on_daily_GER = { effect = { nww_GER_remove_starting_axis = yes } }
+}

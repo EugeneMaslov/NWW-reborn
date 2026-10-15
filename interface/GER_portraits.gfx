@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_NWW_GER_hans_vogel
+		texturefile = "gfx/leaders/GER/NWW_hans_vogel.dds"
+	}
+	spriteType = {
+		name = GFX_NWW_GER_ernst_thalmann
+		texturefile = "gfx/leaders/GER/NWW_ernst_thalmann.dds"
+	}
+}

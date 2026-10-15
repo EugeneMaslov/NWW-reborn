@@ -1,0 +1,22 @@
+NWW_GER_historical = {
+	name = GER_nww_historical_plan
+	desc = GER_nww_historical_plan_desc
+	allowed = { original_tag = GER }
+	enable = { is_historical_focus_on = yes has_focus_tree = GER_focus }
+	abort = { is_subject = yes }
+	ai_national_focuses = {
+		GER_the_gilded_colossus
+		GER_fund_the_reichswehr
+		GER_krupp_and_thyssen
+		GER_the_kaiser_endures
+		GER_prussian_traditions
+		GER_the_potsdam_coup
+		GER_dissolve_the_reichstag
+		GER_reign_in_mitteleuropa
+		GER_the_austrian_question
+		GER_crush_eastern_syndicates
+		GER_gott_mit_uns
+	}
+	focus_factors = { GER_empower_the_chancellor = 0 }
+	weight = { factor = 100 }
+}

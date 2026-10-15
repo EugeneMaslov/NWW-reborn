@@ -1,0 +1,134 @@
+mkn_black_international_category = {
+	MKN_welcome_cnt_fai_exiles = {
+		icon = generic_army_support
+		cost = 50
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = MKN_cnt_fai_exiles_welcomed
+			}
+			has_completed_focus = MKN_black_international
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MKN_cnt_fai_exiles_welcomed
+					}
+					has_completed_focus = MKN_black_international
+				}
+				set_country_flag = MKN_cnt_fai_exiles_welcomed
+				if = {
+					limit = {
+						NOT = {
+							has_character = MKN_buenaventura_durruti
+						}
+					}
+					recruit_character = MKN_buenaventura_durruti
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_harbor_spartacist_engineers = {
+		icon = generic_industry
+		cost = 50
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = MKN_spartacist_engineers_welcomed
+			}
+			has_completed_focus = MKN_black_international
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MKN_spartacist_engineers_welcomed
+					}
+					has_completed_focus = MKN_black_international
+				}
+				set_country_flag = MKN_spartacist_engineers_welcomed
+				add_timed_idea = {
+					idea = MKN_spartacist_engineers
+					days = 180
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_accept_italian_mechanics = {
+		icon = generic_research
+		cost = 50
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = MKN_italian_mechanics_welcomed
+			}
+			has_completed_focus = MKN_black_international
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MKN_italian_mechanics_welcomed
+					}
+					has_completed_focus = MKN_black_international
+				}
+				set_country_flag = MKN_italian_mechanics_welcomed
+				add_tech_bonus = {
+					name = MKN_italian_mechanics_bonus
+					bonus = 1.0
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_smuggle_kronstadt_sailors = {
+		icon = generic_naval
+		cost = 50
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = MKN_kronstadt_sailors_welcomed
+			}
+			has_completed_focus = MKN_black_international
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MKN_kronstadt_sailors_welcomed
+					}
+					has_completed_focus = MKN_black_international
+				}
+				set_country_flag = MKN_kronstadt_sailors_welcomed
+				add_manpower = 10000
+				navy_experience = 15
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

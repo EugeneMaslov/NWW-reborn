@@ -1,0 +1,2 @@
+# Compatibility dispatch: the requested OOB ID loads the country-owned definition.
+instant_effect = { load_oob = MKN_black_guard }

@@ -1,0 +1,455 @@
+GER_bop_decisions_category = {
+	GER_consult_the_general_staff = {
+		icon = GFX_focus_GER_prussian_legacy
+		cost = 50
+		days_re_enable = 30
+		visible = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value > -1
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ger_bop_frozen
+					}
+				}
+				add_power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value = -0.10
+					tooltip_side = GER_ohl_and_crown_side
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value < -0.20
+				}
+			}
+		}
+	}
+	GER_concede_to_parliament = {
+		icon = GFX_focus_GER_monarchy_compromise
+		cost = 50
+		days_re_enable = 30
+		visible = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value < 1
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ger_bop_frozen
+					}
+				}
+				add_power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value = 0.10
+					tooltip_side = GER_reichstag_side
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GER_rally_pan_german_leagues = {
+		icon = GFX_focus_GER_brothers_in_arms
+		cost = 50
+		days_re_enable = 30
+		visible = {
+			has_completed_focus = GER_pan_german_leagues
+			nww_GER_no_political_path = yes
+		}
+		available = {
+			nww_GER_no_political_path = yes
+			NOT = {
+				fascism > 0.90
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					nww_GER_no_political_path = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.10
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	GER_organize_workers_councils = {
+		icon = GFX_focus_GER_legacy_of_the_spartacus_league
+		cost = 50
+		days_re_enable = 30
+		visible = {
+			has_completed_focus = GER_organize_ruhr_workers
+			nww_GER_no_political_path = yes
+		}
+		available = {
+			nww_GER_no_political_path = yes
+			NOT = {
+				communism > 0.90
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					nww_GER_no_political_path = yes
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	GER_imperial_field_exercises = {
+		icon = generic_army_support
+		cost = 60
+		days_re_enable = 180
+		visible = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+		}
+		available = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value > -1
+			}
+			NOT = {
+				has_idea = GER_staff_manoeuvres
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_power_balance = {
+						id = GER_kaiser_vs_reichstag
+					}
+					NOT = {
+						has_country_flag = ger_bop_frozen
+					}
+					power_balance_value = {
+						id = GER_kaiser_vs_reichstag
+						value > -1
+					}
+					NOT = {
+						has_idea = GER_staff_manoeuvres
+					}
+				}
+				add_power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value = -0.10
+					tooltip_side = GER_ohl_and_crown_side
+				}
+				add_stability = -0.05
+				add_war_support = 0.05
+				add_timed_idea = {
+					idea = GER_staff_manoeuvres
+					days = 120
+				}
+			}
+			else = {
+				add_political_power = 60
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	GER_reichstag_social_compact = {
+		icon = generic_political_discourse
+		cost = 50
+		days_re_enable = 180
+		visible = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+		}
+		available = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value < 1
+			}
+			NOT = {
+				has_idea = GER_social_budget
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_power_balance = {
+						id = GER_kaiser_vs_reichstag
+					}
+					NOT = {
+						has_country_flag = ger_bop_frozen
+					}
+					power_balance_value = {
+						id = GER_kaiser_vs_reichstag
+						value < 1
+					}
+					NOT = {
+						has_idea = GER_social_budget
+					}
+				}
+				add_power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value = 0.10
+					tooltip_side = GER_reichstag_side
+				}
+				add_stability = 0.05
+				add_war_support = -0.05
+				add_timed_idea = {
+					idea = GER_social_budget
+					days = 120
+				}
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	GER_publish_military_audit = {
+		icon = generic_political_discourse
+		cost = 35
+		days_re_enable = 150
+		visible = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+		}
+		available = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+			power_balance_value = {
+				id = GER_kaiser_vs_reichstag
+				value < 1
+			}
+			NOT = {
+				has_idea = GER_military_accounts
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_power_balance = {
+						id = GER_kaiser_vs_reichstag
+					}
+					NOT = {
+						has_country_flag = ger_bop_frozen
+					}
+					power_balance_value = {
+						id = GER_kaiser_vs_reichstag
+						value < 1
+					}
+					NOT = {
+						has_idea = GER_military_accounts
+					}
+				}
+				add_power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value = 0.05
+					tooltip_side = GER_reichstag_side
+				}
+				add_stability = 0.05
+				add_timed_idea = {
+					idea = GER_military_accounts
+					days = 90
+				}
+			}
+			else = {
+				add_political_power = 35
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	GER_mediate_crown_and_chamber = {
+		icon = generic_political_discourse
+		cost = 75
+		days_re_enable = 180
+		visible = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+		}
+		available = {
+			has_power_balance = {
+				id = GER_kaiser_vs_reichstag
+			}
+			NOT = {
+				has_country_flag = ger_bop_frozen
+			}
+			OR = {
+				power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value < -0.10
+				}
+				power_balance_value = {
+					id = GER_kaiser_vs_reichstag
+					value > 0.10
+				}
+			}
+			NOT = {
+				has_idea = GER_constitutional_truce
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_power_balance = {
+						id = GER_kaiser_vs_reichstag
+					}
+					NOT = {
+						has_country_flag = ger_bop_frozen
+					}
+					OR = {
+						power_balance_value = {
+							id = GER_kaiser_vs_reichstag
+							value < -0.10
+						}
+						power_balance_value = {
+							id = GER_kaiser_vs_reichstag
+							value > 0.10
+						}
+					}
+					NOT = {
+						has_idea = GER_constitutional_truce
+					}
+				}
+				if = {
+					limit = {
+						power_balance_value = {
+							id = GER_kaiser_vs_reichstag
+							value < 0
+						}
+					}
+					add_power_balance_value = {
+						id = GER_kaiser_vs_reichstag
+						value = 0.10
+						tooltip_side = GER_reichstag_side
+					}
+				}
+				else = {
+					add_power_balance_value = {
+						id = GER_kaiser_vs_reichstag
+						value = -0.10
+						tooltip_side = GER_ohl_and_crown_side
+					}
+				}
+				add_stability = 0.05
+				add_war_support = -0.05
+				add_timed_idea = {
+					idea = GER_constitutional_truce
+					days = 90
+				}
+			}
+			else = {
+				add_political_power = 75
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+}

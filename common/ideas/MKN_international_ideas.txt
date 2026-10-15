@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+		MKN_expropriated_funds = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = MKN_expropriated_funds_factories_tt
+			}
+			on_remove = {
+				MKN_clear_expropriation_factories = yes
+			}
+		}
+		MKN_spartacist_engineers = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = MKN_spartacist_factory_active
+						}
+					}
+					set_country_flag = MKN_spartacist_factory_active
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = MKN_spartacist_factory_active
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = -1
+					}
+					clr_country_flag = MKN_spartacist_factory_active
+				}
+			}
+			modifier = {
+				custom_modifier_tooltip = MKN_spartacist_factory_tt
+			}
+		}
+		MKN_marusyas_legacy = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = MKN
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			on_add = {
+				set_technology = {
+					MKN_marusya_assault_training = 1
+				}
+			}
+			on_remove = {
+				set_technology = {
+					MKN_marusya_assault_training = 0
+				}
+			}
+			modifier = {
+				breakthrough_factor = 0.10
+				army_morale_factor = 0.05
+				custom_modifier_tooltip = MKN_marusya_urban_attack_tt
+			}
+		}
+	}
+}

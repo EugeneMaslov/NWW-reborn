@@ -1,0 +1,90 @@
+NWW_GER_ltb_restraint = {
+	enable = {
+		original_tag = GER
+		has_focus_tree = GER_focus
+		date < 1939.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = LTB
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = LTB
+		value = -1000
+	}
+}
+NWW_GER_pol_restraint = {
+	enable = {
+		original_tag = GER
+		has_focus_tree = GER_focus
+		date < 1939.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = POL
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = POL
+		value = -1000
+	}
+}
+NWW_GER_ukr_restraint = {
+	enable = {
+		original_tag = GER
+		has_focus_tree = GER_focus
+		date < 1939.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = UKR
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = UKR
+		value = -1000
+	}
+}
+NWW_GER_mkn_restraint = {
+	enable = {
+		original_tag = GER
+		has_focus_tree = GER_focus
+		date < 1939.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = MKN
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = MKN
+		value = -1000
+	}
+}
+NWW_GER_sov_restraint = {
+	enable = {
+		original_tag = GER
+		has_focus_tree = GER_focus
+		date < 1939.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = SOV
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SOV
+		value = -1000
+	}
+}

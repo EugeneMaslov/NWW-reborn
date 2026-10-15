@@ -1,0 +1,89 @@
+# Owner: MKN. A target is permanently reserved at launch, including failed/aborted attempts.
+mkn_expropriate_funds_operation = {
+	icon = GFX_operations_steal_blueprints
+	map_icon = GFX_operations_steal_blueprints_map
+	name = mkn_expropriate_funds_operation
+	desc = mkn_expropriate_funds_operation_desc
+	priority = 20
+	days = 45
+	operatives = 1
+	network_strength = 30
+	allowed = {
+		original_tag = MKN
+		has_dlc = "La Resistance"
+	}
+	visible = {
+		MKN_expropriation_geographic_target = yes
+	}
+	available = {
+		has_dlc = "La Resistance"
+		MKN_valid_expropriation_target = yes
+		network_strength = {
+			target = FROM
+			value > 30
+		}
+		intel_level_over = {
+			target = FROM
+			civilian_intel > 0.20
+		}
+	}
+	requirements = {
+		has_dlc = "La Resistance"
+		MKN_expropriation_geographic_target = yes
+	}
+	equipment = {
+		infantry_equipment = 200
+	}
+	return_on_complete = no
+	cost_multiplier = 0
+	risk_chance = 0.10
+	risk_modifiers = {
+		operation_risk
+	}
+	cost_modifiers = {
+		operation_cost
+	}
+	outcome_potential = {
+		custom_effect_tooltip = MKN_expropriation_outcomes_tt
+	}
+	outcome_execute = {
+		ROOT = {
+			if = {
+				limit = {
+					MKN_expropriation_outcome_allowed = yes
+				}
+				random_list = {
+					80 = {
+						MKN_expropriation_success = yes
+					}
+					20 = {
+						MKN_expropriation_failure = yes
+					}
+				}
+			}
+		}
+	}
+	phases = {
+		mkn_expropriation_infiltrate = {
+			base = 1
+		}
+	}
+	phases = {
+		mkn_expropriation_open_vault = {
+			base = 1
+		}
+	}
+	phases = {
+		mkn_expropriation_escape = {
+			base = 1
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	on_start = {
+		ROOT = {
+			MKN_begin_expropriation = yes
+		}
+	}
+}
