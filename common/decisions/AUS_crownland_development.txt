@@ -1,0 +1,36 @@
+AUS_nww_crownland_development = {
+ AUS_nww_grant_crownland = {
+  icon = GFX_decision_AUS_nww_eagle
+  state_target = yes
+  fire_only_once = no
+  target_root_trigger = { original_tag = AUS }
+  target_trigger = {
+   FROM = {
+    AUS_nww_can_receive_charter = yes
+   }
+  }
+  on_map_mode = map_and_decisions_view
+  cost = 75
+  visible = { FROM = { AUS_nww_can_receive_charter = yes } }
+  available = {
+   NOT = { has_country_flag = AUS_nww_charter_cooldown }
+   FROM = { AUS_nww_can_receive_charter = yes }
+  }
+  complete_effect = {
+   if = {
+    limit = {
+     NOT = { has_country_flag = AUS_nww_charter_cooldown }
+     FROM = { AUS_nww_can_receive_charter = yes }
+    }
+    set_country_flag = { flag = AUS_nww_charter_cooldown days = 30 }
+    FROM = {
+     set_state_flag = AUS_nww_crownland_charter
+     add_dynamic_modifier = { modifier = AUS_nww_crownland_charter }
+    }
+   }
+   else = { add_political_power = 75 }
+  }
+  highlight_states = { highlight_state_targets = { state = FROM } }
+  ai_will_do = { base = 1 }
+ }
+}

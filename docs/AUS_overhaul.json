@@ -1,0 +1,59 @@
+{
+  "playable_focuses": 159,
+  "political_routes": [
+    [
+      "absolute",
+      "AUS_reinstate_the_imperial_council",
+      0,
+      "neutrality",
+      "Вся власть кайзеру",
+      "All Power to the Kaiser"
+    ],
+    [
+      "constitutional",
+      "AUS_hold_elections",
+      6,
+      "democratic",
+      "Кайзер и конституция",
+      "The Kaiser and the Constitution"
+    ],
+    [
+      "fascist",
+      "AUS_nww2_fascist_settlement",
+      12,
+      "fascism",
+      "Свергнуть Габсбурга: директория",
+      "Depose the Habsburg: Directorate"
+    ],
+    [
+      "communist",
+      "AUS_nww2_communist_settlement",
+      18,
+      "communism",
+      "Свергнуть Габсбурга: рабочая республика",
+      "Depose the Habsburg: Workers Republic"
+    ],
+    [
+      "alternative",
+      "AUS_nww2_alternative_settlement",
+      24,
+      "neutrality",
+      "Новая династия Лихтенштейнов",
+      "The Liechtenstein Alternative"
+    ]
+  ],
+  "bohemian_states": [
+    9,
+    69,
+    72,
+    74,
+    75
+  ],
+  "galician_states": [
+    88,
+    89,
+    91
+  ],
+  "bukovina_state": 80,
+  "historical": "Habsburg absolutism; Hungary and Croatia full conquest; crown-land settlement"
+}

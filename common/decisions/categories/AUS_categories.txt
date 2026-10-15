@@ -1,7 +1,41 @@
+AUS_nww_crown_lands = {
+	scripted_gui = AUS_bohemian_ui
+	icon = GFX_decision_category_generic_political_actions
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		9 = {
+			is_owned_by = AUS
+		}
+		NOT = {
+			has_country_flag = AUS_nww_bohemia_settled
+		}
+		NOT = {
+			has_country_flag = AUS_nww_bohemia_seceded
+		}
+	}
+}
+AUS_nww_political_mandate = {
+	icon = GFX_decision_category_generic_political_actions
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		NOT = {
+			has_country_flag = AUS_nww_political_settlement
+		}
+	}
+}
 NWW_AUS_political_campaigns = {
 	icon = generic_political_actions
 	visible = {
-		tag = AUS
-		has_completed_focus = AUS_nww_rebuild
+		always = no
 	}
+}
+
+AUS_nww_crownland_development = {
+ icon = GFX_AUS_nww_eagle
+ allowed = { original_tag = AUS }
+ visible = { has_focus_tree = AUS_focus }
 }

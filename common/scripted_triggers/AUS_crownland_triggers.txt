@@ -1,0 +1,6 @@
+# State scope: both representations matter in saves predating charter flags.
+AUS_nww_can_receive_charter = {
+ is_owned_and_controlled_by = ROOT
+ NOT = { has_state_flag = AUS_nww_crownland_charter }
+ NOT = { has_dynamic_modifier = { modifier = AUS_nww_crownland_charter } }
+}

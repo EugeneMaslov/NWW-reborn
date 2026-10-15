@@ -1,94 +1,79 @@
 # NWW Reborn
 
-![NWW Reborn banner preview](nwwreborn_banner.svg)
+![NWW Reborn — мир без Первой мировой войны](docs/art/readme/nww-reborn-cover.png)
 
-> _"The guns of August 1914 never fired. Yet peace did not save the old world — it merely condemned it to rot from the inside."_
+**Первая мировая война не началась. Старые империи сохранились, но их внутренние противоречия никуда не исчезли.**
 
-**NWW Reborn** is a focused, lore-driven alternate-history modification for _Hearts of Iron IV_. It explores a world where the July Crisis of 1914 was resolved through diplomatic compromise. Without the slaughter of the Western Front, the great empires avoided catastrophic defeat, but could not outrun time.
+NWW Reborn — модификация для **Hearts of Iron IV 1.19.3** с альтернативной кампанией 1936 года. Здесь политические кризисы, национальные движения и борьба за промышленность определяют, кто переживёт следующий большой конфликт.
 
-By 1936, the Russian Empire has collapsed in a prolonged, chaotic internal revolution. In the fractured frontier between Kaiser Germany and the Soviet borderlands, new and fragile experiments have taken root: the precarious dual-state of the **Lithuanian-Belarusian Union**, and the stateless agrarian anomaly of the **Makhnovist Free Territory**.
+## Мир к 1936 году
 
-Here, borders are arguments, legitimacy is forged on the railways, and the next great war will not be decided in imperial palaces, but in the muddy trenches, forests, and steppes of Eastern Europe.
+Июльский кризис 1914 года завершился дипломатическим соглашением. Германия сохранила кайзера и заморские владения. Османская династия удержалась у власти и ищет путь возвращения на Балканы. Дунайская монархия распалась под давлением собственных противоречий, оставив Вене задачу нового объединения коронных земель.
 
----
+Российскую империю разрушила **Великая смута 1918–1922 годов**: земельный вопрос, продовольственный кризис, промышленные конфликты и провал конституционного компромисса. Революция произошла без мировой войны. На западе бывшей империи появились Советская Украина, Литовско-Белорусский Союз и Вольная территория Махно.
 
-## The World of 1936
+## Страны и реализованные механики
 
-- **The Kaiser's Hegemony:** Imperial Germany stands intact and unchallenged externally, yet its _Mitteleuropa_ sphere is strained by economic exhaustion and rising local nationalism.
-- **The Eurasian Fracture:** The Russian Empire disintegrated between 1918 and 1922 during the "Great Tumult". The Bolsheviks secured core industrial centers, but failed to tame the western borderlands and the southern steppes.
-- **The Danubian Dissolution:** The Austro-Hungarian Dual Monarchy decayed peacefully throughout the 1920s. Austria remains a formidable Alpine power, Hungary boils with irredentist bitterness, and Croatia stands proudly independent.
-- **The LitBel Compromise:** Established under German supervision as a buffer against revolution, the **Lithuanian-Belarusian Union (LTB)** is a fragile hybrid state paralyzed by ethnic rivalry between Kaunas and Minsk.
-- **The Steppe Experiment:** In southern Ukraine, the **Free Territory (Makhnovshchina)** has defied all odds, surviving on peasant goodwill, armored trains, and insurgent cavalry. But the revolution's golden age has ended.
+| Страна | Содержание кампании |
+| --- | --- |
+| **Литва-Беларусь — LTB** | Виленский компромисс или распад Союза; политические пути с подготовкой и поддержкой партии; собственные предприятия, штаб и последовательное преодоление стартовых проблем. |
+| **Махновщина — MKN** | Преемники Батьки, баланс штаба и вольных советов, кризис с дедлайном, гражданская война между властью и сильнейшей оппозицией, пограничная эскалация и развитие коммун. |
+| **Советская Украина — UKR** | Собственное дерево, политические мандаты, промышленная реконструкция и дипломатия с соседями через согласие или отказ. |
+| **Советская Россия — SOV** | Своя история революции, поэтапная реформа государства, экономики и армии; западное давление с 1939 года и подготовленный исторический выход к войне в 1940-м. |
+| **Австрия — AUS** | **159 игровых фокусов**: пять политических маршрутов, восстановление Австро-Венгрии, территориальные ультиматумы, соперничество с Германией и кризис Богемии. |
+| **Османская империя — TUR** | Платные последовательные переговоры с советами и династический балканский маршрут: Болгария, Греция, дальнейшее давление в регионе. |
+| **Германская империя — GER** | Кризис наследования, четыре политических пути, борьба за устройство империи и сохранённые заморские владения. |
 
----
+Венгрия и Афганистан также используют адаптированный контент старого NWW. Масштаб деревьев различается; другие страны продолжают разрабатываться.
 
-## Main Theatres of Conflict
+### Литва-Беларусь: сохранить Союз
 
-### 1. Makhnovist Ukraine: The Crucible of Huliaipole
+Виленский компромисс прекращает кризис и открывает мирное развитие. Исторический ИИ выбирает его вторым фокусом. При сохранённом Союзе избыточный кризисный фокус пропускается без повторного запуска распада.
 
-The Free Territory is not a nation — it is an armed, decentralized network of peasant soviets, workers' communes, and insurgent detachments held together by the legendary authority of **Nestor Makhno**.
+Реорганизация армии требует компромисса и разрешения кризиса. Политические переходы требуют подготовки и **не менее 40% поддержки** соответствующей партии. Половина дерева — 48 из 96 фокусов — занимает 70 дней: объединённый минимальный маршрут через основные стартовые штрафы рассчитан до августа 1938 года.
 
-By 1936, the experiment faces an existential crossroads:
+### Махновщина: преемники, коммуны и граница
 
-- **The Decaying Batko:** Makhno is severely afflicted by tuberculosis. As his health falters, the country suffers crippling penalties to stability, political power, and military cohesion.
-- **The Crisis of 1936:** Sometime between **May 1, 1936 and January 1, 1937**, a random event triggers: _The Batko's Final Breath_. Makhno departs or succumbs to illness, instantly activating a **180-day countdown to a four-way fratricidal civil war**.
-- **Balance of Power (BoP):** Manage the bitter tug-of-war between the **Emergency Military Staff** (centralization, iron discipline, offensive power) and the **Free Soviets** (grassroots democracy, militia defense, local autonomy).
-- **Cult of Railway Warfare:** Dominate the wide steppes with customized warfare:
-  - **Armored Trains:** Massively reduced production cost (-35%) and accelerated assembly.
-  - **Railway Artillery:** Rapid deployment and brutal +25% shore/field bombardment.
-  - **Tachankas:** Lightning-fast cavalry and motorized formations built for devastating steppe maneuvers.
+После смерти Махно начинается **180-дневный срок** для политического урегулирования. Четыре направления представляют анархо-милитаристов, анархо-коммунистов, аграрных изоляционистов и государственных синдикалистов. У каждого есть свои советники и политические институты. При срыве урегулирования власть сражается с одной сильнейшей оппозиционной фракцией; игрок выбирает сторону через решения.
 
-#### The Four Destinies of the Steppe
+Пограничный кризис с Советской Украиной открывается событием. Напряжённость пассивно растёт каждые **30 дней**. Отвод дозоров занимает **20 дней** и снижает её на один уровень после завершения действия. Победа в пограничном конфликте передаёт и интегрирует конкретный спорный регион. Киев исключён из таких целей; советские Сталино, Харьков и Крым доступны после подготовки донбасской агитации и при наличии общей границы. Окружение Киева в полноценной войне может вызвать капитуляцию Советской Украины.
 
-Players must race against the 180-day countdown to complete a faction-specific **lifesaver focus**, averting collapse:
+Промышленность и каждая военная служба развивают собственный постоянный дух. Есть специализированные предприятия и MIO, тачанки, бронепоезда, железнодорожная артиллерия, подготовка командиров, экспроприации и международная деятельность.
 
-1. **The Black Dictatorship (Anarcho-Militarism / Fascism):** Discard ideological purity for raw survival. Purge the pacifists, standardize production, and unleash _The Black Horde_ upon Lithuania-Belarus and the Soviets.
-2. **The True Utopia (Anarcho-Communism / Democratic):** Uphold Kropotkin’s purest vision. Abolish the officer corps, empower worker-peasant assemblies, export revolution through foreign subversion, and build an impenetrable _Stateless Bastion_.
-3. **The Wild Field (Agrarian Isolationism / Non-Aligned):** Sever ties with corrupt industrial cities. Fortify every farmhouse, dynamite railway bridges upon retreat, and turn the breadbasket into a poisonous trap for foreign invaders.
-4. **The Red Compromise (State Socialism / Communism):** Strike a desperate bargain with Soviet Russia and Soviet Ukraine. Integrate industrial networks and military command — while praying the Bolsheviks do not slip a dagger into your back once more.
+### Австрия: корона и коронные земли
 
----
+В 1936 году Австрией правит **Отто I Габсбург**. Исторический путь сохраняет кайзера и абсолютизм. Альтернативы — конституционная монархия, национальная директория, рабочая республика или новая династия Лихтенштейнов. Каждый путь получает подготовку, собственные учреждения и политические последствия.
 
-### 2. The Lithuanian-Belarusian Union (LitBel)
+Общая внешняя политика доступна при любом из пяти режимов: венгерская и хорватская кампании, восстановление Австро-Венгрии, требования Галиции у Польши и Буковины у Румынии, затем борьба за влияние в Центральной Европе. Получатель ультиматума выбирает уступку или отказ. Полное включение Венгрии и Хорватии по военной кампании требует их действительной капитуляции перед Австрией.
 
-Occupying the crucial corridor between Central Europe and Russia, the Union is an unstable confederation on the brink of divorce:
+**«Богемия желает отделиться»** — отдельная система напряжённости от 0 до 10. Каждый месяц она растёт; переговоры и инвестиции снижают её за время и политическую власть. На пределе Богемия провозглашает независимость. Долгосрочное решение проходит через языковую хартию, представительство, бюджетные соглашения и договор коронных земель.
 
-- **The Ethnic Duel:** Balance parliamentary influence between Lithuanian urban administrators and Belarusian agrarian populists.
-- **Economic Sovereignty:** Wean domestic industry off the German Mark without triggering industrial paralysis.
-- **Partition or Federation:** Choose whether to reinforce the fragile federal union, orchestrate a civilized split, or ignite a bitter civil war over disputed borders.
+Гражданская промышленность, военное производство и технологии разделены. Армия, авиация и флот имеют собственные программы развития; предусмотрены местные концерны, MIO, советники и командиры.
 
----
+## Установка и начало кампании
 
-### 3. Soviet Borderlands & Imperial Shadows
+1. Поместите папку `nwwreborn` в `Documents/Paradox Interactive/Hearts of Iron IV/mod/`.
+2. Файл запуска `nwwreborn.mod` должен находиться в папке `mod`, рядом с каталогом проекта. Его путь должен указывать на `mod/nwwreborn`.
+3. Добавьте NWW Reborn в набор модов Paradox Launcher и начните кампанию **1936 года**.
 
-The periphery is in constant motion:
+Основные тексты доступны на русском и английском. Функции DLC, включая MIO и конструкторы техники, включаются при наличии соответствующего дополнения. После крупных изменений карты или политических систем предпочтительна новая кампания. Совместимость с другими модами, меняющими карту, страны или деревья фокусов, отдельно не гарантируется.
 
-- **Soviet Ukraine & Soviet Russia:** Eager to settle old scores with the Makhnovist "bandits" and reclaim lost western frontiers.
-- **Imperial Germany:** Watching the buffer states with watchful eyes, ready to intervene should the revolution spill west.
-- **The Baltic Republics:** Latvia and Estonia maneuvering between German commercial domination and Soviet revanchism.
+## Разработка и проверки
 
----
+Страновой контент разделён по файлам: фокусы, идеи, события, решения и эффекты. Старый мод находится в `old-mod/noworldwarzhive`; его идеи адаптируются к текущему лору и движку. Скрытые определения совместимости с DLC не входят в заявленное число игровых фокусов Австрии.
 
-## Gameplay Mechanics
+Основные проверки из корня проекта:
 
-- **Native Balance of Power:** Custom UI mechanics controlling internal ideological friction in the Free Territory.
-- **Dynamic Crisis Missions:** High-stakes, timed missions that force players to prioritize political stability over reckless expansion.
-- **Worldwide News Dispatch:** Global events informing great powers of tectonic shifts, including the historic passing of Nestor Makhno.
-- **Asymmetric Warfare:** Deep buffs to local resistance, sabotage decisions, scorched earth, and mobile rail artillery rather than conventional frontline grinding.
-
----
-
-## Mod Structure
-
-```text
-├── common/
-│   ├── bop/               # Native Balance of Power mechanics (MKN Staff vs. Soviets)
-│   ├── country_tags/      # Custom tags (MKN, LTB, etc.)
-│   ├── decisions/         # BoP decisions, regional border raids, crisis countdowns
-│   ├── ideas/             # Custom national spirits, tachanka/railway modifiers
-│   └── national_focus/    # Custom, lore-rich political and military focus trees
-├── events/                # The 1936 Crisis events, global news events, split triggers
-├── history/               # 1936 OOBs, railway network placements, character setups
-├── interface/             # Custom GFX definitions for focus icons and event art
-└── localisation/          # Full Russian and English localization
+```powershell
+python tools/validate_country_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
+python tools/validate_legacy_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
+python tools/validate_austria_campaigns.py
+python tools/validate_austria_overhaul.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
+git diff --check
 ```
+
+Статические проверки проверяют ссылки, синтаксис и сценарии скриптов. Поведение интерфейса, ИИ и войн дополнительно проверяется в новой кампании по свежему `error.log`.
+
+Подробности: [Австрия](docs/AUS_overhaul.md), [советский лор](docs/SOV_lore_and_design.md), [темп LTB](docs/LTB_pacing.md), [механики МКН](docs/MKN_overhaul_completion.md), [политика Германии](docs/GER_political_framework.md).
+
+Обложка создана через imagegen специально для проекта. [Промпт](docs/art/readme/prompt.txt) и [оригинал изображения](docs/art/readme/nww-reborn-cover.png) сохранены в репозитории.

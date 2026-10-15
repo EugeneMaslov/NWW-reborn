@@ -1,0 +1,25 @@
+scripted_gui = {
+ AUS_bohemian_ui = {
+  context_type = decision_category
+  window_name = AUS_bohemian_window
+  visible = { original_tag = AUS }
+  triggers = {
+   AUS_seal_0_visible = { check_variable = { var = AUS_bohemian_tension value = 0 compare = greater_than_or_equals } }
+   AUS_seal_1_visible = { check_variable = { var = AUS_bohemian_tension value = 1 compare = greater_than_or_equals } }
+   AUS_seal_2_visible = { check_variable = { var = AUS_bohemian_tension value = 2 compare = greater_than_or_equals } }
+   AUS_seal_3_visible = { check_variable = { var = AUS_bohemian_tension value = 3 compare = greater_than_or_equals } }
+   AUS_seal_4_visible = { check_variable = { var = AUS_bohemian_tension value = 4 compare = greater_than_or_equals } }
+   AUS_seal_5_visible = { check_variable = { var = AUS_bohemian_tension value = 5 compare = greater_than_or_equals } }
+   AUS_seal_6_visible = { check_variable = { var = AUS_bohemian_tension value = 6 compare = greater_than_or_equals } }
+   AUS_seal_7_visible = { check_variable = { var = AUS_bohemian_tension value = 7 compare = greater_than_or_equals } }
+   AUS_seal_8_visible = { check_variable = { var = AUS_bohemian_tension value = 8 compare = greater_than_or_equals } }
+   AUS_seal_9_visible = { check_variable = { var = AUS_bohemian_tension value = 9 compare = greater_than_or_equals } }
+   AUS_seal_10_visible = { check_variable = { var = AUS_bohemian_tension value = 10 compare = greater_than_or_equals } }
+   AUS_stage_0_visible = { check_variable = { var = AUS_bohemian_tension value = 0 compare = greater_than_or_equals } check_variable = { var = AUS_bohemian_tension value = 2 compare = less_than_or_equals } }
+   AUS_stage_1_visible = { check_variable = { var = AUS_bohemian_tension value = 3 compare = greater_than_or_equals } check_variable = { var = AUS_bohemian_tension value = 4 compare = less_than_or_equals } }
+   AUS_stage_2_visible = { check_variable = { var = AUS_bohemian_tension value = 5 compare = greater_than_or_equals } check_variable = { var = AUS_bohemian_tension value = 6 compare = less_than_or_equals } }
+   AUS_stage_3_visible = { check_variable = { var = AUS_bohemian_tension value = 7 compare = greater_than_or_equals } check_variable = { var = AUS_bohemian_tension value = 9 compare = less_than_or_equals } }
+   AUS_stage_4_visible = { check_variable = { var = AUS_bohemian_tension value = 10 compare = greater_than_or_equals } check_variable = { var = AUS_bohemian_tension value = 10 compare = less_than_or_equals } }
+  }
+ }
+}

@@ -1,0 +1,41 @@
+guiTypes = {
+ containerWindowType = {
+  name = "AUS_bohemian_window"
+  position = { x = 0 y = 0 }
+  size = { width = 100% height = 228 }
+  iconType = { name = "AUS_background" spriteType = "GFX_AUS_bohemian_panel" orientation = center_up position = { x = -220 y = 0 } pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_panel_title" orientation = center_up position = { x = -120 y = 83 } font = "hoi_18mbs" text = "AUS_nww_panel_title" format = center maxWidth = 240 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_panel_value" orientation = center_up position = { x = -120 y = 109 } font = "hoi_18mbs" text = "AUS_nww_panel_value" format = center maxWidth = 240 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_panel_vienna" orientation = center_up position = { x = -204 y = 130 } font = "hoi_16mbs" text = "AUS_nww_panel_vienna" format = center maxWidth = 100 maxHeight = 20 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_panel_prague" orientation = center_up position = { x = 104 y = 130 } font = "hoi_16mbs" text = "AUS_nww_panel_prague" format = center maxWidth = 100 maxHeight = 20 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_zero" orientation = center_up position = { x = -209 y = 154 } font = "hoi_16mbs" text = "AUS_nww_panel_zero" format = center maxWidth = 20 maxHeight = 20 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_ten" orientation = center_up position = { x = 189 y = 154 } font = "hoi_16mbs" text = "AUS_nww_panel_ten" format = center maxWidth = 24 maxHeight = 20 pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_0" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = -186 y = 146 } }
+  iconType = { name = "AUS_seal_0" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = -186 y = 146 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_1" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = -152 y = 148 } }
+  iconType = { name = "AUS_seal_1" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = -152 y = 148 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_2" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = -118 y = 151 } }
+  iconType = { name = "AUS_seal_2" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = -118 y = 151 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_3" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = -84 y = 152 } }
+  iconType = { name = "AUS_seal_3" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = -84 y = 152 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_4" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = -50 y = 154 } }
+  iconType = { name = "AUS_seal_4" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = -50 y = 154 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_5" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = -16 y = 154 } }
+  iconType = { name = "AUS_seal_5" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = -16 y = 154 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_6" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = 18 y = 154 } }
+  iconType = { name = "AUS_seal_6" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = 18 y = 154 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_7" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = 52 y = 152 } }
+  iconType = { name = "AUS_seal_7" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = 52 y = 152 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_8" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = 86 y = 151 } }
+  iconType = { name = "AUS_seal_8" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = 86 y = 151 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_9" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = 120 y = 148 } }
+  iconType = { name = "AUS_seal_9" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = 120 y = 148 } pdx_tooltip = AUS_nww_meter_help }
+  iconType = { name = "AUS_socket_10" spriteType = "GFX_AUS_bohemian_socket" orientation = center_up position = { x = 154 y = 146 } }
+  iconType = { name = "AUS_seal_10" spriteType = "GFX_AUS_bohemian_seal" orientation = center_up position = { x = 154 y = 146 } pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_stage_0" orientation = center_up position = { x = -203 y = 191 } font = "hoi_16mbs" text = "AUS_nww_panel_stage_0" format = center maxWidth = 404 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_stage_1" orientation = center_up position = { x = -203 y = 191 } font = "hoi_16mbs" text = "AUS_nww_panel_stage_1" format = center maxWidth = 404 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_stage_2" orientation = center_up position = { x = -203 y = 191 } font = "hoi_16mbs" text = "AUS_nww_panel_stage_2" format = center maxWidth = 404 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_stage_3" orientation = center_up position = { x = -203 y = 191 } font = "hoi_16mbs" text = "AUS_nww_panel_stage_3" format = center maxWidth = 404 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+  instantTextBoxType = { name = "AUS_stage_4" orientation = center_up position = { x = -203 y = 191 } font = "hoi_16mbs" text = "AUS_nww_panel_stage_4" format = center maxWidth = 404 maxHeight = 24 pdx_tooltip = AUS_nww_meter_help }
+ }
+}

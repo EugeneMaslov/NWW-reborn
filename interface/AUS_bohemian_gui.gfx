@@ -1,0 +1,5 @@
+spriteTypes = {
+ spriteType = { name = GFX_AUS_bohemian_panel texturefile = "gfx/interface/AUS/bohemian_panel.dds" }
+ spriteType = { name = GFX_AUS_bohemian_socket texturefile = "gfx/interface/AUS/bohemian_socket.dds" }
+ spriteType = { name = GFX_AUS_bohemian_seal texturefile = "gfx/interface/AUS/bohemian_seal.dds" }
+}

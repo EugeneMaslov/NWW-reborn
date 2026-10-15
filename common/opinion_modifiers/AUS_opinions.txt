@@ -3,4 +3,7 @@ opinion_modifiers = {
 		value = 30
 		days = 1095
 	}
+	AUS_nww_rivalry = {
+		value = -50
+	}
 }

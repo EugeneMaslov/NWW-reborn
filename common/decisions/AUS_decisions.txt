@@ -1,3 +1,242 @@
+AUS_nww_crown_lands = {
+	AUS_nww_bohemian_drift = {
+		icon = generic_political_discourse
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		selectable_mission = no
+		days_mission_timeout = 60
+		cancel_if_not_visible = yes
+		visible = {
+			9 = {
+				is_owned_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_settled
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = AUS_nww_bohemia_settled
+					}
+					NOT = {
+						has_country_flag = AUS_nww_bohemia_seceded
+					}
+					9 = {
+						is_owned_by = AUS
+					}
+				}
+				add_to_variable = {
+					AUS_bohemian_tension = 1
+				}
+				clamp_variable = {
+					var = AUS_bohemian_tension
+					min = 0
+					max = 10
+				}
+				AUS_nww_update_bohemian_spirit = yes
+				if = {
+					limit = {
+						check_variable = {
+							var = AUS_bohemian_tension
+							value = 10
+							compare = greater_than_or_equals
+						}
+					}
+					country_event = {
+						id = nww_aus_overhaul.1
+					}
+				}
+				else = {
+					remove_mission = AUS_nww_bohemian_drift
+					activate_mission = AUS_nww_bohemian_drift
+				}
+			}
+		}
+	}
+	AUS_nww_prague_negotiations = {
+		icon = generic_political_discourse
+		cost = 50
+		days_remove = 20
+		days_re_enable = 0
+		visible = {
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_settled
+			}
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			check_variable = {
+				AUS_bohemian_tension > 0
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = AUS_nww_bohemia_seceded
+					}
+				}
+				AUS_nww_reduce_bohemian_tension = yes
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 20
+				check_variable = {
+					var = AUS_bohemian_tension
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+		}
+	}
+	AUS_nww_prague_investment = {
+		icon = generic_industry
+		cost = 75
+		days_remove = 35
+		days_re_enable = 30
+		visible = {
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_settled
+			}
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			check_variable = {
+				AUS_bohemian_investments < 3
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					9 = {
+						is_owned_and_controlled_by = AUS
+					}
+					NOT = {
+						has_country_flag = AUS_nww_bohemia_seceded
+					}
+				}
+				AUS_nww_reduce_bohemian_tension = yes
+				add_to_variable = {
+					AUS_bohemian_investments = 1
+				}
+				9 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+}
+AUS_nww_political_mandate = {
+	AUS_nww_campaign_neutrality = {
+		icon = generic_political_discourse
+		cost = 25
+		days_remove = 20
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = AUS_nww_political_settlement
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	AUS_nww_campaign_democratic = {
+		icon = generic_political_discourse
+		cost = 25
+		days_remove = 20
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = AUS_nww_political_settlement
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	AUS_nww_campaign_fascism = {
+		icon = generic_political_discourse
+		cost = 25
+		days_remove = 20
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = AUS_nww_political_settlement
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	AUS_nww_campaign_communism = {
+		icon = generic_political_discourse
+		cost = 25
+		days_remove = 20
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = AUS_nww_political_settlement
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
 NWW_AUS_political_campaigns = {
 	NWW_AUS_campaign_democratic = {
 		icon = generic_political_discourse

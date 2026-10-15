@@ -1,0 +1,301 @@
+characters = {
+	AUS_nww_staff_0 = {
+		name = AUS_nww_staff_0
+		portraits = {
+			army = {
+				large = GFX_portrait_AUS_alfred_jansa
+				small = GFX_portrait_AUS_alfred_jansa_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AUS_nww_staff_0
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_0_trait
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+			traits = {
+				defensive_doctrine
+				organizer
+			}
+		}
+	}
+	AUS_nww_staff_1 = {
+		name = AUS_nww_staff_1
+		portraits = {
+			army = {
+				large = GFX_portrait_AUS_franz_bohme
+				small = GFX_portrait_AUS_franz_bohme_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AUS_nww_staff_1
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_1_trait
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				infantry_officer
+				hill_fighter
+			}
+		}
+	}
+	AUS_nww_staff_2 = {
+		name = AUS_nww_staff_2
+		portraits = {
+			army = {
+				large = GFX_portrait_AUS_eugen_beyer
+				small = GFX_portrait_AUS_eugen_beyer_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AUS_nww_staff_2
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_2_trait
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				infantry_officer
+				hill_fighter
+			}
+		}
+	}
+	AUS_nww_staff_3 = {
+		name = AUS_nww_staff_3
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AUS_karl_renner
+				small = GFX_portrait_AUS_karl_renner_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nww_staff_3
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_3_trait
+			}
+		}
+	}
+	AUS_nww_staff_4 = {
+		name = AUS_nww_staff_4
+		portraits = {
+			civilian = {
+				small = GFX_portrait_AUS_julius_raab_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nww_staff_4
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_4_trait
+			}
+		}
+	}
+	AUS_nww_staff_5 = {
+		name = AUS_nww_staff_5
+		portraits = {
+			civilian = {
+				small = GFX_portrait_AUS_ludwig_von_mises_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nww_staff_5
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_5_trait
+			}
+		}
+	}
+	AUS_nww_staff_6 = {
+		name = AUS_nww_staff_6
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AUS_johann_koplenig
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nww_staff_6
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_6_trait
+			}
+		}
+	}
+	AUS_nww_staff_7 = {
+		name = AUS_nww_staff_7
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AUS_ernst_rudiger_starhemberg
+				small = GFX_portrait_AUS_ernst_rudiger_starhemberg_civilian_small
+			}
+			army = {
+				large = GFX_portrait_AUS_ernst_rudiger_starhemberg
+				small = GFX_portrait_AUS_ernst_rudiger_starhemberg_military_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nww_staff_7
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_7_trait
+			}
+		}
+	}
+	AUS_nww_staff_8 = {
+		name = AUS_nww_staff_8
+		portraits = {
+			army = {
+				small = GFX_portrait_AUS_alexander_lohr_small
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = AUS_nww_staff_8
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_8_trait
+			}
+		}
+	}
+	AUS_nww_staff_9 = {
+		name = AUS_nww_staff_9
+		portraits = {
+			civilian = {
+				small = GFX_portrait_AUS_marianne_pollak_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nww_staff_9
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_9_trait
+			}
+		}
+	}
+	AUS_nww_staff_10 = {
+		name = AUS_nww_staff_10
+		portraits = {
+			army = {
+				large = GFX_portrait_AUS_alfred_ritter_von_hubicki
+				small = GFX_portrait_AUS_alfred_ritter_von_hubicki_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AUS_nww_staff_10
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_10_trait
+			}
+			ledger = army
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				panzer_leader
+				organizer
+			}
+		}
+	}
+	AUS_nww_staff_11 = {
+		name = AUS_nww_staff_11
+		portraits = {
+			army = {
+				small = GFX_portrait_AUS_gottfried_freiherr_von_banfield_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = AUS_nww_staff_11
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				AUS_nww_staff_11_trait
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+			traits = {
+				spotter
+				superior_tactician
+			}
+			visible = {
+				has_completed_focus = AUS_nww2_navy_command
+			}
+		}
+	}
+}

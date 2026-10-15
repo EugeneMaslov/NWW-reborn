@@ -1,0 +1,111 @@
+ideas = {
+	country = {
+		AUS_nww_absolute_settlement = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = AUS
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		AUS_nww_constitutional_settlement = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = AUS
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		AUS_nww_fascist_settlement = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = AUS
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		AUS_nww_communist_settlement = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = AUS
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				conscription = 0.02
+			}
+		}
+		AUS_nww_alternative_settlement = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				original_tag = AUS
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				trade_opinion_factor = 0.10
+			}
+		}
+	}
+	industrial_concern = {
+		AUS_nww_steyr_concern = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				has_completed_focus = AUS_nww2_military_2
+			}
+			cost = 150
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		AUS_nww_skoda_concern = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				has_completed_focus = AUS_nww2_military_3
+			}
+			cost = 150
+			research_bonus = {
+				artillery = 0.15
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+		AUS_nww_siemens_concern = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				has_completed_focus = AUS_nww2_technology_4
+			}
+			cost = 150
+			research_bonus = {
+				electronics = 0.15
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+spriteTypes = {
+ spriteType = { name = GFX_focus_AUS_nww_eagle texturefile = "gfx/interface/goals/AUS/eagle.dds" }
+ spriteType = { name = GFX_focus_AUS_nww_constitution texturefile = "gfx/interface/goals/AUS/constitution.dds" }
+ spriteType = { name = GFX_focus_AUS_nww_danube texturefile = "gfx/interface/goals/AUS/danube.dds" }
+ spriteType = { name = GFX_focus_AUS_nww_army texturefile = "gfx/interface/goals/AUS/army.dds" }
+ spriteType = { name = GFX_focus_AUS_nww_air texturefile = "gfx/interface/goals/AUS/air.dds" }
+ spriteType = { name = GFX_focus_AUS_nww_navy texturefile = "gfx/interface/goals/AUS/navy.dds" }
+ spriteType = { name = GFX_AUS_nww_eagle texturefile = "gfx/interface/goals/AUS/eagle.dds" }
+ spriteType = { name = GFX_AUS_nww_constitution texturefile = "gfx/interface/goals/AUS/constitution.dds" }
+ spriteType = { name = GFX_AUS_nww_danube texturefile = "gfx/interface/goals/AUS/danube.dds" }
+ spriteType = { name = GFX_AUS_nww_army texturefile = "gfx/interface/goals/AUS/army.dds" }
+ spriteType = { name = GFX_AUS_nww_air texturefile = "gfx/interface/goals/AUS/air.dds" }
+ spriteType = { name = GFX_AUS_nww_navy texturefile = "gfx/interface/goals/AUS/navy.dds" }
+ spriteType = { name = GFX_decision_AUS_nww_eagle texturefile = "gfx/interface/goals/AUS/eagle.dds" }
+}

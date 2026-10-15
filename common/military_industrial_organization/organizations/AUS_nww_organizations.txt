@@ -1,0 +1,126 @@
+AUS_nww_steyr_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {
+		original_tag = AUS
+	}
+	available = {
+		FROM = {
+			has_completed_focus = AUS_nww2_military_2
+		}
+	}
+	initial_trait = {
+		name = AUS_nww_steyr_organization_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = AUS_nww_steyr_advanced
+		name = AUS_nww_steyr_advanced
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		position = {
+			x = 13
+			y = 0
+		}
+		special_trait_background = yes
+		available = {
+			FROM = {
+				has_country_flag = AUS_nww_concerns_advanced
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
+AUS_nww_skoda_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {
+		original_tag = AUS
+	}
+	available = {
+		FROM = {
+			has_completed_focus = AUS_nww2_military_3
+		}
+	}
+	initial_trait = {
+		name = AUS_nww_skoda_organization_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = AUS_nww_skoda_advanced
+		name = AUS_nww_skoda_advanced
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		position = {
+			x = 13
+			y = 0
+		}
+		special_trait_background = yes
+		available = {
+			FROM = {
+				has_country_flag = AUS_nww_concerns_advanced
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
+AUS_nww_siemens_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {
+		original_tag = AUS
+	}
+	available = {
+		FROM = {
+			has_completed_focus = AUS_nww2_technology_4
+		}
+	}
+	initial_trait = {
+		name = AUS_nww_siemens_organization_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = AUS_nww_siemens_advanced
+		name = AUS_nww_siemens_advanced
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		position = {
+			x = 13
+			y = 0
+		}
+		special_trait_background = yes
+		available = {
+			FROM = {
+				has_country_flag = AUS_nww_concerns_advanced
+			}
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}

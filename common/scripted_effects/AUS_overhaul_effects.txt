@@ -1,0 +1,885 @@
+AUS_nww_rebuild_development = {
+	set_variable = {
+		AUS_economy_consumer_goods_factor = 0.1000
+	}
+	set_variable = {
+		AUS_economy_industrial_capacity_factory = -0.0500
+	}
+	set_variable = {
+		AUS_economy_production_factory_max_efficiency_factor = 0.0000
+	}
+	set_variable = {
+		AUS_economy_production_speed_buildings_factor = -0.0500
+	}
+	set_variable = {
+		AUS_economy_research_speed_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_armor_attack_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_artillery_attack_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_attack_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_core_defence_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_defence_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_org_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_org_regain = 0.0000
+	}
+	set_variable = {
+		AUS_army_army_speed_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_attrition = 0.0000
+	}
+	set_variable = {
+		AUS_army_breakthrough_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_dig_in_speed_factor = 0.0000
+	}
+	set_variable = {
+		AUS_army_land_reinforce_rate = 0.0000
+	}
+	set_variable = {
+		AUS_army_max_planning = 0.0000
+	}
+	set_variable = {
+		AUS_army_planning_speed = 0.0000
+	}
+	set_variable = {
+		AUS_army_supply_consumption_factor = 0.0000
+	}
+	set_variable = {
+		AUS_air_air_accidents_factor = 0.0000
+	}
+	set_variable = {
+		AUS_air_air_cas_efficiency = 0.0000
+	}
+	set_variable = {
+		AUS_air_air_mission_efficiency = 0.0000
+	}
+	set_variable = {
+		AUS_navy_convoy_escort_efficiency = 0.0000
+	}
+	set_variable = {
+		AUS_navy_naval_coordination = 0.0000
+	}
+	set_variable = {
+		AUS_navy_repair_speed_factor = 0.0000
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_customs
+		}
+		add_to_variable = {
+			AUS_economy_consumer_goods_factor = -0.05
+			tooltip = AUS_nww_bonus_consumer_goods_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_finance
+		}
+		add_to_variable = {
+			AUS_economy_industrial_capacity_factory = 0.05
+			tooltip = AUS_nww_bonus_industrial_capacity_factory_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_strategic_reserve
+		}
+		add_to_variable = {
+			AUS_army_army_org_factor = 0.05
+			tooltip = AUS_nww_bonus_army_org_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_civilian_3
+		}
+		add_to_variable = {
+			AUS_economy_production_speed_buildings_factor = 0.05
+			tooltip = AUS_nww_bonus_production_speed_buildings_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_civilian_8
+		}
+		add_to_variable = {
+			AUS_economy_production_speed_buildings_factor = 0.05
+			tooltip = AUS_nww_bonus_production_speed_buildings_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_civilian_9
+		}
+		add_to_variable = {
+			AUS_economy_consumer_goods_factor = -0.05
+			tooltip = AUS_nww_bonus_consumer_goods_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_military_2
+		}
+		add_to_variable = {
+			AUS_economy_industrial_capacity_factory = 0.05
+			tooltip = AUS_nww_bonus_industrial_capacity_factory_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_military_8
+		}
+		add_to_variable = {
+			AUS_economy_industrial_capacity_factory = 0.05
+			tooltip = AUS_nww_bonus_industrial_capacity_factory_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_military_9
+		}
+		add_to_variable = {
+			AUS_economy_production_factory_max_efficiency_factor = 0.05
+			tooltip = AUS_nww_bonus_production_factory_max_efficiency_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_technology_9
+		}
+		add_to_variable = {
+			AUS_economy_research_speed_factor = 0.05
+			tooltip = AUS_nww_bonus_research_speed_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_0_0
+		}
+		add_to_variable = {
+			AUS_army_army_core_defence_factor = 0.05
+			tooltip = AUS_nww_bonus_army_core_defence_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_0_1
+		}
+		add_to_variable = {
+			AUS_army_dig_in_speed_factor = 0.05
+			tooltip = AUS_nww_bonus_dig_in_speed_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_0_2
+		}
+		add_to_variable = {
+			AUS_army_supply_consumption_factor = -0.05
+			tooltip = AUS_nww_bonus_supply_consumption_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_0_3
+		}
+		add_to_variable = {
+			AUS_army_army_org_factor = 0.05
+			tooltip = AUS_nww_bonus_army_org_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_0_4
+		}
+		add_to_variable = {
+			AUS_army_max_planning = 0.05
+			tooltip = AUS_nww_bonus_max_planning_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_0_5
+		}
+		add_to_variable = {
+			AUS_army_army_defence_factor = 0.05
+			tooltip = AUS_nww_bonus_army_defence_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_1_0
+		}
+		add_to_variable = {
+			AUS_army_army_org_factor = 0.05
+			tooltip = AUS_nww_bonus_army_org_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_1_1
+		}
+		add_to_variable = {
+			AUS_army_land_reinforce_rate = 0.02
+			tooltip = AUS_nww_bonus_land_reinforce_rate_0_02
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_1_2
+		}
+		add_to_variable = {
+			AUS_army_army_speed_factor = 0.05
+			tooltip = AUS_nww_bonus_army_speed_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_1_3
+		}
+		add_to_variable = {
+			AUS_army_planning_speed = 0.05
+			tooltip = AUS_nww_bonus_planning_speed_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_1_4
+		}
+		add_to_variable = {
+			AUS_army_army_org_regain = 0.05
+			tooltip = AUS_nww_bonus_army_org_regain_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_1_5
+		}
+		add_to_variable = {
+			AUS_army_army_attack_factor = 0.05
+			tooltip = AUS_nww_bonus_army_attack_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_2_0
+		}
+		add_to_variable = {
+			AUS_army_army_armor_attack_factor = 0.05
+			tooltip = AUS_nww_bonus_army_armor_attack_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_2_1
+		}
+		add_to_variable = {
+			AUS_army_attrition = -0.05
+			tooltip = AUS_nww_bonus_attrition_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_2_2
+		}
+		add_to_variable = {
+			AUS_army_army_org_factor = 0.05
+			tooltip = AUS_nww_bonus_army_org_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_2_3
+		}
+		add_to_variable = {
+			AUS_army_army_artillery_attack_factor = 0.05
+			tooltip = AUS_nww_bonus_army_artillery_attack_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_2_4
+		}
+		add_to_variable = {
+			AUS_army_supply_consumption_factor = -0.05
+			tooltip = AUS_nww_bonus_supply_consumption_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_army_2_5
+		}
+		add_to_variable = {
+			AUS_army_breakthrough_factor = 0.05
+			tooltip = AUS_nww_bonus_breakthrough_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_1
+		}
+		add_to_variable = {
+			AUS_air_air_mission_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_2
+		}
+		add_to_variable = {
+			AUS_air_air_mission_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_3
+		}
+		add_to_variable = {
+			AUS_air_air_mission_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_4
+		}
+		add_to_variable = {
+			AUS_air_air_mission_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_5
+		}
+		add_to_variable = {
+			AUS_air_air_accidents_factor = -0.05
+			tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_6
+		}
+		add_to_variable = {
+			AUS_air_air_accidents_factor = -0.05
+			tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_7
+		}
+		add_to_variable = {
+			AUS_air_air_accidents_factor = -0.05
+			tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_8
+		}
+		add_to_variable = {
+			AUS_air_air_accidents_factor = -0.05
+			tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_9
+		}
+		add_to_variable = {
+			AUS_air_air_cas_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_10
+		}
+		add_to_variable = {
+			AUS_air_air_cas_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_11
+		}
+		add_to_variable = {
+			AUS_air_air_cas_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_air_12
+		}
+		add_to_variable = {
+			AUS_air_air_cas_efficiency = 0.05
+			tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_1
+		}
+		add_to_variable = {
+			AUS_navy_repair_speed_factor = 0.05
+			tooltip = AUS_nww_bonus_repair_speed_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_2
+		}
+		add_to_variable = {
+			AUS_navy_repair_speed_factor = 0.05
+			tooltip = AUS_nww_bonus_repair_speed_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_3
+		}
+		add_to_variable = {
+			AUS_navy_repair_speed_factor = 0.05
+			tooltip = AUS_nww_bonus_repair_speed_factor_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_5
+		}
+		add_to_variable = {
+			AUS_navy_convoy_escort_efficiency = 0.05
+			tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_6
+		}
+		add_to_variable = {
+			AUS_navy_convoy_escort_efficiency = 0.05
+			tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_7
+		}
+		add_to_variable = {
+			AUS_navy_convoy_escort_efficiency = 0.05
+			tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_8
+		}
+		add_to_variable = {
+			AUS_navy_convoy_escort_efficiency = 0.05
+			tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_9
+		}
+		add_to_variable = {
+			AUS_navy_naval_coordination = 0.05
+			tooltip = AUS_nww_bonus_naval_coordination_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_10
+		}
+		add_to_variable = {
+			AUS_navy_naval_coordination = 0.05
+			tooltip = AUS_nww_bonus_naval_coordination_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_11
+		}
+		add_to_variable = {
+			AUS_navy_naval_coordination = 0.05
+			tooltip = AUS_nww_bonus_naval_coordination_0_05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = AUS_nww2_navy_12
+		}
+		add_to_variable = {
+			AUS_navy_naval_coordination = 0.05
+			tooltip = AUS_nww_bonus_naval_coordination_0_05
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = AUS_nww_economy_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = AUS_nww_economy_development
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = AUS_nww_army_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = AUS_nww_army_development
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = AUS_nww_air_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = AUS_nww_air_development
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = AUS_nww_navy_development
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = AUS_nww_navy_development
+		}
+	}
+}
+AUS_nww_reduce_bohemian_tension = {
+	subtract_from_variable = {
+		AUS_bohemian_tension = 2
+	}
+	clamp_variable = {
+		var = AUS_bohemian_tension
+		min = 0
+		max = 10
+	}
+	AUS_nww_update_bohemian_spirit = yes
+}
+AUS_nww_update_bohemian_spirit = {
+	set_variable = {
+		AUS_bohemian_stability = AUS_bohemian_tension
+	}
+	multiply_variable = {
+		AUS_bohemian_stability = -0.01
+	}
+	set_variable = {
+		AUS_bohemian_output = AUS_bohemian_tension
+	}
+	multiply_variable = {
+		AUS_bohemian_output = -0.01
+	}
+}
+AUS_nww_initialize = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = AUS_bohemian_investments
+			}
+		}
+		set_variable = {
+			AUS_bohemian_investments = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = AUS_nww_overhaul_v1
+			}
+		}
+		AUS_nww_rebuild_development = yes
+		if = {
+			limit = {
+				NOT = {
+					has_variable = AUS_bohemian_tension
+				}
+			}
+			set_variable = {
+				AUS_bohemian_tension = 2
+			}
+		}
+		set_country_flag = AUS_nww_overhaul_v1
+	}
+	AUS_nww_update_bohemian_spirit = yes
+	if = {
+		limit = {
+			9 = {
+				is_owned_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_settled
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_active_mission = AUS_nww_bohemian_drift
+				}
+			}
+			activate_mission = AUS_nww_bohemian_drift
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = AUS_nww_bohemian_question
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = AUS_nww_bohemian_question
+			}
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = AUS_nww_bohemia_settled
+				has_country_flag = AUS_nww_bohemia_seceded
+				NOT = {
+					9 = {
+						is_owned_by = AUS
+					}
+				}
+			}
+		}
+		remove_mission = AUS_nww_bohemian_drift
+		remove_dynamic_modifier = {
+			modifier = AUS_nww_bohemian_question
+		}
+	}
+}
+AUS_nww_build_civilian = {
+	random_owned_controlled_state = {
+		limit = {
+			is_core_of = PREV
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+AUS_nww_build_military = {
+	random_owned_controlled_state = {
+		limit = {
+			is_core_of = PREV
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+AUS_nww_build_dockyard = {
+	random_owned_controlled_state = {
+		limit = {
+			is_core_of = PREV
+			is_coastal = yes
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+AUS_nww_install_absolute = {
+	retire_ideology_leader = neutrality
+	create_country_leader = {
+		name = AUS_nww_otto_i
+		picture = GFX_Portrait_hungary_otto_von_hapsburg
+		ideology = despotism
+		traits = {
+			AUS_nww_absolute_leader
+		}
+	}
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_country_flag = AUS_nww_political_settlement
+}
+AUS_nww_install_constitutional = {
+	retire_ideology_leader = democratic
+	create_country_leader = {
+		name = AUS_nww_otto_i
+		picture = GFX_Portrait_hungary_otto_von_hapsburg
+		ideology = conservatism
+		traits = {
+			AUS_nww_constitutional_leader
+		}
+	}
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+	set_country_flag = AUS_nww_political_settlement
+}
+AUS_nww_install_fascist = {
+	retire_ideology_leader = fascism
+	create_country_leader = {
+		name = AUS_nww_starhemberg
+		picture = GFX_portrait_AUS_ernst_rudiger_starhemberg
+		ideology = fascism_ideology
+		traits = {
+			AUS_nww_fascist_leader
+		}
+	}
+	set_politics = {
+		ruling_party = fascism
+		elections_allowed = no
+	}
+	set_country_flag = AUS_nww_political_settlement
+}
+AUS_nww_install_communist = {
+	retire_ideology_leader = communism
+	create_country_leader = {
+		name = AUS_nww_koplenig
+		picture = GFX_portrait_AUS_johann_koplenig
+		ideology = leninism
+		traits = {
+			AUS_nww_communist_leader
+		}
+	}
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	set_country_flag = AUS_nww_political_settlement
+}
+AUS_nww_install_alternative = {
+	retire_ideology_leader = neutrality
+	create_country_leader = {
+		name = AUS_nww_johannes_i
+		picture = GFX_portrait_AUS_johannes_von_liechtenstein
+		ideology = despotism
+		traits = {
+			AUS_nww_alternative_leader
+		}
+	}
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_country_flag = AUS_nww_political_settlement
+}
+AUS_nww_release_bohemia = {
+	set_country_flag = AUS_nww_bohemia_seceded
+	remove_mission = AUS_nww_bohemian_drift
+	remove_dynamic_modifier = {
+		modifier = AUS_nww_bohemian_question
+	}
+	if = {
+		limit = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+		}
+		9 = {
+			add_core_of = CZE
+			transfer_state_to = CZE
+		}
+	}
+	if = {
+		limit = {
+			69 = {
+				is_owned_and_controlled_by = AUS
+			}
+		}
+		69 = {
+			add_core_of = CZE
+			transfer_state_to = CZE
+		}
+	}
+	if = {
+		limit = {
+			72 = {
+				is_owned_and_controlled_by = AUS
+			}
+		}
+		72 = {
+			add_core_of = CZE
+			transfer_state_to = CZE
+		}
+	}
+	if = {
+		limit = {
+			74 = {
+				is_owned_and_controlled_by = AUS
+			}
+		}
+		74 = {
+			add_core_of = CZE
+			transfer_state_to = CZE
+		}
+	}
+	if = {
+		limit = {
+			75 = {
+				is_owned_and_controlled_by = AUS
+			}
+		}
+		75 = {
+			add_core_of = CZE
+			transfer_state_to = CZE
+		}
+	}
+	CZE = {
+		set_cosmetic_tag = AUS_nww_bohemia
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		set_stability = 0.60
+	}
+	add_stability = -0.10
+}

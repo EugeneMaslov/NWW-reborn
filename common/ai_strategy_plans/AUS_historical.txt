@@ -10,35 +10,46 @@ NWW_AUS_historical = {
 	abort = {
 		is_subject = yes
 	}
-	ai_national_focuses = {
-		AUS_nww_rebuild
-		AUS_political_power
-		AUS_reinstate_the_imperial_council
-		AUS_not_germany
-		AUS_nww_army
-		AUS_army_expierience
-		AUS_nww_industry
-		aus_prom
-		aus_prom_2
-		AUS_bring_generals_out_of_retirement
-		AUS_war_with_hun
-		AUS_establish_bohme_plan
-		aus_prom_3
-		aus_prom_4
-		AUS_war_with_croatia
-		AUS_reclaiming_yugoslavian_territories
-		NWW_AUS_restore_dual_monarchy
-	}
 	weight = {
 		factor = 100
-	}
-	focus_factors = {
-		AUS_the_danubian_federation = 0
-		AUS_hold_elections = 0
 	}
 	ai_strategy = {
 		type = conquer
 		id = HUN
 		value = 200
+	}
+	ai_national_focuses = {
+		AUS_nww_rebuild
+		AUS_political_power
+		AUS_nww2_absolute_debate
+		AUS_reinstate_the_imperial_council
+		AUS_not_germany
+		AUS_nww_army
+		AUS_army_expierience
+		AUS_bring_generals_out_of_retirement
+		AUS_nww2_language_charter
+		AUS_nww2_prague_conference
+		AUS_nww_industry
+		AUS_war_with_hun
+		AUS_establish_bohme_plan
+		AUS_war_with_croatia
+		AUS_reclaiming_yugoslavian_territories
+		NWW_AUS_restore_dual_monarchy
+		AUS_nww2_local_budget
+		AUS_nww2_land_compromise
+		AUS_nww2_technical_compact
+		AUS_nww2_provincial_court
+		AUS_nww2_representation
+		AUS_nww2_crownland_settlement
+		AUS_nww2_galician_ultimatum
+		AUS_nww2_bukovina_ultimatum
+		AUS_nww2_german_competition
+	}
+	focus_factors = {
+		AUS_the_danubian_federation = 0
+		AUS_hold_elections = 0
+		AUS_nww2_fascist_settlement = 0
+		AUS_nww2_communist_settlement = 0
+		AUS_nww2_alternative_settlement = 0
 	}
 }

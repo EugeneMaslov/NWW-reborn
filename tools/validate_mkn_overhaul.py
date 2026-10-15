@@ -140,6 +140,7 @@ def main():
         with Image.open(path) as image:check(image.convert('RGBA').getchannel('A').getextrema()==(255,255),path.name+' remains transparent')
     native=set(re.findall(r'^## (\w+)',(game/'documentation/modifiers_documentation.md').read_text(encoding='utf-8-sig'),re.M))
     native |= {'production_speed_'+k+'_factor' for k,v,o in one(read(game/'common/buildings/00_buildings.txt'),'buildings')}
+    native |= {p+'_drift' for p in ('fascism','communism','democratic','neutrality')}
     subunits={k for path in (game/'common/units').glob('*.txt') for k,v,o in one(read(path),'sub_units',[])}
     # Do not invent modifier names from subunit IDs: motorized_attack_factor is
     # registered, modifier_army_sub_unit_motorized_attack_factor is rejected.

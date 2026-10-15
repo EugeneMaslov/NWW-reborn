@@ -1,0 +1,316 @@
+add_namespace = nww_aus_overhaul
+country_event = {
+	id = nww_aus_overhaul.1
+	title = nww_aus_overhaul.1.t
+	desc = nww_aus_overhaul.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = AUS
+		NOT = {
+			has_country_flag = AUS_nww_bohemia_settled
+		}
+		NOT = {
+			has_country_flag = AUS_nww_bohemia_seceded
+		}
+		check_variable = {
+			var = AUS_bohemian_tension
+			value = 10
+			compare = greater_than_or_equals
+		}
+		9 = {
+			is_owned_and_controlled_by = AUS
+		}
+	}
+	immediate = {
+		AUS_nww_release_bohemia = yes
+	}
+	option = {
+		name = nww_aus_overhaul.1.a
+		add_political_power = -50
+	}
+	option = {
+		name = nww_aus_overhaul.1.b
+		create_wargoal = {
+			type = annex_everything
+			target = CZE
+		}
+		add_war_support = 0.05
+	}
+}
+country_event = {
+	id = nww_aus_overhaul.10
+	title = nww_aus_overhaul.10.t
+	desc = nww_aus_overhaul.10.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = POL
+		AUS = {
+			exists = yes
+			is_subject = no
+			has_country_flag = AUS_nww_galicia_pending
+		}
+		NOT = {
+			has_war_with = AUS
+		}
+		is_subject = no
+	}
+	option = {
+		name = nww_aus_overhaul.10.a
+		trigger = {
+			OR = {
+				88 = {
+					is_owned_and_controlled_by = POL
+				}
+				89 = {
+					is_owned_and_controlled_by = POL
+				}
+				91 = {
+					is_owned_and_controlled_by = POL
+				}
+			}
+			NOT = {
+				has_war_with = AUS
+			}
+			AUS = {
+				exists = yes
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+			limit = {
+				88 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			88 = {
+				transfer_state_to = AUS
+				add_claim_by = AUS
+			}
+		}
+		if = {
+			limit = {
+				89 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			89 = {
+				transfer_state_to = AUS
+				add_claim_by = AUS
+			}
+		}
+		if = {
+			limit = {
+				91 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			91 = {
+				transfer_state_to = AUS
+				add_claim_by = AUS
+			}
+		}
+		AUS = {
+			clr_country_flag = AUS_nww_galicia_pending
+			add_stability = 0.05
+		}
+	}
+	option = {
+		name = nww_aus_overhaul.10.b
+		ai_chance = {
+			factor = 75
+		}
+		AUS = {
+			clr_country_flag = AUS_nww_galicia_pending
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = POL
+					}
+					NOT = {
+						is_ally_with = POL
+					}
+				}
+				create_wargoal = {
+					type = take_state
+					target = POL
+					generator = {
+						88
+						89
+						91
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = nww_aus_overhaul.11
+	title = nww_aus_overhaul.11.t
+	desc = nww_aus_overhaul.11.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = ROM
+		AUS = {
+			exists = yes
+			is_subject = no
+			has_country_flag = AUS_nww_bukovina_pending
+		}
+		NOT = {
+			has_war_with = AUS
+		}
+		is_subject = no
+	}
+	option = {
+		name = nww_aus_overhaul.11.a
+		trigger = {
+			OR = {
+				80 = {
+					is_owned_and_controlled_by = ROM
+				}
+			}
+			NOT = {
+				has_war_with = AUS
+			}
+			AUS = {
+				exists = yes
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+			limit = {
+				80 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			80 = {
+				transfer_state_to = AUS
+				add_claim_by = AUS
+			}
+		}
+		AUS = {
+			clr_country_flag = AUS_nww_bukovina_pending
+			add_stability = 0.05
+		}
+	}
+	option = {
+		name = nww_aus_overhaul.11.b
+		ai_chance = {
+			factor = 75
+		}
+		AUS = {
+			clr_country_flag = AUS_nww_bukovina_pending
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = ROM
+					}
+					NOT = {
+						is_ally_with = ROM
+					}
+				}
+				create_wargoal = {
+					type = take_state
+					target = ROM
+					generator = {
+						80
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = nww_aus_overhaul.12
+	title = nww_aus_overhaul.12.t
+	desc = nww_aus_overhaul.12.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		AUS = {
+			exists = yes
+			is_faction_leader = yes
+		}
+		is_subject = no
+		is_in_faction = no
+		NOT = {
+			has_war_with = AUS
+		}
+	}
+	option = {
+		name = nww_aus_overhaul.12.a
+		trigger = {
+			is_subject = no
+			is_in_faction = no
+			NOT = {
+				has_war_with = AUS
+			}
+			AUS = {
+				is_faction_leader = yes
+			}
+		}
+		ai_chance = {
+			factor = 60
+		}
+		AUS = {
+			add_to_faction = ROOT
+		}
+	}
+	option = {
+		name = nww_aus_overhaul.12.b
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+country_event = {
+	id = nww_aus_overhaul.15
+	title = nww_aus_overhaul.15.t
+	desc = nww_aus_overhaul.15.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+		tag = GER
+		AUS = {
+			exists = yes
+		}
+		NOT = {
+			has_war_with = AUS
+		}
+	}
+	option = {
+		name = nww_aus_overhaul.15.a
+		trigger = {
+			NOT = {
+				has_war_with = AUS
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+		add_stability = 0.05
+		AUS = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	option = {
+		name = nww_aus_overhaul.15.b
+		ai_chance = {
+			factor = 50
+		}
+		AUS = {
+			add_war_support = 0.05
+		}
+	}
+}

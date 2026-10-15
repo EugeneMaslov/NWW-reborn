@@ -10,83 +10,87 @@ focus_tree = {
 	default = no
 	focus = {
 		id = AUS_nww_rebuild
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_AUS_nww_eagle
 		cost = 5
 		completion_reward = {
 			add_political_power = 75
 		}
-		x = 10
+		x = 12
 		y = 0
 	}
 	focus = {
 		id = AUS_political_power
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_improve_the_administration
 		cost = 5
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
 		}
+		x = 12
+		y = 1
 		prerequisite = {
 			focus = AUS_nww_rebuild
 		}
-		x = 4
-		y = 1
 	}
 	focus = {
 		id = AUS_reinstate_the_imperial_council
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_AUS_nww_eagle
 		cost = 5
-		completion_reward = {
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		x = 0
+		y = 3
 		prerequisite = {
-			focus = AUS_political_power
+			focus = AUS_nww2_absolute_debate
+		}
+		completion_reward = {
+			AUS_nww_install_absolute = yes
+			add_ideas = AUS_nww_absolute_settlement
+			add_stability = 0.05
 		}
 		available = {
 			NOT = {
 				neutrality < 0.40
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		mutually_exclusive = {
 			focus = AUS_hold_elections
+			focus = AUS_nww2_fascist_settlement
+			focus = AUS_nww2_communist_settlement
+			focus = AUS_nww2_alternative_settlement
 		}
-		x = 2
-		y = 2
 	}
 	focus = {
 		id = AUS_hold_elections
-		icon = GFX_focus_research
+		icon = GFX_focus_AUS_nww_constitution
 		cost = 5
-		completion_reward = {
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		x = 6
+		y = 3
 		prerequisite = {
-			focus = AUS_political_power
+			focus = AUS_nww2_constitutional_debate
+		}
+		completion_reward = {
+			AUS_nww_install_constitutional = yes
+			add_ideas = AUS_nww_constitutional_settlement
+			add_stability = 0.05
 		}
 		available = {
 			NOT = {
 				democratic < 0.40
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		mutually_exclusive = {
 			focus = AUS_reinstate_the_imperial_council
+			focus = AUS_nww2_fascist_settlement
+			focus = AUS_nww2_communist_settlement
+			focus = AUS_nww2_alternative_settlement
 		}
-		x = 6
-		y = 2
 	}
 	focus = {
 		id = AUS_the_danubian_federation
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_AUS_nww_constitution
 		cost = 5
 		completion_reward = {
 			HUN = {
@@ -95,10 +99,6 @@ focus_tree = {
 					days = 1
 				}
 			}
-		}
-		prerequisite = {
-			focus = AUS_reinstate_the_imperial_council
-			focus = AUS_hold_elections
 		}
 		available = {
 			HUN = {
@@ -115,8 +115,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AUS_war_with_hun
 		}
-		x = 2
-		y = 3
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -124,10 +122,15 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		x = 36
+		y = 2
+		prerequisite = {
+			focus = AUS_not_germany
+		}
 	}
 	focus = {
 		id = AUS_via_danube_to_europe
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_balkan_diplomacy
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -147,35 +150,40 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = AUS_the_danubian_federation
-		}
 		available = {
 			has_country_flag = NWW_danubian_agreement
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		x = 2
-		y = 4
+		x = 36
+		y = 3
+		prerequisite = {
+			focus = AUS_the_danubian_federation
+		}
 	}
 	focus = {
 		id = AUS_not_germany
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_monarchist_sentiment
 		cost = 5
+		x = 42
+		y = 0
+		available = {
+			OR = {
+				has_completed_focus = AUS_reinstate_the_imperial_council
+				has_completed_focus = AUS_hold_elections
+				has_completed_focus = AUS_nww2_fascist_settlement
+				has_completed_focus = AUS_nww2_communist_settlement
+				has_completed_focus = AUS_nww2_alternative_settlement
+			}
+		}
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			add_political_power = 75
+			add_war_support = 0.05
 		}
-		prerequisite = {
-			focus = AUS_reinstate_the_imperial_council
-			focus = AUS_hold_elections
-		}
-		x = 6
-		y = 3
 	}
 	focus = {
 		id = AUS_join_to_axis
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_generic_military_deal
 		cost = 5
 		completion_reward = {
 			GER = {
@@ -184,9 +192,6 @@ focus_tree = {
 					days = 1
 				}
 			}
-		}
-		prerequisite = {
-			focus = AUS_not_germany
 		}
 		available = {
 			GER = {
@@ -200,12 +205,15 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		x = 10
-		y = 4
+		x = 39
+		y = 1
+		prerequisite = {
+			focus = AUS_not_germany
+		}
 	}
 	focus = {
 		id = AUS_help_from_eng
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_british_trade
 		cost = 5
 		completion_reward = {
 			FRA = {
@@ -214,9 +222,6 @@ focus_tree = {
 					days = 1
 				}
 			}
-		}
-		prerequisite = {
-			focus = AUS_not_germany
 		}
 		available = {
 			FRA = {
@@ -230,16 +235,16 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		x = 10
-		y = 5
-	}
-	focus = {
-		id = AUS_war_with_hun
-		icon = GFX_focus_generic_army_attack
-		cost = 5
+		x = 45
+		y = 1
 		prerequisite = {
 			focus = AUS_not_germany
 		}
+	}
+	focus = {
+		id = AUS_war_with_hun
+		icon = GFX_focus_generic_attack_hungary
+		cost = 5
 		available = {
 			HUN = {
 				exists = yes
@@ -259,8 +264,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AUS_the_danubian_federation
 		}
-		x = 6
-		y = 4
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -268,10 +271,12 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		x = 42
+		y = 2
+		prerequisite = {
+			focus = AUS_not_germany
+		}
 		completion_reward = {
-			hidden_effect = {
-				nww_AUS_prepare_hun_campaign = yes
-			}
 			custom_effect_tooltip = NWW_AUS_HUN_full_conquest_tt
 			hidden_effect = {
 				nww_AUS_prepare_hun_campaign = yes
@@ -280,11 +285,8 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_war_with_croatia
-		icon = GFX_focus_generic_army_attack
+		icon = GFX_goal_generic_territory_or_war
 		cost = 5
-		prerequisite = {
-			focus = AUS_war_with_hun
-		}
 		available = {
 			CRO = {
 				exists = yes
@@ -301,12 +303,12 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		x = 6
-		y = 5
+		x = 42
+		y = 3
+		prerequisite = {
+			focus = AUS_war_with_hun
+		}
 		completion_reward = {
-			hidden_effect = {
-				nww_AUS_prepare_cro_campaign = yes
-			}
 			custom_effect_tooltip = NWW_AUS_CRO_full_conquest_tt
 			hidden_effect = {
 				nww_AUS_prepare_cro_campaign = yes
@@ -315,40 +317,35 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_reclaiming_yugoslavian_territories
-		icon = GFX_focus_generic_army_attack
+		icon = GFX_focus_generic_balkans_focus
 		cost = 5
 		completion_reward = {
 			add_war_support = 0.05
 			add_state_claim = 109
 		}
+		x = 42
+		y = 4
 		prerequisite = {
 			focus = AUS_war_with_croatia
 		}
-		x = 6
-		y = 6
 	}
 	focus = {
 		id = AUS_nww_army
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_focus_AUS_nww_army
 		cost = 5
 		completion_reward = {
 			army_experience = 15
 		}
-		prerequisite = {
-			focus = AUS_nww_rebuild
+		x = 88
+		y = 0
+		available = {
+			has_completed_focus = AUS_nww_rebuild
 		}
-		x = 16
-		y = 1
 	}
 	focus = {
 		id = AUS_army_expierience
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_focus_generic_advanced_military_studies
 		cost = 5
-		prerequisite = {
-			focus = AUS_nww_army
-		}
-		x = 16
-		y = 2
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = NWW_legacy_land_doctrine_bonus
@@ -358,20 +355,25 @@ focus_tree = {
 			}
 			add_ideas = NWW_AUS_officer_corps
 		}
+		x = 88
+		y = 1
+		prerequisite = {
+			focus = AUS_nww_army
+		}
 	}
 	focus = {
 		id = AUS_bring_generals_out_of_retirement
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_focus_generic_advisors
 		cost = 5
 		completion_reward = {
 			army_experience = 20
 			add_command_power = 15
 		}
+		x = 88
+		y = 2
 		prerequisite = {
 			focus = AUS_army_expierience
 		}
-		x = 16
-		y = 3
 	}
 	focus = {
 		id = AUS_establish_bohme_plan
@@ -389,15 +391,15 @@ focus_tree = {
 				bonus = 0.5
 			}
 		}
+		x = 88
+		y = 3
 		prerequisite = {
 			focus = AUS_bring_generals_out_of_retirement
 		}
-		x = 16
-		y = 4
 	}
 	focus = {
 		id = AUS_nww_industry
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_focus_AUS_nww_danube
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -406,15 +408,15 @@ focus_tree = {
 				bonus = 0.5
 			}
 		}
-		prerequisite = {
-			focus = AUS_nww_rebuild
+		x = 64
+		y = 0
+		available = {
+			has_completed_focus = AUS_nww_rebuild
 		}
-		x = 24
-		y = 1
 	}
 	focus = {
 		id = aus_prom
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_focus_generic_public_works
 		cost = 5
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -430,15 +432,15 @@ focus_tree = {
 			}
 			remove_ideas = AUS_recovering_from_the_depression
 		}
+		x = 64
+		y = 1
 		prerequisite = {
 			focus = AUS_nww_industry
 		}
-		x = 22
-		y = 2
 	}
 	focus = {
 		id = aus_prom_2
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_focus_generic_industry_investment
 		cost = 5
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -454,15 +456,15 @@ focus_tree = {
 			}
 			remove_ideas = AUS_widespread_unemployment
 		}
+		x = 64
+		y = 2
 		prerequisite = {
 			focus = aus_prom
 		}
-		x = 22
-		y = 3
 	}
 	focus = {
 		id = aus_prom_3
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_focus_generic_steel_mill
 		cost = 5
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -477,15 +479,15 @@ focus_tree = {
 				}
 			}
 		}
+		x = 64
+		y = 3
 		prerequisite = {
 			focus = aus_prom_2
 		}
-		x = 22
-		y = 4
 	}
 	focus = {
 		id = aus_prom_4
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_focus_generic_improve_roads
 		cost = 5
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -500,15 +502,15 @@ focus_tree = {
 				}
 			}
 		}
+		x = 64
+		y = 4
 		prerequisite = {
 			focus = aus_prom_3
 		}
-		x = 21
-		y = 5
 	}
 	focus = {
 		id = aus_prom_5
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_focus_generic_industry_3
 		cost = 5
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -523,15 +525,15 @@ focus_tree = {
 				}
 			}
 		}
+		x = 67
+		y = 4
 		prerequisite = {
 			focus = aus_prom_3
 		}
-		x = 23
-		y = 5
 	}
 	focus = {
 		id = AUS_new_economic
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_focus_generic_economic_recovery
 		cost = 5
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -546,15 +548,15 @@ focus_tree = {
 				}
 			}
 		}
+		x = 72
+		y = 1
 		prerequisite = {
 			focus = AUS_nww_industry
 		}
-		x = 26
-		y = 2
 	}
 	focus = {
 		id = AUS_reform_the_economic
-		icon = GFX_focus_research2
+		icon = GFX_focus_generic_currency_reforms
 		cost = 5
 		completion_reward = {
 			4 = {
@@ -570,15 +572,15 @@ focus_tree = {
 			}
 			remove_ideas = AUS_phonix_insurance
 		}
+		x = 72
+		y = 2
 		prerequisite = {
 			focus = AUS_new_economic
 		}
-		x = 26
-		y = 3
 	}
 	focus = {
 		id = AUS_create_a_new_econimic
-		icon = GFX_focus_research2
+		icon = GFX_focus_generic_central_planning
 		cost = 5
 		completion_reward = {
 			add_ideas = NWW_AUS_currency
@@ -589,11 +591,11 @@ focus_tree = {
 				add_research_slot = 1
 			}
 		}
+		x = 72
+		y = 3
 		prerequisite = {
 			focus = AUS_reform_the_economic
 		}
-		x = 26
-		y = 4
 	}
 	initial_show_position = {
 		focus = AUS_nww_rebuild
@@ -807,13 +809,8 @@ focus_tree = {
 	shared_focus = AUS_naval_efficiency
 	focus = {
 		id = NWW_AUS_restore_dual_monarchy
-		x = 6
-		y = 7
 		cost = 10
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		prerequisite = {
-			focus = AUS_reclaiming_yugoslavian_territories
-		}
 		available = {
 			is_subject = no
 			NOT = {
@@ -961,9 +958,3079 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		x = 42
+		y = 5
+		prerequisite = {
+			focus = AUS_reclaiming_yugoslavian_territories
+		}
+	}
+	focus = {
+		id = AUS_nww2_absolute_debate
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_focus_AUS_nww_eagle
+		available_if_capitulated = no
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_political_power
+		}
+	}
+	focus = {
+		id = AUS_nww2_absolute_cabinet
+		x = 0
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_monarchy_1
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_reinstate_the_imperial_council
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_absolute_crown_service
+		x = 0
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_improve_the_administration_2
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_absolute_cabinet
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_absolute_provincial_diets
+		x = 0
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_subjugation
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_absolute_crown_service
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_absolute_loyal_officers
+		x = 0
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_soldier_salute
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_absolute_provincial_diets
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_absolute_imperial_chancery
+		x = 0
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_commission
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_absolute_loyal_officers
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_absolute_crown_law
+		x = 0
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_monarchy_2
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_absolute_imperial_chancery
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_constitutional_debate
+		x = 6
+		y = 2
+		cost = 5
+		icon = GFX_focus_AUS_nww_constitution
+		available_if_capitulated = no
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_political_power
+		}
+	}
+	focus = {
+		id = AUS_nww2_constitutional_responsible_ministry
+		x = 6
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_advisors
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_hold_elections
+		}
+		available = {
+			has_government = democratic
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_constitutional_parliament
+		x = 6
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_vote
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_constitutional_responsible_ministry
+		}
+		available = {
+			has_government = democratic
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_constitutional_rights
+		x = 6
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_universal_suffrage
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_constitutional_parliament
+		}
+		available = {
+			has_government = democratic
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_constitutional_coalition
+		x = 6
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_public_meetings
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_constitutional_rights
+		}
+		available = {
+			has_government = democratic
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_constitutional_federal_court
+		x = 6
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_court
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_constitutional_coalition
+		}
+		available = {
+			has_government = democratic
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_constitutional_constitutional_crown
+		x = 6
+		y = 9
+		cost = 10
+		icon = GFX_focus_AUS_nww_constitution
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_constitutional_federal_court
+		}
+		available = {
+			has_government = democratic
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_fascist_debate
+		x = 12
+		y = 2
+		cost = 5
+		icon = GFX_focus_generic_fascist_propaganda
+		available_if_capitulated = no
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_political_power
+		}
+	}
+	focus = {
+		id = AUS_nww2_fascist_settlement
+		x = 12
+		y = 3
+		cost = 5
+		icon = GFX_focus_generic_military_dictatorship
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_install_fascist = yes
+			add_ideas = AUS_nww_fascist_settlement
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_debate
+		}
+		available = {
+			NOT = {
+				fascism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AUS_reinstate_the_imperial_council
+			focus = AUS_hold_elections
+			focus = AUS_nww2_communist_settlement
+			focus = AUS_nww2_alternative_settlement
+		}
+	}
+	focus = {
+		id = AUS_nww2_fascist_directorate
+		x = 12
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_national_security
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_settlement
+		}
+		available = {
+			has_government = fascism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_fascist_corporations
+		x = 12
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_industrialists
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_directorate
+		}
+		available = {
+			has_government = fascism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_fascist_veterans
+		x = 12
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_fascist_troops
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_corporations
+		}
+		available = {
+			has_government = fascism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_fascist_propaganda
+		x = 12
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_printing_press
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_veterans
+		}
+		available = {
+			has_government = fascism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_fascist_security
+		x = 12
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_secret_service_agency
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_propaganda
+		}
+		available = {
+			has_government = fascism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_fascist_national_state
+		x = 12
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_spread_fascism
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_fascist_security
+		}
+		available = {
+			has_government = fascism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_communist_debate
+		x = 18
+		y = 2
+		cost = 5
+		icon = GFX_focus_generic_red_flags
+		available_if_capitulated = no
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_political_power
+		}
+	}
+	focus = {
+		id = AUS_nww2_communist_settlement
+		x = 18
+		y = 3
+		cost = 5
+		icon = GFX_focus_generic_communist
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_install_communist = yes
+			add_ideas = AUS_nww_communist_settlement
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_debate
+		}
+		available = {
+			NOT = {
+				communism < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AUS_reinstate_the_imperial_council
+			focus = AUS_hold_elections
+			focus = AUS_nww2_fascist_settlement
+			focus = AUS_nww2_alternative_settlement
+		}
+	}
+	focus = {
+		id = AUS_nww2_communist_workers_councils
+		x = 18
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_worker_administration
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_settlement
+		}
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_communist_land
+		x = 18
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_land_redistribution
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_workers_councils
+		}
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_communist_unions
+		x = 18
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_workers
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_land
+		}
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_communist_planning
+		x = 18
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_central_planning
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_unions
+		}
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_communist_nationalities
+		x = 18
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_diverse_army
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_planning
+		}
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_communist_social_republic
+		x = 18
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_social_democracy
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_communist_nationalities
+		}
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_alternative_debate
+		x = 24
+		y = 2
+		cost = 5
+		icon = GFX_focus_generic_monarchist_sentiment
+		available_if_capitulated = no
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_political_power
+		}
+	}
+	focus = {
+		id = AUS_nww2_alternative_settlement
+		x = 24
+		y = 3
+		cost = 5
+		icon = GFX_focus_generic_monarchy_2
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_install_alternative = yes
+			add_ideas = AUS_nww_alternative_settlement
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_debate
+		}
+		available = {
+			NOT = {
+				neutrality < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AUS_reinstate_the_imperial_council
+			focus = AUS_hold_elections
+			focus = AUS_nww2_fascist_settlement
+			focus = AUS_nww2_communist_settlement
+		}
+	}
+	focus = {
+		id = AUS_nww2_alternative_dynastic_pact
+		x = 24
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_royal_wedding
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_settlement
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_alternative_landed_elites
+		x = 24
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_farmland
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_dynastic_pact
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_alternative_royal_guard
+		x = 24
+		y = 6
+		cost = 10
+		icon = GFX_focus_AFG_royal_guard
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_landed_elites
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_alternative_court_reform
+		x = 24
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_improve_the_administration
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_royal_guard
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_alternative_crown_diplomats
+		x = 24
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_diplomatic_treaty
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_court_reform
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_alternative_succession_act
+		x = 24
+		y = 9
+		cost = 10
+		icon = GFX_focus_AUS_nww_eagle
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_alternative_crown_diplomats
+		}
+		available = {
+			has_government = neutrality
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_galician_ultimatum
+		x = 42
+		y = 6
+		cost = 10
+		icon = GFX_goal_generic_demand_territory
+		available_if_capitulated = no
+		completion_reward = {
+			set_country_flag = AUS_nww_galicia_pending
+			POL = {
+				country_event = {
+					id = nww_aus_overhaul.10
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NWW_AUS_restore_dual_monarchy
+		}
+		available = {
+			is_subject = no
+			POL = {
+				exists = yes
+				is_subject = no
+			}
+			NOT = {
+				has_war_with = POL
+			}
+			NOT = {
+				is_ally_with = POL
+			}
+			OR = {
+				88 = {
+					is_owned_and_controlled_by = POL
+				}
+				89 = {
+					is_owned_and_controlled_by = POL
+				}
+				91 = {
+					is_owned_and_controlled_by = POL
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_bukovina_ultimatum
+		x = 42
+		y = 7
+		cost = 10
+		icon = GFX_goal_generic_forceful_treaty
+		available_if_capitulated = no
+		completion_reward = {
+			set_country_flag = AUS_nww_bukovina_pending
+			ROM = {
+				country_event = {
+					id = nww_aus_overhaul.11
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_galician_ultimatum
+		}
+		available = {
+			is_subject = no
+			ROM = {
+				exists = yes
+				is_subject = no
+			}
+			80 = {
+				is_owned_and_controlled_by = ROM
+			}
+			NOT = {
+				has_war_with = ROM
+			}
+			NOT = {
+				is_ally_with = ROM
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_german_competition
+		x = 36
+		y = 8
+		cost = 10
+		icon = GFX_goal_generic_political_pressure
+		available_if_capitulated = no
+		completion_reward = {
+			set_country_flag = AUS_nww_german_competition
+			GER = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = AUS_nww_rivalry
+				}
+			}
+			add_war_support = 0.10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_bukovina_ultimatum
+		}
+		available = {
+			GER = {
+				exists = yes
+			}
+			NOT = {
+				is_ally_with = GER
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AUS_nww2_danubian_congress
+		}
+	}
+	focus = {
+		id = AUS_nww2_danubian_congress
+		x = 48
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_conference
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = AUS_nww_danubian_league
+			}
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_bukovina_ultimatum
+		}
+		available = {
+			is_subject = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = AUS_nww2_german_competition
+		}
+	}
+	focus = {
+		id = AUS_nww2_customs
+		x = 36
+		y = 9
+		cost = 10
+		icon = GFX_goal_generic_trade
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_consumer_goods_factor = -0.05
+				tooltip = AUS_nww_bonus_consumer_goods_factor_minus0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_german_competition
+		}
+	}
+	focus = {
+		id = AUS_nww2_finance
+		x = 36
+		y = 10
+		cost = 10
+		icon = GFX_focus_generic_monetary_union
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_industrial_capacity_factory = 0.05
+				tooltip = AUS_nww_bonus_industrial_capacity_factory_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_customs
+		}
+	}
+	focus = {
+		id = AUS_nww2_intelligence
+		x = 36
+		y = 11
+		cost = 10
+		icon = GFX_focus_generic_secret_agent_operative
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 40
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_finance
+		}
+	}
+	focus = {
+		id = AUS_nww2_strategic_reserve
+		x = 36
+		y = 12
+		cost = 10
+		icon = GFX_focus_generic_stockpile_fuel
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_org_factor = 0.05
+				tooltip = AUS_nww_bonus_army_org_factor_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_intelligence
+		}
+	}
+	focus = {
+		id = AUS_nww2_sovereign_danube
+		x = 36
+		y = 13
+		cost = 10
+		icon = GFX_goal_generic_neutrality_focus
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_strategic_reserve
+		}
+	}
+	focus = {
+		id = AUS_nww2_equal_empires
+		x = 36
+		y = 14
+		cost = 10
+		icon = GFX_goal_generic_major_alliance
+		available_if_capitulated = no
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = nww_aus_overhaul.15
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_sovereign_danube
+		}
+	}
+	focus = {
+		id = AUS_nww2_invite_rom
+		x = 48
+		y = 9
+		cost = 10
+		icon = GFX_goal_generic_alliance
+		available_if_capitulated = no
+		completion_reward = {
+			ROM = {
+				country_event = {
+					id = nww_aus_overhaul.12
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_danubian_congress
+		}
+		available = {
+			is_faction_leader = yes
+			ROM = {
+				exists = yes
+				is_subject = no
+				is_in_faction = no
+			}
+			NOT = {
+				has_war_with = ROM
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_invite_bul
+		x = 48
+		y = 10
+		cost = 10
+		icon = GFX_focus_generic_befriend_bulgaria
+		available_if_capitulated = no
+		completion_reward = {
+			BUL = {
+				country_event = {
+					id = nww_aus_overhaul.12
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_invite_rom
+		}
+		available = {
+			is_faction_leader = yes
+			BUL = {
+				exists = yes
+				is_subject = no
+				is_in_faction = no
+			}
+			NOT = {
+				has_war_with = BUL
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_invite_yug
+		x = 48
+		y = 11
+		cost = 10
+		icon = GFX_goal_generic_improve_relations
+		available_if_capitulated = no
+		completion_reward = {
+			YUG = {
+				country_event = {
+					id = nww_aus_overhaul.12
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_invite_bul
+		}
+		available = {
+			is_faction_leader = yes
+			YUG = {
+				exists = yes
+				is_subject = no
+				is_in_faction = no
+			}
+			NOT = {
+				has_war_with = YUG
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_danubian_security
+		x = 48
+		y = 12
+		cost = 10
+		icon = GFX_goal_generic_military_sphere
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.10
+			add_command_power = 40
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_invite_yug
+		}
+	}
+	focus = {
+		id = AUS_nww2_danubian_research
+		x = 48
+		y = 13
+		cost = 10
+		icon = GFX_goal_tfv_generic_tech_sharing
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_danubian_security
+		}
+	}
+	focus = {
+		id = AUS_nww2_crownland_administration
+		x = 42
+		y = 14
+		cost = 10
+		icon = GFX_focus_AUS_nww_eagle
+		available_if_capitulated = no
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						state = 88
+						state = 89
+						state = 91
+						state = 80
+					}
+				}
+				add_core_of = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_galician_ultimatum
+			focus = AUS_nww2_bukovina_ultimatum
+		}
+		available = {
+			OR = {
+				88 = {
+					is_owned_and_controlled_by = AUS
+				}
+				89 = {
+					is_owned_and_controlled_by = AUS
+				}
+				91 = {
+					is_owned_and_controlled_by = AUS
+				}
+				80 = {
+					is_owned_and_controlled_by = AUS
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_civilian_1
+		x = 56
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_civilian = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww_industry
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_2
+		x = 56
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_steel_mill
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_civilian = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_3
+		x = 56
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_industrial_experts
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_production_speed_buildings_factor = 0.05
+				tooltip = AUS_nww_bonus_production_speed_buildings_factor_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_4
+		x = 56
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_railroad
+		available_if_capitulated = no
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_5
+		x = 56
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_public_works
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_civilian = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_4
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_6
+		x = 56
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_electrification
+		available_if_capitulated = no
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_5
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_7
+		x = 56
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_low_cost_housing
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_civilian = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_6
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_8
+		x = 56
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_mass_production
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_production_speed_buildings_factor = 0.05
+				tooltip = AUS_nww_bonus_production_speed_buildings_factor_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_7
+		}
+	}
+	focus = {
+		id = AUS_nww2_civilian_9
+		x = 56
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_full_employment
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_consumer_goods_factor = -0.05
+				tooltip = AUS_nww_bonus_consumer_goods_factor_minus0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_civilian_8
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_1
+		x = 62
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_military_industry
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_military = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww_industry
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_2
+		x = 62
+		y = 7
+		cost = 10
+		icon = GFX_goal_generic_small_arms
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_industrial_capacity_factory = 0.05
+				tooltip = AUS_nww_bonus_industrial_capacity_factory_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_3
+		x = 62
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_military_mission
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_military = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_4
+		x = 62
+		y = 9
+		cost = 10
+		icon = GFX_goal_generic_army_artillery2
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = armor
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_5
+		x = 62
+		y = 10
+		cost = 10
+		icon = GFX_focus_generic_arms_trade
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_military = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_4
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_6
+		x = 62
+		y = 11
+		cost = 10
+		icon = GFX_focus_generic_reorient_production
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = armor
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_5
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_7
+		x = 62
+		y = 12
+		cost = 10
+		icon = GFX_focus_generic_mass_production
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_military = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_6
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_8
+		x = 62
+		y = 13
+		cost = 10
+		icon = GFX_focus_generic_tank_production
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_industrial_capacity_factory = 0.05
+				tooltip = AUS_nww_bonus_industrial_capacity_factory_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_7
+		}
+	}
+	focus = {
+		id = AUS_nww2_military_9
+		x = 62
+		y = 14
+		cost = 10
+		icon = GFX_focus_generic_stockpile_currency
+		available_if_capitulated = no
+		completion_reward = {
+			set_country_flag = AUS_nww_concerns_advanced
+			add_to_variable = {
+				AUS_economy_production_factory_max_efficiency_factor = 0.05
+				tooltip = AUS_nww_bonus_production_factory_max_efficiency_factor_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_military_8
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_1
+		x = 78
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_university_1
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww_industry
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_2
+		x = 78
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_education
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			else = {
+				add_tech_bonus = {
+					bonus = 0.50
+					uses = 2
+					category = industry
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_3
+		x = 78
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_secret_weapon
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_4
+		x = 78
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_radar
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = electronics
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_5
+		x = 78
+		y = 5
+		cost = 10
+		icon = GFX_goal_tfv_generic_tech_sharing
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_4
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_6
+		x = 78
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_industrial_experts
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = electronics
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_5
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_7
+		x = 78
+		y = 7
+		cost = 10
+		icon = GFX_focus_research
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_6
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_8
+		x = 78
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_university_3
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			else = {
+				add_tech_bonus = {
+					bonus = 0.50
+					uses = 2
+					category = industry
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_7
+		}
+	}
+	focus = {
+		id = AUS_nww2_technology_9
+		x = 78
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_resource_extraction
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_economy_research_speed_factor = 0.05
+				tooltip = AUS_nww_bonus_research_speed_factor_0_05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technology_8
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_0_0
+		x = 84
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_military_academy
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_core_defence_factor = 0.05
+				tooltip = AUS_nww_bonus_army_core_defence_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_establish_bohme_plan
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_0_1
+		x = 84
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_dig_in_speed_factor = 0.05
+				tooltip = AUS_nww_bonus_dig_in_speed_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_0_0
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_0_2
+		x = 84
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_radio_communication
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_supply_consumption_factor = -0.05
+				tooltip = AUS_nww_bonus_supply_consumption_factor_minus0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_0_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_0_3
+		x = 84
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_org_factor = 0.05
+				tooltip = AUS_nww_bonus_army_org_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_0_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_0_4
+		x = 84
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_mountain_training
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_max_planning = 0.05
+				tooltip = AUS_nww_bonus_max_planning_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_0_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_0_5
+		x = 84
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_soldier_salute
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_defence_factor = 0.05
+				tooltip = AUS_nww_bonus_army_defence_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_0_4
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_1_0
+		x = 88
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_mountain_troops
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_org_factor = 0.05
+				tooltip = AUS_nww_bonus_army_org_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_establish_bohme_plan
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_1_1
+		x = 88
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_mountain_fortification
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_land_reinforce_rate = 0.02
+				tooltip = AUS_nww_bonus_land_reinforce_rate_0_02
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_1_0
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_1_2
+		x = 88
+		y = 6
+		cost = 10
+		icon = GFX_goal_generic_army_artillery2
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_speed_factor = 0.05
+				tooltip = AUS_nww_bonus_army_speed_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_1_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_1_3
+		x = 88
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_home_defense
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_planning_speed = 0.05
+				tooltip = AUS_nww_bonus_planning_speed_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_1_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_1_4
+		x = 88
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_field_hostpital
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_org_regain = 0.05
+				tooltip = AUS_nww_bonus_army_org_regain_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_1_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_1_5
+		x = 88
+		y = 9
+		cost = 10
+		icon = GFX_goal_generic_special_forces
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_attack_factor = 0.05
+				tooltip = AUS_nww_bonus_army_attack_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_1_4
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_2_0
+		x = 92
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_truck
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_armor_attack_factor = 0.05
+				tooltip = AUS_nww_bonus_army_armor_attack_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_establish_bohme_plan
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_2_1
+		x = 92
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_army_tanks
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_attrition = -0.05
+				tooltip = AUS_nww_bonus_attrition_minus0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_2_0
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_2_2
+		x = 92
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_motor_cycle
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_org_factor = 0.05
+				tooltip = AUS_nww_bonus_army_org_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_2_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_2_3
+		x = 92
+		y = 7
+		cost = 10
+		icon = GFX_focus_generic_supply_line
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_army_artillery_attack_factor = 0.05
+				tooltip = AUS_nww_bonus_army_artillery_attack_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_2_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_2_4
+		x = 92
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_combined_arms
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_supply_consumption_factor = -0.05
+				tooltip = AUS_nww_bonus_supply_consumption_factor_minus0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_2_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_army_2_5
+		x = 92
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_tank_assault
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_army_breakthrough_factor = 0.05
+				tooltip = AUS_nww_bonus_breakthrough_factor_0_05
+			}
+			army_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_army_2_4
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_command
+		x = 104
+		y = 0
+		cost = 5
+		icon = GFX_focus_AUS_nww_air
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = AUS_nww_rebuild
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_air_1
+		x = 100
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_pilot_training
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_mission_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_command
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_2
+		x = 100
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_aircraft_production
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_mission_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_3
+		x = 100
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_flight_instructors
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_mission_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_4
+		x = 100
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_air_fighter
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_mission_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_mission_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_5
+		x = 104
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_cas_aircraft
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_accidents_factor = -0.05
+				tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_command
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_6
+		x = 104
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_air_doctrine
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_accidents_factor = -0.05
+				tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_5
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_7
+		x = 104
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_air_bases
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_accidents_factor = -0.05
+				tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_6
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_8
+		x = 104
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_air_partners
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_accidents_factor = -0.05
+				tooltip = AUS_nww_bonus_air_accidents_factor_minus0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_7
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_9
+		x = 108
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_multi_role_aircraft
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_cas_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+			}
+			air_experience = 15
+			4 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_command
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_10
+		x = 108
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_jet_planes
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_cas_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_9
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_11
+		x = 108
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_radio_communication
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_cas_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_10
+		}
+	}
+	focus = {
+		id = AUS_nww2_air_12
+		x = 108
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_air_defense
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_air_air_cas_efficiency = 0.05
+				tooltip = AUS_nww_bonus_air_cas_efficiency_0_05
+			}
+			air_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_air_11
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_command
+		x = 120
+		y = 0
+		cost = 5
+		icon = GFX_focus_AUS_nww_navy
+		available_if_capitulated = no
+		completion_reward = {
+			add_command_power = 25
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = {
+					early_ship_hull_light = 1
+					basic_battery = 1
+					basic_torpedo = 1
+				}
+			}
+			else = {
+				set_technology = {
+					early_destroyer = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = AUS_nww_rebuild
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_navy_1
+		x = 116
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_repair_speed_factor = 0.05
+				tooltip = AUS_nww_bonus_repair_speed_factor_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_command
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_2
+		x = 116
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_merchant_fleet
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_repair_speed_factor = 0.05
+				tooltip = AUS_nww_bonus_repair_speed_factor_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_1
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_3
+		x = 116
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_navy_cruiser
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_repair_speed_factor = 0.05
+				tooltip = AUS_nww_bonus_repair_speed_factor_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_2
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_4
+		x = 116
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_naval_discipline
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_build_dockyard = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_3
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_5
+		x = 120
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_mine_warfare
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_convoy_escort_efficiency = 0.05
+				tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_command
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_6
+		x = 120
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_navy_anti_submarine
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_convoy_escort_efficiency = 0.05
+				tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_5
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_7
+		x = 120
+		y = 3
+		cost = 10
+		icon = GFX_goal_generic_navy_submarine
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_convoy_escort_efficiency = 0.05
+				tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_6
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_8
+		x = 120
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_navy_battleship
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_convoy_escort_efficiency = 0.05
+				tooltip = AUS_nww_bonus_convoy_escort_efficiency_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_7
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_9
+		x = 124
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_refit_civilian_ships
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_naval_coordination = 0.05
+				tooltip = AUS_nww_bonus_naval_coordination_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_command
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_10
+		x = 124
+		y = 2
+		cost = 10
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_naval_coordination = 0.05
+				tooltip = AUS_nww_bonus_naval_coordination_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_9
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_11
+		x = 124
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_escort_efficiency
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_naval_coordination = 0.05
+				tooltip = AUS_nww_bonus_naval_coordination_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_10
+		}
+	}
+	focus = {
+		id = AUS_nww2_navy_12
+		x = 124
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_adriatic_sea_focus
+		available_if_capitulated = no
+		completion_reward = {
+			add_to_variable = {
+				AUS_navy_naval_coordination = 0.05
+				tooltip = AUS_nww_bonus_naval_coordination_0_05
+			}
+			navy_experience = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_navy_11
+		}
+	}
+	focus = {
+		id = AUS_nww2_language_charter
+		x = 30
+		y = 0
+		cost = 5
+		icon = GFX_focus_AUS_nww_constitution
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_prague_conference
+		x = 30
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_befriend_bohemia
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_language_charter
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_local_budget
+		x = 30
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_stockpile_currency
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_prague_conference
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_land_compromise
+		x = 30
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_agricultural_subsidies
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_local_budget
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_technical_compact
+		x = 30
+		y = 4
+		cost = 10
+		icon = GFX_goal_generic_scientific_exchange
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_land_compromise
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_provincial_court
+		x = 30
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_sympathetic_judges
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_technical_compact
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_representation
+		x = 30
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_freedom_council
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_provincial_court
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = AUS_nww2_crownland_settlement
+		x = 30
+		y = 7
+		cost = 10
+		icon = GFX_focus_AUS_nww_eagle
+		available_if_capitulated = no
+		completion_reward = {
+			AUS_nww_reduce_bohemian_tension = yes
+			add_stability = 0.05
+			set_country_flag = AUS_nww_bohemia_settled
+			remove_mission = AUS_nww_bohemian_drift
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = AUS_nww2_representation
+		}
+		available = {
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			NOT = {
+				has_country_flag = AUS_nww_bohemia_seceded
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	continuous_focus_position = {
 		x = 100
-		y = 2400
+		y = 3000
 	}
 }

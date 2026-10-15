@@ -1,0 +1,25 @@
+# Country scope: one-time hereditary setup, then reward-free save reconciliation.
+AUS_nww_repair_charters = {
+ if = {
+  limit = { NOT = { has_country_flag = AUS_nww_charters_initialized } }
+  every_owned_state = {
+   limit = { OR = { state = 4 state = 152 state = 153 state = 848 state = 976 } }
+   set_state_flag = AUS_nww_crownland_charter
+  }
+  set_country_flag = AUS_nww_charters_initialized
+ }
+ every_owned_state = {
+  limit = {
+   has_dynamic_modifier = { modifier = AUS_nww_crownland_charter }
+   NOT = { has_state_flag = AUS_nww_crownland_charter }
+  }
+  set_state_flag = AUS_nww_crownland_charter
+ }
+ every_owned_state = {
+  limit = {
+   has_state_flag = AUS_nww_crownland_charter
+   NOT = { has_dynamic_modifier = { modifier = AUS_nww_crownland_charter } }
+  }
+  add_dynamic_modifier = { modifier = AUS_nww_crownland_charter }
+ }
+}

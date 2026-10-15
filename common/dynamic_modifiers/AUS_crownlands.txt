@@ -1,0 +1,7 @@
+AUS_nww_crownland_charter = {
+ icon = GFX_AUS_nww_eagle
+ enable = { owner = { original_tag = AUS } }
+ state_production_speed_buildings_factor = 0.10
+ state_production_speed_infrastructure_factor = 0.10
+ local_resources_factor = 0.10
+}

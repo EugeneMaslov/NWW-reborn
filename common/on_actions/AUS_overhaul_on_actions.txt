@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			AUS = {
+				if = {
+					limit = {
+						exists = yes
+						has_focus_tree = AUS_focus
+					}
+					AUS_nww_initialize = yes
+				}
+			}
+		}
+	}
+	on_daily_AUS = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = AUS_focus
+				}
+				AUS_nww_initialize = yes
+			}
+		}
+	}
+}
