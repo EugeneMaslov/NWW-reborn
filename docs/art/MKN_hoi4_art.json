@@ -1,0 +1,819 @@
+{
+  "generator": "built-in image_gen",
+  "style_references": [
+    "docs/art/ltb_focuses/general_staff.png",
+    "docs/art/ltb_focuses/rebuild_bridge.png",
+    "docs/ltb_focus_icons_preview.png"
+  ],
+  "assets": [
+    {
+      "key": "militarism",
+      "focus": "MKN_military_takes_charge",
+      "sprite": "GFX_focus_MKN_militarism",
+      "source": "docs/art/mkn_hoi4_icons/militarism.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism.dds",
+      "references": [
+        "gfx/generated_sources/MKN_overhaul/militarism.png",
+        "docs/art/ltb_focuses/general_staff.png"
+      ],
+      "source_sha256": "30f8f6242ab64c2969059cb11ac4401827aa3b27f4e2b8be4bf2819a80232193",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        8,
+        90,
+        87
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "militarism_1",
+      "focus": "MKN_arrest_demagogues",
+      "sprite": "GFX_focus_MKN_program_militarism_1",
+      "source": "docs/art/mkn_hoi4_icons/militarism_1.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism_1.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism_1.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "c1ab903b2ebc778906304c3ed212039a3d2e1b5bb5323dc00b5b8f9cc7cf1c89",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "militarism_2",
+      "focus": "MKN_abolish_election_of_commanders",
+      "sprite": "GFX_focus_MKN_program_militarism_2",
+      "source": "docs/art/mkn_hoi4_icons/militarism_2.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism_2.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism_2.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "1787d36bcc2fccf3d944cb1369e22e9620b3090e83a26e97209f5b3718a43cc6",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "militarism_3",
+      "focus": "MKN_militarize_communes",
+      "sprite": "GFX_focus_MKN_program_militarism_3",
+      "source": "docs/art/mkn_hoi4_icons/militarism_3.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism_3.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism_3.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "5e1776ca0ed264f5a0097294f46ddd70dde9213b20aa4a2184c09ba5b2c55d97",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        89,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "militarism_4",
+      "focus": "MKN_standardize_workshops",
+      "sprite": "GFX_focus_MKN_program_militarism_4",
+      "source": "docs/art/mkn_hoi4_icons/militarism_4.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism_4.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism_4.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "4986598ebb8ab331aea853a4abfb0b5c20734b6c9726f1f73306619d0497fd9d",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        87
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "militarism_5",
+      "focus": "MKN_iron_fist_trains",
+      "sprite": "GFX_focus_MKN_program_militarism_5",
+      "source": "docs/art/mkn_hoi4_icons/militarism_5.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism_5.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism_5.dds",
+      "correction_prompt": "docs/art/mkn_hoi4_icons/militarism_5.correction.prompt.txt",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "correction_reference": "docs/art/mkn_hoi4_icons/references/militarism_5_before_flag_correction.png",
+      "source_sha256": "72deb64da7b7713122871d98d2efb3e10abdc1d3877fe320f14bf5a7ffde9c70",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        89,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "militarism_6",
+      "focus": "MKN_black_expansionism",
+      "sprite": "GFX_focus_MKN_program_militarism_6",
+      "source": "docs/art/mkn_hoi4_icons/militarism_6.png",
+      "prompt": "docs/art/mkn_hoi4_icons/militarism_6.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_militarism_6.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "ba9b02c65ed9123fd3233dfb9730ed2c7dba250426a452260aec7452ae15906f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        6,
+        88,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat",
+      "focus": "MKN_triumph_of_free_soviets",
+      "sprite": "GFX_focus_MKN_nabat",
+      "source": "docs/art/mkn_hoi4_icons/nabat.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "484af318fdba454fd297581049c1d0fa690af524074e4c3b74347a59f8ff4a7e",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        89,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat_1",
+      "focus": "MKN_pact_of_free_communes",
+      "sprite": "GFX_focus_MKN_program_nabat_1",
+      "source": "docs/art/mkn_hoi4_icons/nabat_1.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat_1.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat_1.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "9a1bbb9ab50e89932b54c4e86d3ce46084baf3b58e2814885d766a99af833e80",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat_2",
+      "focus": "MKN_abolish_general_staff",
+      "sprite": "GFX_focus_MKN_program_nabat_2",
+      "source": "docs/art/mkn_hoi4_icons/nabat_2.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat_2.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat_2.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "86c7866d797a0e682c75181ebfe29610acba936b0a8c553cd0083ef733ebfb18",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat_3",
+      "focus": "MKN_arms_to_the_people",
+      "sprite": "GFX_focus_MKN_program_nabat_3",
+      "source": "docs/art/mkn_hoi4_icons/nabat_3.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat_3.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat_3.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "fb19cdc50e110f923a804d23d7f680cc58cfe58474133b2c682deede78d66443",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat_4",
+      "focus": "MKN_black_international",
+      "sprite": "GFX_focus_MKN_program_nabat_4",
+      "source": "docs/art/mkn_hoi4_icons/nabat_4.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat_4.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat_4.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "39c441af97de7ccdd7019e9b7868af068d69c6006c11adcf87e873abf511b341",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat_5",
+      "focus": "MKN_propaganda_by_deed",
+      "sprite": "GFX_focus_MKN_program_nabat_5",
+      "source": "docs/art/mkn_hoi4_icons/nabat_5.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat_5.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat_5.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "4e25de1d9220da5095fcd0800310cb63ca04a9d41eba2678a72e6268ae6e648e",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "nabat_6",
+      "focus": "MKN_autonomous_rail_crews",
+      "sprite": "GFX_focus_MKN_program_nabat_6",
+      "source": "docs/art/mkn_hoi4_icons/nabat_6.png",
+      "prompt": "docs/art/mkn_hoi4_icons/nabat_6.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_nabat_6.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "d2f650822fd437b1ea285794799660787959e2e9858135a40c283cb38a361251",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        89,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian",
+      "focus": "MKN_peasant_delegates",
+      "sprite": "GFX_focus_MKN_agrarian",
+      "source": "docs/art/mkn_hoi4_icons/agrarian.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "b8688b1a6f4feea49a4b6017df9bfa8f80d3a4951e1c1a739d56006f573d4d65",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        87
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian_1",
+      "focus": "MKN_grain_ultimatum",
+      "sprite": "GFX_focus_MKN_program_agrarian_1",
+      "source": "docs/art/mkn_hoi4_icons/agrarian_1.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian_1.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian_1.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "21f50ef3fe50910351668e0218b6049e33fe4d2782d85553268e01de9bbe84cb",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian_2",
+      "focus": "MKN_sever_urban_ties",
+      "sprite": "GFX_focus_MKN_program_agrarian_2",
+      "source": "docs/art/mkn_hoi4_icons/agrarian_2.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian_2.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian_2.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "193f937ceb04642503ebef00952bdca7525d72f7b0491c4ae475dc3ffdf04c8b",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        89,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian_3",
+      "focus": "MKN_every_farm_a_fortress",
+      "sprite": "GFX_focus_MKN_program_agrarian_3",
+      "source": "docs/art/mkn_hoi4_icons/agrarian_3.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian_3.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian_3.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "0acb388edbbdb908208405cea953cc5cddcd9573abbeb22db06b3f0fd487e249",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian_4",
+      "focus": "MKN_steppe_snipers",
+      "sprite": "GFX_focus_MKN_program_agrarian_4",
+      "source": "docs/art/mkn_hoi4_icons/agrarian_4.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian_4.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian_4.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "cecb1713dd2cb063981650f216891d9fe14da4a87449ac97942df0b2914f3bbf",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian_5",
+      "focus": "MKN_railway_sabotage",
+      "sprite": "GFX_focus_MKN_program_agrarian_5",
+      "source": "docs/art/mkn_hoi4_icons/agrarian_5.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian_5.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian_5.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "ca0a97728754f50a9993dd2156937f9f4b5bd625fb926b763bda4feca2421f37",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "agrarian_6",
+      "focus": "MKN_cavalry_ambush",
+      "sprite": "GFX_focus_MKN_program_agrarian_6",
+      "source": "docs/art/mkn_hoi4_icons/agrarian_6.png",
+      "prompt": "docs/art/mkn_hoi4_icons/agrarian_6.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_agrarian_6.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "743ced1862e3758f366bbf74cc29c841d23d967cb1dc11b68104737a8a2eae7a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom",
+      "focus": "MKN_emergency_revkom",
+      "sprite": "GFX_focus_MKN_revkom",
+      "source": "docs/art/mkn_hoi4_icons/revkom.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "623e2488830e35891c8ed6d22ce18c695a0a44d748dadd0c5d2dac18de9f7427",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        87
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom_1",
+      "focus": "MKN_purge_irreconcilables",
+      "sprite": "GFX_focus_MKN_program_revkom_1",
+      "source": "docs/art/mkn_hoi4_icons/revkom_1.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom_1.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom_1.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "8605e69493e4af25251dc44456d49657acbf3e1e8041225a5df1cbb41fbca5dd",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        12,
+        90,
+        84
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom_2",
+      "focus": "MKN_embassy_to_kharkov",
+      "sprite": "GFX_focus_MKN_program_revkom_2",
+      "source": "docs/art/mkn_hoi4_icons/revkom_2.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom_2.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom_2.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "1e549db746f6abc8c4f87b9a13f36099d3c56d8aacc1beef887a7f395769d9a9",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom_3",
+      "focus": "MKN_integrate_steel_lines",
+      "sprite": "GFX_focus_MKN_program_revkom_3",
+      "source": "docs/art/mkn_hoi4_icons/revkom_3.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom_3.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom_3.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "f000e6a102ea0a2ee15268c5c0a416e16fbbb6ead777c1f7abc91426cd3e300e",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom_4",
+      "focus": "MKN_red_military_specialists",
+      "sprite": "GFX_focus_MKN_program_revkom_4",
+      "source": "docs/art/mkn_hoi4_icons/revkom_4.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom_4.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom_4.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "9d409682b068d44cb477995bf1ea3dd8674f7d285aea8956a55877514212ebc5",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        8,
+        90,
+        88
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom_5",
+      "focus": "MKN_tractors_for_grain",
+      "sprite": "GFX_focus_MKN_program_revkom_5",
+      "source": "docs/art/mkn_hoi4_icons/revkom_5.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom_5.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom_5.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "75ddd57522ee9d232750ba3865a8b0a230f5a3217c2447a5f43e454b4abc54ce",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        89
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "revkom_6",
+      "focus": "MKN_anti_imperialist_front",
+      "sprite": "GFX_focus_MKN_program_revkom_6",
+      "source": "docs/art/mkn_hoi4_icons/revkom_6.png",
+      "prompt": "docs/art/mkn_hoi4_icons/revkom_6.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_revkom_6.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "0eb50c96f3703ee0764dba2c900987dd32964d01e4299d51294660876e80307f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        8,
+        90,
+        87
+      ],
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "key": "workshops",
+      "focus": "MKN_free_workshops_focus",
+      "sprite": "GFX_idea_MKN_free_workshops",
+      "source": "docs/art/mkn_hoi4_icons/workshops.png",
+      "prompt": "docs/art/mkn_hoi4_icons/workshops.prompt.txt",
+      "texture": "gfx/interface/goals/MKN_workshops.dds",
+      "references": [
+        "docs/art/mkn_hoi4_icons/militarism.png"
+      ],
+      "source_sha256": "a9c3f75245e59a91804f336db302d4a8fca52f9e95dc47e6ffd4ac0f30254f27",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        90
+      ],
+      "size": [
+        96,
+        96
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "key": "historical",
+      "source": "docs/art/mkn_flags/historical.png",
+      "prompt": "docs/art/mkn_flags/historical.prompt.txt",
+      "source_sha256": "cf29480b1a20bd9b3bfac284a9717f3a36c87dae8bfd8236a74f541cc555e8e9",
+      "source_size": [
+        1575,
+        998
+      ]
+    },
+    {
+      "key": "fascism",
+      "source": "docs/art/mkn_flags/fascism.png",
+      "prompt": "docs/art/mkn_flags/fascism.prompt.txt",
+      "source_sha256": "089c794440b10572a1658e9e859bc31a496faa3210a6a05058dcaabefebd200e",
+      "source_size": [
+        1575,
+        998
+      ]
+    },
+    {
+      "key": "democratic",
+      "source": "docs/art/mkn_flags/democratic.png",
+      "prompt": "docs/art/mkn_flags/democratic.prompt.txt",
+      "source_sha256": "91bc5b4c6b73d85d22eda85215f5a348874f9572bf3d8a99c886e625750ef9f8",
+      "source_size": [
+        1575,
+        998
+      ]
+    },
+    {
+      "key": "neutrality",
+      "source": "docs/art/mkn_flags/neutrality.png",
+      "prompt": "docs/art/mkn_flags/neutrality.prompt.txt",
+      "source_sha256": "714af9207ad2ed3c06796898bb888ff47a29118b1a072bfe05cbffe81764ec1e",
+      "source_size": [
+        1575,
+        999
+      ]
+    },
+    {
+      "key": "communism",
+      "source": "docs/art/mkn_flags/communism.png",
+      "prompt": "docs/art/mkn_flags/communism.prompt.txt",
+      "source_sha256": "de7bcc344a864f0d76e82f3e255a0cf938851d940c1079e6332a3ec9f1c25037",
+      "source_size": [
+        1575,
+        999
+      ]
+    }
+  ]
+}

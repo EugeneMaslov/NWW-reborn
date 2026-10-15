@@ -81,3 +81,5 @@
  mkn_workshop_engineer:0 "Инженер мастерских"
  mkn_labor_delegate:0 "Делегат труда"
  mkn_syndicalist_theorist:0 "Теоретик синдикализма"
+ MKN_army_conscription_tt:0 "Военнообязанное население: §G+2%§!."
+ MKN_armored_train_commander_tt:0 "Бронепоезда: §G+20%§! к броне и зенитной атаке, пока советник занимает должность."

@@ -1,0 +1,41 @@
+MKN_repair_personnel = {
+	# Runs once in new campaigns and old saves, without changing the government,
+	# political support, focus progress or existing commanders' military roles.
+	if = {
+		limit = { NOT = { has_country_flag = MKN_personnel_v1 } }
+		if = {
+			limit = { NOT = { has_character = NWW_MKN_eugen } }
+			recruit_character = NWW_MKN_eugen
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { name = NWW_MKN_viktor_belash ruling_only = no }
+					has_country_leader = { name = "Viktor Belash" ruling_only = no }
+					has_country_leader = { name = "Виктор Белаш" ruling_only = no }
+					has_country_leader = { name = "Fedir Shchus" ruling_only = no }
+				}
+			}
+			MKN_install_fascism_successor = yes
+		}
+		set_country_flag = MKN_personnel_v1
+	}
+}
+
+MKN_update_eugen_front_service = {
+	# Continuous qualifying service, not a timer that keeps running in peace.
+	if = {
+		limit = {
+			NOT = { has_country_flag = MKN_eugen_rescue_happened }
+			has_war = yes
+			has_character = NWW_MKN_eugen
+			NWW_MKN_eugen = { is_leading_army = yes }
+			NOT = { has_country_flag = MKN_collapse_started }
+		}
+		if = {
+			limit = { NOT = { has_country_flag = MKN_eugen_front_service } }
+			set_country_flag = MKN_eugen_front_service
+		}
+	}
+	else = { clr_country_flag = MKN_eugen_front_service }
+}

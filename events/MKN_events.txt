@@ -7,7 +7,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = MKN
-		date > 1936.5.1
+		date > 1937.2.28
 		has_country_flag = MKN_crisis_enabled
 		NOT = {
 			has_country_flag = mkn_batko_departed
@@ -17,13 +17,19 @@ country_event = {
 		days = 75
 		modifier = {
 			factor = 0
-			date > 1936.12.30
+			date > 1938.1.30
 		}
 	}
 	immediate = {
 		set_country_flag = mkn_batko_departed
+		MKN_update_national_flag = yes
 		remove_ideas = MKN_decaying_batko
-		retire_character = NWW_MKN_makhno
+		if = {
+			limit = {
+				has_character = NWW_MKN_makhno
+			}
+			retire_character = NWW_MKN_makhno
+		}
 		MKN_install_fascism_successor = yes
 		MKN_install_democratic_successor = yes
 		MKN_install_neutrality_successor = yes
@@ -34,15 +40,20 @@ country_event = {
 		news_event = {
 			id = mkn_news.1
 		}
-		# Start from the actual death, even if the funeral popup stays open.
-		# The option repeats this guarded schedule for compatibility, never twice.
 		if = {
 			limit = {
-				NOT = { has_country_flag = mkn_ukr_incident_fired }
-				NOT = { has_country_flag = mkn_ukr_incident_scheduled }
+				NOT = {
+					has_country_flag = mkn_ukr_incident_fired
+				}
+				NOT = {
+					has_country_flag = mkn_ukr_incident_scheduled
+				}
 			}
 			set_country_flag = mkn_ukr_incident_scheduled
-			country_event = { id = mkn_ukr_border.10 days = 7 }
+			country_event = {
+				id = mkn_ukr_border.10
+				days = 7
+			}
 		}
 	}
 	option = {
@@ -476,7 +487,6 @@ country_event = {
 		}
 	}
 }
-
 country_event = {
 	id = mkn_crisis.200
 	title = mkn_crisis.200.t
@@ -487,18 +497,28 @@ country_event = {
 		original_tag = MKN
 		has_country_flag = MKN_collapse_started
 		has_country_flag = MKN_collapse_participant
-		check_variable = { num_owned_states > 0 }
+		check_variable = {
+			num_owned_states > 0
+		}
 		has_global_flag = MKN_soviet_intervention_pending
-		NOT = { has_global_flag = MKN_soviet_intervention_triggered }
-		NOT = { has_global_flag = MKN_collapse_reunified }
+		NOT = {
+			has_global_flag = MKN_soviet_intervention_triggered
+		}
+		NOT = {
+			has_global_flag = MKN_collapse_reunified
+		}
 		any_other_country = {
 			original_tag = MKN
 			has_country_flag = MKN_collapse_started
 			has_country_flag = MKN_collapse_participant
-			check_variable = { num_owned_states > 0 }
+			check_variable = {
+				num_owned_states > 0
+			}
 		}
 	}
-	immediate = { MKN_execute_soviet_intervention = yes }
+	immediate = {
+		MKN_execute_soviet_intervention = yes
+	}
 	option = {
 		name = mkn_crisis.200.a
 		custom_effect_tooltip = MKN_soviet_intervention_tt

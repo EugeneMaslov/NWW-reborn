@@ -48,7 +48,6 @@ MKN_army_development = {
 	org_loss_when_moving = MKN_army_org_loss_when_moving
 	planning_speed = MKN_army_planning_speed
 	recon_factor = MKN_army_recon_factor
-	recruitable_population = MKN_army_recruitable_population
 	repair_speed_factor = MKN_army_repair_speed_factor
 	supply_consumption_factor = MKN_army_supply_consumption_factor
 	custom_modifier_tooltip = MKN_army_development_summary
@@ -62,6 +61,7 @@ MKN_army_development = {
 	enemy_army_bonus_air_superiority_factor = MKN_army_enemy_army_bonus_air_superiority_factor
 	motorized_attack_factor = MKN_army_motorized_attack_factor
 	enemy_attrition = MKN_army_enemy_attrition
+	conscription = MKN_army_conscription
 }
 MKN_air_development = {
 	enable = {

@@ -1,0 +1,11 @@
+leader_traits = {
+	mkn_eugen_under_fire = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = { always = no }
+		modifier = {
+			army_morale_factor = 0.05
+			recon_factor = 0.05
+		}
+	}
+}

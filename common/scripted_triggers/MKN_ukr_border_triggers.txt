@@ -62,6 +62,9 @@ mkn_ukr_frontier_action_available = {
 	NOT = {
 		has_border_war_with = UKR
 	}
+	NOT = {
+		has_border_war_with = SOV
+	}
 }
 mkn_ukr_priority_states_held = {
 	197 = {
@@ -92,6 +95,9 @@ mkn_ukr_pact_context_valid = {
 			compare = less_than_or_equals
 		}
 		mkn_ukr_priority_states_held = yes
+		NOT = {
+			has_border_war_with = SOV
+		}
 	}
 	UKR = {
 		exists = yes
@@ -126,6 +132,11 @@ MKN_valid_frontier_target = {
 					has_non_aggression_pact_with = SOV
 				}
 			}
+		}
+	}
+	MKN = {
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
 		}
 	}
 }

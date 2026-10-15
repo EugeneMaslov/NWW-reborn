@@ -7,9 +7,9 @@ leader_traits = {
 		}
 		modifier = {
 			army_speed_factor = 0.25
-			modifier_army_sub_unit_cavalry_attack_factor = 0.25
-			modifier_army_sub_unit_motorized_attack_factor = 0.25
 			breakthrough_factor = 0.20
+			cavalry_attack_factor = 0.25
+			motorized_attack_factor = 0.25
 		}
 	}
 }

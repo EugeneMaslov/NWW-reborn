@@ -1,0 +1,34 @@
+characters = {
+	# One character owns both roles: the advisor and general cannot be duplicated.
+	NWW_MKN_eugen = {
+		name = NWW_MKN_eugen
+		portraits = {
+			army = {
+				large = GFX_Portrait_MKN_eugen
+				small = GFX_idea_MKN_eugen
+			}
+			civilian = {
+				large = GFX_Portrait_MKN_eugen
+				small = GFX_idea_MKN_eugen
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NWW_MKN_eugen_high_command
+			ledger = army
+			cost = 200
+			allowed = { original_tag = MKN }
+			available = { has_completed_focus = MKN_steppe_general_staff }
+			traits = { mkn_eugen_infantry_master }
+			ai_will_do = { factor = 2 }
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_officer infantry_leader }
+		}
+	}
+}

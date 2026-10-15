@@ -1,0 +1,8 @@
+Use case: identity-preserve
+Asset type: Hearts of Iron IV military advisor portrait, transparent bust cutout.
+Input image: docs/for-gen/eugen.jpg is the edit target and sole identity reference.
+Primary request: turn this exact young red-haired man into an infantry warfare instructor of the fictional Makhnovist Free Territory in the late 1930s. Change only his clothing and the background. Replace his polo shirt with a restrained dark olive wool officer tunic, black collar tabs, plain brass buttons and a simple leather shoulder strap. No cap or headgear.
+Constraints: preserve his exact face, apparent age, hair color, hairstyle, expression, eye color, skin and head angle. Do not beautify, age, masculinize or redesign his features. Keep his entire hair silhouette, neck, both shoulders and upper chest visible. One person only, no weapon, no text, no symbols, no medal clutter, no watermark. No historical party or Nazi insignia.
+Style: realistically colored HOI4 portrait, restrained painterly treatment on clothing only; the face must remain recognizably identical to the source photograph.
+Composition: centered upright head-and-shoulders bust, portrait framing; space above the hair and around both shoulders. A clean cutout on actual transparency, not a checkerboard or colored backdrop. Keep the entire subject within the image bounds, with transparent margins, including below the bust.
+Lighting: soft even frontal light, muted natural colors.

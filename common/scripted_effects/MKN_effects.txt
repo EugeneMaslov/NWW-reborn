@@ -50,7 +50,7 @@ MKN_repair_succession_crisis = {
 	if = {
 		limit = {
 			has_country_flag = MKN_crisis_enabled
-			date > 1936.12.30
+			date > 1938.1.30
 			NOT = {
 				has_country_flag = mkn_batko_departed
 			}
@@ -115,34 +115,16 @@ MKN_raise_communal_militias = {
 		producer = MKN
 	}
 	create_unit = {
-		division = "name = \\"
-		1.
-		Commune
-		Guard\\
-		" division_template = \\"
-		MKN_Commune_Guard\\
-		" start_experience_factor = 0.10 start_equipment_factor = 1"
 		owner = ROOT
+		division = "division_template = MKN_Commune_Guard start_experience_factor = 0.10 start_equipment_factor = 1"
 	}
 	create_unit = {
-		division = "name = \\"
-		2.
-		Commune
-		Guard\\
-		" division_template = \\"
-		MKN_Commune_Guard\\
-		" start_experience_factor = 0.10 start_equipment_factor = 1"
 		owner = ROOT
+		division = "division_template = MKN_Commune_Guard start_experience_factor = 0.10 start_equipment_factor = 1"
 	}
 	create_unit = {
-		division = "name = \\"
-		3.
-		Commune
-		Guard\\
-		" division_template = \\"
-		MKN_Commune_Guard\\
-		" start_experience_factor = 0.10 start_equipment_factor = 1"
 		owner = ROOT
+		division = "division_template = MKN_Commune_Guard start_experience_factor = 0.10 start_equipment_factor = 1"
 	}
 }
 MKN_build_border_forts = {
@@ -214,9 +196,9 @@ MKN_build_soviet_rail_link = {
 MKN_install_fascism_successor = {
 	retire_ideology_leader = fascism
 	create_country_leader = {
-		name = NWW_MKN_viktor_belash
+		name = MKN_dmitruk_tratishov
 		desc = MKN_fascism_successor_desc
-		picture = GFX_Portrait_MKN_viktor_belash
+		picture = GFX_Portrait_MKN_dmitruk_tratishov
 		ideology = fascism_ideology
 		traits = {
 			mkn_iron_warlord
@@ -258,7 +240,12 @@ MKN_install_communism_successor = {
 			mkn_paralyzed_committee
 		}
 	}
-	add_ideas = MKN_revkom_terror
+	if = {
+		limit = {
+			has_government = communism
+		}
+		add_ideas = MKN_revkom_terror
+	}
 }
 MKN_install_tsebriy = {
 	retire_ideology_leader = communism
@@ -668,6 +655,16 @@ MKN_recover_duel_winner = {
 			}
 			complete_national_focus = MKN_emergency_revkom
 		}
+	}
+	clr_country_flag = MKN_duel_participant
+	clr_country_flag = MKN_duel_started
+	if = {
+		limit = {
+			NOT = {
+				has_government = communism
+			}
+		}
+		remove_ideas = MKN_revkom_terror
 	}
 	nww_mkn_rebuild_industry = yes
 	nww_mkn_rebuild_services = yes

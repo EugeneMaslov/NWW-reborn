@@ -1,10 +1,17 @@
 """Regression checks for German colonies/MEFO, LTB focus artwork and runtime log compatibility."""
-import json,re,sys
+import argparse,json,re,sys
 from pathlib import Path
 from PIL import Image
 from hoi4_script import read,one,values,walk,TOKEN
 ROOT=Path(__file__).resolve().parents[1]
-GAME=Path('D:/Steam/steamapps/common/Hearts of Iron IV')
+default_game=Path('D:/Steam/steamapps/common/Hearts of Iron IV')
+if not default_game.is_dir():
+    default_game=Path.home()/'.local/share/Steam/steamapps/common/Hearts of Iron IV'
+parser=argparse.ArgumentParser()
+parser.add_argument('--game',type=Path,default=default_game)
+GAME=parser.parse_args().game
+if not GAME.is_dir():
+    parser.error(f'Installed HOI4 directory does not exist: {GAME}')
 errors=[]
 def check(ok,message):
     if not ok:errors.append(message)

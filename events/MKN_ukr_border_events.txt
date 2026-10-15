@@ -175,11 +175,13 @@ country_event = {
 		NOT = {
 			has_country_flag = MKN_collapse_started
 		}
+		NOT = {
+			has_country_flag = mkn_ukr_frontier_concluded
+		}
 	}
 	immediate = {
 		set_country_flag = mkn_ukr_incident_fired
 		clr_country_flag = mkn_ukr_incident_scheduled
-		set_country_flag = mkn_frontier_conflict_active
 		if = {
 			limit = {
 				NOT = {
@@ -195,6 +197,7 @@ country_event = {
 					exists = yes
 				}
 			}
+			set_country_flag = mkn_frontier_conflict_active
 			set_variable = {
 				mkn_ukr_escalation_level = 2
 			}
@@ -236,27 +239,13 @@ country_event = {
 	desc = mkn_ukr_border.30.d
 	picture = GFX_report_event_spain_civil_war_soldiers
 	is_triggered_only = yes
-	trigger = {
-		original_tag = MKN
-		UKR = {
-			exists = yes
-		}
-		has_war_with = UKR
-		202 = {
-			all_neighbor_state = {
-				OR = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_owned_by = UKR
-					}
-				}
-			}
-		}
-	}
 	immediate = {
 		MKN_annex_encircled_ukraine = yes
 	}
 	option = {
 		name = mkn_ukr_border.30.a
+	}
+	trigger = {
+		MKN_kyiv_encircled = yes
 	}
 }

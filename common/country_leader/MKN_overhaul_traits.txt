@@ -54,6 +54,7 @@ leader_traits = {
 	mkn_armored_train_commander = {
 		sprite = 15
 		random = no
+		custom_modifier_tooltip = MKN_armored_train_commander_tt
 	}
 	mkn_steppe_logistics_officer = {
 		sprite = 15

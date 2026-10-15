@@ -2,12 +2,12 @@ MKN_repair_overhaul = {
 	if = {
 		limit = {
 			NOT = {
-				has_country_flag = MKN_overhaul_v3
+				has_country_flag = MKN_overhaul_v4
 			}
 		}
 		nww_mkn_rebuild_industry = yes
 		nww_mkn_rebuild_services = yes
-		set_country_flag = MKN_overhaul_v3
+		set_country_flag = MKN_overhaul_v4
 	}
 	if = {
 		limit = {
@@ -48,5 +48,14 @@ MKN_repair_overhaul = {
 		remove_mission = MKN_passive_escalation_drift
 		clr_country_flag = mkn_frontier_conflict_active
 		clr_country_flag = mkn_ukr_frontier_unlocked
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = communism
+			}
+			has_idea = MKN_revkom_terror
+		}
+		remove_ideas = MKN_revkom_terror
 	}
 }

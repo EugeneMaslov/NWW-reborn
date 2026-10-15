@@ -1,87 +1,162 @@
-"""Project-local Pillow artwork and technical portrait compositing."""
-from pathlib import Path
-from PIL import Image, ImageDraw, ImageFilter
-from patch_mkn_overhaul import ROOT, save, block, put
-from hoi4_script import read, one, values
-from copy import deepcopy
+"""Export saved imagegen MKN artwork; perform technical asset conversion only.
 
-def icon(kind, size=128):
-    im=Image.new('RGBA',(size,size))
-    d=ImageDraw.Draw(im)
-    d.ellipse((12,10,116,114),fill=(35,38,42),outline=(175,147,87),width=4)
-    d.ellipse((19,17,109,107),outline=(90,79,56),width=2)
-    color={'militarism':(177,76,58),'nabat':(108,152,175),'agrarian':(182,162,91),'revkom':(150,65,55),'workshops':(133,158,136)}[kind]
-    if kind=='militarism':
-        for x in (44,79):
-            d.polygon([(x,32),(x+9,32),(x+9,78),(x+4,89),(x,78)],fill=color,outline=(220,207,170))
-        d.line((33,61,92,61),fill=(207,181,122),width=5)
-        d.rectangle((40,82,52,95),fill=(121,99,58));d.rectangle((75,82,87,95),fill=(121,99,58))
-    elif kind=='nabat':
-        d.polygon([(32,49),(59,43),(64,48),(69,43),(96,49),(96,89),(68,82),(64,87),(59,82),(32,89)],fill=color,outline=(221,213,189))
-        d.line((64,50,64,83),fill=(228,215,179),width=2)
-        for y in range(57,78,7):
-            d.line((38,y,56,y-2),fill=(46,57,66),width=2);d.line((72,y-2,90,y),fill=(46,57,66),width=2)
-    elif kind=='agrarian':
-        for x in (43,64,85):
-            d.line((x,34,x,94),fill=color,width=3)
-            for y in (43,54,65,76):
-                d.ellipse((x-11,y-9,x,y+1),fill=color);d.ellipse((x,y-9,x+11,y+1),fill=color)
-    elif kind=='revkom':
-        d.polygon([(39,34),(90,34),(90,94),(39,94)],fill=(184,173,145),outline=(215,204,167))
-        for y in (46,55,64):d.line((48,y,82,y),fill=(53,51,47),width=3)
-        d.ellipse((53,70,83,100),fill=color,outline=(210,164,114),width=2)
-        d.polygon([(68,75),(71,83),(79,83),(73,89),(75,96),(68,91),(61,96),(63,89),(57,83),(65,83)],fill=(207,186,139))
-    else:
-        d.polygon([(30,95),(30,61),(51,49),(51,62),(72,49),(72,63),(91,51),(99,95)],fill=color,outline=(212,195,151))
-        d.rectangle((36,34,45,68),fill=(132,143,137))
-        for x in range(38,91,13):d.rectangle((x,75,x+7,86),fill=(42,44,43))
-        d.ellipse((47,17,63,31),fill=(100,104,104));d.ellipse((59,12,84,26),fill=(80,83,86))
-    # Soft relief shadow stays within the alpha canvas; no solid square backdrop.
-    shadow=Image.new('RGBA',im.size)
-    shadow.putalpha(im.getchannel('A').filter(ImageFilter.GaussianBlur(2)))
-    return Image.alpha_composite(shadow,im)
+Creative masters and exact prompts live in docs/art/MKN_hoi4_art.json.
+This exporter never procedurally redraws focus subjects or country flags.
+"""
+from copy import deepcopy
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import re
+
+from PIL import Image, ImageDraw, ImageFont, ImageOps
+from hoi4_script import read, one, values, dump
+
+ROOT = Path(__file__).resolve().parents[1]
+MANIFEST = ROOT / 'docs/art/MKN_hoi4_art.json'
+
+
+def put(node, key, value):
+    node[:] = [entry for entry in node if entry[0] != key]
+    node.append((key, value, '='))
+
+
+def save_script(path, node):
+    (ROOT / path).write_text(dump(node) + '\n', encoding='utf-8')
+
+
+def load_master(asset, transparent):
+    source = ROOT / asset['source']
+    assert source.is_file(), f'Missing generated master: {source}'
+    assert (ROOT / asset['prompt']).is_file(), f'Missing exact prompt: {asset["prompt"]}'
+    with Image.open(source) as opened:
+        image = opened.convert('RGBA' if transparent else 'RGB')
+    asset['source_sha256'] = hashlib.sha256(source.read_bytes()).hexdigest()
+    asset['source_size'] = list(image.size)
+    if transparent:
+        assert image.getchannel('A').getextrema()[0] == 0, f'No real transparency: {source}'
+    return image
+
+
+def focus_export(master):
+    # Discard imperceptible alpha noise, then fit the actual painted silhouette.
+    image = master.copy()
+    image.putalpha(image.getchannel('A').point(lambda a: 0 if a < 16 else a))
+    bounds = image.getchannel('A').getbbox()
+    assert bounds is not None
+    image = image.crop(bounds)
+    image.thumbnail((84, 84), Image.Resampling.LANCZOS)
+    canvas = Image.new('RGBA', (96, 96))
+    canvas.alpha_composite(image, ((96 - image.width) // 2, (96 - image.height) // 2))
+    bounds = canvas.getchannel('A').getbbox()
+    assert bounds and min(bounds[:2]) >= 6 and max(bounds[2:]) <= 90, bounds
+    return canvas, list(bounds)
+
+
+def render_preview(rows, destination, columns=5, flag=False):
+    cell_w, cell_h = (260, 200) if flag else (220, 295)
+    height = ((len(rows) + columns - 1) // columns) * cell_h + 36
+    preview = Image.new('RGB', (columns * cell_w, height), (26, 29, 35))
+    pen = ImageDraw.Draw(preview)
+    font_path = Path('/usr/share/fonts/TTF/DejaVuSans.ttf')
+    if not font_path.exists():
+        candidates = list(Path('/usr/share/fonts').rglob('DejaVuSans.ttf'))
+        candidates += list(Path('/usr/share/fonts').rglob('LiberationSans-Regular.ttf'))
+        font_path = next(iter(candidates), None)
+    font = ImageFont.truetype(str(font_path), 12) if font_path else ImageFont.load_default()
+    pen.text((12, 10), 'Махновщина / рисованные иконки HOI4' if not flag else 'Махновщина / знамя Махно и флаги преемников', fill='white', font=font)
+    for i, (label, image) in enumerate(rows):
+        x = (i % columns) * cell_w
+        y = (i // columns) * cell_h + 36
+        if flag:
+            enlarged = image.resize((246, 156), Image.Resampling.NEAREST)
+            preview.paste(enlarged, (x + 7, y))
+        else:
+            enlarged = image.resize((144, 144), Image.Resampling.NEAREST)
+            preview.paste(enlarged, (x + 38, y), enlarged)
+            preview.paste(image, (x + 62, y + 155), image)
+        lines, current = [], ''
+        for word in label.split():
+            candidate = (current + ' ' + word).strip()
+            if current and pen.textlength(candidate, font=font) > cell_w - 16:
+                lines.append(current)
+                current = word
+            else:
+                current = candidate
+        if current:
+            lines.append(current)
+        for line_index, line in enumerate(lines[:2]):
+            pen.text((x + 8, y + (162 if flag else 260) + line_index * 14), line, fill=(228, 223, 211), font=font)
+    preview.save(ROOT / destination)
+
+
+def export_icons(spec, game):
+    focus_sprites, idea_sprites, shines, preview = [], [], [], []
+    labels = {}
+    for path in (ROOT / 'localisation/russian').glob('MKN*.yml'):
+        labels.update(re.findall(r'^\s+([\w.]+):\d*\s+"(.*)"\s*$', path.read_text(encoding='utf-8-sig'), re.M))
+    template = values(one(read(ROOT / 'interface/MKN_focus_shine.gfx'), 'spriteTypes'), 'spriteType')[0]
+    for asset in spec['assets']:
+        canvas, bounds = focus_export(load_master(asset, True))
+        destination = ROOT / asset['texture']
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        canvas.save(destination, format='DDS')
+        asset['occupied_alpha_bounds'] = bounds
+        asset['size'] = [96, 96]
+        sprite = [('name', asset['sprite'], '='), ('texturefile', asset['texture'], '=')]
+        (idea_sprites if asset['key'] == 'workshops' else focus_sprites).append(('spriteType', sprite, '='))
+        if asset['key'] == 'revkom':
+            idea_sprites.append(('spriteType', [('name', 'GFX_idea_MKN_revkom', '='), ('texturefile', asset['texture'], '=')], '='))
+        shine = deepcopy(template)
+        put(shine, 'name', asset['sprite'] + '_shine')
+        put(shine, 'texturefile', asset['texture'])
+        for animation in values(shine, 'animation'):
+            put(animation, 'animationmaskfile', asset['texture'])
+        shines.append(('spriteType', shine, '='))
+        preview.append((labels.get(asset['focus'], asset['key']), canvas))
+    save_script('interface/MKN_overhaul_icons.gfx', [('spriteTypes', focus_sprites, '=')])
+    save_script('interface/MKN_overhaul_shine.gfx', [('spriteTypes', shines, '=')])
+    # Preserve the complete native registry when using its requested filename.
+    native = (game / 'interface/ideas.gfx').read_text(encoding='utf-8-sig')
+    native = '\n'.join(re.sub(r'^[ \t]+', lambda m: m.group().expandtabs(4), line).rstrip() for line in native.splitlines())
+    (ROOT / 'interface/ideas.gfx').write_text(native + '\n# MKN painted ideas; sources: docs/art/MKN_hoi4_art.json.\n' + dump([('spriteTypes', idea_sprites, '=')]) + '\n', encoding='utf-8-sig')
+    render_preview(preview, 'docs/mkn_overhaul_icons_preview.png')
+
+
+def export_flags(spec):
+    masters = {asset['key']: load_master(asset, False) for asset in spec['flags']}
+    preview = []
+    labels = {'historical': 'Знамя при Махно', 'fascism': 'Анархо-милитаризм',
+              'democratic': 'Набат / вольные советы', 'neutrality': 'Крестьянский совет',
+              'communism': 'Государственный синдикализм'}
+    for key, master in masters.items():
+        # Flag masters are full-frame rectangular designs, never focus emblems.
+        flag = ImageOps.fit(master, (820, 520), Image.Resampling.LANCZOS)
+        names = ['MKN_batko', *['MKN_batko_' + p for p in ('fascism', 'democratic', 'neutrality', 'communism')], 'MKN'] if key == 'historical' else ['MKN_' + key, 'MKN_cw_' + key]
+        for folder, size in (('', (82, 52)), ('medium', (41, 26)), ('small', (10, 7))):
+            directory = ROOT / 'gfx/flags' / folder
+            directory.mkdir(exist_ok=True)
+            texture = flag.resize(size, Image.Resampling.LANCZOS).convert('RGBA')
+            for name in names:
+                texture.save(directory / (name + '.tga'), format='TGA')
+        preview.append((labels[key], flag.resize((82, 52), Image.Resampling.LANCZOS)))
+    render_preview(preview, 'docs/mkn_flags_preview.png', columns=3, flag=True)
+
 
 def main():
-    out=ROOT/'gfx/interface/goals';out.mkdir(parents=True,exist_ok=True)
-    originals=ROOT/'gfx/generated_sources/MKN_overhaul';originals.mkdir(parents=True,exist_ok=True)
-    sprites=[]
-    for kind in ('militarism','nabat','agrarian','revkom','workshops'):
-        artwork=icon(kind)
-        artwork.save(originals/f'{kind}.png')
-        artwork.save(out/f'MKN_{kind}.dds')
-        sid='GFX_idea_MKN_free_workshops' if kind=='workshops' else 'GFX_focus_MKN_'+kind
-        sprites.append(f'spriteType = {{ name = {sid} texturefile = "gfx/interface/goals/MKN_{kind}.dds" }}')
-        if kind=='revkom':sprites.append('spriteType = { name = GFX_idea_MKN_revkom texturefile = "gfx/interface/goals/MKN_revkom.dds" }')
-    save('interface/MKN_overhaul_icons.gfx',block('spriteTypes = { '+' '.join(sprites)+' }'))
-    template=values(one(read(ROOT/'interface/MKN_focus_shine.gfx'),'spriteTypes'),'spriteType')[0]
-    shine=[]
-    for kind in ('militarism','nabat','agrarian','revkom','workshops'):
-        node=deepcopy(template)
-        sprite='GFX_idea_MKN_free_workshops' if kind=='workshops' else 'GFX_focus_MKN_'+kind
-        texture='gfx/interface/goals/MKN_'+kind+'.dds'
-        put(node,'name',sprite+'_shine');put(node,'texturefile',texture)
-        for animation in values(node,'animation'):put(animation,'animationmaskfile',texture)
-        shine.append(('spriteType',node,'='))
-    save('interface/MKN_overhaul_shine.gfx',[('spriteTypes',shine,'=')])
-    path='common/national_focus/MKN.txt';doc=read(ROOT/path)
-    ids={'MKN_military_takes_charge':'militarism','MKN_triumph_of_free_soviets':'nabat','MKN_peasant_delegates':'agrarian','MKN_emergency_revkom':'revkom'}
-    for f in values(one(doc,'focus_tree'),'focus'):
-        if one(f,'id') in ids:put(f,'icon','GFX_focus_MKN_'+ids[one(f,'id')])
-    save(path,doc)
-    portrait_sources=originals/'portraits';portrait_sources.mkdir(exist_ok=True)
-    for path in (ROOT/'gfx/leaders/MKN').glob('*'):
-        if path.suffix.lower() not in ('.dds','.png','.tga'):continue
-        with Image.open(path) as source:
-            rgba=source.convert('RGBA')
-        if rgba.getchannel('A').getextrema()[0] == 255:continue
-        backup=portrait_sources/(path.stem+'.png')
-        if not backup.exists():rgba.save(backup)
-        w,h=rgba.size
-        bg=Image.new('RGBA',(w,h),(53,56,61,255));p=bg.load()
-        for y in range(h):
-            for x in range(w):
-                factor=max(0.65,1-0.20*(((x-w/2)/(w/2))**2+((y-h/2)/(h/2))**2))
-                p[x,y]=(int(53*factor),int(56*factor),int(61*factor),255)
-        Image.alpha_composite(bg,rgba).save(path)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--game', type=Path, required=True)
+    parser.add_argument('--only', choices=('icons', 'flags'))
+    args = parser.parse_args()
+    spec = json.loads(MANIFEST.read_text(encoding='utf-8'))
+    if args.only != 'flags':
+        export_icons(spec, args.game)
+    if args.only != 'icons':
+        export_flags(spec)
+    MANIFEST.write_text(json.dumps(spec, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print('PASS: imagegen originals exported with native dimensions and inspected alpha clearance')
 
-if __name__=='__main__':main()
+
+if __name__ == '__main__':
+    main()

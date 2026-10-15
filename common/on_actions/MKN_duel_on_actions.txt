@@ -1,4 +1,22 @@
 on_actions = {
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = MKN
+					has_country_flag = MKN_duel_participant
+					FROM = {
+						original_tag = MKN
+						has_country_flag = MKN_duel_participant
+					}
+					NOT = {
+						has_country_flag = MKN_duel_recovered
+					}
+				}
+				MKN_recover_duel_winner = yes
+			}
+		}
+	}
 	on_daily = {
 		effect = {
 			every_country = {

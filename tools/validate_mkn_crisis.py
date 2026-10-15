@@ -52,7 +52,8 @@ def validate_crisis(root, game, check, localized):
     funeral = events['mkn_crisis.1']
     check(one(one(funeral, 'mean_time_to_happen'), 'days') == '75', 'MKN: wrong funeral MTTH')
     guaranteed = one(one(funeral, 'mean_time_to_happen'), 'modifier')
-    check(one(guaranteed, 'factor') == '0' and ('date', '1936.12.30', '>') in guaranteed, 'MKN: missing MTTH hard deadline')
+    check(('date', '1937.2.28', '>') in one(funeral, 'trigger'), 'MKN: death can occur before March 1937')
+    check(one(guaranteed, 'factor') == '0' and ('date', '1938.1.30', '>') in guaranteed, 'MKN: missing January 1938 hard deadline')
     check(one(one(funeral, 'immediate'), 'activate_mission') == 'MKN_civil_war_timer_mission', 'MKN: funeral does not start the deadline')
     check(one(one(funeral, 'immediate'), 'complete_national_focus') == 'MKN_departure_of_batko', 'MKN: funeral does not complete its focus')
     # No other script may activate this mission: loading a save must not reset it.
@@ -133,6 +134,7 @@ def validate_crisis(root, game, check, localized):
             self.global_flags = set()
             self.border_wars = set()
             self.cancelled_border_wars = []
+            self.focus_completions = []
         def number(self, val, country):
             if val.startswith('var:'): val = val[4:]
             if val == 'num_owned_states': return sum(s['owner'] is country for s in self.states)
@@ -152,6 +154,7 @@ def validate_crisis(root, game, check, localized):
                 elif k == 'has_government': answers.append(scope['government'] == v)
                 elif k == 'has_state_flag': answers.append(v in scope['flags'])
                 elif k == 'has_country_flag': answers.append(v in scope['flags'])
+                elif k == 'has_completed_focus': answers.append(v in scope.get('focuses', set()))
                 elif k == 'has_global_flag': answers.append(v in self.global_flags)
                 elif k == 'has_variable': answers.append(v in scope['vars'])
                 elif k == 'has_border_war_with': answers.append(v in self.border_wars)
@@ -245,6 +248,24 @@ def validate_crisis(root, game, check, localized):
                 elif k in ('save_event_target_as', 'save_global_event_target_as'): self.targets['event_target:' + v] = scope
                 elif k == 'load_focus_tree': scope['tree'] = one(v,'tree')
                 elif k == 'add_ideas': scope.setdefault('ideas',set()).add(v)
+                elif k == 'remove_ideas': scope.setdefault('ideas',set()).discard(v)
+                elif k == 'complete_national_focus':
+                    scope.setdefault('focuses',set()).add(v)
+                    self.focus_completions.append(v)
+                    self.apply(one(focuses[v], 'completion_reward', []), scope)
+                elif k == 'uncomplete_national_focus':
+                    focus = one(v, 'focus')
+                    removed = {focus}
+                    while True:
+                        children = {fid for fid, f in focuses.items() if any(parent in removed for group in values(f, 'prerequisite') for parent in values(group, 'focus'))}
+                        if children <= removed: break
+                        removed |= children
+                    scope.setdefault('focuses',set()).difference_update(removed)
+                elif k == 'add_stability': scope['stability'] = scope.get('stability', 0) + float(v)
+                elif k in ('nww_mkn_rebuild_industry', 'nww_mkn_rebuild_services'):
+                    # Parameter replay is executed separately by validate_redesign.
+                    scope.setdefault('rebuilds', []).append(k)
+                elif k == 'mark_focus_tree_layout_dirty': scope['layout_dirty'] = True
                 elif k == 'retire_ideology_leader': scope.setdefault('retired', []).append(v)
                 elif k == 'create_country_leader': scope['leader'] = one(v, 'name')
                 elif k.startswith('event_target:'): self.apply(v, self.targets[k])
@@ -293,6 +314,24 @@ def validate_crisis(root, game, check, localized):
     check(all(not pending & c['flags'] for c in model.countries), 'MKN: collapse factions inherit active frontier negotiations or countdown flags')
     check(all({'mkn_ukr_frontier_concluded', 'mkn_ukr_frontier_aborted'} <= c['flags'] for c in model.countries), 'MKN: collapse does not close the frontier for every faction')
     cases += 1
+    # Execute recovery for both winners on every path. Focus completion executes
+    # its real reward, and repeated repair must not repeat its political reward.
+    for party, route in routes.items():
+        for rebel_wins in (False, True):
+            model = Interpreter((0.25, 0.25, 0.25, 0.25), party, 4)
+            model.apply(effects['MKN_execute_four_way_collapse'], model.root)
+            winner = model.countries[int(rebel_wins)]
+            winner['focuses'] = {'MKN_congress_1936', 'MKN_departure_of_batko'}
+            model.wars.clear()
+            model.apply(effects['MKN_recover_duel_winner'], winner)
+            first = 'MKN_' + routes[winner['government']][0]
+            check(first in winner['focuses'], 'MKN: winner does not complete its first political focus')
+            check(not {'mkn_collapsed', 'MKN_collapse_started', 'MKN_duel_choice_pending'} & winner['flags'], 'MKN: winner remains locked by collapse flags')
+            check(not winner['bop'], 'MKN: victory resurrects the removed balance of power')
+            before = list(model.focus_completions)
+            model.apply(effects['MKN_recover_duel_winner'], winner)
+            check(model.focus_completions == before, 'MKN: repeated recovery repeats focus rewards')
+            cases += 1
     print(f'PASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and {cases} real-script collapse scenarios')
     validate_intervention(root, check, localized)
 

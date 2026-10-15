@@ -1,23 +1,9 @@
 on_actions = {
-	on_daily = {
+	on_daily_MKN = {
 		effect = {
-			every_country = {
+			if = {
 				limit = {
-					original_tag = MKN
-					UKR = {
-						exists = yes
-					}
-					has_war_with = UKR
-					202 = {
-						all_neighbor_state = {
-							OR = {
-								is_controlled_by = ROOT
-								NOT = {
-									is_owned_by = UKR
-								}
-							}
-						}
-					}
+					MKN_kyiv_encircled = yes
 				}
 				country_event = {
 					id = mkn_ukr_border.30

@@ -1,0 +1,47 @@
+[
+  {
+    "source": "docs/for-gen/photo-eugen-general.jpg",
+    "target": "gfx/leaders/MKN/eugen.dds",
+    "size": [
+      156,
+      210
+    ],
+    "preserve_full_frame": true,
+    "source_sha256": "7c555785832c28e4df51f18462a8b1849a3645c2abee13187ba7702a485b3889"
+  },
+  {
+    "source": "docs/for-gen/dmitruk-tratishov-2.jpg",
+    "target": "gfx/leaders/MKN/dmitruk_tratishov.dds",
+    "size": [
+      156,
+      210
+    ],
+    "preserve_full_frame": true,
+    "source_sha256": "b6c2066e728c887ea153fcbd754b559e7951ad6752836e61fa58b22e25bb81eb"
+  },
+  {
+    "source": "docs/for-gen/man.jpg",
+    "target": "gfx/event_pictures/MKN/eugen_rescue.dds",
+    "size": [
+      397,
+      153
+    ],
+    "preserve_full_frame": true,
+    "source_sha256": "47618eabdeb993a38d5296e8ada22718d4e125fd8a16d9f63e8aaea34d08f905"
+  },
+  {
+    "source": "docs/art/MKN_eugen_advisor_painted.png",
+    "target": "gfx/interface/ideas/nww_portraits/MKN_eugen.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      4,
+      2,
+      61,
+      60
+    ],
+    "source_sha256": "89c9d2d2d7dbec12323da9fa8ca6ecfb38dbc6250849f7a5ef42db6d4b047e25"
+  }
+]

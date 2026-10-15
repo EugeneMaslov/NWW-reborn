@@ -4,23 +4,111 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/MKN_militarism.dds"
 	}
 	spriteType = {
+		name = GFX_focus_MKN_program_militarism_1
+		texturefile = "gfx/interface/goals/MKN_militarism_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_militarism_2
+		texturefile = "gfx/interface/goals/MKN_militarism_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_militarism_3
+		texturefile = "gfx/interface/goals/MKN_militarism_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_militarism_4
+		texturefile = "gfx/interface/goals/MKN_militarism_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_militarism_5
+		texturefile = "gfx/interface/goals/MKN_militarism_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_militarism_6
+		texturefile = "gfx/interface/goals/MKN_militarism_6.dds"
+	}
+	spriteType = {
 		name = GFX_focus_MKN_nabat
 		texturefile = "gfx/interface/goals/MKN_nabat.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_nabat_1
+		texturefile = "gfx/interface/goals/MKN_nabat_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_nabat_2
+		texturefile = "gfx/interface/goals/MKN_nabat_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_nabat_3
+		texturefile = "gfx/interface/goals/MKN_nabat_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_nabat_4
+		texturefile = "gfx/interface/goals/MKN_nabat_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_nabat_5
+		texturefile = "gfx/interface/goals/MKN_nabat_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_nabat_6
+		texturefile = "gfx/interface/goals/MKN_nabat_6.dds"
 	}
 	spriteType = {
 		name = GFX_focus_MKN_agrarian
 		texturefile = "gfx/interface/goals/MKN_agrarian.dds"
 	}
 	spriteType = {
+		name = GFX_focus_MKN_program_agrarian_1
+		texturefile = "gfx/interface/goals/MKN_agrarian_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_agrarian_2
+		texturefile = "gfx/interface/goals/MKN_agrarian_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_agrarian_3
+		texturefile = "gfx/interface/goals/MKN_agrarian_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_agrarian_4
+		texturefile = "gfx/interface/goals/MKN_agrarian_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_agrarian_5
+		texturefile = "gfx/interface/goals/MKN_agrarian_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_agrarian_6
+		texturefile = "gfx/interface/goals/MKN_agrarian_6.dds"
+	}
+	spriteType = {
 		name = GFX_focus_MKN_revkom
 		texturefile = "gfx/interface/goals/MKN_revkom.dds"
 	}
 	spriteType = {
-		name = GFX_idea_MKN_revkom
-		texturefile = "gfx/interface/goals/MKN_revkom.dds"
+		name = GFX_focus_MKN_program_revkom_1
+		texturefile = "gfx/interface/goals/MKN_revkom_1.dds"
 	}
 	spriteType = {
-		name = GFX_idea_MKN_free_workshops
-		texturefile = "gfx/interface/goals/MKN_workshops.dds"
+		name = GFX_focus_MKN_program_revkom_2
+		texturefile = "gfx/interface/goals/MKN_revkom_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_revkom_3
+		texturefile = "gfx/interface/goals/MKN_revkom_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_revkom_4
+		texturefile = "gfx/interface/goals/MKN_revkom_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_revkom_5
+		texturefile = "gfx/interface/goals/MKN_revkom_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_program_revkom_6
+		texturefile = "gfx/interface/goals/MKN_revkom_6.dds"
 	}
 }

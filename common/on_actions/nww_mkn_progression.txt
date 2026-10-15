@@ -30,23 +30,6 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly = {
-		effect = {
-			if = {
-				limit = {
-					tag = MKN
-					NOT = {
-						has_government = communism
-					}
-					NOT = {
-						has_country_flag = MKN_makhno_command_retired
-					}
-				}
-				retire_character = NWW_MKN_makhno
-				set_country_flag = MKN_makhno_command_retired
-			}
-		}
-	}
 	on_daily_MKN = {
 		effect = {
 			nww_mkn_initialize_bop = yes

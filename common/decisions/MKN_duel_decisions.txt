@@ -8,6 +8,7 @@ MKN_duel_category = {
 		}
 		available = {
 			has_country_flag = MKN_duel_choice_pending
+			has_civil_war = yes
 		}
 		complete_effect = {
 			clr_country_flag = MKN_duel_choice_pending
@@ -29,7 +30,10 @@ MKN_duel_category = {
 			event_target:MKN_duel_challenger = {
 				exists = yes
 				has_country_flag = MKN_duel_participant
+				is_ai = yes
+				has_war_with = ROOT
 			}
+			has_civil_war = yes
 		}
 		complete_effect = {
 			clr_country_flag = MKN_duel_choice_pending

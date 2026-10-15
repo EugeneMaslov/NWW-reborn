@@ -51,10 +51,8 @@ if args.game:
         if not path:
             del illustrations[name]
             continue
-        # Only decode the focus sprites, avoiding portraits and unrelated atlases.
-        if not name.startswith(('GFX_focus_', 'GFX_goal_')):
-            del illustrations[name]
-            continue
+        # `needed` already contains only actual focus references. Some country
+        # trees deliberately reuse an idea sprite, e.g. MKN's Free Workshops.
         with Image.open(path) as source:
             img = source.convert('RGBA')
             if frames > 1:

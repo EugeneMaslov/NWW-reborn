@@ -3,6 +3,7 @@ MKN_free_workshops = {
 	icon = GFX_idea_MKN_free_workshops
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {

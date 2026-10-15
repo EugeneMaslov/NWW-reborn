@@ -56,15 +56,6 @@ mkn_ukr_initialize_frontier = {
 			NOT = {
 				has_country_flag = mkn_ukr_frontier_concluded
 			}
-			NOT = {
-				has_country_flag = mkn_ukr_frontier_concluded
-			}
-			NOT = {
-				has_country_flag = mkn_ukr_frontier_concluded
-			}
-			NOT = {
-				has_country_flag = mkn_ukr_frontier_concluded
-			}
 		}
 		set_country_flag = mkn_ukr_frontier_unlocked
 	}
@@ -332,10 +323,13 @@ mkn_ukr_conclude_total_war = {
 			mkn_ukr_escalation_level = 5
 		}
 		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
 		mkn_ukr_stop_border_battle = yes
 		set_country_flag = mkn_ukr_total_war
 		clr_country_flag = mkn_frontier_year_running
-		remove_mission = MKN_frontier_year_countdown_mission
 		clr_country_flag = mkn_ukr_war_pending
 		clr_country_flag = mkn_ukr_pact_pending
 		clr_country_flag = mkn_ukr_border_battle_active
@@ -374,7 +368,12 @@ mkn_ukr_finalize_pact = {
 		limit = {
 			mkn_ukr_pact_context_valid = yes
 		}
+		mkn_ukr_stop_border_battle = yes
 		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
 		set_country_flag = mkn_ukr_pact_signed
 		set_country_flag = UKR_MKN_border_settled
 		clr_country_flag = mkn_ukr_pact_pending
@@ -425,9 +424,12 @@ mkn_ukr_frontier_daily = {
 			}
 		}
 		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
 		set_country_flag = mkn_ukr_frontier_aborted
 		clr_country_flag = mkn_frontier_year_running
-		remove_mission = MKN_frontier_year_countdown_mission
 		clr_country_flag = mkn_ukr_pact_pending
 		clr_country_flag = mkn_ukr_war_pending
 	}
@@ -439,10 +441,13 @@ mkn_ukr_frontier_daily = {
 			}
 		}
 		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
 		mkn_ukr_stop_border_battle = yes
 		set_country_flag = mkn_ukr_total_war
 		clr_country_flag = mkn_frontier_year_running
-		remove_mission = MKN_frontier_year_countdown_mission
 		set_variable = {
 			mkn_ukr_escalation_level = 5
 		}
@@ -462,7 +467,10 @@ mkn_ukr_frontier_daily = {
 			NOT = {
 				has_country_flag = mkn_ukr_frontier_concluded
 			}
-			has_border_war_with = UKR
+			OR = {
+				has_border_war_with = UKR
+				has_border_war_with = SOV
+			}
 		}
 		set_country_flag = {
 			flag = mkn_ukr_recent_border_battle
@@ -483,7 +491,10 @@ mkn_ukr_frontier_daily = {
 		limit = {
 			has_country_flag = mkn_ukr_border_battle_active
 			NOT = {
-				has_border_war_with = UKR
+				OR = {
+					has_border_war_with = UKR
+					has_border_war_with = SOV
+				}
 			}
 		}
 		clr_country_flag = mkn_ukr_border_battle_active
@@ -505,6 +516,10 @@ mkn_ukr_frontier_daily = {
 			}
 		}
 		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
 		set_country_flag = mkn_ukr_pact_signed
 		clr_country_flag = mkn_ukr_war_pending
 	}
@@ -527,7 +542,10 @@ mkn_ukr_frontier_daily = {
 		limit = {
 			has_country_flag = mkn_ukr_war_pending
 			NOT = {
-				has_border_war_with = UKR
+				OR = {
+					has_border_war_with = UKR
+					has_border_war_with = SOV
+				}
 			}
 			UKR = {
 				exists = yes
@@ -553,19 +571,7 @@ mkn_ukr_stop_border_battle = {
 	if = {
 		limit = {
 			OR = {
-				OR = {
-					OR = {
-						OR = {
-							OR = {
-								has_border_war_with = UKR
-								has_border_war_with = SOV
-							}
-							has_border_war_with = SOV
-						}
-						has_border_war_with = SOV
-					}
-					has_border_war_with = SOV
-				}
+				has_border_war_with = UKR
 				has_border_war_with = SOV
 			}
 		}
@@ -593,7 +599,10 @@ mkn_ukr_stop_border_battle = {
 				}
 				every_neighbor_state = {
 					limit = {
-						is_owned_and_controlled_by = UKR
+						OR = {
+							is_owned_and_controlled_by = UKR
+							is_owned_and_controlled_by = SOV
+						}
 						has_border_war = yes
 					}
 					MKN = {
@@ -632,6 +641,10 @@ mkn_ukr_year_timeout = {
 		}
 		set_country_flag = mkn_frontier_frozen
 		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
 		set_country_flag = mkn_ukr_pact_signed
 		set_country_flag = UKR_MKN_border_settled
 		UKR = {
@@ -671,6 +684,9 @@ mkn_ukr_schedule_old_save_incident = {
 			NOT = {
 				has_country_flag = MKN_collapse_started
 			}
+			NOT = {
+				has_country_flag = mkn_ukr_frontier_concluded
+			}
 		}
 		set_country_flag = mkn_ukr_incident_scheduled
 		country_event = {
@@ -697,8 +713,10 @@ MKN_annex_encircled_ukraine = {
 		clr_state_flag = MKN_kyiv_capitulation_claim
 	}
 	set_country_flag = mkn_ukr_frontier_concluded
-	clr_country_flag = mkn_ukr_war_pending
 	remove_mission = MKN_passive_escalation_drift
 	remove_mission = MKN_frontier_year_countdown_mission
+	clr_country_flag = mkn_frontier_conflict_active
+	clr_country_flag = mkn_ukr_frontier_unlocked
+	clr_country_flag = mkn_ukr_war_pending
 	mkn_ukr_stop_border_battle = yes
 }

@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { MKN = { exists = yes } }
+				MKN = {
+					MKN_repair_personnel = yes
+					MKN_update_eugen_front_service = yes
+				}
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = {
+			MKN_repair_personnel = yes
+			MKN_update_eugen_front_service = yes
+		}
+	}
+}

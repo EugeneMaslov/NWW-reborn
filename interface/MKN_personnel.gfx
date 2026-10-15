@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_Portrait_MKN_eugen
+		texturefile = "gfx/leaders/MKN/eugen.dds"
+	}
+	spriteType = {
+		name = GFX_idea_MKN_eugen
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_eugen.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_dmitruk_tratishov
+		texturefile = "gfx/leaders/MKN/dmitruk_tratishov.dds"
+	}
+	spriteType = {
+		name = GFX_report_event_MKN_eugen_rescue
+		texturefile = "gfx/event_pictures/MKN/eugen_rescue.dds"
+	}
+	spriteType = {
+		name = GFX_news_event_MKN_eugen_rescue
+		texturefile = "gfx/event_pictures/MKN/eugen_rescue.dds"
+	}
+	spriteType = {
+		name = GFX_trait_mkn_eugen_under_fire
+		texturefile = "gfx/interface/traits/trait_trickster.dds"
+	}
+}

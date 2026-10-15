@@ -1,0 +1,62 @@
+add_namespace = mkn_personnel
+add_namespace = mkn_personnel_news
+
+country_event = {
+	id = mkn_personnel.1
+	title = mkn_personnel.1.t
+	desc = mkn_personnel.1.d
+	picture = GFX_report_event_MKN_eugen_rescue
+	fire_only_once = yes
+	trigger = {
+		tag = MKN
+		date > 1936.5.31
+		has_war = yes
+		has_character = NWW_MKN_eugen
+		NWW_MKN_eugen = { is_leading_army = yes }
+		has_country_flag = { flag = MKN_eugen_front_service days > 30 }
+		NOT = { has_country_flag = MKN_collapse_started }
+		NOT = { has_country_flag = MKN_eugen_rescue_happened }
+	}
+	mean_time_to_happen = { days = 7 }
+	immediate = {
+		set_country_flag = MKN_eugen_rescue_happened
+		clr_country_flag = MKN_eugen_front_service
+		NWW_MKN_eugen = { add_unit_leader_trait = mkn_eugen_under_fire }
+		news_event = { id = mkn_personnel_news.1 days = 1 }
+	}
+	option = {
+		name = mkn_personnel.1.a
+		ai_chance = { base = 60 }
+		custom_effect_tooltip = MKN_eugen_under_fire_tt
+		add_war_support = 0.05
+		add_political_power = 25
+		add_timed_idea = { idea = MKN_eugen_no_one_left_behind days = 90 }
+	}
+	option = {
+		name = mkn_personnel.1.b
+		trigger = { NOT = { political_power < 50 } }
+		ai_chance = { base = 40 }
+		custom_effect_tooltip = MKN_eugen_under_fire_tt
+		add_political_power = -50
+		army_experience = 20
+		add_timed_idea = { idea = MKN_eugen_instructor_courses days = 180 }
+	}
+}
+
+news_event = {
+	id = mkn_personnel_news.1
+	title = mkn_personnel_news.1.t
+	desc = mkn_personnel_news.1.d
+	picture = GFX_news_event_MKN_eugen_rescue
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mkn_personnel_news.1.a
+		trigger = { tag = MKN }
+	}
+	option = {
+		name = mkn_personnel_news.1.b
+		trigger = { NOT = { tag = MKN } }
+	}
+}

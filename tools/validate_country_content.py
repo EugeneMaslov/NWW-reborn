@@ -535,6 +535,8 @@ from validate_mkn_crisis import validate_crisis
 validate_crisis(ROOT, GAME, check, localized)
 from validate_mkn_frontier import validate_frontier
 validate_frontier(ROOT, GAME, check, localized)
+from validate_mkn_personnel import validate_personnel
+validate_personnel(ROOT, GAME, check, localized)
 from validate_map_initialization import validate_map_initialization
 validate_map_initialization(ROOT, GAME, check)
 from validate_repository_layout import validate_layout

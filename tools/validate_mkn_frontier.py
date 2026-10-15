@@ -20,6 +20,7 @@ class FrontierModel:
         self.root = 'MKN'
         self.froms = ('196', 'UKR', '197')
         self.border = False
+        self.border_enemy = 'UKR'
         self.border_states = {'196', '197'}
         self.events, self.declarations, self.relations = [], [], []
         self.cancellations = []
@@ -115,7 +116,7 @@ class FrontierModel:
             elif key == 'has_war_with':
                 answer = value in data['wars']
             elif key == 'has_border_war_with':
-                answer = self.border and value == 'UKR'
+                answer = self.border and value == self.border_enemy
             elif key == 'has_border_war':
                 participating = self.border and (current in self.countries or current in self.border_states)
                 answer = participating == (value == 'yes')
@@ -137,6 +138,8 @@ class FrontierModel:
                 answer = all(self.compare(data['equipment'], float(v), op) for k, v, op in value)
             elif key == 'any_neighbor_state':
                 answer = any(self.test(value, sid, current) for sid in data['neighbors'])
+            elif key == 'all_neighbor_state':
+                answer = all(self.test(value, sid, current) for sid in data['neighbors'])
             else:
                 raise AssertionError(f'Unhandled frontier regression trigger {key}')
             answers.append(answer)
@@ -179,7 +182,7 @@ class FrontierModel:
             elif key in ('clr_country_flag', 'clr_state_flag'):
                 data['flags'].pop(value, None)
             elif key == 'add_core_of':
-                data['cores'].add(value)
+                data['cores'].add(self.scope(value, current, previous) or value)
             elif key == 'transfer_state_to':
                 data['owner'] = data['controller'] = self.scope(value, current, previous) or value
             elif key == 'every_owned_state':
@@ -211,6 +214,14 @@ class FrontierModel:
                 self.declarations.append((current, target))
                 data['wars'].add(target)
                 self.countries[target]['wars'].add(current)
+            elif key == 'annex_country':
+                target = one(value, 'target')
+                for state in self.states.values():
+                    if state['owner'] == target:
+                        state['owner'] = state['controller'] = current
+                self.countries[target]['exists'] = False
+                data['wars'].discard(target)
+                self.countries[target]['wars'].clear()
             elif key in ('add_ideas', 'remove_ideas'):
                 tokens = [v for k, v, op in value] if isinstance(value, list) else [value]
                 for token in tokens:
@@ -339,7 +350,7 @@ def validate_frontier(root, game, check, localized):
     gui = one(one(read(root / 'common/scripted_guis/MKN_frontier_gui.txt'), 'scripted_gui'), 'MKN_frontier_decision_ui')
     check(one(category, 'scripted_gui') == 'MKN_frontier_decision_ui' and one(gui, 'context_type') == 'decision_category', 'MKN frontier: display is not embedded in its decision category')
     for node in (one(category, 'visible'), one(gui, 'visible')):
-        check(not any(k == 'has_country_flag' and v in ('mkn_ukr_frontier_concluded', 'mkn_frontier_frozen') for k, v, op in walk(node)), 'MKN frontier: settled/war/frozen status removes the permanently visible display')
+        check(any(one(n, 'has_country_flag') == 'mkn_ukr_frontier_concluded' for n in values(node, 'NOT')), 'MKN frontier: concluded crisis leaves its display visible')
     for level in range(1, 6):
         localized(f'MKN_frontier_stage_{level}', 'MKN frontier display')
         marker = one(one(gui, 'triggers'), f'MKN_frontier_marker_{level}_visible')
@@ -481,7 +492,7 @@ def validate_frontier(root, game, check, localized):
     sim.run('mkn_ukr_finalize_pact')
     check(sim.flag('MKN', 'mkn_ukr_pact_signed') and 'UKR' in sim.countries['MKN']['pacts'], 'MKN frontier: valid consent fails to establish the treaty')
     check('MKN' in sim.states['197']['cores'] and sim.states['500']['cores'] == {'LTB'}, 'MKN frontier: treaty does not repair won-state cores or cores unrelated territory')
-    check(mission_id in sim.countries['MKN']['missions'], 'MKN frontier: early voluntary treaty prematurely cancels the fixed annual deadline')
+    check(mission_id not in sim.countries['MKN']['missions'], 'MKN frontier: signed treaty leaves the annual deadline active')
     before = deepcopy((sim.countries, sim.states, sim.relations))
     sim.run('mkn_ukr_finalize_pact')
     sim.run('mkn_ukr_conclude_total_war')

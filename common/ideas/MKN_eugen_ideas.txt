@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		# Temporary story rewards; the persistent army spirit remains unified.
+		MKN_eugen_no_one_left_behind = {
+			picture = generic_infantry_bonus
+			allowed = { original_tag = MKN }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = { army_morale_factor = 0.10 }
+		}
+		MKN_eugen_instructor_courses = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_infantry_defence_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+	}
+}

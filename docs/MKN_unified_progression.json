@@ -41,10 +41,10 @@
     "MKN_steel_concern": {},
     "MKN_grain_export": {},
     "MKN_dnieper_audit": {
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_rifle_concern": {
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_social_fund": {},
     "MKN_repair_exchanges": {},
@@ -57,7 +57,7 @@
       "political_power_gain": 0.1,
       "consumer_goods_factor": -0.05,
       "production_speed_buildings_factor": 0.05,
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_steppe_mint": {
       "political_power_gain": 0.2
@@ -96,7 +96,7 @@
       "research_speed_factor": 0.02
     },
     "MKN_engineering_delegates": {
-      "industrial_capacity_factory": 0.07,
+      "industrial_capacity_factory": 0.05,
       "production_factory_efficiency_gain_factor": 0.08,
       "research_speed_factor": 0.02
     },
@@ -128,14 +128,14 @@
       "political_power_gain": 0.1,
       "consumer_goods_factor": -0.05,
       "production_speed_buildings_factor": 0.05,
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_dnepro_aluminium": {},
     "MKN_artel_register": {
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_village_smithies": {
-      "industrial_capacity_factory": 0.07,
+      "industrial_capacity_factory": 0.05,
       "production_factory_efficiency_gain_factor": 0.08,
       "research_speed_factor": 0.02
     },
@@ -156,7 +156,7 @@
       "political_power_gain": 0.1,
       "consumer_goods_factor": -0.05,
       "production_speed_buildings_factor": 0.05,
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_factory_instructors": {
       "army_org_factor": 0.06,
@@ -167,12 +167,12 @@
       "political_power_gain": 0.1,
       "consumer_goods_factor": -0.05,
       "production_speed_buildings_factor": 0.05,
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     },
     "MKN_steel_concern_union": {},
     "MKN_workers_welfare": {},
     "MKN_kommunar_tractor": {
-      "industrial_capacity_factory": 0.02
+      "industrial_capacity_factory": 0.05
     }
   },
   "legacy_spirits": [
