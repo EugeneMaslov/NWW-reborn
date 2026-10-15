@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 
 from PIL import Image
 from hoi4_script import one, read, values, walk, engine_script_errors, focus_registry
@@ -92,9 +93,24 @@ def main():
     assert one(one(funeral, 'immediate'), 'MKN_update_national_flag') == 'yes'
     for filename in ('common/scripted_effects/MKN_flag_effects.txt', 'common/on_actions/MKN_flag_on_actions.txt'):
         assert not list(engine_script_errors(read(ROOT / filename)))
-    # The requested filename override retains every native idea sprite.
+    # Retain every effective native sprite, permitting only reviewed texture
+    # path repairs. Dictionary lookup intentionally collapses vanilla duplicates.
     original = read(args.game / 'interface/ideas.gfx')
-    assert read(ROOT / 'interface/ideas.gfx')[:len(original)] == original
+    def sprite_index(doc):
+        return {one(v, 'name'): v for k, v, _ in walk(doc) if k and k.lower() == 'spritetype'}
+    native_sprites = sprite_index(original)
+    current_sprites = sprite_index(read(ROOT / 'interface/ideas.gfx'))
+    repairs = {
+        'gfx/interface/ideas/idea_generic_helicopter_manufacturer_1.dds': 'gfx/interface/ideas/idea_generic_air_manufacturer_1.dds',
+        'gfx/interface/ideas/portrait_Britain_arthur_percival.dds': 'gfx/interface/ideas/idea_ENG_arthur_percival.dds',
+        'gfx/interface/ideas/idea_Britain_arthur_percival_small.dds': 'gfx/interface/ideas/idea_ENG_arthur_percival.dds',
+        'gfx/interface/ideas/portrait_SIA_phraya_phahon_small.dds': 'gfx/interface/ideas/idea_SIA_phraya_phahon.dds',
+        'gfx/interface/ideas/idea_GER_mefo_bills.dds': 'gfx/interface/ideas/idea_ger_mefo_bills.dds',
+    }
+    for name, node in native_sprites.items():
+        expected = [(k, repairs.get(v, re.sub('/+', '/', v)) if k and k.lower() == 'texturefile' else v, op)
+                    for k, v, op in node]
+        assert current_sprites.get(name) == expected, f'Native sprite changed beyond reviewed path repairs: {name}'
     print('PASS: 29 distinct painted focus/idea exports, 5 flag masters, 48 flag-lifecycle scenarios, all native sizes/alpha and original idea sprites')
 
 

@@ -74,7 +74,7 @@ def leaders_and_advisors():
         'mkn_syndicalist_organizer': 'industrial_capacity_factory = 0.10 army_org_factor = 0.10',
         'mkn_batko_advisor': 'army_org_factor = 0.25 org_loss_when_moving = -0.20 planning_speed = 0.20',
         'mkn_infantry_specialist': 'army_infantry_attack_factor = 0.10 army_infantry_defence_factor = 0.10',
-        'mkn_tachanka_expert': 'army_speed_factor = 0.15 modifier_army_sub_unit_cavalry_attack_factor = 0.10 modifier_army_sub_unit_motorized_attack_factor = 0.10',
+        'mkn_tachanka_expert': 'army_speed_factor = 0.15 modifier_army_sub_unit_cavalry_attack_factor = 0.10 motorized_attack_factor = 0.10',
         'mkn_armored_train_commander': 'railway_gun_bombardment_factor = 0.20',
         'mkn_steppe_logistics_officer': 'supply_consumption_factor = -0.15',
         'mkn_entrenchment_specialist': 'dig_in_speed_factor = 0.15',
@@ -140,7 +140,7 @@ def leaders_and_advisors():
     save('common/country_leader/MKN_overhaul_traits.txt',block('leader_traits = { '+ ' '.join(f'{k} = {{ sprite = 15 random = no {v} }}' for k,v in traits.items())+' }'))
     save('common/unit_leader/MKN_traits.txt',block('''leader_traits = {
         mkn_batko_legend = { type = all trait_type = personality_trait gain_xp = { always = no }
-            modifier = { army_speed_factor = 0.25 modifier_army_sub_unit_cavalry_attack_factor = 0.25 modifier_army_sub_unit_motorized_attack_factor = 0.25 breakthrough_factor = 0.20 }
+            modifier = { army_speed_factor = 0.25 modifier_army_sub_unit_cavalry_attack_factor = 0.25 motorized_attack_factor = 0.25 breakthrough_factor = 0.20 }
         }
     }'''))
     path='common/scripted_effects/MKN_effects.txt'

@@ -117,10 +117,13 @@ def export_icons(spec, game):
         preview.append((labels.get(asset['focus'], asset['key']), canvas))
     save_script('interface/MKN_overhaul_icons.gfx', [('spriteTypes', focus_sprites, '=')])
     save_script('interface/MKN_overhaul_shine.gfx', [('spriteTypes', shines, '=')])
-    # Preserve the complete native registry when using its requested filename.
-    native = (game / 'interface/ideas.gfx').read_text(encoding='utf-8-sig')
+    # Preserve reviewed fixes in the mod's native registry across asset rebuilds.
+    # This interface loader treats a BOM as part of the first spriteTypes token.
+    registry = ROOT / 'interface/ideas.gfx'
+    marker = '\n# MKN painted ideas; sources: docs/art/MKN_hoi4_art.json.'
+    native = (registry if registry.is_file() else game / 'interface/ideas.gfx').read_text(encoding='utf-8-sig').split(marker, 1)[0]
     native = '\n'.join(re.sub(r'^[ \t]+', lambda m: m.group().expandtabs(4), line).rstrip() for line in native.splitlines())
-    (ROOT / 'interface/ideas.gfx').write_text(native + '\n# MKN painted ideas; sources: docs/art/MKN_hoi4_art.json.\n' + dump([('spriteTypes', idea_sprites, '=')]) + '\n', encoding='utf-8-sig')
+    registry.write_text(native + marker + '\n' + dump([('spriteTypes', idea_sprites, '=')]) + '\n', encoding='utf-8')
     render_preview(preview, 'docs/mkn_overhaul_icons_preview.png')
 
 

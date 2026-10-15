@@ -1,0 +1,8 @@
+# Owner: SOV. Resolve literal tree IDs compiled in detached native scripts.
+# The playable NWW tree remains SOV_focus in SOV_focuses.txt.
+# This empty registry entry has no selection weight and grants no rewards.
+focus_tree = {
+	id = soviet_focus
+	country = { factor = 0 }
+	default = no
+}

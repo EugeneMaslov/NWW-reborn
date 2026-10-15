@@ -1,0 +1,23 @@
+{
+  "error.log": {
+    "source": "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/logs/error.log",
+    "modified": "2026-10-15T15:22:00.672875+03:00",
+    "sha256": "3d3b447b3fe559be42370c29a8cd5be79f702229f203f93acf0ab39b326462d1",
+    "snapshot": "docs/audit/runtime_2026-10-15_error.txt",
+    "lines": 165
+  },
+  "game.log": {
+    "source": "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/logs/game.log",
+    "modified": "2026-10-15T15:19:40.871824+03:00",
+    "sha256": "35c37b5beb30d63f1e948ea0b2b563b9df8eba04a1433c25dc75da638594d484",
+    "snapshot": "docs/audit/runtime_2026-10-15_game.txt",
+    "lines": 13
+  },
+  "setup.log": {
+    "source": "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/logs/setup.log",
+    "modified": "2026-10-15T15:19:34.526640+03:00",
+    "sha256": "e03fbe5cac7336113ee2eba008dd66d31a679f9e9d2d8888ff3f6eb47463674d",
+    "snapshot": "docs/audit/runtime_2026-10-15_setup.txt",
+    "lines": 1638
+  }
+}

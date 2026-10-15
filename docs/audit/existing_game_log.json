@@ -1,0 +1,108 @@
+{
+  "log": "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/logs/error.log",
+  "total_lines": 211,
+  "modified": 1792009148.6426823,
+  "categories": {
+    "turkish_advisor_token": 0,
+    "empty_small_icon": 0,
+    "event_id_parse": 0,
+    "leading_decimal": 0,
+    "numeric_focus_token": 0,
+    "focus_shine": 0,
+    "missing_turkish_tree": 0,
+    "localization_collision": 0,
+    "core_resistance": 1,
+    "unknown_character": 0,
+    "german_equipment": 0,
+    "german_division_names": 0,
+    "other_mod_versions": 5,
+    "session_commands": 0,
+    "sound_duplicates": 16,
+    "soviet_purge_idea": 0,
+    "operation_dynamic_token": 0,
+    "italian_production_mio": 4,
+    "database_hot_reload": 0
+  },
+  "most_repeated": [
+    [
+      "[gameidler.cpp:1576]: AI tried to post an invalid command: order_set_invasion_source_command",
+      72
+    ],
+    [
+      "[gameidler.cpp:1576]: AI tried to post an invalid command: merge_navies",
+      25
+    ],
+    [
+      "[effectimplementation.cpp:12581]: common/scripted_effects/MKN_effects.txt:50: create_unit -- invalid scope state",
+      13
+    ],
+    [
+      "[effectimplementation.cpp:12581]: common/scripted_effects/MKN_effects.txt:51: create_unit -- invalid scope state",
+      13
+    ],
+    [
+      "[effectimplementation.cpp:12581]: common/scripted_effects/MKN_effects.txt:52: create_unit -- invalid scope state",
+      13
+    ],
+    [
+      "[effectbase.cpp:1601]: common/on_actions/14_sea_on_actions.txt:2297: random_list: all entries in random_list have 0 chance to happen - no effect is executed.",
+      6
+    ],
+    [
+      "[effectimplementation.cpp:17883]: start_border_war: no units available for attacker state 218",
+      5
+    ],
+    [
+      "[gameidler.cpp:1576]: AI tried to post an invalid command: unlock_trait_command",
+      3
+    ],
+    [
+      "[pdx_entity.cpp:324]: Failed to find entity \"INS_bicycle_vehicle_entity\" for attachment in bicycle",
+      2
+    ],
+    [
+      "[industrial_organisation.cpp:549]: in history files, MIO ITA_crda_organization has been incorrectly attached to a production line with 'Conte Di Cavour Class'. reason=[Not Available]",
+      2
+    ],
+    [
+      "[industrial_organisation.cpp:549]: in history files, MIO ITA_crda_organization has been incorrectly attached to a production line with 'Littorio Class'. reason=[Not Available]",
+      2
+    ],
+    [
+      "[triggerimplementation.cpp:13858]: common/on_actions/15_mun_on_actions.txt:117: has_border_war_between: No combat between states Карпаталия Восточная Словакия",
+      2
+    ],
+    [
+      "",
+      2
+    ],
+    [
+      "[dlc.cpp:142]: incorrect checksum for DLC",
+      1
+    ],
+    [
+      "[dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2404689961.mod line: 7",
+      1
+    ],
+    [
+      "[dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3291168236.mod line: 45",
+      1
+    ],
+    [
+      "[dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3618429635.mod line: 15",
+      1
+    ],
+    [
+      "[dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3636780337.mod line: 11",
+      1
+    ],
+    [
+      "[dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3668885000.mod line: 9",
+      1
+    ],
+    [
+      "[pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_turret_01' already added",
+      1
+    ]
+  ]
+}

@@ -5,6 +5,20 @@ from pathlib import Path
 TOKEN = re.compile(r'\s+|#[^\n]*|"(?:\\.|[^"\\])*"|[{}]|[=<>!]=?|[^\s{}=<>!#"]+')
 
 
+def scalar(token):
+    """Remove the outer quote pair only; preserve escaped interior quotes."""
+    return token[1:-1] if token.startswith('"') and token.endswith('"') else token
+
+
+def quoted(value):
+    """Quote a raw script string without escaping existing escapes a second time."""
+    value = re.sub(r'(\\*)"', lambda m: m[1] + ('\\' if len(m[1]) % 2 == 0 else '') + '"', value)
+    trailing = len(value) - len(value.rstrip('\\'))
+    if trailing % 2:
+        value += '\\'
+    return '"' + value + '"'
+
+
 def parse(text):
     tokens = [m.group() for m in TOKEN.finditer(text.lstrip('\ufeff'))
               if not m.group().isspace() and not m.group().startswith('#')]
@@ -34,9 +48,9 @@ def parse(text):
                 pos += 1
                 if value == '{':
                     value = block(True)
-                result.append((key.strip('"'), value if isinstance(value, list) else value.strip('"'), op))
+                result.append((scalar(key), value if isinstance(value, list) else scalar(value), op))
             else:
-                result.append((None, key.strip('"'), None))
+                result.append((None, scalar(key), None))
         if nested:
             raise ValueError('Unclosed block')
         return result
@@ -92,6 +106,10 @@ def engine_script_errors(node, parents=()):
             yield f'{context}: exists requires yes/no in country scope'
         if key == 'num_owned_states' and (not parents or parents[-1] != 'check_variable'):
             yield f'{context}: num_owned_states is a dynamic variable, not a native trigger'
+        if key == 'political_power' and (not parents or parents[-1] not in ('check_variable', 'set_variable', 'set_temp_variable')):
+            yield f'{context}: political_power is not a trigger; use has_political_power'
+        if key == 'modifier_army_sub_unit_motorized_attack_factor':
+            yield f'{context}: unregistered motorized modifier; use motorized_attack_factor'
         if key == 'check_variable' and isinstance(value, list):
             try:
                 variable_check(value)
@@ -149,8 +167,8 @@ def dump(node, depth=0):
                 lines.append(dump(value, depth + 1))
                 lines.append(prefix + '}')
             else:
-                if not value or any(c.isspace() for c in value) or '/' in value:
-                    value = '"' + value.replace('"', '\\"') + '"'
+                if not value or any(c.isspace() for c in value) or any(c in value for c in '/"\\'):
+                    value = quoted(value)
                 lines.append(prefix + value)
         elif isinstance(value, list):
             lines.append(f'{prefix}{key} {op} {{')
@@ -159,7 +177,7 @@ def dump(node, depth=0):
         else:
             if re.fullmatch(r'-?\.\d+', value):
                 value = '-0' + value[1:] if value.startswith('-') else '0' + value
-            if not value or any(c.isspace() for c in value) or '/' in value:
-                value = '"' + value.replace('"', '\\"') + '"'
+            if not value or any(c.isspace() for c in value) or any(c in value for c in '/"\\'):
+                value = quoted(value)
             lines.append(f'{prefix}{key} {op} {value}')
     return '\n'.join(lines)

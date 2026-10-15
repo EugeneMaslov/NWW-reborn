@@ -34,7 +34,7 @@ country_event = {
 	}
 	option = {
 		name = mkn_personnel.1.b
-		trigger = { NOT = { political_power < 50 } }
+		trigger = { NOT = { has_political_power < 50 } }
 		ai_chance = { base = 40 }
 		custom_effect_tooltip = MKN_eugen_under_fire_tt
 		add_political_power = -50

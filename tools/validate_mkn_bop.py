@@ -91,8 +91,12 @@ def validate_bop(root, game, check, localized):
             localized(one(text, 'localization_key'), 'MKN ideology display')
     for lang in ('english', 'russian'):
         loc = (root / f'localisation/replace/{lang}/MKN_ideologies_l_{lang}.yml').read_text(encoding='utf-8-sig')
-        for helper in re.findall(r'\[(\w+)\]', loc):
-            check(helper in helpers, f'MKN: missing dynamic ideology selector {helper}')
+        # The political chart reads these group labels without dynamic formatting.
+        # A registered selector still appears literally here in the actual game.
+        for key, value in re.findall(r'^\s+(\w+):\d*\s+"(.*)"', loc, re.M):
+            check('[' not in value, f'{key}: static ideology UI label contains a scripted callback')
+        for party in ('fascism', 'democratic', 'neutrality', 'communism'):
+            localized('MKN_' + party + '_party', 'MKN ideology party names')
 
     # Evaluate the real repair script. Unsupported syntax fails rather than being ignored.
     initialize = one(read(root / 'common/scripted_effects/MKN_bop_effects.txt'), 'nww_mkn_initialize_bop')

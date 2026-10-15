@@ -532,6 +532,14 @@ nww_SOV_update_army = {
 		}
 	}
 }
+nww_SOV_restore_tree_alias = {
+	# Defensive repair if a native civil-war callback loaded its legacy tree ID.
+	# Loading the NWW tree does not execute focus rewards.
+	if = {
+		limit = { has_focus_tree = soviet_focus }
+		load_focus_tree = { tree = SOV_focus keep_completed = yes }
+	}
+}
 nww_SOV_update_reconstruction = {
 	nww_SOV_update_state = yes
 	nww_SOV_update_economy = yes

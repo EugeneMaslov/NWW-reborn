@@ -29,14 +29,27 @@ def export_fitted(source, target, size, background):
 def main():
     outputs = []
     previews = []
+    manifest = ART / 'MKN_personnel_assets.json'
+    previous = {entry['target']: entry for entry in json.loads(
+        manifest.read_text(encoding='utf-8'))} if manifest.is_file() else {}
     for source, target, size in (
         ('docs/for-gen/photo-eugen-general.jpg', 'gfx/leaders/MKN/eugen.dds', (156, 210)),
         ('docs/for-gen/dmitruk-tratishov-2.jpg', 'gfx/leaders/MKN/dmitruk_tratishov.dds', (156, 210)),
         ('docs/for-gen/man.jpg', 'gfx/event_pictures/MKN/eugen_rescue.dds', (397, 153)),
     ):
+        old = previous.get(target, {})
+        if not (ROOT / source).is_file():
+            if not old.get('provenance') or not (ROOT / old.get('source', '')).is_file():
+                raise FileNotFoundError(f'Missing original and recovered source for {target}')
+            source = old['source']
         canvas = export_fitted(source, target, size, (37, 39, 36, 255))
         previews.append((Path(target).stem, canvas))
-        outputs.append(dict(source=source, target=target, size=size, preserve_full_frame=True))
+        entry = dict(source=source, target=target, size=size, preserve_full_frame=True)
+        if source == old.get('source') and 'provenance' in old:
+            for key in ('original_source', 'original_source_sha256', 'provenance'):
+                entry[key] = old[key]
+            entry['export_sha256'] = hashlib.sha256((ROOT / target).read_bytes()).hexdigest()
+        outputs.append(entry)
 
     source = 'docs/art/MKN_eugen_advisor_painted.png'
     original = Image.open(ROOT / source).convert('RGBA')

@@ -30,6 +30,8 @@ def check(condition, message):
 def documents(root, glob):
     for path in root.glob(glob):
         try:
+            if root == ROOT and path.suffix in ('.gfx', '.gui'):
+                check(not path.read_bytes().startswith(b'\xef\xbb\xbf'), f'{path.relative_to(ROOT)}: interface scripts must not start with a UTF-8 BOM')
             if root == ROOT and path.suffix == '.txt' and path not in numeric_checked:
                 numeric_checked.add(path)
                 text = path.read_text(encoding='utf-8-sig')

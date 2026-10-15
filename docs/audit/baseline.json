@@ -1,0 +1,1331 @@
+{
+  "schema": 1,
+  "game": "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV",
+  "version": "1.19.3.0",
+  "generated_at": "2026-10-15T14:31:04+03:00",
+  "stats": {
+    "script_files": 1320,
+    "localisation_files": 60,
+    "localisation_entries": 6143,
+    "custom_sprites": 2981,
+    "texture_references": 13262,
+    "image_files": 270,
+    "dds_files": 141,
+    "dds_non_pot_ui": 95,
+    "sprite_references": 7085,
+    "native_reference_wrappers_restored": 3,
+    "effective_focuses": 11387,
+    "effective_characters": 5472,
+    "custom_focuses": 1983,
+    "hidden_compatibility_focuses": 1251,
+    "hidden_focus_default_coordinates": 622,
+    "victory_point_entries": 1501,
+    "building_entries": 3095,
+    "state_lake_provinces": 118,
+    "state_1082_provinces": 2,
+    "state_1082_vp": 1,
+    "state_200_provinces": 7,
+    "state_200_vp": 1,
+    "effective_states": 1082,
+    "effective_provinces": 13413,
+    "strategic_regions": 304,
+    "decision_variables_without_clamp": 5,
+    "decision_variables": 6,
+    "decisions": 307,
+    "missions": 33,
+    "disabled_compatibility_decisions": 254,
+    "custom_characters": 258,
+    "recruit_references": 1108,
+    "required_localisation_keys": 3932,
+    "art_manifests": 3,
+    "total_files_scanned": 1688,
+    "workspace_inventory_files": 1936
+  },
+  "issues": [
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 8465,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 8551,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 8611,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9572,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9581,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 12291,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13250,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13815,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13826,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 15192,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 15196,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "syntax",
+      "severity": "error",
+      "code": "record_scalar",
+      "file": "events/NSB_Soviet.txt",
+      "line": 15200,
+      "message": "create_unit: свободные токены внутри блока с именованными параметрами; проверить экранирование строк"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_english.yml",
+      "line": 194,
+      "message": "UKR_rebuild_kiev_desc: повтор ключа из localisation/mod_focus_l_english.yml:28 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_english.yml",
+      "line": 195,
+      "message": "UKR_dnieper_industry_desc: повтор ключа из localisation/mod_focus_l_english.yml:32 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_english.yml",
+      "line": 198,
+      "message": "UKR_collectivization_completed_desc: повтор ключа из localisation/mod_focus_l_english.yml:30 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_english.yml",
+      "line": 199,
+      "message": "UKR_guardians_of_the_steppe_desc: повтор ключа из localisation/mod_focus_l_english.yml:34 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_english.yml",
+      "line": 206,
+      "message": "UKR_friends_in_moscow_desc: повтор ключа из localisation/mod_focus_l_english.yml:36 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_english.yml",
+      "line": 207,
+      "message": "UKR_the_makhno_question_desc: повтор ключа из localisation/mod_focus_l_english.yml:38 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_russian.yml",
+      "line": 194,
+      "message": "UKR_rebuild_kiev_desc: повтор ключа из localisation/mod_focus_l_russian.yml:28 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_russian.yml",
+      "line": 195,
+      "message": "UKR_dnieper_industry_desc: повтор ключа из localisation/mod_focus_l_russian.yml:32 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_russian.yml",
+      "line": 198,
+      "message": "UKR_collectivization_completed_desc: повтор ключа из localisation/mod_focus_l_russian.yml:30 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_russian.yml",
+      "line": 199,
+      "message": "UKR_guardians_of_the_steppe_desc: повтор ключа из localisation/mod_focus_l_russian.yml:34 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_russian.yml",
+      "line": 206,
+      "message": "UKR_friends_in_moscow_desc: повтор ключа из localisation/mod_focus_l_russian.yml:36 с другим текстом"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "duplicate",
+      "file": "localisation/nww_UKR_expansion_l_russian.yml",
+      "line": 207,
+      "message": "UKR_the_makhno_question_desc: повтор ключа из localisation/mod_focus_l_russian.yml:38 с другим текстом"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "interface/aap_technologies.gfx",
+      "line": 238,
+      "message": "Установленная игра: Незакрытый блок; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_duplicate",
+      "file": "interface/ideas.gfx",
+      "line": 2638,
+      "message": "GFX_idea_CZE_army_bop_minus_1: повтор из interface/ideas.gfx"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_duplicate",
+      "file": "interface/ideas.gfx",
+      "line": 4241,
+      "message": "GFX_idea_marcel_bucard: повтор из interface/ideas.gfx"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_duplicate",
+      "file": "interface/ideas.gfx",
+      "line": 8215,
+      "message": "GFX_idea_CZE_zlin_aircraft: повтор из interface/ideas.gfx"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_duplicate",
+      "file": "interface/ideas.gfx",
+      "line": 9073,
+      "message": "GFX_idea_SOV_restoration_and_development_idea_ccp_sov_compatibility: повтор из interface/ideas.gfx"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_duplicate",
+      "file": "interface/ideas.gfx",
+      "line": 11697,
+      "message": "GFX_idea_USA_jonathan_wainwright: повтор из interface/ideas.gfx"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "interface/powerbalanceview.gfx",
+      "line": 540,
+      "message": "Установленная игра: Незакрытый блок; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "texture_missing",
+      "file": "interface/ideas.gfx",
+      "line": 1136,
+      "message": "gfx/interface/ideas/idea_generic_helicopter_manufacturer_1.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "texture_missing",
+      "file": "interface/ideas.gfx",
+      "line": 1997,
+      "message": "gfx/interface/ideas/portrait_Britain_arthur_percival.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 5990,
+      "message": "gfx//interface//ideas//POL_Ideology_Drift_Defence.dds → gfx/interface/ideas/POL_Ideology_Drift_Defence.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8006,
+      "message": "gfx//interface//ideas//idea_FB.dds → gfx/interface/ideas/idea_FB.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8010,
+      "message": "gfx//interface//ideas//idea_LRL.dds → gfx/interface/ideas/idea_LRL.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8014,
+      "message": "gfx//interface//ideas//idea_PWS.dds → gfx/interface/ideas/idea_PWS.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8018,
+      "message": "gfx//interface//ideas//idea_PZinz.dds → gfx/interface/ideas/idea_PZinz.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8022,
+      "message": "gfx//interface//ideas//idea_PZL.dds → gfx/interface/ideas/idea_PZL.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8026,
+      "message": "gfx//interface//ideas//idea_SMPA.dds → gfx/interface/ideas/idea_SMPA.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8030,
+      "message": "gfx//interface//ideas//idea_Stocznia_Gydia.dds → gfx/interface/ideas/idea_Stocznia_Gydia.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8037,
+      "message": "gfx//interface//ideas//idea_lithgow_saf.dds → gfx/interface/ideas/idea_lithgow_saf.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8041,
+      "message": "gfx//interface//ideas//idea_evans_deakin_co.dds → gfx/interface/ideas/idea_evans_deakin_co.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8045,
+      "message": "gfx//interface//ideas//idea_Cockatoo_doe.dds → gfx/interface/ideas/idea_Cockatoo_doe.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8049,
+      "message": "gfx//interface//ideas//idea_com_aircraft_corporation.dds → gfx/interface/ideas/idea_com_aircraft_corporation.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8053,
+      "message": "gfx//interface//ideas//idea_new_south_wales_rc.dds → gfx/interface/ideas/idea_new_south_wales_rc.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8057,
+      "message": "gfx//interface//ideas//idea_lysaghts_works.dds → gfx/interface/ideas/idea_lysaghts_works.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8063,
+      "message": "gfx//interface//ideas//idea_mazagon_dock_limited.dds → gfx/interface/ideas/idea_mazagon_dock_limited.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8067,
+      "message": "gfx//interface//ideas//idea_ishapore_rifle_factory.dds → gfx/interface/ideas/idea_ishapore_rifle_factory.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8071,
+      "message": "gfx//interface//ideas//idea_ordnance_factories_board.dds → gfx/interface/ideas/idea_ordnance_factories_board.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8075,
+      "message": "gfx//interface//ideas//idea_hindustan_aircraft.dds → gfx/interface/ideas/idea_hindustan_aircraft.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8079,
+      "message": "gfx//interface//ideas//idea_garden_reach_shipbuilders.dds → gfx/interface/ideas/idea_garden_reach_shipbuilders.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8083,
+      "message": "gfx//interface//ideas//idea_scindia_shipyard.dds → gfx/interface/ideas/idea_scindia_shipyard.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8089,
+      "message": "gfx//interface//ideas//idea_canadian_car_foundry.dds → gfx/interface/ideas/idea_canadian_car_foundry.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8093,
+      "message": "gfx//interface//ideas//idea_halifax_shipyard.dds → gfx/interface/ideas/idea_halifax_shipyard.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8097,
+      "message": "gfx//interface//ideas//idea_kingston_shipbuilding.dds → gfx/interface/ideas/idea_kingston_shipbuilding.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8101,
+      "message": "gfx//interface//ideas//idea_vickers_armstrong_canada.dds → gfx/interface/ideas/idea_vickers_armstrong_canada.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8105,
+      "message": "gfx//interface//ideas//idea_small_arms_limited.dds → gfx/interface/ideas/idea_small_arms_limited.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8109,
+      "message": "gfx//interface//ideas//idea_inglis_company.dds → gfx/interface/ideas/idea_inglis_company.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8119,
+      "message": "gfx//interface//ideas//idea_charlton_mw.dds → gfx/interface/ideas/idea_charlton_mw.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8123,
+      "message": "gfx//interface//ideas//idea_christchurch_workshops.dds → gfx/interface/ideas/idea_christchurch_workshops.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8127,
+      "message": "gfx//interface//ideas//idea_nz_railways.dds → gfx/interface/ideas/idea_nz_railways.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8131,
+      "message": "gfx//interface//ideas//idea_port_chalmers_shipbuilding.dds → gfx/interface/ideas/idea_port_chalmers_shipbuilding.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8135,
+      "message": "gfx//interface//ideas//idea_st_mary_bay_ship.dds → gfx/interface/ideas/idea_st_mary_bay_ship.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "warning",
+      "code": "texture_noncanonical",
+      "file": "interface/ideas.gfx",
+      "line": 8141,
+      "message": "gfx//interface//ideas//idea_iscor.dds → gfx/interface/ideas/idea_iscor.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "texture_case",
+      "file": "interface/ideas.gfx",
+      "line": 9921,
+      "message": "gfx/interface/ideas/idea_GER_mefo_bills.dds → gfx/interface/ideas/idea_ger_mefo_bills.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "texture_missing",
+      "file": "interface/ideas.gfx",
+      "line": 11695,
+      "message": "gfx/interface/ideas/idea_Britain_arthur_percival_small.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "texture_missing",
+      "file": "interface/ideas.gfx",
+      "line": 12183,
+      "message": "gfx/interface/ideas/portrait_SIA_phraya_phahon_small.dds"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 14322,
+      "message": "GFX_report_event_generic_worker_protests"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "history/countries/ENG - Britain.txt",
+      "line": 2015,
+      "message": "GFX_ENG_nav_bomber1_medium"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "common/national_focus/TSR_lingguang_incident_joint_branch.txt",
+      "line": 420,
+      "message": "Установленная игра: Лишняя закрывающая скобка; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/categories/MKN_bop_categories.txt",
+      "line": 13,
+      "message": "GFX_decision_category_generic_guerilla_base"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/categories/nww_mkn_categories.txt",
+      "line": 1,
+      "message": "GFX_decision_category_generic_guerilla_base"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/zzz_generic.txt",
+      "line": 241,
+      "message": "russian: MTG_TEST_NAVAL_IDEA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/zzz_generic.txt",
+      "line": 241,
+      "message": "english: MTG_TEST_NAVAL_IDEA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10032,
+      "message": "russian: NSB_Soviet_fascist_civil_war.004.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10032,
+      "message": "english: NSB_Soviet_fascist_civil_war.004.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10025,
+      "message": "russian: NSB_Soviet_fascist_civil_war.004.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10025,
+      "message": "english: NSB_Soviet_fascist_civil_war.004.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10024,
+      "message": "russian: NSB_Soviet_fascist_civil_war.004.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10024,
+      "message": "english: NSB_Soviet_fascist_civil_war.004.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10398,
+      "message": "russian: NSB_soviet_civil_war_common.004.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10398,
+      "message": "english: NSB_soviet_civil_war_common.004.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10386,
+      "message": "russian: NSB_soviet_civil_war_common.004.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10386,
+      "message": "english: NSB_soviet_civil_war_common.004.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10385,
+      "message": "russian: NSB_soviet_civil_war_common.004.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10385,
+      "message": "english: NSB_soviet_civil_war_common.004.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10458,
+      "message": "russian: NSB_soviet_civil_war_common.005.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10458,
+      "message": "english: NSB_soviet_civil_war_common.005.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10457,
+      "message": "russian: NSB_soviet_civil_war_common.005.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 10457,
+      "message": "english: NSB_soviet_civil_war_common.005.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9717,
+      "message": "russian: NSB_soviet_communist_civil_war.007.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9717,
+      "message": "english: NSB_soviet_communist_civil_war.007.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9714,
+      "message": "russian: NSB_soviet_communist_civil_war.007.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9714,
+      "message": "english: NSB_soviet_communist_civil_war.007.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9713,
+      "message": "russian: NSB_soviet_communist_civil_war.007.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 9713,
+      "message": "english: NSB_soviet_communist_civil_war.007.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13073,
+      "message": "russian: NSB_soviet_nationalist.000.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13073,
+      "message": "english: NSB_soviet_nationalist.000.a"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13069,
+      "message": "russian: NSB_soviet_nationalist.000.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13069,
+      "message": "english: NSB_soviet_nationalist.000.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13068,
+      "message": "russian: NSB_soviet_nationalist.000.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 13068,
+      "message": "english: NSB_soviet_nationalist.000.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1759,
+      "message": "russian: NSB_soviet_propaganda_capmaign_events.101.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1759,
+      "message": "english: NSB_soviet_propaganda_capmaign_events.101.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1758,
+      "message": "russian: NSB_soviet_propaganda_capmaign_events.101.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1758,
+      "message": "english: NSB_soviet_propaganda_capmaign_events.101.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1780,
+      "message": "russian: NSB_soviet_propaganda_capmaign_events.102.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1780,
+      "message": "english: NSB_soviet_propaganda_capmaign_events.102.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1779,
+      "message": "russian: NSB_soviet_propaganda_capmaign_events.102.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1779,
+      "message": "english: NSB_soviet_propaganda_capmaign_events.102.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1801,
+      "message": "russian: NSB_soviet_propaganda_capmaign_events.103.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1801,
+      "message": "english: NSB_soviet_propaganda_capmaign_events.103.desc"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1800,
+      "message": "russian: NSB_soviet_propaganda_capmaign_events.103.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "events/NSB_Soviet.txt",
+      "line": 1800,
+      "message": "english: NSB_soviet_propaganda_capmaign_events.103.t"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 2985,
+      "message": "russian: SOV_non_communism_aversion_ns"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 2985,
+      "message": "english: SOV_non_communism_aversion_ns"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3080,
+      "message": "russian: SOV_targeted_bonus_against_ENG"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3080,
+      "message": "english: SOV_targeted_bonus_against_ENG"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3094,
+      "message": "russian: SOV_targeted_bonus_against_FRA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3094,
+      "message": "english: SOV_targeted_bonus_against_FRA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3108,
+      "message": "russian: SOV_targeted_bonus_against_GER"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3108,
+      "message": "english: SOV_targeted_bonus_against_GER"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3122,
+      "message": "russian: SOV_targeted_bonus_against_ITA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3122,
+      "message": "english: SOV_targeted_bonus_against_ITA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3150,
+      "message": "russian: SOV_targeted_bonus_against_JAP"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3150,
+      "message": "english: SOV_targeted_bonus_against_JAP"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3136,
+      "message": "russian: SOV_targeted_bonus_against_USA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/SOV.txt",
+      "line": 3136,
+      "message": "english: SOV_targeted_bonus_against_USA"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/characters/TUR.txt",
+      "line": 610,
+      "message": "russian: TUR_fevzi_cakmak_prime_minister"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/characters/TUR.txt",
+      "line": 610,
+      "message": "english: TUR_fevzi_cakmak_prime_minister"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/characters/SOV.txt",
+      "line": 2313,
+      "message": "russian: anton_denikin"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/characters/SOV.txt",
+      "line": 2313,
+      "message": "english: anton_denikin"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/characters/SOV.txt",
+      "line": 2559,
+      "message": "russian: nikita_khrushchyov"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/characters/SOV.txt",
+      "line": 2559,
+      "message": "english: nikita_khrushchyov"
+    },
+    {
+      "category": "tooling",
+      "severity": "error",
+      "code": "source_missing",
+      "file": "docs/art/MKN_personnel_assets.json",
+      "line": 1,
+      "message": "docs/for-gen/photo-eugen-general.jpg"
+    },
+    {
+      "category": "tooling",
+      "severity": "error",
+      "code": "source_missing",
+      "file": "docs/art/MKN_personnel_assets.json",
+      "line": 1,
+      "message": "docs/for-gen/dmitruk-tratishov-2.jpg"
+    },
+    {
+      "category": "tooling",
+      "severity": "error",
+      "code": "source_missing",
+      "file": "docs/art/MKN_personnel_assets.json",
+      "line": 1,
+      "message": "docs/for-gen/man.jpg"
+    }
+  ],
+  "variables": {
+    "MKN_raids_done": {
+      "references": [
+        [
+          "common/decisions/nww_mkn_decisions.txt",
+          1034
+        ],
+        [
+          "common/decisions/nww_mkn_decisions.txt",
+          1040
+        ]
+      ],
+      "initializers": [
+        "common/national_focus/MKN.txt:1037"
+      ],
+      "bounds": []
+    },
+    "mkn_consecutive_border_wars": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          32
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          203
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/MKN_ukr_border_effects.txt:48",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:113",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:404",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:486"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_attacking_state": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          229
+        ]
+      ],
+      "initializers": [
+        "common/decisions/MKN_ukr_border_decisions.txt:229",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:596"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_defending_state": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          232
+        ]
+      ],
+      "initializers": [
+        "common/decisions/MKN_ukr_border_decisions.txt:232",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:609"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_escalation_level": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          8
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          13
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          16
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          50
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          69
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          72
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          108
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          148
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          151
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          175
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          299
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          371
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          374
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/MKN_ukr_border_effects.txt:45",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:94",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:124",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:322",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:401",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:451",
+        "events/MKN_ukr_border_events.txt:201"
+      ],
+      "bounds": [
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:16"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:72"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:151"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:374"
+        ],
+        [
+          "1",
+          "5",
+          "common/scripted_effects/MKN_ukr_border_effects.txt:68"
+        ]
+      ]
+    },
+    "num_owned_states": {
+      "references": [
+        [
+          "common/decisions/MKN_decisions.txt",
+          485
+        ],
+        [
+          "common/decisions/MKN_decisions.txt",
+          494
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          180
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          193
+        ]
+      ],
+      "initializers": [
+        "Динамическая переменная движка: documentation/dynamic_variables_documentation.md"
+      ],
+      "bounds": []
+    }
+  },
+  "git_revision": "67fc7d81f3a041e19f6f73672c730735a2dc8a02",
+  "snapshot_method": "Tracked files at HEAD before the audit, excluding old-mod; generated audit tools run from the working tree."
+}

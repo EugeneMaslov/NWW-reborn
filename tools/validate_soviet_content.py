@@ -34,6 +34,13 @@ check(set(report['preserved_focus_ids']) <= focuses.keys(), 'An original NWW foc
 check(one(one(one(tree, 'country'), 'modifier'), 'add') == '100', 'New tree does not outrank vanilla')
 check(int(one(one(tree, 'continuous_focus_position'), 'y')) > max(int(one(f, 'y')) for f in focuses.values()) * 130 + 800, 'Continuous panel overlaps focuses')
 check(not values(read(ROOT / 'common/national_focus/soviet.txt'), 'focus_tree'), 'Vanilla Soviet tree is still selectable')
+alias_tree = one(read(ROOT / 'common/national_focus/SOV_native_compatibility_tree.txt'), 'focus_tree')
+check(one(alias_tree, 'id') == 'soviet_focus' and one(one(alias_tree, 'country'), 'factor') == '0'
+      and one(alias_tree, 'default') == 'no' and not values(alias_tree, 'focus')
+      and not values(alias_tree, 'shared_focus'), 'Native Soviet tree alias is selectable or contains gameplay content')
+plan = read(ROOT / 'common/ai_strategy_plans/SOV_historical.txt')[0][1]
+check(not any(k == 'has_focus_tree' for k, v, o in walk(one(plan, 'allowed'))), 'Runtime focus-tree trigger used in static AI allowed')
+check(one(one(plan, 'enable'), 'has_focus_tree') == 'SOV_focus', 'Soviet AI plan lost its runtime tree gate')
 for f in focuses.values():
     fid = one(f, 'id')
     for lang, entries in base.locales.items():
@@ -153,6 +160,10 @@ def execute(node, scope, w):
             scope['flags'].add(value)
         elif key == 'clr_country_flag':
             scope['flags'].discard(value)
+        elif key == 'load_focus_tree':
+            scope['tree'] = one(value, 'tree')
+            if one(value, 'keep_completed', 'no') != 'yes':
+                scope['focuses'].clear()
         elif key in ('SOV', 'LTB', 'MKN'):
             execute(value, w[key], w)
         elif key == 'create_wargoal':
@@ -165,6 +176,18 @@ def execute(node, scope, w):
         else:
             raise AssertionError('Unsupported test effect: ' + str(key))
 
+
+# The inert native ID can be repaired without rewards or lost NWW progress.
+for tree_id in ('soviet_focus', 'SOV_focus', 'generic_focus'):
+    w = world()
+    w['SOV']['tree'] = tree_id
+    w['SOV']['focuses'] = {'SOV_the_revolution_endures', 'NWW_SOV_budget_accountability'}
+    before = copy.deepcopy(w)
+    execute(effects['nww_SOV_restore_tree_alias'], w['SOV'], w)
+    before['SOV']['tree'] = 'SOV_focus' if tree_id == 'soviet_focus' else tree_id
+    check(w == before, 'Soviet compatibility repair changed rewards, completed focuses or an unrelated tree')
+    execute(effects['nww_SOV_restore_tree_alias'], w['SOV'], w)
+    check(w == before, 'Soviet compatibility repair is not idempotent')
 
 # All combinations and repeated save repairs preserve the exact intended stage.
 milestones = [fid for area in report['stage_milestones'].values() for fid in area]

@@ -3,7 +3,6 @@ NWW_SOV_historical = {
 	desc = ""
 	allowed = {
 		original_tag = SOV
-		has_focus_tree = SOV_focus
 	}
 	enable = {
 		has_focus_tree = SOV_focus

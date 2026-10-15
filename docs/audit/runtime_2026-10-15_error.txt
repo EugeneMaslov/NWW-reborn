@@ -1,0 +1,165 @@
+[15:18:54][no_game_date][dlc.cpp:142]: incorrect checksum for DLC
+[15:18:54][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2404689961.mod line: 7
+[15:18:54][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3291168236.mod line: 45
+[15:18:54][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3618429635.mod line: 15
+[15:18:54][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3636780337.mod line: 11
+[15:18:54][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3668885000.mod line: 9
+[15:18:55][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_turret_01' already added
+[15:18:55][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_turrent_01.wav' in  file: sound/sound.asset line: 730
+[15:18:55][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_sonar_01' already added
+[15:18:55][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_sonar_01.wav' in  file: sound/sound.asset line: 734
+[15:18:55][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_misc_01' already added
+[15:18:55][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_misc_01.wav' in  file: sound/sound.asset line: 738
+[15:18:55][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_engine_01' already added
+[15:18:55][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_engine_01.wav' in  file: sound/sound.asset line: 742
+[15:18:55][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_turret' already added
+[15:18:55][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_sonar' already added
+[15:18:55][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_default' already added
+[15:18:55][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_engine' already added
+[15:18:55][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_turret' already has category 'UI', old category will be overwritten
+[15:18:55][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_sonar' already has category 'UI', old category will be overwritten
+[15:18:55][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_default' already has category 'UI', old category will be overwritten
+[15:18:55][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_engine' already has category 'UI', old category will be overwritten
+[15:18:55][no_game_date][persistent.cpp:67]: Error: "Unexpected token: ﻿spriteTypes, near line: 1" in file: "interface/ideas.gfx" near line: 12349
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of HOL_infantry_rider_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of HOL_cavalry_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of HOL_cavalry_rifle_combined_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of HOL_infantry_mg_rider_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of HOL_cavalry_mg_combined_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of HOL_cavalry_2_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of INS_infantry_rider_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of INS_cavalry_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of INS_cavalry_rifle_combined_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of INS_infantry_mg_rider_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of INS_cavalry_mg_combined_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of INS_cavalry_2_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of MEX_infantry_rider_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of MEX_cavalry_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of MEX_cavalry_rifle_combined_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of MEX_infantry_mg_rider_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of MEX_cavalry_mg_combined_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of MEX_cavalry_2_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of JAP_light_plane_1_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:2172]: Duplicate of JAP_light_plane_3_entity added to entity system
+[15:19:04][no_game_date][pdx_entity.cpp:324]: Failed to find entity "INS_bicycle_vehicle_entity" for attachment in bicycle
+[15:19:04][no_game_date][pdx_entity.cpp:324]: Failed to find entity "INS_bicycle_vehicle_entity" for attachment in bicycle
+[15:19:05][no_game_date][equipment_graphic_database.cpp:49]: GFX referenced in equipment graphic database does not exist: "GFX_JAP_land_cruiser_armor_medium", associated with JAP land_cruiser_chassis_1
+[15:19:05][no_game_date][effect.cpp:435]: Invalid scope type for effect add_ideas in common/characters/nww_MKN.txt line : 388
+[15:19:05][no_game_date][effect.cpp:435]: Invalid scope type for effect remove_ideas in common/characters/nww_MKN.txt line : 391
+[15:19:05][no_game_date][persistent.cpp:67]: Error: "Unknown modifier: modifier_army_sub_unit_motorized_attack_factor, near line: 52" in file: "common/country_leader/MKN_overhaul_traits.txt" near line: 52
+[15:19:07][no_game_date][effectimplementation.cpp:5524]: common/scripted_effects/MKN_personnel_effects.txt:8: recruit_character should only happen in game/history files in order to be executed only at game start
+[15:19:07][no_game_date][persistent.cpp:67]: Error: "Token has_focus_tree is not supported within the allowed trigger: }, near line: 7" in file: "common/ai_strategy_plans/SOV_historical.txt" near line: 7
+[15:19:07][no_game_date][trigger.cpp:700]: Invalid trigger 'political_power' in events/MKN_personnel_events.txt line : 37
+[15:19:07][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: political_power, near line: 37" in file: "events/MKN_personnel_events.txt" near line: 37
+[15:19:08][no_game_date][effectimplementation.cpp:375]: Unable to find focus tree with ID: soviet_focus
+[15:19:08][no_game_date][effectimplementation.cpp:14287]: Invalid Decision Category SOV_paranoia_system
+[15:19:08][no_game_date][effectimplementation.cpp:375]: Unable to find focus tree with ID: soviet_focus
+[15:19:09][no_game_date][effectimplementation.cpp:5524]: common/scripted_effects/MKN_personnel_effects.txt:8: recruit_character should only happen in game/history files in order to be executed only at game start
+[15:19:09][no_game_date][gameitemdatabase.h:324]: 1 errors.
+[15:19:09][no_game_date][gameitemdatabase.h:336]: =============================
+[15:19:09][no_game_date][effectimplementation.cpp:375]: Unable to find focus tree with ID: soviet_focus
+[15:19:39][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_porsche]
+[15:19:39][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_porsche]
+[15:19:39][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_porsche]
+[15:19:39][1936.01.01.12][industrial_organisation.cpp:549]: in history files, MIO ITA_crda_organization has been incorrectly attached to a production line with 'Conte Di Cavour Class'. reason=[Not Available]
+[15:19:39][1936.01.01.12][industrial_organisation.cpp:549]: in history files, MIO ITA_crda_organization has been incorrectly attached to a production line with 'Conte Di Cavour Class'. reason=[Not Available]
+[15:19:39][1936.01.01.12][industrial_organisation.cpp:549]: in history files, MIO ITA_crda_organization has been incorrectly attached to a production line with 'Littorio Class'. reason=[Not Available]
+[15:19:39][1936.01.01.12][industrial_organisation.cpp:549]: in history files, MIO ITA_crda_organization has been incorrectly attached to a production line with 'Littorio Class'. reason=[Not Available]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_porsche]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_porsche]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_porsche]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:19:40][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:43][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:43][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:21:47][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:22:00][1936.01.01.12][graphics.cpp:1351]: Failed to create gui object. Could not find sprite type [GFX_idea_traits_strip]
+[15:22:00][1936.01.01.12][icon_entry.cpp:38]: Icon definition "_small" does neither look like a file path nor a GFX entry as it does not start with "GFX_"

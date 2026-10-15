@@ -385,10 +385,10 @@ characters = {
 				mkn_armored_train_commander
 			}
 			on_add = {
-				add_ideas = MKN_armored_train_staff_bonus
+				MKN = { add_ideas = MKN_armored_train_staff_bonus }
 			}
 			on_remove = {
-				remove_ideas = MKN_armored_train_staff_bonus
+				MKN = { remove_ideas = MKN_armored_train_staff_bonus }
 			}
 		}
 		corps_commander = {

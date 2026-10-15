@@ -1,33 +1,45 @@
 [
   {
-    "source": "docs/for-gen/photo-eugen-general.jpg",
+    "source": "docs/art/recovered_personnel/eugen.png",
     "target": "gfx/leaders/MKN/eugen.dds",
     "size": [
       156,
       210
     ],
     "preserve_full_frame": true,
-    "source_sha256": "7c555785832c28e4df51f18462a8b1849a3645c2abee13187ba7702a485b3889"
+    "original_source": "docs/for-gen/photo-eugen-general.jpg",
+    "original_source_sha256": "7c555785832c28e4df51f18462a8b1849a3645c2abee13187ba7702a485b3889",
+    "provenance": "Recovered losslessly from the surviving approved DDS; original photograph absent from this checkout.",
+    "export_sha256": "61049a231e7094b51c41db62c588c5bb570209e63d585ea147bb130a677d2974",
+    "source_sha256": "1f37e59417c8271f87d3439f1978b029cff7b511a2f3e2e0c7246da659ddb0de"
   },
   {
-    "source": "docs/for-gen/dmitruk-tratishov-2.jpg",
+    "source": "docs/art/recovered_personnel/dmitruk_tratishov.png",
     "target": "gfx/leaders/MKN/dmitruk_tratishov.dds",
     "size": [
       156,
       210
     ],
     "preserve_full_frame": true,
-    "source_sha256": "b6c2066e728c887ea153fcbd754b559e7951ad6752836e61fa58b22e25bb81eb"
+    "original_source": "docs/for-gen/dmitruk-tratishov-2.jpg",
+    "original_source_sha256": "b6c2066e728c887ea153fcbd754b559e7951ad6752836e61fa58b22e25bb81eb",
+    "provenance": "Recovered losslessly from the surviving approved DDS; original photograph absent from this checkout.",
+    "export_sha256": "1de207fa1efcdbe1737295ae97cf368a8bca23a456fbcd9d5427205c7248ba41",
+    "source_sha256": "89d11f68ba119a6d052356ba2da5935188fc0f2466d6e41e0910be3c0cd8ddfe"
   },
   {
-    "source": "docs/for-gen/man.jpg",
+    "source": "docs/art/recovered_personnel/eugen_rescue.png",
     "target": "gfx/event_pictures/MKN/eugen_rescue.dds",
     "size": [
       397,
       153
     ],
     "preserve_full_frame": true,
-    "source_sha256": "47618eabdeb993a38d5296e8ada22718d4e125fd8a16d9f63e8aaea34d08f905"
+    "original_source": "docs/for-gen/man.jpg",
+    "original_source_sha256": "47618eabdeb993a38d5296e8ada22718d4e125fd8a16d9f63e8aaea34d08f905",
+    "provenance": "Recovered losslessly from the surviving approved DDS; original photograph absent from this checkout.",
+    "export_sha256": "ac4cc47b9665467721571565f5396f8b4564dde0390fb53f7dcad4b2d2c6e135",
+    "source_sha256": "7c91ebe87e1504f3b3082bd62ad29a0f2394f7e3ad0e39fd7b91c28a434b2aee"
   },
   {
     "source": "docs/art/MKN_eugen_advisor_painted.png",

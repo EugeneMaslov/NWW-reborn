@@ -4,3 +4,10 @@ NWW_SOV_disabled_subsystems = {
 		always = no
 	}
 }
+# Owner: SOV. Native event tooltips compile this category ID even behind
+# NWW's event guards. No native decisions are assigned to this disabled entry.
+SOV_paranoia_system = {
+	icon = generic_political_actions
+	allowed = { always = no }
+	visible = { always = no }
+}

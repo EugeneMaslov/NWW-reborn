@@ -141,7 +141,8 @@ def main():
     native=set(re.findall(r'^## (\w+)',(game/'documentation/modifiers_documentation.md').read_text(encoding='utf-8-sig'),re.M))
     native |= {'production_speed_'+k+'_factor' for k,v,o in one(read(game/'common/buildings/00_buildings.txt'),'buildings')}
     subunits={k for path in (game/'common/units').glob('*.txt') for k,v,o in one(read(path),'sub_units',[])}
-    native|={'modifier_army_sub_unit_'+u+'_'+stat+'_factor' for u in subunits for stat in ('attack','defence','speed','max_org')}
+    # Do not invent modifier names from subunit IDs: motorized_attack_factor is
+    # registered, modifier_army_sub_unit_motorized_attack_factor is rejected.
     ideologies=one(read(game/'common/ideologies/00_ideologies.txt'),'ideologies')
     native|={party+'_drift' for party,_,_ in ideologies}
     traits=one(read(ROOT/'common/country_leader/MKN_overhaul_traits.txt'),'leader_traits')

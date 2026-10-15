@@ -53,6 +53,7 @@ def validate_personnel(root, game, check, localized):
     check(one(one(one(repair, 'if'), 'limit'), 'NOT') == [('has_country_flag', 'MKN_personnel_v1', '=')],
           'MKN personnel repair is not version guarded')
     history = read(root / 'history/countries/MKN - Makhnovists.txt')
+    check('NWW_MKN_eugen' in values(history, 'recruit_character'), 'MKN: Eugen recruitment must be a direct history initializer')
     check(one(history, 'MKN_repair_personnel') == 'yes', 'MKN: new campaigns do not recruit Eugen')
     for leader in values(history, 'create_country_leader'):
         if one(leader, 'ideology') == 'fascism_ideology':
@@ -90,7 +91,7 @@ def validate_personnel(root, game, check, localized):
             elif key == 'has_character': answer = state['character']
             elif key == 'NWW_MKN_eugen': answer = conditions(value, state)
             elif key == 'is_leading_army': answer = state['assigned']
-            elif key == 'political_power': answer = state['pp'] < float(value)
+            elif key == 'has_political_power': answer = state['pp'] < float(value)
             elif key == 'has_country_flag':
                 if isinstance(value, str): answer = value in state['flags']
                 else:
@@ -148,8 +149,17 @@ def validate_personnel(root, game, check, localized):
 
     assets = json.loads((root / 'docs/art/MKN_personnel_assets.json').read_text())
     for entry in assets:
-        check(hashlib.sha256((root / entry['source']).read_bytes()).hexdigest() == entry['source_sha256'],
+        source = root / entry['source']
+        check(source.is_file(), f'MKN: missing personnel source {entry["source"]}')
+        check(source.is_file() and hashlib.sha256(source.read_bytes()).hexdigest() == entry['source_sha256'],
               f'MKN: source changed without rebuilding {entry["target"]}')
+        target = root / entry['target']
+        check(target.is_file(), f'MKN: missing personnel texture {entry["target"]}')
+        if not target.is_file():
+            continue
+        if 'export_sha256' in entry:
+            check(hashlib.sha256(target.read_bytes()).hexdigest() == entry['export_sha256'],
+                  f'MKN: recovered personnel export changed {entry["target"]}')
         with Image.open(root / entry['target']) as image:
             check(image.size == tuple(entry['size']) and image.format == 'DDS', 'MKN: invalid personnel texture')
             if 'alpha_bounds' in entry:

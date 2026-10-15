@@ -1,0 +1,8 @@
+# Owner: MKN. Shared by the BoP and frontier-pressure decision categories.
+# Use the installed game's native guerrilla decision artwork.
+spriteTypes = {
+	spriteType = {
+		name = GFX_decision_category_generic_guerilla_base
+		texturefile = "gfx/interface/decisions/decision_generic_guerilla_base.dds"
+	}
+}

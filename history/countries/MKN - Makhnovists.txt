@@ -59,6 +59,7 @@ create_country_leader = {
 	}
 }
 recruit_character = NWW_MKN_viktor_belash
+recruit_character = NWW_MKN_eugen
 recruit_character = NWW_MKN_fedir_shchus
 recruit_character = NWW_MKN_volin
 recruit_character = NWW_MKN_makhno

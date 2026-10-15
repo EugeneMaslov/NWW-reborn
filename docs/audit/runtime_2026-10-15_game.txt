@@ -1,0 +1,13 @@
+[15:18:55][no_game_date][defines.cpp:270]: 4470 defines loaded
+[15:19:08][no_game_date][gamestate.cpp:2844]: Loaded 13414 provinces.
+[15:19:10][no_game_date][gameapplication.cpp:2968]: Resetting game
+[15:19:11][1936.01.01.12][history.cpp:165]: Executing History from -1.1.1.1 to  2.1.1.1
+[15:19:11][1936.01.01.12][history.cpp:165]: Executing History from 2.1.1.1 to  1936.1.1.12
+[15:19:38][1936.01.01.12][frontend.cpp:682]: 
+
+		[[ Launching SINGLEPLAYER-game ]]
+	Start-date: 1936.1.1.12
+
+[15:19:39][1936.01.01.12][ingameidler.cpp:5173]: Start RestoreDeviceObjects
+[15:19:40][1936.01.01.12][ingameidler.cpp:5323]: End RestoreDeviceObjects
+[15:19:40][1936.01.01.12][effectbase.cpp:1783]: Something went wrong with the Conflict Risk stuff

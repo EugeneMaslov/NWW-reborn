@@ -1,0 +1,363 @@
+{
+  "schema": 1,
+  "game": "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV",
+  "version": "1.19.3.0",
+  "generated_at": "2026-10-15T17:59:21+03:00",
+  "stats": {
+    "script_files": 1322,
+    "localisation_files": 66,
+    "localisation_entries": 6197,
+    "custom_sprites": 2982,
+    "texture_references": 13270,
+    "image_files": 270,
+    "dds_files": 141,
+    "dds_non_pot_ui": 95,
+    "sprite_references": 7086,
+    "native_reference_wrappers_restored": 3,
+    "effective_focuses": 11387,
+    "effective_characters": 5472,
+    "custom_focuses": 1983,
+    "hidden_compatibility_focuses": 1251,
+    "hidden_focus_default_coordinates": 622,
+    "victory_point_entries": 1501,
+    "building_entries": 3095,
+    "state_lake_provinces": 118,
+    "state_1082_provinces": 2,
+    "state_1082_vp": 1,
+    "state_200_provinces": 7,
+    "state_200_vp": 1,
+    "effective_states": 1082,
+    "effective_provinces": 13413,
+    "strategic_regions": 304,
+    "decision_variables_without_clamp": 5,
+    "decision_variables": 6,
+    "decisions": 307,
+    "missions": 33,
+    "disabled_compatibility_decisions": 254,
+    "custom_characters": 258,
+    "recruit_references": 1109,
+    "required_localisation_keys": 3936,
+    "art_manifests": 3,
+    "total_files_scanned": 1699,
+    "workspace_inventory_files": 1960
+  },
+  "issues": [
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "interface/aap_technologies.gfx",
+      "line": 238,
+      "message": "Установленная игра: Незакрытый блок; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "interface/powerbalanceview.gfx",
+      "line": 540,
+      "message": "Установленная игра: Незакрытый блок; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "common/national_focus/TSR_lingguang_incident_joint_branch.txt",
+      "line": 420,
+      "message": "Установленная игра: Лишняя закрывающая скобка; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    }
+  ],
+  "variables": {
+    "MKN_raids_done": {
+      "references": [
+        [
+          "common/decisions/nww_mkn_decisions.txt",
+          1034
+        ],
+        [
+          "common/decisions/nww_mkn_decisions.txt",
+          1040
+        ]
+      ],
+      "initializers": [
+        "common/national_focus/MKN.txt:1037"
+      ],
+      "bounds": []
+    },
+    "mkn_consecutive_border_wars": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          32
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          203
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/MKN_ukr_border_effects.txt:48",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:113",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:404",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:486"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_attacking_state": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          229
+        ]
+      ],
+      "initializers": [
+        "common/decisions/MKN_ukr_border_decisions.txt:229",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:596"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_defending_state": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          232
+        ]
+      ],
+      "initializers": [
+        "common/decisions/MKN_ukr_border_decisions.txt:232",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:609"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_escalation_level": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          8
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          13
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          16
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          50
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          69
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          72
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          108
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          148
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          151
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          175
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          299
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          371
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          374
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/MKN_ukr_border_effects.txt:45",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:94",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:124",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:322",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:401",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:451",
+        "events/MKN_ukr_border_events.txt:201"
+      ],
+      "bounds": [
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:16"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:72"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:151"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:374"
+        ],
+        [
+          "1",
+          "5",
+          "common/scripted_effects/MKN_ukr_border_effects.txt:68"
+        ]
+      ]
+    },
+    "num_owned_states": {
+      "references": [
+        [
+          "common/decisions/MKN_decisions.txt",
+          485
+        ],
+        [
+          "common/decisions/MKN_decisions.txt",
+          494
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          180
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          193
+        ]
+      ],
+      "initializers": [
+        "Динамическая переменная движка: documentation/dynamic_variables_documentation.md"
+      ],
+      "bounds": []
+    }
+  },
+  "verification": [
+    {
+      "name": "validate_country_content.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_country_content.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: MKN_dneprostroi: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_free_cooperatives: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_steel_horses: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_batko_cavalry: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_swarm: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_close_support_program: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_coastal_defense_steppe: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_sea_smugglers: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: seven specialized MIOs, exclusive traits, installed equipment stats, generic templates preserved\nPASS: Ukraine 80 focuses, genuine political mandates and foreign acceptance/refusal\nPASS: 37 advisors, 10 commanders, seven generated portraits; monarch Makhno preserved\nPASS: UKR: 129 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: MKN: 161 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: 48 Ukraine political/program combinations, independent diplomacy, equipment and doctrine mastery references\nPASS: MKN native BoP ranges, decisions, four political paths, consent-based diplomacy and 22 idempotent repair scenarios\nPASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and 131 real-script collapse scenarios\nPASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and 24 real-script scenarios\nPASS: MKN/UKR native frontier callbacks, exact-state cores, localization and 43 source-script lifecycle scenarios\nPASS: MKN personnel, 32 service combinations, interruption/date/affordability gates, source hashes and native textures\nPASS: map initialization: unique states/strategic regions, mandatory air/rocket sites, 1082/200 placement, supply and railway province references\nPASS: repository layout: 1306 game files; no tools, previews, caches or case collisions in game data\nPASS: LTB_focus: 96 focuses, MKN_focus: 262 focuses, UKR_focus: 80 focuses\nPASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, old-save settlement scenarios and daily repair, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates\n"
+    },
+    {
+      "name": "validate_runtime_setup.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_runtime_setup.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: 19 German colonies, excluded foreign territories, MEFO removal without repayment, old-save hooks, six transparent LTB icons/highlights, operation IDs, scoped purge suspension and decimal syntax\n"
+    },
+    {
+      "name": "validate_soviet_content.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_soviet_content.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: MKN_dneprostroi: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_free_cooperatives: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_steel_horses: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_batko_cavalry: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_swarm: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_close_support_program: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_coastal_defense_steppe: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_sea_smugglers: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: seven specialized MIOs, exclusive traits, installed equipment stats, generic templates preserved\nPASS: Ukraine 80 focuses, genuine political mandates and foreign acceptance/refusal\nPASS: 37 advisors, 10 commanders, seven generated portraits; monarch Makhno preserved\nPASS: UKR: 129 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: MKN: 161 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: 48 Ukraine political/program combinations, independent diplomacy, equipment and doctrine mastery references\nPASS: MKN native BoP ranges, decisions, four political paths, consent-based diplomacy and 22 idempotent repair scenarios\nPASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and 131 real-script collapse scenarios\nPASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and 24 real-script scenarios\nPASS: MKN/UKR native frontier callbacks, exact-state cores, localization and 43 source-script lifecycle scenarios\nPASS: MKN personnel, 32 service combinations, interruption/date/affordability gates, source hashes and native textures\nPASS: map initialization: unique states/strategic regions, mandatory air/rocket sites, 1082/200 placement, supply and railway province references\nPASS: repository layout: 1306 game files; no tools, previews, caches or case collisions in game data\nPASS: LTB_focus: 96 focuses, MKN_focus: 262 focuses, UKR_focus: 80 focuses\nPASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, old-save settlement scenarios and daily repair, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates\nPASS: 2566 Soviet checks; 53 focuses, 14 preserved IDs, staged recovery, repeat-safe save repair, native purge isolation, consent/refusal, protected MKN autonomy and 1939–1940 campaign timing\n"
+    },
+    {
+      "name": "validate_turkey_balkans.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_turkey_balkans.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: 1634 Ottoman campaign/council scenarios; historical reachability, sequential controlled conquest, true-victor annexation, permanent goals and renewals, six declaration strategies, council cancellation and Kuwait setup\n"
+    },
+    {
+      "name": "validate_austria_campaigns.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_austria_campaigns.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: 138 conquest/formation scenarios, real-victor scopes, no peacetime annexation, full-country peace priorities, permanent goals, old-save renewal and controlled ownership of all 20 crown-land states\n"
+    },
+    {
+      "name": "validate_mkn_overhaul.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_overhaul.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: MKN overhaul: 994 checks; pacing, economy, 24 advisors, leaders, real-script 20/30-day actions, terminal cleanup and Soviet target callbacks\n"
+    },
+    {
+      "name": "validate_mkn_art.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_art.py",
+        "--game",
+        "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+      ],
+      "returncode": 0,
+      "output": "PASS: 29 distinct painted focus/idea exports, 5 flag masters, 48 flag-lifecycle scenarios, all native sizes/alpha and original idea sprites\n"
+    },
+    {
+      "name": "validate_repository_layout.py",
+      "command": [
+        "/usr/bin/python",
+        "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_repository_layout.py"
+      ],
+      "returncode": 0,
+      "output": "PASS: 1306 game files; SHA-256 adde425d00b54888a3d333e86b16cefce58e216ae54b34b66c6acbf4f36d8b82\n"
+    },
+    {
+      "name": "test_full_project_audit.py",
+      "command": [
+        "/usr/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_full_project_audit.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "output": "test_comments_strings_and_escaped_quotes_do_not_change_brackets (test_full_project_audit.ScriptTests.test_comments_strings_and_escaped_quotes_do_not_change_brackets) ... ok\ntest_division_string_survives_repeated_serialization (test_full_project_audit.ScriptTests.test_division_string_survives_repeated_serialization) ... ok\ntest_missing_value_and_extra_brace_are_rejected (test_full_project_audit.ScriptTests.test_missing_value_and_extra_brace_are_rejected) ... ok\ntest_new_interior_quotes_are_escaped_once (test_full_project_audit.ScriptTests.test_new_interior_quotes_are_escaped_once) ... ok\ntest_real_engine_rejections_are_not_accepted_as_valid_tokens (test_full_project_audit.ScriptTests.test_real_engine_rejections_are_not_accepted_as_valid_tokens) ... ok\ntest_trailing_top_level_token_is_rejected (test_full_project_audit.ScriptTests.test_trailing_top_level_token_is_rejected) ... ok\ntest_unclosed_quote_is_not_silently_discarded (test_full_project_audit.ScriptTests.test_unclosed_quote_is_not_silently_discarded) ... ok\ntest_advisor_effects_need_a_country_scope (test_full_project_audit.WorkspaceTests.test_advisor_effects_need_a_country_scope) ... ok\ntest_ai_static_allowed_and_runtime_enable_are_different (test_full_project_audit.WorkspaceTests.test_ai_static_allowed_and_runtime_enable_are_different) ... ok\ntest_broken_division_escaping_is_detected_even_with_balanced_braces (test_full_project_audit.WorkspaceTests.test_broken_division_escaping_is_detected_even_with_balanced_braces) ... ok\ntest_cycles_and_asymmetric_exclusions_are_detected (test_full_project_audit.WorkspaceTests.test_cycles_and_asymmetric_exclusions_are_detected) ... ok\ntest_dlc_zip_textures_and_case_sensitive_paths_are_resolved (test_full_project_audit.WorkspaceTests.test_dlc_zip_textures_and_case_sensitive_paths_are_resolved) ... ok\ntest_duplicate_focus_ids_do_not_collect_nested_event_ids (test_full_project_audit.WorkspaceTests.test_duplicate_focus_ids_do_not_collect_nested_event_ids) ... ok\ntest_interface_bom_is_rejected_despite_a_balanced_ast (test_full_project_audit.WorkspaceTests.test_interface_bom_is_rejected_despite_a_balanced_ast) ... ok\ntest_localisation_bom_duplicate_and_colour_errors_are_detected (test_full_project_audit.WorkspaceTests.test_localisation_bom_duplicate_and_colour_errors_are_detected) ... ok\ntest_missing_mkn_template_labels_are_checked_in_both_languages (test_full_project_audit.WorkspaceTests.test_missing_mkn_template_labels_are_checked_in_both_languages) ... ok\ntest_missing_parent_in_selected_tree_is_detected (test_full_project_audit.WorkspaceTests.test_missing_parent_in_selected_tree_is_detected) ... ok\ntest_mod_filename_override_replaces_native_definition (test_full_project_audit.WorkspaceTests.test_mod_filename_override_replaces_native_definition) ... ok\ntest_or_branches_are_not_reported_as_contradictory_conjunctions (test_full_project_audit.WorkspaceTests.test_or_branches_are_not_reported_as_contradictory_conjunctions) ... ok\ntest_replace_path_removes_inherited_files (test_full_project_audit.WorkspaceTests.test_replace_path_removes_inherited_files) ... ok\ntest_static_ideology_ui_does_not_accept_scripted_callbacks (test_full_project_audit.WorkspaceTests.test_static_ideology_ui_does_not_accept_scripted_callbacks) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.009s\n\nOK\n"
+    },
+    {
+      "name": "git diff --check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "output": ""
+    }
+  ]
+}

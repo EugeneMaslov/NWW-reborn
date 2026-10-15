@@ -1,0 +1,160 @@
+[
+  {
+    "name": "validate_austria_campaigns.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_austria_campaigns.py"
+    ],
+    "returncode": 0,
+    "output": "PASS: 138 conquest/formation scenarios, real-victor scopes, no peacetime annexation, full-country peace priorities, permanent goals, old-save renewal and controlled ownership of all 20 crown-land states\n"
+  },
+  {
+    "name": "validate_country_content.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_country_content.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 1,
+    "output": "PASS: MKN_dneprostroi: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_free_cooperatives: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_steel_horses: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_batko_cavalry: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_swarm: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_close_support_program: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_coastal_defense_steppe: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_sea_smugglers: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: seven specialized MIOs, exclusive traits, installed equipment stats, generic templates preserved\nPASS: Ukraine 80 focuses, genuine political mandates and foreign acceptance/refusal\nPASS: 37 advisors, 10 commanders, seven generated portraits; monarch Makhno preserved\nPASS: UKR: 129 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: MKN: 161 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: 48 Ukraine political/program combinations, independent diplomacy, equipment and doctrine mastery references\nPASS: MKN native BoP ranges, decisions, four political paths, consent-based diplomacy and 22 idempotent repair scenarios\nPASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and 131 real-script collapse scenarios\nPASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and 24 real-script scenarios\nPASS: MKN/UKR native frontier callbacks, exact-state cores, localization and 43 source-script lifecycle scenarios\nTraceback (most recent call last):\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_country_content.py\", line 539, in <module>\n    validate_personnel(ROOT, GAME, check, localized)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_personnel.py\", line 151, in validate_personnel\n    check(hashlib.sha256((root / entry['source']).read_bytes()).hexdigest() == entry['source_sha256'],\n                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/docs/for-gen/photo-eugen-general.jpg'\n"
+  },
+  {
+    "name": "validate_expanded_content.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_expanded_content.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_focus_redesign.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_focus_redesign.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_legacy_content.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_legacy_content.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 1,
+    "output": "PASS: MKN_dneprostroi: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_free_cooperatives: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_steel_horses: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_batko_cavalry: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_swarm: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_close_support_program: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_coastal_defense_steppe: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_sea_smugglers: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: seven specialized MIOs, exclusive traits, installed equipment stats, generic templates preserved\nPASS: Ukraine 80 focuses, genuine political mandates and foreign acceptance/refusal\nPASS: 37 advisors, 10 commanders, seven generated portraits; monarch Makhno preserved\nPASS: UKR: 129 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: MKN: 161 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: 48 Ukraine political/program combinations, independent diplomacy, equipment and doctrine mastery references\nPASS: MKN native BoP ranges, decisions, four political paths, consent-based diplomacy and 22 idempotent repair scenarios\nPASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and 131 real-script collapse scenarios\nPASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and 24 real-script scenarios\nPASS: MKN/UKR native frontier callbacks, exact-state cores, localization and 43 source-script lifecycle scenarios\nTraceback (most recent call last):\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_legacy_content.py\", line 6, in <module>\n    import validate_country_content as base\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_country_content.py\", line 539, in <module>\n    validate_personnel(ROOT, GAME, check, localized)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_personnel.py\", line 151, in validate_personnel\n    check(hashlib.sha256((root / entry['source']).read_bytes()).hexdigest() == entry['source_sha256'],\n                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/docs/for-gen/photo-eugen-general.jpg'\n"
+  },
+  {
+    "name": "validate_map_initialization.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_map_initialization.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_mkn_art.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_art.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 0,
+    "output": "PASS: 29 distinct painted focus/idea exports, 5 flag masters, 48 flag-lifecycle scenarios, all native sizes/alpha and original idea sprites\n"
+  },
+  {
+    "name": "validate_mkn_bop.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_bop.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_mkn_crisis.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_crisis.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_mkn_frontier.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_frontier.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_mkn_overhaul.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_overhaul.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 0,
+    "output": "PASS: MKN overhaul: 994 checks; pacing, economy, 24 advisors, leaders, real-script 20/30-day actions, terminal cleanup and Soviet target callbacks\n"
+  },
+  {
+    "name": "validate_mkn_personnel.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_personnel.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "name": "validate_repository_layout.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_repository_layout.py"
+    ],
+    "returncode": 0,
+    "output": "PASS: 1305 game files; SHA-256 21d8d95ef5d3804a493a6d0048c7488f7b1e43e6312df3f6a56373ce37e8b728\n"
+  },
+  {
+    "name": "validate_runtime_setup.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_runtime_setup.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 0,
+    "output": "PASS: 19 German colonies, excluded foreign territories, MEFO removal without repayment, old-save hooks, six transparent LTB icons/highlights, operation IDs, scoped purge suspension and decimal syntax\n"
+  },
+  {
+    "name": "validate_soviet_content.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_soviet_content.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 1,
+    "output": "PASS: MKN_dneprostroi: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_free_cooperatives: 24 focuses, one permanent industry spirit, all initial penalties resolved\nPASS: MKN_steel_horses: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_batko_cavalry: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_swarm: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_close_support_program: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_coastal_defense_steppe: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: MKN_black_sea_smugglers: ten core and ten optional focuses, varied icons/rewards, exclusive program, one service spirit\nPASS: seven specialized MIOs, exclusive traits, installed equipment stats, generic templates preserved\nPASS: Ukraine 80 focuses, genuine political mandates and foreign acceptance/refusal\nPASS: 37 advisors, 10 commanders, seven generated portraits; monarch Makhno preserved\nPASS: UKR: 129 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: MKN: 161 migration scenarios, exact parameter replay, no repeated one-off rewards\nPASS: 48 Ukraine political/program combinations, independent diplomacy, equipment and doctrine mastery references\nPASS: MKN native BoP ranges, decisions, four political paths, consent-based diplomacy and 22 idempotent repair scenarios\nPASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and 131 real-script collapse scenarios\nPASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and 24 real-script scenarios\nPASS: MKN/UKR native frontier callbacks, exact-state cores, localization and 43 source-script lifecycle scenarios\nTraceback (most recent call last):\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_soviet_content.py\", line 9, in <module>\n    import validate_country_content as base\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_country_content.py\", line 539, in <module>\n    validate_personnel(ROOT, GAME, check, localized)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_mkn_personnel.py\", line 151, in validate_personnel\n    check(hashlib.sha256((root / entry['source']).read_bytes()).hexdigest() == entry['source_sha256'],\n                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/docs/for-gen/photo-eugen-general.jpg'\n"
+  },
+  {
+    "name": "validate_turkey_balkans.py",
+    "command": [
+      "python",
+      "/home/dima00138/.local/share/Paradox Interactive/Hearts of Iron IV/mod/NWW-reborn-dev/tools/validate_turkey_balkans.py",
+      "--game",
+      "/home/dima00138/.local/share/Steam/steamapps/common/Hearts of Iron IV"
+    ],
+    "returncode": 0,
+    "output": "PASS: 1634 Ottoman campaign/council scenarios; historical reachability, sequential controlled conquest, true-victor annexation, permanent goals and renewals, six declaration strategies, council cancellation and Kuwait setup\n"
+  }
+]

@@ -266,3 +266,5 @@
  MKN_army_resistance_damage_to_garrison_on_our_occupied_states_tt:0 "Урон гарнизонам на нашей оккупированной земле: $RIGHT|+=%1$"
  MKN_historical:0 "MKN: красный компромисс"
  MKN_historical_desc:0 "Подготовить съезд, урегулировать преемственность и договориться о равноправном сотрудничестве с советскими республиками."
+ MKN_Povstancheskaya:0 "Повстанческая пехота"
+ MKN_Konny:0 "Конный отряд"

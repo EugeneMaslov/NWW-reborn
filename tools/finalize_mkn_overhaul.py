@@ -14,8 +14,8 @@ def main():
     path='common/characters/nww_MKN.txt';doc=read(ROOT/path)
     trainchar=one(one(doc,'characters'),'NWW_MKN_roman_danylenko')
     trainstaff=next(r for r in values(trainchar,'advisor') if one(r,'slot')=='high_command')
-    put(trainstaff,'on_add',block('add_ideas = MKN_armored_train_staff_bonus'))
-    put(trainstaff,'on_remove',block('remove_ideas = MKN_armored_train_staff_bonus'));save(path,doc)
+    put(trainstaff,'on_add',block('MKN = { add_ideas = MKN_armored_train_staff_bonus }'))
+    put(trainstaff,'on_remove',block('MKN = { remove_ideas = MKN_armored_train_staff_bonus }'));save(path,doc)
     path='common/ideas/MKN_ideas.txt';doc=read(ROOT/path)
     put(one(one(doc,'ideas'),'country'),'MKN_armored_train_staff_bonus',block('''picture = generic_railroads
         allowed = { original_tag = MKN } removal_cost = -1

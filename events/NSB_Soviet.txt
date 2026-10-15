@@ -1,4 +1,4 @@
-add_namespace = NSB_soviet_paranoia_system_events
+﻿add_namespace = NSB_soviet_paranoia_system_events
 add_namespace = NSB_soviet_propaganda_capmaign_events
 add_namespace = NSB_soviet_foreign_politics_events
 add_namespace = NSB_soviet_academy_of_sciences
@@ -8463,7 +8463,7 @@ country_event = {
 		}
 		capital_scope = {
 			create_unit = {
-				division = "name = \\"International Marxist Brigade\\" division_template = \\"International Marxist Brigades\\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				division = "name = \"International Marxist Brigade\" division_template = \"International Marxist Brigades\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 				owner = ROOT
 				count = 6
 			}
@@ -8549,7 +8549,7 @@ country_event = {
 		}
 		capital_scope = {
 			create_unit = {
-				division = "name = \\"Soviet Special Brigade\\" division_template = \\"Soviet Special Brigades\\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
+				division = "name = \"Soviet Special Brigade\" division_template = \"Soviet Special Brigades\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
 				owner = ROOT
 				count = 2
 			}
@@ -8609,7 +8609,7 @@ country_event = {
 		}
 		capital_scope = {
 			create_unit = {
-				division = "name = \\"International Marxist Brigade\\" division_template = \\"International Marxist Brigades\\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				division = "name = \"International Marxist Brigade\" division_template = \"International Marxist Brigades\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 				owner = ROOT
 				count = 2
 			}
@@ -9570,7 +9570,7 @@ country_event = {
 			}
 			var:SOV.SOV_civil_war_start_state = {
 				create_unit = {
-					division = "name = \\"International Brigade\\" division_template = \\"International Brigades\\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					division = "name = \"International Brigade\" division_template = \"International Brigades\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 					owner = ROOT
 					count = var:SOV.SOV_international_brigades_mp
 				}
@@ -9579,7 +9579,7 @@ country_event = {
 		ELSE = {
 			random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \\"International Brigade\\" division_template = \\"International Brigades\\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					division = "name = \"International Brigade\" division_template = \"International Brigades\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 					owner = ROOT
 					count = var:SOV.SOV_international_brigades_mp
 				}
@@ -12289,7 +12289,7 @@ country_event = {
 					is_core_of = UKR
 				}
 				create_unit = {
-					division = "name = \\"German Division\\" division_template = \\"German Trained Division\\" start_experience_factor = 0.2 start_equipment_factor = 0.95"
+					division = "name = \"German Division\" division_template = \"German Trained Division\" start_experience_factor = 0.2 start_equipment_factor = 0.95"
 					owner = UKR
 				}
 			}
@@ -13248,7 +13248,7 @@ country_event = {
 									is_core_of = KAR
 								}
 								create_unit = {
-									division = "name = \\"Karjalan Metsäsissit\\" division_template = \\"Karjalan Metsäsissit\\" start_experience_factor = 0.05 start_equipment_factor = 0.95"
+									division = "name = \"Karjalan Metsäsissit\" division_template = \"Karjalan Metsäsissit\" start_experience_factor = 0.05 start_equipment_factor = 0.95"
 									owner = KAR
 									count = 1
 								}
@@ -13813,7 +13813,7 @@ country_event = {
 						is_core_of = var:SOV.SOV_nationalist_country
 					}
 					create_unit = {
-						division = "name = \\"Resistance Fighters\\" division_template = \\"Resistance Fighters\\" start_experience_factor = 0.05 start_equipment_factor = 0.95"
+						division = "name = \"Resistance Fighters\" division_template = \"Resistance Fighters\" start_experience_factor = 0.05 start_equipment_factor = 0.95"
 						owner = var:SOV.SOV_nationalist_country
 						count = 2
 					}
@@ -13824,7 +13824,7 @@ country_event = {
 						is_capital = yes
 					}
 					create_unit = {
-						division = "name = \\"Resistance Fighters\\" division_template = \\"Resistance Fighters\\" start_experience_factor = 0.05 start_equipment_factor = 0.95"
+						division = "name = \"Resistance Fighters\" division_template = \"Resistance Fighters\" start_experience_factor = 0.05 start_equipment_factor = 0.95"
 						owner = var:SOV.SOV_nationalist_country
 						count = 2
 					}
@@ -14319,7 +14319,7 @@ country_event = {
 	id = NSB_soviet_fascist_tsarist.4
 	title = NSB_soviet_fascist_tsarist.4.t
 	desc = NSB_soviet_fascist_tsarist.4.desc
-	picture = GFX_report_event_generic_worker_protests
+	picture = GFX_report_event_worker_protests
 	is_triggered_only = yes
 	option = {
 		name = NSB_soviet_fascist_tsarist.4.a
@@ -15190,15 +15190,15 @@ country_event = {
 				is_core_of = SOV
 			}
 			create_unit = {
-				division = "name = \\"600. (russ.) Infanterie-Division\\" division_template = \\"Russische Freiwilligendivision\\" start_experience_factor = 0.3"
+				division = "name = \"600. (russ.) Infanterie-Division\" division_template = \"Russische Freiwilligendivision\" start_experience_factor = 0.3"
 				owner = GER
 			}
 			create_unit = {
-				division = "name = \\"650. (russ.) Infanterie-Division\\" division_template = \\"Russische Freiwilligendivision\\" start_experience_factor = 0.3"
+				division = "name = \"650. (russ.) Infanterie-Division\" division_template = \"Russische Freiwilligendivision\" start_experience_factor = 0.3"
 				owner = GER
 			}
 			create_unit = {
-				division = "name = \\"700. (russ.) Infanterie-Division\\" division_template = \\"Russische Freiwilligendivision\\" start_experience_factor = 0.3"
+				division = "name = \"700. (russ.) Infanterie-Division\" division_template = \"Russische Freiwilligendivision\" start_experience_factor = 0.3"
 				owner = GER
 			}
 		}

@@ -266,3 +266,5 @@
  MKN_army_resistance_damage_to_garrison_on_our_occupied_states_tt:0 "Garrison damage on our occupied soil: $RIGHT|+=%1$"
  MKN_historical:0 "MKN: the Red Compromise"
  MKN_historical_desc:0 "Prepare the congress, settle the succession and negotiate equal cooperation with the Soviet Republics."
+ MKN_Povstancheskaya:0 "Insurgent Infantry"
+ MKN_Konny:0 "Cavalry Detachment"
