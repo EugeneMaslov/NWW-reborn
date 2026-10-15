@@ -1,0 +1,10 @@
+GER_nww_industrial_program = {
+ enable = { always = yes }
+ icon = GFX_idea_generic_industrial_concern_1
+ production_speed_buildings_factor = GER_industry_construction
+ industrial_capacity_factory = GER_industry_output
+ production_factory_efficiency_gain_factor = GER_industry_efficiency
+ production_factory_max_efficiency_factor = GER_industry_maximum
+ research_speed_factor = GER_industry_research
+ energy_gain_factor = GER_industry_energy
+}

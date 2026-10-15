@@ -1,0 +1,86 @@
+{
+  "jobs": [
+    {
+      "key": "focus_TUR_air_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_build_airforce",
+      "source_texture": "gfx/interface/goals/goal_generic_build_airforce.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_1.png",
+      "consumers": [
+        "TUR_air_1"
+      ],
+      "names": [
+        "Aviation development"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 1,
+      "reference_number": 4,
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman focus icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 4, row 1, column 4; its subject is Aviation development. Image 2 is style reference: the already regenerated Lithuanian-Belarusian national-spirit icons.\nPrimary request: creatively redraw this single current icon, preserving its functional theme and recognizable motif. Ottoman aviation development: preserve reference 4's propeller, wings and Ottoman red crescent pennant, with convincing antique metal and a distinct readable aircraft-engine silhouette.\nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 95x95 pixels. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, no digits, no labels, no atlas, no extra icons, no modern emblems, no Nazi symbols, no Kemalist or WWI narrative, no watermark.",
+      "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-c8df1187-004d-4bb7-9adb-1b7168515604.png"
+    },
+    {
+      "key": "focus_TUR_not_fascism",
+      "kind": "focus",
+      "sprite": "GFX_focus_TUR_pivot_to_the_past",
+      "source_texture": "gfx/interface/goals/focus_TUR_pivot_to_the_past.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_not_fascism.png",
+      "consumers": [
+        "TUR_not_fascism",
+        "NWW_TUR_imperial_compact"
+      ],
+      "names": [
+        "Stand with the Dynasty",
+        "The Imperial Compact"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 2,
+      "reference_number": 8,
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman focus icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 8, row 2, column 1; its subject is Stand with the Dynasty / The Imperial Compact. Image 2 is style reference: the already regenerated Lithuanian-Belarusian national-spirit icons.\nPrimary request: creatively redraw this single current icon, preserving its functional theme and recognizable motif. Stand with the Ottoman dynasty: preserve the magnificent Ottoman imperial coat-of-arms motif of reference number 8, layered antique-gold trophies, red and green flags, crescent, scales and military standards. A compact legible historical Ottoman state emblem.\nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 95x95 pixels. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, no digits, no labels, no atlas, no extra icons, no modern emblems, no Nazi symbols, no Kemalist or WWI narrative, no watermark.",
+      "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-5c1e6d0d-2234-40b3-8358-76928cca8e0f.png"
+    },
+    {
+      "key": "idea_imperial_crisis",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_political_support",
+      "source_texture": "gfx/interface/ideas/idea_generic_political_support.dds",
+      "reference": "docs/art/TUR/references/idea_imperial_crisis.png",
+      "consumers": [
+        "NWW_TUR_imperial_crisis",
+        "NWW_TUR_imperial_crisis_1",
+        "NWW_TUR_imperial_crisis_2"
+      ],
+      "names": [
+        "The Sick Man of Europe",
+        "The Sick Man of Europe",
+        "The Sick Man of Europe"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 1,
+      "reference_number": 1,
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman idea icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 1, row 1, column 1; its subject is The Sick Man of Europe / The Sick Man of Europe / The Sick Man of Europe. Image 2 is style reference: the already regenerated Lithuanian-Belarusian national-spirit icons.\nPrimary request: creatively redraw this single current icon, preserving its functional theme and recognizable motif. Sick Man of Europe: an Ottoman imperial seal fractured between a court scroll, a worn officer's sabre and provincial petition scrolls, a fading crescent above. Communicate the existing political crisis, no caricature of a sick person.\nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 64x64 pixels. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, no digits, no labels, no atlas, no extra icons, no modern emblems, no Nazi symbols, no Kemalist or WWI narrative, no watermark.",
+      "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-1b914542-c432-4657-9da6-789627989554.png"
+    },
+    {
+      "key": "idea_TUR_TNPA",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_TNPA",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_TNPA.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_TNPA.png",
+      "consumers": [
+        "TUR_TNPA_1"
+      ],
+      "names": [
+        "National aviation programme"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 3,
+      "reference_row": 5,
+      "reference_number": 27,
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman idea icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 27, row 5, column 3; its subject is National aviation programme. Image 2 is style reference: the already regenerated Lithuanian-Belarusian national-spirit icons.\nPrimary request: creatively redraw this single current icon, preserving its functional theme and recognizable motif. National aviation programme TNPA. Preserve the old reference flag's recognizable white field, dark black cross/quarter divisions, red canton with small white crescent/star; integrate this small historic aviation pennant with a 1930s propeller and swept metal wings.\nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 64x64 pixels. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, no digits, no labels, no atlas, no extra icons, no modern emblems, no Nazi symbols, no Kemalist or WWI narrative, no watermark.",
+      "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-7f3914ef-bf4e-47fb-adb8-00411be881ef.png"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+on_actions = {
+ on_startup = { effect = { GER = { if = { limit = { exists = yes has_focus_tree = GER_focus } GER_nww_dispatch_austrian_demand = yes } } } }
+ on_daily_GER = { effect = { if = { limit = { has_focus_tree = GER_focus } GER_nww_dispatch_austrian_demand = yes } } }
+}

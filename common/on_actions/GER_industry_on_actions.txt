@@ -1,0 +1,4 @@
+on_actions = {
+ on_startup = { effect = { every_country = { limit = { original_tag = GER has_focus_tree = GER_focus } GER_nww_refresh_industry = yes } } }
+ on_daily_GER = { effect = { if = { limit = { has_focus_tree = GER_focus } GER_nww_refresh_industry = yes } } }
+}

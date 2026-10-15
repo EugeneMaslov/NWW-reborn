@@ -36,22 +36,31 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_krupp_and_thyssen
-		icon = GFX_focus_generic_industry_1
-		cost = 5
+		x = 51
+		y = 0
+		cost = 10
+		icon = GFX_focus_generic_industrialists
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = industry
+			add_to_variable = {
+				GER_industry_construction = 0.05
+				tooltip = GER_nww_industry_construction_tt
 			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 300
-				producer = GER
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
 			}
 		}
-		y = 0
-		x = 51
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	focus = {
 		id = GER_the_fleet_question
@@ -71,27 +80,26 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_mitteleuropa_trade
-		icon = GFX_focus_generic_industry_2
+		x = 57
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_trade
 		prerequisite = {
 			focus = GER_krupp_and_thyssen
 		}
-		cost = 5
-		y = 1
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_political_power = 50
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-		x = 56
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	focus = {
 		id = GER_the_eastern_question
@@ -134,9 +142,17 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_1
+		x = 49
 		y = 1
-		icon = GFX_focus_generic_industry_1
-		cost = 5
+		cost = 10
+		icon = GFX_focus_generic_coal_mining
+		prerequisite = {
+			focus = GER_krupp_and_thyssen
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
 			42 = {
 				if = {
@@ -149,17 +165,27 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
 		}
-		prerequisite = {
-			focus = GER_krupp_and_thyssen
+		ai_will_do = {
+			factor = 1
 		}
-		x = 51
 	}
 	focus = {
 		id = GER_2
+		x = 57
 		y = 2
-		icon = GFX_focus_generic_industry_2
-		cost = 5
+		cost = 10
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = {
+			focus = GER_mitteleuropa_trade
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
 			546 = {
 				if = {
@@ -183,210 +209,723 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
 		}
-		prerequisite = {
-			focus = GER_1
+		ai_will_do = {
+			factor = 1
 		}
-		x = 49
 	}
 	focus = {
 		id = GER_3
-		y = 3
-		icon = GFX_focus_generic_industry_3
-		cost = 5
+		x = 49
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_military_industry
+		prerequisite = {
+			focus = GER_nww_silesian_steel
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			GER_nww_build_military = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
 			}
 		}
-		prerequisite = {
-			focus = GER_2
+		ai_will_do = {
+			factor = 1
 		}
-		x = 49
 	}
 	focus = {
 		id = GER_4
-		y = 4
-		icon = GFX_focus_generic_industry_3
-		cost = 5
+		x = 49
+		y = 6
+		cost = 10
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {
+			focus = GER_nww_arsenal_contracts
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 			add_tech_bonus = {
 				category = infantry_weapons
 				uses = 1
 				bonus = 0.5
 			}
+			add_to_variable = {
+				GER_industry_efficiency = 0.05
+				tooltip = GER_nww_industry_efficiency_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
 		}
-		prerequisite = {
-			focus = GER_3
+		ai_will_do = {
+			factor = 1
 		}
-		x = 49
 	}
 	focus = {
 		id = GER_5
-		y = 2
-		icon = GFX_focus_generic_industry_2
-		cost = 5
+		x = 53
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_industry_investment
+		prerequisite = {
+			focus = GER_krupp_and_thyssen
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			GER_nww_build_civilian = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
 			}
 		}
-		prerequisite = {
-			focus = GER_1
+		ai_will_do = {
+			factor = 1
 		}
-		x = 53
 	}
 	focus = {
 		id = GER_6
-		y = 3
-		icon = GFX_focus_generic_industry_3
-		cost = 5
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+		x = 53
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_stockpile_currency
 		prerequisite = {
 			focus = GER_5
 		}
-		x = 53
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_construction = 0.05
+				tooltip = GER_nww_industry_construction_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	focus = {
 		id = GER_7
-		y = 4
-		icon = GFX_focus_generic_industry_3
-		cost = 5
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_ideas = NWW_GER_quality
-		}
+		x = 53
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_industrial_experts
 		prerequisite = {
 			focus = GER_6
 		}
-		x = 53
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_maximum = 0.05
+				tooltip = GER_nww_industry_maximum_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	focus = {
 		id = GER_8
-		y = 5
-		icon = GFX_focus_generic_industry_3
-		cost = 5
+		x = 51
+		y = 7
+		cost = 10
+		icon = GFX_focus_research2
+		prerequisite = {
+			focus = GER_4
+		}
+		prerequisite = {
+			focus = GER_nww_technical_colleges
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			if = {
 				limit = {
 					amount_research_slots < 5
 				}
 				add_research_slot = 1
 			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
 		}
-		prerequisite = {
-			focus = GER_7
+		ai_will_do = {
+			factor = 1
 		}
-		prerequisite = {
-			focus = GER_4
-		}
-		x = 51
 	}
 	focus = {
 		id = GER_9
-		y = 6
-		icon = GFX_focus_generic_industry_3
-		cost = 5
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = PREV
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+		x = 49
+		y = 8
+		cost = 10
+		icon = GFX_focus_generic_tank_production
 		prerequisite = {
 			focus = GER_8
 		}
-		x = 49
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_build_military = yes
+			add_to_variable = {
+				GER_industry_output = 0.05
+				tooltip = GER_nww_industry_output_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	focus = {
 		id = GER_10
-		y = 6
-		icon = GFX_focus_generic_industry_3
-		cost = 5
-		completion_reward = {
-			add_tech_bonus = {
-				category = infantry_weapons
-				uses = 2
-				bonus = 0.5
-			}
-		}
+		x = 53
+		y = 8
+		cost = 10
+		icon = GFX_goal_generic_production2
 		prerequisite = {
 			focus = GER_8
 		}
-		x = 53
-	}
-	continuous_focus_position = {
-		x = 100
-		y = 2240
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				uses = 1
+				bonus = 0.5
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	initial_show_position = {
 		focus = GER_the_gilded_colossus
+	}
+	focus = {
+		id = GER_nww_electrical_grid
+		x = 49
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_electrification
+		prerequisite = {
+			focus = GER_1
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_energy = 0.1
+				tooltip = GER_nww_industry_energy_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_silesian_steel
+		x = 49
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_steel_mill
+		prerequisite = {
+			focus = GER_nww_electrical_grid
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			67 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					add_resource = {
+						type = steel
+						amount = 8
+					}
+				}
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_arsenal_contracts
+		x = 49
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_arms_trade
+		prerequisite = {
+			focus = GER_3
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_output = 0.05
+				tooltip = GER_nww_industry_output_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_machine_tools
+		x = 53
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_mass_production
+		prerequisite = {
+			focus = GER_7
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 0.5
+			}
+			add_to_variable = {
+				GER_industry_efficiency = 0.05
+				tooltip = GER_nww_industry_efficiency_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_industrial_standards
+		x = 53
+		y = 5
+		cost = 10
+		icon = GFX_focus_generic_improve_the_administration_2
+		prerequisite = {
+			focus = GER_nww_machine_tools
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_maximum = 0.05
+				tooltip = GER_nww_industry_maximum_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_technical_colleges
+		x = 53
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_education
+		prerequisite = {
+			focus = GER_nww_industrial_standards
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_research = 0.05
+				tooltip = GER_nww_industry_research_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_freight_corridors
+		x = 57
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_railroad
+		prerequisite = {
+			focus = GER_2
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_improve_infrastructure = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_merchant_contracts
+		x = 57
+		y = 4
+		cost = 10
+		icon = GFX_focus_generic_merchant_fleet
+		prerequisite = {
+			focus = GER_nww_freight_corridors
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 20
+				producer = GER
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_export_credit
+		x = 57
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {
+			focus = GER_nww_merchant_contracts
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_investment_guarantees
+		x = 57
+		y = 6
+		cost = 10
+		icon = GFX_focus_generic_currency_reforms
+		prerequisite = {
+			focus = GER_nww_export_credit
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_construction = 0.05
+				tooltip = GER_nww_industry_construction_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_industrial_research
+		x = 51
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_university_3
+		prerequisite = {
+			focus = GER_9
+		}
+		prerequisite = {
+			focus = GER_10
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_to_variable = {
+				GER_industry_research = 0.05
+				tooltip = GER_nww_industry_research_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_balanced_orders
+		x = 49
+		y = 10
+		cost = 10
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = {
+			focus = GER_nww_industrial_research
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			GER_nww_build_military = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_synthetic_fuels
+		x = 57
+		y = 7
+		cost = 10
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {
+			focus = GER_nww_investment_guarantees
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_build_refinery = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_colonial_ports
+		x = 57
+		y = 8
+		cost = 10
+		icon = GFX_goal_generic_construction
+		prerequisite = {
+			focus = GER_nww_synthetic_fuels
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_energy_keystones
+		x = 47
+		y = 3
+		cost = 10
+		icon = GFX_focus_generic_energy
+		prerequisite = {
+			focus = GER_nww_electrical_grid
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			GER_nww_build_energy_infrastructure = yes
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_worker_housing
+		x = 55
+		y = 2
+		cost = 10
+		icon = GFX_focus_generic_low_cost_housing
+		prerequisite = {
+			focus = GER_5
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_electromechanical_labs
+		x = 55
+		y = 5
+		cost = 10
+		icon = GFX_goal_generic_radar
+		prerequisite = {
+			focus = GER_nww_machine_tools
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				uses = 1
+				bonus = 0.5
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_supply_resilience
+		x = 55
+		y = 9
+		cost = 10
+		icon = GFX_focus_generic_supply_line
+		prerequisite = {
+			focus = GER_nww_colonial_ports
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 20
+				producer = GER
+			}
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_nww_prague_network
+		x = 45
+		y = 3
+		cost = 5
+		icon = GFX_focus_generic_secret_agent_operative
+		prerequisite = {
+			focus = GER_guardians_of_the_reich
+		}
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = GER_nww_bohemian_operation_unlock_tt
+			hidden_effect = {
+				GER_nww_refresh_industry = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 3000
 	}
 }

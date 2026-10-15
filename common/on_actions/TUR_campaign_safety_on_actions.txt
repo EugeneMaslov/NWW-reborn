@@ -1,0 +1,16 @@
+on_actions = {
+ on_startup = { effect = { TUR = { if = { limit = { exists = yes has_focus_tree = turkish_focus }
+  nww_TUR_ai_install_campaign_guard = yes
+  if = { limit = { is_ai = yes has_war = no NOT = { has_country_flag = NWW_TUR_campaign_safety_initialized } } set_country_flag = { flag = NWW_TUR_campaign_recovery days = 180 } }
+  set_country_flag = NWW_TUR_campaign_safety_initialized
+  nww_TUR_ai_observe_campaign = yes
+ } } } }
+ on_daily_TUR = { effect = { if = { limit = { has_focus_tree = turkish_focus } nww_TUR_ai_observe_campaign = yes } } }
+ on_war = { effect = { if = { limit = { tag = TUR has_focus_tree = turkish_focus } nww_TUR_ai_observe_campaign = yes } } }
+ on_war_relation_added = { effect = {
+  if = { limit = { tag = TUR has_focus_tree = turkish_focus } nww_TUR_ai_observe_campaign = yes }
+  FROM = { if = { limit = { tag = TUR has_focus_tree = turkish_focus } nww_TUR_ai_observe_campaign = yes } }
+ } }
+ on_capitulation = { effect = { if = { limit = { tag = TUR has_focus_tree = turkish_focus } set_country_flag = NWW_TUR_campaign_defeat_pending } } }
+ on_peaceconference_ended = { effect = { if = { limit = { tag = TUR has_focus_tree = turkish_focus } set_country_flag = NWW_TUR_campaign_was_at_war nww_TUR_ai_observe_campaign = yes } } }
+}

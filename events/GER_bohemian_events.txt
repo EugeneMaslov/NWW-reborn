@@ -1,0 +1,9 @@
+add_namespace = nww_ger_bohemia
+country_event = {
+ id = nww_ger_bohemia.1
+ title = nww_ger_bohemia.1.t
+ desc = nww_ger_bohemia.1.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ option = { name = nww_ger_bohemia.1.a }
+}

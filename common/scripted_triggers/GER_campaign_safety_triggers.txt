@@ -1,0 +1,62 @@
+# Owner GER. Ready/target triggers are also evaluated by a native relation rule.
+nww_GER_ai_campaign_ready = {
+ has_war = no
+ has_capitulated = no
+ has_civil_war = no
+ is_subject = no
+ surrender_progress < 0.05
+ has_stability > 0.40
+ has_war_support > 0.35
+ NOT = { has_country_flag = NWW_GER_campaign_recovery }
+ NOT = { has_country_flag = NWW_GER_campaign_defeat_pending }
+ NOT = { has_country_flag = NWW_GER_campaign_was_at_war }
+}
+nww_GER_ai_target_safe = {
+ exists = yes
+ is_subject = no
+ NOT = { is_ally_with = GER }
+ NOT = { has_war_with_major = yes }
+ strength_ratio = { tag = GER ratio < 0.80 }
+ NOT = { any_other_country = { has_guaranteed = PREV OR = { is_major = yes is_in_faction = yes is_subject = yes } } }
+ OR = {
+  is_in_faction = no
+  AND = {
+   OR = { is_faction_leader = yes is_major = no }
+   NOT = { any_other_country = { is_major = yes is_in_faction_with = PREV NOT = { is_faction_leader = yes } } }
+   NOT = { any_other_country = { is_faction_leader = yes is_in_faction_with = PREV NOT = { strength_ratio = { tag = GER ratio < 0.67 } } } }
+  }
+ }
+}
+# FROM is the proposed target, following ETH has_lon_arms_embargo.
+# Use the explicit owner for readiness, independently of the calling event ROOT.
+nww_GER_ai_unsafe_declaration = {
+ GER = { is_ai = yes has_focus_tree = GER_focus }
+ OR = { GER = { NOT = { nww_GER_ai_campaign_ready = yes } } FROM = { NOT = { nww_GER_ai_target_safe = yes } } }
+}
+nww_GER_ai_can_prepare_campaign = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_prepare_campaign OR = { is_ai = no nww_GER_ai_campaign_ready = yes } }
+}
+nww_GER_ai_can_target_AUS = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_AUS OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes AUS = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_LTB = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_LTB OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes LTB = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_POL = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_POL OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes POL = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_MKN = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_MKN OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes MKN = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_UKR = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_UKR OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes UKR = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_FRA = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_FRA OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes FRA = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_ENG = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_ENG OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes ENG = { nww_GER_ai_target_safe = yes } } } }
+}
+nww_GER_ai_can_target_SOV = {
+ custom_trigger_tooltip = { tooltip = nww_GER_ai_can_target_SOV OR = { is_ai = no AND = { nww_GER_ai_campaign_ready = yes SOV = { nww_GER_ai_target_safe = yes } } } }
+}

@@ -1,0 +1,2099 @@
+{
+  "jobs": [
+    {
+      "key": "focus_TUR_reform_the_army",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_axis_build_infantry",
+      "source_texture": "gfx/interface/goals/goal_generic_axis_build_infantry.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_reform_the_army.png",
+      "consumers": [
+        "TUR_reform_the_army",
+        "TUR_Army_6"
+      ],
+      "names": [
+        "Army reform",
+        "Advanced doctrine study"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 1,
+      "reference_number": 1
+    },
+    {
+      "key": "focus_TUR_political_rw",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_demand_territory",
+      "source_texture": "gfx/interface/goals/goal_generic_demand_territory.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_political_rw.png",
+      "consumers": [
+        "TUR_political_rw"
+      ],
+      "names": [
+        "The Empire at a Crossroads"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 1,
+      "reference_number": 2
+    },
+    {
+      "key": "focus_TUR_prom",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_consumer_goods",
+      "source_texture": "gfx/interface/goals/goal_generic_consumer_goods.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_prom.png",
+      "consumers": [
+        "TUR_prom",
+        "TUR_nationalist_6",
+        "NWW_TUR_ottoman_bourgeoisie"
+      ],
+      "names": [
+        "Industrial development",
+        "The state distribution network",
+        "The Ottoman Bourgeoisie"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 1,
+      "reference_number": 3
+    },
+    {
+      "key": "focus_TUR_air_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_build_airforce",
+      "source_texture": "gfx/interface/goals/goal_generic_build_airforce.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_1.png",
+      "consumers": [
+        "TUR_air_1"
+      ],
+      "names": [
+        "Aviation development"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 1,
+      "reference_number": 4
+    },
+    {
+      "key": "focus_TUR_new_fascism",
+      "kind": "focus",
+      "sprite": "GFX_focus_ger_reichskommisariats",
+      "source_texture": "gfx/interface/goals/focus_ger_reichskommisariats.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_new_fascism.png",
+      "consumers": [
+        "TUR_new_fascism"
+      ],
+      "names": [
+        "Turkish nationalism"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 1,
+      "reference_number": 5
+    },
+    {
+      "key": "focus_TUR_set_capital",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_territory_or_war",
+      "source_texture": "gfx/interface/goals/goal_generic_territory_or_war.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_set_capital.png",
+      "consumers": [
+        "TUR_set_capital"
+      ],
+      "names": [
+        "Return to Constantinople"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 1,
+      "reference_number": 6
+    },
+    {
+      "key": "focus_TUR_dux_national",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_diplomatic_treaty",
+      "source_texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_dux_national.png",
+      "consumers": [
+        "TUR_dux_national",
+        "NWW_TUR_civil_assembly",
+        "NWW_TUR_federal_charter",
+        "NWW_TUR_workers_congress",
+        "NWW_TUR_workers_union"
+      ],
+      "names": [
+        "National consolidation",
+        "Civil assembly",
+        "Federal charter",
+        "Workers congress",
+        "Union of labour republics"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 1,
+      "reference_number": 7
+    },
+    {
+      "key": "focus_TUR_not_fascism",
+      "kind": "focus",
+      "sprite": "GFX_focus_TUR_pivot_to_the_past",
+      "source_texture": "gfx/interface/goals/focus_TUR_pivot_to_the_past.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_not_fascism.png",
+      "consumers": [
+        "TUR_not_fascism",
+        "NWW_TUR_imperial_compact"
+      ],
+      "names": [
+        "Stand with the Dynasty",
+        "The Imperial Compact"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 2,
+      "reference_number": 8
+    },
+    {
+      "key": "focus_tur_bred",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_the_giant_wakes",
+      "source_texture": "gfx/interface/goals/focus_generic_the_giant_wakes.dds",
+      "reference": "docs/art/TUR/references/focus_tur_bred.png",
+      "consumers": [
+        "tur_bred"
+      ],
+      "names": [
+        "Provincial Charters"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 2,
+      "reference_number": 9
+    },
+    {
+      "key": "focus_tur_polos",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_improve_relations",
+      "source_texture": "gfx/interface/goals/goal_generic_improve_relations.dds",
+      "reference": "docs/art/TUR/references/focus_tur_polos.png",
+      "consumers": [
+        "tur_polos",
+        "TUR_capitalism_4"
+      ],
+      "names": [
+        "The Consultative Majlis",
+        "Attract investors"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 2,
+      "reference_number": 10
+    },
+    {
+      "key": "focus_TUR_proper_stoper",
+      "kind": "focus",
+      "sprite": "GFX_focus_hun_elect_a_king",
+      "source_texture": "gfx/interface/goals/focus_hun_elect_a_king.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_proper_stoper.png",
+      "consumers": [
+        "TUR_proper_stoper"
+      ],
+      "names": [
+        "An Independent Imperial Policy"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 2,
+      "reference_number": 11
+    },
+    {
+      "key": "focus_TUR_kosa_smerti",
+      "kind": "focus",
+      "sprite": "GFX_focus_TUR_reconfigure_turkish_foreign_policy",
+      "source_texture": "gfx/interface/goals/focus_TUR_reconfigure_turkish_foreign_policy.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_kosa_smerti.png",
+      "consumers": [
+        "TUR_kosa_smerti"
+      ],
+      "names": [
+        "The Balkan War Ministry"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 2,
+      "reference_number": 12
+    },
+    {
+      "key": "focus_TUR_store_eng",
+      "kind": "focus",
+      "sprite": "GFX_focus_chi_reach_out_to_france",
+      "source_texture": "gfx/interface/goals/focus_chi_reach_out_to_france.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_store_eng.png",
+      "consumers": [
+        "TUR_store_eng"
+      ],
+      "names": [
+        "European diplomatic missions"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 2,
+      "reference_number": 13
+    },
+    {
+      "key": "focus_TUR_new_dem",
+      "kind": "focus",
+      "sprite": "GFX_goal_support_democracy",
+      "source_texture": "gfx/interface/goals/goal_generic_support_democracy.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_new_dem.png",
+      "consumers": [
+        "TUR_new_dem"
+      ],
+      "names": [
+        "The constitutional path"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 2,
+      "reference_number": 14
+    },
+    {
+      "key": "focus_TUR_new_communism",
+      "kind": "focus",
+      "sprite": "GFX_goal_support_communism",
+      "source_texture": "gfx/interface/goals/goal_generic_support_communism.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_new_communism.png",
+      "consumers": [
+        "TUR_new_communism"
+      ],
+      "names": [
+        "Workers representation"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 3,
+      "reference_number": 15
+    },
+    {
+      "key": "focus_TUR_new_economic",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_self_management",
+      "source_texture": "gfx/interface/goals/focus_generic_self_management.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_new_economic.png",
+      "consumers": [
+        "TUR_new_economic"
+      ],
+      "names": [
+        "The economic plan"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 3,
+      "reference_number": 16
+    },
+    {
+      "key": "focus_TUR_resourse_icons",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_steel",
+      "source_texture": "gfx/interface/goals/focus_generic_steel.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_resourse_icons.png",
+      "consumers": [
+        "TUR_resourse_icons"
+      ],
+      "names": [
+        "Resource extraction"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 3,
+      "reference_number": 17
+    },
+    {
+      "key": "focus_TUR_Factory_2",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_position_armies",
+      "source_texture": "gfx/interface/goals/goal_generic_position_armies.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_2.png",
+      "consumers": [
+        "TUR_Factory_2",
+        "TUR_nationalist_5"
+      ],
+      "names": [
+        "Industrial employment",
+        "Develop strategic resources"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 3,
+      "reference_number": 18
+    },
+    {
+      "key": "focus_TUR_Infrastructure_up",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_construct_infrastructure",
+      "source_texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Infrastructure_up.png",
+      "consumers": [
+        "TUR_Infrastructure_up",
+        "TUR_infrastructure_up_2",
+        "NWW_TUR_rumelian_logistics"
+      ],
+      "names": [
+        "The road network",
+        "Industrial network expansion",
+        "Supply the Rumelian Front"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 3,
+      "reference_number": 19
+    },
+    {
+      "key": "focus_TUR_Factory_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_production",
+      "source_texture": "gfx/interface/goals/goal_generic_production.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_1.png",
+      "consumers": [
+        "TUR_Factory_1",
+        "TUR_nationalist_3"
+      ],
+      "names": [
+        "Working conditions",
+        "The national industrial council"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 3,
+      "reference_number": 20
+    },
+    {
+      "key": "focus_TUR_Factory_5",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_production2",
+      "source_texture": "gfx/interface/goals/goal_generic_production2.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_5.png",
+      "consumers": [
+        "TUR_Factory_5"
+      ],
+      "names": [
+        "Machine-tool purchases"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 3,
+      "reference_number": 21
+    },
+    {
+      "key": "focus_TUR_Army_Factory_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_construct_mil_factory",
+      "source_texture": "gfx/interface/goals/goal_generic_construct_mil_factory.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_Factory_1.png",
+      "consumers": [
+        "TUR_Army_Factory_1",
+        "TUR_Army_Factory_2",
+        "NWW_TUR_war_industry_program"
+      ],
+      "names": [
+        "Army factories",
+        "Army factory expansion",
+        "Imperial Armaments Programme"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 4,
+      "reference_number": 22
+    },
+    {
+      "key": "focus_TUR_civ_factory_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_construct_civ_factory",
+      "source_texture": "gfx/interface/goals/goal_generic_construct_civ_factory.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_civ_factory_1.png",
+      "consumers": [
+        "TUR_civ_factory_1",
+        "TUR_civ_factory_2",
+        "NWW_TUR_agrarian_reform"
+      ],
+      "names": [
+        "Civilian factories",
+        "Civilian factory expansion",
+        "Agrarian Reform"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 4,
+      "reference_number": 23
+    },
+    {
+      "key": "focus_TUR_new_order",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_construction2",
+      "source_texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_new_order.png",
+      "consumers": [
+        "TUR_new_order"
+      ],
+      "names": [
+        "Industrial administration"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 4,
+      "reference_number": 24
+    },
+    {
+      "key": "focus_TUR_Factory_3",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_military_academy",
+      "source_texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_3.png",
+      "consumers": [
+        "TUR_Factory_3"
+      ],
+      "names": [
+        "Privatisation"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 4,
+      "reference_number": 25
+    },
+    {
+      "key": "focus_TUR_Factory_6",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_positive_trade_relations",
+      "source_texture": "gfx/interface/goals/goal_generic_positive_trade_relations.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_6.png",
+      "consumers": [
+        "TUR_Factory_6"
+      ],
+      "names": [
+        "The world market"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 4,
+      "reference_number": 26
+    },
+    {
+      "key": "focus_TUR_capitalism_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_trade",
+      "source_texture": "gfx/interface/goals/goal_generic_trade.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_capitalism_1.png",
+      "consumers": [
+        "TUR_capitalism_1"
+      ],
+      "names": [
+        "Private industrial policy"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 4,
+      "reference_number": 27
+    },
+    {
+      "key": "focus_TUR_capitalism_2",
+      "kind": "focus",
+      "sprite": "GFX_focus_mex_privatisation",
+      "source_texture": "gfx/interface/goals/focus_mex_privatisation.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_capitalism_2.png",
+      "consumers": [
+        "TUR_capitalism_2"
+      ],
+      "names": [
+        "The national trade fund"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 4,
+      "reference_number": 28
+    },
+    {
+      "key": "focus_TUR_capitalism_3",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_scientific_exchange",
+      "source_texture": "gfx/interface/goals/goal_generic_scientific_exchange.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_capitalism_3.png",
+      "consumers": [
+        "TUR_capitalism_3"
+      ],
+      "names": [
+        "Fund trade expansion"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 5,
+      "reference_number": 29
+    },
+    {
+      "key": "focus_TUR_capitalism_5",
+      "kind": "focus",
+      "sprite": "GFX_focus_mex_soldaderas",
+      "source_texture": "gfx/interface/goals/focus_mex_soldaderas.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_capitalism_5.png",
+      "consumers": [
+        "TUR_capitalism_5",
+        "TUR_Infantry_1"
+      ],
+      "names": [
+        "The industrial technology institute",
+        "Modern infantry equipment"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 5,
+      "reference_number": 30
+    },
+    {
+      "key": "focus_TUR_Factory_4",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_construction",
+      "source_texture": "gfx/interface/goals/goal_generic_construction.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_4.png",
+      "consumers": [
+        "TUR_Factory_4"
+      ],
+      "names": [
+        "Nationalisation"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 5,
+      "reference_number": 31
+    },
+    {
+      "key": "focus_TUR_Factory_7",
+      "kind": "focus",
+      "sprite": "GFX_focus_mex_triumph_over_the_cristeros",
+      "source_texture": "gfx/interface/goals/focus_mex_triumph_over_the_cristeros.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Factory_7.png",
+      "consumers": [
+        "TUR_Factory_7"
+      ],
+      "names": [
+        "The public holding system"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 5,
+      "reference_number": 32
+    },
+    {
+      "key": "focus_TUR_nationalist_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_build_tank",
+      "source_texture": "gfx/interface/goals/goal_generic_build_tank.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_nationalist_1.png",
+      "consumers": [
+        "TUR_nationalist_1"
+      ],
+      "names": [
+        "Economic security"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 5,
+      "reference_number": 33
+    },
+    {
+      "key": "focus_TUR_nationalist_2",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_political_pressure",
+      "source_texture": "gfx/interface/goals/goal_generic_political_pressure.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_nationalist_2.png",
+      "consumers": [
+        "TUR_nationalist_2"
+      ],
+      "names": [
+        "Expand the public holding"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 5,
+      "reference_number": 34
+    },
+    {
+      "key": "focus_TUR_nationalist_4",
+      "kind": "focus",
+      "sprite": "GFX_focus_TUR_turanist_ambition",
+      "source_texture": "gfx/interface/goals/focus_TUR_turanist_ambition.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_nationalist_4.png",
+      "consumers": [
+        "TUR_nationalist_4"
+      ],
+      "names": [
+        "Imperial cultural cohesion"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 5,
+      "reference_number": 35
+    },
+    {
+      "key": "focus_TUR_Army_1",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_befriend_turkey",
+      "source_texture": "gfx/interface/goals/focus_generic_befriend_turkey.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_1.png",
+      "consumers": [
+        "TUR_Army_1"
+      ],
+      "names": [
+        "Accept the supply reform"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 6,
+      "reference_number": 36
+    },
+    {
+      "key": "focus_TUR_Army_2",
+      "kind": "focus",
+      "sprite": "GFX_goal_anti_comintern_pact",
+      "source_texture": "gfx/interface/goals/goal_anti_comintern_pact.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_2.png",
+      "consumers": [
+        "TUR_Army_2"
+      ],
+      "names": [
+        "Independent army procurement"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 6,
+      "reference_number": 37
+    },
+    {
+      "key": "focus_TUR_Army_3",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_combined_arms",
+      "source_texture": "gfx/interface/goals/focus_generic_combined_arms.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_3.png",
+      "consumers": [
+        "TUR_Army_3"
+      ],
+      "names": [
+        "The Ottoman army"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 6,
+      "reference_number": 38
+    },
+    {
+      "key": "focus_TUR_Doctrine_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_allies_build_infantry",
+      "source_texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Doctrine_1.png",
+      "consumers": [
+        "TUR_Doctrine_1"
+      ],
+      "names": [
+        "Doctrine development"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 6,
+      "reference_number": 39
+    },
+    {
+      "key": "focus_TUR_Artillery_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_army_artillery2",
+      "source_texture": "gfx/interface/goals/goal_generic_army_artillery2.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Artillery_1.png",
+      "consumers": [
+        "TUR_Artillery_1"
+      ],
+      "names": [
+        "Artillery development"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 6,
+      "reference_number": 40
+    },
+    {
+      "key": "focus_TUR_Army_4",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_small_arms",
+      "source_texture": "gfx/interface/goals/goal_generic_small_arms.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_4.png",
+      "consumers": [
+        "TUR_Army_4"
+      ],
+      "names": [
+        "Combined-arms training"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 6,
+      "reference_number": 41
+    },
+    {
+      "key": "focus_TUR_Army_5",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_army_motorized",
+      "source_texture": "gfx/interface/goals/goal_generic_army_motorized.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_5.png",
+      "consumers": [
+        "TUR_Army_5"
+      ],
+      "names": [
+        "Motor transport"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 6,
+      "reference_number": 42
+    },
+    {
+      "key": "focus_TUR_Army_8",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_army_tanks",
+      "source_texture": "gfx/interface/goals/goal_generic_army_tanks.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_8.png",
+      "consumers": [
+        "TUR_Army_8"
+      ],
+      "names": [
+        "Tank development"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 7,
+      "reference_number": 43
+    },
+    {
+      "key": "focus_TUR_Army_7",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_fortify_city",
+      "source_texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_Army_7.png",
+      "consumers": [
+        "TUR_Army_7"
+      ],
+      "names": [
+        "Military towns"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 7,
+      "reference_number": 44
+    },
+    {
+      "key": "focus_TUR_air_2",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_air_fighter",
+      "source_texture": "gfx/interface/goals/goal_generic_air_fighter.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_2.png",
+      "consumers": [
+        "TUR_air_2"
+      ],
+      "names": [
+        "Fighters"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 7,
+      "reference_number": 45
+    },
+    {
+      "key": "focus_TUR_air_3",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_occupy_start_war",
+      "source_texture": "gfx/interface/goals/goal_generic_occypy_start_war.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_3.png",
+      "consumers": [
+        "TUR_air_3"
+      ],
+      "names": [
+        "Ground-attack aviation"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 7,
+      "reference_number": 46
+    },
+    {
+      "key": "focus_TUR_air_4",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_air_bomber",
+      "source_texture": "gfx/interface/goals/goal_generic_air_bomber.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_4.png",
+      "consumers": [
+        "TUR_air_4"
+      ],
+      "names": [
+        "Bombers"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 7,
+      "reference_number": 47
+    },
+    {
+      "key": "focus_TUR_air_5",
+      "kind": "focus",
+      "sprite": "GFX_goal_continuous_air_production",
+      "source_texture": "gfx/interface/goals/goal_continuous_air_production.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_5.png",
+      "consumers": [
+        "TUR_air_5"
+      ],
+      "names": [
+        "Air-base expansion"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 7,
+      "reference_number": 48
+    },
+    {
+      "key": "focus_TUR_air_6",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_air_doctrine",
+      "source_texture": "gfx/interface/goals/goal_generic_air_doctrine.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_6.png",
+      "consumers": [
+        "TUR_air_6"
+      ],
+      "names": [
+        "The aviation school"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 7,
+      "reference_number": 49
+    },
+    {
+      "key": "focus_TUR_air_7",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_air_fighter2",
+      "source_texture": "gfx/interface/goals/goal_generic_air_fighter2.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_air_7.png",
+      "consumers": [
+        "TUR_air_7"
+      ],
+      "names": [
+        "The national aviation programme"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 8,
+      "reference_number": 50
+    },
+    {
+      "key": "focus_TUR_war_with_bulgaria",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_attack_bulgaria",
+      "source_texture": "gfx/interface/goals/focus_generic_attack_bulgaria.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_war_with_bulgaria.png",
+      "consumers": [
+        "TUR_war_with_bulgaria"
+      ],
+      "names": [
+        "The Bulgarian Campaign"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 8,
+      "reference_number": 51
+    },
+    {
+      "key": "focus_TUR_snova_copi",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_attack_greece",
+      "source_texture": "gfx/interface/goals/focus_generic_attack_greece.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_snova_copi.png",
+      "consumers": [
+        "TUR_snova_copi"
+      ],
+      "names": [
+        "The Greek Campaign"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 8,
+      "reference_number": 52
+    },
+    {
+      "key": "focus_afg_bolgi",
+      "kind": "focus",
+      "sprite": "GFX_focus_BUL_bulgarian_administration_of_the_balkans",
+      "source_texture": "gfx/interface/goals/focus_BUL_bulgarian_administration_of_the_balkans.dds",
+      "reference": "docs/art/TUR/references/focus_afg_bolgi.png",
+      "consumers": [
+        "afg_bolgi",
+        "NWW_TUR_greek_settlement",
+        "NWW_TUR_rumelian_governorates"
+      ],
+      "names": [
+        "afg_bolgi",
+        "The Greek Settlement",
+        "The Rumelian Governorates"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 8,
+      "reference_number": 53
+    },
+    {
+      "key": "focus_TUR_research_1",
+      "kind": "focus",
+      "sprite": "GFX_focus_research",
+      "source_texture": "gfx/interface/goals/focus_research.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_research_1.png",
+      "consumers": [
+        "TUR_research_1"
+      ],
+      "names": [
+        "Ankara University"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 8,
+      "reference_number": 54
+    },
+    {
+      "key": "focus_TUR_research_2",
+      "kind": "focus",
+      "sprite": "GFX_focus_research2",
+      "source_texture": "gfx/interface/goals/focus_research2.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_research_2.png",
+      "consumers": [
+        "TUR_research_2"
+      ],
+      "names": [
+        "The university network"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 8,
+      "reference_number": 55
+    },
+    {
+      "key": "focus_TUR_rocketly_1",
+      "kind": "focus",
+      "sprite": "GFX_focus_rocketry",
+      "source_texture": "gfx/interface/goals/focus_rocketry.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_rocketly_1.png",
+      "consumers": [
+        "TUR_rocketly_1"
+      ],
+      "names": [
+        "Rocket testing"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 8,
+      "reference_number": 56
+    },
+    {
+      "key": "focus_TUR_nuclear_1",
+      "kind": "focus",
+      "sprite": "GFX_focus_wonderweapons",
+      "source_texture": "gfx/interface/goals/focus_wonderweapons.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_nuclear_1.png",
+      "consumers": [
+        "TUR_nuclear_1"
+      ],
+      "names": [
+        "The Ankara atomic project"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 1,
+      "reference_row": 9,
+      "reference_number": 57
+    },
+    {
+      "key": "focus_TUR_supereq_1",
+      "kind": "focus",
+      "sprite": "GFX_goal_generic_secret_weapon",
+      "source_texture": "gfx/interface/goals/goal_generic_secret_weapon.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_supereq_1.png",
+      "consumers": [
+        "TUR_supereq_1"
+      ],
+      "names": [
+        "The Ottoman scientific programme"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 2,
+      "reference_row": 9,
+      "reference_number": 58
+    },
+    {
+      "key": "focus_TUR_capitalism_6",
+      "kind": "focus",
+      "sprite": "GFX_focus_usa_reestablish_the_gold_standard",
+      "source_texture": "gfx/interface/goals/focus_usa_reestablish_the_gold_standard.dds",
+      "reference": "docs/art/TUR/references/focus_TUR_capitalism_6.png",
+      "consumers": [
+        "TUR_capitalism_6"
+      ],
+      "names": [
+        "Gold-backed credit"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 3,
+      "reference_row": 9,
+      "reference_number": 59
+    },
+    {
+      "key": "focus_NWW_TUR_sultans_shadow",
+      "kind": "focus",
+      "sprite": "GFX_focus_TUR_loosen_the_laws_on_secularism",
+      "source_texture": "gfx/interface/goals/focus_TUR_loosen_the_laws_on_secularism.dds",
+      "reference": "docs/art/TUR/references/focus_NWW_TUR_sultans_shadow.png",
+      "consumers": [
+        "NWW_TUR_sultans_shadow"
+      ],
+      "names": [
+        "Authority of the Sultan and Caliph"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 4,
+      "reference_row": 9,
+      "reference_number": 60
+    },
+    {
+      "key": "focus_NWW_TUR_balkan_mandate",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_balkans_focus",
+      "source_texture": "gfx/interface/goals/focus_generic_balkans_focus.dds",
+      "reference": "docs/art/TUR/references/focus_NWW_TUR_balkan_mandate.png",
+      "consumers": [
+        "NWW_TUR_balkan_mandate",
+        "NWW_TUR_serbian_campaign",
+        "NWW_TUR_adriatic_campaign"
+      ],
+      "names": [
+        "The Ottoman Balkan Doctrine",
+        "March on Belgrade",
+        "Bosnia and the Adriatic"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 5,
+      "reference_row": 9,
+      "reference_number": 61
+    },
+    {
+      "key": "focus_NWW_TUR_albanian_campaign",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_balkan_diplomacy",
+      "source_texture": "gfx/interface/goals/focus_generic_balkan_diplomacy.dds",
+      "reference": "docs/art/TUR/references/focus_NWW_TUR_albanian_campaign.png",
+      "consumers": [
+        "NWW_TUR_albanian_campaign"
+      ],
+      "names": [
+        "The Albanian Bridgehead"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 6,
+      "reference_row": 9,
+      "reference_number": 62
+    },
+    {
+      "key": "focus_NWW_TUR_romanian_campaign",
+      "kind": "focus",
+      "sprite": "GFX_focus_generic_attack_romania",
+      "source_texture": "gfx/interface/goals/focus_generic_attack_romania.dds",
+      "reference": "docs/art/TUR/references/focus_NWW_TUR_romanian_campaign.png",
+      "consumers": [
+        "NWW_TUR_romanian_campaign"
+      ],
+      "names": [
+        "Towards the Lower Danube"
+      ],
+      "reference_sheet": "docs/art/TUR/focus_references.png",
+      "reference_column": 7,
+      "reference_row": 9,
+      "reference_number": 63
+    },
+    {
+      "key": "idea_imperial_crisis",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_political_support",
+      "source_texture": "gfx/interface/ideas/idea_generic_political_support.dds",
+      "reference": "docs/art/TUR/references/idea_imperial_crisis.png",
+      "consumers": [
+        "NWW_TUR_imperial_crisis",
+        "NWW_TUR_imperial_crisis_1",
+        "NWW_TUR_imperial_crisis_2"
+      ],
+      "names": [
+        "The Sick Man of Europe",
+        "The Sick Man of Europe",
+        "The Sick Man of Europe"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 1,
+      "reference_number": 1
+    },
+    {
+      "key": "idea_imperial_compact",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_political_support",
+      "source_texture": "gfx/interface/ideas/idea_generic_political_support.dds",
+      "reference": "docs/art/TUR/references/idea_imperial_compact.png",
+      "consumers": [
+        "NWW_TUR_imperial_compact"
+      ],
+      "names": [
+        "The Imperial Compact"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 2,
+      "reference_row": 1,
+      "reference_number": 2
+    },
+    {
+      "key": "idea_NWW_TUR_balkan_administration",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_supply_reform",
+      "source_texture": "gfx/interface/ideas/nww_legacy/supply_reform.dds",
+      "reference": "docs/art/TUR/references/idea_NWW_TUR_balkan_administration.png",
+      "consumers": [
+        "NWW_TUR_balkan_administration"
+      ],
+      "names": [
+        "Administration of the Balkan Provinces"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 3,
+      "reference_row": 1,
+      "reference_number": 3
+    },
+    {
+      "key": "idea_NWW_TUR_war_industry",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_production_bonus",
+      "source_texture": "gfx/interface/ideas/generic_production_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_NWW_TUR_war_industry.png",
+      "consumers": [
+        "NWW_TUR_war_industry"
+      ],
+      "names": [
+        "Imperial War Contracts"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 4,
+      "reference_row": 1,
+      "reference_number": 4
+    },
+    {
+      "key": "idea_tur_silly_army_nowar",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_silly_army",
+      "source_texture": "gfx/interface/ideas/nww_legacy/silly_army.dds",
+      "reference": "docs/art/TUR/references/idea_tur_silly_army_nowar.png",
+      "consumers": [
+        "tur_silly_army_nowar",
+        "tur_silly_army_nowar_1",
+        "tur_silly_army_nowar_2",
+        "tur_silly_army_nowar_3"
+      ],
+      "names": [
+        "Ottoman army reform 1",
+        "Ottoman army reform 2",
+        "Ottoman army reform 3",
+        "Ottoman army reform 4"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 5,
+      "reference_row": 1,
+      "reference_number": 5
+    },
+    {
+      "key": "idea_tur_good_army",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_good_army",
+      "source_texture": "gfx/interface/ideas/nww_legacy/good_army.dds",
+      "reference": "docs/art/TUR/references/idea_tur_good_army.png",
+      "consumers": [
+        "tur_good_army_1",
+        "tur_good_army_2",
+        "tur_good_army_3",
+        "tur_good_army_4"
+      ],
+      "names": [
+        "Ottoman army reform 5",
+        "Ottoman army reform 6",
+        "Ottoman army reform 7",
+        "Ottoman army reform 8"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 6,
+      "reference_row": 1,
+      "reference_number": 6
+    },
+    {
+      "key": "idea_tur_perfect_army",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_perfect_army",
+      "source_texture": "gfx/interface/ideas/nww_legacy/perfect_army.dds",
+      "reference": "docs/art/TUR/references/idea_tur_perfect_army.png",
+      "consumers": [
+        "tur_perfect_army_1",
+        "tur_perfect_army_2",
+        "tur_perfect_army_3",
+        "tur_perfect_army_4"
+      ],
+      "names": [
+        "Ottoman army reform 9",
+        "Ottoman army reform 10",
+        "Ottoman army reform 11",
+        "Ottoman army reform 12"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 2,
+      "reference_number": 7
+    },
+    {
+      "key": "idea_tur_agricultural_economic",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_agricult",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_agricult.dds",
+      "reference": "docs/art/TUR/references/idea_tur_agricultural_economic.png",
+      "consumers": [
+        "tur_agricultural_economic_1",
+        "tur_agricultural_economic_2",
+        "tur_agricultural_economic_3",
+        "tur_agricultural_economic_4"
+      ],
+      "names": [
+        "Ottoman industrialisation 1",
+        "Ottoman industrialisation 2",
+        "Ottoman industrialisation 3",
+        "Ottoman industrialisation 4"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 2,
+      "reference_row": 2,
+      "reference_number": 8
+    },
+    {
+      "key": "idea_tur_small_industry_economic",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_small_industy",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_small_industy.dds",
+      "reference": "docs/art/TUR/references/idea_tur_small_industry_economic.png",
+      "consumers": [
+        "tur_small_industry_economic_1",
+        "tur_small_industry_economic_2",
+        "tur_small_industry_economic_3",
+        "tur_small_industry_economic_4"
+      ],
+      "names": [
+        "Ottoman industrialisation 5",
+        "Ottoman industrialisation 6",
+        "Ottoman industrialisation 7",
+        "Ottoman industrialisation 8"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 3,
+      "reference_row": 2,
+      "reference_number": 9
+    },
+    {
+      "key": "idea_tur_industry_economic",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_industy",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_industy.dds",
+      "reference": "docs/art/TUR/references/idea_tur_industry_economic.png",
+      "consumers": [
+        "tur_industry_economic_1"
+      ],
+      "names": [
+        "Ottoman industrialisation 9"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 4,
+      "reference_row": 2,
+      "reference_number": 10
+    },
+    {
+      "key": "idea_tur_new_democ",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_democratic_drift_bonus",
+      "source_texture": "gfx/interface/ideas/generic_democratic_drift_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_tur_new_democ.png",
+      "consumers": [
+        "tur_new_democ"
+      ],
+      "names": [
+        "Constitutional movement"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 5,
+      "reference_row": 2,
+      "reference_number": 11
+    },
+    {
+      "key": "idea_tur_comun_d",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_communism_drift_bonus",
+      "source_texture": "gfx/interface/ideas/generic_communism_drift_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_tur_comun_d.png",
+      "consumers": [
+        "tur_comun_d"
+      ],
+      "names": [
+        "Workers movement"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 6,
+      "reference_row": 2,
+      "reference_number": 12
+    },
+    {
+      "key": "idea_tur_fascism_d",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_fascism_drift_bonus",
+      "source_texture": "gfx/interface/ideas/generic_fascism_drift_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_tur_fascism_d.png",
+      "consumers": [
+        "tur_fascism_d"
+      ],
+      "names": [
+        "National movement"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 3,
+      "reference_number": 13
+    },
+    {
+      "key": "idea_tur_not_fascism_d",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_democratic_drift_bonus",
+      "source_texture": "gfx/interface/ideas/generic_democratic_drift_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_tur_not_fascism_d.png",
+      "consumers": [
+        "tur_not_fascism_d"
+      ],
+      "names": [
+        "Constitutional sultanate"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 2,
+      "reference_row": 3,
+      "reference_number": 14
+    },
+    {
+      "key": "idea_TUR_factory_idea",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_industrial_concern_1",
+      "source_texture": "gfx/interface/ideas/idea_generic_industrial_concern_1.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_factory_idea.png",
+      "consumers": [
+        "TUR_factory_idea_1",
+        "TUR_factory_idea_2"
+      ],
+      "names": [
+        "Improved working conditions",
+        "Industrial labour settlement"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 3,
+      "reference_row": 3,
+      "reference_number": 15
+    },
+    {
+      "key": "idea_TUR_capitalism_economic",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_capitalism_economic",
+      "source_texture": "gfx/interface/ideas/nww_legacy/capitalism_economic.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_capitalism_economic.png",
+      "consumers": [
+        "TUR_capitalism_economic_1",
+        "TUR_capitalism_economic_2",
+        "TUR_capitalism_economic_3"
+      ],
+      "names": [
+        "Private industry",
+        "Export industry",
+        "Mature private sector"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 4,
+      "reference_row": 3,
+      "reference_number": 16
+    },
+    {
+      "key": "idea_TUR_NFT",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_industrial_concern_1",
+      "source_texture": "gfx/interface/ideas/idea_generic_industrial_concern_1.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_NFT.png",
+      "consumers": [
+        "TUR_NFT_1",
+        "TUR_NFT_2"
+      ],
+      "names": [
+        "National trade fund",
+        "Expanded trade fund"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 5,
+      "reference_row": 3,
+      "reference_number": 17
+    },
+    {
+      "key": "idea_TUR_IPT",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_industrial_concern_3",
+      "source_texture": "gfx/interface/ideas/idea_generic_industrial_concern_3.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_IPT.png",
+      "consumers": [
+        "TUR_IPT_1"
+      ],
+      "names": [
+        "Institute of industrial technology"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 6,
+      "reference_row": 3,
+      "reference_number": 18
+    },
+    {
+      "key": "idea_TUR_gold",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_gold",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_gold.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_gold.png",
+      "consumers": [
+        "TUR_gold_1"
+      ],
+      "names": [
+        "Gold-backed credit"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 4,
+      "reference_number": 19
+    },
+    {
+      "key": "idea_TUR_TAS",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_TAS",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_TAS.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_TAS.png",
+      "consumers": [
+        "TUR_TAS_1",
+        "TUR_TAS_2"
+      ],
+      "names": [
+        "Turkish public holding",
+        "Expanded public holding"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 2,
+      "reference_row": 4,
+      "reference_number": 20
+    },
+    {
+      "key": "idea_TUR_NNSP",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_industrial_concern_3",
+      "source_texture": "gfx/interface/ideas/idea_generic_industrial_concern_3.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_NNSP.png",
+      "consumers": [
+        "TUR_NNSP_1"
+      ],
+      "names": [
+        "National industrial council"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 3,
+      "reference_row": 4,
+      "reference_number": 21
+    },
+    {
+      "key": "idea_TUR_religion",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_industrial_concern_3",
+      "source_texture": "gfx/interface/ideas/idea_generic_industrial_concern_3.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_religion.png",
+      "consumers": [
+        "TUR_religion_1"
+      ],
+      "names": [
+        "Imperial cultural cohesion"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 4,
+      "reference_row": 4,
+      "reference_number": 22
+    },
+    {
+      "key": "idea_TUR_supply_reform",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_supply_reform",
+      "source_texture": "gfx/interface/ideas/nww_legacy/supply_reform.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_supply_reform.png",
+      "consumers": [
+        "TUR_supply_reform"
+      ],
+      "names": [
+        "Supply reform"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 5,
+      "reference_row": 4,
+      "reference_number": 23
+    },
+    {
+      "key": "idea_TUR_disagree_reform",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_disagree_reform",
+      "source_texture": "gfx/interface/ideas/nww_legacy/disagree_reform.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_disagree_reform.png",
+      "consumers": [
+        "TUR_disagree_reform"
+      ],
+      "names": [
+        "Independent army procurement"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 6,
+      "reference_row": 4,
+      "reference_number": 24
+    },
+    {
+      "key": "idea_TUR_universal_army",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_universal_army",
+      "source_texture": "gfx/interface/ideas/nww_legacy/universal_army.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_universal_army.png",
+      "consumers": [
+        "TUR_universal_army_1"
+      ],
+      "names": [
+        "Combined-arms army"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 5,
+      "reference_number": 25
+    },
+    {
+      "key": "idea_tur_closed_cities",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_closed_cities",
+      "source_texture": "gfx/interface/ideas/nww_legacy/closed_cities.dds",
+      "reference": "docs/art/TUR/references/idea_tur_closed_cities.png",
+      "consumers": [
+        "tur_closed_cities_1"
+      ],
+      "names": [
+        "Military towns"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 2,
+      "reference_row": 5,
+      "reference_number": 26
+    },
+    {
+      "key": "idea_TUR_TNPA",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_tur_TNPA",
+      "source_texture": "gfx/interface/ideas/nww_legacy/tur_TNPA.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_TNPA.png",
+      "consumers": [
+        "TUR_TNPA_1"
+      ],
+      "names": [
+        "National aviation programme"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 3,
+      "reference_row": 5,
+      "reference_number": 27
+    },
+    {
+      "key": "idea_tur_dominatuim_turco",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_dominatium_turcorum",
+      "source_texture": "gfx/interface/ideas/nww_legacy/dominatium_turcorum.dds",
+      "reference": "docs/art/TUR/references/idea_tur_dominatuim_turco.png",
+      "consumers": [
+        "tur_dominatuim_turco_1"
+      ],
+      "names": [
+        "Ottoman scientific programme"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 4,
+      "reference_row": 5,
+      "reference_number": 28
+    },
+    {
+      "key": "idea_NWW_TUR_federal_constitution",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_democratic_drift_bonus",
+      "source_texture": "gfx/interface/ideas/generic_democratic_drift_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_NWW_TUR_federal_constitution.png",
+      "consumers": [
+        "NWW_TUR_federal_constitution"
+      ],
+      "names": [
+        "Imperial federal constitution"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 5,
+      "reference_row": 5,
+      "reference_number": 29
+    },
+    {
+      "key": "idea_NWW_TUR_workers_federation",
+      "kind": "idea",
+      "sprite": "GFX_idea_generic_communism_drift_bonus",
+      "source_texture": "gfx/interface/ideas/generic_communism_drift_bonus.dds",
+      "reference": "docs/art/TUR/references/idea_NWW_TUR_workers_federation.png",
+      "consumers": [
+        "NWW_TUR_workers_federation"
+      ],
+      "names": [
+        "Federation of workers councils"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 6,
+      "reference_row": 5,
+      "reference_number": 30
+    },
+    {
+      "key": "idea_TUR_national_economic",
+      "kind": "idea",
+      "sprite": "GFX_idea_nww_legacy_national_economic",
+      "source_texture": "gfx/interface/ideas/nww_legacy/national_economic.dds",
+      "reference": "docs/art/TUR/references/idea_TUR_national_economic.png",
+      "consumers": [
+        "TUR_national_economic_1",
+        "TUR_national_economic_2",
+        "TUR_national_economic_3",
+        "TUR_national_economic_4"
+      ],
+      "names": [
+        "State economic plan — stage 1",
+        "State economic plan — stage 2",
+        "State economic plan — stage 3",
+        "State economic plan — stage 4"
+      ],
+      "reference_sheet": "docs/art/TUR/idea_references.png",
+      "reference_column": 1,
+      "reference_row": 6,
+      "reference_number": 31
+    },
+    {
+      "key": "decision_NWW_TUR_campaign_democratic",
+      "kind": "decision",
+      "sprite": "GFX_decision_generic_political_discourse",
+      "source_texture": "gfx/interface/decisions/decision_generic_political_discourse.dds",
+      "reference": "docs/art/TUR/references/decision_NWW_TUR_campaign_democratic.png",
+      "consumers": [
+        "NWW_TUR_campaign_democratic",
+        "NWW_TUR_campaign_neutrality",
+        "NWW_TUR_campaign_fascism",
+        "NWW_TUR_campaign_communism",
+        "NWW_TUR_negotiate_ulema",
+        "NWW_TUR_negotiate_provinces"
+      ],
+      "names": [
+        "Republican meetings",
+        "Royalist meetings",
+        "Nationalist meetings",
+        "Workers meetings",
+        "Negotiate Guarantees with the Ulema",
+        "Convene the Provincial Councils"
+      ],
+      "reference_sheet": "docs/art/TUR/decision_references.png",
+      "reference_column": 1,
+      "reference_row": 1,
+      "reference_number": 1
+    },
+    {
+      "key": "decision_NWW_TUR_negotiate_officers",
+      "kind": "decision",
+      "sprite": "GFX_decision_generic_army_support",
+      "source_texture": "gfx/interface/decisions/decision_generic_army_support.dds",
+      "reference": "docs/art/TUR/references/decision_NWW_TUR_negotiate_officers.png",
+      "consumers": [
+        "NWW_TUR_negotiate_officers"
+      ],
+      "names": [
+        "Reach an Accord with the Officer Corps"
+      ],
+      "reference_sheet": "docs/art/TUR/decision_references.png",
+      "reference_column": 2,
+      "reference_row": 1,
+      "reference_number": 2
+    },
+    {
+      "key": "category_NWW_TUR_political_campaigns",
+      "kind": "category",
+      "sprite": "GFX_decision_category_generic_political_actions",
+      "source_texture": "gfx/interface/decisions/decision_category_generic_political_actions.dds",
+      "reference": "docs/art/TUR/references/category_NWW_TUR_political_campaigns.png",
+      "consumers": [
+        "NWW_TUR_political_campaigns",
+        "NWW_TUR_imperial_councils"
+      ],
+      "names": [
+        "Political campaigns",
+        "Imperial Councils"
+      ],
+      "reference_sheet": "docs/art/TUR/category_references.png",
+      "reference_column": 1,
+      "reference_row": 1,
+      "reference_number": 1
+    },
+    {
+      "key": "company_tur_tulomsas",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_tulomsas",
+      "source_texture": "gfx/interface/ideas/idea_tur_tulomsas.dds",
+      "reference": "docs/art/TUR/references/company_tur_tulomsas.png",
+      "consumers": [
+        "company_idea:tulomsas",
+        "company_mio:TUR_tulomsas_organization"
+      ],
+      "names": [
+        "tulomsas",
+        "tulomsas"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 1,
+      "reference_row": 1,
+      "reference_number": 1
+    },
+    {
+      "key": "company_tur_koc_ticaret_as",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_koc_ticaret_as",
+      "source_texture": "gfx/interface/ideas/idea_tur_koc_ticaret_as.dds",
+      "reference": "docs/art/TUR/references/company_tur_koc_ticaret_as.png",
+      "consumers": [
+        "company_idea:koc_ticaret_as_armor",
+        "company_idea:koc_ticaret_as_shipyard",
+        "company_idea:koc_ticaret_as_defense_industry",
+        "company_idea:koc_ticaret_as_monopoly",
+        "company_mio:TUR_ticaret_organization",
+        "company_mio:TUR_koc_ticaret_as_shipyard_organization",
+        "company_mio:TUR_koc_ticaret_as_defense_industry_organization"
+      ],
+      "names": [
+        "koc ticaret as armor",
+        "koc ticaret as shipyard",
+        "koc ticaret as defense industry",
+        "koc ticaret as monopoly",
+        "ticaret",
+        "koc ticaret as shipyard",
+        "koc ticaret as defense industry"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 2,
+      "reference_row": 1,
+      "reference_number": 2
+    },
+    {
+      "key": "company_generic_air_manufacturer_2",
+      "kind": "company",
+      "sprite": "GFX_idea_generic_air_manufacturer_2",
+      "source_texture": "gfx/interface/ideas/idea_generic_air_manufacturer_2.dds",
+      "reference": "docs/art/TUR/references/company_generic_air_manufacturer_2.png",
+      "consumers": [
+        "company_idea:thk",
+        "company_mio:TUR_thk_organization"
+      ],
+      "names": [
+        "thk",
+        "thk"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 3,
+      "reference_row": 1,
+      "reference_number": 3
+    },
+    {
+      "key": "company_generic_air_manufacturer_1",
+      "kind": "company",
+      "sprite": "GFX_idea_generic_air_manufacturer_1",
+      "source_texture": "gfx/interface/ideas/idea_generic_air_manufacturer_1.dds",
+      "reference": "docs/art/TUR/references/company_generic_air_manufacturer_1.png",
+      "consumers": [
+        "company_idea:ktf"
+      ],
+      "names": [
+        "ktf"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 4,
+      "reference_row": 1,
+      "reference_number": 4
+    },
+    {
+      "key": "company_man_five_year_plan_air",
+      "kind": "company",
+      "sprite": "GFX_idea_man_five_year_plan_air",
+      "source_texture": "gfx/interface/ideas/idea_man_five_year_plan_air.dds",
+      "reference": "docs/art/TUR/references/company_man_five_year_plan_air.png",
+      "consumers": [
+        "company_idea:thk_bftb",
+        "company_mio:TUR_ktf_organization",
+        "company_mio:TUR_thk_bftb_organization"
+      ],
+      "names": [
+        "thk bftb",
+        "ktf",
+        "thk bftb"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 5,
+      "reference_row": 1,
+      "reference_number": 5
+    },
+    {
+      "key": "company_tur_gok_okulu",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_gok_okulu",
+      "source_texture": "gfx/interface/ideas/idea_tur_gok_okulu.dds",
+      "reference": "docs/art/TUR/references/company_tur_gok_okulu.png",
+      "consumers": [
+        "company_idea:gok_okulu",
+        "company_mio:TUR_gok_okulu_organization"
+      ],
+      "names": [
+        "gok okulu",
+        "gok okulu"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 6,
+      "reference_row": 1,
+      "reference_number": 6
+    },
+    {
+      "key": "company_tur_nud",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_nud",
+      "source_texture": "gfx/interface/ideas/idea_tur_nud.dds",
+      "reference": "docs/art/TUR/references/company_tur_nud.png",
+      "consumers": [
+        "company_idea:nud",
+        "company_mio:TUR_nud_organization"
+      ],
+      "names": [
+        "nud",
+        "nud"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 1,
+      "reference_row": 2,
+      "reference_number": 7
+    },
+    {
+      "key": "company_tur_tomtasch",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_tomtasch",
+      "source_texture": "gfx/interface/ideas/idea_tur_tomtasch.dds",
+      "reference": "docs/art/TUR/references/company_tur_tomtasch.png",
+      "consumers": [
+        "company_idea:tomtasch",
+        "company_mio:TUR_tomtasch_organization"
+      ],
+      "names": [
+        "tomtasch",
+        "tomtasch"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 2,
+      "reference_row": 2,
+      "reference_number": 8
+    },
+    {
+      "key": "company_tur_golcuk_naval_base",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_golcuk_naval_base",
+      "source_texture": "gfx/interface/ideas/idea_tur_golcuk_naval_base.dds",
+      "reference": "docs/art/TUR/references/company_tur_golcuk_naval_base.png",
+      "consumers": [
+        "company_idea:golcuk_nsy",
+        "company_mio:TUR_golcuk_nsy_organization"
+      ],
+      "names": [
+        "golcuk nsy",
+        "golcuk nsy"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 3,
+      "reference_row": 2,
+      "reference_number": 9
+    },
+    {
+      "key": "company_tur_cgt",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_cgt",
+      "source_texture": "gfx/interface/ideas/idea_tur_cgt.dds",
+      "reference": "docs/art/TUR/references/company_tur_cgt.png",
+      "consumers": [
+        "company_idea:cgt",
+        "company_mio:TUR_cgt_organization"
+      ],
+      "names": [
+        "cgt",
+        "cgt"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 4,
+      "reference_row": 2,
+      "reference_number": 10
+    },
+    {
+      "key": "company_generic_infantry_equipment_manufacturer_3",
+      "kind": "company",
+      "sprite": "GFX_idea_generic_infantry_equipment_manufacturer_3",
+      "source_texture": "gfx/interface/ideas/idea_generic_infantry_equipment_manufacturer_3.dds",
+      "reference": "docs/art/TUR/references/company_generic_infantry_equipment_manufacturer_3.png",
+      "consumers": [
+        "company_idea:istanbul_military_industries",
+        "company_mio:TUR_istanbul_military_industries_organization"
+      ],
+      "names": [
+        "istanbul military industries",
+        "istanbul military industries"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 5,
+      "reference_row": 2,
+      "reference_number": 11
+    },
+    {
+      "key": "company_tur_killigil_endustrileri",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_killigil_endustrileri",
+      "source_texture": "gfx/interface/ideas/idea_tur_killigil_endustrileri.dds",
+      "reference": "docs/art/TUR/references/company_tur_killigil_endustrileri.png",
+      "consumers": [
+        "company_idea:killigil_endustrileri",
+        "company_mio:TUR_killigil_endustrileri_organization"
+      ],
+      "names": [
+        "killigil endustrileri",
+        "killigil endustrileri"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 6,
+      "reference_row": 2,
+      "reference_number": 12
+    },
+    {
+      "key": "company_tur_odpa",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_odpa",
+      "source_texture": "gfx/interface/ideas/idea_tur_odpa.dds",
+      "reference": "docs/art/TUR/references/company_tur_odpa.png",
+      "consumers": [
+        "company_idea:TUR_debt_council"
+      ],
+      "names": [
+        "debt council"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 1,
+      "reference_row": 3,
+      "reference_number": 13
+    },
+    {
+      "key": "company_tur_tdpa",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_tdpa",
+      "source_texture": "gfx/interface/ideas/idea_tur_tdpa.dds",
+      "reference": "docs/art/TUR/references/company_tur_tdpa.png",
+      "consumers": [
+        "company_idea:TUR_tpda"
+      ],
+      "names": [
+        "tpda"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 2,
+      "reference_row": 3,
+      "reference_number": 14
+    },
+    {
+      "key": "company_tur_tcdd",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_tcdd",
+      "source_texture": "gfx/interface/ideas/idea_tur_tcdd.dds",
+      "reference": "docs/art/TUR/references/company_tur_tcdd.png",
+      "consumers": [
+        "company_idea:tcdd"
+      ],
+      "names": [
+        "tcdd"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 3,
+      "reference_row": 3,
+      "reference_number": 15
+    },
+    {
+      "key": "company_PRC_nanjing_wireless_electronics_plant",
+      "kind": "company",
+      "sprite": "GFX_idea_PRC_nanjing_wireless_electronics_plant",
+      "source_texture": "gfx/interface/ideas/idea_PRC_nanjing_wireless_electronics_plant.dds",
+      "reference": "docs/art/TUR/references/company_PRC_nanjing_wireless_electronics_plant.png",
+      "consumers": [
+        "company_idea:etibank"
+      ],
+      "names": [
+        "etibank"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 4,
+      "reference_row": 3,
+      "reference_number": 16
+    },
+    {
+      "key": "company_tur_balkan_central_bank_wealthy_greece",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_balkan_central_bank_wealthy_greece",
+      "source_texture": "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds",
+      "reference": "docs/art/TUR/references/company_tur_balkan_central_bank_wealthy_greece.png",
+      "consumers": [
+        "company_idea:sumerbank"
+      ],
+      "names": [
+        "sumerbank"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 5,
+      "reference_row": 3,
+      "reference_number": 17
+    },
+    {
+      "key": "company_tur_petrol_ofisi",
+      "kind": "company",
+      "sprite": "GFX_idea_tur_petrol_ofisi",
+      "source_texture": "gfx/interface/ideas/idea_tur_petrol_ofisi.dds",
+      "reference": "docs/art/TUR/references/company_tur_petrol_ofisi.png",
+      "consumers": [
+        "company_idea:petrol_ofisi"
+      ],
+      "names": [
+        "petrol ofisi"
+      ],
+      "reference_sheet": "docs/art/TUR/company_references.png",
+      "reference_column": 6,
+      "reference_row": 3,
+      "reference_number": 18
+    }
+  ]
+}

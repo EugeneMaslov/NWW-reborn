@@ -1,0 +1,21 @@
+{
+  "key": "idea_TUR_TAS",
+  "kind": "idea",
+  "sprite": "GFX_idea_nww_legacy_tur_TAS",
+  "source_texture": "gfx/interface/ideas/nww_legacy/tur_TAS.dds",
+  "reference": "docs/art/TUR/references/idea_TUR_TAS.png",
+  "consumers": [
+    "TUR_TAS_1",
+    "TUR_TAS_2"
+  ],
+  "names": [
+    "Turkish public holding",
+    "Expanded public holding"
+  ],
+  "reference_sheet": "docs/art/TUR/idea_references.png",
+  "reference_column": 2,
+  "reference_row": 4,
+  "reference_number": 20,
+  "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman idea icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 20, row 4, column 2; its subject is Turkish public holding / Expanded public holding. Image 2 is style reference: already regenerated Lithuanian-Belarusian national-spirit icons.\nCreatively redraw this single current icon, preserving its functional theme and recognizable motif, adapting foreign insignia to Ottoman identity. Industrial share certificates, public holding ledger and cog.\nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 64x64. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, digits, labels, atlas, extra icons, modern emblems, Nazi symbols, Kemalist or WWI narrative, watermark.",
+  "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-be383913-167a-43fe-84e7-7918762db5a3.png"
+}

@@ -1,0 +1,29 @@
+{
+  "key": "decision_NWW_TUR_campaign_democratic",
+  "kind": "decision",
+  "sprite": "GFX_decision_generic_political_discourse",
+  "source_texture": "gfx/interface/decisions/decision_generic_political_discourse.dds",
+  "reference": "docs/art/TUR/references/decision_NWW_TUR_campaign_democratic.png",
+  "consumers": [
+    "NWW_TUR_campaign_democratic",
+    "NWW_TUR_campaign_neutrality",
+    "NWW_TUR_campaign_fascism",
+    "NWW_TUR_campaign_communism",
+    "NWW_TUR_negotiate_ulema",
+    "NWW_TUR_negotiate_provinces"
+  ],
+  "names": [
+    "Republican meetings",
+    "Royalist meetings",
+    "Nationalist meetings",
+    "Workers meetings",
+    "Negotiate Guarantees with the Ulema",
+    "Convene the Provincial Councils"
+  ],
+  "reference_sheet": "docs/art/TUR/decision_references.png",
+  "reference_column": 1,
+  "reference_row": 1,
+  "reference_number": 1,
+  "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman decision icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 1, row 1, column 1; its subject is Republican meetings / Royalist meetings / Nationalist meetings / Workers meetings / Negotiate Guarantees with the Ulema / Convene the Provincial Councils. Image 2 is style reference: already regenerated Lithuanian-Belarusian national-spirit icons.\nCreatively redraw this single current icon, preserving its functional theme and recognizable motif, adapting foreign insignia to Ottoman identity. \nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 64x64. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, digits, labels, atlas, extra icons, modern emblems, Nazi symbols, Kemalist or WWI narrative, watermark.",
+  "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-008d7270-78f6-4cd4-9fdf-53945f72e9a5.png"
+}

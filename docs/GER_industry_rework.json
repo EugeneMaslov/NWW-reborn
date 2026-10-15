@@ -1,0 +1,81 @@
+{
+  "focuses": [
+    "GER_krupp_and_thyssen",
+    "GER_1",
+    "GER_nww_electrical_grid",
+    "GER_nww_silesian_steel",
+    "GER_3",
+    "GER_nww_arsenal_contracts",
+    "GER_4",
+    "GER_5",
+    "GER_6",
+    "GER_7",
+    "GER_nww_machine_tools",
+    "GER_nww_industrial_standards",
+    "GER_nww_technical_colleges",
+    "GER_mitteleuropa_trade",
+    "GER_2",
+    "GER_nww_freight_corridors",
+    "GER_nww_merchant_contracts",
+    "GER_nww_export_credit",
+    "GER_nww_investment_guarantees",
+    "GER_8",
+    "GER_9",
+    "GER_10",
+    "GER_nww_industrial_research",
+    "GER_nww_balanced_orders",
+    "GER_nww_synthetic_fuels",
+    "GER_nww_colonial_ports",
+    "GER_nww_energy_keystones",
+    "GER_nww_worker_housing",
+    "GER_nww_electromechanical_labs",
+    "GER_nww_supply_resilience",
+    "GER_nww_prague_network"
+  ],
+  "persistent_bonuses": {
+    "GER_krupp_and_thyssen": {
+      "construction": 0.05
+    },
+    "GER_nww_electrical_grid": {
+      "energy": 0.1
+    },
+    "GER_nww_arsenal_contracts": {
+      "output": 0.05
+    },
+    "GER_4": {
+      "efficiency": 0.05
+    },
+    "GER_6": {
+      "construction": 0.05
+    },
+    "GER_7": {
+      "maximum": 0.05
+    },
+    "GER_nww_machine_tools": {
+      "efficiency": 0.05
+    },
+    "GER_nww_industrial_standards": {
+      "maximum": 0.05
+    },
+    "GER_nww_technical_colleges": {
+      "research": 0.05
+    },
+    "GER_nww_investment_guarantees": {
+      "construction": 0.05
+    },
+    "GER_9": {
+      "output": 0.05
+    },
+    "GER_nww_industrial_research": {
+      "research": 0.05
+    }
+  },
+  "modifiers": {
+    "construction": "production_speed_buildings_factor",
+    "output": "industrial_capacity_factory",
+    "efficiency": "production_factory_efficiency_gain_factor",
+    "maximum": "production_factory_max_efficiency_factor",
+    "research": "research_speed_factor",
+    "energy": "energy_gain_factor"
+  }
+}

@@ -137,6 +137,7 @@ def build_panel():
         return f'  instantTextBoxType = {{ name = "{name}" orientation = center_up position = {{ x = {x-228} y = {y} }} font = "{font}" text = "{key}" format = center maxWidth = {width} maxHeight = {height} pdx_tooltip = AUS_nww_meter_help }}\n'
     gui+=text('AUS_panel_title','AUS_nww_panel_title',108,83,240,24,'hoi_18mbs')
     gui+=text('AUS_panel_value','AUS_nww_panel_value',108,109,240,24,'hoi_18mbs')
+    gui+=text('AUS_panel_influence','AUS_nww_panel_influence',124,130,208,20).replace('pdx_tooltip = AUS_nww_meter_help','pdx_tooltip = AUS_nww_german_influence_tt')
     gui+=text('AUS_panel_vienna','AUS_nww_panel_vienna',24,130,100,20)
     gui+=text('AUS_panel_prague','AUS_nww_panel_prague',332,130,100,20)
     gui+=text('AUS_zero','AUS_nww_panel_zero',19,154,20,20)

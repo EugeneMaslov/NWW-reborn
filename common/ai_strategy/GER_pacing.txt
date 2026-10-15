@@ -1,0 +1,43 @@
+# Historical NWW pacing supplements the universal pre-1939 eastern safeguards.
+GER_nww_historical_restraint_AUS = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1939.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = AUS value = -1000 }
+ ai_strategy = { type = antagonize id = AUS value = -1000 }
+}
+GER_nww_historical_restraint_CZE = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1939.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = CZE value = -1000 }
+ ai_strategy = { type = antagonize id = CZE value = -1000 }
+}
+GER_nww_historical_restraint_LTB = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1940.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = LTB value = -1000 }
+ ai_strategy = { type = antagonize id = LTB value = -1000 }
+}
+GER_nww_historical_restraint_POL = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1940.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = POL value = -1000 }
+ ai_strategy = { type = antagonize id = POL value = -1000 }
+}
+GER_nww_historical_restraint_MKN = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1941.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = MKN value = -1000 }
+ ai_strategy = { type = antagonize id = MKN value = -1000 }
+}
+GER_nww_historical_restraint_UKR = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1941.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = UKR value = -1000 }
+ ai_strategy = { type = antagonize id = UKR value = -1000 }
+}
+GER_nww_historical_restraint_SOV = {
+ enable = { original_tag = GER has_focus_tree = GER_focus is_historical_focus_on = yes date < 1941.1.1 }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = SOV value = -1000 }
+ ai_strategy = { type = antagonize id = SOV value = -1000 }
+}

@@ -1,0 +1,50 @@
+# Owner TUR. Ready/target triggers are also evaluated by a native relation rule.
+nww_TUR_ai_campaign_ready = {
+ has_war = no
+ has_capitulated = no
+ has_civil_war = no
+ is_subject = no
+ surrender_progress < 0.05
+ has_stability > 0.40
+ has_war_support > 0.35
+ NOT = { has_country_flag = NWW_TUR_campaign_recovery }
+ NOT = { has_country_flag = NWW_TUR_campaign_defeat_pending }
+ NOT = { has_country_flag = NWW_TUR_campaign_was_at_war }
+}
+nww_TUR_ai_target_safe = {
+ exists = yes
+ is_subject = no
+ NOT = { is_ally_with = TUR }
+ is_major = no
+ is_in_faction = no
+ has_war = no
+ strength_ratio = { tag = TUR ratio < 0.67 }
+ NOT = { any_other_country = { has_guaranteed = PREV } }
+}
+# FROM is the proposed target, following ETH has_lon_arms_embargo.
+# Use the explicit owner for readiness, independently of the calling event ROOT.
+nww_TUR_ai_unsafe_declaration = {
+ TUR = { is_ai = yes has_focus_tree = turkish_focus }
+ OR = { TUR = { NOT = { nww_TUR_ai_campaign_ready = yes } } FROM = { NOT = { nww_TUR_ai_target_safe = yes } } }
+}
+nww_TUR_ai_can_prepare_campaign = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_prepare_campaign OR = { is_ai = no nww_TUR_ai_campaign_ready = yes } }
+}
+nww_TUR_ai_can_target_BUL = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_target_BUL OR = { is_ai = no AND = { nww_TUR_ai_campaign_ready = yes BUL = { nww_TUR_ai_target_safe = yes } } } }
+}
+nww_TUR_ai_can_target_GRE = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_target_GRE OR = { is_ai = no AND = { nww_TUR_ai_campaign_ready = yes GRE = { nww_TUR_ai_target_safe = yes } } } }
+}
+nww_TUR_ai_can_target_YUG = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_target_YUG OR = { is_ai = no AND = { nww_TUR_ai_campaign_ready = yes YUG = { nww_TUR_ai_target_safe = yes } } } }
+}
+nww_TUR_ai_can_target_ALB = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_target_ALB OR = { is_ai = no AND = { nww_TUR_ai_campaign_ready = yes ALB = { nww_TUR_ai_target_safe = yes } } } }
+}
+nww_TUR_ai_can_target_ROM = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_target_ROM OR = { is_ai = no AND = { nww_TUR_ai_campaign_ready = yes ROM = { nww_TUR_ai_target_safe = yes } } } }
+}
+nww_TUR_ai_can_target_CRO = {
+ custom_trigger_tooltip = { tooltip = nww_TUR_ai_can_target_CRO OR = { is_ai = no AND = { nww_TUR_ai_campaign_ready = yes CRO = { nww_TUR_ai_target_safe = yes } } } }
+}

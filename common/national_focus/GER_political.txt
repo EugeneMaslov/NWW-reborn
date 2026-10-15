@@ -1,4 +1,3 @@
-# Owner: GER. One shared political root, imported by GER_focuses.txt.
 shared_focus = {
 	id = GER_the_gilded_colossus
 	icon = GFX_focus_GER_our_place_in_the_sun
@@ -192,6 +191,10 @@ shared_focus = {
 		focus = GER_dissolve_the_reichstag
 	}
 	available = {
+		custom_trigger_tooltip = {
+			tooltip = GER_nww_historical_pressure_ready
+			GER_nww_historical_pressure_ready = yes
+		}
 		has_government = neutrality
 		is_subject = no
 		date > 1938.12.31
@@ -199,6 +202,7 @@ shared_focus = {
 			tooltip = GER_eastern_1939_gate_tt
 			date > 1938.12.31
 		}
+		nww_GER_ai_can_prepare_campaign = yes
 	}
 	completion_reward = {
 		custom_effect_tooltip = GER_eastern_1939_gate_tt
@@ -236,6 +240,11 @@ shared_focus = {
 		}
 	}
 	available = {
+		date > 1938.12.31
+		custom_trigger_tooltip = {
+			tooltip = GER_nww_austrian_1939_tt
+			date > 1938.12.31
+		}
 		has_government = neutrality
 		is_subject = no
 		AUS = {
@@ -245,26 +254,10 @@ shared_focus = {
 		NOT = {
 			has_war_with = AUS
 		}
+		nww_GER_ai_can_target_AUS = yes
 	}
 	completion_reward = {
-		if = {
-			limit = {
-				AUS = {
-					exists = yes
-					is_subject = no
-				}
-				is_subject = no
-				NOT = {
-					has_war_with = AUS
-				}
-			}
-			AUS = {
-				country_event = {
-					id = ger_crisis.10
-					days = 1
-				}
-			}
-		}
+		GER_nww_dispatch_austrian_demand = yes
 	}
 	ai_will_do = {
 		factor = 5
@@ -280,6 +273,10 @@ shared_focus = {
 		focus = GER_reign_in_mitteleuropa
 	}
 	available = {
+		custom_trigger_tooltip = {
+			tooltip = GER_nww_historical_eastern_war_ready
+			GER_nww_historical_eastern_war_ready = yes
+		}
 		has_government = neutrality
 		is_subject = no
 		date > 1938.12.31
@@ -287,6 +284,7 @@ shared_focus = {
 			tooltip = GER_eastern_1939_gate_tt
 			date > 1938.12.31
 		}
+		nww_GER_ai_can_prepare_campaign = yes
 	}
 	completion_reward = {
 		custom_effect_tooltip = GER_eastern_1939_gate_tt
@@ -728,6 +726,7 @@ shared_focus = {
 		AUS = {
 			has_war = no
 		}
+		nww_GER_ai_can_target_AUS = yes
 	}
 	completion_reward = {
 		if = {
@@ -772,6 +771,7 @@ shared_focus = {
 			tooltip = GER_eastern_1939_gate_tt
 			date > 1938.12.31
 		}
+		nww_GER_ai_can_prepare_campaign = yes
 	}
 	completion_reward = {
 		nww_GER_pan_german_eastern_wargoals = yes
@@ -975,6 +975,7 @@ shared_focus = {
 	available = {
 		has_government = communism
 		is_subject = no
+		nww_GER_ai_can_prepare_campaign = yes
 	}
 	completion_reward = {
 		nww_GER_western_revolution_wargoals = yes

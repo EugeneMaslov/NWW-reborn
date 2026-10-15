@@ -17,6 +17,10 @@ class Scenario:
         self.effects, self.events = effects, events
         self.triggers = {k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_triggers/GER_triggers.txt')}
         self.date, self.dlc, self.player, self.from_country = '1936.1.1', True, 'GER', 'GER'
+        self.ai,self.historical=False,True
+        self.flag_timers={}
+        self.triggers.update({k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_triggers/GER_pacing_triggers.txt')})
+        self.triggers.update({k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_triggers/GER_campaign_safety_triggers.txt')})
         self.countries = {tag: dict(exists=True, subject=None, autonomy=None, flags=set(),
             focuses=set(), wars=set(), allies=set(), goals=set(), government='neutrality',
             balance=None, rules=set(), neutrality=0.65, democratic=0.20, fascism=0.10,
@@ -58,6 +62,18 @@ class Scenario:
             elif key == 'date':
                 as_date = lambda x: tuple(map(int,x.split('.')))
                 result = self.compare(as_date(self.date),as_date(value),op)
+            elif key=='is_ai':result=self.ai==(value=='yes')
+            elif key=='is_historical_focus_on':result=self.historical==(value=='yes')
+            elif key=='is_major':result=s.get('major',False)==(value=='yes')
+            elif key=='has_guaranteed':result=self.target(value,actor,root,stack) in s.get('guarantees',set())
+            elif key=='strength_ratio':
+                operand=next(n for n in value if n[0]=='ratio');other=self.countries[self.target(one(value,'tag'),actor,root,stack)]
+                own_strength=s.get('strength',100 if actor=='GER' else 30)
+                enemy_strength=other.get('strength',100 if self.target(one(value,'tag'),actor,root,stack)=='GER' else 30)
+                result=self.compare(own_strength/max(1,enemy_strength),float(operand[1]),operand[2])
+            elif key=='surrender_progress':result=self.compare(s.get('surrender',0),float(value),op)
+            elif key in ('has_stability','has_war_support'):result=self.compare(s.get('stability' if key=='has_stability' else 'war_support',0.5),float(value),op)
+            elif key=='has_war_with_major':result=any(self.countries[t].get('major',False) for t in s['wars'])==(value=='yes')
             elif key in ('always','exists','is_subject','has_dlc','has_civil_war','has_capitulated','has_war','is_in_faction','is_faction_leader'):
                 actual = {'always':True,'exists':s['exists'],'is_subject':s['subject'] is not None,
                     'has_dlc':self.dlc,'has_civil_war':s['civil_war'],'has_capitulated':s['capitulated'],
@@ -106,12 +122,15 @@ class Scenario:
             elif key == 'hidden_effect': self.apply(value,actor,root,stack,character)
             elif key in ('set_country_flag','clr_country_flag','complete_national_focus'):
                 field = 'focuses' if key=='complete_national_focus' else 'flags'
-                (s[field].discard if key=='clr_country_flag' else s[field].add)(value)
+                flag=one(value,'flag') if isinstance(value,list) else value
+                (s[field].discard if key=='clr_country_flag' else s[field].add)(flag)
+                if isinstance(value,list):self.flag_timers[(actor,flag)]=int(one(value,'days'))
+                if key=='clr_country_flag':self.flag_timers.pop((actor,flag),None)
             elif key == 'set_power_balance': s['balance']=float(one(value,'set_value','0'))
             elif key == 'remove_power_balance': s['balance']=None
             elif key == 'add_power_balance_value': s['balance']=round(max(-1,min(1,s['balance']+float(one(value,'value')))),6)
-            elif key == 'add_relation_rule_override': s['rules'].add(one(value,'target'))
-            elif key == 'remove_relation_rule_override': s['rules'].discard(one(value,'target'))
+            elif key == 'add_relation_rule_override': s['rules'].add(('trigger',one(value,'trigger')) if one(value,'trigger') else one(value,'target'))
+            elif key == 'remove_relation_rule_override': s['rules'].discard(('trigger',one(value,'trigger')) if one(value,'trigger') else one(value,'target'))
             elif key == 'create_wargoal': s['goals'].add(one(value,'target'))
             elif key == 'set_autonomy':
                 target=self.target(one(value,'target'),actor,root,stack)
@@ -192,7 +211,7 @@ def validate_germany(root, game, check):
     decisions = one(read(root / 'common/decisions/GER_bop_decisions.txt'), 'GER_bop_decisions_category')
     history = read(root / 'history/countries/GER - Germany.txt')
     on_actions = one(read(root / 'common/on_actions/GER_on_actions.txt'), 'on_actions')
-    check(len(political) == 28 and len(fs) == 45, 'GER: expected twenty-eight political and seventeen preserved focuses')
+    check(len(political) == 28 and len(fs) == 64, 'GER: expected twenty-eight political and thirty-six industrial/military/intelligence focuses')
     check(set(political) <= fs.keys() and values(tree, 'shared_focus') == ['GER_the_gilded_colossus'],
           'GER: shared political root must import the entire branch exactly once')
     rows = {}

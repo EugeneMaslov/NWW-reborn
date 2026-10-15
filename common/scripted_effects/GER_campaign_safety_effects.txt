@@ -1,0 +1,21 @@
+# Owner GER. Negative relation rules combine without clearing other protections.
+nww_GER_ai_install_campaign_guard = {
+ remove_relation_rule_override = { trigger = nww_GER_ai_unsafe_declaration can_not_declare_war = yes }
+ add_relation_rule_override = { trigger = nww_GER_ai_unsafe_declaration usage_desc = NWW_GER_campaign_safety_tt can_not_declare_war = yes }
+ set_country_flag = NWW_GER_campaign_guard_installed
+}
+nww_GER_ai_observe_campaign = {
+ if = { limit = { NOT = { has_country_flag = NWW_GER_campaign_guard_installed } } nww_GER_ai_install_campaign_guard = yes }
+ if = { limit = { has_capitulated = yes } set_country_flag = NWW_GER_campaign_defeat_pending }
+ if = { limit = { has_war = yes } set_country_flag = NWW_GER_campaign_was_at_war }
+ if = {
+  limit = { has_war = no OR = { has_country_flag = NWW_GER_campaign_was_at_war has_country_flag = NWW_GER_campaign_defeat_pending } }
+  if = {
+   limit = { has_country_flag = NWW_GER_campaign_defeat_pending }
+   set_country_flag = { flag = NWW_GER_campaign_recovery days = 730 }
+  }
+  else = { set_country_flag = { flag = NWW_GER_campaign_recovery days = 180 } }
+  clr_country_flag = NWW_GER_campaign_was_at_war
+  clr_country_flag = NWW_GER_campaign_defeat_pending
+ }
+}

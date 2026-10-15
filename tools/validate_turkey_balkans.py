@@ -32,6 +32,7 @@ tree = one(read(ROOT / 'common/national_focus/TUR_focuses.txt'), 'focus_tree')
 focuses = {one(f, 'id'): f for f in values(tree, 'focus')}
 effects = dict((k, v) for k, v, _ in read(ROOT / 'common/scripted_effects/TUR_effects.txt'))
 triggers = dict((k, v) for k, v, _ in read(ROOT / 'common/scripted_triggers/TUR_triggers.txt'))
+triggers.update({k:v for k,v,o in read(ROOT/'common/scripted_triggers/TUR_campaign_safety_triggers.txt')})
 hooks = one(read(ROOT / 'common/on_actions/TUR_on_actions.txt'), 'on_actions')
 campaigns = json.loads((ROOT / 'docs/TUR_balkan_objectives.json').read_text(encoding='utf-8'))
 strategies = read(ROOT / 'common/ai_strategy/TUR_balkans.txt')
@@ -56,7 +57,8 @@ def country(tag):
             'wars': set(), 'goals': set(), 'can_declare': set(campaigns),
             'war_support': 0.50, 'stability': 0.50, 'political_power': 250,
             'popularity': {'neutrality': 0.45, 'fascism': 0.14, 'democratic': 0.25, 'communism': 0.16},
-            'government': 'neutrality'}
+            'government': 'neutrality', 'strength':100 if tag=='TUR' else 30,
+            'major':False,'faction':None,'guarantees':set(),'capitulated':False,'civil_war':False,'surrender':0}
 
 
 def world():
@@ -67,7 +69,7 @@ def world():
 
 
 def target(value, w):
-    return {'ROOT': w['root']['tag'], 'FROM': w['from']['tag']}.get(value, value)
+    return {'ROOT': w['root']['tag'], 'FROM': w['from']['tag'],'PREV':w.get('prev',w['root'])['tag']}.get(value, value)
 
 
 def compare(actual, op, value):
@@ -95,6 +97,8 @@ def condition(node, scope, w):
             answer = condition(value, w['from'], w)
         elif key == 'FROM.FROM':
             answer = condition(value, w['giver'], w)
+        elif key=='any_other_country':
+            answer=any(condition(value,c,{**w,'prev':scope}) for c in w['countries'].values() if c['exists'] and c['tag']!=scope['tag'])
         elif key in w['countries']:
             answer = condition(value, w['countries'][key], w)
         elif key and key.isdigit():
@@ -105,6 +109,15 @@ def condition(node, scope, w):
             answer = scope['exists' if key == 'exists' else 'subject'] == (value == 'yes')
         elif key == 'is_ai':
             answer = scope['is_ai'] == (value == 'yes')
+        elif key in ('has_capitulated','has_civil_war','is_major','is_in_faction','has_war','is_faction_leader'):
+            actual={'has_capitulated':scope['capitulated'],'has_civil_war':scope['civil_war'],'is_major':scope['major'],'is_in_faction':scope['faction'] is not None,'has_war':bool(scope['wars']),'is_faction_leader':scope['faction']==scope['tag']}[key]
+            answer=actual==(value=='yes')
+        elif key=='has_guaranteed':answer=target(value,w) in scope['guarantees']
+        elif key=='strength_ratio':
+            n=next(n for n in value if n[0]=='ratio')
+            answer=compare(scope['strength']/max(1,w['countries'][target(one(value,'tag'),w)]['strength']),n[2],n[1])
+        elif key=='surrender_progress':answer=compare(scope['surrender'],op,value)
+        elif key=='has_stability':answer=compare(scope['stability'],op,value)
         elif key == 'has_focus_tree':
             answer = scope['focus_tree'] == value
         elif key == 'has_completed_focus':

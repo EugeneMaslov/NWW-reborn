@@ -41,7 +41,7 @@ for column,tension in enumerate((2,8)):
         if one(body,'orientation')=='center_up':x+=column_width//2
         if kind=='iconType':panel.alpha_composite(texture(one(body,'spriteType')),(x,y))
         else:
-            text=local[one(body,'text')].replace('[?AUS_bohemian_tension|0]',str(tension))
+            text=local[one(body,'text')].replace('[?AUS_bohemian_tension|0]',str(tension)).replace('[?AUS_bohemian_german_share|1]','40.0')
             color=(230,220,193,255)
             if '§G' in text:color=(125,203,134,255)
             if '§Y' in text:color=(235,206,98,255)

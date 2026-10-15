@@ -356,9 +356,14 @@ nww_TUR_prepare_bul_campaign = {
 					has_wargoal_against = BUL
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = BUL
+			if = {
+				limit = {
+					nww_TUR_ai_can_target_BUL = yes
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BUL
+				}
 			}
 		}
 	}
@@ -396,9 +401,14 @@ nww_TUR_prepare_gre_campaign = {
 					has_wargoal_against = GRE
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = GRE
+			if = {
+				limit = {
+					nww_TUR_ai_can_target_GRE = yes
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = GRE
+				}
 			}
 		}
 	}
@@ -436,9 +446,14 @@ nww_TUR_prepare_yug_campaign = {
 					has_wargoal_against = YUG
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = YUG
+			if = {
+				limit = {
+					nww_TUR_ai_can_target_YUG = yes
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = YUG
+				}
 			}
 		}
 	}
@@ -472,9 +487,14 @@ nww_TUR_prepare_alb_campaign = {
 					has_wargoal_against = ALB
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = ALB
+			if = {
+				limit = {
+					nww_TUR_ai_can_target_ALB = yes
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ALB
+				}
 			}
 		}
 	}
@@ -513,9 +533,14 @@ nww_TUR_prepare_rom_campaign = {
 					has_wargoal_against = ROM
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = ROM
+			if = {
+				limit = {
+					nww_TUR_ai_can_target_ROM = yes
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ROM
+				}
 			}
 		}
 	}
@@ -551,9 +576,14 @@ nww_TUR_prepare_cro_campaign = {
 					has_wargoal_against = CRO
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = CRO
+			if = {
+				limit = {
+					nww_TUR_ai_can_target_CRO = yes
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRO
+				}
 			}
 		}
 	}

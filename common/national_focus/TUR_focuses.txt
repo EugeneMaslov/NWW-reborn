@@ -1208,6 +1208,7 @@ focus_tree = {
 			}
 			has_war_support > 0.30
 			date > 1937.1.1
+			nww_TUR_ai_can_target_BUL = yes
 		}
 		bypass = {
 			48 = {
@@ -1254,6 +1255,7 @@ focus_tree = {
 			}
 			has_war_support > 0.30
 			date > 1937.1.1
+			nww_TUR_ai_can_target_GRE = yes
 		}
 		bypass = {
 			47 = {
@@ -2110,6 +2112,7 @@ focus_tree = {
 			}
 			has_war_support > 0.30
 			date > 1937.1.1
+			nww_TUR_ai_can_target_YUG = yes
 		}
 		bypass = {
 			105 = {
@@ -2165,6 +2168,7 @@ focus_tree = {
 			}
 			has_war_support > 0.30
 			date > 1937.1.1
+			nww_TUR_ai_can_target_ALB = yes
 		}
 		bypass = {
 			44 = {
@@ -2208,6 +2212,7 @@ focus_tree = {
 			}
 			has_war_support > 0.30
 			date > 1937.1.1
+			nww_TUR_ai_can_target_ROM = yes
 		}
 		bypass = {
 			46 = {
@@ -2266,6 +2271,7 @@ focus_tree = {
 			}
 			has_war_support > 0.30
 			date > 1937.1.1
+			nww_TUR_ai_can_target_CRO = yes
 		}
 		bypass = {
 			103 = {

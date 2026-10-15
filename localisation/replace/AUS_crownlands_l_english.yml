@@ -9,6 +9,8 @@
  AUS_nww_meter_help:0 "§YTension between Vienna and Prague§!\nEvery 60 days: §R+1§!. At §R10§!, Bohemia secedes.\nEach point: §R-1%§! stability and factory output.\nTalks: §G-2§! after 20 days for 50 political power.\nInvestment: §G-2§! after 35 days for 75 political power (three times maximum).\nBohemian reform focuses reduce tension; the final settlement ends its growth."
  AUS_nww_panel_title:0 "Bohemian Sovereignty"
  AUS_nww_panel_value:0 "Tension: [?AUS_bohemian_tension|0] / 10"
+ AUS_nww_panel_influence:0 "German share: [?AUS_bohemian_german_share|1]%"
+ AUS_nww_german_influence_tt:0 "§YGerman intervention§!\nGerman share: §Y[?AUS_bohemian_german_share|1]%§! of current tension. An agency operation adds +2; at the 10-point cap, only the actual increase counts. Talks and reforms proportionally reduce German pressure.\nIf the German share at secession is §Ystrictly above 60%§!, the new Bohemia becomes Germany's puppet. Exactly 60% is insufficient."
  AUS_nww_panel_vienna:0 "VIENNA"
  AUS_nww_panel_prague:0 "PRAGUE"
  AUS_nww_panel_zero:0 "0"

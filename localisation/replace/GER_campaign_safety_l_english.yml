@@ -1,0 +1,11 @@
+﻿l_english:
+ NWW_GER_campaign_safety_tt:0 "Germany is recovering or the target would draw it into an unprepared war. AI conducts one offensive campaign at a time, with 180 days of recovery after peace and two years after capitulation."
+ nww_GER_ai_can_prepare_campaign:0 "AI must finish its current war and restore its army and domestic stability."
+ nww_GER_ai_can_target_AUS:0 "AI must finish recovery and assess Austria, its allies and guarantors."
+ nww_GER_ai_can_target_LTB:0 "AI: peace, recovery and assessment of the Lithuanian-Belarusian campaign."
+ nww_GER_ai_can_target_POL:0 "AI: peace, recovery and assessment of the Polish campaign."
+ nww_GER_ai_can_target_MKN:0 "AI: peace, recovery and assessment of the Free Territory campaign."
+ nww_GER_ai_can_target_UKR:0 "AI: peace, recovery and assessment of the Ukrainian campaign."
+ nww_GER_ai_can_target_SOV:0 "AI: peace, recovery and assessment of Soviet Russia and its allies."
+ nww_GER_ai_can_target_FRA:0 "AI: peace, recovery and assessment of France and its allies."
+ nww_GER_ai_can_target_ENG:0 "AI: peace, recovery and assessment of Britain and its allies."

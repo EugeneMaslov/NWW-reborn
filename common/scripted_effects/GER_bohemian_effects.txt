@@ -1,0 +1,55 @@
+# Shared GER/AUS mechanic owned by GER. These effects run in Austrian scope.
+# Current German-attributable tension is reduced proportionally by Austrian reforms.
+GER_nww_update_bohemian_influence = {
+ if = { limit = { NOT = { has_variable = AUS_bohemian_german_pressure } } set_variable = { AUS_bohemian_german_pressure = 0 } }
+ clamp_variable = { var = AUS_bohemian_german_pressure min = 0 max = 10 }
+ if = {
+  limit = { check_variable = { var = AUS_bohemian_german_pressure value = AUS_bohemian_tension compare = greater_than } }
+  set_variable = { AUS_bohemian_german_pressure = AUS_bohemian_tension }
+ }
+ set_variable = { AUS_bohemian_german_share = 0 }
+ if = {
+  limit = { check_variable = { AUS_bohemian_tension > 0 } }
+  set_variable = { AUS_bohemian_german_share = AUS_bohemian_german_pressure }
+  divide_variable = { AUS_bohemian_german_share = AUS_bohemian_tension }
+  multiply_variable = { AUS_bohemian_german_share = 100 }
+ }
+ # Compare 5 * German pressure > 3 * total, avoiding a rounded percentage.
+ set_variable = { AUS_bohemian_german_weight = AUS_bohemian_german_pressure }
+ multiply_variable = { AUS_bohemian_german_weight = 5 }
+ set_variable = { AUS_bohemian_german_threshold = AUS_bohemian_tension }
+ multiply_variable = { AUS_bohemian_german_threshold = 3 }
+}
+GER_nww_support_bohemian_autonomists = {
+ if = {
+  limit = { GER_nww_bohemian_target_open = yes }
+  # Credit only pressure actually added before the 10-point cap.
+  set_variable = { AUS_bohemian_operation_gain = 10 }
+  subtract_from_variable = { AUS_bohemian_operation_gain = AUS_bohemian_tension }
+  clamp_variable = { var = AUS_bohemian_operation_gain min = 0 max = 2 }
+  add_to_variable = { AUS_bohemian_tension = AUS_bohemian_operation_gain }
+  add_to_variable = { AUS_bohemian_german_pressure = AUS_bohemian_operation_gain }
+  AUS_nww_update_bohemian_spirit = yes
+  if = {
+   limit = { check_variable = { var = AUS_bohemian_tension value = 10 compare = greater_than_or_equals } }
+   country_event = { id = nww_aus_overhaul.1 }
+  }
+ }
+}
+GER_nww_settle_bohemian_influence = {
+ GER_nww_update_bohemian_influence = yes
+ if = {
+  limit = {
+   has_country_flag = AUS_nww_fresh_bohemian_secession
+   check_variable = { var = AUS_bohemian_german_weight value = AUS_bohemian_german_threshold compare = greater_than }
+   CZE = { exists = yes is_subject = no is_in_faction = no owns_state = 9 NOT = { has_war_with = GER } }
+   GER = { exists = yes is_subject = no NOT = { has_war_with = AUS } NOT = { has_war_with = CZE } }
+  }
+  GER = {
+   set_autonomy = { target = CZE autonomy_state = autonomy_puppet end_wars = no end_civil_wars = no }
+   country_event = { id = nww_ger_bohemia.1 }
+  }
+  CZE = { set_country_flag = GER_nww_bohemian_client }
+ }
+ clr_country_flag = AUS_nww_fresh_bohemian_secession
+}

@@ -12,6 +12,7 @@ class World:
         self.effects,self.events=effects,events
         self.root='AUS';self.pending=[]
         self.countries={tag:{'exists':tag!='CZE','flags':set(),'vars':{'AUS_bohemian_tension':2,'AUS_bohemian_investments':0},'missions':set(),'dynamic':set(),'focuses':set(),'stability':0.5,'subject':False,'wars':set(),'claims':set(),'cores':set()} for tag in ('AUS','CZE','GER','POL','ROM')}
+        self.triggers={k:v for k,v,o in read(ROOT/'common/scripted_triggers/GER_bohemian_triggers.txt')}
         self.states={str(sid):{'owner':owner,'controller':owner,'cores':{owner}} for sid,owner in [(4,'AUS'),(9,'AUS'),(69,'AUS'),(72,'AUS'),(74,'AUS'),(75,'AUS'),(88,'POL'),(89,'POL'),(91,'POL'),(80,'ROM')]}
     def data(self,scope):return self.states[scope] if scope in self.states else self.countries[scope]
     def number(self,value,scope):
@@ -26,15 +27,19 @@ class World:
             elif key=='NOT':result=not self.test(value,scope)
             elif key=='OR':result=any(self.test([n],scope) for n in value)
             elif key=='AND':result=self.test(value,scope)
+            elif key in self.triggers:result=self.test(self.triggers[key],scope)
             elif key=='has_country_flag':result=value in data['flags']
             elif key=='has_variable':result=value in data['vars']
             elif key=='has_completed_focus':result=value in data['focuses']
             elif key=='has_active_mission':result=value in data['missions']
             elif key=='has_dynamic_modifier':result=one(value,'modifier') in data['dynamic']
-            elif key=='has_focus_tree':result=value=='AUS_focus'
+            elif key=='has_focus_tree':result=value==('GER_focus' if scope=='GER' else 'AUS_focus')
             elif key=='tag':result=scope==value
             elif key=='exists':result=data['exists']==(value=='yes')
             elif key=='is_subject':result=data['subject']==(value=='yes')
+            elif key=='is_in_faction':result=bool(data.get('faction',False))==(value=='yes')
+            elif key=='is_ally_with':result=value in data.get('allies',set())
+            elif key=='owns_state':result=self.states[value]['owner']==scope
             elif key=='has_war_with':result=value in data['wars']
             elif key=='is_owned_by':result=data['owner']==(self.root if value=='ROOT' else value)
             elif key=='is_owned_and_controlled_by':result=data['owner']==data['controller']==(self.root if value=='ROOT' else value)
@@ -57,11 +62,11 @@ class World:
             elif key in self.effects:self.apply(self.effects[key],scope)
             elif key in self.states or key in self.countries:self.apply(value,key)
             elif key=='ROOT':self.apply(value,self.root)
-            elif key in ('set_variable','add_to_variable','subtract_from_variable','multiply_variable'):
+            elif key in ('set_variable','add_to_variable','subtract_from_variable','multiply_variable','divide_variable'):
                 for var,operand,operator in value:
                     if var=='tooltip':continue
                     n=self.number(operand,scope);old=data['vars'].get(var,0)
-                    data['vars'][var]={'set_variable':lambda:n,'add_to_variable':lambda:old+n,'subtract_from_variable':lambda:old-n,'multiply_variable':lambda:old*n}[key]()
+                    data['vars'][var]={'set_variable':lambda:n,'add_to_variable':lambda:old+n,'subtract_from_variable':lambda:old-n,'multiply_variable':lambda:old*n,'divide_variable':lambda:old/n}[key]()
             elif key=='clamp_variable':
                 var=one(value,'var');data['vars'][var]=max(float(one(value,'min')),min(float(one(value,'max')),data['vars'].get(var,0)))
             elif key=='set_country_flag':data['flags'].add(value)
@@ -80,6 +85,8 @@ class World:
             elif key=='set_cosmetic_tag':data['cosmetic']=value
             elif key=='set_politics':data['government']=one(value,'ruling_party')
             elif key=='create_wargoal':data.setdefault('goals',[]).append((one(value,'type'),one(value,'target')))
+            elif key=='set_autonomy':
+                target=self.countries[one(value,'target')];target['subject']=True;target['overlord']=scope
             else:raise AssertionError('Unmodeled Austrian effect '+str(key))
 
 def main():
@@ -92,6 +99,7 @@ def main():
     tree=one(read(ROOT/'common/national_focus/AUS_focuses.txt'),'focus_tree');fs={one(f,'id'):f for f in values(tree,'focus')}
     check(100<=len(fs)<=200,'Playability count outside requested 100–200')
     effects=dict((k,v) for k,v,o in read(ROOT/'common/scripted_effects/AUS_overhaul_effects.txt'))
+    effects.update((k,v) for k,v,o in read(ROOT/'common/scripted_effects/GER_bohemian_effects.txt'))
     events={one(e,'id'):e for e in values(read(ROOT/'events/AUS_overhaul_events.txt'),'country_event')}
     decisions=one(read(ROOT/'common/decisions/AUS_decisions.txt'),'AUS_nww_crown_lands')
     native_decision_sprites=set(re.findall(r'name\s*=\s*"(GFX_decision_[^"]+)"',(game/'interface/decisions.gfx').read_text(encoding='utf-8-sig')))

@@ -586,6 +586,11 @@ AUS_nww_rebuild_development = {
 	}
 }
 AUS_nww_reduce_bohemian_tension = {
+	GER_nww_update_bohemian_influence = yes
+	if = {
+		limit = { check_variable = { AUS_bohemian_tension > 0 } }
+		divide_variable = { AUS_bohemian_german_pressure = AUS_bohemian_tension }
+	}
 	subtract_from_variable = {
 		AUS_bohemian_tension = 2
 	}
@@ -594,9 +599,11 @@ AUS_nww_reduce_bohemian_tension = {
 		min = 0
 		max = 10
 	}
+	multiply_variable = { AUS_bohemian_german_pressure = AUS_bohemian_tension }
 	AUS_nww_update_bohemian_spirit = yes
 }
 AUS_nww_update_bohemian_spirit = {
+	GER_nww_update_bohemian_influence = yes
 	set_variable = {
 		AUS_bohemian_stability = AUS_bohemian_tension
 	}
@@ -813,6 +820,7 @@ AUS_nww_install_alternative = {
 	set_country_flag = AUS_nww_political_settlement
 }
 AUS_nww_release_bohemia = {
+	if = { limit = { CZE = { exists = no } } set_country_flag = AUS_nww_fresh_bohemian_secession }
 	set_country_flag = AUS_nww_bohemia_seceded
 	remove_mission = AUS_nww_bohemian_drift
 	remove_dynamic_modifier = {
@@ -878,8 +886,10 @@ AUS_nww_release_bohemia = {
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
+			election_frequency = 48
 		}
 		set_stability = 0.60
 	}
+	GER_nww_settle_bohemian_influence = yes
 	add_stability = -0.10
 }

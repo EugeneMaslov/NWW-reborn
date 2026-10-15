@@ -1,0 +1,19 @@
+{
+  "key": "focus_TUR_air_5",
+  "kind": "focus",
+  "sprite": "GFX_goal_continuous_air_production",
+  "source_texture": "gfx/interface/goals/goal_continuous_air_production.dds",
+  "reference": "docs/art/TUR/references/focus_TUR_air_5.png",
+  "consumers": [
+    "TUR_air_5"
+  ],
+  "names": [
+    "Air-base expansion"
+  ],
+  "reference_sheet": "docs/art/TUR/focus_references.png",
+  "reference_column": 6,
+  "reference_row": 7,
+  "reference_number": 48,
+  "prompt": "Use case: stylized-concept. Asset type: ONE transparent Hearts of Iron IV Ottoman focus icon for NWW Reborn, 1936 alternate history where World War I never happened.\nReference image 1 is a CATALOG, not the requested output. Use ONLY item number 48, row 7, column 6; its subject is Air-base expansion. Image 2 is style reference: already regenerated Lithuanian-Belarusian national-spirit icons.\nCreatively redraw this single current icon, preserving its functional theme and recognizable motif, adapting foreign insignia to Ottoman identity. \nMatch the LTB references' polished historical strategy-game painted relief: engraved aged brass, dark steel, dimensional ivory highlights, controlled crimson/green/turquoise accents where meaningful, clean dark contours. Richly drawn but readable at 95x95. Each icon has its own subject silhouette; do not use a universal repeated badge.\nOne centered compact emblem, square canvas, generous transparent margin on all sides. True transparent background and clean alpha. No text, digits, labels, atlas, extra icons, modern emblems, Nazi symbols, Kemalist or WWI narrative, watermark.",
+  "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-cf8694c8-7e2d-42cb-a686-0faa099bdea6.png"
+}
