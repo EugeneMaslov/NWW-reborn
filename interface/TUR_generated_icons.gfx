@@ -1,0 +1,3108 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_reform_the_army
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_reform_the_army.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_reform_the_army.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_reform_the_army.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_reform_the_army_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_reform_the_army.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_political_rw
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_political_rw.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_political_rw.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_political_rw.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_political_rw_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_political_rw.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_prom
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_prom.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_prom.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_prom.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_prom_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_prom.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_fascism
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_fascism.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_fascism.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_fascism.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_fascism_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_fascism.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_set_capital
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_set_capital.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_set_capital.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_set_capital.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_set_capital_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_set_capital.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_dux_national
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_dux_national.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_dux_national.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_dux_national.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_dux_national_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_dux_national.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_not_fascism
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_not_fascism.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_not_fascism.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_not_fascism.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_not_fascism_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_not_fascism.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_tur_bred
+		texturefile = "gfx/interface/goals/TUR/focus_tur_bred.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_tur_bred.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_tur_bred.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_tur_bred_shine
+		texturefile = "gfx/interface/goals/TUR/focus_tur_bred.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_tur_polos
+		texturefile = "gfx/interface/goals/TUR/focus_tur_polos.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_tur_polos.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_tur_polos.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_tur_polos_shine
+		texturefile = "gfx/interface/goals/TUR/focus_tur_polos.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_proper_stoper
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_proper_stoper.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_proper_stoper.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_proper_stoper.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_proper_stoper_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_proper_stoper.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_kosa_smerti
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_kosa_smerti.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_kosa_smerti.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_kosa_smerti.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_kosa_smerti_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_kosa_smerti.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_store_eng
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_store_eng.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_store_eng.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_store_eng.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_store_eng_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_store_eng.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_dem
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_dem.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_dem.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_dem.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_dem_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_dem.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_communism
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_communism.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_communism.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_communism.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_communism_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_communism.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_economic
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_economic.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_economic.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_economic.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_economic_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_economic.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_resourse_icons
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_resourse_icons.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_resourse_icons.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_resourse_icons.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_resourse_icons_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_resourse_icons.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_2
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_2.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_2.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_2.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_2_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Infrastructure_up
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Infrastructure_up.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Infrastructure_up.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Infrastructure_up.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Infrastructure_up_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Infrastructure_up.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_5
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_5.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_5.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_5.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_5_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_Factory_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_Factory_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_Factory_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_Factory_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_Factory_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_Factory_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_civ_factory_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_civ_factory_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_civ_factory_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_civ_factory_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_civ_factory_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_civ_factory_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_order
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_order.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_order.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_new_order.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_new_order_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_new_order.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_3
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_3.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_3.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_3.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_3_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_6
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_6.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_6.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_6.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_6_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_6.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_2
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_2.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_2.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_2.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_2_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_3
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_3.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_3.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_3.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_3_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_5
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_5.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_5.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_5.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_5_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_4
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_4.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_4.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_4.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_4_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_7
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_7.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_7.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Factory_7.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Factory_7_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Factory_7.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nationalist_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nationalist_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nationalist_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nationalist_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nationalist_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nationalist_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nationalist_2
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nationalist_2.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nationalist_2.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nationalist_2.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nationalist_2_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nationalist_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nationalist_4
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nationalist_4.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nationalist_4.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nationalist_4.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nationalist_4_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nationalist_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_2
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_2.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_2.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_2.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_2_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_3
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_3.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_3.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_3.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_3_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Doctrine_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Doctrine_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Doctrine_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Doctrine_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Doctrine_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Doctrine_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Artillery_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Artillery_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Artillery_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Artillery_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Artillery_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Artillery_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_4
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_4.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_4.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_4.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_4_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_5
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_5.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_5.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_5.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_5_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_8
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_8.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_8.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_8.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_8_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_8.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_7
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_7.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_7.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_Army_7.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_Army_7_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_Army_7.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_2
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_2.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_2.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_2.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_2_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_3
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_3.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_3.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_3.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_3_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_3.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_4
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_4.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_4.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_4.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_4_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_4.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_5
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_5.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_5.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_5.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_5_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_5.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_6
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_6.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_6.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_6.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_6_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_6.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_7
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_7.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_7.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_air_7.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_air_7_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_air_7.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_war_with_bulgaria
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_war_with_bulgaria.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_war_with_bulgaria.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_war_with_bulgaria.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_war_with_bulgaria_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_war_with_bulgaria.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_snova_copi
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_snova_copi.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_snova_copi.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_snova_copi.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_snova_copi_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_snova_copi.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_afg_bolgi
+		texturefile = "gfx/interface/goals/TUR/focus_afg_bolgi.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_afg_bolgi.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_afg_bolgi.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_afg_bolgi_shine
+		texturefile = "gfx/interface/goals/TUR/focus_afg_bolgi.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_research_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_research_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_research_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_research_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_research_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_research_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_research_2
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_research_2.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_research_2.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_research_2.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_research_2_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_research_2.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_rocketly_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_rocketly_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_rocketly_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_rocketly_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_rocketly_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_rocketly_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nuclear_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nuclear_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nuclear_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_nuclear_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_nuclear_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_nuclear_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_supereq_1
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_supereq_1.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_supereq_1.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_supereq_1.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_supereq_1_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_supereq_1.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_6
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_6.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_6.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_TUR_capitalism_6.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_TUR_capitalism_6_shine
+		texturefile = "gfx/interface/goals/TUR/focus_TUR_capitalism_6.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_sultans_shadow
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_sultans_shadow.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_sultans_shadow.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_sultans_shadow.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_sultans_shadow_shine
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_sultans_shadow.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_balkan_mandate
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_balkan_mandate.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_balkan_mandate.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_balkan_mandate.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_balkan_mandate_shine
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_balkan_mandate.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_albanian_campaign
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_albanian_campaign.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_albanian_campaign.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_albanian_campaign.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_albanian_campaign_shine
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_albanian_campaign.dds"
+	}
+	spriteType = {
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_romanian_campaign
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_romanian_campaign.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_romanian_campaign.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/TUR/focus_NWW_TUR_romanian_campaign.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_NWW_TUR_generated_focus_NWW_TUR_romanian_campaign_shine
+		texturefile = "gfx/interface/goals/TUR/focus_NWW_TUR_romanian_campaign.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_imperial_crisis
+		texturefile = "gfx/interface/ideas/TUR/idea_imperial_crisis.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_imperial_compact
+		texturefile = "gfx/interface/ideas/TUR/idea_imperial_compact.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_NWW_TUR_balkan_administration
+		texturefile = "gfx/interface/ideas/TUR/idea_NWW_TUR_balkan_administration.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_NWW_TUR_war_industry
+		texturefile = "gfx/interface/ideas/TUR/idea_NWW_TUR_war_industry.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_silly_army_nowar
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_silly_army_nowar.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_good_army
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_good_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_perfect_army
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_perfect_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_agricultural_economic
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_agricultural_economic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_small_industry_economic
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_small_industry_economic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_industry_economic
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_industry_economic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_new_democ
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_new_democ.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_comun_d
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_comun_d.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_fascism_d
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_fascism_d.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_not_fascism_d
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_not_fascism_d.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_factory_idea
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_factory_idea.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_capitalism_economic
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_capitalism_economic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_NFT
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_NFT.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_IPT
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_IPT.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_gold
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_gold.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_TAS
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_TAS.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_NNSP
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_NNSP.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_religion
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_religion.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_supply_reform
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_supply_reform.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_disagree_reform
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_disagree_reform.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_universal_army
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_universal_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_closed_cities
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_closed_cities.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_TNPA
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_TNPA.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_tur_dominatuim_turco
+		texturefile = "gfx/interface/ideas/TUR/idea_tur_dominatuim_turco.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_NWW_TUR_federal_constitution
+		texturefile = "gfx/interface/ideas/TUR/idea_NWW_TUR_federal_constitution.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_NWW_TUR_workers_federation
+		texturefile = "gfx/interface/ideas/TUR/idea_NWW_TUR_workers_federation.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_idea_TUR_national_economic
+		texturefile = "gfx/interface/ideas/TUR/idea_TUR_national_economic.dds"
+	}
+	spriteType = {
+		name = GFX_decision_NWW_TUR_generated_decision_NWW_TUR_campaign_democratic
+		texturefile = "gfx/interface/decisions/TUR/decision_NWW_TUR_campaign_democratic.dds"
+	}
+	spriteType = {
+		name = GFX_decision_NWW_TUR_generated_decision_NWW_TUR_negotiate_officers
+		texturefile = "gfx/interface/decisions/TUR/decision_NWW_TUR_negotiate_officers.dds"
+	}
+	spriteType = {
+		name = GFX_decision_NWW_TUR_generated_category_NWW_TUR_political_campaigns
+		texturefile = "gfx/interface/decisions/TUR/category_NWW_TUR_political_campaigns.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_tulomsas
+		texturefile = "gfx/interface/ideas/TUR/company_tur_tulomsas.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_koc_ticaret_as
+		texturefile = "gfx/interface/ideas/TUR/company_tur_koc_ticaret_as.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_generic_air_manufacturer_2
+		texturefile = "gfx/interface/ideas/TUR/company_generic_air_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_generic_air_manufacturer_1
+		texturefile = "gfx/interface/ideas/TUR/company_generic_air_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_man_five_year_plan_air
+		texturefile = "gfx/interface/ideas/TUR/company_man_five_year_plan_air.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_gok_okulu
+		texturefile = "gfx/interface/ideas/TUR/company_tur_gok_okulu.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_nud
+		texturefile = "gfx/interface/ideas/TUR/company_tur_nud.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_tomtasch
+		texturefile = "gfx/interface/ideas/TUR/company_tur_tomtasch.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_golcuk_naval_base
+		texturefile = "gfx/interface/ideas/TUR/company_tur_golcuk_naval_base.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_cgt
+		texturefile = "gfx/interface/ideas/TUR/company_tur_cgt.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_generic_infantry_equipment_manufacturer_3
+		texturefile = "gfx/interface/ideas/TUR/company_generic_infantry_equipment_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_killigil_endustrileri
+		texturefile = "gfx/interface/ideas/TUR/company_tur_killigil_endustrileri.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_odpa
+		texturefile = "gfx/interface/ideas/TUR/company_tur_odpa.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_tdpa
+		texturefile = "gfx/interface/ideas/TUR/company_tur_tdpa.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_tcdd
+		texturefile = "gfx/interface/ideas/TUR/company_tur_tcdd.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_PRC_nanjing_wireless_electronics_plant
+		texturefile = "gfx/interface/ideas/TUR/company_PRC_nanjing_wireless_electronics_plant.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_balkan_central_bank_wealthy_greece
+		texturefile = "gfx/interface/ideas/TUR/company_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+	spriteType = {
+		name = GFX_idea_NWW_TUR_generated_company_tur_petrol_ofisi
+		texturefile = "gfx/interface/ideas/TUR/company_tur_petrol_ofisi.dds"
+	}
+}

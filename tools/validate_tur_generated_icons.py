@@ -28,7 +28,8 @@ def main():
         im=Image.open(ROOT/texture).convert('RGBA'); alpha=im.getchannel('A')
         assert list(im.size)==job['canvas'] and alpha.getextrema()[0]==0, key+': invalid canvas/alpha'
         bounds=alpha.point(lambda a:255 if a>8 else 0).getbbox()
-        assert bounds and min(bounds[:2])>=4 and bounds[2]<=im.width-4 and bounds[3]<=im.height-4, key+': art clipped'
+        clearance=6 if kind=='focus' else 3
+        assert bounds and min(bounds[:2])>=clearance and bounds[2]<=im.width-clearance and bounds[3]<=im.height-clearance, key+': art clipped'
         original=ROOT/job['saved_source']
         assert original.exists() and original.with_suffix('.prompt.txt').stat().st_size>100, key+': missing source/prompt'
         for consumer in job['consumers']:

@@ -74,11 +74,11 @@ def main():
     paths={kind:ROOT/path if (ROOT/path).exists() else Path(args.game)/path for kind,path in FILES.items()}
     baseline = {kind:digest(path) for kind,path in paths.items()}
     baseline_path=ART/'mechanics_baseline.json'
-    if not baseline_path.exists(): baseline_path.write_text(json.dumps(baseline,indent=2)+'\n',encoding='utf-8')
+    if not baseline_path.exists(): baseline_path.write_text(json.dumps(baseline,indent=2)+'\n',encoding='utf-8',newline='\n')
     else:
         prior=json.loads(baseline_path.read_text())
         assert all(baseline[k]==v for k,v in prior.items()), 'Gameplay changed since art baseline'
-        baseline_path.write_text(json.dumps(baseline,indent=2)+'\n',encoding='utf-8')
+        baseline_path.write_text(json.dumps(baseline,indent=2)+'\n',encoding='utf-8',newline='\n')
     template = next(n for k,n,o in one(read(Path(args.game)/'interface/goals_shine.gfx'),'spriteTypes')
                     if one(n,'name') == 'GFX_focus_generic_diplomatic_treaty_shine')
     sprites=[]; installed=[]; maps={kind:{} for kind in FILES}; canvases={kind:[] for kind in ('focus','idea','decision','category','company')}
@@ -87,7 +87,7 @@ def main():
         job=records[j['key']]; key=j['key']; kind=j['kind']
         source=ART/'generated'/f'{key}.png'; source.parent.mkdir(exist_ok=True)
         if not source.exists(): shutil.copyfile(job['generated_path'],source)
-        source.with_suffix('.prompt.txt').write_text(job['prompt']+'\n',encoding='utf-8')
+        source.with_suffix('.prompt.txt').write_text(job['prompt']+'\n',encoding='utf-8',newline='\n')
         im=Image.open(source).convert('RGBA'); alpha=im.getchannel('A')
         bounds=alpha.point(lambda a:255 if a>8 else 0).getbbox()
         if not bounds or alpha.getextrema()[0] != 0: raise ValueError(key+': missing transparent background')
@@ -127,10 +127,10 @@ def main():
             p=ROOT/path; p.parent.mkdir(parents=True,exist_ok=True)
             text=paths[kind].read_text(encoding='utf-8-sig')
             if paths[kind]!=p: text='# NWW TUR artwork override: native gameplay preserved; see docs/TUR_generated_icons.md.\n'+text
-            p.write_text(replace_fields(text,maps[kind],kind),encoding='utf-8')
+            p.write_text(replace_fields(text,maps[kind],kind),encoding='utf-8',newline='\n')
             assert digest(p)==baseline[kind], path+': gameplay unexpectedly changed'
-        (ROOT/'interface/TUR_generated_icons.gfx').write_text(dump([('spriteTypes',sprites,'=')])+'\n',encoding='utf-8')
-        (ART/'installation.json').write_text(json.dumps({'jobs':installed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        (ROOT/'interface/TUR_generated_icons.gfx').write_text(dump([('spriteTypes',sprites,'=')])+'\n',encoding='utf-8',newline='\n')
+        (ART/'installation.json').write_text(json.dumps({'jobs':installed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f'{"Previewed" if args.preview_only else "Installed"} {len(installed)}/{len(jobs)} Ottoman icons.')
 
 if __name__=='__main__': main()

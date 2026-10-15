@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		# The court, officer corps and provincial councils settle this shared crisis in stages.
 		NWW_TUR_imperial_crisis = {
-			picture = generic_political_support
+			picture = NWW_TUR_generated_idea_imperial_crisis
 			removal_cost = -1
 			allowed = { original_tag = TUR }
 			modifier = {
@@ -12,7 +12,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_imperial_crisis_1 = {
-			picture = generic_political_support
+			picture = NWW_TUR_generated_idea_imperial_crisis
 			removal_cost = -1
 			allowed = { original_tag = TUR }
 			modifier = {
@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_imperial_crisis_2 = {
-			picture = generic_political_support
+			picture = NWW_TUR_generated_idea_imperial_crisis
 			removal_cost = -1
 			allowed = { original_tag = TUR }
 			modifier = {
@@ -31,7 +31,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_imperial_compact = {
-			picture = generic_political_support
+			picture = NWW_TUR_generated_idea_imperial_compact
 			removal_cost = -1
 			allowed = { original_tag = TUR }
 			modifier = {
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_balkan_administration = {
-			picture = nww_legacy_supply_reform
+			picture = NWW_TUR_generated_idea_NWW_TUR_balkan_administration
 			removal_cost = -1
 			allowed = { original_tag = TUR }
 			modifier = {
@@ -51,7 +51,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_war_industry = {
-			picture = generic_production_bonus
+			picture = NWW_TUR_generated_idea_NWW_TUR_war_industry
 			removal_cost = -1
 			allowed = { original_tag = TUR }
 			modifier = {
@@ -60,7 +60,7 @@ ideas = {
 			}
 		}
 		tur_silly_army_nowar = {
-			picture = nww_legacy_silly_army
+			picture = NWW_TUR_generated_idea_tur_silly_army_nowar
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -72,7 +72,7 @@ ideas = {
 			}
 		}
 		tur_silly_army_nowar_1 = {
-			picture = nww_legacy_silly_army
+			picture = NWW_TUR_generated_idea_tur_silly_army_nowar
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -84,7 +84,7 @@ ideas = {
 			}
 		}
 		tur_silly_army_nowar_2 = {
-			picture = nww_legacy_silly_army
+			picture = NWW_TUR_generated_idea_tur_silly_army_nowar
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -96,7 +96,7 @@ ideas = {
 			}
 		}
 		tur_silly_army_nowar_3 = {
-			picture = nww_legacy_silly_army
+			picture = NWW_TUR_generated_idea_tur_silly_army_nowar
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -108,7 +108,7 @@ ideas = {
 			}
 		}
 		tur_good_army_1 = {
-			picture = nww_legacy_good_army
+			picture = NWW_TUR_generated_idea_tur_good_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -120,7 +120,7 @@ ideas = {
 			}
 		}
 		tur_good_army_2 = {
-			picture = nww_legacy_good_army
+			picture = NWW_TUR_generated_idea_tur_good_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -132,7 +132,7 @@ ideas = {
 			}
 		}
 		tur_good_army_3 = {
-			picture = nww_legacy_good_army
+			picture = NWW_TUR_generated_idea_tur_good_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -144,7 +144,7 @@ ideas = {
 			}
 		}
 		tur_good_army_4 = {
-			picture = nww_legacy_good_army
+			picture = NWW_TUR_generated_idea_tur_good_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -156,7 +156,7 @@ ideas = {
 			}
 		}
 		tur_perfect_army_1 = {
-			picture = nww_legacy_perfect_army
+			picture = NWW_TUR_generated_idea_tur_perfect_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -168,7 +168,7 @@ ideas = {
 			}
 		}
 		tur_perfect_army_2 = {
-			picture = nww_legacy_perfect_army
+			picture = NWW_TUR_generated_idea_tur_perfect_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -180,7 +180,7 @@ ideas = {
 			}
 		}
 		tur_perfect_army_3 = {
-			picture = nww_legacy_perfect_army
+			picture = NWW_TUR_generated_idea_tur_perfect_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -192,7 +192,7 @@ ideas = {
 			}
 		}
 		tur_perfect_army_4 = {
-			picture = nww_legacy_perfect_army
+			picture = NWW_TUR_generated_idea_tur_perfect_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -204,7 +204,7 @@ ideas = {
 			}
 		}
 		tur_agricultural_economic_1 = {
-			picture = nww_legacy_tur_agricult
+			picture = NWW_TUR_generated_idea_tur_agricultural_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -215,7 +215,7 @@ ideas = {
 			}
 		}
 		tur_agricultural_economic_2 = {
-			picture = nww_legacy_tur_agricult
+			picture = NWW_TUR_generated_idea_tur_agricultural_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -226,7 +226,7 @@ ideas = {
 			}
 		}
 		tur_agricultural_economic_3 = {
-			picture = nww_legacy_tur_agricult
+			picture = NWW_TUR_generated_idea_tur_agricultural_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -237,7 +237,7 @@ ideas = {
 			}
 		}
 		tur_agricultural_economic_4 = {
-			picture = nww_legacy_tur_agricult
+			picture = NWW_TUR_generated_idea_tur_agricultural_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -248,7 +248,7 @@ ideas = {
 			}
 		}
 		tur_small_industry_economic_1 = {
-			picture = nww_legacy_tur_small_industy
+			picture = NWW_TUR_generated_idea_tur_small_industry_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -259,7 +259,7 @@ ideas = {
 			}
 		}
 		tur_small_industry_economic_2 = {
-			picture = nww_legacy_tur_small_industy
+			picture = NWW_TUR_generated_idea_tur_small_industry_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -270,7 +270,7 @@ ideas = {
 			}
 		}
 		tur_small_industry_economic_3 = {
-			picture = nww_legacy_tur_small_industy
+			picture = NWW_TUR_generated_idea_tur_small_industry_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -281,7 +281,7 @@ ideas = {
 			}
 		}
 		tur_small_industry_economic_4 = {
-			picture = nww_legacy_tur_small_industy
+			picture = NWW_TUR_generated_idea_tur_small_industry_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -292,7 +292,7 @@ ideas = {
 			}
 		}
 		tur_industry_economic_1 = {
-			picture = nww_legacy_tur_industy
+			picture = NWW_TUR_generated_idea_tur_industry_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -303,7 +303,7 @@ ideas = {
 			}
 		}
 		tur_new_democ = {
-			picture = generic_democratic_drift_bonus
+			picture = NWW_TUR_generated_idea_tur_new_democ
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -313,7 +313,7 @@ ideas = {
 			}
 		}
 		tur_comun_d = {
-			picture = generic_communism_drift_bonus
+			picture = NWW_TUR_generated_idea_tur_comun_d
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -323,7 +323,7 @@ ideas = {
 			}
 		}
 		tur_fascism_d = {
-			picture = generic_fascism_drift_bonus
+			picture = NWW_TUR_generated_idea_tur_fascism_d
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -333,7 +333,7 @@ ideas = {
 			}
 		}
 		tur_not_fascism_d = {
-			picture = generic_democratic_drift_bonus
+			picture = NWW_TUR_generated_idea_tur_not_fascism_d
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -344,7 +344,7 @@ ideas = {
 			}
 		}
 		TUR_factory_idea_1 = {
-			picture = generic_industrial_concern_1
+			picture = NWW_TUR_generated_idea_TUR_factory_idea
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -355,7 +355,7 @@ ideas = {
 			}
 		}
 		TUR_factory_idea_2 = {
-			picture = generic_industrial_concern_1
+			picture = NWW_TUR_generated_idea_TUR_factory_idea
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -366,7 +366,7 @@ ideas = {
 			}
 		}
 		TUR_capitalism_economic_1 = {
-			picture = nww_legacy_capitalism_economic
+			picture = NWW_TUR_generated_idea_TUR_capitalism_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -377,7 +377,7 @@ ideas = {
 			}
 		}
 		TUR_capitalism_economic_2 = {
-			picture = nww_legacy_capitalism_economic
+			picture = NWW_TUR_generated_idea_TUR_capitalism_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -388,7 +388,7 @@ ideas = {
 			}
 		}
 		TUR_capitalism_economic_3 = {
-			picture = nww_legacy_capitalism_economic
+			picture = NWW_TUR_generated_idea_TUR_capitalism_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -399,7 +399,7 @@ ideas = {
 			}
 		}
 		TUR_NFT_1 = {
-			picture = generic_industrial_concern_1
+			picture = NWW_TUR_generated_idea_TUR_NFT
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -410,7 +410,7 @@ ideas = {
 			}
 		}
 		TUR_NFT_2 = {
-			picture = generic_industrial_concern_1
+			picture = NWW_TUR_generated_idea_TUR_NFT
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -421,7 +421,7 @@ ideas = {
 			}
 		}
 		TUR_IPT_1 = {
-			picture = generic_industrial_concern_3
+			picture = NWW_TUR_generated_idea_TUR_IPT
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -432,7 +432,7 @@ ideas = {
 			}
 		}
 		TUR_gold_1 = {
-			picture = nww_legacy_tur_gold
+			picture = NWW_TUR_generated_idea_TUR_gold
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -443,7 +443,7 @@ ideas = {
 			}
 		}
 		TUR_TAS_1 = {
-			picture = nww_legacy_tur_TAS
+			picture = NWW_TUR_generated_idea_TUR_TAS
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -453,7 +453,7 @@ ideas = {
 			}
 		}
 		TUR_TAS_2 = {
-			picture = nww_legacy_tur_TAS
+			picture = NWW_TUR_generated_idea_TUR_TAS
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -464,7 +464,7 @@ ideas = {
 			}
 		}
 		TUR_NNSP_1 = {
-			picture = generic_industrial_concern_3
+			picture = NWW_TUR_generated_idea_TUR_NNSP
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -474,7 +474,7 @@ ideas = {
 			}
 		}
 		TUR_religion_1 = {
-			picture = generic_industrial_concern_3
+			picture = NWW_TUR_generated_idea_TUR_religion
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -485,7 +485,7 @@ ideas = {
 			}
 		}
 		TUR_supply_reform = {
-			picture = nww_legacy_supply_reform
+			picture = NWW_TUR_generated_idea_TUR_supply_reform
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -496,7 +496,7 @@ ideas = {
 			}
 		}
 		TUR_disagree_reform = {
-			picture = nww_legacy_disagree_reform
+			picture = NWW_TUR_generated_idea_TUR_disagree_reform
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -507,7 +507,7 @@ ideas = {
 			}
 		}
 		TUR_universal_army_1 = {
-			picture = nww_legacy_universal_army
+			picture = NWW_TUR_generated_idea_TUR_universal_army
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -518,7 +518,7 @@ ideas = {
 			}
 		}
 		tur_closed_cities_1 = {
-			picture = nww_legacy_closed_cities
+			picture = NWW_TUR_generated_idea_tur_closed_cities
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -529,7 +529,7 @@ ideas = {
 			}
 		}
 		TUR_TNPA_1 = {
-			picture = nww_legacy_tur_TNPA
+			picture = NWW_TUR_generated_idea_TUR_TNPA
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -540,7 +540,7 @@ ideas = {
 			}
 		}
 		tur_dominatuim_turco_1 = {
-			picture = nww_legacy_dominatium_turcorum
+			picture = NWW_TUR_generated_idea_tur_dominatuim_turco
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -551,7 +551,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_federal_constitution = {
-			picture = generic_democratic_drift_bonus
+			picture = NWW_TUR_generated_idea_NWW_TUR_federal_constitution
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -562,7 +562,7 @@ ideas = {
 			}
 		}
 		NWW_TUR_workers_federation = {
-			picture = generic_communism_drift_bonus
+			picture = NWW_TUR_generated_idea_NWW_TUR_workers_federation
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -573,7 +573,7 @@ ideas = {
 			}
 		}
 		TUR_national_economic_1 = {
-			picture = nww_legacy_national_economic
+			picture = NWW_TUR_generated_idea_TUR_national_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -584,7 +584,7 @@ ideas = {
 			}
 		}
 		TUR_national_economic_2 = {
-			picture = nww_legacy_national_economic
+			picture = NWW_TUR_generated_idea_TUR_national_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -595,7 +595,7 @@ ideas = {
 			}
 		}
 		TUR_national_economic_3 = {
-			picture = nww_legacy_national_economic
+			picture = NWW_TUR_generated_idea_TUR_national_economic
 			removal_cost = -1
 			allowed = {
 				always = yes
@@ -606,7 +606,7 @@ ideas = {
 			}
 		}
 		TUR_national_economic_4 = {
-			picture = nww_legacy_national_economic
+			picture = NWW_TUR_generated_idea_TUR_national_economic
 			removal_cost = -1
 			allowed = {
 				always = yes

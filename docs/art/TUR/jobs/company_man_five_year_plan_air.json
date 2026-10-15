@@ -1,0 +1,23 @@
+{
+  "key": "company_man_five_year_plan_air",
+  "kind": "company",
+  "sprite": "GFX_idea_man_five_year_plan_air",
+  "source_texture": "gfx/interface/ideas/idea_man_five_year_plan_air.dds",
+  "reference": "docs/art/TUR/references/company_man_five_year_plan_air.png",
+  "consumers": [
+    "company_idea:thk_bftb",
+    "company_mio:TUR_ktf_organization",
+    "company_mio:TUR_thk_bftb_organization"
+  ],
+  "names": [
+    "thk bftb",
+    "ktf",
+    "thk bftb"
+  ],
+  "reference_sheet": "docs/art/TUR/company_references.png",
+  "reference_column": 5,
+  "reference_row": 1,
+  "reference_number": 5,
+  "prompt": "Use case: stylized-concept. Create ONE transparent Ottoman historical strategy-game industrial company emblem, redrawing the existing emblem.\nReference 1 is a CATALOG: use ONLY item 5, row 1, column 5, for thk bftb / ktf / thk bftb. Reference 2 gives the mod's regenerated LTB icon paint style.\nPreserve this enterprise's own recognizable symbol and shape. Tulomsas: winged monogram, Koc: red ram head shield, Gok Okulu: gold aviation wings, NUD: airplane badge, Tomtasch: historical aircraft works seal, Golcuk: naval ship shield, CGT: ocean liner, Istanbul armaments: brass cartridges, Killigil: red and blue archer shield, debt council: debt ledger, public debt administration: annotated finance ledger, TCDD: winged railway wheel and crescent, Etibank: electric pylon and lightning, Sumerbank: industrial bank and coins, Petrol Ofisi: red wolf head. For generic aviation references preserve the aircraft/wing/propeller subject while giving it an Ottoman workshop identity. Use ONLY the subject belonging to the selected item.\nPainterly engraved metal relief with crisp contour, aged brass, steel, restrained ivory highlights; preserve the source emblem's characteristic red, blue or white accents. Readable at 64x64. A concise corporate emblem with its own silhouette, minimal surrounding decoration; avoid uniform wreath/flag frames and excessive detail. This is Ottoman NWW alternate history in 1936, World War I never happened. No modern republican slogans, no Ataturk portrait, no Nazi symbols.\nOne centered emblem, square canvas, generous true transparent margin and clean alpha. No catalog, no extra icons, no background, no watermark; avoid tiny lettering, preserve monogram only if central to the reference.",
+  "generated_path": "C:\\Users\\Eugene\\.codex\\generated_images\\01a14125-9c7c-72c0-806f-53979a7fc4b9\\exec-d7bb8382-317b-4007-a668-093c6ed00b1f.png"
+}
