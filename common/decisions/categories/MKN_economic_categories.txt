@@ -4,7 +4,10 @@ MKN_economic_congress_category = {
 		original_tag = MKN
 	}
 	visible = {
-		has_completed_focus = MKN_artel_register
+		OR = {
+			has_completed_focus = MKN_artel_register
+			has_completed_focus = MKN_the_absolute_argument
+		}
 	}
 }
 MKN_economic_projects_category = {

@@ -218,6 +218,17 @@ scope_files += [ROOT / relative for relative in (
     'common/decisions/nww_mkn_mandate.txt',
     'common/decisions/categories/nww_mkn_mandate.txt'
 )]
+scope_files += [ROOT / relative for relative in (
+    'common/national_focus/MKN_horizons_focuses.txt',
+    'common/ideas/MKN_horizons_ideas.txt',
+    'common/decisions/MKN_horizons_decisions.txt',
+    'common/decisions/categories/MKN_horizons_categories.txt',
+    'common/scripted_effects/MKN_horizons_effects.txt',
+    'common/scripted_triggers/MKN_horizons_triggers.txt',
+    'common/on_actions/MKN_horizons_on_actions.txt',
+    'common/ai_strategy/MKN_ukr_limited_war.txt',
+    'events/MKN_horizons_events.txt',
+)]
 for path in scope_files:
     doc = read(path)
     context = str(path.relative_to(ROOT))
@@ -573,6 +584,8 @@ from validate_mkn_crisis import validate_crisis
 validate_crisis(ROOT, GAME, check, localized)
 from validate_mkn_frontier import validate_frontier
 validate_frontier(ROOT, GAME, check, localized)
+from validate_mkn_horizons import validate_horizons
+validate_horizons(ROOT, GAME, check, localized)
 from validate_mkn_personnel import validate_personnel
 validate_personnel(ROOT, GAME, check, localized)
 from validate_mkn_international import validate_international

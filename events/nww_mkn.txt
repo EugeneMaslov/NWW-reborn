@@ -35,9 +35,7 @@ country_event = {
 		NOT = {
 			has_country_flag = UKR_MKN_border_settled
 		}
-		NOT = {
-			has_country_flag = mkn_ukr_frontier_initialized
-		}
+		MKN_ukr_escalation_ready_for_war = yes
 		NOT = {
 			has_country_flag = mkn_ukr_frontier_concluded
 		}
@@ -64,9 +62,7 @@ country_event = {
 						has_war_with = MKN
 					}
 					MKN = {
-						NOT = {
-							has_country_flag = mkn_ukr_frontier_initialized
-						}
+						MKN_ukr_escalation_ready_for_war = yes
 						NOT = {
 							has_country_flag = mkn_ukr_frontier_concluded
 						}
@@ -80,10 +76,7 @@ country_event = {
 						}
 					}
 				}
-				declare_war_on = {
-					target = MKN
-					type = puppet_wargoal_focus
-				}
+				MKN = { mkn_ukr_conclude_total_war = yes }
 			}
 		}
 	}
@@ -132,9 +125,7 @@ country_event = {
 					is_ally_with = MKN
 				}
 				MKN = {
-					NOT = {
-						has_country_flag = mkn_ukr_frontier_initialized
-					}
+					MKN_ukr_escalation_ready_for_war = yes
 					NOT = {
 						has_country_flag = mkn_ukr_frontier_concluded
 					}
@@ -148,10 +139,7 @@ country_event = {
 					}
 				}
 			}
-			declare_war_on = {
-				target = MKN
-				type = puppet_wargoal_focus
-			}
+			MKN = { mkn_ukr_conclude_total_war = yes }
 		}
 	}
 }

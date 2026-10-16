@@ -2196,7 +2196,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_machinegun_carts
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -2370,7 +2374,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_field_veterinary
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -2460,7 +2468,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_militia_signals
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -2553,7 +2565,12 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_free_column_exercises
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			has_army_experience > 34
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -2806,7 +2823,13 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_mobile_supply_columns
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			OR = { has_tech = motorised_infantry has_tech = gwtank_chassis has_tech = gwtank }
+			has_equipment = { motorized_equipment > 99 }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -2969,7 +2992,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_tank_maintenance
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -3085,7 +3112,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_fire_tables
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -3185,7 +3216,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_radio_sections
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -3251,7 +3286,12 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_armoured_manoeuvres
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			has_army_experience > 34
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -3619,7 +3659,12 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_interceptor_pairs
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			MKN_has_fifty_combat_aircraft = yes
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -3796,7 +3841,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_air_warning
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -3889,7 +3938,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_aircraft_recovery
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -4023,7 +4076,12 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_sky_watch_exercises
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			has_air_experience > 24
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -4279,7 +4337,12 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_bombing_ranges
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			MKN_has_fifty_combat_aircraft = yes
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -4468,7 +4531,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_air_ground_liaisons
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -4559,7 +4626,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_target_markers
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -4654,7 +4725,11 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_cas_maintenance
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -4728,7 +4803,12 @@ focus_tree = {
 				has_country_flag = MKN_military_reward_cas_joint_exercises
 			}
 		}
+		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			has_air_experience > 24
+		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -5099,6 +5179,9 @@ focus_tree = {
 			focus = MKN_torpedo_artels_focus
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			has_equipment = { convoy > 19 }
+			has_navy_experience > 14
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -5118,6 +5201,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -5286,6 +5370,7 @@ focus_tree = {
 			focus = MKN_sea_escort_service
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -5301,6 +5386,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -5391,6 +5477,7 @@ focus_tree = {
 			focus = MKN_coastal_fortifications_focus
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -5408,6 +5495,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -5538,6 +5626,7 @@ focus_tree = {
 			focus = MKN_escort_repair_network_focus
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -5561,6 +5650,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -5812,6 +5902,9 @@ focus_tree = {
 			focus = MKN_sea_escort_service
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
+			has_equipment = { convoy > 19 }
+			has_navy_experience > 14
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -5831,6 +5924,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -6008,6 +6102,7 @@ focus_tree = {
 			focus = MKN_torpedo_artels_focus
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -6029,6 +6124,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -6235,6 +6331,7 @@ focus_tree = {
 			focus = MKN_hidden_smuggler_bases_focus
 		}
 		available = {
+			NOT = { has_idea = MKN_military_reform_cooldown }
 			196 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -6258,6 +6355,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = { idea = MKN_military_reform_cooldown days = 90 }
 			if = {
 				limit = {
 					hidden_trigger = {
@@ -8003,4 +8101,22 @@ focus_tree = {
 		y = 6
 	}
 	shared_focus = MKN_ukrainian_communes_congress
+	shared_focus = MKN_nabat_abroad
+	shared_focus = MKN_agitation_in_litbel
+	shared_focus = MKN_galician_peasants
+	shared_focus = MKN_fund_the_underground
+	shared_focus = MKN_congress_of_free_peoples
+	shared_focus = MKN_global_syndicalist_pact
+	shared_focus = MKN_death_or_freedom
+	shared_focus = MKN_hide_the_machines
+	shared_focus = MKN_marusya_womens_battalions
+	shared_focus = MKN_evacuation_soviets
+	shared_focus = MKN_shadows_in_the_forests
+	shared_focus = MKN_black_vengeance
+	shared_focus = MKN_free_science_network
+	shared_focus = MKN_open_peer_review
+	shared_focus = MKN_jet_tachankas
+	shared_focus = MKN_dnieper_jet_falcons
+	shared_focus = MKN_reactor_safety_councils
+	shared_focus = MKN_the_absolute_argument
 }

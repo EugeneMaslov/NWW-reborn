@@ -1,0 +1,53 @@
+add_namespace = mkn_horizons
+country_event = {
+	id = mkn_horizons.1
+	title = mkn_horizons.1.t
+	desc = mkn_horizons.1.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = mkn_horizons.1.a
+		ai_chance = { factor = 40 }
+		trigger = {
+			has_country_flag = MKN_congress_invitation_pending
+			is_subject = no
+			is_in_faction = no
+			OR = { has_government = communism has_government = democratic }
+			NOT = { has_war_with = MKN }
+			MKN = { exists = yes is_faction_leader = yes has_country_flag = MKN_black_international_founded }
+		}
+		MKN = { add_to_faction = ROOT }
+		clr_country_flag = MKN_congress_invitation_pending
+	}
+	option = {
+		name = mkn_horizons.1.b
+		ai_chance = { factor = 60 }
+		clr_country_flag = MKN_congress_invitation_pending
+	}
+}
+# Same callback scopes as MKN_ukr_border_effects: ROOT winner, FROM.FROM
+# opposing country, FROM.FROM.FROM contested state. Transfer only on victory.
+country_event = {
+	id = mkn_horizons.10
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				tag = MKN
+				has_country_flag = MKN_galician_border_active
+				FROM.FROM = { tag = AUS }
+				FROM.FROM.FROM = { OR = { state = 80 state = 89 state = 90 } is_owned_and_controlled_by = AUS }
+				MKN_horizons_hostile_austria = yes
+			}
+			FROM.FROM.FROM = { transfer_state_to = MKN }
+			clr_country_flag = MKN_galician_border_active
+		}
+	}
+}
+country_event = {
+	id = mkn_horizons.11
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { clr_country_flag = MKN_galician_border_active }
+}

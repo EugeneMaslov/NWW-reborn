@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = { MKN = { if = { limit = { exists = yes } MKN_repair_horizons = yes } } }
+	}
+	on_daily_MKN = {
+		effect = {
+			# Restore diplomatic restrictions without replaying focus rewards.
+			MKN_repair_horizons = yes
+		}
+	}
+}

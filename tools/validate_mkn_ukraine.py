@@ -157,7 +157,8 @@ def validate_ukraine(root, game, check, localized):
     hooks = one(read(root/'common/on_actions/MKN_diplomacy_on_actions.txt'), 'on_actions')
     for actor in ('MKN','UKR','SOV'):
         w = World(); w.apply(w.effects['MKN_install_allied_war_guard'], actor); w.apply(w.effects['MKN_install_allied_war_guard'], actor)
-        check(w.countries[actor]['rules'] == {'MKN_protected_diplomatic_relation'}, actor + ': native protection installation stacks')
+        expected_rules = {'MKN_protected_diplomatic_relation'} | ({'UKR_mkn_premature_attack'} if actor == 'UKR' else set())
+        check(w.countries[actor]['rules'] == expected_rules, actor + ': native protection installation stacks or loses escalation protection')
         startup = one(one(hooks,'on_startup'),'effect')
         check(any(k == 'MKN_install_allied_war_guard' for k,v,o in walk(one(startup,actor))), actor + ': protection is not installed on load')
         cases += 1

@@ -570,6 +570,9 @@ nww_mkn_rebuild_industry = {
 }
 nww_mkn_rebuild_services = {
 	MKN_migrate_military_hq = yes
+	set_variable = { MKN_army_army_non_core_attack_factor = 0 }
+	set_variable = { MKN_army_army_non_core_defence_factor = 0 }
+	set_variable = { MKN_army_army_org_regain = 0 }
 	set_variable = {
 		MKN_army_enemy_attrition = 0
 	}
@@ -2993,6 +2996,7 @@ nww_mkn_rebuild_services = {
 			MKN_army_army_armor_attack_factor = 0.05
 		}
 	}
+	MKN_rebuild_horizons_service_stats = yes
 	set_country_flag = MKN_services_redesign_v5
 }
 MKN_migrate_military_hq = {

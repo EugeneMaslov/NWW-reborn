@@ -30,6 +30,9 @@ class MilitaryModel:
         self.capitulated = False
         self.factories = 2
 
+        self.ideas = {}
+        self.offsite = 0
+
     def value(self, value):
         if value == 'damaged_building_level@infrastructure':
             return self.damage
@@ -44,6 +47,8 @@ class MilitaryModel:
                 ok = val in self.flags
             elif key == 'has_completed_focus':
                 ok = val in self.focuses
+            elif key == 'has_idea':
+                ok = self.ideas.get(val, 0) > 0
             elif key in ('AND', 'hidden_trigger', 'limit', 'FROM', 'ROOT', 'capital_scope', 'custom_trigger_tooltip'):
                 ok = self.test(val)
             elif key == 'tooltip':
@@ -122,6 +127,8 @@ class MilitaryModel:
                         self.variables[var] += Decimal(amount)
             elif key == 'set_country_flag':
                 self.flags.add(val)
+            elif key == 'add_timed_idea':
+                self.ideas[one(val, 'idea')] = int(one(val, 'days'))
             elif key == 'clr_country_flag':
                 self.flags.discard(val)
             elif key in self.effects:
@@ -142,6 +149,8 @@ class MilitaryModel:
             elif key == 'add_building_construction':
                 self.buildings[one(val, 'type')] += Decimal(one(val, 'level'))
                 self.oneoffs.append((key, val))
+            elif key == 'add_offsite_building':
+                self.offsite += int(one(val, 'level'))
             elif key == 'build_railway':
                 self.state['rail'] = True
                 self.oneoffs.append((key, val))
@@ -163,6 +172,7 @@ def validate_military(root, game, check, localized):
     originals = manifest['old_rewards']
     fs = {one(f, 'id'): f for f in values(one(read(root/'common/national_focus/MKN.txt'), 'focus_tree'), 'focus')}
     effects = dict((k, v) for k, v, o in read(root/'common/scripted_effects/nww_mkn_progression.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_horizons_effects.txt'))
     decisions = {k: v for cat, ds, o in read(root/'common/decisions/MKN_military_decisions.txt') for k, v, o in ds}
     native_buildings = {k for k, v, o in one(read(game/'common/buildings/00_buildings.txt'), 'buildings')}
     for k, v, o in walk(list((name, node, '=') for name, node in decisions.items())):

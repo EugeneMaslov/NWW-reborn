@@ -1,0 +1,28 @@
+{
+  "branches": {
+    "international": [
+      "MKN_nabat_abroad",
+      "MKN_agitation_in_litbel",
+      "MKN_galician_peasants",
+      "MKN_fund_the_underground",
+      "MKN_congress_of_free_peoples",
+      "MKN_global_syndicalist_pact"
+    ],
+    "defence": [
+      "MKN_death_or_freedom",
+      "MKN_hide_the_machines",
+      "MKN_marusya_womens_battalions",
+      "MKN_evacuation_soviets",
+      "MKN_shadows_in_the_forests",
+      "MKN_black_vengeance"
+    ],
+    "future": [
+      "MKN_free_science_network",
+      "MKN_open_peer_review",
+      "MKN_jet_tachankas",
+      "MKN_dnieper_jet_falcons",
+      "MKN_reactor_safety_councils",
+      "MKN_the_absolute_argument"
+    ]
+  }
+}

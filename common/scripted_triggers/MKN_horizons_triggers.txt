@@ -1,0 +1,60 @@
+# Owner: MKN. AAT nordic_shared.txt uses deployed aircraft roles (BBA compatible).
+MKN_has_fifty_combat_aircraft = {
+	OR = {
+		has_deployed_air_force_size = { type = fighter size > 49 }
+		has_deployed_air_force_size = { type = cas size > 49 }
+	}
+}
+MKN_desperate_defence_available = {
+	has_war_with_major = yes
+	surrender_progress > 0.1
+	has_capitulated = no
+}
+MKN_horizons_hostile_target = {
+	FROM = {
+		exists = yes
+		is_subject = no
+		NOT = { is_ally_with = ROOT }
+		NOT = { is_in_faction_with = ROOT }
+		NOT = { has_non_aggression_pact_with = ROOT }
+		NOT = { has_war_with = ROOT }
+	}
+}
+# Relation rule scope: THIS is sender, FROM is recipient.
+MKN_horizons_ineligible_volunteer_target = {
+	has_completed_focus = MKN_global_syndicalist_pact
+	NOT = {
+		FROM = {
+			has_civil_war = yes
+			OR = { has_government = communism has_government = democratic }
+		}
+	}
+}
+MKN_horizons_reactor_site = {
+	has_capitulated = no
+	has_completed_focus = MKN_the_absolute_argument
+	has_tech = nuclear_reactor
+	FROM = {
+		state = 1082
+		is_owned_and_controlled_by = ROOT
+		is_core_of = ROOT
+		free_building_slots = { building = nuclear_reactor size > 0 include_locked = yes }
+	}
+}
+MKN_horizons_austrian_border_target = {
+	FROM = {
+		OR = { state = 89 state = 90 state = 80 }
+		is_owned_and_controlled_by = AUS
+		has_border_war = no
+		any_neighbor_state = { is_owned_and_controlled_by = ROOT has_border_war = no }
+	}
+	AUS = { exists = yes has_war = no is_subject = no }
+	has_war = no
+	NOT = { has_border_war_with = AUS }
+	MKN_horizons_hostile_austria = yes
+}
+MKN_horizons_hostile_austria = {
+	NOT = { is_ally_with = AUS }
+	NOT = { is_in_faction_with = AUS }
+	NOT = { has_non_aggression_pact_with = AUS }
+}

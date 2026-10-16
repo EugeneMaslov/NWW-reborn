@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+		MKN_military_reform_cooldown = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { }
+		}
+		MKN_nabat_foreign_cells = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { operative_slot = 1 intel_network_gain_factor = 0.1 }
+		}
+		MKN_hidden_workshops = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = -0.2 }
+			on_add = {
+				if = {
+					limit = { NOT = { has_country_flag = MKN_hidden_workshops_active } }
+					set_country_flag = MKN_hidden_workshops_active
+					add_offsite_building = { type = arms_factory level = 3 }
+				}
+			}
+			on_remove = {
+				if = {
+					limit = { has_country_flag = MKN_hidden_workshops_active }
+					add_offsite_building = { type = arms_factory level = -3 }
+					clr_country_flag = MKN_hidden_workshops_active
+				}
+			}
+		}
+		MKN_evacuation_columns = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { casualty_trickleback = 0.1 }
+		}
+		MKN_black_vengeance_spirit = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { army_core_attack_factor = 0.2 army_speed_factor = 0.1 }
+		}
+		MKN_open_laboratories = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { research_speed_factor = 0.05 }
+		}
+	}
+}

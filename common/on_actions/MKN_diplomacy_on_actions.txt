@@ -16,6 +16,7 @@ on_actions = {
 						exists = yes
 					}
 					MKN_install_allied_war_guard = yes
+					UKR_repair_mkn_limited_war = yes
 				}
 			}
 			SOV = {
@@ -31,6 +32,12 @@ on_actions = {
 	on_daily_MKN = {
 		effect = {
 			MKN_close_allied_frontier = yes
+		}
+	}
+	on_daily_UKR = {
+		effect = {
+			# Repairs only actual Ukrainian offensive wars from terminal escalation.
+			UKR_repair_mkn_limited_war = yes
 		}
 	}
 }

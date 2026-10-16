@@ -66,6 +66,9 @@ MKN_army_development = {
 	motorized_attack_factor = MKN_army_motorized_attack_factor
 	enemy_attrition = MKN_army_enemy_attrition
 	conscription = MKN_army_conscription
+	army_non_core_attack_factor = MKN_army_army_non_core_attack_factor
+	army_non_core_defence_factor = MKN_army_army_non_core_defence_factor
+	army_org_regain = MKN_army_army_org_regain
 }
 MKN_air_development = {
 	enable = {

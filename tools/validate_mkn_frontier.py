@@ -407,6 +407,8 @@ def validate_frontier(root, game, check, localized):
     # Exercise both actual callback branches for every three-battle outcome sequence.
     for outcomes in product((20, 21), repeat=3):
         sim = model()
+        # Three-battle scenarios begin after the actual frontier incident.
+        sim.countries['MKN']['flags']['mkn_ukr_incident_fired'] = -1
         for index, suffix in enumerate(outcomes, 1):
             sim.states['196']['owner'] = sim.states['196']['controller'] = 'MKN'
             sim.states['197']['owner'] = sim.states['197']['controller'] = 'UKR'

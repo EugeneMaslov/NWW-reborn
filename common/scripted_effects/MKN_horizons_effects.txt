@@ -1,0 +1,47 @@
+# Recomputed from actual focus completions by nww_mkn_rebuild_services.
+# Never grant manpower, PP, technology or factories in this repair effect.
+MKN_rebuild_horizons_service_stats = {
+	if = {
+		limit = { has_completed_focus = MKN_fund_the_underground }
+		add_to_variable = { MKN_army_army_non_core_attack_factor = 0.1 }
+		add_to_variable = { MKN_army_army_non_core_defence_factor = 0.1 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_global_syndicalist_pact }
+		add_to_variable = { MKN_army_send_volunteer_size = 3 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_death_or_freedom }
+		add_to_variable = { MKN_army_conscription = 0.05 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_marusya_womens_battalions }
+		add_to_variable = { MKN_army_army_org_regain = 0.1 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_shadows_in_the_forests }
+		add_to_variable = { MKN_army_resistance_damage_to_garrison_on_our_occupied_states = 1.0 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_dnieper_jet_falcons }
+		add_to_variable = { MKN_air_air_agility_factor = 0.05 }
+	}
+	# New roots can be taken before the original service schools/staff.
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = MKN_death_or_freedom
+				has_completed_focus = MKN_global_syndicalist_pact
+			}
+			NOT = { has_dynamic_modifier = { modifier = MKN_army_development } }
+		}
+		add_dynamic_modifier = { modifier = MKN_army_development }
+	}
+}
+MKN_repair_horizons = {
+	if = {
+		limit = { has_completed_focus = MKN_global_syndicalist_pact }
+		remove_relation_rule_override = { trigger = MKN_horizons_ineligible_volunteer_target can_send_volunteers = no }
+		add_relation_rule_override = { trigger = MKN_horizons_ineligible_volunteer_target can_send_volunteers = no usage_desc = MKN_volunteer_recipients_tt }
+	}
+}

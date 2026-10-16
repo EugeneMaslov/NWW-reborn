@@ -1,0 +1,532 @@
+# Owner: MKN. Three new branches; references and balance: docs/MKN_progress_gates_and_horizons.md.
+shared_focus = {
+    id = MKN_nabat_abroad
+    icon = GFX_goal_generic_intelligence_exchange
+    x = 165
+    y = 0
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    available = {
+
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                has_dlc = "La Resistance"
+            }
+            add_ideas = MKN_nabat_foreign_cells
+        }
+        else = {
+            add_political_power = 50
+        }
+        custom_effect_tooltip = MKN_nabat_abroad_unlock_tt
+    }
+}
+shared_focus = {
+    id = MKN_agitation_in_litbel
+    icon = GFX_focus_generic_conference
+    x = 162
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_nabat_abroad
+    }
+    available = {
+        LTB = {
+            exists = yes
+        }
+    }
+    completion_reward = {
+        custom_effect_tooltip = MKN_litbel_agitation_unlock_tt
+    }
+}
+shared_focus = {
+    id = MKN_galician_peasants
+    icon = GFX_goal_generic_intelligence_exchange
+    x = 168
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_nabat_abroad
+    }
+    available = {
+        AUS = {
+            exists = yes
+        }
+    }
+    completion_reward = {
+        custom_effect_tooltip = MKN_galician_agitation_unlock_tt
+    }
+}
+shared_focus = {
+    id = MKN_fund_the_underground
+    icon = GFX_goal_generic_intelligence_exchange
+    x = 165
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_agitation_in_litbel
+        focus = MKN_galician_peasants
+    }
+    available = {
+        has_completed_focus = MKN_steppe_general_staff
+    }
+    completion_reward = {
+        nww_mkn_rebuild_services = yes
+        custom_effect_tooltip = MKN_underground_combat_tt
+    }
+}
+shared_focus = {
+    id = MKN_congress_of_free_peoples
+    icon = GFX_focus_generic_conference
+    x = 165
+    y = 3
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_fund_the_underground
+    }
+    available = {
+
+    }
+    completion_reward = {
+        add_political_power = 75
+        custom_effect_tooltip = MKN_free_peoples_congress_tt
+    }
+}
+shared_focus = {
+    id = MKN_global_syndicalist_pact
+    icon = GFX_focus_generic_diplomatic_treaty
+    x = 165
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_congress_of_free_peoples
+    }
+    available = {
+        is_subject = no
+    }
+    completion_reward = {
+        nww_mkn_rebuild_services = yes
+        set_rule = {
+            can_send_volunteers = yes
+        }
+        add_relation_rule_override = {
+            trigger = MKN_horizons_ineligible_volunteer_target
+            can_send_volunteers = no
+            usage_desc = MKN_volunteer_recipients_tt
+        }
+        custom_effect_tooltip = MKN_syndicalist_pact_unlock_tt
+    }
+}
+shared_focus = {
+    id = MKN_death_or_freedom
+    icon = GFX_goal_generic_defence
+    x = 183
+    y = 0
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    available = {
+        MKN_desperate_defence_available = yes
+    }
+    completion_reward = {
+        add_stability = -0.1
+        nww_mkn_rebuild_services = yes
+        custom_effect_tooltip = MKN_death_or_freedom_tt
+    }
+}
+shared_focus = {
+    id = MKN_hide_the_machines
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 183
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_death_or_freedom
+    }
+    available = {
+        MKN_desperate_defence_available = yes
+    }
+    completion_reward = {
+        add_ideas = MKN_hidden_workshops
+        custom_effect_tooltip = MKN_hidden_workshops_tt
+    }
+}
+shared_focus = {
+    id = MKN_marusya_womens_battalions
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 183
+    y = 2
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_hide_the_machines
+    }
+    available = {
+        MKN_desperate_defence_available = yes
+    }
+    completion_reward = {
+        add_manpower = 30000
+        nww_mkn_rebuild_services = yes
+        custom_effect_tooltip = MKN_womens_battalions_tt
+    }
+}
+shared_focus = {
+    id = MKN_evacuation_soviets
+    icon = GFX_goal_generic_defence
+    x = 183
+    y = 3
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_marusya_womens_battalions
+    }
+    available = {
+        MKN_desperate_defence_available = yes
+    }
+    completion_reward = {
+        add_timed_idea = {
+            idea = MKN_evacuation_columns
+            days = 180
+        }
+    }
+}
+shared_focus = {
+    id = MKN_shadows_in_the_forests
+    icon = GFX_goal_generic_defence
+    x = 183
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_evacuation_soviets
+    }
+    available = {
+        MKN_desperate_defence_available = yes
+    }
+    completion_reward = {
+        nww_mkn_rebuild_services = yes
+        custom_effect_tooltip = MKN_forest_resistance_tt
+    }
+}
+shared_focus = {
+    id = MKN_black_vengeance
+    icon = GFX_goal_generic_major_war
+    x = 183
+    y = 5
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_shadows_in_the_forests
+    }
+    available = {
+        MKN_desperate_defence_available = yes
+    }
+    completion_reward = {
+        add_timed_idea = {
+            idea = MKN_black_vengeance_spirit
+            days = 180
+        }
+    }
+}
+shared_focus = {
+    id = MKN_free_science_network
+    icon = GFX_goal_generic_scientific_exchange
+    x = 201
+    y = 0
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    available = {
+        OR = {
+            date > 1942.12.31
+            AND = {
+                has_tech = centimetric_radar
+                has_tech = advanced_machine_tools
+            }
+        }
+    }
+    completion_reward = {
+        add_research_slot = 1
+    }
+}
+shared_focus = {
+    id = MKN_open_peer_review
+    icon = GFX_goal_generic_scientific_exchange
+    x = 201
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_free_science_network
+    }
+    available = {
+
+    }
+    completion_reward = {
+        add_ideas = MKN_open_laboratories
+    }
+}
+shared_focus = {
+    id = MKN_jet_tachankas
+    icon = GFX_goal_generic_secret_weapon
+    x = 198
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_open_peer_review
+    }
+    available = {
+
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = MKN_jet_tachankas_bonus
+            bonus = 1.0
+            uses = 2
+            technology = rocket_artillery
+        technology = rocket_artillery2
+        }
+    }
+}
+shared_focus = {
+    id = MKN_dnieper_jet_falcons
+    icon = GFX_goal_generic_secret_weapon
+    x = 204
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_open_peer_review
+    }
+    available = {
+        has_completed_focus = MKN_steppe_hawks_and_schools
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = MKN_jet_falcons_bonus
+            bonus = 1.0
+            uses = 1
+            category = jet_technology
+        }
+        nww_mkn_rebuild_services = yes
+        custom_effect_tooltip = MKN_jet_falcons_tt
+    }
+}
+shared_focus = {
+    id = MKN_reactor_safety_councils
+    icon = GFX_focus_generic_nuclear_development
+    x = 201
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_jet_tachankas
+        focus = MKN_dnieper_jet_falcons
+    }
+    available = {
+
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = MKN_reactor_safety_bonus
+            bonus = 1.0
+            uses = 1
+            category = nuclear
+        }
+    }
+}
+shared_focus = {
+    id = MKN_the_absolute_argument
+    icon = GFX_focus_generic_nuclear_development
+    x = 201
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    ai_will_do = {
+        factor = 1
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_RESEARCH
+    }
+    prerequisite = {
+        focus = MKN_reactor_safety_councils
+    }
+    available = {
+        has_tech = atomic_research
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                NOT = {
+                    has_tech = nuclear_reactor
+                }
+            }
+            set_technology = {
+                nuclear_reactor = 1
+            }
+        }
+        custom_effect_tooltip = MKN_reactor_project_unlock_tt
+    }
+}

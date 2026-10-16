@@ -1,5 +1,10 @@
 # Правило запрещает новую войну с союзником; существующие войны/альянсы не меняются.
 MKN_install_allied_war_guard = {
+	if = {
+		limit = { tag = UKR }
+		remove_relation_rule_override = { trigger = UKR_mkn_premature_attack can_not_declare_war = yes }
+		add_relation_rule_override = { trigger = UKR_mkn_premature_attack can_not_declare_war = yes usage_desc = UKR_mkn_escalation_required_tt }
+	}
 	remove_relation_rule_override = {
 		trigger = MKN_protected_diplomatic_relation
 		can_not_declare_war = yes
@@ -8,6 +13,19 @@ MKN_install_allied_war_guard = {
 		trigger = MKN_protected_diplomatic_relation
 		usage_desc = MKN_allied_war_guard_tt
 		can_not_declare_war = yes
+	}
+}
+UKR_repair_mkn_limited_war = {
+	if = {
+		limit = {
+			has_offensive_war_with = MKN
+			MKN = { has_country_flag = mkn_ukr_total_war }
+		}
+		set_country_flag = UKR_mkn_offensive_limited
+	}
+	if = {
+		limit = { NOT = { has_war_with = MKN } }
+		clr_country_flag = UKR_mkn_offensive_limited
 	}
 }
 MKN_close_allied_frontier = {

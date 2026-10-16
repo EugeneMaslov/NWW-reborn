@@ -1,0 +1,177 @@
+# MKN owns all bilateral definitions here. FROM is the chosen country/state.
+MKN_horizons_international_category = {
+	MKN_sponsor_litbel_strike = {
+		icon = generic_political_actions
+		targets = { LTB }
+		visible = { has_completed_focus = MKN_agitation_in_litbel }
+		target_trigger = { FROM = { tag = LTB exists = yes } }
+		available = {
+			MKN_horizons_hostile_target = yes
+			has_capitulated = no
+			FROM = { stability > 0.2 any_owned_state = { is_controlled_by = PREV arms_factory > 0 } }
+		}
+		cost = 50
+		custom_cost_trigger = { has_equipment = { infantry_equipment > 199 } }
+		custom_cost_text = MKN_horizons_200_rifles
+		days_remove = 45
+		days_re_enable = 180
+		complete_effect = { add_equipment_to_stockpile = { type = infantry_equipment amount = -200 } }
+		cancel_trigger = { OR = { has_capitulated = yes NOT = { MKN_horizons_hostile_target = yes } } }
+		cancel_effect = { add_political_power = 50 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 } }
+		remove_effect = {
+			if = {
+				limit = { MKN_horizons_hostile_target = yes has_capitulated = no }
+				FROM = {
+					add_stability = -0.05
+					random_owned_controlled_state = {
+						limit = { arms_factory > 0 }
+						damage_building = { type = arms_factory damage = 1 }
+					}
+				}
+			}
+			else = { add_political_power = 50 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	MKN_support_galician_unions = {
+		icon = generic_political_actions
+		state_target = yes
+		visible = { has_completed_focus = MKN_galician_peasants }
+		target_trigger = { FROM = { OR = { state = 80 state = 89 state = 90 } is_owned_and_controlled_by = AUS } }
+		available = {
+			has_capitulated = no
+			MKN_horizons_hostile_austria = yes
+			AUS = { exists = yes has_war = no }
+			FROM = { is_owned_and_controlled_by = AUS NOT = { has_state_flag = MKN_rural_unions_armed } }
+		}
+		cost = 50
+		custom_cost_trigger = { has_equipment = { infantry_equipment > 199 } }
+		custom_cost_text = MKN_horizons_200_rifles
+		days_remove = 45
+		days_re_enable = 180
+		complete_effect = { add_equipment_to_stockpile = { type = infantry_equipment amount = -200 } }
+		cancel_trigger = {
+			OR = { has_capitulated = yes NOT = { MKN_horizons_hostile_austria = yes } NOT = { FROM = { is_owned_and_controlled_by = AUS } } AUS = { has_war = yes } }
+		}
+		cancel_effect = { add_political_power = 50 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 } }
+		remove_effect = {
+			if = {
+				limit = { has_capitulated = no MKN_horizons_hostile_austria = yes AUS = { exists = yes has_war = no } FROM = { is_owned_and_controlled_by = AUS } }
+				FROM = {
+					set_state_flag = MKN_rural_unions_armed
+					damage_building = { type = infrastructure damage = 1 }
+				}
+				AUS = { add_stability = -0.05 }
+			}
+			else = { add_political_power = 50 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	MKN_galician_border_action = {
+		icon = generic_army_support
+		state_target = yes
+		visible = { has_completed_focus = MKN_galician_peasants }
+		target_trigger = { FROM = { OR = { state = 80 state = 89 state = 90 } is_owned_and_controlled_by = AUS } }
+		available = {
+			MKN_horizons_austrian_border_target = yes
+			FROM = { has_state_flag = MKN_rural_unions_armed }
+			NOT = { has_country_flag = MKN_galician_border_active }
+		}
+		cost = 100
+		days_re_enable = 180
+		complete_effect = {
+			if = {
+				limit = { MKN_horizons_austrian_border_target = yes FROM = { has_state_flag = MKN_rural_unions_armed } }
+				set_country_flag = { flag = MKN_galician_border_active days = 180 }
+				FROM = { clr_state_flag = MKN_rural_unions_armed }
+				random_owned_controlled_state = {
+					limit = { has_border_war = no any_neighbor_state = { state = FROM } }
+					save_event_target_as = MKN_galician_attacking_state
+				}
+				start_border_war = {
+					change_state_after_war = no
+					minimum_duration_in_days = 30
+					attacker = {
+						state = event_target:MKN_galician_attacking_state
+						num_provinces = 1
+						on_win = mkn_horizons.10
+						on_lose = mkn_horizons.11
+						on_cancel = mkn_horizons.11
+					}
+					defender = { state = FROM num_provinces = 1 }
+				}
+			}
+			else = { add_political_power = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	MKN_found_black_international = {
+		icon = generic_political_actions
+		visible = { has_completed_focus = MKN_global_syndicalist_pact NOT = { has_country_flag = MKN_black_international_founded } }
+		available = { is_subject = no is_in_faction = no has_capitulated = no }
+		cost = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_rule = { can_create_factions = yes }
+			create_faction = MKN_horizons_black_international
+			set_country_flag = MKN_black_international_founded
+		}
+		ai_will_do = { factor = 1 }
+	}
+	MKN_invite_free_councils = {
+		icon = generic_political_actions
+		target_root_trigger = { has_completed_focus = MKN_global_syndicalist_pact is_faction_leader = yes has_country_flag = MKN_black_international_founded }
+		visible = { has_completed_focus = MKN_global_syndicalist_pact }
+		target_trigger = {
+			FROM = {
+				NOT = { tag = MKN }
+				exists = yes
+				is_subject = no
+				is_in_faction = no
+				OR = { has_government = democratic has_government = communism }
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		available = { FROM = { NOT = { has_country_flag = MKN_congress_invitation_pending } } }
+		cost = 50
+		days_re_enable = 180
+		complete_effect = {
+			FROM = {
+				set_country_flag = { flag = MKN_congress_invitation_pending days = 30 }
+				country_event = { id = mkn_horizons.1 days = 1 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+# Existing economic congress is the documented owner of the reactor project.
+MKN_economic_congress_category = {
+	MKN_huliaipole_reactor_project = {
+		icon = decision_generic_construction
+		state_target = yes
+		target_array = ROOT.owned_states
+		target_trigger = { FROM = { state = 1082 } }
+		visible = { has_completed_focus = MKN_the_absolute_argument NOT = { has_country_flag = MKN_huliaipole_reactor_completed } }
+		available = {
+			MKN_horizons_reactor_site = yes
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = { has_country_flag = MKN_huliaipole_reactor_active }
+		}
+		cost = 100
+		days_remove = 90
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = { set_country_flag = MKN_huliaipole_reactor_active }
+		cancel_trigger = { NOT = { MKN_horizons_reactor_site = yes } }
+		cancel_effect = { add_political_power = 100 clr_country_flag = MKN_huliaipole_reactor_active }
+		remove_effect = {
+			if = {
+				limit = { MKN_horizons_reactor_site = yes NOT = { has_country_flag = MKN_huliaipole_reactor_completed } }
+				FROM = { add_building_construction = { type = nuclear_reactor level = 1 instant_build = yes } }
+				set_country_flag = MKN_huliaipole_reactor_completed
+			}
+			else = { add_political_power = 100 }
+			clr_country_flag = MKN_huliaipole_reactor_active
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

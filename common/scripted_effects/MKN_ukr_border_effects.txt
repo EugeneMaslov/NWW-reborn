@@ -318,6 +318,7 @@ mkn_ukr_build_frontier_forts = {
 mkn_ukr_conclude_total_war = {
 	if = {
 		limit = {
+			MKN_ukr_escalation_ready_for_war = yes
 			NOT = {
 				has_country_flag = mkn_ukr_pact_signed
 			}
@@ -366,6 +367,8 @@ mkn_ukr_conclude_total_war = {
 						}
 					}
 				}
+				# Set before declaring: limited-war AI must apply immediately.
+				set_country_flag = UKR_mkn_offensive_limited
 				declare_war_on = {
 					target = MKN
 					type = annex_everything
