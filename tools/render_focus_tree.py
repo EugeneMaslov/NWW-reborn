@@ -69,6 +69,7 @@ for tag in selected_tags:
     width = max(x for x, y in positions.values())+150
     height = max(y for x, y in positions.values())+120
     result = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+              '<defs><marker id="prerequisite-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M 0 0 L 6 3 L 0 6 Z" fill="#68809a"/></marker></defs>',
               '<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e4edf7}.label{font-size:12px}.small{font-size:10px;fill:#acbbce}</style>',
               f'<rect width="{width}" height="{height}" fill="#111925"/>',
               f'<text x="32" y="38" font-size="24">{tag}: {len(focuses)} фокусов</text>',
@@ -83,7 +84,7 @@ for tag in selected_tags:
         for column, title in [(7,'Политика'),(18,'Дипломатия'),(24,'Гражданская промышленность'),(28,'Сельское хозяйство и сырьё'),(32,'Военная промышленность'),(36,'Наука'),(42,'Армия'),(50,'Авиация'),(56,'Флот')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'MKN':
-        for column, title in [(4,'Днепрострой: 10 фокусов'),(16,'Вольные кооперативы: 10 фокусов'),(27,'Наука'),(34,'Подготовка и архив'),(46,'Механизация: 5 + штаб'),(54,'Вольные колонны: 4 + штаб'),(62,'Защита неба: 4 + школа'),(70,'Авиация поддержки: 5 + школа'),(78,'Эскорты: 4 + флотилия'),(86,'Рейдеры: 3 + флотилия'),(108,'Кризис 1936 года: четыре пути'),(131,'Украинский рубеж')]:
+        for column, title in [(4,'Днепрострой: 10 фокусов'),(16,'Кооперативы: 10 фокусов'),(24,'Механизация: 5 + штаб'),(32,'Вольные колонны: 5 + штаб'),(40,'Защита неба: 5 + школа'),(48,'Авиация поддержки: 5 + школа'),(56,'Эскорты: 5 + флотилия'),(64,'Рейдеры: 5 + флотилия'),(86,'Кризис: четыре пути'),(101,'Общая внешняя политика'),(109,'Украинский рубеж'),(124,'Интеграция Украины')]:
             result.append(f'<text x="{column*90+140}" y="90" font-size="14" text-anchor="middle">{title}</text>')
     elif tag == 'UKR':
         for column, title in [(6,'Политические мандаты'),(22,'Хозяйство'),(34,'Армия'),(44,'Авиация'),(54,'Флот'),(64,'Дипломатия')]:
@@ -100,7 +101,7 @@ for tag in selected_tags:
             for parent in parents:
                 px, py = positions[parent]
                 mid = (py+y)/2
-                result.append(f'<path d="M {px} {py+30} V {mid} H {x} V {y-30}" fill="none" stroke="#68809a" stroke-width="1.4" {dashed}/>')
+                result.append(f'<path d="M {px} {py+30} V {mid} H {x} V {y-30}" fill="none" stroke="#68809a" stroke-width="1.4" marker-end="url(#prerequisite-arrow)" {dashed}/>')
     drawn = set()
     for f in focuses:
         fid=one(f,'id');x,y=positions[fid]

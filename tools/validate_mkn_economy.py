@@ -278,7 +278,7 @@ def validate_economy(root, game, check, localized):
     # Live gates require playable focuses. The v5 military importer may read
     # registered, hidden legacy tokens to restore earned bonuses in old saves.
     military = json.loads((root/'docs/MKN_military_refactor.json').read_text())
-    retired = set(military['old_rewards']) - set(fs)
+    retired = (set(military['old_rewards']) | set(json.loads((root/'docs/MKN_tree_consolidation.json').read_text())['retired'])) - set(fs)
     registered = focus_registry(root/'common/national_focus')
     for path in [root/'common/scripted_effects/nww_mkn_progression.txt', root/'common/ideas/nww_MKN_ideas.txt']:
         for k, v, o in walk(read(path)):

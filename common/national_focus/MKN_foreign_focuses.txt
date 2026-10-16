@@ -1,0 +1,123 @@
+# Owner: MKN. Shared by every successor government after Batko’s departure.
+shared_focus = {
+    id = MKN_foreign_delegates
+    icon = GFX_focus_generic_conference
+    x = 98
+    y = 4
+    cost = 5
+    prerequisite = {
+        focus = MKN_black_international
+    }
+    available_if_capitulated = no
+    available = {
+
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+    }
+    ai_will_do = {
+        factor = 2
+        modifier = {
+            factor = 0
+            has_country_flag = MKN_crisis_active
+        }
+    }
+    completion_reward = {
+        add_political_power = 50
+        hidden_effect = {
+            MKN_rebuild_foreign_service = yes
+        }
+        custom_effect_tooltip = MKN_foreign_delegates_tt
+    }
+}
+shared_focus = {
+    id = MKN_workers_corridors
+    icon = GFX_goal_generic_scientific_exchange
+    x = 98
+    y = 5
+    cost = 10
+    prerequisite = {
+        focus = MKN_foreign_delegates
+    }
+    available_if_capitulated = no
+    available = {
+
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+    }
+    ai_will_do = {
+        factor = 2
+        modifier = {
+            factor = 0
+            has_country_flag = MKN_crisis_active
+        }
+    }
+    completion_reward = {
+        hidden_effect = {
+            MKN_rebuild_foreign_service = yes
+        }
+        custom_effect_tooltip = MKN_workers_corridors_tt
+    }
+}
+shared_focus = {
+    id = MKN_consular_communes
+    icon = GFX_focus_generic_diplomatic_treaty
+    x = 98
+    y = 6
+    cost = 5
+    prerequisite = {
+        focus = MKN_workers_corridors
+    }
+    available_if_capitulated = no
+    available = {
+
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+    }
+    ai_will_do = {
+        factor = 2
+        modifier = {
+            factor = 0
+            has_country_flag = MKN_crisis_active
+        }
+    }
+    completion_reward = {
+        add_political_power = 50
+        hidden_effect = {
+            MKN_rebuild_foreign_service = yes
+        }
+        custom_effect_tooltip = MKN_consular_communes_tt
+    }
+}
+shared_focus = {
+    id = MKN_solidarity_guarantees
+    icon = GFX_goal_generic_alliance
+    x = 98
+    y = 7
+    cost = 10
+    prerequisite = {
+        focus = MKN_consular_communes
+    }
+    available_if_capitulated = no
+    available = {
+
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+    }
+    ai_will_do = {
+        factor = 2
+        modifier = {
+            factor = 0
+            has_country_flag = MKN_crisis_active
+        }
+    }
+    completion_reward = {
+        hidden_effect = {
+            MKN_rebuild_foreign_service = yes
+        }
+        custom_effect_tooltip = MKN_solidarity_guarantees_tt
+    }
+}

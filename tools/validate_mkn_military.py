@@ -210,8 +210,8 @@ def validate_military(root, game, check, localized):
         check(model.oneoffs == rewards, context + ': rebuild replays one-off rewards')
 
     focus_ids = {g['id'] for g in groups} | set(manifest['memorials'])
-    check(len(focus_ids) == 30 and manifest['old_focus_count'] == 130, 'MKN: expected 130 → 30 military focuses')
-    check(Counter(g['service'] for g in groups) == {'army': 10, 'air': 10, 'navy': 8}, 'MKN: wrong service focus counts (army also has two memorials)')
+    check(len(focus_ids) == 35 and manifest['old_focus_count'] == 130, 'MKN: expected 35 military focuses including three roots and two memorials')
+    check(Counter(g['service'] for g in groups) == {'army': 11, 'air': 11, 'navy': 11}, 'MKN: each service needs a root and two five-focus programmes')
     check(len(tactics) == 30 and Counter(t['service'] for t in tactics) == {'army': 10, 'air': 10, 'navy': 10}, 'MKN: expected 30 HQ tactics')
     assigned = [s for g in groups+tactics for s in g['sources']]
     check(len(assigned) == len(set(assigned)) and set(assigned) == originals.keys(), 'MKN: a legacy bonus was lost or duplicated')
@@ -247,7 +247,7 @@ def validate_military(root, game, check, localized):
     for fid in manifest['memorials']:
         check(fid in fs, 'MKN: missing Marusya focus '+fid)
     check(one(one(fs['MKN_memory_of_atamansha_marusya'], 'completion_reward'), 'add_ideas') == 'MKN_marusyas_legacy', 'Marusya memorial spirit lost')
-    check(one(one(fs['MKN_memory_of_atamansha_marusya'], 'available'), 'has_completed_focus') == manifest['roots']['army'], 'Marusya no longer requires the staff')
+    check(one(one(fs['MKN_memory_of_atamansha_marusya'], 'prerequisite'), 'focus') == manifest['roots']['army'], 'Marusya no longer requires the staff')
     check(one(one(fs['MKN_the_black_guard_battalions'], 'completion_reward'), 'MKN_raise_black_guard_battalions') == 'yes', 'Marusya battalions reward changed')
     for fid, f in fs.items():
         if fid not in focus_ids:
@@ -274,7 +274,7 @@ def validate_military(root, game, check, localized):
             model.rebuild()
             model.focuses.add(g['id'])
             model.apply(one(fs[g['id']], 'completion_reward'))
-            exact(model, set(g['sources']), g['id']+': partial bundle repeats/loses source stats')
+            exact(model, set(g['sources']) | ({g['id']} if g.get('new_reform') else set()), g['id']+': partial bundle repeats/loses source stats')
             rebuilt(model, g['id'])
 
     # All eight combinations of exclusive programs, with and without AAT.
@@ -292,7 +292,7 @@ def validate_military(root, game, check, localized):
         for t in tactics:
             if t['route'] in model.focuses:
                 model.apply(one(decisions[t['id']], 'complete_effect'))
-        old_done = {s for g in groups if g['id'] in chosen for s in g['sources']} | {s for t in tactics if t['route'] in chosen for s in t['sources']}
+        old_done = {s for g in groups if g['id'] in chosen for s in g['sources']} | {s for t in tactics if t['route'] in chosen for s in t['sources']} | {g['id'] for g in groups if g['id'] in chosen and g.get('new_reform')}
         exact(model, old_done, 'MKN: full program total differs from baseline')
         rebuilt(model, 'MKN full program')
         check(aat or not any(k.startswith('mio:') for k, v in model.oneoffs), 'MKN: AAT MIO effect runs without AAT')
@@ -377,7 +377,7 @@ def validate_military(root, game, check, localized):
         check(any(k == 'has_country_flag' and v == 'MKN_services_redesign_v5' for k, v, o in walk(nodes)), hook+': missing v5 save repair')
     for relative in ('common/national_focus/MKN.txt', 'common/decisions/MKN_military_decisions.txt', 'common/scripted_effects/nww_mkn_progression.txt'):
         check(not list(engine_script_errors(read(root/relative))), relative+': invalid native script syntax')
-    print(f'PASS: MKN HQ: 130 → 30 focuses, 30 one-off tactics, 9 one-off projects; {len(scenarios)} legacy saves, preserved bonuses plus explicit finale adjustments, DLC guards, XP/CP, radar research and project cancellation')
+    print(f'PASS: MKN HQ: 35 focuses, six five-focus programmes, 30 one-off tactics, 9 one-off projects; {len(scenarios)} legacy saves, preserved bonuses plus explicit additions, DLC guards, XP/CP, radar research and project cancellation')
 
 
 if __name__ == '__main__':

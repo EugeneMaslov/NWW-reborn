@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "old_focus_count": 130,
   "old_programs": [
     {
@@ -7714,7 +7714,7 @@
         "MKN_steppe_general_staff"
       ],
       "parent": null,
-      "x": 50,
+      "x": 28,
       "y": 0,
       "cost": 10,
       "opposite": null,
@@ -7735,7 +7735,7 @@
         "MKN_machinegun_carts"
       ],
       "parent": "MKN_steppe_general_staff",
-      "x": 54,
+      "x": 32,
       "y": 1,
       "cost": 10,
       "opposite": "MKN_motorized_vanguard",
@@ -7758,7 +7758,7 @@
         "MKN_field_veterinary"
       ],
       "parent": "MKN_steppe_horde",
-      "x": 54,
+      "x": 32,
       "y": 2,
       "cost": 5,
       "opposite": null,
@@ -7779,7 +7779,7 @@
         "MKN_militia_signals"
       ],
       "parent": "MKN_hidden_supply_bases_focus",
-      "x": 54,
+      "x": 32,
       "y": 3,
       "cost": 5,
       "opposite": null,
@@ -7798,9 +7798,9 @@
       "sources": [
         "MKN_free_army_compact"
       ],
-      "parent": "MKN_free_column_command_focus",
-      "x": 54,
-      "y": 4,
+      "parent": "MKN_column_medical_service",
+      "x": 32,
+      "y": 5,
       "cost": 10,
       "opposite": null,
       "title": null,
@@ -7829,7 +7829,7 @@
         "MKN_mobile_supply_columns"
       ],
       "parent": "MKN_steppe_general_staff",
-      "x": 46,
+      "x": 24,
       "y": 1,
       "cost": 10,
       "opposite": "MKN_steppe_horde",
@@ -7852,7 +7852,7 @@
         "MKN_tank_maintenance"
       ],
       "parent": "MKN_motorized_vanguard",
-      "x": 46,
+      "x": 24,
       "y": 2,
       "cost": 10,
       "opposite": null,
@@ -7873,7 +7873,7 @@
         "MKN_fire_tables"
       ],
       "parent": "MKN_armored_trains_and_repair_focus",
-      "x": 46,
+      "x": 24,
       "y": 3,
       "cost": 10,
       "opposite": null,
@@ -7893,7 +7893,7 @@
         "MKN_radio_sections"
       ],
       "parent": "MKN_communal_fire_support_focus",
-      "x": 46,
+      "x": 24,
       "y": 4,
       "cost": 5,
       "opposite": null,
@@ -7912,7 +7912,7 @@
         "MKN_mechanized_compact"
       ],
       "parent": "MKN_combined_arms_command_focus",
-      "x": 46,
+      "x": 24,
       "y": 5,
       "cost": 10,
       "opposite": null,
@@ -7939,7 +7939,7 @@
         "MKN_gulyaipole_pilot_school"
       ],
       "parent": null,
-      "x": 66,
+      "x": 44,
       "y": 0,
       "cost": 10,
       "opposite": null,
@@ -7963,7 +7963,7 @@
         "MKN_interceptor_pairs"
       ],
       "parent": "MKN_steppe_hawks_and_schools",
-      "x": 62,
+      "x": 40,
       "y": 1,
       "cost": 10,
       "opposite": "MKN_flying_artillery_focus",
@@ -7986,7 +7986,7 @@
         "MKN_air_warning"
       ],
       "parent": "MKN_interceptor_cooperatives",
-      "x": 62,
+      "x": 40,
       "y": 2,
       "cost": 5,
       "opposite": null,
@@ -8008,7 +8008,7 @@
         "MKN_aircraft_recovery"
       ],
       "parent": "MKN_communal_aa_defense_focus",
-      "x": 62,
+      "x": 40,
       "y": 3,
       "cost": 10,
       "opposite": null,
@@ -8028,9 +8028,9 @@
       "sources": [
         "MKN_free_sky_compact"
       ],
-      "parent": "MKN_airframe_standardization_focus",
-      "x": 62,
-      "y": 4,
+      "parent": "MKN_air_warning_network_focus",
+      "x": 40,
+      "y": 5,
       "cost": 10,
       "opposite": null,
       "title": null,
@@ -8058,7 +8058,7 @@
         "MKN_bombing_ranges"
       ],
       "parent": "MKN_steppe_hawks_and_schools",
-      "x": 70,
+      "x": 48,
       "y": 1,
       "cost": 10,
       "opposite": "MKN_interceptor_cooperatives",
@@ -8081,7 +8081,7 @@
         "MKN_air_ground_liaisons"
       ],
       "parent": "MKN_flying_artillery_focus",
-      "x": 70,
+      "x": 48,
       "y": 2,
       "cost": 5,
       "opposite": null,
@@ -8102,7 +8102,7 @@
         "MKN_target_markers"
       ],
       "parent": "MKN_forward_airstrips_focus",
-      "x": 70,
+      "x": 48,
       "y": 3,
       "cost": 5,
       "opposite": null,
@@ -8122,7 +8122,7 @@
         "MKN_cas_maintenance"
       ],
       "parent": "MKN_air_ground_coordination_focus",
-      "x": 70,
+      "x": 48,
       "y": 4,
       "cost": 5,
       "opposite": null,
@@ -8141,7 +8141,7 @@
         "MKN_air_support_compact"
       ],
       "parent": "MKN_cas_workshop_network_focus",
-      "x": 70,
+      "x": 48,
       "y": 5,
       "cost": 10,
       "opposite": null,
@@ -8169,7 +8169,7 @@
         "MKN_kherson_shipyard"
       ],
       "parent": null,
-      "x": 82,
+      "x": 60,
       "y": 0,
       "cost": 10,
       "opposite": null,
@@ -8193,7 +8193,7 @@
         "MKN_depth_charge_school"
       ],
       "parent": "MKN_black_sea_flotilla_and_yards",
-      "x": 78,
+      "x": 56,
       "y": 1,
       "cost": 10,
       "opposite": "MKN_torpedo_artels_focus",
@@ -8216,7 +8216,7 @@
         "MKN_coastal_signal_posts"
       ],
       "parent": "MKN_sea_escort_service",
-      "x": 78,
+      "x": 56,
       "y": 2,
       "cost": 5,
       "opposite": null,
@@ -8238,7 +8238,7 @@
         "MKN_convoy_schedules"
       ],
       "parent": "MKN_coastal_fortifications_focus",
-      "x": 78,
+      "x": 56,
       "y": 3,
       "cost": 10,
       "opposite": null,
@@ -8258,9 +8258,9 @@
       "sources": [
         "MKN_escort_compact"
       ],
-      "parent": "MKN_escort_repair_network_focus",
-      "x": 78,
-      "y": 4,
+      "parent": "MKN_convoy_control_office",
+      "x": 56,
+      "y": 5,
       "cost": 10,
       "opposite": null,
       "title": null,
@@ -8288,7 +8288,7 @@
         "MKN_torpedo_trials"
       ],
       "parent": "MKN_black_sea_flotilla_and_yards",
-      "x": 86,
+      "x": 64,
       "y": 1,
       "cost": 10,
       "opposite": "MKN_sea_escort_service",
@@ -8314,7 +8314,7 @@
         "MKN_raider_supply"
       ],
       "parent": "MKN_torpedo_artels_focus",
-      "x": 86,
+      "x": 64,
       "y": 2,
       "cost": 10,
       "opposite": null,
@@ -8336,9 +8336,9 @@
       "sources": [
         "MKN_raider_compact"
       ],
-      "parent": "MKN_hidden_smuggler_bases_focus",
-      "x": 86,
-      "y": 3,
+      "parent": "MKN_underway_refit_artels",
+      "x": 64,
+      "y": 5,
       "cost": 10,
       "opposite": null,
       "title": null,
@@ -8355,6 +8355,86 @@
         "MKN_raider_escape_routes",
         "MKN_raider_exercises"
       ]
+    },
+    {
+      "service": "army",
+      "id": "MKN_column_medical_service",
+      "sources": [],
+      "parent": "MKN_free_column_command_focus",
+      "x": 32,
+      "y": 4,
+      "cost": 10,
+      "opposite": null,
+      "title": [
+        "Санитарные колонны и пополнения",
+        "Medical and Replacement Columns"
+      ],
+      "reward_sources": [],
+      "new_reform": true
+    },
+    {
+      "service": "air",
+      "id": "MKN_air_warning_network_focus",
+      "sources": [],
+      "parent": "MKN_airframe_standardization_focus",
+      "x": 40,
+      "y": 4,
+      "cost": 10,
+      "opposite": null,
+      "title": [
+        "Единая сеть воздушного оповещения",
+        "Common Air Warning Network"
+      ],
+      "reward_sources": [],
+      "new_reform": true
+    },
+    {
+      "service": "navy",
+      "id": "MKN_convoy_control_office",
+      "sources": [],
+      "parent": "MKN_escort_repair_network_focus",
+      "x": 56,
+      "y": 4,
+      "cost": 10,
+      "opposite": null,
+      "title": [
+        "Диспетчерская хлебных конвоев",
+        "Grain Convoy Dispatch Office"
+      ],
+      "reward_sources": [],
+      "new_reform": true
+    },
+    {
+      "service": "navy",
+      "id": "MKN_raider_signal_stations",
+      "sources": [],
+      "parent": "MKN_hidden_smuggler_bases_focus",
+      "x": 64,
+      "y": 3,
+      "cost": 10,
+      "opposite": null,
+      "title": [
+        "Сигнальные станции рейдеров",
+        "Raider Signal Stations"
+      ],
+      "reward_sources": [],
+      "new_reform": true
+    },
+    {
+      "service": "navy",
+      "id": "MKN_underway_refit_artels",
+      "sources": [],
+      "parent": "MKN_raider_signal_stations",
+      "x": 64,
+      "y": 4,
+      "cost": 10,
+      "opposite": null,
+      "title": [
+        "Плавучие ремонтные артели",
+        "Floating Repair Artels"
+      ],
+      "reward_sources": [],
+      "new_reform": true
     }
   ],
   "tactics": [
@@ -8838,6 +8918,26 @@
     "MKN_mechanized_compact": {
       "MKN_army_breakthrough_factor": "0.1",
       "MKN_army_army_armor_attack_factor": "0.05"
+    },
+    "MKN_column_medical_service": {
+      "MKN_army_casualty_trickleback": "0.05",
+      "MKN_army_land_reinforce_rate": "0.05"
+    },
+    "MKN_air_warning_network_focus": {
+      "MKN_air_air_interception_detect_factor": "0.1",
+      "MKN_air_air_home_defence_factor": "0.05"
+    },
+    "MKN_convoy_control_office": {
+      "MKN_navy_convoy_escort_efficiency": "0.1",
+      "MKN_navy_navy_fuel_consumption_factor": "-0.05"
+    },
+    "MKN_raider_signal_stations": {
+      "MKN_navy_naval_detection": "0.1",
+      "MKN_navy_naval_coordination": "0.05"
+    },
+    "MKN_underway_refit_artels": {
+      "MKN_navy_naval_ship_recovery_chance_factor": "0.1",
+      "MKN_navy_naval_retreat_speed": "0.05"
     }
   }
 }

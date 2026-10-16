@@ -219,6 +219,12 @@ scope_files += [ROOT / relative for relative in (
     'common/decisions/categories/nww_mkn_mandate.txt'
 )]
 scope_files += [ROOT / relative for relative in (
+    'common/national_focus/MKN_foreign_focuses.txt',
+    'common/decisions/MKN_foreign_decisions.txt',
+    'common/scripted_effects/MKN_foreign_effects.txt',
+    'common/dynamic_modifiers/MKN_foreign_modifiers.txt',
+    'common/opinion_modifiers/MKN_foreign_opinions.txt',
+    'events/MKN_foreign_events.txt',
     'common/national_focus/MKN_horizons_focuses.txt',
     'common/ideas/MKN_horizons_ideas.txt',
     'common/decisions/MKN_horizons_decisions.txt',
@@ -586,6 +592,12 @@ from validate_mkn_frontier import validate_frontier
 validate_frontier(ROOT, GAME, check, localized)
 from validate_mkn_horizons import validate_horizons
 validate_horizons(ROOT, GAME, check, localized)
+from validate_mkn_ai_followup import validate_ai_followup
+validate_ai_followup(ROOT, GAME, check, localized)
+from validate_mkn_foreign import validate_foreign
+validate_foreign(ROOT, GAME, check, localized)
+from validate_mkn_tree_consolidation import validate_tree_consolidation
+validate_tree_consolidation(ROOT, GAME, check, localized)
 from validate_mkn_personnel import validate_personnel
 validate_personnel(ROOT, GAME, check, localized)
 from validate_mkn_international import validate_international

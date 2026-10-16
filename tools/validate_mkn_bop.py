@@ -2,6 +2,7 @@
 from copy import deepcopy
 from collections import Counter
 import re
+import json
 
 from hoi4_script import read, one, values, walk, tree_focuses
 
@@ -53,17 +54,14 @@ def validate_bop(root, game, check, localized):
 
     fs = {one(f, 'id'): f for f in tree_focuses(one(read(root / 'common/national_focus/MKN.txt'), 'focus_tree'), root/'common/national_focus')}
     check(values(one(fs['MKN_departure_of_batko'], 'prerequisite'), 'focus') == ['MKN_congress_1936'], 'MKN: invalid shared root')
-    entries = {'MKN_black_hundreds': 'fascism', 'MKN_constituent_assembly': 'democratic', 'MKN_nestor_the_first': 'neutrality', 'MKN_red_banner_steppe': 'communism'}
+    entries = {'MKN_military_takes_charge': 'fascism', 'MKN_triumph_of_free_soviets': 'democratic', 'MKN_peasant_delegates': 'neutrality', 'MKN_emergency_revkom': 'communism'}
     for fid, ideology in entries.items():
         excluded = {v for g in values(fs[fid], 'mutually_exclusive') for v in values(g, 'focus')}
         check(excluded == entries.keys() - {fid}, f'{fid}: four paths are not mutually exclusive')
         politics = one(one(fs[fid], 'completion_reward'), 'set_politics')
         check(one(politics, 'ruling_party') == ideology and one(politics, 'elections_allowed') == 'no', f'{fid}: incomplete government/election block')
-    for fid in ('MKN_everlasting_makhnovshchina', 'MKN_council_communism'):
-        check(values(one(fs[fid], 'prerequisite'), 'focus') == ['MKN_free_elections_steppe'], f'{fid}: legacy anarchist program escapes democratic branch')
-    for fid in ('MKN_steppe_legions', 'MKN_ataman_directorate'):
-        gate = one(one(fs[fid], 'available'), 'power_balance_value')
-        check(('value', '-0.6', '<') in gate, f'{fid}: missing total military control gate')
+    for fid in ('MKN_everlasting_makhnovshchina', 'MKN_council_communism', 'MKN_steppe_legions', 'MKN_ataman_directorate'):
+        check(fid not in fs, f'{fid}: retired preparation/archive path remains playable')
     check(not any(k == 'add_to_faction' for f in fs.values() for k, v, op in walk(one(f, 'completion_reward'))), 'MKN: focus forces foreign alliance without consent')
     for f in fs.values():
         reward = one(f, 'completion_reward')
@@ -86,7 +84,11 @@ def validate_bop(root, game, check, localized):
         for b in values(node, 'add_to_variable'):
             changes.update({k: float(v) for k, v, o in b if k.startswith('MKN_unified_')})
         if changes: replay[fid] = changes
-    check(replay == expected, 'MKN: economic migration does not reproduce political focus parameters')
+    archived = json.loads((root/'docs/MKN_tree_consolidation.json').read_text())['retired_stat_rewards']
+    for fid, changes in archived.items():
+        economy = {k: float(v) for k,v in changes.items() if k.startswith('MKN_unified_')}
+        if economy: expected[fid] = Counter(economy)
+    check(replay == expected, 'MKN: economic migration does not reproduce active and earned archived political parameters')
     scripts = values(read(root / 'common/scripted_localisation/MKN_ideology_names.txt'), 'defined_text')
     helpers = {one(d, 'name') for d in scripts}
     for node in scripts:

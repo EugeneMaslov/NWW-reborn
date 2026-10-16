@@ -33,12 +33,14 @@
       "MKN_steppe_horde",
       "MKN_hidden_supply_bases_focus",
       "MKN_free_column_command_focus",
+      "MKN_column_medical_service",
       "MKN_free_army_compact"
     ],
     "core": [
       "MKN_steppe_horde",
       "MKN_hidden_supply_bases_focus",
       "MKN_free_column_command_focus",
+      "MKN_column_medical_service",
       "MKN_free_army_compact"
     ],
     "optional": [],
@@ -59,12 +61,14 @@
       "MKN_interceptor_cooperatives",
       "MKN_communal_aa_defense_focus",
       "MKN_airframe_standardization_focus",
+      "MKN_air_warning_network_focus",
       "MKN_free_sky_compact"
     ],
     "core": [
       "MKN_interceptor_cooperatives",
       "MKN_communal_aa_defense_focus",
       "MKN_airframe_standardization_focus",
+      "MKN_air_warning_network_focus",
       "MKN_free_sky_compact"
     ],
     "optional": [],
@@ -111,12 +115,14 @@
       "MKN_sea_escort_service",
       "MKN_coastal_fortifications_focus",
       "MKN_escort_repair_network_focus",
+      "MKN_convoy_control_office",
       "MKN_escort_compact"
     ],
     "core": [
       "MKN_sea_escort_service",
       "MKN_coastal_fortifications_focus",
       "MKN_escort_repair_network_focus",
+      "MKN_convoy_control_office",
       "MKN_escort_compact"
     ],
     "optional": [],
@@ -135,11 +141,15 @@
     "focuses": [
       "MKN_torpedo_artels_focus",
       "MKN_hidden_smuggler_bases_focus",
+      "MKN_raider_signal_stations",
+      "MKN_underway_refit_artels",
       "MKN_raider_compact"
     ],
     "core": [
       "MKN_torpedo_artels_focus",
       "MKN_hidden_smuggler_bases_focus",
+      "MKN_raider_signal_stations",
+      "MKN_underway_refit_artels",
       "MKN_raider_compact"
     ],
     "optional": [],

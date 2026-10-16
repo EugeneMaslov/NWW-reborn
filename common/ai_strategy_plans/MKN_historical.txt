@@ -1,4 +1,4 @@
-# История — синдикалистский договор; вне истории один из четырёх подготовленных маршрутов.
+# DEFAULT/RANDOM choose one of four routes; explicit HISTORICAL selects the syndicalist compact.
 MKN_fascism_plan = {
 	name = MKN_AI_FASCISM
 	desc = MKN_AI_FASCISM_DESC
@@ -46,10 +46,10 @@ MKN_fascism_plan = {
 		MKN_triumph_of_free_soviets = 0
 		MKN_peasant_delegates = 0
 		MKN_emergency_revkom = 0
-		MKN_black_hundreds = 0
-		MKN_constituent_assembly = 0
-		MKN_nestor_the_first = 0
-		MKN_red_banner_steppe = 0
+
+
+
+
 	}
 }
 MKN_democratic_plan = {
@@ -99,10 +99,10 @@ MKN_democratic_plan = {
 		MKN_military_takes_charge = 0
 		MKN_peasant_delegates = 0
 		MKN_emergency_revkom = 0
-		MKN_black_hundreds = 0
-		MKN_constituent_assembly = 0
-		MKN_nestor_the_first = 0
-		MKN_red_banner_steppe = 0
+
+
+
+
 	}
 }
 MKN_neutrality_plan = {
@@ -152,10 +152,10 @@ MKN_neutrality_plan = {
 		MKN_military_takes_charge = 0
 		MKN_triumph_of_free_soviets = 0
 		MKN_emergency_revkom = 0
-		MKN_black_hundreds = 0
-		MKN_constituent_assembly = 0
-		MKN_nestor_the_first = 0
-		MKN_red_banner_steppe = 0
+
+
+
+
 	}
 }
 MKN_historical = {
@@ -205,9 +205,9 @@ MKN_historical = {
 		MKN_military_takes_charge = 0
 		MKN_triumph_of_free_soviets = 0
 		MKN_peasant_delegates = 0
-		MKN_black_hundreds = 0
-		MKN_constituent_assembly = 0
-		MKN_nestor_the_first = 0
-		MKN_red_banner_steppe = 0
+
+
+
+
 	}
 }

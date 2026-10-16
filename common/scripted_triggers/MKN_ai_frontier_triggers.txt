@@ -1,0 +1,7 @@
+# Native strength_ratio pattern: AAT NOR_scripted_triggers.txt.
+# Political routes other than the prepared military course seek a settlement.
+MKN_ai_frontier_pressure = {
+	has_country_flag = MKN_ai_route_fascism
+	has_completed_focus = MKN_arrest_demagogues
+	strength_ratio = { tag = UKR ratio > 1.25 }
+}

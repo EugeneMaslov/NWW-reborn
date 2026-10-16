@@ -49,9 +49,8 @@ def validate_crisis(root, game, check, localized):
     international = focuses['MKN_black_international']
     localized('MKN_black_international', 'MKN shared International')
     localized('MKN_black_international_desc', 'MKN shared International')
-    check(not values(international, 'prerequisite'), 'MKN International: shared gate must avoid cross-branch connectors')
-    prepared = set(values(one(one(international, 'available'), 'OR'), 'has_completed_focus'))
-    check(prepared == {'MKN_arms_to_the_people', 'MKN_every_farm_a_fortress'}, 'MKN International: missing syndicalist/agrarian preparation')
+    check(values(one(international, 'prerequisite'), 'focus') == ['MKN_departure_of_batko'], 'MKN International: shared branch must start at Batko departure')
+    check(not one(international, 'available') and not one(international, 'allow_branch'), 'MKN International: a successor government cannot access the common branch')
     departure = focuses['MKN_departure_of_batko']
     check(one(departure, 'cost') == '5' and one(one(departure, 'available'), 'always') == 'no', 'MKN: funeral must be event-completed and preserve uniform focus costs')
     check(not one(departure, 'completion_reward'), 'MKN: funeral focus replays a political reward')

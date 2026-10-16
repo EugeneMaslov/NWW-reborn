@@ -1,7 +1,7 @@
 shared_focus = {
 	id = MKN_ukrainian_frontier_root
 	icon = GFX_focus_MKN_ukrainian_frontier_root
-	x = 131
+	x = 109
 	y = 0
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -33,7 +33,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MKN_ukrainian_frontier_root
 	}
-	x = 128
+	x = 106
 	y = 1
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -70,7 +70,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MKN_ukrainian_frontier_root
 	}
-	x = 134
+	x = 112
 	y = 1
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -107,7 +107,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MKN_tachanka_deep_recon
 	}
-	x = 128
+	x = 106
 	y = 3
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -143,7 +143,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MKN_donbas_miners_agitation
 	}
-	x = 134
+	x = 112
 	y = 3
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -182,7 +182,7 @@ shared_focus = {
 	prerequisite = {
 		focus = MKN_armored_train_interceptors
 	}
-	x = 131
+	x = 109
 	y = 4
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -218,7 +218,7 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = MKN_conclude_kharkiv_treaty
 	}
-	x = 128
+	x = 106
 	y = 6
 	available_if_capitulated = no
 	cancel_if_invalid = yes
@@ -261,7 +261,7 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = MKN_conclude_total_war
 	}
-	x = 134
+	x = 112
 	y = 6
 	available_if_capitulated = no
 	cancel_if_invalid = yes

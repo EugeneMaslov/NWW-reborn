@@ -1,3 +1,4 @@
+# AI campaigns only for its pinned route; frontier de-escalation takes budget priority.
 MKN_public_mandate = {
 	MKN_campaign_communism = {
 		icon = generic_political_discourse
@@ -28,11 +29,14 @@ MKN_public_mandate = {
 				communism < 0.50
 			}
 			modifier = {
-				add = 20
+				factor = 0
+				has_country_flag = mkn_frontier_conflict_active
 				NOT = {
-					has_country_flag = MKN_ai_plan_selected
+					has_country_flag = mkn_ukr_frontier_concluded
 				}
-				has_government = communism
+				check_variable = {
+					mkn_ukr_escalation_level > 1
+				}
 			}
 		}
 	}
@@ -65,11 +69,14 @@ MKN_public_mandate = {
 				democratic < 0.50
 			}
 			modifier = {
-				add = 20
+				factor = 0
+				has_country_flag = mkn_frontier_conflict_active
 				NOT = {
-					has_country_flag = MKN_ai_plan_selected
+					has_country_flag = mkn_ukr_frontier_concluded
 				}
-				has_government = democratic
+				check_variable = {
+					mkn_ukr_escalation_level > 1
+				}
 			}
 		}
 	}
@@ -102,11 +109,14 @@ MKN_public_mandate = {
 				fascism < 0.50
 			}
 			modifier = {
-				add = 20
+				factor = 0
+				has_country_flag = mkn_frontier_conflict_active
 				NOT = {
-					has_country_flag = MKN_ai_plan_selected
+					has_country_flag = mkn_ukr_frontier_concluded
 				}
-				has_government = fascism
+				check_variable = {
+					mkn_ukr_escalation_level > 1
+				}
 			}
 		}
 	}
@@ -139,11 +149,14 @@ MKN_public_mandate = {
 				neutrality < 0.50
 			}
 			modifier = {
-				add = 20
+				factor = 0
+				has_country_flag = mkn_frontier_conflict_active
 				NOT = {
-					has_country_flag = MKN_ai_plan_selected
+					has_country_flag = mkn_ukr_frontier_concluded
 				}
-				has_government = neutrality
+				check_variable = {
+					mkn_ukr_escalation_level > 1
+				}
 			}
 		}
 	}

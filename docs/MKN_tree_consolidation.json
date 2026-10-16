@@ -1,0 +1,122 @@
+{
+  "retired": [
+    "MKN_anarchist_schools",
+    "MKN_ataman_directorate",
+    "MKN_black_banner_east",
+    "MKN_black_hundreds",
+    "MKN_border_tensions",
+    "MKN_collectivize_the_steppe",
+    "MKN_commune_federation",
+    "MKN_constituent_assembly",
+    "MKN_council_communism",
+    "MKN_everlasting_makhnovshchina",
+    "MKN_farmers_and_workers",
+    "MKN_free_elections_steppe",
+    "MKN_free_soviets",
+    "MKN_gulyai_polye_commune",
+    "MKN_hand_to_moscow",
+    "MKN_imperial_coronation",
+    "MKN_makhno_moves_south",
+    "MKN_nabat_federation",
+    "MKN_nestor_the_first",
+    "MKN_open_markets",
+    "MKN_order_through_tachanka",
+    "MKN_peasant_charter",
+    "MKN_peasant_militias",
+    "MKN_recallable_delegates",
+    "MKN_red_banner_steppe",
+    "MKN_red_compromise_institutions",
+    "MKN_shadow_republic",
+    "MKN_soviet_press",
+    "MKN_soviets_forever",
+    "MKN_steppe_empire",
+    "MKN_steppe_legions",
+    "MKN_tachanka_guards",
+    "MKN_the_free_territory",
+    "MKN_the_steppe_holds",
+    "MKN_workers_control"
+  ],
+  "science_chain": [
+    "MKN_free_workshops_focus",
+    "MKN_technical_communes",
+    "MKN_polytechnic_institute",
+    "MKN_communal_research_network",
+    "MKN_workshop_airplane_artels",
+    "MKN_free_science_network",
+    "MKN_open_peer_review",
+    "MKN_jet_tachankas",
+    "MKN_dnieper_jet_falcons",
+    "MKN_reactor_safety_councils",
+    "MKN_the_absolute_argument"
+  ],
+  "research_slot_focuses": [
+    "MKN_communal_research_network",
+    "MKN_free_science_network"
+  ],
+  "new_military": {
+    "MKN_column_medical_service": {
+      "MKN_army_casualty_trickleback": "0.05",
+      "MKN_army_land_reinforce_rate": "0.05"
+    },
+    "MKN_air_warning_network_focus": {
+      "MKN_air_air_interception_detect_factor": "0.1",
+      "MKN_air_air_home_defence_factor": "0.05"
+    },
+    "MKN_convoy_control_office": {
+      "MKN_navy_convoy_escort_efficiency": "0.1",
+      "MKN_navy_navy_fuel_consumption_factor": "-0.05"
+    },
+    "MKN_raider_signal_stations": {
+      "MKN_navy_naval_detection": "0.1",
+      "MKN_navy_naval_coordination": "0.05"
+    },
+    "MKN_underway_refit_artels": {
+      "MKN_navy_naval_ship_recovery_chance_factor": "0.1",
+      "MKN_navy_naval_retreat_speed": "0.05"
+    }
+  },
+  "retired_stat_rewards": {
+    "MKN_soviets_forever": {
+      "MKN_unified_stability_factor": "0.05",
+      "MKN_unified_production_speed_buildings_factor": "0.05"
+    },
+    "MKN_commune_federation": {
+      "MKN_unified_stability_factor": "0.05",
+      "MKN_unified_production_speed_buildings_factor": "0.05"
+    },
+    "MKN_free_elections_steppe": {
+      "MKN_unified_stability_factor": "0.1",
+      "MKN_unified_political_power_gain": "0.1"
+    },
+    "MKN_collectivize_the_steppe": {
+      "MKN_unified_industrial_capacity_factory": "0.08",
+      "MKN_unified_consumer_goods_factor": "-0.03"
+    },
+    "MKN_steppe_legions": {
+      "MKN_army_army_org_factor": "0.05",
+      "MKN_army_war_support_factor": "0.1"
+    },
+    "MKN_imperial_coronation": {
+      "MKN_unified_stability_factor": "0.1",
+      "MKN_unified_political_power_gain": "0.15"
+    },
+    "MKN_ataman_directorate": {
+      "MKN_army_planning_speed": "0.05"
+    },
+    "MKN_recallable_delegates": {
+      "MKN_unified_political_power_gain": "0.1",
+      "MKN_unified_stability_factor": "0.03"
+    },
+    "MKN_peasant_charter": {
+      "MKN_unified_consumer_goods_factor": "-0.02",
+      "MKN_unified_stability_factor": "0.03"
+    },
+    "MKN_red_compromise_institutions": {
+      "MKN_unified_production_factory_efficiency_gain_factor": "0.05",
+      "MKN_unified_political_power_gain": "0.05"
+    }
+  },
+  "retired_science": [
+    "MKN_advanced_research"
+  ]
+}

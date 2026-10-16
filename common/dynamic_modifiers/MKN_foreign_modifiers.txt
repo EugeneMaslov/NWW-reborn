@@ -1,0 +1,9 @@
+# Owner: MKN. The diplomatic branch develops this single persistent spirit.
+MKN_foreign_service = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_democratic_reformer_eastern_european_2d
+	improve_relations_maintain_cost_factor = MKN_foreign_relations_upkeep
+	trade_opinion_factor = MKN_foreign_trade_opinion
+	opinion_gain_monthly_factor = MKN_foreign_opinion_gain
+	guarantee_cost = MKN_foreign_guarantee_cost
+}

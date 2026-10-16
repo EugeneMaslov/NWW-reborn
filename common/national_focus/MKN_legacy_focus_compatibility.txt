@@ -1582,3 +1582,49 @@ shared_focus = {
 
 	}
 }
+
+# Removed preparation/archive branch: old-save tokens only.
+shared_focus = { id = MKN_anarchist_schools cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_ataman_directorate cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_black_banner_east cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_black_hundreds cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_border_tensions cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_collectivize_the_steppe cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_commune_federation cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_constituent_assembly cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_council_communism cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_everlasting_makhnovshchina cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_farmers_and_workers cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_free_elections_steppe cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_free_soviets cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_gulyai_polye_commune cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_hand_to_moscow cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_imperial_coronation cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_makhno_moves_south cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_nabat_federation cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_nestor_the_first cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_open_markets cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_order_through_tachanka cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_peasant_charter cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_peasant_militias cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_recallable_delegates cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_red_banner_steppe cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_red_compromise_institutions cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_shadow_republic cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_soviet_press cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_soviets_forever cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_steppe_empire cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_steppe_legions cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_tachanka_guards cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_the_free_territory cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_the_steppe_holds cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+shared_focus = { id = MKN_workers_control cost = 5 allow_branch = { always = no } available = { always = no } completion_reward = { } }
+
+# Retired redundant research school; earned old-save slots are preserved.
+shared_focus = {
+	id = MKN_advanced_research
+	cost = 5
+	allow_branch = { always = no }
+	available = { always = no }
+	completion_reward = {}
+}

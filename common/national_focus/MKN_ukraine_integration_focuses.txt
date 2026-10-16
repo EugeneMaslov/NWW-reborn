@@ -1,8 +1,8 @@
-# MKN: восемь фокусов послевоенной интеграции всей стартовой Украины.
+# Owner: MKN. Post-war Ukrainian integration; whole-country ownership is required.
 shared_focus = {
 	id = MKN_ukrainian_communes_congress
 	icon = GFX_focus_generic_conference
-	x = 146
+	x = 124
 	y = 0
 	cost = 5
 	available_if_capitulated = no
@@ -29,7 +29,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_southern_commune_charters
 	icon = GFX_focus_generic_agricultural_subsidies
-	x = 142
+	x = 120
 	y = 1
 	cost = 5
 	available_if_capitulated = no
@@ -67,7 +67,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_right_bank_councils
 	icon = GFX_focus_generic_diplomatic_treaty
-	x = 146
+	x = 124
 	y = 1
 	cost = 10
 	available_if_capitulated = no
@@ -109,7 +109,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_northern_delegates
 	icon = GFX_focus_generic_manpower
-	x = 150
+	x = 128
 	y = 1
 	cost = 5
 	available_if_capitulated = no
@@ -145,7 +145,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_dnieper_workshop_federation
 	icon = GFX_focus_generic_military_industry
-	x = 146
+	x = 124
 	y = 2
 	cost = 10
 	available_if_capitulated = no
@@ -188,7 +188,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_ukrainian_rail_reconstruction
 	icon = GFX_focus_generic_railroad
-	x = 146
+	x = 124
 	y = 3
 	cost = 10
 	available_if_capitulated = no
@@ -227,7 +227,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_kyiv_scientific_exchange
 	icon = GFX_focus_research
-	x = 146
+	x = 124
 	y = 4
 	cost = 10
 	available_if_capitulated = no
@@ -235,6 +235,9 @@ shared_focus = {
 	continue_if_invalid = no
 	available = {
 		MKN_ukraine_integration_ready = yes
+		has_completed_focus = MKN_communal_research_network
+		has_completed_focus = MKN_free_science_network
+		amount_research_slots > 4
 	}
 	search_filters = {
 		FOCUS_FILTER_POLITICAL
@@ -246,7 +249,7 @@ shared_focus = {
 	completion_reward = {
 		if = {
 			limit = {
-				amount_research_slots < 5
+				amount_research_slots < 6
 			}
 			add_research_slot = 1
 		}
@@ -265,7 +268,7 @@ shared_focus = {
 shared_focus = {
 	id = MKN_federation_of_free_councils
 	icon = GFX_focus_generic_diplomatic_treaty
-	x = 146
+	x = 124
 	y = 5
 	cost = 10
 	available_if_capitulated = no

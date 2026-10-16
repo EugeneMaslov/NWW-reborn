@@ -1,0 +1,21 @@
+# Owner: MKN. Capacity floors only: never replay focus rewards or reduce
+# research slots already earned in an older save.
+MKN_repair_research_capacity = {
+	if = {
+		limit = {
+			has_completed_focus = MKN_communal_research_network
+			has_completed_focus = MKN_free_science_network
+			amount_research_slots < 5
+		}
+		set_research_slots = 5
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_communal_research_network
+			has_completed_focus = MKN_free_science_network
+			has_completed_focus = MKN_kyiv_scientific_exchange
+			amount_research_slots < 6
+		}
+		set_research_slots = 6
+	}
+}

@@ -25,10 +25,12 @@ def validate_expansion(root, game, check, localized):
     startup=one(one(read(root/'common/on_actions/nww_mkn_progression.txt'),'on_actions'),'on_startup')
     check(any(k=='nww_mkn_rebuild_industry' for k,v,o in walk(startup)),'MKN: unified industry is not initialized on startup')
     adverse={'consumer_goods_factor','supply_consumption_factor','training_time_army_factor','factory_energy_consumption','attrition','industry_air_damage_factor'}
+    industrial_ids = set(json.loads((root/'docs/MKN_unified_progression.json').read_text())['industry_changes'])
     for entry in ('MKN_dneprostroi','MKN_free_cooperatives'):
         branch={entry}
         while True:
-            more={fid for fid,f in fs.items() if any(parent in branch for g in values(f,'prerequisite') for parent in values(g,'focus'))}-branch
+            # The common research continuation has its own graph/slot tests.
+            more={fid for fid,f in fs.items() if fid in industrial_ids and any(parent in branch for g in values(f,'prerequisite') for parent in values(g,'focus'))}-branch
             if not more:break
             branch|=more
         check(10<=len(branch)<=12,f'{entry}: expected 10–12 consolidated focuses')
@@ -114,7 +116,7 @@ def validate_expansion(root, game, check, localized):
     ukr=one(read(root/'common/national_focus/ukr_focus.txt'),'focus_tree')
     uf={one(f,'id'):f for f in values(ukr,'focus')}
     check(60<=len(uf)<=80,'Ukraine focus count must be between sixty and eighty')
-    mandates={'MKN': [('MKN_everlasting_makhnovshchina','democratic'),('MKN_council_communism','democratic'),('MKN_constituent_assembly','democratic'),('MKN_red_banner_steppe','communism'),('MKN_black_hundreds','fascism'),('MKN_nestor_the_first','neutrality')],
+    mandates={'MKN': [('MKN_triumph_of_free_soviets','democratic'),('MKN_emergency_revkom','communism'),('MKN_military_takes_charge','fascism'),('MKN_peasant_delegates','neutrality')],
               'UKR': [('UKR_council_mandate','communism'),('UKR_constituent_mandate','democratic'),('UKR_state_mandate','neutrality')]}
     for tag,routes in mandates.items():
         focuses=fs if tag=='MKN' else uf

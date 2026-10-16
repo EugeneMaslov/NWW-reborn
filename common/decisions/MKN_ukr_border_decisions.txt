@@ -1,3 +1,4 @@
+# AI uses real paid withdrawals; prepared strong military governments may escalate.
 MKN_ukr_border_category = {
 	mkn_escalate_steppe_alarm = {
 		icon = frontier_ukr
@@ -26,13 +27,12 @@ MKN_ukr_border_category = {
 			mkn_ukr_check_escalation = yes
 		}
 		ai_will_do = {
-			base = 1
+			base = 0
 			modifier = {
-				factor = 0
+				add = 35
+				MKN_ai_frontier_pressure = yes
 				check_variable = {
-					var = mkn_consecutive_border_wars
-					value = 2
-					compare = greater_than_or_equals
+					mkn_ukr_escalation_level < 4
 				}
 			}
 		}
@@ -52,7 +52,22 @@ MKN_ukr_border_category = {
 			}
 		}
 		ai_will_do = {
-			base = 2
+			base = 0
+			modifier = {
+				add = 200
+				NOT = {
+					MKN_ai_frontier_pressure = yes
+				}
+			}
+			modifier = {
+				add = 200
+				check_variable = {
+					mkn_ukr_escalation_level > 3
+				}
+				NOT = {
+					MKN_ai_frontier_pressure = yes
+				}
+			}
 		}
 		days_remove = 20
 		days_re_enable = 0
@@ -157,7 +172,14 @@ MKN_ukr_border_category = {
 			}
 		}
 		ai_will_do = {
-			base = 1
+			base = 0
+			modifier = {
+				add = 25
+				MKN_ai_frontier_pressure = yes
+				check_variable = {
+					mkn_ukr_escalation_level < 4
+				}
+			}
 		}
 		visible = {
 			NOT = {
@@ -197,14 +219,10 @@ MKN_ukr_border_category = {
 			}
 		}
 		ai_will_do = {
-			base = 2
+			base = 0
 			modifier = {
-				factor = 0
-				check_variable = {
-					var = mkn_consecutive_border_wars
-					value = 2
-					compare = greater_than_or_equals
-				}
+				add = 40
+				MKN_ai_frontier_pressure = yes
 			}
 		}
 		complete_effect = {
@@ -313,7 +331,7 @@ MKN_ukr_border_category = {
 			}
 		}
 		ai_will_do = {
-			base = 10
+			base = 200
 		}
 		visible = {
 			NOT = {
@@ -368,15 +386,26 @@ MKN_ukr_border_category = {
 						has_country_flag = mkn_ukr_frontier_concluded
 					}
 				}
-				add_to_variable = {
-					mkn_ukr_escalation_level = 1
+				if = {
+					limit = {
+						has_war = no
+						UKR = {
+							has_war = no
+						}
+						NOT = {
+							has_country_flag = MKN_collapse_started
+						}
+					}
+					add_to_variable = {
+						mkn_ukr_escalation_level = 1
+					}
+					clamp_variable = {
+						var = mkn_ukr_escalation_level
+						min = 1
+						max = 5
+					}
+					mkn_ukr_check_escalation = yes
 				}
-				clamp_variable = {
-					var = mkn_ukr_escalation_level
-					min = 1
-					max = 5
-				}
-				mkn_ukr_check_escalation = yes
 				remove_mission = MKN_passive_escalation_drift
 				activate_mission = MKN_passive_escalation_drift
 			}

@@ -39,6 +39,8 @@ MKN_rebuild_horizons_service_stats = {
 	}
 }
 MKN_repair_horizons = {
+	MKN_repair_research_capacity = yes
+	MKN_rebuild_foreign_service = yes
 	if = {
 		limit = { has_completed_focus = MKN_global_syndicalist_pact }
 		remove_relation_rule_override = { trigger = MKN_horizons_ineligible_volunteer_target can_send_volunteers = no }

@@ -2997,6 +2997,61 @@ nww_mkn_rebuild_services = {
 		}
 	}
 	MKN_rebuild_horizons_service_stats = yes
+	if = {
+		limit = {
+			has_completed_focus = MKN_column_medical_service
+		}
+		add_to_variable = {
+			MKN_army_casualty_trickleback = 0.05
+		}
+		add_to_variable = {
+			MKN_army_land_reinforce_rate = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_air_warning_network_focus
+		}
+		add_to_variable = {
+			MKN_air_air_interception_detect_factor = 0.1
+		}
+		add_to_variable = {
+			MKN_air_air_home_defence_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_convoy_control_office
+		}
+		add_to_variable = {
+			MKN_navy_convoy_escort_efficiency = 0.1
+		}
+		add_to_variable = {
+			MKN_navy_navy_fuel_consumption_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_raider_signal_stations
+		}
+		add_to_variable = {
+			MKN_navy_naval_detection = 0.1
+		}
+		add_to_variable = {
+			MKN_navy_naval_coordination = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_underway_refit_artels
+		}
+		add_to_variable = {
+			MKN_navy_naval_ship_recovery_chance_factor = 0.1
+		}
+		add_to_variable = {
+			MKN_navy_naval_retreat_speed = 0.05
+		}
+	}
 	set_country_flag = MKN_services_redesign_v5
 }
 MKN_migrate_military_hq = {

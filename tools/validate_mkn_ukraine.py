@@ -76,7 +76,8 @@ class World(FrontierModel):
                 if not matched: self.apply(value, current, previous)
                 matched = True
             elif key == 'random_list':
-                self.apply(value[self.pick][1], current, previous)
+                branches = [v for k,v,o in value if k and k.isdigit()]
+                self.apply(branches[self.pick], current, previous)
             elif key in {'add_relation_rule_override', 'remove_relation_rule_override'}:
                 rule = one(value, 'trigger')
                 (c['rules'].add if key == 'add_relation_rule_override' else c['rules'].discard)(rule)
@@ -87,6 +88,7 @@ class World(FrontierModel):
             elif key == 'add_popularity': c['popularity'][one(value, 'ideology')] += float(one(value, 'popularity'))
             elif key == 'add_manpower': c['manpower'] = c.get('manpower', 0) + int(value)
             elif key == 'add_research_slot': c['slots'] += int(value)
+            elif key == 'set_research_slots': c['slots'] = int(value)
             elif key == 'add_tech_bonus': c['tech_bonus'] = c.get('tech_bonus', 0) + int(one(value, 'uses'))
             elif key == 'add_extra_state_shared_building_slots': c['slots'] += int(value)
             elif key == 'add_building_construction': c['buildings'][one(value, 'type')] += int(one(value, 'level'))
@@ -166,7 +168,7 @@ def validate_ukraine(root, game, check, localized):
     campaigns = one(read(root/'common/decisions/nww_mkn_mandate.txt'), 'MKN_public_mandate')
     route_entries = dict(fascism='MKN_military_takes_charge', democratic='MKN_triumph_of_free_soviets', neutrality='MKN_peasant_delegates', communism='MKN_emergency_revkom')
     for historic, rule in product((False, True), ('DEFAULT','HISTORICAL','RANDOM','FASCISM','DEMOCRATIC','NEUTRALITY','COMMUNISM')):
-        random_mode = rule == 'RANDOM' or (rule == 'DEFAULT' and not historic)
+        random_mode = rule in {'RANDOM', 'DEFAULT'}
         for pick in (range(4) if random_mode else [0]):
             w = World(); w.historical, w.rule, w.pick = historic, rule, pick
             w.run('MKN_initialize_ai_route'); flags = w.countries['MKN']['flags']
@@ -231,6 +233,8 @@ def validate_ukraine(root, game, check, localized):
             trial.run('nww_mkn_rebuild_industry')
             check(trial.countries['MKN']['capital'] == '202', 'MKN capital: economy repair restores the old capital')
         cases += 1
+    w.countries['MKN']['focuses'].update({'MKN_communal_research_network','MKN_free_science_network'})
+    w.countries['MKN']['slots'] = 5
     for fid in integration['focuses']:
         f = fs[fid]; localized(fid, fid); localized(fid+'_desc', fid)
         check(w.test(one(f,'available')), fid + ': full control does not unlock integration')
@@ -241,10 +245,10 @@ def validate_ukraine(root, game, check, localized):
     w.run('nww_mkn_rebuild_industry'); first = dict(w.countries['MKN']['variables']); w.run('nww_mkn_rebuild_industry')
     check(first == w.countries['MKN']['variables'] and physical == (w.states, w.countries['MKN']['slots'], w.countries['MKN']['pp']), 'MKN: integration repair stacks bonuses or repeats physical rewards')
     research = one(fs['MKN_kyiv_scientific_exchange'], 'completion_reward')
-    for slots in (3,4,5,6):
+    for slots in (5,6,7):
         w = won(); w.countries['MKN']['slots'] = slots; w.apply(research)
-        check(w.countries['MKN']['slots'] == (slots+1 if slots<5 else slots), 'MKN: integration research exceeds five slots')
-        check(w.countries['MKN'].get('tech_bonus',0) == (2 if slots>=5 else 0), 'MKN: missing capped research alternative'); cases += 1
+        check(w.countries['MKN']['slots'] == (slots+1 if slots<6 else slots), 'MKN: integration research exceeds six slots')
+        check(w.countries['MKN'].get('tech_bonus',0) == (2 if slots>=6 else 0), 'MKN: missing capped research alternative'); cases += 1
     # Native portraits must contain visible artwork, with exact advisor clearance.
     assets = json.loads((root/'docs/art/mkn_successors/assets.json').read_text())
     for asset in assets:

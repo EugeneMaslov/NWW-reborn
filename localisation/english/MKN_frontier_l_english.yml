@@ -31,7 +31,7 @@
  mkn_crisis.200.a:0 "The steppe will answer with fire."
  MKN_soviet_intervention_tt:0 "Existing independent §YSoviet Russia§! and §YSoviet Ukraine§! receive annexation war goals and declare war on every surviving participant in the Free Territory's collapse. Shared factions are broken before intervention."
  MKN_ukr_border_category:0 "The Ukrainian Frontier"
- MKN_ukr_border_category_desc:0 "The assemblies of the Free Territory face the Soviet Ukrainian patrols across a frontier of farms, workshops and railway sidings. Raising the alarm buys striking power; withdrawing buys time. Three completed border battles without a 180-day cooling period, or escalation level five, bring full war. A year after the first incident, exhaustion imposes a two-year ceasefire unless full war has already begun."
+ MKN_ukr_border_category_desc:0 "The assemblies of the Free Territory face the Soviet Ukrainian patrols across a frontier of farms, workshops and railway sidings. Raising the alarm buys striking power; withdrawing buys time. Three completed border battles without a 180-day cooling period, or escalation level five, bring full war. A year after the first incident, exhaustion imposes a two-year ceasefire unless full war has already begun. Passive escalation pauses while either side fights a full-scale war."
  mkn_escalate_steppe_alarm:0 "Raise the Steppe Alarm"
  mkn_escalate_steppe_alarm_desc:0 "Summon the mounted detachments and issue ammunition to the frontier communes. Escalation rises by one level; Border Fury lasts fourteen days. Reconnaissance halves the political cost."
  mkn_deescalate_pull_back:0 "Withdraw the Forward Patrols"

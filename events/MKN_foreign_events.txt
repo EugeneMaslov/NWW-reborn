@@ -1,0 +1,81 @@
+# Owner: MKN. Recipient consent is rechecked when the option executes.
+add_namespace = mkn_foreign
+country_event = {
+    id = mkn_foreign.1
+    title = mkn_foreign.1.t
+    desc = mkn_foreign.1.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    option = {
+        name = mkn_foreign.1.a
+        ai_chance = {
+            factor = 60
+        }
+        trigger = {
+            has_country_flag = MKN_workshop_exchange_pending
+            NOT = {
+                has_country_flag = MKN_workshop_exchange_agreed
+            }
+            is_subject = no
+            has_capitulated = no
+            NOT = {
+                has_war_with = MKN
+            }
+            MKN = {
+                exists = yes
+                has_capitulated = no
+                has_completed_focus = MKN_workers_corridors
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = MKN_workshop_exchange_pending
+                NOT = {
+                    has_country_flag = MKN_workshop_exchange_agreed
+                }
+                is_subject = no
+                has_capitulated = no
+                NOT = {
+                    has_war_with = MKN
+                }
+                MKN = {
+                    exists = yes
+                    has_capitulated = no
+                    has_completed_focus = MKN_workers_corridors
+                }
+            }
+            set_country_flag = MKN_workshop_exchange_agreed
+            clr_country_flag = MKN_workshop_exchange_pending
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = industry
+            }
+            add_opinion_modifier = {
+                target = MKN
+                modifier = MKN_workshop_exchange_opinion
+            }
+            MKN = {
+                add_tech_bonus = {
+                    bonus = 0.5
+                    uses = 1
+                    category = industry
+                }
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = MKN_workshop_exchange_opinion
+                }
+            }
+        }
+        else = {
+            clr_country_flag = MKN_workshop_exchange_pending
+        }
+    }
+    option = {
+        name = mkn_foreign.1.b
+        ai_chance = {
+            factor = 40
+        }
+        clr_country_flag = MKN_workshop_exchange_pending
+    }
+}

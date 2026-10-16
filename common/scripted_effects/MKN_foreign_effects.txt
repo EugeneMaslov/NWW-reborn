@@ -1,0 +1,27 @@
+# Owner: MKN. One permanent diplomatic service, restored without replaying PP.
+MKN_rebuild_foreign_service = {
+	set_variable = { MKN_foreign_relations_upkeep = 0 }
+	set_variable = { MKN_foreign_trade_opinion = 0 }
+	set_variable = { MKN_foreign_opinion_gain = 0 }
+	set_variable = { MKN_foreign_guarantee_cost = 0 }
+	if = {
+		limit = { has_completed_focus = MKN_foreign_delegates }
+		set_variable = { MKN_foreign_relations_upkeep = -0.1 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = MKN_foreign_service } } }
+			add_dynamic_modifier = { modifier = MKN_foreign_service }
+		}
+	}
+	if = {
+		limit = { has_completed_focus = MKN_workers_corridors }
+		set_variable = { MKN_foreign_trade_opinion = 0.1 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_consular_communes }
+		set_variable = { MKN_foreign_opinion_gain = 0.1 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_solidarity_guarantees }
+		set_variable = { MKN_foreign_guarantee_cost = -0.1 }
+	}
+}

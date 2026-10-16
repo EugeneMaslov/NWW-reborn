@@ -1,9 +1,7 @@
-# Owner: MKN. Three new branches; references and balance: docs/MKN_progress_gates_and_horizons.md.
+# Owner: MKN. Common foreign policy, defence and industrial science.
 shared_focus = {
     id = MKN_nabat_abroad
     icon = GFX_goal_generic_intelligence_exchange
-    x = 165
-    y = 0
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -30,12 +28,15 @@ shared_focus = {
         }
         custom_effect_tooltip = MKN_nabat_abroad_unlock_tt
     }
+    x = 102
+    y = 4
+    prerequisite = {
+        focus = MKN_black_international
+    }
 }
 shared_focus = {
     id = MKN_agitation_in_litbel
     icon = GFX_focus_generic_conference
-    x = 162
-    y = 1
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -58,12 +59,12 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = MKN_litbel_agitation_unlock_tt
     }
+    x = 100
+    y = 5
 }
 shared_focus = {
     id = MKN_galician_peasants
     icon = GFX_goal_generic_intelligence_exchange
-    x = 168
-    y = 1
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -86,12 +87,12 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = MKN_galician_agitation_unlock_tt
     }
+    x = 104
+    y = 5
 }
 shared_focus = {
     id = MKN_fund_the_underground
     icon = GFX_goal_generic_intelligence_exchange
-    x = 165
-    y = 2
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -111,15 +112,17 @@ shared_focus = {
         has_completed_focus = MKN_steppe_general_staff
     }
     completion_reward = {
-        nww_mkn_rebuild_services = yes
+        hidden_effect = {
+            nww_mkn_rebuild_services = yes
+        }
         custom_effect_tooltip = MKN_underground_combat_tt
     }
+    x = 102
+    y = 6
 }
 shared_focus = {
     id = MKN_congress_of_free_peoples
     icon = GFX_focus_generic_conference
-    x = 165
-    y = 3
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -131,9 +134,6 @@ shared_focus = {
         FOCUS_FILTER_POLITICAL
         FOCUS_FILTER_RESEARCH
     }
-    prerequisite = {
-        focus = MKN_fund_the_underground
-    }
     available = {
 
     }
@@ -141,12 +141,16 @@ shared_focus = {
         add_political_power = 75
         custom_effect_tooltip = MKN_free_peoples_congress_tt
     }
+    x = 100
+    y = 8
+    prerequisite = {
+        focus = MKN_fund_the_underground
+        focus = MKN_solidarity_guarantees
+    }
 }
 shared_focus = {
     id = MKN_global_syndicalist_pact
     icon = GFX_focus_generic_diplomatic_treaty
-    x = 165
-    y = 4
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -165,23 +169,26 @@ shared_focus = {
         is_subject = no
     }
     completion_reward = {
-        nww_mkn_rebuild_services = yes
-        set_rule = {
-            can_send_volunteers = yes
-        }
-        add_relation_rule_override = {
-            trigger = MKN_horizons_ineligible_volunteer_target
-            can_send_volunteers = no
-            usage_desc = MKN_volunteer_recipients_tt
+        hidden_effect = {
+            nww_mkn_rebuild_services = yes
+            set_rule = {
+                can_send_volunteers = yes
+            }
+            add_relation_rule_override = {
+                trigger = MKN_horizons_ineligible_volunteer_target
+                can_send_volunteers = no
+                usage_desc = MKN_volunteer_recipients_tt
+            }
         }
         custom_effect_tooltip = MKN_syndicalist_pact_unlock_tt
     }
+    x = 100
+    y = 9
 }
 shared_focus = {
     id = MKN_death_or_freedom
     icon = GFX_goal_generic_defence
-    x = 183
-    y = 0
+    y = 8
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -198,15 +205,17 @@ shared_focus = {
     }
     completion_reward = {
         add_stability = -0.1
-        nww_mkn_rebuild_services = yes
+        hidden_effect = {
+            nww_mkn_rebuild_services = yes
+        }
         custom_effect_tooltip = MKN_death_or_freedom_tt
     }
+    x = 28
 }
 shared_focus = {
     id = MKN_hide_the_machines
     icon = GFX_goal_generic_construct_mil_factory
-    x = 183
-    y = 1
+    y = 9
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -228,12 +237,12 @@ shared_focus = {
         add_ideas = MKN_hidden_workshops
         custom_effect_tooltip = MKN_hidden_workshops_tt
     }
+    x = 28
 }
 shared_focus = {
     id = MKN_marusya_womens_battalions
     icon = GFX_goal_generic_allies_build_infantry
-    x = 183
-    y = 2
+    y = 10
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -253,15 +262,17 @@ shared_focus = {
     }
     completion_reward = {
         add_manpower = 30000
-        nww_mkn_rebuild_services = yes
+        hidden_effect = {
+            nww_mkn_rebuild_services = yes
+        }
         custom_effect_tooltip = MKN_womens_battalions_tt
     }
+    x = 28
 }
 shared_focus = {
     id = MKN_evacuation_soviets
     icon = GFX_goal_generic_defence
-    x = 183
-    y = 3
+    y = 11
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -285,12 +296,12 @@ shared_focus = {
             days = 180
         }
     }
+    x = 28
 }
 shared_focus = {
     id = MKN_shadows_in_the_forests
     icon = GFX_goal_generic_defence
-    x = 183
-    y = 4
+    y = 12
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -309,15 +320,17 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
-        nww_mkn_rebuild_services = yes
+        hidden_effect = {
+            nww_mkn_rebuild_services = yes
+        }
         custom_effect_tooltip = MKN_forest_resistance_tt
     }
+    x = 28
 }
 shared_focus = {
     id = MKN_black_vengeance
     icon = GFX_goal_generic_major_war
-    x = 183
-    y = 5
+    y = 13
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -341,12 +354,11 @@ shared_focus = {
             days = 180
         }
     }
+    x = 28
 }
 shared_focus = {
     id = MKN_free_science_network
     icon = GFX_goal_generic_scientific_exchange
-    x = 201
-    y = 0
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -358,24 +370,33 @@ shared_focus = {
         FOCUS_FILTER_POLITICAL
         FOCUS_FILTER_RESEARCH
     }
+    x = 10
     available = {
-        OR = {
-            date > 1942.12.31
-            AND = {
-                has_tech = centimetric_radar
-                has_tech = advanced_machine_tools
+
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                amount_research_slots < 5
+            }
+            add_research_slot = 1
+        }
+        else = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = electronics
             }
         }
     }
-    completion_reward = {
-        add_research_slot = 1
+    y = 15
+    prerequisite = {
+        focus = MKN_workshop_airplane_artels
     }
 }
 shared_focus = {
     id = MKN_open_peer_review
     icon = GFX_goal_generic_scientific_exchange
-    x = 201
-    y = 1
     cost = 5
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -396,12 +417,12 @@ shared_focus = {
     completion_reward = {
         add_ideas = MKN_open_laboratories
     }
+    x = 10
+    y = 16
 }
 shared_focus = {
     id = MKN_jet_tachankas
     icon = GFX_goal_generic_secret_weapon
-    x = 198
-    y = 2
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -425,15 +446,15 @@ shared_focus = {
             bonus = 1.0
             uses = 2
             technology = rocket_artillery
-        technology = rocket_artillery2
+            technology = rocket_artillery2
         }
     }
+    x = 7
+    y = 17
 }
 shared_focus = {
     id = MKN_dnieper_jet_falcons
     icon = GFX_goal_generic_secret_weapon
-    x = 204
-    y = 2
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -458,15 +479,17 @@ shared_focus = {
             uses = 1
             category = jet_technology
         }
-        nww_mkn_rebuild_services = yes
+        hidden_effect = {
+            nww_mkn_rebuild_services = yes
+        }
         custom_effect_tooltip = MKN_jet_falcons_tt
     }
+    x = 13
+    y = 17
 }
 shared_focus = {
     id = MKN_reactor_safety_councils
     icon = GFX_focus_generic_nuclear_development
-    x = 201
-    y = 3
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -493,12 +516,12 @@ shared_focus = {
             category = nuclear
         }
     }
+    x = 10
+    y = 18
 }
 shared_focus = {
     id = MKN_the_absolute_argument
     icon = GFX_focus_generic_nuclear_development
-    x = 201
-    y = 4
     cost = 10
     available_if_capitulated = no
     cancel_if_invalid = yes
@@ -529,4 +552,6 @@ shared_focus = {
         }
         custom_effect_tooltip = MKN_reactor_project_unlock_tt
     }
+    x = 10
+    y = 19
 }

@@ -302,7 +302,7 @@ def validate_international(root, game, check, localized):
         cases+=1
     memorial='MKN_memory_of_atamansha_marusya';elite='MKN_the_black_guard_battalions'
     check('MKN_black_guard_veterans' not in focuses,'Legacy focus still playable')
-    check(not values(focuses[memorial],'prerequisite') and one(one(focuses[memorial],'available'),'has_completed_focus')=='MKN_steppe_general_staff','Memorial must retain the common staff gate without a connector through the army exclusions')
+    check(one(one(focuses[memorial],'prerequisite'),'focus')=='MKN_steppe_general_staff','Memorial must connect directly to the common staff')
     for programme in ('MKN_steel_horses','MKN_batko_cavalry'):
         ancestors={memorial}
         while True:
@@ -310,11 +310,8 @@ def validate_international(root, game, check, localized):
             if not more:break
             ancestors|=more
         check(programme not in ancestors,'Common memorial depends on an exclusive army programme')
-    for prepared in ('MKN_arms_to_the_people','MKN_every_farm_a_fortress'):
-        m=make();check(not m.test(one(focuses['MKN_black_international'],'available')),'International bypasses political preparation')
-        m.countries['MKN']['focuses'].add(prepared)
-        check(m.test(one(focuses['MKN_black_international'],'available')),'International excludes one of the two programmes')
-        cases+=1
+    check(one(one(focuses['MKN_black_international'],'prerequisite'),'focus')=='MKN_departure_of_batko','International must follow Batko departure for every successor')
+    check(not one(focuses['MKN_black_international'],'available') and not values(focuses['MKN_black_international'],'allow_branch'),'International still restricted to a political programme')
 
     check(one(one(focuses[elite],'prerequisite'),'focus')==memorial,'Elite focus disconnected from memorial')
     for ownership,engineers,recon,hospital in product((False,True),repeat=4):

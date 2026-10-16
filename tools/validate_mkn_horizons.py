@@ -144,7 +144,7 @@ def validate_horizons(root, game, check, localized):
             gate(fid, sim, stock == 20 and xp == 15)
     groups = json.loads((root/'docs/MKN_military_refactor.json').read_text())
     major = [g['id'] for g in groups['groups'] if g['id'] not in groups['roots'].values()]
-    check(len(major) == 25, 'MKN: wrong major-reform count')
+    check(len(major) == 30, 'MKN: wrong major-reform count')
     for source in major:
         sim = model()
         # Execute the real reward to ensure every route imposes the shared lock.
@@ -160,7 +160,7 @@ def validate_horizons(root, game, check, localized):
         for major_war, progress in product((False, True), ('0.1', '0.1001')):
             sim = model(); sim.war_major = major_war; sim.surrender = Decimal(progress)
             gate(fid, sim, major_war and progress == '0.1001')
-    for day, radar, tools, expected in [('1942.12.31',False,False,False), ('1943.1.1',False,False,True), ('1940.1.1',False,True,False), ('1942.1.1',True,True,True)]:
+    for day, radar, tools, expected in [('1936.1.1',False,False,True), ('1943.1.1',False,False,True), ('1940.1.1',False,True,True), ('1942.1.1',True,True,True)]:
         sim = model(); sim.date = day
         if radar: sim.techs.add('centimetric_radar')
         if tools: sim.techs.add('advanced_machine_tools')
@@ -280,7 +280,7 @@ def validate_horizons(root, game, check, localized):
         check(world.states[sid]['owner'] == expected, 'MKN: Austrian border victory transfers an unrelated, allied or third-party state')
         check(world.states[sid]['cores'] == {owner}, 'MKN: Austrian border victory grants an unsolicited core')
         cases += 1
-    print(f'PASS: MKN horizons: 18 focuses, 25 reform locks and {cases} source-script boundary/lifecycle scenarios; no runtime AI/combat claim')
+    print(f'PASS: MKN horizons: 18 focuses, 30 reform locks and {cases} source-script boundary/lifecycle scenarios; no runtime AI/combat claim')
 
 
 if __name__ == '__main__':

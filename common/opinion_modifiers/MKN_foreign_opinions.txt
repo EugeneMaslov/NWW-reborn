@@ -1,0 +1,4 @@
+# Owner: MKN. A voluntary workshop exchange improves both parties' relations.
+opinion_modifiers = {
+	MKN_workshop_exchange_opinion = { value = 30 decay = 1 }
+}
