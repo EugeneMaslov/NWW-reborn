@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = { exists = yes }
+					MKN_repair_agrarian_training = yes
+					MKN_sync_agrarian_defense = yes
+				}
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = { MKN_repair_agrarian_training = yes MKN_sync_agrarian_defense = yes }
+	}
+}

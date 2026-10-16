@@ -1,0 +1,30 @@
+MKN_revkom_equal_path = {
+	has_government = communism
+	has_completed_focus = MKN_the_fatal_plenum
+	has_country_flag = MKN_equal_autonomy
+	NOT = { has_country_flag = MKN_soviet_betrayal }
+}
+MKN_revkom_betrayal_path = {
+	has_government = communism
+	has_completed_focus = MKN_the_fatal_plenum
+	has_country_flag = MKN_soviet_betrayal
+	NOT = { has_country_flag = MKN_equal_autonomy }
+	NOT = { SOV = { has_country_flag = NWW_SOV_MKN_settlement } }
+}
+MKN_revkom_trade_active = {
+	exists = yes
+	MKN_revkom_equal_path = yes
+	has_completed_focus = MKN_equal_shield_of_socialism
+	is_in_faction_with = SOV
+	NOT = { has_war_with = SOV }
+	SOV = { exists = yes has_government = communism }
+}
+MKN_revkom_joint_war = {
+	MKN_revkom_equal_path = yes
+	has_completed_focus = MKN_red_brotherhood_in_arms
+	any_other_country = {
+		exists = yes
+		is_in_faction_with = MKN
+		has_war_together_with = MKN
+	}
+}

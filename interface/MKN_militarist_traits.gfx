@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_mkn_council_member_trait"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+}

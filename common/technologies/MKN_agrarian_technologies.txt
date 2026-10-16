@@ -1,0 +1,13 @@
+# Focus-only terrain training, following GoE urban_training_tech.
+technologies = {
+	MKN_steppe_hunter_training = {
+		research_cost = 1
+		allow = { always = no }
+		infantry = { plains = { attack = 0.20 } forest = { attack = 0.20 } }
+		irregular_infantry = { plains = { attack = 0.20 } forest = { attack = 0.20 } }
+		militia = { plains = { attack = 0.20 } forest = { attack = 0.20 } }
+		mountaineers = { plains = { attack = 0.20 } forest = { attack = 0.20 } }
+		marine = { plains = { attack = 0.20 } forest = { attack = 0.20 } }
+		paratrooper = { plains = { attack = 0.20 } forest = { attack = 0.20 } }
+	}
+}

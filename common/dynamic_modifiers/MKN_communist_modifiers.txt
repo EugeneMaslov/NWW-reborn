@@ -1,0 +1,12 @@
+# Applied separately to each current enemy; never to MKN, allies or neutrals.
+MKN_revkom_enemy_disorganization = {
+	enable = {
+		is_owned_and_controlled_by = MKN
+		MKN = {
+			has_government = communism
+			has_completed_focus = MKN_true_socialism_against_bureaucrats
+		}
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	army_org_factor = -0.30
+}

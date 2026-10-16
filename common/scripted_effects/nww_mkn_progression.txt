@@ -566,10 +566,14 @@ nww_mkn_rebuild_industry = {
 			MKN_unified_production_factory_max_efficiency_factor = 0.0500
 		}
 	}
+	MKN_rebuild_militarist_industry_stats = yes
+	MKN_rebuild_soviet_industry_stats = yes
+	MKN_rebuild_communist_industry_stats = yes
 	set_country_flag = MKN_industry_integration_v4
 }
 nww_mkn_rebuild_services = {
 	MKN_migrate_military_hq = yes
+	set_variable = { MKN_army_army_armor_speed_factor = 0 }
 	set_variable = { MKN_army_army_non_core_attack_factor = 0 }
 	set_variable = { MKN_army_army_non_core_defence_factor = 0 }
 	set_variable = { MKN_army_army_org_regain = 0 }
@@ -2997,6 +3001,9 @@ nww_mkn_rebuild_services = {
 		}
 	}
 	MKN_rebuild_horizons_service_stats = yes
+	MKN_rebuild_militarist_army_stats = yes
+	MKN_rebuild_soviet_army_stats = yes
+	MKN_rebuild_communist_army_stats = yes
 	if = {
 		limit = {
 			has_completed_focus = MKN_column_medical_service

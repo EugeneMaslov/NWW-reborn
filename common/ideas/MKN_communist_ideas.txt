@@ -1,0 +1,71 @@
+# Owner: MKN Revkom. All requested modifiers x2; consumer goods x3 instead.
+ideas = {
+	country = {
+		MKN_sovnarkhoz_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.30
+				production_speed_arms_factory_factor = 0.30
+				production_factory_efficiency_gain_factor = -0.20
+			}
+		}
+		MKN_state_farms_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.20 stability_factor = -0.20 }
+		}
+		MKN_commissars_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.20 army_morale_factor = 0.20 planning_speed = -0.30 }
+		}
+		MKN_comintern_ram_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.20 }
+			equipment_bonus = {
+				armor = { build_cost_ic = -0.20 instant = yes }
+				artillery = { build_cost_ic = -0.20 instant = yes }
+			}
+		}
+		MKN_red_beacon_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { stability_factor = 0.30 war_support_factor = 0.30 political_power_gain = 0.40 }
+			# The focus asks for industry/electronics only, not global research.
+			research_bonus = { industry = 0.20 electronics = 0.20 }
+		}
+		MKN_equal_shield_trade_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { trade_opinion_factor = 0.60 }
+		}
+		# Bilateral definition owned by MKN; maintained only while the pact survives.
+		MKN_equal_shield_partner_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { tag = SOV }
+			removal_cost = -1
+			modifier = { trade_opinion_factor = 0.60 }
+		}
+		MKN_red_brotherhood_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.20 }
+		}
+		MKN_kremlin_offensive_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.30 }
+			modifier = { }
+		}
+	}
+}

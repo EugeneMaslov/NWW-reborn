@@ -1,0 +1,251 @@
+{
+  "generator": "built-in image_gen",
+  "canvas": [
+    96,
+    96
+  ],
+  "sprite_file": "interface/MKN_communist_focus_icons.gfx",
+  "preview_prefix": "mkn_communist_expansion_preview",
+  "assets": [
+    {
+      "branch": "revkom",
+      "focus": "MKN_steppe_sovnarkhoz",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_steppe_sovnarkhoz.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_steppe_sovnarkhoz.png",
+      "sprite": "GFX_focus_MKN_steppe_sovnarkhoz",
+      "texture": "gfx/interface/goals/MKN_steppe_sovnarkhoz.dds",
+      "source_sha256": "aac3e1a9f87dbeac644cfc4fbcede5db795d9b2b3478c186ec620a2dfd3be112",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        6,
+        90,
+        89
+      ],
+      "texture_sha256": "c82f19e52fef4551f29998b7b6c6387021fc85136c9007224131d41a288198a3"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_artel_state_farms",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_artel_state_farms.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_artel_state_farms.png",
+      "sprite": "GFX_focus_MKN_artel_state_farms",
+      "texture": "gfx/interface/goals/MKN_artel_state_farms.dds",
+      "source_sha256": "95bc83ae12f09b17926fb5b07aa524ddddfa843e97ec4419a25d43275b471c93",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        89,
+        90
+      ],
+      "texture_sha256": "f275259c50fb84e6efed97ddde4b1c373e3171bd5ad97313d21a6c5713a1c354"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_dnieper_five_year_plan",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_dnieper_five_year_plan.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_dnieper_five_year_plan.png",
+      "sprite": "GFX_focus_MKN_dnieper_five_year_plan",
+      "texture": "gfx/interface/goals/MKN_dnieper_five_year_plan.dds",
+      "source_sha256": "2d0a7e30f742fcbd3450fa0fef966e7851ef92430575e1b4e87d84d22ab783aa",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        87
+      ],
+      "texture_sha256": "98ac47b50bf1d2eee81372d9e2b0ae499bd7ae9bd462aa3f320f7336d1b7135f"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_political_commissars",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_political_commissars.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_political_commissars.png",
+      "sprite": "GFX_focus_MKN_political_commissars",
+      "texture": "gfx/interface/goals/MKN_political_commissars.dds",
+      "source_sha256": "fcf45ee7a432330b10a528d04e8aab4e6a075db08325a93c4bc5620f02fd8a51",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        90
+      ],
+      "texture_sha256": "51e2fcc6011b6e396f25e1ac9c84bc00c07d3905e35e7736369e164f28e676f0"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_red_armored_corps",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_red_armored_corps.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_red_armored_corps.png",
+      "sprite": "GFX_focus_MKN_red_armored_corps",
+      "texture": "gfx/interface/goals/MKN_red_armored_corps.dds",
+      "source_sha256": "f7dea768fba215849449e5f1b19be64401afaa15293490efc638789c0e2c9f52",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "texture_sha256": "49fbfcab31ec3de27869983ad755df611affa6815200ce57cf6edb14b147bb38"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_equal_shield_of_socialism",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_equal_shield_of_socialism.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_equal_shield_of_socialism.png",
+      "sprite": "GFX_focus_MKN_equal_shield_of_socialism",
+      "texture": "gfx/interface/goals/MKN_equal_shield_of_socialism.dds",
+      "source_sha256": "d34fcbcc34172e461f6b59797b50b424e75006209ad76cc22d5640fc9cb1fa89",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        89,
+        89
+      ],
+      "texture_sha256": "d24aeb4b05c5b65a2be4d7460db37c11aa20498c9e2159c203f8c1f796694731"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_industrial_ram_of_comintern",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_industrial_ram_of_comintern.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_industrial_ram_of_comintern.png",
+      "sprite": "GFX_focus_MKN_industrial_ram_of_comintern",
+      "texture": "gfx/interface/goals/MKN_industrial_ram_of_comintern.dds",
+      "source_sha256": "cb4c2d374324b2a1ab1ef86700d8256d674ded0f20abd4f43e46c0bd79af4a2f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        87
+      ],
+      "texture_sha256": "67e45fbff1b27bb1e267e7a66360987385a92e3a4a22de22d6577ca0533cc959"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_red_brotherhood_in_arms",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_red_brotherhood_in_arms.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_red_brotherhood_in_arms.png",
+      "sprite": "GFX_focus_MKN_red_brotherhood_in_arms",
+      "texture": "gfx/interface/goals/MKN_red_brotherhood_in_arms.dds",
+      "source_sha256": "23ab717c0c5657bb9562b2c647a128c477ba8949b3f91a50ab55c93f2a802e88",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        7,
+        90,
+        89
+      ],
+      "texture_sha256": "36ed8fbc1af84c84c77faacc5144829a5a66f4340d73b526317105b482dc3091"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_true_socialism_against_bureaucrats",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_true_socialism_against_bureaucrats.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_true_socialism_against_bureaucrats.png",
+      "sprite": "GFX_focus_MKN_true_socialism_against_bureaucrats",
+      "texture": "gfx/interface/goals/MKN_true_socialism_against_bureaucrats.dds",
+      "source_sha256": "147ecb079ba9522945cda2acb42b3792929654541fd874c9e7919bbc3cfd04cc",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        10,
+        6,
+        89,
+        90
+      ],
+      "texture_sha256": "96d8a48fbdfcd9e49ba2d8ccf766de936c0e1d2b135dee2b48757b7121ba2b68"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_liberation_of_soviet_ukraine",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_liberation_of_soviet_ukraine.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_liberation_of_soviet_ukraine.png",
+      "sprite": "GFX_focus_MKN_liberation_of_soviet_ukraine",
+      "texture": "gfx/interface/goals/MKN_liberation_of_soviet_ukraine.dds",
+      "source_sha256": "7bcf6ad6978b18943dafa64f8d74d4d20ec1e95ee6b51c4833792b0e6dd39a57",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        90
+      ],
+      "texture_sha256": "37d8e3ec0219131e2ce8e68f290211de135425fbe4aeaa06776dc75500e4b43c"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_strike_at_the_kremlin",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_strike_at_the_kremlin.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_strike_at_the_kremlin.png",
+      "sprite": "GFX_focus_MKN_strike_at_the_kremlin",
+      "texture": "gfx/interface/goals/MKN_strike_at_the_kremlin.dds",
+      "source_sha256": "4b88a06542f9bc7c9e8617ecd7fe1713e6dc857a9847da0841f31dce0cc4d0f5",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        8,
+        6,
+        89,
+        90
+      ],
+      "texture_sha256": "7540befcb0ba597e32c1721427d924251b82dad872d69fc58781aa8c082627d6"
+    },
+    {
+      "branch": "revkom",
+      "focus": "MKN_red_beacon_of_the_east",
+      "prompt": "docs/art/mkn_communist_expansion/MKN_red_beacon_of_the_east.prompt.txt",
+      "source": "docs/art/mkn_communist_expansion/MKN_red_beacon_of_the_east.png",
+      "sprite": "GFX_focus_MKN_red_beacon_of_the_east",
+      "texture": "gfx/interface/goals/MKN_red_beacon_of_the_east.dds",
+      "source_sha256": "33f8ac959f6c9eae336d90015d7feeeaca6f2dfb685a1d0089ad183d06980a92",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        7,
+        89,
+        90
+      ],
+      "texture_sha256": "a4aef5ac4f2b9a2e94ce95906b8a8fb0ffa3b9b4b0dc667daea0f2e8de4b9012"
+    }
+  ]
+}

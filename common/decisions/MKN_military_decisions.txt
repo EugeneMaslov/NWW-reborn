@@ -1,4 +1,4 @@
-# Owner: MKN. Each tactic and project type is available once per campaign.
+# Owner: MKN. HQ tactics/projects are once per campaign; districts once per eligible state.
 # FROM is the chosen state. Projects are serialized; cancellation refunds PP/CP.
 MKN_army_hq_decisions = {
 	MKN_tactic_night_marches = {
@@ -3313,5 +3313,140 @@ MKN_navy_hq_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+}
+
+MKN_military_districts_decisions = {
+	MKN_fortify_military_district = {
+		icon = generic_construction
+		allowed = { original_tag = MKN }
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_array = ROOT.owned_states
+		target_root_trigger = {
+			original_tag = MKN
+			has_completed_focus = MKN_military_districts
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+				NOT = { has_state_flag = MKN_district_fortified }
+			}
+		}
+		visible = { has_completed_focus = MKN_military_districts }
+		available = {
+			has_government = fascism
+			has_capitulated = no
+			custom_trigger_tooltip = {
+				tooltip = MKN_district_project_idle_tt
+				NOT = { has_country_flag = MKN_district_project_active }
+			}
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_fully_controlled_by = ROOT
+				is_core_of = ROOT
+				infrastructure < 5
+				NOT = { has_state_flag = MKN_district_fortified }
+			}
+		}
+		cost = 0
+		custom_cost_text = MKN_district_cost_20_cp
+		custom_cost_trigger = { NOT = { command_power < 20 } }
+		days_remove = 30
+		complete_effect = {
+			add_command_power = -20
+			set_country_flag = MKN_district_project_active
+		}
+		cancel_trigger = {
+			NOT = {
+				AND = {
+					has_government = fascism
+					has_capitulated = no
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_fully_controlled_by = ROOT
+						is_core_of = ROOT
+						infrastructure < 5
+						NOT = { has_state_flag = MKN_district_fortified }
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			add_command_power = 20
+			clr_country_flag = MKN_district_project_active
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+					has_capitulated = no
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_fully_controlled_by = ROOT
+						is_core_of = ROOT
+						infrastructure < 5
+						NOT = { has_state_flag = MKN_district_fortified }
+					}
+				}
+				FROM = {
+					if = {
+						limit = { infrastructure < 4 }
+						add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					}
+					else = {
+						# Infrastructure is capped at level 5 by the installed game.
+						add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					}
+					set_state_flag = MKN_district_fortified
+					add_dynamic_modifier = { modifier = MKN_fortified_district_modifier scope = ROOT }
+				}
+			}
+			else = { add_command_power = 20 }
+			clr_country_flag = MKN_district_project_active
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+# Converts only an already existing fascist subject. No annexation or forced
+# diplomacy against an independent country; ongoing wars are preserved.
+MKN_military_marches_decisions = {
+	MKN_establish_military_march = {
+		icon = generic_operation
+		allowed = { original_tag = MKN }
+		target_root_trigger = {
+			original_tag = MKN
+			has_completed_focus = MKN_military_marches
+		}
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = fascism
+				NOT = { has_autonomy_state = autonomy_mkn_military_march }
+			}
+		}
+		visible = { has_completed_focus = MKN_military_marches }
+		available = {
+			has_government = fascism
+			has_capitulated = no
+			FROM = {
+				is_subject_of = ROOT
+				has_government = fascism
+				NOT = { has_autonomy_state = autonomy_mkn_military_march }
+			}
+		}
+		cost = 0
+		complete_effect = {
+			set_autonomy = {
+				target = FROM
+				autonomy_state = autonomy_mkn_military_march
+				freedom_level = 0.0
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+		ai_will_do = { factor = 2 }
 	}
 }

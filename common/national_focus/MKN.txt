@@ -1,4 +1,4 @@
-﻿# Owner: MKN. Consolidated military branches; migration baseline: docs/MKN_military_refactor.json.
+# Owner: MKN. Consolidated military branches; migration baseline: docs/MKN_military_refactor.json.
 focus_tree = {
 	id = MKN_focus
 	country = {
@@ -5700,7 +5700,7 @@ focus_tree = {
 			factor = 1
 		}
 		x = 28
-		y = 1
+		y = 2
 		prerequisite = {
 			focus = MKN_steppe_general_staff
 		}
@@ -6165,6 +6165,248 @@ focus_tree = {
 		x = 78
 	}
 	focus = {
+		id = MKN_field_counter_intelligence
+		icon = GFX_focus_MKN_field_counter_intelligence
+		x = 74
+		y = 5
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_arrest_demagogues }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				add_ideas = MKN_field_counter_intelligence_idea
+				# Computing technologies carry encryption/decryption categories in 1.19.
+				# Dedicated legacy cipher technologies are disabled with La Resistance.
+				add_tech_bonus = {
+					name = MKN_counter_intelligence_research
+					bonus = 1
+					uses = 1
+					category = computing_tech
+				}
+			}
+			else = {
+				add_ideas = MKN_field_counter_intelligence_reserve_idea
+				add_political_power = 100
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_disarming_the_communes
+		icon = GFX_focus_MKN_disarming_the_communes
+		x = 74
+		y = 6
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_field_counter_intelligence }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { add_ideas = MKN_disarmed_communes_idea }
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_tribunals_of_the_black_staff
+		icon = GFX_focus_MKN_tribunals_of_the_black_staff
+		x = 74
+		y = 7
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_disarming_the_communes }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { add_ideas = MKN_tribunals_idea }
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_labor_armies
+		icon = GFX_focus_MKN_labor_armies
+		x = 80
+		y = 8
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_standardize_workshops }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_labor_armies_idea
+			custom_effect_tooltip = MKN_labor_armies_lock_tt
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_schools_of_young_insurgents
+		icon = GFX_focus_MKN_schools_of_young_insurgents
+		x = 80
+		y = 9
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_labor_armies }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {
+				MKN_army_conscription = 0.06
+				tooltip = MKN_army_conscription_tt
+			}
+			add_to_variable = {
+				MKN_unified_training_time_army_factor = -0.20
+				tooltip = MKN_unified_training_time_army_factor_tt
+			}
+			add_to_variable = {
+				MKN_unified_research_speed_factor = -0.16
+				tooltip = MKN_unified_research_speed_factor_tt
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_cult_of_fallen_atamans
+		icon = GFX_focus_MKN_cult_of_fallen_atamans
+		x = 80
+		y = 10
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_schools_of_young_insurgents }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.20
+			add_to_variable = {
+				MKN_army_casualty_trickleback = 0.10
+				tooltip = MKN_army_casualty_trickleback_tt
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_military_districts
+		icon = GFX_focus_MKN_military_districts
+		x = 74
+		y = 9
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_tribunals_of_the_black_staff }
+		# Retain the second AND gate without a connector across the central branch.
+		available = {
+			has_government = fascism
+			has_completed_focus = MKN_iron_fist_trains
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = MKN_unlock_military_districts_tt
+			add_to_variable = {
+				MKN_army_supply_consumption_factor = 0.16
+				tooltip = MKN_army_supply_consumption_factor_tt
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_council_of_field_commanders
+		icon = GFX_focus_MKN_council_of_field_commanders
+		x = 74
+		y = 10
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_military_districts }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			# Exclude each selected general from the remaining draws; admirals are ineligible.
+			random_unit_leader = {
+				limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } }
+				add_unit_leader_trait = mkn_council_member_trait
+			}
+			random_unit_leader = {
+				limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } }
+				add_unit_leader_trait = mkn_council_member_trait
+			}
+			random_unit_leader = {
+				limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } }
+				add_unit_leader_trait = mkn_council_member_trait
+			}
+			add_ideas = MKN_council_of_commanders_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_the_supreme_warlord
+		icon = GFX_focus_MKN_the_supreme_warlord
+		x = 74
+		y = 11
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_council_of_field_commanders }
+		available = {
+			has_government = fascism
+			has_country_leader_with_trait = mkn_iron_warlord
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			remove_country_leader_trait = mkn_iron_warlord
+			add_country_leader_trait = mkn_supreme_warlord
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_preemptive_strike_doctrine
+		icon = GFX_focus_MKN_preemptive_strike_doctrine
+		x = 78
+		y = 11
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_the_black_horde }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { add_ideas = MKN_preemptive_strike_idea }
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_military_marches
+		icon = GFX_focus_MKN_military_marches
+		x = 78
+		y = 12
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_preemptive_strike_doctrine }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_rule = { can_puppet = yes }
+			add_ideas = MKN_military_marches_idea
+			custom_effect_tooltip = MKN_unlock_military_marches_tt
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_black_banner_over_europe
+		icon = GFX_focus_MKN_black_banner_over_europe
+		x = 78
+		y = 13
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		prerequisite = { focus = MKN_military_marches }
+		available = { has_government = fascism }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { add_ideas = MKN_permanent_revolution_idea }
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
 		id = MKN_triumph_of_free_soviets
 		y = 3
 		completion_reward = {
@@ -6229,6 +6471,10 @@ focus_tree = {
 			focus = MKN_triumph_of_free_soviets
 		}
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = MKN_civil_settlement_allowed_tt
+				NOT = { has_completed_focus = MKN_labor_armies }
+			}
 			NOT = {
 				has_country_flag = MKN_crisis_legacy_settled
 			}
@@ -6484,6 +6730,10 @@ focus_tree = {
 			focus = MKN_peasant_delegates
 		}
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = MKN_civil_settlement_allowed_tt
+				NOT = { has_completed_focus = MKN_labor_armies }
+			}
 			NOT = {
 				has_country_flag = MKN_crisis_legacy_settled
 			}
@@ -6729,6 +6979,10 @@ focus_tree = {
 			focus = MKN_emergency_revkom
 		}
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = MKN_civil_settlement_allowed_tt
+				NOT = { has_completed_focus = MKN_labor_armies }
+			}
 			NOT = {
 				has_country_flag = MKN_crisis_legacy_settled
 			}
@@ -7052,7 +7306,7 @@ focus_tree = {
 			factor = 1
 		}
 		x = 28
-		y = 2
+		y = 3
 	}
 	shared_focus = MKN_ukrainian_communes_congress
 	shared_focus = MKN_nabat_abroad
@@ -7231,4 +7485,662 @@ focus_tree = {
 	shared_focus = MKN_workers_corridors
 	shared_focus = MKN_consular_communes
 	shared_focus = MKN_solidarity_guarantees
+	focus = {
+		id = MKN_ferrer_modern_schools
+		icon = GFX_focus_MKN_ferrer_modern_schools
+		x = 82
+		y = 5
+		cost = 5
+		prerequisite = { focus = MKN_pact_of_free_communes }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_ferrer_schools_idea
+			if = {
+			    limit = { amount_research_slots < 4 }
+			    add_research_slot = 2
+			}
+			else_if = {
+			    limit = { amount_research_slots < 5 }
+			    add_research_slot = 1
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_sanctuary_of_free_thought
+		icon = GFX_focus_MKN_sanctuary_of_free_thought
+		x = 82
+		y = 6
+		cost = 5
+		prerequisite = { focus = MKN_ferrer_modern_schools }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_tech_bonus = { name = MKN_free_thought_research bonus = 1.0 uses = 2 category = electronics category = industry }
+			every_country = {
+			    limit = {
+			        exists = yes
+			        NOT = { tag = ROOT }
+			        OR = { has_government = fascism has_government = neutrality }
+			        capital_scope = { is_on_continent = europe }
+			    }
+			    add_opinion_modifier = { target = ROOT modifier = MKN_sanctuary_hostility }
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_eradication_of_wage_labor
+		icon = GFX_focus_MKN_eradication_of_wage_labor
+		x = 82
+		y = 7
+		cost = 5
+		prerequisite = { focus = MKN_sanctuary_of_free_thought }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_labor_vouchers_idea
+			add_timed_idea = { idea = MKN_voucher_transition_idea days = 120 }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_imperative_mandate
+		icon = GFX_focus_MKN_imperative_mandate
+		x = 86
+		y = 6
+		cost = 5
+		prerequisite = { focus = MKN_abolish_general_staff }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_imperative_mandate_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_syndicalist_work_ethic
+		icon = GFX_focus_MKN_syndicalist_work_ethic
+		x = 86
+		y = 7
+		cost = 5
+		prerequisite = { focus = MKN_imperative_mandate }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_syndicalist_work_ethic_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_consumer_autonomy
+		icon = GFX_focus_MKN_consumer_autonomy
+		x = 86
+		y = 8
+		cost = 5
+		prerequisite = { focus = MKN_syndicalist_work_ethic }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = { MKN_unified_supply_consumption_factor = -0.20 tooltip = MKN_unified_supply_consumption_factor_tt }
+			add_ideas = MKN_consumer_autonomy_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_elected_instructor_collegiums
+		icon = GFX_focus_MKN_elected_instructor_collegiums
+		x = 82
+		y = 8
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		# The science column occupies the intervening row: retain the gate without a crossing connector.
+		available = { has_government = democratic has_completed_focus = MKN_arms_to_the_people }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_elected_instructors_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_volost_signal_chains
+		icon = GFX_focus_MKN_volost_signal_chains
+		x = 82
+		y = 9
+		cost = 5
+		prerequisite = { focus = MKN_elected_instructor_collegiums }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = { MKN_army_land_reinforce_rate = 0.10 tooltip = MKN_army_land_reinforce_rate_tt }
+			custom_effect_tooltip = MKN_people_signals_tt
+			hidden_effect = { MKN_sync_people_defense = yes }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_hearth_defense_doctrine
+		icon = GFX_focus_MKN_hearth_defense_doctrine
+		x = 82
+		y = 10
+		cost = 5
+		prerequisite = { focus = MKN_volost_signal_chains }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_hearth_defense_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_subversion_of_enemy_ranks
+		icon = GFX_focus_MKN_subversion_of_enemy_ranks
+		x = 84
+		y = 10
+		cost = 5
+		prerequisite = { focus = MKN_beacon_of_statelessness }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_enemy_subversion_idea
+			hidden_effect = { MKN_sync_people_defense = yes }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_autonomous_free_communes
+		icon = GFX_focus_MKN_autonomous_free_communes
+		x = 84
+		y = 11
+		cost = 5
+		prerequisite = { focus = MKN_subversion_of_enemy_ranks }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_free_communes_idea
+			set_rule = { can_create_factions = yes }
+			custom_effect_tooltip = MKN_free_communes_unlock_tt
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_world_federation_of_labor
+		icon = GFX_focus_MKN_world_federation_of_labor
+		x = 84
+		y = 12
+		cost = 5
+		prerequisite = { focus = MKN_autonomous_free_communes }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = democratic }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_world_federation_idea
+			custom_effect_tooltip = MKN_federation_influence_tt
+			hidden_effect = { MKN_sync_federation_influence = yes }
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	focus = {
+		id = MKN_great_rural_exodus
+		icon = GFX_focus_MKN_great_rural_exodus
+		x = 88
+		y = 5
+		cost = 5
+		prerequisite = { focus = MKN_grain_ultimatum }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_rural_exodus_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_black_partition_of_soil
+		icon = GFX_focus_MKN_black_partition_of_soil
+		x = 88
+		y = 6
+		cost = 5
+		prerequisite = { focus = MKN_great_rural_exodus }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_black_partition_idea
+			every_country = {
+			    limit = { exists = yes OR = { tag = AUS tag = LTB tag = GER } }
+			    add_opinion_modifier = { target = ROOT modifier = MKN_black_partition_hostility }
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_village_assembly_sovereignty
+		icon = GFX_focus_MKN_village_assembly_sovereignty
+		x = 88
+		y = 7
+		cost = 5
+		prerequisite = { focus = MKN_black_partition_of_soil }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_village_sovereignty_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_abolition_of_paper_money
+		icon = GFX_focus_MKN_abolition_of_paper_money
+		x = 92
+		y = 5
+		cost = 5
+		prerequisite = { focus = MKN_grain_ultimatum }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_grain_currency_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_village_smithies_over_plants
+		icon = GFX_focus_MKN_village_smithies_over_plants
+		x = 92
+		y = 6
+		cost = 5
+		prerequisite = { focus = MKN_abolition_of_paper_money }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_village_smithies_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_steppe_grain_monopoly
+		icon = GFX_focus_MKN_steppe_grain_monopoly
+		x = 92
+		y = 7
+		cost = 5
+		prerequisite = { focus = MKN_village_smithies_over_plants }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_steppe_grain_monopoly_idea
+			custom_effect_tooltip = MKN_grain_barter_unlock_tt
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_hunters_of_the_steppe
+		icon = GFX_focus_MKN_hunters_of_the_steppe
+		x = 88
+		y = 8
+		cost = 5
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality has_completed_focus = MKN_every_farm_a_fortress }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_hunters_idea
+			custom_effect_tooltip = MKN_hunters_terrain_tt
+			hidden_effect = { set_technology = { MKN_steppe_hunter_training = 1 } }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_fortified_homesteads
+		icon = GFX_focus_MKN_fortified_homesteads
+		x = 88
+		y = 9
+		cost = 5
+		prerequisite = { focus = MKN_hunters_of_the_steppe }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_fortified_homesteads_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_traps_and_ambush_lines
+		icon = GFX_focus_MKN_traps_and_ambush_lines
+		x = 88
+		y = 10
+		cost = 5
+		prerequisite = { focus = MKN_fortified_homesteads }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_steppe_traps_idea
+			hidden_effect = { MKN_sync_agrarian_defense = yes }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_empty_field_doctrine
+		icon = GFX_focus_MKN_empty_field_doctrine
+		x = 90
+		y = 11
+		cost = 5
+		prerequisite = { focus = MKN_impregnable_granary }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_empty_field_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_death_to_grain_thieves
+		icon = GFX_focus_MKN_death_to_grain_thieves
+		x = 90
+		y = 12
+		cost = 5
+		prerequisite = { focus = MKN_empty_field_doctrine }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_death_to_thieves_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_chernozem_autarky
+		icon = GFX_focus_MKN_chernozem_autarky
+		x = 90
+		y = 13
+		cost = 5
+		prerequisite = { focus = MKN_death_to_grain_thieves }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = neutrality is_subject = no is_in_faction = no has_offensive_war = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_chernozem_autarky_idea
+			custom_effect_tooltip = MKN_agrarian_isolation_tt
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	focus = {
+		id = MKN_steppe_sovnarkhoz
+		icon = GFX_focus_MKN_steppe_sovnarkhoz
+		x = 94
+		y = 6
+		cost = 5
+		prerequisite = { focus = MKN_embassy_to_kharkov }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_sovnarkhoz_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_artel_state_farms
+		icon = GFX_focus_MKN_artel_state_farms
+		x = 94
+		y = 7
+		cost = 5
+		prerequisite = { focus = MKN_steppe_sovnarkhoz }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_state_farms_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_dnieper_five_year_plan
+		icon = GFX_focus_MKN_dnieper_five_year_plan
+		x = 94
+		y = 8
+		cost = 5
+		prerequisite = { focus = MKN_artel_state_farms }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism 226 = { is_owned_and_controlled_by = ROOT } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = { MKN_unified_industrial_capacity_factory = 0.20 tooltip = MKN_unified_industrial_capacity_factory_tt }
+			add_to_variable = { MKN_unified_consumer_goods_factor = 0.15 tooltip = MKN_unified_consumer_goods_factor_tt }
+			if = {
+			    limit = { hidden_trigger = { NOT = { has_country_flag = MKN_revkom_nikopol_reward } } }
+			    226 = {
+			        if = {
+			            limit = { is_owned_and_controlled_by = ROOT }
+			            add_extra_state_shared_building_slots = 8
+			            add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			            add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			        }
+			    }
+			    set_country_flag = MKN_revkom_nikopol_reward
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_political_commissars
+		icon = GFX_focus_MKN_political_commissars
+		x = 94
+		y = 9
+		cost = 5
+		prerequisite = { focus = MKN_dnieper_five_year_plan }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism has_completed_focus = MKN_red_military_specialists }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_commissars_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_red_armored_corps
+		icon = GFX_focus_MKN_red_armored_corps
+		x = 94
+		y = 10
+		cost = 5
+		prerequisite = { focus = MKN_political_commissars }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism has_completed_focus = MKN_tractors_for_grain }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = { MKN_army_army_armor_attack_factor = 0.20 tooltip = MKN_army_army_armor_attack_factor_tt }
+			add_to_variable = { MKN_army_army_armor_speed_factor = 0.20 tooltip = MKN_army_army_armor_speed_factor_tt }
+			add_tech_bonus = { name = MKN_red_armored_corps bonus = 2.0 uses = 1 category = cat_medium_armor category = cat_heavy_armor }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_equal_shield_of_socialism
+		icon = GFX_focus_MKN_equal_shield_of_socialism
+		x = 94
+		y = 11
+		cost = 5
+		prerequisite = { focus = MKN_the_fatal_plenum }
+		mutually_exclusive = { focus = MKN_true_socialism_against_bureaucrats }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism custom_trigger_tooltip = { tooltip = MKN_revkom_equal_path_tt MKN_revkom_equal_path = yes } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			if = {
+			    limit = { hidden_trigger = { NOT = { has_country_flag = MKN_revkom_offsite_reward } } }
+			    add_offsite_building = { type = industrial_complex level = 6 }
+			    set_country_flag = MKN_revkom_offsite_reward
+			}
+			custom_effect_tooltip = MKN_revkom_equal_trade_tt
+			hidden_effect = { MKN_sync_revkom_trade = yes }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_industrial_ram_of_comintern
+		icon = GFX_focus_MKN_industrial_ram_of_comintern
+		x = 94
+		y = 12
+		cost = 5
+		prerequisite = { focus = MKN_equal_shield_of_socialism }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism custom_trigger_tooltip = { tooltip = MKN_revkom_equal_path_tt MKN_revkom_equal_path = yes } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_comintern_ram_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_red_brotherhood_in_arms
+		icon = GFX_focus_MKN_red_brotherhood_in_arms
+		x = 94
+		y = 13
+		cost = 5
+		prerequisite = { focus = MKN_industrial_ram_of_comintern }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism custom_trigger_tooltip = { tooltip = MKN_revkom_equal_path_tt MKN_revkom_equal_path = yes } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = MKN_revkom_brotherhood_tt
+			hidden_effect = { MKN_sync_revkom_combat = yes }
+			add_doctrine_cost_reduction = { name = MKN_red_brotherhood_land cost_reduction = 1.0 uses = 1 category = land_doctrine }
+			add_doctrine_cost_reduction = { name = MKN_red_brotherhood_air cost_reduction = 1.0 uses = 1 category = air_doctrine }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_true_socialism_against_bureaucrats
+		icon = GFX_focus_MKN_true_socialism_against_bureaucrats
+		x = 98
+		y = 11
+		cost = 5
+		prerequisite = { focus = MKN_the_fatal_plenum }
+		mutually_exclusive = { focus = MKN_equal_shield_of_socialism }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism custom_trigger_tooltip = { tooltip = MKN_revkom_betrayal_path_tt MKN_revkom_betrayal_path = yes } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = { MKN_army_army_core_defence_factor = 0.40 tooltip = MKN_army_army_core_defence_factor_tt }
+			custom_effect_tooltip = MKN_revkom_desertion_tt
+			hidden_effect = { MKN_sync_revkom_combat = yes }
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_liberation_of_soviet_ukraine
+		icon = GFX_focus_MKN_liberation_of_soviet_ukraine
+		x = 98
+		y = 12
+		cost = 5
+		prerequisite = { focus = MKN_true_socialism_against_bureaucrats }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism custom_trigger_tooltip = { tooltip = MKN_revkom_betrayal_path_tt MKN_revkom_betrayal_path = yes } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			192 = { add_core_of = ROOT }
+			197 = { add_core_of = ROOT }
+			202 = { add_core_of = ROOT }
+			225 = { add_core_of = ROOT }
+			259 = { add_core_of = ROOT }
+			add_war_support = 0.40
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_strike_at_the_kremlin
+		icon = GFX_focus_MKN_strike_at_the_kremlin
+		x = 98
+		y = 13
+		cost = 5
+		prerequisite = { focus = MKN_liberation_of_soviet_ukraine }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism custom_trigger_tooltip = { tooltip = MKN_revkom_betrayal_path_tt MKN_revkom_betrayal_path = yes } }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = { MKN_army_army_speed_factor = 0.30 tooltip = MKN_army_army_speed_factor_tt }
+			custom_effect_tooltip = MKN_revkom_kremlin_attack_tt
+			hidden_effect = { MKN_sync_revkom_combat = yes }
+			if = {
+			    limit = {
+			        SOV = { exists = yes NOT = { is_subject_of = ROOT } }
+			        NOT = { has_war_with = SOV }
+			        NOT = { is_in_faction_with = SOV }
+			        NOT = { is_subject_of = SOV }
+			        MKN_revkom_betrayal_path = yes
+			    }
+			    create_wargoal = { type = annex_everything target = SOV }
+			}
+		}
+		ai_will_do = { factor = 2 }
+	}
+	focus = {
+		id = MKN_red_beacon_of_the_east
+		icon = GFX_focus_MKN_red_beacon_of_the_east
+		x = 96
+		y = 14
+		cost = 5
+		prerequisite = { focus = MKN_red_brotherhood_in_arms focus = MKN_strike_at_the_kremlin }
+		allow_branch = { has_country_flag = MKN_crisis_enabled }
+		available = { has_government = communism  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = MKN_red_beacon_idea
+		}
+		ai_will_do = { factor = 2 }
+	}
+
 }

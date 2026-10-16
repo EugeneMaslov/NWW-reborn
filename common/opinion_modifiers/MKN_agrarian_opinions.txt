@@ -1,0 +1,3 @@
+opinion_modifiers = {
+	MKN_black_partition_hostility = { value = -30 }
+}

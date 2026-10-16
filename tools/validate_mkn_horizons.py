@@ -90,7 +90,7 @@ class HorizonsModel(MilitaryModel):
         return True
 
 def validate_horizons(root, game, check, localized):
-    effects = {k: v for name in ('nww_mkn_progression', 'MKN_horizons_effects')
+    effects = {k: v for name in ('nww_mkn_progression', 'MKN_horizons_effects', 'MKN_militarist_effects', 'MKN_soviet_effects', 'MKN_communist_effects')
                for k, v, o in read(root/f'common/scripted_effects/{name}.txt')}
     triggers = {k: v for k, v, o in read(root/'common/scripted_triggers/MKN_horizons_triggers.txt')}
     native_triggers = set(re.findall(r'^## (\w+)', (game/'documentation/triggers_documentation.md').read_text(), re.M))
