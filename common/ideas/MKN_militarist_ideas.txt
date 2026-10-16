@@ -1,0 +1,89 @@
+# Owner: MKN. Separate political institutions explicitly requested for Tratishov's path.
+# Army recruitment/training/recovery remain in the existing shared development spirits.
+ideas = {
+	country = {
+		MKN_field_counter_intelligence_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				operative_slot = 2
+				enemy_operative_detection_chance_factor = 0.30
+				agency_upgrade_time = -0.30
+			}
+		}
+		MKN_field_counter_intelligence_reserve_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { enemy_operative_detection_chance_factor = 0.30 }
+		}
+		MKN_disarmed_communes_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.20
+				compliance_gain = 0.10
+				trade_opinion_factor = -0.60
+				consumer_goods_factor = 0.45
+			}
+		}
+		MKN_tribunals_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				attrition = -0.20
+				surrender_limit = 0.30
+				political_power_gain = -0.30
+			}
+		}
+		MKN_labor_armies_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.30
+				production_factory_efficiency_gain_factor = 0.20
+				production_speed_industrial_complex_factor = -0.60
+				stability_factor = -0.20
+				custom_modifier_tooltip = MKN_labor_armies_lock_tt
+			}
+		}
+		MKN_council_of_commanders_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				army_advisor_cost_factor = -0.30
+				air_advisor_cost_factor = -0.30
+				navy_advisor_cost_factor = -0.30
+			}
+		}
+		MKN_preemptive_strike_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { justify_war_goal_time = -1 }
+		}
+		MKN_military_marches_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { compliance_gain = 0.10 }
+		}
+		MKN_permanent_revolution_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.30
+				breakthrough_factor = 0.20
+				supply_consumption_factor = -0.20
+				trade_opinion_factor = -1
+			}
+		}
+	}
+}

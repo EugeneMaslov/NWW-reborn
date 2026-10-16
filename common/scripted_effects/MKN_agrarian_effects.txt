@@ -1,0 +1,15 @@
+MKN_sync_agrarian_defense = {
+	if = {
+		limit = { has_completed_focus = MKN_traps_and_ambush_lines }
+		every_owned_state = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = MKN_agrarian_trapped_roads scope = MKN } } }
+			add_dynamic_modifier = { modifier = MKN_agrarian_trapped_roads scope = MKN }
+		}
+	}
+}
+MKN_repair_agrarian_training = {
+	if = {
+		limit = { has_completed_focus = MKN_hunters_of_the_steppe NOT = { has_tech = MKN_steppe_hunter_training } }
+		set_technology = { MKN_steppe_hunter_training = 1 }
+	}
+}

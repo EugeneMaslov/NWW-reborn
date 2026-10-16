@@ -1,0 +1,30 @@
+# Owner: MKN. A liberated nation remains sovereign if it refuses the offer.
+add_namespace = mkn_free_soviets
+country_event = {
+	id = mkn_free_soviets.1
+	title = mkn_free_soviets.1.t
+	desc = mkn_free_soviets.1.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = mkn_free_soviets.1.a
+		trigger = { MKN_can_accept_commune_invitation = yes }
+		ai_chance = { factor = 70 }
+		if = {
+			limit = { MKN_can_accept_commune_invitation = yes }
+			MKN = {
+				if = {
+					limit = { is_in_faction = no }
+					create_faction = MKN_free_labor_federation
+				}
+				add_to_faction = ROOT
+			}
+		}
+		clr_country_flag = MKN_free_commune_invitation_pending
+	}
+	option = {
+		name = mkn_free_soviets.1.b
+		ai_chance = { factor = 30 }
+		clr_country_flag = MKN_free_commune_invitation_pending
+	}
+}

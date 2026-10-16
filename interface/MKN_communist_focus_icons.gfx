@@ -1,0 +1,555 @@
+# Sources and prompts: docs/art/mkn_communist_expansion
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_MKN_steppe_sovnarkhoz
+		texturefile = "gfx/interface/goals/MKN_steppe_sovnarkhoz.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_steppe_sovnarkhoz.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_steppe_sovnarkhoz.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_steppe_sovnarkhoz_shine
+		texturefile = "gfx/interface/goals/MKN_steppe_sovnarkhoz.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_artel_state_farms
+		texturefile = "gfx/interface/goals/MKN_artel_state_farms.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_artel_state_farms.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_artel_state_farms.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_artel_state_farms_shine
+		texturefile = "gfx/interface/goals/MKN_artel_state_farms.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_dnieper_five_year_plan
+		texturefile = "gfx/interface/goals/MKN_dnieper_five_year_plan.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_dnieper_five_year_plan.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_dnieper_five_year_plan.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_dnieper_five_year_plan_shine
+		texturefile = "gfx/interface/goals/MKN_dnieper_five_year_plan.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_political_commissars
+		texturefile = "gfx/interface/goals/MKN_political_commissars.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_political_commissars.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_political_commissars.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_political_commissars_shine
+		texturefile = "gfx/interface/goals/MKN_political_commissars.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_red_armored_corps
+		texturefile = "gfx/interface/goals/MKN_red_armored_corps.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_red_armored_corps.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_red_armored_corps.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_red_armored_corps_shine
+		texturefile = "gfx/interface/goals/MKN_red_armored_corps.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_equal_shield_of_socialism
+		texturefile = "gfx/interface/goals/MKN_equal_shield_of_socialism.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_equal_shield_of_socialism.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_equal_shield_of_socialism.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_equal_shield_of_socialism_shine
+		texturefile = "gfx/interface/goals/MKN_equal_shield_of_socialism.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_industrial_ram_of_comintern
+		texturefile = "gfx/interface/goals/MKN_industrial_ram_of_comintern.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_industrial_ram_of_comintern.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_industrial_ram_of_comintern.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_industrial_ram_of_comintern_shine
+		texturefile = "gfx/interface/goals/MKN_industrial_ram_of_comintern.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_red_brotherhood_in_arms
+		texturefile = "gfx/interface/goals/MKN_red_brotherhood_in_arms.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_red_brotherhood_in_arms.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_red_brotherhood_in_arms.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_red_brotherhood_in_arms_shine
+		texturefile = "gfx/interface/goals/MKN_red_brotherhood_in_arms.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_true_socialism_against_bureaucrats
+		texturefile = "gfx/interface/goals/MKN_true_socialism_against_bureaucrats.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_true_socialism_against_bureaucrats.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_true_socialism_against_bureaucrats.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_true_socialism_against_bureaucrats_shine
+		texturefile = "gfx/interface/goals/MKN_true_socialism_against_bureaucrats.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_liberation_of_soviet_ukraine
+		texturefile = "gfx/interface/goals/MKN_liberation_of_soviet_ukraine.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_liberation_of_soviet_ukraine.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_liberation_of_soviet_ukraine.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_liberation_of_soviet_ukraine_shine
+		texturefile = "gfx/interface/goals/MKN_liberation_of_soviet_ukraine.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_strike_at_the_kremlin
+		texturefile = "gfx/interface/goals/MKN_strike_at_the_kremlin.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_strike_at_the_kremlin.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_strike_at_the_kremlin.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_strike_at_the_kremlin_shine
+		texturefile = "gfx/interface/goals/MKN_strike_at_the_kremlin.dds"
+	}
+	spriteType = {
+		name = GFX_focus_MKN_red_beacon_of_the_east
+		texturefile = "gfx/interface/goals/MKN_red_beacon_of_the_east.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_red_beacon_of_the_east.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/MKN_red_beacon_of_the_east.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_focus_MKN_red_beacon_of_the_east_shine
+		texturefile = "gfx/interface/goals/MKN_red_beacon_of_the_east.dds"
+	}
+}

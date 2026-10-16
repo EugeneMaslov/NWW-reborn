@@ -1,0 +1,729 @@
+{
+  "generator": "built-in image_gen",
+  "canvas": [
+    96,
+    96
+  ],
+  "assets": [
+    {
+      "branch": "militarists",
+      "focus": "MKN_field_counter_intelligence",
+      "prompt": "docs/art/mkn_political_expansions/MKN_field_counter_intelligence.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_field_counter_intelligence.png",
+      "sprite": "GFX_focus_MKN_field_counter_intelligence",
+      "texture": "gfx/interface/goals/MKN_field_counter_intelligence.dds",
+      "source_sha256": "7c72c1864f6a996c1466e1fdd66bf2f0b2177e862d0799d114e56903b0e6c7c5",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        10,
+        90,
+        86
+      ],
+      "texture_sha256": "d1ee1e6cf8ab59665a8f34c1adc4ff8ef544e9e1ed8c074da2e725373c15e2d7"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_disarming_the_communes",
+      "prompt": "docs/art/mkn_political_expansions/MKN_disarming_the_communes.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_disarming_the_communes.png",
+      "sprite": "GFX_focus_MKN_disarming_the_communes",
+      "texture": "gfx/interface/goals/MKN_disarming_the_communes.dds",
+      "source_sha256": "4a3de33e40a9653fb9b96a7b4bb6ce5f023a300d76aa820d712020593882abac",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        9,
+        6,
+        89,
+        90
+      ],
+      "texture_sha256": "f880aaee8e08960e92e49d1adfacc7be183bac9de40547601ed60f839195488e"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_tribunals_of_the_black_staff",
+      "prompt": "docs/art/mkn_political_expansions/MKN_tribunals_of_the_black_staff.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_tribunals_of_the_black_staff.png",
+      "sprite": "GFX_focus_MKN_tribunals_of_the_black_staff",
+      "texture": "gfx/interface/goals/MKN_tribunals_of_the_black_staff.dds",
+      "source_sha256": "89324b1831f8fbd146070b1c3d4c20c9343dfeb574fd59ef99dbf6407d815440",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "texture_sha256": "709385abd94964dc03fcc09928651f4cb4c48f2b68e14c1fd093524e9c472ed4"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_labor_armies",
+      "prompt": "docs/art/mkn_political_expansions/MKN_labor_armies.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_labor_armies.png",
+      "sprite": "GFX_focus_MKN_labor_armies",
+      "texture": "gfx/interface/goals/MKN_labor_armies.dds",
+      "source_sha256": "c0d83c6710ea2e7c07807ed6a9082c7529c4099d1dddf023ae2f9a3bd041a9ec",
+      "source_size": [
+        1374,
+        1145
+      ],
+      "occupied_alpha_bounds": [
+        9,
+        13,
+        90,
+        81
+      ],
+      "texture_sha256": "8b71c04ce75e6800e3edd5b09f829a6d1bceefbfaaf456925c5aae715f47e75a"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_schools_of_young_insurgents",
+      "prompt": "docs/art/mkn_political_expansions/MKN_schools_of_young_insurgents.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_schools_of_young_insurgents.png",
+      "sprite": "GFX_focus_MKN_schools_of_young_insurgents",
+      "texture": "gfx/interface/goals/MKN_schools_of_young_insurgents.dds",
+      "source_sha256": "250609aec83d28561b0188460b9565610583742ad9430fb70c5579951274beed",
+      "source_size": [
+        1328,
+        1184
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        10,
+        90,
+        85
+      ],
+      "texture_sha256": "7778fd4eb8599165112ad190cb865a11d3079ca3ae014d466d764c8f90fb84b3"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_cult_of_fallen_atamans",
+      "prompt": "docs/art/mkn_political_expansions/MKN_cult_of_fallen_atamans.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_cult_of_fallen_atamans.png",
+      "sprite": "GFX_focus_MKN_cult_of_fallen_atamans",
+      "texture": "gfx/interface/goals/MKN_cult_of_fallen_atamans.dds",
+      "source_sha256": "358664c26596d877cc08394cdfb76e03bb9b5006a3c1da58b0da94ee4d1e2536",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        9,
+        90,
+        85
+      ],
+      "texture_sha256": "2e1c966d4e8185cde79108871b2e447b5be81f8a25e0610a5a88dde4a8915479"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_military_districts",
+      "prompt": "docs/art/mkn_political_expansions/MKN_military_districts.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_military_districts.png",
+      "sprite": "GFX_focus_MKN_military_districts",
+      "texture": "gfx/interface/goals/MKN_military_districts.dds",
+      "source_sha256": "d4bbfef3febb990dbf925689da0d8f9fa031a7dba23622d56c3a7efffcff0cb8",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "texture_sha256": "e4e32ae32454cc33ab5ca89b2b8ea584e3b0c2fcdf683dc068b20fe7fb1f7c39"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_council_of_field_commanders",
+      "prompt": "docs/art/mkn_political_expansions/MKN_council_of_field_commanders.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_council_of_field_commanders.png",
+      "sprite": "GFX_focus_MKN_council_of_field_commanders",
+      "texture": "gfx/interface/goals/MKN_council_of_field_commanders.dds",
+      "source_sha256": "4354c981f5cb36fbdbb19b635257c98f6f5e5232521f12351e9d3478ce8be3db",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        83
+      ],
+      "texture_sha256": "da769d3d37f8c772429c96628012cc42c3ac7e7f676c8c17018fd94361647e6f"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_the_supreme_warlord",
+      "prompt": "docs/art/mkn_political_expansions/MKN_the_supreme_warlord.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_the_supreme_warlord.png",
+      "sprite": "GFX_focus_MKN_the_supreme_warlord",
+      "texture": "gfx/interface/goals/MKN_the_supreme_warlord.dds",
+      "source_sha256": "c7ca5df53011a40baeca2987742fde2a817a98e520aa2cf46a6a66c89cd243a2",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        87
+      ],
+      "texture_sha256": "ef6332c162c60108ba9688dc55e7aab71a9e864f1189b5e3b6c721cbb1a4a0c5"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_preemptive_strike_doctrine",
+      "prompt": "docs/art/mkn_political_expansions/MKN_preemptive_strike_doctrine.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_preemptive_strike_doctrine.png",
+      "sprite": "GFX_focus_MKN_preemptive_strike_doctrine",
+      "texture": "gfx/interface/goals/MKN_preemptive_strike_doctrine.dds",
+      "source_sha256": "bcc8afe0c4b0681e69824cbf5b022a61ceea438069f6f2eefafa474ff9386797",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        8,
+        90,
+        89
+      ],
+      "texture_sha256": "6c75c907119644d3e1aec1e55b16c99340829bfd372c26c70ad12980c405c330"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_military_marches",
+      "prompt": "docs/art/mkn_political_expansions/MKN_military_marches.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_military_marches.png",
+      "sprite": "GFX_focus_MKN_military_marches",
+      "texture": "gfx/interface/goals/MKN_military_marches.dds",
+      "source_sha256": "1302b4ce451a694fb271f48e5a7c05098bd063ef1d4c95afc52d6073934f13d6",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        10,
+        90,
+        86
+      ],
+      "texture_sha256": "4c118537beed2f11dcbcd61f9e0cdd71066deeaefb6928e5a34bab60fcc50c64"
+    },
+    {
+      "branch": "militarists",
+      "focus": "MKN_black_banner_over_europe",
+      "prompt": "docs/art/mkn_political_expansions/MKN_black_banner_over_europe.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_black_banner_over_europe.png",
+      "sprite": "GFX_focus_MKN_black_banner_over_europe",
+      "texture": "gfx/interface/goals/MKN_black_banner_over_europe.dds",
+      "source_sha256": "7e5a47cf3f4bfd03a2ceb6811084a43b5540830101384259be98a5b272029ed8",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        87
+      ],
+      "texture_sha256": "dc8cca1d4f3cd6e9fe2dfd0634a3637e6fa3c71ca71512dfaf6705f4df121d8e"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_ferrer_modern_schools",
+      "prompt": "docs/art/mkn_political_expansions/MKN_ferrer_modern_schools.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_ferrer_modern_schools.png",
+      "sprite": "GFX_focus_MKN_ferrer_modern_schools",
+      "texture": "gfx/interface/goals/MKN_ferrer_modern_schools.dds",
+      "source_sha256": "14312630f1b3d1d550983eddfd1bf5b2ff7ac58556172a90fe6d83d34e90c421",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "texture_sha256": "46e6254ab4a77972e6b19e38151b716aec413e969956d6ed83e420f4c7a1500b"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_sanctuary_of_free_thought",
+      "prompt": "docs/art/mkn_political_expansions/MKN_sanctuary_of_free_thought.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_sanctuary_of_free_thought.png",
+      "sprite": "GFX_focus_MKN_sanctuary_of_free_thought",
+      "texture": "gfx/interface/goals/MKN_sanctuary_of_free_thought.dds",
+      "source_sha256": "f6a344ce23747536d2ec730a1ca78c3e6e7c2ef3b34c6bc258f6684996701af5",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "texture_sha256": "7fe8f61d1bc634a0153a286dc2d011110ad52a9c9cc8a7d1cbd527377cf3108d"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_eradication_of_wage_labor",
+      "prompt": "docs/art/mkn_political_expansions/MKN_eradication_of_wage_labor.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_eradication_of_wage_labor.png",
+      "sprite": "GFX_focus_MKN_eradication_of_wage_labor",
+      "texture": "gfx/interface/goals/MKN_eradication_of_wage_labor.dds",
+      "source_sha256": "8d17c47adf84f5a4c0eede31f95a05e5810af60458f99bb0b98fb336017bd2e6",
+      "source_size": [
+        1322,
+        1190
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        10,
+        90,
+        85
+      ],
+      "texture_sha256": "7488464fdd1c620d2e9b072704219c334f182b13c51e8b1d044070a2867e0cc7"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_imperative_mandate",
+      "prompt": "docs/art/mkn_political_expansions/MKN_imperative_mandate.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_imperative_mandate.png",
+      "sprite": "GFX_focus_MKN_imperative_mandate",
+      "texture": "gfx/interface/goals/MKN_imperative_mandate.dds",
+      "source_sha256": "eaffad426383ec6fabc1a0b439044a0fdf25bfffc1b6b6d677ac5eb87b7e916f",
+      "source_size": [
+        1402,
+        1122
+      ],
+      "occupied_alpha_bounds": [
+        11,
+        14,
+        89,
+        80
+      ],
+      "texture_sha256": "d12dd2fb2ecb17c5e1c9ff08a893353e7235c25c6186293f3b076b51e9df1577"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_syndicalist_work_ethic",
+      "prompt": "docs/art/mkn_political_expansions/MKN_syndicalist_work_ethic.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_syndicalist_work_ethic.png",
+      "sprite": "GFX_focus_MKN_syndicalist_work_ethic",
+      "texture": "gfx/interface/goals/MKN_syndicalist_work_ethic.dds",
+      "source_sha256": "2383c49fc724cf8dc389cdb86695e9ababcc2957af82c34066f5edcd3c239b61",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        13,
+        90,
+        82
+      ],
+      "texture_sha256": "18e790f5955367788905393859e42997a380b70ccddf99c83a097d69e46d241a"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_consumer_autonomy",
+      "prompt": "docs/art/mkn_political_expansions/MKN_consumer_autonomy.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_consumer_autonomy.png",
+      "sprite": "GFX_focus_MKN_consumer_autonomy",
+      "texture": "gfx/interface/goals/MKN_consumer_autonomy.dds",
+      "source_sha256": "de0ec4d3694405106e902616c8584d40ad609fd55555c96cade6397bd7555b4c",
+      "source_size": [
+        1374,
+        1145
+      ],
+      "occupied_alpha_bounds": [
+        11,
+        13,
+        86,
+        82
+      ],
+      "texture_sha256": "f4a147d9dbda1aec3667ee9ceaaf99b095de3a5188a3d9b05d0948aed6438909"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_elected_instructor_collegiums",
+      "prompt": "docs/art/mkn_political_expansions/MKN_elected_instructor_collegiums.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_elected_instructor_collegiums.png",
+      "sprite": "GFX_focus_MKN_elected_instructor_collegiums",
+      "texture": "gfx/interface/goals/MKN_elected_instructor_collegiums.dds",
+      "source_sha256": "2f7327ce8fffc3ad1b857f2f2acaeeb9f34b07a1e342dbd138d75571ad77ac56",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "texture_sha256": "ecbb315cee414eec5beb269e039c1773b9d93b940f8a25833d39420d3fd2036a"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_volost_signal_chains",
+      "prompt": "docs/art/mkn_political_expansions/MKN_volost_signal_chains.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_volost_signal_chains.png",
+      "sprite": "GFX_focus_MKN_volost_signal_chains",
+      "texture": "gfx/interface/goals/MKN_volost_signal_chains.dds",
+      "source_sha256": "1cf2a3266ca9b2490086a73d76022bced5002b4de118e4de765f60433ed11235",
+      "source_size": [
+        1374,
+        1145
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        14,
+        90,
+        83
+      ],
+      "texture_sha256": "9d434f6241fb89d42b77a9bb1b6faf9f538f2f55f6b6088115a294ea8b287699"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_hearth_defense_doctrine",
+      "prompt": "docs/art/mkn_political_expansions/MKN_hearth_defense_doctrine.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_hearth_defense_doctrine.png",
+      "sprite": "GFX_focus_MKN_hearth_defense_doctrine",
+      "texture": "gfx/interface/goals/MKN_hearth_defense_doctrine.dds",
+      "source_sha256": "51c888b6f0ca3fa906998e895fcc93708beb275817f5c76c7b78a42078667b45",
+      "source_size": [
+        1230,
+        1278
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        6,
+        88,
+        90
+      ],
+      "texture_sha256": "8c81092d12137ac5e813a2630c0c30f0f389a3b19e135298f854d66962140e34"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_subversion_of_enemy_ranks",
+      "prompt": "docs/art/mkn_political_expansions/MKN_subversion_of_enemy_ranks.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_subversion_of_enemy_ranks.png",
+      "sprite": "GFX_focus_MKN_subversion_of_enemy_ranks",
+      "texture": "gfx/interface/goals/MKN_subversion_of_enemy_ranks.dds",
+      "source_sha256": "c55b24aeea6307806e13c85aaecf21233f09d0da3f8d2cc76079746dbe759691",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        6,
+        90,
+        79
+      ],
+      "texture_sha256": "7c68fbc175a768d7ad673d1dd6e0630a6430f3d5205a79be4dd040e090218ca1"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_autonomous_free_communes",
+      "prompt": "docs/art/mkn_political_expansions/MKN_autonomous_free_communes.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_autonomous_free_communes.png",
+      "sprite": "GFX_focus_MKN_autonomous_free_communes",
+      "texture": "gfx/interface/goals/MKN_autonomous_free_communes.dds",
+      "source_sha256": "b3801a4a767c3421dec43dffafbac11a36a40414c7051e10b574ad7c4ecca7c8",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        9,
+        90,
+        86
+      ],
+      "texture_sha256": "0605005177ef6c16ee5071c61d54ac85595fe5a268c029453038b2c06438e95e"
+    },
+    {
+      "branch": "free_soviets",
+      "focus": "MKN_world_federation_of_labor",
+      "prompt": "docs/art/mkn_political_expansions/MKN_world_federation_of_labor.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_world_federation_of_labor.png",
+      "sprite": "GFX_focus_MKN_world_federation_of_labor",
+      "texture": "gfx/interface/goals/MKN_world_federation_of_labor.dds",
+      "source_sha256": "5d2b018a514f08c97bdf5c7b0141b28c4eb1d9b9a5a1fbcc981f23cef6b9f768",
+      "source_size": [
+        1346,
+        1169
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        11,
+        90,
+        85
+      ],
+      "texture_sha256": "1b95b68e2be3ef9086d72212edd86519e5f3d06f75a26d79b4885cfd09f27cd4"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_great_rural_exodus",
+      "prompt": "docs/art/mkn_political_expansions/MKN_great_rural_exodus.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_great_rural_exodus.png",
+      "sprite": "GFX_focus_MKN_great_rural_exodus",
+      "texture": "gfx/interface/goals/MKN_great_rural_exodus.dds",
+      "source_sha256": "08b2dfdfca7f6dfd9521829c495d67af13ee3f1f06f7a58d5695fe970a8d4ef3",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        88
+      ],
+      "texture_sha256": "4ef6e5b1db767c810e66d2655cb5cd572cca04d20c6302aced9d118e732b2878"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_black_partition_of_soil",
+      "prompt": "docs/art/mkn_political_expansions/MKN_black_partition_of_soil.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_black_partition_of_soil.png",
+      "sprite": "GFX_focus_MKN_black_partition_of_soil",
+      "texture": "gfx/interface/goals/MKN_black_partition_of_soil.dds",
+      "source_sha256": "2fb85732abb49a36b71513b0c84525cc22c618559b0115e91fda9959e17874ef",
+      "source_size": [
+        1292,
+        1217
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        8,
+        90,
+        87
+      ],
+      "texture_sha256": "3ca3fe20c676b10a632673019004ff9d23e1f93bd8eb3072f365ffe38e559354"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_village_assembly_sovereignty",
+      "prompt": "docs/art/mkn_political_expansions/MKN_village_assembly_sovereignty.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_village_assembly_sovereignty.png",
+      "sprite": "GFX_focus_MKN_village_assembly_sovereignty",
+      "texture": "gfx/interface/goals/MKN_village_assembly_sovereignty.dds",
+      "source_sha256": "f92b898e632d2534a9725fd533d23fc8047b5f840f40769aadc2e89f8b09c9d3",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        7,
+        90,
+        90
+      ],
+      "texture_sha256": "d01fb5bfff9df162df9fa04b695d06b26fdfe2c3d09d0348a31563955d23c644"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_abolition_of_paper_money",
+      "prompt": "docs/art/mkn_political_expansions/MKN_abolition_of_paper_money.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_abolition_of_paper_money.png",
+      "sprite": "GFX_focus_MKN_abolition_of_paper_money",
+      "texture": "gfx/interface/goals/MKN_abolition_of_paper_money.dds",
+      "source_sha256": "89591b62aaf68fed014d0ebe7a5d59be3143d4356e9425ecb2242e5536ba6a89",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        10,
+        90,
+        87
+      ],
+      "texture_sha256": "61565d8947c166dcacf2b3b63596a37f76b5f62be83e075c260122144965ff7e"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_village_smithies_over_plants",
+      "prompt": "docs/art/mkn_political_expansions/MKN_village_smithies_over_plants.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_village_smithies_over_plants.png",
+      "sprite": "GFX_focus_MKN_village_smithies_over_plants",
+      "texture": "gfx/interface/goals/MKN_village_smithies_over_plants.dds",
+      "source_sha256": "52b43869a309ff675bbf6f71e767a136ee10d93d8835b3c85759f6f6ff52faf7",
+      "source_size": [
+        1312,
+        1199
+      ],
+      "occupied_alpha_bounds": [
+        10,
+        9,
+        89,
+        84
+      ],
+      "texture_sha256": "4d928234b41825667e1667f4068828dac3924f7e74ac24cd44d2131602611e19"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_steppe_grain_monopoly",
+      "prompt": "docs/art/mkn_political_expansions/MKN_steppe_grain_monopoly.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_steppe_grain_monopoly.png",
+      "sprite": "GFX_focus_MKN_steppe_grain_monopoly",
+      "texture": "gfx/interface/goals/MKN_steppe_grain_monopoly.dds",
+      "source_sha256": "9586b6cd6177d29dda4a18800e282ca05e0118986e5524a5fd955ab16d3d2410",
+      "source_size": [
+        1330,
+        1182
+      ],
+      "occupied_alpha_bounds": [
+        8,
+        10,
+        90,
+        86
+      ],
+      "texture_sha256": "571f34ad4a7b85e9b8a98e0f91d6829bd1019e970a2380fd1de90d3f653fac08"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_hunters_of_the_steppe",
+      "prompt": "docs/art/mkn_political_expansions/MKN_hunters_of_the_steppe.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_hunters_of_the_steppe.png",
+      "sprite": "GFX_focus_MKN_hunters_of_the_steppe",
+      "texture": "gfx/interface/goals/MKN_hunters_of_the_steppe.dds",
+      "source_sha256": "82f6f03bc53e4766c4ea958667ecbaec736e48c7d2100dd5f2e173ca78657298",
+      "source_size": [
+        1374,
+        1145
+      ],
+      "occupied_alpha_bounds": [
+        8,
+        12,
+        90,
+        83
+      ],
+      "texture_sha256": "0aeec0a8e23fe602396553bb66548580d660e5f260564b82e73b190f26ce2e01"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_fortified_homesteads",
+      "prompt": "docs/art/mkn_political_expansions/MKN_fortified_homesteads.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_fortified_homesteads.png",
+      "sprite": "GFX_focus_MKN_fortified_homesteads",
+      "texture": "gfx/interface/goals/MKN_fortified_homesteads.dds",
+      "source_sha256": "8775acf60264e7a925a0b9c377a2fc013755af7f2dbaabbc4fb50c199a3956a2",
+      "source_size": [
+        1374,
+        1145
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        13,
+        90,
+        83
+      ],
+      "texture_sha256": "3745d5b95622c4d585c3e909e5abad2ed12f9851e6a7b41d3ce1e09286fb309b"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_traps_and_ambush_lines",
+      "prompt": "docs/art/mkn_political_expansions/MKN_traps_and_ambush_lines.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_traps_and_ambush_lines.png",
+      "sprite": "GFX_focus_MKN_traps_and_ambush_lines",
+      "texture": "gfx/interface/goals/MKN_traps_and_ambush_lines.dds",
+      "source_sha256": "ed350e43b821cad692bf4e4077b04130f29a33822596599b5a41293a9214685d",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        6,
+        13,
+        89,
+        88
+      ],
+      "texture_sha256": "04e90da7985324d80151090bf6f1e9b04ee30db31354d4bb6ffc985c5ea22f7f"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_empty_field_doctrine",
+      "prompt": "docs/art/mkn_political_expansions/MKN_empty_field_doctrine.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_empty_field_doctrine.png",
+      "sprite": "GFX_focus_MKN_empty_field_doctrine",
+      "texture": "gfx/interface/goals/MKN_empty_field_doctrine.dds",
+      "source_sha256": "8e8bda6fb93b78c9dd67cf0bcbece13bbb5258ff557a23476ea3bf778cd58e38",
+      "source_size": [
+        1349,
+        1166
+      ],
+      "occupied_alpha_bounds": [
+        10,
+        11,
+        90,
+        85
+      ],
+      "texture_sha256": "003bf030bb2547855b9fb85feaf13b40f37c5c87b63763329e17b199f5465574"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_death_to_grain_thieves",
+      "prompt": "docs/art/mkn_political_expansions/MKN_death_to_grain_thieves.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_death_to_grain_thieves.png",
+      "sprite": "GFX_focus_MKN_death_to_grain_thieves",
+      "texture": "gfx/interface/goals/MKN_death_to_grain_thieves.dds",
+      "source_sha256": "c8b64c4c805c1676962eeb69e574ab0df3ecea5d12748337ef72cab3fc46c91a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        6,
+        89,
+        88
+      ],
+      "texture_sha256": "85ec38f75405f553dda57d9a8beafed4d4aa2dd14bdf3b413c19cec713be6c93"
+    },
+    {
+      "branch": "agrarians",
+      "focus": "MKN_chernozem_autarky",
+      "prompt": "docs/art/mkn_political_expansions/MKN_chernozem_autarky.prompt.txt",
+      "source": "docs/art/mkn_political_expansions/MKN_chernozem_autarky.png",
+      "sprite": "GFX_focus_MKN_chernozem_autarky",
+      "texture": "gfx/interface/goals/MKN_chernozem_autarky.dds",
+      "source_sha256": "d9818bb61e6ac11c4d32b4ecdd60b576368d6071ecc439254fa8ceffa9300e01",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "occupied_alpha_bounds": [
+        7,
+        6,
+        90,
+        90
+      ],
+      "texture_sha256": "227bc6aeede397bcff8501c9fe488fba5b4fe02362c1492a29e71ce8e704ab00"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+# Owner: MKN (Volin's democratic Free Soviets, not SOV).
+# Values include x2 balance; consumer goods x3 twice (x9 from the initial prompt).
+ideas = {
+	country = {
+		MKN_ferrer_schools_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { research_speed_factor = 0.14 conscription = -0.02 }
+		}
+		MKN_labor_vouchers_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.45 }
+		}
+		MKN_voucher_transition_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { production_factory_efficiency_gain_factor = -0.20 }
+		}
+		MKN_imperative_mandate_idea = {
+			picture = generic_democratic_reformer_eastern_european_2d
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { stability_factor = 0.20 drift_defence_factor = 0.60 political_power_gain = -0.30 }
+		}
+		MKN_syndicalist_work_ethic_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { production_factory_max_efficiency_factor = 0.30 repair_speed_factor = 0.40 }
+		}
+		MKN_consumer_autonomy_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { conversion_cost_civ_to_mil_factor = 1.0 }
+		}
+		MKN_elected_instructors_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.30
+				experience_gain_army = 0.10
+				max_planning = -0.40
+				planning_speed = -0.50
+			}
+		}
+		MKN_hearth_defense_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.50
+				dig_in_speed_factor = 0.50
+				army_non_core_attack_factor = -0.50
+			}
+		}
+		MKN_enemy_subversion_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { enemy_attrition = 0.40 custom_modifier_tooltip = MKN_people_subversion_tt }
+		}
+		MKN_free_communes_idea = {
+			picture = generic_democratic_reformer_eastern_european_2d
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { generate_wargoal_tension = 0.40 }
+		}
+		MKN_world_federation_idea = {
+			picture = generic_democratic_reformer_eastern_european_2d
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { stability_factor = 0.40 political_power_gain = 0.20 faction_trade_opinion_factor = 0.40 }
+		}
+		MKN_federation_influence_idea = {
+			picture = generic_democratic_reformer_eastern_european_2d
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = { democratic_drift = 0.10 }
+		}
+	}
+}

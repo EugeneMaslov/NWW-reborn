@@ -2,6 +2,10 @@
 # research slots already earned in an older save.
 MKN_repair_research_capacity = {
 	if = {
+		limit = { has_completed_focus = MKN_ferrer_modern_schools amount_research_slots < 5 }
+		set_research_slots = 5
+	}
+	if = {
 		limit = {
 			has_completed_focus = MKN_communal_research_network
 			has_completed_focus = MKN_free_science_network

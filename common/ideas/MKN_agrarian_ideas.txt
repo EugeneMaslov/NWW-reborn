@@ -1,0 +1,104 @@
+# Owner: MKN agrarians. The focus specification takes precedence over its summary.
+ideas = {
+	country = {
+		MKN_rural_exodus_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { monthly_population = 0.60 industrial_capacity_factory = -0.25 }
+		}
+		MKN_black_partition_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { stability_factor = 0.20 consumer_goods_factor = -0.20 }
+		}
+		MKN_village_sovereignty_idea = {
+			picture = generic_democratic_reformer_eastern_european_2d
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { stability_factor = 0.10 resistance_decay_on_our_occupied_states = 0.40 political_power_gain = -0.30 }
+		}
+		MKN_grain_currency_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { stability_factor = 0.10 trade_opinion_factor = -0.40 custom_modifier_tooltip = MKN_grain_currency_resilience_tt }
+		}
+		MKN_village_smithies_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.30 instant = yes }
+				support_equipment = { build_cost_ic = -0.30 instant = yes }
+			}
+			research_bonus = { armor = -0.50 air_equipment = -0.50 }
+			modifier = { }
+		}
+		MKN_steppe_grain_monopoly_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { trade_opinion_factor = -0.25 }
+		}
+		MKN_hunters_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { recon_factor = 0.50 training_time_army_factor = 0.30 custom_modifier_tooltip = MKN_hunters_terrain_tt }
+		}
+		MKN_fortified_homesteads_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { dig_in_speed_factor = 0.45 max_dig_in = 10.0 }
+		}
+		MKN_steppe_traps_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { org_loss_when_moving = -0.20 custom_modifier_tooltip = MKN_steppe_traps_tt }
+		}
+		MKN_empty_field_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { enemy_attrition = 0.35 }
+		}
+		MKN_death_to_thieves_idea = {
+			picture = generic_army_war_college
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { surrender_limit = 0.30 army_core_defence_factor = 0.45 }
+		}
+		MKN_chernozem_autarky_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			rule = { can_join_factions = no can_create_factions = no can_not_declare_war = yes }
+			modifier = { consumer_goods_factor = -0.40 stability_factor = 0.20 conscription = 0.06 army_non_core_attack_factor = -0.35 }
+		}
+		# A temporary off-map factory is owned by this timed spirit, not by a delayed event.
+		MKN_grain_barter_factory_idea = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MKN }
+			removal_cost = -1
+			modifier = { }
+			on_add = {
+				if = {
+					limit = { NOT = { has_country_flag = MKN_grain_barter_factory_active } }
+					set_country_flag = MKN_grain_barter_factory_active
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+			}
+			on_remove = {
+				if = {
+					limit = { has_country_flag = MKN_grain_barter_factory_active }
+					add_offsite_building = { type = industrial_complex level = -1 }
+					clr_country_flag = MKN_grain_barter_factory_active
+				}
+			}
+		}
+	}
+}

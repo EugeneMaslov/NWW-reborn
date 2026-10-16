@@ -1,0 +1,30 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = { exists = yes }
+					MKN_repair_soviet_progression = yes
+					MKN_repair_research_capacity = yes
+					MKN_sync_people_defense = yes
+				}
+				MKN_sync_federation_influence = yes
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = {
+			MKN_repair_soviet_progression = yes
+			MKN_sync_people_defense = yes
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = { limit = { tag = MKN } MKN_sync_federation_influence = yes }
+			if = {
+				limit = { has_idea = MKN_federation_influence_idea MKN = { exists = no } }
+				remove_ideas = MKN_federation_influence_idea
+			}
+		}
+	}
+}

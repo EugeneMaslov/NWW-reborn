@@ -1,0 +1,3 @@
+opinion_modifiers = {
+	MKN_sanctuary_hostility = { value = -40 }
+}

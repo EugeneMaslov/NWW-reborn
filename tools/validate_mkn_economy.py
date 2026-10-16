@@ -132,6 +132,9 @@ def validate_economy(root, game, check, localized):
     meta = json.loads((root/'docs/MKN_unified_progression.json').read_text())
     industry = set(meta['industry_changes'])
     effects = {k: v for k, v, o in read(root/'common/scripted_effects/nww_mkn_progression.txt')}
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_militarist_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_soviet_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_communist_effects.txt'))
     physical_rewards = {'add_building_construction', 'add_resource', 'add_offsite_building', 'build_railway',
         'add_extra_state_shared_building_slots', 'add_political_power', 'add_command_power', 'army_experience',
         'add_manpower', 'add_research_slot', 'add_equipment_to_stockpile', 'country_event', 'add_mio_size'}

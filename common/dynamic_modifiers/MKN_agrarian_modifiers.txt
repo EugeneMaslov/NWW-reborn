@@ -1,0 +1,9 @@
+# Native state/army modifier, restricted to the country whose territory is defended.
+MKN_agrarian_trapped_roads = {
+	enable = {
+		is_owned_and_controlled_by = MKN
+		MKN = { has_government = neutrality has_idea = MKN_steppe_traps_idea }
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	enemy_army_speed_factor = -0.30
+}

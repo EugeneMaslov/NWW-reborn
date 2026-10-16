@@ -1,0 +1,114 @@
+# Reconstruct parameters, never factories, cores, war support or research coupons.
+MKN_rebuild_communist_industry_stats = {
+	if = {
+		limit = { has_completed_focus = MKN_dnieper_five_year_plan }
+		add_to_variable = { MKN_unified_industrial_capacity_factory = 0.20 }
+		add_to_variable = { MKN_unified_consumer_goods_factor = 0.15 }
+	}
+}
+MKN_rebuild_communist_army_stats = {
+	if = {
+		limit = { has_completed_focus = MKN_red_armored_corps }
+		add_to_variable = { MKN_army_army_armor_attack_factor = 0.20 }
+		add_to_variable = { MKN_army_army_armor_speed_factor = 0.20 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_true_socialism_against_bureaucrats }
+		add_to_variable = { MKN_army_army_core_defence_factor = 0.40 }
+	}
+	if = {
+		limit = { has_completed_focus = MKN_strike_at_the_kremlin }
+		add_to_variable = { MKN_army_army_speed_factor = 0.30 }
+	}
+}
+MKN_sync_revkom_trade = {
+	if = {
+		limit = { MKN = { MKN_revkom_trade_active = yes } }
+		MKN = {
+			if = {
+				limit = { NOT = { has_idea = MKN_equal_shield_trade_idea } }
+				add_ideas = MKN_equal_shield_trade_idea
+			}
+		}
+		SOV = {
+			if = {
+				limit = { NOT = { has_idea = MKN_equal_shield_partner_idea } }
+				add_ideas = MKN_equal_shield_partner_idea
+			}
+		}
+	}
+	else = {
+		MKN = { remove_ideas = MKN_equal_shield_trade_idea }
+		SOV = { remove_ideas = MKN_equal_shield_partner_idea }
+	}
+}
+MKN_sync_revkom_combat = {
+	if = {
+		limit = { MKN_revkom_joint_war = yes }
+		if = {
+			limit = { NOT = { has_idea = MKN_red_brotherhood_idea } }
+			add_ideas = MKN_red_brotherhood_idea
+		}
+	}
+	else = { remove_ideas = MKN_red_brotherhood_idea }
+	if = {
+		limit = {
+			MKN_revkom_betrayal_path = yes
+			has_completed_focus = MKN_strike_at_the_kremlin
+			SOV = { exists = yes }
+			NOT = { is_in_faction_with = SOV }
+		}
+		if = {
+			limit = { NOT = { has_idea = MKN_kremlin_offensive_idea } }
+			add_ideas = MKN_kremlin_offensive_idea
+		}
+	}
+	else = { remove_ideas = MKN_kremlin_offensive_idea }
+	if = {
+		limit = { has_completed_focus = MKN_true_socialism_against_bureaucrats }
+		every_country = {
+			limit = { OR = { has_war_with = MKN has_country_flag = MKN_revkom_disorganization_active } }
+			save_event_target_as = MKN_revkom_enemy
+			MKN = {
+				every_owned_state = {
+					if = {
+						limit = { has_dynamic_modifier = { modifier = MKN_revkom_enemy_disorganization scope = event_target:MKN_revkom_enemy } }
+						remove_dynamic_modifier = { modifier = MKN_revkom_enemy_disorganization scope = event_target:MKN_revkom_enemy }
+					}
+					if = {
+						limit = {
+							is_owned_and_controlled_by = MKN
+							MKN = { has_government = communism }
+							event_target:MKN_revkom_enemy = { has_war_with = MKN }
+						}
+						# A two-day lease also expires on states MKN no longer owns.
+						add_dynamic_modifier = { modifier = MKN_revkom_enemy_disorganization scope = event_target:MKN_revkom_enemy days = 2 }
+					}
+				}
+			}
+			if = {
+				limit = { has_war_with = MKN }
+				set_country_flag = MKN_revkom_disorganization_active
+			}
+			else = { clr_country_flag = MKN_revkom_disorganization_active }
+		}
+	}
+}
+MKN_repair_communist_progression = {
+	# An already accepted charter always wins over a stale betrayal flag.
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = MKN_equal_autonomy
+				SOV = { has_country_flag = NWW_SOV_MKN_settlement }
+			}
+		}
+		clr_country_flag = MKN_soviet_betrayal
+	}
+	if = {
+		limit = { NOT = { has_country_flag = MKN_communist_progression_v1 } }
+		nww_mkn_rebuild_industry = yes
+		nww_mkn_rebuild_services = yes
+		set_country_flag = MKN_communist_progression_v1
+	}
+}

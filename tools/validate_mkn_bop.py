@@ -69,6 +69,12 @@ def validate_bop(root, game, check, localized):
 
     # Compare every economic focus parameter to its real migration replay.
     rebuild = one(read(root / 'common/scripted_effects/nww_mkn_progression.txt'), 'nww_mkn_rebuild_industry')
+    check(one(rebuild, 'MKN_rebuild_militarist_industry_stats') == 'yes', 'MKN: industry rebuild omits militarist school training')
+    rebuild = rebuild + one(read(root/'common/scripted_effects/MKN_militarist_effects.txt'), 'MKN_rebuild_militarist_industry_stats')
+    check(one(rebuild, 'MKN_rebuild_soviet_industry_stats') == 'yes', 'MKN: industry rebuild omits consumer autonomy')
+    rebuild = rebuild + one(read(root/'common/scripted_effects/MKN_soviet_effects.txt'), 'MKN_rebuild_soviet_industry_stats')
+    check(one(rebuild, 'MKN_rebuild_communist_industry_stats') == 'yes', 'MKN: industry rebuild omits the Dnieper plan')
+    rebuild = rebuild + one(read(root/'common/scripted_effects/MKN_communist_effects.txt'), 'MKN_rebuild_communist_industry_stats')
     expected, replay = {}, {}
     for fid, f in fs.items():
         changes = Counter()

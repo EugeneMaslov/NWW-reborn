@@ -1,0 +1,8 @@
+leader_traits = {
+	mkn_supreme_warlord = {
+		sprite = 15
+		random = no
+		army_attack_factor = 0.40
+		war_support_factor = 0.40
+	}
+}

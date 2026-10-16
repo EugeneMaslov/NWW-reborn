@@ -1,0 +1,20 @@
+# Native NSB pattern: country-targeted state modifiers (SOV coastal batteries).
+MKN_people_defense_signals = {
+	enable = {
+		is_owned_and_controlled_by = MKN
+		is_core_of = MKN
+		MKN = { has_government = democratic has_completed_focus = MKN_volost_signal_chains }
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	army_org_regain = 0.20
+}
+MKN_people_defense_subversion = {
+	enable = {
+		is_owned_and_controlled_by = MKN
+		is_core_of = MKN
+		MKN = { has_government = democratic has_idea = MKN_enemy_subversion_idea }
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	# Applied to hostile countries, not to MKN: this is damage TAKEN.
+	org_damage_multiplier = 0.20
+}

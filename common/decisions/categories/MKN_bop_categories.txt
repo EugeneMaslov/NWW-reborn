@@ -14,7 +14,7 @@ MKN_steppe_operations_category = {
  icon = generic_guerilla_base
  allowed = { tag = MKN }
  visible = {
-  OR = { has_completed_focus = MKN_black_expansionism has_completed_focus = MKN_propaganda_by_deed has_completed_focus = MKN_railway_sabotage has_completed_focus = MKN_black_international has_completed_focus = MKN_embassy_to_kharkov }
+  OR = { has_completed_focus = MKN_steppe_grain_monopoly has_completed_focus = MKN_black_expansionism has_completed_focus = MKN_propaganda_by_deed has_completed_focus = MKN_railway_sabotage has_completed_focus = MKN_black_international has_completed_focus = MKN_embassy_to_kharkov }
  }
 }
 

@@ -235,6 +235,12 @@ scope_files += [ROOT / relative for relative in (
     'common/ai_strategy/MKN_ukr_limited_war.txt',
     'events/MKN_horizons_events.txt',
 )]
+scope_files += list(ROOT.glob('common/**/MKN_militarist*.txt'))
+scope_files += [ROOT/'common/autonomous_states/MKN_military_march.txt', ROOT/'common/decisions/MKN_military_decisions.txt']
+scope_files += list(ROOT.glob('common/**/MKN_soviet*.txt'))
+scope_files += list(ROOT.glob('common/**/MKN_agrarian*.txt'))
+scope_files += list(ROOT.glob('common/**/MKN_communist*.txt'))
+scope_files += [ROOT/'events/MKN_soviet_events.txt']
 for path in scope_files:
     doc = read(path)
     context = str(path.relative_to(ROOT))
@@ -592,6 +598,14 @@ from validate_mkn_frontier import validate_frontier
 validate_frontier(ROOT, GAME, check, localized)
 from validate_mkn_horizons import validate_horizons
 validate_horizons(ROOT, GAME, check, localized)
+from validate_mkn_militarists import validate_militarists
+validate_militarists(ROOT, GAME, check, localized)
+from validate_mkn_free_soviets import validate_free_soviets
+validate_free_soviets(ROOT, GAME, check, localized)
+from validate_mkn_agrarians import validate_agrarians
+validate_agrarians(ROOT, GAME, check, localized)
+from validate_mkn_communists import validate_communists
+validate_communists(ROOT, GAME, check, localized)
 from validate_mkn_ai_followup import validate_ai_followup
 validate_ai_followup(ROOT, GAME, check, localized)
 from validate_mkn_foreign import validate_foreign

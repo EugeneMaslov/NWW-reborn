@@ -173,6 +173,9 @@ def validate_military(root, game, check, localized):
     fs = {one(f, 'id'): f for f in values(one(read(root/'common/national_focus/MKN.txt'), 'focus_tree'), 'focus')}
     effects = dict((k, v) for k, v, o in read(root/'common/scripted_effects/nww_mkn_progression.txt'))
     effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_horizons_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_militarist_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_soviet_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_communist_effects.txt'))
     decisions = {k: v for cat, ds, o in read(root/'common/decisions/MKN_military_decisions.txt') for k, v, o in ds}
     native_buildings = {k for k, v, o in one(read(game/'common/buildings/00_buildings.txt'), 'buildings')}
     for k, v, o in walk(list((name, node, '=') for name, node in decisions.items())):

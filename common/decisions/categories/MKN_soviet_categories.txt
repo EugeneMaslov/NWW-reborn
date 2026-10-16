@@ -1,0 +1,5 @@
+MKN_free_communes_category = {
+	icon = military_operation
+	allowed = { original_tag = MKN }
+	visible = { has_completed_focus = MKN_autonomous_free_communes }
+}

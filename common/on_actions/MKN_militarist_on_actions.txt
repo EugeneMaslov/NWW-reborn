@@ -1,0 +1,15 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = { exists = yes }
+					MKN_repair_militarist_progression = yes
+				}
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = { MKN_repair_militarist_progression = yes }
+	}
+}

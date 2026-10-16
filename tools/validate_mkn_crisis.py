@@ -89,7 +89,8 @@ def validate_crisis(root, game, check, localized):
     # Fail on misspelled native commands, including rewards absent from the older validator.
     native_effects = set(re.findall(r'^## (\w+)', (game / 'documentation/effects_documentation.md').read_text(), re.M))
     command_files = ('common/scripted_effects/MKN_effects.txt', 'common/scripted_effects/MKN_intervention_effects.txt', 'events/MKN_events.txt', 'events/MKN_news_events.txt', 'common/decisions/MKN_decisions.txt')
-    native_arguments = {'start_state', 'add_namespace', 'set_value'}
+    # Decision callback container, used by BBA common/decisions/ITA.txt.
+    native_arguments = {'start_state', 'add_namespace', 'set_value', 'remove_effect'}
     for filename in command_files:
         for key, value, op in walk(read(root / filename)):
             if key and re.match(r'^(add_|set_|clr_|remove_|create_|start_|retire_|activate_|damage_|build_)', key):

@@ -1,0 +1,10 @@
+# State-scoped, country-restricted, following SOV_seraya_loshad_battery.
+MKN_fortified_district_modifier = {
+	enable = {
+		has_state_flag = MKN_district_fortified
+		is_owned_and_controlled_by = MKN
+		is_core_of = MKN
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	army_defence_factor = 0.20
+}

@@ -1,0 +1,9 @@
+leader_traits = {
+	mkn_council_member_trait = {
+		type = land
+		trait_type = personality_trait
+		gain_xp = { always = no }
+		new_commander_weight = { factor = 0 }
+		modifier = { army_attack_factor = 0.10 planning_speed = 0.20 }
+	}
+}

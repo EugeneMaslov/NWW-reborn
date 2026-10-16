@@ -39,7 +39,7 @@ def validate_tree_consolidation(root, game, check, localized):
     check(min(int(one(fs[f],'x')) for f in ('MKN_motorized_vanguard','MKN_steppe_horde'))==24,'MKN: army has not shifted beside industry')
     slots=contract['research_slot_focuses']
     all_slots=[fid for fid,f in fs.items() if any(k=='add_research_slot' for k,v,o in walk(one(f,'completion_reward',[])))]
-    check(set(all_slots)==set(slots)|{'MKN_kyiv_scientific_exchange'},'MKN: unexpected research slot source')
+    check(set(all_slots)==set(slots)|{'MKN_kyiv_scientific_exchange', 'MKN_ferrer_modern_schools'},'MKN: unexpected research slot source')
     check(one(read(root/'history/countries/MKN - Makhnovists.txt'),'set_research_slots')=='3','MKN: expected three starting research slots')
     cases=0
     # The two common institutions stop at five. Kyiv is available only once
