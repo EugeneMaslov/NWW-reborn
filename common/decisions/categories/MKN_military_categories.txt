@@ -1,0 +1,27 @@
+MKN_army_hq_decisions = {
+	icon = military_operation
+	allowed = {
+		original_tag = MKN
+	}
+	visible = {
+		has_completed_focus = MKN_steppe_general_staff
+	}
+}
+MKN_air_hq_decisions = {
+	icon = military_operation
+	allowed = {
+		original_tag = MKN
+	}
+	visible = {
+		has_completed_focus = MKN_steppe_hawks_and_schools
+	}
+}
+MKN_navy_hq_decisions = {
+	icon = military_operation
+	allowed = {
+		original_tag = MKN
+	}
+	visible = {
+		has_completed_focus = MKN_black_sea_flotilla_and_yards
+	}
+}

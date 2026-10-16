@@ -470,10 +470,14 @@ MKN_kommunar_organization = {
 	icon = GFX_idea_MKN_company_kommunar
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
-			has_completed_focus = MKN_steel_horses
+			OR = {
+				has_completed_focus = MKN_motorized_vanguard
+				hidden_trigger = { has_country_flag = MKN_military_stat_steel_horses }
+			}
 		}
 	}
 	initial_trait = {
@@ -497,7 +501,10 @@ MKN_kommunar_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_tank_maintenance
+				OR = {
+					has_completed_focus = MKN_armored_trains_and_repair_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_tank_maintenance }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -519,7 +526,10 @@ MKN_kommunar_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_tank_maintenance
+				OR = {
+					has_completed_focus = MKN_armored_trains_and_repair_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_tank_maintenance }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -562,11 +572,15 @@ MKN_rifle_artels_organization = {
 	icon = GFX_idea_MKN_company_rifle_artels
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
 			OR = {
-				has_completed_focus = MKN_village_muster
+				OR = {
+					has_completed_focus = MKN_steppe_horde
+					hidden_trigger = { has_country_flag = MKN_military_stat_village_muster }
+				}
 				has_completed_focus = MKN_rifle_concern
 			}
 		}
@@ -592,7 +606,13 @@ MKN_rifle_artels_organization = {
 		}
 		available = {
 			FROM = {
-				OR = { has_completed_focus = MKN_machinegun_carts has_completed_focus = MKN_workshop_standards }
+				OR = {
+					OR = {
+						has_completed_focus = MKN_steppe_horde
+						hidden_trigger = { has_country_flag = MKN_military_stat_machinegun_carts }
+					}
+					has_completed_focus = MKN_workshop_standards
+				}
 			}
 		}
 		equipment_bonus = {
@@ -614,7 +634,13 @@ MKN_rifle_artels_organization = {
 		}
 		available = {
 			FROM = {
-				OR = { has_completed_focus = MKN_machinegun_carts has_completed_focus = MKN_workshop_standards }
+				OR = {
+					OR = {
+						has_completed_focus = MKN_steppe_horde
+						hidden_trigger = { has_country_flag = MKN_military_stat_machinegun_carts }
+					}
+					has_completed_focus = MKN_workshop_standards
+				}
 			}
 		}
 		equipment_bonus = {
@@ -640,7 +666,10 @@ MKN_rifle_artels_organization = {
 		}
 		available = {
 			FROM = {
-				OR = { has_completed_focus = MKN_free_army_compact has_completed_focus = MKN_communal_compact }
+				OR = {
+					has_completed_focus = MKN_free_army_compact
+					has_completed_focus = MKN_communal_compact
+				}
 			}
 		}
 		equipment_bonus = {
@@ -657,12 +686,19 @@ MKN_artillery_works_organization = {
 	icon = GFX_idea_MKN_company_artillery_works
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
 			OR = {
-				has_completed_focus = MKN_artillery_artels
-				has_completed_focus = MKN_machinegun_carts
+				OR = {
+					has_completed_focus = MKN_communal_fire_support_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_artillery_artels }
+				}
+				OR = {
+					has_completed_focus = MKN_steppe_horde
+					hidden_trigger = { has_country_flag = MKN_military_stat_machinegun_carts }
+				}
 			}
 		}
 	}
@@ -687,7 +723,10 @@ MKN_artillery_works_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_fire_tables
+				OR = {
+					has_completed_focus = MKN_communal_fire_support_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_fire_tables }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -709,7 +748,10 @@ MKN_artillery_works_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_fire_tables
+				OR = {
+					has_completed_focus = MKN_communal_fire_support_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_fire_tables }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -752,10 +794,14 @@ MKN_air_artels_organization = {
 	icon = GFX_idea_MKN_company_air_artels
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
-			has_completed_focus = MKN_aircraft_artels
+			OR = {
+				has_completed_focus = MKN_interceptor_cooperatives
+				hidden_trigger = { has_country_flag = MKN_military_stat_aircraft_artels }
+			}
 		}
 	}
 	initial_trait = {
@@ -779,7 +825,10 @@ MKN_air_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_interceptor_pairs
+				OR = {
+					has_completed_focus = MKN_interceptor_cooperatives
+					hidden_trigger = { has_country_flag = MKN_military_stat_interceptor_pairs }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -801,7 +850,10 @@ MKN_air_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_interceptor_pairs
+				OR = {
+					has_completed_focus = MKN_interceptor_cooperatives
+					hidden_trigger = { has_country_flag = MKN_military_stat_interceptor_pairs }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -844,10 +896,14 @@ MKN_attack_air_artels_organization = {
 	icon = GFX_idea_MKN_company_attack_air_artels
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
-			has_completed_focus = MKN_attack_air_artels
+			OR = {
+				has_completed_focus = MKN_flying_artillery_focus
+				hidden_trigger = { has_country_flag = MKN_military_stat_attack_air_artels }
+			}
 		}
 	}
 	initial_trait = {
@@ -871,7 +927,10 @@ MKN_attack_air_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_flying_artillery
+				OR = {
+					has_completed_focus = MKN_flying_artillery_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_flying_artillery }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -893,7 +952,10 @@ MKN_attack_air_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_flying_artillery
+				OR = {
+					has_completed_focus = MKN_flying_artillery_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_flying_artillery }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -936,10 +998,14 @@ MKN_kherson_works_organization = {
 	icon = GFX_idea_MKN_company_kherson_works
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
-			has_completed_focus = MKN_kherson_shipyard
+			OR = {
+				has_completed_focus = MKN_black_sea_flotilla_and_yards
+				hidden_trigger = { has_country_flag = MKN_military_stat_kherson_shipyard }
+			}
 		}
 	}
 	initial_trait = {
@@ -963,7 +1029,10 @@ MKN_kherson_works_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_depth_charge_school
+				OR = {
+					has_completed_focus = MKN_sea_escort_service
+					hidden_trigger = { has_country_flag = MKN_military_stat_depth_charge_school }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -985,7 +1054,10 @@ MKN_kherson_works_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_depth_charge_school
+				OR = {
+					has_completed_focus = MKN_sea_escort_service
+					hidden_trigger = { has_country_flag = MKN_military_stat_depth_charge_school }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -1028,10 +1100,14 @@ MKN_submarine_works_organization = {
 	icon = GFX_idea_MKN_company_submarine_works
 	allowed = {
 		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
 		FROM = {
-			has_completed_focus = MKN_submarine_crews
+			OR = {
+				has_completed_focus = MKN_torpedo_artels_focus
+				hidden_trigger = { has_country_flag = MKN_military_stat_submarine_crews }
+			}
 		}
 	}
 	initial_trait = {
@@ -1055,7 +1131,10 @@ MKN_submarine_works_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_night_sorties
+				OR = {
+					has_completed_focus = MKN_hidden_smuggler_bases_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_night_sorties }
+				}
 			}
 		}
 		equipment_bonus = {
@@ -1077,7 +1156,10 @@ MKN_submarine_works_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_night_sorties
+				OR = {
+					has_completed_focus = MKN_hidden_smuggler_bases_focus
+					hidden_trigger = { has_country_flag = MKN_military_stat_night_sorties }
+				}
 			}
 		}
 		equipment_bonus = {

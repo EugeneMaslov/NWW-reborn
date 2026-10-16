@@ -21,7 +21,7 @@ on_actions = {
 					limit = {
 						exists = yes
 						NOT = {
-							has_country_flag = MKN_services_redesign_v4
+							has_country_flag = MKN_services_redesign_v5
 						}
 					}
 					nww_mkn_rebuild_services = yes
@@ -65,7 +65,7 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = MKN_services_redesign_v4
+						has_country_flag = MKN_services_redesign_v5
 					}
 				}
 				nww_mkn_rebuild_services = yes

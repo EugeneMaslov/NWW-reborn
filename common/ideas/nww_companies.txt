@@ -31,7 +31,7 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_steel_horses
+				OR = { has_completed_focus = MKN_motorized_vanguard hidden_trigger = { has_country_flag = MKN_military_stat_steel_horses } }
 			}
 			research_bonus = {
 				armor = 0.10
@@ -114,8 +114,8 @@ ideas = {
 			}
 			available = {
 				OR = {
-					has_completed_focus = MKN_artillery_artels
-					has_completed_focus = MKN_machinegun_carts
+					OR = { has_completed_focus = MKN_communal_fire_support_focus hidden_trigger = { has_country_flag = MKN_military_stat_artillery_artels } }
+					OR = { has_completed_focus = MKN_steppe_horde hidden_trigger = { has_country_flag = MKN_military_stat_machinegun_carts } }
 				}
 			}
 			research_bonus = {
@@ -178,7 +178,7 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_aircraft_artels
+				OR = { has_completed_focus = MKN_interceptor_cooperatives hidden_trigger = { has_country_flag = MKN_military_stat_aircraft_artels } }
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -197,7 +197,7 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_attack_air_artels
+				OR = { has_completed_focus = MKN_flying_artillery_focus hidden_trigger = { has_country_flag = MKN_military_stat_attack_air_artels } }
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -239,7 +239,7 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_kherson_shipyard
+				OR = { has_completed_focus = MKN_black_sea_flotilla_and_yards hidden_trigger = { has_country_flag = MKN_military_stat_kherson_shipyard } }
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -258,7 +258,7 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = MKN_submarine_crews
+				OR = { has_completed_focus = MKN_torpedo_artels_focus hidden_trigger = { has_country_flag = MKN_military_stat_submarine_crews } }
 			}
 			research_bonus = {
 				naval_equipment = 0.10

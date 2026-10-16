@@ -19,9 +19,10 @@ def main():
     registry=focus_registry(ROOT/'common/national_focus')
     industry=__import__('json').loads((ROOT/'docs/MKN_unified_progression.json').read_text())['industry_changes']
     integration=__import__('json').loads((ROOT/'docs/MKN_ukraine_integration.json').read_text())['focuses']
+    military={g['id'] for g in __import__('json').loads((ROOT/'docs/MKN_military_refactor.json').read_text())['groups']}
     for fid,node in registry.items():
         if fid.startswith('MKN_'):
-            check(one(node,'cost') in ({'5','10'} if fid in industry or fid in integration else {'5'}),f'{fid}: invalid focus duration')
+            check(one(node,'cost') in ({'5','10'} if fid in industry or fid in integration or fid in military else {'5'}),f'{fid}: invalid focus duration')
         if fid.startswith('UKR_'):check(float(one(node,'cost','0'))>=10,f'{fid}: below 70 days')
     history=read(ROOT/'history/countries/MKN - Makhnovists.txt')
     check(one(history,'capital')=='1082','Wrong MKN capital')

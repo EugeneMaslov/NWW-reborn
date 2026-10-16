@@ -555,7 +555,7 @@ ideas = {
 				}
 				OR = {
 					has_completed_focus = MKN_rifle_concern
-					has_completed_focus = MKN_village_muster
+					OR = { has_completed_focus = MKN_steppe_horde hidden_trigger = { has_country_flag = MKN_military_stat_village_muster } }
 				}
 			}
 			cost = 100
@@ -581,7 +581,7 @@ ideas = {
 			available = {
 				OR = {
 					has_completed_focus = MKN_rifle_concern
-					has_completed_focus = MKN_village_muster
+					OR = { has_completed_focus = MKN_steppe_horde hidden_trigger = { has_country_flag = MKN_military_stat_village_muster } }
 				}
 				has_completed_focus = MKN_workshop_standards
 			}

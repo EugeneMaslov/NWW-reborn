@@ -7,3 +7,1578 @@ shared_focus = {
 	available = { always = no }
 	completion_reward = {}
 }
+
+# Pre-HQ military tokens: intentionally not imported into MKN_focus.
+shared_focus = {
+	id = MKN_air_coastal_support
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_dispersal
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_ground_liaisons
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_home_defence
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_map_bureau
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_radar_school
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_rescue
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_supply_lift
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_warning
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_air_weather_service
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_aircraft_artels
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_aircraft_recovery
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_aircraft_spares
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_airfield_fuel
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_airframe_jigs
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_anti_submarine_patrols
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_armoured_manoeuvres
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_artillery_artels
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_attack_air_artels
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_attack_wing_rotations
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_batko_cavalry
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_black_sea_escorts
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_black_sea_flotilla
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_black_sea_smugglers
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_black_swarm
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_bomber_navigation
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_bombing_ranges
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_breakthrough_workshops
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_bridge_columns
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_cas_joint_exercises
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_cas_maintenance
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_cas_replacement_crews
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_close_support_program
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_coastal_defense_steppe
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_coastal_depots
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_coastal_fleet_exercises
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_coastal_signal_posts
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_coastal_watch
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_combined_arms
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_convoy_rescue
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_convoy_schedules
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_deep_reserves
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_depth_charge_school
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_disrupt_enemy_trade
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_dnieper_gun_flotilla
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_dnieper_patrol
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_escort_crews
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_escort_radio_net
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_escort_reserves
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fast_attack_craft
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_field_veterinary
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fighter_controllers
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fighter_conversion
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fighter_instructors
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fighter_patrols
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fire_tables
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fleet_damage_control
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_flexible_orders
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_flying_artillery
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_forward_airstrips
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_free_column_exercises
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_fuel_discipline
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_gulyaipole_pilot_school
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_harbour_dredging
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_hidden_anchorages
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_hidden_depots
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_hull_repair_artels
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_interceptor_pairs
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_joint_target_planning
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_kherson_shipyard
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_local_guides
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_machinegun_carts
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_militia_engineers
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_militia_hospitals
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_militia_junior_leaders
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_militia_signals
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_mobile_medical
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_mobile_rearguard
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_mobile_supply_columns
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_motorized_infantry
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_naval_intelligence
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_night_interceptors
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_night_marches
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_night_sorties
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_observation_posts
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_radio_beacons
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_radio_sections
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_dockyard
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_escape_routes
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_exercises
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_radio_discipline
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_replacement_crews
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_supply
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_raider_weather
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_railway_war
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_recovery_tractors
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_remount_artels
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_river_sea_coordination
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_rural_reserve
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_scout_parties
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_sky_watch_exercises
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_staff_games
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_steel_horses
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_steppe_camouflage
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_steppe_hawks
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_steppe_quartermasters
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_submarine_crews
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_submarine_listening
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_submarine_repair
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_sweeper_sections
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_tachanka_columns
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_tachanka_tactics
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_tactical_recon
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_tank_crews
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_tank_maintenance
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_target_markers
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_torpedo_ambushes
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_torpedo_artels
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_torpedo_trials
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_village_airfields
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = MKN_village_muster
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+
+	}
+}

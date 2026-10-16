@@ -76,44 +76,8 @@ def validate_expansion(root, game, check, localized):
                 check(key in known or key in ('sprite','random','type'),f'{token}: unsupported advisor modifier {key}')
             check(one(trait,'random')=='no',f'{token}: local specialization can be assigned to foreign random characters')
 
-    programs=[('army','MKN_steel_horses','MKN_batko_cavalry','MKN_mechanized_compact','MKN_free_army_compact'),
-              ('air','MKN_black_swarm','MKN_close_support_program','MKN_free_sky_compact','MKN_air_support_compact'),
-              ('navy','MKN_coastal_defense_steppe','MKN_black_sea_smugglers','MKN_escort_compact','MKN_raider_compact')]
-    for service,left,right,left_end,right_end in programs:
-        for entry,other,finale in ((left,right,left_end),(right,left,right_end)):
-            branch={entry}
-            while True:
-                more={fid for fid,f in fs.items() if any(parent in branch for g in values(f,'prerequisite') for parent in values(g,'focus'))}-branch
-                if not more:break
-                branch|=more
-            spec=next(p for p in json.loads((root/'docs/MKN_military_programs.json').read_text()) if p['entry']==entry)
-            core=set(spec['core']);optional=set(spec['optional'])
-            expected_optional = 9 if entry == 'MKN_steel_horses' else 10
-            check(len(core)==10 and len(optional)==expected_optional and not core & optional and core | optional==branch,f'{entry}: expected ten core and {expected_optional} optional focuses')
-            check(other in {p for g in values(fs[entry],'mutually_exclusive') for p in values(g,'focus')},f'{entry}: opposite military program is not excluded')
-            required={v for k,v,o in walk(one(fs[finale],'available',[])) if k=='has_completed_focus'}
-            check(required==core-{finale},f'{finale}: must require only the nine core institutions')
-            check(len({one(fs[fid],'icon') for fid in branch})>=15,f'{entry}: insufficient illustration variety')
-            check(len({str(one(fs[fid],'completion_reward')) for fid in branch})==len(branch),f'{entry}: duplicated military rewards')
-            deps={fid:({p for g in values(fs[fid],'prerequisite') for p in values(g,'focus')}|{v for k,v,o in walk(one(fs[fid],'available',[])) if k=='has_completed_focus'}) & branch for fid in branch}
-            done=set()
-            while done!=branch:
-                ready={fid for fid in branch-done if deps[fid]<=done}
-                if not ready:check(False,f'{entry}: availability gates create a cycle');break
-                done|=ready
-            for fid in branch:
-                reward=one(fs[fid],'completion_reward')
-                # Explicitly requested memorial and two elite formations are the
-                # only exceptions; ordinary programmes still develop one spirit.
-                memorial = fid == 'MKN_memory_of_atamansha_marusya'
-                formations = fid == 'MKN_the_black_guard_battalions'
-                added_ideas = {v for k,v,o in walk(reward) if k=='add_ideas' and isinstance(v,str)}
-                check(added_ideas == ({'MKN_marusyas_legacy'} if memorial else set()),f'{fid}: creates an unapproved permanent military spirit')
-                if not (memorial or formations):
-                    check(any(k=='add_to_variable' and any(a and a.startswith('MKN_'+service+'_') for a,b,o in v) for k,v,o in reward),f'{fid}: does not develop its service spirit')
-            check(all(not deps[fid] & optional for fid in core),f'{entry}: optional focus blocks the core programme')
-            memorial_note = '; Marusya and the Black Guard are in the common army branch' if entry == 'MKN_steel_horses' else ''
-            print(f'PASS: {entry}: ten core and {expected_optional} optional focuses, varied icons/rewards, exclusive program, one service spirit{memorial_note}')
+    from validate_mkn_military import validate_military
+    validate_military(root, game, check, localized)
 
     # Preserve the central templates while suppressing their generic instances only for MKN.
     generic='common/military_industrial_organization/organizations/00_generic_organization.txt'

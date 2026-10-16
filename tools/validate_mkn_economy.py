@@ -12,7 +12,7 @@ import csv
 import json
 import re
 
-from hoi4_script import read, one, values, walk, engine_script_errors, tree_focuses
+from hoi4_script import read, one, values, walk, engine_script_errors, tree_focuses, focus_registry
 
 
 class EconomyModel:
@@ -274,10 +274,15 @@ def validate_economy(root, game, check, localized):
         check(m.variables == once and m.variables['MKN_unified_energy_gain_factor'] == (0.10 if energy else 0) and m.variables['MKN_unified_convoy_retreat_speed'] == (0.10 if trade else 0), 'MKN: combined project flag repair')
         check(not m.resources and not m.offmap, 'MKN: repair repeats physical project rewards')
         cases += 1
-    # Removed focus tokens must never be used by live gates or migration scripts.
+    # Live gates require playable focuses. The v5 military importer may read
+    # registered, hidden legacy tokens to restore earned bonuses in old saves.
+    military = json.loads((root/'docs/MKN_military_refactor.json').read_text())
+    retired = set(military['old_rewards']) - set(fs)
+    registered = focus_registry(root/'common/national_focus')
     for path in [root/'common/scripted_effects/nww_mkn_progression.txt', root/'common/ideas/nww_MKN_ideas.txt']:
         for k, v, o in walk(read(path)):
-            if k == 'has_completed_focus': check(v in fs, str(path.name) + ': deleted focus ' + v)
+            if k == 'has_completed_focus':
+                check(v in fs or (path.name == 'nww_mkn_progression.txt' and v in retired and v in registered), str(path.name) + ': deleted focus ' + v)
     print(f'PASS: MKN economy: 20 focuses, 5 congress decisions, 9 map projects, {cases} source-script lifecycle/repair cases')
 
 

@@ -340,7 +340,7 @@ characters = {
 				original_tag = MKN
 			}
 			available = {
-				has_completed_focus = MKN_tachanka_columns
+				OR = { has_completed_focus = MKN_steppe_general_staff hidden_trigger = { has_country_flag = MKN_military_stat_tachanka_columns } }
 			}
 			traits = {
 				NWW_MKN_mykola_kovalenko_specialty
@@ -461,7 +461,7 @@ characters = {
 				original_tag = MKN
 			}
 			available = {
-				has_completed_focus = MKN_gulyaipole_pilot_school
+				OR = { has_completed_focus = MKN_steppe_hawks_and_schools hidden_trigger = { has_country_flag = MKN_military_stat_gulyaipole_pilot_school } }
 			}
 			traits = {
 				NWW_MKN_dmytro_savchenko_specialty
@@ -499,7 +499,7 @@ characters = {
 				original_tag = MKN
 			}
 			available = {
-				has_completed_focus = MKN_kherson_shipyard
+				OR = { has_completed_focus = MKN_black_sea_flotilla_and_yards hidden_trigger = { has_country_flag = MKN_military_stat_kherson_shipyard } }
 			}
 			traits = {
 				NWW_MKN_yakiv_levchenko_specialty

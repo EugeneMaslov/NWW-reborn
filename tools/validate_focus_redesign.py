@@ -75,16 +75,6 @@ def validate_redesign(root, game, check, localized):
     for fid in ('UKR_friends_in_moscow', 'UKR_polish_trade', 'UKR_the_makhno_question'):
         check(not values(uf[fid], 'prerequisite'), f'{fid}: another neighbour blocks diplomacy')
 
-    programs = json.loads((root / 'docs/MKN_military_programs.json').read_text())
-    for picks in product((0, 1), repeat=3):
-        selected = [programs[service * 2 + pick] for service, pick in enumerate(picks)]
-        excluded = {fid for p in programs if p not in selected for fid in p['focuses']}
-        scenarios['MKN'].append(reachable(trees['MKN'], excluded))
-    # Each partially developed branch must migrate accurately, including old saves
-    # which completed optional focuses before the new core capstone existed.
-    for p in programs:
-        for count in range(1, len(p['focuses']) + 1):
-            scenarios['MKN'].append(set(p['focuses'][:count]))
     for fid in uf:
         scenarios['UKR'].append({fid})
 
@@ -102,17 +92,11 @@ def validate_redesign(root, game, check, localized):
                 if k == 'add_to_variable':
                     localized(one(v, 'tooltip'), fid)
 
-    # Each new succession program and every intermediate institution must replay exactly.
-    crisis_routes = (
-        ('military_takes_charge', 'arrest_demagogues', 'abolish_election_of_commanders', 'militarize_communes', 'standardize_workshops', 'iron_fist_trains', 'black_expansionism', 'the_black_horde'),
-        ('triumph_of_free_soviets', 'pact_of_free_communes', 'abolish_general_staff', 'arms_to_the_people', 'black_international', 'propaganda_by_deed', 'autonomous_rail_crews', 'beacon_of_statelessness'),
-        ('peasant_delegates', 'grain_ultimatum', 'sever_urban_ties', 'every_farm_a_fortress', 'steppe_snipers', 'railway_sabotage', 'cavalry_ambush', 'impregnable_granary'),
-        ('emergency_revkom', 'purge_irreconcilables', 'embassy_to_kharkov', 'integrate_steel_lines', 'red_military_specialists', 'tractors_for_grain', 'anti_imperialist_front', 'the_fatal_plenum'),
-    )
-    for route in crisis_routes:
-        for count in range(1, len(route) + 1):
-            scenarios['MKN'].append({'MKN_congress_1936', 'MKN_departure_of_batko', 'MKN_question_of_supply'} | {'MKN_' + token for token in route[:count]})
     for tag, fs in trees.items():
+        if tag == 'MKN':
+            # Executed by validate_mkn_military through validate_expansion, including
+            # historical source credits, consolidated focuses and tactic flags.
+            continue
         file = f'common/scripted_effects/nww_{tag.lower()}_progression.txt'
         effect = 'nww_mkn_rebuild_services' if tag == 'MKN' else 'nww_ukr_rebuild_progression'
         rebuild = one(read(root / file), effect)
@@ -152,7 +136,7 @@ def validate_redesign(root, game, check, localized):
                     again[var] += amount
             check(all(isclose(again[k], migrated[k], abs_tol=1e-9) for k in initial), f'{effect}: repeated repair stacks bonuses')
         on = one(read(root / f'common/on_actions/nww_{tag.lower()}_progression.txt'), 'on_actions')
-        flag = 'MKN_services_redesign_v4' if tag == 'MKN' else 'UKR_focus_redesign_v1'
+        flag = 'UKR_focus_redesign_v1'
         for hook in ('on_startup', 'on_daily_' + tag):
             node = one(on, hook, [])
             check(any(k == effect for k, v, o in walk(node)), f'{tag}: missing {hook} migration')
