@@ -52,7 +52,7 @@ def validate_foreign(root, game, check, localized):
     check(values(one(fs['MKN_nabat_abroad'],'prerequisite'),'focus')==['MKN_black_international'],'MKN: Nabat not connected to common foreign policy')
     congress=set(values(one(fs['MKN_congress_of_free_peoples'],'prerequisite'),'focus'))
     check(congress=={'MKN_fund_the_underground','MKN_solidarity_guarantees'},'MKN: congress must allow either peaceful or clandestine preparation')
-    for fid,y in [('MKN_memory_of_atamansha_marusya',1),('MKN_the_black_guard_battalions',2)]:
+    for fid,y in [('MKN_memory_of_atamansha_marusya',2),('MKN_the_black_guard_battalions',3)]:
         check((one(fs[fid],'x'),one(fs[fid],'y'))==('28',str(y)),fid+': memorials have not been raised')
     positions={}
     for fid,f in fs.items():

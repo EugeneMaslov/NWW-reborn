@@ -35,7 +35,7 @@ def validate_tree_consolidation(root, game, check, localized):
             check(all(any(p in done for p in values(g,'focus')) for g in groups),path+': common science is not reachable at '+fid)
             done.add(fid)
     check(not any(k=='date' for fid in chain for k,v,o in walk(one(fs[fid],'available',[]))),'MKN: shared science retains a calendar gate')
-    check(max(int(one(f,'x')) for f in fs.values())==128,'MKN: removed archive columns left a wide gap')
+    check(max(int(one(f,'x')) for f in fs.values())==112,'MKN: removed archive/integration columns left a wide gap')
     check(min(int(one(fs[f],'x')) for f in ('MKN_motorized_vanguard','MKN_steppe_horde'))==24,'MKN: army has not shifted beside industry')
     slots=contract['research_slot_focuses']
     all_slots=[fid for fid,f in fs.items() if any(k=='add_research_slot' for k,v,o in walk(one(f,'completion_reward',[])))]

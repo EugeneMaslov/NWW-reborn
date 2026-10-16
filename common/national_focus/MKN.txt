@@ -5700,7 +5700,7 @@ focus_tree = {
 			factor = 1
 		}
 		x = 28
-		y = 1
+		y = 2
 		prerequisite = {
 			focus = MKN_steppe_general_staff
 		}
@@ -7306,7 +7306,7 @@ focus_tree = {
 			factor = 1
 		}
 		x = 28
-		y = 2
+		y = 3
 	}
 	shared_focus = MKN_ukrainian_communes_congress
 	shared_focus = MKN_nabat_abroad
