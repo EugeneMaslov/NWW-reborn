@@ -4,6 +4,8 @@ from patch_mkn_overhaul import ROOT, save, put, block
 from hoi4_script import read, one, values, walk
 
 def main():
+    if 'MKN_industry_projects_v3' in (ROOT/'common/scripted_effects/nww_mkn_progression.txt').read_text():
+        raise SystemExit('Historical v2 patch cannot overwrite the consolidated v3 economy. Edit the current country files directly.')
     path='common/national_focus/MKN.txt';doc=read(ROOT/path);tree=one(doc,'focus_tree')
     fs={one(f,'id'):f for f in values(tree,'focus')}
     chains=[['MKN_dneprostroi','MKN_dnieper_audit','MKN_engineering_delegates','MKN_zaporizhstal','MKN_kommunar_tractor'],['MKN_free_cooperatives','MKN_artel_register','MKN_village_smithies','MKN_mobile_workshops','MKN_rifle_concern']]

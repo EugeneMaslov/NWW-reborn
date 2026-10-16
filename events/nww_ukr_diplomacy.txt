@@ -13,10 +13,6 @@ country_event = {
 	}
 	option = {
 		name = ukr.50.a
-		ai_chance = {
-			factor = 60
-		}
-		mkn_ukr_stop_border_battle = yes
 		trigger = {
 			UKR = {
 				exists = yes
@@ -24,62 +20,87 @@ country_event = {
 			NOT = {
 				has_war_with = UKR
 			}
-			203 = {
+			192 = {
 				is_owned_and_controlled_by = UKR
 			}
 		}
-		set_country_flag = UKR_MKN_border_settled
-		UKR = {
-			set_country_flag = UKR_MKN_border_settled
-			add_stability = 0.03
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = industry
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.02
+				MKN_ai_historical_mode = yes
 			}
 		}
-		diplomatic_relation = {
-			country = UKR
-			relation = non_aggression_pact
-			active = yes
-		}
-		add_stability = 0.03
-		UKR = {
-			country_event = {
-				id = ukr.60
-				days = 1
-			}
-		}
-		set_country_flag = mkn_ukr_frontier_concluded
-		remove_mission = MKN_passive_escalation_drift
-		remove_mission = MKN_frontier_year_countdown_mission
-		clr_country_flag = mkn_frontier_conflict_active
-		clr_country_flag = mkn_ukr_frontier_unlocked
-		set_country_flag = mkn_ukr_pact_signed
-		clr_country_flag = mkn_ukr_war_pending
-		every_owned_state = {
+		if = {
 			limit = {
-				has_state_flag = mkn_ukr_integrated_frontier_state
+				UKR = {
+					exists = yes
+				}
+				NOT = {
+					has_war_with = UKR
+				}
+				192 = {
+					is_owned_and_controlled_by = UKR
+				}
 			}
-			mkn_ukr_integrate_won_state = yes
-		}
-		custom_effect_tooltip = MKN_frontier_core_integration_tt
-		203 = {
-			transfer_state_to = ROOT
-			add_core_of = ROOT
-			set_state_flag = mkn_ukr_integrated_frontier_state
+			mkn_ukr_stop_border_battle = yes
+			set_country_flag = UKR_MKN_border_settled
+			UKR = {
+				set_country_flag = UKR_MKN_border_settled
+				add_stability = 0.03
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+			}
+			diplomatic_relation = {
+				country = UKR
+				relation = non_aggression_pact
+				active = yes
+			}
+			add_stability = 0.03
+			UKR = {
+				country_event = {
+					id = ukr.60
+					days = 1
+				}
+			}
+			set_country_flag = mkn_ukr_frontier_concluded
+			remove_mission = MKN_passive_escalation_drift
+			remove_mission = MKN_frontier_year_countdown_mission
+			clr_country_flag = mkn_frontier_conflict_active
+			clr_country_flag = mkn_ukr_frontier_unlocked
+			set_country_flag = mkn_ukr_pact_signed
+			clr_country_flag = mkn_ukr_war_pending
+			every_owned_state = {
+				limit = {
+					has_state_flag = mkn_ukr_integrated_frontier_state
+				}
+				mkn_ukr_integrate_won_state = yes
+			}
+			custom_effect_tooltip = MKN_frontier_core_integration_tt
+			192 = {
+				transfer_state_to = ROOT
+				add_core_of = ROOT
+				set_state_flag = mkn_ukr_integrated_frontier_state
+			}
 		}
 	}
 	option = {
 		name = ukr.50.b
-		ai_chance = {
-			factor = 40
-		}
 		UKR = {
 			set_country_flag = UKR_MKN_border_settled_rejected
 			country_event = {
 				id = ukr.61
 				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.98
+				MKN_ai_historical_mode = yes
 			}
 		}
 	}

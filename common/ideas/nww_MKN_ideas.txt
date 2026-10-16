@@ -492,7 +492,7 @@ ideas = {
 		MKN_industry_concern_1 = {
 			visible = {
 				NOT = {
-					has_completed_focus = MKN_steel_concern_union
+					has_completed_focus = MKN_steel_volnitsa
 				}
 			}
 			picture = generic_industrial_concern_1
@@ -500,9 +500,9 @@ ideas = {
 				original_tag = MKN
 			}
 			available = {
-				has_completed_focus = MKN_steel_concern
+				has_completed_focus = MKN_zaporizhstal
 				NOT = {
-					has_completed_focus = MKN_steel_concern_union
+					has_completed_focus = MKN_steel_volnitsa
 				}
 			}
 			cost = 100
@@ -515,7 +515,7 @@ ideas = {
 		}
 		MKN_industry_concern_2 = {
 			visible = {
-				has_completed_focus = MKN_steel_concern_union
+				has_completed_focus = MKN_steel_volnitsa
 			}
 			name = MKN_industry_concern_1
 			picture = generic_industrial_concern_2
@@ -523,7 +523,7 @@ ideas = {
 				original_tag = MKN
 			}
 			available = {
-				has_completed_focus = MKN_steel_concern_union
+				has_completed_focus = MKN_steel_volnitsa
 			}
 			cost = 100
 			research_bonus = {
@@ -540,7 +540,7 @@ ideas = {
 		MKN_rifle_concern_1 = {
 			visible = {
 				NOT = {
-					has_completed_focus = MKN_rifle_concern_union
+					has_completed_focus = MKN_workshop_standards
 				}
 			}
 			allowed = {
@@ -551,7 +551,7 @@ ideas = {
 			}
 			available = {
 				NOT = {
-					has_completed_focus = MKN_rifle_concern_union
+					has_completed_focus = MKN_workshop_standards
 				}
 				OR = {
 					has_completed_focus = MKN_rifle_concern
@@ -569,7 +569,7 @@ ideas = {
 		}
 		MKN_rifle_concern_2 = {
 			visible = {
-				has_completed_focus = MKN_rifle_concern_union
+				has_completed_focus = MKN_workshop_standards
 			}
 			name = MKN_rifle_concern_1
 			allowed = {
@@ -583,7 +583,7 @@ ideas = {
 					has_completed_focus = MKN_rifle_concern
 					has_completed_focus = MKN_village_muster
 				}
-				has_completed_focus = MKN_rifle_concern_union
+				has_completed_focus = MKN_workshop_standards
 			}
 			cost = 100
 			research_bonus = {

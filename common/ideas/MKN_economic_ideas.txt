@@ -1,0 +1,25 @@
+# Временные программы конгресса; постоянное хозяйство остаётся одним динамическим духом.
+ideas = {
+	country = {
+		MKN_congress_elected_commanders = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		MKN_congress_mutual_insurance = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MKN
+			}
+			removal_cost = -1
+			modifier = {
+				repair_speed_factor = 0.10
+			}
+		}
+	}
+}

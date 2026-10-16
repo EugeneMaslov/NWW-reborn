@@ -145,6 +145,24 @@ scope_files = [
 scope_files += [ROOT / relative for relative in (
 	'common/bop/MKN_bop.txt',
     'common/ideas/MKN_ideas.txt',
+    'common/ideas/MKN_economic_ideas.txt',
+    'common/decisions/MKN_economic_decisions.txt',
+    'common/decisions/categories/MKN_economic_categories.txt',
+    'common/military_industrial_organization/organizations/MKN_organizations.txt',
+    'common/national_focus/MKN_ukraine_integration_focuses.txt',
+    'common/decisions/MKN_ukraine_integration_decisions.txt',
+    'common/decisions/categories/MKN_ukraine_integration_categories.txt',
+    'common/scripted_triggers/MKN_ukraine_integration_triggers.txt',
+    'common/scripted_effects/MKN_ukraine_integration_effects.txt',
+    'common/on_actions/MKN_ukraine_integration_on_actions.txt',
+    'events/MKN_ukraine_integration_events.txt',
+    'common/scripted_triggers/MKN_diplomacy_triggers.txt',
+    'common/scripted_effects/MKN_diplomacy_effects.txt',
+    'common/on_actions/MKN_diplomacy_on_actions.txt',
+    'common/scripted_effects/MKN_ai_effects.txt',
+    'common/on_actions/MKN_ai_on_actions.txt',
+    'common/ai_strategy_plans/MKN_historical.txt',
+    'common/game_rules/MKN_rules.txt',
     'common/decisions/MKN_decisions.txt',
     'common/scripted_effects/MKN_effects.txt',
     'events/MKN_events.txt',
@@ -516,13 +534,13 @@ for organization_id, organization, op in read(ROOT/'common/military_industrial_o
         token = one(trait, 'token')
         position = one(trait, 'position', [])
         positions.append((one(position, 'x'), one(position, 'y')))
-        gates = values(one(one(trait, 'available', []), 'FROM', []), 'has_completed_focus')
+        gates = [v for k, v, o in walk(one(one(trait, 'available', []), 'FROM', [])) if k == 'has_completed_focus']
         check(bool(gates), f'{token}: local enterprise upgrade has no country focus gate')
         for gate in gates:
             enterprise_focuses = {**ltb_focuses, **{one(f, 'id'): f for f in values(one(read(ROOT/'common/national_focus/MKN.txt'), 'focus_tree'), 'focus')}}
             reward = one(enterprise_focuses.get(gate, []), 'completion_reward', [])
             scopes = [value for key, value, op in walk(reward) if key == 'mio:' + organization_id]
-            check(any(one(scope, 'unlock_mio_trait_tooltip') == token and int(one(scope, 'add_mio_size', '0')) > 0 for scope in scopes), f'{token}: {gate} does not announce and fund this enterprise upgrade')
+            check(any(token in values(scope, 'unlock_mio_trait_tooltip') and int(one(scope, 'add_mio_size', '0')) > 0 for scope in scopes), f'{token}: {gate} does not announce and fund this enterprise upgrade')
         if token.endswith('_2'):
             parents = {value for key, value, op in one(one(trait, 'parent', []), 'traits', [])}
             check(token[:-1] + '1' in parents and parents <= local_tokens, f'{token}: second upgrade lacks its local first-tier prerequisite')
@@ -543,6 +561,10 @@ for request, event_id, accepted_flag, rejected_flag, continuation in [
 
 from validate_expanded_content import validate_expansion
 validate_expansion(ROOT, GAME, check, localized)
+from validate_mkn_economy import validate_economy
+validate_economy(ROOT, GAME, check, localized)
+from validate_mkn_ukraine import validate_ukraine
+validate_ukraine(ROOT, GAME, check, localized)
 from validate_focus_redesign import validate_redesign
 validate_redesign(ROOT, GAME, check, localized)
 from validate_mkn_bop import validate_bop

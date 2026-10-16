@@ -12,7 +12,7 @@ on_actions = {
 					limit = {
 						exists = yes
 						NOT = {
-							has_country_flag = MKN_industry_unified_v2
+							has_country_flag = MKN_industry_integration_v4
 						}
 					}
 					nww_mkn_rebuild_industry = yes
@@ -36,7 +36,7 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = MKN_industry_unified_v2
+						has_country_flag = MKN_industry_integration_v4
 					}
 				}
 				nww_mkn_rebuild_industry = yes

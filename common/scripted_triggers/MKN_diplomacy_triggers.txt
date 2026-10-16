@@ -1,0 +1,87 @@
+# MKN — владелец общей защиты отношений MKN/UKR/SOV. FROM — адресат действия.
+MKN_ai_historical_mode = {
+	OR = {
+		has_game_rule = {
+			rule = MKN_ai_behavior
+			option = HISTORICAL
+		}
+		AND = {
+			has_game_rule = {
+				rule = MKN_ai_behavior
+				option = DEFAULT
+			}
+			is_historical_focus_on = yes
+		}
+	}
+}
+MKN_protected_diplomatic_relation = {
+	OR = {
+		AND = {
+			OR = {
+				tag = MKN
+				AND = {
+					OR = {
+						tag = UKR
+						tag = SOV
+					}
+					FROM = {
+						tag = MKN
+					}
+				}
+			}
+			OR = {
+				FROM = {
+					tag = MKN
+				}
+				AND = {
+					tag = MKN
+					FROM = {
+						OR = {
+							tag = UKR
+							tag = SOV
+						}
+					}
+				}
+			}
+			OR = {
+				is_ally_with = FROM
+				is_in_faction_with = FROM
+				AND = {
+					OR = {
+						tag = UKR
+						FROM = {
+							tag = UKR
+						}
+					}
+					MKN = {
+						MKN_ukr_common_bloc = yes
+					}
+				}
+			}
+		}
+		AND = {
+			OR = {
+				AND = {
+					tag = SOV
+					FROM = {
+						tag = MKN
+					}
+				}
+				AND = {
+					tag = MKN
+					FROM = {
+						tag = SOV
+					}
+				}
+			}
+			OR = {
+				MKN = {
+					has_country_flag = MKN_equal_autonomy
+				}
+				SOV = {
+					has_country_flag = NWW_SOV_MKN_settlement
+				}
+			}
+		}
+	}
+}

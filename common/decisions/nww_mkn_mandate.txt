@@ -23,7 +23,15 @@ MKN_public_mandate = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				add = 30
+				has_country_flag = MKN_ai_route_communism
+				communism < 0.50
+			}
+			modifier = {
 				add = 20
+				NOT = {
+					has_country_flag = MKN_ai_plan_selected
+				}
 				has_government = communism
 			}
 		}
@@ -52,7 +60,15 @@ MKN_public_mandate = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				add = 30
+				has_country_flag = MKN_ai_route_democratic
+				democratic < 0.50
+			}
+			modifier = {
 				add = 20
+				NOT = {
+					has_country_flag = MKN_ai_plan_selected
+				}
 				has_government = democratic
 			}
 		}
@@ -81,7 +97,15 @@ MKN_public_mandate = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				add = 30
+				has_country_flag = MKN_ai_route_fascism
+				fascism < 0.50
+			}
+			modifier = {
 				add = 20
+				NOT = {
+					has_country_flag = MKN_ai_plan_selected
+				}
 				has_government = fascism
 			}
 		}
@@ -110,7 +134,15 @@ MKN_public_mandate = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				add = 30
+				has_country_flag = MKN_ai_route_neutrality
+				neutrality < 0.50
+			}
+			modifier = {
 				add = 20
+				NOT = {
+					has_country_flag = MKN_ai_plan_selected
+				}
 				has_government = neutrality
 			}
 		}

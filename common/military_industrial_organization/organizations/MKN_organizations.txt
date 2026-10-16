@@ -20,3 +20,44 @@ MKN_free_workshops = {
 		}
 	}
 }
+
+MKN_zaporizhstal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {
+		original_tag = MKN
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			has_completed_focus = MKN_zaporizhstal
+		}
+	}
+	initial_trait = {
+		name = MKN_zaporizhstal_organization_initial
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = MKN_zaporizhstal_serial_forging
+		name = MKN_zaporizhstal_serial_forging
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = {
+			x = 13
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MKN_production_cycles
+			}
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}

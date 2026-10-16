@@ -2,12 +2,12 @@
 
 Этот файл самодостаточен: содержит названия, описания, награды, условия, исходные определения и связанные системы. Это снимок текущих файлов мода, а не проект новых наград.
 
-Основная промышленность: **48 фокусов**, по 24 на взаимоисключающих путях. Дополнительно: **67** связанных фокусов науки, политики, предприятий и военной инфраструктуры. Всего карточек: **115**. Чисто боевые фокусы без промышленного эффекта не включены; их необходимые предки приведены отдельно.
+Основная промышленность: **20 фокусов**, по 10 на взаимоисключающих путях; пять решений конгресса и девять региональных проектов. Дополнительно: **74** связанных фокусов науки, политики, предприятий и военной инфраструктуры. Всего карточек: **94**. Чисто боевые фокусы без промышленного эффекта не включены; их необходимые предки приведены отдельно.
 
 ## Контекст и правила интерпретации
 
 - Первая мировая война не происходила. Сохранять действующие ID и лор, монарха Махно и совместимость сохранений.
-- Стоимость focus.cost измеряется неделями: 5 = 35 дней. Несколько блоков prerequisite соединяются И; focus внутри одного блока — ИЛИ. Условия available добавляются к prerequisites. Ветви с mutually_exclusive одновременно пройти нельзя.
+- Стоимость focus.cost измеряется неделями: 5 = 35 дней, 10 = 70 дней. Несколько блоков prerequisite соединяются И; focus внутри одного блока — ИЛИ. Условия available добавляются к prerequisites. Ветви с mutually_exclusive одновременно пройти нельзя.
 - Награды в if/limit и random_owned_controlled_state условны. Числа построек в обзоре — потенциальные суммы по коду, а не обещание фактической выдачи. Проверять владение, контроль, ядра, регион и строительные слоты.
 - Общий постоянный экономический дух — MKN_free_industry_modifier. Развивать его через MKN_unified_*; не заменять каждую ступень отдельным духом. Военные, авиационные и морские программы имеют собственные общие духи.
 - Значения ниже даны в сырых единицах движка. political_power_gain — плоский прирост в сутки; фактор 0.05 обычно означает 5 процентных пунктов. Не интерпретировать все числовые значения как проценты.
@@ -20,65 +20,37 @@
 
 ### Днепрострой — `MKN_dneprostroi`
 
-24 фокуса; сумма их длительностей: 840 дней. Это сумма всей ветки, а не кратчайший путь к отдельной награде.
+10 фокусов; сумма их длительностей: 525 дней. Это сумма всей ветки, а не кратчайший путь к отдельной награде. Проекты выполняются отдельно от национальных фокусов.
 
-Потенциальные постройки при выполнении всех внутренних условий: `arms_factory`: +7, `industrial_complex`: +6, `infrastructure`: +3.
+Потенциальные постройки при выполнении всех внутренних условий: `arms_factory`: +6, `industrial_complex`: +3.
 
 - Днепрострой — `MKN_dneprostroi`
 - Открытые сметы Днепростроя — `MKN_dnieper_audit`
-- Никопольский марганец — `MKN_manganese_nikopol`
-- Инженеры с мандатом коммун — `MKN_engineering_delegates`
-- Выборные бригадиры — `MKN_elected_brigadiers`
-- Кичкасский мост — `MKN_kichkas_bridge`
+- Ресурсная база Юга — `MKN_southern_resources`
+- Индустриальные гиганты степи — `MKN_steppe_industrial_giants`
 - Запорожсталь — `MKN_zaporizhstal`
-- Инструкторы при заводах — `MKN_factory_instructors`
-- Электрификация степи — `MKN_steppe_electrification`
-- Тракторный завод «Коммунар» — `MKN_kommunar_tractor`
-- Концерн «Вольная сталь» — `MKN_steel_concern`
-- Зерновой экспорт — `MKN_grain_export`
-- Никопольский трубный завод — `MKN_nikopol_tube_zavod`
-- «Союз заводов» — `MKN_steel_concern_union`
-- Угольные промыслы степи — `MKN_steppe_coal_contracts`
-- Днепровский алюминиевый — `MKN_dnepro_aluminium`
+- Единая днепровская логистика — `MKN_dnieper_logistics_hub`
 - Рабочие батальоны резерва — `MKN_worker_battalions`
-- Единая днепровская диспетчерская — `MKN_dnieper_dispatch`
-- Механические заводы волостей — `MKN_steppe_mech_works`
-- Общие допуски и калибры — `MKN_dnieper_standards`
+- Электрификация степи — `MKN_steppe_electrification`
 - Согласованные производственные циклы — `MKN_production_cycles`
-- Кассы рабочих семей — `MKN_workers_welfare`
-- Днепровский хозяйственный договор — `MKN_industrial_compact`
 - Стальная вольница — `MKN_steel_volnitsa`
 
 ### Вольные кооперативы — `MKN_free_cooperatives`
 
-24 фокуса; сумма их длительностей: 840 дней. Это сумма всей ветки, а не кратчайший путь к отдельной награде.
+10 фокусов; сумма их длительностей: 490 дней. Это сумма всей ветки, а не кратчайший путь к отдельной награде. Проекты выполняются отдельно от национальных фокусов.
 
-Потенциальные постройки при выполнении всех внутренних условий: `arms_factory`: +4, `industrial_complex`: +7, `infrastructure`: +1.
+Потенциальные постройки при выполнении всех внутренних условий: `arms_factory`: +3, `industrial_complex`: +3.
 
 - Вольные кооперативы — `MKN_free_cooperatives`
 - Реестр взаимных обязательств — `MKN_artel_register`
-- Соляные артели — `MKN_salt_artsels`
-- Сельские кузницы — `MKN_village_smithies`
-- Отзывные командиры — `MKN_recallable_commanders`
-- Хлебные биржи — `MKN_grain_brokers`
-- Передвижные мастерские — `MKN_mobile_workshops`
-- Полевые школы коммун — `MKN_field_schools`
-- Ветряки вольных хуторов — `MKN_wind_mills_steppe`
-- Артель стрелкового вооружения — `MKN_rifle_concern`
-- Хлеб для обмена и резерва — `MKN_harvest_reserves`
-- Вольные базары — `MKN_free_bazaars`
-- Грузовые артели — `MKN_freight_artels`
-- Кредит без ростовщика — `MKN_mutual_credit`
-- Степной монетный двор — `MKN_steppe_mint`
-- Расширение оружейных артелей — `MKN_rifle_concern_union`
-- Подвижная самооборона — `MKN_mobile_self_defence`
-- Биржи инструмента и ремонта — `MKN_repair_exchanges`
+- Степные рынки — `MKN_steppe_markets`
+- Передвижные мастерские и кузницы — `MKN_mobile_workshops`
+- Артели стрелкового вооружения — `MKN_rifle_concern`
+- Хлебные биржи и резервы — `MKN_grain_exchanges`
+- Гужевая и грузовая логистика — `MKN_freight_logistics`
 - Договор о взаимозаменяемости — `MKN_workshop_standards`
-- Съезд обозных артелей — `MKN_supply_congress`
-- Общий портфель заказов — `MKN_shared_orders`
-- Страховая касса коммун — `MKN_social_fund`
+- Полевые школы коммун — `MKN_field_schools`
 - Хартия хозяйственной взаимопомощи — `MKN_communal_compact`
-- Федерация ремесленных коммун — `MKN_craft_federation`
 
 ## Карточки фокусов
 
@@ -86,11 +58,11 @@
 
 Английское название: Dnieper Industrial Program. Категория: Основная промышленная ветка.
 
-Описание RU: Коммуны выберут путь крупных предприятий и общего промышленного плана. Первый договор ослабит хозяйственный кризис; программа вольных кооперативов станет недоступна.
+Описание RU: Коммуны поручат общему совету крупные стройки, оставив сметы открытыми делегатам. Единый план свяжет металлургию, энергетику и транспорт; путь вольных кооперативов станет недоступен.
 
-Описание EN: Communes choose major factories and a shared industrial plan. The first agreement eases the economic crisis and excludes the free cooperatives program.
+Описание EN: Open accounts and elected delegates will oversee a common plan for heavy industry, power and transport. This choice excludes the free cooperatives.
 
-Источник: `common/national_focus/MKN.txt:11`. Стоимость: 5 (35 дней). Координаты: x=4, y=0.
+Источник: `common/national_focus/MKN.txt:13`. Стоимость: 5 (35 дней). Координаты: x=4, y=0.
 
 Предпосылки: нет нарисованной предпосылки; см. available.
 
@@ -110,6 +82,16 @@
 focus = {
     id = MKN_dneprostroi
     icon = GFX_focus_generic_hydroelectric_energy
+    x = 4
+    y = 0
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
     mutually_exclusive = {
         focus = MKN_free_cooperatives
     }
@@ -128,33 +110,33 @@ focus = {
             tooltip = MKN_unified_production_speed_buildings_factor_tt
         }
         add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
             MKN_unified_industrial_capacity_factory = 0.0500
+            tooltip = MKN_unified_industrial_capacity_factory_tt
         }
     }
-    x = 4
-    y = 0
-    cost = 5
 }
 ```
 
 ### Открытые сметы Днепростроя — `MKN_dnieper_audit`
 
-Английское название: Public Dnieper Budgets. Категория: Основная промышленная ветка.
+Английское название: Open Accounts of the Dnieper Program. Категория: Основная промышленная ветка.
 
-Описание RU: Съезд проверит расходы прежде, чем начнутся большие стройки. Делегаты выберут напряжённый строительный сезон или бережливое переоснащение; оба решения действуют один год.
+Описание RU: Инженеры ответят перед хозяйственным съездом за каждую машину и рабочую смену. Учреждаем проектное бюро и новую фабрику; делегаты выберут строительный сезон или бережливое переоснащение на один год.
 
-Описание EN: The congress audits costs before major construction begins. Delegates choose an intensive building season or careful retooling; either policy lasts one year.
+Описание EN: Engineers will answer to the congress for every machine and shift. A design office and civilian factory support recovery; delegates choose a year of accelerated construction or careful investment.
 
-Источник: `common/national_focus/MKN.txt:2690`. Стоимость: 5 (35 дней). Координаты: x=4, y=1.
+Источник: `common/national_focus/MKN.txt:49`. Стоимость: 5 (35 дней). Координаты: x=4, y=1.
 
 Предпосылки: (Днепрострой [MKN_dneprostroi]).
 
-Непосредственные продолжения: MKN_manganese_nikopol, MKN_engineering_delegates, MKN_elected_brigadiers.
+Непосредственные продолжения: MKN_southern_resources.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
+- Потенциальная постройка: industrial_complex +1
 - Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
+- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.1000
+- Изменение параметра: MKN_unified_research_speed_factor 0.0500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
@@ -164,131 +146,26 @@ focus = {
     icon = GFX_focus_generic_money_for_equipment
     x = 4
     y = 1
+    cost = 5
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_dneprostroi
     }
     completion_reward = {
         country_event = {
             id = mkn.30
             days = 1
         }
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    prerequisite = {
-        focus = MKN_dneprostroi
-    }
-    cost = 5
-}
-```
-
-### Никопольский марганец — `MKN_manganese_nikopol`
-
-Английское название: Nikopol Manganese. Категория: Основная промышленная ветка.
-
-Описание RU: Руды Никопольского бассейна — металл для вольных заводов и валюта для вольных рук.
-
-Описание EN: The ores of the Nikopol basin are metal for free factories and coin for free hands.
-
-Источник: `common/national_focus/MKN.txt:40`. Стоимость: 5 (35 дней). Координаты: x=0, y=2.
-
-Предпосылки: (Открытые сметы Днепростроя [MKN_dnieper_audit]).
-
-Непосредственные продолжения: MKN_kichkas_bridge.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Политическая власть: 50
-- Потенциальный ресурс: steel +15
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_manganese_nikopol
-    icon = GFX_focus_generic_mining_industry
-    completion_reward = {
-        add_political_power = 50
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_resource = {
-                    type = steel
-                    amount = 15
-                }
-            }
-        }
-    }
-    x = 0
-    y = 2
-    prerequisite = {
-        focus = MKN_dnieper_audit
-    }
-    cost = 5
-}
-```
-
-### Инженеры с мандатом коммун — `MKN_engineering_delegates`
-
-Английское название: Engineers with Communal Mandates. Категория: Основная промышленная ветка.
-
-Описание RU: Коммуны направят инженеров с проверяемыми полномочиями. Общий реестр станков станет основой металлургической программы.
-
-Описание EN: Communes send engineers with accountable mandates. A shared machine register becomes the basis of the steel program.
-
-Источник: `common/national_focus/MKN.txt:2717`. Стоимость: 5 (35 дней). Координаты: x=4, y=2.
-
-Предпосылки: (Открытые сметы Днепростроя [MKN_dnieper_audit]).
-
-Непосредственные продолжения: MKN_zaporizhstal.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0800
-- Изменение параметра: MKN_unified_research_speed_factor 0.0200
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-- Потенциальная постройка: industrial_complex +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_engineering_delegates
-    icon = GFX_focus_research
-    x = 4
-    y = 2
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
         add_tech_bonus = {
             bonus = 0.5
             uses = 1
             category = industry
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0800
-            tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
-            tooltip = MKN_unified_research_speed_factor_tt
-        }
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
         }
         random_owned_controlled_state = {
             limit = {
@@ -306,658 +183,74 @@ focus = {
                 instant_build = yes
             }
         }
-    }
-    prerequisite = {
-        focus = MKN_dnieper_audit
-    }
-    cost = 5
-}
-```
-
-### Выборные бригадиры — `MKN_elected_brigadiers`
-
-Английское название: Elected Brigadiers. Категория: Основная промышленная ветка.
-
-Описание RU: Рабочие и сельские отряды изберут командиров, обязанных регулярно отчитываться. Право отзыва совместимо с ясными обязанностями в бою.
-
-Описание EN: Workers and village detachments elect commanders who report regularly. Recall rights remain compatible with clear responsibilities in battle.
-
-Источник: `common/national_focus/MKN.txt:2769`. Стоимость: 5 (35 дней). Координаты: x=8, y=2.
-
-Предпосылки: (Открытые сметы Днепростроя [MKN_dnieper_audit]).
-
-Непосредственные продолжения: MKN_factory_instructors.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_army_org_factor 0.0500
-- Изменение параметра: MKN_unified_training_time_army_factor -0.0800
-- Изменение параметра: MKN_unified_max_planning 0.0400
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_elected_brigadiers
-    icon = GFX_focus_generic_manpower
-    x = 8
-    y = 2
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        army_experience = 10
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0500
-            tooltip = MKN_unified_army_org_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0800
-            tooltip = MKN_unified_training_time_army_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0400
-            tooltip = MKN_unified_max_planning_tt
-        }
-    }
-    prerequisite = {
-        focus = MKN_dnieper_audit
-    }
-    cost = 5
-}
-```
-
-### Кичкасский мост — `MKN_kichkas_bridge`
-
-Английское название: Kichkas Bridge. Категория: Основная промышленная ветка.
-
-Описание RU: Восстановим инфраструктуру и согласуем первые сквозные маршруты. Это ослабит перебои снабжения, но не заменит диспетчерскую сеть.
-
-Описание EN: Restore infrastructure and agree through routes. This eases supply disruptions, but a dispatch network is still needed.
-
-Источник: `common/national_focus/MKN.txt:64`. Стоимость: 5 (35 дней). Координаты: x=0, y=3.
-
-Предпосылки: (Никопольский марганец [MKN_manganese_nikopol]).
-
-Непосредственные продолжения: MKN_steppe_electrification.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Политическая власть: 50
-- Потенциальная постройка: infrastructure +1
-- Потенциальная постройка: infrastructure +1
-- Изменение параметра: MKN_unified_supply_consumption_factor -0.0800
-- Изменение параметра: MKN_unified_army_org_regain 0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_kichkas_bridge
-    icon = GFX_focus_generic_railroad
-    completion_reward = {
-        add_political_power = 50
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0800
-            tooltip = MKN_unified_supply_consumption_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0500
-            tooltip = MKN_unified_army_org_regain_tt
-        }
-    }
-    x = 0
-    y = 3
-    prerequisite = {
-        focus = MKN_manganese_nikopol
-    }
-    cost = 5
-}
-```
-
-### Запорожсталь — `MKN_zaporizhstal`
-
-Английское название: Zaporizhstal. Категория: Основная промышленная ветка.
-
-Описание RU: После восстановления перевозок инженерные делегаты согласуют металлургическую программу. Хозяйственные ограничения уменьшатся ещё на одну ступень.
-
-Описание EN: With transport restored, engineering delegates agree a steel program. Economic penalties fall by another tier.
-
-Источник: `common/national_focus/MKN.txt:109`. Стоимость: 5 (35 дней). Координаты: x=4, y=3.
-
-Предпосылки: (Инженеры с мандатом коммун [MKN_engineering_delegates]).
-
-Непосредственные продолжения: MKN_kommunar_tractor.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Политическая власть: 50
-- Потенциальная постройка: arms_factory +1
-- Потенциальный ресурс: steel +10
-- Изменение параметра: MKN_unified_political_power_gain 0.1000
-- Изменение параметра: MKN_unified_consumer_goods_factor -0.0500
-- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.0500
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_zaporizhstal
-    icon = GFX_focus_generic_steel_mill
-    completion_reward = {
-        add_political_power = 50
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-                add_resource = {
-                    type = steel
-                    amount = 10
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1000
-            tooltip = MKN_unified_political_power_gain_tt
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-            tooltip = MKN_unified_consumer_goods_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-            tooltip = MKN_unified_production_speed_buildings_factor_tt
-        }
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    x = 4
-    y = 3
-    prerequisite = {
-        focus = MKN_engineering_delegates
-    }
-    available = {
-        has_completed_focus = MKN_kichkas_bridge
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
-}
-```
-
-### Инструкторы при заводах — `MKN_factory_instructors`
-
-Английское название: Factory Instructors. Категория: Основная промышленная ветка.
-
-Описание RU: Учебные смены дадут ополченцам навыки связи и взаимодействия. Выпускать оружие и уметь им пользоваться должны одни и те же сообщества.
-
-Описание EN: Training shifts teach communications and cooperation. The communities producing weapons must also know how to use them.
-
-Источник: `common/national_focus/MKN.txt:2801`. Стоимость: 5 (35 дней). Координаты: x=8, y=3.
-
-Предпосылки: (Выборные бригадиры [MKN_elected_brigadiers]).
-
-Непосредственные продолжения: MKN_steel_concern.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_army_org_factor 0.0600
-- Изменение параметра: MKN_unified_training_time_army_factor -0.0700
-- Изменение параметра: MKN_unified_max_planning 0.0300
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_factory_instructors
-    icon = GFX_focus_generic_army_doctrines_2
-    x = 8
-    y = 3
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        army_experience = 15
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0600
-            tooltip = MKN_unified_army_org_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0700
-            tooltip = MKN_unified_training_time_army_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0300
-            tooltip = MKN_unified_max_planning_tt
-        }
-    }
-    prerequisite = {
-        focus = MKN_elected_brigadiers
-    }
-    cost = 5
-}
-```
-
-### Электрификация степи — `MKN_steppe_electrification`
-
-Английское название: Steppe Electrification. Категория: Основная промышленная ветка.
-
-Описание RU: Общая сеть свяжет предприятия и сельские поселения. Дух электрификации снизит потребление энергии заводами.
-
-Описание EN: A shared grid connects factories and villages. Electrification reduces factory energy consumption.
-
-Источник: `common/national_focus/MKN.txt:160`. Стоимость: 5 (35 дней). Координаты: x=0, y=4.
-
-Предпосылки: (Кичкасский мост [MKN_kichkas_bridge]).
-
-Непосредственные продолжения: MKN_grain_export.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Политическая власть: 100
-- Потенциальная постройка: industrial_complex +1
-- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.0500
-- Изменение параметра: MKN_unified_factory_energy_consumption -0.1000
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_steppe_electrification
-    icon = GFX_focus_generic_modernize_industry
-    completion_reward = {
-        add_political_power = 100
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-            tooltip = MKN_unified_production_speed_buildings_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_factory_energy_consumption = -0.1000
-            tooltip = MKN_unified_factory_energy_consumption_tt
-        }
-    }
-    x = 0
-    y = 4
-    prerequisite = {
-        focus = MKN_kichkas_bridge
-    }
-    cost = 5
-}
-```
-
-### Тракторный завод «Коммунар» — `MKN_kommunar_tractor`
-
-Английское название: Kommunar Tractor Works. Категория: Основная промышленная ветка.
-
-Описание RU: Запорожский «Коммунар» сыграет трактора, а когда потребуется — корпуса для пушек.
-
-Описание EN: Zaporizhzhia's Kommunar will build tractors, and when needed — gun carriages.
-
-Источник: `common/national_focus/MKN.txt:194`. Стоимость: 5 (35 дней). Координаты: x=4, y=4.
-
-Предпосылки: (Запорожсталь [MKN_zaporizhstal]).
-
-Непосредственные продолжения: MKN_nikopol_tube_zavod.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: arms_factory +1
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_kommunar_tractor
-    icon = GFX_focus_generic_military_industry
-    completion_reward = {
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    x = 4
-    y = 4
-    prerequisite = {
-        focus = MKN_zaporizhstal
-    }
-    cost = 5
-}
-```
-
-### Концерн «Вольная сталь» — `MKN_steel_concern`
-
-Английское название: Concern of Free Steel. Категория: Основная промышленная ветка.
-
-Описание RU: Ставропольско-никопольские металлурги объединяются в концерн вольных заводов. Веткой промышленности он станет сильнее.\n\n§YДоступен промышленный концерн. Нанимайте его в разделе советников.§!
-
-Описание EN: Steppe steel-masters join into a concern of free factories. Strengthen it through industry focuses.\n\n§YAn industrial concern is available. Hire it in the advisors panel.§!
-
-Источник: `common/national_focus/MKN.txt:373`. Стоимость: 5 (35 дней). Координаты: x=8, y=4.
-
-Предпосылки: (Инструкторы при заводах [MKN_factory_instructors]).
-
-Непосредственные продолжения: MKN_steel_concern_union.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: arms_factory +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_steel_concern
-    icon = GFX_focus_generic_money_for_equipment
-    completion_reward = {
-        show_ideas_tooltip = MKN_industry_concern_1
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = arms_factory
-                level = 1
-                instant_build = yes
-            }
-        }
-    }
-    x = 8
-    y = 4
-    prerequisite = {
-        focus = MKN_factory_instructors
-    }
-    cost = 5
-}
-```
-
-### Зерновой экспорт — `MKN_grain_export`
-
-Английское название: Grain Export. Категория: Основная промышленная ветка.
-
-Описание RU: Хлеб вольных коммун идёт на экспорт — за станки и наличность.
-
-Описание EN: The communes' grain goes abroad — for machinery and hard cash.
-
-Источник: `common/national_focus/MKN.txt:347`. Стоимость: 5 (35 дней). Координаты: x=0, y=5.
-
-Предпосылки: (Электрификация степи [MKN_steppe_electrification]).
-
-Непосредственные продолжения: MKN_steppe_coal_contracts.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: industrial_complex +1
-- Политическая власть: 50
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_grain_export
-    icon = GFX_focus_generic_british_trade
-    completion_reward = {
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-        add_political_power = 50
-    }
-    x = 0
-    y = 5
-    prerequisite = {
-        focus = MKN_steppe_electrification
-    }
-    cost = 5
-}
-```
-
-### Никопольский трубный завод — `MKN_nikopol_tube_zavod`
-
-Английское название: Nikopol Tube Works. Категория: Основная промышленная ветка.
-
-Описание RU: Унифицируем заготовки и оснастку. Переход к общим деталям ослабит разрозненность мастерских.
-
-Описание EN: Standardize blanks and tooling. Common parts ease workshop fragmentation.
-
-Источник: `common/national_focus/MKN.txt:267`. Стоимость: 5 (35 дней). Координаты: x=4, y=5.
-
-Предпосылки: (Тракторный завод «Коммунар» [MKN_kommunar_tractor]).
-
-Непосредственные продолжения: MKN_dnepro_aluminium.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: arms_factory +1
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0700
-- Изменение параметра: MKN_unified_research_speed_factor 0.0200
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_nikopol_tube_zavod
-    icon = GFX_focus_generic_industry_2
-    completion_reward = {
-        add_tech_bonus = {
-            bonus = 0.5
-            uses = 1
-            category = artillery
-        }
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
         add_to_variable = {
             MKN_unified_industrial_capacity_factory = 0.0500
             tooltip = MKN_unified_industrial_capacity_factory_tt
         }
         add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0700
+            MKN_unified_production_factory_efficiency_gain_factor = 0.1000
             tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
         }
         add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
+            MKN_unified_research_speed_factor = 0.0500
             tooltip = MKN_unified_research_speed_factor_tt
         }
     }
-    x = 4
-    y = 5
-    prerequisite = {
-        focus = MKN_kommunar_tractor
-    }
-    cost = 5
 }
 ```
 
-### «Союз заводов» — `MKN_steel_concern_union`
+### Ресурсная база Юга — `MKN_southern_resources`
 
-Английское название: Union of Factories. Категория: Основная промышленная ветка.
+Английское название: Resource Base of the South. Категория: Основная промышленная ветка.
 
-Описание RU: Заводы концерна связывает общая ставка и общие склады — концерн становится сильнее.
+Описание RU: Никопольский марганец и угольные промыслы войдут в общий договор поставок. Сырьё останется достоянием коммун, а заводы получат устойчивую основу для больших серий.
 
-Описание EN: Linked rates and shared stockpiles make the concern stronger.
+Описание EN: Nikopol manganese and the southern coal workings will enter a common supply agreement, providing the raw materials for large production runs.
 
-Источник: `common/national_focus/MKN.txt:402`. Стоимость: 5 (35 дней). Координаты: x=8, y=5.
+Источник: `common/national_focus/MKN.txt:105`. Стоимость: 5 (35 дней). Координаты: x=4, y=2.
 
-Предпосылки: (Концерн «Вольная сталь» [MKN_steel_concern]).
+Предпосылки: (Открытые сметы Днепростроя [MKN_dnieper_audit]).
 
-Непосредственные продолжения: MKN_worker_battalions.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: arms_factory +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_steel_concern_union
-    icon = GFX_focus_generic_american_investments
-    completion_reward = {
-        if = {
-            limit = {
-                has_idea = MKN_industry_concern_1
-            }
-            swap_ideas = {
-                remove_idea = MKN_industry_concern_1
-                add_idea = MKN_industry_concern_2
-            }
-        }
-        custom_effect_tooltip = MKN_steel_concern_union_tt
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = arms_factory
-                level = 1
-                instant_build = yes
-            }
-        }
-    }
-    x = 8
-    y = 5
-    prerequisite = {
-        focus = MKN_steel_concern
-    }
-    cost = 5
-}
-```
-
-### Угольные промыслы степи — `MKN_steppe_coal_contracts`
-
-Английское название: Steppe Coal Workings. Категория: Основная промышленная ветка.
-
-Описание RU: Небольшие промыслы и подвоз топлива обеспечат новые заводы энергией. Развиваем угольную добычу, не подменяя её нефтяными запасами.
-
-Описание EN: Small workings and fuel deliveries provide energy for the new factories. Coal extraction serves industry independently of oil reserves.
-
-Источник: `common/national_focus/MKN.txt:2833`. Стоимость: 5 (35 дней). Координаты: x=0, y=6.
-
-Предпосылки: (Зерновой экспорт [MKN_grain_export]).
-
-Непосредственные продолжения: MKN_dnieper_dispatch.
+Непосредственные продолжения: MKN_steppe_industrial_giants.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
+- Политическая власть: 50
+- Потенциальный ресурс: steel +15
 - Потенциальный ресурс: coal +12
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_steppe_coal_contracts
+    id = MKN_southern_resources
     icon = GFX_focus_generic_mining_industry
-    x = 0
-    y = 6
+    x = 4
+    y = 2
+    cost = 5
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
+    prerequisite = {
+        focus = MKN_dnieper_audit
+    }
     completion_reward = {
+        add_political_power = 50
+        226 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = ROOT
+                }
+                add_resource = {
+                    type = steel
+                    amount = 15
+                }
+            }
+        }
         226 = {
             if = {
                 limit = {
@@ -975,43 +268,68 @@ focus = {
             category = excavation_tech
         }
     }
-    prerequisite = {
-        focus = MKN_grain_export
-    }
-    cost = 5
 }
 ```
 
-### Днепровский алюминиевый — `MKN_dnepro_aluminium`
+### Индустриальные гиганты степи — `MKN_steppe_industrial_giants`
 
-Английское название: Dnieper Aluminium Works. Категория: Основная промышленная ветка.
+Английское название: Industrial Giants of the Steppe. Категория: Основная промышленная ветка.
 
-Описание RU: Токи Днепростроя плавят бокситы. Крылья Вольной территории будут лёгкими.
+Описание RU: «Коммунар», трубные мастерские и алюминиевое производство объединят заказы и инженерные кадры. Новые корпуса дадут фабрику и три военных завода, а собственный алюминий обеспечит машиностроение.
 
-Описание EN: Dneprostroi's currents smelt bauxite. The Free Territory's wings will be light.
+Описание EN: Kommunar, the tube works and aluminium plants pool their orders and engineers. One civilian factory, three military factories and aluminium supplies restore large-scale manufacturing.
 
-Источник: `common/national_focus/MKN.txt:223`. Стоимость: 5 (35 дней). Координаты: x=4, y=6.
+Источник: `common/national_focus/MKN.txt:152`. Стоимость: 10 (70 дней). Координаты: x=4, y=3.
 
-Предпосылки: (Никопольский трубный завод [MKN_nikopol_tube_zavod]).
+Предпосылки: (Ресурсная база Юга [MKN_southern_resources]).
 
-Непосредственные продолжения: MKN_steppe_mech_works.
+Непосредственные продолжения: MKN_zaporizhstal.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Потенциальный ресурс: aluminium +8
 - Потенциальная постройка: industrial_complex +1
+- Потенциальная постройка: arms_factory +3
+- Потенциальный ресурс: aluminium +8
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.1000
+- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_dnepro_aluminium
-    icon = GFX_focus_generic_aluminum
+    id = MKN_steppe_industrial_giants
+    icon = GFX_focus_generic_military_industry
+    x = 4
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_southern_resources
+    }
     completion_reward = {
-        add_tech_bonus = {
-            bonus = 0.5
-            uses = 1
-            category = air_equipment
+        226 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = ROOT
+                }
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
         }
         226 = {
             if = {
@@ -1024,51 +342,200 @@ focus = {
                 }
             }
         }
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = air_equipment
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.1000
+            tooltip = MKN_unified_industrial_capacity_factory_tt
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+            tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
         }
     }
+}
+```
+
+### Запорожсталь — `MKN_zaporizhstal`
+
+Английское название: Zaporizhstal. Категория: Основная промышленная ветка.
+
+Описание RU: Две новые линии и дополнительные плавки станут основой концерна «Вольная сталь». Промышленный совет доступен всем коммунам; с Arms Against Tyranny заводы также образуют артиллерийскую MIO, развиваемую производственными циклами и финальным договором.
+
+Описание EN: Two new production lines and additional steel establish the Free Steel concern. Its industrial council is available with or without DLC; Arms Against Tyranny also enables an artillery MIO developed through production cycles and the final compact.
+
+Источник: `common/national_focus/MKN.txt:213`. Стоимость: 10 (70 дней). Координаты: x=4, y=4.
+
+Предпосылки: (Индустриальные гиганты степи [MKN_steppe_industrial_giants]).
+
+Непосредственные продолжения: MKN_worker_battalions, MKN_dnieper_logistics_hub.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Политическая власть: 50
+- Потенциальная постройка: arms_factory +2
+- Потенциальный ресурс: steel +10
+- Изменение параметра: MKN_unified_political_power_gain 0.1000
+- Изменение параметра: MKN_unified_consumer_goods_factor -0.0500
+- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.0500
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_zaporizhstal
+    icon = GFX_focus_generic_steel_mill
     x = 4
-    y = 6
-    prerequisite = {
-        focus = MKN_nikopol_tube_zavod
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
     }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_steppe_industrial_giants
+    }
+    completion_reward = {
+        add_political_power = 50
+        226 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = ROOT
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+        show_ideas_tooltip = MKN_industry_concern_1
+        if = {
+            limit = {
+                has_dlc = "Arms Against Tyranny"
+            }
+            show_mio_tooltip = MKN_zaporizhstal_organization
+            mio:MKN_zaporizhstal_organization = {
+                add_mio_size = 1
+            }
+        }
+        226 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = ROOT
+                }
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+            }
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+            tooltip = MKN_unified_political_power_gain_tt
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+            tooltip = MKN_unified_consumer_goods_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
+            tooltip = MKN_unified_production_speed_buildings_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+            tooltip = MKN_unified_industrial_capacity_factory_tt
+        }
+    }
+}
+```
+
+### Единая днепровская логистика — `MKN_dnieper_logistics_hub`
+
+Английское название: Unified Dnieper Logistics. Категория: Основная промышленная ветка.
+
+Описание RU: Диспетчеры сведут речные, железнодорожные и заводские расписания. На карте станут доступны три проекта: Кичкасский мост, расчистка Днепра и степные узловые станции. Каждая стройка длится 60 дней.
+
+Описание EN: Dispatchers coordinate river, rail and factory schedules. Unlock three 60-day map projects: Kichkas Bridge, Dnieper waterways and steppe junctions.
+
+Источник: `common/national_focus/MKN.txt:315`. Стоимость: 5 (35 дней). Координаты: x=2, y=5.
+
+Предпосылки: (Запорожсталь [MKN_zaporizhstal]).
+
+Непосредственные продолжения: MKN_steppe_electrification.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Политическая власть: 50
+- Изменение параметра: MKN_unified_supply_consumption_factor -0.1500
+- Изменение параметра: MKN_unified_army_org_regain 0.1000
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_dnieper_logistics_hub
+    icon = GFX_focus_generic_railroad
+    x = 2
+    y = 5
     cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_zaporizhstal
+    }
+    completion_reward = {
+        add_political_power = 50
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = train_tech
+        }
+        custom_effect_tooltip = MKN_logistics_projects_unlock_tt
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.1500
+            tooltip = MKN_unified_supply_consumption_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_army_org_regain = 0.1000
+            tooltip = MKN_unified_army_org_regain_tt
+        }
+    }
 }
 ```
 
 ### Рабочие батальоны резерва — `MKN_worker_battalions`
 
-Английское название: Worker Reserve Battalions. Категория: Основная промышленная ветка.
+Английское название: Workers’ Reserve Battalions. Категория: Основная промышленная ветка.
 
-Описание RU: Закрепим учебные сборы, сменяемость командиров и защиту рабочего места за ополченцем. Подготовленный резерв завершит военную реформу.
+Описание RU: Выборные бригадиры и заводские инструкторы подготовят резерв без разрыва с производством. Общие сборы улучшат организацию и планирование армии и сократят подготовку новых частей.
 
-Описание EN: Regular exercises, accountable command and protected civilian jobs establish a trained reserve and complete military reform.
+Описание EN: Elected brigadiers and factory instructors train a reserve without severing its ties to production. Joint exercises improve organization and planning while reducing training time.
 
-Источник: `common/national_focus/MKN.txt:2916`. Стоимость: 5 (35 дней). Координаты: x=8, y=6.
+Источник: `common/national_focus/MKN.txt:283`. Стоимость: 5 (35 дней). Координаты: x=6, y=5.
 
-Предпосылки: («Союз заводов» [MKN_steel_concern_union]).
+Предпосылки: (Запорожсталь [MKN_zaporizhstal]).
 
-Непосредственные продолжения: MKN_dnieper_standards.
+Непосредственные продолжения: MKN_production_cycles.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Изменение параметра: MKN_unified_army_org_factor 0.1000
-- Изменение параметра: MKN_unified_training_time_army_factor -0.0500
-- Изменение параметра: MKN_unified_max_planning 0.0800
+- Изменение параметра: MKN_unified_army_org_factor 0.2000
+- Изменение параметра: MKN_unified_training_time_army_factor -0.2000
+- Изменение параметра: MKN_unified_max_planning 0.1500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
@@ -1076,213 +543,142 @@ focus = {
 focus = {
     id = MKN_worker_battalions
     icon = GFX_focus_generic_manpower
-    x = 8
-    y = 6
+    x = 6
+    y = 5
+    cost = 5
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
+    prerequisite = {
+        focus = MKN_zaporizhstal
+    }
     completion_reward = {
-        army_experience = 15
+        army_experience = 40
         add_to_variable = {
-            MKN_unified_army_org_factor = 0.1000
+            MKN_unified_army_org_factor = 0.2000
             tooltip = MKN_unified_army_org_factor_tt
         }
         add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0500
+            MKN_unified_training_time_army_factor = -0.2000
             tooltip = MKN_unified_training_time_army_factor_tt
         }
         add_to_variable = {
-            MKN_unified_max_planning = 0.0800
+            MKN_unified_max_planning = 0.1500
             tooltip = MKN_unified_max_planning_tt
         }
     }
-    prerequisite = {
-        focus = MKN_steel_concern_union
-    }
-    cost = 5
 }
 ```
 
-### Единая днепровская диспетчерская — `MKN_dnieper_dispatch`
+### Электрификация степи — `MKN_steppe_electrification`
 
-Английское название: Dnieper Dispatch Network. Категория: Основная промышленная ветка.
+Английское название: Electrification of the Steppe. Категория: Основная промышленная ветка.
 
-Описание RU: Станции согласуют расписания, приоритеты угольных составов и воинских эшелонов. Общая связь уменьшит перебои снабжения.
+Описание RU: Общая сеть уменьшит расход энергии заводами. Открываем три проекта на 60 дней: турбины Днепрогэса, электрификацию Екатеринослава и резервные угольные линии; каждый занимает две гражданские фабрики.
 
-Описание EN: Stations agree timetables and priorities for coal and military trains. Shared communications reduce supply disruptions.
+Описание EN: The common grid reduces factory energy demand. Unlock three 60-day projects using two civilian factories each: Dnieper turbines, the Katerynoslav grid and reserve coal lines.
 
-Источник: `common/national_focus/MKN.txt:2868`. Стоимость: 5 (35 дней). Координаты: x=0, y=7.
+Источник: `common/national_focus/MKN.txt:349`. Стоимость: 10 (70 дней). Координаты: x=2, y=6.
 
-Предпосылки: (Угольные промыслы степи [MKN_steppe_coal_contracts]).
+Предпосылки: (Единая днепровская логистика [MKN_dnieper_logistics_hub]).
 
 Непосредственные продолжения: MKN_production_cycles.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Изменение параметра: MKN_unified_supply_consumption_factor -0.0700
-- Изменение параметра: MKN_unified_army_org_regain 0.0600
-- Потенциальная постройка: industrial_complex +1
+- Политическая власть: 100
+- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.0500
+- Изменение параметра: MKN_unified_factory_energy_consumption -0.1000
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_dnieper_dispatch
-    icon = GFX_focus_generic_railroad
-    x = 0
-    y = 7
+    id = MKN_steppe_electrification
+    icon = GFX_focus_generic_modernize_industry
+    x = 2
+    y = 6
+    cost = 10
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
-    completion_reward = {
-        add_tech_bonus = {
-            bonus = 0.5
-            uses = 1
-            category = train_tech
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0700
-            tooltip = MKN_unified_supply_consumption_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0600
-            tooltip = MKN_unified_army_org_regain_tt
-        }
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }
-        }
-    }
     prerequisite = {
-        focus = MKN_steppe_coal_contracts
+        focus = MKN_dnieper_logistics_hub
     }
-    cost = 5
+    completion_reward = {
+        add_political_power = 100
+        custom_effect_tooltip = MKN_energy_projects_unlock_tt
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
+            tooltip = MKN_unified_production_speed_buildings_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_factory_energy_consumption = -0.1000
+            tooltip = MKN_unified_factory_energy_consumption_tt
+        }
+    }
 }
 ```
 
-### Механические заводы волостей — `MKN_steppe_mech_works`
+### Согласованные производственные циклы — `MKN_production_cycles`
 
-Английское название: Volost Machine Workshops. Категория: Основная промышленная ветка.
+Английское название: Coordinated Production Cycles. Категория: Основная промышленная ветка.
 
-Описание RU: Станки на вольной земле, вольными руками.
+Описание RU: После подготовки резерва и энергосети заводы примут общие допуски, длинные серии и согласованные заказы. Военный завод и повышение предела эффективности закрепят устойчивый выпуск вооружения.
 
-Описание EN: Machine tools on free land, run by free hands.
+Описание EN: Prepared reserves and a working grid allow common tolerances and long production runs. Another military factory and a higher efficiency cap secure sustained arms production.
 
-Источник: `common/national_focus/MKN.txt:309`. Стоимость: 5 (35 дней). Координаты: x=4, y=7.
+Источник: `common/national_focus/MKN.txt:378`. Стоимость: 10 (70 дней). Координаты: x=4, y=7.
 
-Предпосылки: (Днепровский алюминиевый [MKN_dnepro_aluminium]).
+Предпосылки: (Электрификация степи [MKN_steppe_electrification]) И (Рабочие батальоны резерва [MKN_worker_battalions]).
 
-Непосредственные продолжения: MKN_workers_welfare.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: arms_factory +1
-- Потенциальная постройка: infrastructure +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_steppe_mech_works
-    icon = GFX_focus_generic_industry_3
-    completion_reward = {
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-    }
-    x = 4
-    y = 7
-    prerequisite = {
-        focus = MKN_dnepro_aluminium
-    }
-    cost = 5
-}
-```
-
-### Общие допуски и калибры — `MKN_dnieper_standards`
-
-Английское название: Common Tolerances and Calibres. Категория: Основная промышленная ветка.
-
-Описание RU: Заводские советы примут общие стандарты вместо несовместимых партий деталей. Артели сохранят свои мастерские, но будут работать по понятным чертежам.
-
-Описание EN: Factory councils adopt common standards to end incompatible batches. Artels retain their workshops while using shared drawings.
-
-Источник: `common/national_focus/MKN.txt:2948`. Стоимость: 5 (35 дней). Координаты: x=8, y=7.
-
-Предпосылки: (Рабочие батальоны резерва [MKN_worker_battalions]).
-
-Непосредственные продолжения: MKN_industrial_compact.
+Непосредственные продолжения: MKN_steel_volnitsa.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
 - Политическая власть: 25
 - Потенциальная постройка: arms_factory +1
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.2000
+- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0500
+- Изменение параметра: MKN_unified_production_factory_max_efficiency_factor 0.1000
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_dnieper_standards
-    icon = GFX_focus_generic_industry_2
-    x = 8
+    id = MKN_production_cycles
+    icon = GFX_focus_generic_military_industry
+    x = 4
     y = 7
+    cost = 10
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
+    prerequisite = {
+        focus = MKN_steppe_electrification
+    }
+    prerequisite = {
+        focus = MKN_worker_battalions
+    }
     completion_reward = {
+        add_political_power = 25
         add_tech_bonus = {
             bonus = 0.5
             uses = 1
             category = industry
         }
-        add_political_power = 25
         random_owned_controlled_state = {
             limit = {
                 is_core_of = ROOT
@@ -1299,53 +695,8 @@ focus = {
                 instant_build = yes
             }
         }
-    }
-    prerequisite = {
-        focus = MKN_worker_battalions
-    }
-    cost = 5
-}
-```
-
-### Согласованные производственные циклы — `MKN_production_cycles`
-
-Английское название: Coordinated Production Cycles. Категория: Основная промышленная ветка.
-
-Описание RU: После налаживания подвоза и принятия стандартов заводы перейдут к длинным сериям. Разрозненное производство уступит устойчивому выпуску вооружения.
-
-Описание EN: Reliable deliveries and common standards enable long production runs. Fragmented workshops become a stable armaments industry.
-
-Источник: `common/national_focus/MKN.txt:2989`. Стоимость: 5 (35 дней). Координаты: x=0, y=8.
-
-Предпосылки: (Единая днепровская диспетчерская [MKN_dnieper_dispatch]).
-
-Непосредственные продолжения: MKN_steel_volnitsa.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.1500
-- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0500
-- Изменение параметра: MKN_unified_research_speed_factor 0.0100
-- Изменение параметра: MKN_unified_production_factory_max_efficiency_factor 0.1000
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_production_cycles
-    icon = GFX_focus_generic_military_industry
-    x = 0
-    y = 8
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
         add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.1500
+            MKN_unified_industrial_capacity_factory = 0.2000
             tooltip = MKN_unified_industrial_capacity_factory_tt
         }
         add_to_variable = {
@@ -1353,158 +704,47 @@ focus = {
             tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
         }
         add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0100
-            tooltip = MKN_unified_research_speed_factor_tt
-        }
-        add_to_variable = {
             MKN_unified_production_factory_max_efficiency_factor = 0.1000
             tooltip = MKN_unified_production_factory_max_efficiency_factor_tt
         }
-    }
-    prerequisite = {
-        focus = MKN_dnieper_dispatch
-    }
-    available = {
-        has_completed_focus = MKN_nikopol_tube_zavod
-        has_completed_focus = MKN_dnieper_standards
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
-}
-```
-
-### Кассы рабочих семей — `MKN_workers_welfare`
-
-Английское название: Workers Family Funds. Категория: Основная промышленная ветка.
-
-Описание RU: Общие кассы поддержат семьи строителей и резервистов. Промышленный договор не получит доверия, если его успех измеряется только тоннажем стали.
-
-Описание EN: Shared funds support builders and reservists' families. The industrial compact needs measures of success beyond tonnes of steel.
-
-Источник: `common/national_focus/MKN.txt:3030`. Стоимость: 5 (35 дней). Координаты: x=4, y=8.
-
-Предпосылки: (Механические заводы волостей [MKN_steppe_mech_works]).
-
-Непосредственные продолжения: MKN_steel_volnitsa.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- add_stability: 0.03
-- Политическая власть: 25
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_workers_welfare
-    icon = GFX_focus_generic_agricultural_subsidies
-    x = 4
-    y = 8
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_stability = 0.03
-        add_political_power = 25
-    }
-    prerequisite = {
-        focus = MKN_steppe_mech_works
-    }
-    cost = 5
-}
-```
-
-### Днепровский хозяйственный договор — `MKN_industrial_compact`
-
-Английское название: Dnieper Economic Compact. Категория: Основная промышленная ветка.
-
-Описание RU: Утвердим открытый план заказов, обязательства предприятий и защиту семей. Съезд снимет последние хозяйственные ограничения и закрепит преимущества крупной промышленности.
-
-Описание EN: Ratify a public order plan, factory obligations and family protections. The congress removes the last economic penalties and secures the benefits of major industry.
-
-Источник: `common/national_focus/MKN.txt:3051`. Стоимость: 5 (35 дней). Координаты: x=8, y=8.
-
-Предпосылки: (Общие допуски и калибры [MKN_dnieper_standards]).
-
-Непосредственные продолжения: MKN_steel_volnitsa.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_political_power_gain 0.1500
-- Изменение параметра: MKN_unified_consumer_goods_factor -0.0500
-- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.1300
-- Изменение параметра: MKN_unified_global_building_slots_factor 0.3000
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_industrial_compact
-    icon = GFX_focus_generic_diplomatic_treaty
-    x = 8
-    y = 8
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1500
-            tooltip = MKN_unified_political_power_gain_tt
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-            tooltip = MKN_unified_consumer_goods_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.1300
-            tooltip = MKN_unified_production_speed_buildings_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_global_building_slots_factor = 0.3000
-            tooltip = MKN_unified_global_building_slots_factor_tt
+        if = {
+            limit = {
+                has_dlc = "Arms Against Tyranny"
+            }
+            mio:MKN_zaporizhstal_organization = {
+                add_mio_size = 1
+                unlock_mio_trait_tooltip = MKN_zaporizhstal_serial_forging
+            }
         }
     }
-    prerequisite = {
-        focus = MKN_dnieper_standards
-    }
-    available = {
-        has_completed_focus = MKN_workers_welfare
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
 }
 ```
 
 ### Стальная вольница — `MKN_steel_volnitsa`
 
-Английское название: Steel Free Territory. Категория: Основная промышленная ветка.
+Английское название: A Free Territory of Steel. Категория: Основная промышленная ветка.
 
-Описание RU: Завершим промышленную программу после реформы производства, семейных касс и хозяйственного договора. Подготовленные склады и расписания превратят перебои снабжения в преимущество.
+Описание RU: Хозяйственный договор соединит промышленный совет, рабочие кассы и единую логистику. Развиваем общий хозяйственный дух и концерн «Вольная сталь», открываем фабрику и расширяем пространство для новых предприятий.
 
-Описание EN: Complete the industrial program after production reform, family funds and an economic compact. Prepared depots and timetables turn supply disruptions into an advantage.
+Описание EN: A common compact unites factory councils, workers’ welfare and logistics. Develop the shared economic spirit and Free Steel concern, establish a civilian factory and expand room for further industry.
 
-Источник: `common/national_focus/MKN.txt:440`. Стоимость: 5 (35 дней). Координаты: x=4, y=9.
+Источник: `common/national_focus/MKN.txt:443`. Стоимость: 10 (70 дней). Координаты: x=4, y=8.
 
-Предпосылки: (Согласованные производственные циклы [MKN_production_cycles]) И (Кассы рабочих семей [MKN_workers_welfare]) И (Днепровский хозяйственный договор [MKN_industrial_compact]).
+Предпосылки: (Согласованные производственные циклы [MKN_production_cycles]).
 
 Непосредственные продолжения: нет.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
+- Политическая власть: 75
+- add_stability: 0.05
 - Потенциальная постройка: industrial_complex +1
-- add_stability: 0.03
+- Изменение параметра: MKN_unified_political_power_gain 0.1500
+- Изменение параметра: MKN_unified_consumer_goods_factor -0.0500
+- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.1500
+- Изменение параметра: MKN_unified_global_building_slots_factor 0.3000
 - Изменение параметра: MKN_unified_supply_consumption_factor -0.1500
-- Изменение параметра: MKN_unified_army_org_regain 0.0900
+- Изменение параметра: MKN_unified_army_org_regain 0.1000
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
@@ -1512,7 +752,22 @@ focus = {
 focus = {
     id = MKN_steel_volnitsa
     icon = GFX_focus_generic_stalinist_industry
+    x = 4
+    y = 8
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_production_cycles
+    }
     completion_reward = {
+        add_political_power = 75
+        add_stability = 0.05
         226 = {
             if = {
                 limit = {
@@ -1526,28 +781,50 @@ focus = {
                 }
             }
         }
-        add_stability = 0.03
+        if = {
+            limit = {
+                has_idea = MKN_industry_concern_1
+            }
+            swap_ideas = {
+                remove_idea = MKN_industry_concern_1
+                add_idea = MKN_industry_concern_2
+            }
+        }
+        show_ideas_tooltip = MKN_industry_concern_2
+        if = {
+            limit = {
+                has_dlc = "Arms Against Tyranny"
+            }
+            mio:MKN_zaporizhstal_organization = {
+                add_mio_size = 1
+                add_mio_research_bonus = 0.05
+            }
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1500
+            tooltip = MKN_unified_political_power_gain_tt
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+            tooltip = MKN_unified_consumer_goods_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.1500
+            tooltip = MKN_unified_production_speed_buildings_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_global_building_slots_factor = 0.3000
+            tooltip = MKN_unified_global_building_slots_factor_tt
+        }
         add_to_variable = {
             MKN_unified_supply_consumption_factor = -0.1500
             tooltip = MKN_unified_supply_consumption_factor_tt
         }
         add_to_variable = {
-            MKN_unified_army_org_regain = 0.0900
+            MKN_unified_army_org_regain = 0.1000
             tooltip = MKN_unified_army_org_regain_tt
         }
     }
-    x = 4
-    y = 9
-    prerequisite = {
-        focus = MKN_production_cycles
-    }
-    prerequisite = {
-        focus = MKN_workers_welfare
-    }
-    prerequisite = {
-        focus = MKN_industrial_compact
-    }
-    cost = 5
 }
 ```
 
@@ -1555,11 +832,11 @@ focus = {
 
 Английское название: Free Cooperatives. Категория: Основная промышленная ветка.
 
-Описание RU: Сеть самостоятельных артелей примет взаимные обязательства. Хозяйственный кризис ослабнет; путь Днепростроя станет недоступен.
+Описание RU: Артели сохранят самостоятельность и примут взаимные обязательства по снабжению и заказам. Хозяйственный кризис ослабнет; централизованный путь Днепростроя станет недоступен.
 
-Описание EN: Independent artels accept mutual obligations. The economic crisis eases and the Dnieper industrial program becomes unavailable.
+Описание EN: Independent artels accept mutual supply and production obligations. The economic crisis eases; this choice excludes the Dnieper industrial program.
 
-Источник: `common/national_focus/MKN.txt:480`. Стоимость: 5 (35 дней). Координаты: x=16, y=0.
+Источник: `common/national_focus/MKN.txt:520`. Стоимость: 5 (35 дней). Координаты: x=16, y=0.
 
 Предпосылки: нет нарисованной предпосылки; см. available.
 
@@ -1579,6 +856,16 @@ focus = {
 focus = {
     id = MKN_free_cooperatives
     icon = GFX_focus_generic_agricultural_subsidies
+    x = 16
+    y = 0
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
     mutually_exclusive = {
         focus = MKN_dneprostroi
     }
@@ -1597,13 +884,10 @@ focus = {
             tooltip = MKN_unified_production_speed_buildings_factor_tt
         }
         add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
             MKN_unified_industrial_capacity_factory = 0.0500
+            tooltip = MKN_unified_industrial_capacity_factory_tt
         }
     }
-    x = 16
-    y = 0
-    cost = 5
 }
 ```
 
@@ -1611,15 +895,15 @@ focus = {
 
 Английское название: Register of Mutual Obligations. Категория: Основная промышленная ветка.
 
-Описание RU: Артели запишут, чем располагают и что обещают соседям. Учёт не требует начальника над каждой мастерской.
+Описание RU: Артели запишут свои запасы, инструменты и обещания соседям. Хозяйственный конгресс получит право оплачивать соляные промыслы, ветряки, обучение командиров, хлебную политику и взаимное страхование.
 
-Описание EN: Artels record their resources and promises to neighbours. Accounting needs no overseer above every workshop.
+Описание EN: Artels record their stocks, tools and promises. The Economic Congress can fund salt workings, windmills, elected commanders, grain policy and mutual insurance.
 
-Источник: `common/national_focus/MKN.txt:3091`. Стоимость: 5 (35 дней). Координаты: x=16, y=1.
+Источник: `common/national_focus/MKN.txt:556`. Стоимость: 5 (35 дней). Координаты: x=16, y=1.
 
 Предпосылки: (Вольные кооперативы [MKN_free_cooperatives]).
 
-Непосредственные продолжения: MKN_salt_artsels, MKN_village_smithies, MKN_recallable_commanders.
+Непосредственные продолжения: MKN_steppe_markets.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
@@ -1634,54 +918,71 @@ focus = {
     icon = GFX_focus_generic_money_for_equipment
     x = 16
     y = 1
+    cost = 5
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
-    completion_reward = {
-        add_political_power = 50
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
     prerequisite = {
         focus = MKN_free_cooperatives
     }
-    cost = 5
+    completion_reward = {
+        add_political_power = 50
+        custom_effect_tooltip = MKN_economic_congress_unlock_tt
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+            tooltip = MKN_unified_industrial_capacity_factory_tt
+        }
+    }
 }
 ```
 
-### Соляные артели — `MKN_salt_artsels`
+### Степные рынки — `MKN_steppe_markets`
 
-Английское название: Salt Artels. Категория: Основная промышленная ветка.
+Английское название: Steppe Markets. Категория: Основная промышленная ветка.
 
-Описание RU: Соль степи — верная валюта волостей.
+Описание RU: Базары, монетный двор и кредитные кассы примут общий расчёт без ростовщичества. Две фабрики и устойчивый политический доход закрепят доверие к договорам между коммунами.
 
-Описание EN: Steppe salt is the volosts' trusted currency.
+Описание EN: Bazaars, the mint and mutual credit funds agree on common settlement without usury. Two civilian factories and a lasting political income strengthen confidence between communes.
 
-Источник: `common/national_focus/MKN.txt:509`. Стоимость: 5 (35 дней). Координаты: x=12, y=2.
+Источник: `common/national_focus/MKN.txt:581`. Стоимость: 5 (35 дней). Координаты: x=16, y=2.
 
 Предпосылки: (Реестр взаимных обязательств [MKN_artel_register]).
 
-Непосредственные продолжения: MKN_grain_brokers.
+Непосредственные продолжения: MKN_mobile_workshops.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Политическая власть: 75
-- Потенциальная постройка: industrial_complex +1
+- Политическая власть: 150
+- add_stability: 0.10
+- Потенциальная постройка: industrial_complex +2
+- Изменение параметра: MKN_unified_political_power_gain 0.2000
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_salt_artsels
-    icon = GFX_focus_generic_mineral_prospecting
+    id = MKN_steppe_markets
+    icon = GFX_focus_generic_money_for_equipment
+    x = 16
+    y = 2
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_artel_register
+    }
     completion_reward = {
-        add_political_power = 75
+        add_political_power = 150
+        add_stability = 0.10
         random_owned_controlled_state = {
             limit = {
                 is_core_of = ROOT
@@ -1691,215 +992,44 @@ focus = {
                 200
                 196
             }
-            add_extra_state_shared_building_slots = 1
+            add_extra_state_shared_building_slots = 2
             add_building_construction = {
                 type = industrial_complex
-                level = 1
+                level = 2
                 instant_build = yes
             }
         }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.2000
+            tooltip = MKN_unified_political_power_gain_tt
+        }
     }
-    x = 12
-    y = 2
-    prerequisite = {
-        focus = MKN_artel_register
-    }
-    cost = 5
 }
 ```
 
-### Сельские кузницы — `MKN_village_smithies`
+### Передвижные мастерские и кузницы — `MKN_mobile_workshops`
 
-Английское название: Village Smithies. Категория: Основная промышленная ветка.
+Английское название: Mobile Workshops and Village Smithies. Категория: Основная промышленная ветка.
 
-Описание RU: Учтём станки и навыки сельских мастеров. Оружейные артели станут первым звеном реформы разрозненного производства.
+Описание RU: Сельские кузни войдут в сеть ремонтных поездок и передвижных мастерских. Два военных завода, грузовики и обмен инструментом восстановят выпуск, не собирая всё хозяйство в одном уязвимом центре.
 
-Описание EN: Catalogue village machines and skills. Armament artels begin the reform of fragmented production.
+Описание EN: Village smithies join travelling repair teams. Two military factories, trucks and shared tools restore production without concentrating it in one vulnerable industrial centre.
 
-Источник: `common/national_focus/MKN.txt:564`. Стоимость: 5 (35 дней). Координаты: x=16, y=2.
+Источник: `common/national_focus/MKN.txt:622`. Стоимость: 10 (70 дней). Координаты: x=16, y=3.
 
-Предпосылки: (Реестр взаимных обязательств [MKN_artel_register]).
-
-Непосредственные продолжения: MKN_mobile_workshops.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: arms_factory +1
-- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0800
-- Изменение параметра: MKN_unified_research_speed_factor 0.0200
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_village_smithies
-    icon = GFX_focus_generic_industry_1
-    completion_reward = {
-        army_experience = 10
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0800
-            tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
-            tooltip = MKN_unified_research_speed_factor_tt
-        }
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    x = 16
-    y = 2
-    prerequisite = {
-        focus = MKN_artel_register
-    }
-    cost = 5
-}
-```
-
-### Отзывные командиры — `MKN_recallable_commanders`
-
-Английское название: Recallable Commanders. Категория: Основная промышленная ветка.
-
-Описание RU: Сельские сходы установят сроки мандатов и ответственность полевых командиров. Добровольность службы не означает неопределённости приказа.
-
-Описание EN: Village assemblies set terms and responsibilities for field commanders. Voluntary service still needs clear orders.
-
-Источник: `common/national_focus/MKN.txt:3115`. Стоимость: 5 (35 дней). Координаты: x=20, y=2.
-
-Предпосылки: (Реестр взаимных обязательств [MKN_artel_register]).
-
-Непосредственные продолжения: MKN_field_schools.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_army_org_factor 0.0500
-- Изменение параметра: MKN_unified_training_time_army_factor -0.0800
-- Изменение параметра: MKN_unified_max_planning 0.0400
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_recallable_commanders
-    icon = GFX_focus_generic_manpower
-    x = 20
-    y = 2
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        army_experience = 10
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0500
-            tooltip = MKN_unified_army_org_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0800
-            tooltip = MKN_unified_training_time_army_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0400
-            tooltip = MKN_unified_max_planning_tt
-        }
-    }
-    prerequisite = {
-        focus = MKN_artel_register
-    }
-    cost = 5
-}
-```
-
-### Хлебные биржи — `MKN_grain_brokers`
-
-Английское название: Grain Exchanges. Категория: Основная промышленная ветка.
-
-Описание RU: Хлеб — это тоже политика.
-
-Описание EN: Grain is politics too.
-
-Источник: `common/national_focus/MKN.txt:538`. Стоимость: 5 (35 дней). Координаты: x=12, y=3.
-
-Предпосылки: (Соляные артели [MKN_salt_artsels]).
-
-Непосредственные продолжения: MKN_wind_mills_steppe.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Политическая власть: 50
-- Потенциальная постройка: industrial_complex +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_grain_brokers
-    icon = GFX_focus_generic_arms_trade
-    completion_reward = {
-        add_political_power = 50
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-    }
-    x = 12
-    y = 3
-    prerequisite = {
-        focus = MKN_salt_artsels
-    }
-    cost = 5
-}
-```
-
-### Передвижные мастерские — `MKN_mobile_workshops`
-
-Английское название: Mobile Workshops. Категория: Основная промышленная ветка.
-
-Описание RU: Обмен инструментом и ремонтные поездки укрепят общие договоры. Хозяйственный кризис ослабнет ещё на одну ступень.
-
-Описание EN: Exchanged tools and travelling repair teams strengthen shared contracts. Economic penalties fall by another tier.
-
-Источник: `common/national_focus/MKN.txt:633`. Стоимость: 5 (35 дней). Координаты: x=16, y=3.
-
-Предпосылки: (Сельские кузницы [MKN_village_smithies]).
+Предпосылки: (Степные рынки [MKN_steppe_markets]).
 
 Непосредственные продолжения: MKN_rifle_concern.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
+- Потенциальная постройка: arms_factory +2
 - Изменение параметра: MKN_unified_political_power_gain 0.1000
 - Изменение параметра: MKN_unified_consumer_goods_factor -0.0500
 - Изменение параметра: MKN_unified_production_speed_buildings_factor 0.0500
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-- Потенциальная постройка: arms_factory +1
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.1000
+- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.1000
+- Изменение параметра: MKN_unified_research_speed_factor 0.0500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
@@ -1907,13 +1037,42 @@ focus = {
 focus = {
     id = MKN_mobile_workshops
     icon = GFX_focus_generic_industry_2
+    x = 16
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_steppe_markets
+    }
     completion_reward = {
+        army_experience = 20
         add_equipment_to_stockpile = {
             type = motorized_equipment_1
             amount = 100
             producer = MKN
         }
-        army_experience = 10
+        random_owned_controlled_state = {
+            limit = {
+                is_core_of = ROOT
+            }
+            prioritize = {
+                1082
+                200
+                196
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
         add_to_variable = {
             MKN_unified_political_power_gain = 0.1000
             tooltip = MKN_unified_political_power_gain_tt
@@ -1927,119 +1086,118 @@ focus = {
             tooltip = MKN_unified_production_speed_buildings_factor_tt
         }
         add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.1000
             tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
         }
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = arms_factory
-                level = 1
-                instant_build = yes
-            }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.1000
+            tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_research_speed_factor = 0.0500
+            tooltip = MKN_unified_research_speed_factor_tt
         }
     }
-    x = 16
-    y = 3
-    prerequisite = {
-        focus = MKN_village_smithies
-    }
-    cost = 5
 }
 ```
 
-### Полевые школы коммун — `MKN_field_schools`
+### Артели стрелкового вооружения — `MKN_rifle_concern`
 
-Английское название: Communal Field Schools. Категория: Основная промышленная ветка.
+Английское название: Rifle Artels. Категория: Основная промышленная ветка.
 
-Описание RU: Передвижные инструкторы обучат отряды связи, маскировке и совместному манёвру, не отрывая деревни от посевной на месяцы.
+Описание RU: Оружейные артели получат защищённую внекарточную производственную линию. С Arms Against Tyranny доступна пехотная MIO; без дополнения — оружейный конструктор. Договор о взаимозаменяемости позволит развить выбранное предприятие.
 
-Описание EN: Travelling instructors teach communications, concealment and joint manoeuvres without keeping villages away from sowing for months.
+Описание EN: The rifle artels receive a protected off-map military factory. Arms Against Tyranny enables an infantry MIO; without it, a weapons designer is available. Workshop standards develop the enterprise further.
 
-Источник: `common/national_focus/MKN.txt:3147`. Стоимость: 5 (35 дней). Координаты: x=20, y=3.
+Источник: `common/national_focus/MKN.txt:687`. Стоимость: 10 (70 дней). Координаты: x=16, y=4.
 
-Предпосылки: (Отзывные командиры [MKN_recallable_commanders]).
+Предпосылки: (Передвижные мастерские и кузницы [MKN_mobile_workshops]).
 
-Непосредственные продолжения: MKN_harvest_reserves.
+Непосредственные продолжения: MKN_grain_exchanges, MKN_freight_logistics.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Изменение параметра: MKN_unified_army_org_factor 0.0600
-- Изменение параметра: MKN_unified_training_time_army_factor -0.0700
-- Изменение параметра: MKN_unified_max_planning 0.0300
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_field_schools
-    icon = GFX_focus_generic_army_doctrines_2
-    x = 20
-    y = 3
+    id = MKN_rifle_concern
+    icon = GFX_focus_generic_anti_tank_guns
+    x = 16
+    y = 4
+    cost = 10
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
-    completion_reward = {
-        army_experience = 15
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0600
-            tooltip = MKN_unified_army_org_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0700
-            tooltip = MKN_unified_training_time_army_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0300
-            tooltip = MKN_unified_max_planning_tt
-        }
-    }
     prerequisite = {
-        focus = MKN_recallable_commanders
+        focus = MKN_mobile_workshops
     }
-    cost = 5
+    completion_reward = {
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+        if = {
+            limit = {
+                has_dlc = "Arms Against Tyranny"
+            }
+            show_mio_tooltip = MKN_rifle_artels_organization
+        }
+        else = {
+            show_ideas_tooltip = MKN_rifle_concern_1
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+            tooltip = MKN_unified_industrial_capacity_factory_tt
+        }
+    }
 }
 ```
 
-### Ветряки вольных хуторов — `MKN_wind_mills_steppe`
+### Хлебные биржи и резервы — `MKN_grain_exchanges`
 
-Английское название: Windmills of Free Khutors. Категория: Основная промышленная ветка.
+Английское название: Grain Exchanges and Reserves. Категория: Основная промышленная ветка.
 
-Описание RU: Ветер в степи бесплатный, как свобода.
+Описание RU: Фабрика в Херсоне поддержит переработку и обмен урожая. На карте открываются три проекта по 60 дней: запорожские элеваторы, херсонские зерновые терминалы и степная посевная. Политику запасов выбирает хозяйственный конгресс.
 
-Описание EN: Steppe wind is free, like freedom.
+Описание EN: A Kherson factory supports processing and exchange. Unlock three 60-day map projects: Zaporizhzhia elevators, Kherson grain terminals and steppe sowing. The Economic Congress chooses stockpile policy.
 
-Источник: `common/national_focus/MKN.txt:602`. Стоимость: 5 (35 дней). Координаты: x=12, y=4.
+Источник: `common/national_focus/MKN.txt:723`. Стоимость: 5 (35 дней). Координаты: x=14, y=5.
 
-Предпосылки: (Хлебные биржи [MKN_grain_brokers]).
+Предпосылки: (Артели стрелкового вооружения [MKN_rifle_concern]).
 
-Непосредственные продолжения: MKN_free_bazaars.
+Непосредственные продолжения: MKN_workshop_standards.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- add_stability: 0.03
 - Потенциальная постройка: industrial_complex +1
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_wind_mills_steppe
-    icon = GFX_focus_generic_hydroelectric_energy
+    id = MKN_grain_exchanges
+    icon = GFX_focus_generic_agricultural_subsidies
+    x = 14
+    y = 5
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_rifle_concern
+    }
     completion_reward = {
-        add_stability = 0.03
         196 = {
             if = {
                 limit = {
@@ -2053,519 +1211,57 @@ focus = {
                 }
             }
         }
+        custom_effect_tooltip = MKN_grain_projects_unlock_tt
     }
-    x = 12
-    y = 4
-    prerequisite = {
-        focus = MKN_grain_brokers
-    }
-    available = {
-        has_completed_focus = MKN_mobile_workshops
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
 }
 ```
 
-### Артель стрелкового вооружения — `MKN_rifle_concern`
+### Гужевая и грузовая логистика — `MKN_freight_logistics`
 
-Английское название: Small Arms Artels. Категория: Основная промышленная ветка.
+Английское название: Wagon and Truck Logistics. Категория: Основная промышленная ветка.
 
-Описание RU: Кузни и оружейные артели Гуляй-Поля объединяются под одним качеством. Их мастерство можно расширять.\n\n§YДоступен концерн пехотного вооружения. Нанимайте его в разделе советников.§!
+Описание RU: Обозные артели и ремонтные биржи распределят склады между хуторами. Договоры подвоза резко сократят расход снабжения и истощение, а резервный уголь обеспечит мастерские.
 
-Описание EN: The gunsmith artels of Gulyai-Polye unite under a single standard of quality.\n\n§YAn infantry weapons concern is available. Hire it in the advisors panel.§!
+Описание EN: Freight artels and repair exchanges distribute depots among the villages. Supply agreements sharply reduce consumption and attrition while reserve coal keeps workshops running.
 
-Источник: `common/national_focus/MKN.txt:709`. Стоимость: 5 (35 дней). Координаты: x=16, y=4.
+Источник: `common/national_focus/MKN.txt:756`. Стоимость: 5 (35 дней). Координаты: x=18, y=5.
 
-Предпосылки: (Передвижные мастерские [MKN_mobile_workshops]).
-
-Непосредственные продолжения: MKN_freight_artels.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-- Потенциальная постройка: arms_factory +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_rifle_concern
-    icon = GFX_focus_generic_anti_tank_guns
-    completion_reward = {
-        if = {
-            limit = {
-                has_dlc = "Arms Against Tyranny"
-            }
-            show_mio_tooltip = MKN_rifle_artels_organization
-        }
-        else = {
-            show_ideas_tooltip = MKN_rifle_concern_1
-        }
-        add_to_variable = {
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = arms_factory
-                level = 1
-                instant_build = yes
-            }
-        }
-    }
-    x = 16
-    y = 4
-    prerequisite = {
-        focus = MKN_mobile_workshops
-    }
-    cost = 5
-}
-```
-
-### Хлеб для обмена и резерва — `MKN_harvest_reserves`
-
-Английское название: Grain for Trade and Reserves. Категория: Основная промышленная ветка.
-
-Описание RU: Съезд решит, направить излишки на экспортные договоры или оставить их в страховых кладовых. Выбранная мера действует один год.
-
-Описание EN: The congress chooses export contracts or insurance granaries for the surplus. The selected measure lasts one year.
-
-Источник: `common/national_focus/MKN.txt:3179`. Стоимость: 5 (35 дней). Координаты: x=20, y=4.
-
-Предпосылки: (Полевые школы коммун [MKN_field_schools]).
-
-Непосредственные продолжения: MKN_mutual_credit.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- См. полную награду в completion_reward.
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_harvest_reserves
-    icon = GFX_focus_generic_agricultural_subsidies
-    x = 20
-    y = 4
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        country_event = {
-            id = mkn.31
-            days = 1
-        }
-    }
-    prerequisite = {
-        focus = MKN_field_schools
-    }
-    cost = 5
-}
-```
-
-### Вольные базары — `MKN_free_bazaars`
-
-Английское название: Free Bazaars. Категория: Основная промышленная ветка.
-
-Описание RU: Торговля без газетных гонок размещает содержание страны. Все ждут базарного дня.
-
-Описание EN: Trade without the state settles daily life. Everyone waits for market day.
-
-Источник: `common/national_focus/MKN.txt:683`. Стоимость: 5 (35 дней). Координаты: x=12, y=5.
-
-Предпосылки: (Ветряки вольных хуторов [MKN_wind_mills_steppe]).
-
-Непосредственные продолжения: MKN_steppe_mint.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- add_stability: 0.03
-- Потенциальная постройка: industrial_complex +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_free_bazaars
-    icon = GFX_focus_generic_industry_investment
-    completion_reward = {
-        add_stability = 0.03
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-    }
-    x = 12
-    y = 5
-    prerequisite = {
-        focus = MKN_wind_mills_steppe
-    }
-    cost = 5
-}
-```
-
-### Грузовые артели — `MKN_freight_artels`
-
-Английское название: Freight Artels. Категория: Основная промышленная ветка.
-
-Описание RU: Перевозчики нанесут склады и маршруты на общую карту. Перебои снабжения уменьшатся, но съезд ещё должен согласовать регулярные рейсы.
-
-Описание EN: Carriers map depots and routes together. Supply disruptions ease, while the congress must still agree regular services.
-
-Источник: `common/national_focus/MKN.txt:782`. Стоимость: 5 (35 дней). Координаты: x=16, y=5.
-
-Предпосылки: (Артель стрелкового вооружения [MKN_rifle_concern]).
-
-Непосредственные продолжения: MKN_rifle_concern_union.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: infrastructure +1
-- Изменение параметра: MKN_unified_supply_consumption_factor -0.0800
-- Изменение параметра: MKN_unified_army_org_regain 0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_freight_artels
-    icon = GFX_focus_generic_supply_line
-    completion_reward = {
-        226 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                if = {
-                    limit = {
-                        infrastructure < 5
-                    }
-                    add_building_construction = {
-                        type = infrastructure
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0800
-            tooltip = MKN_unified_supply_consumption_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0500
-            tooltip = MKN_unified_army_org_regain_tt
-        }
-    }
-    x = 16
-    y = 5
-    prerequisite = {
-        focus = MKN_rifle_concern
-    }
-    cost = 5
-}
-```
-
-### Кредит без ростовщика — `MKN_mutual_credit`
-
-Английское название: Credit without Usury. Категория: Основная промышленная ветка.
-
-Описание RU: Кассы взаимопомощи выдадут артельные ссуды под проверяемые договоры. Урожай и инструменты послужат основой расчётов.
-
-Описание EN: Mutual aid funds lend against accountable artel contracts. Harvests and tools provide a basis for settlement.
-
-Источник: `common/national_focus/MKN.txt:3202`. Стоимость: 5 (35 дней). Координаты: x=20, y=5.
-
-Предпосылки: (Хлеб для обмена и резерва [MKN_harvest_reserves]).
-
-Непосредственные продолжения: MKN_mobile_self_defence.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Политическая власть: 50
-- add_stability: 0.02
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_mutual_credit
-    icon = GFX_focus_generic_money_for_equipment
-    x = 20
-    y = 5
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_political_power = 50
-        add_stability = 0.02
-    }
-    prerequisite = {
-        focus = MKN_harvest_reserves
-    }
-    cost = 5
-}
-```
-
-### Степной монетный двор — `MKN_steppe_mint`
-
-Английское название: Steppe Mint. Категория: Основная промышленная ветка.
-
-Описание RU: Свободная чеканка на свободной земле. Никто не мешает печатать собственные билеты...
-
-Описание EN: Free coinage on free land — and a reserve of bootleg bills when Moscow's money fails.
-
-Источник: `common/national_focus/MKN.txt:750`. Стоимость: 5 (35 дней). Координаты: x=12, y=6.
-
-Предпосылки: (Вольные базары [MKN_free_bazaars]).
-
-Непосредственные продолжения: MKN_repair_exchanges.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_political_power_gain 0.2000
-- Потенциальная постройка: industrial_complex +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_steppe_mint
-    icon = GFX_focus_generic_money_for_equipment
-    completion_reward = {
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.2000
-            tooltip = MKN_unified_political_power_gain_tt
-        }
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }
-        }
-    }
-    x = 12
-    y = 6
-    prerequisite = {
-        focus = MKN_free_bazaars
-    }
-    cost = 5
-}
-```
-
-### Расширение оружейных артелей — `MKN_rifle_concern_union`
-
-Английское название: Expand the Gunsmith Artels. Категория: Основная промышленная ветка.
-
-Описание RU: Артели получили общий инструмент и школы мастеров.
-
-Описание EN: Shared tooling and master schools upgrade the artels.
-
-Источник: `common/national_focus/MKN.txt:819`. Стоимость: 5 (35 дней). Координаты: x=16, y=6.
-
-Предпосылки: (Грузовые артели [MKN_freight_artels]).
+Предпосылки: (Артели стрелкового вооружения [MKN_rifle_concern]).
 
 Непосредственные продолжения: MKN_workshop_standards.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Потенциальная постройка: arms_factory +1
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_rifle_concern_union
-    icon = GFX_focus_generic_money_for_equipment
-    completion_reward = {
-        if = {
-            limit = {
-                has_idea = MKN_rifle_concern_1
-            }
-            swap_ideas = {
-                remove_idea = MKN_rifle_concern_1
-                add_idea = MKN_rifle_concern_2
-            }
-        }
-        if = {
-            limit = {
-                has_dlc = "Arms Against Tyranny"
-            }
-            mio:MKN_rifle_artels_organization = {
-                add_mio_size = 1
-                add_mio_research_bonus = 0.05
-            }
-        }
-        if = {
-            limit = {
-                NOT = {
-                    has_dlc = "Arms Against Tyranny"
-                }
-            }
-            custom_effect_tooltip = MKN_rifle_concern_union_tt
-        }
-        random_owned_controlled_state = {
-            limit = {
-                is_core_of = ROOT
-            }
-            prioritize = {
-                1082
-                200
-                196
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = arms_factory
-                level = 1
-                instant_build = yes
-            }
-        }
-    }
-    x = 16
-    y = 6
-    prerequisite = {
-        focus = MKN_freight_artels
-    }
-    cost = 5
-}
-```
-
-### Подвижная самооборона — `MKN_mobile_self_defence`
-
-Английское название: Mobile Self Defence. Категория: Основная промышленная ветка.
-
-Описание RU: Сельские резервы объединятся в подготовленные мобильные отряды с общими сборами и сменяемым командованием.
-
-Описание EN: Village reserves become trained mobile detachments with joint exercises and accountable command.
-
-Источник: `common/national_focus/MKN.txt:3223`. Стоимость: 5 (35 дней). Координаты: x=20, y=6.
-
-Предпосылки: (Кредит без ростовщика [MKN_mutual_credit]).
-
-Непосредственные продолжения: MKN_supply_congress.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_army_org_factor 0.0800
-- Изменение параметра: MKN_unified_training_time_army_factor -0.1000
-- Изменение параметра: MKN_unified_max_planning 0.0300
-- Изменение параметра: MKN_unified_army_speed_factor 0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_mobile_self_defence
-    icon = GFX_focus_generic_horse_studs
-    x = 20
-    y = 6
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        army_experience = 15
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0800
-            tooltip = MKN_unified_army_org_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.1000
-            tooltip = MKN_unified_training_time_army_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0300
-            tooltip = MKN_unified_max_planning_tt
-        }
-        add_to_variable = {
-            MKN_unified_army_speed_factor = 0.0500
-            tooltip = MKN_unified_army_speed_factor_tt
-        }
-    }
-    prerequisite = {
-        focus = MKN_mutual_credit
-    }
-    cost = 5
-}
-```
-
-### Биржи инструмента и ремонта — `MKN_repair_exchanges`
-
-Английское название: Tool and Repair Exchanges. Категория: Основная промышленная ветка.
-
-Описание RU: Артели обменяются оснасткой, запчастями и топливом для мастерских. Малые угольные промыслы поддержат местную энергетику.
-
-Описание EN: Artels exchange tooling, spare parts and workshop fuel. Small coal workings support local energy supplies.
-
-Источник: `common/national_focus/MKN.txt:3259`. Стоимость: 5 (35 дней). Координаты: x=12, y=7.
-
-Предпосылки: (Степной монетный двор [MKN_steppe_mint]).
-
-Непосредственные продолжения: MKN_shared_orders.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
 - Потенциальный ресурс: coal +8
-- Потенциальная постройка: industrial_complex +1
+- Изменение параметра: MKN_unified_supply_consumption_factor -0.3000
+- Изменение параметра: MKN_unified_army_org_regain 0.1500
+- Изменение параметра: MKN_unified_attrition -0.0500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_repair_exchanges
-    icon = GFX_focus_generic_industry_1
-    x = 12
-    y = 7
+    id = MKN_freight_logistics
+    icon = GFX_focus_generic_railroad
+    x = 18
+    y = 5
+    cost = 5
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
+    prerequisite = {
+        focus = MKN_rifle_concern
+    }
     completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = train_tech
+        }
         add_tech_bonus = {
             bonus = 0.5
             uses = 1
@@ -2582,6 +1278,71 @@ focus = {
                 }
             }
         }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.3000
+            tooltip = MKN_unified_supply_consumption_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_army_org_regain = 0.1500
+            tooltip = MKN_unified_army_org_regain_tt
+        }
+        add_to_variable = {
+            MKN_unified_attrition = -0.0500
+            tooltip = MKN_unified_attrition_tt
+        }
+    }
+}
+```
+
+### Договор о взаимозаменяемости — `MKN_workshop_standards`
+
+Английское название: Interchangeability Agreement. Категория: Основная промышленная ветка.
+
+Описание RU: Общие калибры, ремонтные образцы и портфель заказов соединят самостоятельные мастерские. Дополнительный военный завод и развитие оружейного предприятия повысят выпуск и эффективность без единственного промышленного центра.
+
+Описание EN: Common calibres, repair patterns and pooled orders unite independent workshops. Another military factory and an upgraded weapons enterprise improve output without a single industrial centre.
+
+Источник: `common/national_focus/MKN.txt:808`. Стоимость: 10 (70 дней). Координаты: x=16, y=6.
+
+Предпосылки: (Хлебные биржи и резервы [MKN_grain_exchanges]) И (Гужевая и грузовая логистика [MKN_freight_logistics]).
+
+Непосредственные продолжения: MKN_field_schools.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Потенциальная постройка: arms_factory +1
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.1500
+- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.2500
+- Изменение параметра: MKN_unified_research_speed_factor 0.0500
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_workshop_standards
+    icon = GFX_focus_generic_industry_2
+    x = 16
+    y = 6
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    search_filters = {
+        FOCUS_FILTER_INDUSTRY
+    }
+    prerequisite = {
+        focus = MKN_grain_exchanges
+    }
+    prerequisite = {
+        focus = MKN_freight_logistics
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = infantry_weapons
+        }
         random_owned_controlled_state = {
             limit = {
                 is_core_of = ROOT
@@ -2593,244 +1354,109 @@ focus = {
             }
             add_extra_state_shared_building_slots = 1
             add_building_construction = {
-                type = industrial_complex
+                type = arms_factory
                 level = 1
                 instant_build = yes
             }
         }
-    }
-    prerequisite = {
-        focus = MKN_steppe_mint
-    }
-    cost = 5
-}
-```
-
-### Договор о взаимозаменяемости — `MKN_workshop_standards`
-
-Английское название: Interchangeability Agreement. Категория: Основная промышленная ветка.
-
-Описание RU: Оружейные артели примут общие калибры и образцы деталей. Стандарт станет договором производителей, а не приказом единственного завода.
-
-Описание EN: Armament artels adopt common calibres and parts. Standards become an agreement among producers rather than a single factory's command.
-
-Источник: `common/national_focus/MKN.txt:3310`. Стоимость: 5 (35 дней). Координаты: x=16, y=7.
-
-Предпосылки: (Расширение оружейных артелей [MKN_rifle_concern_union]).
-
-Непосредственные продолжения: MKN_social_fund.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
-- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.0700
-- Изменение параметра: MKN_unified_research_speed_factor 0.0200
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_workshop_standards
-    icon = GFX_focus_generic_industry_2
-    x = 16
-    y = 7
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_tech_bonus = {
-            bonus = 0.5
-            uses = 1
-            category = infantry_weapons
+        if = {
+            limit = {
+                has_dlc = "Arms Against Tyranny"
+            }
+            mio:MKN_rifle_artels_organization = {
+                add_mio_size = 1
+                add_mio_research_bonus = 0.05
+                unlock_mio_trait_tooltip = MKN_rifle_artels_organization_specialization_a
+                unlock_mio_trait_tooltip = MKN_rifle_artels_organization_specialization_b
+            }
+        }
+        else = {
+            if = {
+                limit = {
+                    has_idea = MKN_rifle_concern_1
+                }
+                swap_ideas = {
+                    remove_idea = MKN_rifle_concern_1
+                    add_idea = MKN_rifle_concern_2
+                }
+            }
+            show_ideas_tooltip = MKN_rifle_concern_2
         }
         add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
+            MKN_unified_industrial_capacity_factory = 0.1500
             tooltip = MKN_unified_industrial_capacity_factory_tt
         }
         add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0700
+            MKN_unified_production_factory_efficiency_gain_factor = 0.2500
             tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
         }
         add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
+            MKN_unified_research_speed_factor = 0.0500
             tooltip = MKN_unified_research_speed_factor_tt
         }
     }
-    prerequisite = {
-        focus = MKN_rifle_concern_union
-    }
-    cost = 5
 }
 ```
 
-### Съезд обозных артелей — `MKN_supply_congress`
+### Полевые школы коммун — `MKN_field_schools`
 
-Английское название: Congress of Supply Artels. Категория: Основная промышленная ветка.
+Английское название: Commune Field Schools. Категория: Основная промышленная ветка.
 
-Описание RU: Перевозчики согласуют резервные маршруты и помощь пострадавшим обозам. Военные перевозки получат устойчивый порядок.
+Описание RU: Передвижные инструкторы и сменяемые командиры обучат самооборону связи, маскировке и совместному манёвру. Подготовка станет короче, а отряды сохранят подвижность и связь со своими коммунами.
 
-Описание EN: Carriers agree alternate routes and assistance for damaged supply trains. Military transport gains reliable procedures.
+Описание EN: Travelling instructors and recallable commanders train local defence in signals, concealment and coordinated manoeuvre. Units train faster while retaining their mobility and communal ties.
 
-Источник: `common/national_focus/MKN.txt:3346`. Стоимость: 5 (35 дней). Координаты: x=20, y=7.
+Источник: `common/national_focus/MKN.txt:886`. Стоимость: 5 (35 дней). Координаты: x=16, y=7.
 
-Предпосылки: (Подвижная самооборона [MKN_mobile_self_defence]).
+Предпосылки: (Договор о взаимозаменяемости [MKN_workshop_standards]).
 
 Непосредственные продолжения: MKN_communal_compact.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
-- Изменение параметра: MKN_unified_supply_consumption_factor -0.0700
-- Изменение параметра: MKN_unified_army_org_regain 0.0600
+- Изменение параметра: MKN_unified_army_org_factor 0.2000
+- Изменение параметра: MKN_unified_training_time_army_factor -0.2500
+- Изменение параметра: MKN_unified_max_planning 0.1000
+- Изменение параметра: MKN_unified_army_speed_factor 0.0500
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
 ```pdx
 focus = {
-    id = MKN_supply_congress
-    icon = GFX_focus_generic_supply_line
-    x = 20
-    y = 7
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_tech_bonus = {
-            bonus = 0.5
-            uses = 1
-            category = train_tech
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0700
-            tooltip = MKN_unified_supply_consumption_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0600
-            tooltip = MKN_unified_army_org_regain_tt
-        }
-    }
-    prerequisite = {
-        focus = MKN_mobile_self_defence
-    }
-    available = {
-        has_completed_focus = MKN_freight_artels
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
-}
-```
-
-### Общий портфель заказов — `MKN_shared_orders`
-
-Английское название: Shared Order Book. Категория: Основная промышленная ветка.
-
-Описание RU: Общие стандарты и обмен инструментом позволят распределять заказы между мастерскими. Разрозненность сменится гибким освоением производства.
-
-Описание EN: Common standards and exchanged tooling allow orders to be shared among workshops. Fragmentation gives way to flexible production.
-
-Источник: `common/national_focus/MKN.txt:3383`. Стоимость: 5 (35 дней). Координаты: x=12, y=8.
-
-Предпосылки: (Биржи инструмента и ремонта [MKN_repair_exchanges]).
-
-Непосредственные продолжения: MKN_craft_federation.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Изменение параметра: MKN_unified_industrial_capacity_factory 0.1100
-- Изменение параметра: MKN_unified_production_factory_efficiency_gain_factor 0.2000
-- Изменение параметра: MKN_unified_research_speed_factor 0.0400
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_shared_orders
-    icon = GFX_focus_generic_military_industry
-    x = 12
-    y = 8
-    available_if_capitulated = no
-    ai_will_do = {
-        factor = 1
-    }
-    search_filters = {
-        FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.1100
-            tooltip = MKN_unified_industrial_capacity_factory_tt
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.2000
-            tooltip = MKN_unified_production_factory_efficiency_gain_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0400
-            tooltip = MKN_unified_research_speed_factor_tt
-        }
-    }
-    prerequisite = {
-        focus = MKN_repair_exchanges
-    }
-    available = {
-        has_completed_focus = MKN_workshop_standards
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
-}
-```
-
-### Страховая касса коммун — `MKN_social_fund`
-
-Английское название: Communal Insurance Fund. Категория: Основная промышленная ветка.
-
-Описание RU: Взносы артелей защитят семьи от неурожая, травм и потери кормильца. Общая безопасность сделает взаимопомощь надёжнее случайных пожертвований.
-
-Описание EN: Artel contributions protect families against failed harvests, injuries and lost earners. Shared security makes mutual aid more reliable than occasional donations.
-
-Источник: `common/national_focus/MKN.txt:3419`. Стоимость: 5 (35 дней). Координаты: x=16, y=8.
-
-Предпосылки: (Договор о взаимозаменяемости [MKN_workshop_standards]).
-
-Непосредственные продолжения: MKN_craft_federation.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- add_stability: 0.03
-- Политическая власть: 25
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_social_fund
-    icon = GFX_focus_generic_agricultural_subsidies
+    id = MKN_field_schools
+    icon = GFX_focus_generic_army_doctrines_2
     x = 16
-    y = 8
+    y = 7
+    cost = 5
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
-    }
-    completion_reward = {
-        add_stability = 0.03
-        add_political_power = 25
     }
     prerequisite = {
         focus = MKN_workshop_standards
     }
-    cost = 5
+    completion_reward = {
+        army_experience = 30
+        add_to_variable = {
+            MKN_unified_army_org_factor = 0.2000
+            tooltip = MKN_unified_army_org_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_training_time_army_factor = -0.2500
+            tooltip = MKN_unified_training_time_army_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_max_planning = 0.1000
+            tooltip = MKN_unified_max_planning_tt
+        }
+        add_to_variable = {
+            MKN_unified_army_speed_factor = 0.0500
+            tooltip = MKN_unified_army_speed_factor_tt
+        }
+    }
 }
 ```
 
@@ -2838,23 +1464,27 @@ focus = {
 
 Английское название: Charter of Economic Mutual Aid. Категория: Основная промышленная ветка.
 
-Описание RU: Закрепим добровольные договоры, кредитные кассы и страхование. Хозяйственный кризис уступит устойчивой сети самостоятельных коммун.
+Описание RU: Договоры кредита, страхования и взаимного ремонта завершат восстановление хозяйства. Рассредоточенные мастерские получат постоянные −20% ущерба промышленности от бомбардировок и +20% скорости ремонта в общем хозяйственном духе.
 
-Описание EN: Voluntary contracts, credit funds and insurance establish a lasting network of independent communes and resolve the economic crisis.
+Описание EN: Credit, insurance and repair agreements complete recovery. Dispersed workshops gain permanent −20% industrial bombing damage and +20% repair speed through the shared economic spirit.
 
-Источник: `common/national_focus/MKN.txt:3440`. Стоимость: 5 (35 дней). Координаты: x=20, y=8.
+Источник: `common/national_focus/MKN.txt:922`. Стоимость: 10 (70 дней). Координаты: x=16, y=8.
 
-Предпосылки: (Съезд обозных артелей [MKN_supply_congress]).
+Предпосылки: (Полевые школы коммун [MKN_field_schools]).
 
-Непосредственные продолжения: MKN_craft_federation.
+Непосредственные продолжения: нет.
 
 Обзор награды (условия и остальные эффекты полностью в коде ниже):
 
+- add_stability: 0.05
+- Политическая власть: 50
 - Изменение параметра: MKN_unified_political_power_gain 0.1500
 - Изменение параметра: MKN_unified_consumer_goods_factor -0.1000
 - Изменение параметра: MKN_unified_production_speed_buildings_factor 0.0500
 - Изменение параметра: MKN_unified_stability_factor 0.0500
 - Изменение параметра: MKN_unified_global_building_slots_factor 0.3000
+- Изменение параметра: MKN_unified_industry_air_damage_factor -0.2000
+- Изменение параметра: MKN_unified_repair_speed_factor 0.2000
 
 Полное определение; включает точные награды, условия, взаимоисключения и AI:
 
@@ -2862,16 +1492,22 @@ focus = {
 focus = {
     id = MKN_communal_compact
     icon = GFX_focus_generic_diplomatic_treaty
-    x = 20
+    x = 16
     y = 8
+    cost = 10
     available_if_capitulated = no
     ai_will_do = {
-        factor = 1
+        factor = 2
     }
     search_filters = {
         FOCUS_FILTER_INDUSTRY
     }
+    prerequisite = {
+        focus = MKN_field_schools
+    }
     completion_reward = {
+        add_stability = 0.05
+        add_political_power = 50
         add_to_variable = {
             MKN_unified_political_power_gain = 0.1500
             tooltip = MKN_unified_political_power_gain_tt
@@ -2892,87 +1528,24 @@ focus = {
             MKN_unified_global_building_slots_factor = 0.3000
             tooltip = MKN_unified_global_building_slots_factor_tt
         }
-    }
-    prerequisite = {
-        focus = MKN_supply_congress
-    }
-    available = {
-        has_completed_focus = MKN_social_fund
-    }
-    cancel_if_invalid = yes
-    continue_if_invalid = no
-    cost = 5
-}
-```
-
-### Федерация ремесленных коммун — `MKN_craft_federation`
-
-Английское название: Federation of Craft Communes. Категория: Основная промышленная ветка.
-
-Описание RU: Общий заказ, страховая касса и хартия взаимопомощи завершат программу. Обозная сеть снимет последние перебои снабжения и уменьшит потери техники.
-
-Описание EN: Shared orders, insurance and a mutual aid charter complete the program. The supply network removes remaining disruptions and reduces equipment losses.
-
-Источник: `common/national_focus/MKN.txt:904`. Стоимость: 5 (35 дней). Координаты: x=16, y=9.
-
-Предпосылки: (Общий портфель заказов [MKN_shared_orders]) И (Страховая касса коммун [MKN_social_fund]) И (Хартия хозяйственной взаимопомощи [MKN_communal_compact]).
-
-Непосредственные продолжения: нет.
-
-Обзор награды (условия и остальные эффекты полностью в коде ниже):
-
-- Потенциальная постройка: industrial_complex +1
-- add_stability: 0.03
-- Изменение параметра: MKN_unified_supply_consumption_factor -0.1300
-- Изменение параметра: MKN_unified_army_org_regain 0.0400
-- Изменение параметра: MKN_unified_attrition -0.0500
-
-Полное определение; включает точные награды, условия, взаимоисключения и AI:
-
-```pdx
-focus = {
-    id = MKN_craft_federation
-    icon = GFX_focus_generic_industry_investment
-    completion_reward = {
-        196 = {
-            if = {
-                limit = {
-                    is_owned_and_controlled_by = ROOT
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
+        add_to_variable = {
+            MKN_unified_industry_air_damage_factor = -0.2000
+            tooltip = MKN_unified_industry_air_damage_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_repair_speed_factor = 0.2000
+            tooltip = MKN_unified_repair_speed_factor_tt
+        }
+        if = {
+            limit = {
+                has_dlc = "Arms Against Tyranny"
+            }
+            mio:MKN_rifle_artels_organization = {
+                add_mio_size = 1
+                unlock_mio_trait_tooltip = MKN_rifle_artels_organization_mature
             }
         }
-        add_stability = 0.03
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.1300
-            tooltip = MKN_unified_supply_consumption_factor_tt
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0400
-            tooltip = MKN_unified_army_org_regain_tt
-        }
-        add_to_variable = {
-            MKN_unified_attrition = -0.0500
-            tooltip = MKN_unified_attrition_tt
-        }
     }
-    x = 16
-    y = 9
-    prerequisite = {
-        focus = MKN_shared_orders
-    }
-    prerequisite = {
-        focus = MKN_social_fund
-    }
-    prerequisite = {
-        focus = MKN_communal_compact
-    }
-    cost = 5
 }
 ```
 
@@ -2984,7 +1557,7 @@ focus = {
 
 Описание EN: Scientists and craftsmen establish a technical school network under either economic model.
 
-Источник: `common/national_focus/MKN.txt:2507`. Стоимость: 5 (35 дней). Координаты: x=27, y=1.
+Источник: `common/national_focus/MKN.txt:2571`. Стоимость: 5 (35 дней). Координаты: x=27, y=1.
 
 Предпосылки: нет нарисованной предпосылки; см. available.
 
@@ -3022,7 +1595,7 @@ focus = {
 
 Описание EN: Forward strips will bring aircraft closer to troops and reduce ferry flights.
 
-Источник: `common/national_focus/MKN.txt:2213`. Стоимость: 5 (35 дней). Координаты: x=66, y=1.
+Источник: `common/national_focus/MKN.txt:2277`. Стоимость: 5 (35 дней). Координаты: x=66, y=1.
 
 Предпосылки: (Степные соколы [MKN_steppe_hawks]).
 
@@ -3070,6 +1643,192 @@ focus = {
 }
 ```
 
+### Хартии южных коммун — `MKN_southern_commune_charters`
+
+Английское название: Charters of the Southern Communes. Категория: Изменяет общий экономический дух MKN.
+
+Описание RU: Одесса, Николаев и Балта примут местные хартии и станут национальными областями. Согласованные склады уменьшат потребление снабжения.
+
+Описание EN: Odesa, Mykolaiv and Balta adopt local charters and become core states. Coordinated depots reduce supply consumption.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:30`. Стоимость: 5 (35 дней). Координаты: x=142, y=1.
+
+Предпосылки: (Съезд украинских коммун [MKN_ukrainian_communes_congress]).
+
+Непосредственные продолжения: MKN_ukrainian_rail_reconstruction.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Изменение параметра: MKN_unified_supply_consumption_factor -0.0500
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_southern_commune_charters
+    icon = GFX_focus_generic_agricultural_subsidies
+    x = 142
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        192 = {
+            add_core_of = ROOT
+        }
+        197 = {
+            add_core_of = ROOT
+        }
+        834 = {
+            add_core_of = ROOT
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.0500
+            tooltip = MKN_unified_supply_consumption_factor_tt
+        }
+    }
+    prerequisite = {
+        focus = MKN_ukrainian_communes_congress
+    }
+}
+```
+
+### Советы Правобережья — `MKN_right_bank_councils`
+
+Английское название: Councils of the Right Bank. Категория: Изменяет общий экономический дух MKN.
+
+Описание RU: Советы Житомирщины, Подолии и Правобережья получат признанное представительство. Национализация четырёх областей и постоянная стабильность заменят чрезвычайное управление.
+
+Описание EN: Councils of Zhytomyr, Podillia and the right bank gain recognized representation. Four states become cores and lasting stability replaces emergency administration.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:68`. Стоимость: 10 (70 дней). Координаты: x=146, y=1.
+
+Предпосылки: (Съезд украинских коммун [MKN_ukrainian_communes_congress]).
+
+Непосредственные продолжения: MKN_dnieper_workshop_federation.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Политическая власть: 50
+- Изменение параметра: MKN_unified_stability_factor 0.0500
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_right_bank_councils
+    icon = GFX_focus_generic_diplomatic_treaty
+    x = 146
+    y = 1
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        add_political_power = 50
+        193 = {
+            add_core_of = ROOT
+        }
+        198 = {
+            add_core_of = ROOT
+        }
+        199 = {
+            add_core_of = ROOT
+        }
+        201 = {
+            add_core_of = ROOT
+        }
+        add_to_variable = {
+            MKN_unified_stability_factor = 0.0500
+            tooltip = MKN_unified_stability_factor_tt
+        }
+    }
+    prerequisite = {
+        focus = MKN_ukrainian_communes_congress
+    }
+}
+```
+
+### Мандаты северных волостей — `MKN_northern_delegates`
+
+Английское название: Mandates of the Northern Districts. Категория: Изменяет общий экономический дух MKN.
+
+Описание RU: Глухов и бывшая украинская область Лиски отправят своих делегатов. Местные мандаты обеспечат национализацию, добровольцев и политический доход.
+
+Описание EN: Hlukhiv and the former Ukrainian district of Liski send delegates. Local mandates bring cores, volunteers and political income.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:110`. Стоимость: 5 (35 дней). Координаты: x=150, y=1.
+
+Предпосылки: (Съезд украинских коммун [MKN_ukrainian_communes_congress]).
+
+Непосредственные продолжения: MKN_ukrainian_rail_reconstruction.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Изменение параметра: MKN_unified_political_power_gain 0.1000
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_northern_delegates
+    icon = GFX_focus_generic_manpower
+    x = 150
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        add_manpower = 10000
+        225 = {
+            add_core_of = ROOT
+        }
+        259 = {
+            add_core_of = ROOT
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+            tooltip = MKN_unified_political_power_gain_tt
+        }
+    }
+    prerequisite = {
+        focus = MKN_ukrainian_communes_congress
+    }
+}
+```
+
 ### Вольный политехникум — `MKN_polytechnic_institute`
 
 Английское название: Free Polytechnic. Категория: Бонус промышленным технологиям.
@@ -3078,7 +1837,7 @@ focus = {
 
 Описание EN: Engineering education supplies the artels with machine tools, instruments and trained specialists.
 
-Источник: `common/national_focus/MKN.txt:2522`. Стоимость: 5 (35 дней). Координаты: x=27, y=2.
+Источник: `common/national_focus/MKN.txt:2586`. Стоимость: 5 (35 дней). Координаты: x=27, y=2.
 
 Предпосылки: (Технические коммуны [MKN_technical_communes]).
 
@@ -3118,7 +1877,7 @@ focus = {
 
 Описание EN: Kherson yards will give the flotilla its own construction and repair base.
 
-Источник: `common/national_focus/MKN.txt:2364`. Стоимость: 5 (35 дней). Координаты: x=82, y=2.
+Источник: `common/national_focus/MKN.txt:2428`. Стоимость: 5 (35 дней). Координаты: x=82, y=2.
 
 Предпосылки: (Днепровский дозор [MKN_dnieper_patrol]).
 
@@ -3174,6 +1933,73 @@ focus = {
 }
 ```
 
+### Федерация днепровских мастерских — `MKN_dnieper_workshop_federation`
+
+Английское название: Federation of Dnieper Workshops. Категория: Строительство, ресурсы или исследовательская мощность; Изменяет общий экономический дух MKN.
+
+Описание RU: Киев и Черкассы войдут в хозяйственную федерацию на правах национальных областей. Восстановленная оружейная линия и общий портфель заказов усилят выпуск.
+
+Описание EN: Kyiv and Cherkasy join the economic federation as core states. A restored arms line and shared orders improve production.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:146`. Стоимость: 10 (70 дней). Координаты: x=146, y=2.
+
+Предпосылки: (Советы Правобережья [MKN_right_bank_councils]).
+
+Непосредственные продолжения: MKN_ukrainian_rail_reconstruction.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Потенциальная постройка: arms_factory +1
+- Изменение параметра: MKN_unified_industrial_capacity_factory 0.0500
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_dnieper_workshop_federation
+    icon = GFX_focus_generic_military_industry
+    x = 146
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        202 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+        202 = {
+            add_core_of = ROOT
+        }
+        203 = {
+            add_core_of = ROOT
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+            tooltip = MKN_unified_industrial_capacity_factory_tt
+        }
+    }
+    prerequisite = {
+        focus = MKN_right_bank_councils
+    }
+}
+```
+
 ### Сеть исследовательских коммун — `MKN_communal_research_network`
 
 Английское название: Communal Research Network. Категория: Строительство, ресурсы или исследовательская мощность.
@@ -3182,7 +2008,7 @@ focus = {
 
 Описание EN: Link local laboratories into a permanent research network.
 
-Источник: `common/national_focus/MKN.txt:2539`. Стоимость: 5 (35 дней). Координаты: x=27, y=3.
+Источник: `common/national_focus/MKN.txt:2603`. Стоимость: 5 (35 дней). Координаты: x=27, y=3.
 
 Предпосылки: (Вольный политехникум [MKN_polytechnic_institute]).
 
@@ -3223,7 +2049,7 @@ focus = {
 
 Описание EN: Anarchist federations from Kharkov to Odessa look to Gulyai-Polye.
 
-Источник: `common/national_focus/MKN.txt:994`. Стоимость: 5 (35 дней). Координаты: x=36, y=3.
+Источник: `common/national_focus/MKN.txt:1058`. Стоимость: 5 (35 дней). Координаты: x=36, y=3.
 
 Предпосылки: (Вольная территория [MKN_the_free_territory]).
 
@@ -3264,7 +2090,7 @@ focus = {
 
 Описание EN: Tractor cooperatives will develop breakthrough armour that needs trained crews and fuel.
 
-Источник: `common/national_focus/MKN.txt:2082`. Стоимость: 5 (35 дней). Координаты: x=46, y=3.
+Источник: `common/national_focus/MKN.txt:2146`. Стоимость: 5 (35 дней). Координаты: x=46, y=3.
 
 Предпосылки: (Штаб степных армий [MKN_steppe_general_staff]).
 
@@ -3316,7 +2142,7 @@ focus = {
 
 Описание EN: Defend port approaches and make grain shipping the navy's main mission.
 
-Источник: `common/national_focus/MKN.txt:2404`. Стоимость: 5 (35 дней). Координаты: x=78, y=3.
+Источник: `common/national_focus/MKN.txt:2468`. Стоимость: 5 (35 дней). Координаты: x=78, y=3.
 
 Предпосылки: (Херсонские верфи [MKN_kherson_shipyard]).
 
@@ -3368,6 +2194,69 @@ focus = {
 }
 ```
 
+### Восстановление украинских магистралей — `MKN_ukrainian_rail_reconstruction`
+
+Английское название: Rebuild the Ukrainian Main Lines. Категория: Изменяет общий экономический дух MKN.
+
+Описание RU: После согласования всех региональных хартий ремонтные артели свяжут Одессу, Киев и Глухов. Постоянные бонусы строительства и ремонта развивают общий хозяйственный дух.
+
+Описание EN: Once regional charters are agreed, repair artels connect Odesa, Kyiv and Hlukhiv. Permanent construction and repair bonuses develop the shared economic spirit.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:189`. Стоимость: 10 (70 дней). Координаты: x=146, y=3.
+
+Предпосылки: (Хартии южных коммун [MKN_southern_commune_charters]) И (Федерация днепровских мастерских [MKN_dnieper_workshop_federation]) И (Мандаты северных волостей [MKN_northern_delegates]).
+
+Непосредственные продолжения: MKN_kyiv_scientific_exchange.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- Изменение параметра: MKN_unified_production_speed_buildings_factor 0.1000
+- Изменение параметра: MKN_unified_repair_speed_factor 0.1000
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_ukrainian_rail_reconstruction
+    icon = GFX_focus_generic_railroad
+    x = 146
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.1000
+            tooltip = MKN_unified_production_speed_buildings_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_repair_speed_factor = 0.1000
+            tooltip = MKN_unified_repair_speed_factor_tt
+        }
+    }
+    prerequisite = {
+        focus = MKN_southern_commune_charters
+    }
+    prerequisite = {
+        focus = MKN_dnieper_workshop_federation
+    }
+    prerequisite = {
+        focus = MKN_northern_delegates
+    }
+}
+```
+
 ### Артельные авиамастерские — `MKN_workshop_airplane_artels`
 
 Английское название: Artel Aviation Workshops. Категория: Строительство, ресурсы или исследовательская мощность.
@@ -3376,7 +2265,7 @@ focus = {
 
 Описание EN: Itinerant aviation workshops repair and assemble machines in the open air.
 
-Источник: `common/national_focus/MKN.txt:873`. Стоимость: 5 (35 дней). Координаты: x=27, y=4.
+Источник: `common/national_focus/MKN.txt:980`. Стоимость: 5 (35 дней). Координаты: x=27, y=4.
 
 Предпосылки: (Технические коммуны [MKN_technical_communes]).
 
@@ -3430,7 +2319,7 @@ focus = {
 
 Описание EN: The state that never quite appears, but is always felt.
 
-Источник: `common/national_focus/MKN.txt:1012`. Стоимость: 5 (35 дней). Координаты: x=32, y=4.
+Источник: `common/national_focus/MKN.txt:1076`. Стоимость: 5 (35 дней). Координаты: x=32, y=4.
 
 Предпосылки: (Крестьяне и рабочие [MKN_farmers_and_workers]).
 
@@ -3471,7 +2360,7 @@ focus = {
 
 Описание EN: The capital of anarchy will show the world a different way to live.
 
-Источник: `common/national_focus/MKN.txt:1030`. Стоимость: 5 (35 дней). Координаты: x=34, y=4.
+Источник: `common/national_focus/MKN.txt:1094`. Стоимость: 5 (35 дней). Координаты: x=34, y=4.
 
 Предпосылки: (Вольные советы [MKN_free_soviets]).
 
@@ -3521,7 +2410,7 @@ focus = {
 
 Описание EN: Village mustering stations will assign recruits to detachments in advance.
 
-Источник: `common/national_focus/MKN.txt:3973`. Стоимость: 5 (35 дней). Координаты: x=52, y=4.
+Источник: `common/national_focus/MKN.txt:3244`. Стоимость: 5 (35 дней). Координаты: x=52, y=4.
 
 Предпосылки: (Конница Батьки [MKN_batko_cavalry]).
 
@@ -3573,7 +2462,7 @@ focus = {
 
 Описание EN: Steppe Falcon cooperatives will adapt light airframes for agile interception.
 
-Источник: `common/national_focus/MKN.txt:2626`. Стоимость: 5 (35 дней). Координаты: x=60, y=4.
+Источник: `common/national_focus/MKN.txt:2690`. Стоимость: 5 (35 дней). Координаты: x=60, y=4.
 
 Предпосылки: (Чёрный рой [MKN_black_swarm]).
 
@@ -3630,7 +2519,7 @@ focus = {
 
 Описание EN: Dnipro Wing cooperatives will adapt light aircraft for ground attack.
 
-Источник: `common/national_focus/MKN.txt:5077`. Стоимость: 5 (35 дней). Координаты: x=68, y=4.
+Источник: `common/national_focus/MKN.txt:4348`. Стоимость: 5 (35 дней). Координаты: x=68, y=4.
 
 Предпосылки: (Авиация поддержки [MKN_close_support_program]).
 
@@ -3687,7 +2576,7 @@ focus = {
 
 Описание EN: Crews will choose targets and timing rather than seek open battle.
 
-Источник: `common/national_focus/MKN.txt:6253`. Стоимость: 5 (35 дней). Координаты: x=88, y=4.
+Источник: `common/national_focus/MKN.txt:5524`. Стоимость: 5 (35 дней). Координаты: x=88, y=4.
 
 Предпосылки: (Школа черноморских рейдеров [MKN_black_sea_smugglers]).
 
@@ -3729,6 +2618,67 @@ focus = {
 }
 ```
 
+### Киевский научный обмен — `MKN_kyiv_scientific_exchange`
+
+Английское название: Kyiv Scientific Exchange. Категория: Строительство, ресурсы или исследовательская мощность; Бонус промышленным технологиям.
+
+Описание RU: Киевские школы и лаборатории получат общие средства. Создадим дополнительный исследовательский коллектив, если слотов меньше пяти; при достигнутом пределе оплатим два промышленных исследования.
+
+Описание EN: Kyiv schools and laboratories receive common funding. Gain a research slot if below five; otherwise fund two industrial research bonuses.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:228`. Стоимость: 10 (70 дней). Координаты: x=146, y=4.
+
+Предпосылки: (Восстановление украинских магистралей [MKN_ukrainian_rail_reconstruction]).
+
+Непосредственные продолжения: MKN_federation_of_free_councils.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- add_research_slot: 1
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_kyiv_scientific_exchange
+    icon = GFX_focus_research
+    x = 146
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                amount_research_slots < 5
+            }
+            add_research_slot = 1
+        }
+        else = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = industry
+            }
+        }
+    }
+    prerequisite = {
+        focus = MKN_ukrainian_rail_reconstruction
+    }
+}
+```
+
 ### Высшая техническая школа — `MKN_advanced_research`
 
 Английское название: Advanced Technical School. Категория: Строительство, ресурсы или исследовательская мощность.
@@ -3737,7 +2687,7 @@ focus = {
 
 Описание EN: New aviation and metallurgy departments establish a second research team.
 
-Источник: `common/national_focus/MKN.txt:2557`. Стоимость: 5 (35 дней). Координаты: x=27, y=5.
+Источник: `common/national_focus/MKN.txt:2621`. Стоимость: 5 (35 дней). Координаты: x=27, y=5.
 
 Предпосылки: (Артельные авиамастерские [MKN_workshop_airplane_artels]).
 
@@ -3778,7 +2728,7 @@ focus = {
 
 Описание EN: Ferrer schools for free children.
 
-Источник: `common/national_focus/MKN.txt:1075`. Стоимость: 5 (35 дней). Координаты: x=34, y=5.
+Источник: `common/national_focus/MKN.txt:1139`. Стоимость: 5 (35 дней). Координаты: x=34, y=5.
 
 Предпосылки: (Гуляйпольская коммуна [MKN_gulyai_polye_commune]).
 
@@ -3818,7 +2768,7 @@ focus = {
 
 Описание EN: Machine-gun carts will provide cavalry detachments with sustained firepower.
 
-Источник: `common/national_focus/MKN.txt:4028`. Стоимость: 5 (35 дней). Координаты: x=52, y=5.
+Источник: `common/national_focus/MKN.txt:3299`. Стоимость: 5 (35 дней). Координаты: x=52, y=5.
 
 Предпосылки: (Сельские сборные пункты [MKN_village_muster]).
 
@@ -3890,7 +2840,7 @@ focus = {
 
 Описание EN: A shared warning system will scramble the right flights without exhausting the whole air force.
 
-Источник: `common/national_focus/MKN.txt:4560`. Стоимость: 5 (35 дней). Координаты: x=64, y=5.
+Источник: `common/national_focus/MKN.txt:3831`. Стоимость: 5 (35 дней). Координаты: x=64, y=5.
 
 Предпосылки: (Сеть наблюдательных постов [MKN_observation_posts]).
 
@@ -3939,7 +2889,7 @@ focus = {
 
 Описание EN: Forward strips will shorten the delay between a support request and the strike.
 
-Источник: `common/national_focus/MKN.txt:5159`. Стоимость: 5 (35 дней). Координаты: x=72, y=5.
+Источник: `common/national_focus/MKN.txt:4430`. Стоимость: 5 (35 дней). Координаты: x=72, y=5.
 
 Предпосылки: (Связные при наземных штабах [MKN_air_ground_liaisons]).
 
@@ -3995,7 +2945,7 @@ focus = {
 
 Описание EN: Concealed anchorages will prepare sorties without exposing raider positions.
 
-Источник: `common/national_focus/MKN.txt:6280`. Стоимость: 5 (35 дней). Координаты: x=84, y=5.
+Источник: `common/national_focus/MKN.txt:5551`. Стоимость: 5 (35 дней). Координаты: x=84, y=5.
 
 Предпосылки: (Торпедные мастерские [MKN_torpedo_artels]).
 
@@ -4052,7 +3002,7 @@ focus = {
 
 Описание EN: Close the export ledgers and dismiss the competing delegations. Abolish the balance of power, adopt a closed economy and reserve more output for the villages.
 
-Источник: `common/national_focus/MKN.txt:7684`. Стоимость: 5 (35 дней). Координаты: x=112, y=5.
+Источник: `common/national_focus/MKN.txt:6955`. Стоимость: 5 (35 дней). Координаты: x=112, y=5.
 
 Предпосылки: (Зерновой ультиматум [MKN_grain_ultimatum]).
 
@@ -4097,6 +3047,70 @@ focus = {
 }
 ```
 
+### Федерация вольных советов — `MKN_federation_of_free_councils`
+
+Английское название: Federation of Free Councils. Категория: Изменяет общий экономический дух MKN.
+
+Описание RU: Региональные договоры станут общим федеративным уставом. Стабильность, снабжение и производственная эффективность закрепят интеграцию через единый хозяйственный дух.
+
+Описание EN: Regional compacts become a common federal charter. Stability, supply and production efficiency consolidate integration through the shared economic spirit.
+
+Источник: `common/national_focus/MKN_ukraine_integration_focuses.txt:266`. Стоимость: 10 (70 дней). Координаты: x=146, y=5.
+
+Предпосылки: (Киевский научный обмен [MKN_kyiv_scientific_exchange]).
+
+Непосредственные продолжения: нет.
+
+Обзор награды (условия и остальные эффекты полностью в коде ниже):
+
+- add_stability: 0.05
+- Изменение параметра: MKN_unified_stability_factor 0.0500
+- Изменение параметра: MKN_unified_supply_consumption_factor -0.0500
+- Изменение параметра: MKN_unified_production_factory_max_efficiency_factor 0.0500
+
+Полное определение; включает точные награды, условия, взаимоисключения и AI:
+
+```pdx
+focus = {
+    id = MKN_federation_of_free_councils
+    icon = GFX_focus_generic_diplomatic_treaty
+    x = 146
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        add_stability = 0.05
+        add_to_variable = {
+            MKN_unified_stability_factor = 0.0500
+            tooltip = MKN_unified_stability_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.0500
+            tooltip = MKN_unified_supply_consumption_factor_tt
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_max_efficiency_factor = 0.0500
+            tooltip = MKN_unified_production_factory_max_efficiency_factor_tt
+        }
+    }
+    prerequisite = {
+        focus = MKN_kyiv_scientific_exchange
+    }
+}
+```
+
 ### Полевой ремонт брони — `MKN_tank_maintenance`
 
 Английское название: Field Armour Repair. Категория: Строительство, ресурсы или исследовательская мощность; Открывает/развивает предприятие или MIO.
@@ -4105,7 +3119,7 @@ focus = {
 
 Описание EN: A Dnipro repair plant will provide replacement assemblies and equipment repairs.
 
-Источник: `common/national_focus/MKN.txt:3577`. Стоимость: 5 (35 дней). Координаты: x=48, y=6.
+Источник: `common/national_focus/MKN.txt:2848`. Стоимость: 5 (35 дней). Координаты: x=48, y=6.
 
 Предпосылки: (Моторизованные обозы [MKN_mobile_supply_columns]).
 
@@ -4180,7 +3194,7 @@ focus = {
 
 Описание EN: Production jigs will improve fighter assembly and armament.
 
-Источник: `common/national_focus/MKN.txt:4612`. Стоимость: 5 (35 дней). Координаты: x=64, y=6.
+Источник: `common/national_focus/MKN.txt:3883`. Стоимость: 5 (35 дней). Координаты: x=64, y=6.
 
 Предпосылки: (Единая воздушная тревога [MKN_air_warning]).
 
@@ -4237,7 +3251,7 @@ focus = {
 
 Описание EN: Front-line workshops will repair damage inflicted by ground fire.
 
-Источник: `common/national_focus/MKN.txt:5230`. Стоимость: 5 (35 дней). Координаты: x=72, y=6.
+Источник: `common/national_focus/MKN.txt:4501`. Стоимость: 5 (35 дней). Координаты: x=72, y=6.
 
 Предпосылки: (Передовые посадочные полосы [MKN_forward_airstrips]).
 
@@ -4294,7 +3308,7 @@ focus = {
 
 Описание EN: Dredged channels will improve ship turnaround and harbour logistics.
 
-Источник: `common/national_focus/MKN.txt:5725`. Стоимость: 5 (35 дней). Координаты: x=76, y=6.
+Источник: `common/national_focus/MKN.txt:4996`. Стоимость: 5 (35 дней). Координаты: x=76, y=6.
 
 Предпосылки: (Береговые сигнальные посты [MKN_coastal_signal_posts]).
 
@@ -4351,7 +3365,7 @@ focus = {
 
 Описание EN: Estuary workshops will organize serial construction of small submarines.
 
-Источник: `common/national_focus/MKN.txt:6339`. Стоимость: 5 (35 дней). Координаты: x=84, y=6.
+Источник: `common/national_focus/MKN.txt:5610`. Стоимость: 5 (35 дней). Координаты: x=84, y=6.
 
 Предпосылки: (Скрытые рейдерские стоянки [MKN_hidden_anchorages]).
 
@@ -4408,7 +3422,7 @@ focus = {
 
 Описание EN: Every commune must keep a muster roll beside its grain ledger. Broaden recruitment, at the price of another wound to communal confidence.
 
-Источник: `common/national_focus/MKN.txt:7173`. Стоимость: 5 (35 дней). Координаты: x=100, y=6.
+Источник: `common/national_focus/MKN.txt:6444`. Стоимость: 5 (35 дней). Координаты: x=100, y=6.
 
 Предпосылки: (Отменить выборность командиров [MKN_abolish_election_of_commanders]).
 
@@ -4552,7 +3566,7 @@ focus = {
 
 Описание EN: Nikopol workshops will manufacture guns to support advancing infantry.
 
-Источник: `common/national_focus/MKN.txt:2575`. Стоимость: 5 (35 дней). Координаты: x=44, y=7.
+Источник: `common/national_focus/MKN.txt:2639`. Стоимость: 5 (35 дней). Координаты: x=44, y=7.
 
 Предпосылки: (Тягачи для эвакуации [MKN_recovery_tractors]).
 
@@ -4601,7 +3615,7 @@ focus = {
 
 Описание EN: Common firing tables will align battery fire with armoured commanders' plans.
 
-Источник: `common/national_focus/MKN.txt:3628`. Стоимость: 5 (35 дней). Координаты: x=48, y=7.
+Источник: `common/national_focus/MKN.txt:2899`. Стоимость: 5 (35 дней). Координаты: x=48, y=7.
 
 Предпосылки: (Полевой ремонт брони [MKN_tank_maintenance]).
 
@@ -4663,7 +3677,7 @@ focus = {
 
 Описание EN: Leaders and wingmen will replace lone heroics with coordinated pairs.
 
-Источник: `common/national_focus/MKN.txt:4645`. Стоимость: 5 (35 дней). Координаты: x=60, y=7.
+Источник: `common/national_focus/MKN.txt:3916`. Стоимость: 5 (35 дней). Координаты: x=60, y=7.
 
 Предпосылки: (Радиомаяки полевых полос [MKN_radio_beacons]).
 
@@ -4731,7 +3745,7 @@ focus = {
 
 Описание EN: Heavier aircraft armament will break enemy strongpoints.
 
-Источник: `common/national_focus/MKN.txt:5284`. Стоимость: 5 (35 дней). Координаты: x=72, y=7.
+Источник: `common/national_focus/MKN.txt:4555`. Стоимость: 5 (35 дней). Координаты: x=72, y=7.
 
 Предпосылки: (Ремонт штурмовиков у фронта [MKN_cas_maintenance]).
 
@@ -4811,7 +3825,7 @@ focus = {
 
 Описание EN: Sonar operators and depth-charge crews will work as one team.
 
-Источник: `common/national_focus/MKN.txt:5797`. Стоимость: 5 (35 дней). Координаты: x=76, y=7.
+Источник: `common/national_focus/MKN.txt:5068`. Стоимость: 5 (35 дней). Координаты: x=76, y=7.
 
 Предпосылки: (Расчистка портовых фарватеров [MKN_harbour_dredging]).
 
@@ -4879,7 +3893,7 @@ focus = {
 
 Описание EN: Night sorties will reduce exposure to coastal observers.
 
-Источник: `common/national_focus/MKN.txt:6412`. Стоимость: 5 (35 дней). Координаты: x=84, y=7.
+Источник: `common/national_focus/MKN.txt:5683`. Стоимость: 5 (35 дней). Координаты: x=84, y=7.
 
 Предпосылки: (Мастерская малых подлодок [MKN_raider_dockyard]).
 
@@ -4941,7 +3955,7 @@ focus = {
 
 Описание EN: Concealed fuel reserves will extend patrols along shipping routes.
 
-Источник: `common/national_focus/MKN.txt:6451`. Стоимость: 5 (35 дней). Координаты: x=88, y=7.
+Источник: `common/national_focus/MKN.txt:5722`. Стоимость: 5 (35 дней). Координаты: x=88, y=7.
 
 Предпосылки: (Испытания торпед [MKN_torpedo_trials]).
 
@@ -4997,7 +4011,7 @@ focus = {
 
 Описание EN: A dozen incompatible breech blocks are a dozen ways to lose a battle. Give the artels common gauges and coordinated orders to raise output and production efficiency.
 
-Источник: `common/national_focus/MKN.txt:7204`. Стоимость: 5 (35 дней). Координаты: x=100, y=7.
+Источник: `common/national_focus/MKN.txt:6475`. Стоимость: 5 (35 дней). Координаты: x=100, y=7.
 
 Предпосылки: (Милитаризовать коммуны [MKN_militarize_communes]).
 
@@ -5052,7 +4066,7 @@ focus = {
 
 Описание EN: The core services are ready: communes now field a mechanized army with optional further specializations. The core programme has ten focuses including its capstone. Further specializations are optional.
 
-Источник: `common/national_focus/MKN.txt:3909`. Стоимость: 5 (35 дней). Координаты: x=46, y=8.
+Источник: `common/national_focus/MKN.txt:3180`. Стоимость: 5 (35 дней). Координаты: x=46, y=8.
 
 Предпосылки: (Артиллерийские артели [MKN_artillery_artels]) И (Общие таблицы огня [MKN_fire_tables]).
 
@@ -5140,7 +4154,7 @@ focus = {
 
 Описание EN: The free columns are ready; additional services can develop according to front-line needs. The core programme has ten focuses including its capstone. Further specializations are optional.
 
-Источник: `common/national_focus/MKN.txt:4452`. Стоимость: 5 (35 дней). Координаты: x=54, y=8.
+Источник: `common/national_focus/MKN.txt:3723`. Стоимость: 5 (35 дней). Координаты: x=54, y=8.
 
 Предпосылки: (Связь между волостями [MKN_militia_signals]) И (Ночные переходы [MKN_night_marches]).
 
@@ -5219,7 +4233,7 @@ focus = {
 
 Описание EN: The core interception system is ready, with night and radar services available as extensions. The core programme has ten focuses including its capstone. Further specializations are optional.
 
-Источник: `common/national_focus/MKN.txt:4993`. Стоимость: 5 (35 дней). Координаты: x=62, y=8.
+Источник: `common/national_focus/MKN.txt:4264`. Стоимость: 5 (35 дней). Координаты: x=62, y=8.
 
 Предпосылки: (Перехват парами [MKN_interceptor_pairs]) И (Возвращать повреждённые машины [MKN_aircraft_recovery]).
 
@@ -5298,7 +4312,7 @@ focus = {
 
 Описание EN: Columns now have air support, with long-range and maritime operations available as extensions. The core programme has ten focuses including its capstone. Further specializations are optional.
 
-Источник: `common/national_focus/MKN.txt:5617`. Стоимость: 5 (35 дней). Координаты: x=70, y=8.
+Источник: `common/national_focus/MKN.txt:4888`. Стоимость: 5 (35 дней). Координаты: x=70, y=8.
 
 Предпосылки: (Обозначение целей с земли [MKN_target_markers]) И (Летающая артиллерия [MKN_flying_artillery]).
 
@@ -5377,7 +4391,7 @@ focus = {
 
 Описание EN: The core escort system is ready, with room to expand anti-submarine and rescue services. The core programme has ten focuses including its capstone. Further specializations are optional.
 
-Источник: `common/national_focus/MKN.txt:6151`. Стоимость: 5 (35 дней). Координаты: x=78, y=8.
+Источник: `common/national_focus/MKN.txt:5422`. Стоимость: 5 (35 дней). Координаты: x=78, y=8.
 
 Предпосылки: (Школа глубинных бомб [MKN_depth_charge_school]) И (Расписания зерновых конвоев [MKN_convoy_schedules]).
 
@@ -5456,7 +4470,7 @@ focus = {
 
 Описание EN: The raiding system is ready, with craft, repair and ambush tactics available as extensions. The core programme has ten focuses including its capstone. Further specializations are optional.
 
-Источник: `common/national_focus/MKN.txt:6766`. Стоимость: 5 (35 дней). Координаты: x=86, y=8.
+Источник: `common/national_focus/MKN.txt:6037`. Стоимость: 5 (35 дней). Координаты: x=86, y=8.
 
 Предпосылки: (Ночные выходы [MKN_night_sorties]) И (Снабжение в тайных бухтах [MKN_raider_supply]).
 
@@ -5535,7 +4549,7 @@ focus = {
 
 Описание EN: The timetable belongs to those who keep it running. Worker crews lower train costs and accelerate railway and infrastructure construction.
 
-Источник: `common/national_focus/MKN.txt:7558`. Стоимость: 5 (35 дней). Координаты: x=106, y=8.
+Источник: `common/national_focus/MKN.txt:6829`. Стоимость: 5 (35 дней). Координаты: x=106, y=8.
 
 Предпосылки: (Пропаганда действием [MKN_propaganda_by_deed]).
 
@@ -5587,7 +4601,7 @@ focus = {
 
 Описание EN: The grain contract buys machine tools as well as tractors. Gain industrial research bonuses, two military factories and stronger construction capacity.
 
-Источник: `common/national_focus/MKN.txt:8049`. Стоимость: 5 (35 дней). Координаты: x=118, y=8.
+Источник: `common/national_focus/MKN.txt:7320`. Стоимость: 5 (35 дней). Координаты: x=118, y=8.
 
 Предпосылки: (Красные военные специалисты [MKN_red_military_specialists]).
 
@@ -5654,7 +4668,7 @@ focus = {
 
 Описание EN: Each commune elects and may recall its delegates. The federation receives reliable mandates without creating a permanent parliament. Free soviets gain another 0.20 on the balance scale.
 
-Источник: `common/national_focus/MKN.txt:1471`. Стоимость: 5 (35 дней). Координаты: x=33, y=9.
+Источник: `common/national_focus/MKN.txt:1535`. Стоимость: 5 (35 дней). Координаты: x=33, y=9.
 
 Предпосылки: (Съезд вольных советов [MKN_constituent_assembly]).
 
@@ -5728,7 +4742,7 @@ focus = {
 
 Описание EN: A crown of wheat and steel.
 
-Источник: `common/national_focus/MKN.txt:1935`. Стоимость: 5 (35 дней). Координаты: x=41, y=9.
+Источник: `common/national_focus/MKN.txt:1999`. Стоимость: 5 (35 дней). Координаты: x=41, y=9.
 
 Предпосылки: (Крестьянский покровитель [MKN_nestor_the_first]).
 
@@ -5787,7 +4801,7 @@ focus = {
 
 Описание EN: Disperse aircraft among reserve strips and strengthen home air defence.
 
-Источник: `common/national_focus/MKN.txt:4716`. Стоимость: 5 (35 дней). Координаты: x=60, y=9.
+Источник: `common/national_focus/MKN.txt:3987`. Стоимость: 5 (35 дней). Координаты: x=60, y=9.
 
 Предпосылки: (Перехват парами [MKN_interceptor_pairs]).
 
@@ -5843,7 +4857,7 @@ focus = {
 
 Описание EN: Organize refuelling so strike groups can fly at the decisive moment.
 
-Источник: `common/national_focus/MKN.txt:5341`. Стоимость: 5 (35 дней). Координаты: x=68, y=9.
+Источник: `common/national_focus/MKN.txt:4612`. Стоимость: 5 (35 дней). Координаты: x=68, y=9.
 
 Предпосылки: (Обозначение целей с земли [MKN_target_markers]).
 
@@ -5899,7 +4913,7 @@ focus = {
 
 Описание EN: Communal workshops exchange their surplus through cooperative agreements and shared technical standards.
 
-Источник: `common/national_focus/MKN.txt:1519`. Стоимость: 5 (35 дней). Координаты: x=33, y=10.
+Источник: `common/national_focus/MKN.txt:1583`. Стоимость: 5 (35 дней). Координаты: x=33, y=10.
 
 Предпосылки: (Отзывные мандаты общин [MKN_free_elections_steppe]).
 
@@ -5945,7 +4959,7 @@ focus = {
 
 Описание EN: Factory assemblies and peasant communes coordinate production through elected delegates. This alternative within anarcho-communism strengthens the soviets by 0.20 without submitting to Moscow.
 
-Источник: `common/national_focus/MKN.txt:1293`. Стоимость: 5 (35 дней). Координаты: x=35, y=10.
+Источник: `common/national_focus/MKN.txt:1357`. Стоимость: 5 (35 дней). Координаты: x=35, y=10.
 
 Предпосылки: (Отзывные мандаты общин [MKN_free_elections_steppe]).
 
@@ -6028,7 +5042,7 @@ focus = {
 
 Описание EN: Voluntarily. Mostly.
 
-Источник: `common/national_focus/MKN.txt:1675`. Стоимость: 5 (35 дней). Координаты: x=38, y=10.
+Источник: `common/national_focus/MKN.txt:1739`. Стоимость: 5 (35 дней). Координаты: x=38, y=10.
 
 Предпосылки: (Красный компромисс [MKN_red_banner_steppe]).
 
@@ -6101,7 +5115,7 @@ focus = {
 
 Описание EN: Fuel reserves and refuelling routes will prevent stalled offensives.
 
-Источник: `common/national_focus/MKN.txt:3719`. Стоимость: 5 (35 дней). Координаты: x=48, y=10.
+Источник: `common/national_focus/MKN.txt:2990`. Стоимость: 5 (35 дней). Координаты: x=48, y=10.
 
 Предпосылки: (Пехота вслед за бронёй [MKN_motorized_infantry]).
 
@@ -6157,7 +5171,7 @@ focus = {
 
 Описание EN: A shared escort frequency will help ships reorganize their protective screen.
 
-Источник: `common/national_focus/MKN.txt:5953`. Стоимость: 5 (35 дней). Координаты: x=80, y=10.
+Источник: `common/national_focus/MKN.txt:5224`. Стоимость: 5 (35 дней). Координаты: x=80, y=10.
 
 Предпосылки: (Постоянный береговой дозор [MKN_coastal_watch]).
 
@@ -6206,7 +5220,7 @@ focus = {
 
 Описание EN: The commune is eternal.
 
-Источник: `common/national_focus/MKN.txt:1237`. Стоимость: 5 (35 дней). Координаты: x=31, y=11.
+Источник: `common/national_focus/MKN.txt:1301`. Стоимость: 5 (35 дней). Координаты: x=31, y=11.
 
 Предпосылки: (Махновская традиция [MKN_everlasting_makhnovshchina]).
 
@@ -6266,7 +5280,7 @@ focus = {
 
 Описание EN: The factory to those who work it.
 
-Источник: `common/national_focus/MKN.txt:1353`. Стоимость: 5 (35 дней). Координаты: x=35, y=11.
+Источник: `common/national_focus/MKN.txt:1417`. Стоимость: 5 (35 дней). Координаты: x=35, y=11.
 
 Предпосылки: (Синдикалистская программа [MKN_council_communism]).
 
@@ -6323,7 +5337,7 @@ focus = {
 
 Описание EN: Local councils implement the state socialist program through a permanent civil administration. These institutions remain viable even if Moscow rejects or betrays the pact.
 
-Источник: `common/national_focus/MKN.txt:6973`. Стоимость: 5 (35 дней). Координаты: x=38, y=11.
+Источник: `common/national_focus/MKN.txt:6244`. Стоимость: 5 (35 дней). Координаты: x=38, y=11.
 
 Предпосылки: (Коллективизировать степь [MKN_collectivize_the_steppe]).
 
@@ -6376,7 +5390,7 @@ focus = {
 
 Описание EN: Nestor I recognizes the village assemblies, communal land agreements and limits on foreign commitments. The crown becomes a guarantor of agrarian isolation rather than a claim to conquest.
 
-Источник: `common/national_focus/MKN.txt:6946`. Стоимость: 5 (35 дней). Координаты: x=41, y=11.
+Источник: `common/national_focus/MKN.txt:6217`. Стоимость: 5 (35 дней). Координаты: x=41, y=11.
 
 Предпосылки: (Оборона крестьянского края [MKN_steppe_empire]).
 
@@ -6429,7 +5443,7 @@ focus = {
 
 Описание EN: Coastal depots will sustain patrols without long refuelling trips.
 
-Источник: `common/national_focus/MKN.txt:5979`. Стоимость: 5 (35 дней). Координаты: x=76, y=11.
+Источник: `common/national_focus/MKN.txt:5250`. Стоимость: 5 (35 дней). Координаты: x=76, y=11.
 
 Предпосылки: (Тральные отряды [MKN_sweeper_sections]).
 
@@ -6485,7 +5499,7 @@ focus = {
 
 Описание EN: Weather reports will help crews approach targets under poor visibility.
 
-Источник: `common/national_focus/MKN.txt:6613`. Стоимость: 5 (35 дней). Координаты: x=84, y=11.
+Источник: `common/national_focus/MKN.txt:5884`. Стоимость: 5 (35 дней). Координаты: x=84, y=11.
 
 Предпосылки: (Радиодисциплина рейдеров [MKN_raider_radio_discipline]).
 
@@ -6534,7 +5548,7 @@ focus = {
 
 Описание EN: A thousand communes, one federation.
 
-Источник: `common/national_focus/MKN.txt:1385`. Стоимость: 5 (35 дней). Координаты: x=35, y=12.
+Источник: `common/national_focus/MKN.txt:1449`. Стоимость: 5 (35 дней). Координаты: x=35, y=12.
 
 Предпосылки: (Рабочий контроль [MKN_workers_control]).
 
@@ -6593,7 +5607,7 @@ focus = {
 
 Описание EN: Weather stations will help select a strike window instead of cancelling the operation.
 
-Источник: `common/national_focus/MKN.txt:5537`. Стоимость: 5 (35 дней). Координаты: x=72, y=12.
+Источник: `common/national_focus/MKN.txt:4808`. Стоимость: 5 (35 дней). Координаты: x=72, y=12.
 
 Предпосылки: (Резерв экипажей штурмовиков [MKN_cas_replacement_crews]).
 
@@ -6642,7 +5656,7 @@ focus = {
 
 Описание EN: Federate the urban and rural workshops into a common engineering network.
 
-Источник: `common/national_focus/MKN.txt:8190`. Стоимость: 5 (35 дней). Координаты: x=14, y=13.
+Источник: `common/national_focus/MKN.txt:7461`. Стоимость: 5 (35 дней). Координаты: x=14, y=13.
 
 Предпосылки: нет нарисованной предпосылки; см. available.
 
@@ -6661,7 +5675,7 @@ focus = {
     cost = 5
     available = {
         OR = {
-            has_completed_focus = MKN_industrial_compact
+            has_completed_focus = MKN_steel_volnitsa
             has_completed_focus = MKN_communal_compact
         }
     }
@@ -6684,7 +5698,7 @@ focus = {
 
 Описание EN: Whether the congress follows the Makhnovist tradition or syndicalist coordination, it guarantees the right to recall every delegate. The charter requires more than 80% control by the free soviets.
 
-Источник: `common/national_focus/MKN.txt:6907`. Стоимость: 5 (35 дней). Координаты: x=33, y=13.
+Источник: `common/national_focus/MKN.txt:6178`. Стоимость: 5 (35 дней). Координаты: x=33, y=13.
 
 Предпосылки: (Тачаночная гвардия [MKN_tachanka_guards] ИЛИ Федерация коммун [MKN_commune_federation]).
 
@@ -6749,7 +5763,7 @@ focus = {
 
 Описание EN: Breakthrough workshops will build armour to field crews' specifications.
 
-Источник: `common/national_focus/MKN.txt:3855`. Стоимость: 5 (35 дней). Координаты: x=44, y=13.
+Источник: `common/national_focus/MKN.txt:3126`. Стоимость: 5 (35 дней). Координаты: x=44, y=13.
 
 Предпосылки: (Единый боевой порядок [MKN_combined_arms]).
 
@@ -6806,7 +5820,7 @@ focus = {
 
 Описание EN: Anti-aircraft batteries and fighters will share the defence of industrial communes.
 
-Источник: `common/national_focus/MKN.txt:4934`. Стоимость: 5 (35 дней). Координаты: x=60, y=13.
+Источник: `common/national_focus/MKN.txt:4205`. Стоимость: 5 (35 дней). Координаты: x=60, y=13.
 
 Предпосылки: (Спасение сбитых лётчиков [MKN_air_rescue]).
 
@@ -6862,7 +5876,7 @@ focus = {
 
 Описание EN: Reserve crews and an additional yard will replace losses.
 
-Источник: `common/national_focus/MKN.txt:6085`. Стоимость: 5 (35 дней). Координаты: x=76, y=13.
+Источник: `common/national_focus/MKN.txt:5356`. Стоимость: 5 (35 дней). Координаты: x=76, y=13.
 
 Предпосылки: (Противолодочные патрули [MKN_anti_submarine_patrols]).
 
@@ -7066,6 +6080,40 @@ focus = {
         factor = 20
     }
     cost = 5
+}
+```
+
+### Съезд украинских коммун — `MKN_ukrainian_communes_congress`
+
+Война закончилась, но власть над областями ещё не стала общим договором. Созовём делегатов всех бывших украинских земель и определим порядок добровольного самоуправления.
+
+```pdx
+focus = {
+    id = MKN_ukrainian_communes_congress
+    icon = GFX_focus_generic_conference
+    x = 146
+    y = 0
+    cost = 5
+    available_if_capitulated = no
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available = {
+        MKN_ukraine_integration_ready = yes
+    }
+    search_filters = {
+        FOCUS_FILTER_POLITICAL
+        FOCUS_FILTER_INDUSTRY
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        add_political_power = 100
+        add_stability = 0.05
+    }
+    allow_branch = {
+        has_country_flag = MKN_ukraine_integration_unlocked
+    }
 }
 ```
 
@@ -10108,6 +9156,10 @@ MKN_free_industry_modifier = {
     supply_consumption_factor = MKN_unified_supply_consumption_factor
     training_time_army_factor = MKN_unified_training_time_army_factor
     global_building_slots_factor = MKN_unified_global_building_slots_factor
+    industry_air_damage_factor = MKN_unified_industry_air_damage_factor
+    repair_speed_factor = MKN_unified_repair_speed_factor
+    energy_gain_factor = MKN_unified_energy_gain_factor
+    convoy_retreat_speed = MKN_unified_convoy_retreat_speed
 }
 MKN_army_development = {
     enable = {
@@ -10205,6 +9257,18 @@ MKN_navy_development = {
 ```pdx
 nww_mkn_rebuild_industry = {
     set_variable = {
+        MKN_unified_convoy_retreat_speed = 0
+    }
+    set_variable = {
+        MKN_unified_energy_gain_factor = 0
+    }
+    set_variable = {
+        MKN_unified_repair_speed_factor = 0
+    }
+    set_variable = {
+        MKN_unified_industry_air_damage_factor = 0
+    }
+    set_variable = {
         MKN_unified_global_building_slots_factor = 0
     }
     set_variable = {
@@ -10254,373 +9318,6 @@ nww_mkn_rebuild_industry = {
     }
     set_variable = {
         MKN_unified_training_time_army_factor = 0.2000
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_communal_compact
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1500
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.1000
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_stability_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_global_building_slots_factor = 0.3000
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_craft_federation
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.1300
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0400
-        }
-        add_to_variable = {
-            MKN_unified_attrition = -0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_dneprostroi
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1000
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_dnieper_dispatch
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0700
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0600
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_elected_brigadiers
-        }
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0800
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0400
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_engineering_delegates
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0800
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_factory_instructors
-        }
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0600
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0700
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0300
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_field_schools
-        }
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0600
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0700
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0300
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_free_cooperatives
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1000
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_freight_artels
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0800
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_industrial_compact
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1500
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.1300
-        }
-        add_to_variable = {
-            MKN_unified_global_building_slots_factor = 0.3000
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_kichkas_bridge
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0800
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_mobile_self_defence
-        }
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0800
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.1000
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0300
-        }
-        add_to_variable = {
-            MKN_unified_army_speed_factor = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_mobile_workshops
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1000
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_nikopol_tube_zavod
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0700
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_production_cycles
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.1500
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0100
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_max_efficiency_factor = 0.1000
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_recallable_commanders
-        }
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0800
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0400
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_shared_orders
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.1100
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.2000
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0400
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_steel_volnitsa
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.1500
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0900
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_steppe_electrification
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_factory_energy_consumption = -0.1000
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_steppe_mint
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.2000
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_supply_congress
-        }
-        add_to_variable = {
-            MKN_unified_supply_consumption_factor = -0.0700
-        }
-        add_to_variable = {
-            MKN_unified_army_org_regain = 0.0600
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_village_smithies
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0800
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_worker_battalions
-        }
-        add_to_variable = {
-            MKN_unified_army_org_factor = 0.1000
-        }
-        add_to_variable = {
-            MKN_unified_training_time_army_factor = -0.0500
-        }
-        add_to_variable = {
-            MKN_unified_max_planning = 0.0800
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_workshop_standards
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_factory_efficiency_gain_factor = 0.0700
-        }
-        add_to_variable = {
-            MKN_unified_research_speed_factor = 0.0200
-        }
-    }
-    if = {
-        limit = {
-            has_completed_focus = MKN_zaporizhstal
-        }
-        add_to_variable = {
-            MKN_unified_political_power_gain = 0.1000
-        }
-        add_to_variable = {
-            MKN_unified_consumer_goods_factor = -0.0500
-        }
-        add_to_variable = {
-            MKN_unified_production_speed_buildings_factor = 0.0500
-        }
-        add_to_variable = {
-            MKN_unified_industrial_capacity_factory = 0.0500
-        }
     }
     if = {
         limit = {
@@ -10741,7 +9438,6 @@ nww_mkn_rebuild_industry = {
     add_dynamic_modifier = {
         modifier = MKN_free_industry_modifier
     }
-    set_country_flag = MKN_industry_unified_v2
     if = {
         limit = {
             has_completed_focus = MKN_militarize_communes
@@ -10787,7 +9483,16 @@ nww_mkn_rebuild_industry = {
     }
     if = {
         limit = {
-            has_completed_focus = MKN_artel_register
+            has_completed_focus = MKN_dneprostroi
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
         }
         add_to_variable = {
             MKN_unified_industrial_capacity_factory = 0.0500
@@ -10800,13 +9505,168 @@ nww_mkn_rebuild_industry = {
         add_to_variable = {
             MKN_unified_industrial_capacity_factory = 0.0500
         }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_research_speed_factor = 0.0500
+        }
     }
     if = {
         limit = {
-            has_completed_focus = MKN_kommunar_tractor
+            has_completed_focus = MKN_steppe_industrial_giants
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_zaporizhstal
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
         }
         add_to_variable = {
             MKN_unified_industrial_capacity_factory = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_worker_battalions
+        }
+        add_to_variable = {
+            MKN_unified_army_org_factor = 0.2000
+        }
+        add_to_variable = {
+            MKN_unified_training_time_army_factor = -0.2000
+        }
+        add_to_variable = {
+            MKN_unified_max_planning = 0.1500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.1500
+        }
+        add_to_variable = {
+            MKN_unified_army_org_regain = 0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_steppe_electrification
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_factory_energy_consumption = -0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_production_cycles
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.2000
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_max_efficiency_factor = 0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_steel_volnitsa
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1500
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.1500
+        }
+        add_to_variable = {
+            MKN_unified_global_building_slots_factor = 0.3000
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.1500
+        }
+        add_to_variable = {
+            MKN_unified_army_org_regain = 0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_free_cooperatives
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_artel_register
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_steppe_markets
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.2000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_mobile_workshops
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_research_speed_factor = 0.0500
         }
     }
     if = {
@@ -10817,6 +9677,153 @@ nww_mkn_rebuild_industry = {
             MKN_unified_industrial_capacity_factory = 0.0500
         }
     }
+    if = {
+        limit = {
+            has_completed_focus = MKN_freight_logistics
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.3000
+        }
+        add_to_variable = {
+            MKN_unified_army_org_regain = 0.1500
+        }
+        add_to_variable = {
+            MKN_unified_attrition = -0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_workshop_standards
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.1500
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_efficiency_gain_factor = 0.2500
+        }
+        add_to_variable = {
+            MKN_unified_research_speed_factor = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_field_schools
+        }
+        add_to_variable = {
+            MKN_unified_army_org_factor = 0.2000
+        }
+        add_to_variable = {
+            MKN_unified_training_time_army_factor = -0.2500
+        }
+        add_to_variable = {
+            MKN_unified_max_planning = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_army_speed_factor = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_communal_compact
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1500
+        }
+        add_to_variable = {
+            MKN_unified_consumer_goods_factor = -0.1000
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_stability_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_global_building_slots_factor = 0.3000
+        }
+        add_to_variable = {
+            MKN_unified_industry_air_damage_factor = -0.2000
+        }
+        add_to_variable = {
+            MKN_unified_repair_speed_factor = 0.2000
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = MKN_project_dnieper_turbines_done
+        }
+        add_to_variable = {
+            MKN_unified_energy_gain_factor = 0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = MKN_project_kherson_terminals_done
+        }
+        add_to_variable = {
+            MKN_unified_convoy_retreat_speed = 0.1000
+        }
+    }
+    set_country_flag = MKN_industry_unified_v2
+    set_country_flag = MKN_industry_projects_v3
+    if = {
+        limit = {
+            has_completed_focus = MKN_southern_commune_charters
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_right_bank_councils
+        }
+        add_to_variable = {
+            MKN_unified_stability_factor = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_northern_delegates
+        }
+        add_to_variable = {
+            MKN_unified_political_power_gain = 0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_dnieper_workshop_federation
+        }
+        add_to_variable = {
+            MKN_unified_industrial_capacity_factory = 0.0500
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_ukrainian_rail_reconstruction
+        }
+        add_to_variable = {
+            MKN_unified_production_speed_buildings_factor = 0.1000
+        }
+        add_to_variable = {
+            MKN_unified_repair_speed_factor = 0.1000
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = MKN_federation_of_free_councils
+        }
+        add_to_variable = {
+            MKN_unified_stability_factor = 0.0500
+        }
+        add_to_variable = {
+            MKN_unified_supply_consumption_factor = -0.0500
+        }
+        add_to_variable = {
+            MKN_unified_production_factory_max_efficiency_factor = 0.0500
+        }
+    }
+    set_country_flag = MKN_industry_integration_v4
 }
 nww_mkn_rebuild_services = {
     set_variable = {
@@ -12291,7 +11298,7 @@ on_actions = {
                     limit = {
                         exists = yes
                         NOT = {
-                            has_country_flag = MKN_industry_unified_v2
+                            has_country_flag = MKN_industry_integration_v4
                         }
                     }
                     nww_mkn_rebuild_industry = yes
@@ -12315,7 +11322,7 @@ on_actions = {
             if = {
                 limit = {
                     NOT = {
-                        has_country_flag = MKN_industry_unified_v2
+                        has_country_flag = MKN_industry_integration_v4
                     }
                 }
                 nww_mkn_rebuild_industry = yes
@@ -12679,6 +11686,1333 @@ ideas = {
 }
 ```
 
+### `common/decisions/MKN_economic_decisions.txt`
+
+```pdx
+MKN_economic_congress_category = {
+    MKN_congress_salt_artels = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        visible = {
+            has_completed_focus = MKN_artel_register
+            NOT = {
+                has_country_flag = MKN_congress_salt_artels_done
+            }
+        }
+        available = {
+            has_capitulated = no
+            any_owned_state = {
+                is_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        cost = 30
+        days_remove = 30
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                NOT = {
+                    any_owned_state = {
+                        is_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                }
+            }
+        }
+        cancel_effect = {
+            add_political_power = 30
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_capitulated = no
+                    any_owned_state = {
+                        is_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    NOT = {
+                        has_country_flag = MKN_congress_salt_artels_done
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    prioritize = {
+                        1082
+                        200
+                        196
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                set_country_flag = MKN_congress_salt_artels_done
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    MKN_congress_recallable_commanders = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        visible = {
+            has_completed_focus = MKN_artel_register
+            NOT = {
+                has_country_flag = MKN_congress_recallable_commanders_done
+            }
+        }
+        available = {
+            has_capitulated = no
+        }
+        cost = 0
+        custom_cost_trigger = {
+            NOT = {
+                command_power < 25
+            }
+        }
+        custom_cost_text = MKN_economic_25_cp
+        complete_effect = {
+            add_command_power = -25
+            army_experience = 10
+            add_timed_idea = {
+                idea = MKN_congress_elected_commanders
+                days = 90
+            }
+            set_country_flag = MKN_congress_recallable_commanders_done
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    MKN_congress_windmills = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        visible = {
+            has_completed_focus = MKN_artel_register
+            NOT = {
+                has_country_flag = MKN_congress_windmills_done
+            }
+        }
+        available = {
+            has_capitulated = no
+            any_owned_state = {
+                is_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        cost = 20
+        days_remove = 30
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                NOT = {
+                    any_owned_state = {
+                        is_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                }
+            }
+        }
+        cancel_effect = {
+            add_political_power = 20
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_capitulated = no
+                    any_owned_state = {
+                        is_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    NOT = {
+                        has_country_flag = MKN_congress_windmills_done
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    prioritize = {
+                        1082
+                        200
+                        196
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                add_stability = 0.05
+                set_country_flag = MKN_congress_windmills_done
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    MKN_congress_harvest_policy = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        visible = {
+            has_completed_focus = MKN_artel_register
+            NOT = {
+                has_country_flag = MKN_congress_harvest_policy_done
+            }
+        }
+        available = {
+            has_capitulated = no
+        }
+        cost = 35
+        complete_effect = {
+            country_event = {
+                id = mkn.31
+                days = 1
+            }
+            set_country_flag = MKN_congress_harvest_policy_done
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    MKN_congress_workers_welfare = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        visible = {
+            has_completed_focus = MKN_artel_register
+            NOT = {
+                has_country_flag = MKN_congress_workers_welfare_done
+            }
+        }
+        available = {
+            has_capitulated = no
+        }
+        cost = 25
+        complete_effect = {
+            add_stability = 0.05
+            add_timed_idea = {
+                idea = MKN_congress_mutual_insurance
+                days = 120
+            }
+            set_country_flag = MKN_congress_workers_welfare_done
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
+MKN_economic_projects_category = {
+    MKN_project_kichkas_bridge = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            196
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            NOT = {
+                has_country_flag = MKN_project_kichkas_bridge_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            NOT = {
+                has_country_flag = MKN_project_kichkas_bridge_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+        }
+        cost = 30
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_kichkas_bridge_done
+                    }
+                }
+                FROM = {
+                    if = {
+                        limit = {
+                            infrastructure < 5
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    if = {
+                        limit = {
+                            infrastructure < 5
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                FROM = {
+                    if = {
+                        limit = {
+                            anti_air_building < 5
+                        }
+                        add_building_construction = {
+                            type = anti_air_building
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                set_country_flag = MKN_project_kichkas_bridge_done
+            }
+        }
+        cancel_effect = {
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_dnieper_waterways = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            226
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            NOT = {
+                has_country_flag = MKN_project_dnieper_waterways_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            NOT = {
+                has_country_flag = MKN_project_dnieper_waterways_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+            196 = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+        cost = 35
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+                196 = {
+                    NOT = {
+                        is_owned_and_controlled_by = ROOT
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    196 = {
+                        is_owned_and_controlled_by = ROOT
+                    }
+                    NOT = {
+                        has_country_flag = MKN_project_dnieper_waterways_done
+                    }
+                }
+                FROM = {
+                    if = {
+                        limit = {
+                            infrastructure < 5
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                196 = {
+                    if = {
+                        limit = {
+                            free_building_slots = {
+                                building = naval_base
+                                size > 0
+                                province = 721
+                            }
+                        }
+                        add_building_construction = {
+                            type = naval_base
+                            level = 1
+                            province = 721
+                            instant_build = yes
+                        }
+                    }
+                }
+                set_country_flag = MKN_project_dnieper_waterways_done
+            }
+        }
+        cancel_effect = {
+            add_political_power = 35
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_steppe_junctions = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            1082
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            NOT = {
+                has_country_flag = MKN_project_steppe_junctions_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            NOT = {
+                has_country_flag = MKN_project_steppe_junctions_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+        }
+        cost = 35
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_steppe_junctions_done
+                    }
+                }
+                FROM = {
+                    if = {
+                        limit = {
+                            free_building_slots = {
+                                building = supply_node
+                                size > 0
+                                province = 429
+                            }
+                        }
+                        add_building_construction = {
+                            type = supply_node
+                            level = 1
+                            province = 429
+                            instant_build = yes
+                        }
+                    }
+                }
+                build_railway = {
+                    level = 1
+                    build_only_on_allied = yes
+                    start_province = 429
+                    target_province = 9571
+                }
+                set_country_flag = MKN_project_steppe_junctions_done
+            }
+        }
+        cancel_effect = {
+            add_political_power = 35
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_dnieper_turbines = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            226
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_steppe_electrification
+            NOT = {
+                has_country_flag = MKN_project_dnieper_turbines_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_steppe_electrification
+            NOT = {
+                has_country_flag = MKN_project_dnieper_turbines_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+            num_of_civilian_factories_available_for_projects > 1
+        }
+        cost = 0
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_dnieper_turbines_done
+                    }
+                }
+                FROM = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                add_to_variable = {
+                    MKN_unified_energy_gain_factor = 0.1000
+                    tooltip = MKN_unified_energy_gain_factor_tt
+                }
+                set_country_flag = MKN_project_dnieper_turbines_done
+            }
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_katerynoslav_grid = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            200
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_steppe_electrification
+            NOT = {
+                has_country_flag = MKN_project_katerynoslav_grid_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_steppe_electrification
+            NOT = {
+                has_country_flag = MKN_project_katerynoslav_grid_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+            num_of_civilian_factories_available_for_projects > 1
+        }
+        cost = 0
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_katerynoslav_grid_done
+                    }
+                }
+                FROM = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                set_country_flag = MKN_project_katerynoslav_grid_done
+            }
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_reserve_coal = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            196
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_steppe_electrification
+            NOT = {
+                has_country_flag = MKN_project_reserve_coal_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_steppe_electrification
+            NOT = {
+                has_country_flag = MKN_project_reserve_coal_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+            num_of_civilian_factories_available_for_projects > 1
+        }
+        cost = 0
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_reserve_coal_done
+                    }
+                }
+                FROM = {
+                    add_resource = {
+                        type = coal
+                        amount = 12
+                    }
+                }
+                set_country_flag = MKN_project_reserve_coal_done
+            }
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_zaporizhzhia_elevators = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            226
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_grain_exchanges
+            NOT = {
+                has_country_flag = MKN_project_zaporizhzhia_elevators_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_grain_exchanges
+            NOT = {
+                has_country_flag = MKN_project_zaporizhzhia_elevators_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+        }
+        cost = 40
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_zaporizhzhia_elevators_done
+                    }
+                }
+                add_stability = 0.05
+                add_offsite_building = {
+                    type = industrial_complex
+                    level = 1
+                }
+                set_country_flag = MKN_project_zaporizhzhia_elevators_done
+            }
+        }
+        cancel_effect = {
+            add_political_power = 40
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_kherson_terminals = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            196
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_grain_exchanges
+            NOT = {
+                has_country_flag = MKN_project_kherson_terminals_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_grain_exchanges
+            NOT = {
+                has_country_flag = MKN_project_kherson_terminals_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+        }
+        cost = 30
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_kherson_terminals_done
+                    }
+                }
+                FROM = {
+                    if = {
+                        limit = {
+                            infrastructure < 5
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                add_to_variable = {
+                    MKN_unified_convoy_retreat_speed = 0.1000
+                    tooltip = MKN_unified_convoy_retreat_speed_tt
+                }
+                set_country_flag = MKN_project_kherson_terminals_done
+            }
+        }
+        cancel_effect = {
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    MKN_project_steppe_sowing = {
+        icon = decision_generic_construction
+        allowed = {
+            original_tag = MKN
+        }
+        state_target = yes
+        targets = {
+            1082
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            has_completed_focus = MKN_grain_exchanges
+            NOT = {
+                has_country_flag = MKN_project_steppe_sowing_done
+            }
+        }
+        target_root_trigger = {
+            has_completed_focus = MKN_grain_exchanges
+            NOT = {
+                has_country_flag = MKN_project_steppe_sowing_done
+            }
+        }
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+        }
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+                is_core_of = ROOT
+            }
+            has_capitulated = no
+        }
+        cost = 40
+        days_remove = 60
+        days_re_enable = 0
+        cancel_trigger = {
+            OR = {
+                has_capitulated = yes
+                FROM = {
+                    OR = {
+                        NOT = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        is_owned_and_controlled_by = ROOT
+                        is_core_of = ROOT
+                    }
+                    has_capitulated = no
+                    NOT = {
+                        has_country_flag = MKN_project_steppe_sowing_done
+                    }
+                }
+                add_manpower = 10000
+                FROM = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                set_country_flag = MKN_project_steppe_sowing_done
+            }
+        }
+        cancel_effect = {
+            add_political_power = 40
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+}
+```
+
+### `common/decisions/categories/MKN_economic_categories.txt`
+
+```pdx
+MKN_economic_congress_category = {
+    icon = generic_industry
+    allowed = {
+        original_tag = MKN
+    }
+    visible = {
+        has_completed_focus = MKN_artel_register
+    }
+}
+MKN_economic_projects_category = {
+    icon = generic_industry
+    allowed = {
+        original_tag = MKN
+    }
+    visible = {
+        OR = {
+            has_completed_focus = MKN_dnieper_logistics_hub
+            has_completed_focus = MKN_steppe_electrification
+            has_completed_focus = MKN_grain_exchanges
+        }
+    }
+}
+```
+
+### `common/ideas/MKN_economic_ideas.txt`
+
+```pdx
+ideas = {
+    country = {
+        MKN_congress_elected_commanders = {
+            picture = generic_army_war_college
+            allowed = {
+                original_tag = MKN
+            }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.05
+            }
+        }
+        MKN_congress_mutual_insurance = {
+            picture = generic_industrial_concern_1
+            allowed = {
+                original_tag = MKN
+            }
+            removal_cost = -1
+            modifier = {
+                repair_speed_factor = 0.10
+            }
+        }
+    }
+}
+```
+
+### `common/scripted_triggers/MKN_ukraine_integration_triggers.txt`
+
+```pdx
+MKN_owns_ukrainian_homeland = {
+    tag = MKN
+    192 = {
+        is_owned_and_controlled_by = MKN
+    }
+    193 = {
+        is_owned_and_controlled_by = MKN
+    }
+    197 = {
+        is_owned_and_controlled_by = MKN
+    }
+    198 = {
+        is_owned_and_controlled_by = MKN
+    }
+    199 = {
+        is_owned_and_controlled_by = MKN
+    }
+    201 = {
+        is_owned_and_controlled_by = MKN
+    }
+    202 = {
+        is_owned_and_controlled_by = MKN
+    }
+    203 = {
+        is_owned_and_controlled_by = MKN
+    }
+    225 = {
+        is_owned_and_controlled_by = MKN
+    }
+    259 = {
+        is_owned_and_controlled_by = MKN
+    }
+    834 = {
+        is_owned_and_controlled_by = MKN
+    }
+}
+MKN_ukraine_integration_ready = {
+    MKN_owns_ukrainian_homeland = yes
+    NOT = {
+        UKR = {
+            exists = yes
+        }
+    }
+    has_capitulated = no
+    has_war = no
+}
+MKN_can_move_capital_to_kyiv = {
+    tag = MKN
+    NOT = {
+        UKR = {
+            exists = yes
+        }
+    }
+    has_capitulated = no
+    NOT = {
+        has_country_flag = MKN_capital_moved_to_kyiv
+    }
+    202 = {
+        is_owned_and_controlled_by = MKN
+        is_capital = no
+    }
+    has_full_control_of_state = 202
+}
+```
+
+### `common/scripted_effects/MKN_ukraine_integration_effects.txt`
+
+```pdx
+MKN_observe_ukrainian_integration = {
+    if = {
+        limit = {
+            MKN_ukraine_integration_ready = yes
+            NOT = {
+                has_country_flag = MKN_ukraine_integration_unlocked
+            }
+        }
+        set_country_flag = MKN_ukraine_integration_unlocked
+        mark_focus_tree_layout_dirty = yes
+        country_event = {
+            id = mkn_integration.1
+            days = 1
+        }
+    }
+}
+```
+
+### `common/on_actions/MKN_ukraine_integration_on_actions.txt`
+
+```pdx
+on_actions = {
+    on_startup = {
+        effect = {
+            MKN = {
+                if = {
+                    limit = {
+                        exists = yes
+                    }
+                    MKN_observe_ukrainian_integration = yes
+                }
+            }
+        }
+    }
+    on_daily_MKN = {
+        effect = {
+            MKN_observe_ukrainian_integration = yes
+        }
+    }
+}
+```
+
+### `events/MKN_ukraine_integration_events.txt`
+
+```pdx
+add_namespace = mkn_integration
+country_event = {
+    id = mkn_integration.1
+    title = mkn_integration.1.t
+    desc = mkn_integration.1.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+    option = {
+        name = mkn_integration.1.a
+    }
+}
+```
+
+### `common/decisions/MKN_ukraine_integration_decisions.txt`
+
+```pdx
+MKN_ukrainian_administration_category = {
+    MKN_move_capital_to_kyiv = {
+        icon = GFX_decision_SOV_place_hq
+        allowed = {
+            original_tag = MKN
+        }
+        visible = {
+            tag = MKN
+            NOT = {
+                UKR = {
+                    exists = yes
+                }
+            }
+            NOT = {
+                has_country_flag = MKN_capital_moved_to_kyiv
+            }
+            202 = {
+                is_capital = no
+            }
+        }
+        available = {
+            MKN_can_move_capital_to_kyiv = yes
+        }
+        cost = 50
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = {
+                    MKN_can_move_capital_to_kyiv = yes
+                }
+                set_capital = {
+                    state = 202
+                    remember_old_capital = no
+                }
+                set_country_flag = MKN_capital_moved_to_kyiv
+            }
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+}
+```
+
+### `common/decisions/categories/MKN_ukraine_integration_categories.txt`
+
+```pdx
+MKN_ukrainian_administration_category = {
+    icon = generic_political_actions
+    allowed = {
+        original_tag = MKN
+    }
+    visible = {
+        tag = MKN
+        NOT = {
+            UKR = {
+                exists = yes
+            }
+        }
+        202 = {
+            is_owned_by = MKN
+        }
+    }
+}
+```
+
 ## Предприятия и производственные организации
 
 ### `common/military_industrial_organization/organizations/nww_organizations.txt`
@@ -12811,7 +13145,10 @@ MKN_rifle_artels_organization = {
         }
         available = {
             FROM = {
-                has_completed_focus = MKN_machinegun_carts
+                OR = {
+                    has_completed_focus = MKN_machinegun_carts
+                    has_completed_focus = MKN_workshop_standards
+                }
             }
         }
         equipment_bonus = {
@@ -12833,7 +13170,10 @@ MKN_rifle_artels_organization = {
         }
         available = {
             FROM = {
-                has_completed_focus = MKN_machinegun_carts
+                OR = {
+                    has_completed_focus = MKN_machinegun_carts
+                    has_completed_focus = MKN_workshop_standards
+                }
             }
         }
         equipment_bonus = {
@@ -12859,7 +13199,10 @@ MKN_rifle_artels_organization = {
         }
         available = {
             FROM = {
-                has_completed_focus = MKN_free_army_compact
+                OR = {
+                    has_completed_focus = MKN_free_army_compact
+                    has_completed_focus = MKN_communal_compact
+                }
             }
         }
         equipment_bonus = {
@@ -13336,6 +13679,73 @@ MKN_submarine_works_organization = {
 }
 ```
 
+### `common/military_industrial_organization/organizations/MKN_organizations.txt`
+
+```pdx
+MKN_free_workshops = {
+    include = generic_infantry_equipment_organization
+    icon = GFX_idea_MKN_free_workshops
+    allowed = {
+        original_tag = MKN
+        has_dlc = "Arms Against Tyranny"
+    }
+    available = {
+        FROM = {
+            has_completed_focus = MKN_free_workshops_focus
+        }
+    }
+    initial_trait = {
+        name = MKN_free_workshops_initial_trait
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+        }
+        production_bonus = {
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+}
+MKN_zaporizhstal_organization = {
+    include = generic_artillery_organization
+    icon = GFX_idea_generic_industrial_concern_1
+    allowed = {
+        original_tag = MKN
+        has_dlc = "Arms Against Tyranny"
+    }
+    available = {
+        FROM = {
+            has_completed_focus = MKN_zaporizhstal
+        }
+    }
+    initial_trait = {
+        name = MKN_zaporizhstal_organization_initial
+        equipment_bonus = {
+            reliability = 0.05
+        }
+        production_bonus = {
+            production_capacity_factor = 0.05
+        }
+    }
+    add_trait = {
+        token = MKN_zaporizhstal_serial_forging
+        name = MKN_zaporizhstal_serial_forging
+        icon = GFX_generic_mio_trait_icon_production_capacity
+        special_trait_background = yes
+        position = {
+            x = 13
+            y = 0
+        }
+        available = {
+            FROM = {
+                has_completed_focus = MKN_production_cycles
+            }
+        }
+        production_bonus = {
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+}
+```
+
 ### `common/ideas/nww_companies.txt`
 
 ```pdx
@@ -13458,6 +13868,601 @@ MKN_submarine_works_company = {
 }
 ```
 
+### `common/ideas/nww_MKN_ideas.txt`
+
+```pdx
+MKN_free_territory = {
+    picture = gre_agricultural_communes
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        conscription = 0.02
+        supply_consumption_factor = -0.05
+        army_attack_factor = 0.05
+    }
+}
+MKN_free_soviets_idea = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        conscription = 0.02
+        supply_consumption_factor = -0.05
+        stability_factor = 0.03
+        political_power_gain = 0.05
+    }
+}
+MKN_tachanka_warfare = {
+    picture = HABSBURG_cavalry
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_attack_factor = 0.1
+    }
+}
+MKN_railway_guards = {
+    picture = ARG_invest_in_railways
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = 0.05
+        research_speed_factor = 0.05
+    }
+}
+MKN_dneprostroi_power = {
+    picture = por_hydroelectric_power
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        production_speed_buildings_factor = 0.05
+        factory_energy_consumption = -0.10
+    }
+}
+MKN_electrified_steppe = {
+    picture = ETH_ethiopian_electric_power
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        research_speed_factor = 0.05
+        industrial_capacity_factory = 0.05
+    }
+}
+MKN_steel_horses_idea = {
+    picture = generic_acquire_tanks
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_armor_attack_factor = 0.05
+        army_armor_defence_factor = 0.1
+        army_armor_speed_factor = 0.05
+    }
+}
+MKN_batko_cavalry_idea = {
+    picture = HABSBURG_cavalry
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        modifier_army_sub_unit_cavalry_attack_factor = 0.1
+        modifier_army_sub_unit_cavalry_speed_factor = 0.1
+        modifier_army_sub_unit_cavalry_defence_factor = 0.05
+        conscription = 0.02
+    }
+}
+MKN_black_guard_veterans_idea = {
+    picture = YUG_local_militias
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        max_planning = 0.1
+        org_loss_when_moving = -0.05
+    }
+}
+MKN_steppe_quartermasters_idea = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        supply_consumption_factor = -0.1
+    }
+}
+MKN_free_airmen = {
+    picture = generic_air_bonus
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        air_agility_factor = 0.05
+        air_accidents_factor = -0.05
+    }
+}
+MKN_black_swarm_idea = {
+    picture = air_support_focus
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        air_agility_factor = 0.1
+        air_maximum_speed_factor = 0.1
+        air_accidents_factor = -0.05
+    }
+}
+MKN_free_mint_idea = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        political_power_gain = 0.2
+    }
+}
+MKN_anarchic_economy_idea = {
+    picture = CHL_near_anarchic_society
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        political_power_gain = -0.25
+        consumer_goods_factor = 0.15
+        production_speed_buildings_factor = -0.15
+    }
+}
+MKN_smuggling_network = {
+    picture = COG_transports_et_ports
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        consumer_goods_factor = -0.05
+    }
+}
+MKN_communal_federation = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        stability_factor = 0.05
+        production_speed_buildings_factor = 0.05
+    }
+}
+MKN_federal_republic = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        stability_factor = 0.10
+        political_power_gain = 0.10
+    }
+}
+MKN_planned_economy = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = 0.08
+        consumer_goods_factor = -0.03
+    }
+}
+MKN_military_directory = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        war_support_factor = 0.10
+        army_org_factor = 0.05
+    }
+}
+MKN_imperial_administration = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        stability_factor = 0.10
+        political_power_gain = 0.15
+    }
+}
+MKN_economic_coordination = {
+    picture = CHL_near_anarchic_society
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        political_power_gain = -0.15
+        consumer_goods_factor = 0.10
+        production_speed_buildings_factor = -0.10
+    }
+}
+MKN_economic_recovery = {
+    picture = CHL_near_anarchic_society
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        political_power_gain = -0.05
+        consumer_goods_factor = 0.05
+        production_speed_buildings_factor = -0.05
+    }
+}
+MKN_fragmented_workshops = {
+    picture = generic_industrial_concern_1
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = -0.15
+        production_factory_efficiency_gain_factor = -0.20
+        research_speed_factor = -0.05
+    }
+}
+MKN_catalogued_workshops = {
+    picture = generic_industrial_concern_1
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = -0.10
+        production_factory_efficiency_gain_factor = -0.12
+        research_speed_factor = -0.03
+    }
+}
+MKN_standardized_workshops = {
+    picture = generic_industrial_concern_2
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = -0.05
+        production_factory_efficiency_gain_factor = -0.05
+        research_speed_factor = -0.01
+    }
+}
+MKN_broken_supply = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        supply_consumption_factor = 0.20
+        army_org_regain = -0.15
+    }
+}
+MKN_mapped_supply = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        supply_consumption_factor = 0.12
+        army_org_regain = -0.10
+    }
+}
+MKN_coordinated_supply = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        supply_consumption_factor = 0.05
+        army_org_regain = -0.04
+    }
+}
+MKN_untrained_militias = {
+    picture = YUG_local_militias
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_org_factor = -0.15
+        training_time_army_factor = 0.20
+        max_planning = -0.10
+    }
+}
+MKN_accountable_militias = {
+    picture = YUG_local_militias
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_org_factor = -0.10
+        training_time_army_factor = 0.12
+        max_planning = -0.06
+    }
+}
+MKN_drilled_militias = {
+    picture = YUG_local_militias
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_org_factor = -0.04
+        training_time_army_factor = 0.05
+        max_planning = -0.03
+    }
+}
+MKN_dnieper_economy = {
+    picture = generic_constitutional_guarantees
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        production_speed_buildings_factor = 0.08
+        political_power_gain = 0.10
+    }
+}
+MKN_mutual_aid_economy = {
+    picture = gre_agricultural_communes
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        consumer_goods_factor = -0.05
+        stability_factor = 0.05
+        political_power_gain = 0.10
+    }
+}
+MKN_serial_production = {
+    picture = generic_industrial_concern_2
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = 0.10
+        production_factory_max_efficiency_factor = 0.10
+    }
+}
+MKN_cooperative_production = {
+    picture = generic_industrial_concern_2
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        industrial_capacity_factory = 0.06
+        production_factory_efficiency_gain_factor = 0.15
+        research_speed_factor = 0.03
+    }
+}
+MKN_dnieper_logistics = {
+    picture = ARG_invest_in_railways
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        supply_consumption_factor = -0.10
+        army_org_regain = 0.05
+    }
+}
+MKN_artel_logistics = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        supply_consumption_factor = -0.08
+        attrition = -0.05
+    }
+}
+MKN_worker_battalions_idea = {
+    picture = YUG_local_militias
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_org_factor = 0.06
+        max_planning = 0.05
+    }
+}
+MKN_mobile_self_defence_idea = {
+    picture = HABSBURG_cavalry
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        army_org_factor = 0.04
+        army_speed_factor = 0.05
+        training_time_army_factor = -0.05
+    }
+}
+MKN_construction_drive = {
+    picture = generic_industrial_concern_1
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        production_speed_buildings_factor = 0.10
+        consumer_goods_factor = 0.05
+    }
+}
+MKN_careful_investment = {
+    picture = generic_industrial_concern_1
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        production_factory_efficiency_gain_factor = 0.08
+    }
+}
+MKN_export_contracts = {
+    picture = generic_supply_depot
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        consumer_goods_factor = -0.05
+        political_power_gain = -0.10
+    }
+}
+MKN_local_reserves = {
+    picture = gre_agricultural_communes
+    allowed = {
+        original_tag = MKN
+    }
+    removal_cost = -1
+    modifier = {
+        stability_factor = 0.03
+        supply_consumption_factor = -0.05
+    }
+}
+MKN_industry_concern_1 = {
+    visible = {
+        NOT = {
+            has_completed_focus = MKN_steel_volnitsa
+        }
+    }
+    picture = generic_industrial_concern_1
+    allowed = {
+        original_tag = MKN
+    }
+    available = {
+        has_completed_focus = MKN_zaporizhstal
+        NOT = {
+            has_completed_focus = MKN_steel_volnitsa
+        }
+    }
+    cost = 100
+    research_bonus = {
+        industry = 0.1
+    }
+    modifier = {
+        production_speed_buildings_factor = 0.05
+    }
+}
+MKN_industry_concern_2 = {
+    visible = {
+        has_completed_focus = MKN_steel_volnitsa
+    }
+    name = MKN_industry_concern_1
+    picture = generic_industrial_concern_2
+    allowed = {
+        original_tag = MKN
+    }
+    available = {
+        has_completed_focus = MKN_steel_volnitsa
+    }
+    cost = 100
+    research_bonus = {
+        industry = 0.15
+    }
+    modifier = {
+        production_speed_buildings_factor = 0.08
+        industrial_capacity_factory = 0.05
+    }
+}
+MKN_rifle_concern_1 = {
+    visible = {
+        NOT = {
+            has_completed_focus = MKN_workshop_standards
+        }
+    }
+    allowed = {
+        original_tag = MKN
+        NOT = {
+            has_dlc = "Arms Against Tyranny"
+        }
+    }
+    available = {
+        NOT = {
+            has_completed_focus = MKN_workshop_standards
+        }
+        OR = {
+            has_completed_focus = MKN_rifle_concern
+            has_completed_focus = MKN_village_muster
+        }
+    }
+    cost = 100
+    research_bonus = {
+        infantry_weapons = 0.1
+    }
+    modifier = {
+        political_power_gain = 0.05
+    }
+    picture = MKN_company_rifle_artels
+}
+MKN_rifle_concern_2 = {
+    visible = {
+        has_completed_focus = MKN_workshop_standards
+    }
+    name = MKN_rifle_concern_1
+    allowed = {
+        original_tag = MKN
+        NOT = {
+            has_dlc = "Arms Against Tyranny"
+        }
+    }
+    available = {
+        OR = {
+            has_completed_focus = MKN_rifle_concern
+            has_completed_focus = MKN_village_muster
+        }
+        has_completed_focus = MKN_workshop_standards
+    }
+    cost = 100
+    research_bonus = {
+        infantry_weapons = 0.15
+    }
+    modifier = {
+        political_power_gain = 0.05
+        industrial_capacity_factory = 0.03
+    }
+    picture = MKN_company_rifle_artels
+}
+```
+
 ### `common/country_leader/nww_mkn_industry_traits.txt`
 
 ```pdx
@@ -13488,6 +14493,140 @@ leader_traits = {
         random = no
     }
 }
+```
+
+## Локализация новых хозяйственных решений, проектов и предприятий
+
+### `localisation/MKN_economic_l_russian.yml`
+
+```yaml
+l_russian:
+ MKN_southern_resources: "Ресурсная база Юга"
+ MKN_southern_resources_desc: "Никопольский марганец и угольные промыслы войдут в общий договор поставок. Сырьё останется достоянием коммун, а заводы получат устойчивую основу для больших серий."
+ MKN_steppe_industrial_giants: "Индустриальные гиганты степи"
+ MKN_steppe_industrial_giants_desc: "«Коммунар», трубные мастерские и алюминиевое производство объединят заказы и инженерные кадры. Новые корпуса дадут фабрику и три военных завода, а собственный алюминий обеспечит машиностроение."
+ MKN_dnieper_logistics_hub: "Единая днепровская логистика"
+ MKN_dnieper_logistics_hub_desc: "Диспетчеры сведут речные, железнодорожные и заводские расписания. На карте станут доступны три проекта: Кичкасский мост, расчистка Днепра и степные узловые станции. Каждая стройка длится 60 дней."
+ MKN_steppe_markets: "Степные рынки"
+ MKN_steppe_markets_desc: "Базары, монетный двор и кредитные кассы примут общий расчёт без ростовщичества. Две фабрики и устойчивый политический доход закрепят доверие к договорам между коммунами."
+ MKN_grain_exchanges: "Хлебные биржи и резервы"
+ MKN_grain_exchanges_desc: "Фабрика в Херсоне поддержит переработку и обмен урожая. На карте открываются три проекта по 60 дней: запорожские элеваторы, херсонские зерновые терминалы и степная посевная. Политику запасов выбирает хозяйственный конгресс."
+ MKN_freight_logistics: "Гужевая и грузовая логистика"
+ MKN_freight_logistics_desc: "Обозные артели и ремонтные биржи распределят склады между хуторами. Договоры подвоза резко сократят расход снабжения и истощение, а резервный уголь обеспечит мастерские."
+ MKN_economic_congress_category: "Хозяйственный конгресс"
+ MKN_economic_congress_category_desc: "Артели оплачивают общие программы из собственных средств. Каждая инициатива принимается один раз; длительные стройки выдают награду по завершении."
+ MKN_economic_projects_category: "Региональные хозяйственные проекты"
+ MKN_economic_projects_category_desc: "Выберите проект на карте. Работы длятся 60 дней и требуют политической власти либо двух гражданских фабрик. Потеря владения или контроля отменяет стройку с возвратом PP. Завершённые проекты повторять нельзя."
+ MKN_economic_25_cp: "£command_power §Y25§!"
+ MKN_congress_elected_commanders: "Мандаты отзывных командиров"
+ MKN_congress_elected_commanders_desc: "Обученные выборные командиры укрепляют организацию ополчения на 90 дней."
+ MKN_congress_mutual_insurance: "Касса взаимного ремонта"
+ MKN_congress_mutual_insurance_desc: "Коммуны страхуют инструменты и оплачивают общий ремонт в течение 120 дней."
+ MKN_zaporizhstal_organization: "Концерн «Вольная сталь»"
+ MKN_zaporizhstal_organization_initial: "Днепровские сталевары"
+ MKN_zaporizhstal_serial_forging: "Серийная ковка орудий"
+ MKN_logistics_projects_unlock_tt: "Открывает три §Y60-дневных проекта на карте§!: Кичкасский мост (196), расчистка Днепра (226; морская база в Херсоне, 196), узловые станции (1082)."
+ MKN_energy_projects_unlock_tt: "Открывает три §Y60-дневных проекта§!: турбины (226), электросеть (200), угольные линии (196). Каждый временно занимает §Y2 гражданские фабрики§!."
+ MKN_grain_projects_unlock_tt: "Открывает три §Y60-дневных проекта на карте§!: элеваторы (226), херсонские терминалы (196), посевная (1082)."
+ MKN_economic_congress_unlock_tt: "Открывает решения §Y«Хозяйственного конгресса»§!: соляные артели, отзывные командиры, ветряки, хлебная политика и взаимное страхование."
+ MKN_unified_industry_air_damage_factor_tt: "Ущерб промышленности от бомбардировок: $RIGHT|-=%1$"
+ MKN_unified_repair_speed_factor_tt: "Скорость ремонта: $RIGHT|+=%1$"
+ MKN_unified_energy_gain_factor_tt: "Получаемая энергия: $RIGHT|+=%1$"
+ MKN_unified_convoy_retreat_speed_tt: "Скорость отступления конвоев: $RIGHT|+=%1$"
+ MKN_congress_salt_artels: "Соляные артели"
+ MKN_congress_salt_artels_desc: "Оплатим соляные промыслы и переработку: за 30 дней появится фабрика в принадлежащем нам и контролируемом национальном регионе."
+ MKN_congress_recallable_commanders: "Отзывные командиры"
+ MKN_congress_recallable_commanders_desc: "Потратим 25 командного ресурса на общие сборы: получим 10 опыта армии и +5% организации на 90 дней."
+ MKN_congress_windmills: "Ветряки вольных хуторов"
+ MKN_congress_windmills_desc: "За 30 дней поставим мельничное оборудование и откроем фабрику в национальном регионе; договор добавит 5% стабильности."
+ MKN_congress_harvest_policy: "Хлеб для обмена и резерва"
+ MKN_congress_harvest_policy_desc: "Хозяйственный съезд выберет экспортные договоры или местные запасы на один год."
+ MKN_congress_workers_welfare: "Страховая касса коммун"
+ MKN_congress_workers_welfare_desc: "Общая касса даст 5% стабильности и ускорит ремонт на 10% в течение 120 дней."
+ MKN_project_kichkas_bridge: "Восстановление Кичкасского моста"
+ MKN_project_kichkas_bridge_desc: "Две ступени инфраструктуры (до предела 5) и одна ступень ПВО в Херсоне (196). Работы длятся 60 дней."
+ MKN_project_dnieper_waterways: "Расчистка речных путей Днепра"
+ MKN_project_dnieper_waterways_desc: "Инфраструктура в штате 226 и морская база в прибрежном Херсоне (196, провинция 721). Для всего проекта необходимо удерживать оба региона. Работы длятся 60 дней."
+ MKN_project_steppe_junctions: "Степные узловые станции"
+ MKN_project_steppe_junctions_desc: "Узел снабжения в Гуляй-Поле (1082, провинция 429), если его ещё нет, и железнодорожное соединение с побережьем (9571). Работы длятся 60 дней."
+ MKN_project_dnieper_turbines: "Восстановление турбин Днепрогэса"
+ MKN_project_dnieper_turbines_desc: "Две фабрики в штате 226 и постоянные +10% получаемой энергии. На время работ заняты две гражданские фабрики. Работы длятся 60 дней."
+ MKN_project_katerynoslav_grid: "Электрификация Екатеринослава"
+ MKN_project_katerynoslav_grid_desc: "Фабрика и военный завод в штате 200. На время работ заняты две гражданские фабрики. Работы длятся 60 дней."
+ MKN_project_reserve_coal: "Резервные угольные линии"
+ MKN_project_reserve_coal_desc: "Дополнительные 12 единиц угля в Херсоне (196). На время работ заняты две гражданские фабрики. Работы длятся 60 дней."
+ MKN_project_zaporizhzhia_elevators: "Элеваторы Запорожья"
+ MKN_project_zaporizhzhia_elevators_desc: "После устройства элеваторов в штате 226: +5% стабильности и одна внекарточная гражданская фабрика от зерновой торговли. Работы длятся 60 дней."
+ MKN_project_kherson_terminals: "Зерновые терминалы Херсона"
+ MKN_project_kherson_terminals_desc: "Инфраструктура в Херсоне (196) и постоянные +10% скорости отступления конвоев. Работы длятся 60 дней."
+ MKN_project_steppe_sowing: "Посевные кампании степи"
+ MKN_project_steppe_sowing_desc: "Организация посевной в Гуляй-Поле (1082) освободит 10 000 рекрутов и даст одну фабрику. Работы длятся 60 дней."
+```
+
+### `localisation/MKN_economic_l_english.yml`
+
+```yaml
+l_english:
+ MKN_southern_resources: "Resource Base of the South"
+ MKN_southern_resources_desc: "Nikopol manganese and the southern coal workings will enter a common supply agreement, providing the raw materials for large production runs."
+ MKN_steppe_industrial_giants: "Industrial Giants of the Steppe"
+ MKN_steppe_industrial_giants_desc: "Kommunar, the tube works and aluminium plants pool their orders and engineers. One civilian factory, three military factories and aluminium supplies restore large-scale manufacturing."
+ MKN_dnieper_logistics_hub: "Unified Dnieper Logistics"
+ MKN_dnieper_logistics_hub_desc: "Dispatchers coordinate river, rail and factory schedules. Unlock three 60-day map projects: Kichkas Bridge, Dnieper waterways and steppe junctions."
+ MKN_steppe_markets: "Steppe Markets"
+ MKN_steppe_markets_desc: "Bazaars, the mint and mutual credit funds agree on common settlement without usury. Two civilian factories and a lasting political income strengthen confidence between communes."
+ MKN_grain_exchanges: "Grain Exchanges and Reserves"
+ MKN_grain_exchanges_desc: "A Kherson factory supports processing and exchange. Unlock three 60-day map projects: Zaporizhzhia elevators, Kherson grain terminals and steppe sowing. The Economic Congress chooses stockpile policy."
+ MKN_freight_logistics: "Wagon and Truck Logistics"
+ MKN_freight_logistics_desc: "Freight artels and repair exchanges distribute depots among the villages. Supply agreements sharply reduce consumption and attrition while reserve coal keeps workshops running."
+ MKN_economic_congress_category: "Economic Congress"
+ MKN_economic_congress_category_desc: "Artels pay for common programmes. Each initiative may be completed once; construction rewards arrive when the work ends."
+ MKN_economic_projects_category: "Regional Economic Projects"
+ MKN_economic_projects_category_desc: "Select a project on the map. Work takes 60 days and requires political power or two civilian factories. Losing ownership or control cancels work and refunds PP. Completed projects cannot be repeated."
+ MKN_economic_25_cp: "£command_power §Y25§!"
+ MKN_congress_elected_commanders: "Mandates for Recallable Commanders"
+ MKN_congress_elected_commanders_desc: "Trained elected commanders improve militia organization for 90 days."
+ MKN_congress_mutual_insurance: "Mutual Repair Fund"
+ MKN_congress_mutual_insurance_desc: "Communes insure their tools and fund joint repairs for 120 days."
+ MKN_zaporizhstal_organization: "Free Steel Concern"
+ MKN_zaporizhstal_organization_initial: "Dnieper Steelworkers"
+ MKN_zaporizhstal_serial_forging: "Serial Gun Forging"
+ MKN_logistics_projects_unlock_tt: "Unlocks three §Y60-day map projects§!: Kichkas Bridge (196), Dnieper waterways (226; naval base in Kherson, 196), steppe junctions (1082)."
+ MKN_energy_projects_unlock_tt: "Unlocks three §Y60-day projects§!: turbines (226), power grid (200), coal lines (196). Each temporarily uses §Y2 civilian factories§!."
+ MKN_grain_projects_unlock_tt: "Unlocks three §Y60-day map projects§!: elevators (226), Kherson terminals (196), steppe sowing (1082)."
+ MKN_economic_congress_unlock_tt: "Unlocks the §YEconomic Congress§!: salt artels, recallable commanders, windmills, grain policy and mutual insurance."
+ MKN_unified_industry_air_damage_factor_tt: "Industrial bombing damage: $RIGHT|-=%1$"
+ MKN_unified_repair_speed_factor_tt: "Repair speed: $RIGHT|+=%1$"
+ MKN_unified_energy_gain_factor_tt: "Energy gain: $RIGHT|+=%1$"
+ MKN_unified_convoy_retreat_speed_tt: "Convoy retreat speed: $RIGHT|+=%1$"
+ MKN_congress_salt_artels: "Salt Artels"
+ MKN_congress_salt_artels_desc: "Fund salt workings and processing: after 30 days, gain a civilian factory in an owned and controlled core state."
+ MKN_congress_recallable_commanders: "Recallable Commanders"
+ MKN_congress_recallable_commanders_desc: "Spend 25 command power on joint exercises: gain 10 army experience and +5% organization for 90 days."
+ MKN_congress_windmills: "Windmills of the Free Farms"
+ MKN_congress_windmills_desc: "Install milling equipment over 30 days, gaining a civilian factory in a core state and 5% stability."
+ MKN_congress_harvest_policy: "Grain for Exchange and Reserve"
+ MKN_congress_harvest_policy_desc: "The congress chooses export contracts or local reserves for one year."
+ MKN_congress_workers_welfare: "Communal Mutual Insurance"
+ MKN_congress_workers_welfare_desc: "A shared fund grants 5% stability and +10% repair speed for 120 days."
+ MKN_project_kichkas_bridge: "Restore Kichkas Bridge"
+ MKN_project_kichkas_bridge_desc: "Two infrastructure levels (up to level 5) and one anti-air level in Kherson (196). Work takes 60 days."
+ MKN_project_dnieper_waterways: "Clear the Dnieper Waterways"
+ MKN_project_dnieper_waterways_desc: "Infrastructure in state 226 and a naval base in coastal Kherson (196, province 721). Both states must remain owned and controlled throughout the project. Work takes 60 days."
+ MKN_project_steppe_junctions: "Steppe Rail Junctions"
+ MKN_project_steppe_junctions_desc: "A supply hub in Huliaipole (1082, province 429), if absent, and a rail connection to the coast (9571). Work takes 60 days."
+ MKN_project_dnieper_turbines: "Restore the Dnieper Turbines"
+ MKN_project_dnieper_turbines_desc: "Two civilian factories in state 226 and permanent +10% energy gain. Two civilian factories are committed during construction. Work takes 60 days."
+ MKN_project_katerynoslav_grid: "Electrify Katerynoslav"
+ MKN_project_katerynoslav_grid_desc: "A civilian factory and military factory in state 200. Two civilian factories are committed during construction. Work takes 60 days."
+ MKN_project_reserve_coal: "Reserve Coal Lines"
+ MKN_project_reserve_coal_desc: "An additional 12 coal in Kherson (196). Two civilian factories are committed during construction. Work takes 60 days."
+ MKN_project_zaporizhzhia_elevators: "Zaporizhzhia Grain Elevators"
+ MKN_project_zaporizhzhia_elevators_desc: "Build elevators in state 226 to gain 5% stability and one off-map civilian factory from grain trade. Work takes 60 days."
+ MKN_project_kherson_terminals: "Kherson Grain Terminals"
+ MKN_project_kherson_terminals_desc: "Infrastructure in Kherson (196) and permanent +10% convoy retreat speed. Work takes 60 days."
+ MKN_project_steppe_sowing: "Steppe Sowing Campaigns"
+ MKN_project_steppe_sowing_desc: "Organize sowing in Huliaipole (1082), freeing 10,000 manpower and establishing one civilian factory. Work takes 60 days."
 ```
 
 ### Вспомогательный эффект `MKN_build_soviet_rail_link` (`common/scripted_effects/MKN_effects.txt`)
@@ -13557,7 +14696,7 @@ MKN_install_tsebriy = {
     retire_ideology_leader = communism
     create_country_leader = {
         name = MKN_osyp_tsebriy
-        picture = GFX_Portrait_MKN_revkom
+        picture = GFX_Portrait_MKN_osyp_tsebriy
         ideology = leninism
         traits = {
             mkn_syndicalist_organizer
@@ -13654,6 +14793,90 @@ state = {
 }
 ```
 
+### `history/states/192-Odessa.txt`
+
+```pdx
+state = {
+    id = 192
+    name = STATE_192
+    manpower = 1286238
+    state_category = city
+    history = {
+        owner = UKR
+        victory_points = {
+            11670
+            10
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+            air_base = 6
+            11670 = {
+                naval_base = 3
+                coastal_bunker = 1
+            }
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+        1939.1.1 = {
+            buildings = {
+                industrial_complex = 2
+            }
+        }
+    }
+    provinces = {
+        3575
+        3738
+        9698
+        9714
+        11670
+        11703
+    }
+    local_supplies = 6.0
+}
+```
+
+### `history/states/193-Kiev.txt`
+
+```pdx
+state = {
+    id = 193
+    name = STATE_193
+    manpower = 1373637
+    state_category = city
+    history = {
+        victory_points = {
+            3568
+            3
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+            air_base = 8
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+    }
+    provinces = {
+        238
+        546
+        3480
+        3542
+        3568
+        3584
+        6458
+        6508
+        6532
+        6589
+        9437
+        9506
+        11425
+        11489
+    }
+    local_supplies = 0.0
+}
+```
+
 ### `history/states/196-Kherson.txt`
 
 ```pdx
@@ -13691,6 +14914,113 @@ state = {
         11715
     }
     local_supplies = 0.0
+}
+```
+
+### `history/states/197-Mykolaiv.txt`
+
+```pdx
+state = {
+    id = 197
+    name = STATE_197
+    manpower = 896311
+    state_category = rural
+    history = {
+        victory_points = {
+            11683
+            3
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+            dockyard = 1
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+        1939.1.1 = {
+            buildings = {
+                dockyard = 2
+            }
+        }
+    }
+    provinces = {
+        409
+        574
+        3403
+        3755
+        6597
+        9573
+        11546
+        11683
+    }
+    local_supplies = 5.0
+}
+```
+
+### `history/states/198-Vinnytsia.txt`
+
+```pdx
+state = {
+    id = 198
+    name = STATE_198
+    manpower = 1893391
+    state_category = large_town
+    history = {
+        victory_points = {
+            476
+            3
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+            air_base = 3
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+    }
+    provinces = {
+        476
+        6455
+        6480
+        9423
+        9435
+        9481
+    }
+    local_supplies = 0.0
+}
+```
+
+### `history/states/199-Khmelnytskyi.txt`
+
+```pdx
+state = {
+    id = 199
+    name = STATE_199
+    manpower = 1424022
+    state_category = town
+    history = {
+        victory_points = {
+            3457
+            3
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+            air_base = 3
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+    }
+    provinces = {
+        462
+        3430
+        3457
+        3511
+        6429
+        6509
+    }
+    local_supplies = 4.0
 }
 ```
 
@@ -13732,6 +15062,137 @@ state = {
         9729
         11405
         11700
+    }
+    local_supplies = 0.0
+}
+```
+
+### `history/states/201-Zhytomyr.txt`
+
+```pdx
+state = {
+    id = 201
+    name = STATE_201
+    manpower = 1417834
+    state_category = town
+    history = {
+        victory_points = {
+            6593
+            3
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+            air_base = 3
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+    }
+    provinces = {
+        441
+        550
+        3470
+        3570
+        6593
+        9466
+        9493
+        9533
+        11464
+        11477
+        11490
+        11514
+    }
+    local_supplies = 7.0
+}
+```
+
+### `history/states/202-Western Kiev.txt`
+
+```pdx
+state = {
+    id = 202
+    name = STATE_202
+    manpower = 2495352
+    resources = {
+        oil = 8
+        aluminium = 7
+    }
+    state_category = city
+    history = {
+        owner = UKR
+        victory_points = {
+            525
+            25
+        }
+        buildings = {
+            infrastructure = 4
+            arms_factory = 2
+            industrial_complex = 3
+            fuel_silo = 1
+            air_base = 8
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+        1939.1.1 = {
+            buildings = {
+                arms_factory = 3
+                industrial_complex = 3
+            }
+        }
+    }
+    provinces = {
+        489
+        504
+        525
+        582
+        3494
+        3543
+        6497
+        9465
+        9543
+        9568
+        11557
+    }
+    local_supplies = 0.0
+}
+```
+
+### `history/states/203-Cherkasy.txt`
+
+```pdx
+state = {
+    id = 203
+    name = STATE_203
+    manpower = 2405190
+    state_category = large_town
+    history = {
+        victory_points = {
+            488
+            5
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+    }
+    provinces = {
+        434
+        458
+        488
+        3452
+        3468
+        6451
+        6478
+        9451
+        9491
+        11409
+        11424
+        11438
+        11454
+        11530
     }
     local_supplies = 0.0
 }
@@ -13824,6 +15285,82 @@ state = {
         11561
     }
     local_supplies = 0.0
+}
+```
+
+### `history/states/259-Liski.txt`
+
+```pdx
+state = {
+    id = 259
+    name = STATE_259
+    manpower = 1442584
+    state_category = rural
+    history = {
+        victory_points = {
+            11504
+            3
+        }
+        owner = UKR
+        buildings = {
+            infrastructure = 3
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+    }
+    provinces = {
+        511
+        559
+        3557
+        6495
+        6507
+        6578
+        6605
+        9413
+        9519
+        11504
+    }
+    local_supplies = 10.0
+}
+```
+
+### `history/states/834 - Balta.txt`
+
+```pdx
+state = {
+    id = 834
+    name = STATE_834
+    manpower = 183748
+    state_category = rural
+    history = {
+        owner = UKR
+        victory_points = {
+            3757
+            2
+        }
+        victory_points = {
+            741
+            1
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = SOV
+        add_core_of = UKR
+        add_core_of = MOL
+        1939.1.1 = {
+            buildings = {
+                industrial_complex = 2
+            }
+        }
+    }
+    provinces = {
+        741
+        754
+        3757
+        9576
+    }
+    local_supplies = 6.0
 }
 ```
 
@@ -14023,6 +15560,14 @@ state = {
     "ru": "Сохранено прежнее политическое урегулирование",
     "en": "An earlier political settlement is preserved"
   },
+  "MKN_economic_congress_unlock_tt": {
+    "ru": "Открывает решения §Y«Хозяйственного конгресса»§!: соляные артели, отзывные командиры, ветряки, хлебная политика и взаимное страхование.",
+    "en": "Unlocks the §YEconomic Congress§!: salt artels, recallable commanders, windmills, grain policy and mutual insurance."
+  },
+  "MKN_energy_projects_unlock_tt": {
+    "ru": "Открывает три §Y60-дневных проекта§!: турбины (226), электросеть (200), угольные линии (196). Каждый временно занимает §Y2 гражданские фабрики§!.",
+    "en": "Unlocks three §Y60-day projects§!: turbines (226), power grid (200), coal lines (196). Each temporarily uses §Y2 civilian factories§!."
+  },
   "MKN_free_soviets_idea": {
     "ru": "Упорядоченные вольные советы",
     "en": "Organized Free Soviets"
@@ -14038,6 +15583,10 @@ state = {
   "MKN_free_workshops_unlock_tt": {
     "ru": "Открывает промышленный концерн и военно-промышленную организацию «Вольные мастерские».",
     "en": "Unlocks the Free Workshops industrial concern and military industrial organization."
+  },
+  "MKN_grain_projects_unlock_tt": {
+    "ru": "Открывает три §Y60-дневных проекта на карте§!: элеваторы (226), херсонские терминалы (196), посевная (1082).",
+    "en": "Unlocks three §Y60-day map projects§!: elevators (226), Kherson terminals (196), steppe sowing (1082)."
   },
   "MKN_industry_concern_1": {
     "ru": "Концерн «Вольная сталь»",
@@ -14070,6 +15619,10 @@ state = {
   "MKN_kommunar_organization_specialization_b": {
     "ru": "Защита экипажа",
     "en": "Crew Protection"
+  },
+  "MKN_logistics_projects_unlock_tt": {
+    "ru": "Открывает три §Y60-дневных проекта на карте§!: Кичкасский мост (196), расчистка Днепра (226; морская база в Херсоне, 196), узловые станции (1082).",
+    "en": "Unlocks three §Y60-day map projects§!: Kichkas Bridge (196), Dnieper waterways (226; naval base in Kherson, 196), steppe junctions (1082)."
   },
   "MKN_military_command_side": {
     "ru": "Военный штаб — Тратишов",
@@ -14171,10 +15724,6 @@ state = {
     "ru": "Артель стрелкового вооружения",
     "en": "Small Arms Artels"
   },
-  "MKN_rifle_concern_union_tt": {
-    "ru": "§GАртель стрелкового вооружения улучшена:§! исследования пехотного вооружения +5%, производительность фабрик +3%",
-    "en": "§GSmall Arms Artels improved:§! infantry weapons research +5%, factory output +3%"
-  },
   "MKN_soviet_supply_agreement": {
     "ru": "Советское соглашение о снабжении",
     "en": "Soviet Supply Agreement"
@@ -14182,10 +15731,6 @@ state = {
   "MKN_soviet_trade_accepted": {
     "ru": "Харьков принял соглашение о снабжении",
     "en": "Kharkov accepted the supply agreement"
-  },
-  "MKN_steel_concern_union_tt": {
-    "ru": "§GКонцерн «Вольная сталь» улучшен:§! исследования промышленности +5%, скорость строительства +3%, производительность фабрик +5%",
-    "en": "§GConcern of Free Steel improved:§! industry research +5%, construction speed +3%, factory output +5%"
   },
   "MKN_submarine_works_organization_mature": {
     "ru": "Согласованное серийное производство",
@@ -14231,6 +15776,10 @@ state = {
     "ru": "Выпуск военных заводов: $RIGHT|+=%1$",
     "en": "Military factory output: $RIGHT|+=%1$"
   },
+  "MKN_unified_industry_air_damage_factor_tt": {
+    "ru": "Ущерб промышленности от бомбардировок: $RIGHT|-=%1$",
+    "en": "Industrial bombing damage: $RIGHT|-=%1$"
+  },
   "MKN_unified_max_planning_tt": {
     "ru": "Максимальное планирование: $RIGHT|+=%1$",
     "en": "Maximum planning: $RIGHT|+=%1$"
@@ -14251,6 +15800,10 @@ state = {
     "ru": "Скорость строительства: $RIGHT|+=%1$",
     "en": "Construction speed: $RIGHT|+=%1$"
   },
+  "MKN_unified_repair_speed_factor_tt": {
+    "ru": "Скорость ремонта: $RIGHT|+=%1$",
+    "en": "Repair speed: $RIGHT|+=%1$"
+  },
   "MKN_unified_research_speed_factor_tt": {
     "ru": "Скорость исследований: $RIGHT|+=%1$",
     "en": "Research speed: $RIGHT|+=%1$"
@@ -14270,6 +15823,14 @@ state = {
   "MKN_unlock_strikes_tt": {
     "ru": "Открывает сети стачек в соседних странах.",
     "en": "Unlocks strike networks in neighboring countries."
+  },
+  "MKN_zaporizhstal_organization": {
+    "ru": "Концерн «Вольная сталь»",
+    "en": "Free Steel Concern"
+  },
+  "MKN_zaporizhstal_serial_forging": {
+    "ru": "Серийная ковка орудий",
+    "en": "Serial Gun Forging"
   },
   "communism": {
     "ru": "Коммунизм",
@@ -14304,25 +15865,51 @@ state = {
 
 ```text
 8f41ba61861c3d023a4bd4b6b485d602de7bebf5819629d3b2e18e9159862ee6  common/country_leader/nww_mkn_industry_traits.txt
-b3e566edfcd3ca1076c5d61335bb4781a2a849c288bb1168243a18e6bf17808a  common/dynamic_modifiers/nww_dynamic_modifiers.txt
+39e02fa676c16e1764e086e3f22a275aa46c8127f878fe17ed561e8dde631732  common/decisions/MKN_economic_decisions.txt
+a3623a7987696c30fdc35e9936cce71ffcfa91bde6f12dd924c9d4e65f574857  common/decisions/MKN_ukraine_integration_decisions.txt
+fca14f0fa91cee44c24ed97edf53f6ca018b2b221f055905b60a11d778330ace  common/decisions/categories/MKN_economic_categories.txt
+7eb399ea1a4c2f724c9614e5e92aa4258ba38c26e340469c016867de4885a5a5  common/decisions/categories/MKN_ukraine_integration_categories.txt
+bc6c0b8b25886490ef9c3cf6c47f6eea64377f842898c488953cc913352295d6  common/dynamic_modifiers/nww_dynamic_modifiers.txt
+7c8f082895bc53b72830c0ee020fb65ada4a92a5ad25109cf2029c3a90cf16a6  common/ideas/MKN_economic_ideas.txt
 25371b7edaff96981cfd0ed8d0f8e5c574c32184c69e30202d4f86d53a44417f  common/ideas/MKN_ideas.txt
+b2fe46157438e39c7d1498a9ab5d9c39aaa0fff951af247d08638e3492ef368b  common/ideas/nww_MKN_ideas.txt
 1e61a393b99617160dc763426e39330e5ab40375589b62d545b9eabc4461ba31  common/ideas/nww_companies.txt
-7864d2463029f3ec4cc3b8dbfaf4fe79d0fbc82cf192cbff249b05e4064e360d  common/military_industrial_organization/organizations/nww_organizations.txt
-239fedfee7a10c0665e5d1edeb2a967fdb594c543f67d6dca94755a13393c2dd  common/national_focus/MKN.txt
+93e8d6097a158274a8866b67ceec291bfe865ca1b70f5e01bcb15c5455fc5db8  common/military_industrial_organization/organizations/MKN_organizations.txt
+fa474265f4032fdd87839fd44863d8aea5edb32ce52759d84d594d9f78f648fe  common/military_industrial_organization/organizations/nww_organizations.txt
+7c2383a8b34d3a0d9379ca7b19ec12515152047c30dee5fdf4bb9478c4526fa5  common/national_focus/MKN.txt
 3bed671cf921f30d3c07f813fdcd6e99ffaa757b402bc622161cb580fbce6fdd  common/national_focus/MKN_frontier_focuses.txt
-6eafe57e9d8958db3491f61253d0560d237b7c017b8fbc4d439ce9b798b88306  common/on_actions/nww_mkn_progression.txt
-63a04eff33df1fd684abc52b31df158905b0ff9033821bc7349dbb3648156d4d  common/scripted_effects/MKN_effects.txt
-f48d3062f63de36a5d3ac8989646b5ed1e0f9038e9c59d089f4be3a31e5b5a56  common/scripted_effects/nww_mkn_progression.txt
+814826f08a46a8f3918c09bffd69d1f8a7bd08a771c9d33a9c0ed16bf96a9a77  common/national_focus/MKN_ukraine_integration_focuses.txt
+6d314a2713657a66015820f504d8430c0f6b538279e13fe5f7c6ba8a2b58aded  common/on_actions/MKN_ukraine_integration_on_actions.txt
+89c201f38bf10a4667f7a8c1412b08ac1ce6e85da9846e2f3a1d12805a672c3b  common/on_actions/nww_mkn_progression.txt
+1e97f095e431564a35ea7cc885ce59c024767e131412ef1bd480b89977e36145  common/scripted_effects/MKN_effects.txt
+13cffd84d32871baaf7b37611b06e0d781064ee4a54c1d9804952e5229ac9db1  common/scripted_effects/MKN_ukraine_integration_effects.txt
+fc1d21ed8e131cd3cd44485ba295cd93c932c0845ed9191341b9e4241c301daf  common/scripted_effects/nww_mkn_progression.txt
+21176c3f503751b9a05033d0287d8d530bd56ef939125904bc3e792e7e6601d8  common/scripted_triggers/MKN_ukraine_integration_triggers.txt
+8893e818324096deba4aee35b50849c7086905756418f7da44c217ba2afae4ce  events/MKN_ukraine_integration_events.txt
 b5c2cf38406ee26a8ed66ffdb00c6040173213661a819df33c938f40676a78b8  history/countries/MKN - Makhnovists.txt
 39c55a7167712a40eabba5750eba273fd7423386deecbcbbd8faa53c387341e8  history/states/1082-Huliaipole.txt
+a3f985c3690c550e8e3a9941542dece7c72c00abd7427b7bafc648b6a97955bd  history/states/192-Odessa.txt
+d93f8e527858dc95db8980bec956664ecabd57eeda9e661a2ef3da6c14ffe49a  history/states/193-Kiev.txt
 91d865ee54d2caa0d25cb3933b53b6e45e2bba938d0ca338517e5638e8d191c3  history/states/196-Kherson.txt
+74984c1e4f202a47d9470156d3d3ee26e5742fa0330f32c2f4acb53a89f11a06  history/states/197-Mykolaiv.txt
+0ca083257897785d22ae4197d73c4e0ae7272d33e98951cdbed430051195cc65  history/states/198-Vinnytsia.txt
+cc54725110514fea96473e7e18f38901af27ad553ac2640f2624ccf3c0c45f39  history/states/199-Khmelnytskyi.txt
 b61eeaffba0a8e3653b6466473e0e57bf919c305b60bf456c2a58e6e90429772  history/states/200-Rivne.txt
+9ab498f6a43083b59fb5e9606afbe5420c0187727150dde6523aeaac4f8b61ff  history/states/201-Zhytomyr.txt
+9ed5662e3a7d68f2cea8189a58df8dfca7a6285a3e124ea636a479a95f86231b  history/states/202-Western Kiev.txt
+8c0b98af00b81ff295b68e3b6ee6db65d2f1749169b5c911b59bc72454e2d5ae  history/states/203-Cherkasy.txt
 d43dcd1f900ed3daa563276c2d07a75362d1b37e1febfb9aeb49dc1622ab6ce3  history/states/225-Glukhov.txt
 6b0b1143b745a2190f3419d69b8ab10dbeca40e75c23d3c20161dca8e20804c9  history/states/226-Nikopol.txt
+7a24333fe35fa5108849e02eafbe92d7674f6e5a810d88b6b7d7fd25feddbe4e  history/states/259-Liski.txt
+d93bf73d05189e804c1191474b989f6a71a1e4e98c4966da272d24b1ff430c6c  history/states/834 - Balta.txt
+a7bda3d97130a5cc8b63ec056d8bb0684a3f00ea2dd34f094b699953b98ef968  localisation/MKN_economic_l_english.yml
+b3d8dad65c6b0e8fc9f8b98f188239443442e89dcdd41615b1c4009161f76d6a  localisation/MKN_economic_l_russian.yml
+9dd7c7bb9fddede09565d14e05b6a2d808453869b168cd838167d070ea33e7c1  localisation/MKN_ukraine_integration_l_english.yml
+5a9b1b9a9f6e3739ed3000bafa55d6071dd2087dfff709145235600a6b5ca1e9  localisation/MKN_ukraine_integration_l_russian.yml
 58b0549c4a5585e0a81e9e51b4c2b752f547b87e695eec06e0751ffc77afd2d0  localisation/english/MKN_bop_l_english.yml
 e120d4b627a8155563f670904d42200dbf23fece8f0dfe2436fa28c1eda40e48  localisation/english/MKN_flags_l_english.yml
 28407387457a3ef6ba18274b323085029bcc5f65ccc8932f7611dcd14f6b9fb6  localisation/english/MKN_focus_l_english.yml
-48efc637da621b0e02731f75b9f0d74fa112c58c4b3712969d80cc3a31f80807  localisation/english/MKN_frontier_l_english.yml
+6d99a5ee1b9b47daa73355e27d94c14a8c10806ce99b95f51d6199f35467e30c  localisation/english/MKN_frontier_l_english.yml
 d132a9de94be4094ff7ada71e98f1477acb5053f8c5c7139253878f635318f38  localisation/english/MKN_international_l_english.yml
 5b27b4568fd0eab3547c0bb5c7bf4322dbd6ced6f0eb13d6a29d0396106a455c  localisation/english/MKN_l_english.yml
 1643c863c1cd0fdccd41976b8aff200b136fba518537587f019a341bd12df4b7  localisation/english/MKN_overhaul_l_english.yml
@@ -14330,14 +15917,14 @@ d132a9de94be4094ff7ada71e98f1477acb5053f8c5c7139253878f635318f38  localisation/e
 89fad478ca6237bb406c8ae580b755d900de82f1a93eb30d811c6bf7219e3f55  localisation/english/MKN_personnel_l_english.yml
 99c6a7c335115746a50bf6dda6aa7770fb11b65e2d0d4fc2148ae7a4f8633557  localisation/nww_MKN_expansion_l_english.yml
 df53911e9fd8a39df6c99043ec43464d6a776a11fdbbc39b84e0839cee81fef9  localisation/nww_MKN_expansion_l_russian.yml
-a5f22a19297a8cb033feb0a2634ab140f3dca8ccb85213479376733fe45f9485  localisation/nww_MKN_l_english.yml
-74e00ac6087b844c8d097553f108a6f40e42f64411a5213a802e855c8d7879e7  localisation/nww_MKN_l_russian.yml
+6eddc70643fe91181e56aacdd65013dd96db24dcef22eebeea4b9c57c52d25a0  localisation/nww_MKN_l_english.yml
+6f2171dfcb4b9ed5a81c897e14dcd59b54e5d52e4d1aa821f1db20ac839c2f92  localisation/nww_MKN_l_russian.yml
 e2987f7620a518c160bb708b15d877dc4b15bd103cfe589fe8c2ca3160ab47c8  localisation/nww_country_expansion_l_english.yml
 ca9b4146311e70fc407906c10a81a006bf6c4a2a18dd6ef4870cf446dc6097d6  localisation/nww_country_expansion_l_russian.yml
 cf3a4bd9aba43bb684c0097f4ecff4a1506222de523323ef6859408a6f7d9ef8  localisation/russian/MKN_bop_l_russian.yml
 279bb9d9be668925fd01773d7be9506eee21a3d51ce841d757b546ff3bd86e35  localisation/russian/MKN_flags_l_russian.yml
 cd0edacae9f202e1d0d7aa0bcc2b43a29320a0163f70fb720fe5fd8d7f24cc27  localisation/russian/MKN_focus_l_russian.yml
-33740d5d1e54bdae597217d72f7c9e138194cb22d752242624ce5ea039bf205b  localisation/russian/MKN_frontier_l_russian.yml
+dc7665abf73a5ae406a9138f31b2e97b1e5141173a8967721a1064b86985636f  localisation/russian/MKN_frontier_l_russian.yml
 a43bdd62180b58db665e13f314a0262c6e4e7d25663f4ba8a4c6d02e724710f3  localisation/russian/MKN_international_l_russian.yml
 1a8aa65d623905a15bd0ce44c51f1b3a7517de8444232fb14eaf4b96fd098c20  localisation/russian/MKN_l_russian.yml
 b418c7f37e7bfd6179c829a2e2a8d3dd6adcfba7aad06896c41cf1bd83350c07  localisation/russian/MKN_overhaul_l_russian.yml

@@ -60,10 +60,10 @@ def export(output):
             if expanded == branch:
                 break
             branch = expanded
-        assert len(branch) == 24, (root, len(branch))
+        assert 10 <= len(branch) <= 12, (root, len(branch))
         branches[root] = branch
     core = set.union(*branches.values())
-    producer_paths = ['common/military_industrial_organization/organizations/nww_organizations.txt', 'common/ideas/nww_companies.txt', 'common/country_leader/nww_mkn_industry_traits.txt']
+    producer_paths = ['common/military_industrial_organization/organizations/nww_organizations.txt', 'common/military_industrial_organization/organizations/MKN_organizations.txt', 'common/ideas/nww_companies.txt', 'common/ideas/nww_MKN_ideas.txt', 'common/country_leader/nww_mkn_industry_traits.txt']
     producers = {}
     producer_gates = set()
     for path in producer_paths:
@@ -108,10 +108,10 @@ def export(output):
         sources.add(origins[fid])
     out = ['# MKN: промышленность — пакет для анализа другой нейросетью', '',
            'Этот файл самодостаточен: содержит названия, описания, награды, условия, исходные определения и связанные системы. Это снимок текущих файлов мода, а не проект новых наград.', '',
-           f'Основная промышленность: **48 фокусов**, по 24 на взаимоисключающих путях. Дополнительно: **{len(selected-core)}** связанных фокусов науки, политики, предприятий и военной инфраструктуры. Всего карточек: **{len(selected)}**. Чисто боевые фокусы без промышленного эффекта не включены; их необходимые предки приведены отдельно.', '',
+           f'Основная промышленность: **{len(core)} фокусов**, по 10 на взаимоисключающих путях; пять решений конгресса и девять региональных проектов. Дополнительно: **{len(selected-core)}** связанных фокусов науки, политики, предприятий и военной инфраструктуры. Всего карточек: **{len(selected)}**. Чисто боевые фокусы без промышленного эффекта не включены; их необходимые предки приведены отдельно.', '',
            '## Контекст и правила интерпретации', '',
            '- Первая мировая война не происходила. Сохранять действующие ID и лор, монарха Махно и совместимость сохранений.',
-           '- Стоимость focus.cost измеряется неделями: 5 = 35 дней. Несколько блоков prerequisite соединяются И; focus внутри одного блока — ИЛИ. Условия available добавляются к prerequisites. Ветви с mutually_exclusive одновременно пройти нельзя.',
+           '- Стоимость focus.cost измеряется неделями: 5 = 35 дней, 10 = 70 дней. Несколько блоков prerequisite соединяются И; focus внутри одного блока — ИЛИ. Условия available добавляются к prerequisites. Ветви с mutually_exclusive одновременно пройти нельзя.',
            '- Награды в if/limit и random_owned_controlled_state условны. Числа построек в обзоре — потенциальные суммы по коду, а не обещание фактической выдачи. Проверять владение, контроль, ядра, регион и строительные слоты.',
            '- Общий постоянный экономический дух — MKN_free_industry_modifier. Развивать его через MKN_unified_*; не заменять каждую ступень отдельным духом. Военные, авиационные и морские программы имеют собственные общие духи.',
            '- Значения ниже даны в сырых единицах движка. political_power_gain — плоский прирост в сутки; фактор 0.05 обычно означает 5 процентных пунктов. Не интерпретировать все числовые значения как проценты.',
@@ -129,7 +129,7 @@ def export(output):
                 if k == 'add_building_construction':
                     counts[one(v, 'type')] += int(one(v, 'level', '1'))
         out += [f'### {label(root)} — `{root}`', '',
-                f'24 фокуса; сумма их длительностей: {sum(Decimal(one(focuses[f], "cost", "10"))*7 for f in ids)} дней. Это сумма всей ветки, а не кратчайший путь к отдельной награде.', '',
+                f'{len(ids)} фокусов; сумма их длительностей: {sum(Decimal(one(focuses[f], "cost", "10"))*7 for f in ids)} дней. Это сумма всей ветки, а не кратчайший путь к отдельной награде. Проекты выполняются отдельно от национальных фокусов.', '',
                 'Потенциальные постройки при выполнении всех внутренних условий: ' + ', '.join(f'`{k}`: +{v}' for k, v in sorted(counts.items())) + '.', '']
         out += [f'- {label(fid)} — `{fid}`' for fid in ordered(ids)] + ['']
     out += ['## Карточки фокусов', '']
@@ -166,7 +166,9 @@ def export(output):
     for fid in ordered(ancestors-selected):
         out += [f'### {label(fid)} — `{fid}`', '', ru.get(fid+'_desc', ''), '', '```pdx', script([('focus', focuses[fid], '=')]), '```', '']
     out += ['## Общая экономика: исходные значения и восстановление', '']
-    related = ['common/dynamic_modifiers/nww_dynamic_modifiers.txt', 'common/scripted_effects/nww_mkn_progression.txt', 'common/on_actions/nww_mkn_progression.txt', 'history/countries/MKN - Makhnovists.txt', 'common/ideas/MKN_ideas.txt']
+    related = ['common/dynamic_modifiers/nww_dynamic_modifiers.txt', 'common/scripted_effects/nww_mkn_progression.txt', 'common/on_actions/nww_mkn_progression.txt', 'history/countries/MKN - Makhnovists.txt', 'common/ideas/MKN_ideas.txt', 'common/decisions/MKN_economic_decisions.txt', 'common/decisions/categories/MKN_economic_categories.txt', 'common/ideas/MKN_economic_ideas.txt']
+    related += ['common/scripted_triggers/MKN_ukraine_integration_triggers.txt', 'common/scripted_effects/MKN_ukraine_integration_effects.txt', 'common/on_actions/MKN_ukraine_integration_on_actions.txt', 'events/MKN_ukraine_integration_events.txt']
+    related += ['common/decisions/MKN_ukraine_integration_decisions.txt', 'common/decisions/categories/MKN_ukraine_integration_categories.txt']
     # Include full country-owned progression and starting setup; select only MKN dynamic modifiers.
     for path in related:
         doc = load(path)
@@ -176,6 +178,11 @@ def export(output):
     out += ['## Предприятия и производственные организации', '']
     for path, doc in producers.items():
         out += [f'### `{path}`', '', '```pdx', script(doc), '```', '']
+    out += ['## Локализация новых хозяйственных решений, проектов и предприятий', '']
+    for lang in ('russian', 'english'):
+        path = f'localisation/MKN_economic_l_{lang}.yml'
+        sources.add(path)
+        out += [f'### `{path}`', '', '```yaml', (ROOT/path).read_text(encoding='utf-8-sig').rstrip(), '```', '']
     # Capture referenced country-owned helper effects recursively.
     helpers = {}
     for path in sorted((ROOT/'common/scripted_effects').glob('*.txt')):

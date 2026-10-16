@@ -333,9 +333,6 @@ country_event = {
 	}
 	option = {
 		name = mkn_crisis.40.a
-		ai_chance = {
-			factor = 60
-		}
 		MKN = {
 			set_country_flag = MKN_equal_autonomy
 			country_event = {
@@ -359,40 +356,21 @@ country_event = {
 				is_in_faction_with = SOV
 			}
 		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 100
+				OR = {
+					is_historical_focus_on = yes
+					MKN = {
+						MKN_ai_historical_mode = yes
+					}
+				}
+			}
+		}
 	}
 	option = {
 		name = mkn_crisis.40.b
-		ai_chance = {
-			factor = 40
-		}
-		if = {
-			limit = {
-				is_faction_leader = yes
-			}
-			remove_from_faction = MKN
-		}
-		else = {
-			MKN = {
-				remove_from_faction = SOV
-			}
-		}
-		MKN = {
-			set_country_flag = MKN_soviet_betrayal
-			add_timed_idea = {
-				idea = MKN_betrayed_twice
-				days = 365
-			}
-		}
-		declare_war_on = {
-			target = MKN
-			type = annex_everything
-		}
-		MKN = {
-			country_event = {
-				id = mkn_crisis.42
-				days = 1
-			}
-		}
 		trigger = {
 			tag = SOV
 			has_government = communism
@@ -407,6 +385,80 @@ country_event = {
 			}
 			MKN = {
 				is_in_faction_with = SOV
+			}
+			NOT = {
+				has_country_flag = NWW_SOV_MKN_settlement
+			}
+			MKN = {
+				NOT = {
+					has_country_flag = MKN_equal_autonomy
+				}
+			}
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					MKN = {
+						MKN_ai_historical_mode = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SOV
+				has_government = communism
+				is_subject = no
+				MKN = {
+					exists = yes
+					is_subject = no
+					has_government = communism
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				MKN = {
+					is_in_faction_with = SOV
+				}
+				NOT = {
+					has_country_flag = NWW_SOV_MKN_settlement
+				}
+				MKN = {
+					NOT = {
+						has_country_flag = MKN_equal_autonomy
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				remove_from_faction = MKN
+			}
+			else = {
+				MKN = {
+					remove_from_faction = SOV
+				}
+			}
+			MKN = {
+				set_country_flag = MKN_soviet_betrayal
+				add_timed_idea = {
+					idea = MKN_betrayed_twice
+					days = 365
+				}
+			}
+			declare_war_on = {
+				target = MKN
+				type = annex_everything
+			}
+			MKN = {
+				country_event = {
+					id = mkn_crisis.42
+					days = 1
+				}
 			}
 		}
 	}

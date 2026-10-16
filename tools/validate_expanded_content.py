@@ -24,14 +24,14 @@ def validate_expansion(root, game, check, localized):
     check(not starts & {'MKN_anarchic_economy_idea','MKN_fragmented_workshops','MKN_broken_supply','MKN_untrained_militias'},'MKN still starts with separate industrial crisis spirits')
     startup=one(one(read(root/'common/on_actions/nww_mkn_progression.txt'),'on_actions'),'on_startup')
     check(any(k=='nww_mkn_rebuild_industry' for k,v,o in walk(startup)),'MKN: unified industry is not initialized on startup')
-    adverse={'consumer_goods_factor','supply_consumption_factor','training_time_army_factor','factory_energy_consumption','attrition'}
+    adverse={'consumer_goods_factor','supply_consumption_factor','training_time_army_factor','factory_energy_consumption','attrition','industry_air_damage_factor'}
     for entry in ('MKN_dneprostroi','MKN_free_cooperatives'):
         branch={entry}
         while True:
             more={fid for fid,f in fs.items() if any(parent in branch for g in values(f,'prerequisite') for parent in values(g,'focus'))}-branch
             if not more:break
             branch|=more
-        check(len(branch)>=20,f'{entry}: fewer than 20 dedicated focuses')
+        check(10<=len(branch)<=12,f'{entry}: expected 10–12 consolidated focuses')
         deps={fid:{p for g in values(fs[fid],'prerequisite') for p in values(g,'focus')}|{v for k,v,o in walk(one(fs[fid],'available',[])) if k=='has_completed_focus'} for fid in branch}
         done=set();score=dict(initial)
         while done!=branch:

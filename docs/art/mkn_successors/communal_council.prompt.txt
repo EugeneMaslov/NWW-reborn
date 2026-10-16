@@ -1,0 +1,7 @@
+Use case: historical-scene
+Asset type: Hearts of Iron IV collective country leader portrait for the NWW Reborn alternate-history mod.
+Primary request: Paint a small elected Ukrainian communal council in the 1930s, replacing an entirely black missing portrait.
+Subject: three fictional adult delegates seated close together at a simple wooden table: an older peasant man with a grey moustache at the center, a woman in a plain dark jacket on the left and a working man in a linen shirt on the right. Only subtle papers on the lower edge. All three faces must be distinct and clearly lit.
+Style/medium: restrained hand-painted HOI4 political portrait, muted brown and olive-grey colors, realistic faces, soft studio-like light, painterly background.
+Composition/framing: vertical 3:4 image with three upper-body busts, close enough to read faces when reduced to 156 by 210 pixels; leave a small margin above heads. Central figure slightly nearer, side figures at shoulder height.
+Constraints: opaque background; no emblems, no banners, no text, no watermark, no frame, no modern objects, no black silhouette or crushed shadows. These are fictional collective representatives, not portraits of real named historical figures.

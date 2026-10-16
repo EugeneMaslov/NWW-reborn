@@ -1,0 +1,44 @@
+[
+  {
+    "key": "osyp_tsebriy",
+    "source": "docs/art/mkn_successors/osyp_tsebriy.png",
+    "prompt": "docs/art/mkn_successors/osyp_tsebriy.prompt.txt",
+    "texture": "gfx/leaders/MKN/osyp_tsebriy.dds",
+    "size": [
+      156,
+      210
+    ],
+    "source_sha256": "79005c449ba04160cbf3398fd5ca412a0684af42783ca6f827f2ca4a8074ea8a",
+    "export_sha256": "264ed5f7770e0f189d049107eacfa1f5f95fcf95414d046fd7b44ca52b9983d1",
+    "origin": "built-in imagegen; fictional artistic interpretation without a verified likeness reference"
+  },
+  {
+    "key": "osyp_tsebriy_advisor",
+    "source": "docs/art/mkn_successors/osyp_tsebriy.png",
+    "texture": "gfx/interface/ideas/nww_portraits/MKN_osyp_tsebriy.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      4,
+      2,
+      61,
+      60
+    ],
+    "export_sha256": "8ff875fade77c13b5b51298baa9972bd106d7976384549e5d6b47036154f557d"
+  },
+  {
+    "key": "communal_council",
+    "source": "docs/art/mkn_successors/communal_council.png",
+    "prompt": "docs/art/mkn_successors/communal_council.prompt.txt",
+    "texture": "gfx/leaders/MKN/communal_council.dds",
+    "size": [
+      156,
+      210
+    ],
+    "source_sha256": "468045371aa0a08ee3c1b048d3bba541e68eb95dd4acf9189b53eb41dad20c98",
+    "export_sha256": "451c3361b7216242ba88458c154ffdad33d14e7e0bc9802e9992c996258aad6a",
+    "origin": "built-in imagegen; fictional artistic interpretation without a verified likeness reference"
+  }
+]

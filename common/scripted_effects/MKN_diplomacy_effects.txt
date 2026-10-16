@@ -1,0 +1,29 @@
+# Правило запрещает новую войну с союзником; существующие войны/альянсы не меняются.
+MKN_install_allied_war_guard = {
+	remove_relation_rule_override = {
+		trigger = MKN_protected_diplomatic_relation
+		can_not_declare_war = yes
+	}
+	add_relation_rule_override = {
+		trigger = MKN_protected_diplomatic_relation
+		usage_desc = MKN_allied_war_guard_tt
+		can_not_declare_war = yes
+	}
+}
+MKN_close_allied_frontier = {
+	if = {
+		limit = {
+			MKN_ukr_common_bloc = yes
+		}
+		mkn_ukr_stop_border_battle = yes
+		set_country_flag = mkn_ukr_frontier_concluded
+		set_country_flag = mkn_ukr_frontier_allied_settlement
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
+		clr_country_flag = mkn_ukr_war_pending
+		clr_country_flag = mkn_ukr_pact_pending
+		clr_country_flag = mkn_frontier_year_running
+	}
+}

@@ -41,7 +41,7 @@
  mkn_launch_border_battle:0 "Contest the Frontier State"
  mkn_launch_border_battle_desc:0 "At escalation level three, fight over any neighboring Ukrainian state except Kyiv. Miners’ agitation also opens Soviet-owned Stalino, Kharkiv and Crimea. Victory transfers and cores the contested state; defeat transfers our participating state to its actual opponent without granting a new core. A completed battle resets escalation to one. All clashes stop when the frontier crisis ends."
  mkn_sign_kharkiv_pact:0 "Propose the Kharkiv Pact"
- mkn_sign_kharkiv_pact_desc:0 "At the lowest escalation level, and with Mykolaiv and Cherkasy held, ask Soviet Ukraine to recognize the frontier. Its acceptance ends the skirmishes, confirms our captured cores and establishes a two-year non-aggression pact. The annual deadline continues until full war or its scheduled expiry."
+ mkn_sign_kharkiv_pact_desc:0 "At the lowest escalation level, and with Mykolaiv and Odesa held, ask Soviet Ukraine to recognize the frontier. Its acceptance ends the skirmishes, confirms our captured cores and establishes a two-year non-aggression pact. The annual deadline continues until full war or its scheduled expiry."
  MKN_border_fury_buff:0 "Border Fury"
  MKN_border_fury_buff_desc:0 "The railway whistles carry the alarm from commune to commune. Mounted patrols race to the firing line, determined to decide the clash before the commissars can gather their reserves."
  MKN_border_relaxation_debuff:0 "The Patrols Stand Down"

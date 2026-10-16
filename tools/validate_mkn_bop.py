@@ -3,7 +3,7 @@ from copy import deepcopy
 from collections import Counter
 import re
 
-from hoi4_script import read, one, values, walk
+from hoi4_script import read, one, values, walk, tree_focuses
 
 
 def validate_bop(root, game, check, localized):
@@ -51,7 +51,7 @@ def validate_bop(root, game, check, localized):
         check(float(one(decision, 'cost')) > 0 and int(one(decision, 'days_re_enable')) > 0, f'{token}: missing PP cost or repeat cooldown')
         check(one(decision, 'fire_only_once') != 'yes', f'{token}: not repeatable')
 
-    fs = {one(f, 'id'): f for f in values(one(read(root / 'common/national_focus/MKN.txt'), 'focus_tree'), 'focus')}
+    fs = {one(f, 'id'): f for f in tree_focuses(one(read(root / 'common/national_focus/MKN.txt'), 'focus_tree'), root/'common/national_focus')}
     check(values(one(fs['MKN_departure_of_batko'], 'prerequisite'), 'focus') == ['MKN_congress_1936'], 'MKN: invalid shared root')
     entries = {'MKN_black_hundreds': 'fascism', 'MKN_constituent_assembly': 'democratic', 'MKN_nestor_the_first': 'neutrality', 'MKN_red_banner_steppe': 'communism'}
     for fid, ideology in entries.items():
@@ -79,6 +79,9 @@ def validate_bop(root, game, check, localized):
         if changes: expected[fid] = changes
     for node in values(rebuild, 'if'):
         fid = one(one(node, 'limit'), 'has_completed_focus')
+        # Project flags are checked independently by validate_mkn_economy.py.
+        if fid is None:
+            continue
         changes = Counter()
         for b in values(node, 'add_to_variable'):
             changes.update({k: float(v) for k, v, o in b if k.startswith('MKN_unified_')})

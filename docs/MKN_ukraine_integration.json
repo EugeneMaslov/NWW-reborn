@@ -1,0 +1,71 @@
+{
+  "states": [
+    192,
+    193,
+    197,
+    198,
+    199,
+    201,
+    202,
+    203,
+    225,
+    259,
+    834
+  ],
+  "core_groups": {
+    "MKN_southern_commune_charters": [
+      192,
+      197,
+      834
+    ],
+    "MKN_right_bank_councils": [
+      193,
+      198,
+      199,
+      201
+    ],
+    "MKN_northern_delegates": [
+      225,
+      259
+    ],
+    "MKN_dnieper_workshop_federation": [
+      202,
+      203
+    ]
+  },
+  "focuses": [
+    "MKN_ukrainian_communes_congress",
+    "MKN_southern_commune_charters",
+    "MKN_right_bank_councils",
+    "MKN_northern_delegates",
+    "MKN_dnieper_workshop_federation",
+    "MKN_ukrainian_rail_reconstruction",
+    "MKN_kyiv_scientific_exchange",
+    "MKN_federation_of_free_councils"
+  ],
+  "changes": {
+    "MKN_ukrainian_communes_congress": {},
+    "MKN_southern_commune_charters": {
+      "supply_consumption_factor": -0.05
+    },
+    "MKN_right_bank_councils": {
+      "stability_factor": 0.05
+    },
+    "MKN_northern_delegates": {
+      "political_power_gain": 0.1
+    },
+    "MKN_dnieper_workshop_federation": {
+      "industrial_capacity_factory": 0.05
+    },
+    "MKN_ukrainian_rail_reconstruction": {
+      "production_speed_buildings_factor": 0.1,
+      "repair_speed_factor": 0.1
+    },
+    "MKN_kyiv_scientific_exchange": {},
+    "MKN_federation_of_free_councils": {
+      "stability_factor": 0.05,
+      "supply_consumption_factor": -0.05,
+      "production_factory_max_efficiency_factor": 0.05
+    }
+  }
+}

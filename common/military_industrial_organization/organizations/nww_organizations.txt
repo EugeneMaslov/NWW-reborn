@@ -592,7 +592,7 @@ MKN_rifle_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_machinegun_carts
+				OR = { has_completed_focus = MKN_machinegun_carts has_completed_focus = MKN_workshop_standards }
 			}
 		}
 		equipment_bonus = {
@@ -614,7 +614,7 @@ MKN_rifle_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_machinegun_carts
+				OR = { has_completed_focus = MKN_machinegun_carts has_completed_focus = MKN_workshop_standards }
 			}
 		}
 		equipment_bonus = {
@@ -640,7 +640,7 @@ MKN_rifle_artels_organization = {
 		}
 		available = {
 			FROM = {
-				has_completed_focus = MKN_free_army_compact
+				OR = { has_completed_focus = MKN_free_army_compact has_completed_focus = MKN_communal_compact }
 			}
 		}
 		equipment_bonus = {

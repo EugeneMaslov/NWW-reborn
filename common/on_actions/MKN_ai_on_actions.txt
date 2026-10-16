@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					MKN_initialize_ai_route = yes
+				}
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = {
+			MKN_initialize_ai_route = yes
+		}
+	}
+}

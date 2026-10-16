@@ -15,4 +15,7 @@ MKN_kyiv_encircled = {
 			}
 		}
 	}
+	NOT = {
+		MKN_ukr_common_bloc = yes
+	}
 }

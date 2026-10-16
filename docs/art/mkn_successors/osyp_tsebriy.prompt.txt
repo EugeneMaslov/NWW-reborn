@@ -1,0 +1,7 @@
+Use case: historical-scene
+Asset type: Hearts of Iron IV country leader portrait for the NWW Reborn alternate-history mod.
+Primary request: Paint a dignified 1930s Ukrainian anarchist organizer, used as an artistic interpretation of Osyp Tsebriy. No verified likeness reference is available; do not pretend this is an archival photograph or copy another known person's face.
+Subject: one middle-aged Eastern European man, weathered intelligent face, short dark brown hair with slight greying at temples, modest dark moustache, practical plain charcoal jacket over an open-collar linen shirt. No military medals, no red star, no party badges.
+Style/medium: restrained hand-painted HOI4 political leader portrait, realistic anatomy, muted olive-grey background, warm natural skin, fine painted texture.
+Composition/framing: vertical 3:4 composition, centered head and shoulders, full hair and shoulders visible, face occupies roughly 45 percent of image height, clear face under soft light, readable at 156 by 210 pixels.
+Constraints: opaque painted background, no lettering, no text, no watermark, no border, no modern clothing, no black silhouette, no crushed shadows.

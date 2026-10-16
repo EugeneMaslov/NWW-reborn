@@ -151,7 +151,7 @@ def leaders_and_advisors():
         if ideology=='communism' and not values(effect,'add_ideas'):
             effect.extend(block('add_ideas = MKN_revkom_terror'))
     put(doc,'MKN_install_tsebriy',block('''retire_ideology_leader = communism
-        create_country_leader = { name = MKN_osyp_tsebriy picture = GFX_Portrait_MKN_revkom ideology = leninism traits = { mkn_syndicalist_organizer } }
+        create_country_leader = { name = MKN_osyp_tsebriy picture = GFX_Portrait_MKN_osyp_tsebriy ideology = leninism traits = { mkn_syndicalist_organizer } }
         remove_ideas = MKN_revkom_terror'''))
     save(path,doc)
     path='common/national_focus/MKN.txt'

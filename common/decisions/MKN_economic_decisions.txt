@@ -1,0 +1,1070 @@
+# Хозяйственный конгресс и проекты MKN: FROM — выбранный штат.
+# Награды проектов выдаются только после 60 дней; отмена возвращает PP.
+MKN_economic_congress_category = {
+	MKN_congress_salt_artels = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		visible = {
+			has_completed_focus = MKN_artel_register
+			NOT = {
+				has_country_flag = MKN_congress_salt_artels_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		cost = 30
+		days_remove = 30
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			add_political_power = 30
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_capitulated = no
+					any_owned_state = {
+						is_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					NOT = {
+						has_country_flag = MKN_congress_salt_artels_done
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					prioritize = {
+						1082
+						200
+						196
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_country_flag = MKN_congress_salt_artels_done
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_congress_recallable_commanders = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		visible = {
+			has_completed_focus = MKN_artel_register
+			NOT = {
+				has_country_flag = MKN_congress_recallable_commanders_done
+			}
+		}
+		available = {
+			has_capitulated = no
+		}
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = MKN_economic_25_cp
+		complete_effect = {
+			add_command_power = -25
+			army_experience = 10
+			add_timed_idea = {
+				idea = MKN_congress_elected_commanders
+				days = 90
+			}
+			set_country_flag = MKN_congress_recallable_commanders_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_congress_windmills = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		visible = {
+			has_completed_focus = MKN_artel_register
+			NOT = {
+				has_country_flag = MKN_congress_windmills_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		cost = 20
+		days_remove = 30
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			add_political_power = 20
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_capitulated = no
+					any_owned_state = {
+						is_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					NOT = {
+						has_country_flag = MKN_congress_windmills_done
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					prioritize = {
+						1082
+						200
+						196
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_stability = 0.05
+				set_country_flag = MKN_congress_windmills_done
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_congress_harvest_policy = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		visible = {
+			has_completed_focus = MKN_artel_register
+			NOT = {
+				has_country_flag = MKN_congress_harvest_policy_done
+			}
+		}
+		available = {
+			has_capitulated = no
+		}
+		cost = 35
+		complete_effect = {
+			country_event = {
+				id = mkn.31
+				days = 1
+			}
+			set_country_flag = MKN_congress_harvest_policy_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MKN_congress_workers_welfare = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		visible = {
+			has_completed_focus = MKN_artel_register
+			NOT = {
+				has_country_flag = MKN_congress_workers_welfare_done
+			}
+		}
+		available = {
+			has_capitulated = no
+		}
+		cost = 25
+		complete_effect = {
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = MKN_congress_mutual_insurance
+				days = 120
+			}
+			set_country_flag = MKN_congress_workers_welfare_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+MKN_economic_projects_category = {
+	MKN_project_kichkas_bridge = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			196
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+			NOT = {
+				has_country_flag = MKN_project_kichkas_bridge_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+			NOT = {
+				has_country_flag = MKN_project_kichkas_bridge_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+		}
+		cost = 30
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_kichkas_bridge_done
+					}
+				}
+				FROM = {
+					if = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+					if = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				FROM = {
+					if = {
+						limit = {
+							anti_air_building < 5
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				set_country_flag = MKN_project_kichkas_bridge_done
+			}
+		}
+		cancel_effect = {
+			add_political_power = 30
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_dnieper_waterways = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			226
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+			NOT = {
+				has_country_flag = MKN_project_dnieper_waterways_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+			NOT = {
+				has_country_flag = MKN_project_dnieper_waterways_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+			196 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		cost = 35
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				196 = {
+					NOT = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					196 = {
+						is_owned_and_controlled_by = ROOT
+					}
+					NOT = {
+						has_country_flag = MKN_project_dnieper_waterways_done
+					}
+				}
+				FROM = {
+					if = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				196 = {
+					if = {
+						limit = {
+							free_building_slots = {
+								building = naval_base
+								size > 0
+								province = 721
+							}
+						}
+						add_building_construction = {
+							type = naval_base
+							level = 1
+							province = 721
+							instant_build = yes
+						}
+					}
+				}
+				set_country_flag = MKN_project_dnieper_waterways_done
+			}
+		}
+		cancel_effect = {
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_steppe_junctions = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			1082
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+			NOT = {
+				has_country_flag = MKN_project_steppe_junctions_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+			NOT = {
+				has_country_flag = MKN_project_steppe_junctions_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+		}
+		cost = 35
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_steppe_junctions_done
+					}
+				}
+				FROM = {
+					if = {
+						limit = {
+							free_building_slots = {
+								building = supply_node
+								size > 0
+								province = 429
+							}
+						}
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 429
+							instant_build = yes
+						}
+					}
+				}
+				build_railway = {
+					level = 1
+					build_only_on_allied = yes
+					start_province = 429
+					target_province = 9571
+				}
+				set_country_flag = MKN_project_steppe_junctions_done
+			}
+		}
+		cancel_effect = {
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_dnieper_turbines = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			226
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_steppe_electrification
+			NOT = {
+				has_country_flag = MKN_project_dnieper_turbines_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_steppe_electrification
+			NOT = {
+				has_country_flag = MKN_project_dnieper_turbines_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		cost = 0
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_dnieper_turbines_done
+					}
+				}
+				FROM = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_to_variable = {
+					MKN_unified_energy_gain_factor = 0.1000
+					tooltip = MKN_unified_energy_gain_factor_tt
+				}
+				set_country_flag = MKN_project_dnieper_turbines_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_katerynoslav_grid = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			200
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_steppe_electrification
+			NOT = {
+				has_country_flag = MKN_project_katerynoslav_grid_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_steppe_electrification
+			NOT = {
+				has_country_flag = MKN_project_katerynoslav_grid_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		cost = 0
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_katerynoslav_grid_done
+					}
+				}
+				FROM = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_country_flag = MKN_project_katerynoslav_grid_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_reserve_coal = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			196
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_steppe_electrification
+			NOT = {
+				has_country_flag = MKN_project_reserve_coal_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_steppe_electrification
+			NOT = {
+				has_country_flag = MKN_project_reserve_coal_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		cost = 0
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_reserve_coal_done
+					}
+				}
+				FROM = {
+					add_resource = {
+						type = coal
+						amount = 12
+					}
+				}
+				set_country_flag = MKN_project_reserve_coal_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_zaporizhzhia_elevators = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			226
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_grain_exchanges
+			NOT = {
+				has_country_flag = MKN_project_zaporizhzhia_elevators_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_grain_exchanges
+			NOT = {
+				has_country_flag = MKN_project_zaporizhzhia_elevators_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+		}
+		cost = 40
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_zaporizhzhia_elevators_done
+					}
+				}
+				add_stability = 0.05
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				set_country_flag = MKN_project_zaporizhzhia_elevators_done
+			}
+		}
+		cancel_effect = {
+			add_political_power = 40
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_kherson_terminals = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			196
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_grain_exchanges
+			NOT = {
+				has_country_flag = MKN_project_kherson_terminals_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_grain_exchanges
+			NOT = {
+				has_country_flag = MKN_project_kherson_terminals_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+		}
+		cost = 30
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_kherson_terminals_done
+					}
+				}
+				FROM = {
+					if = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				add_to_variable = {
+					MKN_unified_convoy_retreat_speed = 0.1000
+					tooltip = MKN_unified_convoy_retreat_speed_tt
+				}
+				set_country_flag = MKN_project_kherson_terminals_done
+			}
+		}
+		cancel_effect = {
+			add_political_power = 30
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	MKN_project_steppe_sowing = {
+		icon = decision_generic_construction
+		allowed = {
+			original_tag = MKN
+		}
+		state_target = yes
+		targets = {
+			1082
+		}
+		on_map_mode = map_and_decisions_view
+		visible = {
+			has_completed_focus = MKN_grain_exchanges
+			NOT = {
+				has_country_flag = MKN_project_steppe_sowing_done
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MKN_grain_exchanges
+			NOT = {
+				has_country_flag = MKN_project_steppe_sowing_done
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_capitulated = no
+		}
+		cost = 40
+		days_remove = 60
+		days_re_enable = 0
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					OR = {
+						NOT = {
+							is_owned_and_controlled_by = ROOT
+						}
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+					has_capitulated = no
+					NOT = {
+						has_country_flag = MKN_project_steppe_sowing_done
+					}
+				}
+				add_manpower = 10000
+				FROM = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_country_flag = MKN_project_steppe_sowing_done
+			}
+		}
+		cancel_effect = {
+			add_political_power = 40
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}

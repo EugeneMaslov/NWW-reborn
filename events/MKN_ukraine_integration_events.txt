@@ -1,0 +1,11 @@
+add_namespace = mkn_integration
+country_event = {
+	id = mkn_integration.1
+	title = mkn_integration.1.t
+	desc = mkn_integration.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = mkn_integration.1.a
+	}
+}

@@ -1,0 +1,95 @@
+# Один политический курс на кампанию. Реальный старый выбор имеет приоритет над новой настройкой.
+MKN_initialize_ai_route = {
+	if = {
+		limit = {
+			is_ai = yes
+			has_focus_tree = MKN_focus
+			NOT = {
+				has_country_flag = MKN_ai_plan_selected
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = MKN_military_takes_charge
+			}
+			set_country_flag = MKN_ai_route_fascism
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = MKN_triumph_of_free_soviets
+			}
+			set_country_flag = MKN_ai_route_democratic
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = MKN_peasant_delegates
+			}
+			set_country_flag = MKN_ai_route_neutrality
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = MKN_emergency_revkom
+			}
+			set_country_flag = MKN_ai_route_communism
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = MKN_ai_behavior
+					option = FASCISM
+				}
+			}
+			set_country_flag = MKN_ai_route_fascism
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = MKN_ai_behavior
+					option = DEMOCRATIC
+				}
+			}
+			set_country_flag = MKN_ai_route_democratic
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = MKN_ai_behavior
+					option = NEUTRALITY
+				}
+			}
+			set_country_flag = MKN_ai_route_neutrality
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = MKN_ai_behavior
+					option = COMMUNISM
+				}
+			}
+			set_country_flag = MKN_ai_route_communism
+		}
+		else_if = {
+			limit = {
+				MKN_ai_historical_mode = yes
+			}
+			set_country_flag = MKN_ai_route_communism
+		}
+		else = {
+			random_list = {
+				25 = {
+					set_country_flag = MKN_ai_route_fascism
+				}
+				25 = {
+					set_country_flag = MKN_ai_route_democratic
+				}
+				25 = {
+					set_country_flag = MKN_ai_route_neutrality
+				}
+				25 = {
+					set_country_flag = MKN_ai_route_communism
+				}
+			}
+		}
+		set_country_flag = MKN_ai_plan_selected
+	}
+}

@@ -58,4 +58,39 @@ MKN_repair_overhaul = {
 		}
 		remove_ideas = MKN_revkom_terror
 	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = MKN_successor_portraits_v1
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_with_trait = mkn_syndicalist_organizer
+			}
+			set_country_leader_portrait = {
+				ideology = communism
+				portrait = GFX_Portrait_MKN_osyp_tsebriy
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_with_trait = mkn_paralyzed_committee
+			}
+			set_country_leader_portrait = {
+				ideology = communism
+				portrait = GFX_Portrait_MKN_revkom
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_with_trait = mkn_granary_overseer
+			}
+			set_country_leader_portrait = {
+				ideology = neutrality
+				portrait = GFX_Portrait_MKN_peasant_council
+			}
+		}
+		set_country_flag = MKN_successor_portraits_v1
+	}
 }

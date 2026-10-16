@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					MKN_observe_ukrainian_integration = yes
+				}
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = {
+			MKN_observe_ukrainian_integration = yes
+		}
+	}
+}

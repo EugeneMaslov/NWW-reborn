@@ -1,5 +1,17 @@
 nww_mkn_rebuild_industry = {
 	set_variable = {
+		MKN_unified_convoy_retreat_speed = 0
+	}
+	set_variable = {
+		MKN_unified_energy_gain_factor = 0
+	}
+	set_variable = {
+		MKN_unified_repair_speed_factor = 0
+	}
+	set_variable = {
+		MKN_unified_industry_air_damage_factor = 0
+	}
+	set_variable = {
 		MKN_unified_global_building_slots_factor = 0
 	}
 	set_variable = {
@@ -49,373 +61,6 @@ nww_mkn_rebuild_industry = {
 	}
 	set_variable = {
 		MKN_unified_training_time_army_factor = 0.2000
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_communal_compact
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.1500
-		}
-		add_to_variable = {
-			MKN_unified_consumer_goods_factor = -0.1000
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_stability_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_global_building_slots_factor = 0.3000
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_craft_federation
-		}
-		add_to_variable = {
-			MKN_unified_supply_consumption_factor = -0.1300
-		}
-		add_to_variable = {
-			MKN_unified_army_org_regain = 0.0400
-		}
-		add_to_variable = {
-			MKN_unified_attrition = -0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_dneprostroi
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.1000
-		}
-		add_to_variable = {
-			MKN_unified_consumer_goods_factor = -0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_dnieper_dispatch
-		}
-		add_to_variable = {
-			MKN_unified_supply_consumption_factor = -0.0700
-		}
-		add_to_variable = {
-			MKN_unified_army_org_regain = 0.0600
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_elected_brigadiers
-		}
-		add_to_variable = {
-			MKN_unified_army_org_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_training_time_army_factor = -0.0800
-		}
-		add_to_variable = {
-			MKN_unified_max_planning = 0.0400
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_engineering_delegates
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_efficiency_gain_factor = 0.0800
-		}
-		add_to_variable = {
-			MKN_unified_research_speed_factor = 0.0200
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_factory_instructors
-		}
-		add_to_variable = {
-			MKN_unified_army_org_factor = 0.0600
-		}
-		add_to_variable = {
-			MKN_unified_training_time_army_factor = -0.0700
-		}
-		add_to_variable = {
-			MKN_unified_max_planning = 0.0300
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_field_schools
-		}
-		add_to_variable = {
-			MKN_unified_army_org_factor = 0.0600
-		}
-		add_to_variable = {
-			MKN_unified_training_time_army_factor = -0.0700
-		}
-		add_to_variable = {
-			MKN_unified_max_planning = 0.0300
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_free_cooperatives
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.1000
-		}
-		add_to_variable = {
-			MKN_unified_consumer_goods_factor = -0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_freight_artels
-		}
-		add_to_variable = {
-			MKN_unified_supply_consumption_factor = -0.0800
-		}
-		add_to_variable = {
-			MKN_unified_army_org_regain = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_industrial_compact
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.1500
-		}
-		add_to_variable = {
-			MKN_unified_consumer_goods_factor = -0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.1300
-		}
-		add_to_variable = {
-			MKN_unified_global_building_slots_factor = 0.3000
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_kichkas_bridge
-		}
-		add_to_variable = {
-			MKN_unified_supply_consumption_factor = -0.0800
-		}
-		add_to_variable = {
-			MKN_unified_army_org_regain = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_mobile_self_defence
-		}
-		add_to_variable = {
-			MKN_unified_army_org_factor = 0.0800
-		}
-		add_to_variable = {
-			MKN_unified_training_time_army_factor = -0.1000
-		}
-		add_to_variable = {
-			MKN_unified_max_planning = 0.0300
-		}
-		add_to_variable = {
-			MKN_unified_army_speed_factor = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_mobile_workshops
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.1000
-		}
-		add_to_variable = {
-			MKN_unified_consumer_goods_factor = -0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_nikopol_tube_zavod
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_efficiency_gain_factor = 0.0700
-		}
-		add_to_variable = {
-			MKN_unified_research_speed_factor = 0.0200
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_production_cycles
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.1500
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_efficiency_gain_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_research_speed_factor = 0.0100
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_max_efficiency_factor = 0.1000
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_recallable_commanders
-		}
-		add_to_variable = {
-			MKN_unified_army_org_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_training_time_army_factor = -0.0800
-		}
-		add_to_variable = {
-			MKN_unified_max_planning = 0.0400
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_shared_orders
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.1100
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_efficiency_gain_factor = 0.2000
-		}
-		add_to_variable = {
-			MKN_unified_research_speed_factor = 0.0400
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_steel_volnitsa
-		}
-		add_to_variable = {
-			MKN_unified_supply_consumption_factor = -0.1500
-		}
-		add_to_variable = {
-			MKN_unified_army_org_regain = 0.0900
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_steppe_electrification
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_factory_energy_consumption = -0.1000
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_steppe_mint
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.2000
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_supply_congress
-		}
-		add_to_variable = {
-			MKN_unified_supply_consumption_factor = -0.0700
-		}
-		add_to_variable = {
-			MKN_unified_army_org_regain = 0.0600
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_village_smithies
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_efficiency_gain_factor = 0.0800
-		}
-		add_to_variable = {
-			MKN_unified_research_speed_factor = 0.0200
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_worker_battalions
-		}
-		add_to_variable = {
-			MKN_unified_army_org_factor = 0.1000
-		}
-		add_to_variable = {
-			MKN_unified_training_time_army_factor = -0.0500
-		}
-		add_to_variable = {
-			MKN_unified_max_planning = 0.0800
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_workshop_standards
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_factory_efficiency_gain_factor = 0.0700
-		}
-		add_to_variable = {
-			MKN_unified_research_speed_factor = 0.0200
-		}
-	}
-	if = {
-		limit = {
-			has_completed_focus = MKN_zaporizhstal
-		}
-		add_to_variable = {
-			MKN_unified_political_power_gain = 0.1000
-		}
-		add_to_variable = {
-			MKN_unified_consumer_goods_factor = -0.0500
-		}
-		add_to_variable = {
-			MKN_unified_production_speed_buildings_factor = 0.0500
-		}
-		add_to_variable = {
-			MKN_unified_industrial_capacity_factory = 0.0500
-		}
 	}
 	if = {
 		limit = {
@@ -536,7 +181,6 @@ nww_mkn_rebuild_industry = {
 	add_dynamic_modifier = {
 		modifier = MKN_free_industry_modifier
 	}
-	set_country_flag = MKN_industry_unified_v2
 	if = {
 		limit = {
 			has_completed_focus = MKN_militarize_communes
@@ -582,7 +226,16 @@ nww_mkn_rebuild_industry = {
 	}
 	if = {
 		limit = {
-			has_completed_focus = MKN_artel_register
+			has_completed_focus = MKN_dneprostroi
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
 		}
 		add_to_variable = {
 			MKN_unified_industrial_capacity_factory = 0.0500
@@ -595,13 +248,168 @@ nww_mkn_rebuild_industry = {
 		add_to_variable = {
 			MKN_unified_industrial_capacity_factory = 0.0500
 		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0500
+		}
 	}
 	if = {
 		limit = {
-			has_completed_focus = MKN_kommunar_tractor
+			has_completed_focus = MKN_steppe_industrial_giants
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_zaporizhstal
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
 		}
 		add_to_variable = {
 			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_worker_battalions
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.2000
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.2000
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.1500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dnieper_logistics_hub
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.1500
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_electrification
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_factory_energy_consumption = -0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_production_cycles
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.2000
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_max_efficiency_factor = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steel_volnitsa
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_global_building_slots_factor = 0.3000
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.1500
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_free_cooperatives
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_artel_register
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_steppe_markets
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.2000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_mobile_workshops
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0500
 		}
 	}
 	if = {
@@ -612,6 +420,153 @@ nww_mkn_rebuild_industry = {
 			MKN_unified_industrial_capacity_factory = 0.0500
 		}
 	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_freight_logistics
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.3000
+		}
+		add_to_variable = {
+			MKN_unified_army_org_regain = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_attrition = -0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_workshop_standards
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_efficiency_gain_factor = 0.2500
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_field_schools
+		}
+		add_to_variable = {
+			MKN_unified_army_org_factor = 0.2000
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.2500
+		}
+		add_to_variable = {
+			MKN_unified_max_planning = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_army_speed_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_communal_compact
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1500
+		}
+		add_to_variable = {
+			MKN_unified_consumer_goods_factor = -0.1000
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_global_building_slots_factor = 0.3000
+		}
+		add_to_variable = {
+			MKN_unified_industry_air_damage_factor = -0.2000
+		}
+		add_to_variable = {
+			MKN_unified_repair_speed_factor = 0.2000
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = MKN_project_dnieper_turbines_done
+		}
+		add_to_variable = {
+			MKN_unified_energy_gain_factor = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = MKN_project_kherson_terminals_done
+		}
+		add_to_variable = {
+			MKN_unified_convoy_retreat_speed = 0.1000
+		}
+	}
+	set_country_flag = MKN_industry_unified_v2
+	set_country_flag = MKN_industry_projects_v3
+	if = {
+		limit = {
+			has_completed_focus = MKN_southern_commune_charters
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_right_bank_councils
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_northern_delegates
+		}
+		add_to_variable = {
+			MKN_unified_political_power_gain = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_dnieper_workshop_federation
+		}
+		add_to_variable = {
+			MKN_unified_industrial_capacity_factory = 0.0500
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_ukrainian_rail_reconstruction
+		}
+		add_to_variable = {
+			MKN_unified_production_speed_buildings_factor = 0.1000
+		}
+		add_to_variable = {
+			MKN_unified_repair_speed_factor = 0.1000
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = MKN_federation_of_free_councils
+		}
+		add_to_variable = {
+			MKN_unified_stability_factor = 0.0500
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.0500
+		}
+		add_to_variable = {
+			MKN_unified_production_factory_max_efficiency_factor = 0.0500
+		}
+	}
+	set_country_flag = MKN_industry_integration_v4
 }
 nww_mkn_rebuild_services = {
 	set_variable = {

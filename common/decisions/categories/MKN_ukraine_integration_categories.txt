@@ -1,0 +1,9 @@
+MKN_ukrainian_administration_category = {
+	icon = generic_political_actions
+	allowed = { original_tag = MKN }
+	visible = {
+		tag = MKN
+		NOT = { UKR = { exists = yes } }
+		202 = { is_owned_by = MKN }
+	}
+}

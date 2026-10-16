@@ -1,3 +1,19 @@
+# Общая украинско-махновская дипломатия принадлежит MKN.
+MKN_ukr_common_bloc = {
+	OR = {
+		is_ally_with = UKR
+		is_in_faction_with = UKR
+		AND = {
+			SOV = {
+				exists = yes
+			}
+			is_in_faction_with = SOV
+			UKR = {
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
 mkn_ukr_frontier_diplomacy_valid = {
 	tag = MKN
 	UKR = {
@@ -36,6 +52,9 @@ mkn_ukr_frontier_diplomacy_valid = {
 	NOT = {
 		has_country_flag = mkn_frontier_frozen
 	}
+	NOT = {
+		MKN_ukr_common_bloc = yes
+	}
 }
 mkn_ukr_frontier_action_available = {
 	custom_trigger_tooltip = {
@@ -70,7 +89,7 @@ mkn_ukr_priority_states_held = {
 	197 = {
 		is_owned_and_controlled_by = MKN
 	}
-	203 = {
+	192 = {
 		is_owned_and_controlled_by = MKN
 	}
 }
@@ -97,6 +116,9 @@ mkn_ukr_pact_context_valid = {
 		mkn_ukr_priority_states_held = yes
 		NOT = {
 			has_border_war_with = SOV
+		}
+		NOT = {
+			MKN_ukr_common_bloc = yes
 		}
 	}
 	UKR = {

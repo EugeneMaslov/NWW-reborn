@@ -1,0 +1,57 @@
+MKN_owns_ukrainian_homeland = {
+	tag = MKN
+	192 = {
+		is_owned_and_controlled_by = MKN
+	}
+	193 = {
+		is_owned_and_controlled_by = MKN
+	}
+	197 = {
+		is_owned_and_controlled_by = MKN
+	}
+	198 = {
+		is_owned_and_controlled_by = MKN
+	}
+	199 = {
+		is_owned_and_controlled_by = MKN
+	}
+	201 = {
+		is_owned_and_controlled_by = MKN
+	}
+	202 = {
+		is_owned_and_controlled_by = MKN
+	}
+	203 = {
+		is_owned_and_controlled_by = MKN
+	}
+	225 = {
+		is_owned_and_controlled_by = MKN
+	}
+	259 = {
+		is_owned_and_controlled_by = MKN
+	}
+	834 = {
+		is_owned_and_controlled_by = MKN
+	}
+}
+MKN_ukraine_integration_ready = {
+	MKN_owns_ukrainian_homeland = yes
+	NOT = {
+		UKR = {
+			exists = yes
+		}
+	}
+	has_capitulated = no
+	has_war = no
+}
+MKN_can_move_capital_to_kyiv = {
+	tag = MKN
+	NOT = { UKR = { exists = yes } }
+	has_capitulated = no
+	NOT = { has_country_flag = MKN_capital_moved_to_kyiv }
+	202 = {
+		is_owned_and_controlled_by = MKN
+		is_capital = no
+	}
+	has_full_control_of_state = 202
+}

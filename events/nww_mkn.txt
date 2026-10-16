@@ -1,6 +1,4 @@
 add_namespace = mkn
-
-# Makhno flavor: the Nabat congress
 country_event = {
 	id = mkn.1
 	title = mkn.1.t
@@ -13,8 +11,6 @@ country_event = {
 		add_political_power = 50
 	}
 }
-
-# Kiev pressures Gulyai-Polye
 country_event = {
 	id = mkn.2
 	title = mkn.2.t
@@ -78,6 +74,11 @@ country_event = {
 							has_country_flag = UKR_MKN_border_settled
 						}
 					}
+					MKN = {
+						NOT = {
+							MKN_ukr_common_bloc = yes
+						}
+					}
 				}
 				declare_war_on = {
 					target = MKN
@@ -94,8 +95,6 @@ country_event = {
 		army_experience = 10
 	}
 }
-
-# Border tensions proclaimed
 country_event = {
 	id = mkn.3
 	title = mkn.3.t
@@ -107,8 +106,6 @@ country_event = {
 		add_war_support = 0.05
 	}
 }
-
-# Kiev protests the raid
 country_event = {
 	id = mkn.4
 	title = mkn.4.t
@@ -145,6 +142,11 @@ country_event = {
 						has_country_flag = UKR_MKN_border_settled
 					}
 				}
+				MKN = {
+					NOT = {
+						MKN_ukr_common_bloc = yes
+					}
+				}
 			}
 			declare_war_on = {
 				target = MKN
@@ -153,8 +155,6 @@ country_event = {
 		}
 	}
 }
-
-# Border war won: new territory becomes national MKN land
 country_event = {
 	id = mkn.5
 	hidden = yes
@@ -163,8 +163,6 @@ country_event = {
 		mkn_ukr_border_victory = yes
 	}
 }
-
-# No-op: border war ended without capture (lost / cancelled)
 country_event = {
 	id = mkn.6
 	hidden = yes
@@ -191,48 +189,68 @@ country_event = {
 		}
 	}
 }
-
 country_event = {
- id = mkn.20
- title = mkn.20.t
- desc = mkn.20.d
- picture = GFX_report_event_election_vote
- is_triggered_only = yes
- option = { name = mkn.20.a add_political_power = 25 }
-}
-
-# Economic reform congresses; focus-triggered, each policy lasts one year.
-country_event = {
- id = mkn.30
- title = mkn.30.t
- desc = mkn.30.d
- picture = GFX_report_event_election_vote
- is_triggered_only = yes
- option = {
-  name = mkn.30.a
-  ai_chance = { factor = 50 }
-  add_timed_idea = { idea = MKN_construction_drive days = 365 }
- }
- option = {
-  name = mkn.30.b
-  ai_chance = { factor = 50 }
-  add_timed_idea = { idea = MKN_careful_investment days = 365 }
- }
+	id = mkn.20
+	title = mkn.20.t
+	desc = mkn.20.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = mkn.20.a
+		add_political_power = 25
+	}
 }
 country_event = {
- id = mkn.31
- title = mkn.31.t
- desc = mkn.31.d
- picture = GFX_report_event_election_vote
- is_triggered_only = yes
- option = {
-  name = mkn.31.a
-  ai_chance = { factor = 50 }
-  add_timed_idea = { idea = MKN_export_contracts days = 365 }
- }
- option = {
-  name = mkn.31.b
-  ai_chance = { factor = 50 }
-  add_timed_idea = { idea = MKN_local_reserves days = 365 }
- }
+	id = mkn.30
+	title = mkn.30.t
+	desc = mkn.30.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = mkn.30.a
+		ai_chance = {
+			factor = 50
+		}
+		add_timed_idea = {
+			idea = MKN_construction_drive
+			days = 365
+		}
+	}
+	option = {
+		name = mkn.30.b
+		ai_chance = {
+			factor = 50
+		}
+		add_timed_idea = {
+			idea = MKN_careful_investment
+			days = 365
+		}
+	}
+}
+country_event = {
+	id = mkn.31
+	title = mkn.31.t
+	desc = mkn.31.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = mkn.31.a
+		ai_chance = {
+			factor = 50
+		}
+		add_timed_idea = {
+			idea = MKN_export_contracts
+			days = 365
+		}
+	}
+	option = {
+		name = mkn.31.b
+		ai_chance = {
+			factor = 50
+		}
+		add_timed_idea = {
+			idea = MKN_local_reserves
+			days = 365
+		}
+	}
 }

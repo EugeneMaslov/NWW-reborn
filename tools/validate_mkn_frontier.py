@@ -34,12 +34,12 @@ class FrontierModel:
         self.states = {
             sid: {'owner': owner, 'controller': owner, 'cores': {owner},
                   'flags': {}, 'damage': 0}
-            for sid, owner in (('196', 'MKN'), ('197', 'UKR'), ('203', 'UKR'), ('500', 'MKN'))
+            for sid, owner in (('196', 'MKN'), ('197', 'UKR'), ('192', 'UKR'), ('203', 'UKR'), ('500', 'MKN'))
         }
         # An unrelated occupied state must never become an automatic frontier core.
         self.states['500']['cores'] = {'LTB'}
         for sid, state in self.states.items():
-            state['neighbors'] = {'196': ('197', '203'), '197': ('196',), '203': ('196',), '500': ()}[sid]
+            state['neighbors'] = {'196': ('197', '203'), '197': ('196', '192'), '192': ('197',), '203': ('196',), '500': ()}[sid]
 
     def scope(self, name, current, previous):
         if name in self.countries or name in self.states:
@@ -120,7 +120,7 @@ class FrontierModel:
             elif key == 'has_border_war':
                 participating = self.border and (current in self.countries or current in self.border_states)
                 answer = participating == (value == 'yes')
-            elif key == 'is_ally_with':
+            elif key in ('is_ally_with', 'is_in_faction_with'):
                 answer = value in data['allies']
             elif key == 'has_non_aggression_pact_with':
                 answer = value in data['pacts']
@@ -484,7 +484,7 @@ def validate_frontier(root, game, check, localized):
         cases += 1
     sim = model()
     sim.countries['MKN']['flags']['mkn_ukr_pact_pending'] = -1
-    for sid in ('197', '203'):
+    for sid in ('197', '192'):
         sim.states[sid]['owner'] = sim.states[sid]['controller'] = 'MKN'
     sim.states['197']['flags']['mkn_ukr_integrated_frontier_state'] = -1
     sim.countries['MKN']['missions'].add(mission_id)

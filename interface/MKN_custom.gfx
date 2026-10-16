@@ -36,4 +36,12 @@ spriteTypes = {
 		name = GFX_Portrait_MKN_revkom
 		texturefile = "gfx/leaders/MKN/communal_council.dds"
 	}
+	spriteType = {
+		name = GFX_Portrait_MKN_osyp_tsebriy
+		texturefile = "gfx/leaders/MKN/osyp_tsebriy.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_MKN_osyp_tsebriy_small
+		texturefile = "gfx/interface/ideas/nww_portraits/MKN_osyp_tsebriy.dds"
+	}
 }

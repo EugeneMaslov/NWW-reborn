@@ -442,13 +442,15 @@ def validate_international(root, game, check, localized):
     # Every newly added economic factory has its own guaranteed slot and is
     # confined to an owned, controlled core by the native iterator.
     factory_plan=json.loads((root/'docs/MKN_additional_factories.json').read_text())
-    check(len(factory_plan)==12,'Expected six additional factory focuses per economic route')
-    for fid,kind in factory_plan.items():
+    check(len(factory_plan)==5,'Expected five consolidated focuses with random core factory rewards')
+    for fid,allocation in factory_plan.items():
         rewards=values(one(focuses[fid],'completion_reward'),'random_owned_controlled_state')
         selected=[b for b in rewards if one(one(b,'limit',[]),'is_core_of')=='ROOT']
-        check(len(selected)==1 and one(selected[0],'add_extra_state_shared_building_slots')=='1',f'{fid}: factory lacks a guaranteed owned-core slot')
-        construction=one(selected[0],'add_building_construction')
-        check(one(construction,'type')==kind and one(construction,'level')=='1' and one(construction,'instant_build')=='yes',f'{fid}: factory reward differs')
+        check(len(selected)==1 and one(selected[0],'add_extra_state_shared_building_slots')==str(allocation['slots']),f'{fid}: factory lacks guaranteed owned-core slots')
+        if not selected:
+            continue
+        construction=values(selected[0],'add_building_construction')
+        check({one(b,'type'):int(one(b,'level')) for b in construction}=={k:v for k,v in allocation.items() if k!='slots'} and all(one(b,'instant_build')=='yes' for b in construction),f'{fid}: factory reward differs')
     print(f'PASS: MKN expropriation/International/Marusya: {cases} source-script scenarios, timed factories, 10 news dispatches, two locked veteran divisions and {len(actual)} urban-trained battalions')
 
 

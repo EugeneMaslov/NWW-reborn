@@ -179,6 +179,9 @@ mkn_ukr_border_victory = {
 					}
 				}
 			}
+			NOT = {
+				MKN_ukr_common_bloc = yes
+			}
 		}
 		FROM.FROM.FROM = {
 			mkn_ukr_integrate_won_state = yes
@@ -318,6 +321,9 @@ mkn_ukr_conclude_total_war = {
 			NOT = {
 				has_country_flag = mkn_ukr_pact_signed
 			}
+			NOT = {
+				MKN_ukr_common_bloc = yes
+			}
 		}
 		set_variable = {
 			mkn_ukr_escalation_level = 5
@@ -353,6 +359,11 @@ mkn_ukr_conclude_total_war = {
 					}
 					NOT = {
 						is_ally_with = MKN
+					}
+					MKN = {
+						NOT = {
+							MKN_ukr_common_bloc = yes
+						}
 					}
 				}
 				declare_war_on = {
@@ -696,27 +707,20 @@ mkn_ukr_schedule_old_save_incident = {
 	}
 }
 MKN_annex_encircled_ukraine = {
-	UKR = {
-		every_owned_state = {
-			set_state_flag = MKN_kyiv_capitulation_claim
-		}
-	}
-	annex_country = {
-		target = UKR
-		transfer_troops = no
-	}
-	every_owned_state = {
+	if = {
 		limit = {
-			has_state_flag = MKN_kyiv_capitulation_claim
+			MKN_kyiv_encircled = yes
 		}
-		add_core_of = ROOT
-		clr_state_flag = MKN_kyiv_capitulation_claim
+		annex_country = {
+			target = UKR
+			transfer_troops = no
+		}
+		set_country_flag = mkn_ukr_frontier_concluded
+		remove_mission = MKN_passive_escalation_drift
+		remove_mission = MKN_frontier_year_countdown_mission
+		clr_country_flag = mkn_frontier_conflict_active
+		clr_country_flag = mkn_ukr_frontier_unlocked
+		clr_country_flag = mkn_ukr_war_pending
+		mkn_ukr_stop_border_battle = yes
 	}
-	set_country_flag = mkn_ukr_frontier_concluded
-	remove_mission = MKN_passive_escalation_drift
-	remove_mission = MKN_frontier_year_countdown_mission
-	clr_country_flag = mkn_frontier_conflict_active
-	clr_country_flag = mkn_ukr_frontier_unlocked
-	clr_country_flag = mkn_ukr_war_pending
-	mkn_ukr_stop_border_battle = yes
 }

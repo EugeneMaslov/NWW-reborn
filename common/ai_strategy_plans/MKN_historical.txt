@@ -1,21 +1,213 @@
-# Historical MKN prepares the congress, builds a red mandate and averts collapse.
+# История — синдикалистский договор; вне истории один из четырёх подготовленных маршрутов.
+MKN_fascism_plan = {
+	name = MKN_AI_FASCISM
+	desc = MKN_AI_FASCISM_DESC
+	allowed = {
+		original_tag = MKN
+	}
+	enable = {
+		has_focus_tree = MKN_focus
+		has_country_flag = MKN_ai_route_fascism
+		has_country_flag = MKN_crisis_enabled
+	}
+	abort = {
+		OR = {
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_crisis_legacy_settled
+		}
+	}
+	ai_national_focuses = {
+		MKN_congress_1936
+		MKN_question_of_supply
+		MKN_question_of_discipline
+		MKN_military_takes_charge
+		MKN_arrest_demagogues
+		MKN_abolish_election_of_commanders
+		MKN_militarize_communes
+		MKN_standardize_workshops
+		MKN_iron_fist_trains
+		MKN_black_expansionism
+		MKN_the_black_horde
+		MKN_dneprostroi
+		MKN_dnieper_audit
+		MKN_southern_resources
+		MKN_steppe_industrial_giants
+		MKN_zaporizhstal
+		MKN_worker_battalions
+		MKN_dnieper_logistics_hub
+		MKN_steppe_electrification
+		MKN_production_cycles
+		MKN_steel_volnitsa
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		MKN_triumph_of_free_soviets = 0
+		MKN_peasant_delegates = 0
+		MKN_emergency_revkom = 0
+		MKN_black_hundreds = 0
+		MKN_constituent_assembly = 0
+		MKN_nestor_the_first = 0
+		MKN_red_banner_steppe = 0
+	}
+}
+MKN_democratic_plan = {
+	name = MKN_AI_DEMOCRATIC
+	desc = MKN_AI_DEMOCRATIC_DESC
+	allowed = {
+		original_tag = MKN
+	}
+	enable = {
+		has_focus_tree = MKN_focus
+		has_country_flag = MKN_ai_route_democratic
+		has_country_flag = MKN_crisis_enabled
+	}
+	abort = {
+		OR = {
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_crisis_legacy_settled
+		}
+	}
+	ai_national_focuses = {
+		MKN_congress_1936
+		MKN_question_of_supply
+		MKN_question_of_discipline
+		MKN_triumph_of_free_soviets
+		MKN_pact_of_free_communes
+		MKN_abolish_general_staff
+		MKN_arms_to_the_people
+		MKN_propaganda_by_deed
+		MKN_black_international
+		MKN_autonomous_rail_crews
+		MKN_beacon_of_statelessness
+		MKN_free_cooperatives
+		MKN_artel_register
+		MKN_steppe_markets
+		MKN_mobile_workshops
+		MKN_rifle_concern
+		MKN_grain_exchanges
+		MKN_freight_logistics
+		MKN_workshop_standards
+		MKN_field_schools
+		MKN_communal_compact
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		MKN_military_takes_charge = 0
+		MKN_peasant_delegates = 0
+		MKN_emergency_revkom = 0
+		MKN_black_hundreds = 0
+		MKN_constituent_assembly = 0
+		MKN_nestor_the_first = 0
+		MKN_red_banner_steppe = 0
+	}
+}
+MKN_neutrality_plan = {
+	name = MKN_AI_NEUTRALITY
+	desc = MKN_AI_NEUTRALITY_DESC
+	allowed = {
+		original_tag = MKN
+	}
+	enable = {
+		has_focus_tree = MKN_focus
+		has_country_flag = MKN_ai_route_neutrality
+		has_country_flag = MKN_crisis_enabled
+	}
+	abort = {
+		OR = {
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_crisis_legacy_settled
+		}
+	}
+	ai_national_focuses = {
+		MKN_congress_1936
+		MKN_question_of_supply
+		MKN_question_of_discipline
+		MKN_peasant_delegates
+		MKN_grain_ultimatum
+		MKN_sever_urban_ties
+		MKN_every_farm_a_fortress
+		MKN_steppe_snipers
+		MKN_railway_sabotage
+		MKN_cavalry_ambush
+		MKN_impregnable_granary
+		MKN_free_cooperatives
+		MKN_artel_register
+		MKN_steppe_markets
+		MKN_mobile_workshops
+		MKN_rifle_concern
+		MKN_grain_exchanges
+		MKN_freight_logistics
+		MKN_workshop_standards
+		MKN_field_schools
+		MKN_communal_compact
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		MKN_military_takes_charge = 0
+		MKN_triumph_of_free_soviets = 0
+		MKN_emergency_revkom = 0
+		MKN_black_hundreds = 0
+		MKN_constituent_assembly = 0
+		MKN_nestor_the_first = 0
+		MKN_red_banner_steppe = 0
+	}
+}
 MKN_historical = {
- name = MKN_historical
- desc = MKN_historical_desc
- allowed = { tag = MKN }
- enable = { is_historical_focus_on = yes has_country_flag = MKN_crisis_enabled }
- abort = { has_country_flag = MKN_collapse_started }
- ai_national_focuses = {
-  MKN_congress_1936
-  MKN_question_of_supply
-  MKN_question_of_discipline
-  MKN_emergency_revkom
-  MKN_purge_irreconcilables
-  MKN_embassy_to_kharkov
-  MKN_integrate_steel_lines
-  MKN_red_military_specialists
-  MKN_tractors_for_grain
-  MKN_anti_imperialist_front
-  MKN_the_fatal_plenum
- }
+	name = MKN_AI_COMMUNISM
+	desc = MKN_AI_COMMUNISM_DESC
+	allowed = {
+		original_tag = MKN
+	}
+	enable = {
+		has_focus_tree = MKN_focus
+		has_country_flag = MKN_ai_route_communism
+		has_country_flag = MKN_crisis_enabled
+	}
+	abort = {
+		OR = {
+			has_country_flag = MKN_collapse_started
+			has_country_flag = MKN_crisis_legacy_settled
+		}
+	}
+	ai_national_focuses = {
+		MKN_congress_1936
+		MKN_question_of_supply
+		MKN_question_of_discipline
+		MKN_emergency_revkom
+		MKN_purge_irreconcilables
+		MKN_embassy_to_kharkov
+		MKN_integrate_steel_lines
+		MKN_red_military_specialists
+		MKN_tractors_for_grain
+		MKN_anti_imperialist_front
+		MKN_the_fatal_plenum
+		MKN_dneprostroi
+		MKN_dnieper_audit
+		MKN_southern_resources
+		MKN_steppe_industrial_giants
+		MKN_zaporizhstal
+		MKN_worker_battalions
+		MKN_dnieper_logistics_hub
+		MKN_steppe_electrification
+		MKN_production_cycles
+		MKN_steel_volnitsa
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		MKN_military_takes_charge = 0
+		MKN_triumph_of_free_soviets = 0
+		MKN_peasant_delegates = 0
+		MKN_black_hundreds = 0
+		MKN_constituent_assembly = 0
+		MKN_nestor_the_first = 0
+		MKN_red_banner_steppe = 0
+	}
 }

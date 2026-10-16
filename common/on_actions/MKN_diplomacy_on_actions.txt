@@ -1,0 +1,36 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					MKN_install_allied_war_guard = yes
+					MKN_close_allied_frontier = yes
+				}
+			}
+			UKR = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					MKN_install_allied_war_guard = yes
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					MKN_install_allied_war_guard = yes
+				}
+			}
+		}
+	}
+	on_daily_MKN = {
+		effect = {
+			MKN_close_allied_frontier = yes
+		}
+	}
+}

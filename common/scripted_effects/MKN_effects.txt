@@ -251,7 +251,7 @@ MKN_install_tsebriy = {
 	retire_ideology_leader = communism
 	create_country_leader = {
 		name = MKN_osyp_tsebriy
-		picture = GFX_Portrait_MKN_revkom
+		picture = GFX_Portrait_MKN_osyp_tsebriy
 		ideology = leninism
 		traits = {
 			mkn_syndicalist_organizer

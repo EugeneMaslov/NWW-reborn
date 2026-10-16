@@ -1,0 +1,16 @@
+MKN_observe_ukrainian_integration = {
+	if = {
+		limit = {
+			MKN_ukraine_integration_ready = yes
+			NOT = {
+				has_country_flag = MKN_ukraine_integration_unlocked
+			}
+		}
+		set_country_flag = MKN_ukraine_integration_unlocked
+		mark_focus_tree_layout_dirty = yes
+		country_event = {
+			id = mkn_integration.1
+			days = 1
+		}
+	}
+}

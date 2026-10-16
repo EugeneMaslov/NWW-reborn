@@ -1,0 +1,39 @@
+MKN_ai_behavior = {
+	name = MKN_AI_BEHAVIOR
+	group = RULE_GROUP_AI_BEHAVIOR
+	default = {
+		name = DEFAULT
+		text = RULE_OPTION_DEFAULT
+		desc = MKN_AI_DEFAULT_DESC
+	}
+	option = {
+		name = HISTORICAL
+		text = MKN_AI_HISTORICAL
+		desc = MKN_AI_HISTORICAL_DESC
+	}
+	option = {
+		name = RANDOM
+		text = MKN_AI_RANDOM
+		desc = MKN_AI_RANDOM_DESC
+	}
+	option = {
+		name = FASCISM
+		text = MKN_AI_FASCISM
+		desc = MKN_AI_FASCISM_DESC
+	}
+	option = {
+		name = DEMOCRATIC
+		text = MKN_AI_DEMOCRATIC
+		desc = MKN_AI_DEMOCRATIC_DESC
+	}
+	option = {
+		name = NEUTRALITY
+		text = MKN_AI_NEUTRALITY
+		desc = MKN_AI_NEUTRALITY_DESC
+	}
+	option = {
+		name = COMMUNISM
+		text = MKN_AI_COMMUNISM
+		desc = MKN_AI_COMMUNISM_DESC
+	}
+}

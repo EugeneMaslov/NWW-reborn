@@ -17,8 +17,11 @@ def main():
         checks+=1
         if not ok:raise AssertionError(message)
     registry=focus_registry(ROOT/'common/national_focus')
+    industry=__import__('json').loads((ROOT/'docs/MKN_unified_progression.json').read_text())['industry_changes']
+    integration=__import__('json').loads((ROOT/'docs/MKN_ukraine_integration.json').read_text())['focuses']
     for fid,node in registry.items():
-        if fid.startswith('MKN_'):check(one(node,'cost')=='5',f'{fid}: not 35 days')
+        if fid.startswith('MKN_'):
+            check(one(node,'cost') in ({'5','10'} if fid in industry or fid in integration else {'5'}),f'{fid}: invalid focus duration')
         if fid.startswith('UKR_'):check(float(one(node,'cost','0'))>=10,f'{fid}: below 70 days')
     history=read(ROOT/'history/countries/MKN - Makhnovists.txt')
     check(one(history,'capital')=='1082','Wrong MKN capital')
@@ -110,6 +113,7 @@ def main():
     sim.run('mkn_ukr_stop_border_battle')
     check(not sim.border and sim.cancellations==[('196','197','yes')],'Soviet battle survives terminal cleanup')
     kyiv=one(read(ROOT/'common/scripted_triggers/MKN_kyiv_triggers.txt'),'MKN_kyiv_encircled')
+    triggers['MKN_kyiv_encircled']=kyiv
     for owners in product(('UKR','MKN','SOV'),repeat=3):
         for controllers in product(('MKN','UKR'),repeat=3):
             sim=FrontierModel(effects,triggers)
@@ -122,7 +126,7 @@ def main():
             if expected:
                 ukrainian={sid for sid,s in sim.states.items() if s['owner']=='UKR'}
                 sim.run('MKN_annex_encircled_ukraine')
-                check(not sim.countries['UKR']['exists'] and all(sim.states[sid]['owner']=='MKN' and 'MKN' in sim.states[sid]['cores'] for sid in ukrainian),'Kyiv capitulation leaves Ukrainian territory or missing cores')
+                check(not sim.countries['UKR']['exists'] and all(sim.states[sid]['owner']=='MKN' for sid in ukrainian),'Kyiv capitulation leaves Ukrainian territory')
                 check(sim.states['500']['cores']=={'LTB'},'Kyiv capitulation cores unrelated occupied land')
     # The news event is dispatched once by the funeral and broadcast by major=yes.
     funeral=next(n for n in values(read(ROOT/'events/MKN_events.txt'),'country_event') if one(n,'id')=='mkn_crisis.1')
