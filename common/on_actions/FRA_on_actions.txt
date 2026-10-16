@@ -1,0 +1,4 @@
+on_actions = {
+      on_startup = { effect = { FRA = { if = { limit = { exists = yes } FRA_restore_tree = yes FRA_initialize = yes } } } }
+      on_daily_FRA = { effect = { FRA_restore_tree = yes if = { limit = { has_focus_tree = french_focus } FRA_daily = yes } } }
+    }

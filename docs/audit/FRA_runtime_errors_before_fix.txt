@@ -1,0 +1,23 @@
+[23:11:53][no_game_date][persistent.cpp:67]: Error: "production_factory_efficiency_gain_factor specified multiple time, last value will be used: 0.05, near line: 20" in file: "common/ideas/FRA_companies.txt" near line: 20
+[23:12:03][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_triggers/FRA_triggers.txt line : 12
+[23:12:03][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 12" in file: "common/scripted_triggers/FRA_triggers.txt" near line: 12
+[23:12:03][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_effects/FRA_effects.txt line : 3012
+[23:12:03][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 3012" in file: "common/scripted_effects/FRA_effects.txt" near line: 3015
+[23:12:03][no_game_date][effect.cpp:445]: Invalid effect 'COM' in common/scripted_effects/FRA_effects.txt line : 3023
+[23:12:03][no_game_date][effect.cpp:358]: Error: "Unknown effect-type: COM, near line: 3023" in file: "common/scripted_effects/FRA_effects.txt" near line: 3026
+[23:12:03][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_effects/FRA_effects.txt line : 3082
+[23:12:03][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 3082" in file: "common/scripted_effects/FRA_effects.txt" near line: 3085
+[23:12:03][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_effects/FRA_effects.txt line : 3169
+[23:12:03][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 3169" in file: "common/scripted_effects/FRA_effects.txt" near line: 3172
+[23:12:03][no_game_date][effect.cpp:445]: Invalid effect 'COM' in common/scripted_effects/FRA_effects.txt line : 3196
+[23:12:03][no_game_date][effect.cpp:358]: Error: "Unknown effect-type: COM, near line: 3196" in file: "common/scripted_effects/FRA_effects.txt" near line: 3199
+[23:12:12][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_effects/FRA_effects.txt line : 3012
+[23:12:12][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 3012" in file: "common/scripted_effects/FRA_effects.txt" near line: 3015
+[23:12:12][no_game_date][effect.cpp:445]: Invalid effect 'COM' in common/scripted_effects/FRA_effects.txt line : 3023
+[23:12:12][no_game_date][effect.cpp:358]: Error: "Unknown effect-type: COM, near line: 3023" in file: "common/scripted_effects/FRA_effects.txt" near line: 3026
+[23:12:12][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_effects/FRA_effects.txt line : 3082
+[23:12:12][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 3082" in file: "common/scripted_effects/FRA_effects.txt" near line: 3085
+[23:12:12][no_game_date][trigger.cpp:700]: Invalid trigger 'COM' in common/scripted_effects/FRA_effects.txt line : 3169
+[23:12:12][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: COM, near line: 3169" in file: "common/scripted_effects/FRA_effects.txt" near line: 3172
+[23:12:12][no_game_date][effect.cpp:445]: Invalid effect 'COM' in common/scripted_effects/FRA_effects.txt line : 3196
+[23:12:12][no_game_date][effect.cpp:358]: Error: "Unknown effect-type: COM, near line: 3196" in file: "common/scripted_effects/FRA_effects.txt" near line: 3199

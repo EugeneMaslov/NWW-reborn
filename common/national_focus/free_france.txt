@@ -1,0 +1,2 @@
+# France content is owned by FRA_focuses.txt. Nonselectable tree aliases retain native literal references.
+focus_tree = { id = free_french_focus default = no country = { factor = 0 } }

@@ -1,0 +1,354 @@
+[
+  {
+    "key": "republic",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/republic.png",
+    "texture": "gfx/interface/goals/FRA/republic.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      10,
+      4,
+      85,
+      79
+    ]
+  },
+  {
+    "key": "republic",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/republic.png",
+    "texture": "gfx/interface/ideas/FRA/republic.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      5,
+      4,
+      58,
+      57
+    ]
+  },
+  {
+    "key": "crown",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/crown.png",
+    "texture": "gfx/interface/goals/FRA/crown.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      10,
+      4,
+      84,
+      79
+    ]
+  },
+  {
+    "key": "crown",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/crown.png",
+    "texture": "gfx/interface/ideas/FRA/crown.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      58,
+      57
+    ]
+  },
+  {
+    "key": "leagues",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/leagues.png",
+    "texture": "gfx/interface/goals/FRA/leagues.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      10,
+      4,
+      84,
+      79
+    ]
+  },
+  {
+    "key": "leagues",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/leagues.png",
+    "texture": "gfx/interface/ideas/FRA/leagues.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      58,
+      57
+    ]
+  },
+  {
+    "key": "labour",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/labour.png",
+    "texture": "gfx/interface/goals/FRA/labour.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      9,
+      4,
+      85,
+      79
+    ]
+  },
+  {
+    "key": "labour",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/labour.png",
+    "texture": "gfx/interface/ideas/FRA/labour.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      5,
+      4,
+      59,
+      57
+    ]
+  },
+  {
+    "key": "cabinet",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/cabinet.png",
+    "texture": "gfx/interface/goals/FRA/cabinet.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      10,
+      4,
+      85,
+      79
+    ]
+  },
+  {
+    "key": "cabinet",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/cabinet.png",
+    "texture": "gfx/interface/ideas/FRA/cabinet.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      5,
+      4,
+      58,
+      57
+    ]
+  },
+  {
+    "key": "industry",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/industry.png",
+    "texture": "gfx/interface/goals/FRA/industry.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      9,
+      4,
+      86,
+      79
+    ]
+  },
+  {
+    "key": "industry",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/industry.png",
+    "texture": "gfx/interface/ideas/FRA/industry.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      5,
+      4,
+      59,
+      57
+    ]
+  },
+  {
+    "key": "army",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/army.png",
+    "texture": "gfx/interface/goals/FRA/army.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      10,
+      4,
+      84,
+      79
+    ]
+  },
+  {
+    "key": "army",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/army.png",
+    "texture": "gfx/interface/ideas/FRA/army.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      5,
+      4,
+      58,
+      57
+    ]
+  },
+  {
+    "key": "air",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/air.png",
+    "texture": "gfx/interface/goals/FRA/air.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      8,
+      5,
+      87,
+      77
+    ]
+  },
+  {
+    "key": "air",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/air.png",
+    "texture": "gfx/interface/ideas/FRA/air.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      4,
+      5,
+      60,
+      56
+    ]
+  },
+  {
+    "key": "navy",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/navy.png",
+    "texture": "gfx/interface/goals/FRA/navy.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      11,
+      4,
+      83,
+      79
+    ]
+  },
+  {
+    "key": "navy",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/navy.png",
+    "texture": "gfx/interface/ideas/FRA/navy.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      57,
+      57
+    ]
+  },
+  {
+    "key": "science",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/science.png",
+    "texture": "gfx/interface/goals/FRA/science.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      8,
+      6,
+      87,
+      76
+    ]
+  },
+  {
+    "key": "science",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/science.png",
+    "texture": "gfx/interface/ideas/FRA/science.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      4,
+      6,
+      60,
+      55
+    ]
+  },
+  {
+    "key": "overseas",
+    "kind": "focus",
+    "source": "gfx/generated_sources/FRA/overseas.png",
+    "texture": "gfx/interface/goals/FRA/overseas.dds",
+    "size": [
+      95,
+      85
+    ],
+    "alpha_bounds": [
+      11,
+      4,
+      83,
+      79
+    ]
+  },
+  {
+    "key": "overseas",
+    "kind": "idea",
+    "source": "gfx/generated_sources/FRA/overseas.png",
+    "texture": "gfx/interface/ideas/FRA/overseas.dds",
+    "size": [
+      64,
+      64
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      57,
+      57
+    ]
+  }
+]

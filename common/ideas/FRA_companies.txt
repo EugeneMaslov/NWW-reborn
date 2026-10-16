@@ -1,0 +1,44 @@
+ideas = {
+aircraft_manufacturer = {
+FRA_nww_designer_morane_saulnier = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_interception } cost = 150 modifier = { air_doctrine_cost_factor = -0.1 air_intercept_efficiency = 0.05 } }
+FRA_nww_designer_bloch = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_tactical_groups } cost = 150 modifier = { air_doctrine_cost_factor = -0.1 air_cas_efficiency = 0.05 } }
+FRA_nww_designer_amiot = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_navigation } cost = 150 modifier = { air_doctrine_cost_factor = -0.1 air_strategic_bomber_bombing_factor = 0.05 } }
+FRA_nww_designer_levasseur = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_carrier_group } cost = 150 modifier = { air_doctrine_cost_factor = -0.1 navy_carrier_air_attack_factor = 0.05 } }
+}
+industrial_concern = {
+FRA_nww_designer_somua = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_mobile_reserve } cost = 150 modifier = { production_factory_efficiency_gain_factor = 0.1 army_speed_factor = 0.05 } }
+FRA_nww_designer_panhard = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_signals_supply } cost = 150 modifier = { production_factory_efficiency_gain_factor = 0.1 recon_factor = 0.1 } }
+FRA_nww_designer_schneider = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_artillery_plans } cost = 150 modifier = { production_factory_efficiency_gain_factor = 0.1 production_factory_max_efficiency_factor = 0.05 } }
+FRA_nww_designer_mas = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_standard_patterns } cost = 150 modifier = { production_factory_efficiency_gain_factor = 0.15 } }
+FRA_nww_designer_alsthom = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_rail_nodes } cost = 150 modifier = { production_factory_efficiency_gain_factor = 0.1 production_speed_rail_way_factor = 0.1 } }
+}
+naval_manufacturer = {
+FRA_nww_designer_fcm = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_asw } cost = 150 modifier = { industrial_capacity_dockyard = 0.1 convoy_escort_efficiency = 0.05 } }
+FRA_nww_designer_aeb = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_fast_squadrons } cost = 150 modifier = { industrial_capacity_dockyard = 0.1 naval_speed_factor = 0.05 } }
+FRA_nww_designer_acl = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_fire_control } cost = 150 modifier = { industrial_capacity_dockyard = 0.1 naval_hit_chance = 0.05 } }
+FRA_nww_designer_acf = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_bases_fuel } cost = 150 modifier = { industrial_capacity_dockyard = 0.1 convoy_retreat_speed = 0.1 } }
+}
+tank_manufacturer = {
+FRA_nww_designer_renault = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_standard_patterns } cost = 150 modifier = { land_doctrine_cost_factor = -0.1 army_org_factor = 0.05 } }
+FRA_nww_designer_hotchkiss = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_experimental_groups } cost = 150 modifier = { land_doctrine_cost_factor = -0.1 army_speed_factor = 0.05 } }
+FRA_nww_designer_apx = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_metallurgy } cost = 150 modifier = { land_doctrine_cost_factor = -0.1 research_speed_factor = 0.05 } }
+FRA_nww_designer_amx = { picture = FRA_nww_industry allowed = { original_tag = FRA NOT = { has_dlc = "Arms Against Tyranny" } }
+          available = { has_completed_focus = FRA_nww_armoured_divisions } cost = 150 modifier = { land_doctrine_cost_factor = -0.1 army_armor_attack_factor = 0.05 } }
+}
+}

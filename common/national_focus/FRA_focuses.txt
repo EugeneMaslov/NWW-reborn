@@ -1,0 +1,5505 @@
+focus_tree = {
+	id = french_focus
+	default = no
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = FRA
+		}
+	}
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 2200
+	}
+	shared_focus = FRA_aggressive_focus
+	shared_focus = FRA_agricultural_collectivization
+	shared_focus = FRA_agricultural_protectionism
+	shared_focus = FRA_air_doctrine
+	shared_focus = FRA_air_dominance
+	shared_focus = FRA_air_focus
+	shared_focus = FRA_air_ground_cooperation
+	shared_focus = FRA_algerie_france
+	shared_focus = FRA_align_belgium
+	shared_focus = FRA_alpine_forts
+	shared_focus = FRA_anti_fascist_coalition
+	shared_focus = FRA_appeal_to_overseas_territories
+	shared_focus = FRA_appeal_to_the_french_nation
+	shared_focus = FRA_arms_purchases_in_the_us
+	shared_focus = FRA_army_of_aggression
+	shared_focus = FRA_army_reform
+	shared_focus = FRA_artillery_focus
+	shared_focus = FRA_autoroutes
+	shared_focus = FRA_avenge_waterloo
+	shared_focus = FRA_ban_communism
+	shared_focus = FRA_ban_the_leagues
+	shared_focus = FRA_battle_of_maneuver
+	shared_focus = FRA_begin_rearmament
+	shared_focus = FRA_bomber_focus
+	shared_focus = FRA_bring_home_quebec
+	shared_focus = FRA_buy_time
+	shared_focus = FRA_capital_ship_focus
+	shared_focus = FRA_carrier_focus
+	shared_focus = FRA_carrier_planes
+	shared_focus = FRA_carry_the_revolution_east
+	shared_focus = FRA_carry_the_revolution_north
+	shared_focus = FRA_carry_the_revolution_south
+	shared_focus = FRA_carry_the_revolution_west
+	shared_focus = FRA_cas_focus
+	shared_focus = FRA_celebrate_the_commune
+	shared_focus = FRA_colonial_industry
+	shared_focus = FRA_colonial_naval_bases
+	shared_focus = FRA_colonial_recruitment
+	shared_focus = FRA_compensate_italy
+	shared_focus = FRA_concessions_to_italy
+	shared_focus = FRA_confirm_eastern_commitments
+	shared_focus = FRA_connections_to_industrialists
+	shared_focus = FRA_constitutional_convention
+	shared_focus = FRA_continue_the_fight
+	shared_focus = FRA_cooperation_with_the_communists
+	shared_focus = FRA_coordinate_rearmament
+	shared_focus = FRA_counter_action
+	shared_focus = FRA_defensive_focus
+	shared_focus = FRA_defensive_strategems
+	shared_focus = FRA_destroy_decadence
+	shared_focus = FRA_destroy_the_counter_revolution
+	shared_focus = FRA_devalue_the_franc
+	shared_focus = FRA_develop_colonial_dockyards
+	shared_focus = FRA_diplomatic_freedom
+	shared_focus = FRA_dirigisme
+	shared_focus = FRA_dismantle_the_democracies
+	shared_focus = FRA_disunite_germany
+	shared_focus = FRA_division_cuirassee
+	shared_focus = FRA_dominate_the_middle_east
+	shared_focus = FRA_economic_devolution
+	shared_focus = FRA_egalite_liberte_solidarite
+	shared_focus = FRA_encourage_immigration
+	shared_focus = FRA_establish_spheres_of_influence
+	shared_focus = FRA_expand_the_citizenship
+	shared_focus = FRA_expand_to_the_suez
+	shared_focus = FRA_extend_the_maginot_line
+	shared_focus = FRA_extra_research_slot
+	shared_focus = FRA_extra_research_slot_2
+	shared_focus = FRA_family
+	shared_focus = FRA_fatherland
+	shared_focus = FRA_fighter_focus
+	shared_focus = FRA_firepower_kills
+	shared_focus = FRA_flying_artillery
+	shared_focus = FRA_force_the_issue
+	shared_focus = FRA_foreign_guest_workers
+	shared_focus = FRA_form_the_national_committee
+	shared_focus = FRA_form_the_popular_front
+	shared_focus = FRA_form_the_provisional_government_of_the_republic
+	shared_focus = FRA_form_the_state_arsenals
+	shared_focus = FRA_fortification_focus
+	shared_focus = FRA_france_first
+	shared_focus = FRA_france_leads
+	shared_focus = FRA_france_undividable
+	shared_focus = FRA_franco_soviet_treaty
+	shared_focus = FRA_freedom_front
+	shared_focus = FRA_french_forces_of_the_interior
+	shared_focus = FRA_french_union
+	shared_focus = FRA_fusiliers_marine
+	shared_focus = FRA_general_work_council
+	shared_focus = FRA_global_integration
+	shared_focus = FRA_go_with_britain
+	shared_focus = FRA_grow_the_empire
+	shared_focus = FRA_guarantee_the_constitution
+	shared_focus = FRA_heavy_armor_focus
+	shared_focus = FRA_heavy_bomber_focus
+	shared_focus = FRA_heavy_fighter_focus
+	shared_focus = FRA_host_the_german_exiles
+	shared_focus = FRA_humanite_unie
+	shared_focus = FRA_improved_screen_ships
+	shared_focus = FRA_industrial_collectivization
+	shared_focus = FRA_industrial_expansion
+	shared_focus = FRA_infantry_focus
+	shared_focus = FRA_infantry_tanks
+	shared_focus = FRA_integralism
+	shared_focus = FRA_intervention_in_central_africa
+	shared_focus = FRA_intervention_in_greece
+	shared_focus = FRA_intervention_in_indochina
+	shared_focus = FRA_intervention_in_madagascar
+	shared_focus = FRA_intervention_in_north_africa
+	shared_focus = FRA_intervention_in_spain
+	shared_focus = FRA_intervention_in_syria
+	shared_focus = FRA_intervention_in_west_africa
+	shared_focus = FRA_invest_in_indochina
+	shared_focus = FRA_invest_in_our_weaker_allies
+	shared_focus = FRA_invest_in_syria
+	shared_focus = FRA_invest_in_the_colonies
+	shared_focus = FRA_invest_in_the_metropole
+	shared_focus = FRA_invest_in_west_africa
+	shared_focus = FRA_invite_anti_fascist_emigrants
+	shared_focus = FRA_invite_communist_ministers
+	shared_focus = FRA_invite_portugal
+	shared_focus = FRA_invite_romania
+	shared_focus = FRA_invite_yugoslavia
+	shared_focus = FRA_je_suis_la_deluge
+	shared_focus = FRA_join_comintern
+	shared_focus = FRA_join_germany
+	shared_focus = FRA_join_the_ententes
+	shared_focus = FRA_laissez_faire
+	shared_focus = FRA_latin_entente
+	shared_focus = FRA_league_of_french_bolshevist_volunteers
+	shared_focus = FRA_leftist_rhetoric
+	shared_focus = FRA_legal_equality
+	shared_focus = FRA_light_medium_armor
+	shared_focus = FRA_loyalty_to_moscow
+	shared_focus = FRA_loyalty_to_the_cause
+	shared_focus = FRA_mechanized_focus
+	shared_focus = FRA_methodical_battle
+	shared_focus = FRA_metropolitan_france
+	shared_focus = FRA_military_factories
+	shared_focus = FRA_motorized_focus
+	shared_focus = FRA_national_champions
+	shared_focus = FRA_national_council_of_the_resistance
+	shared_focus = FRA_national_mobilization
+	shared_focus = FRA_national_regeneration
+	shared_focus = FRA_national_uprising
+	shared_focus = FRA_nationalize_key_industry
+	shared_focus = FRA_naval_bomber_focus
+	shared_focus = FRA_naval_doctrine
+	shared_focus = FRA_naval_rearmament
+	shared_focus = FRA_no_further_humiliations
+	shared_focus = FRA_orleanist_restoration
+	shared_focus = FRA_political_unity
+	shared_focus = FRA_pre_empt_the_fascist_attack
+	shared_focus = FRA_prioritize_the_joffre
+	shared_focus = FRA_proclaim_the_third_empire
+	shared_focus = FRA_promote_entrepeneurship
+	shared_focus = FRA_protect_the_rights_of_man
+	shared_focus = FRA_public_welfare
+	shared_focus = FRA_ratify_the_stresa_front
+	shared_focus = FRA_reach_out_to_spain
+	shared_focus = FRA_reach_out_to_trade_unions
+	shared_focus = FRA_reconciliation
+	shared_focus = FRA_reconnect_to_the_balkans
+	shared_focus = FRA_reform_the_labour_laws
+	shared_focus = FRA_refus_absurde
+	shared_focus = FRA_reorganize_the_aviation_industry
+	shared_focus = FRA_reorganize_the_dutch
+	shared_focus = FRA_repeal_the_law_of_exile
+	shared_focus = FRA_retribution_for_sedan
+	shared_focus = FRA_return_to_borodino
+	shared_focus = FRA_review_foreign_policy
+	shared_focus = FRA_revise_the_constitution
+	shared_focus = FRA_revive_the_franco_polish_alliance
+	shared_focus = FRA_revive_the_national_bloc
+	shared_focus = FRA_revolution_to_the_utmost
+	shared_focus = FRA_revolutionary_zeal
+	shared_focus = FRA_right_wing_rhetoric
+	shared_focus = FRA_rush_the_richelieus
+	shared_focus = FRA_secure_the_crown_of_spain
+	shared_focus = FRA_slum_clearing
+	shared_focus = FRA_special_forces
+	shared_focus = FRA_split_belgium
+	shared_focus = FRA_stimulate_the_dynamic_market
+	shared_focus = FRA_strengthen_government_support
+	shared_focus = FRA_strengthen_the_little_entente
+	shared_focus = FRA_strengthen_the_unions
+	shared_focus = FRA_support_the_finns
+	shared_focus = FRA_surface_combat
+	shared_focus = FRA_the_blum_viollette_proposal
+	shared_focus = FRA_the_civil_and_military_organization
+	shared_focus = FRA_the_congress_of_paris
+	shared_focus = FRA_the_council_of_rambouillet
+	shared_focus = FRA_the_first_citizen_of_the_state
+	shared_focus = FRA_the_free_french_navy
+	shared_focus = FRA_the_legitimate_heir
+	shared_focus = FRA_the_maquis
+	shared_focus = FRA_the_natural_borders_of_france
+	shared_focus = FRA_the_old_school
+	shared_focus = FRA_the_regiment_normandie
+	shared_focus = FRA_the_young_school
+	shared_focus = FRA_towards_a_new_europe
+	shared_focus = FRA_two_countries_two_crowns
+	shared_focus = FRA_undersea_combat
+	shared_focus = FRA_unite_the_crowns
+	shared_focus = FRA_utilize_the_leagues
+	shared_focus = FRA_womens_suffrage
+	shared_focus = FRA_woo_italy
+	shared_focus = FRA_work
+	shared_focus = VIC_a_nation_reborn
+	shared_focus = VIC_aid_small_businesses
+	shared_focus = VIC_analyze_our_defeat
+	shared_focus = VIC_anti_bolshevist_volunteers
+	shared_focus = VIC_buy_from_the_enemy
+	shared_focus = VIC_celebrate_motherhood
+	shared_focus = VIC_concessions_to_the_germans
+	shared_focus = VIC_down_with_marianne
+	shared_focus = VIC_emergency_powers_to_petain
+	shared_focus = VIC_end_the_occupation
+	shared_focus = VIC_finish_the_naval_buildup
+	shared_focus = VIC_form_the_milice
+	shared_focus = VIC_hidden_materials
+	shared_focus = VIC_learn_from_the_enemy
+	shared_focus = VIC_long_term_economic_planning
+	shared_focus = VIC_mandatory_work_service
+	shared_focus = VIC_modernize_the_airforce
+	shared_focus = VIC_prosecute_the_losers
+	shared_focus = VIC_rebuild_the_military
+	shared_focus = VIC_the_legionary_service_order
+	shared_focus = VIC_the_national_bureau_of_statistics
+	shared_focus = VIC_the_national_revolution
+	shared_focus = VIC_up_with_jean_darc
+	shared_focus = VIC_venerate_the_craftsman
+	focus = {
+		id = FRA_nww_session
+		icon = GFX_FRA_nww_republic
+		x = 0
+		y = 0
+		cost = 5
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+			country_event = {
+				id = nww_fra.1
+				days = 1
+			}
+			set_country_flag = FRA_nww_session_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_accounts
+		icon = GFX_FRA_nww_republic
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_accounts_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_consultations
+		icon = GFX_FRA_nww_republic
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_accounts
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = FRA_consultations
+			custom_effect_tooltip = FRA_meter_tension_loss_5_tt
+			add_to_variable = {
+				FRA_tension = -5
+			}
+			set_country_flag = FRA_nww_consultations_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_republic
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_consultations
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_right
+			focus = FRA_nww_front
+			focus = FRA_nww_emergency
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = FRA_route_republic
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			set_country_flag = FRA_nww_republic_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_right
+		icon = GFX_FRA_nww_crown
+		x = -3
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_consultations
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_republic
+			focus = FRA_nww_front
+			focus = FRA_nww_emergency
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = FRA_route_right
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			set_country_flag = FRA_nww_right_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_front
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_consultations
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_republic
+			focus = FRA_nww_right
+			focus = FRA_nww_emergency
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = FRA_route_front
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			set_country_flag = FRA_nww_front_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_emergency
+		icon = GFX_FRA_nww_cabinet
+		x = 10
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_consultations
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_republic
+			focus = FRA_nww_right
+			focus = FRA_nww_front
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = FRA_route_emergency
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			set_country_flag = FRA_nww_emergency_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_commission
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_republic
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			custom_effect_tooltip = FRA_meter_tension_gain_5_tt
+			add_to_variable = {
+				FRA_tension = 5
+			}
+			set_country_flag = FRA_nww_commission_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_contracts
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 5
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_commission
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_contracts_progress_tt
+			add_stability = 0.05
+			set_country_flag = FRA_nww_contracts_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_responsible
+		icon = GFX_FRA_nww_republic
+		x = -11
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_contracts
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_oversight
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_15_tt
+			add_to_variable = {
+				FRA_mandate = 15
+			}
+			set_country_flag = FRA_nww_responsible_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_oversight
+		icon = GFX_FRA_nww_republic
+		x = -7
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_contracts
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_responsible
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_15_tt
+			add_to_variable = {
+				FRA_tension = -15
+			}
+			set_country_flag = FRA_nww_oversight_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_arbitration
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_responsible
+			focus = FRA_nww_oversight
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_arbitration_progress_tt
+			custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+			add_to_variable = {
+				FRA_tension = -10
+			}
+			set_country_flag = FRA_nww_arbitration_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_municipal_credit
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_arbitration
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_municipal_credit_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_audit_court
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_municipal_credit
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_audit_court_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_civil_service
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_audit_court
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_civil_service_progress_tt
+			add_political_power = 75
+			set_country_flag = FRA_nww_civil_service_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_renewal
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_civil_service
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				democratic < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_settle_regime = yes
+			add_stability = 0.05
+			set_country_flag = FRA_nww_renewal_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_rights
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_renewal
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+			add_to_variable = {
+				FRA_tension = -10
+			}
+			set_country_flag = FRA_nww_rights_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_republic_institutions
+		icon = GFX_FRA_nww_republic
+		x = -9
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_rights
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = FRA_nww_republic_institutions_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_leagues_discipline
+		icon = GFX_FRA_nww_leagues
+		x = -3
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_right
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_5_tt
+			add_to_variable = {
+				FRA_tension = -5
+			}
+			set_country_flag = FRA_armed_leagues
+			set_country_flag = FRA_nww_leagues_discipline_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_garrisons
+		icon = GFX_FRA_nww_cabinet
+		x = -3
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_leagues_discipline
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_garrisons_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_powers_crisis
+		icon = GFX_FRA_nww_leagues
+		x = -3
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_garrisons
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_powers_crisis_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_orleanists
+		icon = GFX_FRA_nww_crown
+		x = -5
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_powers_crisis
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_directory
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			set_country_flag = FRA_nww_orleanists_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_directory
+		icon = GFX_FRA_nww_leagues
+		x = -1
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_powers_crisis
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_orleanists
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			set_country_flag = FRA_nww_directory_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_crown_law
+		icon = GFX_FRA_nww_crown
+		x = -5
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_orleanists
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				neutrality < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_monarchy_transition = yes
+			set_country_flag = FRA_nww_crown_law_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_league_state
+		icon = GFX_FRA_nww_leagues
+		x = -1
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_directory
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				fascism < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_league_transition = yes
+			set_country_flag = FRA_nww_league_state_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_royal_cabinet
+		icon = GFX_FRA_nww_crown
+		x = -5
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_crown_law
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_royal_cabinet_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_royal_charter
+		icon = GFX_FRA_nww_crown
+		x = -5
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_royal_cabinet
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_royal_corporate
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_15_tt
+			add_to_variable = {
+				FRA_tension = -15
+			}
+			set_country_flag = FRA_nww_royal_charter_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_crown_service
+		icon = GFX_FRA_nww_crown
+		x = -5
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_royal_charter
+			focus = FRA_nww_royal_corporate
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_settle_regime = yes
+			set_country_flag = FRA_nww_crown_service_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_royal_corporate
+		icon = GFX_FRA_nww_crown
+		x = -3
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_royal_cabinet
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_royal_charter
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			custom_effect_tooltip = FRA_meter_tension_gain_5_tt
+			add_to_variable = {
+				FRA_tension = 5
+			}
+			set_country_flag = FRA_nww_royal_corporate_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_corporate_chamber
+		icon = GFX_FRA_nww_leagues
+		x = -1
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_league_state
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_corporate_chamber_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_national_movement
+		icon = GFX_FRA_nww_leagues
+		x = -1
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_corporate_chamber
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			custom_effect_tooltip = FRA_meter_tension_gain_10_tt
+			add_to_variable = {
+				FRA_tension = 10
+			}
+			set_country_flag = FRA_nww_national_movement_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_league_administration
+		icon = GFX_FRA_nww_leagues
+		x = -1
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_national_movement
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_settle_regime = yes
+			set_country_flag = FRA_nww_league_administration_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_left_talks
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_front
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+			add_to_variable = {
+				FRA_tension = -10
+			}
+			set_country_flag = FRA_armed_workers
+			set_country_flag = FRA_nww_left_talks_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_public_works
+		icon = GFX_FRA_nww_industry
+		x = 3
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_left_talks
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_public_works_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_labour_charter
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_public_works
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_nww_retooling
+				days = 120
+			}
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_labour_charter_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_social_republic
+		icon = GFX_FRA_nww_labour
+		x = 1
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_labour_charter
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_councils
+			focus = FRA_nww_central_plan
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				democratic < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_social_republic_transition = yes
+			set_country_flag = FRA_nww_social_republic_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_councils
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_labour_charter
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_social_republic
+			focus = FRA_nww_central_plan
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				communism < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_councils_transition = yes
+			set_country_flag = FRA_nww_councils_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_central_plan
+		icon = GFX_FRA_nww_labour
+		x = 5
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_labour_charter
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_social_republic
+			focus = FRA_nww_councils
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				communism < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_central_plan_transition = yes
+			set_country_flag = FRA_nww_central_plan_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_collective_contracts
+		icon = GFX_FRA_nww_labour
+		x = 1
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_social_republic
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+			add_to_variable = {
+				FRA_tension = -10
+			}
+			set_country_flag = FRA_nww_collective_contracts_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_social_insurance
+		icon = GFX_FRA_nww_labour
+		x = 1
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_collective_contracts
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_country_flag = FRA_nww_social_insurance_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_social_arbitration
+		icon = GFX_FRA_nww_labour
+		x = 1
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_social_insurance
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_settle_regime = yes
+			set_country_flag = FRA_nww_social_arbitration_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_cooperatives
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_councils
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_cooperatives_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_elected_boards
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_cooperatives
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_elected_boards_progress_tt
+			custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+			add_to_variable = {
+				FRA_tension = -10
+			}
+			set_country_flag = FRA_nww_elected_boards_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_councils_congress
+		icon = GFX_FRA_nww_labour
+		x = 3
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_elected_boards
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_settle_regime = yes
+			set_country_flag = FRA_nww_councils_congress_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_national_banks
+		icon = GFX_FRA_nww_labour
+		x = 5
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_central_plan
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_nww_capital_flight
+				days = 180
+			}
+			set_country_flag = FRA_nww_national_banks_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_investment_plan
+		icon = GFX_FRA_nww_labour
+		x = 5
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_national_banks
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_investment_plan_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_investment_plan_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_planning_commission
+		icon = GFX_FRA_nww_labour
+		x = 5
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_investment_plan
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_settle_regime = yes
+			set_country_flag = FRA_nww_planning_commission_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_disarm_militias
+		icon = GFX_FRA_nww_cabinet
+		x = 10
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_emergency
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_gain_5_tt
+			add_to_variable = {
+				FRA_tension = 5
+			}
+			set_country_flag = FRA_army_mandate
+			set_country_flag = FRA_nww_disarm_militias_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_emergency_legal
+		icon = GFX_FRA_nww_cabinet
+		x = 10
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_disarm_militias
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_emergency_legal_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_military_cabinet
+		icon = GFX_FRA_nww_cabinet
+		x = 10
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_emergency_legal
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				neutrality < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 40
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_military_transition = yes
+			set_country_flag = FRA_nww_military_cabinet_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_army_neutrality
+		icon = GFX_FRA_nww_cabinet
+		x = 10
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_military_cabinet
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+			add_to_variable = {
+				FRA_tension = -10
+			}
+			set_country_flag = FRA_nww_army_neutrality_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_civil_administration
+		icon = GFX_FRA_nww_republic
+		x = 10
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_army_neutrality
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			set_country_flag = FRA_nww_civil_administration_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_defence_budget
+		icon = GFX_FRA_nww_industry
+		x = 10
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_civil_administration
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_defence_budget_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_return_ballot
+		icon = GFX_FRA_nww_republic
+		x = 8
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_defence_budget
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_extend_mandate
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				democratic < 0.40
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_return_democracy = yes
+			set_country_flag = FRA_nww_return_ballot_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_extend_mandate
+		icon = GFX_FRA_nww_cabinet
+		x = 12
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_defence_budget
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_return_ballot
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				neutrality < 0.40
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 50
+				compare = greater_than_or_equals
+				tooltip = FRA_check_mandate_greater_than_or_equals_50_tt
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FRA_extend_military_rule = yes
+			set_country_flag = FRA_nww_extend_mandate_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_bank_audit
+		icon = GFX_FRA_nww_industry
+		x = 20
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = FRA_nww_bank_audit_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_public_bank
+		icon = GFX_FRA_nww_industry
+		x = 18
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_bank_audit
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_private_credit
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			set_country_flag = FRA_nww_public_bank_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_private_credit
+		icon = GFX_FRA_nww_industry
+		x = 22
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_bank_audit
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_public_bank
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			set_country_flag = FRA_nww_private_credit_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_housing
+		icon = GFX_FRA_nww_industry
+		x = 20
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_public_bank
+			focus = FRA_nww_private_credit
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_housing_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_housing_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_municipal_orders
+		icon = GFX_FRA_nww_industry
+		x = 20
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_housing
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_municipal_orders_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_municipal_orders_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_rail_nodes
+		icon = GFX_FRA_nww_industry
+		x = 20
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_municipal_orders
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_alsthom_tt
+			custom_effect_tooltip = FRA_nww_rail_nodes_progress_tt
+			if = {
+				limit = {
+					16 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				16 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					20 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				20 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					16 = {
+						is_owned_and_controlled_by = ROOT
+					}
+					20 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				build_railway = {
+					level = 2
+					start_state = 16
+					target_state = 20
+					build_only_on_allied = yes
+					controller_priority = {
+						base = -1
+						modifier = {
+							tag = FRA
+							add = 2
+						}
+					}
+				}
+			}
+			set_country_flag = FRA_nww_rail_nodes_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_coal_basins
+		icon = GFX_FRA_nww_industry
+		x = 18
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_rail_nodes
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				prioritize = {
+					29
+				}
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			set_country_flag = FRA_nww_coal_basins_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_electrification
+		icon = GFX_FRA_nww_industry
+		x = 22
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_rail_nodes
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_electrification_progress_tt
+			if = {
+				limit = {
+					16 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				16 = {
+					add_building_construction = {
+						type = energy_infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			set_country_flag = FRA_nww_electrification_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_concentrate
+		icon = GFX_FRA_nww_industry
+		x = 18
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_coal_basins
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_regional
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				prioritize = {
+					16
+					29
+					785
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_concentrate_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_regional
+		icon = GFX_FRA_nww_industry
+		x = 22
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_electrification
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_concentrate
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				prioritize = {
+					14
+					31
+					23
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_regional_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_west_industry
+		icon = GFX_FRA_nww_industry
+		x = 20
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_concentrate
+			focus = FRA_nww_regional
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				prioritize = {
+					14
+					31
+					15
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_west_industry_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_provincial_schools
+		icon = GFX_FRA_nww_science
+		x = 20
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_west_industry
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_provincial_schools_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_internal_market
+		icon = GFX_FRA_nww_industry
+		x = 20
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_provincial_schools
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_internal_market_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_internal_market_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_specifications
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			set_country_flag = FRA_nww_specifications_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_standard_patterns
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_specifications
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_mas_tt
+			custom_effect_tooltip = FRA_nww_unlock_renault_tt
+			custom_effect_tooltip = FRA_nww_standard_patterns_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_standard_patterns_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_state_arsenals
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_standard_patterns
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_state_arsenals_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_private_contracts
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_state_arsenals
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_private_contracts_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_machine_reserve
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_private_contracts
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_machine_reserve_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_conversion
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_machine_reserve
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			set_country_flag = FRA_nww_conversion_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fort_commission
+		icon = GFX_FRA_nww_army
+		x = 32
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_specifications
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_fort_projects_tt
+			set_country_flag = FRA_nww_fort_commission_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_lorraine
+		icon = GFX_FRA_nww_army
+		x = 32
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_fort_commission
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_fort_projects_tt
+			set_country_flag = FRA_nww_lorraine_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_north_approaches
+		icon = GFX_FRA_nww_army
+		x = 32
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_lorraine
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_fort_projects_tt
+			set_country_flag = FRA_nww_north_approaches_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_alpine_passes
+		icon = GFX_FRA_nww_army
+		x = 32
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_north_approaches
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_fort_projects_tt
+			set_country_flag = FRA_nww_alpine_passes_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_arsenal_network
+		icon = GFX_FRA_nww_industry
+		x = 28
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_conversion
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_arsenal_network_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_arsenal_network_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_research_council
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = FRA_nww_research_council_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_university_contract
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_research_council
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_university_contract_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_polytechnics
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_university_contract
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			set_country_flag = FRA_nww_polytechnics_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fourth_slot
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_polytechnics
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 4
+				}
+				add_research_slot = 1
+			}
+			set_country_flag = FRA_nww_fourth_slot_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_metallurgy
+		icon = GFX_FRA_nww_science
+		x = 37
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_fourth_slot
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_apx_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			set_country_flag = FRA_nww_metallurgy_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_radio_labs
+		icon = GFX_FRA_nww_science
+		x = 41
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_fourth_slot
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			set_country_flag = FRA_nww_radio_labs_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_aerodynamics
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_metallurgy
+			focus = FRA_nww_radio_labs
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			set_country_flag = FRA_nww_aerodynamics_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_science_network
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_aerodynamics
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = FRA_nww_science_network
+			set_country_flag = FRA_nww_science_network_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fifth_slot
+		icon = GFX_FRA_nww_science
+		x = 39
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_science_network
+		}
+		available = {
+			has_capitulated = no
+			date > 1938.12.31
+			num_of_factories > 74
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_fifth_slot_progress_tt
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			set_country_flag = FRA_nww_fifth_slot_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_maneuvers
+		icon = GFX_FRA_nww_army
+		x = 47
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			add_timed_idea = {
+				idea = FRA_nww_manoeuvres
+				days = 70
+			}
+			set_country_flag = FRA_nww_maneuvers_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_staff_college
+		icon = GFX_FRA_nww_army
+		x = 47
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_maneuvers
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_staff_college_progress_tt
+			army_experience = 15
+			set_country_flag = FRA_nww_staff_college_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_signals_supply
+		icon = GFX_FRA_nww_army
+		x = 47
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_staff_college
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_panhard_tt
+			custom_effect_tooltip = FRA_nww_signals_supply_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+			set_country_flag = FRA_nww_signals_supply_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_methodical
+		icon = GFX_FRA_nww_army
+		x = 44
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_signals_supply
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_mobile
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_methodical_progress_tt
+			army_experience = 20
+			set_country_flag = FRA_nww_methodical_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_mobile
+		icon = GFX_FRA_nww_army
+		x = 50
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_signals_supply
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_methodical
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+			set_country_flag = FRA_nww_mobile_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_artillery_plans
+		icon = GFX_FRA_nww_army
+		x = 44
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_methodical
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_schneider_tt
+			custom_effect_tooltip = FRA_nww_artillery_plans_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			set_country_flag = FRA_nww_artillery_plans_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_mobile_reserve
+		icon = GFX_FRA_nww_army
+		x = 44
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_artillery_plans
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_somua_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			set_country_flag = FRA_nww_mobile_reserve_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fort_counterattack
+		icon = GFX_FRA_nww_army
+		x = 44
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_mobile_reserve
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+			set_country_flag = FRA_nww_fort_counterattack_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_methodical_system
+		icon = GFX_FRA_nww_army
+		x = 44
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_fort_counterattack
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_methodical_system_progress_tt
+			army_experience = 25
+			set_country_flag = FRA_nww_methodical_system_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_experimental_groups
+		icon = GFX_FRA_nww_army
+		x = 50
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_mobile
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_hotchkiss_tt
+			custom_effect_tooltip = FRA_nww_experimental_groups_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			set_country_flag = FRA_nww_experimental_groups_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_radio_commands
+		icon = GFX_FRA_nww_army
+		x = 50
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_experimental_groups
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_radio_commands_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			set_country_flag = FRA_nww_radio_commands_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_armoured_divisions
+		icon = GFX_FRA_nww_army
+		x = 50
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_radio_commands
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_amx_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			set_country_flag = FRA_nww_armoured_divisions_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_mobile_system
+		icon = GFX_FRA_nww_army
+		x = 50
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_armoured_divisions
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_mobile_system_progress_tt
+			army_experience = 25
+			set_country_flag = FRA_nww_mobile_system_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_officer_corps
+		icon = GFX_FRA_nww_army
+		x = 47
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_methodical_system
+			focus = FRA_nww_mobile_system
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_officer_corps_progress_tt
+			army_experience = 25
+			set_country_flag = FRA_nww_officer_corps_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_mobilisation_staff
+		icon = GFX_FRA_nww_army
+		x = 47
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_officer_corps
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			set_country_flag = FRA_nww_mobilisation_staff_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_air_command
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_air_command_progress_tt
+			air_experience = 15
+			set_country_flag = FRA_nww_air_command_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_flight_schools
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_air_command
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_flight_schools_progress_tt
+			air_experience = 15
+			set_country_flag = FRA_nww_flight_schools_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_engine_standards
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_flight_schools
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_engine_standards_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			set_country_flag = FRA_nww_engine_standards_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_airfields
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_engine_standards
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					16 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				16 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					22 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				22 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			set_country_flag = FRA_nww_airfields_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_tactical_air
+		icon = GFX_FRA_nww_air
+		x = 55
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_airfields
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_strategic_air
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+			}
+			set_country_flag = FRA_nww_tactical_air_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_strategic_air
+		icon = GFX_FRA_nww_air
+		x = 59
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_airfields
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_tactical_air
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = heavy_air
+			}
+			set_country_flag = FRA_nww_strategic_air_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_tactical_groups
+		icon = GFX_FRA_nww_air
+		x = 55
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_tactical_air
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_bloch_tt
+			custom_effect_tooltip = FRA_nww_tactical_groups_progress_tt
+			air_experience = 25
+			set_country_flag = FRA_nww_tactical_groups_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_navigation
+		icon = GFX_FRA_nww_air
+		x = 59
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_strategic_air
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_amiot_tt
+			custom_effect_tooltip = FRA_nww_navigation_progress_tt
+			air_experience = 25
+			set_country_flag = FRA_nww_navigation_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_air_watch
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_tactical_groups
+			focus = FRA_nww_navigation
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
+			set_country_flag = FRA_nww_air_watch_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_interception
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_air_watch
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_morane_saulnier_tt
+			custom_effect_tooltip = FRA_nww_interception_progress_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			set_country_flag = FRA_nww_interception_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_air_industry
+		icon = GFX_FRA_nww_air
+		x = 57
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_interception
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_air_industry_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_air_industry_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fleet_audit
+		icon = GFX_FRA_nww_navy
+		x = 67
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 15
+			set_country_flag = FRA_nww_fleet_audit_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_training_squadrons
+		icon = GFX_FRA_nww_navy
+		x = 67
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_fleet_audit
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_training_squadrons_progress_tt
+			navy_experience = 15
+			set_country_flag = FRA_nww_training_squadrons_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_bases_fuel
+		icon = GFX_FRA_nww_navy
+		x = 67
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_training_squadrons
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_acf_tt
+			custom_effect_tooltip = FRA_nww_bases_fuel_progress_tt
+			if = {
+				limit = {
+					851 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				851 = {
+					add_building_construction = {
+						type = fuel_silo
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			set_country_flag = FRA_nww_bases_fuel_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_atlantic
+		icon = GFX_FRA_nww_navy
+		x = 64
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_bases_fuel
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_mediterranean
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			set_country_flag = FRA_nww_atlantic_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_mediterranean
+		icon = GFX_FRA_nww_navy
+		x = 70
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_bases_fuel
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_atlantic
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = ca_tech
+			}
+			set_country_flag = FRA_nww_mediterranean_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_asw
+		icon = GFX_FRA_nww_navy
+		x = 64
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_atlantic
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_fcm_tt
+			custom_effect_tooltip = FRA_nww_asw_progress_tt
+			navy_experience = 25
+			set_country_flag = FRA_nww_asw_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fast_squadrons
+		icon = GFX_FRA_nww_navy
+		x = 70
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_mediterranean
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_aeb_tt
+			custom_effect_tooltip = FRA_nww_fast_squadrons_progress_tt
+			navy_experience = 25
+			set_country_flag = FRA_nww_fast_squadrons_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_naval_yards
+		icon = GFX_FRA_nww_navy
+		x = 67
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_asw
+			focus = FRA_nww_fast_squadrons
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_naval_yards_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_naval_yards_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_battlefleet
+		icon = GFX_FRA_nww_navy
+		x = 65
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_naval_yards
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_carrier_trials
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = bb_tech
+			}
+			set_country_flag = FRA_nww_battlefleet_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_carrier_trials
+		icon = GFX_FRA_nww_navy
+		x = 69
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_naval_yards
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_battlefleet
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = cv_tech
+			}
+			set_country_flag = FRA_nww_carrier_trials_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_fire_control
+		icon = GFX_FRA_nww_navy
+		x = 65
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_battlefleet
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_acl_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+			set_country_flag = FRA_nww_fire_control_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_carrier_group
+		icon = GFX_FRA_nww_navy
+		x = 69
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_carrier_trials
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_unlock_levasseur_tt
+			add_tech_bonus = {
+				name = FRA_nww_research_program
+				bonus = 0.5
+				uses = 1
+				category = naval_air
+			}
+			set_country_flag = FRA_nww_carrier_group_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_two_seas
+		icon = GFX_FRA_nww_navy
+		x = 67
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_fire_control
+			focus = FRA_nww_carrier_group
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_two_seas_progress_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FRA_nww_two_seas_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_overseas_register
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = FRA_nww_overseas_register_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_overseas_conference
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_overseas_register
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_meter_tension_loss_5_tt
+			add_to_variable = {
+				FRA_tension = -5
+			}
+			set_country_flag = FRA_nww_overseas_conference_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_extraction
+		icon = GFX_FRA_nww_overseas
+		x = 73
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_overseas_conference
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_representation
+			focus = FRA_nww_selfdetermination
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_extraction_unlock_tt
+			set_country_flag = FRA_policy_extraction
+			set_country_flag = FRA_nww_extraction_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_representation
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_overseas_conference
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_extraction
+			focus = FRA_nww_selfdetermination
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_representation_unlock_tt
+			set_country_flag = FRA_policy_representation
+			set_country_flag = FRA_nww_representation_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_selfdetermination
+		icon = GFX_FRA_nww_overseas
+		x = 81
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_overseas_conference
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_extraction
+			focus = FRA_nww_representation
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_selfdetermination_unlock_tt
+			set_country_flag = FRA_policy_selfdetermination
+			set_country_flag = FRA_nww_selfdetermination_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_colonial_schools
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_extraction
+			focus = FRA_nww_representation
+			focus = FRA_nww_selfdetermination
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_colonial_projects_tt
+			set_country_flag = FRA_nww_colonial_schools_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_overseas_credit
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_colonial_schools
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = FRA_nww_overseas_credit_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_central_overseas_plan
+		icon = GFX_FRA_nww_labour
+		x = 81
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_colonial_schools
+		}
+		available = {
+			has_capitulated = no
+			has_government = communism
+			NOT = {
+				has_country_flag = FRA_policy_selfdetermination
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_central_overseas_plan_progress_tt
+			set_country_flag = FRA_central_overseas_plan
+			add_political_power = 50
+			set_country_flag = FRA_nww_central_overseas_plan_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_overseas_compact
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_overseas_credit
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_overseas_compact_unlock_tt
+			set_country_flag = FRA_overseas_compact
+			set_country_flag = FRA_nww_overseas_compact_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_common_markets
+		icon = GFX_FRA_nww_overseas
+		x = 77
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_overseas_compact
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_common_markets_unlock_tt
+			custom_effect_tooltip = FRA_treaty_consent_tt
+			set_country_flag = FRA_nww_common_markets_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_foreign_review
+		icon = GFX_FRA_nww_republic
+		x = 87
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_session
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = FRA_nww_foreign_review_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_western_security
+		icon = GFX_FRA_nww_republic
+		x = 85
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_foreign_review
+		}
+		available = {
+			has_capitulated = no
+			OR = {
+				has_government = democratic
+				has_country_flag = FRA_regime_military
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_western_security_unlock_tt
+			set_country_flag = FRA_western_diplomacy
+			set_country_flag = FRA_nww_western_security_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_latin_accord
+		icon = GFX_FRA_nww_crown
+		x = 87
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_foreign_review
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_continental_accord
+			focus = FRA_nww_rhine_stand
+		}
+		available = {
+			has_capitulated = no
+			OR = {
+				has_government = fascism
+				has_country_flag = FRA_regime_monarchy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_latin_accord_unlock_tt
+			set_country_flag = FRA_latin_diplomacy
+			set_country_flag = FRA_nww_latin_accord_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_continental_accord
+		icon = GFX_FRA_nww_crown
+		x = 89
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_foreign_review
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_latin_accord
+			focus = FRA_nww_rhine_stand
+		}
+		available = {
+			has_capitulated = no
+			OR = {
+				has_government = fascism
+				has_country_flag = FRA_regime_monarchy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_continental_accord_unlock_tt
+			set_country_flag = FRA_continental_diplomacy
+			set_country_flag = FRA_nww_continental_accord_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_rhine_stand
+		icon = GFX_FRA_nww_army
+		x = 91
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_foreign_review
+		}
+		mutually_exclusive = {
+			focus = FRA_nww_latin_accord
+			focus = FRA_nww_continental_accord
+		}
+		available = {
+			has_capitulated = no
+			OR = {
+				has_government = fascism
+				has_country_flag = FRA_regime_monarchy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			set_country_flag = FRA_rhine_diplomacy
+			set_country_flag = FRA_nww_rhine_stand_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_workers_diplomacy
+		icon = GFX_FRA_nww_labour
+		x = 93
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_foreign_review
+		}
+		available = {
+			has_capitulated = no
+			OR = {
+				has_government = communism
+				has_country_flag = FRA_route_front
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_nww_workers_diplomacy_unlock_tt
+			set_country_flag = FRA_workers_diplomacy
+			set_country_flag = FRA_nww_workers_diplomacy_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_independent_course
+		icon = GFX_FRA_nww_republic
+		x = 95
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_foreign_review
+		}
+		available = {
+			has_capitulated = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+			set_country_flag = FRA_nww_independent_course_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_rhine_preparations
+		icon = GFX_FRA_nww_army
+		x = 91
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_rhine_stand
+		}
+		available = {
+			has_capitulated = no
+			date > 1938.12.31
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+			set_country_flag = FRA_nww_rhine_preparations_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+	focus = {
+		id = FRA_nww_rhine_ultimatum
+		icon = GFX_FRA_nww_army
+		x = 91
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = FRA_nww_rhine_preparations
+		}
+		available = {
+			has_capitulated = no
+			date > 1939.12.31
+			GER = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = nww_fra.204
+					days = 1
+				}
+			}
+			set_country_flag = FRA_nww_rhine_ultimatum_done
+			clr_country_flag = FRA_coalition_promise
+			clr_country_flag = FRA_coalition_deadline
+			custom_effect_tooltip = FRA_meter_mandate_gain_1_tt
+			add_to_variable = {
+				FRA_mandate = 1
+			}
+			FRA_update_spirits = yes
+			FRA_clamp_meters = yes
+		}
+	}
+}

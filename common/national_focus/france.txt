@@ -1,0 +1,1 @@
+# France content is owned by FRA_focuses.txt. Nonselectable tree aliases retain native literal references.

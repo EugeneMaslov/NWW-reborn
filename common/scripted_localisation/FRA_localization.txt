@@ -1,0 +1,49 @@
+defined_text = { name = GetFRARegimeStatus text = { trigger = { has_country_flag = FRA_regime_settled } localization_key = FRA_status_settled } text = { localization_key = FRA_status_unsettled } }
+defined_text = { name = GetFRAOverseasForecast text = { trigger = { has_country_flag = FRA_policy_extraction } localization_key = FRA_forecast_extraction } text = { localization_key = FRA_forecast_default } }
+defined_text = { name = GetFRASpiritState text = { trigger = { has_country_flag = FRA_regime_settled } localization_key = FRA_spirit_state_reformed } text = { localization_key = FRA_spirit_state_initial } }
+defined_text = { name = GetFRASpiritEconomy text = { trigger = { has_completed_focus = FRA_nww_internal_market } localization_key = FRA_spirit_economy_reformed } text = { localization_key = FRA_spirit_economy_initial } }
+defined_text = { name = GetFRASpiritArmy text = { trigger = { has_completed_focus = FRA_nww_signals_supply } localization_key = FRA_spirit_army_reformed } text = { localization_key = FRA_spirit_army_initial } }
+defined_text = { name = GetFRASpiritAir text = { trigger = { has_completed_focus = FRA_nww_air_command } localization_key = FRA_spirit_air_reformed } text = { localization_key = FRA_spirit_air_initial } }
+defined_text = { name = GetFRASpiritNavy text = { trigger = { has_completed_focus = FRA_nww_two_seas } localization_key = FRA_spirit_navy_reformed } text = { localization_key = FRA_spirit_navy_initial } }
+defined_text = { name = GetFRAAlgeriaStatus
+          text = { trigger = { FRA_holds_algeria = yes OR = { has_country_flag = FRA_algeria_independent has_country_flag = FRA_algeria_autonomous } } localization_key = FRA_status_partial }
+          text = { trigger = { has_country_flag = FRA_algeria_independent } localization_key = FRA_status_independent }
+          text = { trigger = { has_country_flag = FRA_algeria_autonomous } localization_key = FRA_status_autonomous }
+          text = { trigger = { has_country_flag = FRA_algeria_represented } localization_key = FRA_status_represented }
+          text = { trigger = { FRA_holds_algeria = no } localization_key = FRA_status_no_control }
+          text = { localization_key = FRA_status_direct } }
+defined_text = { name = GetFRAMaghrebStatus
+          text = { trigger = { FRA_holds_maghreb = yes OR = { has_country_flag = FRA_maghreb_independent has_country_flag = FRA_maghreb_autonomous } } localization_key = FRA_status_partial }
+          text = { trigger = { has_country_flag = FRA_maghreb_independent } localization_key = FRA_status_independent }
+          text = { trigger = { has_country_flag = FRA_maghreb_autonomous } localization_key = FRA_status_autonomous }
+          text = { trigger = { has_country_flag = FRA_maghreb_represented } localization_key = FRA_status_represented }
+          text = { trigger = { FRA_holds_maghreb = no } localization_key = FRA_status_no_control }
+          text = { localization_key = FRA_status_direct } }
+defined_text = { name = GetFRAWestAfricaStatus
+          text = { trigger = { FRA_holds_west_africa = yes OR = { has_country_flag = FRA_west_africa_independent has_country_flag = FRA_west_africa_autonomous } } localization_key = FRA_status_partial }
+          text = { trigger = { has_country_flag = FRA_west_africa_independent } localization_key = FRA_status_independent }
+          text = { trigger = { has_country_flag = FRA_west_africa_autonomous } localization_key = FRA_status_autonomous }
+          text = { trigger = { has_country_flag = FRA_west_africa_represented } localization_key = FRA_status_represented }
+          text = { trigger = { FRA_holds_west_africa = no } localization_key = FRA_status_no_control }
+          text = { localization_key = FRA_status_direct } }
+defined_text = { name = GetFRAEquatorialStatus
+          text = { trigger = { FRA_holds_equatorial = yes OR = { has_country_flag = FRA_equatorial_independent has_country_flag = FRA_equatorial_autonomous } } localization_key = FRA_status_partial }
+          text = { trigger = { has_country_flag = FRA_equatorial_independent } localization_key = FRA_status_independent }
+          text = { trigger = { has_country_flag = FRA_equatorial_autonomous } localization_key = FRA_status_autonomous }
+          text = { trigger = { has_country_flag = FRA_equatorial_represented } localization_key = FRA_status_represented }
+          text = { trigger = { FRA_holds_equatorial = no } localization_key = FRA_status_no_control }
+          text = { localization_key = FRA_status_direct } }
+defined_text = { name = GetFRAIndochinaStatus
+          text = { trigger = { FRA_holds_indochina = yes OR = { has_country_flag = FRA_indochina_independent has_country_flag = FRA_indochina_autonomous } } localization_key = FRA_status_partial }
+          text = { trigger = { has_country_flag = FRA_indochina_independent } localization_key = FRA_status_independent }
+          text = { trigger = { has_country_flag = FRA_indochina_autonomous } localization_key = FRA_status_autonomous }
+          text = { trigger = { has_country_flag = FRA_indochina_represented } localization_key = FRA_status_represented }
+          text = { trigger = { FRA_holds_indochina = no } localization_key = FRA_status_no_control }
+          text = { localization_key = FRA_status_direct } }
+defined_text = { name = GetFRAIslandsStatus
+          text = { trigger = { FRA_holds_islands = yes OR = { has_country_flag = FRA_islands_independent has_country_flag = FRA_islands_autonomous } } localization_key = FRA_status_partial }
+          text = { trigger = { has_country_flag = FRA_islands_independent } localization_key = FRA_status_independent }
+          text = { trigger = { has_country_flag = FRA_islands_autonomous } localization_key = FRA_status_autonomous }
+          text = { trigger = { has_country_flag = FRA_islands_represented } localization_key = FRA_status_represented }
+          text = { trigger = { FRA_holds_islands = no } localization_key = FRA_status_no_control }
+          text = { localization_key = FRA_status_direct } }

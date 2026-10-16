@@ -1,0 +1,30 @@
+# Native French event IDs retained as inert compatibility callbacks. See FRA_events.txt.
+add_namespace = france
+country_event = { id = france.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.101 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.10 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.12 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.13 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.14 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.15 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.16 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.17 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.18 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.19 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.20 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.21 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.22 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.23 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.25 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.26 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.27 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.28 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.29 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.30 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.31 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.32 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = france.33 hidden = yes is_triggered_only = yes immediate = { } }
+news_event = { id = france.34 hidden = yes is_triggered_only = yes immediate = { } }

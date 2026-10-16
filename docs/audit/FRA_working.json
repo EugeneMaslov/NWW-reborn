@@ -1,0 +1,1422 @@
+{
+  "schema": 1,
+  "game": "D:\\Steam\\steamapps\\common\\Hearts of Iron IV",
+  "version": "1.19.3.0",
+  "generated_at": "2026-10-16T22:57:07+03:00",
+  "stats": {
+    "script_files": 1459,
+    "localisation_files": 94,
+    "localisation_entries": 9783,
+    "custom_sprites": 3293,
+    "texture_references": 16066,
+    "image_files": 466,
+    "dds_files": 326,
+    "dds_non_pot_ui": 215,
+    "sprite_references": 8828,
+    "native_reference_wrappers_restored": 3,
+    "effective_focuses": 11742,
+    "effective_characters": 5485,
+    "custom_focuses": 3008,
+    "hidden_compatibility_focuses": 2078,
+    "hidden_focus_default_coordinates": 1812,
+    "victory_point_entries": 1501,
+    "building_entries": 3095,
+    "state_lake_provinces": 118,
+    "state_1082_provinces": 2,
+    "state_1082_vp": 1,
+    "state_200_provinces": 7,
+    "state_200_vp": 1,
+    "effective_states": 1082,
+    "effective_provinces": 13413,
+    "strategic_regions": 304,
+    "decision_variables_without_clamp": 55,
+    "decision_variables": 65,
+    "decisions": 494,
+    "missions": 42,
+    "disabled_compatibility_decisions": 314,
+    "custom_characters": 341,
+    "recruit_references": 1027,
+    "required_localisation_keys": 5375,
+    "art_manifests": 3,
+    "total_files_scanned": 2060,
+    "workspace_inventory_files": 2943
+  },
+  "issues": [
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "interface/aap_technologies.gfx",
+      "line": 238,
+      "message": "Установленная игра: Незакрытый блок; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "interface/powerbalanceview.gfx",
+      "line": 540,
+      "message": "Установленная игра: Незакрытый блок; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "tooling",
+      "severity": "warning",
+      "code": "native_parse",
+      "file": "common/national_focus/TSR_lingguang_incident_joint_branch.txt",
+      "line": 420,
+      "message": "Установленная игра: Лишняя закрывающая скобка; внешняя скобка восстановлена в памяти для чтения реестра, файл игры не изменён"
+    },
+    {
+      "category": "decisions",
+      "severity": "warning",
+      "code": "variable_init",
+      "file": "common/decisions/nww_mkn_decisions.txt",
+      "line": 1034,
+      "message": "MKN_raids_done: явная инициализация в моде не найдена; проверить наследуемые/временные переменные"
+    },
+    {
+      "category": "decisions",
+      "severity": "warning",
+      "code": "variable_init",
+      "file": "common/decisions/MKN_military_decisions.txt",
+      "line": 1054,
+      "message": "damaged_building_level@infrastructure: явная инициализация в моде не найдена; проверить наследуемые/временные переменные"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 4,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 74,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 108,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 179,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 205,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 234,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 343,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 458,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 556,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 644,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 733,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 815,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 895,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_economic_decisions.txt",
+      "line": 986,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_horizons_decisions.txt",
+      "line": 3,
+      "message": "GFX_decision_generic_political_actions"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_horizons_decisions.txt",
+      "line": 36,
+      "message": "GFX_decision_generic_political_actions"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_horizons_decisions.txt",
+      "line": 108,
+      "message": "GFX_decision_generic_political_actions"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_horizons_decisions.txt",
+      "line": 121,
+      "message": "GFX_decision_generic_political_actions"
+    },
+    {
+      "category": "gfx",
+      "severity": "error",
+      "code": "sprite_missing",
+      "file": "common/decisions/MKN_horizons_decisions.txt",
+      "line": 149,
+      "message": "GFX_decision_decision_generic_construction"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/turkey.txt",
+      "line": 2581,
+      "message": "russian: TUR_debt_repayments"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/ideas/turkey.txt",
+      "line": 2581,
+      "message": "english: TUR_debt_repayments"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/scripted_triggers/TUR_campaign_safety_triggers.txt",
+      "line": 31,
+      "message": "russian: nww_TUR_ai_can_prepare_campaign"
+    },
+    {
+      "category": "localisation",
+      "severity": "error",
+      "code": "missing",
+      "file": "common/scripted_triggers/TUR_campaign_safety_triggers.txt",
+      "line": 31,
+      "message": "english: nww_TUR_ai_can_prepare_campaign"
+    }
+  ],
+  "variables": {
+    "AUS_bohemian_investments": {
+      "references": [
+        [
+          "common/decisions/AUS_decisions.txt",
+          125
+        ],
+        [
+          "common/decisions/AUS_decisions.txt",
+          140
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/AUS_overhaul_effects.txt:627"
+      ],
+      "bounds": []
+    },
+    "AUS_bohemian_tension": {
+      "references": [
+        [
+          "common/decisions/AUS_decisions.txt",
+          37
+        ],
+        [
+          "common/decisions/AUS_decisions.txt",
+          40
+        ],
+        [
+          "common/decisions/AUS_decisions.txt",
+          48
+        ],
+        [
+          "common/decisions/AUS_decisions.txt",
+          82
+        ],
+        [
+          "common/decisions/AUS_decisions.txt",
+          100
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/AUS_overhaul_effects.txt:644"
+      ],
+      "bounds": [
+        [
+          "0",
+          "10",
+          "common/decisions/AUS_decisions.txt:40"
+        ],
+        [
+          "0",
+          "10",
+          "common/scripted_effects/AUS_overhaul_effects.txt:597"
+        ]
+      ]
+    },
+    "FRA_algeria_pressure": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          489
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          587
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          612
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:966",
+        "common/scripted_effects/FRA_effects.txt:1426",
+        "common/scripted_effects/FRA_effects.txt:1454",
+        "common/scripted_effects/FRA_effects.txt:1497"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:642"
+        ]
+      ]
+    },
+    "FRA_equatorial_pressure": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          1085
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1186
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1211
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:975",
+        "common/scripted_effects/FRA_effects.txt:2423",
+        "common/scripted_effects/FRA_effects.txt:2517",
+        "common/scripted_effects/FRA_effects.txt:2671"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:657"
+        ]
+      ]
+    },
+    "FRA_indochina_pressure": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          1284
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1384
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1409
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:978",
+        "common/scripted_effects/FRA_effects.txt:2740",
+        "common/scripted_effects/FRA_effects.txt:2812",
+        "common/scripted_effects/FRA_effects.txt:2929"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:662"
+        ]
+      ]
+    },
+    "FRA_islands_pressure": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          1482
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1582
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1607
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:981",
+        "common/scripted_effects/FRA_effects.txt:2998",
+        "common/scripted_effects/FRA_effects.txt:3070",
+        "common/scripted_effects/FRA_effects.txt:3187"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:667"
+        ]
+      ]
+    },
+    "FRA_maghreb_pressure": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          685
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          784
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          809
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:969",
+        "common/scripted_effects/FRA_effects.txt:1545",
+        "common/scripted_effects/FRA_effects.txt:1595",
+        "common/scripted_effects/FRA_effects.txt:1675"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:647"
+        ]
+      ]
+    },
+    "FRA_mandate": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          31
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          108
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          146
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          195
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          240
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          282
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          324
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          366
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          388
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:960",
+        "events/FRA_events.txt:25",
+        "events/FRA_events.txt:41"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:632"
+        ]
+      ]
+    },
+    "FRA_tension": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          70
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          149
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:963"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:637"
+        ]
+      ]
+    },
+    "FRA_west_africa_pressure": {
+      "references": [
+        [
+          "common/decisions/FRA_decisions.txt",
+          882
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          987
+        ],
+        [
+          "common/decisions/FRA_decisions.txt",
+          1012
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/FRA_effects.txt:972",
+        "common/scripted_effects/FRA_effects.txt:1849",
+        "common/scripted_effects/FRA_effects.txt:2031",
+        "common/scripted_effects/FRA_effects.txt:2333"
+      ],
+      "bounds": [
+        [
+          "0",
+          "100",
+          "common/scripted_effects/FRA_effects.txt:652"
+        ]
+      ]
+    },
+    "MKN_air_air_accidents_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1335
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1695
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:681"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_ace_generation_chance_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1407
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:684"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_agility_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1349
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:687"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_attack_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1493
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:690"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_cas_efficiency": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1839
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1853
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:693"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_fuel_consumption_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1709
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1767
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:696"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_home_defence_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1191
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1479
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:699"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_intercept_efficiency": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1277
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:702"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_interception_detect_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1263
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:705"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_mission_efficiency": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1421
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1781
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:708"
+      ],
+      "bounds": []
+    },
+    "MKN_air_air_range_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1205
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1565
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:711"
+      ],
+      "bounds": []
+    },
+    "MKN_air_naval_strike_attack_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1637
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:714"
+      ],
+      "bounds": []
+    },
+    "MKN_air_recon_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1551
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:717"
+      ],
+      "bounds": []
+    },
+    "MKN_air_supply_consumption_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1623
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:720"
+      ],
+      "bounds": []
+    },
+    "MKN_army_army_armor_attack_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          622
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          695
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:609"
+      ],
+      "bounds": []
+    },
+    "MKN_army_army_fuel_consumption_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          536
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:612"
+      ],
+      "bounds": []
+    },
+    "MKN_army_army_org_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          61
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          406
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:615"
+      ],
+      "bounds": []
+    },
+    "MKN_army_army_speed_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          478
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:618"
+      ],
+      "bounds": []
+    },
+    "MKN_army_casualty_trickleback": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          205
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          608
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:624"
+      ],
+      "bounds": []
+    },
+    "MKN_army_conscription": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          277
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:672"
+      ],
+      "bounds": []
+    },
+    "MKN_army_dig_in_speed_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          191
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:627"
+      ],
+      "bounds": []
+    },
+    "MKN_army_land_reinforce_rate": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          681
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:633"
+      ],
+      "bounds": []
+    },
+    "MKN_army_max_dig_in": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          119
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:636"
+      ],
+      "bounds": []
+    },
+    "MKN_army_modifier_army_sub_unit_cavalry_defence_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          335
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:648"
+      ],
+      "bounds": []
+    },
+    "MKN_army_modifier_army_sub_unit_infantry_defence_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          349
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:657"
+      ],
+      "bounds": []
+    },
+    "MKN_army_modifier_army_sub_unit_infantry_speed_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          464
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:660"
+      ],
+      "bounds": []
+    },
+    "MKN_army_org_loss_when_moving": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          47
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          709
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:663"
+      ],
+      "bounds": []
+    },
+    "MKN_army_planning_speed": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          263
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          550
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:666"
+      ],
+      "bounds": []
+    },
+    "MKN_army_supply_consumption_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          133
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:678"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_convoy_escort_efficiency": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2555
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:723"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_convoy_raiding_efficiency_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2843
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:726"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_mines_sweeping_by_fleets_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2325
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:732"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_coordination": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2411
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:735"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_defense_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2541
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:738"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_detection": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2267
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2613
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2757
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:741"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_retreat_speed": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2901
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:744"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_ship_recovery_chance_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2253
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:747"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_speed_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2627
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:750"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_torpedo_hit_chance_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2829
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:753"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_naval_torpedo_reveal_chance_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2685
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:756"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_navy_casualty_on_sink": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2483
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:777"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_navy_fuel_consumption_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2397
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:759"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_navy_submarine_attack_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2915
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:762"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_navy_submarine_defence_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2771
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:765"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_navy_submarine_detection_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2469
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:768"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_repair_speed_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2699
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:771"
+      ],
+      "bounds": []
+    },
+    "MKN_navy_screening_efficiency": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          2339
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:774"
+      ],
+      "bounds": []
+    },
+    "MKN_raids_done": {
+      "references": [
+        [
+          "common/decisions/nww_mkn_decisions.txt",
+          1034
+        ],
+        [
+          "common/decisions/nww_mkn_decisions.txt",
+          1040
+        ]
+      ],
+      "initializers": [],
+      "bounds": []
+    },
+    "MKN_unified_convoy_retreat_speed": {
+      "references": [
+        [
+          "common/decisions/MKN_economic_decisions.txt",
+          972
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:2"
+      ],
+      "bounds": []
+    },
+    "MKN_unified_energy_gain_factor": {
+      "references": [
+        [
+          "common/decisions/MKN_economic_decisions.txt",
+          633
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/nww_mkn_progression.txt:5"
+      ],
+      "bounds": []
+    },
+    "damaged_building_level@infrastructure": {
+      "references": [
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1054
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1095
+        ],
+        [
+          "common/decisions/MKN_military_decisions.txt",
+          1118
+        ]
+      ],
+      "initializers": [],
+      "bounds": []
+    },
+    "mkn_ukr_attacking_state": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          247
+        ]
+      ],
+      "initializers": [
+        "common/decisions/MKN_ukr_border_decisions.txt:247",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:610"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_defending_state": {
+      "references": [
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          250
+        ]
+      ],
+      "initializers": [
+        "common/decisions/MKN_ukr_border_decisions.txt:250",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:623"
+      ],
+      "bounds": []
+    },
+    "mkn_ukr_escalation_level": {
+      "references": [
+        [
+          "common/decisions/MKN_foreign_decisions.txt",
+          46
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          9
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          14
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          17
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          34
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          50
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          64
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          84
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          87
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          123
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          163
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          166
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          179
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          197
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          317
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          399
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          402
+        ],
+        [
+          "common/decisions/nww_mkn_mandate.txt",
+          37
+        ],
+        [
+          "common/decisions/nww_mkn_mandate.txt",
+          77
+        ],
+        [
+          "common/decisions/nww_mkn_mandate.txt",
+          117
+        ],
+        [
+          "common/decisions/nww_mkn_mandate.txt",
+          157
+        ]
+      ],
+      "initializers": [
+        "common/scripted_effects/MKN_ukr_border_effects.txt:45",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:94",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:124",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:329",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:415",
+        "common/scripted_effects/MKN_ukr_border_effects.txt:465",
+        "events/MKN_ukr_border_events.txt:207"
+      ],
+      "bounds": [
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:17"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:87"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:166"
+        ],
+        [
+          "1",
+          "5",
+          "common/decisions/MKN_ukr_border_decisions.txt:402"
+        ],
+        [
+          "1",
+          "5",
+          "common/scripted_effects/MKN_ukr_border_effects.txt:68"
+        ]
+      ]
+    },
+    "num_owned_states": {
+      "references": [
+        [
+          "common/decisions/MKN_decisions.txt",
+          777
+        ],
+        [
+          "common/decisions/MKN_decisions.txt",
+          788
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          202
+        ],
+        [
+          "common/decisions/MKN_ukr_border_decisions.txt",
+          215
+        ]
+      ],
+      "initializers": [
+        "Динамическая переменная движка: documentation/dynamic_variables_documentation.md"
+      ],
+      "bounds": []
+    }
+  },
+  "verification": []
+}

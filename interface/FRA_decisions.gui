@@ -1,0 +1,180 @@
+guiTypes = {
+containerWindowType = { name = "FRA_mandate_window" position = { x = 0 y = 0 } size = { width = 100% height = 240 }
+iconType = { name = "FRA_mandate_background" spriteType = "GFX_FRA_mandate_panel" orientation = center_up position = { x = -220 y = 0 } }
+instantTextBoxType = { name = "FRA_mandate_title" orientation = center_up position = { x = -204 y = 14 } font = "hoi_16mbs" text = "FRA_panel_mandate_title" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_mandate_help }
+instantTextBoxType = { name = "FRA_mandate_value" orientation = center_up position = { x = -204 y = 62 } font = "hoi_16mbs" text = "FRA_panel_mandate" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 89 } }
+iconType = { name = "FRA_mandate_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 89 } }
+iconType = { name = "FRA_mandate_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 89 } }
+iconType = { name = "FRA_mandate_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 89 } }
+iconType = { name = "FRA_mandate_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 89 } }
+iconType = { name = "FRA_mandate_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 89 } }
+iconType = { name = "FRA_mandate_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 89 } }
+iconType = { name = "FRA_mandate_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 89 } }
+iconType = { name = "FRA_mandate_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 89 } }
+iconType = { name = "FRA_mandate_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 89 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_mandate_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 89 } }
+iconType = { name = "FRA_mandate_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 89 } pdx_tooltip = FRA_mandate_help }
+instantTextBoxType = { name = "FRA_tension_value" orientation = center_up position = { x = -204 y = 139 } font = "hoi_16mbs" text = "FRA_panel_tension" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 166 } }
+iconType = { name = "FRA_tension_fill_0" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = -190 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 166 } }
+iconType = { name = "FRA_tension_fill_1" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = -152 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 166 } }
+iconType = { name = "FRA_tension_fill_2" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = -114 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 166 } }
+iconType = { name = "FRA_tension_fill_3" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = -76 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 166 } }
+iconType = { name = "FRA_tension_fill_4" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = -38 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 166 } }
+iconType = { name = "FRA_tension_fill_5" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = 0 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 166 } }
+iconType = { name = "FRA_tension_fill_6" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = 38 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 166 } }
+iconType = { name = "FRA_tension_fill_7" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = 76 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 166 } }
+iconType = { name = "FRA_tension_fill_8" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = 114 y = 166 } pdx_tooltip = FRA_mandate_help }
+iconType = { name = "FRA_tension_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 166 } }
+iconType = { name = "FRA_tension_fill_9" spriteType = "GFX_FRA_meter_red" orientation = center_up position = { x = 152 y = 166 } pdx_tooltip = FRA_mandate_help }
+instantTextBoxType = { name = "FRA_mandate_forecast" orientation = center_up position = { x = -204 y = 203 } font = "hoi_16mbs" text = "FRA_panel_forecast" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_mandate_help }
+}
+containerWindowType = { name = "FRA_overseas_window" position = { x = 0 y = 0 } size = { width = 100% height = 410 }
+iconType = { name = "FRA_overseas_background" spriteType = "GFX_FRA_overseas_panel" orientation = center_up position = { x = -220 y = 0 } }
+instantTextBoxType = { name = "FRA_overseas_title" orientation = center_up position = { x = -204 y = 14 } font = "hoi_16mbs" text = "FRA_panel_overseas_title" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_algeria_pressure_value" orientation = center_up position = { x = -204 y = 54 } font = "hoi_16mbs" text = "FRA_panel_algeria_pressure" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 81 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_algeria_pressure_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 81 } }
+iconType = { name = "FRA_algeria_pressure_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 81 } pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_maghreb_pressure_value" orientation = center_up position = { x = -204 y = 108 } font = "hoi_16mbs" text = "FRA_panel_maghreb_pressure" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 135 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_maghreb_pressure_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 135 } }
+iconType = { name = "FRA_maghreb_pressure_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 135 } pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_west_africa_pressure_value" orientation = center_up position = { x = -204 y = 162 } font = "hoi_16mbs" text = "FRA_panel_west_africa_pressure" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 189 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_west_africa_pressure_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 189 } }
+iconType = { name = "FRA_west_africa_pressure_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 189 } pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_equatorial_pressure_value" orientation = center_up position = { x = -204 y = 216 } font = "hoi_16mbs" text = "FRA_panel_equatorial_pressure" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 243 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_equatorial_pressure_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 243 } }
+iconType = { name = "FRA_equatorial_pressure_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 243 } pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_indochina_pressure_value" orientation = center_up position = { x = -204 y = 270 } font = "hoi_16mbs" text = "FRA_panel_indochina_pressure" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 297 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_indochina_pressure_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 297 } }
+iconType = { name = "FRA_indochina_pressure_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 297 } pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_islands_pressure_value" orientation = center_up position = { x = -204 y = 324 } font = "hoi_16mbs" text = "FRA_panel_islands_pressure" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_0" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -190 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_0" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -190 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_1" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -152 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_1" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -152 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_2" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -114 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_2" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -114 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_3" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -76 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_3" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -76 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_4" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = -38 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_4" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = -38 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_5" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 0 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_5" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 0 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_6" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 38 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_6" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 38 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_7" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 76 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_7" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 76 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_8" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 114 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_8" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 114 y = 351 } pdx_tooltip = FRA_overseas_help }
+iconType = { name = "FRA_islands_pressure_socket_9" spriteType = "GFX_FRA_meter_socket" orientation = center_up position = { x = 152 y = 351 } }
+iconType = { name = "FRA_islands_pressure_fill_9" spriteType = "GFX_FRA_meter_gold" orientation = center_up position = { x = 152 y = 351 } pdx_tooltip = FRA_overseas_help }
+instantTextBoxType = { name = "FRA_overseas_forecast" orientation = center_up position = { x = -204 y = 383 } font = "hoi_16mbs" text = "FRA_panel_overseas_forecast" format = center maxWidth = 408 maxHeight = 30 pdx_tooltip = FRA_overseas_help }
+}
+}

@@ -1,0 +1,4 @@
+FRA_nww_mandate_category = { icon = GFX_FRA_nww_republic allowed = { original_tag = FRA } visible = { has_focus_tree = french_focus } scripted_gui = FRA_mandate_ui }
+FRA_nww_overseas_category = { icon = GFX_FRA_nww_overseas allowed = { original_tag = FRA } visible = { has_focus_tree = french_focus } scripted_gui = FRA_overseas_ui }
+FRA_nww_projects_category = { icon = GFX_FRA_nww_republic allowed = { original_tag = FRA } visible = { has_focus_tree = french_focus }  }
+FRA_nww_diplomacy_category = { icon = GFX_FRA_nww_republic allowed = { original_tag = FRA } visible = { has_focus_tree = french_focus }  }

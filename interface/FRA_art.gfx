@@ -1,0 +1,616 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_FRA_nww_republic
+		texturefile = "gfx/interface/goals/FRA/republic.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/republic.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/republic.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_republic_shine
+		texturefile = "gfx/interface/goals/FRA/republic.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_republic_idea
+		texturefile = "gfx/interface/ideas/FRA/republic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_republic
+		texturefile = "gfx/interface/ideas/FRA/republic.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_crown
+		texturefile = "gfx/interface/goals/FRA/crown.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/crown.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/crown.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_crown_shine
+		texturefile = "gfx/interface/goals/FRA/crown.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_crown_idea
+		texturefile = "gfx/interface/ideas/FRA/crown.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_crown
+		texturefile = "gfx/interface/ideas/FRA/crown.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_leagues
+		texturefile = "gfx/interface/goals/FRA/leagues.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/leagues.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/leagues.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_leagues_shine
+		texturefile = "gfx/interface/goals/FRA/leagues.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_leagues_idea
+		texturefile = "gfx/interface/ideas/FRA/leagues.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_leagues
+		texturefile = "gfx/interface/ideas/FRA/leagues.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_labour
+		texturefile = "gfx/interface/goals/FRA/labour.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/labour.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/labour.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_labour_shine
+		texturefile = "gfx/interface/goals/FRA/labour.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_labour_idea
+		texturefile = "gfx/interface/ideas/FRA/labour.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_labour
+		texturefile = "gfx/interface/ideas/FRA/labour.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_cabinet
+		texturefile = "gfx/interface/goals/FRA/cabinet.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/cabinet.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/cabinet.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_cabinet_shine
+		texturefile = "gfx/interface/goals/FRA/cabinet.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_cabinet_idea
+		texturefile = "gfx/interface/ideas/FRA/cabinet.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_cabinet
+		texturefile = "gfx/interface/ideas/FRA/cabinet.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_industry
+		texturefile = "gfx/interface/goals/FRA/industry.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/industry.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/industry.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_industry_shine
+		texturefile = "gfx/interface/goals/FRA/industry.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_industry_idea
+		texturefile = "gfx/interface/ideas/FRA/industry.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_industry
+		texturefile = "gfx/interface/ideas/FRA/industry.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_army
+		texturefile = "gfx/interface/goals/FRA/army.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/army.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/army.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_army_shine
+		texturefile = "gfx/interface/goals/FRA/army.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_army_idea
+		texturefile = "gfx/interface/ideas/FRA/army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_army
+		texturefile = "gfx/interface/ideas/FRA/army.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_air
+		texturefile = "gfx/interface/goals/FRA/air.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/air.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/air.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_air_shine
+		texturefile = "gfx/interface/goals/FRA/air.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_air_idea
+		texturefile = "gfx/interface/ideas/FRA/air.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_air
+		texturefile = "gfx/interface/ideas/FRA/air.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_navy
+		texturefile = "gfx/interface/goals/FRA/navy.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/navy.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/navy.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_navy_shine
+		texturefile = "gfx/interface/goals/FRA/navy.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_navy_idea
+		texturefile = "gfx/interface/ideas/FRA/navy.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_navy
+		texturefile = "gfx/interface/ideas/FRA/navy.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_science
+		texturefile = "gfx/interface/goals/FRA/science.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/science.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/science.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_science_shine
+		texturefile = "gfx/interface/goals/FRA/science.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_science_idea
+		texturefile = "gfx/interface/ideas/FRA/science.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_science
+		texturefile = "gfx/interface/ideas/FRA/science.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_overseas
+		texturefile = "gfx/interface/goals/FRA/overseas.dds"
+	}
+	spriteType = {
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/overseas.dds"
+		}
+		animation = {
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = add
+			animationtype = scrolling
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+			animationmaskfile = "gfx/interface/goals/FRA/overseas.dds"
+		}
+		legacy_lazy_load = no
+		name = GFX_FRA_nww_overseas_shine
+		texturefile = "gfx/interface/goals/FRA/overseas.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_nww_overseas_idea
+		texturefile = "gfx/interface/ideas/FRA/overseas.dds"
+	}
+	spriteType = {
+		name = GFX_idea_FRA_nww_overseas
+		texturefile = "gfx/interface/ideas/FRA/overseas.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_mandate_panel
+		texturefile = "gfx/interface/FRA/mandate_panel.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_overseas_panel
+		texturefile = "gfx/interface/FRA/overseas_panel.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_meter_socket
+		texturefile = "gfx/interface/FRA/meter_socket.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_meter_gold
+		texturefile = "gfx/interface/FRA/meter_gold.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_meter_red
+		texturefile = "gfx/interface/FRA/meter_red.dds"
+	}
+}

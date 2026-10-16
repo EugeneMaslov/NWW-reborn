@@ -1,0 +1,4786 @@
+FRA_update_spirits = {
+	set_variable = {
+		FRA_state_political_power_factor = -0.15
+	}
+	set_variable = {
+		FRA_state_stability_factor = -0.1
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_nww_state
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_nww_state
+		}
+	}
+	set_variable = {
+		FRA_economy_production_speed_buildings_factor = -0.1
+	}
+	set_variable = {
+		FRA_economy_industrial_capacity_factory = -0.05
+	}
+	set_variable = {
+		FRA_economy_energy_gain_factor = 0
+	}
+	set_variable = {
+		FRA_economy_production_factory_efficiency_gain_factor = 0
+	}
+	set_variable = {
+		FRA_economy_production_factory_max_efficiency_factor = 0
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_nww_economy
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_nww_economy
+		}
+	}
+	set_variable = {
+		FRA_army_land_doctrine_cost_factor = 0.1
+	}
+	set_variable = {
+		FRA_army_planning_speed = -0.1
+	}
+	set_variable = {
+		FRA_army_army_org_factor = 0
+	}
+	set_variable = {
+		FRA_army_army_speed_factor = 0
+	}
+	set_variable = {
+		FRA_army_max_planning = 0
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_nww_army
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_nww_army
+		}
+	}
+	set_variable = {
+		FRA_air_air_mission_efficiency = -0.1
+	}
+	set_variable = {
+		FRA_air_air_doctrine_cost_factor = 0
+	}
+	set_variable = {
+		FRA_air_air_intercept_efficiency = 0
+	}
+	set_variable = {
+		FRA_air_air_cas_efficiency = 0
+	}
+	set_variable = {
+		FRA_air_air_strategic_bomber_bombing_factor = 0
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_nww_air
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_nww_air
+		}
+	}
+	set_variable = {
+		FRA_navy_industrial_capacity_dockyard = -0.1
+	}
+	set_variable = {
+		FRA_navy_naval_doctrine_cost_factor = 0
+	}
+	set_variable = {
+		FRA_navy_convoy_escort_efficiency = 0
+	}
+	set_variable = {
+		FRA_navy_naval_speed_factor = 0
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_nww_navy
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_nww_navy
+		}
+	}
+	set_variable = {
+		FRA_science_research_speed_factor = 0.05
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_nww_science
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_nww_science
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_contracts
+				has_country_flag = FRA_nww_contracts_done
+			}
+		}
+		set_variable = {
+			FRA_state_political_power_factor = -0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_arbitration
+				has_country_flag = FRA_nww_arbitration_done
+			}
+		}
+		set_variable = {
+			FRA_state_stability_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_civil_service
+				has_country_flag = FRA_nww_civil_service_done
+			}
+		}
+		set_variable = {
+			FRA_state_political_power_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_housing
+				has_country_flag = FRA_nww_housing_done
+			}
+		}
+		set_variable = {
+			FRA_economy_production_speed_buildings_factor = -0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_municipal_orders
+				has_country_flag = FRA_nww_municipal_orders_done
+			}
+		}
+		set_variable = {
+			FRA_economy_industrial_capacity_factory = 0
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_rail_nodes
+				has_country_flag = FRA_nww_rail_nodes_done
+			}
+		}
+		set_variable = {
+			FRA_economy_production_speed_buildings_factor = 0
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_internal_market
+				has_country_flag = FRA_nww_internal_market_done
+			}
+		}
+		set_variable = {
+			FRA_economy_production_speed_buildings_factor = 0.1
+		}
+		set_variable = {
+			FRA_economy_industrial_capacity_factory = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_electrification
+				has_country_flag = FRA_nww_electrification_done
+			}
+		}
+		set_variable = {
+			FRA_economy_energy_gain_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_standard_patterns
+				has_country_flag = FRA_nww_standard_patterns_done
+			}
+		}
+		set_variable = {
+			FRA_economy_industrial_capacity_factory = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_arsenal_network
+				has_country_flag = FRA_nww_arsenal_network_done
+			}
+		}
+		set_variable = {
+			FRA_economy_industrial_capacity_factory = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_staff_college
+				has_country_flag = FRA_nww_staff_college_done
+			}
+		}
+		set_variable = {
+			FRA_army_land_doctrine_cost_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_signals_supply
+				has_country_flag = FRA_nww_signals_supply_done
+			}
+		}
+		set_variable = {
+			FRA_army_planning_speed = 0
+		}
+		set_variable = {
+			FRA_army_land_doctrine_cost_factor = 0
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_methodical
+				has_country_flag = FRA_nww_methodical_done
+			}
+		}
+		set_variable = {
+			FRA_army_max_planning = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_artillery_plans
+				has_country_flag = FRA_nww_artillery_plans_done
+			}
+		}
+		set_variable = {
+			FRA_army_planning_speed = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_methodical_system
+				has_country_flag = FRA_nww_methodical_system_done
+			}
+		}
+		set_variable = {
+			FRA_army_army_org_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_experimental_groups
+				has_country_flag = FRA_nww_experimental_groups_done
+			}
+		}
+		set_variable = {
+			FRA_army_army_speed_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_radio_commands
+				has_country_flag = FRA_nww_radio_commands_done
+			}
+		}
+		set_variable = {
+			FRA_army_planning_speed = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_mobile_system
+				has_country_flag = FRA_nww_mobile_system_done
+			}
+		}
+		set_variable = {
+			FRA_army_army_org_factor = 0.05
+		}
+		set_variable = {
+			FRA_army_army_speed_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_officer_corps
+				has_country_flag = FRA_nww_officer_corps_done
+			}
+		}
+		set_variable = {
+			FRA_army_land_doctrine_cost_factor = -0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_air_command
+				has_country_flag = FRA_nww_air_command_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_mission_efficiency = -0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_flight_schools
+				has_country_flag = FRA_nww_flight_schools_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_mission_efficiency = 0
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_engine_standards
+				has_country_flag = FRA_nww_engine_standards_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_doctrine_cost_factor = -0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_tactical_groups
+				has_country_flag = FRA_nww_tactical_groups_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_cas_efficiency = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_navigation
+				has_country_flag = FRA_nww_navigation_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_strategic_bomber_bombing_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_interception
+				has_country_flag = FRA_nww_interception_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_intercept_efficiency = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_air_industry
+				has_country_flag = FRA_nww_air_industry_done
+			}
+		}
+		set_variable = {
+			FRA_air_air_mission_efficiency = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_training_squadrons
+				has_country_flag = FRA_nww_training_squadrons_done
+			}
+		}
+		set_variable = {
+			FRA_navy_naval_doctrine_cost_factor = -0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_bases_fuel
+				has_country_flag = FRA_nww_bases_fuel_done
+			}
+		}
+		set_variable = {
+			FRA_navy_industrial_capacity_dockyard = -0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_asw
+				has_country_flag = FRA_nww_asw_done
+			}
+		}
+		set_variable = {
+			FRA_navy_convoy_escort_efficiency = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_fast_squadrons
+				has_country_flag = FRA_nww_fast_squadrons_done
+			}
+		}
+		set_variable = {
+			FRA_navy_naval_speed_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_naval_yards
+				has_country_flag = FRA_nww_naval_yards_done
+			}
+		}
+		set_variable = {
+			FRA_navy_industrial_capacity_dockyard = 0
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_two_seas
+				has_country_flag = FRA_nww_two_seas_done
+			}
+		}
+		set_variable = {
+			FRA_navy_industrial_capacity_dockyard = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_fifth_slot
+				has_country_flag = FRA_nww_fifth_slot_done
+			}
+		}
+		set_variable = {
+			FRA_science_research_speed_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_elected_boards
+				has_country_flag = FRA_nww_elected_boards_done
+			}
+		}
+		set_variable = {
+			FRA_economy_production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_investment_plan
+				has_country_flag = FRA_nww_investment_plan_done
+			}
+		}
+		set_variable = {
+			FRA_economy_production_factory_max_efficiency_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_central_overseas_plan
+				has_country_flag = FRA_nww_central_overseas_plan_done
+			}
+		}
+		set_variable = {
+			FRA_economy_production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+		}
+		set_variable = {
+			FRA_state_political_power_factor = 0.05
+		}
+		set_variable = {
+			FRA_state_stability_factor = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+			OR = {
+				has_completed_focus = FRA_nww_responsible
+				has_country_flag = FRA_nww_responsible_done
+			}
+		}
+		set_variable = {
+			FRA_state_political_power_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+			OR = {
+				has_completed_focus = FRA_nww_oversight
+				has_country_flag = FRA_nww_oversight_done
+			}
+		}
+		set_variable = {
+			FRA_state_stability_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+			OR = {
+				has_completed_focus = FRA_nww_royal_charter
+				has_country_flag = FRA_nww_royal_charter_done
+			}
+		}
+		set_variable = {
+			FRA_state_stability_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+			OR = {
+				has_completed_focus = FRA_nww_royal_corporate
+				has_country_flag = FRA_nww_royal_corporate_done
+			}
+		}
+		set_variable = {
+			FRA_state_political_power_factor = 0.1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+			OR = {
+				has_completed_focus = FRA_nww_social_insurance
+				has_country_flag = FRA_nww_social_insurance_done
+			}
+		}
+		set_variable = {
+			FRA_state_stability_factor = 0.1
+		}
+	}
+}
+FRA_restore_tree = {
+	if = {
+		limit = {
+			OR = {
+				has_focus_tree = free_french_focus
+				has_focus_tree = vichy_french_focus
+			}
+		}
+		load_focus_tree = {
+			tree = french_focus
+			keep_completed = yes
+		}
+	}
+}
+FRA_clamp_meters = {
+	clamp_variable = {
+		var = FRA_mandate
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_tension
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_algeria_pressure
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_maghreb_pressure
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_west_africa_pressure
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_equatorial_pressure
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_indochina_pressure
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = FRA_islands_pressure
+		min = 0
+		max = 100
+	}
+}
+FRA_settle_regime = {
+	set_country_flag = FRA_regime_settled
+	custom_effect_tooltip = FRA_meter_mandate_gain_15_tt
+	add_to_variable = {
+		FRA_mandate = 15
+	}
+	custom_effect_tooltip = FRA_meter_tension_loss_10_tt
+	add_to_variable = {
+		FRA_tension = -10
+	}
+	FRA_update_spirits = yes
+}
+FRA_political_advisor_reaction = {
+	custom_effect_tooltip = FRA_meter_tension_gain_5_tt
+	add_to_variable = {
+		FRA_tension = 5
+	}
+	FRA_clamp_meters = yes
+}
+FRA_monarchy_transition = {
+	set_country_flag = FRA_regime_monarchy
+	create_country_leader = {
+		name = FRA_nww_jean_iii
+		desc = FRA_nww_regime_description
+		picture = GFX_portrait_fra_jean_duke_of_guise
+		ideology = moderatism
+		expire = 1965.1.1
+	}
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	set_party_name = {
+		ideology = neutrality
+		name = FRA_nww_party_monarchy
+		long_name = FRA_nww_party_monarchy_long
+	}
+	custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+	add_to_variable = {
+		FRA_mandate = 10
+	}
+}
+FRA_league_transition = {
+	set_country_flag = FRA_regime_league
+	create_country_leader = {
+		name = FRA_nww_national_directory
+		desc = FRA_nww_regime_description
+		picture = GFX_portrait_fra_pierre_laval
+		ideology = fascism_ideology
+		expire = 1965.1.1
+	}
+	set_politics = {
+		ruling_party = fascism
+		elections_allowed = no
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	set_party_name = {
+		ideology = fascism
+		name = FRA_nww_party_league
+		long_name = FRA_nww_party_league_long
+	}
+	custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+	add_to_variable = {
+		FRA_mandate = 10
+	}
+	add_timed_idea = {
+		idea = FRA_nww_capital_flight
+		days = 180
+	}
+	custom_effect_tooltip = FRA_meter_tension_gain_10_tt
+	add_to_variable = {
+		FRA_tension = 10
+	}
+}
+FRA_social_republic_transition = {
+	set_country_flag = FRA_regime_social_republic
+	create_country_leader = {
+		name = FRA_nww_social_cabinet
+		desc = FRA_nww_regime_description
+		picture = GFX_portrait_fra_leon_blum
+		ideology = socialism
+		expire = 1965.1.1
+	}
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	set_party_name = {
+		ideology = democratic
+		name = FRA_nww_party_social_republic
+		long_name = FRA_nww_party_social_republic_long
+	}
+	custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+	add_to_variable = {
+		FRA_mandate = 10
+	}
+}
+FRA_councils_transition = {
+	set_country_flag = FRA_regime_councils
+	create_country_leader = {
+		name = FRA_nww_labour_congress
+		desc = FRA_nww_regime_description
+		picture = GFX_portrait_fra_leon_blum
+		ideology = anarchist_communism
+		expire = 1965.1.1
+	}
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	set_party_name = {
+		ideology = communism
+		name = FRA_nww_party_councils
+		long_name = FRA_nww_party_councils_long
+	}
+	custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+	add_to_variable = {
+		FRA_mandate = 10
+	}
+}
+FRA_central_plan_transition = {
+	set_country_flag = FRA_regime_central_plan
+	create_country_leader = {
+		name = FRA_nww_planning_cabinet
+		desc = FRA_nww_regime_description
+		picture = GFX_portrait_fra_maurice_thorez
+		ideology = marxism
+		expire = 1965.1.1
+	}
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	set_party_name = {
+		ideology = communism
+		name = FRA_nww_party_central_plan
+		long_name = FRA_nww_party_central_plan_long
+	}
+	custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+	add_to_variable = {
+		FRA_mandate = 10
+	}
+	add_timed_idea = {
+		idea = FRA_nww_capital_flight
+		days = 180
+	}
+	custom_effect_tooltip = FRA_meter_tension_gain_10_tt
+	add_to_variable = {
+		FRA_tension = 10
+	}
+}
+FRA_military_transition = {
+	set_country_flag = FRA_regime_military
+	create_country_leader = {
+		name = FRA_nww_military_directory
+		desc = FRA_nww_regime_description
+		picture = GFX_portrait_FRA_maurice_gamelin
+		ideology = despotism
+		expire = 1965.1.1
+	}
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	set_party_name = {
+		ideology = neutrality
+		name = FRA_nww_party_military
+		long_name = FRA_nww_party_military_long
+	}
+	custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+	add_to_variable = {
+		FRA_mandate = 10
+	}
+	activate_mission = FRA_nww_emergency_mandate
+}
+FRA_return_democracy = {
+	set_country_flag = FRA_emergency_resolved
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+		election_frequency = 48
+		last_election = 1936.5.1
+	}
+	FRA_settle_regime = yes
+}
+FRA_extend_military_rule = {
+	set_country_flag = FRA_emergency_resolved
+	add_ideas = FRA_nww_coercion
+	custom_effect_tooltip = FRA_meter_tension_gain_15_tt
+	add_to_variable = {
+		FRA_tension = 15
+	}
+	FRA_settle_regime = yes
+}
+FRA_suspend_native_systems = {
+	remove_ideas = FRA_disjointed_government
+	remove_ideas = FRA_protected_by_the_maginot_line
+	remove_ideas = FRA_full_employment
+	remove_ideas = FRA_worker_shortage
+	remove_ideas = FRA_political_violence
+	remove_ideas = FRA_inefficient_economy_1
+	remove_ideas = FRA_inefficient_economy_2
+	remove_ideas = FRA_matignon_agreements
+	remove_ideas = MTG_naval_treaty_adherent
+	remove_ideas = MTG_naval_treaty_adherent_reduced
+}
+FRA_repair_reform_stages = {
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_republic
+		}
+		set_country_flag = FRA_route_republic
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_right
+		}
+		set_country_flag = FRA_route_right
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_front
+		}
+		set_country_flag = FRA_route_front
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_emergency
+		}
+		set_country_flag = FRA_route_emergency
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_crown_law
+		}
+		set_country_flag = FRA_regime_monarchy
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_league_state
+		}
+		set_country_flag = FRA_regime_league
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_social_republic
+		}
+		set_country_flag = FRA_regime_social_republic
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_councils
+		}
+		set_country_flag = FRA_regime_councils
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_central_plan
+		}
+		set_country_flag = FRA_regime_central_plan
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_military_cabinet
+		}
+		set_country_flag = FRA_regime_military
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_renewal
+				has_completed_focus = FRA_nww_crown_service
+				has_completed_focus = FRA_nww_league_administration
+				has_completed_focus = FRA_nww_social_arbitration
+				has_completed_focus = FRA_nww_councils_congress
+				has_completed_focus = FRA_nww_planning_commission
+				has_completed_focus = FRA_nww_return_ballot
+				has_completed_focus = FRA_nww_extend_mandate
+			}
+		}
+		set_country_flag = FRA_regime_settled
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = FRA_nww_return_ballot
+				has_completed_focus = FRA_nww_extend_mandate
+			}
+		}
+		set_country_flag = FRA_emergency_resolved
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_science_network
+		}
+		every_other_country = {
+			limit = {
+				has_country_flag = FRA_security_partner
+				NOT = {
+					has_country_flag = FRA_science_joined
+				}
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+			add_to_tech_sharing_group = FRA_nww_science_network
+			set_country_flag = FRA_science_joined
+		}
+	}
+}
+FRA_repair_runtime_v2 = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = FRA_runtime_v2
+			}
+		}
+		if = {
+			limit = {
+				date < 1936.4.1
+				check_variable = {
+					var = FRA_mandate
+					value = 0
+					compare = equals
+					tooltip = FRA_check_mandate_equals_0_tt
+				}
+				check_variable = {
+					var = FRA_algeria_pressure
+					value = 100
+					compare = greater_than_or_equals
+					tooltip = FRA_check_algeria_pressure_greater_than_or_equals_100_tt
+				}
+				check_variable = {
+					var = FRA_maghreb_pressure
+					value = 100
+					compare = greater_than_or_equals
+					tooltip = FRA_check_maghreb_pressure_greater_than_or_equals_100_tt
+				}
+				check_variable = {
+					var = FRA_west_africa_pressure
+					value = 100
+					compare = greater_than_or_equals
+					tooltip = FRA_check_west_africa_pressure_greater_than_or_equals_100_tt
+				}
+				check_variable = {
+					var = FRA_equatorial_pressure
+					value = 100
+					compare = greater_than_or_equals
+					tooltip = FRA_check_equatorial_pressure_greater_than_or_equals_100_tt
+				}
+				check_variable = {
+					var = FRA_indochina_pressure
+					value = 100
+					compare = greater_than_or_equals
+					tooltip = FRA_check_indochina_pressure_greater_than_or_equals_100_tt
+				}
+				check_variable = {
+					var = FRA_islands_pressure
+					value = 100
+					compare = greater_than_or_equals
+					tooltip = FRA_check_islands_pressure_greater_than_or_equals_100_tt
+				}
+				NOT = {
+					has_country_flag = FRA_regime_settled
+				}
+				NOT = {
+					has_country_flag = FRA_negotiation_busy
+				}
+				NOT = {
+					has_country_flag = FRA_coalition_promise
+				}
+				NOT = {
+					has_country_flag = FRA_project_busy
+				}
+			}
+			set_variable = {
+				FRA_mandate = 35
+			}
+			set_variable = {
+				FRA_algeria_pressure = 35
+			}
+			set_variable = {
+				FRA_maghreb_pressure = 35
+			}
+			set_variable = {
+				FRA_west_africa_pressure = 35
+			}
+			set_variable = {
+				FRA_equatorial_pressure = 35
+			}
+			set_variable = {
+				FRA_indochina_pressure = 35
+			}
+			set_variable = {
+				FRA_islands_pressure = 35
+			}
+			if = {
+				limit = {
+					date > 1936.2.29
+				}
+				add_to_variable = {
+					FRA_mandate = -4
+				}
+				add_to_variable = {
+					FRA_algeria_pressure = 4
+				}
+				add_to_variable = {
+					FRA_maghreb_pressure = 4
+				}
+				add_to_variable = {
+					FRA_west_africa_pressure = 4
+				}
+				add_to_variable = {
+					FRA_equatorial_pressure = 4
+				}
+				add_to_variable = {
+					FRA_indochina_pressure = 4
+				}
+				add_to_variable = {
+					FRA_islands_pressure = 4
+				}
+			}
+			else_if = {
+				limit = {
+					date > 1936.1.30
+				}
+				add_to_variable = {
+					FRA_mandate = -2
+				}
+				add_to_variable = {
+					FRA_algeria_pressure = 2
+				}
+				add_to_variable = {
+					FRA_maghreb_pressure = 2
+				}
+				add_to_variable = {
+					FRA_west_africa_pressure = 2
+				}
+				add_to_variable = {
+					FRA_equatorial_pressure = 2
+				}
+				add_to_variable = {
+					FRA_indochina_pressure = 2
+				}
+				add_to_variable = {
+					FRA_islands_pressure = 2
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_session
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_accounts
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_consultations
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_republic
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_right
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_front
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_emergency
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_commission
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_contracts
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_responsible
+				}
+				add_to_variable = {
+					FRA_mandate = 16
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_oversight
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_arbitration
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_municipal_credit
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_audit_court
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_civil_service
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_renewal
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_rights
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_republic_institutions
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_leagues_discipline
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_garrisons
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_powers_crisis
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_orleanists
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_directory
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_crown_law
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_league_state
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_royal_cabinet
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_royal_charter
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_crown_service
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_royal_corporate
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_corporate_chamber
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_national_movement
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_league_administration
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_left_talks
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_public_works
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_labour_charter
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_social_republic
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_councils
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_central_plan
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_collective_contracts
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_social_insurance
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_social_arbitration
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_cooperatives
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_elected_boards
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_councils_congress
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_national_banks
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_investment_plan
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_planning_commission
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_disarm_militias
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_emergency_legal
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_military_cabinet
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_army_neutrality
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_civil_administration
+				}
+				add_to_variable = {
+					FRA_mandate = 11
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_defence_budget
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_return_ballot
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_extend_mandate
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_bank_audit
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_public_bank
+				}
+				add_to_variable = {
+					FRA_mandate = 6
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_private_credit
+				}
+				add_to_variable = {
+					FRA_mandate = 6
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_housing
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_municipal_orders
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_rail_nodes
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_coal_basins
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_electrification
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_concentrate
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_regional
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_west_industry
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_provincial_schools
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_internal_market
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_specifications
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_standard_patterns
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_state_arsenals
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_private_contracts
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_machine_reserve
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_conversion
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fort_commission
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_lorraine
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_north_approaches
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_alpine_passes
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_arsenal_network
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_research_council
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_university_contract
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_polytechnics
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fourth_slot
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_metallurgy
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_radio_labs
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_aerodynamics
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_science_network
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fifth_slot
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_maneuvers
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_staff_college
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_signals_supply
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_methodical
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_mobile
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_artillery_plans
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_mobile_reserve
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fort_counterattack
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_methodical_system
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_experimental_groups
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_radio_commands
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_armoured_divisions
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_mobile_system
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_officer_corps
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_mobilisation_staff
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_air_command
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_flight_schools
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_engine_standards
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_airfields
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_tactical_air
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_strategic_air
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_tactical_groups
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_navigation
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_air_watch
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_interception
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_air_industry
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fleet_audit
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_training_squadrons
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_bases_fuel
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_atlantic
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_mediterranean
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_asw
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fast_squadrons
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_naval_yards
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_battlefleet
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_carrier_trials
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_fire_control
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_carrier_group
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_two_seas
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_overseas_register
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_overseas_conference
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_extraction
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_representation
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_selfdetermination
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_colonial_schools
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_overseas_credit
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_central_overseas_plan
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_overseas_compact
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_common_markets
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_foreign_review
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_western_security
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_latin_accord
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_continental_accord
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_rhine_stand
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_workers_diplomacy
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_independent_course
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_rhine_preparations
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_nww_rhine_ultimatum
+				}
+				add_to_variable = {
+					FRA_mandate = 1
+				}
+			}
+			set_country_flag = FRA_early_meters_repaired
+		}
+		remove_mission = FRA_nww_confidence_vote
+		remove_mission = FRA_nww_emergency_mandate
+		remove_mission = FRA_nww_algeria_ultimatum
+		remove_mission = FRA_nww_maghreb_ultimatum
+		remove_mission = FRA_nww_west_africa_ultimatum
+		remove_mission = FRA_nww_equatorial_ultimatum
+		remove_mission = FRA_nww_indochina_ultimatum
+		remove_mission = FRA_nww_islands_ultimatum
+		clr_country_flag = FRA_confidence_active
+		clr_country_flag = FRA_algeria_crisis
+		clr_country_flag = FRA_maghreb_crisis
+		clr_country_flag = FRA_west_africa_crisis
+		clr_country_flag = FRA_equatorial_crisis
+		clr_country_flag = FRA_indochina_crisis
+		clr_country_flag = FRA_islands_crisis
+		set_country_flag = {
+			flag = FRA_tick_cooldown
+			value = 1
+			days = 30
+		}
+		set_country_flag = FRA_runtime_v2
+		if = {
+			limit = {
+				has_country_flag = FRA_regime_military
+				NOT = {
+					has_country_flag = FRA_emergency_resolved
+				}
+			}
+			activate_mission = FRA_nww_emergency_mandate
+		}
+	}
+}
+FRA_initialize = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = FRA_nww_initialized
+			}
+		}
+		set_country_flag = FRA_nww_initialized
+		set_variable = {
+			FRA_mandate = 35
+		}
+		set_variable = {
+			FRA_tension = 40
+		}
+		set_variable = {
+			FRA_algeria_pressure = 35
+		}
+		set_variable = {
+			FRA_maghreb_pressure = 35
+		}
+		set_variable = {
+			FRA_west_africa_pressure = 35
+		}
+		set_variable = {
+			FRA_equatorial_pressure = 35
+		}
+		set_variable = {
+			FRA_indochina_pressure = 35
+		}
+		set_variable = {
+			FRA_islands_pressure = 35
+		}
+		add_ideas = FRA_nww_overseas_network
+		set_country_flag = {
+			flag = FRA_tick_cooldown
+			value = 1
+			days = 30
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			FRA_select_ai_route = yes
+		}
+	}
+	FRA_repair_runtime_v2 = yes
+	FRA_repair_reform_stages = yes
+	FRA_suspend_native_systems = yes
+	FRA_update_spirits = yes
+	FRA_clamp_meters = yes
+}
+FRA_daily = {
+	FRA_initialize = yes
+	if = {
+		limit = {
+			has_country_flag = FRA_coalition_promise
+			NOT = {
+				has_country_flag = FRA_coalition_deadline
+			}
+		}
+		custom_effect_tooltip = FRA_meter_mandate_loss_5_tt
+		add_to_variable = {
+			FRA_mandate = -5
+		}
+		custom_effect_tooltip = FRA_meter_tension_gain_5_tt
+		add_to_variable = {
+			FRA_tension = 5
+		}
+		clr_country_flag = FRA_coalition_promise
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = FRA_tick_cooldown
+			}
+		}
+		set_country_flag = {
+			flag = FRA_tick_cooldown
+			value = 1
+			days = 30
+		}
+		FRA_monthly_tick = yes
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_session
+			NOT = {
+				has_country_flag = FRA_confidence_cooldown
+			}
+			NOT = {
+				has_country_flag = FRA_confidence_active
+			}
+			check_variable = {
+				var = FRA_mandate
+				value = 25
+				compare = less_than
+				tooltip = FRA_check_mandate_less_than_25_tt
+			}
+		}
+		set_country_flag = FRA_confidence_active
+		activate_mission = FRA_nww_confidence_vote
+	}
+	FRA_update_spirits = yes
+	FRA_clamp_meters = yes
+}
+FRA_monthly_tick = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = FRA_regime_settled
+			}
+		}
+		custom_effect_tooltip = FRA_meter_mandate_loss_2_tt
+		add_to_variable = {
+			FRA_mandate = -2
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = FRA_regime_settled
+		}
+		custom_effect_tooltip = FRA_meter_tension_loss_2_tt
+		add_to_variable = {
+			FRA_tension = -2
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+			NOT = {
+				has_country_flag = FRA_regime_settled
+			}
+		}
+		FRA_ai_campaign = yes
+	}
+	if = {
+		limit = {
+			has_completed_focus = FRA_nww_common_markets
+			any_other_country = {
+				has_country_flag = FRA_compact_partner
+				has_country_flag = FRA_security_partner
+				exists = yes
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+		}
+		add_ideas = FRA_nww_trade_compact
+	}
+	if = {
+		limit = {
+			OR = {
+				FRA_holds_algeria = yes
+				FRA_holds_maghreb = yes
+				FRA_holds_west_africa = yes
+				FRA_holds_equatorial = yes
+				FRA_holds_indochina = yes
+				FRA_holds_islands = yes
+			}
+		}
+		add_ideas = FRA_nww_overseas_network
+		if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			add_ideas = FRA_nww_colonial_extraction
+		}
+	}
+	else = {
+		remove_ideas = FRA_nww_overseas_network
+		remove_ideas = FRA_nww_colonial_extraction
+	}
+	if = {
+		limit = {
+			FRA_holds_algeria = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_algeria_represented
+			}
+			custom_effect_tooltip = FRA_meter_algeria_pressure_loss_1_tt
+			add_to_variable = {
+				FRA_algeria_pressure = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			custom_effect_tooltip = FRA_meter_algeria_pressure_gain_5_tt
+			add_to_variable = {
+				FRA_algeria_pressure = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_algeria_investment
+			}
+			custom_effect_tooltip = FRA_meter_algeria_pressure_loss_3_tt
+			add_to_variable = {
+				FRA_algeria_pressure = -3
+			}
+		}
+		else = {
+			custom_effect_tooltip = FRA_meter_algeria_pressure_gain_2_tt
+			add_to_variable = {
+				FRA_algeria_pressure = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_algeria_pressure
+					value = 80
+					compare = greater_than_or_equals
+					tooltip = FRA_check_algeria_pressure_greater_than_or_equals_80_tt
+				}
+				NOT = {
+					has_country_flag = FRA_algeria_crisis
+				}
+				NOT = {
+					has_country_flag = FRA_algeria_cooldown
+				}
+			}
+			set_country_flag = FRA_algeria_crisis
+			activate_mission = FRA_nww_algeria_ultimatum
+		}
+	}
+	if = {
+		limit = {
+			FRA_holds_maghreb = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_maghreb_represented
+			}
+			custom_effect_tooltip = FRA_meter_maghreb_pressure_loss_1_tt
+			add_to_variable = {
+				FRA_maghreb_pressure = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			custom_effect_tooltip = FRA_meter_maghreb_pressure_gain_5_tt
+			add_to_variable = {
+				FRA_maghreb_pressure = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_maghreb_investment
+			}
+			custom_effect_tooltip = FRA_meter_maghreb_pressure_loss_3_tt
+			add_to_variable = {
+				FRA_maghreb_pressure = -3
+			}
+		}
+		else = {
+			custom_effect_tooltip = FRA_meter_maghreb_pressure_gain_2_tt
+			add_to_variable = {
+				FRA_maghreb_pressure = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_maghreb_pressure
+					value = 80
+					compare = greater_than_or_equals
+					tooltip = FRA_check_maghreb_pressure_greater_than_or_equals_80_tt
+				}
+				NOT = {
+					has_country_flag = FRA_maghreb_crisis
+				}
+				NOT = {
+					has_country_flag = FRA_maghreb_cooldown
+				}
+			}
+			set_country_flag = FRA_maghreb_crisis
+			activate_mission = FRA_nww_maghreb_ultimatum
+		}
+	}
+	if = {
+		limit = {
+			FRA_holds_west_africa = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_west_africa_represented
+			}
+			custom_effect_tooltip = FRA_meter_west_africa_pressure_loss_1_tt
+			add_to_variable = {
+				FRA_west_africa_pressure = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			custom_effect_tooltip = FRA_meter_west_africa_pressure_gain_5_tt
+			add_to_variable = {
+				FRA_west_africa_pressure = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_west_africa_investment
+			}
+			custom_effect_tooltip = FRA_meter_west_africa_pressure_loss_3_tt
+			add_to_variable = {
+				FRA_west_africa_pressure = -3
+			}
+		}
+		else = {
+			custom_effect_tooltip = FRA_meter_west_africa_pressure_gain_2_tt
+			add_to_variable = {
+				FRA_west_africa_pressure = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_west_africa_pressure
+					value = 80
+					compare = greater_than_or_equals
+					tooltip = FRA_check_west_africa_pressure_greater_than_or_equals_80_tt
+				}
+				NOT = {
+					has_country_flag = FRA_west_africa_crisis
+				}
+				NOT = {
+					has_country_flag = FRA_west_africa_cooldown
+				}
+			}
+			set_country_flag = FRA_west_africa_crisis
+			activate_mission = FRA_nww_west_africa_ultimatum
+		}
+	}
+	if = {
+		limit = {
+			FRA_holds_equatorial = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_equatorial_represented
+			}
+			custom_effect_tooltip = FRA_meter_equatorial_pressure_loss_1_tt
+			add_to_variable = {
+				FRA_equatorial_pressure = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			custom_effect_tooltip = FRA_meter_equatorial_pressure_gain_5_tt
+			add_to_variable = {
+				FRA_equatorial_pressure = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_equatorial_investment
+			}
+			custom_effect_tooltip = FRA_meter_equatorial_pressure_loss_3_tt
+			add_to_variable = {
+				FRA_equatorial_pressure = -3
+			}
+		}
+		else = {
+			custom_effect_tooltip = FRA_meter_equatorial_pressure_gain_2_tt
+			add_to_variable = {
+				FRA_equatorial_pressure = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_equatorial_pressure
+					value = 80
+					compare = greater_than_or_equals
+					tooltip = FRA_check_equatorial_pressure_greater_than_or_equals_80_tt
+				}
+				NOT = {
+					has_country_flag = FRA_equatorial_crisis
+				}
+				NOT = {
+					has_country_flag = FRA_equatorial_cooldown
+				}
+			}
+			set_country_flag = FRA_equatorial_crisis
+			activate_mission = FRA_nww_equatorial_ultimatum
+		}
+	}
+	if = {
+		limit = {
+			FRA_holds_indochina = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_indochina_represented
+			}
+			custom_effect_tooltip = FRA_meter_indochina_pressure_loss_1_tt
+			add_to_variable = {
+				FRA_indochina_pressure = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			custom_effect_tooltip = FRA_meter_indochina_pressure_gain_5_tt
+			add_to_variable = {
+				FRA_indochina_pressure = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_indochina_investment
+			}
+			custom_effect_tooltip = FRA_meter_indochina_pressure_loss_3_tt
+			add_to_variable = {
+				FRA_indochina_pressure = -3
+			}
+		}
+		else = {
+			custom_effect_tooltip = FRA_meter_indochina_pressure_gain_2_tt
+			add_to_variable = {
+				FRA_indochina_pressure = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_indochina_pressure
+					value = 80
+					compare = greater_than_or_equals
+					tooltip = FRA_check_indochina_pressure_greater_than_or_equals_80_tt
+				}
+				NOT = {
+					has_country_flag = FRA_indochina_crisis
+				}
+				NOT = {
+					has_country_flag = FRA_indochina_cooldown
+				}
+			}
+			set_country_flag = FRA_indochina_crisis
+			activate_mission = FRA_nww_indochina_ultimatum
+		}
+	}
+	if = {
+		limit = {
+			FRA_holds_islands = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_islands_represented
+			}
+			custom_effect_tooltip = FRA_meter_islands_pressure_loss_1_tt
+			add_to_variable = {
+				FRA_islands_pressure = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_policy_extraction
+			}
+			custom_effect_tooltip = FRA_meter_islands_pressure_gain_5_tt
+			add_to_variable = {
+				FRA_islands_pressure = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = FRA_islands_investment
+			}
+			custom_effect_tooltip = FRA_meter_islands_pressure_loss_3_tt
+			add_to_variable = {
+				FRA_islands_pressure = -3
+			}
+		}
+		else = {
+			custom_effect_tooltip = FRA_meter_islands_pressure_gain_2_tt
+			add_to_variable = {
+				FRA_islands_pressure = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_islands_pressure
+					value = 80
+					compare = greater_than_or_equals
+					tooltip = FRA_check_islands_pressure_greater_than_or_equals_80_tt
+				}
+				NOT = {
+					has_country_flag = FRA_islands_crisis
+				}
+				NOT = {
+					has_country_flag = FRA_islands_cooldown
+				}
+			}
+			set_country_flag = FRA_islands_crisis
+			activate_mission = FRA_nww_islands_ultimatum
+		}
+	}
+	FRA_clamp_meters = yes
+}
+FRA_release_algeria = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ALG
+			}
+			ALG = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ALG
+			}
+			transfer_state_to = ALG
+		}
+		ALG = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_algeria_independent
+	set_variable = {
+		FRA_algeria_pressure = 0
+	}
+}
+FRA_war_release_algeria = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ALG
+			}
+			ALG = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ALG
+			}
+			transfer_state_to = ALG
+		}
+		declare_war_on = {
+			target = ALG
+			type = annex_everything
+		}
+	}
+	set_country_flag = FRA_algeria_independent
+	set_variable = {
+		FRA_algeria_pressure = 0
+	}
+}
+FRA_autonomy_algeria = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ALG
+			}
+			ALG = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ALG
+			}
+			transfer_state_to = ALG
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = ALG
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = ALG
+		}
+		ALG = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_algeria_autonomous
+	set_variable = {
+		FRA_algeria_pressure = 0
+	}
+}
+FRA_release_maghreb = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MOR
+			}
+			MOR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MOR
+			}
+			transfer_state_to = MOR
+		}
+		MOR = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = TUN
+			}
+			TUN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = TUN
+			}
+			transfer_state_to = TUN
+		}
+		TUN = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_maghreb_independent
+	set_variable = {
+		FRA_maghreb_pressure = 0
+	}
+}
+FRA_war_release_maghreb = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MOR
+			}
+			MOR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MOR
+			}
+			transfer_state_to = MOR
+		}
+		declare_war_on = {
+			target = MOR
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = TUN
+			}
+			TUN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = TUN
+			}
+			transfer_state_to = TUN
+		}
+		declare_war_on = {
+			target = TUN
+			type = annex_everything
+		}
+	}
+	set_country_flag = FRA_maghreb_independent
+	set_variable = {
+		FRA_maghreb_pressure = 0
+	}
+}
+FRA_autonomy_maghreb = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MOR
+			}
+			MOR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MOR
+			}
+			transfer_state_to = MOR
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = MOR
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = MOR
+		}
+		MOR = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = TUN
+			}
+			TUN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = TUN
+			}
+			transfer_state_to = TUN
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = TUN
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = TUN
+		}
+		TUN = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_maghreb_autonomous
+	set_variable = {
+		FRA_maghreb_pressure = 0
+	}
+}
+FRA_release_west_africa = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = SEN
+			}
+			SEN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = SEN
+			}
+			transfer_state_to = SEN
+		}
+		SEN = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MLI
+			}
+			MLI = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MLI
+			}
+			transfer_state_to = MLI
+		}
+		MLI = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = IVO
+			}
+			IVO = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = IVO
+			}
+			transfer_state_to = IVO
+		}
+		IVO = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = GNA
+			}
+			GNA = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = GNA
+			}
+			transfer_state_to = GNA
+		}
+		GNA = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = DAH
+			}
+			DAH = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = DAH
+			}
+			transfer_state_to = DAH
+		}
+		DAH = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = NGR
+			}
+			NGR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = NGR
+			}
+			transfer_state_to = NGR
+		}
+		NGR = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = VOL
+			}
+			VOL = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = VOL
+			}
+			transfer_state_to = VOL
+		}
+		VOL = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MRT
+			}
+			MRT = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MRT
+			}
+			transfer_state_to = MRT
+		}
+		MRT = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_west_africa_independent
+	set_variable = {
+		FRA_west_africa_pressure = 0
+	}
+}
+FRA_war_release_west_africa = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = SEN
+			}
+			SEN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = SEN
+			}
+			transfer_state_to = SEN
+		}
+		declare_war_on = {
+			target = SEN
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MLI
+			}
+			MLI = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MLI
+			}
+			transfer_state_to = MLI
+		}
+		declare_war_on = {
+			target = MLI
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = IVO
+			}
+			IVO = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = IVO
+			}
+			transfer_state_to = IVO
+		}
+		declare_war_on = {
+			target = IVO
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = GNA
+			}
+			GNA = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = GNA
+			}
+			transfer_state_to = GNA
+		}
+		declare_war_on = {
+			target = GNA
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = DAH
+			}
+			DAH = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = DAH
+			}
+			transfer_state_to = DAH
+		}
+		declare_war_on = {
+			target = DAH
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = NGR
+			}
+			NGR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = NGR
+			}
+			transfer_state_to = NGR
+		}
+		declare_war_on = {
+			target = NGR
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = VOL
+			}
+			VOL = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = VOL
+			}
+			transfer_state_to = VOL
+		}
+		declare_war_on = {
+			target = VOL
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MRT
+			}
+			MRT = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MRT
+			}
+			transfer_state_to = MRT
+		}
+		declare_war_on = {
+			target = MRT
+			type = annex_everything
+		}
+	}
+	set_country_flag = FRA_west_africa_independent
+	set_variable = {
+		FRA_west_africa_pressure = 0
+	}
+}
+FRA_autonomy_west_africa = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = SEN
+			}
+			SEN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = SEN
+			}
+			transfer_state_to = SEN
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = SEN
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = SEN
+		}
+		SEN = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MLI
+			}
+			MLI = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MLI
+			}
+			transfer_state_to = MLI
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = MLI
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = MLI
+		}
+		MLI = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = IVO
+			}
+			IVO = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = IVO
+			}
+			transfer_state_to = IVO
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = IVO
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = IVO
+		}
+		IVO = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = GNA
+			}
+			GNA = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = GNA
+			}
+			transfer_state_to = GNA
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = GNA
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = GNA
+		}
+		GNA = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = DAH
+			}
+			DAH = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = DAH
+			}
+			transfer_state_to = DAH
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = DAH
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = DAH
+		}
+		DAH = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = NGR
+			}
+			NGR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = NGR
+			}
+			transfer_state_to = NGR
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = NGR
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = NGR
+		}
+		NGR = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = VOL
+			}
+			VOL = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = VOL
+			}
+			transfer_state_to = VOL
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = VOL
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = VOL
+		}
+		VOL = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MRT
+			}
+			MRT = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MRT
+			}
+			transfer_state_to = MRT
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = MRT
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = MRT
+		}
+		MRT = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_west_africa_autonomous
+	set_variable = {
+		FRA_west_africa_pressure = 0
+	}
+}
+FRA_release_equatorial = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = GAB
+			}
+			GAB = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = GAB
+			}
+			transfer_state_to = GAB
+		}
+		GAB = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = RCG
+			}
+			RCG = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = RCG
+			}
+			transfer_state_to = RCG
+		}
+		RCG = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CHA
+			}
+			CHA = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CHA
+			}
+			transfer_state_to = CHA
+		}
+		CHA = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CAR
+			}
+			CAR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CAR
+			}
+			transfer_state_to = CAR
+		}
+		CAR = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_equatorial_independent
+	set_variable = {
+		FRA_equatorial_pressure = 0
+	}
+}
+FRA_war_release_equatorial = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = GAB
+			}
+			GAB = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = GAB
+			}
+			transfer_state_to = GAB
+		}
+		declare_war_on = {
+			target = GAB
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = RCG
+			}
+			RCG = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = RCG
+			}
+			transfer_state_to = RCG
+		}
+		declare_war_on = {
+			target = RCG
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CHA
+			}
+			CHA = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CHA
+			}
+			transfer_state_to = CHA
+		}
+		declare_war_on = {
+			target = CHA
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CAR
+			}
+			CAR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CAR
+			}
+			transfer_state_to = CAR
+		}
+		declare_war_on = {
+			target = CAR
+			type = annex_everything
+		}
+	}
+	set_country_flag = FRA_equatorial_independent
+	set_variable = {
+		FRA_equatorial_pressure = 0
+	}
+}
+FRA_autonomy_equatorial = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = GAB
+			}
+			GAB = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = GAB
+			}
+			transfer_state_to = GAB
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = GAB
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = GAB
+		}
+		GAB = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = RCG
+			}
+			RCG = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = RCG
+			}
+			transfer_state_to = RCG
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = RCG
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = RCG
+		}
+		RCG = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CHA
+			}
+			CHA = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CHA
+			}
+			transfer_state_to = CHA
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = CHA
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = CHA
+		}
+		CHA = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CAR
+			}
+			CAR = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CAR
+			}
+			transfer_state_to = CAR
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = CAR
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = CAR
+		}
+		CAR = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_equatorial_autonomous
+	set_variable = {
+		FRA_equatorial_pressure = 0
+	}
+}
+FRA_release_indochina = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = VIN
+			}
+			VIN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = VIN
+			}
+			transfer_state_to = VIN
+		}
+		VIN = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CAM
+			}
+			CAM = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CAM
+			}
+			transfer_state_to = CAM
+		}
+		CAM = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = LAO
+			}
+			LAO = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = LAO
+			}
+			transfer_state_to = LAO
+		}
+		LAO = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_indochina_independent
+	set_variable = {
+		FRA_indochina_pressure = 0
+	}
+}
+FRA_war_release_indochina = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = VIN
+			}
+			VIN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = VIN
+			}
+			transfer_state_to = VIN
+		}
+		declare_war_on = {
+			target = VIN
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CAM
+			}
+			CAM = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CAM
+			}
+			transfer_state_to = CAM
+		}
+		declare_war_on = {
+			target = CAM
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = LAO
+			}
+			LAO = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = LAO
+			}
+			transfer_state_to = LAO
+		}
+		declare_war_on = {
+			target = LAO
+			type = annex_everything
+		}
+	}
+	set_country_flag = FRA_indochina_independent
+	set_variable = {
+		FRA_indochina_pressure = 0
+	}
+}
+FRA_autonomy_indochina = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = VIN
+			}
+			VIN = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = VIN
+			}
+			transfer_state_to = VIN
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = VIN
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = VIN
+		}
+		VIN = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = CAM
+			}
+			CAM = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = CAM
+			}
+			transfer_state_to = CAM
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = CAM
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = CAM
+		}
+		CAM = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = LAO
+			}
+			LAO = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = LAO
+			}
+			transfer_state_to = LAO
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = LAO
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = LAO
+		}
+		LAO = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_indochina_autonomous
+	set_variable = {
+		FRA_indochina_pressure = 0
+	}
+}
+FRA_release_islands = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MAD
+			}
+			MAD = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MAD
+			}
+			transfer_state_to = MAD
+		}
+		MAD = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = TAH
+			}
+			TAH = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = TAH
+			}
+			transfer_state_to = TAH
+		}
+		TAH = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_islands_independent
+	set_variable = {
+		FRA_islands_pressure = 0
+	}
+}
+FRA_war_release_islands = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MAD
+			}
+			MAD = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MAD
+			}
+			transfer_state_to = MAD
+		}
+		declare_war_on = {
+			target = MAD
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = TAH
+			}
+			TAH = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = TAH
+			}
+			transfer_state_to = TAH
+		}
+		declare_war_on = {
+			target = TAH
+			type = annex_everything
+		}
+	}
+	set_country_flag = FRA_islands_independent
+	set_variable = {
+		FRA_islands_pressure = 0
+	}
+}
+FRA_autonomy_islands = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = MAD
+			}
+			MAD = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = MAD
+			}
+			transfer_state_to = MAD
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = MAD
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = MAD
+		}
+		MAD = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = TAH
+			}
+			TAH = {
+				exists = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = TAH
+			}
+			transfer_state_to = TAH
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			set_autonomy = {
+				target = TAH
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.8
+			}
+		}
+		else = {
+			puppet = TAH
+		}
+		TAH = {
+			set_country_flag = FRA_compact_partner
+		}
+	}
+	set_country_flag = FRA_islands_autonomous
+	set_variable = {
+		FRA_islands_pressure = 0
+	}
+}
+FRA_select_ai_route = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = REPUBLIC
+			}
+		}
+		set_country_flag = FRA_ai_REPUBLIC
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = MONARCHY
+			}
+		}
+		set_country_flag = FRA_ai_MONARCHY
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = LEAGUES
+			}
+		}
+		set_country_flag = FRA_ai_LEAGUES
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = SOCIAL
+			}
+		}
+		set_country_flag = FRA_ai_SOCIAL
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = COUNCILS
+			}
+		}
+		set_country_flag = FRA_ai_COUNCILS
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = PLAN
+			}
+		}
+		set_country_flag = FRA_ai_PLAN
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = MILITARY
+			}
+		}
+		set_country_flag = FRA_ai_MILITARY
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = DEFAULT
+			}
+			is_historical_focus_on = yes
+		}
+		set_country_flag = FRA_ai_REPUBLIC
+	}
+	else = {
+		random_list = {
+			20 = {
+				set_country_flag = FRA_ai_REPUBLIC
+			}
+			20 = {
+				set_country_flag = FRA_ai_MONARCHY
+			}
+			20 = {
+				set_country_flag = FRA_ai_LEAGUES
+			}
+			20 = {
+				set_country_flag = FRA_ai_SOCIAL
+			}
+			20 = {
+				set_country_flag = FRA_ai_COUNCILS
+			}
+			20 = {
+				set_country_flag = FRA_ai_PLAN
+			}
+			20 = {
+				set_country_flag = FRA_ai_MILITARY
+			}
+		}
+	}
+}
+FRA_ai_campaign = {
+	if = {
+		limit = {
+			has_country_flag = FRA_ai_REPUBLIC
+			democratic < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = FRA_ai_MONARCHY
+			neutrality < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = FRA_ai_LEAGUES
+			fascism < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = FRA_ai_SOCIAL
+			democratic < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = FRA_ai_COUNCILS
+			communism < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = FRA_ai_PLAN
+			communism < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = FRA_ai_MILITARY
+			neutrality < 0.40
+			has_political_power > 39
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		add_political_power = -40
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+		add_to_variable = {
+			FRA_mandate = 5
+		}
+	}
+}

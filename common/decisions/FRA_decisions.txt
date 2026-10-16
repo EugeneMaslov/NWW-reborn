@@ -1,0 +1,2297 @@
+FRA_nww_mandate_category = {
+	FRA_nww_coalition = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_completed_focus = FRA_nww_session
+		}
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			custom_effect_tooltip = FRA_meter_mandate_gain_15_tt
+			add_to_variable = {
+				FRA_mandate = 15
+			}
+			set_country_flag = FRA_coalition_promise
+			set_country_flag = {
+				flag = FRA_coalition_deadline
+				value = 1
+				days = 30
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_social_arbitration = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_completed_focus = FRA_nww_session
+		}
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			custom_effect_tooltip = FRA_meter_tension_loss_15_tt
+			add_to_variable = {
+				FRA_tension = -15
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_inquiry = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_completed_focus = FRA_nww_session
+		}
+		cost = 35
+		days_remove = 35
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 35
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_decree = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_completed_focus = FRA_nww_session
+		}
+		cost = 75
+		days_remove = 14
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 75
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			custom_effect_tooltip = FRA_meter_mandate_gain_10_tt
+			add_to_variable = {
+				FRA_mandate = 10
+			}
+			custom_effect_tooltip = FRA_meter_tension_gain_10_tt
+			add_to_variable = {
+				FRA_tension = 10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_campaign_republic = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = FRA_route_republic
+				has_country_flag = FRA_route_front
+				has_country_flag = FRA_regime_military
+			}
+		}
+		cost = 40
+		days_remove = 35
+		days_re_enable = 7
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 40
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	FRA_nww_campaign_royal = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_country_flag = FRA_route_right
+			NOT = {
+				has_completed_focus = FRA_nww_directory
+			}
+		}
+		cost = 40
+		days_remove = 35
+		days_re_enable = 7
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 40
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	FRA_nww_campaign_leagues = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_completed_focus = FRA_nww_directory
+		}
+		cost = 40
+		days_remove = 35
+		days_re_enable = 7
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 40
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	FRA_nww_campaign_workers = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_country_flag = FRA_route_front
+		}
+		cost = 40
+		days_remove = 35
+		days_re_enable = 7
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 40
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	FRA_nww_campaign_army = {
+		allowed = {
+			original_tag = FRA
+		}
+		icon = GFX_FRA_nww_republic_idea
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		visible = {
+			has_country_flag = FRA_route_emergency
+		}
+		cost = 40
+		days_remove = 35
+		days_re_enable = 7
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			has_capitulated = yes
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 40
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			custom_effect_tooltip = FRA_meter_mandate_gain_5_tt
+			add_to_variable = {
+				FRA_mandate = 5
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	FRA_nww_confidence_vote = {
+		icon = GFX_FRA_nww_republic_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_confidence_active
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 90
+		cancel_trigger = {
+			OR = {
+				check_variable = {
+					var = FRA_mandate
+					value = 40
+					compare = greater_than_or_equals
+					tooltip = FRA_check_mandate_greater_than_or_equals_40_tt
+				}
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_confidence_active
+			set_country_flag = {
+				flag = FRA_confidence_cooldown
+				value = 1
+				days = 90
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_confidence_active
+			set_country_flag = {
+				flag = FRA_confidence_cooldown
+				value = 1
+				days = 90
+			}
+			country_event = {
+				id = nww_fra.2
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+	FRA_nww_emergency_mandate = {
+		icon = GFX_FRA_nww_republic_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_regime_military
+			NOT = {
+				has_country_flag = FRA_emergency_resolved
+			}
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 270
+		cancel_trigger = {
+			OR = {
+				has_country_flag = FRA_emergency_resolved
+				has_capitulated = yes
+			}
+		}
+		timeout_effect = {
+			country_event = {
+				id = nww_fra.3
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+}
+FRA_nww_overseas_category = {
+	FRA_nww_invest_algeria = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_colonial_schools
+			FRA_holds_algeria = yes
+			NOT = {
+				has_country_flag = FRA_algeria_investment
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_algeria = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					FRA_holds_algeria = yes
+				}
+				set_country_flag = FRA_algeria_investment
+				custom_effect_tooltip = FRA_meter_algeria_pressure_loss_20_tt
+				add_to_variable = {
+					FRA_algeria_pressure = -20
+				}
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							is_core_of = ALG
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_nww_negotiate_algeria = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_overseas_conference
+			FRA_holds_algeria = yes
+			NOT = {
+				has_country_flag = FRA_algeria_treaty
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_algeria = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FRA_holds_algeria = yes
+				}
+				country_event = {
+					id = nww_fra.100
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_garrison_algeria = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_policy_extraction
+			FRA_holds_algeria = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 35
+		days_remove = 30
+		days_re_enable = 90
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = FRA_meter_algeria_pressure_loss_10_tt
+			add_to_variable = {
+				FRA_algeria_pressure = -10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_nww_algeria_ultimatum = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_algeria_crisis
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 120
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					FRA_holds_algeria = yes
+				}
+				check_variable = {
+					var = FRA_algeria_pressure
+					value = 60
+					compare = less_than
+					tooltip = FRA_check_algeria_pressure_less_than_60_tt
+				}
+				has_country_flag = FRA_algeria_treaty
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_algeria_crisis
+			set_country_flag = {
+				flag = FRA_algeria_cooldown
+				value = 1
+				days = 180
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_algeria_crisis
+			set_country_flag = {
+				flag = FRA_algeria_cooldown
+				value = 1
+				days = 180
+			}
+			country_event = {
+				id = nww_fra.120
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+	FRA_nww_invest_maghreb = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_colonial_schools
+			FRA_holds_maghreb = yes
+			NOT = {
+				has_country_flag = FRA_maghreb_investment
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_maghreb = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					FRA_holds_maghreb = yes
+				}
+				set_country_flag = FRA_maghreb_investment
+				custom_effect_tooltip = FRA_meter_maghreb_pressure_loss_20_tt
+				add_to_variable = {
+					FRA_maghreb_pressure = -20
+				}
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							is_core_of = MOR
+							is_core_of = TUN
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_nww_negotiate_maghreb = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_overseas_conference
+			FRA_holds_maghreb = yes
+			NOT = {
+				has_country_flag = FRA_maghreb_treaty
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_maghreb = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FRA_holds_maghreb = yes
+				}
+				country_event = {
+					id = nww_fra.101
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_garrison_maghreb = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_policy_extraction
+			FRA_holds_maghreb = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 35
+		days_remove = 30
+		days_re_enable = 90
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = FRA_meter_maghreb_pressure_loss_10_tt
+			add_to_variable = {
+				FRA_maghreb_pressure = -10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_nww_maghreb_ultimatum = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_maghreb_crisis
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 120
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					FRA_holds_maghreb = yes
+				}
+				check_variable = {
+					var = FRA_maghreb_pressure
+					value = 60
+					compare = less_than
+					tooltip = FRA_check_maghreb_pressure_less_than_60_tt
+				}
+				has_country_flag = FRA_maghreb_treaty
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_maghreb_crisis
+			set_country_flag = {
+				flag = FRA_maghreb_cooldown
+				value = 1
+				days = 180
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_maghreb_crisis
+			set_country_flag = {
+				flag = FRA_maghreb_cooldown
+				value = 1
+				days = 180
+			}
+			country_event = {
+				id = nww_fra.121
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+	FRA_nww_invest_west_africa = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_colonial_schools
+			FRA_holds_west_africa = yes
+			NOT = {
+				has_country_flag = FRA_west_africa_investment
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_west_africa = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					FRA_holds_west_africa = yes
+				}
+				set_country_flag = FRA_west_africa_investment
+				custom_effect_tooltip = FRA_meter_west_africa_pressure_loss_20_tt
+				add_to_variable = {
+					FRA_west_africa_pressure = -20
+				}
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							is_core_of = SEN
+							is_core_of = MLI
+							is_core_of = IVO
+							is_core_of = GNA
+							is_core_of = DAH
+							is_core_of = NGR
+							is_core_of = VOL
+							is_core_of = MRT
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_nww_negotiate_west_africa = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_overseas_conference
+			FRA_holds_west_africa = yes
+			NOT = {
+				has_country_flag = FRA_west_africa_treaty
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_west_africa = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FRA_holds_west_africa = yes
+				}
+				country_event = {
+					id = nww_fra.102
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_garrison_west_africa = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_policy_extraction
+			FRA_holds_west_africa = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 35
+		days_remove = 30
+		days_re_enable = 90
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = FRA_meter_west_africa_pressure_loss_10_tt
+			add_to_variable = {
+				FRA_west_africa_pressure = -10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_nww_west_africa_ultimatum = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_west_africa_crisis
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 120
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					FRA_holds_west_africa = yes
+				}
+				check_variable = {
+					var = FRA_west_africa_pressure
+					value = 60
+					compare = less_than
+					tooltip = FRA_check_west_africa_pressure_less_than_60_tt
+				}
+				has_country_flag = FRA_west_africa_treaty
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_west_africa_crisis
+			set_country_flag = {
+				flag = FRA_west_africa_cooldown
+				value = 1
+				days = 180
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_west_africa_crisis
+			set_country_flag = {
+				flag = FRA_west_africa_cooldown
+				value = 1
+				days = 180
+			}
+			country_event = {
+				id = nww_fra.122
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+	FRA_nww_invest_equatorial = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_colonial_schools
+			FRA_holds_equatorial = yes
+			NOT = {
+				has_country_flag = FRA_equatorial_investment
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_equatorial = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					FRA_holds_equatorial = yes
+				}
+				set_country_flag = FRA_equatorial_investment
+				custom_effect_tooltip = FRA_meter_equatorial_pressure_loss_20_tt
+				add_to_variable = {
+					FRA_equatorial_pressure = -20
+				}
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							is_core_of = GAB
+							is_core_of = RCG
+							is_core_of = CHA
+							is_core_of = CAR
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_nww_negotiate_equatorial = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_overseas_conference
+			FRA_holds_equatorial = yes
+			NOT = {
+				has_country_flag = FRA_equatorial_treaty
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_equatorial = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FRA_holds_equatorial = yes
+				}
+				country_event = {
+					id = nww_fra.103
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_garrison_equatorial = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_policy_extraction
+			FRA_holds_equatorial = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 35
+		days_remove = 30
+		days_re_enable = 90
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = FRA_meter_equatorial_pressure_loss_10_tt
+			add_to_variable = {
+				FRA_equatorial_pressure = -10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_nww_equatorial_ultimatum = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_equatorial_crisis
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 120
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					FRA_holds_equatorial = yes
+				}
+				check_variable = {
+					var = FRA_equatorial_pressure
+					value = 60
+					compare = less_than
+					tooltip = FRA_check_equatorial_pressure_less_than_60_tt
+				}
+				has_country_flag = FRA_equatorial_treaty
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_equatorial_crisis
+			set_country_flag = {
+				flag = FRA_equatorial_cooldown
+				value = 1
+				days = 180
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_equatorial_crisis
+			set_country_flag = {
+				flag = FRA_equatorial_cooldown
+				value = 1
+				days = 180
+			}
+			country_event = {
+				id = nww_fra.123
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+	FRA_nww_invest_indochina = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_colonial_schools
+			FRA_holds_indochina = yes
+			NOT = {
+				has_country_flag = FRA_indochina_investment
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_indochina = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					FRA_holds_indochina = yes
+				}
+				set_country_flag = FRA_indochina_investment
+				custom_effect_tooltip = FRA_meter_indochina_pressure_loss_20_tt
+				add_to_variable = {
+					FRA_indochina_pressure = -20
+				}
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							is_core_of = VIN
+							is_core_of = CAM
+							is_core_of = LAO
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_nww_negotiate_indochina = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_overseas_conference
+			FRA_holds_indochina = yes
+			NOT = {
+				has_country_flag = FRA_indochina_treaty
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_indochina = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FRA_holds_indochina = yes
+				}
+				country_event = {
+					id = nww_fra.104
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_garrison_indochina = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_policy_extraction
+			FRA_holds_indochina = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 35
+		days_remove = 30
+		days_re_enable = 90
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = FRA_meter_indochina_pressure_loss_10_tt
+			add_to_variable = {
+				FRA_indochina_pressure = -10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_nww_indochina_ultimatum = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_indochina_crisis
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 120
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					FRA_holds_indochina = yes
+				}
+				check_variable = {
+					var = FRA_indochina_pressure
+					value = 60
+					compare = less_than
+					tooltip = FRA_check_indochina_pressure_less_than_60_tt
+				}
+				has_country_flag = FRA_indochina_treaty
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_indochina_crisis
+			set_country_flag = {
+				flag = FRA_indochina_cooldown
+				value = 1
+				days = 180
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_indochina_crisis
+			set_country_flag = {
+				flag = FRA_indochina_cooldown
+				value = 1
+				days = 180
+			}
+			country_event = {
+				id = nww_fra.124
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+	FRA_nww_invest_islands = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_colonial_schools
+			FRA_holds_islands = yes
+			NOT = {
+				has_country_flag = FRA_islands_investment
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_islands = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					FRA_holds_islands = yes
+				}
+				set_country_flag = FRA_islands_investment
+				custom_effect_tooltip = FRA_meter_islands_pressure_loss_20_tt
+				add_to_variable = {
+					FRA_islands_pressure = -20
+				}
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							is_core_of = MAD
+							is_core_of = TAH
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_nww_negotiate_islands = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_overseas_conference
+			FRA_holds_islands = yes
+			NOT = {
+				has_country_flag = FRA_islands_treaty
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					FRA_holds_islands = yes
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FRA_holds_islands = yes
+				}
+				country_event = {
+					id = nww_fra.105
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_garrison_islands = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_policy_extraction
+			FRA_holds_islands = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 35
+		days_remove = 30
+		days_re_enable = 90
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = FRA_meter_islands_pressure_loss_10_tt
+			add_to_variable = {
+				FRA_islands_pressure = -10
+			}
+			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_nww_islands_ultimatum = {
+		icon = GFX_FRA_nww_overseas_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_country_flag = FRA_islands_crisis
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 120
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					FRA_holds_islands = yes
+				}
+				check_variable = {
+					var = FRA_islands_pressure
+					value = 60
+					compare = less_than
+					tooltip = FRA_check_islands_pressure_less_than_60_tt
+				}
+				has_country_flag = FRA_islands_treaty
+				has_capitulated = yes
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_islands_crisis
+			set_country_flag = {
+				flag = FRA_islands_cooldown
+				value = 1
+				days = 180
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = FRA_islands_crisis
+			set_country_flag = {
+				flag = FRA_islands_cooldown
+				value = 1
+				days = 180
+			}
+			country_event = {
+				id = nww_fra.125
+				days = 1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+	}
+}
+FRA_nww_projects_category = {
+	FRA_nww_project_eastern_forts = {
+		icon = GFX_FRA_nww_industry_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_lorraine
+			NOT = {
+				has_country_flag = FRA_project_eastern_forts_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			18 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					18 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					18 = {
+						is_owned_and_controlled_by = ROOT
+					}
+					NOT = {
+						has_country_flag = FRA_project_eastern_forts_done
+					}
+				}
+				18 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 5291
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3560
+						instant_build = yes
+					}
+				}
+				set_country_flag = FRA_project_eastern_forts_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_project_northern_forts = {
+		icon = GFX_FRA_nww_industry_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_north_approaches
+			NOT = {
+				has_country_flag = FRA_project_northern_forts_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			29 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					29 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					29 = {
+						is_owned_and_controlled_by = ROOT
+					}
+					NOT = {
+						has_country_flag = FRA_project_northern_forts_done
+					}
+				}
+				29 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 575
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11483
+						instant_build = yes
+					}
+				}
+				set_country_flag = FRA_project_northern_forts_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_project_alpine_forts = {
+		icon = GFX_FRA_nww_industry_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_alpine_passes
+			NOT = {
+				has_country_flag = FRA_project_alpine_forts_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			735 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					735 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					735 = {
+						is_owned_and_controlled_by = ROOT
+					}
+					NOT = {
+						has_country_flag = FRA_project_alpine_forts_done
+					}
+				}
+				735 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 764
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9909
+						instant_build = yes
+					}
+				}
+				set_country_flag = FRA_project_alpine_forts_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_project_civil_programme = {
+		icon = GFX_FRA_nww_industry_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_internal_market
+			NOT = {
+				has_country_flag = FRA_project_civil_programme_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			any_owned_state = {
+				is_core_of = ROOT
+				is_on_continent = europe
+				is_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+		}
+		cost = 50
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					any_owned_state = {
+						is_core_of = ROOT
+						is_on_continent = europe
+						is_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						is_on_continent = europe
+						is_controlled_by = ROOT
+					}
+					NOT = {
+						has_country_flag = FRA_project_civil_programme_done
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						is_on_continent = europe
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = FRA_project_civil_programme_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	FRA_nww_project_mobilisation_conversion = {
+		icon = GFX_FRA_nww_industry_idea
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_nww_conversion
+			NOT = {
+				has_country_flag = FRA_project_mobilisation_conversion_done
+			}
+		}
+		available = {
+			has_capitulated = no
+			any_owned_state = {
+				is_core_of = ROOT
+				is_on_continent = europe
+				is_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = FRA_project_busy
+			}
+			has_war = yes
+		}
+		cost = 50
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = FRA_project_busy
+			add_ideas = FRA_nww_project_commitment
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				NOT = {
+					any_owned_state = {
+						is_core_of = ROOT
+						is_on_continent = europe
+						is_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_project_busy
+			remove_ideas = FRA_nww_project_commitment
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						is_on_continent = europe
+						is_controlled_by = ROOT
+					}
+					NOT = {
+						has_country_flag = FRA_project_mobilisation_conversion_done
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						is_on_continent = europe
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = FRA_project_mobilisation_conversion_done
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
+FRA_nww_diplomacy_category = {
+	FRA_nww_security_offer = {
+		icon = GFX_FRA_nww_republic_idea
+		allowed = {
+			original_tag = FRA
+		}
+		target_root_trigger = {
+			has_completed_focus = FRA_nww_foreign_review
+		}
+		target_trigger = {
+			exists = yes
+			NOT = {
+				original_tag = FRA
+			}
+			is_subject = no
+			NOT = {
+				has_war_with = ROOT
+			}
+			OR = {
+				AND = {
+					ROOT = {
+						has_country_flag = FRA_western_diplomacy
+					}
+					OR = {
+						tag = ENG
+						tag = BEL
+						tag = LTB
+					}
+					has_government = democratic
+				}
+				AND = {
+					ROOT = {
+						has_country_flag = FRA_latin_diplomacy
+					}
+					OR = {
+						tag = ITA
+						tag = SPR
+					}
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+				AND = {
+					ROOT = {
+						has_country_flag = FRA_continental_diplomacy
+					}
+					OR = {
+						tag = GER
+						tag = AUS
+					}
+					has_government = neutrality
+				}
+				AND = {
+					ROOT = {
+						has_country_flag = FRA_workers_diplomacy
+					}
+					OR = {
+						tag = SOV
+						tag = UKR
+						tag = MKN
+					}
+					OR = {
+						has_government = communism
+						has_government = democratic
+					}
+				}
+				has_country_flag = FRA_compact_partner
+			}
+		}
+		visible = {
+			NOT = {
+				FROM = {
+					has_country_flag = FRA_security_answered
+				}
+			}
+		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = FRA_negotiation_busy
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				FROM = {
+					exists = no
+				}
+				has_war_with = FROM
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			add_political_power = 50
+		}
+		remove_effect = {
+			clr_country_flag = FRA_negotiation_busy
+			if = {
+				limit = {
+					FROM = {
+						exists = yes
+					}
+					NOT = {
+						has_war_with = FROM
+					}
+				}
+				FROM = {
+					country_event = {
+						id = nww_fra.200
+						days = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_nww_alliance_offer = {
+		icon = GFX_FRA_nww_republic_idea
+		allowed = {
+			original_tag = FRA
+		}
+		target_root_trigger = {
+			has_country_flag = FRA_regime_settled
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		}
+		target_trigger = {
+			exists = yes
+			has_country_flag = FRA_security_partner
+			is_subject = no
+			is_in_faction = no
+			NOT = {
+				has_war_with = ROOT
+			}
+		}
+		visible = {
+			NOT = {
+				FROM = {
+					has_country_flag = FRA_alliance_answered
+				}
+			}
+		}
+		available = {
+			has_capitulated = no
+		}
+		cost = 75
+		days_re_enable = 90
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = nww_fra.203
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}

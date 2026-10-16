@@ -1,0 +1,1938 @@
+{
+  "focus_count": 146,
+  "focuses": [
+    {
+      "id": "FRA_nww_session",
+      "key": "session",
+      "x": 0,
+      "y": 0,
+      "parents": [],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_accounts",
+      "key": "accounts",
+      "x": 0,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_consultations",
+      "key": "consultations",
+      "x": 0,
+      "y": 2,
+      "parents": [
+        "accounts"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_republic",
+      "key": "republic",
+      "x": -9,
+      "y": 3,
+      "parents": [
+        "consultations"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_right",
+      "key": "right",
+      "x": -3,
+      "y": 3,
+      "parents": [
+        "consultations"
+      ],
+      "cost": 5,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_front",
+      "key": "front",
+      "x": 3,
+      "y": 3,
+      "parents": [
+        "consultations"
+      ],
+      "cost": 5,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_emergency",
+      "key": "emergency",
+      "x": 10,
+      "y": 3,
+      "parents": [
+        "consultations"
+      ],
+      "cost": 5,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_commission",
+      "key": "commission",
+      "x": -9,
+      "y": 4,
+      "parents": [
+        "republic"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_contracts",
+      "key": "contracts",
+      "x": -9,
+      "y": 5,
+      "parents": [
+        "commission"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_responsible",
+      "key": "responsible",
+      "x": -11,
+      "y": 6,
+      "parents": [
+        "contracts"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_oversight",
+      "key": "oversight",
+      "x": -7,
+      "y": 6,
+      "parents": [
+        "contracts"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_arbitration",
+      "key": "arbitration",
+      "x": -9,
+      "y": 7,
+      "parents": [
+        [
+          "responsible",
+          "oversight"
+        ]
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_municipal_credit",
+      "key": "municipal_credit",
+      "x": -9,
+      "y": 8,
+      "parents": [
+        "arbitration"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_audit_court",
+      "key": "audit_court",
+      "x": -9,
+      "y": 9,
+      "parents": [
+        "municipal_credit"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_civil_service",
+      "key": "civil_service",
+      "x": -9,
+      "y": 10,
+      "parents": [
+        "audit_court"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_renewal",
+      "key": "renewal",
+      "x": -9,
+      "y": 11,
+      "parents": [
+        "civil_service"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_rights",
+      "key": "rights",
+      "x": -9,
+      "y": 12,
+      "parents": [
+        "renewal"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_republic_institutions",
+      "key": "republic_institutions",
+      "x": -9,
+      "y": 13,
+      "parents": [
+        "rights"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_leagues_discipline",
+      "key": "leagues_discipline",
+      "x": -3,
+      "y": 4,
+      "parents": [
+        "right"
+      ],
+      "cost": 5,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_garrisons",
+      "key": "garrisons",
+      "x": -3,
+      "y": 5,
+      "parents": [
+        "leagues_discipline"
+      ],
+      "cost": 10,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_powers_crisis",
+      "key": "powers_crisis",
+      "x": -3,
+      "y": 6,
+      "parents": [
+        "garrisons"
+      ],
+      "cost": 10,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_orleanists",
+      "key": "orleanists",
+      "x": -5,
+      "y": 7,
+      "parents": [
+        "powers_crisis"
+      ],
+      "cost": 5,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_directory",
+      "key": "directory",
+      "x": -1,
+      "y": 7,
+      "parents": [
+        "powers_crisis"
+      ],
+      "cost": 5,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_crown_law",
+      "key": "crown_law",
+      "x": -5,
+      "y": 8,
+      "parents": [
+        "orleanists"
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_league_state",
+      "key": "league_state",
+      "x": -1,
+      "y": 8,
+      "parents": [
+        "directory"
+      ],
+      "cost": 10,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_royal_cabinet",
+      "key": "royal_cabinet",
+      "x": -5,
+      "y": 9,
+      "parents": [
+        "crown_law"
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_royal_charter",
+      "key": "royal_charter",
+      "x": -5,
+      "y": 10,
+      "parents": [
+        "royal_cabinet"
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_crown_service",
+      "key": "crown_service",
+      "x": -5,
+      "y": 11,
+      "parents": [
+        [
+          "royal_charter",
+          "royal_corporate"
+        ]
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_royal_corporate",
+      "key": "royal_corporate",
+      "x": -3,
+      "y": 10,
+      "parents": [
+        "royal_cabinet"
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_corporate_chamber",
+      "key": "corporate_chamber",
+      "x": -1,
+      "y": 9,
+      "parents": [
+        "league_state"
+      ],
+      "cost": 10,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_national_movement",
+      "key": "national_movement",
+      "x": -1,
+      "y": 10,
+      "parents": [
+        "corporate_chamber"
+      ],
+      "cost": 10,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_league_administration",
+      "key": "league_administration",
+      "x": -1,
+      "y": 11,
+      "parents": [
+        "national_movement"
+      ],
+      "cost": 10,
+      "art": "leagues"
+    },
+    {
+      "id": "FRA_nww_left_talks",
+      "key": "left_talks",
+      "x": 3,
+      "y": 4,
+      "parents": [
+        "front"
+      ],
+      "cost": 5,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_public_works",
+      "key": "public_works",
+      "x": 3,
+      "y": 5,
+      "parents": [
+        "left_talks"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_labour_charter",
+      "key": "labour_charter",
+      "x": 3,
+      "y": 6,
+      "parents": [
+        "public_works"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_social_republic",
+      "key": "social_republic",
+      "x": 1,
+      "y": 7,
+      "parents": [
+        "labour_charter"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_councils",
+      "key": "councils",
+      "x": 3,
+      "y": 7,
+      "parents": [
+        "labour_charter"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_central_plan",
+      "key": "central_plan",
+      "x": 5,
+      "y": 7,
+      "parents": [
+        "labour_charter"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_collective_contracts",
+      "key": "collective_contracts",
+      "x": 1,
+      "y": 8,
+      "parents": [
+        "social_republic"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_social_insurance",
+      "key": "social_insurance",
+      "x": 1,
+      "y": 9,
+      "parents": [
+        "collective_contracts"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_social_arbitration",
+      "key": "social_arbitration",
+      "x": 1,
+      "y": 10,
+      "parents": [
+        "social_insurance"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_cooperatives",
+      "key": "cooperatives",
+      "x": 3,
+      "y": 8,
+      "parents": [
+        "councils"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_elected_boards",
+      "key": "elected_boards",
+      "x": 3,
+      "y": 9,
+      "parents": [
+        "cooperatives"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_councils_congress",
+      "key": "councils_congress",
+      "x": 3,
+      "y": 10,
+      "parents": [
+        "elected_boards"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_national_banks",
+      "key": "national_banks",
+      "x": 5,
+      "y": 8,
+      "parents": [
+        "central_plan"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_investment_plan",
+      "key": "investment_plan",
+      "x": 5,
+      "y": 9,
+      "parents": [
+        "national_banks"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_planning_commission",
+      "key": "planning_commission",
+      "x": 5,
+      "y": 10,
+      "parents": [
+        "investment_plan"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_disarm_militias",
+      "key": "disarm_militias",
+      "x": 10,
+      "y": 4,
+      "parents": [
+        "emergency"
+      ],
+      "cost": 5,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_emergency_legal",
+      "key": "emergency_legal",
+      "x": 10,
+      "y": 5,
+      "parents": [
+        "disarm_militias"
+      ],
+      "cost": 10,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_military_cabinet",
+      "key": "military_cabinet",
+      "x": 10,
+      "y": 6,
+      "parents": [
+        "emergency_legal"
+      ],
+      "cost": 10,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_army_neutrality",
+      "key": "army_neutrality",
+      "x": 10,
+      "y": 7,
+      "parents": [
+        "military_cabinet"
+      ],
+      "cost": 5,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_civil_administration",
+      "key": "civil_administration",
+      "x": 10,
+      "y": 8,
+      "parents": [
+        "army_neutrality"
+      ],
+      "cost": 5,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_defence_budget",
+      "key": "defence_budget",
+      "x": 10,
+      "y": 9,
+      "parents": [
+        "civil_administration"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_return_ballot",
+      "key": "return_ballot",
+      "x": 8,
+      "y": 10,
+      "parents": [
+        "defence_budget"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_extend_mandate",
+      "key": "extend_mandate",
+      "x": 12,
+      "y": 10,
+      "parents": [
+        "defence_budget"
+      ],
+      "cost": 10,
+      "art": "cabinet"
+    },
+    {
+      "id": "FRA_nww_bank_audit",
+      "key": "bank_audit",
+      "x": 20,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 5,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_public_bank",
+      "key": "public_bank",
+      "x": 18,
+      "y": 2,
+      "parents": [
+        "bank_audit"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_private_credit",
+      "key": "private_credit",
+      "x": 22,
+      "y": 2,
+      "parents": [
+        "bank_audit"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_housing",
+      "key": "housing",
+      "x": 20,
+      "y": 3,
+      "parents": [
+        [
+          "public_bank",
+          "private_credit"
+        ]
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_municipal_orders",
+      "key": "municipal_orders",
+      "x": 20,
+      "y": 4,
+      "parents": [
+        "housing"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_rail_nodes",
+      "key": "rail_nodes",
+      "x": 20,
+      "y": 5,
+      "parents": [
+        "municipal_orders"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_coal_basins",
+      "key": "coal_basins",
+      "x": 18,
+      "y": 6,
+      "parents": [
+        "rail_nodes"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_electrification",
+      "key": "electrification",
+      "x": 22,
+      "y": 6,
+      "parents": [
+        "rail_nodes"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_concentrate",
+      "key": "concentrate",
+      "x": 18,
+      "y": 7,
+      "parents": [
+        "coal_basins"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_regional",
+      "key": "regional",
+      "x": 22,
+      "y": 7,
+      "parents": [
+        "electrification"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_west_industry",
+      "key": "west_industry",
+      "x": 20,
+      "y": 8,
+      "parents": [
+        [
+          "concentrate",
+          "regional"
+        ]
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_provincial_schools",
+      "key": "provincial_schools",
+      "x": 20,
+      "y": 9,
+      "parents": [
+        "west_industry"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_internal_market",
+      "key": "internal_market",
+      "x": 20,
+      "y": 10,
+      "parents": [
+        "provincial_schools"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_specifications",
+      "key": "specifications",
+      "x": 28,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_standard_patterns",
+      "key": "standard_patterns",
+      "x": 28,
+      "y": 2,
+      "parents": [
+        "specifications"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_state_arsenals",
+      "key": "state_arsenals",
+      "x": 28,
+      "y": 3,
+      "parents": [
+        "standard_patterns"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_private_contracts",
+      "key": "private_contracts",
+      "x": 28,
+      "y": 4,
+      "parents": [
+        "state_arsenals"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_machine_reserve",
+      "key": "machine_reserve",
+      "x": 28,
+      "y": 5,
+      "parents": [
+        "private_contracts"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_conversion",
+      "key": "conversion",
+      "x": 28,
+      "y": 6,
+      "parents": [
+        "machine_reserve"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_fort_commission",
+      "key": "fort_commission",
+      "x": 32,
+      "y": 2,
+      "parents": [
+        "specifications"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_lorraine",
+      "key": "lorraine",
+      "x": 32,
+      "y": 3,
+      "parents": [
+        "fort_commission"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_north_approaches",
+      "key": "north_approaches",
+      "x": 32,
+      "y": 4,
+      "parents": [
+        "lorraine"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_alpine_passes",
+      "key": "alpine_passes",
+      "x": 32,
+      "y": 5,
+      "parents": [
+        "north_approaches"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_arsenal_network",
+      "key": "arsenal_network",
+      "x": 28,
+      "y": 7,
+      "parents": [
+        "conversion"
+      ],
+      "cost": 10,
+      "art": "industry"
+    },
+    {
+      "id": "FRA_nww_research_council",
+      "key": "research_council",
+      "x": 39,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_university_contract",
+      "key": "university_contract",
+      "x": 39,
+      "y": 2,
+      "parents": [
+        "research_council"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_polytechnics",
+      "key": "polytechnics",
+      "x": 39,
+      "y": 3,
+      "parents": [
+        "university_contract"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_fourth_slot",
+      "key": "fourth_slot",
+      "x": 39,
+      "y": 4,
+      "parents": [
+        "polytechnics"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_metallurgy",
+      "key": "metallurgy",
+      "x": 37,
+      "y": 5,
+      "parents": [
+        "fourth_slot"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_radio_labs",
+      "key": "radio_labs",
+      "x": 41,
+      "y": 5,
+      "parents": [
+        "fourth_slot"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_aerodynamics",
+      "key": "aerodynamics",
+      "x": 39,
+      "y": 6,
+      "parents": [
+        [
+          "metallurgy",
+          "radio_labs"
+        ]
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_science_network",
+      "key": "science_network",
+      "x": 39,
+      "y": 7,
+      "parents": [
+        "aerodynamics"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_fifth_slot",
+      "key": "fifth_slot",
+      "x": 39,
+      "y": 8,
+      "parents": [
+        "science_network"
+      ],
+      "cost": 10,
+      "art": "science"
+    },
+    {
+      "id": "FRA_nww_maneuvers",
+      "key": "maneuvers",
+      "x": 47,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_staff_college",
+      "key": "staff_college",
+      "x": 47,
+      "y": 2,
+      "parents": [
+        "maneuvers"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_signals_supply",
+      "key": "signals_supply",
+      "x": 47,
+      "y": 3,
+      "parents": [
+        "staff_college"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_methodical",
+      "key": "methodical",
+      "x": 44,
+      "y": 4,
+      "parents": [
+        "signals_supply"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_mobile",
+      "key": "mobile",
+      "x": 50,
+      "y": 4,
+      "parents": [
+        "signals_supply"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_artillery_plans",
+      "key": "artillery_plans",
+      "x": 44,
+      "y": 5,
+      "parents": [
+        "methodical"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_mobile_reserve",
+      "key": "mobile_reserve",
+      "x": 44,
+      "y": 6,
+      "parents": [
+        "artillery_plans"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_fort_counterattack",
+      "key": "fort_counterattack",
+      "x": 44,
+      "y": 7,
+      "parents": [
+        "mobile_reserve"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_methodical_system",
+      "key": "methodical_system",
+      "x": 44,
+      "y": 8,
+      "parents": [
+        "fort_counterattack"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_experimental_groups",
+      "key": "experimental_groups",
+      "x": 50,
+      "y": 5,
+      "parents": [
+        "mobile"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_radio_commands",
+      "key": "radio_commands",
+      "x": 50,
+      "y": 6,
+      "parents": [
+        "experimental_groups"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_armoured_divisions",
+      "key": "armoured_divisions",
+      "x": 50,
+      "y": 7,
+      "parents": [
+        "radio_commands"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_mobile_system",
+      "key": "mobile_system",
+      "x": 50,
+      "y": 8,
+      "parents": [
+        "armoured_divisions"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_officer_corps",
+      "key": "officer_corps",
+      "x": 47,
+      "y": 9,
+      "parents": [
+        [
+          "methodical_system",
+          "mobile_system"
+        ]
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_mobilisation_staff",
+      "key": "mobilisation_staff",
+      "x": 47,
+      "y": 10,
+      "parents": [
+        "officer_corps"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_air_command",
+      "key": "air_command",
+      "x": 57,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_flight_schools",
+      "key": "flight_schools",
+      "x": 57,
+      "y": 2,
+      "parents": [
+        "air_command"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_engine_standards",
+      "key": "engine_standards",
+      "x": 57,
+      "y": 3,
+      "parents": [
+        "flight_schools"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_airfields",
+      "key": "airfields",
+      "x": 57,
+      "y": 4,
+      "parents": [
+        "engine_standards"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_tactical_air",
+      "key": "tactical_air",
+      "x": 55,
+      "y": 5,
+      "parents": [
+        "airfields"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_strategic_air",
+      "key": "strategic_air",
+      "x": 59,
+      "y": 5,
+      "parents": [
+        "airfields"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_tactical_groups",
+      "key": "tactical_groups",
+      "x": 55,
+      "y": 6,
+      "parents": [
+        "tactical_air"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_navigation",
+      "key": "navigation",
+      "x": 59,
+      "y": 6,
+      "parents": [
+        "strategic_air"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_air_watch",
+      "key": "air_watch",
+      "x": 57,
+      "y": 7,
+      "parents": [
+        [
+          "tactical_groups",
+          "navigation"
+        ]
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_interception",
+      "key": "interception",
+      "x": 57,
+      "y": 8,
+      "parents": [
+        "air_watch"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_air_industry",
+      "key": "air_industry",
+      "x": 57,
+      "y": 9,
+      "parents": [
+        "interception"
+      ],
+      "cost": 10,
+      "art": "air"
+    },
+    {
+      "id": "FRA_nww_fleet_audit",
+      "key": "fleet_audit",
+      "x": 67,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_training_squadrons",
+      "key": "training_squadrons",
+      "x": 67,
+      "y": 2,
+      "parents": [
+        "fleet_audit"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_bases_fuel",
+      "key": "bases_fuel",
+      "x": 67,
+      "y": 3,
+      "parents": [
+        "training_squadrons"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_atlantic",
+      "key": "atlantic",
+      "x": 64,
+      "y": 4,
+      "parents": [
+        "bases_fuel"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_mediterranean",
+      "key": "mediterranean",
+      "x": 70,
+      "y": 4,
+      "parents": [
+        "bases_fuel"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_asw",
+      "key": "asw",
+      "x": 64,
+      "y": 5,
+      "parents": [
+        "atlantic"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_fast_squadrons",
+      "key": "fast_squadrons",
+      "x": 70,
+      "y": 5,
+      "parents": [
+        "mediterranean"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_naval_yards",
+      "key": "naval_yards",
+      "x": 67,
+      "y": 6,
+      "parents": [
+        [
+          "asw",
+          "fast_squadrons"
+        ]
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_battlefleet",
+      "key": "battlefleet",
+      "x": 65,
+      "y": 7,
+      "parents": [
+        "naval_yards"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_carrier_trials",
+      "key": "carrier_trials",
+      "x": 69,
+      "y": 7,
+      "parents": [
+        "naval_yards"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_fire_control",
+      "key": "fire_control",
+      "x": 65,
+      "y": 8,
+      "parents": [
+        "battlefleet"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_carrier_group",
+      "key": "carrier_group",
+      "x": 69,
+      "y": 8,
+      "parents": [
+        "carrier_trials"
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_two_seas",
+      "key": "two_seas",
+      "x": 67,
+      "y": 9,
+      "parents": [
+        [
+          "fire_control",
+          "carrier_group"
+        ]
+      ],
+      "cost": 10,
+      "art": "navy"
+    },
+    {
+      "id": "FRA_nww_overseas_register",
+      "key": "overseas_register",
+      "x": 77,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_overseas_conference",
+      "key": "overseas_conference",
+      "x": 77,
+      "y": 2,
+      "parents": [
+        "overseas_register"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_extraction",
+      "key": "extraction",
+      "x": 73,
+      "y": 3,
+      "parents": [
+        "overseas_conference"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_representation",
+      "key": "representation",
+      "x": 77,
+      "y": 3,
+      "parents": [
+        "overseas_conference"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_selfdetermination",
+      "key": "selfdetermination",
+      "x": 81,
+      "y": 3,
+      "parents": [
+        "overseas_conference"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_colonial_schools",
+      "key": "colonial_schools",
+      "x": 77,
+      "y": 4,
+      "parents": [
+        [
+          "extraction",
+          "representation",
+          "selfdetermination"
+        ]
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_overseas_credit",
+      "key": "overseas_credit",
+      "x": 77,
+      "y": 5,
+      "parents": [
+        "colonial_schools"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_central_overseas_plan",
+      "key": "central_overseas_plan",
+      "x": 81,
+      "y": 5,
+      "parents": [
+        "colonial_schools"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_overseas_compact",
+      "key": "overseas_compact",
+      "x": 77,
+      "y": 6,
+      "parents": [
+        "overseas_credit"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_common_markets",
+      "key": "common_markets",
+      "x": 77,
+      "y": 7,
+      "parents": [
+        "overseas_compact"
+      ],
+      "cost": 10,
+      "art": "overseas"
+    },
+    {
+      "id": "FRA_nww_foreign_review",
+      "key": "foreign_review",
+      "x": 87,
+      "y": 1,
+      "parents": [
+        "session"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_western_security",
+      "key": "western_security",
+      "x": 85,
+      "y": 2,
+      "parents": [
+        "foreign_review"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_latin_accord",
+      "key": "latin_accord",
+      "x": 87,
+      "y": 3,
+      "parents": [
+        "foreign_review"
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_continental_accord",
+      "key": "continental_accord",
+      "x": 89,
+      "y": 3,
+      "parents": [
+        "foreign_review"
+      ],
+      "cost": 10,
+      "art": "crown"
+    },
+    {
+      "id": "FRA_nww_rhine_stand",
+      "key": "rhine_stand",
+      "x": 91,
+      "y": 3,
+      "parents": [
+        "foreign_review"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_workers_diplomacy",
+      "key": "workers_diplomacy",
+      "x": 93,
+      "y": 2,
+      "parents": [
+        "foreign_review"
+      ],
+      "cost": 10,
+      "art": "labour"
+    },
+    {
+      "id": "FRA_nww_independent_course",
+      "key": "independent_course",
+      "x": 95,
+      "y": 3,
+      "parents": [
+        "foreign_review"
+      ],
+      "cost": 10,
+      "art": "republic"
+    },
+    {
+      "id": "FRA_nww_rhine_preparations",
+      "key": "rhine_preparations",
+      "x": 91,
+      "y": 4,
+      "parents": [
+        "rhine_stand"
+      ],
+      "cost": 10,
+      "art": "army"
+    },
+    {
+      "id": "FRA_nww_rhine_ultimatum",
+      "key": "rhine_ultimatum",
+      "x": 91,
+      "y": 5,
+      "parents": [
+        "rhine_preparations"
+      ],
+      "cost": 10,
+      "art": "army"
+    }
+  ],
+  "regions": [
+    [
+      "algeria",
+      "Алжир",
+      "Algeria",
+      [
+        "ALG"
+      ]
+    ],
+    [
+      "maghreb",
+      "Магрибские протектораты",
+      "Maghreb Protectorates",
+      [
+        "MOR",
+        "TUN"
+      ]
+    ],
+    [
+      "west_africa",
+      "Западная Африка",
+      "West Africa",
+      [
+        "SEN",
+        "MLI",
+        "IVO",
+        "GNA",
+        "DAH",
+        "NGR",
+        "VOL",
+        "MRT"
+      ]
+    ],
+    [
+      "equatorial",
+      "Экваториальная Африка",
+      "Equatorial Africa",
+      [
+        "GAB",
+        "RCG",
+        "CHA",
+        "CAR"
+      ]
+    ],
+    [
+      "indochina",
+      "Индокитай",
+      "Indochina",
+      [
+        "VIN",
+        "CAM",
+        "LAO"
+      ]
+    ],
+    [
+      "islands",
+      "Островные владения",
+      "Island Possessions",
+      [
+        "MAD",
+        "TAH"
+      ]
+    ]
+  ],
+  "compatibility_ids": [
+    "FRA_aggressive_focus",
+    "FRA_agricultural_collectivization",
+    "FRA_agricultural_protectionism",
+    "FRA_air_doctrine",
+    "FRA_air_dominance",
+    "FRA_air_focus",
+    "FRA_air_ground_cooperation",
+    "FRA_algerie_france",
+    "FRA_align_belgium",
+    "FRA_alpine_forts",
+    "FRA_anti_fascist_coalition",
+    "FRA_appeal_to_overseas_territories",
+    "FRA_appeal_to_the_french_nation",
+    "FRA_arms_purchases_in_the_us",
+    "FRA_army_of_aggression",
+    "FRA_army_reform",
+    "FRA_artillery_focus",
+    "FRA_autoroutes",
+    "FRA_avenge_waterloo",
+    "FRA_ban_communism",
+    "FRA_ban_the_leagues",
+    "FRA_battle_of_maneuver",
+    "FRA_begin_rearmament",
+    "FRA_bomber_focus",
+    "FRA_bring_home_quebec",
+    "FRA_buy_time",
+    "FRA_capital_ship_focus",
+    "FRA_carrier_focus",
+    "FRA_carrier_planes",
+    "FRA_carry_the_revolution_east",
+    "FRA_carry_the_revolution_north",
+    "FRA_carry_the_revolution_south",
+    "FRA_carry_the_revolution_west",
+    "FRA_cas_focus",
+    "FRA_celebrate_the_commune",
+    "FRA_colonial_industry",
+    "FRA_colonial_naval_bases",
+    "FRA_colonial_recruitment",
+    "FRA_compensate_italy",
+    "FRA_concessions_to_italy",
+    "FRA_confirm_eastern_commitments",
+    "FRA_connections_to_industrialists",
+    "FRA_constitutional_convention",
+    "FRA_continue_the_fight",
+    "FRA_cooperation_with_the_communists",
+    "FRA_coordinate_rearmament",
+    "FRA_counter_action",
+    "FRA_defensive_focus",
+    "FRA_defensive_strategems",
+    "FRA_destroy_decadence",
+    "FRA_destroy_the_counter_revolution",
+    "FRA_devalue_the_franc",
+    "FRA_develop_colonial_dockyards",
+    "FRA_diplomatic_freedom",
+    "FRA_dirigisme",
+    "FRA_dismantle_the_democracies",
+    "FRA_disunite_germany",
+    "FRA_division_cuirassee",
+    "FRA_dominate_the_middle_east",
+    "FRA_economic_devolution",
+    "FRA_egalite_liberte_solidarite",
+    "FRA_encourage_immigration",
+    "FRA_establish_spheres_of_influence",
+    "FRA_expand_the_citizenship",
+    "FRA_expand_to_the_suez",
+    "FRA_extend_the_maginot_line",
+    "FRA_extra_research_slot",
+    "FRA_extra_research_slot_2",
+    "FRA_family",
+    "FRA_fatherland",
+    "FRA_fighter_focus",
+    "FRA_firepower_kills",
+    "FRA_flying_artillery",
+    "FRA_force_the_issue",
+    "FRA_foreign_guest_workers",
+    "FRA_form_the_national_committee",
+    "FRA_form_the_popular_front",
+    "FRA_form_the_provisional_government_of_the_republic",
+    "FRA_form_the_state_arsenals",
+    "FRA_fortification_focus",
+    "FRA_france_first",
+    "FRA_france_leads",
+    "FRA_france_undividable",
+    "FRA_franco_soviet_treaty",
+    "FRA_freedom_front",
+    "FRA_french_forces_of_the_interior",
+    "FRA_french_union",
+    "FRA_fusiliers_marine",
+    "FRA_general_work_council",
+    "FRA_global_integration",
+    "FRA_go_with_britain",
+    "FRA_grow_the_empire",
+    "FRA_guarantee_the_constitution",
+    "FRA_heavy_armor_focus",
+    "FRA_heavy_bomber_focus",
+    "FRA_heavy_fighter_focus",
+    "FRA_host_the_german_exiles",
+    "FRA_humanite_unie",
+    "FRA_improved_screen_ships",
+    "FRA_industrial_collectivization",
+    "FRA_industrial_expansion",
+    "FRA_infantry_focus",
+    "FRA_infantry_tanks",
+    "FRA_integralism",
+    "FRA_intervention_in_central_africa",
+    "FRA_intervention_in_greece",
+    "FRA_intervention_in_indochina",
+    "FRA_intervention_in_madagascar",
+    "FRA_intervention_in_north_africa",
+    "FRA_intervention_in_spain",
+    "FRA_intervention_in_syria",
+    "FRA_intervention_in_west_africa",
+    "FRA_invest_in_indochina",
+    "FRA_invest_in_our_weaker_allies",
+    "FRA_invest_in_syria",
+    "FRA_invest_in_the_colonies",
+    "FRA_invest_in_the_metropole",
+    "FRA_invest_in_west_africa",
+    "FRA_invite_anti_fascist_emigrants",
+    "FRA_invite_communist_ministers",
+    "FRA_invite_portugal",
+    "FRA_invite_romania",
+    "FRA_invite_yugoslavia",
+    "FRA_je_suis_la_deluge",
+    "FRA_join_comintern",
+    "FRA_join_germany",
+    "FRA_join_the_ententes",
+    "FRA_laissez_faire",
+    "FRA_latin_entente",
+    "FRA_league_of_french_bolshevist_volunteers",
+    "FRA_leftist_rhetoric",
+    "FRA_legal_equality",
+    "FRA_light_medium_armor",
+    "FRA_loyalty_to_moscow",
+    "FRA_loyalty_to_the_cause",
+    "FRA_mechanized_focus",
+    "FRA_methodical_battle",
+    "FRA_metropolitan_france",
+    "FRA_military_factories",
+    "FRA_motorized_focus",
+    "FRA_national_champions",
+    "FRA_national_council_of_the_resistance",
+    "FRA_national_mobilization",
+    "FRA_national_regeneration",
+    "FRA_national_uprising",
+    "FRA_nationalize_key_industry",
+    "FRA_naval_bomber_focus",
+    "FRA_naval_doctrine",
+    "FRA_naval_rearmament",
+    "FRA_no_further_humiliations",
+    "FRA_orleanist_restoration",
+    "FRA_political_unity",
+    "FRA_pre_empt_the_fascist_attack",
+    "FRA_prioritize_the_joffre",
+    "FRA_proclaim_the_third_empire",
+    "FRA_promote_entrepeneurship",
+    "FRA_protect_the_rights_of_man",
+    "FRA_public_welfare",
+    "FRA_ratify_the_stresa_front",
+    "FRA_reach_out_to_spain",
+    "FRA_reach_out_to_trade_unions",
+    "FRA_reconciliation",
+    "FRA_reconnect_to_the_balkans",
+    "FRA_reform_the_labour_laws",
+    "FRA_refus_absurde",
+    "FRA_reorganize_the_aviation_industry",
+    "FRA_reorganize_the_dutch",
+    "FRA_repeal_the_law_of_exile",
+    "FRA_retribution_for_sedan",
+    "FRA_return_to_borodino",
+    "FRA_review_foreign_policy",
+    "FRA_revise_the_constitution",
+    "FRA_revive_the_franco_polish_alliance",
+    "FRA_revive_the_national_bloc",
+    "FRA_revolution_to_the_utmost",
+    "FRA_revolutionary_zeal",
+    "FRA_right_wing_rhetoric",
+    "FRA_rush_the_richelieus",
+    "FRA_secure_the_crown_of_spain",
+    "FRA_slum_clearing",
+    "FRA_special_forces",
+    "FRA_split_belgium",
+    "FRA_stimulate_the_dynamic_market",
+    "FRA_strengthen_government_support",
+    "FRA_strengthen_the_little_entente",
+    "FRA_strengthen_the_unions",
+    "FRA_support_the_finns",
+    "FRA_surface_combat",
+    "FRA_the_blum_viollette_proposal",
+    "FRA_the_civil_and_military_organization",
+    "FRA_the_congress_of_paris",
+    "FRA_the_council_of_rambouillet",
+    "FRA_the_first_citizen_of_the_state",
+    "FRA_the_free_french_navy",
+    "FRA_the_legitimate_heir",
+    "FRA_the_maquis",
+    "FRA_the_natural_borders_of_france",
+    "FRA_the_old_school",
+    "FRA_the_regiment_normandie",
+    "FRA_the_young_school",
+    "FRA_towards_a_new_europe",
+    "FRA_two_countries_two_crowns",
+    "FRA_undersea_combat",
+    "FRA_unite_the_crowns",
+    "FRA_utilize_the_leagues",
+    "FRA_womens_suffrage",
+    "FRA_woo_italy",
+    "FRA_work",
+    "VIC_a_nation_reborn",
+    "VIC_aid_small_businesses",
+    "VIC_analyze_our_defeat",
+    "VIC_anti_bolshevist_volunteers",
+    "VIC_buy_from_the_enemy",
+    "VIC_celebrate_motherhood",
+    "VIC_concessions_to_the_germans",
+    "VIC_down_with_marianne",
+    "VIC_emergency_powers_to_petain",
+    "VIC_end_the_occupation",
+    "VIC_finish_the_naval_buildup",
+    "VIC_form_the_milice",
+    "VIC_hidden_materials",
+    "VIC_learn_from_the_enemy",
+    "VIC_long_term_economic_planning",
+    "VIC_mandatory_work_service",
+    "VIC_modernize_the_airforce",
+    "VIC_prosecute_the_losers",
+    "VIC_rebuild_the_military",
+    "VIC_the_legionary_service_order",
+    "VIC_the_national_bureau_of_statistics",
+    "VIC_the_national_revolution",
+    "VIC_up_with_jean_darc",
+    "VIC_venerate_the_craftsman"
+  ]
+}

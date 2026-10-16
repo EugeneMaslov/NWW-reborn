@@ -1,0 +1,5 @@
+technology_sharing_group = {
+      id = FRA_nww_science_network name = FRA_nww_science_network_name desc = FRA_nww_science_network_desc
+      picture = GFX_technology_sharing_default research_sharing_per_country_bonus = 0.05
+      available = { FRA = { exists = yes has_completed_focus = FRA_nww_science_network } NOT = { has_war_with = FRA } }
+    }

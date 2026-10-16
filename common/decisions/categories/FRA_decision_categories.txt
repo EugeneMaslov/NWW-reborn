@@ -1,0 +1,8 @@
+# Hidden native category aliases; active interface: FRA_categories.txt.
+FRA_civil_unrest_category = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }
+FRA_spanish_intervention_category = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }
+FRA_vichy_france = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }
+VIC_concessions_to_the_germans = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }
+FRA_intervention_in_overseas_territories = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }
+FRA_weapons_purchases_category = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }
+FRA_decolonization = { icon = GFX_FRA_nww_republic allowed = { always = no } visible = { always = no } }

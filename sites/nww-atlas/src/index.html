@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f3ef">
+<meta name="description" content="Интерактивный атлас NWW Reborn: границы мира 1936 года и статус разработки стран мода Hearts of Iron IV.">
+<title>NWW Reborn — Атлас разработки</title>
+<style>/*__STYLE__*/</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#" aria-label="NWW Reborn — весь мир"><span class="brand-mark">N<span>W</span>W</span><span class="brand-name">REBORN<span>HEARTS OF IRON IV</span></span></a><span class="edition">МИР БЕЗ ПЕРВОЙ МИРОВОЙ</span><button id="about-open" class="text-button">О карте <span>↗</span></button></header>
+<main>
+<aside class="sidebar">
+<div class="intro"><p class="eyebrow"><span class="live-dot"></span> АТЛАС РАЗРАБОТКИ / 01</p><h1>Другой мир.<br> Новая история.</h1><p class="subtitle">Границы 1936 года.<br> Содержание стран NWW Reborn.</p></div>
+<div class="legend" aria-label="Статусы разработки">
+<button class="legend-row active" data-filter="all"><span>Все страны</span><b id="count-all">—</b></button>
+<button class="legend-row" data-filter="full"><i class="swatch full"></i><span>Полная переработка<small>Новые фокусы и свои механики</small></span><b id="count-full">—</b></button>
+<button class="legend-row" data-filter="legacy"><i class="swatch legacy"></i><span>Legacy<small>Адаптированные старые фокусы</small></span><b id="count-legacy">—</b></button>
+<button class="legend-row" data-filter="none"><i class="swatch none"></i><span>Без уникальных фокусов<small>Нет собственного дерева NWW</small></span><b id="count-none">—</b></button>
+<button class="legend-row partial-row" data-filter="partial"><i class="swatch partial"></i><span>Прочие новые деревья<small>Пока вне полной переработки</small></span><b id="count-partial">—</b></button>
+</div>
+<label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Найти страну или тег…" autocomplete="off" aria-label="Поиск страны"><kbd>/</kbd></label>
+<div class="list-heading"><span id="list-title">СТРАНЫ С КОНТЕНТОМ</span><span id="result-count"></span></div>
+<div id="country-list" class="country-list" aria-label="Список стран"></div>
+<footer class="sidebar-footer"><span>Срез исходников мода · HOI4 1.19.3</span><button id="about-footer">Источники и методика ↗</button></footer>
+</aside>
+<section class="map-area" aria-label="Интерактивная политическая карта">
+<div class="map-caption"><span>ПОЛИТИЧЕСКАЯ КАРТА</span><strong>01 ЯНВАРЯ 1936</strong><span class="dlc">Все DLC включены</span></div>
+<div id="map-container" tabindex="0" role="region" aria-label="Карта мира. Колесо — масштаб, перетаскивание — перемещение, стрелки — перемещение, плюс и минус — масштаб.">
+<svg id="map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5632 2048" aria-label="Границы стран NWW Reborn">
+<defs><pattern id="partial-hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#fff"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#c5c8c0" stroke-width="1"/></pattern></defs>
+<rect class="ocean" x="-10000" y="-10000" width="30000" height="30000" fill="#e1e4de"/>
+<g id="countries" fill-rule="evenodd"><!--__MAP__--></g>
+</svg>
+</div>
+<div id="tooltip" role="tooltip" hidden></div>
+<div class="map-tools"><button id="zoom-in" aria-label="Увеличить">+</button><button id="zoom-out" aria-label="Уменьшить">−</button><span></span><button id="reset" aria-label="Показать весь мир" title="Весь мир">⌖</button></div>
+<div class="map-bottom"><span class="navigation-note">ПЕРЕТАЩИТЕ КАРТУ · ПРОКРУТИТЕ ДЛЯ МАСШТАБА</span><button id="export" class="export-button">↓ <span>Скачать SVG</span></button></div>
+<article id="detail" class="detail" hidden aria-live="polite"><button id="detail-close" aria-label="Закрыть карточку">×</button><p id="detail-status" class="eyebrow"></p><h2 id="detail-name"></h2><p id="detail-description"></p><div class="detail-stats"><div><b id="detail-focuses"></b><span>игровых фокусов</span></div><div><b id="detail-states"></b><span>регионов на старте</span></div><code id="detail-tag"></code></div><p id="detail-note" class="detail-note"></p><details id="source-details"><summary>Файлы дерева</summary><ul id="detail-sources"></ul></details></article>
+<div class="map-index" aria-hidden="true">NWW / WORLD ATLAS<span>1936 — ∞</span></div>
+</section>
+</main>
+<dialog id="about"><button id="about-close" class="dialog-close" aria-label="Закрыть">×</button><p class="eyebrow">NWW REBORN / МЕТОДИКА</p><h2>Карта из файлов мода.</h2><p>Контуры построены по <code>map/provinces.bmp</code>, <code>map/definition.csv</code> установленной HOI4 и эффективным файлам <code>history/states</code>: файлы мода заменяют одноимённые игровые.</p><p>Показано владение на <strong>1 января 1936 года при всех включённых DLC</strong>. Учитываются стартовые <code>transfer_state_to</code> в истории регионов, в том числе образование Конго. Карта не изображает развитие кампании или сохранение игрока.</p><p><strong>Зелёный</strong> — семь документированных переработанных стран с собственными механиками, описанных в README: LTB, MKN, UKR, SOV, AUS, TUR, GER. <strong>Оранжевый</strong> — адаптированный Legacy: HUN и AFG. Даже если новая переработка сохраняет архивные ID, она отмечается зелёным.</p><p><strong>Белый</strong> — нет уникального дерева именно NWW; стандартный контент HOI4 и DLC здесь не учитывается. <strong>Белая штриховка</strong> — небольшие новые деревья CRO, BYE, LIT, LAT, EST и текущая новая разработка FRA, которые нельзя достоверно назвать Legacy или полной переработкой. Отсутствующие на старте страны доступны в поиске, но не получают вымышленных границ.</p><p>Счётчик включает прямые игровые фокусы и связанные общие фокусы; скрытые <code>allow_branch = { always = no }</code> определения совместимости исключены. Условно открываемые игровые ветки включены. Статус отражает состав исходников, а не гарантию отсутствия ошибок или завершённости всех маршрутов.</p><p>Источники классификации: <code>README.md</code>, <code>docs/legacy_import.json</code>, <code>common/national_focus</code>. Сайт работает автономно; для обновления карты запустите <code>python tools/build_content_atlas.py</code> в проекте мода.</p><button id="about-done" class="primary-button">К карте ↗</button></dialog>
+<script>/*__DATA__*/
+/*__APP__*/</script>
+</body></html>

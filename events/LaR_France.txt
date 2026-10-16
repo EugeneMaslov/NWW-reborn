@@ -1,0 +1,166 @@
+# Native French event IDs retained as inert compatibility callbacks. See FRA_events.txt.
+add_namespace = FRA_central_africa_intervention
+add_namespace = FRA_indochina_intervention
+add_namespace = FRA_syria_intervention
+add_namespace = FRA_west_africa_intervention
+add_namespace = LaR_france_vichy_notification_events
+add_namespace = lar_align_belgium
+add_namespace = lar_appeal_to_overseas_territories
+add_namespace = lar_arms_purchases
+add_namespace = lar_communist_support
+add_namespace = lar_compensate_italy
+add_namespace = lar_concessions_to_italy
+add_namespace = lar_congress_of_paris
+add_namespace = lar_dominate_the_middle_east
+add_namespace = lar_end_the_occupation
+add_namespace = lar_fra_inefficient_economy
+add_namespace = lar_fra_join_the_ententes
+add_namespace = lar_fra_reconnect_to_the_balkans
+add_namespace = lar_france_french_union
+add_namespace = lar_france_political_violence
+add_namespace = lar_france_vichy_reunification
+add_namespace = lar_france_volunteers
+add_namespace = lar_franco_soviet_treaty
+add_namespace = lar_intervention_in_greece
+add_namespace = lar_low_stability_civil_war
+add_namespace = lar_non_intervention
+add_namespace = lar_ratify_the_stresa_front
+add_namespace = lar_spheres_of_influence
+add_namespace = lar_split_belgium
+add_namespace = lar_worker_shortage
+country_event = { id = lar_congress_of_paris.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_congress_of_paris.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_congress_of_paris.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_congress_of_paris.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_congress_of_paris.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_congress_of_paris.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_political_violence.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_political_violence.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_political_violence.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_political_violence.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.7 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.8 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.9 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.10 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_french_union.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_syria_intervention.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_syria_intervention.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_syria_intervention.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_syria_intervention.21 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_syria_intervention.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_syria_intervention.31 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_indochina_intervention.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_indochina_intervention.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_indochina_intervention.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_indochina_intervention.21 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_indochina_intervention.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_indochina_intervention.31 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_central_africa_intervention.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_central_africa_intervention.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_central_africa_intervention.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_central_africa_intervention.21 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_central_africa_intervention.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_central_africa_intervention.31 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_west_africa_intervention.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_west_africa_intervention.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_west_africa_intervention.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_west_africa_intervention.21 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_west_africa_intervention.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = FRA_west_africa_intervention.31 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_compensate_italy.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_compensate_italy.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_compensate_italy.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_intervention_in_greece.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_intervention_in_greece.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_intervention_in_greece.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_dominate_the_middle_east.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_dominate_the_middle_east.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_dominate_the_middle_east.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_spheres_of_influence.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_spheres_of_influence.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_spheres_of_influence.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_align_belgium.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_align_belgium.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_align_belgium.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_split_belgium.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_split_belgium.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_split_belgium.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_concessions_to_italy.7 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_ratify_the_stresa_front.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_ratify_the_stresa_front.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_ratify_the_stresa_front.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_ratify_the_stresa_front.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_franco_soviet_treaty.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_franco_soviet_treaty.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_franco_soviet_treaty.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_end_the_occupation.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_end_the_occupation.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_end_the_occupation.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_end_the_occupation.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_end_the_occupation.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_end_the_occupation.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_low_stability_civil_war.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_low_stability_civil_war.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_worker_shortage.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_worker_shortage.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_arms_purchases.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_arms_purchases.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_arms_purchases.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_volunteers.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_volunteers.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_volunteers.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_non_intervention.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_non_intervention.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_non_intervention.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_communist_support.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.7 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.8 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.9 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.10 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.12 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_appeal_to_overseas_territories.13 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_vichy_reunification.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_vichy_reunification.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_france_vichy_reunification.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_inefficient_economy.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_reconnect_to_the_balkans.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_reconnect_to_the_balkans.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_reconnect_to_the_balkans.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_reconnect_to_the_balkans.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_reconnect_to_the_balkans.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_join_the_ententes.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_join_the_ententes.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_join_the_ententes.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_join_the_ententes.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = lar_fra_join_the_ententes.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.7 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.8 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.9 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.10 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = LaR_france_vichy_notification_events.12 hidden = yes is_triggered_only = yes immediate = { } }
