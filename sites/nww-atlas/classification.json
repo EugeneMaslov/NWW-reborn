@@ -463,7 +463,7 @@
     "name": "Германская империя",
     "status": "full",
     "states": 49,
-    "focuses": 64,
+    "focuses": 76,
     "sources": [
       "common/national_focus/GER_focuses.txt",
       "common/national_focus/GER_political.txt"
@@ -617,7 +617,7 @@
     "tag": "ITA",
     "name": "Италия",
     "status": "none",
-    "states": 24,
+    "states": 23,
     "focuses": 0,
     "sources": [],
     "box": [
@@ -1136,7 +1136,7 @@
     "tag": "TUR",
     "name": "Османская империя",
     "status": "full",
-    "states": 34,
+    "states": 35,
     "focuses": 85,
     "sources": [
       "common/national_focus/TUR_focuses.txt"

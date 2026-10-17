@@ -15,11 +15,11 @@ division_template = {
 }
 
 units = {
-	division = { name = "1. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
-	division = { name = "2. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
-	division = { name = "3. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
-	division = { name = "4. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
-	division = { name = "5. Striletska Dyviziya" location = 238 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "1. Striletska Dyviziya" location = 525 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "2. Striletska Dyviziya" location = 11670 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "3. Striletska Dyviziya" location = 476 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "4. Striletska Dyviziya" location = 6593 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
+	division = { name = "5. Striletska Dyviziya" location = 11504 division_template = "UKR_Striletska" start_experience_factor = 0.1 start_equipment_factor = 0.65 }
 }
 
 instant_effect = {

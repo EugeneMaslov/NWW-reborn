@@ -1,0 +1,102 @@
+{
+  "CRO_1936.txt": {
+    "divisions": 5,
+    "positions": 5
+  },
+  "DEN_1936.txt": {
+    "divisions": 5,
+    "positions": 5
+  },
+  "ENG_1936.txt": {
+    "divisions": 36,
+    "positions": 34
+  },
+  "ENG_1936_LaR.txt": {
+    "divisions": 38,
+    "positions": 35
+  },
+  "ENG_1936_nsb.txt": {
+    "divisions": 36,
+    "positions": 34
+  },
+  "ENG_1936_nsb_LaR.txt": {
+    "divisions": 38,
+    "positions": 35
+  },
+  "FRA_1936.txt": {
+    "divisions": 74,
+    "positions": 42
+  },
+  "FRA_1936_nsb.txt": {
+    "divisions": 74,
+    "positions": 42
+  },
+  "HUN_1936.txt": {
+    "divisions": 16,
+    "positions": 16
+  },
+  "ITA_1936.txt": {
+    "divisions": 46,
+    "positions": 22
+  },
+  "ITA_1936_nsb.txt": {
+    "divisions": 46,
+    "positions": 22
+  },
+  "LAT_1936.txt": {
+    "divisions": 10,
+    "positions": 4
+  },
+  "POL_1936.txt": {
+    "divisions": 40,
+    "positions": 13
+  },
+  "ROM_1936.txt": {
+    "divisions": 31,
+    "positions": 12
+  },
+  "ROM_1936_nsb.txt": {
+    "divisions": 31,
+    "positions": 12
+  },
+  "SOV_1936.txt": {
+    "divisions": 138,
+    "positions": 138
+  },
+  "SOV_1936_nsb.txt": {
+    "divisions": 138,
+    "positions": 138
+  },
+  "TUR_1936.txt": {
+    "divisions": 31,
+    "positions": 31
+  },
+  "TUR_1936_nsb.txt": {
+    "divisions": 31,
+    "positions": 31
+  },
+  "YUG_1936.txt": {
+    "divisions": 22,
+    "positions": 10
+  },
+  "YUG_1936_nsb.txt": {
+    "divisions": 22,
+    "positions": 10
+  },
+  "AUS_1936_nww.txt": {
+    "divisions": 18,
+    "positions": 18
+  },
+  "LTB_1936.txt": {
+    "divisions": 8,
+    "positions": 8
+  },
+  "MKN_1936.txt": {
+    "divisions": 6,
+    "positions": 5
+  },
+  "UKR_1936.txt": {
+    "divisions": 5,
+    "positions": 5
+  }
+}

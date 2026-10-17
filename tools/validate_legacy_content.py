@@ -134,7 +134,7 @@ for tag in ('LTB','AUS'):
     if tag=='LTB':check(order[:2]==['LTB_consolidate_the_union','LTB_the_vilnius_compromise'],'LTB: historical opening does not settle the crisis immediately')
     else:check('AUS_war_with_hun' in order and 'AUS_the_danubian_federation' not in order,'AUS: historical plan does not prefer conquest of Hungary')
 oob=read(ROOT/'history/units/AUS_1936_nww.txt');divisions=values(one(oob,'units'),'division')
-check(len(divisions)==12 and all(one(d,'start_equipment_factor')=='1' for d in divisions),'AUS: starting army is not twelve equipped divisions')
+check(len(divisions)==18 and all(one(d,'start_equipment_factor')=='1' for d in divisions),'AUS: starting army is not eighteen equipped divisions (twelve plus 50%)')
 characters=one(read(ROOT/'common/characters/TUR.txt'),'characters')
 for token,node,o in characters:
     if not token.startswith('NWW_TUR_'):check(not any(k=='country_leader' for k,v,o in walk(node)),f'{token}: native republican leader competes with Ottoman archive leaders')

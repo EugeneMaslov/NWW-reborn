@@ -1,0 +1,41 @@
+{
+  "divisions": {
+    "Kaiser-Infanterie": 60,
+    "Infanterie-Division (mot.)": 6,
+    "Panzer-Regiment": 4,
+    "Gebirgs-Brigade": 4,
+    "Kavallerie-Brigade": 2,
+    "Schutztruppe": 8
+  },
+  "total_divisions": 84,
+  "ships": {
+    "battleship": 14,
+    "light_cruiser": 24,
+    "destroyer": 72,
+    "battle_cruiser": 4,
+    "carrier": 3,
+    "heavy_cruiser": 10,
+    "submarine": 36
+  },
+  "total_ships": 163,
+  "aircraft": {
+    "land_based": 1980,
+    "carrier_based": 180,
+    "total": 2160
+  },
+  "carrier_names": [
+    "SMS Graf Zeppelin",
+    "SMS Deutschland",
+    "SMS Europa"
+  ],
+  "colonial_garrisons": [
+    "2196",
+    "6039",
+    "1951",
+    "10000",
+    "3995",
+    "2489",
+    "12240",
+    "4357"
+  ]
+}

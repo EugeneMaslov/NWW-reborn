@@ -382,8 +382,8 @@ add_ideas = {
 	limited_conscription
 }
 give_guarantee = CZE
-give_guarantee = YUG
-give_guarantee = ROM
+# NWW: no inherited Balkan guarantee (YUG).
+# NWW: no inherited Balkan guarantee (ROM).
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez
 recruit_character = FRA_pierre_laval

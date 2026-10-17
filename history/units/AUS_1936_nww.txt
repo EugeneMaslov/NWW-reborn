@@ -111,7 +111,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3700
+		location = 11542
 		division_template = "Infanterie Division"
 		start_equipment_factor = 1
 		start_experience_factor = 0.20
@@ -121,7 +121,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 11666
+		location = 3569
 		division_template = "Infanterie Division"
 		start_equipment_factor = 1
 		start_experience_factor = 0.20
@@ -131,7 +131,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 9648
+		location = 688
 		division_template = "Infanterie Division"
 		start_equipment_factor = 1
 		start_experience_factor = 0.20
@@ -141,7 +141,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 9665
+		location = 673
 		division_template = "Alpenjäger Division"
 		start_equipment_factor = 1
 		start_experience_factor = 0.20
@@ -158,45 +158,87 @@ units = {
 	}
 	division = {
 		name = "7. Infanterie Division"
-		location = 11666
+		location = 3585
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.20
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "8. Infanterie Division"
-		location = 3700
+		location = 6626
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.20
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "9. Infanterie Division"
-		location = 9648
+		location = 9627
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.20
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "10. Infanterie Division"
-		location = 9665
+		location = 3583
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.20
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "11. Infanterie Division"
-		location = 11666
+		location = 11598
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.20
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "12. Infanterie Division"
-		location = 3700
+		location = 665
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.20
 		start_equipment_factor = 1
+	}
+	division = {
+		name = "13. Infanterie Division"
+		location = 9598
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "14. Infanterie Division"
+		location = 11564
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "15. Infanterie Division"
+		location = 557
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "16. Infanterie Division"
+		location = 3700
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "17. Infanterie Division"
+		location = 732
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "18. Infanterie Division"
+		location = 6418
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
 	}
 }
 instant_effect = {

@@ -59,7 +59,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 402
+		location = 3544
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -70,7 +70,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 402
+		location = 9427
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -81,7 +81,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 402
+		location = 9508
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -94,7 +94,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 402
+		location = 3458
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -105,7 +105,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 402
+		location = 6464
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -116,7 +116,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 25
 		}
-		location = 402
+		location = 11479
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -127,7 +127,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 106
 		}
-		location = 402
+		location = 11399
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_leon_strzelecki
@@ -142,7 +142,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 109
 		}
-		location = 402
+		location = 3230
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_sergiusz_zahorski
@@ -159,7 +159,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 402
+		location = 11411
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -181,7 +181,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 402
+		location = 442
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -192,7 +192,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 102
 		}
-		location = 402
+		location = 11430
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_jerzy_grobicki
@@ -207,7 +207,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 111
 		}
-		location = 402
+		location = 9494
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_julian_filipowicz
@@ -224,7 +224,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 402
+		location = 3544
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -235,7 +235,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 21
 		}
-		location = 402
+		location = 9427
 		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -246,7 +246,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		location = 402
+		location = 9508
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -257,7 +257,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 101
 		}
-		location = 402
+		location = 3458
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_zygmunt_piasecki
@@ -274,7 +274,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 402
+		location = 6464
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -285,7 +285,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 26
 		}
-		location = 402
+		location = 11479
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -296,7 +296,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 28
 		}
-		location = 402
+		location = 11399
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -307,7 +307,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 104
 		}
-		location = 402
+		location = 3230
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_konstanty_plisowski
@@ -322,7 +322,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 103
 		}
-		location = 402
+		location = 11411
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_jan_karcz
@@ -350,7 +350,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 402
+		location = 442
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -361,7 +361,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 402
+		location = 11430
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -372,7 +372,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 110
 		}
-		location = 402
+		location = 9494
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_konstanty_drucki_lubecki
@@ -389,7 +389,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 402
+		location = 3544
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -400,7 +400,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 402
+		location = 9427
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -411,7 +411,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 402
+		location = 9508
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -422,7 +422,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 24
 		}
-		location = 402
+		location = 3458
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -435,7 +435,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 402
+		location = 6464
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -446,7 +446,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 30
 		}
-		location = 402
+		location = 11479
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -459,7 +459,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 402
+		location = 11399
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -470,7 +470,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 29
 		}
-		location = 402
+		location = 3230
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -481,7 +481,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 108
 		}
-		location = 402
+		location = 11411
 		division_template = "Brygada Kawalerii" 
 		officer = {
 			name = POL_zygmunt_podhorski
@@ -513,7 +513,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 402
+		location = 442
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -524,7 +524,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 27
 		}
-		location = 402
+		location = 11430
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -537,7 +537,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 402
+		location = 9494
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -548,7 +548,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 22
 		}
-		location = 402
+		location = 3544
 		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7

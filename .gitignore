@@ -8,3 +8,6 @@ __pycache__/
 *.pyo
 .DS_Store
 thumbs.db
+
+# Portable publishing runtime; never ship it with the mod.
+.tools/

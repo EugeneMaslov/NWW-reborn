@@ -1400,7 +1400,7 @@ focus_tree = {
 		x = 34
 		y = 0
 		icon = GFX_focus_NWW_TUR_generated_focus_TUR_research_1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			if = {
 				limit = {
@@ -1411,6 +1411,10 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = TUR_new_economic
+			has_completed_focus = TUR_Factory_1
+			date > 1937.1.1
+			num_of_factories > 29
+			amount_research_slots < 5
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1420,7 +1424,7 @@ focus_tree = {
 		x = 34
 		y = 1
 		icon = GFX_focus_NWW_TUR_generated_focus_TUR_research_2
-		cost = 5
+		cost = 10
 		completion_reward = {
 			if = {
 				limit = {
@@ -1432,6 +1436,15 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_research_1
 		}
+		available = {
+			has_completed_focus = TUR_new_economic
+			has_completed_focus = TUR_civ_factory_2
+			date > 1939.1.1
+			num_of_factories > 49
+			amount_research_slots < 5
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 	}
 	focus = {
 		id = TUR_rocketly_1

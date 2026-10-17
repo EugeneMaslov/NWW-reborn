@@ -19,12 +19,12 @@ division_template = {
 }
 
 units = {
-	division = { name = "1. Povstancheskaya Rota" location = 429 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
-	division = { name = "2. Povstancheskaya Rota" location = 429 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
-	division = { name = "3. Povstancheskaya Rota" location = 429 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
+	division = { name = "1. Povstancheskaya Rota" location = 11437 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
+	division = { name = "2. Povstancheskaya Rota" location = 721 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
+	division = { name = "3. Povstancheskaya Rota" location = 11405 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
 	division = { name = "1. Konny Otryad" location = 429 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
-	division = { name = "2. Konny Otryad" location = 429 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
-	division = { name = "3. Konny Otryad" location = 429 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
+	division = { name = "2. Konny Otryad" location = 11561 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
+	division = { name = "3. Konny Otryad" location = 11437 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
 }
 
 instant_effect = {
