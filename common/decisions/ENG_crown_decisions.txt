@@ -1,0 +1,11 @@
+ENG_nww_cabinet_category = {
+ ENG_nww_revisit_crown = {
+  icon = generic_political_discourse
+  cost = 75
+  visible = { tag = ENG has_focus_tree = ENG_nww_focus has_idea = ENG_king_edward NOT = { has_government = communism } }
+  available = { date > 1936.12.1 has_capitulated = no has_civil_war = no }
+  complete_effect = { country_event = { id = nww_eng_crown.1 } }
+  days_remove = 1
+  ai_will_do = { factor = 100 }
+ }
+}

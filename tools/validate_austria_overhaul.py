@@ -81,6 +81,7 @@ class World:
                 target=self.root if value=='ROOT' else value;data['owner']=data['controller']=target;self.countries[target]['exists']=True
             elif key=='add_claim_by':self.countries[value]['claims'].add(scope)
             elif key=='add_stability':data['stability']+=float(value)
+            elif key=='add_political_power':data['pp']=data.get('pp',0)+float(value)
             elif key=='set_stability':data['stability']=float(value)
             elif key=='set_cosmetic_tag':data['cosmetic']=value
             elif key=='set_politics':data['government']=one(value,'ruling_party')

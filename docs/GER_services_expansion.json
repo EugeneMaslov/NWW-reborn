@@ -1,0 +1,887 @@
+{
+  "new_focuses": [
+    {
+      "id": "GER_nww_general_staff",
+      "ru": "Обновить Большой генеральный штаб",
+      "en": "Renew the Great General Staff",
+      "x": 72,
+      "y": 1,
+      "parent": "GER_prussian_traditions",
+      "reward": "army_experience = 25",
+      "spirit": {
+        "army": {
+          "org": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 5,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_staff_college",
+      "ru": "Штабные академии земель",
+      "en": "State Staff Colleges",
+      "x": 72,
+      "y": 2,
+      "parent": "GER_nww_general_staff",
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_land_doctrine category = land_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {
+        "army": {
+          "planning": 0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_mission_command",
+      "ru": "Самостоятельность командиров",
+      "en": "Mission Command",
+      "x": 70,
+      "y": 3,
+      "parent": "GER_nww_staff_college",
+      "reward": "army_experience = 20",
+      "spirit": {
+        "army": {
+          "training": -0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": "GER_nww_deliberate_battle",
+      "available": ""
+    },
+    {
+      "id": "GER_nww_deliberate_battle",
+      "ru": "Методическая подготовка сражения",
+      "en": "Deliberate Battle",
+      "x": 74,
+      "y": 3,
+      "parent": "GER_nww_staff_college",
+      "reward": "army_experience = 20",
+      "spirit": {
+        "army": {
+          "org": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": "GER_nww_mission_command",
+      "available": ""
+    },
+    {
+      "id": "GER_nww_army_signals",
+      "ru": "Связь общевойсковых соединений",
+      "en": "Combined Arms Signals",
+      "x": 72,
+      "y": 4,
+      "parent": [
+        "GER_nww_mission_command",
+        "GER_nww_deliberate_battle"
+      ],
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = electronics bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_infantry_standardisation",
+      "ru": "Единое пехотное вооружение",
+      "en": "Standard Infantry Armaments",
+      "x": 68,
+      "y": 2,
+      "parent": "GER_nww_general_staff",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = infantry_weapons bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_small_arms",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_artillery_directorate",
+      "ru": "Управление полевой артиллерии",
+      "en": "Field Artillery Directorate",
+      "x": 68,
+      "y": 3,
+      "parent": "GER_nww_infantry_standardisation",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = artillery bonus = 0.5 uses = 1 }",
+      "spirit": {
+        "army": {
+          "artillery": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_combat_engineers",
+      "ru": "Штурмовые сапёры",
+      "en": "Assault Engineers",
+      "x": 68,
+      "y": 4,
+      "parent": "GER_nww_artillery_directorate",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = support_tech bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_motor_transport",
+      "ru": "Автомобильные колонны",
+      "en": "Motor Transport Columns",
+      "x": 76,
+      "y": 2,
+      "parent": "GER_nww_general_staff",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = motorized_equipment bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_armour_school",
+      "ru": "Школа бронетанковых войск",
+      "en": "Armoured Troops School",
+      "x": 76,
+      "y": 3,
+      "parent": "GER_nww_motor_transport",
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_land_doctrine category = land_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_tanks",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_medium_tank_programme",
+      "ru": "Средний танк для имперской армии",
+      "en": "Imperial Medium Tank Programme",
+      "x": 76,
+      "y": 4,
+      "parent": "GER_nww_armour_school",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = cat_medium_armor bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_tanks",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_panzergrenadiers",
+      "ru": "Моторизованная пехота сопровождения",
+      "en": "Panzergrenadiers",
+      "x": 76,
+      "y": 5,
+      "parent": "GER_nww_medium_tank_programme",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = cat_mechanized_equipment bonus = 0.5 uses = 1 }",
+      "spirit": {
+        "army": {
+          "armour": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_army_rail_logistics",
+      "ru": "Железнодорожная служба армии",
+      "en": "Army Railway Service",
+      "x": 72,
+      "y": 5,
+      "parent": "GER_nww_army_signals",
+      "reward": "army_experience = 20",
+      "spirit": {
+        "army": {
+          "supply": -0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_field_hospitals",
+      "ru": "Военно-медицинская служба",
+      "en": "Military Medical Service",
+      "x": 68,
+      "y": 5,
+      "parent": "GER_nww_combat_engineers",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = support_tech bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_combined_arms_exercises",
+      "ru": "Большие общевойсковые манёвры",
+      "en": "Grand Combined Arms Exercises",
+      "x": 72,
+      "y": 6,
+      "parent": [
+        "GER_nww_army_rail_logistics",
+        "GER_nww_panzergrenadiers",
+        "GER_nww_field_hospitals"
+      ],
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_land_doctrine category = land_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": "has_completed_focus = GER_nww_army_rail_logistics has_completed_focus = GER_nww_panzergrenadiers has_completed_focus = GER_nww_field_hospitals"
+    },
+    {
+      "id": "GER_nww_imperial_army_readiness",
+      "ru": "Готовность имперской армии",
+      "en": "Imperial Army Readiness",
+      "x": 72,
+      "y": 7,
+      "parent": "GER_nww_combined_arms_exercises",
+      "reward": "army_experience = 35",
+      "spirit": {
+        "army": {
+          "experience": 0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_imperial_air_service",
+      "ru": "Имперская воздушная служба",
+      "en": "Imperial Air Service",
+      "x": 86,
+      "y": 0,
+      "parent": null,
+      "reward": "air_experience = 25",
+      "spirit": {
+        "air": {
+          "accidents": -0.05
+        }
+      },
+      "icon": "GFX_goal_generic_build_airforce",
+      "cost": 5,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_air_academies",
+      "ru": "Авиационные академии",
+      "en": "Air Academies",
+      "x": 86,
+      "y": 1,
+      "parent": "GER_nww_imperial_air_service",
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_air_doctrine category = air_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {
+        "air": {
+          "accidents": -0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_fighter_design",
+      "ru": "Современный истребитель",
+      "en": "Modern Fighter Design",
+      "x": 82,
+      "y": 2,
+      "parent": "GER_nww_air_academies",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = light_air bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_air_fighter",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_interceptor_control",
+      "ru": "Сеть управления перехватом",
+      "en": "Interceptor Control Network",
+      "x": 82,
+      "y": 3,
+      "parent": "GER_nww_fighter_design",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = radar_tech bonus = 0.5 uses = 1 }",
+      "spirit": {
+        "air": {
+          "superiority": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_night_fighters",
+      "ru": "Эскадрильи ночных истребителей",
+      "en": "Night Fighter Squadrons",
+      "x": 82,
+      "y": 4,
+      "parent": "GER_nww_interceptor_control",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = light_air bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_battlefield_aviation",
+      "ru": "Авиация поля боя",
+      "en": "Battlefield Aviation",
+      "x": 86,
+      "y": 2,
+      "parent": "GER_nww_air_academies",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = cas_bomber bonus = 0.5 uses = 1 }",
+      "spirit": {
+        "air": {
+          "cas": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_forward_air_controllers",
+      "ru": "Передовые авианаводчики",
+      "en": "Forward Air Controllers",
+      "x": 86,
+      "y": 3,
+      "parent": "GER_nww_battlefield_aviation",
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_air_doctrine category = air_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_long_range_bombers",
+      "ru": "Дальняя бомбардировочная авиация",
+      "en": "Long Range Bomber Command",
+      "x": 90,
+      "y": 2,
+      "parent": "GER_nww_air_academies",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = heavy_air bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_air_navigation",
+      "ru": "Радионавигация и метеослужба",
+      "en": "Air Navigation and Weather Service",
+      "x": 90,
+      "y": 3,
+      "parent": "GER_nww_long_range_bombers",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = electronics bonus = 0.5 uses = 1 }",
+      "spirit": {
+        "air": {
+          "range": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_air_transport",
+      "ru": "Транспортная авиация",
+      "en": "Air Transport Service",
+      "x": 90,
+      "y": 4,
+      "parent": "GER_nww_air_navigation",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = air_equipment bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_integrated_air_operations",
+      "ru": "Единое управление воздушной войной",
+      "en": "Integrated Air Operations",
+      "x": 86,
+      "y": 5,
+      "parent": [
+        "GER_nww_night_fighters",
+        "GER_nww_forward_air_controllers",
+        "GER_nww_air_transport"
+      ],
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_air_doctrine category = air_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {
+        "air": {
+          "mission": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": "has_completed_focus = GER_nww_night_fighters has_completed_focus = GER_nww_forward_air_controllers has_completed_focus = GER_nww_air_transport"
+    },
+    {
+      "id": "GER_nww_aeronautical_institutes",
+      "ru": "Имперские институты аэродинамики",
+      "en": "Imperial Aeronautical Institutes",
+      "x": 86,
+      "y": 6,
+      "parent": "GER_nww_integrated_air_operations",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = air_equipment bonus = 0.5 uses = 1 } air_experience = 35",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_admiralty_staff",
+      "ru": "Объединённый штаб адмиралтейства",
+      "en": "Unified Admiralty Staff",
+      "x": 100,
+      "y": 1,
+      "parent": "GER_the_fleet_question",
+      "reward": "navy_experience = 25",
+      "spirit": {
+        "navy": {
+          "coordination": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_navy_carrier",
+      "cost": 5,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_imperial_shipyards",
+      "ru": "Верфи Киля и Вильгельмсхафена",
+      "en": "Kiel and Wilhelmshaven Shipyards",
+      "x": 100,
+      "y": 2,
+      "parent": "GER_nww_admiralty_staff",
+      "reward": "GER_nww_build_service_dockyard = yes",
+      "spirit": {
+        "navy": {
+          "output": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_battlefleet_modernisation",
+      "ru": "Модернизация линейного флота",
+      "en": "Battlefleet Modernisation",
+      "x": 96,
+      "y": 3,
+      "parent": "GER_nww_imperial_shipyards",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = bb_tech bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_navy_battleship",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_capital_ship_fire_control",
+      "ru": "Управление огнём тяжёлых кораблей",
+      "en": "Capital Ship Fire Control",
+      "x": 96,
+      "y": 4,
+      "parent": "GER_nww_battlefleet_modernisation",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = naval_equipment bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_fleet_air_arm",
+      "ru": "Морская авиационная служба",
+      "en": "Fleet Air Arm",
+      "x": 100,
+      "y": 3,
+      "parent": "GER_nww_imperial_shipyards",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = naval_air bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_air_naval_bomber",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_fleet_carriers",
+      "ru": "Программа эскадренных авианосцев",
+      "en": "Fleet Carrier Programme",
+      "x": 100,
+      "y": 4,
+      "parent": "GER_nww_fleet_air_arm",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = mio_cat_tech_all_carrier_and_modules bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_navy_carrier",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_carrier_groups",
+      "ru": "Авианосные ударные соединения",
+      "en": "Carrier Task Groups",
+      "x": 100,
+      "y": 5,
+      "parent": "GER_nww_fleet_carriers",
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_naval_doctrine category = naval_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {
+        "navy": {
+          "sortie": 0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_screening_squadrons",
+      "ru": "Эскадры охранения",
+      "en": "Screening Squadrons",
+      "x": 104,
+      "y": 3,
+      "parent": "GER_nww_imperial_shipyards",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = dd_tech bonus = 0.5 uses = 1 }",
+      "spirit": {
+        "navy": {
+          "screens": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_convoy_escorts",
+      "ru": "Противолодочное сопровождение",
+      "en": "Anti Submarine Escorts",
+      "x": 104,
+      "y": 4,
+      "parent": "GER_nww_screening_squadrons",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = naval_equipment bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_submarine_patrols",
+      "ru": "Подводные патрули океана",
+      "en": "Ocean Submarine Patrols",
+      "x": 108,
+      "y": 3,
+      "parent": "GER_nww_imperial_shipyards",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = ss_tech bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_navy_submarine",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_ocean_replenishment",
+      "ru": "Океанское снабжение",
+      "en": "Ocean Replenishment",
+      "x": 108,
+      "y": 4,
+      "parent": "GER_nww_submarine_patrols",
+      "reward": "navy_experience = 20",
+      "spirit": {
+        "navy": {
+          "range": 0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_fleet_repair_bases",
+      "ru": "Базы ремонта и докования",
+      "en": "Fleet Repair Bases",
+      "x": 104,
+      "y": 5,
+      "parent": "GER_nww_convoy_escorts",
+      "reward": "GER_nww_build_service_dockyard = yes",
+      "spirit": {
+        "navy": {
+          "repair": 0.1
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_joint_naval_exercises",
+      "ru": "Совместные манёвры флота и авиации",
+      "en": "Joint Fleet and Air Exercises",
+      "x": 100,
+      "y": 6,
+      "parent": [
+        "GER_nww_carrier_groups",
+        "GER_nww_capital_ship_fire_control",
+        "GER_nww_fleet_repair_bases"
+      ],
+      "reward": "add_doctrine_cost_reduction = { name = GER_nww_naval_doctrine category = naval_doctrine cost_reduction = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": "has_completed_focus = GER_nww_carrier_groups has_completed_focus = GER_nww_capital_ship_fire_control has_completed_focus = GER_nww_fleet_repair_bases"
+    },
+    {
+      "id": "GER_nww_high_seas_readiness",
+      "ru": "Боеготовность Флота открытого моря",
+      "en": "High Seas Fleet Readiness",
+      "x": 100,
+      "y": 7,
+      "parent": "GER_nww_joint_naval_exercises",
+      "reward": "navy_experience = 35",
+      "spirit": {
+        "navy": {
+          "output": 0.05
+        }
+      },
+      "icon": "GFX_goal_generic_army_doctrines",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_civil_investment",
+      "ru": "Долгосрочные гражданские инвестиции",
+      "en": "Long Term Civil Investment",
+      "x": 61,
+      "y": 2,
+      "parent": null,
+      "reward": "GER_nww_build_civilian = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_civ_factory",
+      "cost": 10,
+      "exclusive": "GER_nww_defence_procurement",
+      "available": "has_completed_focus = GER_krupp_and_thyssen"
+    },
+    {
+      "id": "GER_nww_regional_enterprises",
+      "ru": "Предприятия имперских земель",
+      "en": "Regional Enterprises",
+      "x": 61,
+      "y": 3,
+      "parent": "GER_nww_civil_investment",
+      "reward": "GER_nww_build_civilian = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_civ_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_export_machinery",
+      "ru": "Экспорт станков и машин",
+      "en": "Machinery Exports",
+      "x": 61,
+      "y": 4,
+      "parent": "GER_nww_regional_enterprises",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = industry bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_civ_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_consumer_markets",
+      "ru": "Общий потребительский рынок",
+      "en": "Common Consumer Market",
+      "x": 61,
+      "y": 5,
+      "parent": "GER_nww_export_machinery",
+      "reward": "add_stability = 0.05",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_civ_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_civil_energy_reserve",
+      "ru": "Резерв гражданской энергетики",
+      "en": "Civil Energy Reserve",
+      "x": 61,
+      "y": 6,
+      "parent": "GER_nww_consumer_markets",
+      "reward": "GER_nww_build_energy_infrastructure = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_civ_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_investment_dividend",
+      "ru": "Дивиденды мирного развития",
+      "en": "Dividend of Peaceful Development",
+      "x": 61,
+      "y": 7,
+      "parent": "GER_nww_civil_energy_reserve",
+      "reward": "GER_nww_build_civilian = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_civ_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_defence_procurement",
+      "ru": "Четырёхлетняя оборонная программа",
+      "en": "Four Year Defence Programme",
+      "x": 65,
+      "y": 2,
+      "parent": null,
+      "reward": "GER_nww_build_military = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_mil_factory",
+      "cost": 10,
+      "exclusive": "GER_nww_civil_investment",
+      "available": "has_completed_focus = GER_krupp_and_thyssen"
+    },
+    {
+      "id": "GER_nww_arsenal_dispersal",
+      "ru": "Рассредоточение арсеналов",
+      "en": "Disperse the Arsenals",
+      "x": 65,
+      "y": 3,
+      "parent": "GER_nww_defence_procurement",
+      "reward": "GER_nww_build_military = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_mil_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_strategic_reserves",
+      "ru": "Стратегические производственные резервы",
+      "en": "Strategic Production Reserves",
+      "x": 65,
+      "y": 4,
+      "parent": "GER_nww_arsenal_dispersal",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = industry bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_mil_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_defence_standardisation",
+      "ru": "Единые оборонные контракты",
+      "en": "Standard Defence Contracts",
+      "x": 65,
+      "y": 5,
+      "parent": "GER_nww_strategic_reserves",
+      "reward": "add_tech_bonus = { name = GER_nww_service_research category = infantry_weapons bonus = 0.5 uses = 1 }",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_mil_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_defence_energy_reserve",
+      "ru": "Энергетика оборонных производств",
+      "en": "Defence Energy Reserve",
+      "x": 65,
+      "y": 6,
+      "parent": "GER_nww_defence_standardisation",
+      "reward": "GER_nww_build_energy_infrastructure = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_mil_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    },
+    {
+      "id": "GER_nww_procurement_continuity",
+      "ru": "Непрерывность оборонных заказов",
+      "en": "Continuity of Defence Orders",
+      "x": 65,
+      "y": 7,
+      "parent": "GER_nww_defence_energy_reserve",
+      "reward": "GER_nww_build_military = yes",
+      "spirit": {},
+      "icon": "GFX_goal_generic_construct_mil_factory",
+      "cost": 10,
+      "exclusive": null,
+      "available": ""
+    }
+  ],
+  "service_modifiers": {
+    "army": {
+      "org": "army_org_factor",
+      "planning": "planning_speed",
+      "training": "training_time_army_factor",
+      "artillery": "army_artillery_attack_factor",
+      "armour": "army_armor_attack_factor",
+      "supply": "supply_consumption_factor",
+      "experience": "experience_gain_army_factor"
+    },
+    "air": {
+      "accidents": "air_accidents_factor",
+      "superiority": "air_superiority_efficiency",
+      "cas": "air_cas_efficiency",
+      "range": "air_range_factor",
+      "mission": "air_mission_efficiency"
+    },
+    "navy": {
+      "coordination": "naval_coordination",
+      "output": "industrial_capacity_dockyard",
+      "sortie": "sortie_efficiency",
+      "screens": "navy_screen_attack_factor",
+      "range": "navy_max_range_factor",
+      "repair": "repair_speed_factor"
+    }
+  },
+  "count_added": 54,
+  "total_playable": 130
+}

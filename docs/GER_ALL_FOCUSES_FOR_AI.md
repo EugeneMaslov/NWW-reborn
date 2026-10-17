@@ -2,7 +2,7 @@
 
 Дата снимка: **2026-10-17**. Источник — текущие игровые скрипты проекта. Самодостаточный файл содержит названия и описания RU/EN, награды, условия, зависимости, взаимоисключения, события, решения, духи, BoP и восстановление сохранений. Игровые файлы при экспорте не меняются.
 
-Количество фокусов в игровом дереве `GER_focus`: **76** — 40 политических, 31 промышленных/научных/разведывательных и 5 прочих военных/государственных. Число direct-focus: 36; импортированных shared-focus: 40.
+Количество фокусов в игровом дереве `GER_focus`: **130** — 40 политических, 43 промышленных/научных/разведывательных и 47 прочих военных/государственных. Число direct-focus: 90; импортированных shared-focus: 40.
 
 ## Контекст и правила для улучшения
 
@@ -73,23 +73,35 @@
 | Промышленность, наука, торговля и разведка | Промышленные облигации земель | `GER_6` | 70 |
 | Промышленность, наука, торговля и разведка | Жильё для промышленных рабочих | `GER_nww_worker_housing` | 70 |
 | Промышленность, наука, торговля и разведка | Концессии заморских предприятий | `GER_2` | 70 |
+| Промышленность, наука, торговля и разведка | Долгосрочные гражданские инвестиции | `GER_nww_civil_investment` | 70 |
+| Промышленность, наука, торговля и разведка | Четырёхлетняя оборонная программа | `GER_nww_defence_procurement` | 70 |
 | Промышленность, наука, торговля и разведка | Связи с богемскими автономистами | `GER_nww_prague_network` | 35 |
 | Промышленность, наука, торговля и разведка | Энергетическая инфраструктура Рура | `GER_nww_energy_keystones` | 70 |
 | Промышленность, наука, торговля и разведка | Силезская металлургия | `GER_nww_silesian_steel` | 70 |
 | Промышленность, наука, торговля и разведка | Культура точного производства | `GER_7` | 70 |
 | Промышленность, наука, торговля и разведка | Грузовые коридоры империи | `GER_nww_freight_corridors` | 70 |
+| Промышленность, наука, торговля и разведка | Предприятия имперских земель | `GER_nww_regional_enterprises` | 70 |
+| Промышленность, наука, торговля и разведка | Рассредоточение арсеналов | `GER_nww_arsenal_dispersal` | 70 |
 | Промышленность, наука, торговля и разведка | Восточные промышленные заказы | `GER_3` | 70 |
 | Промышленность, наука, торговля и разведка | Станкостроительная кооперация | `GER_nww_machine_tools` | 70 |
 | Промышленность, наука, торговля и разведка | Контракты торгового флота | `GER_nww_merchant_contracts` | 70 |
+| Промышленность, наука, торговля и разведка | Экспорт станков и машин | `GER_nww_export_machinery` | 70 |
+| Промышленность, наука, торговля и разведка | Стратегические производственные резервы | `GER_nww_strategic_reserves` | 70 |
 | Промышленность, наука, торговля и разведка | Долгосрочные контракты арсеналов | `GER_nww_arsenal_contracts` | 70 |
 | Промышленность, наука, торговля и разведка | Общегерманские технические нормы | `GER_nww_industrial_standards` | 70 |
 | Промышленность, наука, торговля и разведка | Электромеханические лаборатории | `GER_nww_electromechanical_labs` | 70 |
 | Промышленность, наука, торговля и разведка | Экспортное кредитование | `GER_nww_export_credit` | 70 |
+| Промышленность, наука, торговля и разведка | Общий потребительский рынок | `GER_nww_consumer_markets` | 70 |
+| Промышленность, наука, торговля и разведка | Единые оборонные контракты | `GER_nww_defence_standardisation` | 70 |
 | Промышленность, наука, торговля и разведка | Единые стандарты вооружения | `GER_4` | 70 |
 | Промышленность, наука, торговля и разведка | Технические училища земель | `GER_nww_technical_colleges` | 70 |
 | Промышленность, наука, торговля и разведка | Гарантии долгосрочных вложений | `GER_nww_investment_guarantees` | 70 |
+| Промышленность, наука, торговля и разведка | Резерв гражданской энергетики | `GER_nww_civil_energy_reserve` | 70 |
+| Промышленность, наука, торговля и разведка | Энергетика оборонных производств | `GER_nww_defence_energy_reserve` | 70 |
 | Промышленность, наука, торговля и разведка | Согласовать промышленную программу | `GER_8` | 70 |
 | Промышленность, наука, торговля и разведка | Синтетическое топливо из угля | `GER_nww_synthetic_fuels` | 70 |
+| Промышленность, наука, торговля и разведка | Дивиденды мирного развития | `GER_nww_investment_dividend` | 70 |
+| Промышленность, наука, торговля и разведка | Непрерывность оборонных заказов | `GER_nww_procurement_continuity` | 70 |
 | Промышленность, наука, торговля и разведка | Арсеналы нового поколения | `GER_9` | 70 |
 | Промышленность, наука, торговля и разведка | Автоматизация оружейных линий | `GER_10` | 70 |
 | Промышленность, наука, торговля и разведка | Складские узлы заморских портов | `GER_nww_colonial_ports` | 70 |
@@ -97,10 +109,52 @@
 | Промышленность, наука, торговля и разведка | Устойчивые цепочки поставок | `GER_nww_supply_resilience` | 70 |
 | Промышленность, наука, торговля и разведка | Сбалансированная система заказов | `GER_nww_balanced_orders` | 70 |
 | Прочие военные и государственные фокусы | GER_the_kaiser_endures | `GER_the_kaiser_endures` | 35 |
-| Прочие военные и государственные фокусы | GER_the_fleet_question | `GER_the_fleet_question` | 35 |
 | Прочие военные и государственные фокусы | GER_prussian_traditions | `GER_prussian_traditions` | 35 |
+| Прочие военные и государственные фокусы | Имперская воздушная служба | `GER_nww_imperial_air_service` | 35 |
+| Прочие военные и государственные фокусы | GER_the_fleet_question | `GER_the_fleet_question` | 35 |
 | Прочие военные и государственные фокусы | GER_guardians_of_the_reich | `GER_guardians_of_the_reich` | 35 |
+| Прочие военные и государственные фокусы | Обновить Большой генеральный штаб | `GER_nww_general_staff` | 35 |
+| Прочие военные и государственные фокусы | Авиационные академии | `GER_nww_air_academies` | 70 |
+| Прочие военные и государственные фокусы | Объединённый штаб адмиралтейства | `GER_nww_admiralty_staff` | 35 |
 | Прочие военные и государственные фокусы | GER_the_eastern_question | `GER_the_eastern_question` | 70 |
+| Прочие военные и государственные фокусы | Единое пехотное вооружение | `GER_nww_infantry_standardisation` | 70 |
+| Прочие военные и государственные фокусы | Штабные академии земель | `GER_nww_staff_college` | 70 |
+| Прочие военные и государственные фокусы | Автомобильные колонны | `GER_nww_motor_transport` | 70 |
+| Прочие военные и государственные фокусы | Современный истребитель | `GER_nww_fighter_design` | 70 |
+| Прочие военные и государственные фокусы | Авиация поля боя | `GER_nww_battlefield_aviation` | 70 |
+| Прочие военные и государственные фокусы | Дальняя бомбардировочная авиация | `GER_nww_long_range_bombers` | 70 |
+| Прочие военные и государственные фокусы | Верфи Киля и Вильгельмсхафена | `GER_nww_imperial_shipyards` | 70 |
+| Прочие военные и государственные фокусы | Управление полевой артиллерии | `GER_nww_artillery_directorate` | 70 |
+| Прочие военные и государственные фокусы | Самостоятельность командиров | `GER_nww_mission_command` | 70 |
+| Прочие военные и государственные фокусы | Методическая подготовка сражения | `GER_nww_deliberate_battle` | 70 |
+| Прочие военные и государственные фокусы | Школа бронетанковых войск | `GER_nww_armour_school` | 70 |
+| Прочие военные и государственные фокусы | Сеть управления перехватом | `GER_nww_interceptor_control` | 70 |
+| Прочие военные и государственные фокусы | Передовые авианаводчики | `GER_nww_forward_air_controllers` | 70 |
+| Прочие военные и государственные фокусы | Радионавигация и метеослужба | `GER_nww_air_navigation` | 70 |
+| Прочие военные и государственные фокусы | Модернизация линейного флота | `GER_nww_battlefleet_modernisation` | 70 |
+| Прочие военные и государственные фокусы | Морская авиационная служба | `GER_nww_fleet_air_arm` | 70 |
+| Прочие военные и государственные фокусы | Эскадры охранения | `GER_nww_screening_squadrons` | 70 |
+| Прочие военные и государственные фокусы | Подводные патрули океана | `GER_nww_submarine_patrols` | 70 |
+| Прочие военные и государственные фокусы | Штурмовые сапёры | `GER_nww_combat_engineers` | 70 |
+| Прочие военные и государственные фокусы | Связь общевойсковых соединений | `GER_nww_army_signals` | 70 |
+| Прочие военные и государственные фокусы | Средний танк для имперской армии | `GER_nww_medium_tank_programme` | 70 |
+| Прочие военные и государственные фокусы | Эскадрильи ночных истребителей | `GER_nww_night_fighters` | 70 |
+| Прочие военные и государственные фокусы | Транспортная авиация | `GER_nww_air_transport` | 70 |
+| Прочие военные и государственные фокусы | Управление огнём тяжёлых кораблей | `GER_nww_capital_ship_fire_control` | 70 |
+| Прочие военные и государственные фокусы | Программа эскадренных авианосцев | `GER_nww_fleet_carriers` | 70 |
+| Прочие военные и государственные фокусы | Противолодочное сопровождение | `GER_nww_convoy_escorts` | 70 |
+| Прочие военные и государственные фокусы | Океанское снабжение | `GER_nww_ocean_replenishment` | 70 |
+| Прочие военные и государственные фокусы | Военно-медицинская служба | `GER_nww_field_hospitals` | 70 |
+| Прочие военные и государственные фокусы | Железнодорожная служба армии | `GER_nww_army_rail_logistics` | 70 |
+| Прочие военные и государственные фокусы | Моторизованная пехота сопровождения | `GER_nww_panzergrenadiers` | 70 |
+| Прочие военные и государственные фокусы | Единое управление воздушной войной | `GER_nww_integrated_air_operations` | 70 |
+| Прочие военные и государственные фокусы | Авианосные ударные соединения | `GER_nww_carrier_groups` | 70 |
+| Прочие военные и государственные фокусы | Базы ремонта и докования | `GER_nww_fleet_repair_bases` | 70 |
+| Прочие военные и государственные фокусы | Большие общевойсковые манёвры | `GER_nww_combined_arms_exercises` | 70 |
+| Прочие военные и государственные фокусы | Имперские институты аэродинамики | `GER_nww_aeronautical_institutes` | 70 |
+| Прочие военные и государственные фокусы | Совместные манёвры флота и авиации | `GER_nww_joint_naval_exercises` | 70 |
+| Прочие военные и государственные фокусы | Готовность имперской армии | `GER_nww_imperial_army_readiness` | 70 |
+| Прочие военные и государственные фокусы | Боеготовность Флота открытого моря | `GER_nww_high_seas_readiness` | 70 |
 
 ## Общее политическое начало — 6
 
@@ -2894,7 +2948,7 @@ focus = {
 }
 ```
 
-## Промышленность, наука, торговля и разведка — 31
+## Промышленность, наука, торговля и разведка — 43
 
 ### Имперский промышленный совет — `GER_krupp_and_thyssen`
 
@@ -2904,7 +2958,7 @@ EN: Imperial Industrial Council.
 
 Описание EN: Krupp, Thyssen, electrical firms and the states coordinate investment. Industrial research and construction improve through a lasting program financed without conquest debt.
 
-Источник: `common/national_focus/GER_focuses.txt:38`. Стоимость: 10 (70 дней). Координаты: x=51, y=0. Иконка: `GFX_focus_generic_industrialists`.
+Источник: `common/national_focus/GER_focuses.txt:35`. Стоимость: 10 (70 дней). Координаты: x=51, y=0. Иконка: `GFX_focus_generic_industrialists`.
 
 Предпосылки: нет нарисованной предпосылки; см. available.
 
@@ -3070,7 +3124,7 @@ EN: Mitteleuropa Chambers of Commerce.
 
 Описание EN: Supply contracts and chambers of commerce expand civilian production. Economic cooperation does not itself subjugate neighboring states.
 
-Источник: `common/national_focus/GER_focuses.txt:82`. Стоимость: 10 (70 дней). Координаты: x=57, y=1. Иконка: `GFX_goal_generic_trade`.
+Источник: `common/national_focus/GER_focuses.txt:79`. Стоимость: 10 (70 дней). Координаты: x=57, y=1. Иконка: `GFX_goal_generic_trade`.
 
 Предпосылки: (Имперский промышленный совет [GER_krupp_and_thyssen]).
 
@@ -3340,6 +3394,116 @@ focus = {
 }
 ```
 
+### Долгосрочные гражданские инвестиции — `GER_nww_civil_investment`
+
+EN: Long Term Civil Investment.
+
+Описание RU: Направим сбережения и имперские заказы в гражданские предприятия. Взаимоисключающий выбор: четырёхлетняя оборонная программа станет недоступна.
+
+Описание EN: Direct savings and public orders into civilian enterprises. This excludes the four year defence programme.
+
+Источник: `common/national_focus/GER_focuses.txt:2075`. Стоимость: 10 (70 дней). Координаты: x=61, y=2. Иконка: `GFX_goal_generic_construct_civ_factory`.
+
+Предпосылки: нет нарисованной предпосылки; см. available.
+
+Взаимоисключения: GER_nww_defence_procurement.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_krupp_and_thyssen.
+
+Прямые продолжения: GER_nww_regional_enterprises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_industry_construction`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_civil_investment
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 61
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    mutually_exclusive = {
+        focus = GER_nww_defence_procurement
+    }
+    available = {
+        has_completed_focus = GER_krupp_and_thyssen
+    }
+    completion_reward = {
+        GER_nww_build_civilian = yes
+        add_to_variable = {
+            GER_industry_construction = 0.05
+            tooltip = GER_nww_industry_construction_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Четырёхлетняя оборонная программа — `GER_nww_defence_procurement`
+
+EN: Four Year Defence Programme.
+
+Описание RU: Зафиксируем оплаченные оборонные заказы на четыре года. Программа развивает арсеналы без МЕФО, долгов завоевательной экономики и требования захватов; альтернативные гражданские инвестиции станут недоступны.
+
+Описание EN: Commit to funded defence orders for four years. Expand arsenals without MEFO, conquest debt or annexation requirements; this excludes the civil investment programme.
+
+Источник: `common/national_focus/GER_focuses.txt:2225`. Стоимость: 10 (70 дней). Координаты: x=65, y=2. Иконка: `GFX_goal_generic_construct_mil_factory`.
+
+Предпосылки: нет нарисованной предпосылки; см. available.
+
+Взаимоисключения: GER_nww_civil_investment.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_krupp_and_thyssen.
+
+Прямые продолжения: GER_nww_arsenal_dispersal.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_industry_output`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_defence_procurement
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 65
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    mutually_exclusive = {
+        focus = GER_nww_civil_investment
+    }
+    available = {
+        has_completed_focus = GER_krupp_and_thyssen
+    }
+    completion_reward = {
+        GER_nww_build_military = yes
+        add_to_variable = {
+            GER_industry_output = 0.05
+            tooltip = GER_nww_industry_output_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
 ### Связи с богемскими автономистами — `GER_nww_prague_network`
 
 EN: Contacts with Bohemian Autonomists.
@@ -3604,6 +3768,102 @@ focus = {
 }
 ```
 
+### Предприятия имперских земель — `GER_nww_regional_enterprises`
+
+EN: Regional Enterprises.
+
+Описание RU: Продолжим выбранную промышленную программу: предприятия имперских земель. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through regional enterprises. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2103`. Стоимость: 10 (70 дней). Координаты: x=61, y=3. Иконка: `GFX_goal_generic_construct_civ_factory`.
+
+Предпосылки: (Долгосрочные гражданские инвестиции [GER_nww_civil_investment]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_export_machinery.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_regional_enterprises
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 61
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_civil_investment
+    }
+    completion_reward = {
+        GER_nww_build_civilian = yes
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Рассредоточение арсеналов — `GER_nww_arsenal_dispersal`
+
+EN: Disperse the Arsenals.
+
+Описание RU: Продолжим выбранную промышленную программу: рассредоточение арсеналов. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through disperse the arsenals. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2253`. Стоимость: 10 (70 дней). Координаты: x=65, y=3. Иконка: `GFX_goal_generic_construct_mil_factory`.
+
+Предпосылки: (Четырёхлетняя оборонная программа [GER_nww_defence_procurement]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_strategic_reserves.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_arsenal_dispersal
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 65
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_defence_procurement
+    }
+    completion_reward = {
+        GER_nww_build_military = yes
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
 ### Восточные промышленные заказы — `GER_3`
 
 EN: Eastern Industrial Orders.
@@ -3763,6 +4023,122 @@ focus = {
     }
     ai_will_do = {
         factor = 1
+    }
+}
+```
+
+### Экспорт станков и машин — `GER_nww_export_machinery`
+
+EN: Machinery Exports.
+
+Описание RU: Продолжим выбранную промышленную программу: экспорт станков и машин. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through machinery exports. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2124`. Стоимость: 10 (70 дней). Координаты: x=61, y=4. Иконка: `GFX_goal_generic_construct_civ_factory`.
+
+Предпосылки: (Предприятия имперских земель [GER_nww_regional_enterprises]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_consumer_markets.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = industry; bonus = 0.5; uses = 1
+- Параметр `GER_industry_research`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_export_machinery
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 61
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_regional_enterprises
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = industry
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_industry_research = 0.05
+            tooltip = GER_nww_industry_research_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Стратегические производственные резервы — `GER_nww_strategic_reserves`
+
+EN: Strategic Production Reserves.
+
+Описание RU: Продолжим выбранную промышленную программу: стратегические производственные резервы. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through strategic production reserves. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2274`. Стоимость: 10 (70 дней). Координаты: x=65, y=4. Иконка: `GFX_goal_generic_construct_mil_factory`.
+
+Предпосылки: (Рассредоточение арсеналов [GER_nww_arsenal_dispersal]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_defence_standardisation.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = industry; bonus = 0.5; uses = 1
+- Параметр `GER_industry_maximum`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_strategic_reserves
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 65
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_arsenal_dispersal
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = industry
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_industry_maximum = 0.05
+            tooltip = GER_nww_industry_maximum_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
     }
 }
 ```
@@ -3977,6 +4353,112 @@ focus = {
 }
 ```
 
+### Общий потребительский рынок — `GER_nww_consumer_markets`
+
+EN: Common Consumer Market.
+
+Описание RU: Продолжим выбранную промышленную программу: общий потребительский рынок. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through common consumer market. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2154`. Стоимость: 10 (70 дней). Координаты: x=61, y=5. Иконка: `GFX_goal_generic_construct_civ_factory`.
+
+Предпосылки: (Экспорт станков и машин [GER_nww_export_machinery]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_civil_energy_reserve.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_stability`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_consumer_markets
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 61
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_export_machinery
+    }
+    completion_reward = {
+        add_stability = 0.05
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Единые оборонные контракты — `GER_nww_defence_standardisation`
+
+EN: Standard Defence Contracts.
+
+Описание RU: Продолжим выбранную промышленную программу: единые оборонные контракты. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through standard defence contracts. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2304`. Стоимость: 10 (70 дней). Координаты: x=65, y=5. Иконка: `GFX_goal_generic_construct_mil_factory`.
+
+Предпосылки: (Стратегические производственные резервы [GER_nww_strategic_reserves]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_defence_energy_reserve.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = infantry_weapons; bonus = 0.5; uses = 1
+- Параметр `GER_industry_efficiency`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_defence_standardisation
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 65
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_strategic_reserves
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = infantry_weapons
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_industry_efficiency = 0.05
+            tooltip = GER_nww_industry_efficiency_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
 ### Единые стандарты вооружения — `GER_4`
 
 EN: Common Armament Standards.
@@ -4142,6 +4624,110 @@ focus = {
 }
 ```
 
+### Резерв гражданской энергетики — `GER_nww_civil_energy_reserve`
+
+EN: Civil Energy Reserve.
+
+Описание RU: Продолжим выбранную промышленную программу: резерв гражданской энергетики. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through civil energy reserve. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2175`. Стоимость: 10 (70 дней). Координаты: x=61, y=6. Иконка: `GFX_goal_generic_construct_civ_factory`.
+
+Предпосылки: (Общий потребительский рынок [GER_nww_consumer_markets]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_investment_dividend.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_industry_energy`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_civil_energy_reserve
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 61
+    y = 6
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_consumer_markets
+    }
+    completion_reward = {
+        GER_nww_build_energy_infrastructure = yes
+        add_to_variable = {
+            GER_industry_energy = 0.1
+            tooltip = GER_nww_industry_energy_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Энергетика оборонных производств — `GER_nww_defence_energy_reserve`
+
+EN: Defence Energy Reserve.
+
+Описание RU: Продолжим выбранную промышленную программу: энергетика оборонных производств. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through defence energy reserve. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2334`. Стоимость: 10 (70 дней). Координаты: x=65, y=6. Иконка: `GFX_goal_generic_construct_mil_factory`.
+
+Предпосылки: (Единые оборонные контракты [GER_nww_defence_standardisation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_procurement_continuity.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_industry_energy`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_defence_energy_reserve
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 65
+    y = 6
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_defence_standardisation
+    }
+    completion_reward = {
+        GER_nww_build_energy_infrastructure = yes
+        add_to_variable = {
+            GER_industry_energy = 0.1
+            tooltip = GER_nww_industry_energy_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
 ### Согласовать промышленную программу — `GER_8`
 
 EN: Coordinate the Industrial Program.
@@ -4246,6 +4832,110 @@ focus = {
     }
     ai_will_do = {
         factor = 1
+    }
+}
+```
+
+### Дивиденды мирного развития — `GER_nww_investment_dividend`
+
+EN: Dividend of Peaceful Development.
+
+Описание RU: Продолжим выбранную промышленную программу: дивиденды мирного развития. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through dividend of peaceful development. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2200`. Стоимость: 10 (70 дней). Координаты: x=61, y=7. Иконка: `GFX_goal_generic_construct_civ_factory`.
+
+Предпосылки: (Резерв гражданской энергетики [GER_nww_civil_energy_reserve]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_industry_construction`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_investment_dividend
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 61
+    y = 7
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_civil_energy_reserve
+    }
+    completion_reward = {
+        GER_nww_build_civilian = yes
+        add_to_variable = {
+            GER_industry_construction = 0.05
+            tooltip = GER_nww_industry_construction_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Непрерывность оборонных заказов — `GER_nww_procurement_continuity`
+
+EN: Continuity of Defence Orders.
+
+Описание RU: Продолжим выбранную промышленную программу: непрерывность оборонных заказов. Предприятия строятся на контролируемой национальной территории империи.
+
+Описание EN: Advance our chosen industrial programme through continuity of defence orders. New enterprises require controlled imperial core territory.
+
+Источник: `common/national_focus/GER_focuses.txt:2359`. Стоимость: 10 (70 дней). Координаты: x=65, y=7. Иконка: `GFX_goal_generic_construct_mil_factory`.
+
+Предпосылки: (Энергетика оборонных производств [GER_nww_defence_energy_reserve]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_industry_output`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_procurement_continuity
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 65
+    y = 7
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_defence_energy_reserve
+    }
+    completion_reward = {
+        GER_nww_build_military = yes
+        add_to_variable = {
+            GER_industry_output = 0.05
+            tooltip = GER_nww_industry_output_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
     }
 }
 ```
@@ -4569,7 +5259,7 @@ focus = {
 }
 ```
 
-## Прочие военные и государственные фокусы — 5
+## Прочие военные и государственные фокусы — 47
 
 ### GER_the_kaiser_endures — `GER_the_kaiser_endures`
 
@@ -4587,7 +5277,7 @@ EN: The Kaiser Endures.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
 
-Прямые продолжения: GER_prussian_traditions, GER_guardians_of_the_reich.
+Прямые продолжения: GER_guardians_of_the_reich.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
@@ -4610,6 +5300,95 @@ focus = {
 }
 ```
 
+### GER_prussian_traditions — `GER_prussian_traditions`
+
+EN: Prussian Traditions.
+
+Описание RU: Укрепим государственные и производственные учреждения империи.
+
+Описание EN: Strengthen the imperial institutions and production system.
+
+Источник: `common/national_focus/GER_focuses.txt:24`. Стоимость: 5 (35 дней). Координаты: x=72, y=0. Иконка: `GFX_focus_generic_army_attack`.
+
+Предпосылки: нет нарисованной предпосылки; см. available.
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_general_staff.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `army_experience`: 25
+- `add_war_support`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_prussian_traditions
+    icon = GFX_focus_generic_army_attack
+    cost = 5
+    completion_reward = {
+        army_experience = 25
+        add_war_support = 0.05
+    }
+    x = 72
+    y = 0
+}
+```
+
+### Имперская воздушная служба — `GER_nww_imperial_air_service`
+
+EN: Imperial Air Service.
+
+Описание RU: Учредим постоянную программу «Имперская воздушная служба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish imperial air service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1365`. Стоимость: 5 (35 дней). Координаты: x=86, y=0. Иконка: `GFX_goal_generic_build_airforce`.
+
+Предпосылки: нет нарисованной предпосылки; см. available.
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_air_academies.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `air_experience`: 25
+- Параметр `GER_service_air_accidents`: -0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_imperial_air_service
+    icon = GFX_goal_generic_build_airforce
+    x = 86
+    y = 0
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    completion_reward = {
+        air_experience = 25
+        add_to_variable = {
+            GER_service_air_accidents = -0.05
+            tooltip = GER_service_air_accidents_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
 ### GER_the_fleet_question — `GER_the_fleet_question`
 
 EN: The Fleet Question.
@@ -4618,7 +5397,7 @@ EN: The Fleet Question.
 
 Описание EN: Strengthen the imperial institutions and production system.
 
-Источник: `common/national_focus/GER_focuses.txt:66`. Стоимость: 5 (35 дней). Координаты: x=61, y=0. Иконка: `GFX_focus_generic_diplomatic_treaty`.
+Источник: `common/national_focus/GER_focuses.txt:63`. Стоимость: 5 (35 дней). Координаты: x=100, y=0. Иконка: `GFX_focus_generic_diplomatic_treaty`.
 
 Предпосылки: нет нарисованной предпосылки; см. available.
 
@@ -4626,7 +5405,7 @@ EN: The Fleet Question.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
 
-Прямые продолжения: нет.
+Прямые продолжения: GER_nww_admiralty_staff.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
@@ -4649,49 +5428,7 @@ focus = {
         }
         navy_experience = 15
     }
-    x = 61
-}
-```
-
-### GER_prussian_traditions — `GER_prussian_traditions`
-
-EN: Prussian Traditions.
-
-Описание RU: Укрепим государственные и производственные учреждения империи.
-
-Описание EN: Strengthen the imperial institutions and production system.
-
-Источник: `common/national_focus/GER_focuses.txt:24`. Стоимость: 5 (35 дней). Координаты: x=41, y=1. Иконка: `GFX_focus_generic_army_attack`.
-
-Предпосылки: (GER_the_kaiser_endures [GER_the_kaiser_endures]).
-
-Взаимоисключения: нет.
-
-Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
-
-Прямые продолжения: GER_the_eastern_question.
-
-Обзор возможной награды; условия и области действия сохранены в полном коде:
-
-- `army_experience`: 25
-- `add_war_support`: 0.05
-
-Полное определение фокуса:
-
-```pdx
-focus = {
-    id = GER_prussian_traditions
-    icon = GFX_focus_generic_army_attack
-    prerequisite = {
-        focus = GER_the_kaiser_endures
-    }
-    cost = 5
-    completion_reward = {
-        army_experience = 25
-        add_war_support = 0.05
-    }
-    y = 1
-    x = 41
+    x = 100
 }
 ```
 
@@ -4711,7 +5448,7 @@ EN: Guardians Of The Reich.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_mitteleuropa_trade, GER_the_eastern_question.
 
-Прямые продолжения: GER_nww_prague_network.
+Прямые продолжения: GER_the_eastern_question, GER_nww_prague_network.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
@@ -4743,6 +5480,169 @@ focus = {
 }
 ```
 
+### Обновить Большой генеральный штаб — `GER_nww_general_staff`
+
+EN: Renew the Great General Staff.
+
+Описание RU: Обновим планирование, распределение обязанностей и подготовку офицеров Большого генерального штаба.
+
+Описание EN: Renew planning, staff responsibilities and officer training in the Great General Staff.
+
+Источник: `common/national_focus/GER_focuses.txt:928`. Стоимость: 5 (35 дней). Координаты: x=72, y=1. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (GER_prussian_traditions [GER_prussian_traditions]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_staff_college, GER_nww_infantry_standardisation, GER_nww_motor_transport.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `army_experience`: 25
+- Параметр `GER_service_army_org`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_general_staff
+    icon = GFX_goal_generic_army_doctrines
+    x = 72
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_prussian_traditions
+    }
+    completion_reward = {
+        army_experience = 25
+        add_to_variable = {
+            GER_service_army_org = 0.05
+            tooltip = GER_service_army_org_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Авиационные академии — `GER_nww_air_academies`
+
+EN: Air Academies.
+
+Описание RU: Учредим постоянную программу «Авиационные академии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish air academies as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1387`. Стоимость: 10 (70 дней). Координаты: x=86, y=1. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Имперская воздушная служба [GER_nww_imperial_air_service]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_fighter_design, GER_nww_battlefield_aviation, GER_nww_long_range_bombers.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_service_air_accidents`: -0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_air_academies
+    icon = GFX_goal_generic_army_doctrines
+    x = 86
+    y = 1
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_imperial_air_service
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_air_doctrine
+            category = air_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_air_accidents = -0.05
+            tooltip = GER_service_air_accidents_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Объединённый штаб адмиралтейства — `GER_nww_admiralty_staff`
+
+EN: Unified Admiralty Staff.
+
+Описание RU: Учредим постоянную программу «Объединённый штаб адмиралтейства». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish unified admiralty staff as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1701`. Стоимость: 5 (35 дней). Координаты: x=100, y=1. Иконка: `GFX_goal_generic_navy_carrier`.
+
+Предпосылки: (GER_the_fleet_question [GER_the_fleet_question]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_imperial_shipyards.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `navy_experience`: 25
+- Параметр `GER_service_navy_coordination`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_admiralty_staff
+    icon = GFX_goal_generic_navy_carrier
+    x = 100
+    y = 1
+    cost = 5
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_the_fleet_question
+    }
+    completion_reward = {
+        navy_experience = 25
+        add_to_variable = {
+            GER_service_navy_coordination = 0.05
+            tooltip = GER_service_navy_coordination_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
 ### GER_the_eastern_question — `GER_the_eastern_question`
 
 EN: The Eastern Question.
@@ -4751,13 +5651,13 @@ EN: The Eastern Question.
 
 Описание EN: Strengthen the imperial institutions and production system.
 
-Источник: `common/national_focus/GER_focuses.txt:105`. Стоимость: 10 (70 дней). Координаты: x=41, y=2. Иконка: `GFX_focus_generic_army_doctrines_2`.
+Источник: `common/national_focus/GER_focuses.txt:102`. Стоимость: 10 (70 дней). Координаты: x=45, y=2. Иконка: `GFX_focus_generic_army_doctrines_2`.
 
-Предпосылки: (GER_prussian_traditions [GER_prussian_traditions]).
+Предпосылки: (GER_guardians_of_the_reich [GER_guardians_of_the_reich]).
 
 Взаимоисключения: нет.
 
-Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_prussian_traditions.
 
 Прямые продолжения: нет.
 
@@ -4772,9 +5672,6 @@ EN: The Eastern Question.
 focus = {
     id = GER_the_eastern_question
     icon = GFX_focus_generic_army_doctrines_2
-    prerequisite = {
-        focus = GER_prussian_traditions
-    }
     cost = 10
     completion_reward = {
         add_manpower = 50000
@@ -4786,7 +5683,2097 @@ focus = {
         add_war_support = 0.1
     }
     y = 2
-    x = 41
+    x = 45
+    prerequisite = {
+        focus = GER_guardians_of_the_reich
+    }
+    available = {
+        has_completed_focus = GER_prussian_traditions
+    }
+}
+```
+
+### Единое пехотное вооружение — `GER_nww_infantry_standardisation`
+
+EN: Standard Infantry Armaments.
+
+Описание RU: Учредим постоянную программу «Единое пехотное вооружение». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish standard infantry armaments as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1066`. Стоимость: 10 (70 дней). Координаты: x=68, y=2. Иконка: `GFX_goal_generic_small_arms`.
+
+Предпосылки: (Обновить Большой генеральный штаб [GER_nww_general_staff]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_artillery_directorate.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = infantry_weapons; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_infantry_standardisation
+    icon = GFX_goal_generic_small_arms
+    x = 68
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_general_staff
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = infantry_weapons
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Штабные академии земель — `GER_nww_staff_college`
+
+EN: State Staff Colleges.
+
+Описание RU: Учредим постоянную программу «Штабные академии земель». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish state staff colleges as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:953`. Стоимость: 10 (70 дней). Координаты: x=72, y=2. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Обновить Большой генеральный штаб [GER_nww_general_staff]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_mission_command, GER_nww_deliberate_battle.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_service_army_planning`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_staff_college
+    icon = GFX_goal_generic_army_doctrines
+    x = 72
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_general_staff
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_land_doctrine
+            category = land_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_army_planning = 0.1
+            tooltip = GER_service_army_planning_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Автомобильные колонны — `GER_nww_motor_transport`
+
+EN: Motor Transport Columns.
+
+Описание RU: Учредим постоянную программу «Автомобильные колонны». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish motor transport columns as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1148`. Стоимость: 10 (70 дней). Координаты: x=76, y=2. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Обновить Большой генеральный штаб [GER_nww_general_staff]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_armour_school.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = motorized_equipment; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_motor_transport
+    icon = GFX_goal_generic_army_doctrines
+    x = 76
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_general_staff
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = motorized_equipment
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Современный истребитель — `GER_nww_fighter_design`
+
+EN: Modern Fighter Design.
+
+Описание RU: Учредим постоянную программу «Современный истребитель». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish modern fighter design as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1417`. Стоимость: 10 (70 дней). Координаты: x=82, y=2. Иконка: `GFX_goal_generic_air_fighter`.
+
+Предпосылки: (Авиационные академии [GER_nww_air_academies]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_interceptor_control.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = light_air; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_fighter_design
+    icon = GFX_goal_generic_air_fighter
+    x = 82
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_air_academies
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = light_air
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Авиация поля боя — `GER_nww_battlefield_aviation`
+
+EN: Battlefield Aviation.
+
+Описание RU: Учредим постоянную программу «Авиация поля боя». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish battlefield aviation as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1499`. Стоимость: 10 (70 дней). Координаты: x=86, y=2. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Авиационные академии [GER_nww_air_academies]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_forward_air_controllers.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = cas_bomber; bonus = 0.5; uses = 1
+- Параметр `GER_service_air_cas`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_battlefield_aviation
+    icon = GFX_goal_generic_army_doctrines
+    x = 86
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_air_academies
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = cas_bomber
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_air_cas = 0.05
+            tooltip = GER_service_air_cas_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Дальняя бомбардировочная авиация — `GER_nww_long_range_bombers`
+
+EN: Long Range Bomber Command.
+
+Описание RU: Учредим постоянную программу «Дальняя бомбардировочная авиация». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish long range bomber command as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1555`. Стоимость: 10 (70 дней). Координаты: x=90, y=2. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Авиационные академии [GER_nww_air_academies]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_air_navigation.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = heavy_air; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_long_range_bombers
+    icon = GFX_goal_generic_army_doctrines
+    x = 90
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_air_academies
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = heavy_air
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Верфи Киля и Вильгельмсхафена — `GER_nww_imperial_shipyards`
+
+EN: Kiel and Wilhelmshaven Shipyards.
+
+Описание RU: Учредим постоянную программу «Верфи Киля и Вильгельмсхафена». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish kiel and wilhelmshaven shipyards as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1726`. Стоимость: 10 (70 дней). Координаты: x=100, y=2. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Объединённый штаб адмиралтейства [GER_nww_admiralty_staff]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_battlefleet_modernisation, GER_nww_fleet_air_arm, GER_nww_screening_squadrons, GER_nww_submarine_patrols.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_service_navy_output`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_imperial_shipyards
+    icon = GFX_goal_generic_army_doctrines
+    x = 100
+    y = 2
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_admiralty_staff
+    }
+    completion_reward = {
+        GER_nww_build_service_dockyard = yes
+        add_to_variable = {
+            GER_service_navy_output = 0.05
+            tooltip = GER_service_navy_output_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Управление полевой артиллерии — `GER_nww_artillery_directorate`
+
+EN: Field Artillery Directorate.
+
+Описание RU: Учредим постоянную программу «Управление полевой артиллерии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish field artillery directorate as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1092`. Стоимость: 10 (70 дней). Координаты: x=68, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Единое пехотное вооружение [GER_nww_infantry_standardisation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_combat_engineers.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = artillery; bonus = 0.5; uses = 1
+- Параметр `GER_service_army_artillery`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_artillery_directorate
+    icon = GFX_goal_generic_army_doctrines
+    x = 68
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_infantry_standardisation
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = artillery
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_army_artillery = 0.05
+            tooltip = GER_service_army_artillery_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Самостоятельность командиров — `GER_nww_mission_command`
+
+EN: Mission Command.
+
+Описание RU: Доверим младшим командирам исполнение общего замысла. Эта школа ускоряет подготовку частей и исключает методическую систему сражения.
+
+Описание EN: Delegate execution of the common intent to junior commanders. This training school excludes deliberate battle.
+
+Источник: `common/national_focus/GER_focuses.txt:983`. Стоимость: 10 (70 дней). Координаты: x=70, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Штабные академии земель [GER_nww_staff_college]).
+
+Взаимоисключения: GER_nww_deliberate_battle.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_army_signals.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `army_experience`: 20
+- Параметр `GER_service_army_training`: -0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_mission_command
+    icon = GFX_goal_generic_army_doctrines
+    x = 70
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_staff_college
+    }
+    mutually_exclusive = {
+        focus = GER_nww_deliberate_battle
+    }
+    completion_reward = {
+        army_experience = 20
+        add_to_variable = {
+            GER_service_army_training = -0.1
+            tooltip = GER_service_army_training_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Методическая подготовка сражения — `GER_nww_deliberate_battle`
+
+EN: Deliberate Battle.
+
+Описание RU: Поставим согласование штабов и устойчивость соединений выше самостоятельности отдельных командиров. Этот выбор исключает школу самостоятельного командования.
+
+Описание EN: Prioritise staff coordination and formation cohesion. This choice excludes mission command.
+
+Источник: `common/national_focus/GER_focuses.txt:1011`. Стоимость: 10 (70 дней). Координаты: x=74, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Штабные академии земель [GER_nww_staff_college]).
+
+Взаимоисключения: GER_nww_mission_command.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_army_signals.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `army_experience`: 20
+- Параметр `GER_service_army_org`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_deliberate_battle
+    icon = GFX_goal_generic_army_doctrines
+    x = 74
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_staff_college
+    }
+    mutually_exclusive = {
+        focus = GER_nww_mission_command
+    }
+    completion_reward = {
+        army_experience = 20
+        add_to_variable = {
+            GER_service_army_org = 0.05
+            tooltip = GER_service_army_org_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Школа бронетанковых войск — `GER_nww_armour_school`
+
+EN: Armoured Troops School.
+
+Описание RU: Учредим постоянную программу «Школа бронетанковых войск». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish armoured troops school as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1174`. Стоимость: 10 (70 дней). Координаты: x=76, y=3. Иконка: `GFX_goal_generic_army_tanks`.
+
+Предпосылки: (Автомобильные колонны [GER_nww_motor_transport]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_medium_tank_programme.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_armour_school
+    icon = GFX_goal_generic_army_tanks
+    x = 76
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_motor_transport
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_land_doctrine
+            category = land_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Сеть управления перехватом — `GER_nww_interceptor_control`
+
+EN: Interceptor Control Network.
+
+Описание RU: Учредим постоянную программу «Сеть управления перехватом». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish interceptor control network as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1443`. Стоимость: 10 (70 дней). Координаты: x=82, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Современный истребитель [GER_nww_fighter_design]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_night_fighters.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = radar_tech; bonus = 0.5; uses = 1
+- Параметр `GER_service_air_superiority`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_interceptor_control
+    icon = GFX_goal_generic_army_doctrines
+    x = 82
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_fighter_design
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = radar_tech
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_air_superiority = 0.05
+            tooltip = GER_service_air_superiority_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Передовые авианаводчики — `GER_nww_forward_air_controllers`
+
+EN: Forward Air Controllers.
+
+Описание RU: Учредим постоянную программу «Передовые авианаводчики». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish forward air controllers as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1529`. Стоимость: 10 (70 дней). Координаты: x=86, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Авиация поля боя [GER_nww_battlefield_aviation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_integrated_air_operations.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_forward_air_controllers
+    icon = GFX_goal_generic_army_doctrines
+    x = 86
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_battlefield_aviation
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_air_doctrine
+            category = air_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Радионавигация и метеослужба — `GER_nww_air_navigation`
+
+EN: Air Navigation and Weather Service.
+
+Описание RU: Учредим постоянную программу «Радионавигация и метеослужба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish air navigation and weather service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1581`. Стоимость: 10 (70 дней). Координаты: x=90, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Дальняя бомбардировочная авиация [GER_nww_long_range_bombers]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_air_transport.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = electronics; bonus = 0.5; uses = 1
+- Параметр `GER_service_air_range`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_air_navigation
+    icon = GFX_goal_generic_army_doctrines
+    x = 90
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_long_range_bombers
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = electronics
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_air_range = 0.05
+            tooltip = GER_service_air_range_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Модернизация линейного флота — `GER_nww_battlefleet_modernisation`
+
+EN: Battlefleet Modernisation.
+
+Описание RU: Учредим постоянную программу «Модернизация линейного флота». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish battlefleet modernisation as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1751`. Стоимость: 10 (70 дней). Координаты: x=96, y=3. Иконка: `GFX_goal_generic_navy_battleship`.
+
+Предпосылки: (Верфи Киля и Вильгельмсхафена [GER_nww_imperial_shipyards]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_capital_ship_fire_control.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = bb_tech; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_battlefleet_modernisation
+    icon = GFX_goal_generic_navy_battleship
+    x = 96
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_imperial_shipyards
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = bb_tech
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Морская авиационная служба — `GER_nww_fleet_air_arm`
+
+EN: Fleet Air Arm.
+
+Описание RU: Учредим постоянную программу «Морская авиационная служба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish fleet air arm as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1803`. Стоимость: 10 (70 дней). Координаты: x=100, y=3. Иконка: `GFX_goal_generic_air_naval_bomber`.
+
+Предпосылки: (Верфи Киля и Вильгельмсхафена [GER_nww_imperial_shipyards]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_fleet_carriers.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = naval_air; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_fleet_air_arm
+    icon = GFX_goal_generic_air_naval_bomber
+    x = 100
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_imperial_shipyards
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = naval_air
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Эскадры охранения — `GER_nww_screening_squadrons`
+
+EN: Screening Squadrons.
+
+Описание RU: Учредим постоянную программу «Эскадры охранения». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish screening squadrons as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1885`. Стоимость: 10 (70 дней). Координаты: x=104, y=3. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Верфи Киля и Вильгельмсхафена [GER_nww_imperial_shipyards]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_convoy_escorts.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = dd_tech; bonus = 0.5; uses = 1
+- Параметр `GER_service_navy_screens`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_screening_squadrons
+    icon = GFX_goal_generic_army_doctrines
+    x = 104
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_imperial_shipyards
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = dd_tech
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_navy_screens = 0.05
+            tooltip = GER_service_navy_screens_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Подводные патрули океана — `GER_nww_submarine_patrols`
+
+EN: Ocean Submarine Patrols.
+
+Описание RU: Учредим постоянную программу «Подводные патрули океана». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish ocean submarine patrols as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1941`. Стоимость: 10 (70 дней). Координаты: x=108, y=3. Иконка: `GFX_goal_generic_navy_submarine`.
+
+Предпосылки: (Верфи Киля и Вильгельмсхафена [GER_nww_imperial_shipyards]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_ocean_replenishment.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = ss_tech; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_submarine_patrols
+    icon = GFX_goal_generic_navy_submarine
+    x = 108
+    y = 3
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_imperial_shipyards
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = ss_tech
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Штурмовые сапёры — `GER_nww_combat_engineers`
+
+EN: Assault Engineers.
+
+Описание RU: Учредим постоянную программу «Штурмовые сапёры». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish assault engineers as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1122`. Стоимость: 10 (70 дней). Координаты: x=68, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Управление полевой артиллерии [GER_nww_artillery_directorate]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_field_hospitals.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = support_tech; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_combat_engineers
+    icon = GFX_goal_generic_army_doctrines
+    x = 68
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_artillery_directorate
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = support_tech
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Связь общевойсковых соединений — `GER_nww_army_signals`
+
+EN: Combined Arms Signals.
+
+Описание RU: Учредим постоянную программу «Связь общевойсковых соединений». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish combined arms signals as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1039`. Стоимость: 10 (70 дней). Координаты: x=72, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Самостоятельность командиров [GER_nww_mission_command] ИЛИ Методическая подготовка сражения [GER_nww_deliberate_battle]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_army_rail_logistics.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = electronics; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_army_signals
+    icon = GFX_goal_generic_army_doctrines
+    x = 72
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_mission_command
+        focus = GER_nww_deliberate_battle
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = electronics
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Средний танк для имперской армии — `GER_nww_medium_tank_programme`
+
+EN: Imperial Medium Tank Programme.
+
+Описание RU: Учредим постоянную программу «Средний танк для имперской армии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish imperial medium tank programme as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1200`. Стоимость: 10 (70 дней). Координаты: x=76, y=4. Иконка: `GFX_goal_generic_army_tanks`.
+
+Предпосылки: (Школа бронетанковых войск [GER_nww_armour_school]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_panzergrenadiers.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = cat_medium_armor; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_medium_tank_programme
+    icon = GFX_goal_generic_army_tanks
+    x = 76
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_armour_school
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = cat_medium_armor
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Эскадрильи ночных истребителей — `GER_nww_night_fighters`
+
+EN: Night Fighter Squadrons.
+
+Описание RU: Учредим постоянную программу «Эскадрильи ночных истребителей». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish night fighter squadrons as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1473`. Стоимость: 10 (70 дней). Координаты: x=82, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Сеть управления перехватом [GER_nww_interceptor_control]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_integrated_air_operations.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = light_air; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_night_fighters
+    icon = GFX_goal_generic_army_doctrines
+    x = 82
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_interceptor_control
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = light_air
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Транспортная авиация — `GER_nww_air_transport`
+
+EN: Air Transport Service.
+
+Описание RU: Учредим постоянную программу «Транспортная авиация». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish air transport service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1611`. Стоимость: 10 (70 дней). Координаты: x=90, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Радионавигация и метеослужба [GER_nww_air_navigation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_integrated_air_operations.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = air_equipment; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_air_transport
+    icon = GFX_goal_generic_army_doctrines
+    x = 90
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_air_navigation
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = air_equipment
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Управление огнём тяжёлых кораблей — `GER_nww_capital_ship_fire_control`
+
+EN: Capital Ship Fire Control.
+
+Описание RU: Учредим постоянную программу «Управление огнём тяжёлых кораблей». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish capital ship fire control as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1777`. Стоимость: 10 (70 дней). Координаты: x=96, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Модернизация линейного флота [GER_nww_battlefleet_modernisation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_joint_naval_exercises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = naval_equipment; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_capital_ship_fire_control
+    icon = GFX_goal_generic_army_doctrines
+    x = 96
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_battlefleet_modernisation
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = naval_equipment
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Программа эскадренных авианосцев — `GER_nww_fleet_carriers`
+
+EN: Fleet Carrier Programme.
+
+Описание RU: Учредим постоянную программу «Программа эскадренных авианосцев». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish fleet carrier programme as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1829`. Стоимость: 10 (70 дней). Координаты: x=100, y=4. Иконка: `GFX_goal_generic_navy_carrier`.
+
+Предпосылки: (Морская авиационная служба [GER_nww_fleet_air_arm]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_carrier_groups.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = mio_cat_tech_all_carrier_and_modules; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_fleet_carriers
+    icon = GFX_goal_generic_navy_carrier
+    x = 100
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_fleet_air_arm
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = mio_cat_tech_all_carrier_and_modules
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Противолодочное сопровождение — `GER_nww_convoy_escorts`
+
+EN: Anti Submarine Escorts.
+
+Описание RU: Учредим постоянную программу «Противолодочное сопровождение». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish anti submarine escorts as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1915`. Стоимость: 10 (70 дней). Координаты: x=104, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Эскадры охранения [GER_nww_screening_squadrons]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_fleet_repair_bases.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = naval_equipment; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_convoy_escorts
+    icon = GFX_goal_generic_army_doctrines
+    x = 104
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_screening_squadrons
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = naval_equipment
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Океанское снабжение — `GER_nww_ocean_replenishment`
+
+EN: Ocean Replenishment.
+
+Описание RU: Учредим постоянную программу «Океанское снабжение». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish ocean replenishment as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1967`. Стоимость: 10 (70 дней). Координаты: x=108, y=4. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Подводные патрули океана [GER_nww_submarine_patrols]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `navy_experience`: 20
+- Параметр `GER_service_navy_range`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_ocean_replenishment
+    icon = GFX_goal_generic_army_doctrines
+    x = 108
+    y = 4
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_submarine_patrols
+    }
+    completion_reward = {
+        navy_experience = 20
+        add_to_variable = {
+            GER_service_navy_range = 0.1
+            tooltip = GER_service_navy_range_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Военно-медицинская служба — `GER_nww_field_hospitals`
+
+EN: Military Medical Service.
+
+Описание RU: Учредим постоянную программу «Военно-медицинская служба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish military medical service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1281`. Стоимость: 10 (70 дней). Координаты: x=68, y=5. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Штурмовые сапёры [GER_nww_combat_engineers]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_combined_arms_exercises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = support_tech; bonus = 0.5; uses = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_field_hospitals
+    icon = GFX_goal_generic_army_doctrines
+    x = 68
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_combat_engineers
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = support_tech
+            bonus = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Железнодорожная служба армии — `GER_nww_army_rail_logistics`
+
+EN: Army Railway Service.
+
+Описание RU: Учредим постоянную программу «Железнодорожная служба армии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish army railway service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1256`. Стоимость: 10 (70 дней). Координаты: x=72, y=5. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Связь общевойсковых соединений [GER_nww_army_signals]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_combined_arms_exercises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `army_experience`: 20
+- Параметр `GER_service_army_supply`: -0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_army_rail_logistics
+    icon = GFX_goal_generic_army_doctrines
+    x = 72
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_army_signals
+    }
+    completion_reward = {
+        army_experience = 20
+        add_to_variable = {
+            GER_service_army_supply = -0.1
+            tooltip = GER_service_army_supply_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Моторизованная пехота сопровождения — `GER_nww_panzergrenadiers`
+
+EN: Panzergrenadiers.
+
+Описание RU: Учредим постоянную программу «Моторизованная пехота сопровождения». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish panzergrenadiers as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1226`. Стоимость: 10 (70 дней). Координаты: x=76, y=5. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Средний танк для имперской армии [GER_nww_medium_tank_programme]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_combined_arms_exercises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = cat_mechanized_equipment; bonus = 0.5; uses = 1
+- Параметр `GER_service_army_armour`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_panzergrenadiers
+    icon = GFX_goal_generic_army_doctrines
+    x = 76
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_medium_tank_programme
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = cat_mechanized_equipment
+            bonus = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_army_armour = 0.05
+            tooltip = GER_service_army_armour_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Единое управление воздушной войной — `GER_nww_integrated_air_operations`
+
+EN: Integrated Air Operations.
+
+Описание RU: Учредим постоянную программу «Единое управление воздушной войной». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish integrated air operations as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1637`. Стоимость: 10 (70 дней). Координаты: x=86, y=5. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Эскадрильи ночных истребителей [GER_nww_night_fighters] ИЛИ Передовые авианаводчики [GER_nww_forward_air_controllers] ИЛИ Транспортная авиация [GER_nww_air_transport]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_nww_air_transport, GER_nww_forward_air_controllers, GER_nww_night_fighters.
+
+Прямые продолжения: GER_nww_aeronautical_institutes.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_service_air_mission`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_integrated_air_operations
+    icon = GFX_goal_generic_army_doctrines
+    x = 86
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_night_fighters
+        focus = GER_nww_forward_air_controllers
+        focus = GER_nww_air_transport
+    }
+    available = {
+        has_completed_focus = GER_nww_night_fighters
+        has_completed_focus = GER_nww_forward_air_controllers
+        has_completed_focus = GER_nww_air_transport
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_air_doctrine
+            category = air_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_air_mission = 0.05
+            tooltip = GER_service_air_mission_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Авианосные ударные соединения — `GER_nww_carrier_groups`
+
+EN: Carrier Task Groups.
+
+Описание RU: Объединим палубные эскадрильи, авианосцы и корабли охранения в соединения с единым планом воздушных ударов.
+
+Описание EN: Unite deck squadrons, carriers and escorts in task groups with a common air strike plan.
+
+Источник: `common/national_focus/GER_focuses.txt:1855`. Стоимость: 10 (70 дней). Координаты: x=100, y=5. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Программа эскадренных авианосцев [GER_nww_fleet_carriers]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_joint_naval_exercises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_service_navy_sortie`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_carrier_groups
+    icon = GFX_goal_generic_army_doctrines
+    x = 100
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_fleet_carriers
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_naval_doctrine
+            category = naval_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        add_to_variable = {
+            GER_service_navy_sortie = 0.1
+            tooltip = GER_service_navy_sortie_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Базы ремонта и докования — `GER_nww_fleet_repair_bases`
+
+EN: Fleet Repair Bases.
+
+Описание RU: Учредим постоянную программу «Базы ремонта и докования». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish fleet repair bases as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1992`. Стоимость: 10 (70 дней). Координаты: x=104, y=5. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Противолодочное сопровождение [GER_nww_convoy_escorts]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nww_joint_naval_exercises.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Параметр `GER_service_navy_repair`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_fleet_repair_bases
+    icon = GFX_goal_generic_army_doctrines
+    x = 104
+    y = 5
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_convoy_escorts
+    }
+    completion_reward = {
+        GER_nww_build_service_dockyard = yes
+        add_to_variable = {
+            GER_service_navy_repair = 0.1
+            tooltip = GER_service_navy_repair_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Большие общевойсковые манёвры — `GER_nww_combined_arms_exercises`
+
+EN: Grand Combined Arms Exercises.
+
+Описание RU: Учредим постоянную программу «Большие общевойсковые манёвры». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish grand combined arms exercises as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1307`. Стоимость: 10 (70 дней). Координаты: x=72, y=6. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Железнодорожная служба армии [GER_nww_army_rail_logistics] ИЛИ Моторизованная пехота сопровождения [GER_nww_panzergrenadiers] ИЛИ Военно-медицинская служба [GER_nww_field_hospitals]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_nww_army_rail_logistics, GER_nww_field_hospitals, GER_nww_panzergrenadiers.
+
+Прямые продолжения: GER_nww_imperial_army_readiness.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_combined_arms_exercises
+    icon = GFX_goal_generic_army_doctrines
+    x = 72
+    y = 6
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_army_rail_logistics
+        focus = GER_nww_panzergrenadiers
+        focus = GER_nww_field_hospitals
+    }
+    available = {
+        has_completed_focus = GER_nww_army_rail_logistics
+        has_completed_focus = GER_nww_panzergrenadiers
+        has_completed_focus = GER_nww_field_hospitals
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_land_doctrine
+            category = land_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Имперские институты аэродинамики — `GER_nww_aeronautical_institutes`
+
+EN: Imperial Aeronautical Institutes.
+
+Описание RU: Учредим постоянную программу «Имперские институты аэродинамики». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish imperial aeronautical institutes as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1674`. Стоимость: 10 (70 дней). Координаты: x=86, y=6. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Единое управление воздушной войной [GER_nww_integrated_air_operations]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_nww_service_research; category = air_equipment; bonus = 0.5; uses = 1
+- `air_experience`: 35
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_aeronautical_institutes
+    icon = GFX_goal_generic_army_doctrines
+    x = 86
+    y = 6
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_integrated_air_operations
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = GER_nww_service_research
+            category = air_equipment
+            bonus = 0.5
+            uses = 1
+        }
+        air_experience = 35
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Совместные манёвры флота и авиации — `GER_nww_joint_naval_exercises`
+
+EN: Joint Fleet and Air Exercises.
+
+Описание RU: Учредим постоянную программу «Совместные манёвры флота и авиации». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish joint fleet and air exercises as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:2017`. Стоимость: 10 (70 дней). Координаты: x=100, y=6. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Авианосные ударные соединения [GER_nww_carrier_groups] ИЛИ Управление огнём тяжёлых кораблей [GER_nww_capital_ship_fire_control] ИЛИ Базы ремонта и докования [GER_nww_fleet_repair_bases]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): GER_nww_capital_ship_fire_control, GER_nww_carrier_groups, GER_nww_fleet_repair_bases.
+
+Прямые продолжения: GER_nww_high_seas_readiness.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_joint_naval_exercises
+    icon = GFX_goal_generic_army_doctrines
+    x = 100
+    y = 6
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_carrier_groups
+        focus = GER_nww_capital_ship_fire_control
+        focus = GER_nww_fleet_repair_bases
+    }
+    available = {
+        has_completed_focus = GER_nww_carrier_groups
+        has_completed_focus = GER_nww_capital_ship_fire_control
+        has_completed_focus = GER_nww_fleet_repair_bases
+    }
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            name = GER_nww_naval_doctrine
+            category = naval_doctrine
+            cost_reduction = 0.5
+            uses = 1
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Готовность имперской армии — `GER_nww_imperial_army_readiness`
+
+EN: Imperial Army Readiness.
+
+Описание RU: Учредим постоянную программу «Готовность имперской армии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish imperial army readiness as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:1340`. Стоимость: 10 (70 дней). Координаты: x=72, y=7. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Большие общевойсковые манёвры [GER_nww_combined_arms_exercises]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `army_experience`: 35
+- Параметр `GER_service_army_experience`: 0.1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_imperial_army_readiness
+    icon = GFX_goal_generic_army_doctrines
+    x = 72
+    y = 7
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_combined_arms_exercises
+    }
+    completion_reward = {
+        army_experience = 35
+        add_to_variable = {
+            GER_service_army_experience = 0.1
+            tooltip = GER_service_army_experience_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
+}
+```
+
+### Боеготовность Флота открытого моря — `GER_nww_high_seas_readiness`
+
+EN: High Seas Fleet Readiness.
+
+Описание RU: Учредим постоянную программу «Боеготовность Флота открытого моря». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.
+
+Описание EN: Establish high seas fleet readiness as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment.
+
+Источник: `common/national_focus/GER_focuses.txt:2050`. Стоимость: 10 (70 дней). Координаты: x=100, y=7. Иконка: `GFX_goal_generic_army_doctrines`.
+
+Предпосылки: (Совместные манёвры флота и авиации [GER_nww_joint_naval_exercises]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `navy_experience`: 35
+- Параметр `GER_service_navy_output`: 0.05
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nww_high_seas_readiness
+    icon = GFX_goal_generic_army_doctrines
+    x = 100
+    y = 7
+    cost = 10
+    available_if_capitulated = no
+    ai_will_do = {
+        factor = 2
+    }
+    prerequisite = {
+        focus = GER_nww_joint_naval_exercises
+    }
+    completion_reward = {
+        navy_experience = 35
+        add_to_variable = {
+            GER_service_navy_output = 0.05
+            tooltip = GER_service_navy_output_tt
+        }
+        hidden_effect = {
+            GER_nww_refresh_services = yes
+            GER_nww_refresh_industry = yes
+        }
+    }
 }
 ```
 
@@ -4808,8 +7795,8 @@ focus_tree = {
         focus = GER_the_gilded_colossus
     }
     continuous_focus_position = {
-        x = 100
-        y = 3000
+        x = 150
+        y = 4200
     }
 }
 ```
@@ -4895,6 +7882,73 @@ GER_kaiser_vs_reichstag = {
                 army_org_factor = -0.10
                 planning_speed = -0.15
             }
+        }
+    }
+}
+```
+
+### `common/decisions/GER_bohemian_decisions.txt`
+
+```pdx
+GER_bop_decisions_category = {
+    GER_nww_bohemian_civic_support = {
+        icon = generic_political_discourse
+        cost = 75
+        visible = {
+            tag = GER
+            has_focus_tree = GER_focus
+            has_completed_focus = GER_nww_prague_network
+            AUS = {
+                GER_nww_bohemian_target_open = yes
+            }
+        }
+        available = {
+            NOT = {
+                has_country_flag = GER_nww_bohemian_support_busy
+            }
+            AUS = {
+                GER_nww_bohemian_target_open = yes
+            }
+        }
+        days_remove = 45
+        days_re_enable = 30
+        complete_effect = {
+            set_country_flag = GER_nww_bohemian_support_busy
+        }
+        cancel_trigger = {
+            OR = {
+                NOT = {
+                    has_focus_tree = GER_focus
+                }
+                NOT = {
+                    AUS = {
+                        GER_nww_bohemian_target_open = yes
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    AUS = {
+                        GER_nww_bohemian_target_open = yes
+                    }
+                }
+                AUS = {
+                    GER_nww_support_bohemian_autonomists = yes
+                }
+            }
+            else = {
+                add_political_power = 75
+            }
+            clr_country_flag = GER_nww_bohemian_support_busy
+        }
+        cancel_effect = {
+            add_political_power = 75
+            clr_country_flag = GER_nww_bohemian_support_busy
+        }
+        ai_will_do = {
+            factor = 25
         }
     }
 }
@@ -5643,6 +8697,47 @@ GER_nww_industrial_program = {
 }
 ```
 
+### `common/dynamic_modifiers/GER_services_modifiers.txt`
+
+```pdx
+GER_nww_army_programme = {
+    icon = GFX_goal_generic_army_doctrines
+    enable = {
+        always = yes
+    }
+    army_org_factor = GER_service_army_org
+    planning_speed = GER_service_army_planning
+    training_time_army_factor = GER_service_army_training
+    army_artillery_attack_factor = GER_service_army_artillery
+    army_armor_attack_factor = GER_service_army_armour
+    supply_consumption_factor = GER_service_army_supply
+    experience_gain_army_factor = GER_service_army_experience
+}
+GER_nww_air_programme = {
+    icon = GFX_goal_generic_build_airforce
+    enable = {
+        always = yes
+    }
+    air_accidents_factor = GER_service_air_accidents
+    air_superiority_efficiency = GER_service_air_superiority
+    air_cas_efficiency = GER_service_air_cas
+    air_range_factor = GER_service_air_range
+    air_mission_efficiency = GER_service_air_mission
+}
+GER_nww_navy_programme = {
+    icon = GFX_idea_GER_generic_navy_1
+    enable = {
+        always = yes
+    }
+    naval_coordination = GER_service_navy_coordination
+    industrial_capacity_dockyard = GER_service_navy_output
+    sortie_efficiency = GER_service_navy_sortie
+    navy_screen_attack_factor = GER_service_navy_screens
+    navy_max_range_factor = GER_service_navy_range
+    repair_speed_factor = GER_service_navy_repair
+}
+```
+
 ### `common/country_leader/GER_traits.txt`
 
 ```pdx
@@ -5983,6 +9078,34 @@ on_actions = {
                 }
                 GER_nww_initialize_ai_route = yes
                 GER_nww_refresh_political_objectives = yes
+            }
+        }
+    }
+}
+```
+
+### `common/on_actions/GER_services_on_actions.txt`
+
+```pdx
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = {
+                    original_tag = GER
+                    has_focus_tree = GER_focus
+                }
+                GER_nww_refresh_services = yes
+            }
+        }
+    }
+    on_daily_GER = {
+        effect = {
+            if = {
+                limit = {
+                    has_focus_tree = GER_focus
+                }
+                GER_nww_refresh_services = yes
             }
         }
     }
@@ -7305,6 +10428,78 @@ GER_nww_refresh_industry = {
             modifier = GER_nww_industrial_program
         }
     }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_civil_investment
+        }
+        add_to_variable = {
+            GER_industry_construction = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_export_machinery
+        }
+        add_to_variable = {
+            GER_industry_research = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_civil_energy_reserve
+        }
+        add_to_variable = {
+            GER_industry_energy = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_investment_dividend
+        }
+        add_to_variable = {
+            GER_industry_construction = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_defence_procurement
+        }
+        add_to_variable = {
+            GER_industry_output = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_strategic_reserves
+        }
+        add_to_variable = {
+            GER_industry_maximum = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_defence_standardisation
+        }
+        add_to_variable = {
+            GER_industry_efficiency = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_defence_energy_reserve
+        }
+        add_to_variable = {
+            GER_industry_energy = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_procurement_continuity
+        }
+        add_to_variable = {
+            GER_industry_output = 0.05
+        }
+    }
 }
 GER_nww_build_civilian = {
     random_owned_controlled_state = {
@@ -7916,6 +11111,288 @@ GER_nww_refresh_political_objectives = {
 }
 ```
 
+### `common/scripted_effects/GER_services_effects.txt`
+
+```pdx
+GER_nww_refresh_services = {
+    set_variable = {
+        GER_service_army_org = 0
+    }
+    set_variable = {
+        GER_service_army_planning = 0
+    }
+    set_variable = {
+        GER_service_army_training = 0
+    }
+    set_variable = {
+        GER_service_army_artillery = 0
+    }
+    set_variable = {
+        GER_service_army_armour = 0
+    }
+    set_variable = {
+        GER_service_army_supply = 0
+    }
+    set_variable = {
+        GER_service_army_experience = 0
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_general_staff
+        }
+        add_to_variable = {
+            GER_service_army_org = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_staff_college
+        }
+        add_to_variable = {
+            GER_service_army_planning = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_mission_command
+        }
+        add_to_variable = {
+            GER_service_army_training = -0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_deliberate_battle
+        }
+        add_to_variable = {
+            GER_service_army_org = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_artillery_directorate
+        }
+        add_to_variable = {
+            GER_service_army_artillery = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_panzergrenadiers
+        }
+        add_to_variable = {
+            GER_service_army_armour = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_army_rail_logistics
+        }
+        add_to_variable = {
+            GER_service_army_supply = -0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_imperial_army_readiness
+        }
+        add_to_variable = {
+            GER_service_army_experience = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_prussian_traditions
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = GER_nww_army_programme
+                }
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = GER_nww_army_programme
+        }
+    }
+    set_variable = {
+        GER_service_air_accidents = 0
+    }
+    set_variable = {
+        GER_service_air_superiority = 0
+    }
+    set_variable = {
+        GER_service_air_cas = 0
+    }
+    set_variable = {
+        GER_service_air_range = 0
+    }
+    set_variable = {
+        GER_service_air_mission = 0
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_imperial_air_service
+        }
+        add_to_variable = {
+            GER_service_air_accidents = -0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_air_academies
+        }
+        add_to_variable = {
+            GER_service_air_accidents = -0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_interceptor_control
+        }
+        add_to_variable = {
+            GER_service_air_superiority = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_battlefield_aviation
+        }
+        add_to_variable = {
+            GER_service_air_cas = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_air_navigation
+        }
+        add_to_variable = {
+            GER_service_air_range = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_integrated_air_operations
+        }
+        add_to_variable = {
+            GER_service_air_mission = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_imperial_air_service
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = GER_nww_air_programme
+                }
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = GER_nww_air_programme
+        }
+    }
+    set_variable = {
+        GER_service_navy_coordination = 0
+    }
+    set_variable = {
+        GER_service_navy_output = 0
+    }
+    set_variable = {
+        GER_service_navy_sortie = 0
+    }
+    set_variable = {
+        GER_service_navy_screens = 0
+    }
+    set_variable = {
+        GER_service_navy_range = 0
+    }
+    set_variable = {
+        GER_service_navy_repair = 0
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_admiralty_staff
+        }
+        add_to_variable = {
+            GER_service_navy_coordination = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_imperial_shipyards
+        }
+        add_to_variable = {
+            GER_service_navy_output = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_carrier_groups
+        }
+        add_to_variable = {
+            GER_service_navy_sortie = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_screening_squadrons
+        }
+        add_to_variable = {
+            GER_service_navy_screens = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_ocean_replenishment
+        }
+        add_to_variable = {
+            GER_service_navy_range = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_fleet_repair_bases
+        }
+        add_to_variable = {
+            GER_service_navy_repair = 0.1
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_nww_high_seas_readiness
+        }
+        add_to_variable = {
+            GER_service_navy_output = 0.05
+        }
+    }
+    if = {
+        limit = {
+            has_completed_focus = GER_the_fleet_question
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = GER_nww_navy_programme
+                }
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = GER_nww_navy_programme
+        }
+    }
+}
+GER_nww_build_service_dockyard = {
+    random_owned_controlled_state = {
+        limit = {
+            is_core_of = PREV
+            is_coastal = yes
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = dockyard
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+```
+
 ### `common/scripted_triggers/GER_bohemian_triggers.txt`
 
 ```pdx
@@ -7982,14 +11459,19 @@ nww_GER_ai_target_safe = {
             exists = yes
             is_subject = no
             NOT = {
-                is_ally_with = PREV
-            }
-            NOT = {
                 has_war_with_major = yes
             }
-            strength_ratio = {
-                tag = PREV
-                ratio < 0.80
+            any_other_country = {
+                original_tag = GER
+                has_focus_tree = GER_focus
+                exists = yes
+                NOT = {
+                    is_ally_with = PREV
+                }
+                strength_ratio = {
+                    tag = PREV
+                    ratio > 1.25
+                }
             }
             NOT = {
                 any_other_country = {
@@ -8025,9 +11507,14 @@ nww_GER_ai_target_safe = {
                             is_faction_leader = yes
                             is_in_faction_with = PREV
                             NOT = {
-                                strength_ratio = {
-                                    tag = PREV.PREV
-                                    ratio < 0.67
+                                any_other_country = {
+                                    original_tag = GER
+                                    has_focus_tree = GER_focus
+                                    exists = yes
+                                    strength_ratio = {
+                                        tag = PREV
+                                        ratio > 1.5
+                                    }
                                 }
                             }
                         }
@@ -8191,12 +11678,14 @@ GER_nww_containable_austrian_guarantor = {
     PREV = {
         tag = AUS
     }
-    strength_ratio = {
-        tag = GER
-        ratio < 0.67
-    }
-    GER = {
+    any_other_country = {
+        original_tag = GER
+        exists = yes
         has_focus_tree = GER_focus
+        strength_ratio = {
+            tag = PREV
+            ratio > 1.5
+        }
         date > 1940.12.31
         OR = {
             AND = {
@@ -8270,15 +11759,18 @@ GER_nww_lategame_western_target = {
     }
     exists = yes
     is_subject = no
-    NOT = {
-        is_ally_with = PREV
-    }
-    PREV = {
+    any_other_country = {
+        original_tag = GER
+        has_focus_tree = GER_focus
+        exists = yes
         GER_nww_western_mandate = yes
-    }
-    strength_ratio = {
-        tag = PREV
-        ratio < 1.25
+        NOT = {
+            is_ally_with = PREV
+        }
+        strength_ratio = {
+            tag = PREV
+            ratio > 0.8
+        }
     }
 }
 GER_nww_red_rhine_offer_valid = {
@@ -8442,6 +11934,32 @@ GER_nww_bohemian_autonomists = {
     }
     ai_will_do = {
         factor = 20
+    }
+}
+```
+
+### `common/ai_strategy/GER_bohemian_strategy.txt`
+
+```pdx
+GER_nww_finance_bohemian_intervention = {
+    enable = {
+        tag = GER
+        has_focus_tree = GER_focus
+        has_completed_focus = GER_nww_prague_network
+        AUS = {
+            GER_nww_bohemian_target_open = yes
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = pp_spend_priority
+        id = decision
+        value = 100
+    }
+    ai_strategy = {
+        type = pp_spend_priority
+        id = relation
+        value = -100
     }
 }
 ```
@@ -9625,6 +13143,10 @@ NWW_GER_historical = {
     }
     ai_national_focuses = {
         GER_the_gilded_colossus
+        GER_the_kaiser_endures
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_prussian_traditions
         GER_fund_the_reichswehr
         GER_the_potsdam_coup
         GER_dissolve_the_reichstag
@@ -9636,15 +13158,11 @@ NWW_GER_historical = {
         GER_strike_the_west
         GER_the_second_naval_race
         GER_krupp_and_thyssen
-        GER_the_kaiser_endures
-        GER_prussian_traditions
         GER_1
         GER_nww_electrical_grid
         GER_5
         GER_6
         GER_mitteleuropa_trade
-        GER_guardians_of_the_reich
-        GER_nww_prague_network
         GER_nww_silesian_steel
         GER_3
         GER_7
@@ -9662,9 +13180,65 @@ NWW_GER_historical = {
         GER_9
         GER_10
         GER_nww_industrial_research
+        GER_nww_general_staff
+        GER_nww_staff_college
+        GER_nww_mission_command
+        GER_nww_army_signals
+        GER_nww_infantry_standardisation
+        GER_nww_artillery_directorate
+        GER_nww_combat_engineers
+        GER_nww_motor_transport
+        GER_nww_armour_school
+        GER_nww_medium_tank_programme
+        GER_nww_panzergrenadiers
+        GER_nww_army_rail_logistics
+        GER_nww_field_hospitals
+        GER_nww_combined_arms_exercises
+        GER_nww_imperial_army_readiness
+        GER_nww_imperial_air_service
+        GER_nww_air_academies
+        GER_nww_fighter_design
+        GER_nww_interceptor_control
+        GER_nww_night_fighters
+        GER_nww_battlefield_aviation
+        GER_nww_forward_air_controllers
+        GER_nww_long_range_bombers
+        GER_nww_air_navigation
+        GER_nww_air_transport
+        GER_nww_integrated_air_operations
+        GER_nww_aeronautical_institutes
+        GER_nww_admiralty_staff
+        GER_nww_imperial_shipyards
+        GER_nww_battlefleet_modernisation
+        GER_nww_capital_ship_fire_control
+        GER_nww_fleet_air_arm
+        GER_nww_fleet_carriers
+        GER_nww_carrier_groups
+        GER_nww_screening_squadrons
+        GER_nww_convoy_escorts
+        GER_nww_submarine_patrols
+        GER_nww_ocean_replenishment
+        GER_nww_fleet_repair_bases
+        GER_nww_joint_naval_exercises
+        GER_nww_high_seas_readiness
+        GER_nww_regional_enterprises
+        GER_nww_export_machinery
+        GER_nww_consumer_markets
+        GER_nww_civil_energy_reserve
+        GER_nww_investment_dividend
+        GER_nww_defence_procurement
+        GER_nww_arsenal_dispersal
+        GER_nww_strategic_reserves
+        GER_nww_defence_standardisation
+        GER_nww_defence_energy_reserve
+        GER_nww_procurement_continuity
     }
     weight = {
         factor = 100
+    }
+    focus_factors = {
+        GER_nww_civil_investment = 0
+        GER_nww_deliberate_battle = 0
     }
 }
 NWW_GER_democratic = {
@@ -9682,6 +13256,10 @@ NWW_GER_democratic = {
     }
     ai_national_focuses = {
         GER_the_gilded_colossus
+        GER_the_kaiser_endures
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_prussian_traditions
         GER_empower_the_chancellor
         GER_parliamentary_spring
         GER_true_constitutional_monarchy
@@ -9692,15 +13270,11 @@ NWW_GER_democratic = {
         GER_anti_imperialist_crusade
         GER_shield_against_the_reds
         GER_krupp_and_thyssen
-        GER_the_kaiser_endures
-        GER_prussian_traditions
         GER_1
         GER_nww_electrical_grid
         GER_5
         GER_6
         GER_mitteleuropa_trade
-        GER_guardians_of_the_reich
-        GER_nww_prague_network
         GER_nww_silesian_steel
         GER_3
         GER_7
@@ -9718,9 +13292,65 @@ NWW_GER_democratic = {
         GER_9
         GER_10
         GER_nww_industrial_research
+        GER_nww_general_staff
+        GER_nww_staff_college
+        GER_nww_deliberate_battle
+        GER_nww_army_signals
+        GER_nww_infantry_standardisation
+        GER_nww_artillery_directorate
+        GER_nww_combat_engineers
+        GER_nww_motor_transport
+        GER_nww_armour_school
+        GER_nww_medium_tank_programme
+        GER_nww_panzergrenadiers
+        GER_nww_army_rail_logistics
+        GER_nww_field_hospitals
+        GER_nww_combined_arms_exercises
+        GER_nww_imperial_army_readiness
+        GER_nww_imperial_air_service
+        GER_nww_air_academies
+        GER_nww_fighter_design
+        GER_nww_interceptor_control
+        GER_nww_night_fighters
+        GER_nww_battlefield_aviation
+        GER_nww_forward_air_controllers
+        GER_nww_long_range_bombers
+        GER_nww_air_navigation
+        GER_nww_air_transport
+        GER_nww_integrated_air_operations
+        GER_nww_aeronautical_institutes
+        GER_nww_admiralty_staff
+        GER_nww_imperial_shipyards
+        GER_nww_battlefleet_modernisation
+        GER_nww_capital_ship_fire_control
+        GER_nww_fleet_air_arm
+        GER_nww_fleet_carriers
+        GER_nww_carrier_groups
+        GER_nww_screening_squadrons
+        GER_nww_convoy_escorts
+        GER_nww_submarine_patrols
+        GER_nww_ocean_replenishment
+        GER_nww_fleet_repair_bases
+        GER_nww_joint_naval_exercises
+        GER_nww_high_seas_readiness
+        GER_nww_civil_investment
+        GER_nww_regional_enterprises
+        GER_nww_export_machinery
+        GER_nww_consumer_markets
+        GER_nww_civil_energy_reserve
+        GER_nww_investment_dividend
+        GER_nww_arsenal_dispersal
+        GER_nww_strategic_reserves
+        GER_nww_defence_standardisation
+        GER_nww_defence_energy_reserve
+        GER_nww_procurement_continuity
     }
     weight = {
         factor = 100
+    }
+    focus_factors = {
+        GER_nww_defence_procurement = 0
+        GER_nww_mission_command = 0
     }
 }
 NWW_GER_fascist = {
@@ -9738,6 +13368,10 @@ NWW_GER_fascist = {
     }
     ai_national_focuses = {
         GER_the_gilded_colossus
+        GER_the_kaiser_endures
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_prussian_traditions
         GER_pan_german_leagues
         GER_the_pan_germanic_triumph
         GER_abolish_the_hohenzollerns
@@ -9748,15 +13382,11 @@ NWW_GER_fascist = {
         GER_total_assimilation
         GER_hegemony_over_europe_focus
         GER_krupp_and_thyssen
-        GER_the_kaiser_endures
-        GER_prussian_traditions
         GER_1
         GER_nww_electrical_grid
         GER_5
         GER_6
         GER_mitteleuropa_trade
-        GER_guardians_of_the_reich
-        GER_nww_prague_network
         GER_nww_silesian_steel
         GER_3
         GER_7
@@ -9774,9 +13404,65 @@ NWW_GER_fascist = {
         GER_9
         GER_10
         GER_nww_industrial_research
+        GER_nww_general_staff
+        GER_nww_staff_college
+        GER_nww_mission_command
+        GER_nww_army_signals
+        GER_nww_infantry_standardisation
+        GER_nww_artillery_directorate
+        GER_nww_combat_engineers
+        GER_nww_motor_transport
+        GER_nww_armour_school
+        GER_nww_medium_tank_programme
+        GER_nww_panzergrenadiers
+        GER_nww_army_rail_logistics
+        GER_nww_field_hospitals
+        GER_nww_combined_arms_exercises
+        GER_nww_imperial_army_readiness
+        GER_nww_imperial_air_service
+        GER_nww_air_academies
+        GER_nww_fighter_design
+        GER_nww_interceptor_control
+        GER_nww_night_fighters
+        GER_nww_battlefield_aviation
+        GER_nww_forward_air_controllers
+        GER_nww_long_range_bombers
+        GER_nww_air_navigation
+        GER_nww_air_transport
+        GER_nww_integrated_air_operations
+        GER_nww_aeronautical_institutes
+        GER_nww_admiralty_staff
+        GER_nww_imperial_shipyards
+        GER_nww_battlefleet_modernisation
+        GER_nww_capital_ship_fire_control
+        GER_nww_fleet_air_arm
+        GER_nww_fleet_carriers
+        GER_nww_carrier_groups
+        GER_nww_screening_squadrons
+        GER_nww_convoy_escorts
+        GER_nww_submarine_patrols
+        GER_nww_ocean_replenishment
+        GER_nww_fleet_repair_bases
+        GER_nww_joint_naval_exercises
+        GER_nww_high_seas_readiness
+        GER_nww_regional_enterprises
+        GER_nww_export_machinery
+        GER_nww_consumer_markets
+        GER_nww_civil_energy_reserve
+        GER_nww_investment_dividend
+        GER_nww_defence_procurement
+        GER_nww_arsenal_dispersal
+        GER_nww_strategic_reserves
+        GER_nww_defence_standardisation
+        GER_nww_defence_energy_reserve
+        GER_nww_procurement_continuity
     }
     weight = {
         factor = 100
+    }
+    focus_factors = {
+        GER_nww_civil_investment = 0
+        GER_nww_deliberate_battle = 0
     }
 }
 NWW_GER_communist = {
@@ -9794,6 +13480,10 @@ NWW_GER_communist = {
     }
     ai_national_focuses = {
         GER_the_gilded_colossus
+        GER_the_kaiser_endures
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_prussian_traditions
         GER_organize_ruhr_workers
         GER_the_spartacist_uprising
         GER_german_soviet_republic
@@ -9805,15 +13495,11 @@ NWW_GER_communist = {
         GER_nva_mass_mobilization
         GER_challenge_moscow
         GER_krupp_and_thyssen
-        GER_the_kaiser_endures
-        GER_prussian_traditions
         GER_1
         GER_nww_electrical_grid
         GER_5
         GER_6
         GER_mitteleuropa_trade
-        GER_guardians_of_the_reich
-        GER_nww_prague_network
         GER_nww_silesian_steel
         GER_3
         GER_7
@@ -9831,9 +13517,65 @@ NWW_GER_communist = {
         GER_9
         GER_10
         GER_nww_industrial_research
+        GER_nww_general_staff
+        GER_nww_staff_college
+        GER_nww_mission_command
+        GER_nww_army_signals
+        GER_nww_infantry_standardisation
+        GER_nww_artillery_directorate
+        GER_nww_combat_engineers
+        GER_nww_motor_transport
+        GER_nww_armour_school
+        GER_nww_medium_tank_programme
+        GER_nww_panzergrenadiers
+        GER_nww_army_rail_logistics
+        GER_nww_field_hospitals
+        GER_nww_combined_arms_exercises
+        GER_nww_imperial_army_readiness
+        GER_nww_imperial_air_service
+        GER_nww_air_academies
+        GER_nww_fighter_design
+        GER_nww_interceptor_control
+        GER_nww_night_fighters
+        GER_nww_battlefield_aviation
+        GER_nww_forward_air_controllers
+        GER_nww_long_range_bombers
+        GER_nww_air_navigation
+        GER_nww_air_transport
+        GER_nww_integrated_air_operations
+        GER_nww_aeronautical_institutes
+        GER_nww_admiralty_staff
+        GER_nww_imperial_shipyards
+        GER_nww_battlefleet_modernisation
+        GER_nww_capital_ship_fire_control
+        GER_nww_fleet_air_arm
+        GER_nww_fleet_carriers
+        GER_nww_carrier_groups
+        GER_nww_screening_squadrons
+        GER_nww_convoy_escorts
+        GER_nww_submarine_patrols
+        GER_nww_ocean_replenishment
+        GER_nww_fleet_repair_bases
+        GER_nww_joint_naval_exercises
+        GER_nww_high_seas_readiness
+        GER_nww_regional_enterprises
+        GER_nww_export_machinery
+        GER_nww_consumer_markets
+        GER_nww_civil_energy_reserve
+        GER_nww_investment_dividend
+        GER_nww_defence_procurement
+        GER_nww_arsenal_dispersal
+        GER_nww_strategic_reserves
+        GER_nww_defence_standardisation
+        GER_nww_defence_energy_reserve
+        GER_nww_procurement_continuity
     }
     weight = {
         factor = 100
+    }
+    focus_factors = {
+        GER_nww_civil_investment = 0
+        GER_nww_deliberate_battle = 0
     }
 }
 ```
@@ -13589,7 +17331,19 @@ state = {
     "GER_nww_worker_housing",
     "GER_nww_electromechanical_labs",
     "GER_nww_supply_resilience",
-    "GER_nww_prague_network"
+    "GER_nww_prague_network",
+    "GER_nww_civil_investment",
+    "GER_nww_regional_enterprises",
+    "GER_nww_export_machinery",
+    "GER_nww_consumer_markets",
+    "GER_nww_civil_energy_reserve",
+    "GER_nww_investment_dividend",
+    "GER_nww_defence_procurement",
+    "GER_nww_arsenal_dispersal",
+    "GER_nww_strategic_reserves",
+    "GER_nww_defence_standardisation",
+    "GER_nww_defence_energy_reserve",
+    "GER_nww_procurement_continuity"
   ],
   "persistent_bonuses": {
     "GER_krupp_and_thyssen": {
@@ -13627,6 +17381,36 @@ state = {
     },
     "GER_nww_industrial_research": {
       "research": 0.05
+    },
+    "GER_nww_civil_investment": {
+      "construction": 0.05
+    },
+    "GER_nww_regional_enterprises": {},
+    "GER_nww_export_machinery": {
+      "research": 0.05
+    },
+    "GER_nww_consumer_markets": {},
+    "GER_nww_civil_energy_reserve": {
+      "energy": 0.1
+    },
+    "GER_nww_investment_dividend": {
+      "construction": 0.05
+    },
+    "GER_nww_defence_procurement": {
+      "output": 0.05
+    },
+    "GER_nww_arsenal_dispersal": {},
+    "GER_nww_strategic_reserves": {
+      "maximum": 0.05
+    },
+    "GER_nww_defence_standardisation": {
+      "efficiency": 0.05
+    },
+    "GER_nww_defence_energy_reserve": {
+      "energy": 0.1
+    },
+    "GER_nww_procurement_continuity": {
+      "output": 0.05
     }
   },
   "modifiers": {
@@ -14475,9 +18259,69 @@ GER_zentrale_planung
     "ru": "Преобразуем рабочие ополчения в постоянную массовую армию. Увеличим долю военнообязанного населения ещё на 5 процентных пунктов, доведя общий бонус до 10. Сохраним +10% к восстановлению организации и сократим время подготовки армии на 10%. Приоритет пехоты оборачивается штрафом 20% к скорости исследований авиационной и морской техники.",
     "en": "Turn the workers’ militias into a permanent mass army. Raise recruitable population by another 5 percentage points, to 10 in total. Retain +10% organisation recovery and reduce army training time by 10%. Prioritising infantry imposes a 20% research-speed penalty on aircraft and naval equipment."
   },
+  "GER_nww_admiralty_staff_desc": {
+    "ru": "Учредим постоянную программу «Объединённый штаб адмиралтейства». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish unified admiralty staff as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_aeronautical_institutes_desc": {
+    "ru": "Учредим постоянную программу «Имперские институты аэродинамики». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish imperial aeronautical institutes as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_air_academies_desc": {
+    "ru": "Учредим постоянную программу «Авиационные академии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish air academies as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_air_doctrine": {
+    "ru": "Развитие военной доктрины",
+    "en": "Military Doctrine Development"
+  },
+  "GER_nww_air_navigation_desc": {
+    "ru": "Учредим постоянную программу «Радионавигация и метеослужба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish air navigation and weather service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_air_programme": {
+    "ru": "Имперская авиационная программа",
+    "en": "Imperial Air Programme"
+  },
+  "GER_nww_air_programme_desc": {
+    "ru": "Параметры зависят от завершённых реформ.",
+    "en": "Parameters reflect completed service reforms."
+  },
+  "GER_nww_air_transport_desc": {
+    "ru": "Учредим постоянную программу «Транспортная авиация». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish air transport service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_armour_school_desc": {
+    "ru": "Учредим постоянную программу «Школа бронетанковых войск». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish armoured troops school as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_army_programme": {
+    "ru": "Имперская армейская программа",
+    "en": "Imperial Army Programme"
+  },
+  "GER_nww_army_programme_desc": {
+    "ru": "Параметры зависят от завершённых реформ.",
+    "en": "Parameters reflect completed service reforms."
+  },
+  "GER_nww_army_rail_logistics_desc": {
+    "ru": "Учредим постоянную программу «Железнодорожная служба армии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish army railway service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_army_signals_desc": {
+    "ru": "Учредим постоянную программу «Связь общевойсковых соединений». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish combined arms signals as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
   "GER_nww_arsenal_contracts_desc": {
     "ru": "Вместо чрезвычайных займов арсеналы получат предсказуемые многолетние заказы. Это повышает выпуск уже существующих военных заводов.",
     "en": "Give arsenals predictable long-term contracts, improving the output of existing military factories."
+  },
+  "GER_nww_arsenal_dispersal_desc": {
+    "ru": "Продолжим выбранную промышленную программу: рассредоточение арсеналов. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through disperse the arsenals. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_artillery_directorate_desc": {
+    "ru": "Учредим постоянную программу «Управление полевой артиллерии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish field artillery directorate as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_austrian_1939_tt": {
     "ru": "Ультиматум Австрии доступен §Yне ранее 1 января 1939 года§!.",
@@ -14495,6 +18339,14 @@ GER_zentrale_planung
     "ru": "Гражданские и военные предприятия получают сбалансированную программу заказов. Имперская промышленность должна выдержать длительное напряжение без долговых миссий.",
     "en": "Balance civilian and military orders by building one enterprise of each kind on owned and controlled German core territory."
   },
+  "GER_nww_battlefield_aviation_desc": {
+    "ru": "Учредим постоянную программу «Авиация поля боя». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish battlefield aviation as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_battlefleet_modernisation_desc": {
+    "ru": "Учредим постоянную программу «Модернизация линейного флота». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish battlefleet modernisation as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
   "GER_nww_bohemian_autonomists": {
     "ru": "Поддержать богемских автономистов",
     "en": "Support Bohemian Autonomists"
@@ -14502,6 +18354,14 @@ GER_zentrale_planung
   "GER_nww_bohemian_autonomists_desc": {
     "ru": "Финансирование местных организаций, подпольная печать и посредники усилят требования суверенитета.\\n\\nНапряжённость: §Y[?AUS.AUS_bohemian_tension|0]/10§!. Немецкий вклад: §Y[?AUS.AUS_bohemian_german_share|1]%§!.\\n\\nКаждое завершение добавляет §R+2§! напряжённости (до предела 10). При отделении Богемия становится нашим вассалом, если текущий немецкий вклад §Yстрого больше 60%§!. Австрийские уступки пропорционально уменьшают наш вклад. После урегулирования или отделения операция недоступна.",
     "en": "Funding local organizations, clandestine presses and intermediaries strengthens demands for sovereignty.\\n\\nTension: §Y[?AUS.AUS_bohemian_tension|0]/10§!. German contribution: §Y[?AUS.AUS_bohemian_german_share|1]%§!.\\n\\nEach completion adds §R+2§! tension, capped at 10. Upon secession, Bohemia becomes our puppet if the current German share is §Ystrictly greater than 60%§!. Austrian concessions proportionally reduce our contribution. The operation ends with settlement or secession."
+  },
+  "GER_nww_bohemian_civic_support": {
+    "ru": "Поддержать богемские автономные общества",
+    "en": "Support Bohemian Civic Societies"
+  },
+  "GER_nww_bohemian_civic_support_desc": {
+    "ru": "Выделим 75 политической власти на 45-дневную программу консульских связей, печати и общественных объединений в Богемии. Если кризис остаётся открытым, его напряжённость и германский вклад вырастут на 2, до общего предела 10. При урегулировании кризиса, потере Богемии Австрией, союзе или войне финансирование возвращается. Новое финансирование возможно после 30-дневного перерыва.",
+    "en": "Spend 75 political power on 45 days of consular, press and civic support in Bohemia. An unresolved crisis gains 2 tension and 2 German contribution, capped at 10 total tension. Funding is refunded if the crisis closes, Austria loses Bohemia, or alliance or war blocks intervention. Further support follows a 30-day interval."
   },
   "GER_nww_bohemian_operation_reward_tt": {
     "ru": "§R+2§! к богемской напряжённости, но не выше 10. Фактически добавленное давление учитывается как вклад Германии. Если это вызывает отделение при немецкой доле §Yболее 60%§!, новая Богемия становится германским вассалом. Ровно 60% недостаточно.",
@@ -14511,9 +18371,33 @@ GER_zentrale_planung
     "ru": "Открывает операцию §Y«Поддержать богемских автономистов»§! в разведывательном агентстве против §YАвстрии§! (требуется La Résistance). Операция длится §Y45 дней§!, требует одного агента, сеть §Y35§!, две гражданские фабрики, 100 единиц пехотного и 25 единиц дополнительного оснащения.",
     "en": "Unlocks §YSupport Bohemian Autonomists§! in the intelligence agency against §YAustria§! (La Résistance required). The operation takes §Y45 days§!, one operative, a §Y35§! network, two civilian factories, 100 infantry equipment and 25 support equipment."
   },
+  "GER_nww_capital_ship_fire_control_desc": {
+    "ru": "Учредим постоянную программу «Управление огнём тяжёлых кораблей». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish capital ship fire control as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_carrier_groups_desc": {
+    "ru": "Объединим палубные эскадрильи, авианосцы и корабли охранения в соединения с единым планом воздушных ударов.",
+    "en": "Unite deck squadrons, carriers and escorts in task groups with a common air strike plan."
+  },
+  "GER_nww_civil_energy_reserve_desc": {
+    "ru": "Продолжим выбранную промышленную программу: резерв гражданской энергетики. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through civil energy reserve. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_civil_investment_desc": {
+    "ru": "Направим сбережения и имперские заказы в гражданские предприятия. Взаимоисключающий выбор: четырёхлетняя оборонная программа станет недоступна.",
+    "en": "Direct savings and public orders into civilian enterprises. This excludes the four year defence programme."
+  },
   "GER_nww_colonial_ports_desc": {
     "ru": "Складские и перерабатывающие мощности поддержат заморские перевозки. Программа не передаёт чужие территории и не создаёт германские колониальные коры.",
     "en": "Expand civilian storage and processing capacity for overseas shipping without transferring territory or creating colonial cores."
+  },
+  "GER_nww_combat_engineers_desc": {
+    "ru": "Учредим постоянную программу «Штурмовые сапёры». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish assault engineers as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_combined_arms_exercises_desc": {
+    "ru": "Учредим постоянную программу «Большие общевойсковые манёвры». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish grand combined arms exercises as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_communist_plan": {
     "ru": "Спартакистский путь",
@@ -14522,6 +18406,30 @@ GER_zentrale_planung
   "GER_nww_communist_plan_desc": {
     "ru": "Рабочий мандат, настоящая гражданская война и революционная республика.",
     "en": "A worker mandate, a real civil war and a revolutionary republic."
+  },
+  "GER_nww_consumer_markets_desc": {
+    "ru": "Продолжим выбранную промышленную программу: общий потребительский рынок. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through common consumer market. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_convoy_escorts_desc": {
+    "ru": "Учредим постоянную программу «Противолодочное сопровождение». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish anti submarine escorts as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_defence_energy_reserve_desc": {
+    "ru": "Продолжим выбранную промышленную программу: энергетика оборонных производств. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through defence energy reserve. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_defence_procurement_desc": {
+    "ru": "Зафиксируем оплаченные оборонные заказы на четыре года. Программа развивает арсеналы без МЕФО, долгов завоевательной экономики и требования захватов; альтернативные гражданские инвестиции станут недоступны.",
+    "en": "Commit to funded defence orders for four years. Expand arsenals without MEFO, conquest debt or annexation requirements; this excludes the civil investment programme."
+  },
+  "GER_nww_defence_standardisation_desc": {
+    "ru": "Продолжим выбранную промышленную программу: единые оборонные контракты. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through standard defence contracts. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_deliberate_battle_desc": {
+    "ru": "Поставим согласование штабов и устойчивость соединений выше самостоятельности отдельных командиров. Этот выбор исключает школу самостоятельного командования.",
+    "en": "Prioritise staff coordination and formation cohesion. This choice excludes mission command."
   },
   "GER_nww_democratic_plan": {
     "ru": "Парламентская весна",
@@ -14547,6 +18455,10 @@ GER_zentrale_planung
     "ru": "Государственные гарантии экспортных контрактов поддержат гражданские предприятия. Торговля станет подготовкой к переговорам, а не поводом для немедленной войны.",
     "en": "Export guarantees support another civilian enterprise. Trade prepares the ground for diplomacy rather than an immediate war."
   },
+  "GER_nww_export_machinery_desc": {
+    "ru": "Продолжим выбранную промышленную программу: экспорт станков и машин. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through machinery exports. New enterprises require controlled imperial core territory."
+  },
   "GER_nww_fascist_plan": {
     "ru": "Пангерманский триумф",
     "en": "Pan-German Triumph"
@@ -14555,9 +18467,41 @@ GER_zentrale_planung
     "ru": "Поддержка лиг, смена режима и подготовленная экспансия националистов.",
     "en": "League support, regime change and prepared nationalist expansion."
   },
+  "GER_nww_field_hospitals_desc": {
+    "ru": "Учредим постоянную программу «Военно-медицинская служба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish military medical service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_fighter_design_desc": {
+    "ru": "Учредим постоянную программу «Современный истребитель». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish modern fighter design as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_fleet_air_arm_desc": {
+    "ru": "Учредим постоянную программу «Морская авиационная служба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish fleet air arm as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_fleet_carriers_desc": {
+    "ru": "Учредим постоянную программу «Программа эскадренных авианосцев». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish fleet carrier programme as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_fleet_repair_bases_desc": {
+    "ru": "Учредим постоянную программу «Базы ремонта и докования». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish fleet repair bases as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_forward_air_controllers_desc": {
+    "ru": "Учредим постоянную программу «Передовые авианаводчики». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish forward air controllers as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
   "GER_nww_freight_corridors_desc": {
     "ru": "Улучшим инфраструктуру двух собственных германских промышленных регионов. Заводы должны получать уголь и комплектующие до начала новой гонки вооружений.",
     "en": "Improve infrastructure twice in eligible owned and controlled German core regions so industry can receive coal and components."
+  },
+  "GER_nww_general_staff_desc": {
+    "ru": "Обновим планирование, распределение обязанностей и подготовку офицеров Большого генерального штаба.",
+    "en": "Renew planning, staff responsibilities and officer training in the Great General Staff."
+  },
+  "GER_nww_high_seas_readiness_desc": {
+    "ru": "Учредим постоянную программу «Боеготовность Флота открытого моря». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish high seas fleet readiness as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_historical_eastern_war_ready": {
     "ru": "Исторический ИИ переходит к восточным военным целям с §Y1940 года§!.",
@@ -14566,6 +18510,18 @@ GER_zentrale_planung
   "GER_nww_historical_pressure_ready": {
     "ru": "Исторический ИИ начинает давление на Миттельевропу с §Y1939 года§!.",
     "en": "Historical AI begins coercive pressure in Mitteleuropa in §Y1939§!."
+  },
+  "GER_nww_imperial_air_service_desc": {
+    "ru": "Учредим постоянную программу «Имперская воздушная служба». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish imperial air service as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_imperial_army_readiness_desc": {
+    "ru": "Учредим постоянную программу «Готовность имперской армии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish imperial army readiness as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_imperial_shipyards_desc": {
+    "ru": "Учредим постоянную программу «Верфи Киля и Вильгельмсхафена». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish kiel and wilhelmshaven shipyards as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_industrial_program": {
     "ru": "Имперская промышленная программа",
@@ -14607,25 +18563,117 @@ GER_zentrale_planung
     "ru": "Имперская промышленная программа: скорость исследований §G+5%§!.",
     "en": "Imperial Industrial Program: research speed §G+5%§!."
   },
+  "GER_nww_infantry_standardisation_desc": {
+    "ru": "Учредим постоянную программу «Единое пехотное вооружение». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish standard infantry armaments as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_integrated_air_operations_desc": {
+    "ru": "Учредим постоянную программу «Единое управление воздушной войной». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish integrated air operations as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_interceptor_control_desc": {
+    "ru": "Учредим постоянную программу «Сеть управления перехватом». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish interceptor control network as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_investment_dividend_desc": {
+    "ru": "Продолжим выбранную промышленную программу: дивиденды мирного развития. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through dividend of peaceful development. New enterprises require controlled imperial core territory."
+  },
   "GER_nww_investment_guarantees_desc": {
     "ru": "Прозрачные гарантии заказов завершают инвестиционную программу земель. Рост строительства не требует запуска ванильной экономики завоеваний.",
     "en": "Predictable procurement completes the states investment program and permanently improves construction speed."
+  },
+  "GER_nww_joint_naval_exercises_desc": {
+    "ru": "Учредим постоянную программу «Совместные манёвры флота и авиации». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish joint fleet and air exercises as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_land_doctrine": {
+    "ru": "Развитие военной доктрины",
+    "en": "Military Doctrine Development"
+  },
+  "GER_nww_long_range_bombers_desc": {
+    "ru": "Учредим постоянную программу «Дальняя бомбардировочная авиация». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish long range bomber command as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_machine_tools_desc": {
     "ru": "Машиностроительные фирмы согласуют выпуск станков, оснастки и запасных частей. Это ускорит развёртывание новых производственных линий.",
     "en": "Coordinate machine tools, fixtures and spare parts to speed the development of new production lines and industrial technology."
   },
+  "GER_nww_medium_tank_programme_desc": {
+    "ru": "Учредим постоянную программу «Средний танк для имперской армии». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish imperial medium tank programme as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
   "GER_nww_merchant_contracts_desc": {
     "ru": "Долгосрочные контракты дадут торговому флоту транспорты для устойчивых поставок между метрополией и заморскими владениями.",
     "en": "Long-term shipping contracts supply twenty convoys for trade between the metropole and overseas possessions."
+  },
+  "GER_nww_mission_command_desc": {
+    "ru": "Доверим младшим командирам исполнение общего замысла. Эта школа ускоряет подготовку частей и исключает методическую систему сражения.",
+    "en": "Delegate execution of the common intent to junior commanders. This training school excludes deliberate battle."
+  },
+  "GER_nww_motor_transport_desc": {
+    "ru": "Учредим постоянную программу «Автомобильные колонны». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish motor transport columns as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_naval_doctrine": {
+    "ru": "Развитие военной доктрины",
+    "en": "Military Doctrine Development"
+  },
+  "GER_nww_navy_programme": {
+    "ru": "Программа Флота открытого моря",
+    "en": "High Seas Fleet Programme"
+  },
+  "GER_nww_navy_programme_desc": {
+    "ru": "Параметры зависят от завершённых реформ.",
+    "en": "Parameters reflect completed service reforms."
+  },
+  "GER_nww_night_fighters_desc": {
+    "ru": "Учредим постоянную программу «Эскадрильи ночных истребителей». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish night fighter squadrons as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_ocean_replenishment_desc": {
+    "ru": "Учредим постоянную программу «Океанское снабжение». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish ocean replenishment as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_panzergrenadiers_desc": {
+    "ru": "Учредим постоянную программу «Моторизованная пехота сопровождения». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish panzergrenadiers as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_prague_network_desc": {
     "ru": "Разведка установит контакты с богемскими автономистами. При наличии La Résistance в агентстве откроется операция против Австрии: каждое завершение даёт +2 к напряжённости и учитывается как немецкий вклад.",
     "en": "Intelligence contacts with Bohemian autonomists unlock an agency operation against Austria with La Resistance. Each completion adds two tension and counts toward German influence."
   },
+  "GER_nww_procurement_continuity_desc": {
+    "ru": "Продолжим выбранную промышленную программу: непрерывность оборонных заказов. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through continuity of defence orders. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_regional_enterprises_desc": {
+    "ru": "Продолжим выбранную промышленную программу: предприятия имперских земель. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through regional enterprises. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_screening_squadrons_desc": {
+    "ru": "Учредим постоянную программу «Эскадры охранения». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish screening squadrons as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_service_research": {
+    "ru": "Исследования вооружённых сил",
+    "en": "Armed Forces Research"
+  },
   "GER_nww_silesian_steel_desc": {
     "ru": "Модернизация силезских домен даст сталь для станков, рельсов и вооружения. Награда предоставляется только при нашем владении и контроле над Силезией.",
     "en": "Modernize Silesian furnaces to supply steel for machinery, railways and armaments. The steel is added only while we own and control the region."
+  },
+  "GER_nww_staff_college_desc": {
+    "ru": "Учредим постоянную программу «Штабные академии земель». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish state staff colleges as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
+  },
+  "GER_nww_strategic_reserves_desc": {
+    "ru": "Продолжим выбранную промышленную программу: стратегические производственные резервы. Предприятия строятся на контролируемой национальной территории империи.",
+    "en": "Advance our chosen industrial programme through strategic production reserves. New enterprises require controlled imperial core territory."
+  },
+  "GER_nww_submarine_patrols_desc": {
+    "ru": "Учредим постоянную программу «Подводные патрули океана». Военные школы, испытания и совместные учения обеспечат подготовку специалистов и освоение нового вооружения.",
+    "en": "Establish ocean submarine patrols as a lasting service programme. Schools, trials and joint exercises will train specialists and develop modern equipment."
   },
   "GER_nww_supply_resilience_desc": {
     "ru": "Резерв локомотивов и согласованные контракты укрепят снабжение. Программа создаёт реальный транспорт, не заменяя его абстрактной наградой людскими ресурсами.",
@@ -14730,6 +18778,78 @@ GER_zentrale_planung
   "GER_schlieffen_reborn_desc": {
     "ru": "Современная штабная работа заменит планы прошлого столетия. С 1941 года мы сможем добиваться подчинения Нидерландов и Бельгии. Исторический ИИ сначала должен завершить польскую и австрийскую кампании.",
     "en": "Modern staff work replaces a plan inherited from the last century. From 1941 we can demand the subordination of the Netherlands and Belgium. The historical AI must first settle its Polish and Austrian campaigns."
+  },
+  "GER_service_air_accidents_tt": {
+    "ru": "Вероятность аварий: §G-5%§!",
+    "en": "Air accident chance: §G-5%§!"
+  },
+  "GER_service_air_cas_tt": {
+    "ru": "Эффективность штурмовиков: §G+5%§!",
+    "en": "Close air support efficiency: §G+5%§!"
+  },
+  "GER_service_air_mission_tt": {
+    "ru": "Эффективность воздушных заданий: §G+5%§!",
+    "en": "Air mission efficiency: §G+5%§!"
+  },
+  "GER_service_air_range_tt": {
+    "ru": "Радиус действия: §G+5%§!",
+    "en": "Operational range: §G+5%§!"
+  },
+  "GER_service_air_superiority_tt": {
+    "ru": "Эффективность превосходства в воздухе: §G+5%§!",
+    "en": "Air superiority efficiency: §G+5%§!"
+  },
+  "GER_service_army_armour_tt": {
+    "ru": "Атака бронетехники: §G+5%§!",
+    "en": "Armour attack: §G+5%§!"
+  },
+  "GER_service_army_artillery_tt": {
+    "ru": "Атака артиллерии: §G+5%§!",
+    "en": "Artillery attack: §G+5%§!"
+  },
+  "GER_service_army_experience_tt": {
+    "ru": "Прирост армейского опыта: §G+10%§!",
+    "en": "Army experience gain: §G+10%§!"
+  },
+  "GER_service_army_org_tt": {
+    "ru": "Организация дивизий: §G+5%§!",
+    "en": "Division organisation: §G+5%§!"
+  },
+  "GER_service_army_planning_tt": {
+    "ru": "Скорость планирования: §G+10%§!",
+    "en": "Planning speed: §G+10%§!"
+  },
+  "GER_service_army_supply_tt": {
+    "ru": "Расход снабжения: §G-10%§!",
+    "en": "Supply consumption: §G-10%§!"
+  },
+  "GER_service_army_training_tt": {
+    "ru": "Время подготовки дивизий: §G-10%§!",
+    "en": "Division training time: §G-10%§!"
+  },
+  "GER_service_navy_coordination_tt": {
+    "ru": "Координация флота: §G+5%§!",
+    "en": "Fleet coordination: §G+5%§!"
+  },
+  "GER_service_navy_output_tt": {
+    "ru": "Производительность верфей: §G+5%§!",
+    "en": "Dockyard output: §G+5%§!"
+  },
+  "GER_service_navy_range_tt": {
+    "ru": "Радиус действия: §G+10%§!",
+    "en": "Operational range: §G+10%§!"
+  },
+  "GER_service_navy_repair_tt": {
+    "ru": "Скорость ремонта: §G+10%§!",
+    "en": "Repair speed: §G+10%§!"
+  },
+  "GER_service_navy_screens_tt": {
+    "ru": "Атака кораблей охранения: §G+5%§!",
+    "en": "Screen attack: §G+5%§!"
+  },
+  "GER_service_navy_sortie_tt": {
+    "ru": "Эффективность палубных вылетов: §G+10%§!",
+    "en": "Carrier sortie efficiency: §G+10%§!"
   },
   "GER_shield_against_the_reds_desc": {
     "ru": "Демократия должна уметь защищаться. Мы получим +15% к обороне на национальных территориях, ещё две добровольческие дивизии и снижение порога мировой напряжённости для добровольцев на 50 пунктов. Разрешим отправку добровольцев и поддержим независимые страны, сопротивляющиеся фашистской или коммунистической агрессии.",
@@ -15147,22 +19267,25 @@ GER_zentrale_planung
 Повторный экспорт: `python tools/export_ger_focuses.py --snapshot-date YYYY-MM-DD`. В каталоге фокусов только прямые definitions и shared_focus, действительно импортированные в GER_focus. SHA-256 источников:
 
 ```text
+afbc60c57d28f497dd560a660a5ca79682fb317673cbe8e96aaaabaa2e3f06af  common/ai_strategy/GER_bohemian_strategy.txt
 1b4bd9b5cbc099d5ac43fa4a493543352950dcbe853435dc542b21e5103a4f88  common/ai_strategy/GER_campaign_safety.txt
 8dc22c30b80bd2423d01389fe6becd58070582eafbe1fc9756356f11f031e854  common/ai_strategy/GER_lategame_strategies.txt
 e43259a06cf4ef3cddd060c64a5451a9c0640fdc3da00492ddc1360cc42392fb  common/ai_strategy/GER_pacing.txt
 0699d57eaaa35a3620b17f0a2302c3a7f2c47549ec6a33a7d708d416132daacf  common/ai_strategy/GER_politics.txt
 97b1576d70aadbae7ae4da7a8e6d65e1ff081b8015fd806dc9c9390e5629e335  common/ai_strategy_plans/GER_alternate_strategy_plan.txt
-277e9c8f7e567aff4fd9543be75a246507e8a5b9ed3986f3f4586ae5f6951436  common/ai_strategy_plans/GER_historical.txt
+ab4b547b773903ce5fc4c626dab7a5cb654c26c1519e5faf77460094078e64ae  common/ai_strategy_plans/GER_historical.txt
 280c7a25da36b07e475987735bbec6373bb652ea7892b6aba19dcc78b045b698  common/ai_strategy_plans/GER_historical_strategy_plan.txt
 6a57fad20988de4bc4756a103274278709d0ae01a02a9a18535e1f7e38906d45  common/bop/GER_bop.txt
 cbd921fe03ed1ddf89d82cf829f00d0308b4f204829a288c35b814710ad5037a  common/country_leader/GER_traits.txt
+11825149a5e70e126baa4397db7c22f2e6dbb0d49b8fd12f44d177aa46e4e334  common/decisions/GER_bohemian_decisions.txt
 5cf39dcd8e42634ef9bc469a7d64aa32c021b5d0f5f030aa1dbe3aca606c7456  common/decisions/GER_bop_decisions.txt
 c77a52c8234db9609f9b07889061e93e07d17f81fa2963862099575a403e23c4  common/decisions/categories/GER_categories.txt
 398bcbf55a32226b819f24d23f8afe20b7c89fd623110ab1471da9ee43f0f7d5  common/dynamic_modifiers/GER_industry_modifiers.txt
+9914809e503cbe5d8f1c4f94835b1de30c213118cd2323faaeb3fda44e0de85c  common/dynamic_modifiers/GER_services_modifiers.txt
 8e4cc97b767f392d4b1c1bb3d02a4bc6f123406a413889bc9a5d75150e47648a  common/factions/templates/GER_templates.txt
 cd73161d2064ebbfc9c8426927cd556cfa7963d6cb4789e5837be0738776c74f  common/ideas/GER_ideas.txt
 793a1aae0e549854e696edfc78d94a67a6c3ddb6eb263a08e44460d0c2c96dda  common/ideas/zzz_generic.txt
-770033acf846e5bf7bf1514484c075d1b1497820e67032b58e51c686f375a2bc  common/national_focus/GER_focuses.txt
+20fa4d3a0c36c24effe5cd29db5e6641db5679c6863f53836a8e7788987de7db  common/national_focus/GER_focuses.txt
 23722e3f91518daf83a3d85ba105a7558b30ae18f78700f02c8221dd509f0fec  common/national_focus/GER_native_compatibility.txt
 0d682494179729aa75dd301de5c2fac6c7b096263a783cc7d05df428e6cd74a7  common/national_focus/GER_political.txt
 14ff0756be8dba4053697f780106254675bca734b93d6a5e7b6547ca057dc95f  common/on_actions/GER_campaign_safety_on_actions.txt
@@ -15171,6 +19294,7 @@ fbb8e625b727452470b0f4a516c18d582da19d4c9f83424ba0b94ac22b3f8ced  common/on_acti
 bc192e49c813a3a211a04d2d508863ee3ab6646f8218624095259c3c1ce4d027  common/on_actions/GER_lategame_on_actions.txt
 65c35216335290bfab21df581b66636108ce2f13103049658c25fe238f738b3a  common/on_actions/GER_on_actions.txt
 afe55c16ede4a44da0233bfd4c146271b0ec12191344229f35c6471ba0f6c805  common/on_actions/GER_pacing_on_actions.txt
+4eccd73b127a430b71ec4177c1cdc7c587cb45b9f143602aa43b3c5d022e53b0  common/on_actions/GER_services_on_actions.txt
 9ae6d078865cb3395a551bf4f5a7a721ea8086c90606fce8b23a119a42a5f092  common/operations/GER_bohemian_operations.txt
 e46b3bd3f0eae111f8c8bb48e03b07bcfcab5fd16d6ff7d610686e90b935be17  common/scripted_effects/AUS_overhaul_effects.txt
 1265ad07105a05cd78a807bf5e124182aeacd56ad278357f6c9136584439d672  common/scripted_effects/GER_ai_effects.txt
@@ -15178,16 +19302,17 @@ bfe2c32a037407f8d74fe369e44868ae51d73d8cebd7743f8a69c982e196071b  common/scripte
 85d1aaa5fa58a7d523314accfc65faafc8ae5e9db3d966c475cc6aeaebf9ccd7  common/scripted_effects/GER_campaign_safety_effects.txt
 cd1e7caaa2decbce7eccd31836b60b50fc2bbee2b0ff06384c4d0bf124298007  common/scripted_effects/GER_diplomacy_effects.txt
 b663a11da58bb5825fe450c71a50d3c889d65964d2478460190cecd08a3b3b4d  common/scripted_effects/GER_effects.txt
-917fbba8e0f29394c8f94644fc295fd04b0b63c11c700da5a9cb38bfcb39979a  common/scripted_effects/GER_industry_effects.txt
+9d51d46250e9db02448949561962c1050dfc9fed95e2d462329c2718070e3a06  common/scripted_effects/GER_industry_effects.txt
 9a6e116974a251efd39c047255cc8722214c281fcace84403a02105d52ec8248  common/scripted_effects/GER_lategame_effects.txt
 5e407a188cfae33d4926c72af3d716b13bdd5d65d4b0f75a1a8b727212b91c8f  common/scripted_effects/GER_military_setup_effects.txt
 a13ff9c44bf0fb74ae335180b80eccb733477473dcce7e59fa49647de4994a93  common/scripted_effects/GER_political_objectives_effects.txt
+bd600fb6fa28a4aff668c2eb89275960d44bf5b3f8d7a88542a62547fe7e1e9a  common/scripted_effects/GER_services_effects.txt
 2f85642f7c03a6aba64a18615d78373b3b0de03fb64ddec14403b4c40b725773  common/scripted_triggers/GER_bohemian_triggers.txt
-1a645afb725a1ce6cb32d356d8fca85f89759fef6584df18c77208e06cf0c15f  common/scripted_triggers/GER_campaign_safety_triggers.txt
-c3aaa333c4a0b4610e919444beb02ce81d2d1c86efccf5b3b62dd62af689613e  common/scripted_triggers/GER_lategame_triggers.txt
+5e03af3e4eb6c22f53951420d443624fdd1c6a13b4cb932feebdcdd2e35090b1  common/scripted_triggers/GER_campaign_safety_triggers.txt
+f1b7e4a3d1394bd45311df7ba550b2e87e96aecddc36c1a9b6873ad981c671df  common/scripted_triggers/GER_lategame_triggers.txt
 74f81e404952f838ca3798fad9a681cf2a7aa7a553691cc98c05e2e8d0fb0132  common/scripted_triggers/GER_pacing_triggers.txt
 2b143ba94e7ce12c8ee4af0753a8017af7d57794328237e7aad5e0b5787f0d79  common/scripted_triggers/GER_triggers.txt
-06b9bf16c8e6bc1a7b17176e1269f87d5d9270ab877457a69275e132a13c94a1  docs/GER_industry_rework.json
+7fa5dce03de3ff7fe536466aaf12455bc667ea5a0fbc4c7f43487307d1cfbcf8  docs/GER_industry_rework.json
 6f19d21f1981c3786bceec9a51e1039d348060dc013256cab9410bb6cdc478cb  docs/GER_overseas_setup.json
 b3e48ec6d79e0bdc6d691941ad02cf51bb18cd91d0406b28599592655136217b  events/AUS_overhaul_events.txt
 70670a1568e4bfd0a36afffa8bf6f4a107b6f9324b2caa2d3f6a178ae559ed8e  events/GER_bohemian_events.txt
@@ -15203,9 +19328,11 @@ dc1dacbd2ce3290c31ab68cf9aa2d8cff541031d0fb752b98367ec6a1d1a6711  history/states
 b5d3e4e53a12b1a914ed0d7eb36e73b185949de595bb6f826dcaa7a1511e0a7d  history/states/74-East Sudatenland.txt
 7820b754a01bd47e476e11d0baa1409816bf2d7ec338ffc62fb7ee08c3817b88  history/states/75-Moravia.txt
 6db87b5fe32cf7d38f51f7071dce07812460c4299be74358a8d73c648ac7b48e  history/states/9-Czechoslovakia.txt
+f5a6414cc214b981fc9244468570745363dd38a41d682a49d83eab768bdbd9e3  localisation/english/GER_campaign_fixes_l_english.yml
 2e3f27d690e54860223bf326d4f4e0f2dcd70186b53ab6379e4c1b33bffd8f14  localisation/english/GER_l_english.yml
 a0df213a05f9f83101c6786d7c1005830bd41323bc0412fb2b3175cbefa66c30  localisation/english/GER_parties_l_english.yml
 73e80fd436e4a146cf351ddd6ad4135f2b17cc6a6d4d1fd64f65bd29a85571bd  localisation/english/GER_political_audit_l_english.yml
+324dcfdeb3bc62c898a88111cb2c30d8d467f74f72937e8d2d81eec841219a75  localisation/english/GER_services_l_english.yml
 b69d77b78f33ac5ff628e2b0ab8010a7bcf7a3731b22bb81aed11c83e2e43bf5  localisation/mod_countries_l_english.yml
 a028273b52862db67f5a9cae5d4612c333a97c2dded85e7dc350c6bb5fd38160  localisation/mod_countries_l_russian.yml
 836619e11268066723b123ca7d75a78edb836c0404e1da156079cb566160374b  localisation/mod_focus_l_english.yml
@@ -15216,10 +19343,12 @@ c900e99e0e5aa12a2a26affe735af52610677f543cfee120ec10a89629fa242f  localisation/m
 b0cfdb851a7b966e4d739fb6a525f2be29b1062d3f47d9b419c097dd9d633cea  localisation/replace/GER_l_russian.yml
 b5345f90b1054a204ffe1ecbe5803a44ba3806770d89b151a9fd1edee703b910  localisation/replace/GER_rework_l_english.yml
 b80fe7ab54c0c94eaa9a1493866e132448c6a6596c28224a643309db239b2ab2  localisation/replace/GER_rework_l_russian.yml
+29372204bd83b1b088e35ee1f8bdf6c0501a60df582fabc1f5434ef2d15c232c  localisation/russian/GER_campaign_fixes_l_russian.yml
 c8e0a1dbabebadc25796cc34c3c24175337c8676ca4abb6989c10dae5123ab21  localisation/russian/GER_l_russian.yml
 907646c625b180f234ae8d16cc1da1be8c06d16ad21fb23d1154c20cb230a8c2  localisation/russian/GER_parties_l_russian.yml
 273485fe58ee96cb892a7618995a8bae5688a2d3dc954b64a3ba90fbf7fe4d29  localisation/russian/GER_political_audit_l_russian.yml
+cb2595d09a3ad3ab65b2833d410a6af808b5cc090cd2cdb6b36b4ae934383b34  localisation/russian/GER_services_l_russian.yml
 56acf194afc2d26190c06b3ed74fb17913f519568f9cd7caf5cac6187bfcb007  tools/export_ger_focuses.py
 6a1698fca9a56fd34464a36b4a309ed1595e09290dfe0638623a7bb592b4f3aa  tools/export_mkn_industrial_focuses.py
-2694579b6cb85eb4edafb88fa617978af25ba00b4c7eb71616b124e53077e268  tools/hoi4_script.py
+c0807647dcd311bd0915690c9deb90584ad5ff4f36b30b398b690c6ee7bcb3c9  tools/hoi4_script.py
 ```

@@ -1,0 +1,6 @@
+GER_nww_finance_bohemian_intervention = {
+ enable = { tag = GER has_focus_tree = GER_focus has_completed_focus = GER_nww_prague_network AUS = { GER_nww_bohemian_target_open = yes } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = pp_spend_priority id = decision value = 100 }
+ ai_strategy = { type = pp_spend_priority id = relation value = -100 }
+}

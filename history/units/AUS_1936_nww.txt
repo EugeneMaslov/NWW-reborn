@@ -240,6 +240,96 @@ units = {
 		start_equipment_factor = 1
 		start_experience_factor = 0.20
 	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11542
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3569
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 688
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 673
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9648
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3585
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6626
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9627
+		division_template = "Infanterie Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.20
+	}
 }
 instant_effect = {
 	add_equipment_production = {

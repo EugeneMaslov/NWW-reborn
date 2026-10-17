@@ -46,7 +46,7 @@ for filename, expected in manifest.items():
         check(provinces.get(location, (None, None))[1] == tag,
               f'{filename}: division outside its country at {location}')
     if tag == 'AUS':
-        check(len(divisions) == 18, 'Austria: expected 12 + 50% = 18 divisions')
+        check(len(divisions) == 27, 'Austria: expected 18 + 50% = 27 divisions')
         check(all(one(d, 'start_equipment_factor') == '1' for d in divisions),
               'Austria: starting divisions must be equipped')
         templates = {one(t, 'name') for t in values(doc, 'division_template')}

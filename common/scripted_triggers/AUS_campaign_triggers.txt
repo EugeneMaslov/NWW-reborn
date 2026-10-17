@@ -1,0 +1,15 @@
+# Owner AUS. Live AI gate also protects saves that already contain a Croatian goal.
+AUS_nww_croatian_campaign_ready = {
+ has_war = no
+ has_capitulated = no
+ is_subject = no
+ NOT = { has_country_flag = AUS_nww_hungarian_recovery }
+ OR = {
+  HUN = { exists = no }
+  HUN = { is_subject_of = AUS }
+  is_ally_with = HUN
+ }
+}
+AUS_nww_can_prepare_croatia = {
+ OR = { is_ai = no AUS_nww_croatian_campaign_ready = yes }
+}

@@ -413,9 +413,9 @@ def emit_systems(write,loc,foci,game):
     event(31,'Корона перед парламентом','The Crown before Parliament',
           'Новый монарх требует определить границы его участия в политике. Кабинет предлагает подтвердить парламентскую ответственность правительства. Король может принять это условие либо уступить престол брату.',
           'The new monarch seeks to define his political role. The cabinet proposes reaffirming parliamentary responsibility. The King may accept or yield the throne to his brother.',
-          [('Подтвердить конституционный порядок','Reaffirm constitutional government','add_stability = 0.05','',65),
+          [('Подтвердить конституционный порядок','Reaffirm constitutional government','remove_ideas = ENG_king_edward add_ideas = ENG_nww_constitutional_edward set_country_flag = ENG_nww_crown_settled add_stability = 0.05','',65),
            ('Принять отречение','Accept the abdication','remove_ideas = ENG_king_edward add_ideas = ENG_george_vi add_stability = 0.05','',35)])
-    events[-1]=events[-1].replace('is_triggered_only = yes','fire_only_once = yes trigger = { tag = ENG has_focus_tree = ENG_nww_focus date > 1936.12.1 has_idea = ENG_king_edward has_government = democratic } mean_time_to_happen = { days = 7 }',1)
+    events[-1]=events[-1].replace('is_triggered_only = yes','fire_only_once = yes trigger = { tag = ENG has_focus_tree = ENG_nww_focus date > 1936.12.1 has_idea = ENG_king_edward NOT = { has_government = communism } } mean_time_to_happen = { days = 7 }',1)
     event(32,'Передача руководства кабинетом','A New Head of the Cabinet',
           'Болдуин готов оставить руководство правительством. Парламентское большинство обсуждает кандидатуру Чемберлена, сторонника упорядоченных смет и переговоров, и Черчилля, настаивающего на более решительном перевооружении. Выбор нового премьера сохраняет конституционный порядок.',
           'Baldwin is ready to leave office. The parliamentary majority considers Chamberlain, an advocate of orderly budgets and negotiation, and Churchill, who argues for more determined rearmament. Choosing a new premier preserves constitutional government.',

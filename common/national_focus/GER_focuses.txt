@@ -23,16 +23,13 @@ focus_tree = {
 	focus = {
 		id = GER_prussian_traditions
 		icon = GFX_focus_generic_army_attack
-		prerequisite = {
-			focus = GER_the_kaiser_endures
-		}
 		cost = 5
 		completion_reward = {
 			army_experience = 25
 			add_war_support = 0.05
 		}
-		y = 1
-		x = 41
+		x = 72
+		y = 0
 	}
 	focus = {
 		id = GER_krupp_and_thyssen
@@ -76,7 +73,7 @@ focus_tree = {
 			}
 			navy_experience = 15
 		}
-		x = 61
+		x = 100
 	}
 	focus = {
 		id = GER_mitteleuropa_trade
@@ -104,9 +101,6 @@ focus_tree = {
 	focus = {
 		id = GER_the_eastern_question
 		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = {
-			focus = GER_prussian_traditions
-		}
 		cost = 10
 		completion_reward = {
 			add_manpower = 50000
@@ -118,7 +112,13 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 		y = 2
-		x = 41
+		x = 45
+		prerequisite = {
+			focus = GER_guardians_of_the_reich
+		}
+		available = {
+			has_completed_focus = GER_prussian_traditions
+		}
 	}
 	focus = {
 		id = GER_guardians_of_the_reich
@@ -924,8 +924,1464 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	continuous_focus_position = {
+	focus = {
+		id = GER_nww_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 72
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_prussian_traditions
+		}
+		completion_reward = {
+			army_experience = 25
+			add_to_variable = {
+				GER_service_army_org = 0.05
+				tooltip = GER_service_army_org_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_staff_college
+		icon = GFX_goal_generic_army_doctrines
+		x = 72
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_general_staff
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_land_doctrine
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_army_planning = 0.1
+				tooltip = GER_service_army_planning_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_mission_command
+		icon = GFX_goal_generic_army_doctrines
+		x = 70
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_staff_college
+		}
+		mutually_exclusive = {
+			focus = GER_nww_deliberate_battle
+		}
+		completion_reward = {
+			army_experience = 20
+			add_to_variable = {
+				GER_service_army_training = -0.1
+				tooltip = GER_service_army_training_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_deliberate_battle
+		icon = GFX_goal_generic_army_doctrines
+		x = 74
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_staff_college
+		}
+		mutually_exclusive = {
+			focus = GER_nww_mission_command
+		}
+		completion_reward = {
+			army_experience = 20
+			add_to_variable = {
+				GER_service_army_org = 0.05
+				tooltip = GER_service_army_org_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_army_signals
+		icon = GFX_goal_generic_army_doctrines
+		x = 72
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_mission_command
+			focus = GER_nww_deliberate_battle
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = electronics
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_infantry_standardisation
+		icon = GFX_goal_generic_small_arms
+		x = 68
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_general_staff
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = infantry_weapons
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_artillery_directorate
+		icon = GFX_goal_generic_army_doctrines
+		x = 68
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_infantry_standardisation
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = artillery
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_army_artillery = 0.05
+				tooltip = GER_service_army_artillery_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_combat_engineers
+		icon = GFX_goal_generic_army_doctrines
+		x = 68
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_artillery_directorate
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = support_tech
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_motor_transport
+		icon = GFX_goal_generic_army_doctrines
+		x = 76
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_general_staff
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = motorized_equipment
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_armour_school
+		icon = GFX_goal_generic_army_tanks
+		x = 76
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_motor_transport
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_land_doctrine
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_medium_tank_programme
+		icon = GFX_goal_generic_army_tanks
+		x = 76
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_armour_school
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = cat_medium_armor
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_panzergrenadiers
+		icon = GFX_goal_generic_army_doctrines
+		x = 76
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_medium_tank_programme
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = cat_mechanized_equipment
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_army_armour = 0.05
+				tooltip = GER_service_army_armour_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_army_rail_logistics
+		icon = GFX_goal_generic_army_doctrines
+		x = 72
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_army_signals
+		}
+		completion_reward = {
+			army_experience = 20
+			add_to_variable = {
+				GER_service_army_supply = -0.1
+				tooltip = GER_service_army_supply_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_field_hospitals
+		icon = GFX_goal_generic_army_doctrines
+		x = 68
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_combat_engineers
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = support_tech
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_combined_arms_exercises
+		icon = GFX_goal_generic_army_doctrines
+		x = 72
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_army_rail_logistics
+			focus = GER_nww_panzergrenadiers
+			focus = GER_nww_field_hospitals
+		}
+		available = {
+			has_completed_focus = GER_nww_army_rail_logistics
+			has_completed_focus = GER_nww_panzergrenadiers
+			has_completed_focus = GER_nww_field_hospitals
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_land_doctrine
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_imperial_army_readiness
+		icon = GFX_goal_generic_army_doctrines
+		x = 72
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_combined_arms_exercises
+		}
+		completion_reward = {
+			army_experience = 35
+			add_to_variable = {
+				GER_service_army_experience = 0.1
+				tooltip = GER_service_army_experience_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_imperial_air_service
+		icon = GFX_goal_generic_build_airforce
+		x = 86
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			air_experience = 25
+			add_to_variable = {
+				GER_service_air_accidents = -0.05
+				tooltip = GER_service_air_accidents_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_air_academies
+		icon = GFX_goal_generic_army_doctrines
+		x = 86
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_imperial_air_service
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_air_doctrine
+				category = air_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_air_accidents = -0.05
+				tooltip = GER_service_air_accidents_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_fighter_design
+		icon = GFX_goal_generic_air_fighter
+		x = 82
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_air_academies
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = light_air
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_interceptor_control
+		icon = GFX_goal_generic_army_doctrines
+		x = 82
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_fighter_design
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = radar_tech
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_air_superiority = 0.05
+				tooltip = GER_service_air_superiority_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_night_fighters
+		icon = GFX_goal_generic_army_doctrines
+		x = 82
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_interceptor_control
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = light_air
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_battlefield_aviation
+		icon = GFX_goal_generic_army_doctrines
+		x = 86
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_air_academies
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = cas_bomber
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_air_cas = 0.05
+				tooltip = GER_service_air_cas_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_forward_air_controllers
+		icon = GFX_goal_generic_army_doctrines
+		x = 86
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_battlefield_aviation
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_air_doctrine
+				category = air_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_long_range_bombers
+		icon = GFX_goal_generic_army_doctrines
+		x = 90
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_air_academies
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = heavy_air
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_air_navigation
+		icon = GFX_goal_generic_army_doctrines
+		x = 90
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_long_range_bombers
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = electronics
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_air_range = 0.05
+				tooltip = GER_service_air_range_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_air_transport
+		icon = GFX_goal_generic_army_doctrines
+		x = 90
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_air_navigation
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = air_equipment
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_integrated_air_operations
+		icon = GFX_goal_generic_army_doctrines
+		x = 86
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_night_fighters
+			focus = GER_nww_forward_air_controllers
+			focus = GER_nww_air_transport
+		}
+		available = {
+			has_completed_focus = GER_nww_night_fighters
+			has_completed_focus = GER_nww_forward_air_controllers
+			has_completed_focus = GER_nww_air_transport
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_air_doctrine
+				category = air_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_air_mission = 0.05
+				tooltip = GER_service_air_mission_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_aeronautical_institutes
+		icon = GFX_goal_generic_army_doctrines
+		x = 86
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_integrated_air_operations
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = air_equipment
+				bonus = 0.5
+				uses = 1
+			}
+			air_experience = 35
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_admiralty_staff
+		icon = GFX_goal_generic_navy_carrier
 		x = 100
-		y = 3000
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_the_fleet_question
+		}
+		completion_reward = {
+			navy_experience = 25
+			add_to_variable = {
+				GER_service_navy_coordination = 0.05
+				tooltip = GER_service_navy_coordination_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_imperial_shipyards
+		icon = GFX_goal_generic_army_doctrines
+		x = 100
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_admiralty_staff
+		}
+		completion_reward = {
+			GER_nww_build_service_dockyard = yes
+			add_to_variable = {
+				GER_service_navy_output = 0.05
+				tooltip = GER_service_navy_output_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_battlefleet_modernisation
+		icon = GFX_goal_generic_navy_battleship
+		x = 96
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_imperial_shipyards
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = bb_tech
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_capital_ship_fire_control
+		icon = GFX_goal_generic_army_doctrines
+		x = 96
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_battlefleet_modernisation
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = naval_equipment
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_fleet_air_arm
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 100
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_imperial_shipyards
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = naval_air
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_fleet_carriers
+		icon = GFX_goal_generic_navy_carrier
+		x = 100
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_fleet_air_arm
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = mio_cat_tech_all_carrier_and_modules
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_carrier_groups
+		icon = GFX_goal_generic_army_doctrines
+		x = 100
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_fleet_carriers
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_naval_doctrine
+				category = naval_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_navy_sortie = 0.1
+				tooltip = GER_service_navy_sortie_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_screening_squadrons
+		icon = GFX_goal_generic_army_doctrines
+		x = 104
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_imperial_shipyards
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = dd_tech
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_service_navy_screens = 0.05
+				tooltip = GER_service_navy_screens_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_convoy_escorts
+		icon = GFX_goal_generic_army_doctrines
+		x = 104
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_screening_squadrons
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = naval_equipment
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_submarine_patrols
+		icon = GFX_goal_generic_navy_submarine
+		x = 108
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_imperial_shipyards
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = ss_tech
+				bonus = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_ocean_replenishment
+		icon = GFX_goal_generic_army_doctrines
+		x = 108
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_submarine_patrols
+		}
+		completion_reward = {
+			navy_experience = 20
+			add_to_variable = {
+				GER_service_navy_range = 0.1
+				tooltip = GER_service_navy_range_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_fleet_repair_bases
+		icon = GFX_goal_generic_army_doctrines
+		x = 104
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_convoy_escorts
+		}
+		completion_reward = {
+			GER_nww_build_service_dockyard = yes
+			add_to_variable = {
+				GER_service_navy_repair = 0.1
+				tooltip = GER_service_navy_repair_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_joint_naval_exercises
+		icon = GFX_goal_generic_army_doctrines
+		x = 100
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_carrier_groups
+			focus = GER_nww_capital_ship_fire_control
+			focus = GER_nww_fleet_repair_bases
+		}
+		available = {
+			has_completed_focus = GER_nww_carrier_groups
+			has_completed_focus = GER_nww_capital_ship_fire_control
+			has_completed_focus = GER_nww_fleet_repair_bases
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_nww_naval_doctrine
+				category = naval_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_high_seas_readiness
+		icon = GFX_goal_generic_army_doctrines
+		x = 100
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_joint_naval_exercises
+		}
+		completion_reward = {
+			navy_experience = 35
+			add_to_variable = {
+				GER_service_navy_output = 0.05
+				tooltip = GER_service_navy_output_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_civil_investment
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 61
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		mutually_exclusive = {
+			focus = GER_nww_defence_procurement
+		}
+		available = {
+			has_completed_focus = GER_krupp_and_thyssen
+		}
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			add_to_variable = {
+				GER_industry_construction = 0.05
+				tooltip = GER_nww_industry_construction_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_regional_enterprises
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 61
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_civil_investment
+		}
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_export_machinery
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 61
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_regional_enterprises
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = industry
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_industry_research = 0.05
+				tooltip = GER_nww_industry_research_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_consumer_markets
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 61
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_export_machinery
+		}
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_civil_energy_reserve
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 61
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_consumer_markets
+		}
+		completion_reward = {
+			GER_nww_build_energy_infrastructure = yes
+			add_to_variable = {
+				GER_industry_energy = 0.1
+				tooltip = GER_nww_industry_energy_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_investment_dividend
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 61
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_civil_energy_reserve
+		}
+		completion_reward = {
+			GER_nww_build_civilian = yes
+			add_to_variable = {
+				GER_industry_construction = 0.05
+				tooltip = GER_nww_industry_construction_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_defence_procurement
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		mutually_exclusive = {
+			focus = GER_nww_civil_investment
+		}
+		available = {
+			has_completed_focus = GER_krupp_and_thyssen
+		}
+		completion_reward = {
+			GER_nww_build_military = yes
+			add_to_variable = {
+				GER_industry_output = 0.05
+				tooltip = GER_nww_industry_output_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_arsenal_dispersal
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_defence_procurement
+		}
+		completion_reward = {
+			GER_nww_build_military = yes
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_strategic_reserves
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_arsenal_dispersal
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = industry
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_industry_maximum = 0.05
+				tooltip = GER_nww_industry_maximum_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_defence_standardisation
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_strategic_reserves
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_nww_service_research
+				category = infantry_weapons
+				bonus = 0.5
+				uses = 1
+			}
+			add_to_variable = {
+				GER_industry_efficiency = 0.05
+				tooltip = GER_nww_industry_efficiency_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_defence_energy_reserve
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_defence_standardisation
+		}
+		completion_reward = {
+			GER_nww_build_energy_infrastructure = yes
+			add_to_variable = {
+				GER_industry_energy = 0.1
+				tooltip = GER_nww_industry_energy_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_nww_procurement_continuity
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = GER_nww_defence_energy_reserve
+		}
+		completion_reward = {
+			GER_nww_build_military = yes
+			add_to_variable = {
+				GER_industry_output = 0.05
+				tooltip = GER_nww_industry_output_tt
+			}
+			hidden_effect = {
+				GER_nww_refresh_services = yes
+				GER_nww_refresh_industry = yes
+			}
+		}
+	}
+	continuous_focus_position = {
+		x = 150
+		y = 4200
 	}
 }

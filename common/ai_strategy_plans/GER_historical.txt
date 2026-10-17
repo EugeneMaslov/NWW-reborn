@@ -1,191 +1,450 @@
-# Owner GER. Four NWW routes; unavailable dated objectives yield to domestic development.
 NWW_GER_historical = {
- name = GER_nww_authoritarian_plan
- desc = GER_nww_authoritarian_plan_desc
- allowed = { original_tag = GER }
- enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_authoritarian }
- abort = { is_subject = yes }
- ai_national_focuses = {
-  GER_the_gilded_colossus
-  GER_fund_the_reichswehr
-  GER_the_potsdam_coup
-  GER_dissolve_the_reichstag
-  GER_reign_in_mitteleuropa
-  GER_the_austrian_question
-  GER_crush_eastern_syndicates
-  GER_gott_mit_uns
-  GER_schlieffen_reborn
-  GER_strike_the_west
-  GER_the_second_naval_race
-  GER_krupp_and_thyssen
-  GER_the_kaiser_endures
-  GER_prussian_traditions
-  GER_1
-  GER_nww_electrical_grid
-  GER_5
-  GER_6
-  GER_mitteleuropa_trade
-  GER_guardians_of_the_reich
-  GER_nww_prague_network
-  GER_nww_silesian_steel
-  GER_3
-  GER_7
-  GER_nww_machine_tools
-  GER_nww_arsenal_contracts
-  GER_nww_industrial_standards
-  GER_nww_technical_colleges
-  GER_4
-  GER_8
-  GER_2
-  GER_nww_freight_corridors
-  GER_nww_merchant_contracts
-  GER_nww_export_credit
-  GER_nww_investment_guarantees
-  GER_9
-  GER_10
-  GER_nww_industrial_research
- }
- weight = { factor = 100 }
+	name = GER_nww_authoritarian_plan
+	desc = GER_nww_authoritarian_plan_desc
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_focus_tree = GER_focus
+		has_country_flag = GER_nww_ai_authoritarian
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		GER_the_gilded_colossus
+		GER_the_kaiser_endures
+		GER_guardians_of_the_reich
+		GER_nww_prague_network
+		GER_prussian_traditions
+		GER_fund_the_reichswehr
+		GER_the_potsdam_coup
+		GER_dissolve_the_reichstag
+		GER_reign_in_mitteleuropa
+		GER_the_austrian_question
+		GER_crush_eastern_syndicates
+		GER_gott_mit_uns
+		GER_schlieffen_reborn
+		GER_strike_the_west
+		GER_the_second_naval_race
+		GER_krupp_and_thyssen
+		GER_1
+		GER_nww_electrical_grid
+		GER_5
+		GER_6
+		GER_mitteleuropa_trade
+		GER_nww_silesian_steel
+		GER_3
+		GER_7
+		GER_nww_machine_tools
+		GER_nww_arsenal_contracts
+		GER_nww_industrial_standards
+		GER_nww_technical_colleges
+		GER_4
+		GER_8
+		GER_2
+		GER_nww_freight_corridors
+		GER_nww_merchant_contracts
+		GER_nww_export_credit
+		GER_nww_investment_guarantees
+		GER_9
+		GER_10
+		GER_nww_industrial_research
+		GER_nww_general_staff
+		GER_nww_staff_college
+		GER_nww_mission_command
+		GER_nww_army_signals
+		GER_nww_infantry_standardisation
+		GER_nww_artillery_directorate
+		GER_nww_combat_engineers
+		GER_nww_motor_transport
+		GER_nww_armour_school
+		GER_nww_medium_tank_programme
+		GER_nww_panzergrenadiers
+		GER_nww_army_rail_logistics
+		GER_nww_field_hospitals
+		GER_nww_combined_arms_exercises
+		GER_nww_imperial_army_readiness
+		GER_nww_imperial_air_service
+		GER_nww_air_academies
+		GER_nww_fighter_design
+		GER_nww_interceptor_control
+		GER_nww_night_fighters
+		GER_nww_battlefield_aviation
+		GER_nww_forward_air_controllers
+		GER_nww_long_range_bombers
+		GER_nww_air_navigation
+		GER_nww_air_transport
+		GER_nww_integrated_air_operations
+		GER_nww_aeronautical_institutes
+		GER_nww_admiralty_staff
+		GER_nww_imperial_shipyards
+		GER_nww_battlefleet_modernisation
+		GER_nww_capital_ship_fire_control
+		GER_nww_fleet_air_arm
+		GER_nww_fleet_carriers
+		GER_nww_carrier_groups
+		GER_nww_screening_squadrons
+		GER_nww_convoy_escorts
+		GER_nww_submarine_patrols
+		GER_nww_ocean_replenishment
+		GER_nww_fleet_repair_bases
+		GER_nww_joint_naval_exercises
+		GER_nww_high_seas_readiness
+		GER_nww_regional_enterprises
+		GER_nww_export_machinery
+		GER_nww_consumer_markets
+		GER_nww_civil_energy_reserve
+		GER_nww_investment_dividend
+		GER_nww_defence_procurement
+		GER_nww_arsenal_dispersal
+		GER_nww_strategic_reserves
+		GER_nww_defence_standardisation
+		GER_nww_defence_energy_reserve
+		GER_nww_procurement_continuity
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		GER_nww_civil_investment = 0
+		GER_nww_deliberate_battle = 0
+	}
 }
 NWW_GER_democratic = {
- name = GER_nww_democratic_plan
- desc = GER_nww_democratic_plan_desc
- allowed = { original_tag = GER }
- enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_democratic }
- abort = { is_subject = yes }
- ai_national_focuses = {
-  GER_the_gilded_colossus
-  GER_empower_the_chancellor
-  GER_parliamentary_spring
-  GER_true_constitutional_monarchy
-  GER_mitteleuropa_economic_community
-  GER_the_austrian_referendum
-  GER_arsenal_of_democracy
-  GER_european_federation
-  GER_anti_imperialist_crusade
-  GER_shield_against_the_reds
-  GER_krupp_and_thyssen
-  GER_the_kaiser_endures
-  GER_prussian_traditions
-  GER_1
-  GER_nww_electrical_grid
-  GER_5
-  GER_6
-  GER_mitteleuropa_trade
-  GER_guardians_of_the_reich
-  GER_nww_prague_network
-  GER_nww_silesian_steel
-  GER_3
-  GER_7
-  GER_nww_machine_tools
-  GER_nww_arsenal_contracts
-  GER_nww_industrial_standards
-  GER_nww_technical_colleges
-  GER_4
-  GER_8
-  GER_2
-  GER_nww_freight_corridors
-  GER_nww_merchant_contracts
-  GER_nww_export_credit
-  GER_nww_investment_guarantees
-  GER_9
-  GER_10
-  GER_nww_industrial_research
- }
- weight = { factor = 100 }
+	name = GER_nww_democratic_plan
+	desc = GER_nww_democratic_plan_desc
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_focus_tree = GER_focus
+		has_country_flag = GER_nww_ai_democratic
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		GER_the_gilded_colossus
+		GER_the_kaiser_endures
+		GER_guardians_of_the_reich
+		GER_nww_prague_network
+		GER_prussian_traditions
+		GER_empower_the_chancellor
+		GER_parliamentary_spring
+		GER_true_constitutional_monarchy
+		GER_mitteleuropa_economic_community
+		GER_the_austrian_referendum
+		GER_arsenal_of_democracy
+		GER_european_federation
+		GER_anti_imperialist_crusade
+		GER_shield_against_the_reds
+		GER_krupp_and_thyssen
+		GER_1
+		GER_nww_electrical_grid
+		GER_5
+		GER_6
+		GER_mitteleuropa_trade
+		GER_nww_silesian_steel
+		GER_3
+		GER_7
+		GER_nww_machine_tools
+		GER_nww_arsenal_contracts
+		GER_nww_industrial_standards
+		GER_nww_technical_colleges
+		GER_4
+		GER_8
+		GER_2
+		GER_nww_freight_corridors
+		GER_nww_merchant_contracts
+		GER_nww_export_credit
+		GER_nww_investment_guarantees
+		GER_9
+		GER_10
+		GER_nww_industrial_research
+		GER_nww_general_staff
+		GER_nww_staff_college
+		GER_nww_deliberate_battle
+		GER_nww_army_signals
+		GER_nww_infantry_standardisation
+		GER_nww_artillery_directorate
+		GER_nww_combat_engineers
+		GER_nww_motor_transport
+		GER_nww_armour_school
+		GER_nww_medium_tank_programme
+		GER_nww_panzergrenadiers
+		GER_nww_army_rail_logistics
+		GER_nww_field_hospitals
+		GER_nww_combined_arms_exercises
+		GER_nww_imperial_army_readiness
+		GER_nww_imperial_air_service
+		GER_nww_air_academies
+		GER_nww_fighter_design
+		GER_nww_interceptor_control
+		GER_nww_night_fighters
+		GER_nww_battlefield_aviation
+		GER_nww_forward_air_controllers
+		GER_nww_long_range_bombers
+		GER_nww_air_navigation
+		GER_nww_air_transport
+		GER_nww_integrated_air_operations
+		GER_nww_aeronautical_institutes
+		GER_nww_admiralty_staff
+		GER_nww_imperial_shipyards
+		GER_nww_battlefleet_modernisation
+		GER_nww_capital_ship_fire_control
+		GER_nww_fleet_air_arm
+		GER_nww_fleet_carriers
+		GER_nww_carrier_groups
+		GER_nww_screening_squadrons
+		GER_nww_convoy_escorts
+		GER_nww_submarine_patrols
+		GER_nww_ocean_replenishment
+		GER_nww_fleet_repair_bases
+		GER_nww_joint_naval_exercises
+		GER_nww_high_seas_readiness
+		GER_nww_civil_investment
+		GER_nww_regional_enterprises
+		GER_nww_export_machinery
+		GER_nww_consumer_markets
+		GER_nww_civil_energy_reserve
+		GER_nww_investment_dividend
+		GER_nww_arsenal_dispersal
+		GER_nww_strategic_reserves
+		GER_nww_defence_standardisation
+		GER_nww_defence_energy_reserve
+		GER_nww_procurement_continuity
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		GER_nww_defence_procurement = 0
+		GER_nww_mission_command = 0
+	}
 }
 NWW_GER_fascist = {
- name = GER_nww_fascist_plan
- desc = GER_nww_fascist_plan_desc
- allowed = { original_tag = GER }
- enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_fascist }
- abort = { is_subject = yes }
- ai_national_focuses = {
-  GER_the_gilded_colossus
-  GER_pan_german_leagues
-  GER_the_pan_germanic_triumph
-  GER_abolish_the_hohenzollerns
-  GER_anschluss_by_force
-  GER_lebensraum_in_the_east
-  GER_the_new_reich
-  GER_drang_nach_osten_expanded
-  GER_total_assimilation
-  GER_hegemony_over_europe_focus
-  GER_krupp_and_thyssen
-  GER_the_kaiser_endures
-  GER_prussian_traditions
-  GER_1
-  GER_nww_electrical_grid
-  GER_5
-  GER_6
-  GER_mitteleuropa_trade
-  GER_guardians_of_the_reich
-  GER_nww_prague_network
-  GER_nww_silesian_steel
-  GER_3
-  GER_7
-  GER_nww_machine_tools
-  GER_nww_arsenal_contracts
-  GER_nww_industrial_standards
-  GER_nww_technical_colleges
-  GER_4
-  GER_8
-  GER_2
-  GER_nww_freight_corridors
-  GER_nww_merchant_contracts
-  GER_nww_export_credit
-  GER_nww_investment_guarantees
-  GER_9
-  GER_10
-  GER_nww_industrial_research
- }
- weight = { factor = 100 }
+	name = GER_nww_fascist_plan
+	desc = GER_nww_fascist_plan_desc
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_focus_tree = GER_focus
+		has_country_flag = GER_nww_ai_fascist
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		GER_the_gilded_colossus
+		GER_the_kaiser_endures
+		GER_guardians_of_the_reich
+		GER_nww_prague_network
+		GER_prussian_traditions
+		GER_pan_german_leagues
+		GER_the_pan_germanic_triumph
+		GER_abolish_the_hohenzollerns
+		GER_anschluss_by_force
+		GER_lebensraum_in_the_east
+		GER_the_new_reich
+		GER_drang_nach_osten_expanded
+		GER_total_assimilation
+		GER_hegemony_over_europe_focus
+		GER_krupp_and_thyssen
+		GER_1
+		GER_nww_electrical_grid
+		GER_5
+		GER_6
+		GER_mitteleuropa_trade
+		GER_nww_silesian_steel
+		GER_3
+		GER_7
+		GER_nww_machine_tools
+		GER_nww_arsenal_contracts
+		GER_nww_industrial_standards
+		GER_nww_technical_colleges
+		GER_4
+		GER_8
+		GER_2
+		GER_nww_freight_corridors
+		GER_nww_merchant_contracts
+		GER_nww_export_credit
+		GER_nww_investment_guarantees
+		GER_9
+		GER_10
+		GER_nww_industrial_research
+		GER_nww_general_staff
+		GER_nww_staff_college
+		GER_nww_mission_command
+		GER_nww_army_signals
+		GER_nww_infantry_standardisation
+		GER_nww_artillery_directorate
+		GER_nww_combat_engineers
+		GER_nww_motor_transport
+		GER_nww_armour_school
+		GER_nww_medium_tank_programme
+		GER_nww_panzergrenadiers
+		GER_nww_army_rail_logistics
+		GER_nww_field_hospitals
+		GER_nww_combined_arms_exercises
+		GER_nww_imperial_army_readiness
+		GER_nww_imperial_air_service
+		GER_nww_air_academies
+		GER_nww_fighter_design
+		GER_nww_interceptor_control
+		GER_nww_night_fighters
+		GER_nww_battlefield_aviation
+		GER_nww_forward_air_controllers
+		GER_nww_long_range_bombers
+		GER_nww_air_navigation
+		GER_nww_air_transport
+		GER_nww_integrated_air_operations
+		GER_nww_aeronautical_institutes
+		GER_nww_admiralty_staff
+		GER_nww_imperial_shipyards
+		GER_nww_battlefleet_modernisation
+		GER_nww_capital_ship_fire_control
+		GER_nww_fleet_air_arm
+		GER_nww_fleet_carriers
+		GER_nww_carrier_groups
+		GER_nww_screening_squadrons
+		GER_nww_convoy_escorts
+		GER_nww_submarine_patrols
+		GER_nww_ocean_replenishment
+		GER_nww_fleet_repair_bases
+		GER_nww_joint_naval_exercises
+		GER_nww_high_seas_readiness
+		GER_nww_regional_enterprises
+		GER_nww_export_machinery
+		GER_nww_consumer_markets
+		GER_nww_civil_energy_reserve
+		GER_nww_investment_dividend
+		GER_nww_defence_procurement
+		GER_nww_arsenal_dispersal
+		GER_nww_strategic_reserves
+		GER_nww_defence_standardisation
+		GER_nww_defence_energy_reserve
+		GER_nww_procurement_continuity
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		GER_nww_civil_investment = 0
+		GER_nww_deliberate_battle = 0
+	}
 }
 NWW_GER_communist = {
- name = GER_nww_communist_plan
- desc = GER_nww_communist_plan_desc
- allowed = { original_tag = GER }
- enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_communist }
- abort = { is_subject = yes }
- ai_national_focuses = {
-  GER_the_gilded_colossus
-  GER_organize_ruhr_workers
-  GER_the_spartacist_uprising
-  GER_german_soviet_republic
-  GER_workers_militias
-  GER_dismantle_imperial_borders
-  GER_berlin_moscow_axis
-  GER_world_revolution
-  GER_red_rhine
-  GER_nva_mass_mobilization
-  GER_challenge_moscow
-  GER_krupp_and_thyssen
-  GER_the_kaiser_endures
-  GER_prussian_traditions
-  GER_1
-  GER_nww_electrical_grid
-  GER_5
-  GER_6
-  GER_mitteleuropa_trade
-  GER_guardians_of_the_reich
-  GER_nww_prague_network
-  GER_nww_silesian_steel
-  GER_3
-  GER_7
-  GER_nww_machine_tools
-  GER_nww_arsenal_contracts
-  GER_nww_industrial_standards
-  GER_nww_technical_colleges
-  GER_4
-  GER_8
-  GER_2
-  GER_nww_freight_corridors
-  GER_nww_merchant_contracts
-  GER_nww_export_credit
-  GER_nww_investment_guarantees
-  GER_9
-  GER_10
-  GER_nww_industrial_research
- }
- weight = { factor = 100 }
+	name = GER_nww_communist_plan
+	desc = GER_nww_communist_plan_desc
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_focus_tree = GER_focus
+		has_country_flag = GER_nww_ai_communist
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		GER_the_gilded_colossus
+		GER_the_kaiser_endures
+		GER_guardians_of_the_reich
+		GER_nww_prague_network
+		GER_prussian_traditions
+		GER_organize_ruhr_workers
+		GER_the_spartacist_uprising
+		GER_german_soviet_republic
+		GER_workers_militias
+		GER_dismantle_imperial_borders
+		GER_berlin_moscow_axis
+		GER_world_revolution
+		GER_red_rhine
+		GER_nva_mass_mobilization
+		GER_challenge_moscow
+		GER_krupp_and_thyssen
+		GER_1
+		GER_nww_electrical_grid
+		GER_5
+		GER_6
+		GER_mitteleuropa_trade
+		GER_nww_silesian_steel
+		GER_3
+		GER_7
+		GER_nww_machine_tools
+		GER_nww_arsenal_contracts
+		GER_nww_industrial_standards
+		GER_nww_technical_colleges
+		GER_4
+		GER_8
+		GER_2
+		GER_nww_freight_corridors
+		GER_nww_merchant_contracts
+		GER_nww_export_credit
+		GER_nww_investment_guarantees
+		GER_9
+		GER_10
+		GER_nww_industrial_research
+		GER_nww_general_staff
+		GER_nww_staff_college
+		GER_nww_mission_command
+		GER_nww_army_signals
+		GER_nww_infantry_standardisation
+		GER_nww_artillery_directorate
+		GER_nww_combat_engineers
+		GER_nww_motor_transport
+		GER_nww_armour_school
+		GER_nww_medium_tank_programme
+		GER_nww_panzergrenadiers
+		GER_nww_army_rail_logistics
+		GER_nww_field_hospitals
+		GER_nww_combined_arms_exercises
+		GER_nww_imperial_army_readiness
+		GER_nww_imperial_air_service
+		GER_nww_air_academies
+		GER_nww_fighter_design
+		GER_nww_interceptor_control
+		GER_nww_night_fighters
+		GER_nww_battlefield_aviation
+		GER_nww_forward_air_controllers
+		GER_nww_long_range_bombers
+		GER_nww_air_navigation
+		GER_nww_air_transport
+		GER_nww_integrated_air_operations
+		GER_nww_aeronautical_institutes
+		GER_nww_admiralty_staff
+		GER_nww_imperial_shipyards
+		GER_nww_battlefleet_modernisation
+		GER_nww_capital_ship_fire_control
+		GER_nww_fleet_air_arm
+		GER_nww_fleet_carriers
+		GER_nww_carrier_groups
+		GER_nww_screening_squadrons
+		GER_nww_convoy_escorts
+		GER_nww_submarine_patrols
+		GER_nww_ocean_replenishment
+		GER_nww_fleet_repair_bases
+		GER_nww_joint_naval_exercises
+		GER_nww_high_seas_readiness
+		GER_nww_regional_enterprises
+		GER_nww_export_machinery
+		GER_nww_consumer_markets
+		GER_nww_civil_energy_reserve
+		GER_nww_investment_dividend
+		GER_nww_defence_procurement
+		GER_nww_arsenal_dispersal
+		GER_nww_strategic_reserves
+		GER_nww_defence_standardisation
+		GER_nww_defence_energy_reserve
+		GER_nww_procurement_continuity
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		GER_nww_civil_investment = 0
+		GER_nww_deliberate_battle = 0
+	}
 }

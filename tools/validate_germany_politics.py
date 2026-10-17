@@ -138,6 +138,7 @@ class Scenario:
             elif key == 'add_power_balance_value': s['balance']=round(max(-1,min(1,s['balance']+float(one(value,'value')))),6)
             elif key == 'add_relation_rule_override': s['rules'].add(('trigger',one(value,'trigger')) if one(value,'trigger') else one(value,'target'))
             elif key == 'remove_relation_rule_override': s['rules'].discard(('trigger',one(value,'trigger')) if one(value,'trigger') else one(value,'target'))
+            elif key == 'remove_wargoal': s['goals'].discard(self.target(one(value,'target'),actor,root,stack))
             elif key in ('set_rule','clear_rule'):
                 for name,enabled,operator in value:
                     token=('country',name)
@@ -222,7 +223,9 @@ def validate_germany(root, game, check):
     decisions = one(read(root / 'common/decisions/GER_bop_decisions.txt'), 'GER_bop_decisions_category')
     history = read(root / 'history/countries/GER - Germany.txt')
     on_actions = one(read(root / 'common/on_actions/GER_on_actions.txt'), 'on_actions')
-    check(len(political) == 40 and len(fs) == 76, 'GER: expected forty political and thirty-six industrial/military/intelligence focuses')
+    import json
+    expected_total = json.loads((root/'docs/GER_services_expansion.json').read_text(encoding='utf-8'))['total_playable']
+    check(len(political) == 40 and len(fs) == expected_total, 'GER: political and expanded service focus counts differ from the manifest')
     check(set(political) <= fs.keys() and values(tree, 'shared_focus') == ['GER_the_gilded_colossus'],
           'GER: shared political root must import the entire branch exactly once')
     rows = {}

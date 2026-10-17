@@ -1,0 +1,12 @@
+AUS_nww_finish_hungary_first = {
+ enable = { tag = AUS has_focus_tree = AUS_focus NOT = { AUS_nww_croatian_campaign_ready = yes } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = CRO value = -1000 }
+ ai_strategy = { type = antagonize id = CRO value = -1000 }
+}
+AUS_nww_hungarian_objective = {
+ enable = { tag = AUS has_focus_tree = AUS_focus has_completed_focus = AUS_war_with_hun HUN = { exists = yes } NOT = { is_ally_with = HUN } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = prepare_for_war id = HUN value = 200 }
+ ai_strategy = { type = conquer id = HUN value = 200 }
+}

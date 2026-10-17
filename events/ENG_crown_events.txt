@@ -1,0 +1,40 @@
+add_namespace = nww_eng_crown
+country_event = {
+	id = nww_eng_crown.1
+	title = nww_eng.31.t
+	desc = nww_eng.31.d
+	picture = GFX_report_event_generic_conference
+	option = {
+		name = nww_eng.31.a
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 65
+				is_historical_focus_on = no
+			}
+		}
+		remove_ideas = ENG_king_edward
+		add_ideas = ENG_nww_constitutional_edward
+		set_country_flag = ENG_nww_crown_settled
+		add_stability = 0.05
+	}
+	option = {
+		name = nww_eng.31.b
+		ai_chance = {
+			factor = 100
+		}
+		remove_ideas = ENG_king_edward
+		add_ideas = ENG_george_vi
+		set_country_flag = ENG_nww_crown_settled
+		add_stability = 0.05
+	}
+	is_triggered_only = yes
+	trigger = {
+		tag = ENG
+		has_focus_tree = ENG_nww_focus
+		has_idea = ENG_king_edward
+		NOT = {
+			has_government = communism
+		}
+	}
+}

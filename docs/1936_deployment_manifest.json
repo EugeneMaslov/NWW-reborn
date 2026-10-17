@@ -84,7 +84,7 @@
     "positions": 10
   },
   "AUS_1936_nww.txt": {
-    "divisions": 18,
+    "divisions": 27,
     "positions": 18
   },
   "LTB_1936.txt": {
@@ -98,5 +98,9 @@
   "UKR_1936.txt": {
     "divisions": 5,
     "positions": 5
+  },
+  "GRE_1936.txt": {
+    "divisions": 13,
+    "positions": 10
   }
 }

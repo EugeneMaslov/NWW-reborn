@@ -1,0 +1,51 @@
+GER_nww_refresh_services = {
+set_variable = { GER_service_army_org = 0 }
+set_variable = { GER_service_army_planning = 0 }
+set_variable = { GER_service_army_training = 0 }
+set_variable = { GER_service_army_artillery = 0 }
+set_variable = { GER_service_army_armour = 0 }
+set_variable = { GER_service_army_supply = 0 }
+set_variable = { GER_service_army_experience = 0 }
+if = { limit = { has_completed_focus = GER_nww_general_staff } add_to_variable = { GER_service_army_org = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_staff_college } add_to_variable = { GER_service_army_planning = 0.1 } }
+if = { limit = { has_completed_focus = GER_nww_mission_command } add_to_variable = { GER_service_army_training = -0.1 } }
+if = { limit = { has_completed_focus = GER_nww_deliberate_battle } add_to_variable = { GER_service_army_org = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_artillery_directorate } add_to_variable = { GER_service_army_artillery = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_panzergrenadiers } add_to_variable = { GER_service_army_armour = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_army_rail_logistics } add_to_variable = { GER_service_army_supply = -0.1 } }
+if = { limit = { has_completed_focus = GER_nww_imperial_army_readiness } add_to_variable = { GER_service_army_experience = 0.1 } }
+if = { limit = { has_completed_focus = GER_prussian_traditions NOT = { has_dynamic_modifier = { modifier = GER_nww_army_programme } } } add_dynamic_modifier = { modifier = GER_nww_army_programme } }
+set_variable = { GER_service_air_accidents = 0 }
+set_variable = { GER_service_air_superiority = 0 }
+set_variable = { GER_service_air_cas = 0 }
+set_variable = { GER_service_air_range = 0 }
+set_variable = { GER_service_air_mission = 0 }
+if = { limit = { has_completed_focus = GER_nww_imperial_air_service } add_to_variable = { GER_service_air_accidents = -0.05 } }
+if = { limit = { has_completed_focus = GER_nww_air_academies } add_to_variable = { GER_service_air_accidents = -0.05 } }
+if = { limit = { has_completed_focus = GER_nww_interceptor_control } add_to_variable = { GER_service_air_superiority = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_battlefield_aviation } add_to_variable = { GER_service_air_cas = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_air_navigation } add_to_variable = { GER_service_air_range = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_integrated_air_operations } add_to_variable = { GER_service_air_mission = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_imperial_air_service NOT = { has_dynamic_modifier = { modifier = GER_nww_air_programme } } } add_dynamic_modifier = { modifier = GER_nww_air_programme } }
+set_variable = { GER_service_navy_coordination = 0 }
+set_variable = { GER_service_navy_output = 0 }
+set_variable = { GER_service_navy_sortie = 0 }
+set_variable = { GER_service_navy_screens = 0 }
+set_variable = { GER_service_navy_range = 0 }
+set_variable = { GER_service_navy_repair = 0 }
+if = { limit = { has_completed_focus = GER_nww_admiralty_staff } add_to_variable = { GER_service_navy_coordination = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_imperial_shipyards } add_to_variable = { GER_service_navy_output = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_carrier_groups } add_to_variable = { GER_service_navy_sortie = 0.1 } }
+if = { limit = { has_completed_focus = GER_nww_screening_squadrons } add_to_variable = { GER_service_navy_screens = 0.05 } }
+if = { limit = { has_completed_focus = GER_nww_ocean_replenishment } add_to_variable = { GER_service_navy_range = 0.1 } }
+if = { limit = { has_completed_focus = GER_nww_fleet_repair_bases } add_to_variable = { GER_service_navy_repair = 0.1 } }
+if = { limit = { has_completed_focus = GER_nww_high_seas_readiness } add_to_variable = { GER_service_navy_output = 0.05 } }
+if = { limit = { has_completed_focus = GER_the_fleet_question NOT = { has_dynamic_modifier = { modifier = GER_nww_navy_programme } } } add_dynamic_modifier = { modifier = GER_nww_navy_programme } }
+}
+GER_nww_build_service_dockyard = {
+ random_owned_controlled_state = {
+  limit = { is_core_of = PREV is_coastal = yes }
+  add_extra_state_shared_building_slots = 1
+  add_building_construction = { type = dockyard level = 1 instant_build = yes }
+ }
+}

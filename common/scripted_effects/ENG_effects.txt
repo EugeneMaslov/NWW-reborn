@@ -316,7 +316,7 @@ create_country_leader = { name = ENG_nww_directory_leader ideology = despotism e
 }
 
 ENG_nww_socialist_transition = {
-promote_character = ENG_harry_pollitt set_country_flag = ENG_nww_social_settlement remove_ideas = george_v remove_ideas = ENG_king_edward remove_ideas = ENG_george_vi set_politics = { ruling_party = communism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all_minus15 = yes if = { limit = { has_stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+promote_character = ENG_harry_pollitt set_country_flag = ENG_nww_social_settlement remove_ideas = george_v remove_ideas = ENG_king_edward remove_ideas = ENG_george_vi remove_ideas = ENG_nww_constitutional_edward set_politics = { ruling_party = communism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all_minus15 = yes if = { limit = { has_stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
 }
 
 ENG_nww_labour_transition = {

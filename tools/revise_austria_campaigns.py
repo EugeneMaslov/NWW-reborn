@@ -86,3 +86,5 @@ manifest['content_files']=sorted(set(manifest['content_files'])|{effects_path,'c
 manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (ROOT/'docs/AUS_conquest_objectives.json').write_text(json.dumps({'target_states':territories,'formation_focus':fid,'capitulation_reference':'04_mtg_on_actions.txt: USA/CSA','peace_references':['ai_peace/RAJ.txt','cost_modifiers/AFG_peace.txt']},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Austrian campaigns claim entire target countries, annex after actual capitulation, renew unfinished objectives and lead to Austria-Hungary.')
+from repair_campaign_order_and_crown import repair_austria
+repair_austria()

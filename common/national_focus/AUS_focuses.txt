@@ -300,6 +300,7 @@ focus_tree = {
 			is_subject = no
 			has_war_support > 0.30
 			date > 1937.1.1
+			AUS_nww_can_prepare_croatia = yes
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

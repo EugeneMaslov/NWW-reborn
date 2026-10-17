@@ -61,6 +61,7 @@ nww_AUS_prepare_cro_campaign = {
 			NOT = {
 				is_ally_with = CRO
 			}
+			AUS_nww_can_prepare_croatia = yes
 		}
 		if = {
 			limit = {

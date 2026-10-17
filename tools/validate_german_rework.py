@@ -119,7 +119,7 @@ native=set(re.findall(r'^## (\w+)',(game/'documentation/modifiers_documentation.
 for key in meta['modifiers'].values():assert key in native,key
 tree=one(read(ROOT/'common/national_focus/GER_focuses.txt'),'focus_tree')
 fs={one(f,'id'):f for f in tree_focuses(tree,ROOT/'common/national_focus')}
-assert len(fs)==76
+assert len(fs)==json.loads((ROOT/'docs/GER_services_expansion.json').read_text(encoding='utf-8'))['total_playable']
 assert all(one(fs[f],'cost') in ('5','10') for f in meta['focuses'])
 plan=one(read(ROOT/'common/ai_strategy_plans/GER_historical.txt'),'NWW_GER_historical')
 order=[v for k,v,o in one(plan,'ai_national_focuses')]

@@ -30,7 +30,19 @@
     "GER_nww_worker_housing",
     "GER_nww_electromechanical_labs",
     "GER_nww_supply_resilience",
-    "GER_nww_prague_network"
+    "GER_nww_prague_network",
+    "GER_nww_civil_investment",
+    "GER_nww_regional_enterprises",
+    "GER_nww_export_machinery",
+    "GER_nww_consumer_markets",
+    "GER_nww_civil_energy_reserve",
+    "GER_nww_investment_dividend",
+    "GER_nww_defence_procurement",
+    "GER_nww_arsenal_dispersal",
+    "GER_nww_strategic_reserves",
+    "GER_nww_defence_standardisation",
+    "GER_nww_defence_energy_reserve",
+    "GER_nww_procurement_continuity"
   ],
   "persistent_bonuses": {
     "GER_krupp_and_thyssen": {
@@ -68,6 +80,36 @@
     },
     "GER_nww_industrial_research": {
       "research": 0.05
+    },
+    "GER_nww_civil_investment": {
+      "construction": 0.05
+    },
+    "GER_nww_regional_enterprises": {},
+    "GER_nww_export_machinery": {
+      "research": 0.05
+    },
+    "GER_nww_consumer_markets": {},
+    "GER_nww_civil_energy_reserve": {
+      "energy": 0.1
+    },
+    "GER_nww_investment_dividend": {
+      "construction": 0.05
+    },
+    "GER_nww_defence_procurement": {
+      "output": 0.05
+    },
+    "GER_nww_arsenal_dispersal": {},
+    "GER_nww_strategic_reserves": {
+      "maximum": 0.05
+    },
+    "GER_nww_defence_standardisation": {
+      "efficiency": 0.05
+    },
+    "GER_nww_defence_energy_reserve": {
+      "energy": 0.1
+    },
+    "GER_nww_procurement_continuity": {
+      "output": 0.05
     }
   },
   "modifiers": {

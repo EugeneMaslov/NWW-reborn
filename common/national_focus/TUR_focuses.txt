@@ -1223,6 +1223,12 @@ focus_tree = {
 			801 = {
 				is_owned_and_controlled_by = ROOT
 			}
+			184 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			1083 = {
+				is_owned_and_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = NWW_TUR_BUL_campaign_tt
@@ -1262,9 +1268,6 @@ focus_tree = {
 				is_owned_and_controlled_by = ROOT
 			}
 			182 = {
-				is_owned_and_controlled_by = ROOT
-			}
-			184 = {
 				is_owned_and_controlled_by = ROOT
 			}
 			185 = {
@@ -1314,6 +1317,12 @@ focus_tree = {
 			801 = {
 				is_owned_and_controlled_by = ROOT
 			}
+			184 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			1083 = {
+				is_owned_and_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
 			48 = {
@@ -1340,6 +1349,12 @@ focus_tree = {
 				add_compliance = 10
 			}
 			801 = {
+				add_compliance = 10
+			}
+			184 = {
+				add_compliance = 10
+			}
+			1083 = {
 				add_compliance = 10
 			}
 		}
@@ -1972,9 +1987,6 @@ focus_tree = {
 			182 = {
 				add_compliance = 10
 			}
-			184 = {
-				add_compliance = 10
-			}
 			185 = {
 				add_compliance = 10
 			}
@@ -1995,9 +2007,6 @@ focus_tree = {
 				is_owned_and_controlled_by = ROOT
 			}
 			182 = {
-				is_owned_and_controlled_by = ROOT
-			}
-			184 = {
 				is_owned_and_controlled_by = ROOT
 			}
 			185 = {
@@ -2096,6 +2105,9 @@ focus_tree = {
 				is_owned_and_controlled_by = ROOT
 			}
 			731 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			1083 = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}
@@ -2356,6 +2368,9 @@ focus_tree = {
 				is_owned_and_controlled_by = ROOT
 			}
 			731 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			1083 = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}

@@ -511,3 +511,5 @@ if __name__ == '__main__':
         path.parent.mkdir(parents=True,exist_ok=True)
         path.write_text('l_'+lang+':\n'+'\n'.join(' '+k+':0 '+quoted(v) for k,v in entries.items())+'\n',encoding='utf-8-sig',newline='\n')
     print(f'Generated {len(FOCI)} ENG focuses and {len(LOCS["russian"])} bilingual localization keys.')
+    from repair_campaign_order_and_crown import repair_crown
+    repair_crown()

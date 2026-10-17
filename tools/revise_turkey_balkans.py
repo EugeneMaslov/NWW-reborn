@@ -7,8 +7,8 @@ from hoi4_script import read, parse, one, values, dump
 ROOT = Path(__file__).resolve().parents[1]
 FOCUS = ROOT / 'common/national_focus/TUR_focuses.txt'
 CAMPAIGNS = {
-    'BUL': ('TUR_war_with_bulgaria', [48, 211, 212, 801]),
-    'GRE': ('TUR_snova_copi', [47, 182, 184, 185, 186, 187, 731]),
+    'BUL': ('TUR_war_with_bulgaria', [48, 184, 211, 212, 801, 1083]),
+    'GRE': ('TUR_snova_copi', [47, 182, 185, 186, 187, 731]),
     'YUG': ('NWW_TUR_serbian_campaign', [105, 106, 107, 108, 802, 803, 970]),
     'ALB': ('NWW_TUR_albanian_campaign', [44, 805, 934]),
     'ROM': ('NWW_TUR_romanian_campaign', [46, 77, 78, 79, 80, 81, 766, 971]),

@@ -1,0 +1,20 @@
+AUS_nww_install_campaign_order = {
+ # Follow GER_campaign_safety_effects: the installed loader rejects declaration
+ # bans as relation overrides, despite their presence in generated documentation.
+ if = {
+  limit = { is_ai = yes OR = { has_war = yes has_country_flag = AUS_nww_hungarian_recovery } }
+  set_rule = { can_not_declare_war = yes }
+  set_country_flag = AUS_nww_campaign_declaration_rule_owned
+ }
+ else_if = {
+  limit = { has_country_flag = AUS_nww_campaign_declaration_rule_owned }
+  clear_rule = { can_not_declare_war = yes }
+  clr_country_flag = AUS_nww_campaign_declaration_rule_owned
+ }
+ # The existing campaign helper renews the goal once the Hungarian gate opens.
+ if = {
+  limit = { is_ai = yes NOT = { AUS_nww_croatian_campaign_ready = yes } NOT = { has_war_with = CRO } has_wargoal_against = CRO }
+  remove_wargoal = { type = all target = CRO }
+ }
+ set_country_flag = AUS_nww_campaign_order_installed
+}

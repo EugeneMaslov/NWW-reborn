@@ -161,4 +161,9 @@ GER_nww_build_energy_infrastructure = {
     write('docs/legacy_import.json',json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     print(f'Built {len(specs)} German industrial/intelligence focuses, preserving all original IDs')
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    main()
+    from expand_german_services import main as expand_services
+    from update_german_service_plans import main as update_service_plans
+    expand_services()
+    update_service_plans()

@@ -366,6 +366,8 @@ nww_TUR_prepare_bul_campaign = {
 				}
 			}
 		}
+		add_state_claim = 1083
+		add_state_claim = 184
 	}
 }
 nww_TUR_prepare_gre_campaign = {
@@ -382,7 +384,6 @@ nww_TUR_prepare_gre_campaign = {
 		}
 		add_state_claim = 47
 		add_state_claim = 182
-		add_state_claim = 184
 		add_state_claim = 185
 		add_state_claim = 186
 		add_state_claim = 187

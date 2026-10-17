@@ -19,6 +19,10 @@ on_actions = {
 						transfer_troops = no
 					}
 					set_country_flag = NWW_AUS_HUN_incorporated
+					set_country_flag = {
+						flag = AUS_nww_hungarian_recovery
+						days = 30
+					}
 				}
 			}
 			if = {

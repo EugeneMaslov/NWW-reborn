@@ -436,4 +436,7 @@ def characters(tree):
     save('common/characters/AUS_nww_characters.txt',[('characters',chars,'=')]);save('common/country_leader/AUS_traits.txt',[('leader_traits',traits,'=')]);save(history_path,history)
     loc('AUS_nww_otto_i','Отто I Габсбург','Otto I von Habsburg');loc('AUS_nww_starhemberg','Эрнст Рюдигер Штаремберг','Ernst Rudiger Starhemberg');loc('AUS_nww_koplenig','Иоганн Коплениг','Johann Koplenig');loc('AUS_nww_johannes_i','Иоганн I Лихтенштейн','Johannes I von Liechtenstein')
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    main()
+    from repair_campaign_order_and_crown import repair_austria
+    repair_austria()

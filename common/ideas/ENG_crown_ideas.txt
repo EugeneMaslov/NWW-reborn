@@ -1,0 +1,10 @@
+ideas = {
+ country = {
+  ENG_nww_constitutional_edward = {
+   picture = king_edward
+   allowed = { original_tag = ENG }
+   removal_cost = -1
+   modifier = { stability_factor = 0.05 }
+  }
+ }
+}
