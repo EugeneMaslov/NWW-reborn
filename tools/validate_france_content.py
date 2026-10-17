@@ -57,9 +57,9 @@ emergency=sum(int(one(focuses['FRA_nww_'+f],'cost'))*7 for f in ['army_neutralit
 check(emergency<270,f'Emergency resolution impossible within mandate: {emergency}')
 
 effects=read(ROOT/'common/scripted_effects/FRA_effects.txt')
-effect_names={k for k,v,o in effects}
+effect_names={k for path in (ROOT/'common/scripted_effects').glob('FRA*.txt') for k,v,o in read(path)}
 events={one(v,'id') for k,v,o in read(ROOT/'events/FRA_events.txt') if k=='country_event'}
-triggers={k for k,v,o in read(ROOT/'common/scripted_triggers/FRA_triggers.txt')}
+triggers={k for path in (ROOT/'common/scripted_triggers').glob('FRA*.txt') for k,v,o in read(path)}
 decisions=read(ROOT/'common/decisions/FRA_decisions.txt')
 decision_ids={k for cat,items,o in decisions for k,v,op in items}
 country_tags={k for root in (GAME,ROOT) for f in (root/'common/country_tags').glob('*.txt') for k,v,o in read(f)}
@@ -158,10 +158,10 @@ for alias in ['free_french_focus','vichy_french_focus']:
     check(any(one(one(read(f),'focus_tree',[]),'id')==alias and one(one(one(read(f),'focus_tree',[]),'country',[]),'factor')=='0' for f in [ROOT/'common/national_focus/free_france.txt',ROOT/'common/national_focus/vichy_france.txt']),alias+': missing nonselectable alias')
 native_rules=read(GAME/'common/game_rules/00_game_rules.txt')
 override_rules=read(ROOT/'common/game_rules/00_game_rules.txt')
-# Both country-owned builders deliberately extend this shared registry. ENG is
-# checked by validate_britain_content; all other native rules stay byte-semantic.
-owned_rules={'FRA_ai_behavior','ENG_ai_behavior'}
-check([(k,v,o) for k,v,o in native_rules if k not in owned_rules]==[(k,v,o) for k,v,o in override_rules if k not in owned_rules],'FRA/ENG override changed another country\'s game rules')
+# Country-owned FRA/ENG/POL implementations extend the shared native registry.
+# All other rules must still match the installed game.
+owned_rules={'FRA_ai_behavior','ENG_ai_behavior','POL_ai_behavior'}
+check([(k,v,o) for k,v,o in native_rules if k not in owned_rules]==[(k,v,o) for k,v,o in override_rules if k not in owned_rules],'Country overrides changed an unowned game rule')
 for key in ['mandate','tension',*[r[0]+'_pressure' for r in json.loads((ROOT/'docs/FRA_content.json').read_text(encoding='utf-8'))['regions']]]:
     check(any(k=='clamp_variable' and one(v,'var')=='FRA_'+key and one(v,'min')=='0' and one(v,'max')=='100' for k,v,o in walk(effects)),'Unbounded meter '+key)
 

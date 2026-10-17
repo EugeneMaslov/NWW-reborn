@@ -1,0 +1,83 @@
+FRA_nww_GER_restraint = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		NOT = {
+			FRA_ai_ready_for_GER = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = GER
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = -1000
+	}
+}
+FRA_nww_fund_overseas_settlement = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		FRA_ai_overseas_talks_pending = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = pp_spend_priority
+		id = decision
+		value = 100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = idea
+		value = -100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -100
+	}
+}
+FRA_nww_careful_GER_front = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		is_ai = yes
+		has_focus_tree = french_focus
+		has_war_with = GER
+		NOT = {
+			FRA_ai_GER_front_advantage = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_concentration_front_factor
+		state = 28
+		state = 42
+		state = 51
+		state = 978
+		ratio = 0.95
+		value = -100
+	}
+	ai_strategy = {
+		type = front_control
+		state = 28
+		state = 42
+		state = 51
+		state = 978
+		ratio = 0.8
+		priority = 100
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = no
+	}
+}

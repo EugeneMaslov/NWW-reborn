@@ -1,0 +1,12 @@
+FRA_install_ai_campaign_guard = {
+	remove_relation_rule_override = {
+		trigger = FRA_ai_unsafe_GER_declaration
+		can_not_declare_war = yes
+	}
+	add_relation_rule_override = {
+		trigger = FRA_ai_unsafe_GER_declaration
+		usage_desc = FRA_ai_GER_restraint_tt
+		can_not_declare_war = yes
+	}
+	set_country_flag = FRA_ai_campaign_guard_installed
+}

@@ -1,0 +1,120 @@
+FRA_ai_overseas_talks_pending = {
+	has_country_flag = FRA_policy_representation
+	OR = {
+		AND = {
+			FRA_holds_algeria = yes
+			NOT = {
+				has_country_flag = FRA_algeria_represented
+			}
+		}
+		AND = {
+			FRA_holds_maghreb = yes
+			NOT = {
+				has_country_flag = FRA_maghreb_represented
+			}
+		}
+		AND = {
+			FRA_holds_west_africa = yes
+			NOT = {
+				has_country_flag = FRA_west_africa_represented
+			}
+		}
+		AND = {
+			FRA_holds_equatorial = yes
+			NOT = {
+				has_country_flag = FRA_equatorial_represented
+			}
+		}
+		AND = {
+			FRA_holds_indochina = yes
+			NOT = {
+				has_country_flag = FRA_indochina_represented
+			}
+		}
+		AND = {
+			FRA_holds_islands = yes
+			NOT = {
+				has_country_flag = FRA_islands_represented
+			}
+		}
+	}
+}
+FRA_ai_historical_defensive = {
+	has_game_rule = {
+		rule = FRA_ai_behavior
+		option = DEFAULT
+	}
+	is_historical_focus_on = yes
+}
+FRA_ai_ready_for_GER = {
+	NOT = {
+		FRA_ai_historical_defensive = yes
+	}
+	date > 1939.12.31
+	has_war = no
+	has_capitulated = no
+	has_civil_war = no
+	is_subject = no
+	surrender_progress < 0.05
+	has_stability > 0.50
+	has_war_support > 0.50
+	has_completed_focus = FRA_nww_signals_supply
+	has_completed_focus = FRA_nww_officer_corps
+	has_completed_focus = FRA_nww_rhine_preparations
+	GER = {
+		exists = yes
+		is_subject = no
+		NOT = {
+			is_ally_with = FRA
+		}
+		strength_ratio = {
+			tag = FRA
+			ratio < 0.80
+		}
+		OR = {
+			is_in_faction = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = PREV
+				}
+			}
+		}
+	}
+	NOT = {
+		any_other_country = {
+			has_guaranteed = GER
+			OR = {
+				is_major = yes
+				is_in_faction = yes
+				is_subject = yes
+			}
+		}
+	}
+}
+FRA_ai_can_confront_GER = {
+	OR = {
+		is_ai = no
+		FRA_ai_ready_for_GER = yes
+	}
+}
+FRA_ai_GER_front_advantage = {
+	GER = {
+		exists = yes
+		strength_ratio = {
+			tag = FRA
+			ratio < 0.80
+		}
+	}
+}
+FRA_ai_unsafe_GER_declaration = {
+	FRA = {
+		is_ai = yes
+		has_focus_tree = french_focus
+		NOT = {
+			FRA_ai_ready_for_GER = yes
+		}
+	}
+	FROM = {
+		tag = GER
+	}
+}

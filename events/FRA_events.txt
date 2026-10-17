@@ -130,16 +130,41 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = nww_fra.100.a
-		trigger = {
-			has_country_flag = FRA_policy_representation
-		}
-		ai_chance = {
-			factor = 60
-		}
 		set_country_flag = FRA_algeria_offer_representation
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_algeria_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+			custom_effect_tooltip = FRA_emergency_representation_tt
+			add_political_power = -50
+			add_to_variable = {
+				FRA_algeria_pressure = -25
+			}
+			FRA_clamp_meters = yes
+		}
 		country_event = {
 			id = nww_fra.140
 			days = 7
+		}
+		trigger = {
+			has_country_flag = FRA_policy_representation
+			FRA_holds_algeria = yes
+			OR = {
+				check_variable = {
+					var = FRA_algeria_pressure
+					value = 80
+					compare = less_than
+					tooltip = FRA_check_algeria_pressure_less_than_80_tt
+				}
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -148,13 +173,17 @@ country_event = {
 			has_completed_focus = FRA_nww_overseas_compact
 			FRA_can_release_algeria = yes
 		}
-		ai_chance = {
-			factor = 25
-		}
 		set_country_flag = FRA_algeria_offer_autonomy
 		country_event = {
 			id = nww_fra.140
 			days = 7
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+			}
 		}
 	}
 	option = {
@@ -179,6 +208,28 @@ country_event = {
 			FRA_algeria_pressure = 5
 		}
 		add_political_power = 25
+		clr_country_flag = FRA_negotiation_busy
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				FRA_holds_algeria = yes
+				OR = {
+					check_variable = {
+						var = FRA_algeria_pressure
+						value = 80
+						compare = less_than
+					}
+					has_political_power > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_algeria = yes
+			}
+		}
 	}
 }
 country_event = {
@@ -244,6 +295,7 @@ country_event = {
 		clr_country_flag = FRA_algeria_offer_autonomy
 		clr_country_flag = FRA_algeria_offer_independence
 		FRA_clamp_meters = yes
+		clr_country_flag = FRA_negotiation_busy
 	}
 }
 country_event = {
@@ -289,16 +341,41 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = nww_fra.101.a
-		trigger = {
-			has_country_flag = FRA_policy_representation
-		}
-		ai_chance = {
-			factor = 60
-		}
 		set_country_flag = FRA_maghreb_offer_representation
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_maghreb_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+			custom_effect_tooltip = FRA_emergency_representation_tt
+			add_political_power = -50
+			add_to_variable = {
+				FRA_maghreb_pressure = -25
+			}
+			FRA_clamp_meters = yes
+		}
 		country_event = {
 			id = nww_fra.141
 			days = 7
+		}
+		trigger = {
+			has_country_flag = FRA_policy_representation
+			FRA_holds_maghreb = yes
+			OR = {
+				check_variable = {
+					var = FRA_maghreb_pressure
+					value = 80
+					compare = less_than
+					tooltip = FRA_check_maghreb_pressure_less_than_80_tt
+				}
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -307,13 +384,17 @@ country_event = {
 			has_completed_focus = FRA_nww_overseas_compact
 			FRA_can_release_maghreb = yes
 		}
-		ai_chance = {
-			factor = 25
-		}
 		set_country_flag = FRA_maghreb_offer_autonomy
 		country_event = {
 			id = nww_fra.141
 			days = 7
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+			}
 		}
 	}
 	option = {
@@ -338,6 +419,28 @@ country_event = {
 			FRA_maghreb_pressure = 5
 		}
 		add_political_power = 25
+		clr_country_flag = FRA_negotiation_busy
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				FRA_holds_maghreb = yes
+				OR = {
+					check_variable = {
+						var = FRA_maghreb_pressure
+						value = 80
+						compare = less_than
+					}
+					has_political_power > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_maghreb = yes
+			}
+		}
 	}
 }
 country_event = {
@@ -403,6 +506,7 @@ country_event = {
 		clr_country_flag = FRA_maghreb_offer_autonomy
 		clr_country_flag = FRA_maghreb_offer_independence
 		FRA_clamp_meters = yes
+		clr_country_flag = FRA_negotiation_busy
 	}
 }
 country_event = {
@@ -448,16 +552,41 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = nww_fra.102.a
-		trigger = {
-			has_country_flag = FRA_policy_representation
-		}
-		ai_chance = {
-			factor = 60
-		}
 		set_country_flag = FRA_west_africa_offer_representation
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_west_africa_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+			custom_effect_tooltip = FRA_emergency_representation_tt
+			add_political_power = -50
+			add_to_variable = {
+				FRA_west_africa_pressure = -25
+			}
+			FRA_clamp_meters = yes
+		}
 		country_event = {
 			id = nww_fra.142
 			days = 7
+		}
+		trigger = {
+			has_country_flag = FRA_policy_representation
+			FRA_holds_west_africa = yes
+			OR = {
+				check_variable = {
+					var = FRA_west_africa_pressure
+					value = 80
+					compare = less_than
+					tooltip = FRA_check_west_africa_pressure_less_than_80_tt
+				}
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -466,13 +595,17 @@ country_event = {
 			has_completed_focus = FRA_nww_overseas_compact
 			FRA_can_release_west_africa = yes
 		}
-		ai_chance = {
-			factor = 25
-		}
 		set_country_flag = FRA_west_africa_offer_autonomy
 		country_event = {
 			id = nww_fra.142
 			days = 7
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+			}
 		}
 	}
 	option = {
@@ -497,6 +630,28 @@ country_event = {
 			FRA_west_africa_pressure = 5
 		}
 		add_political_power = 25
+		clr_country_flag = FRA_negotiation_busy
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				FRA_holds_west_africa = yes
+				OR = {
+					check_variable = {
+						var = FRA_west_africa_pressure
+						value = 80
+						compare = less_than
+					}
+					has_political_power > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_west_africa = yes
+			}
+		}
 	}
 }
 country_event = {
@@ -562,6 +717,7 @@ country_event = {
 		clr_country_flag = FRA_west_africa_offer_autonomy
 		clr_country_flag = FRA_west_africa_offer_independence
 		FRA_clamp_meters = yes
+		clr_country_flag = FRA_negotiation_busy
 	}
 }
 country_event = {
@@ -607,16 +763,41 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = nww_fra.103.a
-		trigger = {
-			has_country_flag = FRA_policy_representation
-		}
-		ai_chance = {
-			factor = 60
-		}
 		set_country_flag = FRA_equatorial_offer_representation
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_equatorial_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+			custom_effect_tooltip = FRA_emergency_representation_tt
+			add_political_power = -50
+			add_to_variable = {
+				FRA_equatorial_pressure = -25
+			}
+			FRA_clamp_meters = yes
+		}
 		country_event = {
 			id = nww_fra.143
 			days = 7
+		}
+		trigger = {
+			has_country_flag = FRA_policy_representation
+			FRA_holds_equatorial = yes
+			OR = {
+				check_variable = {
+					var = FRA_equatorial_pressure
+					value = 80
+					compare = less_than
+					tooltip = FRA_check_equatorial_pressure_less_than_80_tt
+				}
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -625,13 +806,17 @@ country_event = {
 			has_completed_focus = FRA_nww_overseas_compact
 			FRA_can_release_equatorial = yes
 		}
-		ai_chance = {
-			factor = 25
-		}
 		set_country_flag = FRA_equatorial_offer_autonomy
 		country_event = {
 			id = nww_fra.143
 			days = 7
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+			}
 		}
 	}
 	option = {
@@ -656,6 +841,28 @@ country_event = {
 			FRA_equatorial_pressure = 5
 		}
 		add_political_power = 25
+		clr_country_flag = FRA_negotiation_busy
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				FRA_holds_equatorial = yes
+				OR = {
+					check_variable = {
+						var = FRA_equatorial_pressure
+						value = 80
+						compare = less_than
+					}
+					has_political_power > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_equatorial = yes
+			}
+		}
 	}
 }
 country_event = {
@@ -721,6 +928,7 @@ country_event = {
 		clr_country_flag = FRA_equatorial_offer_autonomy
 		clr_country_flag = FRA_equatorial_offer_independence
 		FRA_clamp_meters = yes
+		clr_country_flag = FRA_negotiation_busy
 	}
 }
 country_event = {
@@ -766,16 +974,41 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = nww_fra.104.a
-		trigger = {
-			has_country_flag = FRA_policy_representation
-		}
-		ai_chance = {
-			factor = 60
-		}
 		set_country_flag = FRA_indochina_offer_representation
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_indochina_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+			custom_effect_tooltip = FRA_emergency_representation_tt
+			add_political_power = -50
+			add_to_variable = {
+				FRA_indochina_pressure = -25
+			}
+			FRA_clamp_meters = yes
+		}
 		country_event = {
 			id = nww_fra.144
 			days = 7
+		}
+		trigger = {
+			has_country_flag = FRA_policy_representation
+			FRA_holds_indochina = yes
+			OR = {
+				check_variable = {
+					var = FRA_indochina_pressure
+					value = 80
+					compare = less_than
+					tooltip = FRA_check_indochina_pressure_less_than_80_tt
+				}
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -784,13 +1017,17 @@ country_event = {
 			has_completed_focus = FRA_nww_overseas_compact
 			FRA_can_release_indochina = yes
 		}
-		ai_chance = {
-			factor = 25
-		}
 		set_country_flag = FRA_indochina_offer_autonomy
 		country_event = {
 			id = nww_fra.144
 			days = 7
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+			}
 		}
 	}
 	option = {
@@ -815,6 +1052,28 @@ country_event = {
 			FRA_indochina_pressure = 5
 		}
 		add_political_power = 25
+		clr_country_flag = FRA_negotiation_busy
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				FRA_holds_indochina = yes
+				OR = {
+					check_variable = {
+						var = FRA_indochina_pressure
+						value = 80
+						compare = less_than
+					}
+					has_political_power > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_indochina = yes
+			}
+		}
 	}
 }
 country_event = {
@@ -880,6 +1139,7 @@ country_event = {
 		clr_country_flag = FRA_indochina_offer_autonomy
 		clr_country_flag = FRA_indochina_offer_independence
 		FRA_clamp_meters = yes
+		clr_country_flag = FRA_negotiation_busy
 	}
 }
 country_event = {
@@ -925,16 +1185,41 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = nww_fra.105.a
-		trigger = {
-			has_country_flag = FRA_policy_representation
-		}
-		ai_chance = {
-			factor = 60
-		}
 		set_country_flag = FRA_islands_offer_representation
+		if = {
+			limit = {
+				check_variable = {
+					var = FRA_islands_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+			custom_effect_tooltip = FRA_emergency_representation_tt
+			add_political_power = -50
+			add_to_variable = {
+				FRA_islands_pressure = -25
+			}
+			FRA_clamp_meters = yes
+		}
 		country_event = {
 			id = nww_fra.145
 			days = 7
+		}
+		trigger = {
+			has_country_flag = FRA_policy_representation
+			FRA_holds_islands = yes
+			OR = {
+				check_variable = {
+					var = FRA_islands_pressure
+					value = 80
+					compare = less_than
+					tooltip = FRA_check_islands_pressure_less_than_80_tt
+				}
+				has_political_power > 49
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
@@ -943,13 +1228,17 @@ country_event = {
 			has_completed_focus = FRA_nww_overseas_compact
 			FRA_can_release_islands = yes
 		}
-		ai_chance = {
-			factor = 25
-		}
 		set_country_flag = FRA_islands_offer_autonomy
 		country_event = {
 			id = nww_fra.145
 			days = 7
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+			}
 		}
 	}
 	option = {
@@ -974,6 +1263,28 @@ country_event = {
 			FRA_islands_pressure = 5
 		}
 		add_political_power = 25
+		clr_country_flag = FRA_negotiation_busy
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				FRA_holds_islands = yes
+				OR = {
+					check_variable = {
+						var = FRA_islands_pressure
+						value = 80
+						compare = less_than
+					}
+					has_political_power > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_islands = yes
+			}
+		}
 	}
 }
 country_event = {
@@ -1039,6 +1350,7 @@ country_event = {
 		clr_country_flag = FRA_islands_offer_autonomy
 		clr_country_flag = FRA_islands_offer_independence
 		FRA_clamp_meters = yes
+		clr_country_flag = FRA_negotiation_busy
 	}
 }
 country_event = {
@@ -1226,6 +1538,7 @@ country_event = {
 					NOT = {
 						has_war_with = GER
 					}
+					FRA_ai_can_confront_GER = yes
 				}
 				create_wargoal = {
 					type = annex_everything

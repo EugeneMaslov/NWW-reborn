@@ -5347,9 +5347,6 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		ai_will_do = {
-			factor = 1
-		}
 		completion_reward = {
 			add_war_support = 0.05
 			set_country_flag = FRA_rhine_diplomacy
@@ -5362,6 +5359,13 @@ focus_tree = {
 			}
 			FRA_update_spirits = yes
 			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				FRA_ai_historical_defensive = yes
+			}
 		}
 	}
 	focus = {
@@ -5444,9 +5448,6 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		ai_will_do = {
-			factor = 1
-		}
 		completion_reward = {
 			army_experience = 25
 			set_country_flag = FRA_nww_rhine_preparations_done
@@ -5458,6 +5459,13 @@ focus_tree = {
 			}
 			FRA_update_spirits = yes
 			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				FRA_ai_historical_defensive = yes
+			}
 		}
 	}
 	focus = {
@@ -5478,12 +5486,10 @@ focus_tree = {
 			NOT = {
 				has_war_with = GER
 			}
+			FRA_ai_can_confront_GER = yes
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		ai_will_do = {
-			factor = 1
-		}
 		completion_reward = {
 			GER = {
 				country_event = {
@@ -5500,6 +5506,13 @@ focus_tree = {
 			}
 			FRA_update_spirits = yes
 			FRA_clamp_meters = yes
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				FRA_ai_historical_defensive = yes
+			}
 		}
 	}
 }

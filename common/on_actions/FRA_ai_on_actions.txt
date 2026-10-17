@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FRA = {
+				if = {
+					limit = {
+						exists = yes
+						has_focus_tree = french_focus
+					}
+					FRA_install_ai_campaign_guard = yes
+				}
+			}
+		}
+	}
+	on_daily_FRA = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = french_focus
+					NOT = {
+						has_country_flag = FRA_ai_campaign_guard_installed
+					}
+				}
+				FRA_install_ai_campaign_guard = yes
+			}
+		}
+	}
+}

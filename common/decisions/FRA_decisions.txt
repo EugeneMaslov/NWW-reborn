@@ -42,6 +42,23 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = FRA_mandate
+					value = 30
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_social_arbitration = {
@@ -80,7 +97,24 @@ FRA_nww_mandate_category = {
 			FRA_clamp_meters = yes
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = FRA_tension
+					value = 50
+					compare = less_than
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_inquiry = {
@@ -119,7 +153,24 @@ FRA_nww_mandate_category = {
 			FRA_clamp_meters = yes
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = FRA_mandate
+					value = 45
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_decree = {
@@ -163,6 +214,23 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_campaign_republic = {
@@ -210,6 +278,30 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_country_flag = FRA_ai_REPUBLIC
+						has_country_flag = FRA_ai_SOCIAL
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					democratic < 0.40
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_campaign_royal = {
@@ -256,6 +348,27 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_ai_MONARCHY
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					neutrality < 0.40
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_campaign_leagues = {
@@ -299,6 +412,27 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_ai_LEAGUES
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					fascism < 0.40
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_campaign_workers = {
@@ -342,6 +476,30 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_country_flag = FRA_ai_COUNCILS
+						has_country_flag = FRA_ai_PLAN
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					communism < 0.40
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_campaign_army = {
@@ -385,6 +543,27 @@ FRA_nww_mandate_category = {
 		}
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_ai_MILITARY
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					neutrality < 0.40
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_confidence_vote = {
@@ -542,6 +721,15 @@ FRA_nww_overseas_category = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_negotiate_algeria = {
@@ -554,12 +742,6 @@ FRA_nww_overseas_category = {
 			FRA_holds_algeria = yes
 			NOT = {
 				has_country_flag = FRA_algeria_treaty
-			}
-		}
-		available = {
-			has_capitulated = no
-			NOT = {
-				has_country_flag = FRA_negotiation_busy
 			}
 		}
 		cost = 50
@@ -579,8 +761,55 @@ FRA_nww_overseas_category = {
 			clr_country_flag = FRA_negotiation_busy
 			add_political_power = 50
 		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+			OR = {
+				has_country_flag = FRA_policy_representation
+				has_country_flag = FRA_policy_selfdetermination
+				has_completed_focus = FRA_nww_overseas_compact
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_policy_representation
+				}
+				NOT = {
+					has_country_flag = FRA_policy_selfdetermination
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_algeria = no
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				check_variable = {
+					var = FRA_algeria_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+				NOT = {
+					has_political_power > 99
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_algeria_represented
+			}
+			modifier = {
+				factor = 4
+				has_country_flag = FRA_algeria_crisis
+			}
+		}
 		remove_effect = {
-			clr_country_flag = FRA_negotiation_busy
 			if = {
 				limit = {
 					FRA_holds_algeria = yes
@@ -590,9 +819,9 @@ FRA_nww_overseas_category = {
 					days = 1
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 3
+			else = {
+				clr_country_flag = FRA_negotiation_busy
+			}
 		}
 	}
 	FRA_nww_garrison_algeria = {
@@ -752,6 +981,15 @@ FRA_nww_overseas_category = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_negotiate_maghreb = {
@@ -764,12 +1002,6 @@ FRA_nww_overseas_category = {
 			FRA_holds_maghreb = yes
 			NOT = {
 				has_country_flag = FRA_maghreb_treaty
-			}
-		}
-		available = {
-			has_capitulated = no
-			NOT = {
-				has_country_flag = FRA_negotiation_busy
 			}
 		}
 		cost = 50
@@ -789,8 +1021,55 @@ FRA_nww_overseas_category = {
 			clr_country_flag = FRA_negotiation_busy
 			add_political_power = 50
 		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+			OR = {
+				has_country_flag = FRA_policy_representation
+				has_country_flag = FRA_policy_selfdetermination
+				has_completed_focus = FRA_nww_overseas_compact
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_policy_representation
+				}
+				NOT = {
+					has_country_flag = FRA_policy_selfdetermination
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_maghreb = no
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				check_variable = {
+					var = FRA_maghreb_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+				NOT = {
+					has_political_power > 99
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_maghreb_represented
+			}
+			modifier = {
+				factor = 4
+				has_country_flag = FRA_maghreb_crisis
+			}
+		}
 		remove_effect = {
-			clr_country_flag = FRA_negotiation_busy
 			if = {
 				limit = {
 					FRA_holds_maghreb = yes
@@ -800,9 +1079,9 @@ FRA_nww_overseas_category = {
 					days = 1
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 3
+			else = {
+				clr_country_flag = FRA_negotiation_busy
+			}
 		}
 	}
 	FRA_nww_garrison_maghreb = {
@@ -968,6 +1247,15 @@ FRA_nww_overseas_category = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_negotiate_west_africa = {
@@ -980,12 +1268,6 @@ FRA_nww_overseas_category = {
 			FRA_holds_west_africa = yes
 			NOT = {
 				has_country_flag = FRA_west_africa_treaty
-			}
-		}
-		available = {
-			has_capitulated = no
-			NOT = {
-				has_country_flag = FRA_negotiation_busy
 			}
 		}
 		cost = 50
@@ -1005,8 +1287,55 @@ FRA_nww_overseas_category = {
 			clr_country_flag = FRA_negotiation_busy
 			add_political_power = 50
 		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+			OR = {
+				has_country_flag = FRA_policy_representation
+				has_country_flag = FRA_policy_selfdetermination
+				has_completed_focus = FRA_nww_overseas_compact
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_policy_representation
+				}
+				NOT = {
+					has_country_flag = FRA_policy_selfdetermination
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_west_africa = no
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				check_variable = {
+					var = FRA_west_africa_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+				NOT = {
+					has_political_power > 99
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_west_africa_represented
+			}
+			modifier = {
+				factor = 4
+				has_country_flag = FRA_west_africa_crisis
+			}
+		}
 		remove_effect = {
-			clr_country_flag = FRA_negotiation_busy
 			if = {
 				limit = {
 					FRA_holds_west_africa = yes
@@ -1016,9 +1345,9 @@ FRA_nww_overseas_category = {
 					days = 1
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 3
+			else = {
+				clr_country_flag = FRA_negotiation_busy
+			}
 		}
 	}
 	FRA_nww_garrison_west_africa = {
@@ -1180,6 +1509,15 @@ FRA_nww_overseas_category = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_negotiate_equatorial = {
@@ -1192,12 +1530,6 @@ FRA_nww_overseas_category = {
 			FRA_holds_equatorial = yes
 			NOT = {
 				has_country_flag = FRA_equatorial_treaty
-			}
-		}
-		available = {
-			has_capitulated = no
-			NOT = {
-				has_country_flag = FRA_negotiation_busy
 			}
 		}
 		cost = 50
@@ -1217,8 +1549,55 @@ FRA_nww_overseas_category = {
 			clr_country_flag = FRA_negotiation_busy
 			add_political_power = 50
 		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+			OR = {
+				has_country_flag = FRA_policy_representation
+				has_country_flag = FRA_policy_selfdetermination
+				has_completed_focus = FRA_nww_overseas_compact
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_policy_representation
+				}
+				NOT = {
+					has_country_flag = FRA_policy_selfdetermination
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_equatorial = no
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				check_variable = {
+					var = FRA_equatorial_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+				NOT = {
+					has_political_power > 99
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_equatorial_represented
+			}
+			modifier = {
+				factor = 4
+				has_country_flag = FRA_equatorial_crisis
+			}
+		}
 		remove_effect = {
-			clr_country_flag = FRA_negotiation_busy
 			if = {
 				limit = {
 					FRA_holds_equatorial = yes
@@ -1228,9 +1607,9 @@ FRA_nww_overseas_category = {
 					days = 1
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 3
+			else = {
+				clr_country_flag = FRA_negotiation_busy
+			}
 		}
 	}
 	FRA_nww_garrison_equatorial = {
@@ -1391,6 +1770,15 @@ FRA_nww_overseas_category = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_negotiate_indochina = {
@@ -1403,12 +1791,6 @@ FRA_nww_overseas_category = {
 			FRA_holds_indochina = yes
 			NOT = {
 				has_country_flag = FRA_indochina_treaty
-			}
-		}
-		available = {
-			has_capitulated = no
-			NOT = {
-				has_country_flag = FRA_negotiation_busy
 			}
 		}
 		cost = 50
@@ -1428,8 +1810,55 @@ FRA_nww_overseas_category = {
 			clr_country_flag = FRA_negotiation_busy
 			add_political_power = 50
 		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+			OR = {
+				has_country_flag = FRA_policy_representation
+				has_country_flag = FRA_policy_selfdetermination
+				has_completed_focus = FRA_nww_overseas_compact
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_policy_representation
+				}
+				NOT = {
+					has_country_flag = FRA_policy_selfdetermination
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_indochina = no
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				check_variable = {
+					var = FRA_indochina_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+				NOT = {
+					has_political_power > 99
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_indochina_represented
+			}
+			modifier = {
+				factor = 4
+				has_country_flag = FRA_indochina_crisis
+			}
+		}
 		remove_effect = {
-			clr_country_flag = FRA_negotiation_busy
 			if = {
 				limit = {
 					FRA_holds_indochina = yes
@@ -1439,9 +1868,9 @@ FRA_nww_overseas_category = {
 					days = 1
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 3
+			else = {
+				clr_country_flag = FRA_negotiation_busy
+			}
 		}
 	}
 	FRA_nww_garrison_indochina = {
@@ -1601,6 +2030,15 @@ FRA_nww_overseas_category = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_negotiate_islands = {
@@ -1613,12 +2051,6 @@ FRA_nww_overseas_category = {
 			FRA_holds_islands = yes
 			NOT = {
 				has_country_flag = FRA_islands_treaty
-			}
-		}
-		available = {
-			has_capitulated = no
-			NOT = {
-				has_country_flag = FRA_negotiation_busy
 			}
 		}
 		cost = 50
@@ -1638,8 +2070,55 @@ FRA_nww_overseas_category = {
 			clr_country_flag = FRA_negotiation_busy
 			add_political_power = 50
 		}
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_country_flag = FRA_negotiation_busy
+			}
+			OR = {
+				has_country_flag = FRA_policy_representation
+				has_country_flag = FRA_policy_selfdetermination
+				has_completed_focus = FRA_nww_overseas_compact
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = FRA_policy_representation
+				}
+				NOT = {
+					has_country_flag = FRA_policy_selfdetermination
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_selfdetermination
+				FRA_can_release_islands = no
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_policy_representation
+				check_variable = {
+					var = FRA_islands_pressure
+					value = 80
+					compare = greater_than_or_equals
+				}
+				NOT = {
+					has_political_power > 99
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = FRA_islands_represented
+			}
+			modifier = {
+				factor = 4
+				has_country_flag = FRA_islands_crisis
+			}
+		}
 		remove_effect = {
-			clr_country_flag = FRA_negotiation_busy
 			if = {
 				limit = {
 					FRA_holds_islands = yes
@@ -1649,9 +2128,9 @@ FRA_nww_overseas_category = {
 					days = 1
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 3
+			else = {
+				clr_country_flag = FRA_negotiation_busy
+			}
 		}
 	}
 	FRA_nww_garrison_islands = {
@@ -1817,6 +2296,15 @@ FRA_nww_projects_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_project_northern_forts = {
@@ -1891,6 +2379,15 @@ FRA_nww_projects_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_project_alpine_forts = {
@@ -1965,6 +2462,15 @@ FRA_nww_projects_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_project_civil_programme = {
@@ -2043,6 +2549,15 @@ FRA_nww_projects_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_project_mobilisation_conversion = {
@@ -2122,6 +2637,15 @@ FRA_nww_projects_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 }
@@ -2247,6 +2771,15 @@ FRA_nww_diplomacy_category = {
 		}
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 	FRA_nww_alliance_offer = {
@@ -2292,6 +2825,15 @@ FRA_nww_diplomacy_category = {
 		}
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				FRA_ai_overseas_talks_pending = yes
+				check_variable = {
+					var = FRA_mandate
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
 		}
 	}
 }

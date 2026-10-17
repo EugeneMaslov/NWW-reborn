@@ -14,7 +14,7 @@ from validate_germany_politics import Scenario
 
 
 def validate_poland(root,game,check):
-    meta=json.loads((root/'docs/POL_focus_design.json').read_text())
+    meta=json.loads((root/'docs/POL_focus_design.json').read_text(encoding='utf-8-sig'))
     tree=one(read(root/'common/national_focus/POL_focus.txt'),'focus_tree')
     fs={one(f,'id'):f for f in values(tree,'focus')}
     effects={k:v for p in (root/'common/scripted_effects').glob('POL*.txt') for k,v,o in read(p)}
@@ -54,7 +54,7 @@ def validate_poland(root,game,check):
     docs={kind:set(re.findall(r'^## (\w+)',(game/f'documentation/{kind}_documentation.md').read_text(encoding='utf-8-sig'),re.M)) for kind in ('effects','triggers','modifiers')}
     generated={'production_speed_'+k+'_factor' for k,v,o in one(read(game/'common/buildings/00_buildings.txt'),'buildings')}
     generated.add('trade_laws_cost_factor')
-    check('trade_laws_cost_factor' in (game/'common/dynamic_modifiers/TAOG_dynamic_modifiers.txt').read_text(),'POL: generated trade-law modifier absent')
+    check('trade_laws_cost_factor' in (game/'common/dynamic_modifiers/TAOG_dynamic_modifiers.txt').read_text(encoding='utf-8-sig'),'POL: generated trade-law modifier absent')
     for name,body,o in ideas:
         for modifier,value,op in one(body,'modifier',[]):check(modifier in docs['modifiers']|generated,f'POL: invalid idea modifier {modifier}')
     for name,body in dynamic.items():

@@ -1073,6 +1073,8 @@ def main():
     manifest={'focus_count':len(FOCUSES),'focuses':[{k:v for k,v in f.items() if k!='text'} for f in FOCUSES], 'regions':REGIONS,'compatibility_ids':ids}
     write('docs/FRA_content.json',json.dumps(manifest,ensure_ascii=False,indent=2))
     history_setup();bookmark_setup()
+    from fix_france_ai import apply_fixes
+    apply_fixes()
     print(f'France built: {len(FOCUSES)} focuses, {sum(len(v) for v in DECISIONS.values())} decisions, {len(EVENTS)} events, {len(ids)} direct compatibility focus IDs.')
 
 if __name__=='__main__': main()

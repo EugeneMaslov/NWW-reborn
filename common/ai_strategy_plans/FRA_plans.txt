@@ -1,28 +1,565 @@
-FRA_nww_plan_REPUBLIC = { name = "NWW France REPUBLIC" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_REPUBLIC } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_republic FRA_nww_commission FRA_nww_contracts FRA_nww_responsible FRA_nww_arbitration FRA_nww_municipal_credit FRA_nww_audit_court FRA_nww_civil_service FRA_nww_renewal FRA_nww_rights FRA_nww_republic_institutions FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_right = 0 FRA_nww_front = 0 FRA_nww_emergency = 0 } }
-FRA_nww_plan_MONARCHY = { name = "NWW France MONARCHY" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_MONARCHY } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_right FRA_nww_leagues_discipline FRA_nww_garrisons FRA_nww_powers_crisis FRA_nww_orleanists FRA_nww_crown_law FRA_nww_royal_cabinet FRA_nww_royal_charter FRA_nww_crown_service FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_republic = 0 FRA_nww_front = 0 FRA_nww_emergency = 0 } }
-FRA_nww_plan_LEAGUES = { name = "NWW France LEAGUES" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_LEAGUES } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_right FRA_nww_leagues_discipline FRA_nww_garrisons FRA_nww_powers_crisis FRA_nww_directory FRA_nww_league_state FRA_nww_corporate_chamber FRA_nww_national_movement FRA_nww_league_administration FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_republic = 0 FRA_nww_front = 0 FRA_nww_emergency = 0 } }
-FRA_nww_plan_SOCIAL = { name = "NWW France SOCIAL" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_SOCIAL } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_front FRA_nww_left_talks FRA_nww_public_works FRA_nww_labour_charter FRA_nww_social_republic FRA_nww_collective_contracts FRA_nww_social_insurance FRA_nww_social_arbitration FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_republic = 0 FRA_nww_right = 0 FRA_nww_emergency = 0 } }
-FRA_nww_plan_COUNCILS = { name = "NWW France COUNCILS" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_COUNCILS } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_front FRA_nww_left_talks FRA_nww_public_works FRA_nww_labour_charter FRA_nww_councils FRA_nww_cooperatives FRA_nww_elected_boards FRA_nww_councils_congress FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_republic = 0 FRA_nww_right = 0 FRA_nww_emergency = 0 } }
-FRA_nww_plan_PLAN = { name = "NWW France PLAN" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_PLAN } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_front FRA_nww_left_talks FRA_nww_public_works FRA_nww_labour_charter FRA_nww_central_plan FRA_nww_national_banks FRA_nww_investment_plan FRA_nww_planning_commission FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_republic = 0 FRA_nww_right = 0 FRA_nww_emergency = 0 } }
-FRA_nww_plan_MILITARY = { name = "NWW France MILITARY" desc = "" allowed = { original_tag = FRA }
-          enable = { has_focus_tree = french_focus has_country_flag = FRA_ai_MILITARY } abort = { is_subject = yes }
-          ai_national_focuses = { FRA_nww_session FRA_nww_accounts FRA_nww_consultations FRA_nww_emergency FRA_nww_disarm_militias FRA_nww_emergency_legal FRA_nww_military_cabinet FRA_nww_army_neutrality FRA_nww_civil_administration FRA_nww_defence_budget FRA_nww_extend_mandate FRA_nww_bank_audit FRA_nww_public_bank FRA_nww_housing FRA_nww_municipal_orders FRA_nww_rail_nodes FRA_nww_coal_basins FRA_nww_electrification FRA_nww_regional FRA_nww_west_industry FRA_nww_provincial_schools FRA_nww_internal_market FRA_nww_research_council FRA_nww_university_contract FRA_nww_polytechnics FRA_nww_fourth_slot FRA_nww_maneuvers FRA_nww_staff_college FRA_nww_signals_supply FRA_nww_methodical FRA_nww_artillery_plans FRA_nww_mobile_reserve FRA_nww_fort_counterattack FRA_nww_methodical_system FRA_nww_officer_corps FRA_nww_air_command FRA_nww_flight_schools FRA_nww_engine_standards FRA_nww_airfields FRA_nww_tactical_air FRA_nww_tactical_groups FRA_nww_air_watch FRA_nww_interception FRA_nww_fleet_audit FRA_nww_training_squadrons FRA_nww_bases_fuel FRA_nww_atlantic FRA_nww_asw }
-          weight = { factor = 100 } focus_factors = { FRA_nww_republic = 0 FRA_nww_right = 0 FRA_nww_front = 0 } }
+FRA_nww_plan_REPUBLIC = {
+	name = "NWW France REPUBLIC"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_REPUBLIC
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_right = 0
+		FRA_nww_front = 0
+		FRA_nww_emergency = 0
+		FRA_nww_selfdetermination = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_representation
+		FRA_nww_colonial_schools
+		FRA_nww_republic
+		FRA_nww_commission
+		FRA_nww_contracts
+		FRA_nww_responsible
+		FRA_nww_arbitration
+		FRA_nww_municipal_credit
+		FRA_nww_audit_court
+		FRA_nww_civil_service
+		FRA_nww_renewal
+		FRA_nww_rights
+		FRA_nww_republic_institutions
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
+FRA_nww_plan_MONARCHY = {
+	name = "NWW France MONARCHY"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_MONARCHY
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_republic = 0
+		FRA_nww_front = 0
+		FRA_nww_emergency = 0
+		FRA_nww_selfdetermination = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_representation
+		FRA_nww_colonial_schools
+		FRA_nww_right
+		FRA_nww_leagues_discipline
+		FRA_nww_garrisons
+		FRA_nww_powers_crisis
+		FRA_nww_orleanists
+		FRA_nww_crown_law
+		FRA_nww_royal_cabinet
+		FRA_nww_royal_charter
+		FRA_nww_crown_service
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
+FRA_nww_plan_LEAGUES = {
+	name = "NWW France LEAGUES"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_LEAGUES
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_republic = 0
+		FRA_nww_front = 0
+		FRA_nww_emergency = 0
+		FRA_nww_selfdetermination = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_representation
+		FRA_nww_colonial_schools
+		FRA_nww_right
+		FRA_nww_leagues_discipline
+		FRA_nww_garrisons
+		FRA_nww_powers_crisis
+		FRA_nww_directory
+		FRA_nww_league_state
+		FRA_nww_corporate_chamber
+		FRA_nww_national_movement
+		FRA_nww_league_administration
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
+FRA_nww_plan_SOCIAL = {
+	name = "NWW France SOCIAL"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_SOCIAL
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_republic = 0
+		FRA_nww_right = 0
+		FRA_nww_emergency = 0
+		FRA_nww_selfdetermination = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_representation
+		FRA_nww_colonial_schools
+		FRA_nww_front
+		FRA_nww_left_talks
+		FRA_nww_public_works
+		FRA_nww_labour_charter
+		FRA_nww_social_republic
+		FRA_nww_collective_contracts
+		FRA_nww_social_insurance
+		FRA_nww_social_arbitration
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
+FRA_nww_plan_COUNCILS = {
+	name = "NWW France COUNCILS"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_COUNCILS
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_republic = 0
+		FRA_nww_right = 0
+		FRA_nww_emergency = 0
+		FRA_nww_representation = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_selfdetermination
+		FRA_nww_colonial_schools
+		FRA_nww_front
+		FRA_nww_left_talks
+		FRA_nww_public_works
+		FRA_nww_labour_charter
+		FRA_nww_councils
+		FRA_nww_cooperatives
+		FRA_nww_elected_boards
+		FRA_nww_councils_congress
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
+FRA_nww_plan_PLAN = {
+	name = "NWW France PLAN"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_PLAN
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_republic = 0
+		FRA_nww_right = 0
+		FRA_nww_emergency = 0
+		FRA_nww_selfdetermination = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_representation
+		FRA_nww_colonial_schools
+		FRA_nww_front
+		FRA_nww_left_talks
+		FRA_nww_public_works
+		FRA_nww_labour_charter
+		FRA_nww_central_plan
+		FRA_nww_national_banks
+		FRA_nww_investment_plan
+		FRA_nww_planning_commission
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
+FRA_nww_plan_MILITARY = {
+	name = "NWW France MILITARY"
+	desc = ""
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		has_focus_tree = french_focus
+		has_country_flag = FRA_ai_MILITARY
+	}
+	abort = {
+		is_subject = yes
+	}
+	weight = {
+		factor = 100
+	}
+	focus_factors = {
+		FRA_nww_republic = 0
+		FRA_nww_right = 0
+		FRA_nww_front = 0
+		FRA_nww_selfdetermination = 0
+		FRA_nww_extraction = 0
+	}
+	ai_national_focuses = {
+		FRA_nww_session
+		FRA_nww_accounts
+		FRA_nww_consultations
+		FRA_nww_overseas_register
+		FRA_nww_overseas_conference
+		FRA_nww_representation
+		FRA_nww_colonial_schools
+		FRA_nww_emergency
+		FRA_nww_disarm_militias
+		FRA_nww_emergency_legal
+		FRA_nww_military_cabinet
+		FRA_nww_army_neutrality
+		FRA_nww_civil_administration
+		FRA_nww_defence_budget
+		FRA_nww_extend_mandate
+		FRA_nww_bank_audit
+		FRA_nww_public_bank
+		FRA_nww_housing
+		FRA_nww_municipal_orders
+		FRA_nww_rail_nodes
+		FRA_nww_coal_basins
+		FRA_nww_electrification
+		FRA_nww_regional
+		FRA_nww_west_industry
+		FRA_nww_provincial_schools
+		FRA_nww_internal_market
+		FRA_nww_research_council
+		FRA_nww_university_contract
+		FRA_nww_polytechnics
+		FRA_nww_fourth_slot
+		FRA_nww_maneuvers
+		FRA_nww_staff_college
+		FRA_nww_signals_supply
+		FRA_nww_methodical
+		FRA_nww_artillery_plans
+		FRA_nww_mobile_reserve
+		FRA_nww_fort_counterattack
+		FRA_nww_methodical_system
+		FRA_nww_officer_corps
+		FRA_nww_air_command
+		FRA_nww_flight_schools
+		FRA_nww_engine_standards
+		FRA_nww_airfields
+		FRA_nww_tactical_air
+		FRA_nww_tactical_groups
+		FRA_nww_air_watch
+		FRA_nww_interception
+		FRA_nww_fleet_audit
+		FRA_nww_training_squadrons
+		FRA_nww_bases_fuel
+		FRA_nww_atlantic
+		FRA_nww_asw
+		FRA_nww_overseas_credit
+		FRA_nww_overseas_compact
+	}
+}
