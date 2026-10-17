@@ -63,6 +63,9 @@ def localization(lang):
 
 
 custom_keys = {'russian': set(), 'english': set()}
+# Unlike localisation, the game-rule loader treats a BOM as a script token.
+for path in ROOT.glob('common/game_rules/*.txt'):
+    check(not path.read_bytes().startswith(b'\xef\xbb\xbf'), f'{path.relative_to(ROOT)}: game rules require UTF-8 without BOM')
 locales = {lang: localization(lang) for lang in custom_keys}
 sprites = {}
 resource_roots = [GAME, *sorted(GAME.glob('dlc/*')), ROOT]

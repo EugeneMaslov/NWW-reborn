@@ -253,6 +253,8 @@ class Audit:
                 raw = self.vfs.read(name)
                 if name.endswith(('.gfx', '.gui')) and raw.startswith(b'\xef\xbb\xbf'):
                     self.issue('syntax', 'interface_bom', name, 1, 'BOM становится частью первого токена интерфейсного скрипта; требуется UTF-8 без BOM')
+                if name.startswith('common/game_rules/') and raw.startswith(b'\xef\xbb\xbf'):
+                    self.issue('syntax', 'game_rules_bom', name, 1, 'Загрузчик правил кампании отвергает BOM; требуется UTF-8 без BOM')
                 text = raw.decode('utf-8-sig')
                 doc = self.vfs.doc(name)
                 for n in walk(doc):

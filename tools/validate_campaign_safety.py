@@ -146,6 +146,24 @@ for problem in ('major_guarantee','faction_guarantor','subject_guarantor','subje
     count+=1
 # A lone weaker major and a weaker coalition with one major remain possible for Germany.
 w=World();assert w.permitted('GER','SOV');w.faction('SOV','POL');assert w.permitted('GER','POL')
+# Army comparisons must establish their own live actor/target scope. An event's
+# ROOT may be the recipient, and the original German tag may no longer exist.
+for caller in ('GER','AUS','POL'):
+    w=World()
+    assert w.condition(w.triggers['nww_GER_ai_target_safe'],'POL',caller)
+    w.faction('SOV','POL')
+    assert w.condition(w.triggers['nww_GER_ai_target_safe'],'POL',caller)
+    w.countries['SOV']['strength']=100
+    assert not w.condition(w.triggers['nww_GER_ai_target_safe'],'POL',caller)
+    count+=3
+w=World();w.countries['GER']['exists']=False
+assert not w.condition(w.triggers['nww_GER_ai_target_safe'],'POL','POL')
+w.countries['D01']=deepcopy(w.countries['GER'])
+w.countries['D01'].update(exists=True,original='GER',tree='GER_focus',strength=100)
+assert w.condition(w.triggers['nww_GER_ai_target_safe'],'POL','POL')
+w.faction('SOV','POL')
+assert w.condition(w.triggers['nww_GER_ai_target_safe'],'POL','POL')
+count+=3
 # Diplomacy changed AFTER the objective was granted: evaluate at actual declaration.
 w=World();w.countries['TUR']['goals'].add('BUL');assert w.permitted('TUR','BUL')
 w.countries['ENG']['guarantees'].add('BUL');assert not w.permitted('TUR','BUL')

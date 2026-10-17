@@ -1,5 +1,6 @@
 # Owner GER. Readiness is a supported country rule; target risk is AI strategy policy.
-# Target checks are called from a German actor (PREV), including a civil-war successor.
+# Compare from an existing German actor to the live target in a single PREV scope.
+# Event ROOT and outer PREV can belong to a recipient or a faction iterator.
 nww_GER_ai_campaign_ready = {
  has_war = no
  has_capitulated = no
@@ -18,9 +19,14 @@ nww_GER_ai_target_safe = {
   AND = {
    exists = yes
    is_subject = no
-   NOT = { is_ally_with = PREV }
    NOT = { has_war_with_major = yes }
-   strength_ratio = { tag = PREV ratio < 0.80 }
+   any_other_country = {
+    original_tag = GER
+    has_focus_tree = GER_focus
+    exists = yes
+    NOT = { is_ally_with = PREV }
+    strength_ratio = { tag = PREV ratio > 1.25 }
+   }
    NOT = {
     any_other_country = {
      has_guaranteed = PREV
@@ -33,7 +39,20 @@ nww_GER_ai_target_safe = {
     AND = {
      OR = { is_faction_leader = yes is_major = no }
      NOT = { any_other_country = { is_major = yes is_in_faction_with = PREV NOT = { is_faction_leader = yes } } }
-     NOT = { any_other_country = { is_faction_leader = yes is_in_faction_with = PREV NOT = { strength_ratio = { tag = PREV.PREV ratio < 0.67 } } } }
+     NOT = {
+      any_other_country = {
+       is_faction_leader = yes
+       is_in_faction_with = PREV
+       NOT = {
+        any_other_country = {
+         original_tag = GER
+         has_focus_tree = GER_focus
+         exists = yes
+         strength_ratio = { tag = PREV ratio > 1.5 }
+        }
+       }
+      }
+     }
     }
    }
   }

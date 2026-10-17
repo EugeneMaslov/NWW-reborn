@@ -51,6 +51,12 @@ class ScriptTests(unittest.TestCase):
         self.assertTrue(any('has_political_power' in message for message in messages))
         self.assertTrue(any('motorized_attack_factor' in message for message in messages))
 
+    def test_army_comparison_rejects_chained_country_target(self):
+        bad = content_parse('strength_ratio = { tag = PREV.PREV ratio < 0.67 }')
+        self.assertTrue(any('chained country targets' in message for message in engine_script_errors(bad)))
+        safe = content_parse('any_other_country = { original_tag = GER exists = yes strength_ratio = { tag = PREV ratio > 1.5 } }')
+        self.assertEqual(list(engine_script_errors(safe)), [])
+
 
 class WorkspaceTests(unittest.TestCase):
     def setUp(self):
@@ -94,6 +100,16 @@ class WorkspaceTests(unittest.TestCase):
         audit = Audit(self.mod, self.game)
         audit.syntax()
         self.assertIn('interface_bom', {i.code for i in audit.issues})
+
+    def test_game_rules_bom_is_rejected_before_parser_strips_it(self):
+        path = self.put(self.mod, 'common/game_rules/00_game_rules.txt', '# rules\nallow_wargoals = { default = YES }')
+        audit = Audit(self.mod, self.game)
+        audit.syntax()
+        self.assertIn('game_rules_bom', {i.code for i in audit.issues})
+        path.write_text(path.read_text(encoding='utf-8-sig'), encoding='utf-8')
+        audit = Audit(self.mod, self.game)
+        audit.syntax()
+        self.assertEqual(audit.issues, [])
 
     def test_static_ideology_ui_does_not_accept_scripted_callbacks(self):
         self.put(self.mod, 'localisation/replace/english/MKN_ideologies_l_english.yml', 'l_english:\n fascism:0 "[GetNwwMknFascismName]"\n')

@@ -119,6 +119,10 @@ def engine_script_errors(node, parents=()):
                 variable_check(value)
             except ValueError as exc:
                 yield f'{context}: {exc}'
+        if key == 'strength_ratio' and isinstance(value, list):
+            target = one(value, 'tag', '')
+            if isinstance(target, str) and target.startswith('PREV.'):
+                yield f'{context}: avoid chained country targets in army comparisons; enter an existing country and use a single PREV'
         if key == 'target_trigger' and isinstance(value, list):
             state_only = {'is_owned_by', 'is_controlled_by', 'is_owned_and_controlled_by', 'any_neighbor_state'}
             for name, operand, operator in value:
