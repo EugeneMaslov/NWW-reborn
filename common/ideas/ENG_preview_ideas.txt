@@ -1,0 +1,88 @@
+ideas = {
+	country = {
+		ENG_nww_preview_state = {
+			name = ENG_nww_state
+			picture = ENG_nww_state
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.05
+			}
+		}
+		ENG_nww_preview_economy = {
+			name = ENG_nww_economy
+			picture = ENG_nww_economy
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = 0.0
+				production_factory_max_efficiency_factor = 0.0
+				energy_gain_factor = 0.0
+			}
+		}
+		ENG_nww_preview_army = {
+			name = ENG_nww_army
+			picture = ENG_nww_army
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				training_time_army_factor = 0.1
+				planning_speed = 0.0
+				supply_consumption_factor = 0.0
+				army_org_regain = 0.0
+				army_speed_factor = 0.0
+				max_planning = 0.0
+				army_core_defence_factor = 0.0
+			}
+		}
+		ENG_nww_preview_air = {
+			name = ENG_nww_air
+			picture = ENG_nww_air
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				air_mission_efficiency = 0.0
+				air_intercept_efficiency = 0.0
+				air_strategic_bomber_bombing_factor = 0.0
+				air_cas_efficiency = 0.0
+			}
+		}
+		ENG_nww_preview_navy = {
+			name = ENG_nww_navy
+			picture = ENG_nww_navy
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.0
+				convoy_escort_efficiency = 0.0
+				naval_detection = 0.0
+				navy_capital_ship_attack_factor = 0.0
+			}
+		}
+		ENG_nww_preview_science = {
+			name = ENG_nww_science
+			picture = ENG_nww_science
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.0
+			}
+		}
+	}
+}

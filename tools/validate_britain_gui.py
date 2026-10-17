@@ -27,6 +27,7 @@ def validate_gui(check):
     for panel in layout['panels']:
         name=panel['name'];script=scripts[P+name+'_ui'];window=windows[one(script,'window_name')]
         check(one(one(cats,P+name+'_category'),'scripted_gui')==P+name+'_ui',name+': unbound category')
+        check(one(one(cats,P+name+'_category'),'visible_when_empty')=='yes',name+': panel disappears when all actions are locked')
         check(one(script,'context_type')=='decision_category',name+': incorrect scope')
         check(world.test(one(script,'visible')),name+': hidden from Britain')
         check(not world.test(one(script,'visible'),'CAN'),name+': visible to Canada')

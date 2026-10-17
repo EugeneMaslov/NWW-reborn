@@ -108,9 +108,9 @@ option = { name = nww_eng.144.b ai_chance = { factor = 20 } ENG = { clr_country_
 }
 
 country_event = { id = nww_eng.1 is_triggered_only = yes title = nww_eng.1.t desc = nww_eng.1.d picture = GFX_report_event_generic_conference
-option = { name = nww_eng.1.a ai_chance = { factor = 45 } ENG_nww_build_civilian = { AMOUNT = 1 } }
-option = { name = nww_eng.1.b ai_chance = { factor = 40 } ENG_nww_trust_all = { AMOUNT = 5 } add_political_power = 35 }
-option = { name = nww_eng.1.c ai_chance = { factor = 15 } ENG_nww_build_military = { AMOUNT = 1 } add_war_support = 0.05 }
+option = { name = nww_eng.1.a ai_chance = { factor = 45 } ENG_nww_build_civilian_1 = yes }
+option = { name = nww_eng.1.b ai_chance = { factor = 40 } ENG_nww_trust_all_5 = yes add_political_power = 35 }
+option = { name = nww_eng.1.c ai_chance = { factor = 15 } ENG_nww_build_military_1 = yes add_war_support = 0.05 }
 }
 
 country_event = { id = nww_eng.4 is_triggered_only = yes title = nww_eng.4.t desc = nww_eng.4.d picture = GFX_report_event_generic_conference
@@ -132,13 +132,13 @@ option = { name = nww_eng.20.b trigger = { NOT = { AND = { IRE = { exists = yes 
 }
 
 country_event = { id = nww_eng.21 is_triggered_only = yes title = nww_eng.21.t desc = nww_eng.21.d picture = GFX_report_event_generic_conference
-option = { name = nww_eng.21.a trigger = { ENG = { has_country_flag = ENG_nww_irish_offer has_war = no } has_war = no 119 = { is_owned_and_controlled_by = ENG } } ai_chance = { factor = 85 } ENG = { clr_country_flag = ENG_nww_irish_offer set_country_flag = ENG_nww_irish_agreement set_country_flag = ENG_nww_irish_final clr_country_flag = ENG_nww_irish_coercion set_variable = { ENG_nww_irish_pressure = 0 } remove_ideas = ENG_nww_ulster_garrison add_stability = 0.05 ENG_nww_trust_all = { AMOUNT = 5 } } }
+option = { name = nww_eng.21.a trigger = { ENG = { has_country_flag = ENG_nww_irish_offer has_war = no } has_war = no 119 = { is_owned_and_controlled_by = ENG } } ai_chance = { factor = 85 } ENG = { clr_country_flag = ENG_nww_irish_offer set_country_flag = ENG_nww_irish_agreement set_country_flag = ENG_nww_irish_final clr_country_flag = ENG_nww_irish_coercion set_variable = { ENG_nww_irish_pressure = 0 } remove_ideas = ENG_nww_ulster_garrison add_stability = 0.05 ENG_nww_trust_all_5 = yes } }
 option = { name = nww_eng.21.b ai_chance = { factor = 15 } ENG = { clr_country_flag = ENG_nww_irish_offer add_to_variable = { ENG_nww_irish_pressure = 10 } ENG_nww_clamp = yes } }
 }
 
 country_event = { id = nww_eng.23 is_triggered_only = yes title = nww_eng.23.t desc = nww_eng.23.d picture = GFX_report_event_generic_conference
 option = { name = nww_eng.23.a ai_chance = { factor = 85 } add_political_power = -100 add_stability = -0.10 set_variable = { ENG_nww_irish_pressure = 40 } set_country_flag = ENG_nww_irish_talks_ready clr_country_flag = ENG_nww_irish_failed }
-option = { name = nww_eng.23.b trigger = { has_war = no has_civil_war = no 119 = { is_owned_and_controlled_by = ENG } NIR = { exists = no } } ai_chance = { factor = 15 } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -10 } if = { limit = { NIR = { exists = no } 119 = { is_owned_and_controlled_by = ENG } has_war = no } 119 = { transfer_state_to = NIR } NIR = { set_politics = { ruling_party = neutrality elections_allowed = no } load_oob = ENG_nww_ulster_revolt } declare_war_on = { target = NIR type = annex_everything } } }
+option = { name = nww_eng.23.b trigger = { has_war = no has_civil_war = no 119 = { is_owned_and_controlled_by = ENG } NIR = { exists = no } } ai_chance = { factor = 15 } add_stability = -0.10 ENG_nww_trust_all_minus10 = yes if = { limit = { NIR = { exists = no } 119 = { is_owned_and_controlled_by = ENG } has_war = no } 119 = { transfer_state_to = NIR } NIR = { set_politics = { ruling_party = neutrality elections_allowed = no } load_oob = ENG_nww_ulster_revolt } declare_war_on = { target = NIR type = annex_everything } } }
 }
 
 country_event = { id = nww_eng.24 is_triggered_only = yes title = nww_eng.24.t desc = nww_eng.24.d picture = GFX_report_event_generic_conference

@@ -72,7 +72,7 @@ class World:
             elif k=='has_navy_size':
                 size=next(n for n in v if n[0]=='size');ok=self.num(c.convoys,size[2],float(size[1]))
             elif k=='num_of_available_civilian_factories':ok=self.num(c.factories,o,float(v))
-            elif k=='stability':ok=self.num(c.stability,o,float(v))
+            elif k=='has_stability':ok=self.num(c.stability,o,float(v))
             elif k=='date':ok=self.num(self.now,o,date(*map(int,v.split('.'))))
             elif k in ('tag','original_tag'):ok=ctx==v
             elif k=='always':ok=v=='yes'

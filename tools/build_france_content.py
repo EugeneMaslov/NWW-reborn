@@ -438,7 +438,7 @@ def build_political_effects():
     label('FRA_nww_planning_cabinet','Центральный плановый кабинет','Central Planning Cabinet')
     label('FRA_nww_military_directory','Военный кабинет','Military Cabinet')
     label('FRA_nww_regime_description','Государственные институты Франции перестроены после кризиса представительства. Их прочность зависит от выполненных обязательств.','French institutions were rebuilt after the crisis of representation. Their strength rests on honouring their commitments.')
-    cleanup='\n'.join('remove_ideas = '+v for v in ['FRA_disjointed_government','FRA_protected_by_the_maginot_line','FRA_full_employment','FRA_worker_shortage','FRA_political_violence','FRA_inefficient_economy_1','FRA_inefficient_economy_2','FRA_matignon_agreements','MTG_naval_treaty_adherent','MTG_naval_treaty_adherent_reduced'])
+    cleanup='\n'.join('remove_ideas = '+v for v in ['FRA_disjointed_government','FRA_protected_by_the_maginot_line','FRA_full_employment','FRA_worker_shortage','FRA_political_violence','FRA_inefficient_economy_1','FRA_inefficient_economy_2','FRA_matignon_agreements'])
     effect('FRA_suspend_native_systems',cleanup)
     repair=''
     for route,key in [('republic','republic'),('right','right'),('front','front'),('emergency','emergency')]:

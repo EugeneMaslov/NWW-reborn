@@ -1,0 +1,113 @@
+{
+  "GER": [
+    [
+      "GER_imperial_overstretch",
+      "GER_master_of_mitteleuropa",
+      "GER_prussian_martial_spirit"
+    ],
+    [
+      "GER_the_kaiser_endures",
+      "GER_prussian_traditions",
+      "GER_the_gilded_colossus"
+    ],
+    "neutrality"
+  ],
+  "ENG": [
+    [
+      "ENG_nww_preview_state",
+      "ENG_nww_preview_economy",
+      "ENG_nww_preview_navy"
+    ],
+    [
+      "ENG_nww_report",
+      "ENG_nww_federal",
+      "ENG_nww_labour"
+    ],
+    "democratic"
+  ],
+  "FRA": [
+    [
+      "FRA_nww_preview_state",
+      "FRA_nww_preview_economy",
+      "FRA_nww_preview_army"
+    ],
+    [
+      "FRA_nww_front",
+      "FRA_nww_right",
+      "FRA_nww_republic"
+    ],
+    "democratic"
+  ],
+  "SOV": [
+    [
+      "NWW_SOV_state_0",
+      "NWW_SOV_economy_0",
+      "NWW_SOV_army_0"
+    ],
+    [
+      "SOV_the_revolution_endures",
+      "SOV_second_five_year_plan",
+      "NWW_SOV_scientific_network"
+    ],
+    "communism"
+  ],
+  "LTB": [
+    [
+      "LTB_unresolved_national_question",
+      "LTB_semi_agrarian_economy",
+      "LTB_disorganized_army"
+    ],
+    [
+      "LTB_consolidate_the_union",
+      "LTB_rebuild_the_bridge",
+      "LTB_union_general_staff"
+    ],
+    "neutrality"
+  ],
+  "MKN": [
+    [
+      "MKN_free_territory",
+      "MKN_decaying_batko",
+      "MKN_cult_of_railways"
+    ],
+    [
+      "MKN_dneprostroi",
+      "MKN_free_cooperatives",
+      "MKN_steppe_general_staff"
+    ],
+    "communism"
+  ],
+  "UKR": [
+    [
+      "UKR_breadbasket_of_the_union"
+    ],
+    [
+      "UKR_rebuild_kiev",
+      "UKR_dnieper_industry",
+      "UKR_guardians_of_the_steppe"
+    ],
+    "communism"
+  ],
+  "TUR": [
+    [
+      "NWW_TUR_imperial_crisis"
+    ],
+    [
+      "TUR_reform_the_army",
+      "TUR_political_rw",
+      "TUR_prom"
+    ],
+    "neutrality"
+  ],
+  "AUS": [
+    [
+      "AUS_nww_preview_bohemia"
+    ],
+    [
+      "AUS_nww_rebuild",
+      "AUS_not_germany",
+      "AUS_nww_army"
+    ],
+    "neutrality"
+  ]
+}

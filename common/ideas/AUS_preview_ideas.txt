@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		AUS_nww_preview_bohemia = {
+			name = AUS_nww_bohemian_question
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.02
+				industrial_capacity_factory = -0.02
+			}
+		}
+	}
+}

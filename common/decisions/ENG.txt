@@ -1,1 +1,3 @@
 # Native ENG decisions replaced by ENG_decisions.txt. Owner: ENG.
+# Keep the ID referenced by the installed native Mosley category.
+ENG_nww_cabinet_category = { ENG_the_mosley_plan = { visible = { always = no } available = { always = no } } }

@@ -636,6 +636,18 @@ try:
     test_britain_lifecycle()
 except AssertionError as exc:
     check(False, f'ENG source-script lifecycle: {exc}')
+from test_britain_reward_visibility import main as test_britain_rewards
+try:
+    test_britain_rewards()
+except AssertionError as exc:
+    check(False, f'ENG reward/UI regression: {exc}')
+from validate_1936_presentation import validate_presentation
+validate_presentation(ROOT, GAME, check)
+from test_london_treaty import main as test_london_treaty
+try:
+    test_london_treaty()
+except AssertionError as exc:
+    check(False, f'London treaty source-script lifecycle: {exc}')
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)
