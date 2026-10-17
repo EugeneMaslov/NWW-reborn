@@ -1,0 +1,18 @@
+add_namespace = mkn_gameplay
+country_event = {
+	id = mkn_gameplay.1
+	title = mkn_gameplay.1.t
+	desc = mkn_gameplay.1.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	trigger = { original_tag = MKN has_war = no NOT = { has_country_flag = MKN_survived_defense_rewarded } }
+	option = {
+		name = mkn_gameplay.1.a
+		if = {
+			limit = { NOT = { has_country_flag = MKN_survived_defense_rewarded } }
+			set_country_flag = MKN_survived_defense_rewarded
+			add_stability = 0.30
+			add_war_support = 0.30
+		}
+	}
+}

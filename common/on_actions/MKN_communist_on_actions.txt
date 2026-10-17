@@ -1,15 +1,18 @@
-# MKN owns these bilateral pact definitions; SOV's hook only cleans/updates trade.
 on_actions = {
 	on_startup = {
 		effect = {
 			MKN = {
 				if = {
-					limit = { exists = yes }
+					limit = {
+						exists = yes
+					}
 					MKN_repair_communist_progression = yes
 					MKN_sync_revkom_combat = yes
 				}
 			}
-			MKN_sync_revkom_trade = yes
+			SOV = {
+				MKN_sync_revkom_trade = yes
+			}
 		}
 	}
 	on_daily_MKN = {
@@ -20,6 +23,8 @@ on_actions = {
 		}
 	}
 	on_daily_SOV = {
-		effect = { MKN_sync_revkom_trade = yes }
+		effect = {
+			MKN_sync_revkom_trade = yes
+		}
 	}
 }

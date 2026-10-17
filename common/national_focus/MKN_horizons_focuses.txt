@@ -204,6 +204,7 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
+        MKN_begin_desperate_defense = yes
         add_stability = -0.1
         hidden_effect = {
             nww_mkn_rebuild_services = yes
@@ -234,6 +235,7 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
+        MKN_begin_desperate_defense = yes
         add_ideas = MKN_hidden_workshops
         custom_effect_tooltip = MKN_hidden_workshops_tt
     }
@@ -261,6 +263,7 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
+        MKN_begin_desperate_defense = yes
         add_manpower = 30000
         hidden_effect = {
             nww_mkn_rebuild_services = yes
@@ -291,6 +294,7 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
+        MKN_begin_desperate_defense = yes
         add_timed_idea = {
             idea = MKN_evacuation_columns
             days = 180
@@ -320,6 +324,7 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
+        MKN_begin_desperate_defense = yes
         hidden_effect = {
             nww_mkn_rebuild_services = yes
         }
@@ -349,6 +354,7 @@ shared_focus = {
         MKN_desperate_defence_available = yes
     }
     completion_reward = {
+        MKN_begin_desperate_defense = yes
         add_timed_idea = {
             idea = MKN_black_vengeance_spirit
             days = 180

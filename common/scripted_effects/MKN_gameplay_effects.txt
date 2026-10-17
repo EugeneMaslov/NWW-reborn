@@ -1,0 +1,103 @@
+MKN_cleanup_unique_operative_traits = {
+	every_operative = {
+		if = { limit = { has_trait = mkn_batko_legend } remove_unit_leader_trait = mkn_batko_legend }
+		if = { limit = { has_trait = mkn_eugen_under_fire } remove_unit_leader_trait = mkn_eugen_under_fire }
+	}
+}
+MKN_repair_hidden_supply_node_placement = {
+	# Legacy decisions recorded the chosen state even when their selector built nothing.
+	if = {
+		limit = {
+			has_country_flag = MKN_project_hidden_supply_node_done
+			NOT = { has_country_flag = MKN_hidden_supply_node_placement_v2 }
+		}
+		every_owned_state = {
+			limit = {
+				has_state_flag = MKN_project_hidden_supply_node_done
+				is_owned_and_controlled_by = PREV
+				is_fully_controlled_by = PREV
+				PREV = { NOT = { has_country_flag = MKN_hidden_supply_node_placement_v2 } }
+			}
+			if = {
+				limit = { supply_node < 1 can_construct_building = supply_node }
+				construct_building_in_random_province = { supply_node = 1 }
+			}
+			if = {
+				limit = { supply_node > 0 }
+				PREV = { set_country_flag = MKN_hidden_supply_node_placement_v2 }
+			}
+		}
+	}
+}
+MKN_cleanup_starting_cores = {
+	# Only the four original MKN states; conquered territory is not purged.
+	196 = { if = { limit = { is_owned_by = MKN } remove_core_of = SOV remove_core_of = UKR remove_core_of = CRI } }
+	200 = { if = { limit = { is_owned_by = MKN } remove_core_of = SOV remove_core_of = UKR } }
+	226 = { if = { limit = { is_owned_by = MKN } remove_core_of = SOV remove_core_of = UKR } }
+	1082 = { if = { limit = { is_owned_by = MKN } remove_core_of = SOV remove_core_of = UKR } }
+}
+MKN_begin_desperate_defense = {
+	set_country_flag = MKN_desperate_defense_used
+	set_country_flag = MKN_desperate_defense_active
+}
+MKN_cleanup_desperate_defense = {
+	# Reconstruct only the current war in old saves, never replay focus rewards.
+	if = {
+		limit = {
+			NOT = { has_country_flag = MKN_desperate_defense_migration_v1 }
+			OR = {
+				has_completed_focus = MKN_death_or_freedom
+				has_completed_focus = MKN_hide_the_machines
+				has_completed_focus = MKN_marusya_womens_battalions
+				has_completed_focus = MKN_evacuation_soviets
+				has_completed_focus = MKN_shadows_in_the_forests
+				has_completed_focus = MKN_black_vengeance
+			}
+		}
+		MKN_begin_desperate_defense = yes
+	}
+	set_country_flag = MKN_desperate_defense_migration_v1
+	if = {
+		limit = { has_country_flag = MKN_desperate_defense_active has_war = no has_capitulated = no }
+		remove_ideas = MKN_hidden_workshops
+		remove_ideas = MKN_evacuation_columns
+		remove_ideas = MKN_black_vengeance_spirit
+		# Recovery for a save whose on_remove callback failed or was skipped.
+		if = {
+			limit = { has_country_flag = MKN_hidden_workshops_active }
+			add_offsite_building = { type = arms_factory level = -3 }
+			clr_country_flag = MKN_hidden_workshops_active
+		}
+		clr_country_flag = MKN_desperate_defense_active
+		nww_mkn_rebuild_services = yes
+		if = {
+			limit = { NOT = { has_country_flag = MKN_survived_defense_celebration_scheduled } }
+			set_country_flag = MKN_survived_defense_celebration_scheduled
+			country_event = { id = mkn_gameplay.1 days = 1 }
+		}
+	}
+}
+
+MKN_choose_best_council_general = {
+if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 9 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 9 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 8 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 8 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 7 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 7 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 6 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 6 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 5 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 5 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 4 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 4 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 3 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 3 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 2 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 2 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 1 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 1 } add_unit_leader_trait = mkn_council_member_trait } }
+else_if = { limit = { any_unit_leader = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 0 } } random_unit_leader = { limit = { is_army_leader = yes NOT = { has_trait = mkn_council_member_trait } skill > 0 } add_unit_leader_trait = mkn_council_member_trait } }
+}
+
+MKN_repair_council_selection = {
+ if = {
+  limit = { has_completed_focus = MKN_council_of_field_commanders NOT = { has_country_flag = MKN_council_selection_v2 } }
+  every_unit_leader = { limit = { has_trait = mkn_council_member_trait } remove_unit_leader_trait = mkn_council_member_trait }
+  NWW_MKN_eugen = { add_unit_leader_trait = mkn_council_member_trait }
+  MKN_choose_best_council_general = yes
+  MKN_choose_best_council_general = yes
+  set_country_flag = MKN_council_selection_v2
+ }
+}

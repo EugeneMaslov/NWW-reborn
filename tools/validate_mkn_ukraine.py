@@ -55,6 +55,9 @@ class World(FrontierModel):
             elif key == 'has_game_rule': answer = self.rule == one(value, 'option')
             elif key == 'is_historical_focus_on': answer = self.historical == (value == 'yes')
             elif key == 'has_capitulated': answer = c['capitulated'] == (value == 'yes')
+            elif key == 'war_length_with':
+                target=one(value,'tag');v,op=next((v,o) for k,v,o in value if k=='months')
+                answer=self.compare(c.get('war_months',{}).get(target,0),float(v),op)
             elif key == 'has_full_control_of_state': answer = self.states[value]['controller'] == current and not self.states[value].get('contested', False)
             elif key == 'is_capital': answer = any(country['exists'] and country['capital'] == current for country in self.countries.values()) == (value == 'yes')
             elif key == 'has_country_leader_with_trait': answer = value in c['traits']
@@ -84,6 +87,9 @@ class World(FrontierModel):
             elif key == 'mark_focus_tree_layout_dirty': self.layout += 1
             elif key == 'set_capital': c['capital'] = one(value, 'state')
             elif key == 'add_dynamic_modifier': c.setdefault('dynamic', set()).add(one(value, 'modifier'))
+            elif key in {'set_rule','clear_rule'}:
+                for rule,state,o in value:
+                    (c['rules'].add if key=='set_rule' else c['rules'].discard)(rule)
             elif key == 'add_political_power': c['pp'] += float(value)
             elif key == 'add_popularity': c['popularity'][one(value, 'ideology')] += float(one(value, 'popularity'))
             elif key == 'add_manpower': c['manpower'] = c.get('manpower', 0) + int(value)
@@ -159,8 +165,7 @@ def validate_ukraine(root, game, check, localized):
     hooks = one(read(root/'common/on_actions/MKN_diplomacy_on_actions.txt'), 'on_actions')
     for actor in ('MKN','UKR','SOV'):
         w = World(); w.apply(w.effects['MKN_install_allied_war_guard'], actor); w.apply(w.effects['MKN_install_allied_war_guard'], actor)
-        expected_rules = {'MKN_protected_diplomatic_relation'} | ({'UKR_mkn_premature_attack'} if actor == 'UKR' else set())
-        check(w.countries[actor]['rules'] == expected_rules, actor + ': native protection installation stacks or loses escalation protection')
+        check(not any(k in {'add_relation_rule_override','remove_relation_rule_override'} for k,v,o in walk(w.effects['MKN_install_allied_war_guard'])), actor+': unsupported declaration relation override remains')
         startup = one(one(hooks,'on_startup'),'effect')
         check(any(k == 'MKN_install_allied_war_guard' for k,v,o in walk(one(startup,actor))), actor + ': protection is not installed on load')
         cases += 1
@@ -183,7 +188,7 @@ def validate_ukraine(root, game, check, localized):
             plan = next(p for k,p,o in ai_plans if one(one(p,'enable'),'has_country_flag') == 'MKN_ai_route_'+expected)
             for other, entry in route_entries.items():
                 if other != expected: check(one(one(plan,'focus_factors'),entry) == '0', 'MKN: plan allows an unrelated political entry')
-            check(one(one(fs[route_entries[expected]],'available'),'NOT') is not None, 'MKN: mandate gates missing')
+            check(any(k=='NOT' and (expected,'0.40','<') in v for k,v,o in walk(one(fs[route_entries[expected]],'available'))), 'MKN: initial mandate gates missing')
             cases += 1
     # Previously completed real political choices outrank a new rule on old saves.
     for ideology, fid in route_entries.items():

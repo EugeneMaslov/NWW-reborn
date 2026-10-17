@@ -33,11 +33,13 @@ for i,person in enumerate(commanders):
 path.write_text(dump(gfx)+'\n');preview.save(ROOT/'docs/mkn_commander_portraits_preview.png')
 print('Built',len(commanders),'large commander portraits and native advisor cards with alpha clearance')
 for source in sorted((ROOT/'docs/art/mkn_companies').glob('*.png')):
-    for prefix, size, occupied in [('company',64,60),('focus',96,88)]:
+    for prefix, size, occupied in [('company',(65,67),(53,53)),('focus',(96,96),(88,88))]:
         image=Image.open(source).convert('RGBA')
         image=image.crop(image.getchannel('A').getbbox())
-        image.thumbnail((occupied,occupied),Image.Resampling.LANCZOS)
-        canvas=Image.new('RGBA',(size,size))
-        canvas.alpha_composite(image,((size-image.width)//2,(size-image.height)//2))
+        image.thumbnail(occupied,Image.Resampling.LANCZOS)
+        canvas=Image.new('RGBA',size)
+        offset=((size[0]-image.width)//2,4 if prefix=='company' else (size[1]-image.height)//2)
+        canvas.alpha_composite(image,offset)
+        if prefix=='company':assert canvas.getchannel('A').getbbox()[3]<=61
         canvas.save(ROOT/f'gfx/interface/ideas/MKN/{prefix}_{source.stem}.dds',format='DDS')
-print('Rebuilt company emblems and selected focus icons from generated originals')
+print('Rebuilt company emblems with native card clearance and selected focus icons')

@@ -2122,6 +2122,9 @@ focus_tree = {
 			add_command_power = 20
 		}
 		cost = 10
+		available = {
+			date > 1938.12.31
+		}
 	}
 	focus = {
 		id = UKR_border_compact
@@ -2148,6 +2151,7 @@ focus_tree = {
 			NOT = {
 				has_war_with = MKN
 			}
+			date > 1939.5.31
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

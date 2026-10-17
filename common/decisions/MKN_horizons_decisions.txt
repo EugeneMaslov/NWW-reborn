@@ -8,7 +8,7 @@ MKN_horizons_international_category = {
 		available = {
 			MKN_horizons_hostile_target = yes
 			has_capitulated = no
-			FROM = { stability > 0.2 any_owned_state = { is_controlled_by = PREV arms_factory > 0 } }
+			FROM = { has_stability > 0.2 any_owned_state = { is_controlled_by = PREV arms_factory > 0 } }
 		}
 		cost = 50
 		custom_cost_trigger = { has_equipment = { infantry_equipment > 199 } }

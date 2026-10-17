@@ -119,14 +119,14 @@ native=set(re.findall(r'^## (\w+)',(game/'documentation/modifiers_documentation.
 for key in meta['modifiers'].values():assert key in native,key
 tree=one(read(ROOT/'common/national_focus/GER_focuses.txt'),'focus_tree')
 fs={one(f,'id'):f for f in tree_focuses(tree,ROOT/'common/national_focus')}
-assert len(fs)==64
+assert len(fs)==76
 assert all(one(fs[f],'cost') in ('5','10') for f in meta['focuses'])
 plan=one(read(ROOT/'common/ai_strategy_plans/GER_historical.txt'),'NWW_GER_historical')
 order=[v for k,v,o in one(plan,'ai_national_focuses')]
 assert order.index('GER_the_austrian_question')<order.index('GER_reign_in_mitteleuropa')<order.index('GER_crush_eastern_syndicates')
 assert len([f for f in order[:order.index('GER_the_austrian_question')] if f in meta['focuses']])>=10
 # Use the established GER interpreter to check human/history boundaries and stale replies.
-ger_effects={k:v for k,v,o in read(ROOT/'common/scripted_effects/GER_effects.txt')}
+ger_effects={k:v for filename in ('GER_effects.txt','GER_lategame_effects.txt') for k,v,o in read(ROOT/'common/scripted_effects'/filename)}
 ger_events={one(e,'id'):e for k,e,o in read(ROOT/'events/GER_events.txt') if k.endswith('_event')}
 for year in range(1936,1942):
     for ai,historical in ((False,True),(True,True),(True,False)):

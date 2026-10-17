@@ -123,7 +123,7 @@ def validate_expansion(root, game, check, localized):
         category=one(read(root/f'common/decisions/nww_{tag.lower()}_mandate.txt'),tag+'_public_mandate')
         for fid,ideology in routes:
             focus=focuses[fid];conditions=one(focus,'available',[])
-            check(any((ideology,'0.40','<') in negation for negation in values(conditions,'NOT')),f'{fid}: missing forty-percent mandate')
+            check(any(k=='NOT' and (ideology,'0.40','<') in v for k,v,o in walk(conditions)),f'{fid}: missing forty-percent mandate')
             check(one(focus,'cancel_if_invalid')=='yes' and one(focus,'continue_if_invalid')=='no',f'{fid}: cannot cancel an invalid mandate')
             check(not values(one(focus,'completion_reward'),'add_popularity'),f'{fid}: transition supplies its own popularity')
             campaign=one(category,tag+'_campaign_'+ideology,[])

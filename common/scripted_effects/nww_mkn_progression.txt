@@ -184,6 +184,7 @@ nww_mkn_rebuild_industry = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_militarize_communes
+			has_government = fascism
 		}
 		add_to_variable = {
 			MKN_unified_stability_factor = -0.05
@@ -192,6 +193,7 @@ nww_mkn_rebuild_industry = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_standardize_workshops
+			has_government = fascism
 		}
 		add_to_variable = {
 			MKN_unified_industrial_capacity_factory = 0.15
@@ -203,6 +205,7 @@ nww_mkn_rebuild_industry = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_autonomous_rail_crews
+			has_government = democratic
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.05
@@ -211,6 +214,7 @@ nww_mkn_rebuild_industry = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_sever_urban_ties
+			has_government = neutrality
 		}
 		add_to_variable = {
 			MKN_unified_consumer_goods_factor = -0.05
@@ -219,6 +223,7 @@ nww_mkn_rebuild_industry = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_tractors_for_grain
+			has_government = communism
 		}
 		add_to_variable = {
 			MKN_unified_production_speed_buildings_factor = 0.1
@@ -573,10 +578,18 @@ nww_mkn_rebuild_industry = {
 }
 nww_mkn_rebuild_services = {
 	MKN_migrate_military_hq = yes
-	set_variable = { MKN_army_army_armor_speed_factor = 0 }
-	set_variable = { MKN_army_army_non_core_attack_factor = 0 }
-	set_variable = { MKN_army_army_non_core_defence_factor = 0 }
-	set_variable = { MKN_army_army_org_regain = 0 }
+	set_variable = {
+		MKN_army_army_armor_speed_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_non_core_attack_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_non_core_defence_factor = 0
+	}
+	set_variable = {
+		MKN_army_army_org_regain = 0
+	}
 	set_variable = {
 		MKN_army_enemy_attrition = 0
 	}
@@ -2671,6 +2684,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_abolish_election_of_commanders
+			has_government = fascism
 		}
 		add_to_variable = {
 			MKN_army_planning_speed = 0.1
@@ -2682,6 +2696,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_militarize_communes
+			has_government = fascism
 		}
 		add_to_variable = {
 			MKN_army_conscription = 0.02
@@ -2690,6 +2705,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_iron_fist_trains
+			has_government = fascism
 		}
 		add_to_variable = {
 			MKN_army_supply_consumption_factor = -0.05
@@ -2698,6 +2714,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_the_black_horde
+			has_government = fascism
 		}
 		add_to_variable = {
 			MKN_army_army_attack_factor = 0.25
@@ -2709,6 +2726,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_abolish_general_staff
+			has_government = democratic
 		}
 		add_to_variable = {
 			MKN_army_land_reinforce_rate = 0.05
@@ -2717,6 +2735,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_arms_to_the_people
+			has_government = democratic
 		}
 		add_to_variable = {
 			MKN_army_conscription = 0.02
@@ -2736,6 +2755,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_beacon_of_statelessness
+			has_government = democratic
 		}
 		add_to_variable = {
 			MKN_army_army_core_defence_factor = 0.35
@@ -2747,6 +2767,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_steppe_snipers
+			has_government = neutrality
 		}
 		add_to_variable = {
 			MKN_army_army_defence_factor = 0.15
@@ -2761,6 +2782,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_cavalry_ambush
+			has_government = neutrality
 		}
 		add_to_variable = {
 			MKN_army_modifier_army_sub_unit_cavalry_attack_factor = 0.3
@@ -2772,6 +2794,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_impregnable_granary
+			has_government = neutrality
 		}
 		add_to_variable = {
 			MKN_army_army_core_defence_factor = 0.5
@@ -2783,6 +2806,7 @@ nww_mkn_rebuild_services = {
 	if = {
 		limit = {
 			has_completed_focus = MKN_red_military_specialists
+			has_government = communism
 		}
 		add_to_variable = {
 			MKN_army_army_org_factor = 0.15
@@ -2857,6 +2881,7 @@ nww_mkn_rebuild_services = {
 					modifier = MKN_army_development
 				}
 			}
+			has_government = fascism
 		}
 		add_dynamic_modifier = {
 			modifier = MKN_army_development

@@ -40,6 +40,9 @@ NWW_GER_historical = {
   GER_9
   GER_10
   GER_nww_industrial_research
+  GER_schlieffen_reborn
+  GER_strike_the_west
+  GER_the_second_naval_race
  }
  focus_factors = { GER_empower_the_chancellor = 0 }
  weight = { factor = 100 }

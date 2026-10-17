@@ -105,3 +105,6 @@ recruit_character = MKN_advisor_syndicalist_theorist
 capital = 1082
 set_cosmetic_tag = MKN_batko
 MKN_repair_personnel = yes
+
+# Initial merchant fleet, added once by country history.
+set_convoys = 60

@@ -1,19 +1,32 @@
-# Deterministic shared-spirit reconstruction, never replay one-off rewards.
 MKN_rebuild_soviet_industry_stats = {
 	if = {
-		limit = { has_completed_focus = MKN_consumer_autonomy }
-		add_to_variable = { MKN_unified_supply_consumption_factor = -0.20 }
+		limit = {
+			has_completed_focus = MKN_consumer_autonomy
+			has_government = democratic
+		}
+		add_to_variable = {
+			MKN_unified_supply_consumption_factor = -0.20
+		}
 	}
 }
 MKN_rebuild_soviet_army_stats = {
 	if = {
-		limit = { has_completed_focus = MKN_volost_signal_chains }
-		add_to_variable = { MKN_army_land_reinforce_rate = 0.10 }
+		limit = {
+			has_completed_focus = MKN_volost_signal_chains
+			has_government = democratic
+		}
+		add_to_variable = {
+			MKN_army_land_reinforce_rate = 0.10
+		}
 	}
 }
 MKN_repair_soviet_progression = {
 	if = {
-		limit = { NOT = { has_country_flag = MKN_soviet_progression_v1 } }
+		limit = {
+			NOT = {
+				has_country_flag = MKN_soviet_progression_v1
+			}
+		}
 		nww_mkn_rebuild_industry = yes
 		nww_mkn_rebuild_services = yes
 		set_country_flag = MKN_soviet_progression_v1
@@ -21,63 +34,114 @@ MKN_repair_soviet_progression = {
 }
 MKN_sync_people_defense = {
 	if = {
-		limit = { has_completed_focus = MKN_volost_signal_chains }
+		limit = {
+			has_completed_focus = MKN_volost_signal_chains
+		}
 		every_owned_state = {
 			limit = {
 				is_core_of = MKN
-				NOT = { has_dynamic_modifier = { modifier = MKN_people_defense_signals scope = MKN } }
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = MKN_people_defense_signals
+						scope = MKN
+					}
+				}
 			}
-			add_dynamic_modifier = { modifier = MKN_people_defense_signals scope = MKN }
+			add_dynamic_modifier = {
+				modifier = MKN_people_defense_signals
+				scope = MKN
+			}
 		}
 	}
-	# Only current/previous enemies are processed after the propaganda unlock.
 	if = {
-		limit = { has_completed_focus = MKN_subversion_of_enemy_ranks }
+		limit = {
+			has_completed_focus = MKN_subversion_of_enemy_ranks
+		}
 		every_country = {
-			limit = { OR = { has_war_with = MKN has_country_flag = MKN_people_subversion_active } }
+			limit = {
+				OR = {
+					has_war_with = MKN
+					has_country_flag = MKN_people_subversion_active
+				}
+			}
 			save_event_target_as = MKN_people_defense_enemy
 			MKN = {
 				every_owned_state = {
 					if = {
-						limit = { has_dynamic_modifier = { modifier = MKN_people_defense_subversion scope = event_target:MKN_people_defense_enemy } }
-						remove_dynamic_modifier = { modifier = MKN_people_defense_subversion scope = event_target:MKN_people_defense_enemy }
+						limit = {
+							has_dynamic_modifier = {
+								modifier = MKN_people_defense_subversion
+								scope = event_target:MKN_people_defense_enemy
+							}
+						}
+						remove_dynamic_modifier = {
+							modifier = MKN_people_defense_subversion
+							scope = event_target:MKN_people_defense_enemy
+						}
 					}
 					if = {
 						limit = {
 							is_owned_and_controlled_by = MKN
 							is_core_of = MKN
-							MKN = { has_government = democratic has_idea = MKN_enemy_subversion_idea }
-							event_target:MKN_people_defense_enemy = { has_war_with = MKN }
+							MKN = {
+								has_government = democratic
+								has_idea = MKN_enemy_subversion_idea
+							}
+							event_target:MKN_people_defense_enemy = {
+								has_war_with = MKN
+							}
 						}
-						# Short expiry also cleans modifiers on land no longer owned by MKN.
-						add_dynamic_modifier = { modifier = MKN_people_defense_subversion scope = event_target:MKN_people_defense_enemy days = 2 }
+						add_dynamic_modifier = {
+							modifier = MKN_people_defense_subversion
+							scope = event_target:MKN_people_defense_enemy
+							days = 2
+						}
 					}
 				}
 			}
 			if = {
-				limit = { has_war_with = MKN }
+				limit = {
+					has_war_with = MKN
+				}
 				set_country_flag = MKN_people_subversion_active
 			}
-			else = { clr_country_flag = MKN_people_subversion_active }
+			else = {
+				clr_country_flag = MKN_people_subversion_active
+			}
 		}
 	}
 }
 MKN_sync_federation_influence = {
 	every_country = {
 		limit = {
-			OR = { is_neighbor_of = MKN has_idea = MKN_federation_influence_idea }
+			OR = {
+				is_neighbor_of = MKN
+				has_idea = MKN_federation_influence_idea
+			}
 		}
 		if = {
 			limit = {
 				is_neighbor_of = MKN
-				NOT = { has_war_with = MKN }
-				MKN = { exists = yes has_government = democratic has_idea = MKN_world_federation_idea }
+				NOT = {
+					has_war_with = MKN
+				}
+				MKN = {
+					exists = yes
+					has_government = democratic
+					has_idea = MKN_world_federation_idea
+				}
 			}
 			if = {
-				limit = { NOT = { has_idea = MKN_federation_influence_idea } }
+				limit = {
+					NOT = {
+						has_idea = MKN_federation_influence_idea
+					}
+				}
 				add_ideas = MKN_federation_influence_idea
 			}
 		}
-		else = { remove_ideas = MKN_federation_influence_idea }
+		else = {
+			remove_ideas = MKN_federation_influence_idea
+		}
 	}
 }

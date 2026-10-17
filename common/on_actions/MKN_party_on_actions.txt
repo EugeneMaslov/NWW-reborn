@@ -1,0 +1,5 @@
+on_actions = {
+ on_startup = { effect = { every_country = { limit = { original_tag = MKN exists = yes } MKN_refresh_party_progression = yes MKN_repair_council_selection = yes } } }
+ on_government_change = { effect = { if = { limit = { original_tag = MKN } MKN_refresh_party_progression = yes MKN_repair_council_selection = yes } } }
+ on_daily_MKN = { effect = { MKN_refresh_party_progression = yes MKN_repair_council_selection = yes } }
+}

@@ -1,0 +1,7 @@
+# Native war_length_with reads the real war age, including old saves.
+MKN_UKR_in_first_war_year = {
+ OR = {
+  AND = { tag = MKN has_war_with = UKR war_length_with = { tag = UKR months < 12 } }
+  AND = { tag = UKR has_war_with = MKN war_length_with = { tag = MKN months < 12 } }
+ }
+}

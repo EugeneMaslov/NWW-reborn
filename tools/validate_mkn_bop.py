@@ -57,7 +57,7 @@ def validate_bop(root, game, check, localized):
     entries = {'MKN_military_takes_charge': 'fascism', 'MKN_triumph_of_free_soviets': 'democratic', 'MKN_peasant_delegates': 'neutrality', 'MKN_emergency_revkom': 'communism'}
     for fid, ideology in entries.items():
         excluded = {v for g in values(fs[fid], 'mutually_exclusive') for v in values(g, 'focus')}
-        check(excluded == entries.keys() - {fid}, f'{fid}: four paths are not mutually exclusive')
+        check(not excluded, f'{fid}: party restoration remains permanently excluded')
         politics = one(one(fs[fid], 'completion_reward'), 'set_politics')
         check(one(politics, 'ruling_party') == ideology and one(politics, 'elections_allowed') == 'no', f'{fid}: incomplete government/election block')
     for fid in ('MKN_everlasting_makhnovshchina', 'MKN_council_communism', 'MKN_steppe_legions', 'MKN_ataman_directorate'):

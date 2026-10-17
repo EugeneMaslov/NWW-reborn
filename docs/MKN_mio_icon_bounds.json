@@ -1,0 +1,114 @@
+[
+  {
+    "key": "air_artels",
+    "source": "docs/art/mkn_companies/air_artels.png",
+    "texture": "gfx/interface/ideas/MKN/company_air_artels.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      10,
+      4,
+      58,
+      53
+    ],
+    "sha256": "ae284276603ae9172b66687f3ba86817ea81ef19dc1840363c6c09c1c50ae4eb"
+  },
+  {
+    "key": "artillery_works",
+    "source": "docs/art/mkn_companies/artillery_works.png",
+    "texture": "gfx/interface/ideas/MKN/company_artillery_works.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      7,
+      4,
+      57,
+      57
+    ],
+    "sha256": "7a037d8c1f2cdca8bb7d681f0bbdfca99d9a295ff13b8c22886ce587650c65ba"
+  },
+  {
+    "key": "attack_air_artels",
+    "source": "docs/art/mkn_companies/attack_air_artels.png",
+    "texture": "gfx/interface/ideas/MKN/company_attack_air_artels.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      7,
+      4,
+      59,
+      55
+    ],
+    "sha256": "a5834de4f3296a8f0a1a8b30f067ba7c0efc57ede41714af489adc6b690cbd92"
+  },
+  {
+    "key": "kherson_works",
+    "source": "docs/art/mkn_companies/kherson_works.png",
+    "texture": "gfx/interface/ideas/MKN/company_kherson_works.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      11,
+      4,
+      56,
+      57
+    ],
+    "sha256": "b778ac8e4e832e6fa4289d75e1df8c99a532a7c0e5a766087a07bd057fd05a7b"
+  },
+  {
+    "key": "kommunar",
+    "source": "docs/art/mkn_companies/kommunar.png",
+    "texture": "gfx/interface/ideas/MKN/company_kommunar.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      58,
+      57
+    ],
+    "sha256": "9721ee1959607c731ad97af077af04250396538553fa2aa1ce1f8e9589bef420"
+  },
+  {
+    "key": "rifle_artels",
+    "source": "docs/art/mkn_companies/rifle_artels.png",
+    "texture": "gfx/interface/ideas/MKN/company_rifle_artels.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      59,
+      57
+    ],
+    "sha256": "b120fd325c319a3e09f8eed4d884aa2b604971ef6b4b76928d9b660e23c5ec02"
+  },
+  {
+    "key": "submarine_works",
+    "source": "docs/art/mkn_companies/submarine_works.png",
+    "texture": "gfx/interface/ideas/MKN/company_submarine_works.dds",
+    "size": [
+      65,
+      67
+    ],
+    "alpha_bounds": [
+      6,
+      4,
+      58,
+      57
+    ],
+    "sha256": "453fdfa769f95da5fda64d7544b5e4be41f325bf0429b96b176e4cd8c35619ce"
+  }
+]

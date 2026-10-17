@@ -1,0 +1,219 @@
+# Owner: GER. Native strategy tokens: common/ai_strategy/_documentation.md.
+GER_nww_lategame_france = {
+	allowed = { original_tag = GER }
+	enable = {
+		GER_nww_western_mandate = yes
+		FRA = { exists = yes is_subject = no }
+		NOT = { is_ally_with = FRA }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = FRA value = 200 }
+	ai_strategy = { type = prepare_for_war id = FRA value = 200 }
+}
+GER_nww_lategame_britain = {
+	allowed = { original_tag = GER }
+	enable = {
+		GER_nww_western_mandate = yes
+		ENG = { exists = yes is_subject = no }
+		NOT = { is_ally_with = ENG }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = ENG value = 200 }
+	ai_strategy = { type = prepare_for_war id = ENG value = 200 }
+}
+# Reversed targeting follows the native SOV democratic-volunteer example: Germany
+# applies these weights towards every eligible recipient, including dynamic tags.
+GER_nww_support_threatened_democracies = {
+	reversed = yes
+	allowed = { original_tag = GER }
+	enable = {
+		exists = yes
+		is_subject = no
+		NOT = { original_tag = GER }
+		NOT = { has_government = fascism }
+		NOT = { has_government = communism }
+		has_war = yes
+		any_enemy_country = { OR = { has_government = communism has_government = fascism } }
+		NOT = { has_war_with = GER }
+		GER = {
+			has_focus_tree = GER_focus
+			has_government = democratic
+			is_subject = no
+			has_completed_focus = GER_arsenal_of_democracy
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = send_volunteers_desire id = GER value = 200 }
+	ai_strategy = { type = protect id = GER value = 200 }
+	ai_strategy = { type = diplo_action_desire id = GER target = guarantee value = 200 }
+}
+# These continuations supply actual goals and target-specific aggression to the
+# other paths too. New focus rewards never annex a neighbour directly.
+GER_nww_schlieffen_reborn_HOL = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = neutrality
+		has_completed_focus = GER_schlieffen_reborn
+		is_subject = no
+		HOL = { exists = yes is_subject = no }
+		NOT = { is_ally_with = HOL }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = HOL value = 200 }
+	ai_strategy = { type = prepare_for_war id = HOL value = 200 }
+}
+GER_nww_schlieffen_reborn_BEL = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = neutrality
+		has_completed_focus = GER_schlieffen_reborn
+		is_subject = no
+		BEL = { exists = yes is_subject = no }
+		NOT = { is_ally_with = BEL }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = BEL value = 200 }
+	ai_strategy = { type = prepare_for_war id = BEL value = 200 }
+}
+GER_nww_drang_nach_osten_expanded_SOV = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_drang_nach_osten_expanded
+		is_subject = no
+		SOV = { exists = yes is_subject = no }
+		NOT = { is_ally_with = SOV }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = SOV value = 200 }
+	ai_strategy = { type = prepare_for_war id = SOV value = 200 }
+}
+GER_nww_drang_nach_osten_expanded_MKN = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_drang_nach_osten_expanded
+		is_subject = no
+		MKN = { exists = yes is_subject = no }
+		NOT = { is_ally_with = MKN }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = MKN value = 200 }
+	ai_strategy = { type = prepare_for_war id = MKN value = 200 }
+}
+GER_nww_hegemony_over_europe_focus_DEN = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_hegemony_over_europe_focus
+		is_subject = no
+		DEN = { exists = yes is_subject = no }
+		NOT = { is_ally_with = DEN }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = DEN value = 200 }
+	ai_strategy = { type = prepare_for_war id = DEN value = 200 }
+}
+GER_nww_hegemony_over_europe_focus_NOR = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_hegemony_over_europe_focus
+		is_subject = no
+		NOR = { exists = yes is_subject = no }
+		NOT = { is_ally_with = NOR }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = NOR value = 200 }
+	ai_strategy = { type = prepare_for_war id = NOR value = 200 }
+}
+GER_nww_hegemony_over_europe_focus_SWE = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_hegemony_over_europe_focus
+		is_subject = no
+		SWE = { exists = yes is_subject = no }
+		NOT = { is_ally_with = SWE }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = SWE value = 200 }
+	ai_strategy = { type = prepare_for_war id = SWE value = 200 }
+}
+GER_nww_hegemony_over_europe_focus_FIN = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_hegemony_over_europe_focus
+		is_subject = no
+		FIN = { exists = yes is_subject = no }
+		NOT = { is_ally_with = FIN }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = FIN value = 200 }
+	ai_strategy = { type = prepare_for_war id = FIN value = 200 }
+}
+GER_nww_hegemony_over_europe_focus_SWI = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = fascism
+		has_completed_focus = GER_hegemony_over_europe_focus
+		is_subject = no
+		SWI = { exists = yes is_subject = no }
+		NOT = { is_ally_with = SWI }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = SWI value = 200 }
+	ai_strategy = { type = prepare_for_war id = SWI value = 200 }
+}
+GER_nww_challenge_moscow_SOV = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = communism
+		has_completed_focus = GER_challenge_moscow
+		is_subject = no
+		SOV = { exists = yes is_subject = no }
+		NOT = { is_ally_with = SOV }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = SOV value = 200 }
+	ai_strategy = { type = prepare_for_war id = SOV value = 200 }
+}
+GER_nww_anti_imperialist_crusade_FRA = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = democratic
+		has_completed_focus = GER_anti_imperialist_crusade
+		is_subject = no
+		FRA = { exists = yes is_subject = no NOT = { has_government = democratic } }
+		NOT = { is_ally_with = FRA }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = FRA value = 200 }
+	ai_strategy = { type = prepare_for_war id = FRA value = 200 }
+}
+GER_nww_anti_imperialist_crusade_ENG = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_focus_tree = GER_focus
+		has_government = democratic
+		has_completed_focus = GER_anti_imperialist_crusade
+		is_subject = no
+		ENG = { exists = yes is_subject = no NOT = { has_government = democratic } }
+		NOT = { is_ally_with = ENG }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = ENG value = 200 }
+	ai_strategy = { type = prepare_for_war id = ENG value = 200 }
+}

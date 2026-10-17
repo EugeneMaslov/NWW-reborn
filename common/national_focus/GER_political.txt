@@ -24,6 +24,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
+		GER_nww_partial_army_reform = yes
 		army_experience = 15
 		if = {
 			limit = {
@@ -310,6 +311,8 @@ shared_focus = {
 		has_government = neutrality
 	}
 	completion_reward = {
+		remove_ideas = GER_imperial_overstretch
+		remove_ideas = GER_imperial_overstretch_2
 		add_ideas = GER_gott_mit_uns
 	}
 	ai_will_do = {
@@ -459,6 +462,7 @@ shared_focus = {
 		has_government = democratic
 	}
 	completion_reward = {
+		GER_nww_partial_army_reform = yes
 		remove_country_leader_role = {
 			character = GER_wilhelm_iii
 			ideology = GER_imperial_autocracy
@@ -563,6 +567,8 @@ shared_focus = {
 		is_subject = no
 	}
 	completion_reward = {
+		remove_ideas = GER_imperial_overstretch
+		remove_ideas = GER_imperial_overstretch_2
 		swap_ideas = {
 			remove_idea = GER_constitutional_monarchy
 			add_idea = GER_arsenal_of_democracy
@@ -672,6 +678,7 @@ shared_focus = {
 		has_government = fascism
 	}
 	completion_reward = {
+		GER_nww_partial_army_reform = yes
 		retire_character = GER_wilhelm_iii
 		GER_alfred_hugenberg = {
 			add_country_leader_role = {
@@ -790,6 +797,8 @@ shared_focus = {
 		has_government = fascism
 	}
 	completion_reward = {
+		remove_ideas = GER_imperial_overstretch
+		remove_ideas = GER_imperial_overstretch_2
 		add_ideas = GER_the_new_reich
 	}
 }
@@ -851,6 +860,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
+		GER_nww_partial_army_reform = yes
 		set_politics = {
 			ruling_party = communism
 			elections_allowed = no
@@ -888,6 +898,8 @@ shared_focus = {
 		has_government = communism
 	}
 	completion_reward = {
+		remove_ideas = GER_imperial_overstretch
+		remove_ideas = GER_imperial_overstretch_2
 		add_ideas = GER_workers_militias
 	}
 }
@@ -980,4 +992,352 @@ shared_focus = {
 	completion_reward = {
 		nww_GER_western_revolution_wargoals = yes
 	}
+}
+
+# NWW late-game continuations; existing focus coordinates are preserved.
+shared_focus = {
+	id = GER_schlieffen_reborn
+	icon = GFX_focus_GER_army
+	x = 6
+	y = 9
+	cost = 10
+	prerequisite = { focus = GER_gott_mit_uns }
+	available_if_capitulated = no
+	available = {
+		has_government = neutrality
+		is_subject = no
+		date > 1940.12.31
+		OR = { is_ai = no GER_nww_eastern_campaigns_settled = yes }
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				HOL = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = HOL }
+				NOT = { has_war_with = HOL }
+				NOT = { has_wargoal_against = HOL }
+			}
+			create_wargoal = { type = puppet_wargoal_focus target = HOL }
+		}
+		if = {
+			limit = {
+				BEL = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = BEL }
+				NOT = { has_war_with = BEL }
+				NOT = { has_wargoal_against = BEL }
+			}
+			create_wargoal = { type = puppet_wargoal_focus target = BEL }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_strike_the_west
+	icon = GFX_focus_GER_hegemony_over_europe
+	x = 6
+	y = 10
+	cost = 10
+	prerequisite = { focus = GER_schlieffen_reborn }
+	available_if_capitulated = no
+	available = {
+		has_government = neutrality
+		is_subject = no
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				FRA = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = FRA }
+				NOT = { has_war_with = FRA }
+				NOT = { has_wargoal_against = FRA }
+			}
+			create_wargoal = { type = annex_everything target = FRA }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_the_second_naval_race
+	icon = GFX_focus_GER_our_place_in_the_sun
+	x = 6
+	y = 11
+	cost = 10
+	prerequisite = { focus = GER_strike_the_west }
+	available_if_capitulated = no
+	available = {
+		has_government = neutrality
+		is_subject = no
+	}
+	completion_reward = {
+		swap_ideas = { remove_idea = GER_gott_mit_uns add_idea = GER_gott_mit_uns_naval }
+		add_tech_bonus = { name = GER_capital_ship_research bonus = 1.0 uses = 2 category = mio_cat_tech_all_capital_ship_and_modules }
+		if = {
+			limit = {
+				ENG = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = ENG }
+				NOT = { has_war_with = ENG }
+				NOT = { has_wargoal_against = ENG }
+			}
+			create_wargoal = { type = annex_everything target = ENG }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_drang_nach_osten_expanded
+	icon = GFX_focus_GER_the_eastern_border
+	x = 22
+	y = 9
+	cost = 10
+	prerequisite = { focus = GER_the_new_reich }
+	available_if_capitulated = no
+	available = {
+		has_government = fascism
+		is_subject = no
+		date > 1940.12.31
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				SOV = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = SOV }
+				NOT = { has_war_with = SOV }
+				NOT = { has_wargoal_against = SOV }
+			}
+			create_wargoal = { type = annex_everything target = SOV }
+		}
+		if = {
+			limit = {
+				MKN = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = MKN }
+				NOT = { has_war_with = MKN }
+				NOT = { has_wargoal_against = MKN }
+			}
+			create_wargoal = { type = annex_everything target = MKN }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_total_assimilation
+	icon = GFX_focus_GER_realpolitik
+	x = 22
+	y = 10
+	cost = 10
+	prerequisite = { focus = GER_drang_nach_osten_expanded }
+	available_if_capitulated = no
+	available = {
+		has_government = fascism
+		is_subject = no
+	}
+	completion_reward = {
+		swap_ideas = { remove_idea = GER_the_new_reich add_idea = GER_the_new_reich_integrated }
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_hegemony_over_europe_focus
+	icon = GFX_focus_GER_hegemony_over_europe
+	x = 22
+	y = 11
+	cost = 10
+	prerequisite = { focus = GER_total_assimilation }
+	available_if_capitulated = no
+	available = {
+		has_government = fascism
+		is_subject = no
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				DEN = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = DEN }
+				NOT = { has_war_with = DEN }
+				NOT = { has_wargoal_against = DEN }
+			}
+			create_wargoal = { type = annex_everything target = DEN }
+		}
+		if = {
+			limit = {
+				NOR = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = NOR }
+				NOT = { has_war_with = NOR }
+				NOT = { has_wargoal_against = NOR }
+			}
+			create_wargoal = { type = annex_everything target = NOR }
+		}
+		if = {
+			limit = {
+				SWE = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = SWE }
+				NOT = { has_war_with = SWE }
+				NOT = { has_wargoal_against = SWE }
+			}
+			create_wargoal = { type = annex_everything target = SWE }
+		}
+		if = {
+			limit = {
+				FIN = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = FIN }
+				NOT = { has_war_with = FIN }
+				NOT = { has_wargoal_against = FIN }
+			}
+			create_wargoal = { type = annex_everything target = FIN }
+		}
+		if = {
+			limit = {
+				SWI = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = SWI }
+				NOT = { has_war_with = SWI }
+				NOT = { has_wargoal_against = SWI }
+			}
+			create_wargoal = { type = annex_everything target = SWI }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_european_federation
+	icon = GFX_focus_GER_european_confederation
+	x = 14
+	y = 8
+	cost = 10
+	prerequisite = { focus = GER_arsenal_of_democracy }
+	available_if_capitulated = no
+	available = {
+		has_government = democratic
+		is_subject = no
+		OR = { is_in_faction = no is_faction_leader = yes }
+	}
+	completion_reward = {
+		if = { limit = { is_in_faction = no } nww_GER_establish_mitteleuropa = yes }
+		set_faction_name = GER_european_federation_faction
+		GER_nww_refresh_federal_investment = yes
+		every_other_country = {
+			limit = { is_in_faction_with = ROOT }
+			GER_nww_refresh_federal_investment = yes
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_anti_imperialist_crusade
+	icon = GFX_focus_GER_liberate_exploited_colonial_workers
+	x = 14
+	y = 9
+	cost = 10
+	prerequisite = { focus = GER_european_federation }
+	available_if_capitulated = no
+	available = {
+		has_government = democratic
+		is_subject = no
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				FRA = { exists = yes is_subject = no NOT = { has_government = democratic } }
+				NOT = { is_ally_with = FRA }
+				NOT = { has_war_with = FRA }
+				NOT = { has_wargoal_against = FRA }
+			}
+			create_wargoal = { type = liberate_wargoal target = FRA }
+		}
+		if = {
+			limit = {
+				ENG = { exists = yes is_subject = no NOT = { has_government = democratic } }
+				NOT = { is_ally_with = ENG }
+				NOT = { has_war_with = ENG }
+				NOT = { has_wargoal_against = ENG }
+			}
+			create_wargoal = { type = liberate_wargoal target = ENG }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_shield_against_the_reds
+	icon = GFX_focus_GER_defender_of_democracy
+	x = 14
+	y = 10
+	cost = 10
+	prerequisite = { focus = GER_anti_imperialist_crusade }
+	available_if_capitulated = no
+	available = {
+		has_government = democratic
+		is_subject = no
+	}
+	completion_reward = {
+		swap_ideas = { remove_idea = GER_arsenal_of_democracy add_idea = GER_arsenal_of_democracy_shield }
+		set_rule = { can_send_volunteers = yes }
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_red_rhine
+	icon = GFX_focus_GER_support_the_proletarian_uprising
+	x = 30
+	y = 10
+	cost = 10
+	prerequisite = { focus = GER_world_revolution }
+	available_if_capitulated = no
+	available = {
+		has_government = communism
+		is_subject = no
+	}
+	completion_reward = {
+		FRA = { if = { limit = { exists = yes is_subject = no NOT = { has_government = communism } has_civil_war = no } country_event = { id = ger_crisis.70 days = 1 } } }
+		HOL = { if = { limit = { exists = yes is_subject = no NOT = { has_government = communism } has_civil_war = no } country_event = { id = ger_crisis.70 days = 1 } } }
+		BEL = { if = { limit = { exists = yes is_subject = no NOT = { has_government = communism } has_civil_war = no } country_event = { id = ger_crisis.70 days = 1 } } }
+		LUX = { if = { limit = { exists = yes is_subject = no NOT = { has_government = communism } has_civil_war = no } country_event = { id = ger_crisis.70 days = 1 } } }
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_nva_mass_mobilization
+	icon = GFX_focus_GER_proletarian_solidarity
+	x = 30
+	y = 11
+	cost = 10
+	prerequisite = { focus = GER_red_rhine }
+	available_if_capitulated = no
+	available = {
+		has_government = communism
+		is_subject = no
+	}
+	completion_reward = {
+		swap_ideas = { remove_idea = GER_workers_militias add_idea = GER_nva_mass_army }
+	}
+	ai_will_do = { factor = 10 }
+}
+shared_focus = {
+	id = GER_challenge_moscow
+	icon = GFX_focus_GER_strengthen_the_proletarian_international
+	x = 30
+	y = 12
+	cost = 10
+	prerequisite = { focus = GER_nva_mass_mobilization }
+	available_if_capitulated = no
+	available = {
+		has_government = communism
+		is_subject = no
+		date > 1940.12.31
+		has_war = no
+	}
+	completion_reward = {
+		if = {
+			limit = { is_in_faction_with = SOV }
+			if = { limit = { is_faction_leader = yes } remove_from_faction = SOV }
+			else = { leave_faction = yes }
+		}
+		if = {
+			limit = {
+				SOV = { exists = yes is_subject = no  }
+				NOT = { is_ally_with = SOV }
+				NOT = { has_war_with = SOV }
+				NOT = { has_wargoal_against = SOV }
+			}
+			create_wargoal = { type = annex_everything target = SOV }
+		}
+	}
+	ai_will_do = { factor = 10 }
 }

@@ -8784,8 +8784,8 @@
         "Hidden Supply Hub"
       ],
       "desc": [
-        "Замаскированные склады и подводы свяжут колонны с тылом. За 50 политической власти через 30 дней в выбранном регионе появится один узел снабжения.",
-        "Camouflaged stores and wagon routes connect the columns to their rear. Spend 50 political power to build one supply hub in the selected state after 30 days."
+        "Замаскированные склады и подводы свяжут колонны с тылом. За 50 политической власти через 30 дней в пригодной провинции выбранного региона появится один узел снабжения. Для работы узла нужно железнодорожное сообщение с тылом. Если разместить узел не удастся, политическая власть возвращается.",
+        "Camouflaged stores and wagon routes connect the columns to their rear. Spend 50 political power to build one supply hub in a suitable province of the selected state after 30 days. The hub needs a railway connection to the rear to function. If placement fails, political power is refunded."
       ]
     },
     {
@@ -8939,5 +8939,11 @@
       "MKN_navy_naval_ship_recovery_chance_factor": "0.1",
       "MKN_navy_naval_retreat_speed": "0.05"
     }
+  },
+  "tactic_training": {
+    "days": 60,
+    "experience": 80,
+    "command_power": 60,
+    "reward": "remove_effect; costs at launch; bonuses after training"
   }
 }

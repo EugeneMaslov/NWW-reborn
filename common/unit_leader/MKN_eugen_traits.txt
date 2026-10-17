@@ -1,7 +1,9 @@
 leader_traits = {
 	mkn_eugen_under_fire = {
-		type = all
+		type = land
 		trait_type = personality_trait
+		new_commander_weight = { factor = 0 }
+		allowed = { always = no }
 		gain_xp = { always = no }
 		modifier = {
 			army_morale_factor = 0.05

@@ -1,7 +1,9 @@
 leader_traits = {
 	mkn_batko_legend = {
-		type = all
+		type = land
 		trait_type = personality_trait
+		new_commander_weight = { factor = 0 }
+		allowed = { always = no }
 		gain_xp = {
 			always = no
 		}

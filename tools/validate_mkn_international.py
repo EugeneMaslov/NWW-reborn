@@ -117,15 +117,11 @@ class InternationalModel:
                 for weight,branch,_ in v:
                     total+=int(weight)
                     if self.roll<total: self.apply(branch,actor);break
-            elif k=='while':
-                count=0
-                while self.test(one(v,'limit',[]),actor):
-                    self.apply([n for n in v if n[0]!='limit'],actor);count+=1
-                    assert count<1000,'Unbounded factory cleanup'
-            elif k in ('set_variable','add_to_variable','subtract_from_variable'):
+            elif k in ('set_variable','add_to_variable','subtract_from_variable','multiply_variable'):
                 for key,amount,_ in v:
-                    value=float(amount)
-                    s['variables'][key]=(value if k=='set_variable' else s['variables'].get(key,0)+(value if k=='add_to_variable' else -value))
+                    value=s['variables'].get(amount,0) if not str(amount).replace('.','',1).replace('-','',1).isdigit() else float(amount)
+                    old=s['variables'].get(key,0)
+                    s['variables'][key]=(value if k=='set_variable' else old*value if k=='multiply_variable' else old+(value if k=='add_to_variable' else -value))
             elif k=='clear_variable':s['variables'].pop(v,None)
             elif k=='add_political_power': s['pp']+=int(v)
             elif k=='add_stability':s['stability']+=float(v)
@@ -141,7 +137,7 @@ class InternationalModel:
             elif k=='set_technology':
                 for token,level,_ in v:
                     (s['techs'].add if level=='1' else s['techs'].discard)(token)
-            elif k=='add_offsite_building': s['factories'][one(v,'type')]+=int(one(v,'level'))
+            elif k=='add_offsite_building': s['factories'][one(v,'type')]+=int(s['variables'].get(one(v,'level'),0) if not str(one(v,'level')).lstrip('-').isdigit() else one(v,'level'))
             elif k in ('set_country_flag','clr_country_flag'):
                 (s['flags'].add if k=='set_country_flag' else s['flags'].discard)(v)
             elif k=='create_wargoal': s['goals'][self.scope(one(v,'target'))]=self.day+int(one(v,'expire'))
@@ -188,6 +184,7 @@ def validate_international(root, game, check, localized):
     effects=dict((k,v) for k,v,o in read(root/'common/scripted_effects/MKN_international_effects.txt'))
     triggers=dict((k,v) for k,v,o in read(root/'common/scripted_triggers/MKN_international_triggers.txt'))
     ideas=dict((k,v) for k,v,o in one(one(read(root/'common/ideas/MKN_international_ideas.txt'),'ideas'),'country'))
+    ideas.update((k,v) for k,v,o in one(one(read(root/'common/ideas/MKN_gameplay_ideas.txt'),'ideas'),'country'))
     tree=one(read(root/'common/national_focus/MKN.txt'),'focus_tree')
     focuses={one(f,'id'):f for f in values(tree,'focus')}
     op=one(read(root/'common/operations/MKN_operations.txt'),'mkn_expropriate_funds_operation')
@@ -224,6 +221,13 @@ def validate_international(root, game, check, localized):
             expected_news=[f'mkn_news.{10+MAJOR_TARGETS.index(target)}'] if good and target in MAJOR_TARGETS else []
             check(m.news==expected_news,f'{target}: incorrect world news dispatch')
             check(t['goals']==({} if good else {'MKN':60}),f'{target}: incorrect reprisal target/expiry')
+            check(t['ideas'].get('MKN_bank_raid_aftermath')==(180 if good else None),f'{target}: missing or unearned 180-day bank penalty')
+            check('MKN_bank_raid_aftermath' not in s['ideas'],f'{target}: robbery penalty applied to MKN')
+            check(not m.test(one(op,'visible')),f'{target}: attempted operation remains visible')
+            m.advance(179)
+            check(('MKN_bank_raid_aftermath' in t['ideas'])==good,f'{target}: bank penalty expires early')
+            m.advance(1)
+            check('MKN_bank_raid_aftermath' not in t['ideas'] and s['factories']['industrial_complex']==0,f'{target}: bank penalty or leased factories survive expiry')
             cases+=1
     # Every wealth boundary is tested from launch, including later economic changes.
     for factories,pp,equipment,leased in ((0,25,300,1),(14,25,300,1),(15,50,500,2),(39,50,500,2),(40,75,750,3),(150,75,750,3)):

@@ -431,16 +431,11 @@ MKN_economic_projects_category = {
 				196 = {
 					if = {
 						limit = {
-							free_building_slots = {
-								building = naval_base
-								size > 0
-								province = 721
-							}
+							infrastructure < 5
 						}
 						add_building_construction = {
-							type = naval_base
+							type = infrastructure
 							level = 1
-							province = 721
 							instant_build = yes
 						}
 					}

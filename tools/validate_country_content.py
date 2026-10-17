@@ -240,6 +240,9 @@ scope_files += [ROOT/'common/autonomous_states/MKN_military_march.txt', ROOT/'co
 scope_files += list(ROOT.glob('common/**/MKN_soviet*.txt'))
 scope_files += list(ROOT.glob('common/**/MKN_agrarian*.txt'))
 scope_files += list(ROOT.glob('common/**/MKN_communist*.txt'))
+scope_files += list(ROOT.glob('common/**/MKN_gameplay*.txt'))
+scope_files += list(ROOT.glob('common/**/MKN_party*.txt'))
+scope_files += [ROOT/'common/scripted_effects/MKN_ukr_campaign_effects.txt',ROOT/'events/MKN_gameplay_events.txt']
 scope_files += [ROOT/'events/MKN_soviet_events.txt']
 for path in scope_files:
     doc = read(path)
@@ -616,12 +619,16 @@ from validate_mkn_personnel import validate_personnel
 validate_personnel(ROOT, GAME, check, localized)
 from validate_mkn_international import validate_international
 validate_international(ROOT, GAME, check, localized)
+from validate_mkn_gameplay_fixes import validate_gameplay_fixes
+validate_gameplay_fixes(ROOT, GAME, check, localized)
 from validate_map_initialization import validate_map_initialization
 validate_map_initialization(ROOT, GAME, check)
 from validate_repository_layout import validate_layout
 validate_layout(ROOT, check)
 from validate_germany_politics import validate_germany
 validate_germany(ROOT, GAME, check)
+from validate_germany_lategame import validate_lategame
+validate_lategame(ROOT, GAME, check)
 from validate_britain_content import main as validate_britain
 check(validate_britain(['--game', str(GAME)]) == 0, 'ENG country package validation failed')
 from test_britain_lifecycle import main as test_britain_lifecycle

@@ -40,8 +40,8 @@ def validate_crisis(root, game, check, localized):
             check(values(one(f, 'prerequisite'), 'focus') == [parent], f'{fid}: succession chain is broken')
             if not i:
                 excluded = {v for n in values(f, 'mutually_exclusive') for v in values(n, 'focus')}
-                check(excluded == entries - {fid}, f'{fid}: incomplete mutual exclusion')
-                check(any((ideology, '0.40', '<') in n for n in values(one(f, 'available'), 'NOT')), f'{fid}: missing 40% mandate')
+                check(not excluded, f'{fid}: permanent mutual exclusion blocks a restored country')
+                check((ideology,'0.40','<') in list(walk(one(f,'available'))), f'{fid}: missing initial 40% mandate')
                 check(one(one(one(f, 'completion_reward'), 'set_politics'), 'ruling_party') == ideology, f'{fid}: wrong government')
                 check(one(one(one(f, 'completion_reward'), 'set_politics'), 'elections_allowed') == 'no', f'{fid}: incomplete election tooltip')
             if i == 1:
