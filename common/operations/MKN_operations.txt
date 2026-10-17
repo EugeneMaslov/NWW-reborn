@@ -13,7 +13,7 @@ mkn_expropriate_funds_operation = {
 		has_dlc = "La Resistance"
 	}
 	visible = {
-		MKN_expropriation_geographic_target = yes
+		MKN_valid_expropriation_target = yes
 	}
 	available = {
 		has_dlc = "La Resistance"

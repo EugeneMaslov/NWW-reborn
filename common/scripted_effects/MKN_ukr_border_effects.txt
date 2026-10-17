@@ -351,6 +351,7 @@ mkn_ukr_conclude_total_war = {
 		UKR = {
 			if = {
 				limit = {
+					date > 1939.8.31
 					exists = yes
 					MKN = {
 						exists = yes
@@ -713,6 +714,7 @@ MKN_annex_encircled_ukraine = {
 	if = {
 		limit = {
 			MKN_kyiv_encircled = yes
+			UKR = { has_capitulated = yes has_country_flag = UKR_capitulated_to_MKN }
 		}
 		annex_country = {
 			target = UKR

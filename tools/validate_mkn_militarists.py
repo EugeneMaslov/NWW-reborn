@@ -40,7 +40,8 @@ class MilitaristModel:
         self.leader_traits = {'mkn_iron_warlord'}
         self.tech = []
         self.rng = random.Random(seed)
-        self.leaders = [{'army': i < 6, 'traits': set()} for i in range(8)]
+        self.leaders = [{'army': i < 6, 'traits': set(), 'skill': [2,6,5,5,3,1,10,10][i]} for i in range(8)]
+        self.effects = {k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_effects/MKN_gameplay_effects.txt')}
         self.state = {'owned': True, 'controlled': True, 'fully': True, 'core': True,
                       'infrastructure': 2, 'flags': set(), 'modifiers': []}
         self.subject = {'subject': True, 'gov': 'fascism', 'autonomy': 'autonomy_puppet'}
@@ -67,6 +68,8 @@ class MilitaristModel:
             elif k == 'has_dlc': ok = self.dlc and v == 'La Resistance'
             elif k == 'is_army_leader': ok = scope['army'] == (v == 'yes')
             elif k == 'has_trait': ok = v in scope['traits']
+            elif k == 'any_unit_leader': ok = any(self.test(v,leader) for leader in self.leaders)
+            elif k == 'skill': ok = {'>':scope['skill']>int(v),'<':scope['skill']<int(v),'=':scope['skill']==int(v)}[op]
             elif k == 'is_owned_and_controlled_by': ok = scope['owned'] and scope['controlled']
             elif k == 'is_fully_controlled_by': ok = scope['fully']
             elif k == 'is_core_of': ok = scope['core']
@@ -88,11 +91,19 @@ class MilitaristModel:
             if k == 'if':
                 branch = self.test(one(v, 'limit'), scope)
                 if branch: self.apply([n for n in v if n[0] != 'limit'], scope)
+            elif k == 'else_if':
+                assert branch is not None
+                if not branch and self.test(one(v,'limit'),scope):
+                    self.apply([n for n in v if n[0]!='limit'],scope);branch=True
             elif k == 'else':
                 assert branch is not None
                 if not branch: self.apply(v, scope)
                 branch = None
             elif k == 'FROM': self.apply(v, self.target)
+            elif k == 'hidden_effect': self.apply(v,scope)
+            elif k == 'custom_effect_tooltip': pass
+            elif k == 'NWW_MKN_eugen': self.apply(v,self.leaders[0])
+            elif k in self.effects: self.apply(self.effects[k],scope)
             elif k == 'add_command_power': self.cp += Decimal(v)
             elif k == 'add_political_power': self.pp += int(v)
             elif k == 'set_country_flag': self.flags.add(v)
@@ -176,7 +187,7 @@ def validate_militarists(root, game, check, localized):
         sim = MilitaristModel(seed=seed)
         sim.apply(one(fs['MKN_council_of_field_commanders'], 'completion_reward'))
         chosen = [x for x in sim.leaders if 'mkn_council_member_trait' in x['traits']]
-        check(len(chosen) == 3 and all(x['army'] for x in chosen), 'MKN council: repeated draw or admiral selected')
+        check(len(chosen) == 3 and all(x['army'] for x in chosen) and sim.leaders[0] in chosen and sorted(x['skill'] for x in chosen)==[2,5,6], 'MKN council: Eugen missing, lower-skilled commander/admiral or repeated draw')
         cases += 1
     sim = MilitaristModel()
     sim.apply(one(fs['MKN_the_supreme_warlord'], 'completion_reward'))

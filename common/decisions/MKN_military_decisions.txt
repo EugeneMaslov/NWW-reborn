@@ -23,54 +23,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_night_marches
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_org_loss_when_moving = -0.1
-					tooltip = MKN_army_org_loss_when_moving_tt
-				}
-				set_country_flag = MKN_military_stat_night_marches
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_militia_junior_leaders
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_army_org_factor = 0.05
-					tooltip = MKN_army_army_org_factor_tt
-				}
-				set_country_flag = MKN_military_stat_militia_junior_leaders
-			}
-			set_country_flag = MKN_tactic_night_marches_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_night_marches_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_night_marches_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_night_marches
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_org_loss_when_moving = -0.1
+						tooltip = MKN_army_org_loss_when_moving_tt
+					}
+					set_country_flag = MKN_military_stat_night_marches
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_militia_junior_leaders
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_army_org_factor = 0.05
+						tooltip = MKN_army_army_org_factor_tt
+					}
+					set_country_flag = MKN_military_stat_militia_junior_leaders
+				}
+				set_country_flag = MKN_tactic_night_marches_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_night_marches_training
+			}
 		}
 	}
 	MKN_tactic_steppe_camouflage = {
@@ -95,54 +104,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_steppe_camouflage
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_max_dig_in = 2
-					tooltip = MKN_army_max_dig_in_tt
-				}
-				set_country_flag = MKN_military_stat_steppe_camouflage
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_hidden_depots
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_supply_consumption_factor = -0.08
-					tooltip = MKN_army_supply_consumption_factor_tt
-				}
-				set_country_flag = MKN_military_stat_hidden_depots
-			}
-			set_country_flag = MKN_tactic_steppe_camouflage_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_steppe_camouflage_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_steppe_camouflage_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_steppe_camouflage
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_max_dig_in = 2
+						tooltip = MKN_army_max_dig_in_tt
+					}
+					set_country_flag = MKN_military_stat_steppe_camouflage
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_hidden_depots
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_supply_consumption_factor = -0.08
+						tooltip = MKN_army_supply_consumption_factor_tt
+					}
+					set_country_flag = MKN_military_stat_hidden_depots
+				}
+				set_country_flag = MKN_tactic_steppe_camouflage_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_steppe_camouflage_training
+			}
 		}
 	}
 	MKN_tactic_militia_engineers = {
@@ -167,54 +185,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_militia_engineers
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_dig_in_speed_factor = 0.2
-					tooltip = MKN_army_dig_in_speed_factor_tt
-				}
-				set_country_flag = MKN_military_stat_militia_engineers
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_militia_hospitals
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_casualty_trickleback = 0.06
-					tooltip = MKN_army_casualty_trickleback_tt
-				}
-				set_country_flag = MKN_military_stat_militia_hospitals
-			}
-			set_country_flag = MKN_tactic_militia_engineers_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_militia_engineers_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_militia_engineers_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_militia_engineers
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_dig_in_speed_factor = 0.2
+						tooltip = MKN_army_dig_in_speed_factor_tt
+					}
+					set_country_flag = MKN_military_stat_militia_engineers
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_militia_hospitals
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_casualty_trickleback = 0.06
+						tooltip = MKN_army_casualty_trickleback_tt
+					}
+					set_country_flag = MKN_military_stat_militia_hospitals
+				}
+				set_country_flag = MKN_tactic_militia_engineers_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_militia_engineers_training
+			}
 		}
 	}
 	MKN_tactic_flexible_orders = {
@@ -239,54 +266,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_flexible_orders
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_planning_speed = 0.15
-					tooltip = MKN_army_planning_speed_tt
-				}
-				set_country_flag = MKN_military_stat_flexible_orders
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_rural_reserve
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_conscription = 0.02
-					tooltip = MKN_army_conscription_tt
-				}
-				set_country_flag = MKN_military_stat_rural_reserve
-			}
-			set_country_flag = MKN_tactic_flexible_orders_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_flexible_orders_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_flexible_orders_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_flexible_orders
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_planning_speed = 0.15
+						tooltip = MKN_army_planning_speed_tt
+					}
+					set_country_flag = MKN_military_stat_flexible_orders
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_rural_reserve
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_conscription = 0.02
+						tooltip = MKN_army_conscription_tt
+					}
+					set_country_flag = MKN_military_stat_rural_reserve
+				}
+				set_country_flag = MKN_tactic_flexible_orders_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_flexible_orders_training
+			}
 		}
 	}
 	MKN_tactic_tachanka_tactics = {
@@ -311,54 +347,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_tachanka_tactics
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_modifier_army_sub_unit_cavalry_defence_factor = 0.08
-					tooltip = MKN_army_modifier_army_sub_unit_cavalry_defence_factor_tt
-				}
-				set_country_flag = MKN_military_stat_tachanka_tactics
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_mobile_rearguard
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_modifier_army_sub_unit_infantry_defence_factor = 0.05
-					tooltip = MKN_army_modifier_army_sub_unit_infantry_defence_factor_tt
-				}
-				set_country_flag = MKN_military_stat_mobile_rearguard
-			}
-			set_country_flag = MKN_tactic_tachanka_tactics_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_tachanka_tactics_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_tachanka_tactics_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_tachanka_tactics
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_modifier_army_sub_unit_cavalry_defence_factor = 0.08
+						tooltip = MKN_army_modifier_army_sub_unit_cavalry_defence_factor_tt
+					}
+					set_country_flag = MKN_military_stat_tachanka_tactics
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_mobile_rearguard
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_modifier_army_sub_unit_infantry_defence_factor = 0.05
+						tooltip = MKN_army_modifier_army_sub_unit_infantry_defence_factor_tt
+					}
+					set_country_flag = MKN_military_stat_mobile_rearguard
+				}
+				set_country_flag = MKN_tactic_tachanka_tactics_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_tachanka_tactics_training
+			}
 		}
 	}
 	MKN_tactic_free_column_exercises = {
@@ -382,40 +427,49 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_free_column_exercises
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_army_org_factor = 0.05
-					tooltip = MKN_army_army_org_factor_tt
-				}
-				set_country_flag = MKN_military_stat_free_column_exercises
-			}
-			set_country_flag = MKN_tactic_free_column_exercises_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_free_column_exercises_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_free_column_exercises_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_free_column_exercises
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_army_org_factor = 0.05
+						tooltip = MKN_army_army_org_factor_tt
+					}
+					set_country_flag = MKN_military_stat_free_column_exercises
+				}
+				set_country_flag = MKN_tactic_free_column_exercises_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_free_column_exercises_training
+			}
 		}
 	}
 	MKN_tactic_motorized_infantry = {
@@ -440,54 +494,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_motorized_infantry
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_modifier_army_sub_unit_infantry_speed_factor = 0.05
-					tooltip = MKN_army_modifier_army_sub_unit_infantry_speed_factor_tt
-				}
-				set_country_flag = MKN_military_stat_motorized_infantry
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_bridge_columns
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_army_speed_factor = 0.04
-					tooltip = MKN_army_army_speed_factor_tt
-				}
-				set_country_flag = MKN_military_stat_bridge_columns
-			}
-			set_country_flag = MKN_tactic_motorized_infantry_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_motorized_infantry_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_motorized_infantry_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_motorized_infantry
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_modifier_army_sub_unit_infantry_speed_factor = 0.05
+						tooltip = MKN_army_modifier_army_sub_unit_infantry_speed_factor_tt
+					}
+					set_country_flag = MKN_military_stat_motorized_infantry
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_bridge_columns
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_army_speed_factor = 0.04
+						tooltip = MKN_army_army_speed_factor_tt
+					}
+					set_country_flag = MKN_military_stat_bridge_columns
+				}
+				set_country_flag = MKN_tactic_motorized_infantry_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_motorized_infantry_training
+			}
 		}
 	}
 	MKN_tactic_fuel_discipline = {
@@ -512,54 +575,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_fuel_discipline
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_army_fuel_consumption_factor = -0.1
-					tooltip = MKN_army_army_fuel_consumption_factor_tt
-				}
-				set_country_flag = MKN_military_stat_fuel_discipline
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_staff_games
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_planning_speed = 0.15
-					tooltip = MKN_army_planning_speed_tt
-				}
-				set_country_flag = MKN_military_stat_staff_games
-			}
-			set_country_flag = MKN_tactic_fuel_discipline_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_fuel_discipline_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_fuel_discipline_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_fuel_discipline
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_army_fuel_consumption_factor = -0.1
+						tooltip = MKN_army_army_fuel_consumption_factor_tt
+					}
+					set_country_flag = MKN_military_stat_fuel_discipline
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_staff_games
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_planning_speed = 0.15
+						tooltip = MKN_army_planning_speed_tt
+					}
+					set_country_flag = MKN_military_stat_staff_games
+				}
+				set_country_flag = MKN_tactic_fuel_discipline_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_fuel_discipline_training
+			}
 		}
 	}
 	MKN_tactic_mobile_medical = {
@@ -584,54 +656,63 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_mobile_medical
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_casualty_trickleback = 0.05
-					tooltip = MKN_army_casualty_trickleback_tt
-				}
-				set_country_flag = MKN_military_stat_mobile_medical
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_combined_arms
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_army_armor_attack_factor = 0.05
-					tooltip = MKN_army_army_armor_attack_factor_tt
-				}
-				set_country_flag = MKN_military_stat_combined_arms
-			}
-			set_country_flag = MKN_tactic_mobile_medical_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_mobile_medical_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_mobile_medical_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_mobile_medical
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_casualty_trickleback = 0.05
+						tooltip = MKN_army_casualty_trickleback_tt
+					}
+					set_country_flag = MKN_military_stat_mobile_medical
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_combined_arms
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_army_armor_attack_factor = 0.05
+						tooltip = MKN_army_army_armor_attack_factor_tt
+					}
+					set_country_flag = MKN_military_stat_combined_arms
+				}
+				set_country_flag = MKN_tactic_mobile_medical_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_mobile_medical_training
+			}
 		}
 	}
 	MKN_tactic_armoured_manoeuvres = {
@@ -657,68 +738,77 @@ MKN_army_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_army_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_army_experience < 20
+				has_army_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			army_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_deep_reserves
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_land_reinforce_rate = 0.02
-					tooltip = MKN_army_land_reinforce_rate_tt
-				}
-				set_country_flag = MKN_military_stat_deep_reserves
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_breakthrough_workshops
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_army_armor_attack_factor = 0.04
-					tooltip = MKN_army_army_armor_attack_factor_tt
-				}
-				set_country_flag = MKN_military_stat_breakthrough_workshops
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_armoured_manoeuvres
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_army_org_loss_when_moving = -0.1
-					tooltip = MKN_army_org_loss_when_moving_tt
-				}
-				set_country_flag = MKN_military_stat_armoured_manoeuvres
-			}
-			set_country_flag = MKN_tactic_armoured_manoeuvres_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			army_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_armoured_manoeuvres_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_armoured_manoeuvres_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_deep_reserves
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_land_reinforce_rate = 0.02
+						tooltip = MKN_army_land_reinforce_rate_tt
+					}
+					set_country_flag = MKN_military_stat_deep_reserves
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_breakthrough_workshops
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_army_armor_attack_factor = 0.04
+						tooltip = MKN_army_army_armor_attack_factor_tt
+					}
+					set_country_flag = MKN_military_stat_breakthrough_workshops
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_armoured_manoeuvres
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_army_org_loss_when_moving = -0.1
+						tooltip = MKN_army_org_loss_when_moving_tt
+					}
+					set_country_flag = MKN_military_stat_armoured_manoeuvres
+				}
+				set_country_flag = MKN_tactic_armoured_manoeuvres_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_armoured_manoeuvres_training
+			}
 		}
 	}
 	MKN_project_hidden_supply_node = {
@@ -735,6 +825,9 @@ MKN_army_hq_decisions = {
 		target_trigger = {
 			FROM = {
 				is_owned_and_controlled_by = ROOT
+				is_fully_controlled_by = ROOT
+				supply_node < 1
+				can_construct_building = supply_node
 			}
 		}
 		visible = {
@@ -754,6 +847,7 @@ MKN_army_hq_decisions = {
 			}
 			FROM = {
 				supply_node < 1
+				can_construct_building = supply_node
 			}
 			hidden_trigger = {
 				NOT = {
@@ -784,6 +878,7 @@ MKN_army_hq_decisions = {
 					}
 					FROM = {
 						supply_node < 1
+						can_construct_building = supply_node
 					}
 				}
 			}
@@ -803,21 +898,21 @@ MKN_army_hq_decisions = {
 					}
 					FROM = {
 						supply_node < 1
+						can_construct_building = supply_node
 					}
 				}
 				FROM = {
-					add_building_construction = {
-						type = supply_node
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = no
-						}
-					}
+					construct_building_in_random_province = { supply_node = 1 }
 				}
-				set_country_flag = MKN_project_hidden_supply_node_done
-				FROM = {
-					set_state_flag = MKN_project_hidden_supply_node_done
+				if = {
+					limit = { FROM = { supply_node > 0 } }
+					set_country_flag = MKN_project_hidden_supply_node_done
+					set_country_flag = MKN_hidden_supply_node_placement_v2
+					FROM = { set_state_flag = MKN_project_hidden_supply_node_done }
+				}
+				else = {
+					add_political_power = 50
+					set_country_flag = MKN_project_hidden_supply_node_cancelled
 				}
 			}
 			else = {
@@ -1167,54 +1262,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_dispersal
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_home_defence_factor = 0.1
-					tooltip = MKN_air_air_home_defence_factor_tt
-				}
-				set_country_flag = MKN_military_stat_air_dispersal
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_fighter_patrols
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_range_factor = 0.05
-					tooltip = MKN_air_air_range_factor_tt
-				}
-				set_country_flag = MKN_military_stat_fighter_patrols
-			}
-			set_country_flag = MKN_tactic_air_dispersal_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_air_dispersal_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_air_dispersal_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_dispersal
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_home_defence_factor = 0.1
+						tooltip = MKN_air_air_home_defence_factor_tt
+					}
+					set_country_flag = MKN_military_stat_air_dispersal
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_fighter_patrols
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_range_factor = 0.05
+						tooltip = MKN_air_air_range_factor_tt
+					}
+					set_country_flag = MKN_military_stat_fighter_patrols
+				}
+				set_country_flag = MKN_tactic_air_dispersal_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_air_dispersal_training
+			}
 		}
 	}
 	MKN_tactic_night_interceptors = {
@@ -1239,54 +1343,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_radar_school
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_interception_detect_factor = 0.1
-					tooltip = MKN_air_air_interception_detect_factor_tt
-				}
-				set_country_flag = MKN_military_stat_air_radar_school
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_night_interceptors
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_intercept_efficiency = 0.05
-					tooltip = MKN_air_air_intercept_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_night_interceptors
-			}
-			set_country_flag = MKN_tactic_night_interceptors_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_night_interceptors_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_night_interceptors_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_radar_school
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_interception_detect_factor = 0.1
+						tooltip = MKN_air_air_interception_detect_factor_tt
+					}
+					set_country_flag = MKN_military_stat_air_radar_school
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_night_interceptors
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_intercept_efficiency = 0.05
+						tooltip = MKN_air_air_intercept_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_night_interceptors
+				}
+				set_country_flag = MKN_tactic_night_interceptors_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_night_interceptors_training
+			}
 		}
 	}
 	MKN_tactic_fighter_conversion = {
@@ -1311,54 +1424,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_aircraft_spares
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_accidents_factor = -0.05
-					tooltip = MKN_air_air_accidents_factor_tt
-				}
-				set_country_flag = MKN_military_stat_aircraft_spares
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_fighter_conversion
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_agility_factor = 0.04
-					tooltip = MKN_air_air_agility_factor_tt
-				}
-				set_country_flag = MKN_military_stat_fighter_conversion
-			}
-			set_country_flag = MKN_tactic_fighter_conversion_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_fighter_conversion_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_fighter_conversion_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_aircraft_spares
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_accidents_factor = -0.05
+						tooltip = MKN_air_air_accidents_factor_tt
+					}
+					set_country_flag = MKN_military_stat_aircraft_spares
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_fighter_conversion
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_agility_factor = 0.04
+						tooltip = MKN_air_air_agility_factor_tt
+					}
+					set_country_flag = MKN_military_stat_fighter_conversion
+				}
+				set_country_flag = MKN_tactic_fighter_conversion_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_fighter_conversion_training
+			}
 		}
 	}
 	MKN_tactic_air_rescue = {
@@ -1383,54 +1505,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_rescue
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_ace_generation_chance_factor = 0.1
-					tooltip = MKN_air_air_ace_generation_chance_factor_tt
-				}
-				set_country_flag = MKN_military_stat_air_rescue
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_fighter_controllers
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_mission_efficiency = 0.05
-					tooltip = MKN_air_air_mission_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_fighter_controllers
-			}
-			set_country_flag = MKN_tactic_air_rescue_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_air_rescue_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_air_rescue_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_rescue
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_ace_generation_chance_factor = 0.1
+						tooltip = MKN_air_air_ace_generation_chance_factor_tt
+					}
+					set_country_flag = MKN_military_stat_air_rescue
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_fighter_controllers
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_mission_efficiency = 0.05
+						tooltip = MKN_air_air_mission_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_fighter_controllers
+				}
+				set_country_flag = MKN_tactic_air_rescue_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_air_rescue_training
+			}
 		}
 	}
 	MKN_tactic_sky_watch_exercises = {
@@ -1455,54 +1586,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_home_defence
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_home_defence_factor = 0.1
-					tooltip = MKN_air_air_home_defence_factor_tt
-				}
-				set_country_flag = MKN_military_stat_air_home_defence
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_sky_watch_exercises
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_attack_factor = 0.04
-					tooltip = MKN_air_air_attack_factor_tt
-				}
-				set_country_flag = MKN_military_stat_sky_watch_exercises
-			}
-			set_country_flag = MKN_tactic_sky_watch_exercises_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_sky_watch_exercises_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_sky_watch_exercises_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_home_defence
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_home_defence_factor = 0.1
+						tooltip = MKN_air_air_home_defence_factor_tt
+					}
+					set_country_flag = MKN_military_stat_air_home_defence
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_sky_watch_exercises
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_attack_factor = 0.04
+						tooltip = MKN_air_air_attack_factor_tt
+					}
+					set_country_flag = MKN_military_stat_sky_watch_exercises
+				}
+				set_country_flag = MKN_tactic_sky_watch_exercises_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_sky_watch_exercises_training
+			}
 		}
 	}
 	MKN_tactic_tactical_recon = {
@@ -1527,54 +1667,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_tactical_recon
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_recon_factor = 0.1
-					tooltip = MKN_air_recon_factor_tt
-				}
-				set_country_flag = MKN_military_stat_tactical_recon
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_bomber_navigation
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_range_factor = 0.07
-					tooltip = MKN_air_air_range_factor_tt
-				}
-				set_country_flag = MKN_military_stat_bomber_navigation
-			}
-			set_country_flag = MKN_tactic_tactical_recon_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_tactical_recon_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_tactical_recon_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_tactical_recon
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_recon_factor = 0.1
+						tooltip = MKN_air_recon_factor_tt
+					}
+					set_country_flag = MKN_military_stat_tactical_recon
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_bomber_navigation
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_range_factor = 0.07
+						tooltip = MKN_air_air_range_factor_tt
+					}
+					set_country_flag = MKN_military_stat_bomber_navigation
+				}
+				set_country_flag = MKN_tactic_tactical_recon_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_tactical_recon_training
+			}
 		}
 	}
 	MKN_tactic_air_supply_lift = {
@@ -1599,54 +1748,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_supply_lift
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_supply_consumption_factor = -0.03
-					tooltip = MKN_air_supply_consumption_factor_tt
-				}
-				set_country_flag = MKN_military_stat_air_supply_lift
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_coastal_support
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_naval_strike_attack_factor = 0.1
-					tooltip = MKN_air_naval_strike_attack_factor_tt
-				}
-				set_country_flag = MKN_military_stat_air_coastal_support
-			}
-			set_country_flag = MKN_tactic_air_supply_lift_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_air_supply_lift_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_air_supply_lift_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_supply_lift
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_supply_consumption_factor = -0.03
+						tooltip = MKN_air_supply_consumption_factor_tt
+					}
+					set_country_flag = MKN_military_stat_air_supply_lift
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_coastal_support
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_naval_strike_attack_factor = 0.1
+						tooltip = MKN_air_naval_strike_attack_factor_tt
+					}
+					set_country_flag = MKN_military_stat_air_coastal_support
+				}
+				set_country_flag = MKN_tactic_air_supply_lift_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_air_supply_lift_training
+			}
 		}
 	}
 	MKN_tactic_replacement_crews = {
@@ -1671,54 +1829,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_cas_replacement_crews
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_accidents_factor = -0.05
-					tooltip = MKN_air_air_accidents_factor_tt
-				}
-				set_country_flag = MKN_military_stat_cas_replacement_crews
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_attack_wing_rotations
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_fuel_consumption_factor = -0.05
-					tooltip = MKN_air_air_fuel_consumption_factor_tt
-				}
-				set_country_flag = MKN_military_stat_attack_wing_rotations
-			}
-			set_country_flag = MKN_tactic_replacement_crews_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_replacement_crews_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_replacement_crews_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_cas_replacement_crews
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_accidents_factor = -0.05
+						tooltip = MKN_air_air_accidents_factor_tt
+					}
+					set_country_flag = MKN_military_stat_cas_replacement_crews
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_attack_wing_rotations
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_fuel_consumption_factor = -0.05
+						tooltip = MKN_air_air_fuel_consumption_factor_tt
+					}
+					set_country_flag = MKN_military_stat_attack_wing_rotations
+				}
+				set_country_flag = MKN_tactic_replacement_crews_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_replacement_crews_training
+			}
 		}
 	}
 	MKN_tactic_weather_service = {
@@ -1743,54 +1910,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_airfield_fuel
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_fuel_consumption_factor = -0.1
-					tooltip = MKN_air_air_fuel_consumption_factor_tt
-				}
-				set_country_flag = MKN_military_stat_airfield_fuel
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_air_weather_service
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_mission_efficiency = 0.04
-					tooltip = MKN_air_air_mission_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_air_weather_service
-			}
-			set_country_flag = MKN_tactic_weather_service_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_weather_service_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_weather_service_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_airfield_fuel
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_fuel_consumption_factor = -0.1
+						tooltip = MKN_air_air_fuel_consumption_factor_tt
+					}
+					set_country_flag = MKN_military_stat_airfield_fuel
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_air_weather_service
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_mission_efficiency = 0.04
+						tooltip = MKN_air_air_mission_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_air_weather_service
+				}
+				set_country_flag = MKN_tactic_weather_service_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_weather_service_training
+			}
 		}
 	}
 	MKN_tactic_joint_target_planning = {
@@ -1815,54 +1991,63 @@ MKN_air_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_air_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_air_experience < 20
+				has_air_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			air_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_joint_target_planning
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_cas_efficiency = 0.05
-					tooltip = MKN_air_air_cas_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_joint_target_planning
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_cas_joint_exercises
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_air_air_cas_efficiency = 0.05
-					tooltip = MKN_air_air_cas_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_cas_joint_exercises
-			}
-			set_country_flag = MKN_tactic_joint_target_planning_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			air_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_joint_target_planning_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_joint_target_planning_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_joint_target_planning
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_cas_efficiency = 0.05
+						tooltip = MKN_air_air_cas_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_joint_target_planning
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_cas_joint_exercises
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_air_air_cas_efficiency = 0.05
+						tooltip = MKN_air_air_cas_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_cas_joint_exercises
+				}
+				set_country_flag = MKN_tactic_joint_target_planning_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_joint_target_planning_training
+			}
 		}
 	}
 	MKN_project_observation_posts = {
@@ -2229,54 +2414,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_fleet_damage_control
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_ship_recovery_chance_factor = 0.1
-					tooltip = MKN_navy_naval_ship_recovery_chance_factor_tt
-				}
-				set_country_flag = MKN_military_stat_fleet_damage_control
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_coastal_watch
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_detection = 0.08
-					tooltip = MKN_navy_naval_detection_tt
-				}
-				set_country_flag = MKN_military_stat_coastal_watch
-			}
-			set_country_flag = MKN_tactic_damage_control_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_damage_control_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_damage_control_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_fleet_damage_control
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_ship_recovery_chance_factor = 0.1
+						tooltip = MKN_navy_naval_ship_recovery_chance_factor_tt
+					}
+					set_country_flag = MKN_military_stat_fleet_damage_control
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_coastal_watch
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_detection = 0.08
+						tooltip = MKN_navy_naval_detection_tt
+					}
+					set_country_flag = MKN_military_stat_coastal_watch
+				}
+				set_country_flag = MKN_tactic_damage_control_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_damage_control_training
+			}
 		}
 	}
 	MKN_tactic_sweeper_sections = {
@@ -2301,54 +2495,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_sweeper_sections
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_mines_sweeping_by_fleets_factor = 0.25
-					tooltip = MKN_navy_mines_sweeping_by_fleets_factor_tt
-				}
-				set_country_flag = MKN_military_stat_sweeper_sections
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_escort_radio_net
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_screening_efficiency = 0.07
-					tooltip = MKN_navy_screening_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_escort_radio_net
-			}
-			set_country_flag = MKN_tactic_sweeper_sections_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_sweeper_sections_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_sweeper_sections_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_sweeper_sections
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_mines_sweeping_by_fleets_factor = 0.25
+						tooltip = MKN_navy_mines_sweeping_by_fleets_factor_tt
+					}
+					set_country_flag = MKN_military_stat_sweeper_sections
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_escort_radio_net
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_screening_efficiency = 0.07
+						tooltip = MKN_navy_screening_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_escort_radio_net
+				}
+				set_country_flag = MKN_tactic_sweeper_sections_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_sweeper_sections_training
+			}
 		}
 	}
 	MKN_tactic_coastal_depots = {
@@ -2373,54 +2576,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_coastal_depots
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_navy_fuel_consumption_factor = -0.1
-					tooltip = MKN_navy_navy_fuel_consumption_factor_tt
-				}
-				set_country_flag = MKN_military_stat_coastal_depots
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_river_sea_coordination
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_coordination = 0.08
-					tooltip = MKN_navy_naval_coordination_tt
-				}
-				set_country_flag = MKN_military_stat_river_sea_coordination
-			}
-			set_country_flag = MKN_tactic_coastal_depots_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_coastal_depots_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_coastal_depots_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_coastal_depots
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_navy_fuel_consumption_factor = -0.1
+						tooltip = MKN_navy_navy_fuel_consumption_factor_tt
+					}
+					set_country_flag = MKN_military_stat_coastal_depots
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_river_sea_coordination
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_coordination = 0.08
+						tooltip = MKN_navy_naval_coordination_tt
+					}
+					set_country_flag = MKN_military_stat_river_sea_coordination
+				}
+				set_country_flag = MKN_tactic_coastal_depots_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_coastal_depots_training
+			}
 		}
 	}
 	MKN_tactic_convoy_rescue = {
@@ -2445,54 +2657,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_anti_submarine_patrols
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_navy_submarine_detection_factor = 0.15
-					tooltip = MKN_navy_navy_submarine_detection_factor_tt
-				}
-				set_country_flag = MKN_military_stat_anti_submarine_patrols
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_convoy_rescue
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_navy_casualty_on_sink = -0.1
-					tooltip = MKN_navy_navy_casualty_on_sink_tt
-				}
-				set_country_flag = MKN_military_stat_convoy_rescue
-			}
-			set_country_flag = MKN_tactic_convoy_rescue_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_convoy_rescue_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_convoy_rescue_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_anti_submarine_patrols
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_navy_submarine_detection_factor = 0.15
+						tooltip = MKN_navy_navy_submarine_detection_factor_tt
+					}
+					set_country_flag = MKN_military_stat_anti_submarine_patrols
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_convoy_rescue
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_navy_casualty_on_sink = -0.1
+						tooltip = MKN_navy_navy_casualty_on_sink_tt
+					}
+					set_country_flag = MKN_military_stat_convoy_rescue
+				}
+				set_country_flag = MKN_tactic_convoy_rescue_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_convoy_rescue_training
+			}
 		}
 	}
 	MKN_tactic_coastal_fleet_exercises = {
@@ -2517,54 +2738,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_escort_reserves
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_defense_factor = 0.05
-					tooltip = MKN_navy_naval_defense_factor_tt
-				}
-				set_country_flag = MKN_military_stat_escort_reserves
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_coastal_fleet_exercises
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_convoy_escort_efficiency = 0.05
-					tooltip = MKN_navy_convoy_escort_efficiency_tt
-				}
-				set_country_flag = MKN_military_stat_coastal_fleet_exercises
-			}
-			set_country_flag = MKN_tactic_coastal_fleet_exercises_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_coastal_fleet_exercises_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_coastal_fleet_exercises_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_escort_reserves
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_defense_factor = 0.05
+						tooltip = MKN_navy_naval_defense_factor_tt
+					}
+					set_country_flag = MKN_military_stat_escort_reserves
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_coastal_fleet_exercises
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_convoy_escort_efficiency = 0.05
+						tooltip = MKN_navy_convoy_escort_efficiency_tt
+					}
+					set_country_flag = MKN_military_stat_coastal_fleet_exercises
+				}
+				set_country_flag = MKN_tactic_coastal_fleet_exercises_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_coastal_fleet_exercises_training
+			}
 		}
 	}
 	MKN_tactic_submarine_listening = {
@@ -2589,54 +2819,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_submarine_listening
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_detection = 0.08
-					tooltip = MKN_navy_naval_detection_tt
-				}
-				set_country_flag = MKN_military_stat_submarine_listening
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_fast_attack_craft
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_speed_factor = 0.08
-					tooltip = MKN_navy_naval_speed_factor_tt
-				}
-				set_country_flag = MKN_military_stat_fast_attack_craft
-			}
-			set_country_flag = MKN_tactic_submarine_listening_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_submarine_listening_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_submarine_listening_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_submarine_listening
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_detection = 0.08
+						tooltip = MKN_navy_naval_detection_tt
+					}
+					set_country_flag = MKN_military_stat_submarine_listening
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_fast_attack_craft
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_speed_factor = 0.08
+						tooltip = MKN_navy_naval_speed_factor_tt
+					}
+					set_country_flag = MKN_military_stat_fast_attack_craft
+				}
+				set_country_flag = MKN_tactic_submarine_listening_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_submarine_listening_training
+			}
 		}
 	}
 	MKN_tactic_radio_discipline = {
@@ -2661,54 +2900,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_raider_radio_discipline
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_torpedo_reveal_chance_factor = -0.08
-					tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
-				}
-				set_country_flag = MKN_military_stat_raider_radio_discipline
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_submarine_repair
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_repair_speed_factor = 0.15
-					tooltip = MKN_navy_repair_speed_factor_tt
-				}
-				set_country_flag = MKN_military_stat_submarine_repair
-			}
-			set_country_flag = MKN_tactic_radio_discipline_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_radio_discipline_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_radio_discipline_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_raider_radio_discipline
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_torpedo_reveal_chance_factor = -0.08
+						tooltip = MKN_navy_naval_torpedo_reveal_chance_factor_tt
+					}
+					set_country_flag = MKN_military_stat_raider_radio_discipline
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_submarine_repair
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_repair_speed_factor = 0.15
+						tooltip = MKN_navy_repair_speed_factor_tt
+					}
+					set_country_flag = MKN_military_stat_submarine_repair
+				}
+				set_country_flag = MKN_tactic_radio_discipline_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_radio_discipline_training
+			}
 		}
 	}
 	MKN_tactic_raider_weather = {
@@ -2733,54 +2981,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_raider_weather
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_detection = 0.05
-					tooltip = MKN_navy_naval_detection_tt
-				}
-				set_country_flag = MKN_military_stat_raider_weather
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_raider_replacement_crews
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_navy_submarine_defence_factor = 0.08
-					tooltip = MKN_navy_navy_submarine_defence_factor_tt
-				}
-				set_country_flag = MKN_military_stat_raider_replacement_crews
-			}
-			set_country_flag = MKN_tactic_raider_weather_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_raider_weather_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_raider_weather_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_raider_weather
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_detection = 0.05
+						tooltip = MKN_navy_naval_detection_tt
+					}
+					set_country_flag = MKN_military_stat_raider_weather
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_raider_replacement_crews
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_navy_submarine_defence_factor = 0.08
+						tooltip = MKN_navy_navy_submarine_defence_factor_tt
+					}
+					set_country_flag = MKN_military_stat_raider_replacement_crews
+				}
+				set_country_flag = MKN_tactic_raider_weather_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_raider_weather_training
+			}
 		}
 	}
 	MKN_tactic_torpedo_ambushes = {
@@ -2805,54 +3062,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_torpedo_ambushes
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_torpedo_hit_chance_factor = 0.05
-					tooltip = MKN_navy_naval_torpedo_hit_chance_factor_tt
-				}
-				set_country_flag = MKN_military_stat_torpedo_ambushes
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_disrupt_enemy_trade
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_convoy_raiding_efficiency_factor = 0.1
-					tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
-				}
-				set_country_flag = MKN_military_stat_disrupt_enemy_trade
-			}
-			set_country_flag = MKN_tactic_torpedo_ambushes_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_torpedo_ambushes_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_torpedo_ambushes_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_torpedo_ambushes
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_torpedo_hit_chance_factor = 0.05
+						tooltip = MKN_navy_naval_torpedo_hit_chance_factor_tt
+					}
+					set_country_flag = MKN_military_stat_torpedo_ambushes
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_disrupt_enemy_trade
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_convoy_raiding_efficiency_factor = 0.1
+						tooltip = MKN_navy_convoy_raiding_efficiency_factor_tt
+					}
+					set_country_flag = MKN_military_stat_disrupt_enemy_trade
+				}
+				set_country_flag = MKN_tactic_torpedo_ambushes_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_torpedo_ambushes_training
+			}
 		}
 	}
 	MKN_tactic_raider_escape_routes = {
@@ -2877,54 +3143,63 @@ MKN_navy_hq_decisions = {
 		}
 		cost = 0
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 60
 		custom_cost_text = MKN_hq_navy_cost
 		custom_cost_trigger = {
 			NOT = {
-				has_navy_experience < 20
+				has_navy_experience < 80
 			}
 			NOT = {
-				command_power < 10
+				command_power < 60
 			}
 		}
 		complete_effect = {
-			navy_experience = -20
-			add_command_power = -10
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_raider_escape_routes
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_naval_retreat_speed = 0.15
-					tooltip = MKN_navy_naval_retreat_speed_tt
-				}
-				set_country_flag = MKN_military_stat_raider_escape_routes
-			}
-			if = {
-				limit = {
-					hidden_trigger = {
-						NOT = {
-							has_country_flag = MKN_military_stat_raider_exercises
-						}
-					}
-				}
-				add_to_variable = {
-					MKN_navy_navy_submarine_attack_factor = 0.05
-					tooltip = MKN_navy_navy_submarine_attack_factor_tt
-				}
-				set_country_flag = MKN_military_stat_raider_exercises
-			}
-			set_country_flag = MKN_tactic_raider_escape_routes_unlocked
-			hidden_effect = {
-				nww_mkn_rebuild_services = yes
-			}
+			navy_experience = -80
+			add_command_power = -60
+			set_country_flag = MKN_tactic_raider_escape_routes_training
 		}
 		ai_will_do = {
 			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					hidden_trigger = { has_country_flag = MKN_tactic_raider_escape_routes_training }
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_raider_escape_routes
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_naval_retreat_speed = 0.15
+						tooltip = MKN_navy_naval_retreat_speed_tt
+					}
+					set_country_flag = MKN_military_stat_raider_escape_routes
+				}
+				if = {
+					limit = {
+						hidden_trigger = {
+							NOT = {
+								has_country_flag = MKN_military_stat_raider_exercises
+							}
+						}
+					}
+					add_to_variable = {
+						MKN_navy_navy_submarine_attack_factor = 0.05
+						tooltip = MKN_navy_navy_submarine_attack_factor_tt
+					}
+					set_country_flag = MKN_military_stat_raider_exercises
+				}
+				set_country_flag = MKN_tactic_raider_escape_routes_unlocked
+				hidden_effect = {
+					nww_mkn_rebuild_services = yes
+				}
+				clr_country_flag = MKN_tactic_raider_escape_routes_training
+			}
 		}
 	}
 	MKN_project_coastal_battery = {

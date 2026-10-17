@@ -1,0 +1,71 @@
+# Bilateral campaign owned by MKN. Surrender settlement requires the real victor.
+UKR_MKN_begin_local_war_year = {
+	if = {
+		limit = {
+			MKN = { exists = yes has_war_with = UKR }
+			UKR = { exists = yes }
+			NOT = { MKN = { has_country_flag = MKN_UKR_campaign_in_progress } }
+		}
+		MKN = {
+			set_country_flag = MKN_UKR_campaign_in_progress
+			set_country_flag = { flag = MKN_UKR_no_allies_first_year days = 365 }
+			add_timed_idea = { idea = MKN_UKR_first_year_local_war days = 365 }
+		}
+		UKR = {
+			set_country_flag = MKN_UKR_campaign_in_progress
+			set_country_flag = { flag = MKN_UKR_no_allies_first_year days = 365 }
+			add_timed_idea = { idea = MKN_UKR_first_year_local_war days = 365 }
+		}
+	}
+}
+UKR_MKN_check_campaign_peace = {
+	if = {
+		limit = { MKN = { NOT = { has_war_with = UKR } } }
+		MKN = {
+			clr_country_flag = MKN_UKR_campaign_in_progress
+			clr_country_flag = MKN_UKR_no_allies_first_year
+			remove_ideas = MKN_UKR_first_year_local_war
+		}
+		UKR = {
+			clr_country_flag = MKN_UKR_campaign_in_progress
+			clr_country_flag = MKN_UKR_no_allies_first_year
+			remove_ideas = MKN_UKR_first_year_local_war
+		}
+	}
+}
+UKR_MKN_autumn_ultimatum_war = {
+ MKN_install_allied_war_guard = yes
+	if = {
+		limit = {
+			tag = UKR
+			is_ai = yes
+			date > 1939.8.31
+			date < 1939.12.1
+			has_country_flag = UKR_MKN_border_settled_rejected
+			has_completed_focus = UKR_border_compact
+			NOT = { has_country_flag = UKR_MKN_ultimatum_war_started }
+			MKN = { exists = yes NOT = { MKN_ukr_common_bloc = yes } }
+			NOT = { has_war_with = MKN }
+			NOT = { is_subject_of = MKN }
+			NOT = { is_in_faction_with = MKN }
+		}
+		set_country_flag = UKR_MKN_ultimatum_war_started
+		diplomatic_relation = { country = MKN relation = non_aggression_pact active = no }
+		create_wargoal = { type = annex_everything target = MKN }
+		declare_war_on = { type = annex_everything target = MKN }
+		UKR_MKN_begin_local_war_year = yes
+	}
+}
+UKR_MKN_settle_actual_capitulation = {
+	# Hook contract: ROOT = defeated country, FROM = actual capitulation victor.
+	if = {
+		limit = { ROOT = { tag = UKR has_capitulated = yes } FROM = { tag = MKN } }
+		ROOT = { set_country_flag = UKR_capitulated_to_MKN every_owned_state = { add_core_of = FROM } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	else_if = {
+		limit = { ROOT = { tag = MKN has_capitulated = yes } FROM = { tag = UKR } }
+		ROOT = { every_owned_state = { add_core_of = FROM } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+}

@@ -1,0 +1,35 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKN = {
+				if = {
+					limit = { exists = yes }
+					MKN_cleanup_starting_cores = yes
+					MKN_cleanup_desperate_defense = yes
+					MKN_repair_hidden_supply_node_placement = yes
+				}
+			}
+			every_country = { MKN_cleanup_unique_operative_traits = yes }
+			UKR = { UKR_MKN_begin_local_war_year = yes }
+		}
+	}
+	on_daily_MKN = { effect = { MKN_cleanup_desperate_defense = yes MKN_repair_hidden_supply_node_placement = yes } }
+	on_daily_UKR = {
+		effect = {
+			MKN_install_allied_war_guard = yes
+			UKR_MKN_autumn_ultimatum_war = yes
+			UKR_MKN_begin_local_war_year = yes
+			UKR_MKN_check_campaign_peace = yes
+		}
+	}
+	on_daily = { effect = { every_country = { MKN_cleanup_unique_operative_traits = yes } } }
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = { OR = { AND = { ROOT = { tag = MKN } FROM = { tag = UKR } } AND = { ROOT = { tag = UKR } FROM = { tag = MKN } } } }
+				UKR = { UKR_MKN_begin_local_war_year = yes }
+			}
+		}
+	}
+	on_capitulation = { effect = { ROOT = { UKR_MKN_settle_actual_capitulation = yes } } }
+}

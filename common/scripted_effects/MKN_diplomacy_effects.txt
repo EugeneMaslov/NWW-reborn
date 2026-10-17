@@ -1,19 +1,28 @@
-# Правило запрещает новую войну с союзником; существующие войны/альянсы не меняются.
+# Native relation overrides support volunteers/markets, not declaration bans.
+# Scripted diplomacy still checks MKN_protected_diplomatic_relation.
 MKN_install_allied_war_guard = {
-	if = {
-		limit = { tag = UKR }
-		remove_relation_rule_override = { trigger = UKR_mkn_premature_attack can_not_declare_war = yes }
-		add_relation_rule_override = { trigger = UKR_mkn_premature_attack can_not_declare_war = yes usage_desc = UKR_mkn_escalation_required_tt }
-	}
-	remove_relation_rule_override = {
-		trigger = MKN_protected_diplomatic_relation
-		can_not_declare_war = yes
-	}
-	add_relation_rule_override = {
-		trigger = MKN_protected_diplomatic_relation
-		usage_desc = MKN_allied_war_guard_tt
-		can_not_declare_war = yes
-	}
+ if = {
+  limit = { tag = UKR is_ai = yes date < 1939.9.1 }
+  set_rule = { can_not_declare_war = yes }
+  set_country_flag = UKR_mkn_pre1939_war_rule_owned
+ }
+ else_if = {
+  limit = { tag = UKR has_country_flag = UKR_mkn_pre1939_war_rule_owned }
+  clear_rule = { can_not_declare_war = yes }
+  clr_country_flag = UKR_mkn_pre1939_war_rule_owned
+ }
+ MKN = {
+  if = {
+   limit = {
+    exists = yes
+    SOV = { exists = yes }
+    OR = { has_country_flag = MKN_equal_autonomy SOV = { has_country_flag = NWW_SOV_MKN_settlement } }
+    NOT = { has_war_with = SOV }
+    NOT = { has_non_aggression_pact_with = SOV }
+   }
+   diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes }
+  }
+ }
 }
 UKR_repair_mkn_limited_war = {
 	if = {

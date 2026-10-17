@@ -1,29 +1,53 @@
-# Called inside the existing rebuilds, after their variables have been reset.
-# These are reconstruction effects, never repeat one-off focus rewards here.
 MKN_rebuild_militarist_industry_stats = {
 	if = {
-		limit = { has_completed_focus = MKN_schools_of_young_insurgents }
-		add_to_variable = { MKN_unified_training_time_army_factor = -0.20 }
-		add_to_variable = { MKN_unified_research_speed_factor = -0.16 }
+		limit = {
+			has_completed_focus = MKN_schools_of_young_insurgents
+			has_government = fascism
+		}
+		add_to_variable = {
+			MKN_unified_training_time_army_factor = -0.20
+		}
+		add_to_variable = {
+			MKN_unified_research_speed_factor = -0.16
+		}
 	}
 }
 MKN_rebuild_militarist_army_stats = {
 	if = {
-		limit = { has_completed_focus = MKN_military_districts }
-		add_to_variable = { MKN_army_supply_consumption_factor = 0.16 }
+		limit = {
+			has_completed_focus = MKN_military_districts
+			has_government = fascism
+		}
+		add_to_variable = {
+			MKN_army_supply_consumption_factor = 0.16
+		}
 	}
 	if = {
-		limit = { has_completed_focus = MKN_schools_of_young_insurgents }
-		add_to_variable = { MKN_army_conscription = 0.06 }
+		limit = {
+			has_completed_focus = MKN_schools_of_young_insurgents
+			has_government = fascism
+		}
+		add_to_variable = {
+			MKN_army_conscription = 0.06
+		}
 	}
 	if = {
-		limit = { has_completed_focus = MKN_cult_of_fallen_atamans }
-		add_to_variable = { MKN_army_casualty_trickleback = 0.10 }
+		limit = {
+			has_completed_focus = MKN_cult_of_fallen_atamans
+			has_government = fascism
+		}
+		add_to_variable = {
+			MKN_army_casualty_trickleback = 0.10
+		}
 	}
 }
 MKN_repair_militarist_progression = {
 	if = {
-		limit = { NOT = { has_country_flag = MKN_militarist_progression_v3 } }
+		limit = {
+			NOT = {
+				has_country_flag = MKN_militarist_progression_v3
+			}
+		}
 		nww_mkn_rebuild_industry = yes
 		nww_mkn_rebuild_services = yes
 		set_country_flag = MKN_militarist_progression_v3

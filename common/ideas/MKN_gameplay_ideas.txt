@@ -1,0 +1,26 @@
+# MKN owns the raid consequence and both countries' temporary local-war rules.
+ideas = {
+	country = {
+		MKN_bank_raid_aftermath = {
+			picture = generic_industrial_concern_1
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+				political_power_gain = -0.30
+			}
+		}
+		MKN_UKR_first_year_local_war = {
+			picture = generic_army_war_college
+			allowed = { OR = { tag = MKN tag = UKR } }
+			removal_cost = -1
+			rule = { can_decline_call_to_war = yes }
+			cancel = { NOT = { MKN_UKR_in_first_war_year = yes } }
+			modifier = { }
+		}
+  MKN_voucher_transition_idea_inactive = { picture = generic_industrial_concern_1 allowed = { original_tag = MKN } visible = { always = no } removal_cost = -1 modifier = { } }
+  MKN_betrayed_twice_inactive = { picture = generic_industrial_concern_1 allowed = { original_tag = MKN } visible = { always = no } removal_cost = -1 modifier = { } }
+  MKN_grain_barter_factory_idea_inactive = { picture = generic_industrial_concern_1 allowed = { original_tag = MKN } visible = { always = no } removal_cost = -1 modifier = { } }
+	}
+}

@@ -174,7 +174,7 @@ def validate_horizons(root, game, check, localized):
         'MKN_dnieper_jet_falcons': {'MKN_air_air_agility_factor':'0.05'},
     }
     for done in [set(), set(stats), *[{fid} for fid in stats]]:
-        sim = model(); sim.focuses = done; sim.rebuild(); before = dict(sim.variables)
+        sim = model(); sim.focuses = done; sim.flags.add('MKN_desperate_defense_active'); sim.rebuild(); before = dict(sim.variables)
         for fid in done:
             for key, amount in stats[fid].items():
                 check(sim.variables[key] == Decimal(amount), fid+': wrong persistent stat')
@@ -251,7 +251,7 @@ def validate_horizons(root, game, check, localized):
     check(one(outgoing,'reversed') == 'yes' and one(outgoing,'abort_when_not_enabled') == 'yes', 'UKR: call policy has wrong relation direction/lifecycle')
     check(one(one(outgoing,'ai_strategy'),'target') == 'call_allies' and int(one(one(outgoing,'ai_strategy'),'value')) <= -1000, 'UKR: outgoing ally calls are not suppressed')
     for name, policy, op in policies:
-        check(any(k == 'has_country_flag' and v == 'UKR_mkn_offensive_limited' for k,v,o in walk(one(policy,'enable'))), name+': policy is not restricted to the Ukrainian offensive campaign')
+        check(any(k == 'MKN_UKR_in_first_war_year' and v == 'yes' for k,v,o in walk(one(policy,'enable'))), name+': policy is not restricted to the first year of the bilateral war')
     for relation in ('none','ally','faction','pact','subject'):
         world = InvitationModel(); world.root = 'MKN'; world.froms = ('LTB','LTB','LTB')
         if relation == 'ally': world.countries['MKN']['allies'].add('LTB'); world.countries['LTB']['allies'].add('MKN')

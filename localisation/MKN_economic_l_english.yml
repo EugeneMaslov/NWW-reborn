@@ -44,7 +44,7 @@
  MKN_project_kichkas_bridge: "Restore Kichkas Bridge"
  MKN_project_kichkas_bridge_desc: "Two infrastructure levels (up to level 5) and one anti-air level in Kherson (196). Work takes 60 days."
  MKN_project_dnieper_waterways: "Clear the Dnieper Waterways"
- MKN_project_dnieper_waterways_desc: "Infrastructure in state 226 and a naval base in coastal Kherson (196, province 721). Both states must remain owned and controlled throughout the project. Work takes 60 days."
+ MKN_project_dnieper_waterways_desc: "Clear the river channel and improve transshipment: infrastructure in Nikopol and Kherson increases by one level, up to 5."
  MKN_project_steppe_junctions: "Steppe Rail Junctions"
  MKN_project_steppe_junctions_desc: "A supply hub in Huliaipole (1082, province 429), if absent, and a rail connection to the coast (9571). Work takes 60 days."
  MKN_project_dnieper_turbines: "Restore the Dnieper Turbines"

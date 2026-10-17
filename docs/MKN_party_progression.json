@@ -1,0 +1,323 @@
+{
+  "entries": {
+    "MKN_military_takes_charge": "fascism",
+    "MKN_triumph_of_free_soviets": "democratic",
+    "MKN_peasant_delegates": "neutrality",
+    "MKN_emergency_revkom": "communism"
+  },
+  "focus_parties": {
+    "MKN_military_takes_charge": "fascism",
+    "MKN_triumph_of_free_soviets": "democratic",
+    "MKN_peasant_delegates": "neutrality",
+    "MKN_emergency_revkom": "communism",
+    "MKN_arrest_demagogues": "fascism",
+    "MKN_abolish_election_of_commanders": "fascism",
+    "MKN_militarize_communes": "fascism",
+    "MKN_standardize_workshops": "fascism",
+    "MKN_iron_fist_trains": "fascism",
+    "MKN_black_expansionism": "fascism",
+    "MKN_the_black_horde": "fascism",
+    "MKN_field_counter_intelligence": "fascism",
+    "MKN_disarming_the_communes": "fascism",
+    "MKN_tribunals_of_the_black_staff": "fascism",
+    "MKN_labor_armies": "fascism",
+    "MKN_schools_of_young_insurgents": "fascism",
+    "MKN_cult_of_fallen_atamans": "fascism",
+    "MKN_military_districts": "fascism",
+    "MKN_council_of_field_commanders": "fascism",
+    "MKN_the_supreme_warlord": "fascism",
+    "MKN_preemptive_strike_doctrine": "fascism",
+    "MKN_military_marches": "fascism",
+    "MKN_black_banner_over_europe": "fascism",
+    "MKN_pact_of_free_communes": "democratic",
+    "MKN_abolish_general_staff": "democratic",
+    "MKN_arms_to_the_people": "democratic",
+    "MKN_propaganda_by_deed": "democratic",
+    "MKN_autonomous_rail_crews": "democratic",
+    "MKN_beacon_of_statelessness": "democratic",
+    "MKN_grain_ultimatum": "neutrality",
+    "MKN_sever_urban_ties": "neutrality",
+    "MKN_every_farm_a_fortress": "neutrality",
+    "MKN_steppe_snipers": "neutrality",
+    "MKN_railway_sabotage": "neutrality",
+    "MKN_cavalry_ambush": "neutrality",
+    "MKN_impregnable_granary": "neutrality",
+    "MKN_purge_irreconcilables": "communism",
+    "MKN_embassy_to_kharkov": "communism",
+    "MKN_integrate_steel_lines": "communism",
+    "MKN_red_military_specialists": "communism",
+    "MKN_tractors_for_grain": "communism",
+    "MKN_anti_imperialist_front": "communism",
+    "MKN_the_fatal_plenum": "communism",
+    "MKN_ferrer_modern_schools": "democratic",
+    "MKN_sanctuary_of_free_thought": "democratic",
+    "MKN_eradication_of_wage_labor": "democratic",
+    "MKN_imperative_mandate": "democratic",
+    "MKN_syndicalist_work_ethic": "democratic",
+    "MKN_consumer_autonomy": "democratic",
+    "MKN_elected_instructor_collegiums": "democratic",
+    "MKN_volost_signal_chains": "democratic",
+    "MKN_hearth_defense_doctrine": "democratic",
+    "MKN_subversion_of_enemy_ranks": "democratic",
+    "MKN_autonomous_free_communes": "democratic",
+    "MKN_world_federation_of_labor": "democratic",
+    "MKN_great_rural_exodus": "neutrality",
+    "MKN_black_partition_of_soil": "neutrality",
+    "MKN_village_assembly_sovereignty": "neutrality",
+    "MKN_abolition_of_paper_money": "neutrality",
+    "MKN_village_smithies_over_plants": "neutrality",
+    "MKN_steppe_grain_monopoly": "neutrality",
+    "MKN_hunters_of_the_steppe": "neutrality",
+    "MKN_fortified_homesteads": "neutrality",
+    "MKN_traps_and_ambush_lines": "neutrality",
+    "MKN_empty_field_doctrine": "neutrality",
+    "MKN_death_to_grain_thieves": "neutrality",
+    "MKN_chernozem_autarky": "neutrality",
+    "MKN_steppe_sovnarkhoz": "communism",
+    "MKN_artel_state_farms": "communism",
+    "MKN_dnieper_five_year_plan": "communism",
+    "MKN_political_commissars": "communism",
+    "MKN_red_armored_corps": "communism",
+    "MKN_equal_shield_of_socialism": "communism",
+    "MKN_industrial_ram_of_comintern": "communism",
+    "MKN_red_brotherhood_in_arms": "communism",
+    "MKN_true_socialism_against_bureaucrats": "communism",
+    "MKN_liberation_of_soviet_ukraine": "communism",
+    "MKN_strike_at_the_kremlin": "communism",
+    "MKN_red_beacon_of_the_east": "communism"
+  },
+  "ideas": {
+    "MKN_revkom_terror": {
+      "party": "communism",
+      "focuses": [
+        "MKN_emergency_revkom"
+      ]
+    },
+    "MKN_field_counter_intelligence_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_field_counter_intelligence"
+      ]
+    },
+    "MKN_field_counter_intelligence_reserve_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_field_counter_intelligence"
+      ]
+    },
+    "MKN_disarmed_communes_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_disarming_the_communes"
+      ]
+    },
+    "MKN_tribunals_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_tribunals_of_the_black_staff"
+      ]
+    },
+    "MKN_labor_armies_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_labor_armies"
+      ]
+    },
+    "MKN_council_of_commanders_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_council_of_field_commanders"
+      ]
+    },
+    "MKN_preemptive_strike_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_preemptive_strike_doctrine"
+      ]
+    },
+    "MKN_military_marches_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_military_marches"
+      ]
+    },
+    "MKN_permanent_revolution_idea": {
+      "party": "fascism",
+      "focuses": [
+        "MKN_black_banner_over_europe"
+      ]
+    },
+    "MKN_autonomous_rail_crews_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_autonomous_rail_crews"
+      ]
+    },
+    "MKN_ferrer_schools_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_ferrer_modern_schools"
+      ]
+    },
+    "MKN_labor_vouchers_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_eradication_of_wage_labor"
+      ]
+    },
+    "MKN_imperative_mandate_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_imperative_mandate"
+      ]
+    },
+    "MKN_syndicalist_work_ethic_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_syndicalist_work_ethic"
+      ]
+    },
+    "MKN_consumer_autonomy_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_consumer_autonomy"
+      ]
+    },
+    "MKN_elected_instructors_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_elected_instructor_collegiums"
+      ]
+    },
+    "MKN_hearth_defense_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_hearth_defense_doctrine"
+      ]
+    },
+    "MKN_enemy_subversion_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_subversion_of_enemy_ranks"
+      ]
+    },
+    "MKN_free_communes_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_autonomous_free_communes"
+      ]
+    },
+    "MKN_world_federation_idea": {
+      "party": "democratic",
+      "focuses": [
+        "MKN_world_federation_of_labor"
+      ]
+    },
+    "MKN_rural_exodus_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_great_rural_exodus"
+      ]
+    },
+    "MKN_black_partition_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_black_partition_of_soil"
+      ]
+    },
+    "MKN_village_sovereignty_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_village_assembly_sovereignty"
+      ]
+    },
+    "MKN_grain_currency_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_abolition_of_paper_money"
+      ]
+    },
+    "MKN_village_smithies_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_village_smithies_over_plants"
+      ]
+    },
+    "MKN_steppe_grain_monopoly_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_steppe_grain_monopoly"
+      ]
+    },
+    "MKN_hunters_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_hunters_of_the_steppe"
+      ]
+    },
+    "MKN_fortified_homesteads_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_fortified_homesteads"
+      ]
+    },
+    "MKN_steppe_traps_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_traps_and_ambush_lines"
+      ]
+    },
+    "MKN_empty_field_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_empty_field_doctrine"
+      ]
+    },
+    "MKN_death_to_thieves_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_death_to_grain_thieves"
+      ]
+    },
+    "MKN_chernozem_autarky_idea": {
+      "party": "neutrality",
+      "focuses": [
+        "MKN_chernozem_autarky"
+      ]
+    },
+    "MKN_sovnarkhoz_idea": {
+      "party": "communism",
+      "focuses": [
+        "MKN_steppe_sovnarkhoz"
+      ]
+    },
+    "MKN_state_farms_idea": {
+      "party": "communism",
+      "focuses": [
+        "MKN_artel_state_farms"
+      ]
+    },
+    "MKN_commissars_idea": {
+      "party": "communism",
+      "focuses": [
+        "MKN_political_commissars"
+      ]
+    },
+    "MKN_comintern_ram_idea": {
+      "party": "communism",
+      "focuses": [
+        "MKN_industrial_ram_of_comintern"
+      ]
+    },
+    "MKN_red_beacon_idea": {
+      "party": "communism",
+      "focuses": [
+        "MKN_red_beacon_of_the_east"
+      ]
+    },
+    "MKN_soviet_supply_agreement": {
+      "party": "communism",
+      "focuses": []
+    }
+  }
+}

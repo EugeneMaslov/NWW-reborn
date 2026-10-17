@@ -1,0 +1,395 @@
+# Preserve earned party spirits; switching governments never replays focus rewards.
+MKN_prepare_party_revival = {
+ if = { limit = { NOT = { has_focus_tree = MKN_focus } } load_focus_tree = { tree = MKN_focus keep_completed = yes } }
+ if = {
+  limit = {
+   OR = {
+    has_country_flag = mkn_batko_departed
+    has_country_flag = MKN_crisis_legacy_settled
+    AND = { is_subject = yes date > 1938.1.1 }
+    has_completed_focus = MKN_military_takes_charge
+    has_completed_focus = MKN_triumph_of_free_soviets
+    has_completed_focus = MKN_peasant_delegates
+    has_completed_focus = MKN_emergency_revkom
+   }
+  }
+  set_country_flag = MKN_crisis_enabled
+  clr_country_flag = MKN_crisis_legacy_settled
+  MKN_resolve_succession_crisis = yes
+  if = {
+   limit = { NOT = { has_completed_focus = MKN_departure_of_batko } }
+   complete_national_focus = MKN_departure_of_batko
+  }
+  if = {
+   limit = { OR = {
+    has_completed_focus = MKN_military_takes_charge
+    has_completed_focus = MKN_triumph_of_free_soviets
+    has_completed_focus = MKN_peasant_delegates
+    has_completed_focus = MKN_emergency_revkom
+    is_subject = yes
+   } }
+   set_country_flag = MKN_party_reforms_enabled
+  }
+ }
+}
+MKN_sync_party_spirits = {
+ if = { limit = { has_idea = MKN_autonomous_rail_crews_idea } set_country_flag = MKN_earned_MKN_autonomous_rail_crews_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_autonomous_rail_crews_idea
+   has_completed_focus = MKN_autonomous_rail_crews
+  } }
+  if = { limit = { NOT = { has_idea = MKN_autonomous_rail_crews_idea } } add_ideas = MKN_autonomous_rail_crews_idea }
+ }
+ else = { remove_ideas = MKN_autonomous_rail_crews_idea }
+ if = { limit = { has_idea = MKN_black_partition_idea } set_country_flag = MKN_earned_MKN_black_partition_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_black_partition_idea
+   has_completed_focus = MKN_black_partition_of_soil
+  } }
+  if = { limit = { NOT = { has_idea = MKN_black_partition_idea } } add_ideas = MKN_black_partition_idea }
+ }
+ else = { remove_ideas = MKN_black_partition_idea }
+ if = { limit = { has_idea = MKN_chernozem_autarky_idea } set_country_flag = MKN_earned_MKN_chernozem_autarky_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_chernozem_autarky_idea
+   has_completed_focus = MKN_chernozem_autarky
+  } }
+  if = { limit = { NOT = { has_idea = MKN_chernozem_autarky_idea } } add_ideas = MKN_chernozem_autarky_idea }
+ }
+ else = { remove_ideas = MKN_chernozem_autarky_idea }
+ if = { limit = { has_idea = MKN_comintern_ram_idea } set_country_flag = MKN_earned_MKN_comintern_ram_idea }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_comintern_ram_idea
+   has_completed_focus = MKN_industrial_ram_of_comintern
+  } }
+  if = { limit = { NOT = { has_idea = MKN_comintern_ram_idea } } add_ideas = MKN_comintern_ram_idea }
+ }
+ else = { remove_ideas = MKN_comintern_ram_idea }
+ if = { limit = { has_idea = MKN_commissars_idea } set_country_flag = MKN_earned_MKN_commissars_idea }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_commissars_idea
+   has_completed_focus = MKN_political_commissars
+  } }
+  if = { limit = { NOT = { has_idea = MKN_commissars_idea } } add_ideas = MKN_commissars_idea }
+ }
+ else = { remove_ideas = MKN_commissars_idea }
+ if = { limit = { has_idea = MKN_consumer_autonomy_idea } set_country_flag = MKN_earned_MKN_consumer_autonomy_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_consumer_autonomy_idea
+   has_completed_focus = MKN_consumer_autonomy
+  } }
+  if = { limit = { NOT = { has_idea = MKN_consumer_autonomy_idea } } add_ideas = MKN_consumer_autonomy_idea }
+ }
+ else = { remove_ideas = MKN_consumer_autonomy_idea }
+ if = { limit = { has_idea = MKN_council_of_commanders_idea } set_country_flag = MKN_earned_MKN_council_of_commanders_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_council_of_commanders_idea
+   has_completed_focus = MKN_council_of_field_commanders
+  } }
+  if = { limit = { NOT = { has_idea = MKN_council_of_commanders_idea } } add_ideas = MKN_council_of_commanders_idea }
+ }
+ else = { remove_ideas = MKN_council_of_commanders_idea }
+ if = { limit = { has_idea = MKN_death_to_thieves_idea } set_country_flag = MKN_earned_MKN_death_to_thieves_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_death_to_thieves_idea
+   has_completed_focus = MKN_death_to_grain_thieves
+  } }
+  if = { limit = { NOT = { has_idea = MKN_death_to_thieves_idea } } add_ideas = MKN_death_to_thieves_idea }
+ }
+ else = { remove_ideas = MKN_death_to_thieves_idea }
+ if = { limit = { has_idea = MKN_disarmed_communes_idea } set_country_flag = MKN_earned_MKN_disarmed_communes_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_disarmed_communes_idea
+   has_completed_focus = MKN_disarming_the_communes
+  } }
+  if = { limit = { NOT = { has_idea = MKN_disarmed_communes_idea } } add_ideas = MKN_disarmed_communes_idea }
+ }
+ else = { remove_ideas = MKN_disarmed_communes_idea }
+ if = { limit = { has_idea = MKN_elected_instructors_idea } set_country_flag = MKN_earned_MKN_elected_instructors_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_elected_instructors_idea
+   has_completed_focus = MKN_elected_instructor_collegiums
+  } }
+  if = { limit = { NOT = { has_idea = MKN_elected_instructors_idea } } add_ideas = MKN_elected_instructors_idea }
+ }
+ else = { remove_ideas = MKN_elected_instructors_idea }
+ if = { limit = { has_idea = MKN_empty_field_idea } set_country_flag = MKN_earned_MKN_empty_field_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_empty_field_idea
+   has_completed_focus = MKN_empty_field_doctrine
+  } }
+  if = { limit = { NOT = { has_idea = MKN_empty_field_idea } } add_ideas = MKN_empty_field_idea }
+ }
+ else = { remove_ideas = MKN_empty_field_idea }
+ if = { limit = { has_idea = MKN_enemy_subversion_idea } set_country_flag = MKN_earned_MKN_enemy_subversion_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_enemy_subversion_idea
+   has_completed_focus = MKN_subversion_of_enemy_ranks
+  } }
+  if = { limit = { NOT = { has_idea = MKN_enemy_subversion_idea } } add_ideas = MKN_enemy_subversion_idea }
+ }
+ else = { remove_ideas = MKN_enemy_subversion_idea }
+ if = { limit = { has_idea = MKN_ferrer_schools_idea } set_country_flag = MKN_earned_MKN_ferrer_schools_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_ferrer_schools_idea
+   has_completed_focus = MKN_ferrer_modern_schools
+  } }
+  if = { limit = { NOT = { has_idea = MKN_ferrer_schools_idea } } add_ideas = MKN_ferrer_schools_idea }
+ }
+ else = { remove_ideas = MKN_ferrer_schools_idea }
+ if = { limit = { has_idea = MKN_field_counter_intelligence_idea } set_country_flag = MKN_earned_MKN_field_counter_intelligence_idea }
+ if = {
+  limit = { has_government = fascism has_dlc = "La Resistance" OR = { has_country_flag = MKN_earned_MKN_field_counter_intelligence_idea
+   has_completed_focus = MKN_field_counter_intelligence
+  } }
+  if = { limit = { NOT = { has_idea = MKN_field_counter_intelligence_idea } } add_ideas = MKN_field_counter_intelligence_idea }
+ }
+ else = { remove_ideas = MKN_field_counter_intelligence_idea }
+ if = { limit = { has_idea = MKN_field_counter_intelligence_reserve_idea } set_country_flag = MKN_earned_MKN_field_counter_intelligence_reserve_idea }
+ if = {
+  limit = { has_government = fascism NOT = { has_dlc = "La Resistance" } OR = { has_country_flag = MKN_earned_MKN_field_counter_intelligence_reserve_idea
+   has_completed_focus = MKN_field_counter_intelligence
+  } }
+  if = { limit = { NOT = { has_idea = MKN_field_counter_intelligence_reserve_idea } } add_ideas = MKN_field_counter_intelligence_reserve_idea }
+ }
+ else = { remove_ideas = MKN_field_counter_intelligence_reserve_idea }
+ if = { limit = { has_idea = MKN_fortified_homesteads_idea } set_country_flag = MKN_earned_MKN_fortified_homesteads_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_fortified_homesteads_idea
+   has_completed_focus = MKN_fortified_homesteads
+  } }
+  if = { limit = { NOT = { has_idea = MKN_fortified_homesteads_idea } } add_ideas = MKN_fortified_homesteads_idea }
+ }
+ else = { remove_ideas = MKN_fortified_homesteads_idea }
+ if = { limit = { has_idea = MKN_free_communes_idea } set_country_flag = MKN_earned_MKN_free_communes_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_free_communes_idea
+   has_completed_focus = MKN_autonomous_free_communes
+  } }
+  if = { limit = { NOT = { has_idea = MKN_free_communes_idea } } add_ideas = MKN_free_communes_idea }
+ }
+ else = { remove_ideas = MKN_free_communes_idea }
+ if = { limit = { has_idea = MKN_grain_currency_idea } set_country_flag = MKN_earned_MKN_grain_currency_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_grain_currency_idea
+   has_completed_focus = MKN_abolition_of_paper_money
+  } }
+  if = { limit = { NOT = { has_idea = MKN_grain_currency_idea } } add_ideas = MKN_grain_currency_idea }
+ }
+ else = { remove_ideas = MKN_grain_currency_idea }
+ if = { limit = { has_idea = MKN_hearth_defense_idea } set_country_flag = MKN_earned_MKN_hearth_defense_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_hearth_defense_idea
+   has_completed_focus = MKN_hearth_defense_doctrine
+  } }
+  if = { limit = { NOT = { has_idea = MKN_hearth_defense_idea } } add_ideas = MKN_hearth_defense_idea }
+ }
+ else = { remove_ideas = MKN_hearth_defense_idea }
+ if = { limit = { has_idea = MKN_hunters_idea } set_country_flag = MKN_earned_MKN_hunters_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_hunters_idea
+   has_completed_focus = MKN_hunters_of_the_steppe
+  } }
+  if = { limit = { NOT = { has_idea = MKN_hunters_idea } } add_ideas = MKN_hunters_idea }
+ }
+ else = { remove_ideas = MKN_hunters_idea }
+ if = { limit = { has_idea = MKN_imperative_mandate_idea } set_country_flag = MKN_earned_MKN_imperative_mandate_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_imperative_mandate_idea
+   has_completed_focus = MKN_imperative_mandate
+  } }
+  if = { limit = { NOT = { has_idea = MKN_imperative_mandate_idea } } add_ideas = MKN_imperative_mandate_idea }
+ }
+ else = { remove_ideas = MKN_imperative_mandate_idea }
+ if = { limit = { has_idea = MKN_labor_armies_idea } set_country_flag = MKN_earned_MKN_labor_armies_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_labor_armies_idea
+   has_completed_focus = MKN_labor_armies
+  } }
+  if = { limit = { NOT = { has_idea = MKN_labor_armies_idea } } add_ideas = MKN_labor_armies_idea }
+ }
+ else = { remove_ideas = MKN_labor_armies_idea }
+ if = { limit = { has_idea = MKN_labor_vouchers_idea } set_country_flag = MKN_earned_MKN_labor_vouchers_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_labor_vouchers_idea
+   has_completed_focus = MKN_eradication_of_wage_labor
+  } }
+  if = { limit = { NOT = { has_idea = MKN_labor_vouchers_idea } } add_ideas = MKN_labor_vouchers_idea }
+ }
+ else = { remove_ideas = MKN_labor_vouchers_idea }
+ if = { limit = { has_idea = MKN_military_marches_idea } set_country_flag = MKN_earned_MKN_military_marches_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_military_marches_idea
+   has_completed_focus = MKN_military_marches
+  } }
+  if = { limit = { NOT = { has_idea = MKN_military_marches_idea } } add_ideas = MKN_military_marches_idea }
+ }
+ else = { remove_ideas = MKN_military_marches_idea }
+ if = { limit = { has_idea = MKN_permanent_revolution_idea } set_country_flag = MKN_earned_MKN_permanent_revolution_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_permanent_revolution_idea
+   has_completed_focus = MKN_black_banner_over_europe
+  } }
+  if = { limit = { NOT = { has_idea = MKN_permanent_revolution_idea } } add_ideas = MKN_permanent_revolution_idea }
+ }
+ else = { remove_ideas = MKN_permanent_revolution_idea }
+ if = { limit = { has_idea = MKN_preemptive_strike_idea } set_country_flag = MKN_earned_MKN_preemptive_strike_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_preemptive_strike_idea
+   has_completed_focus = MKN_preemptive_strike_doctrine
+  } }
+  if = { limit = { NOT = { has_idea = MKN_preemptive_strike_idea } } add_ideas = MKN_preemptive_strike_idea }
+ }
+ else = { remove_ideas = MKN_preemptive_strike_idea }
+ if = { limit = { has_idea = MKN_red_beacon_idea } set_country_flag = MKN_earned_MKN_red_beacon_idea }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_red_beacon_idea
+   has_completed_focus = MKN_red_beacon_of_the_east
+  } }
+  if = { limit = { NOT = { has_idea = MKN_red_beacon_idea } } add_ideas = MKN_red_beacon_idea }
+ }
+ else = { remove_ideas = MKN_red_beacon_idea }
+ if = { limit = { has_idea = MKN_revkom_terror } set_country_flag = MKN_earned_MKN_revkom_terror }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_revkom_terror
+   has_completed_focus = MKN_emergency_revkom
+  } }
+  if = { limit = { NOT = { has_idea = MKN_revkom_terror } } add_ideas = MKN_revkom_terror }
+ }
+ else = { remove_ideas = MKN_revkom_terror }
+ if = { limit = { has_idea = MKN_rural_exodus_idea } set_country_flag = MKN_earned_MKN_rural_exodus_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_rural_exodus_idea
+   has_completed_focus = MKN_great_rural_exodus
+  } }
+  if = { limit = { NOT = { has_idea = MKN_rural_exodus_idea } } add_ideas = MKN_rural_exodus_idea }
+ }
+ else = { remove_ideas = MKN_rural_exodus_idea }
+ if = { limit = { has_idea = MKN_soviet_supply_agreement } set_country_flag = MKN_earned_MKN_soviet_supply_agreement }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_soviet_supply_agreement
+  } }
+  if = { limit = { NOT = { has_idea = MKN_soviet_supply_agreement } } add_ideas = MKN_soviet_supply_agreement }
+ }
+ else = { remove_ideas = MKN_soviet_supply_agreement }
+ if = { limit = { has_idea = MKN_sovnarkhoz_idea } set_country_flag = MKN_earned_MKN_sovnarkhoz_idea }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_sovnarkhoz_idea
+   has_completed_focus = MKN_steppe_sovnarkhoz
+  } }
+  if = { limit = { NOT = { has_idea = MKN_sovnarkhoz_idea } } add_ideas = MKN_sovnarkhoz_idea }
+ }
+ else = { remove_ideas = MKN_sovnarkhoz_idea }
+ if = { limit = { has_idea = MKN_state_farms_idea } set_country_flag = MKN_earned_MKN_state_farms_idea }
+ if = {
+  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_state_farms_idea
+   has_completed_focus = MKN_artel_state_farms
+  } }
+  if = { limit = { NOT = { has_idea = MKN_state_farms_idea } } add_ideas = MKN_state_farms_idea }
+ }
+ else = { remove_ideas = MKN_state_farms_idea }
+ if = { limit = { has_idea = MKN_steppe_grain_monopoly_idea } set_country_flag = MKN_earned_MKN_steppe_grain_monopoly_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_steppe_grain_monopoly_idea
+   has_completed_focus = MKN_steppe_grain_monopoly
+  } }
+  if = { limit = { NOT = { has_idea = MKN_steppe_grain_monopoly_idea } } add_ideas = MKN_steppe_grain_monopoly_idea }
+ }
+ else = { remove_ideas = MKN_steppe_grain_monopoly_idea }
+ if = { limit = { has_idea = MKN_steppe_traps_idea } set_country_flag = MKN_earned_MKN_steppe_traps_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_steppe_traps_idea
+   has_completed_focus = MKN_traps_and_ambush_lines
+  } }
+  if = { limit = { NOT = { has_idea = MKN_steppe_traps_idea } } add_ideas = MKN_steppe_traps_idea }
+ }
+ else = { remove_ideas = MKN_steppe_traps_idea }
+ if = { limit = { has_idea = MKN_syndicalist_work_ethic_idea } set_country_flag = MKN_earned_MKN_syndicalist_work_ethic_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_syndicalist_work_ethic_idea
+   has_completed_focus = MKN_syndicalist_work_ethic
+  } }
+  if = { limit = { NOT = { has_idea = MKN_syndicalist_work_ethic_idea } } add_ideas = MKN_syndicalist_work_ethic_idea }
+ }
+ else = { remove_ideas = MKN_syndicalist_work_ethic_idea }
+ if = { limit = { has_idea = MKN_tribunals_idea } set_country_flag = MKN_earned_MKN_tribunals_idea }
+ if = {
+  limit = { has_government = fascism OR = { has_country_flag = MKN_earned_MKN_tribunals_idea
+   has_completed_focus = MKN_tribunals_of_the_black_staff
+  } }
+  if = { limit = { NOT = { has_idea = MKN_tribunals_idea } } add_ideas = MKN_tribunals_idea }
+ }
+ else = { remove_ideas = MKN_tribunals_idea }
+ if = { limit = { has_idea = MKN_village_smithies_idea } set_country_flag = MKN_earned_MKN_village_smithies_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_village_smithies_idea
+   has_completed_focus = MKN_village_smithies_over_plants
+  } }
+  if = { limit = { NOT = { has_idea = MKN_village_smithies_idea } } add_ideas = MKN_village_smithies_idea }
+ }
+ else = { remove_ideas = MKN_village_smithies_idea }
+ if = { limit = { has_idea = MKN_village_sovereignty_idea } set_country_flag = MKN_earned_MKN_village_sovereignty_idea }
+ if = {
+  limit = { has_government = neutrality OR = { has_country_flag = MKN_earned_MKN_village_sovereignty_idea
+   has_completed_focus = MKN_village_assembly_sovereignty
+  } }
+  if = { limit = { NOT = { has_idea = MKN_village_sovereignty_idea } } add_ideas = MKN_village_sovereignty_idea }
+ }
+ else = { remove_ideas = MKN_village_sovereignty_idea }
+ if = { limit = { has_idea = MKN_world_federation_idea } set_country_flag = MKN_earned_MKN_world_federation_idea }
+ if = {
+  limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_world_federation_idea
+   has_completed_focus = MKN_world_federation_of_labor
+  } }
+  if = { limit = { NOT = { has_idea = MKN_world_federation_idea } } add_ideas = MKN_world_federation_idea }
+ }
+ else = { remove_ideas = MKN_world_federation_idea }
+}
+MKN_refresh_party_progression = {
+ MKN_prepare_party_revival = yes
+ MKN_sync_party_spirits = yes
+ MKN_sync_party_timed_spirits = yes
+ MKN_sync_federation_influence = yes
+ MKN_sync_revkom_trade = yes
+ MKN_sync_revkom_combat = yes
+ # Rebuild only when the actual governing ideology changes.
+ if = {
+  limit = { OR = {
+   AND = { has_government = fascism NOT = { has_country_flag = MKN_active_party_fascism } }
+   AND = { has_government = democratic NOT = { has_country_flag = MKN_active_party_democratic } }
+   AND = { has_government = neutrality NOT = { has_country_flag = MKN_active_party_neutrality } }
+   AND = { has_government = communism NOT = { has_country_flag = MKN_active_party_communism } }
+  } }
+  clr_country_flag = MKN_active_party_fascism
+  clr_country_flag = MKN_active_party_democratic
+  clr_country_flag = MKN_active_party_neutrality
+  clr_country_flag = MKN_active_party_communism
+  if = { limit = { has_government = fascism } set_country_flag = MKN_active_party_fascism }
+  if = { limit = { has_government = democratic } set_country_flag = MKN_active_party_democratic }
+  if = { limit = { has_government = neutrality } set_country_flag = MKN_active_party_neutrality }
+  if = { limit = { has_government = communism } set_country_flag = MKN_active_party_communism }
+  nww_mkn_rebuild_industry = yes
+  nww_mkn_rebuild_services = yes
+  if = {
+   limit = { has_country_flag = MKN_party_reforms_enabled }
+   clr_country_flag = MKN_ai_route_fascism
+   clr_country_flag = MKN_ai_route_democratic
+   clr_country_flag = MKN_ai_route_neutrality
+   clr_country_flag = MKN_ai_route_communism
+   if = { limit = { has_government = fascism } set_country_flag = MKN_ai_route_fascism }
+   if = { limit = { has_government = democratic } set_country_flag = MKN_ai_route_democratic }
+   if = { limit = { has_government = neutrality } set_country_flag = MKN_ai_route_neutrality }
+   if = { limit = { has_government = communism } set_country_flag = MKN_ai_route_communism }
+  }
+  mark_focus_tree_layout_dirty = yes
+ }
+}
+
+MKN_sync_party_timed_spirits = {
+ if = { limit = { has_government = democratic has_idea = MKN_voucher_transition_idea_inactive } swap_ideas = { remove_idea = MKN_voucher_transition_idea_inactive add_idea = MKN_voucher_transition_idea } }
+ else_if = { limit = { NOT = { has_government = democratic } has_idea = MKN_voucher_transition_idea } swap_ideas = { remove_idea = MKN_voucher_transition_idea add_idea = MKN_voucher_transition_idea_inactive } }
+ if = { limit = { has_government = communism has_idea = MKN_betrayed_twice_inactive } swap_ideas = { remove_idea = MKN_betrayed_twice_inactive add_idea = MKN_betrayed_twice } }
+ else_if = { limit = { NOT = { has_government = communism } has_idea = MKN_betrayed_twice } swap_ideas = { remove_idea = MKN_betrayed_twice add_idea = MKN_betrayed_twice_inactive } }
+ if = { limit = { has_government = neutrality has_idea = MKN_grain_barter_factory_idea_inactive } swap_ideas = { remove_idea = MKN_grain_barter_factory_idea_inactive add_idea = MKN_grain_barter_factory_idea } }
+ else_if = { limit = { NOT = { has_government = neutrality } has_idea = MKN_grain_barter_factory_idea } swap_ideas = { remove_idea = MKN_grain_barter_factory_idea add_idea = MKN_grain_barter_factory_idea_inactive } }
+}

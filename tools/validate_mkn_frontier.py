@@ -17,6 +17,7 @@ class FrontierModel:
     def __init__(self, effects, triggers):
         self.effects, self.triggers = effects, triggers
         self.day = 0
+        self.date = '1939.9.1'
         self.root = 'MKN'
         self.froms = ('196', 'UKR', '197')
         self.border = False
@@ -81,7 +82,9 @@ class FrontierModel:
         for key, value, operator in nodes or []:
             data = self.data(current)
             scoped = self.scope(key, current, previous)
-            if key == 'NOT':
+            if key == 'date':
+                answer = self.compare(tuple(map(int,self.date.split('.'))),tuple(map(int,value.split('.'))),operator)
+            elif key == 'NOT':
                 answer = not self.test(value, current, previous)
             elif key == 'OR':
                 answer = any(self.test([item], current, previous) for item in value)

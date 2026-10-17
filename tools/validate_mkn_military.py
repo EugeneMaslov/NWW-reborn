@@ -15,6 +15,7 @@ from hoi4_script import read, one, values, walk, engine_script_errors, focus_reg
 
 class MilitaryModel:
     def __init__(self, effects, focuses=(), dlcs=()):
+        self.government = None
         self.effects = effects
         self.focuses = set(focuses)
         self.flags = set()
@@ -23,7 +24,8 @@ class MilitaryModel:
         self.dlcs = set(dlcs)
         self.resources = {'army': Decimal(200), 'air': Decimal(200), 'navy': Decimal(200), 'cp': Decimal(100), 'pp': Decimal(200)}
         self.oneoffs = []
-        self.state = {'owner': True, 'control': True, 'coastal': True, 'front': True, 'capital': False, 'rail': False, 'path': True, 'slots': True}
+        self.state = {'owner': True, 'control': True, 'coastal': True, 'front': True, 'capital': False, 'rail': False, 'path': True, 'slots': True, 'buildable': True, 'construction_succeeds': True}
+        self.state_flags = set()
         self.buildings = defaultdict(Decimal)
         self.damage = Decimal(2)
         self.techs = {'radio_detection'}
@@ -43,13 +45,17 @@ class MilitaryModel:
     def test(self, nodes):
         result = []
         for key, val, op in nodes:
-            if key == 'has_country_flag':
+            if key == 'has_government':
+                ok = self.government is None or self.government == val
+            elif key == 'has_country_flag':
                 ok = val in self.flags
+            elif key == 'has_state_flag':
+                ok = val in self.state_flags
             elif key == 'has_completed_focus':
                 ok = val in self.focuses
             elif key == 'has_idea':
                 ok = self.ideas.get(val, 0) > 0
-            elif key in ('AND', 'hidden_trigger', 'limit', 'FROM', 'ROOT', 'capital_scope', 'custom_trigger_tooltip'):
+            elif key in ('AND', 'hidden_trigger', 'limit', 'FROM', 'ROOT', 'PREV', 'capital_scope', 'custom_trigger_tooltip'):
                 ok = self.test(val)
             elif key == 'tooltip':
                 continue
@@ -85,6 +91,8 @@ class MilitaryModel:
                 ok = self.state['coastal'] and self.compare(self.buildings[one(val, 'building')], Decimal(one(val, 'level')), next(o for k, v, o in val if k == 'level'))
             elif key == 'free_building_slots':
                 ok = self.state['slots']
+            elif key == 'can_construct_building':
+                ok = self.state['buildable']
             elif key == 'can_build_railway':
                 ok = self.state['path']
             elif key == 'has_railway_connection':
@@ -114,8 +122,11 @@ class MilitaryModel:
                 if not conditional:
                     self.apply(val)
                 conditional = None
-            elif key in ('hidden_effect', 'FROM', 'ROOT', 'capital_scope'):
+            elif key in ('hidden_effect', 'FROM', 'ROOT', 'PREV', 'capital_scope'):
                 self.apply(val)
+            elif key == 'every_owned_state':
+                if self.state['owner'] and self.test(one(val,'limit',[])):
+                    self.apply([n for n in val if n[0]!='limit'])
             elif key and key.isdigit():
                 self.apply(val)
             elif key == 'set_variable':
@@ -127,6 +138,8 @@ class MilitaryModel:
                         self.variables[var] += Decimal(amount)
             elif key == 'set_country_flag':
                 self.flags.add(val)
+            elif key == 'set_state_flag':
+                self.state_flags.add(val)
             elif key == 'add_timed_idea':
                 self.ideas[one(val, 'idea')] = int(one(val, 'days'))
             elif key == 'clr_country_flag':
@@ -141,7 +154,7 @@ class MilitaryModel:
                 self.oneoffs.append((key, val))
             elif key == 'add_dynamic_modifier':
                 self.dynamic.add(one(val, 'modifier'))
-            elif key == 'remove_ideas' or key in ('custom_effect_tooltip', 'set_state_flag'):
+            elif key == 'remove_ideas' or key == 'custom_effect_tooltip':
                 pass
             elif key == 'damage_building':
                 self.damage = max(Decimal(0), self.damage + Decimal(one(val, 'damage')))
@@ -149,6 +162,11 @@ class MilitaryModel:
             elif key == 'add_building_construction':
                 self.buildings[one(val, 'type')] += Decimal(one(val, 'level'))
                 self.oneoffs.append((key, val))
+            elif key == 'construct_building_in_random_province':
+                if self.state['construction_succeeds']:
+                    for building,level,_ in val:
+                        self.buildings[building]=Decimal(level)
+                    self.oneoffs.append((key,val))
             elif key == 'add_offsite_building':
                 self.offsite += int(one(val, 'level'))
             elif key == 'build_railway':
@@ -176,6 +194,7 @@ def validate_military(root, game, check, localized):
     effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_militarist_effects.txt'))
     effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_soviet_effects.txt'))
     effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_communist_effects.txt'))
+    effects.update((k, v) for k, v, o in read(root/'common/scripted_effects/MKN_gameplay_effects.txt'))
     decisions = {k: v for cat, ds, o in read(root/'common/decisions/MKN_military_decisions.txt') for k, v, o in ds}
     native_buildings = {k for k, v, o in one(read(game/'common/buildings/00_buildings.txt'), 'buildings')}
     for k, v, o in walk(list((name, node, '=') for name, node in decisions.items())):
@@ -295,6 +314,7 @@ def validate_military(root, game, check, localized):
         for t in tactics:
             if t['route'] in model.focuses:
                 model.apply(one(decisions[t['id']], 'complete_effect'))
+                model.apply(one(decisions[t['id']], 'remove_effect'))
         old_done = {s for g in groups if g['id'] in chosen for s in g['sources']} | {s for t in tactics if t['route'] in chosen for s in t['sources']} | {g['id'] for g in groups if g['id'] in chosen and g.get('new_reform')}
         exact(model, old_done, 'MKN: full program total differs from baseline')
         rebuilt(model, 'MKN full program')
@@ -304,22 +324,31 @@ def validate_military(root, game, check, localized):
         fid = t['id']; d = decisions[fid]
         localized(fid, fid); localized(fid+'_desc', fid)
         localized(one(d, 'custom_cost_text'), fid)
-        check(one(d, 'fire_only_once') == 'yes' and one(d, 'days_remove') == '1', fid+': tactic is repeatable')
-        check(not values(one(d, 'remove_effect', []), 'add_to_variable'), fid+': tactic reward repeated at expiry')
-        for xp, cp, allowed in ((20, 10, True), (19, 10, False), (20, 9, False)):
+        check(one(d, 'fire_only_once') == 'yes' and one(d, 'days_remove') == '60', fid+': wrong reform duration or repeatability')
+        for xp, cp, allowed in ((80, 60, True), (79, 60, False), (80, 59, False)):
             model = MilitaryModel(effects, [t['route']])
             model.resources[t['service']] = Decimal(xp); model.resources['cp'] = Decimal(cp)
             check(model.test(one(d, 'custom_cost_trigger')) == allowed, fid+': wrong XP/CP threshold')
         model = MilitaryModel(effects, [t['route']]);model.rebuild()
         before = dict(model.resources)
+        before_stats = dict(model.variables)
         model.apply(one(d, 'complete_effect'))
-        check(model.resources[t['service']] == before[t['service']]-20 and model.resources['cp'] == before['cp']-10, fid+': wrong resource deduction')
+        check(model.resources[t['service']] == before[t['service']]-80 and model.resources['cp'] == before['cp']-60, fid+': wrong resource deduction')
+        check(dict(model.variables)==before_stats, fid+': reform grants bonuses before 60-day expiry')
+        model.rebuild()
+        check(dict(model.variables)==before_stats, fid+': load/daily repair completes unfinished training')
+        check(model.test(one(d,'visible')) and fid+'_training' in model.flags,fid+': active training hides its 60-day timer')
+        model.apply(one(d, 'remove_effect'))
         check(not model.test(one(d, 'visible')), fid+': tactic remains purchasable after completion')
         exact(model, t['sources'], fid+': wrong tactic bonuses')
+        finished_stats=dict(model.variables);finished_resources=dict(model.resources)
+        model.apply(one(d,'remove_effect'))
+        check(dict(model.variables)==finished_stats and dict(model.resources)==finished_resources,fid+': expiry repeats bonuses or resource deduction')
         rebuilt(model, fid)
         for source in t['sources']:
             old = MilitaryModel(effects, [t['route'], source]);old.rebuild()
             old.apply(one(d, 'complete_effect'))
+            old.apply(one(d, 'remove_effect'))
             exact(old, t['sources'], fid+': partial old tactic bonus repeated')
 
     for p in projects:
@@ -359,8 +388,8 @@ def validate_military(root, game, check, localized):
             model.state['control'] = True
             check(not model.test(one(d, 'available')), fid+': finished/cancelled project can be repeated')
         for key, val, _ in walk(one(d, 'remove_effect')):
-            if key == 'add_building_construction' and one(val, 'type') == 'supply_node':
-                check(one(one(val, 'province', []), 'all_provinces') == 'no', fid+': supply hub lacks a single-province selector')
+            if key == 'construct_building_in_random_province':
+                check(one(val,'supply_node')=='1',fid+': supply project does not build exactly one hub')
             if key == 'add_building_construction' and one(val, 'type') in ('coastal_bunker', 'naval_base'):
                 check(one(one(val, 'province'), 'all_provinces') == 'no' and one(one(val, 'province'), 'limit_to_coastal') == 'yes', fid+': coastal project does not select one coastal province')
     radar = decisions['MKN_project_observation_posts']
@@ -375,12 +404,55 @@ def validate_military(root, game, check, localized):
     model = MilitaryModel(effects, ['MKN_communal_aa_defense_focus']);model.buildings['radar_station'] = 1
     check(not model.test(one(radar, 'available')), 'Level-one radar project can overfill researched cap')
 
+    hub=decisions['MKN_project_hidden_supply_node']
+    check(not any(k=='add_building_construction' and one(v,'type')=='supply_node' for k,v,o in walk(hub)), 'MKN hidden hub retains the ambiguous empty province selector')
+    for buildable,existing,success in product((False,True),repeat=3):
+        model=MilitaryModel(effects,['MKN_hidden_supply_bases_focus'])
+        model.state.update(buildable=buildable,construction_succeeds=success)
+        model.buildings['supply_node']=Decimal(int(existing))
+        eligible=buildable and not existing
+        check(model.test(one(hub,'available'))==eligible,'MKN hub: availability ignores construction capacity or existing hub')
+        check(model.test(one(hub,'target_trigger'))==eligible,'MKN hub: map target differs from construction requirements')
+        if not eligible:continue
+        before=dict(model.resources);model.resources['pp']-=50
+        model.apply(one(hub,'complete_effect'));model.apply(one(hub,'remove_effect'))
+        check(model.buildings['supply_node']==int(success),'MKN hub: wrong number of constructed hubs')
+        check(('MKN_project_hidden_supply_node_done' in model.flags)==success,'MKN hub: records a construction that never happened')
+        check(model.resources['pp']==before['pp']-(50 if success else 0),'MKN hub: failed construction does not refund its cost')
+        check('MKN_military_project_active' not in model.flags,'MKN hub: failed construction keeps project lock')
+    # A paid legacy project repairs only its recorded state, once, after control returns.
+    for paid,marked,owner,control,buildable,existing in product((False,True),repeat=6):
+        model=MilitaryModel(effects);model.state.update(owner=owner,control=control,buildable=buildable)
+        if paid:model.flags.add('MKN_project_hidden_supply_node_done')
+        if marked:model.state_flags.add('MKN_project_hidden_supply_node_done')
+        model.buildings['supply_node']=Decimal(int(existing));before=dict(model.resources)
+        model.apply(effects['MKN_repair_hidden_supply_node_placement'])
+        expected=int(existing or (paid and marked and owner and control and buildable))
+        check(model.buildings['supply_node']==expected,'MKN hub repair: wrong ownership, payment, recorded state or buildability guard')
+        model.apply(effects['MKN_repair_hidden_supply_node_placement'])
+        check(model.buildings['supply_node']==expected and dict(model.resources)==before,'MKN hub repair: repeats construction or other rewards')
+
+    native_effects=(game/'documentation/effects_documentation.md').read_text()
+    native_triggers=(game/'documentation/triggers_documentation.md').read_text()
+    check('## construct_building_in_random_province' in native_effects and '## can_construct_building' in native_triggers,'MKN hub uses commands absent from target game documentation')
+    # The separate economy project is anchored to Huliaipole, not an arbitrary map state.
+    economic=one(one(read(root/'common/decisions/MKN_economic_decisions.txt'),'MKN_economic_projects_category'),'MKN_project_steppe_junctions')
+    targets={v for k,v,o in one(economic,'targets')}
+    check(targets=={'1082'},'MKN steppe junctions can target a state outside their fixed province locations')
+    huliaipole=one(read(root/'history/states/1082-Huliaipole.txt'),'state')
+    province_ids={v for k,v,o in one(huliaipole,'provinces')}
+    for k,v,o in walk(one(economic,'remove_effect')):
+        if k=='add_building_construction' and one(v,'type')=='supply_node':
+            check(one(v,'province') in province_ids,'MKN steppe hub is outside its target state')
+        if k=='build_railway':
+            check({one(v,'start_province'),one(v,'target_province')}<=province_ids,'MKN steppe railway endpoints are outside the target state')
+
     for hook in ('on_startup', 'on_daily_MKN'):
         nodes = one(one(read(root/'common/on_actions/nww_mkn_progression.txt'), 'on_actions'), hook)
         check(any(k == 'has_country_flag' and v == 'MKN_services_redesign_v5' for k, v, o in walk(nodes)), hook+': missing v5 save repair')
     for relative in ('common/national_focus/MKN.txt', 'common/decisions/MKN_military_decisions.txt', 'common/scripted_effects/nww_mkn_progression.txt'):
         check(not list(engine_script_errors(read(root/relative))), relative+': invalid native script syntax')
-    print(f'PASS: MKN HQ: 35 focuses, six five-focus programmes, 30 one-off tactics, 9 one-off projects; {len(scenarios)} legacy saves, preserved bonuses plus explicit additions, DLC guards, XP/CP, radar research and project cancellation')
+    print(f'PASS: MKN HQ: 35 focuses, six five-focus programmes, 30 one-off 60-day reforms at 80 XP/60 CP, 9 one-off projects; {len(scenarios)} legacy saves, delayed/idempotent training, hub placement/failure and 64 paid-state repair scenarios, DLC guards, radar research and project cancellation')
 
 
 if __name__ == '__main__':
