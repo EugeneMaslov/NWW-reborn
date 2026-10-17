@@ -118,6 +118,13 @@ ideas = {
 			allowed = {
 				original_tag = MKN
 			}
+			cancel = {
+				OR = {
+					has_completed_focus = MKN_purge_irreconcilables
+					has_country_flag = MKN_revkom_terror_resolved
+					NOT = { has_government = communism }
+				}
+			}
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.35

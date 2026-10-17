@@ -248,6 +248,8 @@ MKN_install_communism_successor = {
 	}
 }
 MKN_install_tsebriy = {
+	set_country_flag = MKN_revkom_terror_resolved
+	clr_country_flag = MKN_earned_MKN_revkom_terror
 	retire_ideology_leader = communism
 	create_country_leader = {
 		name = MKN_osyp_tsebriy
