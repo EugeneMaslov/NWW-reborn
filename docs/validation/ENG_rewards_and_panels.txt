@@ -1,0 +1,42 @@
+PASS: MKN_dneprostroi: 10 focuses, one permanent industry spirit, all initial penalties resolved
+PASS: MKN_free_cooperatives: 10 focuses, one permanent industry spirit, all initial penalties resolved
+PASS: MKN HQ: 35 focuses, six five-focus programmes, 30 one-off 60-day reforms at 80 XP/60 CP, 9 one-off projects; 263 legacy saves, delayed/idempotent training, hub placement/failure and 64 paid-state repair scenarios, DLC guards, radar research and project cancellation
+PASS: seven specialized MIOs, exclusive traits, installed equipment stats, generic templates preserved
+PASS: Ukraine 80 focuses, genuine political mandates and foreign acceptance/refusal
+PASS: 37 advisors, 10 commanders, seven generated portraits; monarch Makhno preserved
+PASS: MKN economy: 20 focuses, 5 congress decisions, 9 map projects, 68 source-script lifecycle/repair cases
+PASS: MKN Ukraine: 79 source-script cases; allied war guards, Odessa, 1% historical truce, four AI routes, eight integration focuses and visible portraits
+PASS: UKR: 129 migration scenarios, exact parameter replay, no repeated one-off rewards
+PASS: 48 Ukraine political/program combinations, independent diplomacy, equipment and doctrine mastery references
+PASS: MKN native BoP ranges, decisions, four political paths, consent-based diplomacy and 22 idempotent repair scenarios
+PASS: MKN funeral/mission lifecycle, 32 political focuses, Soviet consent, native modifiers, map conservation and 131 real-script collapse scenarios
+PASS: MKN 100-day intervention, sole-survivor races, faction splits, once-only dispatch and 24 real-script scenarios
+PASS: MKN/UKR native frontier callbacks, exact-state cores, localization and 43 source-script lifecycle scenarios
+PASS: MKN horizons: 18 focuses, 30 reform locks and 1164 source-script boundary/lifecycle scenarios; no runtime AI/combat claim
+PASS: MKN militarists: 12 focuses, DLC/traits, districts, marches and 138 source-script scenarios; no runtime claim
+PASS: MKN Free Soviets: 12 focuses, research cap, territorial defense, sovereign release/consent and 91 source-script cases; no engine combat claim
+PASS: MKN political artwork: 36 distinct imagegen originals/prompts, 96x96 RGBA DDS, alpha margins and 72 normal/shine sprites
+PASS: MKN agrarians: 12 focuses, native equipment/research/terrain, barter cancellation/expiry/reload and 32 source-script cases; no runtime claim
+PASS: MKN territorial penalties: 78 source-script scenarios; multiple enemies, non-Soviet war, allies/neutrals, peace, ownership/control and expiry
+PASS: MKN communists: 12 focuses, 12 imagegen icons, x2 modifiers/x3 consumer goods, 110 source-script route/trade/war/reconstruction scenarios; no runtime claim
+PASS: MKN follow-up: compact lower branches, hidden migration rewards, persistent ideas, random DEFAULT AI and 34 frontier priority/paid-year scenarios (not engine scheduling)
+PASS: MKN common foreign policy: all four governments, visible memorial connectors, one persistent service and 164 consent/repair scenarios
+PASS: MKN tree consolidation: 35 retired archive focuses and one retired school, shared industry/science, 6 research slots in 40 reward-order/save scenarios, six equal five-focus programmes
+PASS: MKN personnel, 32 service combinations, interruption/date/affordability gates, source hashes and native textures
+PASS: MKN expropriation/International/Marusya: 137 source-script scenarios, timed factories, 10 news dispatches, two locked veteran divisions and 53 urban-trained battalions
+PASS: MKN campaign fixes: 64 party/release/timed-spirit/peace/capitulation/1939/operative source-script scenarios, native bank cleanup, inland construction, 60 convoys and seven bounded MIO logos; no runtime claim
+PASS: map initialization: unique states/strategic regions, mandatory air/rocket sites, 1082/200 placement, supply and railway province references
+PASS: repository layout: 1508 game files; no tools, previews, caches or case collisions in game data
+PASS: GER political graph, native tokens, BoP/UI/localization and 245 source-script lifecycle scenarios
+PASS: 125 GER late-game reform, guarantor, coalition, old-save, federation, uprising and faction-split cases; native goal/research/AI tokens
+PASS: ENG decision GUI: 3 bound panels, element bounds, live gauges (130 boundary/state cases), treaty badges and Cape preparation
+PASS: ENG focus artwork: 153 explicit bindings, 85 different icons, eight original emblems with normal/shine sprites and alpha margins
+PASS: ENG: 153 focuses, coordinates/graph, bilateral localization, installed sprites/modifiers/stats, mandates, native isolation and MIO inheritance
+PASS: ENG artwork: 19 distinct imagegen icons, preserved originals/prompts, native RGBA DDS sizes, transparent margins and consumer bindings
+PASS: ENG 196 source-script mandate, AI-rule, save, consent, cancellation, route and crisis checks; no engine/runtime claim
+PASS: ENG reward/UI regression: 201 source-script cases; three empty/locked panels, real trust/tension/unlocks, staged spirits and visible rewards for all 153 focuses
+PASS: 1936 presentation: full vanilla cosmetic palette, nine current country profiles, six live ENG snapshots, history initialization and seven treaty signatories
+PASS: London agreement: 41 source-script cases; seven parties including USA, withdrawal, equal escalation, China war, dissolution, cancellation and old saves
+PASS: LTB_focus: 96 focuses, MKN_focus: 182 focuses, UKR_focus: 80 focuses
+PASS: prerequisites/exclusive paths, spacing and panel clearance, localization and unique sprites, portrait bounds, traits and recruitment, concern tier visibility, MIO upgrades, technology sharing, construction, selection menu, startup mission, army crisis gate, old-save settlement scenarios and daily repair, 40% political mandates, timed campaigns and diplomatic acceptance/refusal gates
+VALIDATOR_EXIT_CODE=0
