@@ -1,0 +1,2173 @@
+[
+  {
+    "id": "ENG_nww_report",
+    "key": "report",
+    "x": 18,
+    "y": 0,
+    "parent": null,
+    "effect": "add_political_power = 35",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_session",
+    "key": "session",
+    "x": 18,
+    "y": 1,
+    "parent": "report",
+    "effect": "add_political_power = 35",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_budget",
+    "key": "budget",
+    "x": 18,
+    "y": 2,
+    "parent": "session",
+    "effect": "country_event = { id = nww_eng.1 days = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_continuity",
+    "key": "continuity",
+    "x": 2,
+    "y": 4,
+    "parent": "budget",
+    "effect": "add_political_power = 50",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "federal",
+      "emergency",
+      "labour",
+      "island"
+    ],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_federal",
+    "key": "federal",
+    "x": 10,
+    "y": 4,
+    "parent": "budget",
+    "effect": "add_political_power = 50",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "continuity",
+      "emergency",
+      "labour",
+      "island"
+    ],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_emergency",
+    "key": "emergency",
+    "x": 18,
+    "y": 4,
+    "parent": "budget",
+    "effect": "add_political_power = 50",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "continuity",
+      "federal",
+      "labour",
+      "island"
+    ],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_labour",
+    "key": "labour",
+    "x": 26,
+    "y": 4,
+    "parent": "budget",
+    "effect": "add_political_power = 50 set_country_flag = ENG_nww_labour_campaign",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "continuity",
+      "federal",
+      "emergency",
+      "island"
+    ],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_island",
+    "key": "island",
+    "x": 34,
+    "y": 4,
+    "parent": "budget",
+    "effect": "add_political_power = 50",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "continuity",
+      "federal",
+      "emergency",
+      "labour"
+    ],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_majority",
+    "key": "majority",
+    "x": 2,
+    "y": 5,
+    "parent": "continuity",
+    "effect": "add_stability = 0.05",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_civil_service",
+    "key": "civil_service",
+    "x": 2,
+    "y": 6,
+    "parent": "majority",
+    "effect": "add_political_power = 50",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_premiers",
+    "key": "premiers",
+    "x": 2,
+    "y": 7,
+    "parent": "civil_service",
+    "effect": "set_country_flag = ENG_nww_conferences_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_local_parliaments",
+    "key": "local_parliaments",
+    "x": 2,
+    "y": 8,
+    "parent": "premiers",
+    "effect": "ENG_nww_trust_all = { AMOUNT = 10 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_commonwealth_budget",
+    "key": "commonwealth_budget",
+    "x": 2,
+    "y": 9,
+    "parent": "local_parliaments",
+    "effect": "navy_experience = 20",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_commonwealth_charter",
+    "key": "commonwealth_charter",
+    "x": 2,
+    "y": 10,
+    "parent": "commonwealth_budget",
+    "effect": "set_country_flag = ENG_nww_commonwealth_settlement",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_cabinet_accountability",
+    "key": "cabinet_accountability",
+    "x": 2,
+    "y": 11,
+    "parent": "commonwealth_charter",
+    "effect": "add_political_power = 75",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_treaty_diplomacy",
+    "key": "treaty_diplomacy",
+    "x": 2,
+    "y": 12,
+    "parent": "cabinet_accountability",
+    "effect": "set_country_flag = ENG_nww_diplomacy_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_constitutional_crown",
+    "key": "constitutional_crown",
+    "x": 2,
+    "y": 13,
+    "parent": "treaty_diplomacy",
+    "effect": "add_stability = 0.05",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_conference",
+    "key": "conference",
+    "x": 10,
+    "y": 5,
+    "parent": "federal",
+    "effect": "set_country_flag = ENG_nww_conferences_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_federal_defence",
+    "key": "federal_defence",
+    "x": 10,
+    "y": 6,
+    "parent": "conference",
+    "effect": "navy_experience = 20",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_federal_budget",
+    "key": "federal_budget",
+    "x": 10,
+    "y": 7,
+    "parent": "federal_defence",
+    "effect": "add_political_power = 50",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_representation",
+    "key": "representation",
+    "x": 10,
+    "y": 8,
+    "parent": "federal_budget",
+    "effect": "ENG_nww_trust_all = { AMOUNT = 10 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_two_chambers",
+    "key": "two_chambers",
+    "x": 10,
+    "y": 9,
+    "parent": "representation",
+    "effect": "add_stability = 0.05",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_ratification",
+    "key": "ratification",
+    "x": 10,
+    "y": 10,
+    "parent": "two_chambers",
+    "effect": "set_country_flag = ENG_nww_ratification_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_federal_parliament",
+    "key": "federal_parliament",
+    "x": 10,
+    "y": 11,
+    "parent": "ratification",
+    "effect": "set_country_flag = ENG_nww_federation_settlement",
+    "mods": {
+      "state:stability_factor": 0.1
+    },
+    "available": "date > 1938.1.1 check_variable = { var = ENG_nww_federal_count value = 2 compare = greater_than_or_equals }",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_federal_treasury",
+    "key": "federal_treasury",
+    "x": 10,
+    "y": 12,
+    "parent": "federal_parliament",
+    "effect": "add_political_power = 75",
+    "mods": {
+      "state:political_power_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_federal_command",
+    "key": "federal_command",
+    "x": 10,
+    "y": 13,
+    "parent": "federal_treasury",
+    "effect": "army_experience = 25 air_experience = 25 navy_experience = 25",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_equal_union",
+    "key": "equal_union",
+    "x": 10,
+    "y": 14,
+    "parent": "federal_command",
+    "effect": "ENG_nww_trust_all = { AMOUNT = 10 }",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_emergency_powers",
+    "key": "emergency_powers",
+    "x": 18,
+    "y": 5,
+    "parent": "emergency",
+    "effect": "add_political_power = 50 add_stability = -0.05",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_national_press",
+    "key": "national_press",
+    "x": 18,
+    "y": 6,
+    "parent": "emergency_powers",
+    "effect": "set_country_flag = ENG_nww_right_campaign",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_officers_council",
+    "key": "officers_council",
+    "x": 18,
+    "y": 7,
+    "parent": "national_press",
+    "effect": "add_command_power = 20",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_blackshirts",
+    "key": "blackshirts",
+    "x": 16,
+    "y": 8,
+    "parent": "officers_council",
+    "effect": "ENG_nww_fascist_transition = yes",
+    "mods": {},
+    "available": "NOT = { fascism < 0.40 }",
+    "exclusive": [
+      "directory"
+    ],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_directory",
+    "key": "directory",
+    "x": 20,
+    "y": 8,
+    "parent": "officers_council",
+    "effect": "ENG_nww_directory_transition = yes",
+    "mods": {},
+    "available": "NOT = { neutrality < 0.40 }",
+    "exclusive": [
+      "blackshirts"
+    ],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_corporate_chambers",
+    "key": "corporate_chambers",
+    "x": 16,
+    "y": 9,
+    "parent": "blackshirts",
+    "effect": "add_political_power = 50",
+    "mods": {
+      "state:political_power_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_party_police",
+    "key": "party_police",
+    "x": 16,
+    "y": 10,
+    "parent": "corporate_chambers",
+    "effect": "add_stability = -0.05",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_labour_charter",
+    "key": "labour_charter",
+    "x": 16,
+    "y": 11,
+    "parent": "party_police",
+    "effect": "remove_ideas = ENG_nww_strikes",
+    "mods": {
+      "economy:industrial_capacity_factory": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_imperial_discipline",
+    "key": "imperial_discipline",
+    "x": 16,
+    "y": 12,
+    "parent": "labour_charter",
+    "effect": "set_country_flag = ENG_nww_coercive_settlement",
+    "mods": {
+      "state:political_power_factor": -0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_defence_council",
+    "key": "defence_council",
+    "x": 20,
+    "y": 9,
+    "parent": "directory",
+    "effect": "add_command_power = 25",
+    "mods": {
+      "state:political_power_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_administrative_order",
+    "key": "administrative_order",
+    "x": 20,
+    "y": 10,
+    "parent": "defence_council",
+    "effect": "add_stability = 0.05",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_labour_arbitration",
+    "key": "labour_arbitration",
+    "x": 20,
+    "y": 11,
+    "parent": "administrative_order",
+    "effect": "remove_ideas = ENG_nww_strikes",
+    "mods": {
+      "economy:production_factory_efficiency_gain_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_crown_directory",
+    "key": "crown_directory",
+    "x": 20,
+    "y": 12,
+    "parent": "labour_arbitration",
+    "effect": "set_country_flag = ENG_nww_coercive_settlement",
+    "mods": {
+      "state:stability_factor": 0.05,
+      "state:political_power_factor": -0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_public_works",
+    "key": "public_works",
+    "x": 26,
+    "y": 5,
+    "parent": "labour",
+    "effect": "ENG_nww_build_civilian = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_union_agreement",
+    "key": "union_agreement",
+    "x": 26,
+    "y": 6,
+    "parent": "public_works",
+    "effect": "remove_ideas = ENG_nww_strikes add_stability = 0.05",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_labour_election",
+    "key": "labour_election",
+    "x": 26,
+    "y": 7,
+    "parent": "union_agreement",
+    "effect": "ENG_nww_labour_transition = yes",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "check_variable = { var = ENG_nww_labour_mandate value = 40 compare = greater_than_or_equals } NOT = { democratic < 0.40 }",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_public_energy",
+    "key": "public_energy",
+    "x": 26,
+    "y": 8,
+    "parent": "labour_election",
+    "effect": "",
+    "mods": {
+      "economy:energy_gain_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_public_railways",
+    "key": "public_railways",
+    "x": 26,
+    "y": 9,
+    "parent": "public_energy",
+    "effect": "ENG_nww_build_infrastructure = { AMOUNT = 2 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_colonial_review",
+    "key": "colonial_review",
+    "x": 26,
+    "y": 10,
+    "parent": "public_railways",
+    "effect": "set_country_flag = ENG_nww_decolonisation_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_parliamentary_socialism",
+    "key": "parliamentary_socialism",
+    "x": 24,
+    "y": 11,
+    "parent": "colonial_review",
+    "effect": "set_country_flag = ENG_nww_social_settlement add_stability = 0.05",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "social_republic"
+    ],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_social_republic",
+    "key": "social_republic",
+    "x": 28,
+    "y": 11,
+    "parent": "colonial_review",
+    "effect": "ENG_nww_socialist_transition = yes",
+    "mods": {},
+    "available": "NOT = { communism < 0.40 }",
+    "exclusive": [
+      "parliamentary_socialism"
+    ],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_housing_parliament",
+    "key": "housing_parliament",
+    "x": 24,
+    "y": 12,
+    "parent": "parliamentary_socialism",
+    "effect": "ENG_nww_build_civilian = { AMOUNT = 1 }",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_welfare_parliament",
+    "key": "welfare_parliament",
+    "x": 24,
+    "y": 13,
+    "parent": "housing_parliament",
+    "effect": "add_stability = 0.05",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_housing_republic",
+    "key": "housing_republic",
+    "x": 28,
+    "y": 12,
+    "parent": "social_republic",
+    "effect": "ENG_nww_build_civilian = { AMOUNT = 1 }",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_welfare_republic",
+    "key": "welfare_republic",
+    "x": 28,
+    "y": 13,
+    "parent": "housing_republic",
+    "effect": "add_stability = 0.05",
+    "mods": {
+      "state:political_power_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_price_presence",
+    "key": "price_presence",
+    "x": 34,
+    "y": 5,
+    "parent": "island",
+    "effect": "add_political_power = 50",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_regional_defence",
+    "key": "regional_defence",
+    "x": 34,
+    "y": 6,
+    "parent": "price_presence",
+    "effect": "ENG_nww_trust_all = { AMOUNT = -5 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_island_treaties",
+    "key": "island_treaties",
+    "x": 34,
+    "y": 7,
+    "parent": "regional_defence",
+    "effect": "set_country_flag = ENG_nww_decolonisation_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_home_ports",
+    "key": "home_ports",
+    "x": 34,
+    "y": 8,
+    "parent": "island_treaties",
+    "effect": "ENG_nww_build_dockyard = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_coastal_watch",
+    "key": "coastal_watch",
+    "x": 34,
+    "y": 9,
+    "parent": "home_ports",
+    "effect": "air_experience = 20",
+    "mods": {
+      "air:air_intercept_efficiency": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_island_fortress",
+    "key": "island_fortress",
+    "x": 34,
+    "y": 10,
+    "parent": "coastal_watch",
+    "effect": "set_country_flag = ENG_nww_island_settlement",
+    "mods": {
+      "state:political_power_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_island_housing",
+    "key": "island_housing",
+    "x": 34,
+    "y": 11,
+    "parent": "island_fortress",
+    "effect": "ENG_nww_build_civilian = { AMOUNT = 2 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_armed_neutrality",
+    "key": "armed_neutrality",
+    "x": 34,
+    "y": 12,
+    "parent": "island_housing",
+    "effect": "add_war_support = 0.05 if = { limit = { is_in_faction = yes } remove_from_faction = ENG }",
+    "mods": {
+      "army:army_core_defence_factor": 0.1
+    },
+    "available": "has_war = no NOT = { any_subject_country = { exists = yes } }",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_home_charter",
+    "key": "home_charter",
+    "x": 34,
+    "y": 13,
+    "parent": "armed_neutrality",
+    "effect": "add_stability = 0.05",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_irish_report",
+    "key": "irish_report",
+    "x": 42,
+    "y": 0,
+    "parent": null,
+    "effect": "set_country_flag = ENG_nww_irish_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_border_inquiry",
+    "key": "border_inquiry",
+    "x": 42,
+    "y": 1,
+    "parent": "irish_report",
+    "effect": "add_to_variable = { ENG_nww_irish_pressure = -10 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_irish_talks",
+    "key": "irish_talks",
+    "x": 42,
+    "y": 2,
+    "parent": "border_inquiry",
+    "effect": "set_country_flag = ENG_nww_irish_talks_ready",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_belfast",
+    "key": "belfast",
+    "x": 40,
+    "y": 3,
+    "parent": "irish_talks",
+    "effect": "country_event = { id = nww_eng.20 days = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "irish_emergency"
+    ],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_irish_emergency",
+    "key": "irish_emergency",
+    "x": 44,
+    "y": 3,
+    "parent": "irish_talks",
+    "effect": "set_country_flag = ENG_nww_irish_coercion add_to_variable = { ENG_nww_irish_pressure = -10 } add_timed_idea = { idea = ENG_nww_ulster_garrison days = 365 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [
+      "belfast"
+    ],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_community_rights",
+    "key": "community_rights",
+    "x": 40,
+    "y": 4,
+    "parent": "belfast",
+    "effect": "add_stability = 0.05",
+    "mods": {},
+    "available": "has_country_flag = ENG_nww_irish_agreement",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_irish_commission",
+    "key": "irish_commission",
+    "x": 40,
+    "y": 5,
+    "parent": "community_rights",
+    "effect": "set_country_flag = ENG_nww_irish_final",
+    "mods": {
+      "state:stability_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_ulster_police",
+    "key": "ulster_police",
+    "x": 44,
+    "y": 4,
+    "parent": "irish_emergency",
+    "effect": "add_to_variable = { ENG_nww_irish_pressure = -15 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_ulster_review",
+    "key": "ulster_review",
+    "x": 44,
+    "y": 5,
+    "parent": "ulster_police",
+    "effect": "clr_country_flag = ENG_nww_irish_coercion remove_ideas = ENG_nww_ulster_garrison set_country_flag = ENG_nww_irish_talks_ready",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_irish_future",
+    "key": "irish_future",
+    "x": 42,
+    "y": 7,
+    "parent": null,
+    "effect": "set_country_flag = ENG_nww_border_vote_unlocked",
+    "mods": {},
+    "available": "has_country_flag = ENG_nww_irish_agreement has_completed_focus = ENG_nww_budget",
+    "exclusive": [],
+    "cost": 10,
+    "group": "state"
+  },
+  {
+    "id": "ENG_nww_industrial_survey",
+    "key": "industrial_survey",
+    "x": 52,
+    "y": 0,
+    "parent": null,
+    "effect": "add_political_power = 35",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_coalfields",
+    "key": "coalfields",
+    "x": 52,
+    "y": 1,
+    "parent": "industrial_survey",
+    "effect": "ENG_nww_coal_project = yes",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_machine_tools",
+    "key": "machine_tools",
+    "x": 52,
+    "y": 2,
+    "parent": "coalfields",
+    "effect": "",
+    "mods": {
+      "economy:production_factory_efficiency_gain_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_electric_grid",
+    "key": "electric_grid",
+    "x": 52,
+    "y": 3,
+    "parent": "machine_tools",
+    "effect": "",
+    "mods": {
+      "economy:energy_gain_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_northern_cities",
+    "key": "northern_cities",
+    "x": 52,
+    "y": 4,
+    "parent": "electric_grid",
+    "effect": "ENG_nww_build_civilian = { AMOUNT = 2 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_freight_routes",
+    "key": "freight_routes",
+    "x": 52,
+    "y": 5,
+    "parent": "northern_cities",
+    "effect": "ENG_nww_build_infrastructure = { AMOUNT = 2 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_industrial_standards",
+    "key": "industrial_standards",
+    "x": 52,
+    "y": 6,
+    "parent": "freight_routes",
+    "effect": "",
+    "mods": {
+      "economy:production_speed_buildings_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_free_trade",
+    "key": "free_trade",
+    "x": 50,
+    "y": 7,
+    "parent": "industrial_standards",
+    "effect": "set_country_flag = ENG_nww_trade_unlocked",
+    "mods": {
+      "economy:industrial_capacity_factory": 0.05
+    },
+    "available": "",
+    "exclusive": [
+      "protection"
+    ],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_protection",
+    "key": "protection",
+    "x": 54,
+    "y": 7,
+    "parent": "industrial_standards",
+    "effect": "ENG_nww_trust_all = { AMOUNT = -5 }",
+    "mods": {
+      "economy:production_factory_max_efficiency_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [
+      "free_trade"
+    ],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_civil_reconstruction",
+    "key": "civil_reconstruction",
+    "x": 52,
+    "y": 9,
+    "parent": null,
+    "effect": "ENG_nww_build_civilian = { AMOUNT = 1 }",
+    "mods": {
+      "economy:production_speed_buildings_factor": 0.05
+    },
+    "available": "OR = { has_completed_focus = ENG_nww_free_trade has_completed_focus = ENG_nww_protection }",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_imperial_investment",
+    "key": "imperial_investment",
+    "x": 52,
+    "y": 10,
+    "parent": "civil_reconstruction",
+    "effect": "set_country_flag = ENG_nww_investment_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_canadian_corridors",
+    "key": "canadian_corridors",
+    "x": 52,
+    "y": 11,
+    "parent": "imperial_investment",
+    "effect": "ENG_nww_offer_canadian_project = yes",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_indian_electricity",
+    "key": "indian_electricity",
+    "x": 52,
+    "y": 12,
+    "parent": "canadian_corridors",
+    "effect": "ENG_nww_offer_indian_project = yes",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_commercial_ports",
+    "key": "commercial_ports",
+    "x": 52,
+    "y": 13,
+    "parent": "indian_electricity",
+    "effect": "ENG_nww_build_dockyard = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_armament_board",
+    "key": "armament_board",
+    "x": 58,
+    "y": 0,
+    "parent": null,
+    "effect": "add_political_power = 35",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_ordnance",
+    "key": "ordnance",
+    "x": 58,
+    "y": 1,
+    "parent": "armament_board",
+    "effect": "ENG_nww_build_military = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_steel_contracts",
+    "key": "steel_contracts",
+    "x": 58,
+    "y": 2,
+    "parent": "ordnance",
+    "effect": "ENG_nww_steel_project = yes",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_admiralty_yards",
+    "key": "admiralty_yards",
+    "x": 58,
+    "y": 3,
+    "parent": "steel_contracts",
+    "effect": "ENG_nww_build_dockyard = { AMOUNT = 2 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_shadow_factories",
+    "key": "shadow_factories",
+    "x": 58,
+    "y": 4,
+    "parent": "admiralty_yards",
+    "effect": "ENG_nww_build_military = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_engine_plants",
+    "key": "engine_plants",
+    "x": 58,
+    "y": 5,
+    "parent": "shadow_factories",
+    "effect": "add_tech_bonus = { name = ENG_nww_engine_plants bonus = 0.5 uses = 1 category = air_equipment } if = { limit = { has_dlc = \"Arms Against Tyranny\" } mio:ENG_hawker_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_hawker_organization_programme } }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_quality",
+    "key": "quality",
+    "x": 56,
+    "y": 6,
+    "parent": "engine_plants",
+    "effect": "set_country_flag = ENG_nww_quality_program",
+    "mods": {
+      "economy:production_factory_max_efficiency_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [
+      "mass_contracts"
+    ],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_mass_contracts",
+    "key": "mass_contracts",
+    "x": 60,
+    "y": 6,
+    "parent": "engine_plants",
+    "effect": "add_timed_idea = { idea = ENG_nww_retooling days = 180 }",
+    "mods": {
+      "economy:industrial_capacity_factory": 0.1
+    },
+    "available": "",
+    "exclusive": [
+      "quality"
+    ],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_vickers",
+    "key": "vickers",
+    "x": 58,
+    "y": 8,
+    "parent": null,
+    "effect": "add_tech_bonus = { name = ENG_nww_vickers bonus = 0.5 uses = 1 category = armor } if = { limit = { has_dlc = \"Arms Against Tyranny\" } mio:ENG_vickers_armstrong_eng_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_vickers_armstrong_eng_organization_programme } }",
+    "mods": {},
+    "available": "OR = { has_completed_focus = ENG_nww_quality has_completed_focus = ENG_nww_mass_contracts }",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_standard_ammunition",
+    "key": "standard_ammunition",
+    "x": 58,
+    "y": 9,
+    "parent": "vickers",
+    "effect": " if = { limit = { has_dlc = \"Arms Against Tyranny\" } mio:ENG_rsaf_enfield_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_rsaf_enfield_organization_programme } }",
+    "mods": {
+      "economy:production_factory_efficiency_gain_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_production_inspection",
+    "key": "production_inspection",
+    "x": 58,
+    "y": 10,
+    "parent": "standard_ammunition",
+    "effect": "",
+    "mods": {
+      "economy:production_factory_max_efficiency_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_strategic_reserves",
+    "key": "strategic_reserves",
+    "x": 58,
+    "y": 11,
+    "parent": "production_inspection",
+    "effect": "ENG_nww_build_military = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "economy"
+  },
+  {
+    "id": "ENG_nww_university_grants",
+    "key": "university_grants",
+    "x": 64,
+    "y": 0,
+    "parent": null,
+    "effect": "add_tech_bonus = { name = ENG_nww_university_grants bonus = 0.5 uses = 1 category = electronics }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_research_council",
+    "key": "research_council",
+    "x": 64,
+    "y": 1,
+    "parent": "university_grants",
+    "effect": "",
+    "mods": {
+      "science:research_speed_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_scientific_exchange",
+    "key": "scientific_exchange",
+    "x": 64,
+    "y": 2,
+    "parent": "research_council",
+    "effect": "set_country_flag = ENG_nww_science_unlocked add_to_tech_sharing_group = ENG_nww_research",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_radar_network",
+    "key": "radar_network",
+    "x": 64,
+    "y": 3,
+    "parent": "scientific_exchange",
+    "effect": "ENG_nww_radar_project = yes",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_computing",
+    "key": "computing",
+    "x": 64,
+    "y": 4,
+    "parent": "radar_network",
+    "effect": "add_tech_bonus = { name = ENG_nww_computing bonus = 0.5 uses = 1 category = electronics }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_research_capacity",
+    "key": "research_capacity",
+    "x": 64,
+    "y": 5,
+    "parent": "computing",
+    "effect": "add_research_slot = 1",
+    "mods": {},
+    "available": "date > 1938.1.1 amount_research_slots < 6",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_jet_research",
+    "key": "jet_research",
+    "x": 64,
+    "y": 6,
+    "parent": "research_capacity",
+    "effect": "add_breakthrough_progress = { specialization = specialization_air value = 0.25 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_closed_laboratories",
+    "key": "closed_laboratories",
+    "x": 64,
+    "y": 7,
+    "parent": "jet_research",
+    "effect": "ENG_nww_research_facility = yes",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_nuclear_committee",
+    "key": "nuclear_committee",
+    "x": 64,
+    "y": 8,
+    "parent": "closed_laboratories",
+    "effect": "add_tech_bonus = { name = ENG_nww_nuclear_committee bonus = 0.5 uses = 1 category = nuclear }",
+    "mods": {},
+    "available": "date > 1940.1.1",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_scientific_service",
+    "key": "scientific_service",
+    "x": 64,
+    "y": 9,
+    "parent": "nuclear_committee",
+    "effect": "",
+    "mods": {
+      "science:research_speed_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "science"
+  },
+  {
+    "id": "ENG_nww_naval_review",
+    "key": "naval_review",
+    "x": 72,
+    "y": 0,
+    "parent": null,
+    "effect": "navy_experience = 25",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_repair_bases",
+    "key": "repair_bases",
+    "x": 72,
+    "y": 1,
+    "parent": "naval_review",
+    "effect": "ENG_nww_build_dockyard = { AMOUNT = 1 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_naval_planning",
+    "key": "naval_planning",
+    "x": 72,
+    "y": 2,
+    "parent": "repair_bases",
+    "effect": "set_country_flag = ENG_nww_routes_unlocked",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_escort",
+    "key": "escort",
+    "x": 70,
+    "y": 3,
+    "parent": "naval_planning",
+    "effect": "navy_experience = 20",
+    "mods": {
+      "navy:convoy_escort_efficiency": 0.1
+    },
+    "available": "",
+    "exclusive": [
+      "strike"
+    ],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_strike",
+    "key": "strike",
+    "x": 74,
+    "y": 3,
+    "parent": "naval_planning",
+    "effect": "navy_experience = 20",
+    "mods": {
+      "navy:navy_capital_ship_attack_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [
+      "escort"
+    ],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_escort_groups",
+    "key": "escort_groups",
+    "x": 70,
+    "y": 4,
+    "parent": "escort",
+    "effect": "",
+    "mods": {
+      "navy:naval_detection": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_asw_schools",
+    "key": "asw_schools",
+    "x": 70,
+    "y": 5,
+    "parent": "escort_groups",
+    "effect": "add_tech_bonus = { name = ENG_nww_asw_schools bonus = 0.5 uses = 1 category = dd_tech }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_convoy_reserve",
+    "key": "convoy_reserve",
+    "x": 70,
+    "y": 6,
+    "parent": "asw_schools",
+    "effect": "add_equipment_to_stockpile = { type = convoy amount = 50 producer = ENG }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_ocean_watch",
+    "key": "ocean_watch",
+    "x": 70,
+    "y": 7,
+    "parent": "convoy_reserve",
+    "effect": "",
+    "mods": {
+      "navy:convoy_escort_efficiency": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_carrier_operations",
+    "key": "carrier_operations",
+    "x": 74,
+    "y": 4,
+    "parent": "strike",
+    "effect": "add_tech_bonus = { name = ENG_nww_carrier_operations bonus = 0.5 uses = 1 category = cv_tech }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_carrier_airgroups",
+    "key": "carrier_airgroups",
+    "x": 74,
+    "y": 5,
+    "parent": "carrier_operations",
+    "effect": "add_tech_bonus = { name = ENG_nww_carrier_airgroups bonus = 0.5 uses = 1 category = naval_air }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_ocean_carrier",
+    "key": "ocean_carrier",
+    "x": 74,
+    "y": 6,
+    "parent": "carrier_airgroups",
+    "effect": "add_tech_bonus = { name = ENG_nww_ocean_carrier bonus = 0.5 uses = 1 category = cv_tech }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_naval_strike_control",
+    "key": "naval_strike_control",
+    "x": 74,
+    "y": 7,
+    "parent": "ocean_carrier",
+    "effect": "",
+    "mods": {
+      "navy:navy_capital_ship_attack_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_cape_route",
+    "key": "cape_route",
+    "x": 72,
+    "y": 9,
+    "parent": null,
+    "effect": "set_country_flag = ENG_nww_cape_ready",
+    "mods": {},
+    "available": "OR = { has_completed_focus = ENG_nww_ocean_watch has_completed_focus = ENG_nww_naval_strike_control }",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_naval_supply",
+    "key": "naval_supply",
+    "x": 72,
+    "y": 10,
+    "parent": "cape_route",
+    "effect": "navy_experience = 25",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_two_ocean_fleet",
+    "key": "two_ocean_fleet",
+    "x": 72,
+    "y": 11,
+    "parent": "naval_supply",
+    "effect": "",
+    "mods": {
+      "navy:industrial_capacity_dockyard": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "navy"
+  },
+  {
+    "id": "ENG_nww_air_service",
+    "key": "air_service",
+    "x": 80,
+    "y": 0,
+    "parent": null,
+    "effect": "air_experience = 25",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_pilot_reserve",
+    "key": "pilot_reserve",
+    "x": 80,
+    "y": 1,
+    "parent": "air_service",
+    "effect": "air_experience = 25",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_fighter_command",
+    "key": "fighter_command",
+    "x": 78,
+    "y": 2,
+    "parent": "pilot_reserve",
+    "effect": "",
+    "mods": {
+      "air:air_intercept_efficiency": 0.1
+    },
+    "available": "",
+    "exclusive": [
+      "bomber_command"
+    ],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_bomber_command",
+    "key": "bomber_command",
+    "x": 82,
+    "y": 2,
+    "parent": "pilot_reserve",
+    "effect": "",
+    "mods": {
+      "air:air_strategic_bomber_bombing_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [
+      "fighter_command"
+    ],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_sector_hq",
+    "key": "sector_hq",
+    "x": 78,
+    "y": 3,
+    "parent": "fighter_command",
+    "effect": "",
+    "mods": {
+      "air:air_mission_efficiency": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_supermarine",
+    "key": "supermarine",
+    "x": 78,
+    "y": 4,
+    "parent": "sector_hq",
+    "effect": "add_tech_bonus = { name = ENG_nww_supermarine bonus = 0.5 uses = 1 category = light_fighter } if = { limit = { has_dlc = \"Arms Against Tyranny\" } mio:ENG_supermarine_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_supermarine_organization_programme } }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_home_air_shield",
+    "key": "home_air_shield",
+    "x": 78,
+    "y": 5,
+    "parent": "supermarine",
+    "effect": "",
+    "mods": {
+      "air:air_intercept_efficiency": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_navigation",
+    "key": "navigation",
+    "x": 82,
+    "y": 3,
+    "parent": "bomber_command",
+    "effect": "",
+    "mods": {
+      "air:air_mission_efficiency": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_heavy_airgroups",
+    "key": "heavy_airgroups",
+    "x": 82,
+    "y": 4,
+    "parent": "navigation",
+    "effect": "add_tech_bonus = { name = ENG_nww_heavy_airgroups bonus = 0.5 uses = 1 category = heavy_bomber }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_strategic_campaign",
+    "key": "strategic_campaign",
+    "x": 82,
+    "y": 5,
+    "parent": "heavy_airgroups",
+    "effect": "",
+    "mods": {
+      "air:air_strategic_bomber_bombing_factor": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_coastal_command",
+    "key": "coastal_command",
+    "x": 80,
+    "y": 7,
+    "parent": null,
+    "effect": "add_tech_bonus = { name = ENG_nww_coastal_command bonus = 0.5 uses = 1 category = naval_air }",
+    "mods": {},
+    "available": "OR = { has_completed_focus = ENG_nww_home_air_shield has_completed_focus = ENG_nww_strategic_campaign }",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_fairey",
+    "key": "fairey",
+    "x": 80,
+    "y": 8,
+    "parent": "coastal_command",
+    "effect": "air_experience = 25 if = { limit = { has_dlc = \"Arms Against Tyranny\" } mio:ENG_fairey_aviation_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_fairey_aviation_organization_programme } }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_air_ground_liaison",
+    "key": "air_ground_liaison",
+    "x": 80,
+    "y": 9,
+    "parent": "fairey",
+    "effect": "",
+    "mods": {
+      "air:air_cas_efficiency": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_air_logistics",
+    "key": "air_logistics",
+    "x": 80,
+    "y": 10,
+    "parent": "air_ground_liaison",
+    "effect": "ENG_nww_build_airbase = { AMOUNT = 2 }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "air"
+  },
+  {
+    "id": "ENG_nww_army_review",
+    "key": "army_review",
+    "x": 88,
+    "y": 0,
+    "parent": null,
+    "effect": "army_experience = 25",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_staff_college",
+    "key": "staff_college",
+    "x": 88,
+    "y": 1,
+    "parent": "army_review",
+    "effect": "army_experience = 25",
+    "mods": {
+      "army:planning_speed": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_expeditionary",
+    "key": "expeditionary",
+    "x": 86,
+    "y": 2,
+    "parent": "staff_college",
+    "effect": "",
+    "mods": {
+      "army:army_org_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [
+      "continental"
+    ],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_continental",
+    "key": "continental",
+    "x": 90,
+    "y": 2,
+    "parent": "staff_college",
+    "effect": "add_war_support = 0.05",
+    "mods": {
+      "army:army_org_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [
+      "expeditionary"
+    ],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_overseas_supply",
+    "key": "overseas_supply",
+    "x": 86,
+    "y": 3,
+    "parent": "expeditionary",
+    "effect": "",
+    "mods": {
+      "army:supply_consumption_factor": -0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_expedition_engineers",
+    "key": "expedition_engineers",
+    "x": 86,
+    "y": 4,
+    "parent": "overseas_supply",
+    "effect": "add_tech_bonus = { name = ENG_nww_expedition_engineers bonus = 0.5 uses = 1 category = support_tech }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_professional_rotations",
+    "key": "professional_rotations",
+    "x": 86,
+    "y": 5,
+    "parent": "expedition_engineers",
+    "effect": "",
+    "mods": {
+      "army:army_org_regain": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_rapid_expedition",
+    "key": "rapid_expedition",
+    "x": 86,
+    "y": 6,
+    "parent": "professional_rotations",
+    "effect": "",
+    "mods": {
+      "army:army_speed_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_reserve_act",
+    "key": "reserve_act",
+    "x": 90,
+    "y": 3,
+    "parent": "continental",
+    "effect": "add_war_support = 0.05",
+    "mods": {
+      "army:training_time_army_factor": -0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_tank_trials",
+    "key": "tank_trials",
+    "x": 90,
+    "y": 4,
+    "parent": "reserve_act",
+    "effect": "add_tech_bonus = { name = ENG_nww_tank_trials bonus = 0.5 uses = 1 category = armor }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_combined_arms",
+    "key": "combined_arms",
+    "x": 90,
+    "y": 5,
+    "parent": "tank_trials",
+    "effect": "",
+    "mods": {
+      "army:max_planning": 0.1
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_mechanised_logistics",
+    "key": "mechanised_logistics",
+    "x": 90,
+    "y": 6,
+    "parent": "combined_arms",
+    "effect": "",
+    "mods": {
+      "army:army_speed_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_army_signals",
+    "key": "army_signals",
+    "x": 88,
+    "y": 8,
+    "parent": null,
+    "effect": "add_tech_bonus = { name = ENG_nww_army_signals bonus = 0.5 uses = 1 category = support_tech }",
+    "mods": {},
+    "available": "OR = { has_completed_focus = ENG_nww_rapid_expedition has_completed_focus = ENG_nww_mechanised_logistics }",
+    "exclusive": [],
+    "cost": 5,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_artillery_board",
+    "key": "artillery_board",
+    "x": 88,
+    "y": 9,
+    "parent": "army_signals",
+    "effect": "add_tech_bonus = { name = ENG_nww_artillery_board bonus = 0.5 uses = 1 category = artillery }",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_army_exercises",
+    "key": "army_exercises",
+    "x": 88,
+    "y": 10,
+    "parent": "artillery_board",
+    "effect": "army_experience = 40",
+    "mods": {},
+    "available": "",
+    "exclusive": [],
+    "cost": 5,
+    "group": "army"
+  },
+  {
+    "id": "ENG_nww_army_readiness",
+    "key": "army_readiness",
+    "x": 88,
+    "y": 11,
+    "parent": "army_exercises",
+    "effect": "",
+    "mods": {
+      "army:army_org_factor": 0.05
+    },
+    "available": "",
+    "exclusive": [],
+    "cost": 10,
+    "group": "army"
+  }
+]

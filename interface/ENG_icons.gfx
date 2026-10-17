@@ -1,0 +1,22 @@
+# Imagegen artwork, owner ENG. See docs/art/ENG/icons/manifest.json.
+spriteTypes = {
+	spriteType = { name = GFX_idea_ENG_nww_state texturefile = "gfx/interface/ideas/ENG/ENG_nww_state.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_economy texturefile = "gfx/interface/ideas/ENG/ENG_nww_economy.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_army texturefile = "gfx/interface/ideas/ENG/ENG_nww_army.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_air texturefile = "gfx/interface/ideas/ENG/ENG_nww_air.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_navy texturefile = "gfx/interface/ideas/ENG/ENG_nww_navy.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_science texturefile = "gfx/interface/ideas/ENG/ENG_nww_science.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_markets texturefile = "gfx/interface/ideas/ENG/ENG_nww_markets.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_finance texturefile = "gfx/interface/ideas/ENG/ENG_nww_finance.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_project_cost texturefile = "gfx/interface/ideas/ENG/ENG_nww_project_cost.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_strikes texturefile = "gfx/interface/ideas/ENG/ENG_nww_strikes.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_ulster_garrison texturefile = "gfx/interface/ideas/ENG/ENG_nww_ulster_garrison.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_retooling texturefile = "gfx/interface/ideas/ENG/ENG_nww_retooling.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_sea_delay texturefile = "gfx/interface/ideas/ENG/ENG_nww_sea_delay.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_trade_partner texturefile = "gfx/interface/ideas/ENG/ENG_nww_trade_partner.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_federal_partner texturefile = "gfx/interface/ideas/ENG/ENG_nww_federal_partner.dds" }
+	spriteType = { name = GFX_idea_ENG_nww_pacifism texturefile = "gfx/interface/ideas/ENG/ENG_nww_pacifism.dds" }
+	spriteType = { name = GFX_decision_category_ENG_nww_imperial texturefile = "gfx/interface/decisions/ENG/ENG_nww_imperial.dds" }
+	spriteType = { name = GFX_decision_category_ENG_nww_cabinet texturefile = "gfx/interface/decisions/ENG/ENG_nww_cabinet.dds" }
+	spriteType = { name = GFX_decision_category_ENG_nww_routes texturefile = "gfx/interface/decisions/ENG/ENG_nww_routes.dds" }
+}

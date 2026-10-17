@@ -28,6 +28,18 @@ try:
     driver.get((ROOT / 'sites/nww-atlas/dist/index.html').as_uri())
     assert driver.title == 'NWW Reborn — Атлас разработки'
     assert driver.execute_script('return paths.length') == 79
+    assert driver.find_element(By.ID, 'count-full').text == '9'
+    snapshot = driver.execute_script('return DATA.snapshotDate')
+    assert '.'.join(reversed(snapshot.split('-'))) in driver.find_element(By.CSS_SELECTOR, '.sidebar-footer').text
+    for tag, count in [('FRA', 146), ('ENG', 153), ('MKN', 182)]:
+        country = driver.execute_script('return byTag.get(arguments[0])', tag)
+        assert country['status'] == 'full' and country['focuses'] == count, country
+        assert driver.execute_script("return $('country-'+arguments[0]).dataset.status", tag) == 'full'
+    driver.find_element(By.ID, 'about-open').click()
+    about_text = driver.find_element(By.ID, 'about').text
+    assert 'ENG' in about_text and 'FRA' in about_text
+    assert 'текущая новая разработка FRA' not in about_text
+    driver.find_element(By.ID, 'about-done').click()
     driver.find_element(By.ID, 'search').send_keys('LTB')
     assert len(driver.find_elements(By.CSS_SELECTOR, '.country-row')) == 1
     driver.find_element(By.CSS_SELECTOR, '.country-row').click()

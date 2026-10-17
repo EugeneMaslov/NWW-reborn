@@ -1,0 +1,9 @@
+spriteTypes = {
+spriteType = { name = GFX_ENG_ui_socket texturefile = "gfx/interface/decisions/ENG/mechanics/socket.dds" }
+spriteType = { name = GFX_ENG_ui_gold texturefile = "gfx/interface/decisions/ENG/mechanics/gold.dds" }
+spriteType = { name = GFX_ENG_ui_red texturefile = "gfx/interface/decisions/ENG/mechanics/red.dds" }
+spriteType = { name = GFX_ENG_ui_tick texturefile = "gfx/interface/decisions/ENG/mechanics/tick.dds" }
+spriteType = { name = GFX_ENG_ui_imperial texturefile = "gfx/interface/decisions/ENG/mechanics/imperial.dds" }
+spriteType = { name = GFX_ENG_ui_cabinet texturefile = "gfx/interface/decisions/ENG/mechanics/cabinet.dds" }
+spriteType = { name = GFX_ENG_ui_routes texturefile = "gfx/interface/decisions/ENG/mechanics/routes.dds" }
+}

@@ -1,0 +1,2 @@
+# Native filename override. Playable content: ENG_focuses.txt.
+focus_tree = { id = british_focus default = no country = { factor = 0 } }

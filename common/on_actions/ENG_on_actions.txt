@@ -1,0 +1,5 @@
+on_actions = {
+on_startup = { effect = { ENG = { if = { limit = { exists = yes } ENG_nww_daily = yes ENG_nww_rebuild_spirits = yes } } } }
+on_daily_ENG = { effect = { ENG_nww_daily = yes } }
+on_monthly_ENG = { effect = { if = { limit = { exists = yes has_focus_tree = ENG_nww_focus } ENG_nww_monthly = yes } } }
+}

@@ -1,0 +1,236 @@
+# Owner: ENG, including all bilateral offers below.
+
+add_namespace = nww_eng
+
+country_event = { id = nww_eng.100 is_triggered_only = yes title = nww_eng.100.t desc = nww_eng.100.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.100.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_compact_CAN NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_compact_CAN set_country_flag = ENG_nww_compact_CAN add_to_variable = { ENG_nww_trust_CAN = 10 } } add_ideas = ENG_nww_trade_partner if = { limit = { ENG = { has_country_flag = ENG_nww_science_unlocked } } add_to_tech_sharing_group = ENG_nww_research } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.100.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_compact_CAN add_to_variable = { ENG_nww_trust_CAN = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.101 is_triggered_only = yes title = nww_eng.101.t desc = nww_eng.101.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.101.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_federal_CAN NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 65 } ENG = { clr_country_flag = ENG_nww_request_federal_CAN set_country_flag = ENG_nww_federal_CAN add_to_variable = { ENG_nww_trust_CAN = 10 } } add_ideas = ENG_nww_federal_partner add_to_tech_sharing_group = ENG_nww_research ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.101.b ai_chance = { factor = 35 } ENG = { clr_country_flag = ENG_nww_request_federal_CAN add_to_variable = { ENG_nww_trust_CAN = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.102 is_triggered_only = yes title = nww_eng.102.t desc = nww_eng.102.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.102.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_independence_CAN NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_independence_CAN set_country_flag = ENG_nww_independence_CAN add_to_variable = { ENG_nww_trust_CAN = 10 } } if = { limit = { is_subject_of = ENG } ENG = { set_autonomy = { target = CAN autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.102.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_independence_CAN add_to_variable = { ENG_nww_trust_CAN = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.103 is_triggered_only = yes title = nww_eng.103.t desc = nww_eng.103.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.103.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_investment_CAN NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_investment_CAN set_country_flag = ENG_nww_investment_CAN add_to_variable = { ENG_nww_trust_CAN = 10 } } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.103.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_investment_CAN add_to_variable = { ENG_nww_trust_CAN = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.110 is_triggered_only = yes title = nww_eng.110.t desc = nww_eng.110.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.110.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_compact_AST NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_compact_AST set_country_flag = ENG_nww_compact_AST add_to_variable = { ENG_nww_trust_AST = 10 } } add_ideas = ENG_nww_trade_partner if = { limit = { ENG = { has_country_flag = ENG_nww_science_unlocked } } add_to_tech_sharing_group = ENG_nww_research } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.110.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_compact_AST add_to_variable = { ENG_nww_trust_AST = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.111 is_triggered_only = yes title = nww_eng.111.t desc = nww_eng.111.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.111.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_federal_AST NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 65 } ENG = { clr_country_flag = ENG_nww_request_federal_AST set_country_flag = ENG_nww_federal_AST add_to_variable = { ENG_nww_trust_AST = 10 } } add_ideas = ENG_nww_federal_partner add_to_tech_sharing_group = ENG_nww_research ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.111.b ai_chance = { factor = 35 } ENG = { clr_country_flag = ENG_nww_request_federal_AST add_to_variable = { ENG_nww_trust_AST = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.112 is_triggered_only = yes title = nww_eng.112.t desc = nww_eng.112.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.112.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_independence_AST NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_independence_AST set_country_flag = ENG_nww_independence_AST add_to_variable = { ENG_nww_trust_AST = 10 } } if = { limit = { is_subject_of = ENG } ENG = { set_autonomy = { target = AST autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.112.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_independence_AST add_to_variable = { ENG_nww_trust_AST = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.113 is_triggered_only = yes title = nww_eng.113.t desc = nww_eng.113.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.113.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_investment_AST NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_investment_AST set_country_flag = ENG_nww_investment_AST add_to_variable = { ENG_nww_trust_AST = 10 } } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.113.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_investment_AST add_to_variable = { ENG_nww_trust_AST = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.120 is_triggered_only = yes title = nww_eng.120.t desc = nww_eng.120.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.120.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_compact_SAF NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_compact_SAF set_country_flag = ENG_nww_compact_SAF add_to_variable = { ENG_nww_trust_SAF = 10 } } add_ideas = ENG_nww_trade_partner if = { limit = { ENG = { has_country_flag = ENG_nww_science_unlocked } } add_to_tech_sharing_group = ENG_nww_research } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.120.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_compact_SAF add_to_variable = { ENG_nww_trust_SAF = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.121 is_triggered_only = yes title = nww_eng.121.t desc = nww_eng.121.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.121.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_federal_SAF NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 65 } ENG = { clr_country_flag = ENG_nww_request_federal_SAF set_country_flag = ENG_nww_federal_SAF add_to_variable = { ENG_nww_trust_SAF = 10 } } add_ideas = ENG_nww_federal_partner add_to_tech_sharing_group = ENG_nww_research ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.121.b ai_chance = { factor = 35 } ENG = { clr_country_flag = ENG_nww_request_federal_SAF add_to_variable = { ENG_nww_trust_SAF = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.122 is_triggered_only = yes title = nww_eng.122.t desc = nww_eng.122.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.122.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_independence_SAF NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_independence_SAF set_country_flag = ENG_nww_independence_SAF add_to_variable = { ENG_nww_trust_SAF = 10 } } if = { limit = { is_subject_of = ENG } ENG = { set_autonomy = { target = SAF autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.122.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_independence_SAF add_to_variable = { ENG_nww_trust_SAF = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.123 is_triggered_only = yes title = nww_eng.123.t desc = nww_eng.123.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.123.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_investment_SAF NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_investment_SAF set_country_flag = ENG_nww_investment_SAF add_to_variable = { ENG_nww_trust_SAF = 10 } } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.123.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_investment_SAF add_to_variable = { ENG_nww_trust_SAF = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.130 is_triggered_only = yes title = nww_eng.130.t desc = nww_eng.130.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.130.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_compact_NZL NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_compact_NZL set_country_flag = ENG_nww_compact_NZL add_to_variable = { ENG_nww_trust_NZL = 10 } } add_ideas = ENG_nww_trade_partner if = { limit = { ENG = { has_country_flag = ENG_nww_science_unlocked } } add_to_tech_sharing_group = ENG_nww_research } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.130.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_compact_NZL add_to_variable = { ENG_nww_trust_NZL = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.131 is_triggered_only = yes title = nww_eng.131.t desc = nww_eng.131.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.131.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_federal_NZL NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 65 } ENG = { clr_country_flag = ENG_nww_request_federal_NZL set_country_flag = ENG_nww_federal_NZL add_to_variable = { ENG_nww_trust_NZL = 10 } } add_ideas = ENG_nww_federal_partner add_to_tech_sharing_group = ENG_nww_research ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.131.b ai_chance = { factor = 35 } ENG = { clr_country_flag = ENG_nww_request_federal_NZL add_to_variable = { ENG_nww_trust_NZL = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.132 is_triggered_only = yes title = nww_eng.132.t desc = nww_eng.132.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.132.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_independence_NZL NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_independence_NZL set_country_flag = ENG_nww_independence_NZL add_to_variable = { ENG_nww_trust_NZL = 10 } } if = { limit = { is_subject_of = ENG } ENG = { set_autonomy = { target = NZL autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.132.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_independence_NZL add_to_variable = { ENG_nww_trust_NZL = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.133 is_triggered_only = yes title = nww_eng.133.t desc = nww_eng.133.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.133.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_investment_NZL NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_investment_NZL set_country_flag = ENG_nww_investment_NZL add_to_variable = { ENG_nww_trust_NZL = 10 } } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.133.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_investment_NZL add_to_variable = { ENG_nww_trust_NZL = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.140 is_triggered_only = yes title = nww_eng.140.t desc = nww_eng.140.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.140.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_compact_RAJ NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_compact_RAJ set_country_flag = ENG_nww_compact_RAJ add_to_variable = { ENG_nww_trust_RAJ = 10 } } add_ideas = ENG_nww_trade_partner if = { limit = { ENG = { has_country_flag = ENG_nww_science_unlocked } } add_to_tech_sharing_group = ENG_nww_research } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.140.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_compact_RAJ add_to_variable = { ENG_nww_trust_RAJ = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.141 is_triggered_only = yes title = nww_eng.141.t desc = nww_eng.141.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.141.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_federal_RAJ NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 65 } ENG = { clr_country_flag = ENG_nww_request_federal_RAJ set_country_flag = ENG_nww_federal_RAJ add_to_variable = { ENG_nww_trust_RAJ = 10 } } add_ideas = ENG_nww_federal_partner add_to_tech_sharing_group = ENG_nww_research ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.141.b ai_chance = { factor = 35 } ENG = { clr_country_flag = ENG_nww_request_federal_RAJ add_to_variable = { ENG_nww_trust_RAJ = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.142 is_triggered_only = yes title = nww_eng.142.t desc = nww_eng.142.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.142.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_independence_RAJ NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_independence_RAJ set_country_flag = ENG_nww_independence_RAJ add_to_variable = { ENG_nww_trust_RAJ = 10 } } if = { limit = { is_subject_of = ENG } ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.142.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_independence_RAJ add_to_variable = { ENG_nww_trust_RAJ = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.143 is_triggered_only = yes title = nww_eng.143.t desc = nww_eng.143.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.143.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_investment_RAJ NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_investment_RAJ set_country_flag = ENG_nww_investment_RAJ add_to_variable = { ENG_nww_trust_RAJ = 10 } } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.143.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_investment_RAJ add_to_variable = { ENG_nww_trust_RAJ = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.144 is_triggered_only = yes title = nww_eng.144.t desc = nww_eng.144.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.144.a trigger = { ENG = { exists = yes has_focus_tree = ENG_nww_focus has_country_flag = ENG_nww_request_government_RAJ NOT = { has_war_with = ROOT } has_capitulated = no } exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } ai_chance = { factor = 80 } ENG = { clr_country_flag = ENG_nww_request_government_RAJ set_country_flag = ENG_nww_government_RAJ add_to_variable = { ENG_nww_trust_RAJ = 10 } } ENG = { set_country_flag = ENG_nww_indian_government if = { limit = { OR = { has_dlc = "Together for Victory" has_dlc = "Man the Guns" } RAJ = { is_subject_of = ENG } } set_autonomy = { target = RAJ autonomy_state = autonomy_dominion end_wars = no end_civil_wars = no } } } ENG = { ENG_nww_clamp = yes ENG_nww_recount_partners = yes country_event = { id = nww_eng.10 days = 1 } } }
+option = { name = nww_eng.144.b ai_chance = { factor = 20 } ENG = { clr_country_flag = ENG_nww_request_government_RAJ add_to_variable = { ENG_nww_trust_RAJ = -5 } ENG_nww_clamp = yes country_event = { id = nww_eng.11 days = 1 } } }
+}
+
+country_event = { id = nww_eng.1 is_triggered_only = yes title = nww_eng.1.t desc = nww_eng.1.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.1.a ai_chance = { factor = 45 } ENG_nww_build_civilian = { AMOUNT = 1 } }
+option = { name = nww_eng.1.b ai_chance = { factor = 40 } ENG_nww_trust_all = { AMOUNT = 5 } add_political_power = 35 }
+option = { name = nww_eng.1.c ai_chance = { factor = 15 } ENG_nww_build_military = { AMOUNT = 1 } add_war_support = 0.05 }
+}
+
+country_event = { id = nww_eng.4 is_triggered_only = yes title = nww_eng.4.t desc = nww_eng.4.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.4.a trigger = { has_civil_war = no NOT = { has_government = democratic } } ai_chance = { factor = 100 } start_civil_war = { ideology = democratic size = 0.35 } }
+option = { name = nww_eng.4.b trigger = { OR = { has_civil_war = yes has_government = democratic } } ai_chance = { factor = 100 }  }
+}
+
+country_event = { id = nww_eng.10 is_triggered_only = yes title = nww_eng.10.t desc = nww_eng.10.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.10.a ai_chance = { factor = 100 }  }
+}
+
+country_event = { id = nww_eng.11 is_triggered_only = yes title = nww_eng.11.t desc = nww_eng.11.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.11.a ai_chance = { factor = 100 }  }
+}
+
+country_event = { id = nww_eng.20 is_triggered_only = yes title = nww_eng.20.t desc = nww_eng.20.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.20.a trigger = { IRE = { exists = yes has_war = no is_subject = no } has_war = no 119 = { is_owned_and_controlled_by = ENG } } ai_chance = { factor = 100 } set_country_flag = { flag = ENG_nww_irish_offer days = 90 } IRE = { country_event = { id = nww_eng.21 days = 1 } } }
+option = { name = nww_eng.20.b trigger = { NOT = { AND = { IRE = { exists = yes has_war = no is_subject = no } has_war = no 119 = { is_owned_and_controlled_by = ENG } } } } ai_chance = { factor = 100 }  }
+}
+
+country_event = { id = nww_eng.21 is_triggered_only = yes title = nww_eng.21.t desc = nww_eng.21.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.21.a trigger = { ENG = { has_country_flag = ENG_nww_irish_offer has_war = no } has_war = no 119 = { is_owned_and_controlled_by = ENG } } ai_chance = { factor = 85 } ENG = { clr_country_flag = ENG_nww_irish_offer set_country_flag = ENG_nww_irish_agreement set_country_flag = ENG_nww_irish_final clr_country_flag = ENG_nww_irish_coercion set_variable = { ENG_nww_irish_pressure = 0 } remove_ideas = ENG_nww_ulster_garrison add_stability = 0.05 ENG_nww_trust_all = { AMOUNT = 5 } } }
+option = { name = nww_eng.21.b ai_chance = { factor = 15 } ENG = { clr_country_flag = ENG_nww_irish_offer add_to_variable = { ENG_nww_irish_pressure = 10 } ENG_nww_clamp = yes } }
+}
+
+country_event = { id = nww_eng.23 is_triggered_only = yes title = nww_eng.23.t desc = nww_eng.23.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.23.a ai_chance = { factor = 85 } add_political_power = -100 add_stability = -0.10 set_variable = { ENG_nww_irish_pressure = 40 } set_country_flag = ENG_nww_irish_talks_ready clr_country_flag = ENG_nww_irish_failed }
+option = { name = nww_eng.23.b trigger = { has_war = no has_civil_war = no 119 = { is_owned_and_controlled_by = ENG } NIR = { exists = no } } ai_chance = { factor = 15 } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -10 } if = { limit = { NIR = { exists = no } 119 = { is_owned_and_controlled_by = ENG } has_war = no } 119 = { transfer_state_to = NIR } NIR = { set_politics = { ruling_party = neutrality elections_allowed = no } load_oob = ENG_nww_ulster_revolt } declare_war_on = { target = NIR type = annex_everything } } }
+}
+
+country_event = { id = nww_eng.24 is_triggered_only = yes title = nww_eng.24.t desc = nww_eng.24.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.24.a trigger = { has_war = no 119 = { is_owned_and_controlled_by = ENG } IRE = { exists = yes has_war = no is_subject = no } } ai_chance = { factor = 100 } set_country_flag = { flag = ENG_nww_border_offer days = 90 } IRE = { country_event = { id = nww_eng.25 days = 1 } } }
+option = { name = nww_eng.24.b trigger = { NOT = { AND = { has_war = no 119 = { is_owned_and_controlled_by = ENG } IRE = { exists = yes has_war = no is_subject = no } } } } ai_chance = { factor = 100 }  }
+}
+
+country_event = { id = nww_eng.25 is_triggered_only = yes title = nww_eng.25.t desc = nww_eng.25.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.25.a trigger = { has_war = no is_subject = no ENG = { has_country_flag = ENG_nww_border_offer has_war = no } 119 = { is_owned_and_controlled_by = ENG } } ai_chance = { factor = 90 } 119 = { transfer_state_to = IRE } ENG = { clr_country_flag = ENG_nww_border_offer set_country_flag = ENG_nww_border_transferred set_country_flag = ENG_nww_irish_final set_variable = { ENG_nww_irish_pressure = 0 } } }
+option = { name = nww_eng.25.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_border_offer } }
+}
+
+country_event = { id = nww_eng.300 is_triggered_only = yes title = nww_eng.300.t desc = nww_eng.300.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.300.a trigger = { has_war = no is_subject_of = ENG ENG = { has_war = no } } ai_chance = { factor = 70 } ENG = { set_autonomy = { target = CAN autonomy_state = autonomy_free end_wars = no end_civil_wars = no } set_country_flag = ENG_nww_independence_CAN } }
+option = { name = nww_eng.300.b ai_chance = { factor = 30 } ENG = { set_variable = { ENG_nww_trust_CAN = 35 } } }
+}
+
+country_event = { id = nww_eng.301 is_triggered_only = yes title = nww_eng.301.t desc = nww_eng.301.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.301.a trigger = { has_war = no is_subject_of = ENG ENG = { has_war = no } } ai_chance = { factor = 70 } ENG = { set_autonomy = { target = AST autonomy_state = autonomy_free end_wars = no end_civil_wars = no } set_country_flag = ENG_nww_independence_AST } }
+option = { name = nww_eng.301.b ai_chance = { factor = 30 } ENG = { set_variable = { ENG_nww_trust_AST = 35 } } }
+}
+
+country_event = { id = nww_eng.302 is_triggered_only = yes title = nww_eng.302.t desc = nww_eng.302.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.302.a trigger = { has_war = no is_subject_of = ENG ENG = { has_war = no } } ai_chance = { factor = 70 } ENG = { set_autonomy = { target = SAF autonomy_state = autonomy_free end_wars = no end_civil_wars = no } set_country_flag = ENG_nww_independence_SAF } }
+option = { name = nww_eng.302.b ai_chance = { factor = 30 } ENG = { set_variable = { ENG_nww_trust_SAF = 35 } } }
+}
+
+country_event = { id = nww_eng.303 is_triggered_only = yes title = nww_eng.303.t desc = nww_eng.303.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.303.a trigger = { has_war = no is_subject_of = ENG ENG = { has_war = no } } ai_chance = { factor = 70 } ENG = { set_autonomy = { target = NZL autonomy_state = autonomy_free end_wars = no end_civil_wars = no } set_country_flag = ENG_nww_independence_NZL } }
+option = { name = nww_eng.303.b ai_chance = { factor = 30 } ENG = { set_variable = { ENG_nww_trust_NZL = 35 } } }
+}
+
+country_event = { id = nww_eng.304 is_triggered_only = yes title = nww_eng.304.t desc = nww_eng.304.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.304.a trigger = { has_war = no is_subject_of = ENG ENG = { has_war = no } } ai_chance = { factor = 70 } ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free end_wars = no end_civil_wars = no } set_country_flag = ENG_nww_independence_RAJ } }
+option = { name = nww_eng.304.b ai_chance = { factor = 30 } ENG = { set_variable = { ENG_nww_trust_RAJ = 35 } } }
+}
+
+country_event = { id = nww_eng.30 fire_only_once = yes trigger = { tag = ENG has_focus_tree = ENG_nww_focus date > 1936.1.19 has_idea = george_v NOT = { has_government = communism } } mean_time_to_happen = { days = 1 } title = nww_eng.30.t desc = nww_eng.30.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.30.a ai_chance = { factor = 100 } remove_ideas = george_v add_ideas = ENG_king_edward set_country_flag = ENG_nww_succession_done }
+}
+
+country_event = { id = nww_eng.31 fire_only_once = yes trigger = { tag = ENG has_focus_tree = ENG_nww_focus date > 1936.12.1 has_idea = ENG_king_edward has_government = democratic } mean_time_to_happen = { days = 7 } title = nww_eng.31.t desc = nww_eng.31.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.31.a ai_chance = { factor = 65 } add_stability = 0.05 }
+option = { name = nww_eng.31.b ai_chance = { factor = 35 } remove_ideas = ENG_king_edward add_ideas = ENG_george_vi add_stability = 0.05 }
+}
+
+country_event = { id = nww_eng.32 fire_only_once = yes trigger = { tag = ENG has_focus_tree = ENG_nww_focus date > 1937.5.27 has_government = democratic has_country_leader = { character = ENG_stanley_baldwin ruling_only = yes } } mean_time_to_happen = { days = 7 } title = nww_eng.32.t desc = nww_eng.32.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.32.a ai_chance = { factor = 85 } recruit_character = ENG_neville_chamberlain promote_character = ENG_neville_chamberlain }
+option = { name = nww_eng.32.b ai_chance = { factor = 15 } promote_character = ENG_winston_churchill add_war_support = 0.05 }
+}
+
+country_event = { id = nww_eng.400 is_triggered_only = yes title = nww_eng.400.t desc = nww_eng.400.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.400.a trigger = { is_subject_of = ENG has_war = no ENG = { has_war = no has_country_flag = ENG_nww_offer_colonial_exit_MAL } } ai_chance = { factor = 90 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_MAL set_country_flag = ENG_nww_colonial_exit_MAL set_autonomy = { target = MAL autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
+option = { name = nww_eng.400.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_MAL } }
+}
+
+country_event = { id = nww_eng.401 is_triggered_only = yes title = nww_eng.401.t desc = nww_eng.401.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.401.a trigger = { is_subject_of = ENG has_war = no ENG = { has_war = no has_country_flag = ENG_nww_offer_colonial_exit_BRM } } ai_chance = { factor = 90 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_BRM set_country_flag = ENG_nww_colonial_exit_BRM set_autonomy = { target = BRM autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
+option = { name = nww_eng.401.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_BRM } }
+}
+
+country_event = { id = nww_eng.402 is_triggered_only = yes title = nww_eng.402.t desc = nww_eng.402.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.402.a trigger = { is_subject_of = ENG has_war = no ENG = { has_war = no has_country_flag = ENG_nww_offer_colonial_exit_OMA } } ai_chance = { factor = 90 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_OMA set_country_flag = ENG_nww_colonial_exit_OMA set_autonomy = { target = OMA autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
+option = { name = nww_eng.402.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_OMA } }
+}
+
+country_event = { id = nww_eng.403 is_triggered_only = yes title = nww_eng.403.t desc = nww_eng.403.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.403.a trigger = { is_subject_of = ENG has_war = no ENG = { has_war = no has_country_flag = ENG_nww_offer_colonial_exit_EGY } } ai_chance = { factor = 90 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_EGY set_country_flag = ENG_nww_colonial_exit_EGY set_autonomy = { target = EGY autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
+option = { name = nww_eng.403.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_EGY } }
+}
+
+country_event = { id = nww_eng.404 is_triggered_only = yes title = nww_eng.404.t desc = nww_eng.404.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.404.a trigger = { is_subject_of = ENG has_war = no ENG = { has_war = no has_country_flag = ENG_nww_offer_colonial_exit_PAL } } ai_chance = { factor = 90 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_PAL set_country_flag = ENG_nww_colonial_exit_PAL set_autonomy = { target = PAL autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
+option = { name = nww_eng.404.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_PAL } }
+}
+
+country_event = { id = nww_eng.405 is_triggered_only = yes title = nww_eng.405.t desc = nww_eng.405.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.405.a trigger = { is_subject_of = ENG has_war = no ENG = { has_war = no has_country_flag = ENG_nww_offer_colonial_exit_JOR } } ai_chance = { factor = 90 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_JOR set_country_flag = ENG_nww_colonial_exit_JOR set_autonomy = { target = JOR autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
+option = { name = nww_eng.405.b ai_chance = { factor = 10 } ENG = { clr_country_flag = ENG_nww_offer_colonial_exit_JOR } }
+}
+
+country_event = { id = nww_eng.200 is_triggered_only = yes title = nww_eng.200.t desc = nww_eng.200.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.200.a trigger = { has_war = no ENG = { has_war = no has_country_flag = ENG_nww_dip_offer_GER } } ai_chance = { factor = 60 } add_opinion_modifier = { target = ENG modifier = ENG_nww_rapprochement } ENG = { clr_country_flag = ENG_nww_dip_offer_GER set_country_flag = ENG_nww_diplomacy_GER add_opinion_modifier = { target = GER modifier = ENG_nww_rapprochement } } }
+option = { name = nww_eng.200.b ai_chance = { factor = 40 } ENG = { clr_country_flag = ENG_nww_dip_offer_GER } }
+}
+
+country_event = { id = nww_eng.201 is_triggered_only = yes title = nww_eng.201.t desc = nww_eng.201.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.201.a trigger = { has_war = no ENG = { has_war = no has_country_flag = ENG_nww_dip_offer_USA } } ai_chance = { factor = 60 } add_opinion_modifier = { target = ENG modifier = ENG_nww_rapprochement } ENG = { clr_country_flag = ENG_nww_dip_offer_USA set_country_flag = ENG_nww_diplomacy_USA add_opinion_modifier = { target = USA modifier = ENG_nww_rapprochement } } }
+option = { name = nww_eng.201.b ai_chance = { factor = 40 } ENG = { clr_country_flag = ENG_nww_dip_offer_USA } }
+}
+
+country_event = { id = nww_eng.202 is_triggered_only = yes title = nww_eng.202.t desc = nww_eng.202.d picture = GFX_report_event_generic_conference
+option = { name = nww_eng.202.a trigger = { has_war = no ENG = { has_war = no has_country_flag = ENG_nww_dip_offer_TUR } } ai_chance = { factor = 60 } add_opinion_modifier = { target = ENG modifier = ENG_nww_rapprochement } ENG = { clr_country_flag = ENG_nww_dip_offer_TUR set_country_flag = ENG_nww_diplomacy_TUR add_opinion_modifier = { target = TUR modifier = ENG_nww_rapprochement } } }
+option = { name = nww_eng.202.b ai_chance = { factor = 40 } ENG = { clr_country_flag = ENG_nww_dip_offer_TUR } }
+}

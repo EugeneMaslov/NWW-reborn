@@ -1,0 +1,222 @@
+scripted_gui = {
+ENG_nww_imperial_ui = { context_type = decision_category window_name = ENG_nww_imperial_window visible = { tag = ENG has_focus_tree = ENG_nww_focus } ai_enabled = { always = no } triggers = {
+ENG_nww_ui_trust_CAN_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } }
+ENG_nww_ui_absent_CAN_visible = { NOT = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } }
+ENG_nww_ui_trust_CAN_fill_0_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_1_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_2_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_3_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_4_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_5_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_6_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_7_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_8_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_9_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_10_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_11_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_12_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_13_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_14_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_15_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_16_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_17_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_18_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_CAN_fill_19_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_CAN value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_federal_CAN_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_CAN }
+ENG_nww_ui_compact_CAN_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_CAN NOT = { OR = { has_country_flag = ENG_nww_federal_CAN } } }
+ENG_nww_ui_independence_CAN_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_independence_CAN NOT = { OR = { has_country_flag = ENG_nww_federal_CAN has_country_flag = ENG_nww_compact_CAN } } }
+ENG_nww_ui_no_treaty_CAN_visible = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } NOT = { OR = { has_country_flag = ENG_nww_federal_CAN has_country_flag = ENG_nww_compact_CAN has_country_flag = ENG_nww_independence_CAN } } }
+ENG_nww_ui_trust_AST_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } }
+ENG_nww_ui_absent_AST_visible = { NOT = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } }
+ENG_nww_ui_trust_AST_fill_0_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_1_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_2_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_3_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_4_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_5_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_6_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_7_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_8_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_9_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_10_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_11_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_12_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_13_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_14_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_15_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_16_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_17_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_18_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_AST_fill_19_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_AST value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_federal_AST_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_AST }
+ENG_nww_ui_compact_AST_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_AST NOT = { OR = { has_country_flag = ENG_nww_federal_AST } } }
+ENG_nww_ui_independence_AST_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_independence_AST NOT = { OR = { has_country_flag = ENG_nww_federal_AST has_country_flag = ENG_nww_compact_AST } } }
+ENG_nww_ui_no_treaty_AST_visible = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } NOT = { OR = { has_country_flag = ENG_nww_federal_AST has_country_flag = ENG_nww_compact_AST has_country_flag = ENG_nww_independence_AST } } }
+ENG_nww_ui_trust_SAF_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } }
+ENG_nww_ui_absent_SAF_visible = { NOT = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } }
+ENG_nww_ui_trust_SAF_fill_0_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_1_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_2_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_3_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_4_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_5_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_6_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_7_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_8_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_9_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_10_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_11_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_12_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_13_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_14_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_15_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_16_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_17_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_18_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_SAF_fill_19_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_SAF value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_federal_SAF_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_SAF }
+ENG_nww_ui_compact_SAF_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_SAF NOT = { OR = { has_country_flag = ENG_nww_federal_SAF } } }
+ENG_nww_ui_independence_SAF_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_independence_SAF NOT = { OR = { has_country_flag = ENG_nww_federal_SAF has_country_flag = ENG_nww_compact_SAF } } }
+ENG_nww_ui_no_treaty_SAF_visible = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } NOT = { OR = { has_country_flag = ENG_nww_federal_SAF has_country_flag = ENG_nww_compact_SAF has_country_flag = ENG_nww_independence_SAF } } }
+ENG_nww_ui_trust_NZL_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } }
+ENG_nww_ui_absent_NZL_visible = { NOT = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } }
+ENG_nww_ui_trust_NZL_fill_0_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_1_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_2_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_3_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_4_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_5_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_6_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_7_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_8_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_9_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_10_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_11_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_12_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_13_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_14_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_15_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_16_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_17_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_18_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_NZL_fill_19_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_NZL value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_federal_NZL_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_NZL }
+ENG_nww_ui_compact_NZL_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_NZL NOT = { OR = { has_country_flag = ENG_nww_federal_NZL } } }
+ENG_nww_ui_independence_NZL_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_independence_NZL NOT = { OR = { has_country_flag = ENG_nww_federal_NZL has_country_flag = ENG_nww_compact_NZL } } }
+ENG_nww_ui_no_treaty_NZL_visible = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } NOT = { OR = { has_country_flag = ENG_nww_federal_NZL has_country_flag = ENG_nww_compact_NZL has_country_flag = ENG_nww_independence_NZL } } }
+ENG_nww_ui_trust_RAJ_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } }
+ENG_nww_ui_absent_RAJ_visible = { NOT = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } }
+ENG_nww_ui_trust_RAJ_fill_0_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_1_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_2_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_3_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_4_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_5_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_6_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_7_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_8_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_9_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_10_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_11_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_12_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_13_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_14_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_15_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_16_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_17_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_18_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_trust_RAJ_fill_19_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } check_variable = { var = ENG_nww_trust_RAJ value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_federal_RAJ_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_RAJ }
+ENG_nww_ui_compact_RAJ_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_RAJ NOT = { OR = { has_country_flag = ENG_nww_federal_RAJ } } }
+ENG_nww_ui_independence_RAJ_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_independence_RAJ NOT = { OR = { has_country_flag = ENG_nww_federal_RAJ has_country_flag = ENG_nww_compact_RAJ } } }
+ENG_nww_ui_no_treaty_RAJ_visible = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } NOT = { OR = { has_country_flag = ENG_nww_federal_RAJ has_country_flag = ENG_nww_compact_RAJ has_country_flag = ENG_nww_independence_RAJ } } }
+ENG_nww_ui_conference_yes_visible = { has_country_flag = ENG_nww_conference_active }
+ENG_nww_ui_conference_no_visible = { NOT = { has_country_flag = ENG_nww_conference_active } }
+} }
+ENG_nww_cabinet_ui = { context_type = decision_category window_name = ENG_nww_cabinet_window visible = { tag = ENG has_focus_tree = ENG_nww_focus } ai_enabled = { always = no } triggers = {
+ENG_nww_ui_mandate_fill_0_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_1_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_2_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_3_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_4_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_5_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_6_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_7_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_8_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_9_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_10_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_11_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_12_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_13_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_14_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_15_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_16_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_17_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_18_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_mandate_fill_19_visible = {  check_variable = { var = ENG_nww_labour_mandate value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_0_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 5.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_1_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 10.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_2_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 15.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_3_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 20.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_4_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 25.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_5_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 30.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_6_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 35.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_7_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 40.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_8_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 45.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_9_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 50.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_10_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 55.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_11_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 60.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_12_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 65.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_13_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 70.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_14_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 75.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_15_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 80.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_16_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 85.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_17_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 90.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_18_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 95.0 compare = greater_than_or_equals } }
+ENG_nww_ui_irish_fill_19_visible = {  check_variable = { var = ENG_nww_irish_pressure value = 100.0 compare = greater_than_or_equals } }
+ENG_nww_ui_deadline_visible = { has_country_flag = ENG_nww_irish_deadline_active }
+ENG_nww_ui_settled_visible = { has_country_flag = ENG_nww_irish_final NOT = { has_country_flag = ENG_nww_irish_deadline_active } }
+ENG_nww_ui_monitor_visible = { NOT = { OR = { has_country_flag = ENG_nww_irish_deadline_active has_country_flag = ENG_nww_irish_final } } }
+} }
+ENG_nww_routes_ui = { context_type = decision_category window_name = ENG_nww_routes_window visible = { tag = ENG has_focus_tree = ENG_nww_focus } ai_enabled = { always = no } triggers = {
+ENG_nww_ui_routes_fill_0_visible = {  check_variable = { var = ENG_nww_open_routes value = 0.2 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_1_visible = {  check_variable = { var = ENG_nww_open_routes value = 0.4 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_2_visible = {  check_variable = { var = ENG_nww_open_routes value = 0.6 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_3_visible = {  check_variable = { var = ENG_nww_open_routes value = 0.8 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_4_visible = {  check_variable = { var = ENG_nww_open_routes value = 1.0 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_5_visible = {  check_variable = { var = ENG_nww_open_routes value = 1.2 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_6_visible = {  check_variable = { var = ENG_nww_open_routes value = 1.4 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_7_visible = {  check_variable = { var = ENG_nww_open_routes value = 1.6 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_8_visible = {  check_variable = { var = ENG_nww_open_routes value = 1.8 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_9_visible = {  check_variable = { var = ENG_nww_open_routes value = 2.0 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_10_visible = {  check_variable = { var = ENG_nww_open_routes value = 2.2 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_11_visible = {  check_variable = { var = ENG_nww_open_routes value = 2.4 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_12_visible = {  check_variable = { var = ENG_nww_open_routes value = 2.6 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_13_visible = {  check_variable = { var = ENG_nww_open_routes value = 2.8 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_14_visible = {  check_variable = { var = ENG_nww_open_routes value = 3.0 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_15_visible = {  check_variable = { var = ENG_nww_open_routes value = 3.2 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_16_visible = {  check_variable = { var = ENG_nww_open_routes value = 3.4 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_17_visible = {  check_variable = { var = ENG_nww_open_routes value = 3.6 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_18_visible = {  check_variable = { var = ENG_nww_open_routes value = 3.8 compare = greater_than_or_equals } }
+ENG_nww_ui_routes_fill_19_visible = {  check_variable = { var = ENG_nww_open_routes value = 4.0 compare = greater_than_or_equals } }
+ENG_nww_ui_route_atlantic_on_visible = { check_variable = { var = ENG_nww_route_atlantic value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_route_atlantic_off_visible = { check_variable = { var = ENG_nww_route_atlantic value = 1 compare = less_than } }
+ENG_nww_ui_atlantic_open_visible = { check_variable = { var = ENG_nww_route_atlantic value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_atlantic_blocked_visible = { check_variable = { var = ENG_nww_route_atlantic value = 1 compare = less_than } }
+ENG_nww_ui_route_suez_on_visible = { check_variable = { var = ENG_nww_route_suez value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_route_suez_off_visible = { check_variable = { var = ENG_nww_route_suez value = 1 compare = less_than } }
+ENG_nww_ui_suez_open_visible = { check_variable = { var = ENG_nww_route_suez value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_suez_blocked_visible = { check_variable = { var = ENG_nww_route_suez value = 1 compare = less_than } }
+ENG_nww_ui_route_cape_on_visible = { check_variable = { var = ENG_nww_route_cape value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_route_cape_off_visible = { check_variable = { var = ENG_nww_route_cape value = 1 compare = less_than } has_country_flag = ENG_nww_cape_ready }
+ENG_nww_ui_cape_open_visible = { check_variable = { var = ENG_nww_route_cape value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_cape_blocked_visible = { check_variable = { var = ENG_nww_route_cape value = 1 compare = less_than } has_country_flag = ENG_nww_cape_ready }
+ENG_nww_ui_cape_unprepared_visible = { NOT = { has_country_flag = ENG_nww_cape_ready } check_variable = { var = ENG_nww_route_cape value = 1 compare = less_than } }
+ENG_nww_ui_route_indian_on_visible = { check_variable = { var = ENG_nww_route_indian value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_route_indian_off_visible = { check_variable = { var = ENG_nww_route_indian value = 1 compare = less_than } }
+ENG_nww_ui_indian_open_visible = { check_variable = { var = ENG_nww_route_indian value = 1 compare = greater_than_or_equals } }
+ENG_nww_ui_indian_blocked_visible = { check_variable = { var = ENG_nww_route_indian value = 1 compare = less_than } }
+ENG_nww_ui_route_warning_visible = { check_variable = { var = ENG_nww_open_routes value = 3 compare = less_than } }
+ENG_nww_ui_route_normal_visible = { check_variable = { var = ENG_nww_open_routes value = 3 compare = greater_than_or_equals } }
+} }
+}

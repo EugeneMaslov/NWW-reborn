@@ -622,6 +622,13 @@ from validate_repository_layout import validate_layout
 validate_layout(ROOT, check)
 from validate_germany_politics import validate_germany
 validate_germany(ROOT, GAME, check)
+from validate_britain_content import main as validate_britain
+check(validate_britain(['--game', str(GAME)]) == 0, 'ENG country package validation failed')
+from test_britain_lifecycle import main as test_britain_lifecycle
+try:
+    test_britain_lifecycle()
+except AssertionError as exc:
+    check(False, f'ENG source-script lifecycle: {exc}')
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

@@ -1,0 +1,1 @@
+characters = { ENG_nww_attlee = { name = ENG_nww_attlee portraits = { civilian = { large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds" } } country_leader = { ideology = socialism traits = { } expire = "1965.1.1" } } }

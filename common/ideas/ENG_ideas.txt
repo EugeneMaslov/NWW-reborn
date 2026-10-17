@@ -1,0 +1,12 @@
+ideas = { country = {
+ENG_nww_markets = { picture = ENG_nww_markets allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.05 } }
+ENG_nww_finance = { picture = ENG_nww_finance allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { trade_opinion_factor = 0.10 } }
+ENG_nww_project_cost = { picture = ENG_nww_project_cost allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { civilian_factory_use = 2 } }
+ENG_nww_strikes = { picture = ENG_nww_strikes allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = -0.10 } }
+ENG_nww_ulster_garrison = { picture = ENG_nww_ulster_garrison allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { political_power_factor = -0.10 } }
+ENG_nww_retooling = { picture = ENG_nww_retooling allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = -0.05 } }
+ENG_nww_sea_delay = { picture = ENG_nww_sea_delay allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { political_power_factor = -0.05 } }
+ENG_nww_trade_partner = { picture = ENG_nww_trade_partner allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.05 } }
+ENG_nww_federal_partner = { picture = ENG_nww_federal_partner allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.05 } }
+ENG_nww_pacifism = { picture = ENG_nww_pacifism allowed = { always = yes } allowed_civil_war = { always = no } removal_cost = -1 modifier = { war_support_factor = -0.10 } }
+} }

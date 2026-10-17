@@ -1,0 +1,1 @@
+opinion_modifiers = { ENG_nww_rapprochement = { value = 25 decay = 0.5 } }

@@ -1,0 +1,85 @@
+{
+  "panels": [
+    {
+      "name": "imperial",
+      "width": 440,
+      "height": 458
+    },
+    {
+      "name": "cabinet",
+      "width": 440,
+      "height": 290
+    },
+    {
+      "name": "routes",
+      "width": 440,
+      "height": 366
+    }
+  ],
+  "meters": [
+    {
+      "name": "trust_CAN",
+      "var": "ENG_nww_trust_CAN",
+      "panel": "imperial",
+      "y": 89,
+      "gate": "CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } }",
+      "maximum": 100
+    },
+    {
+      "name": "trust_AST",
+      "var": "ENG_nww_trust_AST",
+      "panel": "imperial",
+      "y": 153,
+      "gate": "AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } }",
+      "maximum": 100
+    },
+    {
+      "name": "trust_SAF",
+      "var": "ENG_nww_trust_SAF",
+      "panel": "imperial",
+      "y": 217,
+      "gate": "SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } }",
+      "maximum": 100
+    },
+    {
+      "name": "trust_NZL",
+      "var": "ENG_nww_trust_NZL",
+      "panel": "imperial",
+      "y": 281,
+      "gate": "NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } }",
+      "maximum": 100
+    },
+    {
+      "name": "trust_RAJ",
+      "var": "ENG_nww_trust_RAJ",
+      "panel": "imperial",
+      "y": 345,
+      "gate": "RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } }",
+      "maximum": 100
+    },
+    {
+      "name": "mandate",
+      "var": "ENG_nww_labour_mandate",
+      "panel": "cabinet",
+      "y": 94,
+      "gate": "",
+      "maximum": 100
+    },
+    {
+      "name": "irish",
+      "var": "ENG_nww_irish_pressure",
+      "panel": "cabinet",
+      "y": 183,
+      "gate": "",
+      "maximum": 100
+    },
+    {
+      "name": "routes",
+      "var": "ENG_nww_open_routes",
+      "panel": "routes",
+      "y": 92,
+      "gate": "",
+      "maximum": 4
+    }
+  ]
+}

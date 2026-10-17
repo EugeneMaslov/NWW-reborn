@@ -24,6 +24,7 @@ NWW Reborn — модификация для **Hearts of Iron IV 1.19.3** с а�
 | **Османская империя — TUR** | Платные последовательные переговоры с советами и династический балканский маршрут: Болгария, Греция, дальнейшее давление в регионе. |
 | **Германская империя — GER** | Кризис наследования, четыре политических пути, борьба за устройство империи и сохранённые заморские владения. |
 | **Франция — FRA** | **146 фокусов**: четыре основные политические ветки, мандат кабинета и уличная напряжённость, региональный заморский договор, модернизация промышленности и вооружённых сил; собственные панели решений и эмблемы. |
+| **Великобритания — ENG** | **153 фокуса**: Содружество и федерация, авторитарные и социалистические маршруты, изоляционизм, ирландское урегулирование; оплачиваемые имперские переговоры, морские артерии, промышленность и отдельные программы армии, RAF и Royal Navy. [Описание пакета и проверок](docs/ENG_overhaul.md). |
 
 Венгрия и Афганистан также используют адаптированный контент старого NWW. Масштаб деревьев различается; другие страны продолжают разрабатываться.
 
@@ -73,6 +74,8 @@ NWW Reborn — модификация для **Hearts of Iron IV 1.19.3** с а�
 
 ```powershell
 python tools/validate_country_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
+python tools/validate_britain_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
+python tools/test_britain_lifecycle.py
 python tools/validate_legacy_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
 python tools/validate_france_content.py --game "D:/Steam/steamapps/common/Hearts of Iron IV"
 python tools/test_france_lifecycle.py

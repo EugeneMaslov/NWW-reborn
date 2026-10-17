@@ -1,0 +1,281 @@
+ENG_nww_rebuild_spirits = {
+set_variable = { ENG_nww_state_political_power_factor = -0.20 }
+set_variable = { ENG_nww_state_stability_factor = -0.05 }
+if = { limit = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_state } } } add_dynamic_modifier = { modifier = ENG_nww_state } }
+set_variable = { ENG_nww_economy_production_speed_buildings_factor = -0.10 }
+set_variable = { ENG_nww_economy_production_factory_efficiency_gain_factor = -0.05 }
+set_variable = { ENG_nww_economy_industrial_capacity_factory = 0.00 }
+set_variable = { ENG_nww_economy_production_factory_max_efficiency_factor = 0.00 }
+set_variable = { ENG_nww_economy_energy_gain_factor = 0.00 }
+if = { limit = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_economy } } } add_dynamic_modifier = { modifier = ENG_nww_economy } }
+set_variable = { ENG_nww_army_army_org_factor = 0.05 }
+set_variable = { ENG_nww_army_training_time_army_factor = 0.10 }
+set_variable = { ENG_nww_army_planning_speed = 0.00 }
+set_variable = { ENG_nww_army_supply_consumption_factor = 0.00 }
+set_variable = { ENG_nww_army_army_org_regain = 0.00 }
+set_variable = { ENG_nww_army_army_speed_factor = 0.00 }
+set_variable = { ENG_nww_army_max_planning = 0.00 }
+set_variable = { ENG_nww_army_army_core_defence_factor = 0.00 }
+if = { limit = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_army } } } add_dynamic_modifier = { modifier = ENG_nww_army } }
+set_variable = { ENG_nww_air_air_mission_efficiency = 0.00 }
+set_variable = { ENG_nww_air_air_intercept_efficiency = 0.00 }
+set_variable = { ENG_nww_air_air_strategic_bomber_bombing_factor = 0.00 }
+set_variable = { ENG_nww_air_air_cas_efficiency = 0.00 }
+if = { limit = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_air } } } add_dynamic_modifier = { modifier = ENG_nww_air } }
+set_variable = { ENG_nww_navy_industrial_capacity_dockyard = 0.00 }
+set_variable = { ENG_nww_navy_convoy_escort_efficiency = 0.00 }
+set_variable = { ENG_nww_navy_naval_detection = 0.00 }
+set_variable = { ENG_nww_navy_navy_capital_ship_attack_factor = 0.00 }
+if = { limit = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_navy } } } add_dynamic_modifier = { modifier = ENG_nww_navy } }
+set_variable = { ENG_nww_science_research_speed_factor = 0.00 }
+if = { limit = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_science } } } add_dynamic_modifier = { modifier = ENG_nww_science } }
+if = { limit = { has_completed_focus = ENG_nww_majority } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_commonwealth_budget } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_commonwealth_charter } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_cabinet_accountability } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_constitutional_crown } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_federal_budget } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_federal_parliament } add_to_variable = { ENG_nww_state_stability_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_federal_treasury } add_to_variable = { ENG_nww_state_political_power_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_equal_union } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_corporate_chambers } add_to_variable = { ENG_nww_state_political_power_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_party_police } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_labour_charter } add_to_variable = { ENG_nww_economy_industrial_capacity_factory = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_imperial_discipline } add_to_variable = { ENG_nww_state_political_power_factor = -0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_defence_council } add_to_variable = { ENG_nww_state_political_power_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_labour_arbitration } add_to_variable = { ENG_nww_economy_production_factory_efficiency_gain_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_crown_directory } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_crown_directory } add_to_variable = { ENG_nww_state_political_power_factor = -0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_labour_election } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_public_energy } add_to_variable = { ENG_nww_economy_energy_gain_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_housing_parliament } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_welfare_parliament } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_housing_republic } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_welfare_republic } add_to_variable = { ENG_nww_state_political_power_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_coastal_watch } add_to_variable = { ENG_nww_air_air_intercept_efficiency = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_island_fortress } add_to_variable = { ENG_nww_state_political_power_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_armed_neutrality } add_to_variable = { ENG_nww_army_army_core_defence_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_home_charter } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_irish_commission } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_machine_tools } add_to_variable = { ENG_nww_economy_production_factory_efficiency_gain_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_electric_grid } add_to_variable = { ENG_nww_economy_energy_gain_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_industrial_standards } add_to_variable = { ENG_nww_economy_production_speed_buildings_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_free_trade } add_to_variable = { ENG_nww_economy_industrial_capacity_factory = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_protection } add_to_variable = { ENG_nww_economy_production_factory_max_efficiency_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_civil_reconstruction } add_to_variable = { ENG_nww_economy_production_speed_buildings_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_quality } add_to_variable = { ENG_nww_economy_production_factory_max_efficiency_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_mass_contracts } add_to_variable = { ENG_nww_economy_industrial_capacity_factory = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_standard_ammunition } add_to_variable = { ENG_nww_economy_production_factory_efficiency_gain_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_production_inspection } add_to_variable = { ENG_nww_economy_production_factory_max_efficiency_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_research_council } add_to_variable = { ENG_nww_science_research_speed_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_scientific_service } add_to_variable = { ENG_nww_science_research_speed_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_escort } add_to_variable = { ENG_nww_navy_convoy_escort_efficiency = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_strike } add_to_variable = { ENG_nww_navy_navy_capital_ship_attack_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_escort_groups } add_to_variable = { ENG_nww_navy_naval_detection = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_ocean_watch } add_to_variable = { ENG_nww_navy_convoy_escort_efficiency = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_naval_strike_control } add_to_variable = { ENG_nww_navy_navy_capital_ship_attack_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_two_ocean_fleet } add_to_variable = { ENG_nww_navy_industrial_capacity_dockyard = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_fighter_command } add_to_variable = { ENG_nww_air_air_intercept_efficiency = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_bomber_command } add_to_variable = { ENG_nww_air_air_strategic_bomber_bombing_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_sector_hq } add_to_variable = { ENG_nww_air_air_mission_efficiency = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_home_air_shield } add_to_variable = { ENG_nww_air_air_intercept_efficiency = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_navigation } add_to_variable = { ENG_nww_air_air_mission_efficiency = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_strategic_campaign } add_to_variable = { ENG_nww_air_air_strategic_bomber_bombing_factor = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_air_ground_liaison } add_to_variable = { ENG_nww_air_air_cas_efficiency = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_staff_college } add_to_variable = { ENG_nww_army_planning_speed = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_expeditionary } add_to_variable = { ENG_nww_army_army_org_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_continental } add_to_variable = { ENG_nww_army_army_org_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_overseas_supply } add_to_variable = { ENG_nww_army_supply_consumption_factor = -0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_professional_rotations } add_to_variable = { ENG_nww_army_army_org_regain = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_rapid_expedition } add_to_variable = { ENG_nww_army_army_speed_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_reserve_act } add_to_variable = { ENG_nww_army_training_time_army_factor = -0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_combined_arms } add_to_variable = { ENG_nww_army_max_planning = 0.10 } }
+if = { limit = { has_completed_focus = ENG_nww_mechanised_logistics } add_to_variable = { ENG_nww_army_army_speed_factor = 0.05 } }
+if = { limit = { has_completed_focus = ENG_nww_army_readiness } add_to_variable = { ENG_nww_army_army_org_factor = 0.05 } }
+if = { limit = { has_country_flag = ENG_nww_social_settlement } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
+}
+
+ENG_nww_build_civilian = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = $AMOUNT$ add_building_construction = { type = industrial_complex level = $AMOUNT$ instant_build = yes } }
+}
+
+ENG_nww_build_military = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = $AMOUNT$ add_building_construction = { type = arms_factory level = $AMOUNT$ instant_build = yes } }
+}
+
+ENG_nww_build_dockyard = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = $AMOUNT$ add_building_construction = { type = dockyard level = $AMOUNT$ instant_build = yes } }
+}
+
+ENG_nww_build_infrastructure = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = $AMOUNT$ instant_build = yes } }
+}
+
+ENG_nww_build_airbase = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = $AMOUNT$ instant_build = yes } }
+}
+
+ENG_nww_coal_project = {
+random_owned_controlled_state = { limit = { is_core_of = ENG } add_resource = { type = coal amount = 6 } }
+}
+
+ENG_nww_steel_project = {
+random_owned_controlled_state = { limit = { is_core_of = ENG } add_resource = { type = steel amount = 4 } }
+}
+
+ENG_nww_radar_project = {
+random_owned_controlled_state = { limit = { is_core_of = ENG radar_station < 5 } add_building_construction = { type = radar_station level = 2 instant_build = yes } }
+}
+
+ENG_nww_research_facility = {
+random_owned_controlled_state = { limit = { is_core_of = ENG air_facility < 1 } add_building_construction = { type = air_facility level = 1 instant_build = yes } }
+}
+
+ENG_nww_trust_all = {
+add_to_variable = { ENG_nww_trust_CAN = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_AST = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_SAF = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_NZL = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_RAJ = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+}
+
+ENG_nww_initialize = {
+if = { limit = { NOT = { has_country_flag = ENG_nww_initialized } }
+set_country_flag = ENG_nww_initialized
+set_variable = { ENG_nww_labour_mandate = 10 } set_variable = { ENG_nww_irish_pressure = 30 }
+add_ideas = { ENG_nww_markets ENG_nww_finance }
+remove_ideas = stiff_upper_lip remove_ideas = MTG_naval_treaty_adherent remove_ideas = MTG_naval_treaty_adherent_reduced
+remove_from_tech_sharing_group = commonwealth_research
+clr_country_flag = ENG_nww_project_busy
+set_variable = { ENG_nww_trust_CAN = 55 }
+set_variable = { ENG_nww_trust_AST = 55 }
+set_variable = { ENG_nww_trust_SAF = 45 }
+set_variable = { ENG_nww_trust_NZL = 55 }
+set_variable = { ENG_nww_trust_RAJ = 45 }
+ENG_nww_choose_ai_plan = yes } ENG_nww_rebuild_spirits = yes ENG_nww_recount_partners = yes ENG_nww_update_routes = yes
+}
+
+ENG_nww_choose_ai_plan = {
+if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = DEMOCRATIC_HISTORICAL } } set_country_flag = ENG_nww_plan_continuity }
+else_if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = DEMOCRATIC_ALTERNATE } } set_country_flag = ENG_nww_plan_federal }
+else_if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = FASCIST } } set_country_flag = ENG_nww_plan_fascist }
+else_if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = NEUTRALITY } } set_country_flag = ENG_nww_plan_directory }
+else_if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = COMMUNIST } } set_country_flag = ENG_nww_plan_republic }
+else_if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = SOCIALIST } } set_country_flag = ENG_nww_plan_social }
+else_if = { limit = { has_game_rule = { rule = ENG_ai_behavior option = ISOLATION } } set_country_flag = ENG_nww_plan_island }
+else_if = { limit = { is_historical_focus_on = yes has_game_rule = { rule = ENG_ai_behavior option = DEFAULT } } set_country_flag = ENG_nww_plan_continuity }
+else = { random_list = { 30 = { set_country_flag = ENG_nww_plan_continuity } 25 = { set_country_flag = ENG_nww_plan_federal } 15 = { set_country_flag = ENG_nww_plan_fascist } 10 = { set_country_flag = ENG_nww_plan_directory } 15 = { set_country_flag = ENG_nww_plan_social } 5 = { set_country_flag = ENG_nww_plan_island } } }
+if = { limit = { OR = { has_country_flag = ENG_nww_plan_fascist has_country_flag = ENG_nww_plan_directory } } set_country_flag = ENG_nww_plan_right }
+if = { limit = { OR = { has_country_flag = ENG_nww_plan_social has_country_flag = ENG_nww_plan_republic } } set_country_flag = ENG_nww_plan_labour }
+}
+
+ENG_nww_recount_partners = {
+set_variable = { ENG_nww_federal_count = 0 } set_variable = { ENG_nww_compact_count = 0 }
+if = { limit = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_CAN } add_to_variable = { ENG_nww_federal_count = 1 } }
+if = { limit = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_CAN } add_to_variable = { ENG_nww_compact_count = 1 } }
+if = { limit = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_AST } add_to_variable = { ENG_nww_federal_count = 1 } }
+if = { limit = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_AST } add_to_variable = { ENG_nww_compact_count = 1 } }
+if = { limit = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_SAF } add_to_variable = { ENG_nww_federal_count = 1 } }
+if = { limit = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_SAF } add_to_variable = { ENG_nww_compact_count = 1 } }
+if = { limit = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_NZL } add_to_variable = { ENG_nww_federal_count = 1 } }
+if = { limit = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_NZL } add_to_variable = { ENG_nww_compact_count = 1 } }
+if = { limit = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_federal_RAJ } add_to_variable = { ENG_nww_federal_count = 1 } }
+if = { limit = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } has_country_flag = ENG_nww_compact_RAJ } add_to_variable = { ENG_nww_compact_count = 1 } }
+if = { limit = { OR = { has_country_flag = ENG_nww_social_settlement has_country_flag = ENG_nww_island_settlement } } remove_ideas = ENG_nww_markets }
+if = { limit = { has_country_flag = ENG_nww_island_settlement } remove_ideas = ENG_nww_finance }
+if = { limit = { check_variable = { var = ENG_nww_compact_count value = 1 compare = greater_than_or_equals } } if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } else = { remove_ideas = ENG_nww_trade_partner }
+}
+
+ENG_nww_release_project = {
+clr_country_flag = ENG_nww_project_busy remove_ideas = ENG_nww_project_cost
+}
+
+ENG_nww_fascist_transition = {
+promote_character = ENG_oswald_mosley set_politics = { ruling_party = fascism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -15 } add_timed_idea = { idea = ENG_nww_strikes days = 365 } if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+}
+
+ENG_nww_directory_transition = {
+create_country_leader = { name = ENG_nww_directory_leader ideology = despotism expire = "1965.1.1" } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -15 } add_timed_idea = { idea = ENG_nww_strikes days = 365 } if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+}
+
+ENG_nww_socialist_transition = {
+promote_character = ENG_harry_pollitt set_country_flag = ENG_nww_social_settlement remove_ideas = george_v remove_ideas = ENG_king_edward remove_ideas = ENG_george_vi set_politics = { ruling_party = communism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -15 } if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+}
+
+ENG_nww_labour_transition = {
+recruit_character = ENG_nww_attlee promote_character = ENG_nww_attlee set_politics = { ruling_party = democratic elections_allowed = yes election_frequency = 48 } add_ideas = ENG_nww_pacifism
+}
+
+ENG_nww_offer_canadian_project = {
+set_country_flag = ENG_nww_canada_project_unlocked
+}
+
+ENG_nww_offer_indian_project = {
+set_country_flag = ENG_nww_india_project_unlocked
+}
+
+ENG_nww_update_routes = {
+set_variable = { ENG_nww_open_routes = 0 }
+set_variable = { ENG_nww_route_atlantic = 0 } if = { limit = { has_navy_size = { size > 99 type = convoy } 132 = { OR = { is_controlled_by = ENG controller = { is_in_faction_with = ENG NOT = { has_war_with = ENG } } controller = { gives_military_access_to = ENG NOT = { has_war_with = ENG } } } } } set_variable = { ENG_nww_route_atlantic = 1 } add_to_variable = { ENG_nww_open_routes = 1 } }
+set_variable = { ENG_nww_route_suez = 0 } if = { limit = { has_navy_size = { size > 99 type = convoy } 453 = { OR = { is_controlled_by = ENG controller = { is_in_faction_with = ENG NOT = { has_war_with = ENG } } controller = { gives_military_access_to = ENG NOT = { has_war_with = ENG } } } } } set_variable = { ENG_nww_route_suez = 1 } add_to_variable = { ENG_nww_open_routes = 1 } }
+set_variable = { ENG_nww_route_cape = 0 } if = { limit = { has_navy_size = { size > 99 type = convoy } has_country_flag = ENG_nww_cape_ready 681 = { OR = { is_controlled_by = ENG controller = { is_in_faction_with = ENG NOT = { has_war_with = ENG } } controller = { gives_military_access_to = ENG NOT = { has_war_with = ENG } } } } } set_variable = { ENG_nww_route_cape = 1 } add_to_variable = { ENG_nww_open_routes = 1 } }
+set_variable = { ENG_nww_route_indian = 0 } if = { limit = { has_navy_size = { size > 99 type = convoy } 336 = { OR = { is_controlled_by = ENG controller = { is_in_faction_with = ENG NOT = { has_war_with = ENG } } controller = { gives_military_access_to = ENG NOT = { has_war_with = ENG } } } } } set_variable = { ENG_nww_route_indian = 1 } add_to_variable = { ENG_nww_open_routes = 1 } }
+if = { limit = { has_country_flag = ENG_nww_routes_unlocked check_variable = { var = ENG_nww_open_routes value = 3 compare = less_than } } if = { limit = { NOT = { has_idea = ENG_nww_sea_delay } } add_ideas = ENG_nww_sea_delay } } else = { remove_ideas = ENG_nww_sea_delay }
+}
+
+ENG_nww_clamp = {
+clamp_variable = { var = ENG_nww_irish_pressure min = 0 max = 100 } clamp_variable = { var = ENG_nww_labour_mandate min = 0 max = 100 }
+clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+}
+
+ENG_nww_monthly = {
+ENG_nww_clamp = yes ENG_nww_recount_partners = yes ENG_nww_update_routes = yes
+if = { limit = { 119 = { is_owned_by = ENG } NOT = { has_country_flag = ENG_nww_irish_final } has_war = no has_capitulated = no } add_to_variable = { ENG_nww_irish_pressure = 3 } if = { limit = { has_country_flag = ENG_nww_irish_coercion } add_to_variable = { ENG_nww_irish_pressure = 3 } } }
+if = { limit = { check_variable = { var = ENG_nww_irish_pressure value = 70 compare = greater_than_or_equals } NOT = { has_country_flag = ENG_nww_irish_final } NOT = { has_country_flag = ENG_nww_irish_deadline_active } NOT = { has_country_flag = ENG_nww_irish_failed } has_war = no 119 = { is_owned_by = ENG } } set_country_flag = ENG_nww_irish_deadline_active activate_mission = ENG_nww_irish_deadline }
+if = { limit = { CAN = { exists = yes is_subject_of = ENG } NOT = { has_country_flag = ENG_nww_compact_CAN } NOT = { has_country_flag = ENG_nww_federal_CAN } NOT = { has_country_flag = ENG_nww_independence_CAN } NOT = { has_country_flag = ENG_nww_coercive_settlement } has_war = no } add_to_variable = { ENG_nww_trust_CAN = -1 } }
+if = { limit = { AST = { exists = yes is_subject_of = ENG } NOT = { has_country_flag = ENG_nww_compact_AST } NOT = { has_country_flag = ENG_nww_federal_AST } NOT = { has_country_flag = ENG_nww_independence_AST } NOT = { has_country_flag = ENG_nww_coercive_settlement } has_war = no } add_to_variable = { ENG_nww_trust_AST = -1 } }
+if = { limit = { SAF = { exists = yes is_subject_of = ENG } NOT = { has_country_flag = ENG_nww_compact_SAF } NOT = { has_country_flag = ENG_nww_federal_SAF } NOT = { has_country_flag = ENG_nww_independence_SAF } NOT = { has_country_flag = ENG_nww_coercive_settlement } has_war = no } add_to_variable = { ENG_nww_trust_SAF = -1 } }
+if = { limit = { NZL = { exists = yes is_subject_of = ENG } NOT = { has_country_flag = ENG_nww_compact_NZL } NOT = { has_country_flag = ENG_nww_federal_NZL } NOT = { has_country_flag = ENG_nww_independence_NZL } NOT = { has_country_flag = ENG_nww_coercive_settlement } has_war = no } add_to_variable = { ENG_nww_trust_NZL = -1 } }
+if = { limit = { RAJ = { exists = yes is_subject_of = ENG } NOT = { has_country_flag = ENG_nww_compact_RAJ } NOT = { has_country_flag = ENG_nww_federal_RAJ } NOT = { has_country_flag = ENG_nww_independence_RAJ } NOT = { has_country_flag = ENG_nww_coercive_settlement } has_war = no } add_to_variable = { ENG_nww_trust_RAJ = -1 } }
+ENG_nww_clamp = yes
+if = { limit = { has_war = no CAN = { exists = yes is_subject_of = ENG has_capitulated = no } check_variable = { var = ENG_nww_trust_CAN value = 25 compare = less_than } NOT = { has_country_flag = ENG_nww_crisis_CAN } NOT = { has_country_flag = ENG_nww_crisis_settled_CAN } NOT = { has_country_flag = ENG_nww_coercive_settlement } } set_country_flag = ENG_nww_crisis_CAN activate_mission = ENG_nww_deadline_CAN }
+if = { limit = { has_war = no AST = { exists = yes is_subject_of = ENG has_capitulated = no } check_variable = { var = ENG_nww_trust_AST value = 25 compare = less_than } NOT = { has_country_flag = ENG_nww_crisis_AST } NOT = { has_country_flag = ENG_nww_crisis_settled_AST } NOT = { has_country_flag = ENG_nww_coercive_settlement } } set_country_flag = ENG_nww_crisis_AST activate_mission = ENG_nww_deadline_AST }
+if = { limit = { has_war = no SAF = { exists = yes is_subject_of = ENG has_capitulated = no } check_variable = { var = ENG_nww_trust_SAF value = 25 compare = less_than } NOT = { has_country_flag = ENG_nww_crisis_SAF } NOT = { has_country_flag = ENG_nww_crisis_settled_SAF } NOT = { has_country_flag = ENG_nww_coercive_settlement } } set_country_flag = ENG_nww_crisis_SAF activate_mission = ENG_nww_deadline_SAF }
+if = { limit = { has_war = no NZL = { exists = yes is_subject_of = ENG has_capitulated = no } check_variable = { var = ENG_nww_trust_NZL value = 25 compare = less_than } NOT = { has_country_flag = ENG_nww_crisis_NZL } NOT = { has_country_flag = ENG_nww_crisis_settled_NZL } NOT = { has_country_flag = ENG_nww_coercive_settlement } } set_country_flag = ENG_nww_crisis_NZL activate_mission = ENG_nww_deadline_NZL }
+if = { limit = { has_war = no RAJ = { exists = yes is_subject_of = ENG has_capitulated = no } check_variable = { var = ENG_nww_trust_RAJ value = 25 compare = less_than } NOT = { has_country_flag = ENG_nww_crisis_RAJ } NOT = { has_country_flag = ENG_nww_crisis_settled_RAJ } NOT = { has_country_flag = ENG_nww_coercive_settlement } } set_country_flag = ENG_nww_crisis_RAJ activate_mission = ENG_nww_deadline_RAJ }
+}
+
+ENG_nww_daily = {
+if = { limit = { NOT = { has_focus_tree = ENG_nww_focus } has_civil_war = no } load_focus_tree = { tree = ENG_nww_focus keep_completed = yes } }
+if = { limit = { NOT = { has_country_flag = ENG_nww_initialized } } ENG_nww_initialize = yes }
+if = { limit = { OR = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_state } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_economy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_army } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_air } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_navy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_science } } } } ENG_nww_rebuild_spirits = yes }
+if = { limit = { has_completed_focus = ENG_nww_belfast has_country_flag = ENG_nww_irish_agreement } set_country_flag = ENG_nww_irish_final }
+ENG_nww_recount_partners = yes ENG_nww_update_routes = yes
+if = { limit = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_CAN } CAN = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_CAN } CAN = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { CAN = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }
+if = { limit = { has_country_flag = ENG_nww_science_unlocked has_country_flag = ENG_nww_compact_CAN NOT = { has_country_flag = ENG_nww_research_joined_CAN } CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } set_country_flag = ENG_nww_research_joined_CAN CAN = { add_to_tech_sharing_group = ENG_nww_research } }
+if = { limit = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_AST } AST = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_AST } AST = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { AST = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }
+if = { limit = { has_country_flag = ENG_nww_science_unlocked has_country_flag = ENG_nww_compact_AST NOT = { has_country_flag = ENG_nww_research_joined_AST } AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } set_country_flag = ENG_nww_research_joined_AST AST = { add_to_tech_sharing_group = ENG_nww_research } }
+if = { limit = { SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_SAF } SAF = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_SAF } SAF = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { SAF = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }
+if = { limit = { has_country_flag = ENG_nww_science_unlocked has_country_flag = ENG_nww_compact_SAF NOT = { has_country_flag = ENG_nww_research_joined_SAF } SAF = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } set_country_flag = ENG_nww_research_joined_SAF SAF = { add_to_tech_sharing_group = ENG_nww_research } }
+if = { limit = { NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_NZL } NZL = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_NZL } NZL = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { NZL = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }
+if = { limit = { has_country_flag = ENG_nww_science_unlocked has_country_flag = ENG_nww_compact_NZL NOT = { has_country_flag = ENG_nww_research_joined_NZL } NZL = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } set_country_flag = ENG_nww_research_joined_NZL NZL = { add_to_tech_sharing_group = ENG_nww_research } }
+if = { limit = { RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_RAJ } RAJ = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_RAJ } RAJ = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { RAJ = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }
+if = { limit = { has_country_flag = ENG_nww_science_unlocked has_country_flag = ENG_nww_compact_RAJ NOT = { has_country_flag = ENG_nww_research_joined_RAJ } RAJ = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } set_country_flag = ENG_nww_research_joined_RAJ RAJ = { add_to_tech_sharing_group = ENG_nww_research } }
+if = { limit = { has_completed_focus = ENG_nww_premiers } set_country_flag = ENG_nww_conferences_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_conference } set_country_flag = ENG_nww_conferences_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_ratification } set_country_flag = ENG_nww_ratification_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_colonial_review } set_country_flag = ENG_nww_decolonisation_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_island_treaties } set_country_flag = ENG_nww_decolonisation_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_imperial_investment } set_country_flag = ENG_nww_investment_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_canadian_corridors } set_country_flag = ENG_nww_canada_project_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_indian_electricity } set_country_flag = ENG_nww_india_project_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_scientific_exchange } set_country_flag = ENG_nww_science_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_naval_planning } set_country_flag = ENG_nww_routes_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_cape_route } set_country_flag = ENG_nww_cape_ready }
+if = { limit = { has_completed_focus = ENG_nww_irish_report } set_country_flag = ENG_nww_irish_unlocked }
+if = { limit = { has_completed_focus = ENG_nww_irish_talks } set_country_flag = ENG_nww_irish_talks_ready }
+}

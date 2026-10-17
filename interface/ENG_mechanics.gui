@@ -1,0 +1,419 @@
+guiTypes = {
+containerWindowType = { name = "ENG_nww_imperial_window" position = { x = 0 y = 0 } size = { width = 100% height = 458 }
+iconType = { name = "ENG_nww_ui_imperial_background" spriteType = "GFX_ENG_ui_imperial" orientation = center_up position = { x = -220 y = 0 } }
+iconType = { name = "ENG_nww_ui_imperial_emblem" spriteType = "GFX_decision_category_ENG_nww_imperial" orientation = center_up position = { x = -206 y = 9 } }
+instantTextBoxType = { name = "ENG_nww_ui_imperial_title" orientation = center_up position = { x = -142 y = 18 } font = "hoi_16mbs" text = "ENG_nww_ui_imperial_title" format = left maxWidth = 340 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_trust_CAN" orientation = center_up position = { x = -190 y = 65 } font = "hoi_16mbs" text = "ENG_nww_ui_trust_CAN" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_absent_CAN" orientation = center_up position = { x = -190 y = 65 } font = "hoi_16mbs" text = "ENG_nww_ui_absent_CAN" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 89 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_mark_25" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -96 y = 86 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_mark_40" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -39 y = 86 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_CAN_mark_65" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = 56 y = 86 } pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_federal_CAN" orientation = center_up position = { x = -190 y = 104 } font = "hoi_16mbs" text = "ENG_nww_ui_federal" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_compact_CAN" orientation = center_up position = { x = -190 y = 104 } font = "hoi_16mbs" text = "ENG_nww_ui_compact" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_independence_CAN" orientation = center_up position = { x = -190 y = 104 } font = "hoi_16mbs" text = "ENG_nww_ui_independence" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_no_treaty_CAN" orientation = center_up position = { x = -190 y = 104 } font = "hoi_16mbs" text = "ENG_nww_ui_no_treaty" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_trust_AST" orientation = center_up position = { x = -190 y = 129 } font = "hoi_16mbs" text = "ENG_nww_ui_trust_AST" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_absent_AST" orientation = center_up position = { x = -190 y = 129 } font = "hoi_16mbs" text = "ENG_nww_ui_absent_AST" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 153 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_mark_25" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -96 y = 150 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_mark_40" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -39 y = 150 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_AST_mark_65" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = 56 y = 150 } pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_federal_AST" orientation = center_up position = { x = -190 y = 168 } font = "hoi_16mbs" text = "ENG_nww_ui_federal" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_compact_AST" orientation = center_up position = { x = -190 y = 168 } font = "hoi_16mbs" text = "ENG_nww_ui_compact" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_independence_AST" orientation = center_up position = { x = -190 y = 168 } font = "hoi_16mbs" text = "ENG_nww_ui_independence" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_no_treaty_AST" orientation = center_up position = { x = -190 y = 168 } font = "hoi_16mbs" text = "ENG_nww_ui_no_treaty" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_trust_SAF" orientation = center_up position = { x = -190 y = 193 } font = "hoi_16mbs" text = "ENG_nww_ui_trust_SAF" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_absent_SAF" orientation = center_up position = { x = -190 y = 193 } font = "hoi_16mbs" text = "ENG_nww_ui_absent_SAF" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 217 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_mark_25" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -96 y = 214 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_mark_40" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -39 y = 214 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_SAF_mark_65" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = 56 y = 214 } pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_federal_SAF" orientation = center_up position = { x = -190 y = 232 } font = "hoi_16mbs" text = "ENG_nww_ui_federal" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_compact_SAF" orientation = center_up position = { x = -190 y = 232 } font = "hoi_16mbs" text = "ENG_nww_ui_compact" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_independence_SAF" orientation = center_up position = { x = -190 y = 232 } font = "hoi_16mbs" text = "ENG_nww_ui_independence" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_no_treaty_SAF" orientation = center_up position = { x = -190 y = 232 } font = "hoi_16mbs" text = "ENG_nww_ui_no_treaty" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_trust_NZL" orientation = center_up position = { x = -190 y = 257 } font = "hoi_16mbs" text = "ENG_nww_ui_trust_NZL" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_absent_NZL" orientation = center_up position = { x = -190 y = 257 } font = "hoi_16mbs" text = "ENG_nww_ui_absent_NZL" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 281 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_mark_25" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -96 y = 278 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_mark_40" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -39 y = 278 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_NZL_mark_65" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = 56 y = 278 } pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_federal_NZL" orientation = center_up position = { x = -190 y = 296 } font = "hoi_16mbs" text = "ENG_nww_ui_federal" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_compact_NZL" orientation = center_up position = { x = -190 y = 296 } font = "hoi_16mbs" text = "ENG_nww_ui_compact" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_independence_NZL" orientation = center_up position = { x = -190 y = 296 } font = "hoi_16mbs" text = "ENG_nww_ui_independence" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_no_treaty_NZL" orientation = center_up position = { x = -190 y = 296 } font = "hoi_16mbs" text = "ENG_nww_ui_no_treaty" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_trust_RAJ" orientation = center_up position = { x = -190 y = 321 } font = "hoi_16mbs" text = "ENG_nww_ui_trust_RAJ" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_absent_RAJ" orientation = center_up position = { x = -190 y = 321 } font = "hoi_16mbs" text = "ENG_nww_ui_absent_RAJ" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 345 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_mark_25" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -96 y = 342 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_mark_40" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -39 y = 342 } pdx_tooltip = ENG_nww_ui_trust_help }
+iconType = { name = "ENG_nww_ui_trust_RAJ_mark_65" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = 56 y = 342 } pdx_tooltip = ENG_nww_ui_trust_help }
+instantTextBoxType = { name = "ENG_nww_ui_federal_RAJ" orientation = center_up position = { x = -190 y = 360 } font = "hoi_16mbs" text = "ENG_nww_ui_federal" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_compact_RAJ" orientation = center_up position = { x = -190 y = 360 } font = "hoi_16mbs" text = "ENG_nww_ui_compact" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_independence_RAJ" orientation = center_up position = { x = -190 y = 360 } font = "hoi_16mbs" text = "ENG_nww_ui_independence" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_no_treaty_RAJ" orientation = center_up position = { x = -190 y = 360 } font = "hoi_16mbs" text = "ENG_nww_ui_no_treaty" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_imperial_totals" orientation = center_up position = { x = -190 y = 395 } font = "hoi_16mbs" text = "ENG_nww_ui_imperial_totals" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_conference_yes" orientation = center_up position = { x = -190 y = 421 } font = "hoi_16mbs" text = "ENG_nww_ui_conference_yes" format = left maxWidth = 380 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_conference_no" orientation = center_up position = { x = -190 y = 421 } font = "hoi_16mbs" text = "ENG_nww_ui_conference_no" format = left maxWidth = 380 maxHeight = 20 }
+}
+containerWindowType = { name = "ENG_nww_cabinet_window" position = { x = 0 y = 0 } size = { width = 100% height = 290 }
+iconType = { name = "ENG_nww_ui_cabinet_background" spriteType = "GFX_ENG_ui_cabinet" orientation = center_up position = { x = -220 y = 0 } }
+iconType = { name = "ENG_nww_ui_cabinet_emblem" spriteType = "GFX_decision_category_ENG_nww_cabinet" orientation = center_up position = { x = -206 y = 9 } }
+instantTextBoxType = { name = "ENG_nww_ui_cabinet_title" orientation = center_up position = { x = -142 y = 18 } font = "hoi_16mbs" text = "ENG_nww_ui_cabinet_title" format = left maxWidth = 340 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_mandate_value" orientation = center_up position = { x = -190 y = 66 } font = "hoi_16mbs" text = "ENG_nww_ui_mandate_value" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 94 } pdx_tooltip = ENG_nww_ui_mandate_help }
+iconType = { name = "ENG_nww_ui_mandate_mark_40" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -39 y = 91 } pdx_tooltip = ENG_nww_ui_mandate_help }
+instantTextBoxType = { name = "ENG_nww_ui_mandate_threshold" orientation = center_up position = { x = -190 y = 111 } font = "hoi_16mbs" text = "ENG_nww_ui_mandate_threshold" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_mandate_help }
+instantTextBoxType = { name = "ENG_nww_ui_irish_value" orientation = center_up position = { x = -190 y = 155 } font = "hoi_16mbs" text = "ENG_nww_ui_irish_value" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_0" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -190 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_1" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -171 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_2" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -152 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_3" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -133 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_4" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -114 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_5" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -95 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_6" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -76 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_7" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -57 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_8" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -38 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_9" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -19 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_10" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 0 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_11" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 19 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_12" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 38 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_13" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 57 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_14" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 76 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_15" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 95 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_16" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 114 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_17" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 133 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_18" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 152 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_fill_19" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = 171 y = 183 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_mark_50" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = -1 y = 180 } pdx_tooltip = ENG_nww_ui_irish_help }
+iconType = { name = "ENG_nww_ui_irish_mark_70" spriteType = "GFX_ENG_ui_tick" orientation = center_up position = { x = 75 y = 180 } pdx_tooltip = ENG_nww_ui_irish_help }
+instantTextBoxType = { name = "ENG_nww_ui_irish_thresholds" orientation = center_up position = { x = -190 y = 201 } font = "hoi_16mbs" text = "ENG_nww_ui_irish_thresholds" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_irish_help }
+instantTextBoxType = { name = "ENG_nww_ui_deadline" orientation = center_up position = { x = -190 y = 246 } font = "hoi_16mbs" text = "ENG_nww_ui_deadline" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_irish_help }
+instantTextBoxType = { name = "ENG_nww_ui_settled" orientation = center_up position = { x = -190 y = 246 } font = "hoi_16mbs" text = "ENG_nww_ui_settled" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_irish_help }
+instantTextBoxType = { name = "ENG_nww_ui_monitor" orientation = center_up position = { x = -190 y = 246 } font = "hoi_16mbs" text = "ENG_nww_ui_monitor" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_irish_help }
+}
+containerWindowType = { name = "ENG_nww_routes_window" position = { x = 0 y = 0 } size = { width = 100% height = 366 }
+iconType = { name = "ENG_nww_ui_routes_background" spriteType = "GFX_ENG_ui_routes" orientation = center_up position = { x = -220 y = 0 } }
+iconType = { name = "ENG_nww_ui_routes_emblem" spriteType = "GFX_decision_category_ENG_nww_routes" orientation = center_up position = { x = -206 y = 9 } }
+instantTextBoxType = { name = "ENG_nww_ui_routes_title" orientation = center_up position = { x = -142 y = 18 } font = "hoi_16mbs" text = "ENG_nww_ui_routes_title" format = left maxWidth = 340 maxHeight = 20 }
+instantTextBoxType = { name = "ENG_nww_ui_routes_total" orientation = center_up position = { x = -190 y = 64 } font = "hoi_16mbs" text = "ENG_nww_ui_routes_total" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_0" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -190 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_0" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_1" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -171 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_1" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -171 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_2" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -152 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_2" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -152 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_3" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -133 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_3" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -133 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_4" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -114 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_4" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -114 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_5" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -95 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_5" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -95 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_6" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -76 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_6" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -76 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_7" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -57 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_7" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -57 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_8" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -38 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_8" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -38 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_9" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = -19 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_9" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -19 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_10" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 0 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_10" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 0 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_11" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 19 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_11" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 19 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_12" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 38 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_12" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 38 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_13" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 57 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_13" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 57 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_14" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 76 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_14" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 76 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_15" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 95 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_15" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 95 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_16" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 114 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_16" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 114 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_17" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 133 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_17" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 133 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_18" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 152 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_18" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 152 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_socket_19" spriteType = "GFX_ENG_ui_socket" orientation = center_up position = { x = 171 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_routes_fill_19" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = 171 y = 92 } pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_route_atlantic" orientation = center_up position = { x = -190 y = 122 } font = "hoi_16mbs" text = "ENG_nww_ui_route_atlantic" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_atlantic_on" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 147 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_atlantic_off" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -190 y = 147 } pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_atlantic_open" orientation = center_up position = { x = -163 y = 142 } font = "hoi_16mbs" text = "ENG_nww_ui_route_open" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_atlantic_blocked" orientation = center_up position = { x = -163 y = 142 } font = "hoi_16mbs" text = "ENG_nww_ui_route_blocked" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_route_suez" orientation = center_up position = { x = -190 y = 169 } font = "hoi_16mbs" text = "ENG_nww_ui_route_suez" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_suez_on" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 194 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_suez_off" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -190 y = 194 } pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_suez_open" orientation = center_up position = { x = -163 y = 189 } font = "hoi_16mbs" text = "ENG_nww_ui_route_open" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_suez_blocked" orientation = center_up position = { x = -163 y = 189 } font = "hoi_16mbs" text = "ENG_nww_ui_route_blocked" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_route_cape" orientation = center_up position = { x = -190 y = 216 } font = "hoi_16mbs" text = "ENG_nww_ui_route_cape" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_cape_on" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 241 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_cape_off" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -190 y = 241 } pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_cape_open" orientation = center_up position = { x = -163 y = 236 } font = "hoi_16mbs" text = "ENG_nww_ui_route_open" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_cape_blocked" orientation = center_up position = { x = -163 y = 236 } font = "hoi_16mbs" text = "ENG_nww_ui_route_blocked" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_cape_unprepared" orientation = center_up position = { x = -163 y = 236 } font = "hoi_16mbs" text = "ENG_nww_ui_cape_unprepared" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_route_indian" orientation = center_up position = { x = -190 y = 263 } font = "hoi_16mbs" text = "ENG_nww_ui_route_indian" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_indian_on" spriteType = "GFX_ENG_ui_gold" orientation = center_up position = { x = -190 y = 288 } pdx_tooltip = ENG_nww_ui_route_help }
+iconType = { name = "ENG_nww_ui_route_indian_off" spriteType = "GFX_ENG_ui_red" orientation = center_up position = { x = -190 y = 288 } pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_indian_open" orientation = center_up position = { x = -163 y = 283 } font = "hoi_16mbs" text = "ENG_nww_ui_route_open" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_indian_blocked" orientation = center_up position = { x = -163 y = 283 } font = "hoi_16mbs" text = "ENG_nww_ui_route_blocked" format = left maxWidth = 350 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_route_warning" orientation = center_up position = { x = -190 y = 326 } font = "hoi_16mbs" text = "ENG_nww_ui_route_warning" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+instantTextBoxType = { name = "ENG_nww_ui_route_normal" orientation = center_up position = { x = -190 y = 326 } font = "hoi_16mbs" text = "ENG_nww_ui_route_normal" format = left maxWidth = 380 maxHeight = 20 pdx_tooltip = ENG_nww_ui_route_help }
+}
+}

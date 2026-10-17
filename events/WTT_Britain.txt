@@ -1,0 +1,15 @@
+# Owner: ENG. Native callbacks retired; see ENG_events.txt.
+add_namespace = wtt_britain
+country_event = { id = wtt_britain.24 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain.25 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain.26 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain.27 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain.28 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain.29 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain.30 hidden = yes is_triggered_only = yes immediate = { } }
+add_namespace = wtt_britain_lease_azores
+country_event = { id = wtt_britain_lease_azores.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain_lease_azores.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain_lease_azores.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain_lease_azores.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = wtt_britain_lease_azores.5 hidden = yes is_triggered_only = yes immediate = { } }

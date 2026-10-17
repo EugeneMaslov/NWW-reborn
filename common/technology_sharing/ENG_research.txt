@@ -1,0 +1,1 @@
+technology_sharing_group = { id = ENG_nww_research name = ENG_nww_research desc = ENG_nww_research_desc picture = GFX_commonwealth_research research_sharing_per_country_bonus = 0.05 available = { OR = { tag = ENG has_idea = ENG_nww_trade_partner has_idea = ENG_nww_federal_partner } NOT = { has_war_with = ENG } } }

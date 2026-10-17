@@ -1,0 +1,528 @@
+{
+  "version": 1,
+  "generator": "Built-in image_gen",
+  "style": "Use case: stylized-concept. Asset type: production-ready Hearts of Iron IV national spirit icon for an alternate-history British Empire in 1936, where World War I never occurred. Create ONE distinct painted game emblem, an isolated cutout on genuinely transparent RGBA background. Authentic HOI4 aesthetic: hand-painted realistic metal relief, worn brass and warm antique silver, subdued enamel in navy blue and deep crimson, crisp strong silhouette, dramatic directional highlights, fine material texture subordinate to simple readable shapes. No modern flat vector design, no cartoon, no photorealistic room or landscape. No writing, no letters, no numbers, no watermarks, no sheet or multiple panels, no square backing plate, no fake transparency checkerboard. The icon must remain clearly legible reduced to 60x68 pixels. Use a single dominant subject with at most two secondary props, centered, with generous transparent clearance on every side; all artwork contained within central 80% of the canvas, no cropped tips or shadows touching edges. No references to any world war or Nazi symbols.",
+  "assets": [
+    {
+      "key": "state",
+      "kind": "spirit",
+      "ru": "Корона и имперское бремя",
+      "en": "The Crown and the Imperial Burden",
+      "subject": "A heavy British imperial crown in aged brass resting on a closed navy-blue state ledger, with one crimson administrative ribbon bound taut around the ledger. Crown slightly tilted under its weight. Emphasize the readable crown silhouette and the tension between imperial grandeur and bureaucratic burden.",
+      "source": "docs/art/ENG/icons/originals/state.png",
+      "prompt": "docs/art/ENG/icons/prompts/state.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_state.dds",
+      "sprite": "GFX_idea_ENG_nww_state",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "0445563cc03b6a7e1ef9e66e541a3c7e258ac829b1604b8f0f5ad00b5b970146",
+      "texture_sha256": "4dd0d1f5d5124a2d2b2d0fbd68b1fa5856d821e9d3b483b6591bde3b9d95f0c8",
+      "source_size": [
+        1178,
+        1335
+      ],
+      "occupied_alpha_bounds": [
+        3,
+        4,
+        57,
+        64
+      ]
+    },
+    {
+      "key": "economy",
+      "kind": "spirit",
+      "ru": "Промышленность метрополии",
+      "en": "Metropolitan Industry",
+      "subject": "An aged British brick factory with two short chimneys, backed by a single large worn steel cogwheel, a small warm copper electrical insulator in the foreground. Compact strong factory silhouette, soot-dark metal and brick with restrained amber light. Industrial renewal of an ageing metropolitan economy. No crown.",
+      "source": "docs/art/ENG/icons/originals/economy.png",
+      "prompt": "docs/art/ENG/icons/prompts/economy.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_economy.dds",
+      "sprite": "GFX_idea_ENG_nww_economy",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "b2ff024786ad8b500f8a48d1cb48ee4ad4476493591c3cedb2006c0316227e90",
+      "texture_sha256": "b5f6002d44990c4896fce4ba2e16907ce4ebc99f7b56c9a901aa480a64828a00",
+      "source_size": [
+        1178,
+        1335
+      ],
+      "occupied_alpha_bounds": [
+        3,
+        4,
+        56,
+        60
+      ]
+    },
+    {
+      "key": "army",
+      "kind": "spirit",
+      "ru": "Британская армия",
+      "en": "British Army",
+      "subject": "Two crossed British bolt-action service rifles behind a compact khaki officer's peaked service cap and a small antique brass lion badge. Disciplined professional expeditionary army, a coherent military insignia, no helmets, no world-war medals, no text.",
+      "source": "docs/art/ENG/icons/originals/army.png",
+      "prompt": "docs/art/ENG/icons/prompts/army.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_army.dds",
+      "sprite": "GFX_idea_ENG_nww_army",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "3e0c7d8dc8d9a660326e322008c63127334e918e1e52e62674694f286ed934e3",
+      "texture_sha256": "361a2e41b74c4b68675c08b21974dc53fead25bd4df86db2d687c41428be5be4",
+      "source_size": [
+        1176,
+        1338
+      ],
+      "occupied_alpha_bounds": [
+        4,
+        5,
+        56,
+        62
+      ]
+    },
+    {
+      "key": "air",
+      "kind": "spirit",
+      "ru": "Королевские ВВС",
+      "en": "Royal Air Force",
+      "subject": "An antique silver propeller with two broad sculpted brass eagle wings, a small circular blue-white-red enamel RAF roundel at the hub. Compact aviation service badge, very clear symmetrical wing silhouette, no crown and no lettering.",
+      "source": "docs/art/ENG/icons/originals/air.png",
+      "prompt": "docs/art/ENG/icons/prompts/air.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_air.dds",
+      "sprite": "GFX_idea_ENG_nww_air",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "cdba8f784463c98fe50822e2f56f39c48f533c7eacd7df4e0279a3c38587ad1a",
+      "texture_sha256": "6156f03f219c2c854ae986045708968f05decacd3bdb0ad9ae7f96325c1548a2",
+      "source_size": [
+        1346,
+        1168
+      ],
+      "occupied_alpha_bounds": [
+        3,
+        11,
+        57,
+        57
+      ]
+    },
+    {
+      "key": "navy",
+      "kind": "spirit",
+      "ru": "Королевский флот",
+      "en": "Royal Navy",
+      "subject": "A large weathered brass Admiralty anchor entwined once by a pale rope, with a small dark-navy-blue enamel ship wheel behind its center. A compact dignified Royal Navy badge, flukes and shank clearly readable, no crown or lettering.",
+      "source": "docs/art/ENG/icons/originals/navy.png",
+      "prompt": "docs/art/ENG/icons/prompts/navy.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_navy.dds",
+      "sprite": "GFX_idea_ENG_nww_navy",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "e65ad5373a90a59232c33d7ab5ef5206e0df25c161e624ac69af5fcc271c7c27",
+      "texture_sha256": "bb216e3eb7b0c755e4d6a4ad9dc54ccd344dca0100eb95877c5748ed8e10e36a",
+      "source_size": [
+        1174,
+        1339
+      ],
+      "occupied_alpha_bounds": [
+        5,
+        4,
+        55,
+        64
+      ]
+    },
+    {
+      "key": "science",
+      "kind": "spirit",
+      "ru": "Британская научная служба",
+      "en": "British Scientific Service",
+      "subject": "A brass laboratory microscope standing over one small dark-blue closed notebook, with a single glass flask tucked beside the base. Compact 1930s scientific research emblem, strong microscope silhouette, restrained blue glass reflections, no crown, no text.",
+      "source": "docs/art/ENG/icons/originals/science.png",
+      "prompt": "docs/art/ENG/icons/prompts/science.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_science.dds",
+      "sprite": "GFX_idea_ENG_nww_science",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "7f58cadaa0e23166b81309231546001cf4f7955e17e8e5fab8b6556d2281ca50",
+      "texture_sha256": "f68abf8f7a05badc4f3f9569dd829ce6584ec40434141940b28e21a3ba508550",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        9,
+        4,
+        52,
+        62
+      ]
+    },
+    {
+      "key": "markets",
+      "kind": "spirit",
+      "ru": "Заморские рынки",
+      "en": "Overseas Markets",
+      "subject": "An antique merchant cargo steamer bow in front of two small stacked wooden cargo crates with one folded deep-red trade pennant. Compact emblem of overseas goods and imperial markets, brass hull, navy-blue enamel sea curl, no text, no crown.",
+      "source": "docs/art/ENG/icons/originals/markets.png",
+      "prompt": "docs/art/ENG/icons/prompts/markets.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_markets.dds",
+      "sprite": "GFX_idea_ENG_nww_markets",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "2535b03a52bcb9d15790ff37bac115af96ee33c2c571a86276acd262f96e06d6",
+      "texture_sha256": "b25d6985565c5742d46454b5bd6913b0f4b16edd6a43b0ddb7b06ca73b1900a2",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        5,
+        4,
+        55,
+        62
+      ]
+    },
+    {
+      "key": "finance",
+      "kind": "spirit",
+      "ru": "Мировой клиринговый центр",
+      "en": "World Clearing Centre",
+      "subject": "A small antique silver globe resting above three stacked gold sovereign coins and one dark-blue banking ledger. Global finance and London clearing houses, coin faces completely plain, no currency symbols, no lettering, no crown.",
+      "source": "docs/art/ENG/icons/originals/finance.png",
+      "prompt": "docs/art/ENG/icons/prompts/finance.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_finance.dds",
+      "sprite": "GFX_idea_ENG_nww_finance",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "b08cf798291d8e4ffdb3f76177ee9b6960e6983ec8536e12e2bcc6271b9cf805",
+      "texture_sha256": "c8d769048a9f96d0666e08e10e8c27355a469246720dc80b5a4ed9caedc6fafa",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        8,
+        4,
+        56,
+        61
+      ]
+    },
+    {
+      "key": "project_cost",
+      "kind": "spirit",
+      "ru": "Имперская проектная смета",
+      "en": "Imperial Project Commitment",
+      "subject": "A brass pair of engineer's dividers laid diagonally over a tightly rolled ivory blueprint, bound by a deep-red ribbon, with a small iron cog at the base. An allocated industrial project budget, compact tools badge, no text or crown.",
+      "source": "docs/art/ENG/icons/originals/project_cost.png",
+      "prompt": "docs/art/ENG/icons/prompts/project_cost.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_project_cost.dds",
+      "sprite": "GFX_idea_ENG_nww_project_cost",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "6ebb868c43d748818bec568b29f0ba8f1f94fad5157c053a4a78a3da11843f31",
+      "texture_sha256": "b66dbe62b0be689c5139129ad20ef42d23a5ce86d3f087faee5ad3522c23daf5",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        4,
+        5,
+        56,
+        61
+      ]
+    },
+    {
+      "key": "strikes",
+      "kind": "spirit",
+      "ru": "Промышленные забастовки",
+      "en": "Industrial Strikes",
+      "subject": "A dark weathered steel cogwheel interrupted by a large raised worker's hand in a brown leather glove, gripping a short deep-red cloth strip. Industrial labour dispute emblem, strong glove and gear silhouette, serious restrained political illustration, no weapons, no text, no crown.",
+      "source": "docs/art/ENG/icons/originals/strikes.png",
+      "prompt": "docs/art/ENG/icons/prompts/strikes.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_strikes.dds",
+      "sprite": "GFX_idea_ENG_nww_strikes",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "e373380a57bbf6383199ef79e3281ec4e3d8709d03c16e94112433b5c49f19e6",
+      "texture_sha256": "fc476c0fe3f57b4b65038727264be1e2448ef8d72c34138f0d443047f645231b",
+      "source_size": [
+        1178,
+        1335
+      ],
+      "occupied_alpha_bounds": [
+        5,
+        7,
+        55,
+        61
+      ]
+    },
+    {
+      "key": "ulster_garrison",
+      "kind": "spirit",
+      "ru": "Чрезвычайный гарнизон Ольстера",
+      "en": "Ulster Emergency Garrison",
+      "subject": "A compact gray stone watchtower with a closed iron gate, behind a small British khaki service cap and a short wooden road barrier painted muted dark red and cream. Emergency administration in Ulster, no national flags, no religious symbols, no crown, no text.",
+      "source": "docs/art/ENG/icons/originals/ulster_garrison.png",
+      "prompt": "docs/art/ENG/icons/prompts/ulster_garrison.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_ulster_garrison.dds",
+      "sprite": "GFX_idea_ENG_nww_ulster_garrison",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "b91d349a464d8ea257957bd637c574eb5bc062914be5c19b85efbb0255bbc0d5",
+      "texture_sha256": "4a3dc92b370f2f86fa3970b46af95263180b09679a4cb90df10e60a311da3256",
+      "source_size": [
+        1182,
+        1330
+      ],
+      "occupied_alpha_bounds": [
+        4,
+        5,
+        55,
+        64
+      ]
+    },
+    {
+      "key": "retooling",
+      "kind": "spirit",
+      "ru": "Перестройка производственных линий",
+      "en": "Retooling Production Lines",
+      "subject": "A large antique steel spanner crossing a brass factory cogwheel, with one small unfinished steel machine part at the bottom. Heavy industrial retooling emblem, bold recognisable tool silhouette, warm metal highlights, no crown or text.",
+      "source": "docs/art/ENG/icons/originals/retooling.png",
+      "prompt": "docs/art/ENG/icons/prompts/retooling.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_retooling.dds",
+      "sprite": "GFX_idea_ENG_nww_retooling",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "be0fa3d828d8b5d868e349a5835d5586f748f0d9cef8f0fca0c867b2629b457a",
+      "texture_sha256": "42308c3041d4c83317558fd0c0664a3b6142d28464f27d8907a534b8d2998787",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        5,
+        7,
+        56,
+        59
+      ]
+    },
+    {
+      "key": "sea_delay",
+      "kind": "spirit",
+      "ru": "Задержки имперских проектов",
+      "en": "Imperial Project Delays",
+      "subject": "An antique brass maritime compass with a single deep-red hourglass laid across its lower edge, a dark-navy-blue curved rope behind it. Delayed sea communications and project commitments, clear compass and hourglass silhouettes, no writing, no crown.",
+      "source": "docs/art/ENG/icons/originals/sea_delay.png",
+      "prompt": "docs/art/ENG/icons/prompts/sea_delay.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_sea_delay.dds",
+      "sprite": "GFX_idea_ENG_nww_sea_delay",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "2aef68134da460073924e8050152f118a06ab3ce08675a6c34257775f83f4b15",
+      "texture_sha256": "6e24a78c49f608f8df1c78d8b0450909e02e4763045f55d9cb411bd931c2ffe4",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        3,
+        4,
+        57,
+        63
+      ]
+    },
+    {
+      "key": "trade_partner",
+      "kind": "spirit",
+      "ru": "Торговый договор",
+      "en": "British Market Compact",
+      "subject": "Two clasped hands, one in a dark-navy sleeve and one in an ivory sleeve, above a tightly rolled trade agreement with a plain red wax seal. Reciprocal trade treaty emblem, warm bronze hands and worn parchment, no lettering, no crown.",
+      "source": "docs/art/ENG/icons/originals/trade_partner.png",
+      "prompt": "docs/art/ENG/icons/prompts/trade_partner.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_trade_partner.dds",
+      "sprite": "GFX_idea_ENG_nww_trade_partner",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "b92267a82f485bd72431073cf4574924d194e5f3f51ce2e6d823c35ce333338a",
+      "texture_sha256": "a3de0bcf33db36da139903ef3f02ac6e8dd7a43542f2e7508032dbebbe730891",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "occupied_alpha_bounds": [
+        4,
+        13,
+        56,
+        58
+      ]
+    },
+    {
+      "key": "federal_partner",
+      "kind": "spirit",
+      "ru": "Федеральные соглашения",
+      "en": "Federal Defence Agreements",
+      "subject": "Two interlocking antique brass rings surrounding a small silver parliamentary portcullis, with one dark-blue enamel ribbon under the rings. A voluntary federal constitutional agreement, compact elegant institutional badge, no crown, no text.",
+      "source": "docs/art/ENG/icons/originals/federal_partner.png",
+      "prompt": "docs/art/ENG/icons/prompts/federal_partner.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_federal_partner.dds",
+      "sprite": "GFX_idea_ENG_nww_federal_partner",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "1aa35a619974ddf709ff11ea67fc46b0b04f31b4af6a200fa3565664c2b94034",
+      "texture_sha256": "0998c09bac0201ada79a81cb67536d6878b67693be8b41585e9163e4997c4f9e",
+      "source_size": [
+        1187,
+        1326
+      ],
+      "occupied_alpha_bounds": [
+        5,
+        11,
+        54,
+        56
+      ]
+    },
+    {
+      "key": "pacifism",
+      "kind": "spirit",
+      "ru": "Мандат мирных преобразований",
+      "en": "Mandate for Peaceful Reform",
+      "subject": "A white dove perched on the hilt of a downward-pointing sheathed sword, holding a small olive twig. A dignified painted bronze-and-ivory emblem of peaceful social reform and defensive restraint, compact readable silhouette, no crown, no text.",
+      "source": "docs/art/ENG/icons/originals/pacifism.png",
+      "prompt": "docs/art/ENG/icons/prompts/pacifism.txt",
+      "texture": "gfx/interface/ideas/ENG/ENG_nww_pacifism.dds",
+      "sprite": "GFX_idea_ENG_nww_pacifism",
+      "size": [
+        60,
+        68
+      ],
+      "source_sha256": "06553d99dd5d6d78527adb68f4ee3fdd1af8f0231a993e8f04e892bddcf45d12",
+      "texture_sha256": "baafb14d6ae052d9c701ccd5ff1b02273585b90bc2e4e9f7587f33dc1df4a9b7",
+      "source_size": [
+        1176,
+        1338
+      ],
+      "occupied_alpha_bounds": [
+        14,
+        4,
+        49,
+        64
+      ]
+    },
+    {
+      "key": "imperial",
+      "kind": "category",
+      "ru": "Имперский договор",
+      "en": "The Imperial Treaty",
+      "subject": "A single compact HORIZONTAL emblem of a small antique globe behind a rolled treaty with a plain red wax seal, flanked by two short brass laurel sprigs. Voluntary imperial conferences and dominion loyalty. Readable at 52x40 pixels; use a wide low silhouette, no crown, no text.",
+      "source": "docs/art/ENG/icons/originals/imperial-v2.png",
+      "prompt": "docs/art/ENG/icons/prompts/imperial-v2.txt",
+      "texture": "gfx/interface/decisions/ENG/ENG_nww_imperial.dds",
+      "sprite": "GFX_decision_category_ENG_nww_imperial",
+      "size": [
+        52,
+        40
+      ],
+      "source_sha256": "a5792b1f1322771136f1565810c07a9ddbc3bb8ab5afdc37002b2a389ba040d3",
+      "texture_sha256": "d6fc951ac0acf9f8d1c8f52a2388a47c729a0ff2c04c7373c547a716ef3e5a55",
+      "source_size": [
+        1430,
+        1100
+      ],
+      "occupied_alpha_bounds": [
+        3,
+        3,
+        49,
+        33
+      ],
+      "revisions": [
+        {
+          "source": "docs/art/ENG/icons/originals/imperial.png",
+          "prompt": "docs/art/ENG/icons/prompts/imperial.txt",
+          "source_sha256": "b678f5fc8b039e8489bf8e4581b72cc6ce876399d182cdca235fa4edc5ea7687",
+          "reason": "Removed unintended national ownership colors from the globe with imagegen."
+        }
+      ]
+    },
+    {
+      "key": "cabinet",
+      "kind": "category",
+      "ru": "Вестминстер",
+      "en": "Westminster",
+      "subject": "A single compact HORIZONTAL emblem of a brass British parliamentary portcullis above a small deep-red dispatch box, with a short ivory scroll to one side. Parliamentary cabinet mandate and constitutional deliberation. Readable at 52x40 pixels; wide low silhouette, no crown, no lettering.",
+      "source": "docs/art/ENG/icons/originals/cabinet.png",
+      "prompt": "docs/art/ENG/icons/prompts/cabinet.txt",
+      "texture": "gfx/interface/decisions/ENG/ENG_nww_cabinet.dds",
+      "sprite": "GFX_decision_category_ENG_nww_cabinet",
+      "size": [
+        52,
+        40
+      ],
+      "source_sha256": "811a537ced4cd4d3c4cd175fce8cfe665d4a0ed34045309f624a80ee91fa7482",
+      "texture_sha256": "cf3b15cac28a9ddbe44e46395281e9392763f735c0c7ef8580550610e4aff4f1",
+      "source_size": [
+        1428,
+        1102
+      ],
+      "occupied_alpha_bounds": [
+        9,
+        3,
+        46,
+        36
+      ]
+    },
+    {
+      "key": "routes",
+      "kind": "category",
+      "ru": "Морские артерии",
+      "en": "Imperial Sea Arteries",
+      "subject": "A single compact HORIZONTAL emblem of an antique brass navigation compass behind a broad dark-blue enamel ocean wave and a tiny gold merchant ship silhouette crossing the wave. Global shipping routes and access to bases. Readable at 52x40 pixels; wide low silhouette, no crown, no lettering.",
+      "source": "docs/art/ENG/icons/originals/routes.png",
+      "prompt": "docs/art/ENG/icons/prompts/routes.txt",
+      "texture": "gfx/interface/decisions/ENG/ENG_nww_routes.dds",
+      "sprite": "GFX_decision_category_ENG_nww_routes",
+      "size": [
+        52,
+        40
+      ],
+      "source_sha256": "eae4fe18d36ffb00f67de7c8140f575e11fcf8d7ff3a74b3749ecd55296ae1f6",
+      "texture_sha256": "79531819988136374e37bc7fa5c67eaef733858580c20e90be66a8534da6431a",
+      "source_size": [
+        1430,
+        1100
+      ],
+      "occupied_alpha_bounds": [
+        4,
+        3,
+        47,
+        35
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# Owner: ENG. Native callbacks retired; see ENG_events.txt.
+add_namespace = britain
+add_namespace = AAT_britain_narvik
+country_event = { id = britain.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.4 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.5 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.6 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.7 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.8 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.9 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.10 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.11 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.12 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.13 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.14 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.15 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.16 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.17 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.18 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.19 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.20 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.21 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.22 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.23 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.24 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.25 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.26 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = britain.27 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = AAT_britain_narvik.1 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = AAT_britain_narvik.2 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = AAT_britain_narvik.3 hidden = yes is_triggered_only = yes immediate = { } }
+country_event = { id = AAT_britain_narvik.4 hidden = yes is_triggered_only = yes immediate = { } }

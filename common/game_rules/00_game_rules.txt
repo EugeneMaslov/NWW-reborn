@@ -1364,50 +1364,16 @@ MAN_ai_behavior = {
 		desc = RULE_OPTION_RANDOM_AI_DESC
 	}
 }
-ENG_ai_behavior = {
-	name = ENG_AI_BEHAVIOR
-	group = RULE_GROUP_AI_BEHAVIOR
-	default = {
-		name = DEFAULT
-		text = RULE_OPTION_DEFAULT
-		desc = RULE_OPTION_DEFAULT_AI_DESC
-	}
-	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = RULE_OPTION_DEMOCRATIC_HISTORICAL
-		desc = RULE_OPTION_DEMOCRATIC_ENG_AI_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT
-		desc = RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT_ENG_AI_DESC
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = COMMUNIST
-		text = RULE_OPTION_TRADE_UNIONS
-		desc = RULE_OPTION_TRADE_UNIONS_ENG_AI_DESC
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = NEUTRALITY
-		text = RULE_OPTION_THE_KINGS_PARTY
-		desc = RULE_OPTION_THE_KINGS_PARTY_ENG_AI_DESC
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = FASCIST
-		text = RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS
-		desc = RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS_ENG_AI_DESC
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = RANDOM
-		text = RULE_OPTION_RANDOM
-		desc = RULE_OPTION_RANDOM_AI_DESC
-		required_dlc = "Man the Guns"
-	}
+ENG_ai_behavior = { name = ENG_AI_BEHAVIOR group = RULE_GROUP_AI_BEHAVIOR
+default = { name = DEFAULT text = RULE_OPTION_DEFAULT desc = RULE_OPTION_DEFAULT_AI_DESC }
+option = { name = DEMOCRATIC_HISTORICAL text = ENG_nww_rule_continuity desc = ENG_nww_rule_continuity_desc }
+option = { name = DEMOCRATIC_ALTERNATE text = ENG_nww_rule_federal desc = ENG_nww_rule_federal_desc }
+option = { name = FASCIST text = ENG_nww_rule_fascist desc = ENG_nww_rule_fascist_desc }
+option = { name = NEUTRALITY text = ENG_nww_rule_directory desc = ENG_nww_rule_directory_desc }
+option = { name = COMMUNIST text = ENG_nww_rule_republic desc = ENG_nww_rule_republic_desc }
+option = { name = SOCIALIST text = ENG_nww_rule_social desc = ENG_nww_rule_social_desc }
+option = { name = ISOLATION text = ENG_nww_rule_island desc = ENG_nww_rule_island_desc }
+option = { name = RANDOM text = ENG_nww_rule_random desc = ENG_nww_rule_random_desc }
 }
 USA_ai_behavior = {
 	name = USA_AI_BEHAVIOR

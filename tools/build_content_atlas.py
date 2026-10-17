@@ -5,21 +5,23 @@ No game mechanics are changed. Requires Pillow (already used by mod tools).
 import argparse
 from collections import Counter, defaultdict
 import csv
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import re
+import zipfile
 from PIL import Image
 from hoi4_script import read, one, values, walk
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'sites/nww-atlas'
-FULL = {'LTB', 'MKN', 'UKR', 'SOV', 'AUS', 'TUR', 'GER'}
+FULL = {'LTB', 'MKN', 'UKR', 'SOV', 'AUS', 'TUR', 'GER', 'FRA', 'ENG'}
 LEGACY = {'HUN', 'AFG'}
 NAMES = {'LTB': 'Литовско-Белорусский Союз', 'MKN': 'Вольная территория Махно',
          'UKR': 'Советская Украина', 'SOV': 'Советская Россия', 'AUS': 'Австрийская империя',
          'TUR': 'Османская империя', 'GER': 'Германская империя', 'HUN': 'Венгрия',
          'AFG': 'Афганистан', 'BYE': 'Беларусь', 'LIT': 'Литва', 'LAT': 'Латвия',
-         'EST': 'Эстония', 'CRO': 'Хорватия'}
+         'EST': 'Эстония', 'CRO': 'Хорватия', 'FRA': 'Франция', 'ENG': 'Великобритания'}
 DETAILS = {
     'LTB': 'Виленский компромисс, кризис и распад Союза, политические мандаты, предприятия и реорганизация штаба.',
     'MKN': 'Преемники Махно, вольные советы и штаб, гражданская война, коммуны и пограничная эскалация.',
@@ -30,7 +32,8 @@ DETAILS = {
     'GER': 'Кризис наследования, четыре политических пути, устройство империи и собственная промышленная политика.',
     'HUN': 'Адаптированное дерево старого NWW. Перенос и обновление синтаксиса не считаются полной новой переработкой.',
     'AFG': 'Адаптированное дерево старого NWW с обновлёнными эффектами и стартовой экономикой.',
-    'FRA': 'Новая переработка Франции в текущих рабочих файлах: национальное собрание, политические мандаты и заморская политика. Полная готовность ещё не подтверждена документацией проекта.',
+    'FRA': 'Четыре основные политические ветки, мандат кабинета и уличная напряжённость, региональный заморский договор, модернизация промышленности и вооружённых сил.',
+    'ENG': 'Содружество и федерация, авторитарные и социалистические маршруты, изоляционизм и ирландское урегулирование. Оплачиваемые имперские переговоры, морские артерии и отдельные программы армии, RAF и Royal Navy.',
 }
 
 
@@ -174,7 +177,8 @@ def make_paths(data, width, height, tags):
     return paths, boxes
 
 
-def build(game):
+def build(game, snapshot_date=None):
+    snapshot_date = snapshot_date or datetime.now(timezone(timedelta(hours=3))).date().isoformat()
     loc = localization(game)
     focus = focus_inventory()
     owners, states, provenance = {}, Counter(), []
@@ -223,17 +227,28 @@ def build(game):
                               'Небольшое новое дерево. Это не Legacy и не полная переработка с собственными механиками.' if info else
                               'В текущем моде нет собственного дерева NWW. Стандартные деревья игры и DLC не считаются уникальным контентом мода.')))
     svg = ''.join(f'<path id="country-{tag}" data-tag="{tag}" d="{path}"/>' for tag, path in sorted(paths.items()))
-    dataset = dict(width=width, height=height, countries=countries, date='1936-01-01', dlc='all', states=provenance)
+    dataset = dict(width=width, height=height, countries=countries, date='1936-01-01',
+                   snapshotDate=snapshot_date, dlc='all', states=provenance)
     template = (SITE / 'src/index.html').read_text(encoding='utf-8')
     html = template.replace('/*__STYLE__*/', (SITE / 'src/style.css').read_text(encoding='utf-8'))
     html = html.replace('<!--__MAP__-->', svg).replace('/*__DATA__*/', 'const DATA=' + json.dumps(dataset, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + ';')
     html = html.replace('/*__APP__*/', (SITE / 'src/app.js').read_text(encoding='utf-8'))
+    html = html.replace('__SNAPSHOT_DATE__', '.'.join(reversed(snapshot_date.split('-'))))
+    html = html.replace('__FULL_TAGS__', ', '.join(sorted(FULL)))
     out = SITE / 'dist'
     out.mkdir(parents=True, exist_ok=True)
     (out / 'index.html').write_text(html, encoding='utf-8')
     (SITE / 'classification.json').write_text(json.dumps(countries, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     assert all(state_owner[t['state']] == 'GER' for t in json.loads((ROOT / 'docs/GER_overseas_setup.json').read_text())['territories'])
     assert state_owner[656] == 'TUR'
+    with zipfile.ZipFile(SITE / 'NWW-Reborn-Atlas.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
+        archive.write(out / 'index.html', 'NWW-Reborn-Atlas.html')
+        archive.writestr('README.txt',
+                         'NWW Reborn — интерактивный атлас\n\n'
+                         'Откройте NWW-Reborn-Atlas.html в браузере. Интернет и сервер не нужны.\n'
+                         'Поиск — название или тег, колесо — масштаб, перетаскивание — перемещение.\n'
+                         'Описание источников и классификации — кнопка «О карте».\n'
+                         f'Срез исходников: {snapshot_date}. Карта кампании: 1 января 1936 года.\n')
     print(json.dumps({'countries_on_map': len(paths), 'statuses': dict(Counter(c['status'] for c in countries)),
                       'file': str(out / 'index.html'), 'bytes': len(html.encode('utf-8'))}, ensure_ascii=False))
 
@@ -241,4 +256,6 @@ def build(game):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--game', type=Path, default=Path('D:/Steam/steamapps/common/Hearts of Iron IV'))
-    build(parser.parse_args().game)
+    parser.add_argument('--snapshot-date', type=lambda value: datetime.strptime(value, '%Y-%m-%d').date().isoformat())
+    args = parser.parse_args()
+    build(args.game, args.snapshot_date)

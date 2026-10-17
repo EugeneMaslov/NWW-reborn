@@ -1,0 +1,13 @@
+ideas = {
+tank_manufacturer = { designer = yes
+ENG_nww_vickers_designer = { picture = generic_economic_recovery cost = 150 allowed = { original_tag = ENG NOT = { has_dlc = "Arms Against Tyranny" } } available = { has_completed_focus = ENG_nww_vickers } research_bonus = { armor = 0.20 } traits = { medium_tank_manufacturer } }
+}
+materiel_manufacturer = { designer = yes
+ENG_nww_standard_ammunition_designer = { picture = generic_economic_recovery cost = 150 allowed = { original_tag = ENG NOT = { has_dlc = "Arms Against Tyranny" } } available = { has_completed_focus = ENG_nww_standard_ammunition } research_bonus = { infantry_weapons = 0.20 } traits = { infantry_equipment_manufacturer } }
+}
+aircraft_manufacturer = { designer = yes
+ENG_nww_supermarine_designer = { picture = generic_economic_recovery cost = 150 allowed = { original_tag = ENG NOT = { has_dlc = "Arms Against Tyranny" } } available = { has_completed_focus = ENG_nww_supermarine } research_bonus = { light_fighter = 0.20 } traits = { light_aircraft_manufacturer } }
+ENG_nww_engine_plants_designer = { picture = generic_economic_recovery cost = 150 allowed = { original_tag = ENG NOT = { has_dlc = "Arms Against Tyranny" } } available = { has_completed_focus = ENG_nww_engine_plants } research_bonus = { cas_bomber = 0.20 } traits = { CAS_manufacturer } }
+ENG_nww_fairey_designer = { picture = generic_economic_recovery cost = 150 allowed = { original_tag = ENG NOT = { has_dlc = "Arms Against Tyranny" } } available = { has_completed_focus = ENG_nww_fairey } research_bonus = { naval_air = 0.20 } traits = { naval_aircraft_manufacturer } }
+}
+}
