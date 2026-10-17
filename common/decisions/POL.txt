@@ -1,0 +1,1087 @@
+# Owner: POL. Inert native decision/mission registry. Gameplay: POL_decisions.txt.
+POL_danzig_decisions = {
+	POL_unification_propaganda = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_military_appeasement = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_raid_nazi_resistance = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_tighten_control = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_sanation_decisions = {
+	POL_sanation_left_irritation = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		days_mission_timeout = 1
+		cancel_trigger = {
+			always = yes
+		}
+	}
+	POL_sanation_right_irritation = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		days_mission_timeout = 1
+		cancel_trigger = {
+			always = yes
+		}
+	}
+	POL_sideline_the_left = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_sideline_the_right = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_peasant_strike_category = {
+	POL_looming_peasants_strike_mission = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		days_mission_timeout = 1
+		cancel_trigger = {
+			always = yes
+		}
+	}
+	POL_peasants_strike = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		days_mission_timeout = 1
+		cancel_trigger = {
+			always = yes
+		}
+	}
+	POL_crackdown_in_lviv = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_pacify_zamosc = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_pacify_peasants_repeatable = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_organize_the_peasants_strike = {
+	POL_escelate_the_strike = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_woo_military_staff = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_seize_equipment = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_add_state_to_strike = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_expand_strikes_to_factories = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_invite_foreign_motor_decisions = {
+	POL_invite_ford = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_invite_vauxhall = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_invite_somua = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_miedzymorze_decisions = {
+	POL_diplomatic_mission_to_FIN = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_DEN = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_NOR = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_SWE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_CZE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_YUG = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_AUS = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_HUN = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_GRE = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_TUR = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_diplomatic_mission_to_ITA = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_defensive_plans = {
+	POL_defend_in_east_state = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_defend_in_west_state = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_reopen_the_maritime_and_colonial_league = {
+	POL_purchase_madagascar = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_purchase_gambia = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_purchase_cheap_colony = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_anti_capitalist_decisions = {
+	POL_anti_capitalist_revolution = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_anti_fascist_revolution_category = {
+	POL_anti_fascist_military = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_support_monarchy_in_LIT_cat = {
+	POL_propagandise_monarchist_sentiment = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_double_propagandise_monarchist_sentiment = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_sway_lithuanian_generals = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_invest_in_lithuania = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_arm_monarchist_militants = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_fight_against_monarchy_in_LIT_cat = {
+	POL_suppress_monarchist_sentiment = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_ban_monarchist_propaganda = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_root_out_monarchists = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_anti_monarchist_purge = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_ban_polish_imports = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_skirmish_with_monarchist_militants = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_monarchist_civil_war = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_ban_monarchists = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_cossack_republic_decisions = {
+	POL_restore_don_cossacks = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_restore_kuban_cossacks = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_sanacja_falanga_decisions = {
+	POL_nationwide_fascist_displays = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_appoint_nationalist_ministers = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}
+POL_promote_falangism_decisions = {
+	POL_promote_falangism = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+	POL_promote_falangism_in_major = {
+		allowed = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}

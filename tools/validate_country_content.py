@@ -629,6 +629,9 @@ from validate_germany_politics import validate_germany
 validate_germany(ROOT, GAME, check)
 from validate_germany_lategame import validate_lategame
 validate_lategame(ROOT, GAME, check)
+from validate_polish_content import validate_poland
+validate_poland(ROOT, GAME, check)
+counts["POL_focus"] = 80
 from validate_britain_content import main as validate_britain
 check(validate_britain(['--game', str(GAME)]) == 0, 'ENG country package validation failed')
 from test_britain_lifecycle import main as test_britain_lifecycle
@@ -645,7 +648,7 @@ from validate_1936_presentation import validate_presentation
 validate_presentation(ROOT, GAME, check)
 from test_london_treaty import main as test_london_treaty
 try:
-    test_london_treaty()
+    test_london_treaty(GAME)
 except AssertionError as exc:
     check(False, f'London treaty source-script lifecycle: {exc}')
 

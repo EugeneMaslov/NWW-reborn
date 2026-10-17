@@ -1,0 +1,88 @@
+# Owner: POL. Native event registry only; gameplay: POL_events.txt.
+add_namespace = NSB_poland_events
+country_event = { id = NSB_poland_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.101 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.102 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.201 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.202 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.301 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.302 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.303 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.304 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.4 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.401 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.402 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.5 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.501 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.502 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.6 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.601 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.7 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.701 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_events.8 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = NSB_poland_royal_election
+country_event = { id = NSB_poland_royal_election.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_royal_election.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_royal_election.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_royal_election.4 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_royal_election.5 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = NSB_poland_monarchist_events
+country_event = { id = NSB_poland_monarchist_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.5 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.4 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.6 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.601 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_monarchist_events.602 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = pavel_events
+country_event = { id = pavel_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = pavel_events.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = pavel_events.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = pavel_events.301 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = pavel_events.302 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = NSB_poland_communist_events
+country_event = { id = NSB_poland_communist_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.201 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.202 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.301 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.302 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.4 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.401 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.402 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.5 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.501 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.502 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.6 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.601 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_poland_communist_events.602 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = NSB_poland_democratic_events
+country_event = { id = NSB_poland_democratic_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = NSB_polish_fascist_events
+country_event = { id = NSB_polish_fascist_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.101 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.102 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.201 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.202 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.203 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.204 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.301 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.302 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.4 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.401 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.402 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.5 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.6 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = NSB_polish_fascist_events.7 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+add_namespace = POL_habsburg_events
+country_event = { id = POL_habsburg_events.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = POL_habsburg_events.101 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = POL_habsburg_events.102 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = POL_habsburg_events.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = POL_habsburg_events.201 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }

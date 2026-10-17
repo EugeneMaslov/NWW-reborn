@@ -1,0 +1,218 @@
+# Owner: POL. Bilateral compact, Vilnius and eastern negotiations belong to Poland.
+POL_accept_capital = {
+	set_country_flag = POL_german_capital_accepted
+	if = {
+		limit = { NOT = { has_country_flag = POL_german_dependence_ended } }
+		remove_ideas = POL_german_economic_stranglehold
+		add_ideas = POL_german_economic_stranglehold_2
+	}
+}
+POL_end_german_dependence = {
+	set_country_flag = POL_german_dependence_ended
+	remove_ideas = POL_german_economic_stranglehold
+	remove_ideas = POL_german_economic_stranglehold_2
+}
+POL_finish_crisis = {
+	set_country_flag = POL_crisis_resolved
+	remove_ideas = POL_sanation_crisis
+	remove_ideas = POL_sanation_crisis_2
+}
+POL_refresh_crisis = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = POL_crisis_resolved
+				has_completed_focus = POL_professional_civil_service
+				has_completed_focus = POL_national_bloc
+				has_completed_focus = POL_customs_commission
+				has_completed_focus = POL_council_republic
+			}
+		}
+		POL_finish_crisis = yes
+	}
+	else_if = {
+		limit = { OR = { has_completed_focus = POL_state_budget_commission has_country_flag = POL_budget_commission_done } has_idea = POL_sanation_crisis }
+		swap_ideas = { remove_idea = POL_sanation_crisis add_idea = POL_sanation_crisis_2 }
+	}
+}
+POL_refresh_coast = {
+	if = {
+		limit = { has_any_controlled_coastal_state = yes }
+		if = { limit = { has_idea = POL_landlocked_nation } remove_ideas = POL_landlocked_nation mark_focus_tree_layout_dirty = yes }
+	}
+	else_if = { limit = { NOT = { has_idea = POL_landlocked_nation } } add_ideas = POL_landlocked_nation mark_focus_tree_layout_dirty = yes }
+}
+POL_establish_sanation = {
+	set_country_flag = POL_path_sanation
+	set_politics = { ruling_party = neutrality elections_allowed = no election_frequency = 48 }
+	POL_edward_rydzsmigly = {
+		add_country_leader_role = { country_leader = { ideology = despotism expire = 1965.1.1 traits = { } } promote_leader = yes }
+	}
+}
+POL_establish_endecja = {
+	set_country_flag = POL_path_endecja
+	set_politics = { ruling_party = fascism elections_allowed = no election_frequency = 48 }
+	POL_roman_dmowski = {
+		add_country_leader_role = { country_leader = { ideology = fascism_ideology expire = 1965.1.1 traits = { } } promote_leader = yes }
+	}
+}
+POL_align_with_germany = {
+	if = {
+		limit = { POL_german_path_active = yes POL_german_ideology_mandate = yes }
+		if = { limit = { GER = { has_government = neutrality } } set_politics = { ruling_party = neutrality elections_allowed = no election_frequency = 48 } promote_character = POL_ignacy_moscicki }
+		else_if = { limit = { GER = { has_government = fascism } } set_politics = { ruling_party = fascism elections_allowed = no election_frequency = 48 } POL_roman_dmowski = { add_country_leader_role = { country_leader = { ideology = fascism_ideology expire = 1965.1.1 traits = { } } promote_leader = yes } } }
+		else_if = { limit = { GER = { has_government = communism } } set_politics = { ruling_party = communism elections_allowed = no election_frequency = 48 } POL_wladyslaw_gomulka = { add_country_leader_role = { country_leader = { ideology = leninism expire = 1965.1.1 traits = { } } promote_leader = yes } } }
+		else_if = { limit = { GER = { has_government = democratic } } set_politics = { ruling_party = democratic elections_allowed = yes election_frequency = 48 } POL_wladyslaw_sikorski = { add_country_leader_role = { country_leader = { ideology = socialism expire = 1965.1.1 traits = { } } promote_leader = yes } } }
+	}
+}
+# A real civil war, following GER's installed/reviewed player transfer pattern.
+POL_start_communist_civil_war = {
+	set_country_flag = POL_path_communist
+	set_country_flag = POL_sanation_loyalists
+	start_civil_war = {
+		ideology = communism
+		size = 0.40
+		set_country_flag = POL_path_communist
+		set_country_flag = POL_communist_rebels
+		clr_country_flag = POL_sanation_loyalists
+		set_cosmetic_tag = POL
+		if = { limit = { is_in_faction = yes } leave_faction = yes }
+		load_focus_tree = { tree = POL_focus keep_completed = yes copy_completed_from = ROOT }
+		set_politics = { ruling_party = communism elections_allowed = no election_frequency = 48 }
+		ROOT = { POL_maria_koszutska = { set_nationality = PREV.PREV } }
+		POL_maria_koszutska = { add_country_leader_role = { country_leader = { ideology = marxism expire = 1965.1.1 traits = { } } promote_leader = yes } }
+		POL_refresh_programs = yes
+		POL_install_campaign_guard = yes
+		change_tag_from = ROOT
+	}
+}
+POL_install_campaign_guard = {
+	remove_relation_rule_override = { trigger = POL_ai_unsafe_declaration can_not_declare_war = yes }
+	add_relation_rule_override = { trigger = POL_ai_unsafe_declaration usage_desc = POL_ai_restraint_tt can_not_declare_war = yes }
+	set_country_flag = POL_campaign_guard_installed
+}
+# Bounded infrastructure/fortification rewards; every state is actually owned and controlled.
+POL_improve_inland_transport = {
+	random_owned_controlled_state = { limit = { is_core_of = PREV infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+}
+POL_build_power = {
+	random_owned_controlled_state = { limit = { is_core_of = PREV } add_building_construction = { type = energy_infrastructure level = 1 instant_build = yes } }
+}
+POL_build_air_base = {
+	random_owned_controlled_state = { limit = { is_core_of = PREV air_base < 8 } add_building_construction = { type = air_base level = 2 instant_build = yes } }
+}
+POL_build_border_forts = {
+	every_owned_state = {
+		limit = { is_controlled_by = PREV is_core_of = PREV any_neighbor_state = { NOT = { is_owned_by = ROOT } } }
+		add_building_construction = { type = bunker level = 1 instant_build = yes province = { all_provinces = yes limit_to_border = yes } }
+	}
+}
+POL_build_southern_forts = {
+	every_owned_state = {
+		limit = { is_controlled_by = PREV is_core_of = PREV any_neighbor_state = { is_owned_by = AUS } }
+		add_building_construction = { type = bunker level = 1 instant_build = yes province = { all_provinces = yes limit_to_border = yes } }
+	}
+}
+POL_add_western_claims = {
+	add_state_claim = 85
+	add_state_claim = 86
+	add_state_claim = 63
+	add_state_claim = 762
+}
+POL_renounce_western_claims = {
+	remove_state_claim = 85
+	remove_state_claim = 86
+	remove_state_claim = 63
+	remove_state_claim = 762
+	set_country_flag = POL_western_frontier_recognized
+}
+POL_prepare_western_war = {
+	if = {
+		limit = {
+			date > 1938.12.31
+			has_country_flag = POL_path_endecja
+			POL_can_prepare_western_war = yes
+			NOT = { has_war_with = GER }
+			NOT = { has_wargoal_against = GER }
+			OR = { 85 = { is_owned_by = GER } 86 = { is_owned_by = GER } 63 = { is_owned_by = GER } 762 = { is_owned_by = GER } }
+		}
+		create_wargoal = { type = take_state_focus target = GER generator = { 85 86 63 762 } }
+	}
+}
+POL_rebuild_western_regions = {
+	every_owned_state = {
+		limit = { is_controlled_by = PREV OR = { state = 85 state = 86 state = 63 } infrastructure < 5 }
+		add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+	}
+}
+POL_rebuild_silesia = {
+	762 = {
+		if = {
+			limit = { is_owned_and_controlled_by = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+	}
+}
+POL_create_intermarium = {
+	if = {
+		limit = { is_subject = no is_in_faction = no }
+		set_rule = { can_create_factions = yes }
+		create_faction_from_template = { template = faction_template_POL_intermarium name = POL_intermarium_faction }
+	}
+}
+POL_offer_german_compact = {
+	if = {
+		limit = {
+			POL_german_path_active = yes
+			OR = { is_in_faction = no is_in_faction_with = GER }
+			GER = { exists = yes is_subject = no OR = { is_in_faction = no is_faction_leader = yes } }
+			NOT = { has_country_flag = POL_german_offer_pending }
+			NOT = { has_country_flag = POL_german_compact_accepted }
+		}
+		set_country_flag = { flag = POL_german_offer_pending days = 30 }
+		GER = { country_event = { id = nww_pol.10 days = 1 } }
+	}
+}
+POL_offer_vilnius_settlement = {
+	if = {
+		limit = {
+			is_subject = no
+			has_government = neutrality
+			LTB = { POL_ltb_can_negotiate = yes }
+			NOT = { has_war_with = LTB }
+			NOT = { has_country_flag = POL_vilnius_offer_pending }
+			NOT = { has_country_flag = POL_vilnius_accord }
+		}
+		set_country_flag = { flag = POL_vilnius_offer_pending days = 30 }
+		LTB = { country_event = { id = nww_pol.20 days = 1 } }
+	}
+}
+POL_offer_intermarium_membership = {
+	if = {
+		limit = { is_faction_leader = yes has_faction_template = faction_template_POL_intermarium }
+		ROM = { if = { limit = { exists = yes is_subject = no NOT = { is_in_faction_with = ROOT } } country_event = { id = nww_pol.30 days = 1 } } }
+		LTB = { if = { limit = { POL_ltb_can_negotiate = yes has_country_flag = POL_vilnius_accord NOT = { is_in_faction_with = ROOT } } country_event = { id = nww_pol.30 days = 1 } } }
+	}
+}
+POL_offer_eastern_alliance = {
+	if = {
+		limit = {
+			has_government = communism
+			is_subject = no
+			has_country_flag = POL_communist_victory
+			NOT = { has_country_flag = POL_eastern_offer_pending }
+			NOT = { has_country_flag = POL_eastern_alliance_accepted }
+		}
+		if = {
+			limit = { SOV = { exists = yes has_government = communism is_subject = no OR = { is_in_faction = no is_faction_leader = yes } } NOT = { has_war_with = SOV } OR = { is_in_faction = no is_in_faction_with = SOV } }
+			set_country_flag = { flag = POL_eastern_offer_pending days = 30 }
+			SOV = { country_event = { id = nww_pol.40 days = 1 } }
+		}
+		else_if = {
+			limit = { LTB = { POL_ltb_can_negotiate = yes has_government = communism OR = { is_in_faction = no is_faction_leader = yes } } NOT = { has_war_with = LTB } OR = { is_in_faction = no is_in_faction_with = LTB } }
+			set_country_flag = { flag = POL_eastern_offer_pending days = 30 }
+			LTB = { country_event = { id = nww_pol.40 days = 1 } }
+		}
+	}
+}

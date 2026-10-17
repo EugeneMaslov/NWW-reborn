@@ -5555,8 +5555,8 @@ ideas = {
                 army_attack_factor = 0.15
                 breakthrough_factor = 0.20
                 army_speed_factor = 0.10
-                compliance_growth_on_our_occupied_states = 0.10
-                resistance_target_on_our_occupied_states = -0.10
+                compliance_growth = 0.10
+                resistance_target = -0.10
                 required_garrison_factor = 0.10
             }
         }
@@ -8995,6 +8995,28 @@ country_event = {
             factor = 35
             modifier = {
                 factor = 0
+                tag = POL
+                OR = {
+                    has_completed_focus = POL_the_colonels_regime
+                    has_completed_focus = POL_endecja_ascendant
+                    AND = {
+                        is_historical_focus_on = yes
+                        NOT = {
+                            has_completed_focus = POL_pragmatic_deal
+                        }
+                        NOT = {
+                            has_country_flag = POL_ai_german
+                        }
+                    }
+                }
+            }
+            modifier = {
+                add = 65
+                tag = POL
+                has_completed_focus = POL_pragmatic_deal
+            }
+            modifier = {
+                factor = 0
                 is_historical_focus_on = yes
                 tag = LTB
             }
@@ -9026,6 +9048,11 @@ country_event = {
         name = ger_crisis.20.b
         ai_chance = {
             factor = 65
+            modifier = {
+                factor = 0
+                tag = POL
+                has_completed_focus = POL_pragmatic_deal
+            }
         }
         if = {
             limit = {
@@ -11610,6 +11637,7 @@ if = {
 }
 nww_GER_disable_mefo = yes
 nww_GER_initialize_politics = yes
+add_ideas = MTG_naval_treaty_adherent
 ```
 
 ## Вызываемые внешние эффекты, события и духи
@@ -11630,6 +11658,26 @@ AUS_nww_update_bohemian_spirit = {
     }
     multiply_variable = {
         AUS_bohemian_output = -0.01
+    }
+}
+```
+
+### `MTG_naval_treaty_adherent` — `common/ideas/zzz_generic.txt`
+
+```pdx
+MTG_naval_treaty_adherent = {
+    allowed = {
+        always = no
+    }
+    allowed_civil_war = {
+        always = no
+    }
+    removal_cost = -1
+    picture = MTG_naval_treaty_adherent
+    modifier = {
+        production_cost_max_ship_hull_cruiser = 5300
+        production_cost_max_ship_hull_heavy = 10000
+        production_cost_max_ship_hull_carrier = 9500
     }
 }
 ```
@@ -13666,6 +13714,14 @@ GER_zentrale_planung
     "ru": "Махновцы",
     "en": "Makhnovists"
   },
+  "MTG_naval_treaty_adherent": {
+    "ru": "Лондонское морское соглашение",
+    "en": "London Naval Agreement"
+  },
+  "MTG_naval_treaty_adherent_desc": {
+    "ru": "Лондонский компромисс Британии, Италии, Германии, Франции, Японии, Китая и США сдерживает стоимость новых морских вооружений. Пределы стоимости проектов (крейсер / тяжёлый корабль / авианосец): 5300 / 10000 / 9500. Существующий флот не подлежит автоматическому списанию.",
+    "en": "The London compromise between Britain, Italy, Germany, France, Japan, China and the United States limits the cost of new naval armaments. Design cost limits (cruiser / heavy ship / carrier): 5300 / 10000 / 9500. Existing fleets are not automatically scrapped."
+  },
   "NWW_GER_campaign_safety_tt": {
     "ru": "Германия восстанавливает силы или цель втянет её в неподготовленную войну. ИИ ведёт одну наступательную кампанию за раз; после мира требуется 180 дней восстановления, после капитуляции — два года.",
     "en": "Germany is recovering or the target would draw it into an unprepared war. AI conducts one offensive campaign at a time, with 180 days of recovery after peace and two years after capitulation."
@@ -13681,6 +13737,30 @@ GER_zentrale_planung
   "NWW_legacy_naval_doctrine_bonus": {
     "ru": "Программа изучения доктрины",
     "en": "Doctrine study programme"
+  },
+  "POL_endecja_ascendant": {
+    "ru": "Триумф Эндеции",
+    "en": "Endecja Ascendant"
+  },
+  "POL_endecja_ascendant_desc": {
+    "ru": "Национал-демократы сменят режим при поддержке не менее 40% и подготовленном политическом движении.",
+    "en": "The National Democrats replace the regime with at least 40% support and a prepared political movement."
+  },
+  "POL_pragmatic_deal": {
+    "ru": "Прагматическая сделка",
+    "en": "A Pragmatic Deal"
+  },
+  "POL_pragmatic_deal_desc": {
+    "ru": "Выберем переговоры с Берлином; политический союз всё ещё потребует согласия Германии.",
+    "en": "Choose negotiations with Berlin; a political alliance still requires German consent."
+  },
+  "POL_the_colonels_regime": {
+    "ru": "Режим полковников",
+    "en": "The Colonels’ Regime"
+  },
+  "POL_the_colonels_regime_desc": {
+    "ru": "Сохраним независимость и власть Санации при мандате не менее 40%.",
+    "en": "Preserve independence and Sanation rule with at least 40% support."
   },
   "communism": {
     "ru": "Коммунизм",
@@ -13950,7 +14030,8 @@ cbd921fe03ed1ddf89d82cf829f00d0308b4f204829a288c35b814710ad5037a  common/country
 c77a52c8234db9609f9b07889061e93e07d17f81fa2963862099575a403e23c4  common/decisions/categories/GER_categories.txt
 398bcbf55a32226b819f24d23f8afe20b7c89fd623110ab1471da9ee43f0f7d5  common/dynamic_modifiers/GER_industry_modifiers.txt
 8e4cc97b767f392d4b1c1bb3d02a4bc6f123406a413889bc9a5d75150e47648a  common/factions/templates/GER_templates.txt
-b6e79f4540203d53d813b883f9a7a996a3490dd137bbdb92482c1809623b91a7  common/ideas/GER_ideas.txt
+cd73161d2064ebbfc9c8426927cd556cfa7963d6cb4789e5837be0738776c74f  common/ideas/GER_ideas.txt
+793a1aae0e549854e696edfc78d94a67a6c3ddb6eb263a08e44460d0c2c96dda  common/ideas/zzz_generic.txt
 770033acf846e5bf7bf1514484c075d1b1497820e67032b58e51c686f375a2bc  common/national_focus/GER_focuses.txt
 23722e3f91518daf83a3d85ba105a7558b30ae18f78700f02c8221dd509f0fec  common/national_focus/GER_native_compatibility.txt
 deeeafa22258ee1a845995b0c110e7e79b878e4abb11219a876144cfa3aed592  common/national_focus/GER_political.txt
@@ -13977,8 +14058,8 @@ c1f51c6f30fccbc3799a94445195f91fdefeb352f947d9c06b909cfe30663854  common/scripte
 6f19d21f1981c3786bceec9a51e1039d348060dc013256cab9410bb6cdc478cb  docs/GER_overseas_setup.json
 b3e48ec6d79e0bdc6d691941ad02cf51bb18cd91d0406b28599592655136217b  events/AUS_overhaul_events.txt
 70670a1568e4bfd0a36afffa8bf6f4a107b6f9324b2caa2d3f6a178ae559ed8e  events/GER_bohemian_events.txt
-c9fd9f1a29de9daca904472b8341c2fd2fcdc32b3cfe81eeb978e52341768659  events/GER_events.txt
-ee2f27fd571eb9bb9a0d64f32f5f01a438fe58620aeedd57a7eba8a8b0c552bc  history/countries/GER - Germany.txt
+78392fcab30b96cc8ba1f99bd15119a01f49460b3551464a99d4ec69c35b3243  events/GER_events.txt
+2715c039727a63e99adae2cf2e5374c2117c9e4b666e77791327b7ae86e4e104  history/countries/GER - Germany.txt
 a0d2a12c7c249eed4058ebc462088870f344fb17f9b175e043a35b7c5fb372fc  history/states/42-Rhineland.txt
 60bffb081c095ff95005d261cffb298603e4d6c8e76cd934865c71de70b78cf8  history/states/541-South West Africa.txt
 dc1dacbd2ce3290c31ab68cf9aa2d8cff541031d0fb752b98367ec6a1d1a6711  history/states/546-Tanganyika.txt
@@ -13990,8 +14071,8 @@ b5d3e4e53a12b1a914ed0d7eb36e73b185949de595bb6f826dcaa7a1511e0a7d  history/states
 6db87b5fe32cf7d38f51f7071dce07812460c4299be74358a8d73c648ac7b48e  history/states/9-Czechoslovakia.txt
 d6b4f93e50987ec5922a5c6ca8fc5e1fcca7c02fb549dbfe24f457108c41d340  localisation/english/GER_l_english.yml
 a0df213a05f9f83101c6786d7c1005830bd41323bc0412fb2b3175cbefa66c30  localisation/english/GER_parties_l_english.yml
-4b361dfe8f467d9bbff12c2a0160d97f66d29f9cbdd29f8f7cec97cace0142d2  localisation/mod_countries_l_english.yml
-10e7ea988d46a6d9f84080f3f989b848aef9b60b2dcb1d5dec6813ff63332a6e  localisation/mod_countries_l_russian.yml
+b69d77b78f33ac5ff628e2b0ab8010a7bcf7a3731b22bb81aed11c83e2e43bf5  localisation/mod_countries_l_english.yml
+a028273b52862db67f5a9cae5d4612c333a97c2dded85e7dc350c6bb5fd38160  localisation/mod_countries_l_russian.yml
 836619e11268066723b123ca7d75a78edb836c0404e1da156079cb566160374b  localisation/mod_focus_l_english.yml
 c900e99e0e5aa12a2a26affe735af52610677f543cfee120ec10a89629fa242f  localisation/mod_focus_l_russian.yml
 0f246f17e5646fe8b0be1aedc7f874883bd75ffacf7ed1b2a5054d722accf4d1  localisation/replace/GER_campaign_safety_l_english.yml

@@ -1,0 +1,49 @@
+# Owner: POL. Values are reconstructed from completed focuses.
+POL_cop_program = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_industrial_concern_1
+	production_speed_buildings_factor = POL_cop_construction
+	industrial_capacity_factory = POL_cop_output
+	production_factory_efficiency_gain_factor = POL_cop_efficiency
+	energy_gain_factor = POL_cop_energy
+	research_speed_factor = POL_cop_research
+}
+POL_army_program = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_army_war_college
+	army_org_factor = POL_army_org
+	planning_speed = POL_army_planning
+	cavalry_attack_factor = POL_army_cavalry
+	motorized_attack_factor = POL_army_motorized
+	modifier_army_sub_unit_cavalry_speed_factor = POL_army_cavalry_speed
+	army_speed_factor = POL_army_speed
+	max_dig_in_factor = POL_army_dig_in
+	dig_in_speed_factor = POL_army_dig_speed
+	supply_consumption_factor = POL_army_supply
+	training_time_army_factor = POL_army_training
+	army_core_defence_factor = POL_army_defence
+}
+POL_air_program = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_air_bonus
+	air_range_factor = POL_air_range
+	air_mission_efficiency = POL_air_efficiency
+	air_accidents_factor = POL_air_accidents
+}
+POL_state_program = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_political_support
+	stability_factor = POL_state_stability
+	political_power_gain = POL_state_power
+	war_support_factor = POL_state_war_support
+	compliance_growth = POL_state_compliance
+	resistance_target = POL_state_resistance
+}

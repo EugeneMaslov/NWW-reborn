@@ -1,0 +1,2 @@
+# Owner: POL. Non-selectable alias for native compiled references.
+focus_tree = { id = polish_focus country = { factor = 0 } default = no }

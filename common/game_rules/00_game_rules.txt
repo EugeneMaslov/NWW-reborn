@@ -644,71 +644,16 @@ FRA_ai_behavior = {
 	}
 }
 POL_ai_behavior = {
-	name = POL_AI_BEHAVIOR
-	group = RULE_GROUP_AI_BEHAVIOR
-	required_dlc = "Poland: United and Ready"
-	default = {
-		name = DEFAULT
-		text = RULE_OPTION_DEFAULT
-		desc = RULE_OPTION_DEFAULT_AI_DESC
-	}
-	option = {
-		name = COMMUNIST
-		text = RULE_OPTION_COMMUNIST
-		desc = RULE_OPTION_COMMUNIST_POL_AI_DESC
-	}
-	option = {
-		name = HISTORICAL
-		text = RULE_OPTION_HISTORICAL
-		desc = RULE_OPTION_HISTORICAL_POL_AI_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = DEMOCRATIC
-		text = RULE_OPTION_DEMOCRATIC
-		desc = RULE_OPTION_DEMOCRATIC_POL_AI_DESC
-	}
-	option = {
-		name = FASCIST
-		text = RULE_OPTION_FASCIST
-		desc = RULE_FASCIST_POL_AI_DESC
-	}
-	option = {
-		required_dlc = "No Step Back"
-		name = FASCIST_INDEPENDENT
-		text = RULE_OPTION_FASCIST_INDEPENDENT
-		desc = RULE_FASCIST_INDEPENDENT_POL_AI_DESC
-	}
-	option = {
-		required_dlc = "No Step Back"
-		name = COMMONWEALTH
-		text = RULE_OPTION_COMMONWEALTH
-		desc = RULE_COMMONWEALTH_POL_AI_DESC
-	}
-	option = {
-		required_dlc = "No Step Back"
-		name = ROMANIA
-		text = RULE_OPTION_ROMANIA
-		desc = RULE_ROMANIA_POL_AI_DESC
-	}
-	option = {
-		required_dlc = "No Step Back"
-		name = HABSBURG
-		text = RULE_OPTION_HABSBURG
-		desc = RULE_HABSBURG_POL_AI_DESC
-	}
-	option = {
-		required_dlc = "No Step Back"
-		name = BERMONDT
-		text = RULE_OPTION_BERMONDT
-		desc = RULE_BERMONDT_POL_AI_DESC
-	}
-	option = {
-		name = RANDOM
-		text = RULE_OPTION_RANDOM
-		desc = RULE_OPTION_RANDOM_AI_DESC
-	}
+ name = POL_AI_BEHAVIOR
+ group = RULE_GROUP_AI_BEHAVIOR
+ default = { name = DEFAULT text = RULE_OPTION_DEFAULT desc = RULE_OPTION_DEFAULT_AI_DESC }
+ option = { name = HISTORICAL text = POL_rule_sanation desc = POL_rule_sanation_desc }
+ option = { name = FASCIST_INDEPENDENT text = POL_rule_endecja desc = POL_rule_endecja_desc }
+ option = { name = FASCIST text = POL_rule_german desc = POL_rule_german_desc }
+ option = { name = COMMUNIST text = POL_rule_communist desc = POL_rule_communist_desc }
+ option = { name = RANDOM text = POL_rule_random desc = POL_rule_random_desc }
 }
+
 AST_ai_behavior = {
 	name = AST_AI_BEHAVIOR
 	group = RULE_GROUP_AI_BEHAVIOR

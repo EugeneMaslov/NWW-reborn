@@ -1,0 +1,328 @@
+# Owner: POL. Repeatable paid campaigning and finite diplomatic retries.
+POL_nww_politics = {
+	POL_campaign_neutrality = {
+		icon = generic_political_discourse
+		cost = 50
+		days_re_enable = 35
+		visible = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+			OR = {
+				POL_no_political_path = yes
+				has_country_flag = POL_path_german
+			}
+		}
+		available = {
+			has_civil_war = no
+			neutrality < 0.50
+			OR = {
+				AND = {
+					POL_no_political_path = yes
+					has_completed_focus = POL_castle_and_colonels_dialogue
+				}
+				AND = {
+					has_country_flag = POL_path_german
+					GER = {
+						exists = yes
+						has_government = neutrality
+					}
+					NOT = {
+						neutrality < 0.0
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_sanation
+				neutrality < 0.40
+			}
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_german
+				GER = {
+					has_government = neutrality
+				}
+				neutrality < 0.40
+			}
+		}
+	}
+	POL_campaign_fascism = {
+		icon = generic_political_discourse
+		cost = 50
+		days_re_enable = 35
+		visible = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+			OR = {
+				POL_no_political_path = yes
+				has_country_flag = POL_path_german
+			}
+		}
+		available = {
+			has_civil_war = no
+			fascism < 0.50
+			OR = {
+				AND = {
+					POL_no_political_path = yes
+					has_completed_focus = POL_national_democratic_leagues
+				}
+				AND = {
+					has_country_flag = POL_path_german
+					GER = {
+						exists = yes
+						has_government = fascism
+					}
+					NOT = {
+						fascism < 0.0
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_endecja
+				fascism < 0.40
+			}
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_german
+				GER = {
+					has_government = fascism
+				}
+				fascism < 0.40
+			}
+		}
+	}
+	POL_campaign_communism = {
+		icon = generic_political_discourse
+		cost = 50
+		days_re_enable = 35
+		visible = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+			OR = {
+				POL_no_political_path = yes
+				has_country_flag = POL_path_german
+			}
+		}
+		available = {
+			has_civil_war = no
+			communism < 0.50
+			OR = {
+				AND = {
+					POL_no_political_path = yes
+					has_completed_focus = POL_workers_defence_committees
+				}
+				AND = {
+					has_country_flag = POL_path_german
+					GER = {
+						exists = yes
+						has_government = communism
+					}
+					NOT = {
+						communism < 0.0
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_communist
+				communism < 0.40
+			}
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_german
+				GER = {
+					has_government = communism
+				}
+				communism < 0.40
+			}
+		}
+	}
+	POL_campaign_democratic = {
+		icon = generic_political_discourse
+		cost = 50
+		days_re_enable = 35
+		visible = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+			OR = {
+				POL_no_political_path = yes
+				has_country_flag = POL_path_german
+			}
+		}
+		available = {
+			has_civil_war = no
+			democratic < 0.50
+			OR = {
+				AND = {
+					POL_no_political_path = yes
+					has_completed_focus = POL_berlin_trade_delegation
+				}
+				AND = {
+					has_country_flag = POL_path_german
+					GER = {
+						exists = yes
+						has_government = democratic
+					}
+					NOT = {
+						democratic < 0.0
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_german
+				democratic < 0.40
+			}
+			modifier = {
+				add = 20
+				has_country_flag = POL_ai_german
+				GER = {
+					has_government = democratic
+				}
+				democratic < 0.40
+			}
+		}
+	}
+	POL_retry_german_compact = {
+		icon = generic_diplomacy
+		cost = 50
+		days_re_enable = 180
+		visible = {
+			has_completed_focus = POL_join_mitteleuropa_officially
+			NOT = {
+				has_country_flag = POL_german_compact_accepted
+			}
+		}
+		available = {
+			POL_german_path_active = yes
+			POL_german_ideology_mandate = yes
+			NOT = {
+				has_country_flag = POL_german_offer_pending
+			}
+		}
+		complete_effect = {
+			POL_align_with_germany = yes
+			POL_offer_german_compact = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	POL_retry_vilnius_talks = {
+		icon = generic_diplomacy
+		cost = 50
+		days_re_enable = 180
+		visible = {
+			has_completed_focus = POL_vilnius_settlement
+			NOT = {
+				has_country_flag = POL_vilnius_accord
+			}
+		}
+		available = {
+			is_subject = no
+			has_government = neutrality
+			LTB = {
+				POL_ltb_can_negotiate = yes
+			}
+			NOT = {
+				has_war_with = LTB
+			}
+			NOT = {
+				has_country_flag = POL_vilnius_offer_pending
+			}
+		}
+		complete_effect = {
+			POL_offer_vilnius_settlement = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	POL_retry_eastern_alliance = {
+		icon = generic_diplomacy
+		cost = 50
+		days_re_enable = 180
+		visible = {
+			has_completed_focus = POL_alliance_with_the_east
+			NOT = {
+				has_country_flag = POL_eastern_alliance_accepted
+			}
+		}
+		available = {
+			is_subject = no
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			NOT = {
+				has_country_flag = POL_eastern_offer_pending
+			}
+		}
+		complete_effect = {
+			POL_offer_eastern_alliance = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	POL_cancel_german_contracts = {
+		icon = generic_economic_policy
+		cost = 100
+		fire_only_once = yes
+		visible = {
+			OR = {
+				has_idea = POL_german_economic_stranglehold
+				has_idea = POL_german_economic_stranglehold_2
+			}
+		}
+		available = {
+			NOT = {
+				is_subject_of = GER
+			}
+			NOT = {
+				has_country_flag = POL_path_german
+			}
+		}
+		complete_effect = {
+			POL_end_german_dependence = yes
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				has_country_flag = POL_ai_endecja
+			}
+		}
+	}
+}

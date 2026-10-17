@@ -1,0 +1,346 @@
+{
+  "POL_german_economic_stranglehold": {
+    "russian": "Германская экономическая удавка",
+    "english": "German Economic Stranglehold"
+  },
+  "POL_german_economic_stranglehold_desc": {
+    "russian": "Германские инвестиции повышают выпуск заводов, но потребительские обязательства и дорогая смена торговой политики связывают Варшаву. Экономическая зависимость не делает Польшу марионеткой.",
+    "english": "German investment improves factory output, but consumer obligations and expensive trade-law changes bind Warsaw. Economic dependence does not make Poland a puppet."
+  },
+  "POL_german_economic_stranglehold_2": {
+    "russian": "Германская удавка: новые концессии",
+    "english": "German Stranglehold: New Concessions"
+  },
+  "POL_german_economic_stranglehold_2_desc": {
+    "russian": "Новые фабрики и более высокий выпуск оплачиваются усиленной зависимостью от германских заказов.",
+    "english": "New factories and higher output are paid for through deeper dependence on German orders."
+  },
+  "POL_sanation_crisis": {
+    "russian": "Кризис режима Санации",
+    "english": "Sanation Crisis"
+  },
+  "POL_sanation_crisis_desc": {
+    "russian": "Смерть Пилсудского обострила борьбу Замка и полковников. До нового государственного соглашения страдают устойчивость и работа правительства.",
+    "english": "Pilsudski’s death intensified the rivalry between the Castle and the Colonels. Stability and government effectiveness suffer until a new settlement is reached."
+  },
+  "POL_sanation_crisis_2": {
+    "russian": "Кризис Санации: временный компромисс",
+    "english": "Sanation Crisis: Interim Compromise"
+  },
+  "POL_sanation_crisis_2_desc": {
+    "russian": "Бюджетная комиссия ограничила конфликт, но выбранному политическому пути ещё предстоит создать устойчивые институты.",
+    "english": "The budget commission contained the conflict, but the chosen political path must still build lasting institutions."
+  },
+  "POL_landlocked_nation": {
+    "russian": "Государство без выхода к морю",
+    "english": "A Landlocked Nation"
+  },
+  "POL_landlocked_nation_desc": {
+    "russian": "У Польши нет побережья и стартового флота. Морская программа требует контроля хотя бы одной прибрежной области; верфь — также владения этой областью. Сухопутная торговля подчиняется обычным правилам маршрутов игры.",
+    "english": "Poland has no coastline or starting fleet. The naval programme requires control of at least one coastal state; a dockyard additionally requires ownership. Land trade follows the game’s normal route rules."
+  },
+  "POL_native_event_disabled": {
+    "russian": "Ванильная цепочка заменена контентом NWW.",
+    "english": "This native chain is replaced by NWW content."
+  },
+  "POL_ai_restraint_tt": {
+    "russian": "Польский ИИ не начинает ранние войны. Западный поход Эндеции требует 1939 года, подготовки и уязвимости Германии.",
+    "english": "Polish AI does not start early wars. Endecja’s western campaign requires 1939, preparation and a vulnerable Germany."
+  },
+  "POL_civil_war_tt": {
+    "russian": "Начнётся настоящая гражданская война: коммунистам достанется около 40% страны. Игрок перейдёт на сторону восставших; их победа необходима для Республики советов.",
+    "english": "A genuine civil war begins: the communists receive approximately 40% of the country. The player transfers to the rebels; their actual victory is required for the Council Republic."
+  },
+  "POL_nww_politics": {
+    "russian": "Политика и переговоры Польши",
+    "english": "Polish Politics and Negotiations"
+  },
+  "POL_nww_politics_desc": {
+    "russian": "Подготовка общественного мандата требует политической власти. Смена режима требует не менее 40% поддержки; дипломатические предложения могут быть отклонены.",
+    "english": "Building a public mandate costs political power. Regime changes require at least 40% support; diplomatic proposals may be refused."
+  },
+  "POL_campaign_neutrality": {
+    "russian": "Кампания за государственное соглашение",
+    "english": "Campaign for a state settlement"
+  },
+  "POL_campaign_neutrality_desc": {
+    "russian": "Потратим 50 политической власти на организованную кампанию: +10 пунктов поддержки соответствующей партии. Повтор доступен через 35 дней.",
+    "english": "Spend 50 political power on an organized campaign: +10 points of support for the corresponding party. Available again after 35 days."
+  },
+  "POL_campaign_fascism": {
+    "russian": "Кампания за национал-демократов",
+    "english": "Campaign for the National Democrats"
+  },
+  "POL_campaign_fascism_desc": {
+    "russian": "Потратим 50 политической власти на организованную кампанию: +10 пунктов поддержки соответствующей партии. Повтор доступен через 35 дней.",
+    "english": "Spend 50 political power on an organized campaign: +10 points of support for the corresponding party. Available again after 35 days."
+  },
+  "POL_campaign_communism": {
+    "russian": "Кампания за рабочее движение",
+    "english": "Campaign for the workers’ movement"
+  },
+  "POL_campaign_communism_desc": {
+    "russian": "Потратим 50 политической власти на организованную кампанию: +10 пунктов поддержки соответствующей партии. Повтор доступен через 35 дней.",
+    "english": "Spend 50 political power on an organized campaign: +10 points of support for the corresponding party. Available again after 35 days."
+  },
+  "POL_campaign_democratic": {
+    "russian": "Кампания за парламентское представительство",
+    "english": "Campaign for parliamentary representation"
+  },
+  "POL_campaign_democratic_desc": {
+    "russian": "Потратим 50 политической власти на организованную кампанию: +10 пунктов поддержки соответствующей партии. Повтор доступен через 35 дней.",
+    "english": "Spend 50 political power on an organized campaign: +10 points of support for the corresponding party. Available again after 35 days."
+  },
+  "POL_retry_german_compact": {
+    "russian": "Возобновить переговоры с Берлином",
+    "english": "Renew Talks with Berlin"
+  },
+  "POL_retry_german_compact_desc": {
+    "russian": "Новая дипломатическая попытка стоит 50 политической власти. Ожидающее предложение исключает повторную отправку; после попытки действует 180-дневный перерыв. Партнёр может отказать.",
+    "english": "A fresh diplomatic attempt costs 50 political power. A pending proposal prevents duplicate dispatch; a 180-day cooldown follows each attempt. The partner may refuse."
+  },
+  "POL_retry_vilnius_talks": {
+    "russian": "Возобновить виленские переговоры",
+    "english": "Renew the Vilnius Talks"
+  },
+  "POL_retry_vilnius_talks_desc": {
+    "russian": "Новая дипломатическая попытка стоит 50 политической власти. Ожидающее предложение исключает повторную отправку; после попытки действует 180-дневный перерыв. Партнёр может отказать.",
+    "english": "A fresh diplomatic attempt costs 50 political power. A pending proposal prevents duplicate dispatch; a 180-day cooldown follows each attempt. The partner may refuse."
+  },
+  "POL_retry_eastern_alliance": {
+    "russian": "Возобновить переговоры с Востоком",
+    "english": "Renew Talks with the East"
+  },
+  "POL_retry_eastern_alliance_desc": {
+    "russian": "Новая дипломатическая попытка стоит 50 политической власти. Ожидающее предложение исключает повторную отправку; после попытки действует 180-дневный перерыв. Партнёр может отказать.",
+    "english": "A fresh diplomatic attempt costs 50 political power. A pending proposal prevents duplicate dispatch; a 180-day cooldown follows each attempt. The partner may refuse."
+  },
+  "POL_cancel_german_contracts": {
+    "russian": "Расторгнуть германские концессии",
+    "english": "Terminate German Concessions"
+  },
+  "POL_cancel_german_contracts_desc": {
+    "russian": "За 100 политической власти выкупим зависимые предприятия, потеряв и инвестиционный бонус к выпуску. Прогерманский путь и германская зависимость исключают такой выход.",
+    "english": "For 100 political power buy out dependent enterprises, also losing the investment output bonus. The pro-German path and German subject status exclude this option."
+  },
+  "POL_intermarium_faction": {
+    "russian": "Междуморье",
+    "english": "Intermarium"
+  },
+  "POL_mitteleuropa_faction": {
+    "russian": "Миттельевропа",
+    "english": "Mitteleuropa"
+  },
+  "POL_eastern_faction": {
+    "russian": "Восточный союз советских республик",
+    "english": "Eastern Union of Council Republics"
+  },
+  "POL_plan_sanation": {
+    "russian": "Независимая Санация",
+    "english": "Independent Sanation"
+  },
+  "POL_plan_sanation_desc": {
+    "russian": "Развитие избранных институтов, внутренней промышленности и армии.",
+    "english": "Develop the selected institutions, domestic industry and army."
+  },
+  "POL_plan_endecja": {
+    "russian": "Западная стратегия Эндеции",
+    "english": "Endecja’s Western Strategy"
+  },
+  "POL_plan_endecja_desc": {
+    "russian": "Развитие избранных институтов, внутренней промышленности и армии.",
+    "english": "Develop the selected institutions, domestic industry and army."
+  },
+  "POL_plan_german": {
+    "russian": "Германский компромисс",
+    "english": "The German Compact"
+  },
+  "POL_plan_german_desc": {
+    "russian": "Развитие избранных институтов, внутренней промышленности и армии.",
+    "english": "Develop the selected institutions, domestic industry and army."
+  },
+  "POL_plan_communist": {
+    "russian": "Красная Висла",
+    "english": "The Red Vistula"
+  },
+  "POL_plan_communist_desc": {
+    "russian": "Развитие избранных институтов, внутренней промышленности и армии.",
+    "english": "Develop the selected institutions, domestic industry and army."
+  },
+  "POL_rule_sanation": {
+    "russian": "Санация: независимый буфер",
+    "english": "Sanation: Independent Buffer"
+  },
+  "POL_rule_sanation_desc": {
+    "russian": "Исторический путь полковников: оборона, ЦИО и добровольное Междуморье. Германский протекторат будет отвергнут.",
+    "english": "The historical Colonels’ path: defence, COP and a voluntary Intermarium. German protectorate demands will be rejected."
+  },
+  "POL_rule_endecja": {
+    "russian": "Эндеция: марш к морю",
+    "english": "Endecja: March to the Sea"
+  },
+  "POL_rule_endecja_desc": {
+    "russian": "Национальная революция и подготовленный поход на Запад после 1939 года, когда Германия станет уязвимой.",
+    "english": "National revolution and a prepared western campaign from 1939 when Germany becomes vulnerable."
+  },
+  "POL_rule_german": {
+    "russian": "Сделка с Германией",
+    "english": "Deal with Germany"
+  },
+  "POL_rule_german_desc": {
+    "russian": "Прагматическая сделка, идеологическое согласование с Германией и согласительный германский блок. Поздний ультиматум о марионеточном статусе будет принят.",
+    "english": "A pragmatic deal, ideological alignment with Germany and a negotiated German bloc. A later puppet-status ultimatum will be accepted."
+  },
+  "POL_rule_communist": {
+    "russian": "Лодзинское восстание",
+    "english": "The Lodz Uprising"
+  },
+  "POL_rule_communist_desc": {
+    "russian": "Подготовка коммунистического мандата, гражданская война и предложение союза Востоку.",
+    "english": "Build a communist mandate, fight a civil war and offer an eastern alliance."
+  },
+  "POL_rule_random": {
+    "russian": "Случайный путь NWW",
+    "english": "Random NWW Path"
+  },
+  "POL_rule_random_desc": {
+    "russian": "Случайно выбирает один из четырёх польских путей независимо от DLC.",
+    "english": "Randomly select one of the four Polish paths, independently of DLC."
+  },
+  "nww_pol.10.t": {
+    "russian": "Предложение польско-германского соглашения",
+    "english": "A Polish-German Compact"
+  },
+  "nww_pol.10.d": {
+    "russian": "Варшава предлагает официально присоединиться к нашей политической системе в обмен на союз и гарантию. Польша не передаёт территории и не становится марионеткой этим соглашением.",
+    "english": "Warsaw proposes officially joining our political system in exchange for alliance and a guarantee. This agreement transfers no territory and does not itself make Poland a puppet."
+  },
+  "nww_pol.10.a": {
+    "russian": "Принять союз и гарантировать Польшу.",
+    "english": "Accept the alliance and guarantee Poland."
+  },
+  "nww_pol.10.b": {
+    "russian": "Отклонить предложение.",
+    "english": "Decline the proposal."
+  },
+  "nww_pol.20.t": {
+    "russian": "Виленское урегулирование с Польшей",
+    "english": "A Vilnius Settlement with Poland"
+  },
+  "nww_pol.20.d": {
+    "russian": "Польская Санация предлагает пакт о ненападении и взаимный отказ от пограничных претензий. Ни одна область не передаётся, национальные территории сохраняются. Решение остаётся за нашим правительством.",
+    "english": "Polish Sanation proposes a non-aggression pact and mutual renunciation of border claims. No state is transferred and cores remain intact. The decision belongs to our government."
+  },
+  "nww_pol.20.a": {
+    "russian": "Согласиться на урегулирование.",
+    "english": "Accept the settlement."
+  },
+  "nww_pol.20.b": {
+    "russian": "Не связывать себя соглашением.",
+    "english": "Decline to bind ourselves."
+  },
+  "nww_pol.30.t": {
+    "russian": "Приглашение в Междуморье",
+    "english": "An Invitation to the Intermarium"
+  },
+  "nww_pol.30.d": {
+    "russian": "Независимая Польша приглашает нас в оборонительный альянс. Мы сохраним государственность; обязательства союза вступят в силу только с нашего согласия.",
+    "english": "Independent Poland invites us into a defensive alliance. We retain sovereignty; alliance obligations take effect only with our consent."
+  },
+  "nww_pol.30.a": {
+    "russian": "Вступить в Междуморье.",
+    "english": "Join the Intermarium."
+  },
+  "nww_pol.30.b": {
+    "russian": "Сохранить внешнеполитическую самостоятельность.",
+    "english": "Retain diplomatic independence."
+  },
+  "nww_pol.40.t": {
+    "russian": "Польские советы предлагают союз",
+    "english": "The Polish Councils Propose an Alliance"
+  },
+  "nww_pol.40.d": {
+    "russian": "Победившие в гражданской войне польские коммунисты просят принять их в наш союз. Они не передают нам территории и не требуют изменения отношений с существующими партнёрами.",
+    "english": "Victorious Polish communists ask to join our alliance. They transfer no territory and demand no change to our relations with existing partners."
+  },
+  "nww_pol.40.a": {
+    "russian": "Принять польскую республику в союз.",
+    "english": "Accept the Polish republic into our alliance."
+  },
+  "nww_pol.40.b": {
+    "russian": "Отказаться от новых обязательств.",
+    "english": "Decline further commitments."
+  },
+  "POL_neutrality": {
+    "russian": "Польская Республика",
+    "english": "Polish Republic"
+  },
+  "POL_neutrality_DEF": {
+    "russian": "Польская Республика",
+    "english": "the Polish Republic"
+  },
+  "POL_neutrality_ADJ": {
+    "russian": "Польск.",
+    "english": "Polish"
+  },
+  "POL_democratic": {
+    "russian": "Польская Республика",
+    "english": "Polish Republic"
+  },
+  "POL_democratic_DEF": {
+    "russian": "Польская Республика",
+    "english": "the Polish Republic"
+  },
+  "POL_democratic_ADJ": {
+    "russian": "Польск.",
+    "english": "Polish"
+  },
+  "POL_fascism": {
+    "russian": "Польское национальное государство",
+    "english": "Polish National State"
+  },
+  "POL_fascism_DEF": {
+    "russian": "Польское национальное государство",
+    "english": "the Polish National State"
+  },
+  "POL_fascism_ADJ": {
+    "russian": "Польск.",
+    "english": "Polish"
+  },
+  "POL_communism": {
+    "russian": "Польская Советская Республика",
+    "english": "Polish Council Republic"
+  },
+  "POL_communism_DEF": {
+    "russian": "Польская Советская Республика",
+    "english": "the Polish Council Republic"
+  },
+  "POL_communism_ADJ": {
+    "russian": "Польск.",
+    "english": "Polish"
+  },
+  "POL_neutrality_party": {
+    "russian": "Санация",
+    "english": "Sanation"
+  },
+  "POL_neutrality_party_long": {
+    "russian": "Режим Санации",
+    "english": "The Sanation Regime"
+  },
+  "POL_fascism_party": {
+    "russian": "Эндеция",
+    "english": "Endecja"
+  },
+  "POL_fascism_party_long": {
+    "russian": "Национал-демократическое движение",
+    "english": "National Democratic Movement"
+  },
+  "POL_communism_party": {
+    "russian": "КПП",
+    "english": "KPP"
+  },
+  "POL_communism_party_long": {
+    "russian": "Коммунистическая партия Польши",
+    "english": "Communist Party of Poland"
+  }
+}

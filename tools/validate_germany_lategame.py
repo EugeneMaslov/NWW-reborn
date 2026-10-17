@@ -59,6 +59,11 @@ def validate_lategame(root, game, check):
             self.countries['GER']['focuses'].add(fid)
             self.apply(one(focuses[fid],'completion_reward'))
 
+    assimilation = one(ideas['GER_the_new_reich_integrated'],'modifier')
+    check(one(assimilation,'compliance_growth')=='0.10' and one(assimilation,'resistance_target')=='-0.10',
+          'GER: assimilation must modify occupier compliance/resistance, not our states occupied by the enemy')
+    check(one(assimilation,'compliance_growth_on_our_occupied_states') is None and one(assimilation,'resistance_target_on_our_occupied_states') is None,
+          'GER: occupation modifier direction regressed')
     count=0
     # Every reform route and capstone handles both old and new saves without rewards.
     partials=('GER_fund_the_reichswehr','GER_true_constitutional_monarchy','GER_abolish_the_hohenzollerns','GER_german_soviet_republic')

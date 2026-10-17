@@ -1,0 +1,50 @@
+# Owner: POL. NWW starting burdens; army/economy/institutions use persistent programs.
+ideas = {
+	country = {
+		POL_german_economic_stranglehold = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = POL }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				trade_laws_cost_factor = 0.25
+				industrial_capacity_factory = 0.10
+			}
+		}
+		POL_german_economic_stranglehold_2 = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = POL }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				trade_laws_cost_factor = 0.30
+				industrial_capacity_factory = 0.15
+			}
+		}
+		POL_sanation_crisis = {
+			picture = generic_political_support
+			allowed = { original_tag = POL }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { stability_factor = -0.15 political_power_gain = -0.20 }
+		}
+		POL_sanation_crisis_2 = {
+			picture = generic_political_support
+			allowed = { original_tag = POL }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { stability_factor = -0.10 political_power_gain = -0.10 }
+		}
+		POL_landlocked_nation = {
+			picture = generic_oppression
+			allowed = { original_tag = POL }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			# Informational spirit. The actual restriction is a coastal-state trigger.
+			# No invented global prohibition on land trade or imaginary starting fleet.
+			modifier = { }
+		}
+	}
+}

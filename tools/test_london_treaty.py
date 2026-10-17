@@ -1,11 +1,11 @@
 """Execute actual treaty lifecycle scripts, not the game scheduler or UI."""
 from datetime import date
+from pathlib import Path
 from hoi4_script import read, one, values, variable_check
 from test_britain_lifecycle import World, Country, EFFECTS
 from build_london_treaty import ROOT, GAME, MEMBERS, IDEAS, P
 
 EFFECTS.update({k:v for k,v,_ in read(ROOT/'common/scripted_effects/ENG_naval_treaty_effects.txt')})
-EFFECTS['remove_naval_treaty_effect']=one(read(GAME/'common/scripted_effects/00_scripted_effects.txt'),'remove_naval_treaty_effect')
 
 
 class TreatyWorld(World):
@@ -55,7 +55,13 @@ class TreatyWorld(World):
     def run(self,key,ctx='ENG'):self.apply(EFFECTS[P+key],ctx)
 
 
-def main():
+def main(game=None):
+    global GAME
+    if game is not None:
+        GAME=Path(game)
+    elif not GAME.is_dir():
+        GAME=Path.home()/'.local/share/Steam/steamapps/common/Hearts of Iron IV'
+    EFFECTS['remove_naval_treaty_effect']=one(read(GAME/'common/scripted_effects/00_scripted_effects.txt'),'remove_naval_treaty_effect')
     checks=0
     def check(ok,message):
         nonlocal checks;checks+=1

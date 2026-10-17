@@ -1,0 +1,2143 @@
+# Owner: POL. NWW design: docs/POL_overhaul.md.
+focus_tree = {
+	id = POL_focus
+	default = no
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = POL
+		}
+	}
+	initial_show_position = {
+		focus = POL_aftermath_of_the_marshal
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 3000
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_cop_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = POL_cop_plan_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_cop_plan_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_industrial_census
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_cop_plan
+		}
+		completion_reward = {
+			add_political_power = 40
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_accept_german_capital
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_industrial_census
+		}
+		mutually_exclusive = {
+			focus = POL_economic_independence
+		}
+		available = {
+			GER = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = GER
+			}
+			NOT = {
+				has_completed_focus = POL_nationalize_german_assets
+			}
+		}
+		completion_reward = {
+			POL_accept_capital = yes
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_economic_independence
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_industrial_census
+		}
+		mutually_exclusive = {
+			focus = POL_accept_german_capital
+		}
+		available = {
+			has_political_power > 99
+			NOT = {
+				is_subject_of = GER
+			}
+			NOT = {
+				has_completed_focus = POL_pragmatic_deal
+			}
+		}
+		completion_reward = {
+			add_political_power = -100
+			POL_end_german_dependence = yes
+			custom_effect_tooltip = POL_economic_independence_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_economic_independence_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_public_works_board
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_accept_german_capital
+			focus = POL_economic_independence
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_public_works_board_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_public_works_board_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_vistula_rail_corridor
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_public_works_board
+		}
+		completion_reward = {
+			POL_improve_inland_transport = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_southern_workshops
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_vistula_rail_corridor
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_rural_electrification
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_vistula_rail_corridor
+		}
+		completion_reward = {
+			POL_build_power = yes
+			custom_effect_tooltip = POL_rural_electrification_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_rural_electrification_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_domestic_coal_survey
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_rural_electrification
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_lublin_arsenals
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_southern_workshops
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_precision_machine_tools
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_lublin_arsenals
+		}
+		prerequisite = {
+			focus = POL_domestic_coal_survey
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_precision_machine_tools_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_precision_machine_tools_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_university_consortium
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_precision_machine_tools
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_export_diversification
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_precision_machine_tools
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_export_diversification_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_export_diversification_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ECONOMY: Central Industrial District and financing
+	focus = {
+		id = POL_four_year_balance_sheet
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_university_consortium
+		}
+		prerequisite = {
+			focus = POL_export_diversification
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_four_year_balance_sheet_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_four_year_balance_sheet_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_modernize_the_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			army_experience = 15
+			custom_effect_tooltip = POL_modernize_the_army_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_modernize_the_army_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_officer_academy
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_modernize_the_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_officer_academy_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_officer_academy_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_cavalry_traditions
+		icon = GFX_goal_generic_army_doctrines
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_officer_academy
+		}
+		mutually_exclusive = {
+			focus = POL_defend_the_wisla
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_cavalry_traditions_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_cavalry_traditions_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_defend_the_wisla
+		icon = GFX_goal_generic_army_doctrines
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_officer_academy
+		}
+		mutually_exclusive = {
+			focus = POL_cavalry_traditions
+		}
+		completion_reward = {
+			POL_build_border_forts = yes
+			custom_effect_tooltip = POL_defend_the_wisla_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_defend_the_wisla_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_motorized_columns
+		icon = GFX_goal_generic_army_doctrines
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_cavalry_traditions
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 200
+				producer = ROOT
+			}
+			custom_effect_tooltip = POL_motorized_columns_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_motorized_columns_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_mobile_signals
+		icon = GFX_goal_generic_army_doctrines
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_motorized_columns
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_mobile_signals_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_mobile_signals_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_fortress_engineers
+		icon = GFX_goal_generic_army_doctrines
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_defend_the_wisla
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_fortress_engineers_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_fortress_engineers_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_vistula_reserve_battalions
+		icon = GFX_goal_generic_army_doctrines
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_fortress_engineers
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_vistula_reserve_battalions_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_vistula_reserve_battalions_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_unified_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_mobile_signals
+			focus = POL_vistula_reserve_battalions
+		}
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = POL_unified_general_staff_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_unified_general_staff_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_quartermaster_service
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_unified_general_staff
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_quartermaster_service_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_quartermaster_service_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_reserve_officer_network
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_quartermaster_service
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_reserve_officer_network_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_reserve_officer_network_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ARMY: mobile or Vistula doctrine
+	focus = {
+		id = POL_national_manoeuvres
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_reserve_officer_network
+		}
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = POL_national_manoeuvres_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_national_manoeuvres_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AIR FORCE: domestic aviation
+	focus = {
+		id = POL_pzl_research_bureau
+		icon = GFX_goal_generic_air_fighter
+		x = 32
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				category = air_equipment
+				bonus = 0.50
+				uses = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AIR FORCE: domestic aviation
+	focus = {
+		id = POL_air_training_schools
+		icon = GFX_goal_generic_air_fighter
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_pzl_research_bureau
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_air_training_schools_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_air_training_schools_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AIR FORCE: domestic aviation
+	focus = {
+		id = POL_defence_of_the_skies
+		icon = GFX_goal_generic_air_fighter
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_air_training_schools
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = light_air
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_defence_of_the_skies_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_defence_of_the_skies_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AIR FORCE: domestic aviation
+	focus = {
+		id = POL_army_air_liaison
+		icon = GFX_goal_generic_air_fighter
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_air_training_schools
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cas_bomber
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_army_air_liaison_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_army_air_liaison_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AIR FORCE: domestic aviation
+	focus = {
+		id = POL_dispersed_air_workshops
+		icon = GFX_goal_generic_air_fighter
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_defence_of_the_skies
+		}
+		prerequisite = {
+			focus = POL_army_air_liaison
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			POL_build_air_base = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AIR FORCE: domestic aviation
+	focus = {
+		id = POL_integrated_air_command
+		icon = GFX_goal_generic_air_fighter
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_dispersed_air_workshops
+		}
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = POL_integrated_air_command_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_integrated_air_command_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# NAVY: hidden until a controlled coastline exists
+	focus = {
+		id = POL_baltic_fleet_program
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 80
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		available = {
+			has_any_controlled_coastal_state = yes
+		}
+		completion_reward = {
+
+		}
+		allow_branch = {
+			has_any_controlled_coastal_state = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# NAVY: hidden until a controlled coastline exists
+	focus = {
+		id = POL_first_coastal_dockyard
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 80
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_baltic_fleet_program
+		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 0.50
+				uses = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# POLITICS: common crisis preparation
+	focus = {
+		id = POL_aftermath_of_the_marshal
+		icon = GFX_goal_generic_political_pressure
+		x = 56
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# POLITICS: common crisis preparation
+	focus = {
+		id = POL_castle_and_colonels_dialogue
+		icon = GFX_goal_generic_political_pressure
+		x = 44
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_aftermath_of_the_marshal
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# POLITICS: common crisis preparation
+	focus = {
+		id = POL_national_democratic_leagues
+		icon = GFX_goal_generic_political_pressure
+		x = 52
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_aftermath_of_the_marshal
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# POLITICS: common crisis preparation
+	focus = {
+		id = POL_berlin_trade_delegation
+		icon = GFX_goal_generic_political_pressure
+		x = 60
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_aftermath_of_the_marshal
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# POLITICS: common crisis preparation
+	focus = {
+		id = POL_workers_defence_committees
+		icon = GFX_goal_generic_political_pressure
+		x = 68
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_aftermath_of_the_marshal
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# POLITICS: common crisis preparation
+	focus = {
+		id = POL_state_budget_commission
+		icon = GFX_goal_generic_political_pressure
+		x = 56
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_aftermath_of_the_marshal
+		}
+		completion_reward = {
+			set_country_flag = POL_budget_commission_done
+			POL_refresh_crisis = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_the_colonels_regime
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_castle_and_colonels_dialogue
+		}
+		mutually_exclusive = {
+			focus = POL_endecja_ascendant
+			focus = POL_pragmatic_deal
+			focus = POL_the_lodz_uprising
+		}
+		available = {
+			POL_no_political_path = yes
+			is_subject = no
+			has_civil_war = no
+			has_completed_focus = POL_state_budget_commission
+			NOT = {
+				neutrality < 0.40
+			}
+		}
+		completion_reward = {
+			POL_establish_sanation = yes
+			custom_effect_tooltip = POL_the_colonels_regime_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_the_colonels_regime_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_ai = yes
+				NOT = {
+					has_country_flag = POL_ai_sanation
+				}
+			}
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_endecja_ascendant
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_national_democratic_leagues
+		}
+		mutually_exclusive = {
+			focus = POL_the_colonels_regime
+			focus = POL_pragmatic_deal
+			focus = POL_the_lodz_uprising
+		}
+		available = {
+			POL_no_political_path = yes
+			is_subject = no
+			has_civil_war = no
+			has_completed_focus = POL_state_budget_commission
+			NOT = {
+				fascism < 0.40
+			}
+		}
+		completion_reward = {
+			POL_establish_endecja = yes
+			custom_effect_tooltip = POL_endecja_ascendant_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_endecja_ascendant_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_ai = yes
+				NOT = {
+					has_country_flag = POL_ai_endecja
+				}
+			}
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_pragmatic_deal
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_berlin_trade_delegation
+		}
+		mutually_exclusive = {
+			focus = POL_the_colonels_regime
+			focus = POL_endecja_ascendant
+			focus = POL_the_lodz_uprising
+		}
+		available = {
+			POL_no_political_path = yes
+			is_subject = no
+			has_civil_war = no
+			has_completed_focus = POL_state_budget_commission
+			NOT = {
+				neutrality < 0.40
+			}
+			GER = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = GER
+			}
+			NOT = {
+				has_completed_focus = POL_economic_independence
+			}
+		}
+		completion_reward = {
+			set_country_flag = POL_path_german
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_ai = yes
+				NOT = {
+					has_country_flag = POL_ai_german
+				}
+			}
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_the_lodz_uprising
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_workers_defence_committees
+		}
+		mutually_exclusive = {
+			focus = POL_the_colonels_regime
+			focus = POL_endecja_ascendant
+			focus = POL_pragmatic_deal
+		}
+		available = {
+			POL_no_political_path = yes
+			is_subject = no
+			has_civil_war = no
+			has_completed_focus = POL_state_budget_commission
+			NOT = {
+				communism < 0.40
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_civil_war_tt
+			hidden_effect = {
+				POL_start_communist_civil_war = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_ai = yes
+				NOT = {
+					has_country_flag = POL_ai_communist
+				}
+			}
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_castle_compact
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_the_colonels_regime
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_castle_compact_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_castle_compact_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_professional_civil_service
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_castle_compact
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			POL_finish_crisis = yes
+			custom_effect_tooltip = POL_professional_civil_service_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_professional_civil_service_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_fortify_the_borders
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_professional_civil_service
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			POL_build_border_forts = yes
+			custom_effect_tooltip = POL_fortify_the_borders_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_fortify_the_borders_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_intermarium_concept
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_fortify_the_borders
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		}
+		completion_reward = {
+			POL_create_intermarium = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_vilnius_settlement
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_intermarium_concept
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			POL_offer_vilnius_settlement = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_baltic_danubian_congress
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_vilnius_settlement
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			POL_offer_intermarium_membership = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_agrarian_conciliation
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_baltic_danubian_congress
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_agrarian_conciliation_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_agrarian_conciliation_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_national_defence_fund_nww
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_agrarian_conciliation
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# SANATION: independent defensive republic
+	focus = {
+		id = POL_republic_survives
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 12
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_national_defence_fund_nww
+		}
+		available = {
+			has_government = neutrality
+			is_subject = no
+			date > 1940.12.31
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_republic_survives_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_republic_survives_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_national_bloc
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_endecja_ascendant
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			POL_finish_crisis = yes
+			custom_effect_tooltip = POL_national_bloc_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_national_bloc_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_radical_polonization
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_national_bloc
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_radical_polonization_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_radical_polonization_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_western_claims_dossier
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_radical_polonization
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			POL_add_western_claims = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_march_to_the_sea
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_western_claims_dossier
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+			date > 1938.12.31
+			POL_can_prepare_western_war = yes
+		}
+		completion_reward = {
+			POL_prepare_western_war = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_secure_the_corridor
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_march_to_the_sea
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+			POL_controls_western_recovery_area = yes
+		}
+		completion_reward = {
+			POL_rebuild_western_regions = yes
+			custom_effect_tooltip = POL_secure_the_corridor_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_secure_the_corridor_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_wartime_conversion
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_secure_the_corridor
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			POL_end_german_dependence = yes
+			custom_effect_tooltip = POL_wartime_conversion_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_wartime_conversion_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_silesian_reconstruction
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_wartime_conversion
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+			762 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			POL_rebuild_silesia = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_continental_army
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_silesian_reconstruction
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_continental_army_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_continental_army_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_sovereign_national_state
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 12
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_continental_army
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_sovereign_national_state_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_sovereign_national_state_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_customs_commission
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_pragmatic_deal
+		}
+		available = {
+			POL_german_path_active = yes
+		}
+		completion_reward = {
+			POL_finish_crisis = yes
+			custom_effect_tooltip = POL_customs_commission_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_customs_commission_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_guaranteed_transit
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_customs_commission
+		}
+		available = {
+			POL_german_path_active = yes
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_guaranteed_transit_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_guaranteed_transit_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_join_mitteleuropa_officially
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_guaranteed_transit
+		}
+		available = {
+			POL_german_path_active = yes
+			POL_german_ideology_mandate = yes
+		}
+		completion_reward = {
+			POL_align_with_germany = yes
+			POL_offer_german_compact = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_licensed_machine_tools
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_join_mitteleuropa_officially
+		}
+		available = {
+			POL_german_path_active = yes
+			has_country_flag = POL_german_compact_accepted
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_licensed_machine_tools_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_licensed_machine_tools_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_staff_exchange
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_licensed_machine_tools
+		}
+		available = {
+			POL_german_path_active = yes
+			has_country_flag = POL_german_compact_accepted
+		}
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = POL_staff_exchange_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_staff_exchange_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_recognize_the_western_frontier
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_staff_exchange
+		}
+		available = {
+			POL_german_path_active = yes
+			has_country_flag = POL_german_compact_accepted
+		}
+		completion_reward = {
+			POL_renounce_western_claims = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_galician_assurances
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_recognize_the_western_frontier
+		}
+		available = {
+			POL_german_path_active = yes
+			has_country_flag = POL_german_compact_accepted
+		}
+		completion_reward = {
+			POL_build_southern_forts = yes
+			custom_effect_tooltip = POL_galician_assurances_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_galician_assurances_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_joint_armament_contracts
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_galician_assurances
+		}
+		available = {
+			POL_german_path_active = yes
+			has_country_flag = POL_german_compact_accepted
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# GERMAN COMPACT: consent and ideological mandate
+	focus = {
+		id = POL_polish_institutions_in_mitteleuropa
+		icon = GFX_goal_generic_alliance
+		x = 60
+		y = 12
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_joint_armament_contracts
+		}
+		available = {
+			POL_german_path_active = yes
+			has_country_flag = POL_german_compact_accepted
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_polish_institutions_in_mitteleuropa_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_polish_institutions_in_mitteleuropa_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_council_republic
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_the_lodz_uprising
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			POL_finish_crisis = yes
+			custom_effect_tooltip = POL_council_republic_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_council_republic_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_land_and_food_committees
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_council_republic
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_land_and_food_committees_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_land_and_food_committees_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_nationalize_german_assets
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_land_and_food_committees
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			POL_end_german_dependence = yes
+			custom_effect_tooltip = POL_nationalize_german_assets_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_nationalize_german_assets_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_workers_militias_nww
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_nationalize_german_assets
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = POL_workers_militias_nww_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_workers_militias_nww_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_alliance_with_the_east
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_workers_militias_nww
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			POL_offer_eastern_alliance = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_socialist_constitution
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_alliance_with_the_east
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_socialist_constitution_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_socialist_constitution_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_eastern_trade_protocols
+		icon = GFX_goal_support_communism
+		x = 70
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_socialist_constitution
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+			has_country_flag = POL_eastern_alliance_accepted
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.50
+				uses = 1
+			}
+			custom_effect_tooltip = POL_eastern_trade_protocols_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_eastern_trade_protocols_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_red_logistics_service
+		icon = GFX_goal_support_communism
+		x = 66
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_socialist_constitution
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_red_logistics_service_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_red_logistics_service_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# COMMUNISTS: civil war and council republic
+	focus = {
+		id = POL_red_wisla
+		icon = GFX_goal_support_communism
+		x = 68
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_eastern_trade_protocols
+			focus = POL_red_logistics_service
+		}
+		available = {
+			has_government = communism
+			has_country_flag = POL_communist_victory
+			has_civil_war = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_red_wisla_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_red_wisla_reform_done
+				POL_refresh_programs = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

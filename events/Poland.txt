@@ -1,0 +1,35 @@
+# Owner: POL. Native event registry only; gameplay: POL_events.txt.
+add_namespace = poland
+country_event = { id = poland.1 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.2 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.3 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.4 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.5 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.6 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.7 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.8 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.9 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.10 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.11 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.12 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.13 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.1301 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.1302 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.1303 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.14 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.15 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.1501 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.1502 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.16 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.1602 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.17 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.18 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.19 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.20 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.21 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.2101 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.2102 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.22 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.24 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.25 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
+country_event = { id = poland.26 is_triggered_only = yes hidden = yes trigger = { always = no } option = { name = POL_native_event_disabled } }
