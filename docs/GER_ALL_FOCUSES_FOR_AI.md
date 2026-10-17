@@ -2,7 +2,7 @@
 
 Дата снимка: **2026-10-17**. Источник — текущие игровые скрипты проекта. Самодостаточный файл содержит названия и описания RU/EN, награды, условия, зависимости, взаимоисключения, события, решения, духи, BoP и восстановление сохранений. Игровые файлы при экспорте не меняются.
 
-Игровое дерево `GER_focus`: **64 фокуса** — 28 политических, 31 промышленных/научных/разведывательных и 5 прочих военных/государственных. Число direct-focus: 36; импортированных shared-focus: 28.
+Количество фокусов в игровом дереве `GER_focus`: **76** — 40 политических, 31 промышленных/научных/разведывательных и 5 прочих военных/государственных. Число direct-focus: 36; импортированных shared-focus: 40.
 
 ## Контекст и правила для улучшения
 
@@ -37,22 +37,34 @@
 | Авторитарный путь / Железный кайзеррейх | Австрийский вопрос | `GER_the_austrian_question` | 70 |
 | Авторитарный путь / Железный кайзеррейх | Разгромить восточные синдикаты | `GER_crush_eastern_syndicates` | 70 |
 | Авторитарный путь / Железный кайзеррейх | С нами Бог | `GER_gott_mit_uns` | 70 |
+| Авторитарный путь / Железный кайзеррейх | План Шлиффена 2.0 | `GER_schlieffen_reborn` | 70 |
+| Авторитарный путь / Железный кайзеррейх | Удар на Запад | `GER_strike_the_west` | 70 |
+| Авторитарный путь / Железный кайзеррейх | Вторая морская гонка | `GER_the_second_naval_race` | 70 |
 | Демократический путь / Парламентская весна | Парламентская весна | `GER_parliamentary_spring` | 70 |
 | Демократический путь / Парламентская весна | Подлинная конституционная монархия | `GER_true_constitutional_monarchy` | 70 |
 | Демократический путь / Парламентская весна | Экономическое сообщество Миттельевропы | `GER_mitteleuropa_economic_community` | 70 |
 | Демократический путь / Парламентская весна | Австрийский референдум | `GER_the_austrian_referendum` | 70 |
 | Демократический путь / Парламентская весна | Арсенал демократии | `GER_arsenal_of_democracy` | 70 |
+| Демократический путь / Парламентская весна | Европейская федерация | `GER_european_federation` | 70 |
+| Демократический путь / Парламентская весна | Поход против империализма | `GER_anti_imperialist_crusade` | 70 |
+| Демократический путь / Парламентская весна | Щит против красных | `GER_shield_against_the_reds` | 70 |
 | Пангерманский путь | Пангерманский триумф | `GER_the_pan_germanic_triumph` | 70 |
 | Пангерманский путь | Упразднить власть Гогенцоллернов | `GER_abolish_the_hohenzollerns` | 70 |
 | Пангерманский путь | Аншлюс силой | `GER_anschluss_by_force` | 70 |
 | Пангерманский путь | Экспансия на Восток | `GER_lebensraum_in_the_east` | 70 |
 | Пангерманский путь | Новый рейх | `GER_the_new_reich` | 70 |
+| Пангерманский путь | Расширить натиск на Восток | `GER_drang_nach_osten_expanded` | 70 |
+| Пангерманский путь | Тотальная ассимиляция | `GER_total_assimilation` | 70 |
+| Пангерманский путь | Гегемония над Европой | `GER_hegemony_over_europe_focus` | 70 |
 | Спартакистский путь | Спартакистское восстание | `GER_the_spartacist_uprising` | 70 |
 | Спартакистский путь | Германская советская республика | `GER_german_soviet_republic` | 70 |
 | Спартакистский путь | Рабочие ополчения | `GER_workers_militias` | 70 |
 | Спартакистский путь | Демонтировать имперские границы | `GER_dismantle_imperial_borders` | 70 |
 | Спартакистский путь | Ось Берлин — Москва | `GER_berlin_moscow_axis` | 70 |
 | Спартакистский путь | Мировая революция | `GER_world_revolution` | 70 |
+| Спартакистский путь | Красный Рейн | `GER_red_rhine` | 70 |
+| Спартакистский путь | Массовая мобилизация ННА | `GER_nva_mass_mobilization` | 70 |
+| Спартакистский путь | Бросить вызов Москве | `GER_challenge_moscow` | 70 |
 | Промышленность, наука, торговля и разведка | Имперский промышленный совет | `GER_krupp_and_thyssen` | 70 |
 | Промышленность, наука, торговля и разведка | Модернизировать Рурский бассейн | `GER_1` | 70 |
 | Промышленность, наука, торговля и разведка | Рейнские инвестиционные банки | `GER_5` | 70 |
@@ -136,9 +148,9 @@ focus = {
 
 EN: Fund the Reichswehr.
 
-Описание RU: Предоставим имперской армии требуемые средства и доступ к власти. Генеральный штаб усилит влияние за счёт парламентского контроля.
+Описание RU: Предоставим имперской армии требуемые средства и доступ к власти. Генеральный штаб усилит влияние за счёт парламентского контроля. Начать реформу штабов и заменить имперское перенапряжение облегчённой версией без штрафа к организации.
 
-Описание EN: Give the imperial army the funds and access it demands. The General Staff gains influence at the expense of parliamentary oversight.
+Описание EN: Give the imperial army the funds and access it demands. The General Staff gains influence at the expense of parliamentary oversight. Begin staff reform and replace Imperial Overstretch with its reduced version, removing the organisation penalty.
 
 Источник: `common/national_focus/GER_political.txt:15`. Стоимость: 5 (35 дней). Координаты: x=10, y=1. Иконка: `GFX_focus_GER_prussian_legacy`.
 
@@ -171,6 +183,7 @@ focus = {
         }
     }
     completion_reward = {
+        GER_nww_partial_army_reform = yes
         army_experience = 15
         if = {
             limit = {
@@ -201,7 +214,7 @@ EN: Empower the Chancellor.
 
 Описание EN: The chancellor must negotiate budgets through the Reichstag rather than defer to the court and General Staff. Civilian institutions gain a stronger voice.
 
-Источник: `common/national_focus/GER_political.txt:48`. Стоимость: 5 (35 дней). Координаты: x=14, y=1. Иконка: `GFX_focus_GER_monarchy_compromise`.
+Источник: `common/national_focus/GER_political.txt:49`. Стоимость: 5 (35 дней). Координаты: x=14, y=1. Иконка: `GFX_focus_GER_monarchy_compromise`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -266,7 +279,7 @@ EN: The Pan-German Leagues.
 
 Описание EN: Organise nationalist associations into a coherent political movement. Their rallies can build the 40% mandate needed to break a parliamentary deadlock.
 
-Источник: `common/national_focus/GER_political.txt:322`. Стоимость: 5 (35 дней). Координаты: x=22, y=1. Иконка: `GFX_focus_GER_brothers_in_arms`.
+Источник: `common/national_focus/GER_political.txt:325`. Стоимость: 5 (35 дней). Координаты: x=22, y=1. Иконка: `GFX_focus_GER_brothers_in_arms`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -319,7 +332,7 @@ EN: Organise the Ruhr Workers.
 
 Описание EN: Rebuild the workers councils and prepare a Spartacist challenge to the imperial order. Councils can raise support for the coming uprising.
 
-Источник: `common/national_focus/GER_political.txt:348`. Стоимость: 5 (35 дней). Координаты: x=26, y=1. Иконка: `GFX_focus_GER_legacy_of_the_spartacus_league`.
+Источник: `common/national_focus/GER_political.txt:351`. Стоимость: 5 (35 дней). Координаты: x=26, y=1. Иконка: `GFX_focus_GER_legacy_of_the_spartacus_league`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -372,7 +385,7 @@ EN: End of an Era.
 
 Описание EN: Wilhelm II personified an empire that never faced a world war. His death will end its long political suspension and open the struggle over the succession. This focus is completed only by the succession event, between August and the end of 1936.
 
-Источник: `common/national_focus/GER_political.txt:85`. Стоимость: 0 (0 дней). Координаты: x=18, y=3. Иконка: `GFX_focus_GER_tend_to_the_future`.
+Источник: `common/national_focus/GER_political.txt:86`. Стоимость: 0 (0 дней). Координаты: x=18, y=3. Иконка: `GFX_focus_GER_tend_to_the_future`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -410,7 +423,7 @@ focus = {
 }
 ```
 
-## Авторитарный путь / Железный кайзеррейх — 6
+## Авторитарный путь / Железный кайзеррейх — 9
 
 ### Потсдамский переворот — `GER_the_potsdam_coup`
 
@@ -420,7 +433,7 @@ EN: The Potsdam Coup.
 
 Описание EN: With the General Staff behind him, Wilhelm III will seize the powers his father allowed to decay. The army must already have received our backing; military influence must exceed 10% to the left of centre, and the monarchists need at least 40% support.
 
-Источник: `common/national_focus/GER_political.txt:104`. Стоимость: 10 (70 дней). Координаты: x=6, y=4. Иконка: `GFX_focus_GER_glory_to_the_imperial_army`.
+Источник: `common/national_focus/GER_political.txt:105`. Стоимость: 10 (70 дней). Координаты: x=6, y=4. Иконка: `GFX_focus_GER_glory_to_the_imperial_army`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -497,7 +510,7 @@ EN: Dissolve the Reichstag.
 
 Описание EN: Parliament will no longer obstruct imperial commands. The crown and OHL take complete control, the balance of power is locked, and democratic political advisors lose their posts and eligibility.
 
-Источник: `common/national_focus/GER_political.txt:151`. Стоимость: 10 (70 дней). Координаты: x=6, y=5. Иконка: `GFX_focus_GER_realpolitik`.
+Источник: `common/national_focus/GER_political.txt:152`. Стоимость: 10 (70 дней). Координаты: x=6, y=5. Иконка: `GFX_focus_GER_realpolitik`.
 
 Предпосылки: (Потсдамский переворот [GER_the_potsdam_coup]).
 
@@ -560,7 +573,7 @@ EN: Rein in Mitteleuropa.
 
 Описание EN: Demand binding subordination from Lithuania-Belarus and Poland. Our existing subjects become integrated puppets where the autonomy system permits; independent governments may accept puppet status or refuse. No German war against Lithuania-Belarus may begin before 1939.\n\n$GER_eastern_1939_gate_tt$
 
-Источник: `common/national_focus/GER_political.txt:187`. Стоимость: 10 (70 дней). Координаты: x=4, y=6. Иконка: `GFX_focus_GER_extend_mitteleuropa`.
+Источник: `common/national_focus/GER_political.txt:188`. Стоимость: 10 (70 дней). Координаты: x=4, y=6. Иконка: `GFX_focus_GER_extend_mitteleuropa`.
 
 Предпосылки: (Распустить рейхстаг [GER_dissolve_the_reichstag]).
 
@@ -626,7 +639,7 @@ EN: The Austrian Question.
 
 Описание EN: Vienna must acknowledge the supremacy of Berlin and accept puppet status. Austria may refuse; such a refusal gives us a war goal to enforce its submission.
 
-Источник: `common/national_focus/GER_political.txt:226`. Стоимость: 10 (70 дней). Координаты: x=8, y=6. Иконка: `GFX_focus_GER_the_austrian_question`.
+Источник: `common/national_focus/GER_political.txt:227`. Стоимость: 10 (70 дней). Координаты: x=8, y=6. Иконка: `GFX_focus_GER_the_austrian_question`.
 
 Предпосылки: (Распустить рейхстаг [GER_dissolve_the_reichstag]).
 
@@ -696,7 +709,7 @@ EN: Crush the Eastern Syndicates.
 
 Описание EN: Prepare the destruction of the independent syndicalist centres in the Makhnovist territory and Ukraine. War goals are granted only against existing independent countries outside our alliance.\n\n$GER_eastern_1939_gate_tt$
 
-Источник: `common/national_focus/GER_political.txt:269`. Стоимость: 10 (70 дней). Координаты: x=4, y=7. Иконка: `GFX_focus_GER_end_european_communism`.
+Источник: `common/national_focus/GER_political.txt:270`. Стоимость: 10 (70 дней). Координаты: x=4, y=7. Иконка: `GFX_focus_GER_end_european_communism`.
 
 Предпосылки: (Обуздать Миттельевропу [GER_reign_in_mitteleuropa]).
 
@@ -750,11 +763,11 @@ focus = {
 
 EN: Gott mit uns.
 
-Описание RU: Железная империя объединяет корону, армию и нацию общей имперской целью. Дивизии получают +15% к защите на национальной территории, +10% к атаке и +10% к прорыву.
+Описание RU: Железная империя объединяет корону, армию и нацию общей имперской целью. Дивизии получают +15% к защите на национальной территории, +10% к атаке и +10% к прорыву. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.
 
-Описание EN: The Iron Kaiserreich binds crown, army and nation to a single imperial purpose. Its divisions gain 15% core defence, 10% attack and 10% breakthrough.
+Описание EN: The Iron Kaiserreich binds crown, army and nation to a single imperial purpose. Its divisions gain 15% core defence, 10% attack and 10% breakthrough. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:300`. Стоимость: 10 (70 дней). Координаты: x=6, y=8. Иконка: `GFX_focus_GER_army`.
+Источник: `common/national_focus/GER_political.txt:301`. Стоимость: 10 (70 дней). Координаты: x=6, y=8. Иконка: `GFX_focus_GER_army`.
 
 Предпосылки: (Разгромить восточные синдикаты [GER_crush_eastern_syndicates]) И (Австрийский вопрос [GER_the_austrian_question]).
 
@@ -762,10 +775,12 @@ EN: Gott mit uns.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
 
-Прямые продолжения: нет.
+Прямые продолжения: GER_schlieffen_reborn.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
+- `remove_ideas`: GER_imperial_overstretch
+- `remove_ideas`: GER_imperial_overstretch_2
 - `add_ideas`: GER_gott_mit_uns
 
 Полное определение фокуса:
@@ -785,6 +800,8 @@ focus = {
         has_government = neutrality
     }
     completion_reward = {
+        remove_ideas = GER_imperial_overstretch
+        remove_ideas = GER_imperial_overstretch_2
         add_ideas = GER_gott_mit_uns
     }
     ai_will_do = {
@@ -795,7 +812,249 @@ focus = {
 }
 ```
 
-## Демократический путь / Парламентская весна — 5
+### План Шлиффена 2.0 — `GER_schlieffen_reborn`
+
+EN: Schlieffen Reborn.
+
+Описание RU: Современная штабная работа заменит планы прошлого столетия. С 1941 года мы сможем добиваться подчинения Нидерландов и Бельгии. Исторический ИИ сначала должен завершить польскую и австрийскую кампании.
+
+Описание EN: Modern staff work replaces a plan inherited from the last century. From 1941 we can demand the subordination of the Netherlands and Belgium. The historical AI must first settle its Polish and Austrian campaigns.
+
+Источник: `common/national_focus/GER_political.txt:999`. Стоимость: 10 (70 дней). Координаты: x=6, y=9. Иконка: `GFX_focus_GER_army`.
+
+Предпосылки: (С нами Бог [GER_gott_mit_uns]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_strike_the_west.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `create_wargoal`: type = puppet_wargoal_focus; target = HOL
+- `create_wargoal`: type = puppet_wargoal_focus; target = BEL
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_schlieffen_reborn
+    icon = GFX_focus_GER_army
+    x = 6
+    y = 9
+    cost = 10
+    prerequisite = {
+        focus = GER_gott_mit_uns
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = neutrality
+        is_subject = no
+        date > 1940.12.31
+        OR = {
+            is_ai = no
+            GER_nww_eastern_campaigns_settled = yes
+        }
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                HOL = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = HOL
+                }
+                NOT = {
+                    has_war_with = HOL
+                }
+                NOT = {
+                    has_wargoal_against = HOL
+                }
+            }
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = HOL
+            }
+        }
+        if = {
+            limit = {
+                BEL = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = BEL
+                }
+                NOT = {
+                    has_war_with = BEL
+                }
+                NOT = {
+                    has_wargoal_against = BEL
+                }
+            }
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = BEL
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Удар на Запад — `GER_strike_the_west`
+
+EN: Strike the West.
+
+Описание RU: Реформированная императорская армия готовит поход против Франции. Цель войны на полное завоевание создаёт дипломатическую основу, но победу ещё предстоит одержать на поле боя.
+
+Описание EN: The reformed imperial army prepares a campaign against France. A conquest war goal supplies the diplomatic instrument; victory still has to be won on the battlefield.
+
+Источник: `common/national_focus/GER_political.txt:1035`. Стоимость: 10 (70 дней). Координаты: x=6, y=10. Иконка: `GFX_focus_GER_hegemony_over_europe`.
+
+Предпосылки: (План Шлиффена 2.0 [GER_schlieffen_reborn]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_the_second_naval_race.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `create_wargoal`: type = annex_everything; target = FRA
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_strike_the_west
+    icon = GFX_focus_GER_hegemony_over_europe
+    x = 6
+    y = 10
+    cost = 10
+    prerequisite = {
+        focus = GER_schlieffen_reborn
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = neutrality
+        is_subject = no
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                FRA = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = FRA
+                }
+                NOT = {
+                    has_war_with = FRA
+                }
+                NOT = {
+                    has_wargoal_against = FRA
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = FRA
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Вторая морская гонка — `GER_the_second_naval_race`
+
+EN: The Second Naval Race.
+
+Описание RU: Прежнее соперничество за океаны возобновляется. Скорость строительства верфей возрастёт на 15%, их производительность — на 10%. Две технологии крупных кораблей или их модулей получат бонус к исследованиям 100%. Цель войны на завоевание Британии завершит нашу западную стратегию.
+
+Описание EN: An earlier rivalry for the oceans resumes. Shipyard construction rises by 15%, dockyard output by 10%, and two capital-ship or related module technologies receive a 100% research bonus. A conquest war goal against Britain completes our western strategy.
+
+Источник: `common/national_focus/GER_political.txt:1060`. Стоимость: 10 (70 дней). Координаты: x=6, y=11. Иконка: `GFX_focus_GER_our_place_in_the_sun`.
+
+Предпосылки: (Удар на Запад [GER_strike_the_west]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `add_tech_bonus`: name = GER_capital_ship_research; bonus = 1.0; uses = 2; category = mio_cat_tech_all_capital_ship_and_modules
+- `create_wargoal`: type = annex_everything; target = ENG
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_the_second_naval_race
+    icon = GFX_focus_GER_our_place_in_the_sun
+    x = 6
+    y = 11
+    cost = 10
+    prerequisite = {
+        focus = GER_strike_the_west
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = neutrality
+        is_subject = no
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = GER_gott_mit_uns
+            add_idea = GER_gott_mit_uns_naval
+        }
+        add_tech_bonus = {
+            name = GER_capital_ship_research
+            bonus = 1.0
+            uses = 2
+            category = mio_cat_tech_all_capital_ship_and_modules
+        }
+        if = {
+            limit = {
+                ENG = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = ENG
+                }
+                NOT = {
+                    has_war_with = ENG
+                }
+                NOT = {
+                    has_wargoal_against = ENG
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ENG
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+## Демократический путь / Парламентская весна — 8
 
 ### Парламентская весна — `GER_parliamentary_spring`
 
@@ -805,7 +1064,7 @@ EN: Parliamentary Spring.
 
 Описание EN: With at least 40% democratic support, a strengthened chancellor and the balance to the right of +0.10, parliament can take charge of the succession. Hans Vogel forms a social democratic government; the balance is permanently fixed at full Reichstag control.
 
-Источник: `common/national_focus/GER_political.txt:374`. Стоимость: 10 (70 дней). Координаты: x=14, y=4. Иконка: `GFX_focus_GER_defender_of_democracy`.
+Источник: `common/national_focus/GER_political.txt:377`. Стоимость: 10 (70 дней). Координаты: x=14, y=4. Иконка: `GFX_focus_GER_defender_of_democracy`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -906,11 +1165,11 @@ focus = {
 
 EN: A True Constitutional Monarchy.
 
-Описание RU: Вильгельм III сохраняет корону как конституционный символ, а исполнительная власть переходит избранным министрам. Парламентские институты дают +15% стабильности и +0,20 политической власти в день.
+Описание RU: Вильгельм III сохраняет корону как конституционный символ, а исполнительная власть переходит избранным министрам. Парламентские институты дают +15% стабильности и +0,20 политической власти в день. Гражданский контроль запускает ту же реформу штабов, что и финансирование армии, снимая штраф к организации.
 
-Описание EN: Wilhelm III retains the crown as a constitutional symbol while elected ministers exercise executive power. Parliamentary institutions grant +15% stability and +0.20 daily political power.
+Описание EN: Wilhelm III retains the crown as a constitutional symbol while elected ministers exercise executive power. Parliamentary institutions grant +15% stability and +0.20 daily political power. Civilian oversight begins the same staff reform as army funding, removing the organisation penalty.
 
-Источник: `common/national_focus/GER_political.txt:450`. Стоимость: 10 (70 дней). Координаты: x=14, y=5. Иконка: `GFX_focus_GER_monarchy_compromise`.
+Источник: `common/national_focus/GER_political.txt:453`. Стоимость: 10 (70 дней). Координаты: x=14, y=5. Иконка: `GFX_focus_GER_monarchy_compromise`.
 
 Предпосылки: (Парламентская весна [GER_parliamentary_spring]).
 
@@ -941,6 +1200,7 @@ focus = {
         has_government = democratic
     }
     completion_reward = {
+        GER_nww_partial_army_reform = yes
         remove_country_leader_role = {
             character = GER_wilhelm_iii
             ideology = GER_imperial_autocracy
@@ -959,7 +1219,7 @@ EN: Mitteleuropa Economic Community.
 
 Описание EN: Free Lithuania-Belarus and Poland if they are our subjects, and invite them to the voluntary Mitteleuropa alliance. Each partner that accepts contributes one off-map civilian factory to economic integration, up to two in total. Refusal brings no war goal.
 
-Источник: `common/national_focus/GER_political.txt:471`. Стоимость: 10 (70 дней). Координаты: x=12, y=6. Иконка: `GFX_focus_GER_customs_union`.
+Источник: `common/national_focus/GER_political.txt:475`. Стоимость: 10 (70 дней). Координаты: x=12, y=6. Иконка: `GFX_focus_GER_customs_union`.
 
 Предпосылки: (Подлинная конституционная монархия [GER_true_constitutional_monarchy]).
 
@@ -1015,7 +1275,7 @@ EN: The Austrian Referendum.
 
 Описание EN: Offer Vienna peaceful unification if its government is democratic, or an alliance between sovereign states. Austria decides freely and must be at peace; refusing either arrangement has no military consequences.
 
-Источник: `common/national_focus/GER_political.txt:500`. Стоимость: 10 (70 дней). Координаты: x=16, y=6. Иконка: `GFX_focus_GER_european_confederation`.
+Источник: `common/national_focus/GER_political.txt:504`. Стоимость: 10 (70 дней). Координаты: x=16, y=6. Иконка: `GFX_focus_GER_european_confederation`.
 
 Предпосылки: (Подлинная конституционная монархия [GER_true_constitutional_monarchy]).
 
@@ -1088,11 +1348,11 @@ focus = {
 
 EN: Arsenal of Democracy.
 
-Описание RU: Укрепим конституционные институты оборонной промышленной программой: +20% выпуска фабрик и +10% защиты дивизий с сохранением бонусов стабильности и политической власти. Гарантируем независимость суверенных Литвы-Беларуси и Польши от внешней агрессии.
+Описание RU: Укрепим конституционные институты оборонной промышленной программой: +20% выпуска фабрик и +10% защиты дивизий с сохранением бонусов стабильности и политической власти. Гарантируем независимость суверенных Литвы-Беларуси и Польши от внешней агрессии. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.
 
-Описание EN: Strengthen our constitutional institutions with a defensive industrial programme: +20% factory output and +10% division defence, retaining their stability and political-power bonuses. Guarantee independent Lithuania-Belarus and Poland against foreign aggression.
+Описание EN: Strengthen our constitutional institutions with a defensive industrial programme: +20% factory output and +10% division defence, retaining their stability and political-power bonuses. Guarantee independent Lithuania-Belarus and Poland against foreign aggression. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:550`. Стоимость: 10 (70 дней). Координаты: x=14, y=7. Иконка: `GFX_focus_GER_integrated_economies`.
+Источник: `common/national_focus/GER_political.txt:554`. Стоимость: 10 (70 дней). Координаты: x=14, y=7. Иконка: `GFX_focus_GER_integrated_economies`.
 
 Предпосылки: (Экономическое сообщество Миттельевропы [GER_mitteleuropa_economic_community]) И (Австрийский референдум [GER_the_austrian_referendum]).
 
@@ -1100,11 +1360,12 @@ EN: Arsenal of Democracy.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
 
-Прямые продолжения: нет.
+Прямые продолжения: GER_european_federation.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
-- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+- `remove_ideas`: GER_imperial_overstretch
+- `remove_ideas`: GER_imperial_overstretch_2
 
 Полное определение фокуса:
 
@@ -1126,6 +1387,8 @@ focus = {
         is_subject = no
     }
     completion_reward = {
+        remove_ideas = GER_imperial_overstretch
+        remove_ideas = GER_imperial_overstretch_2
         swap_ideas = {
             remove_idea = GER_constitutional_monarchy
             add_idea = GER_arsenal_of_democracy
@@ -1158,7 +1421,222 @@ focus = {
 }
 ```
 
-## Пангерманский путь — 5
+### Европейская федерация — `GER_european_federation`
+
+EN: European Federation.
+
+Описание RU: Преобразуем наш добровольный союз в Европейскую федерацию. Все участники получат +10% к скорости строительства гражданских фабрик и +5% к производительности военных заводов, пока демократическая Германия возглавляет федерацию. Программа распространяется на новых участников и прекращается при выходе.
+
+Описание EN: Transform our voluntary alliance into the European Federation. Every member receives +10% civilian factory construction speed and +5% factory output while democratic Germany leads the federation. Future entrants share the programme; leaving ends its benefits.
+
+Источник: `common/national_focus/GER_political.txt:1200`. Стоимость: 10 (70 дней). Координаты: x=14, y=8. Иконка: `GFX_focus_GER_european_confederation`.
+
+Предпосылки: (Арсенал демократии [GER_arsenal_of_democracy]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_anti_imperialist_crusade.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_european_federation
+    icon = GFX_focus_GER_european_confederation
+    x = 14
+    y = 8
+    cost = 10
+    prerequisite = {
+        focus = GER_arsenal_of_democracy
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = democratic
+        is_subject = no
+        OR = {
+            is_in_faction = no
+            is_faction_leader = yes
+        }
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                is_in_faction = no
+            }
+            nww_GER_establish_mitteleuropa = yes
+        }
+        set_faction_name = GER_european_federation_faction
+        GER_nww_refresh_federal_investment = yes
+        every_other_country = {
+            limit = {
+                is_in_faction_with = ROOT
+            }
+            GER_nww_refresh_federal_investment = yes
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Поход против империализма — `GER_anti_imperialist_crusade`
+
+EN: Anti-Imperialist Crusade.
+
+Описание RU: Подготовим цели войны на освобождение против Франции и Британии, если они независимы, недемократичны и не входят в наш союз. Освобождение предстоит обеспечить войной и мирным урегулированием.
+
+Описание EN: Prepare liberation war goals against France and Britain if they are independent, non-democratic states outside our alliance. Liberation must be achieved through war and the peace settlement.
+
+Источник: `common/national_focus/GER_political.txt:1224`. Стоимость: 10 (70 дней). Координаты: x=14, y=9. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
+
+Предпосылки: (Европейская федерация [GER_european_federation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_shield_against_the_reds.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `create_wargoal`: type = liberate_wargoal; target = FRA
+- `create_wargoal`: type = liberate_wargoal; target = ENG
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_anti_imperialist_crusade
+    icon = GFX_focus_GER_liberate_exploited_colonial_workers
+    x = 14
+    y = 9
+    cost = 10
+    prerequisite = {
+        focus = GER_european_federation
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = democratic
+        is_subject = no
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                FRA = {
+                    exists = yes
+                    is_subject = no
+                    NOT = {
+                        has_government = democratic
+                    }
+                }
+                NOT = {
+                    is_ally_with = FRA
+                }
+                NOT = {
+                    has_war_with = FRA
+                }
+                NOT = {
+                    has_wargoal_against = FRA
+                }
+            }
+            create_wargoal = {
+                type = liberate_wargoal
+                target = FRA
+            }
+        }
+        if = {
+            limit = {
+                ENG = {
+                    exists = yes
+                    is_subject = no
+                    NOT = {
+                        has_government = democratic
+                    }
+                }
+                NOT = {
+                    is_ally_with = ENG
+                }
+                NOT = {
+                    has_war_with = ENG
+                }
+                NOT = {
+                    has_wargoal_against = ENG
+                }
+            }
+            create_wargoal = {
+                type = liberate_wargoal
+                target = ENG
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Щит против красных — `GER_shield_against_the_reds`
+
+EN: Shield against the Reds.
+
+Описание RU: Демократия должна уметь защищаться. Мы получим +15% к обороне на национальных территориях, ещё две добровольческие дивизии и снижение порога мировой напряжённости для добровольцев на 50 пунктов. Разрешим отправку добровольцев и поддержим независимые страны, сопротивляющиеся фашистской или коммунистической агрессии.
+
+Описание EN: Democracy must be able to defend itself. Gain +15% defence on our core territory, two additional volunteer divisions and a 50-point reduction to the volunteer world-tension requirement. Authorise volunteers and support independent states resisting fascist or communist aggression.
+
+Источник: `common/national_focus/GER_political.txt:1258`. Стоимость: 10 (70 дней). Координаты: x=14, y=10. Иконка: `GFX_focus_GER_defender_of_democracy`.
+
+Предпосылки: (Поход против империализма [GER_anti_imperialist_crusade]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_shield_against_the_reds
+    icon = GFX_focus_GER_defender_of_democracy
+    x = 14
+    y = 10
+    cost = 10
+    prerequisite = {
+        focus = GER_anti_imperialist_crusade
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = democratic
+        is_subject = no
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = GER_arsenal_of_democracy
+            add_idea = GER_arsenal_of_democracy_shield
+        }
+        set_rule = {
+            can_send_volunteers = yes
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+## Пангерманский путь — 8
 
 ### Пангерманский триумф — `GER_the_pan_germanic_triumph`
 
@@ -1168,7 +1646,7 @@ EN: The Pan-Germanic Triumph.
 
 Описание EN: With at least 40% nationalist support and a deadlocked balance between -0.30 and +0.30, the Pan-German movement seizes government. Wilhelm III remains its nominal head until the dynasty is abolished.
 
-Источник: `common/national_focus/GER_political.txt:597`. Стоимость: 10 (70 дней). Координаты: x=22, y=4. Иконка: `GFX_focus_GER_hegemony_over_europe`.
+Источник: `common/national_focus/GER_political.txt:603`. Стоимость: 10 (70 дней). Координаты: x=22, y=4. Иконка: `GFX_focus_GER_hegemony_over_europe`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -1259,11 +1737,11 @@ focus = {
 
 EN: Abolish the Hohenzollerns.
 
-Описание RU: Устраним Вильгельма III и последние династические ограничения. Альфред Гугенберг возглавит радикальное националистическое правительство; баланс между короной и рейхстагом будет окончательно упразднён.
+Описание RU: Устраним Вильгельма III и последние династические ограничения. Альфред Гугенберг возглавит радикальное националистическое правительство; баланс между короной и рейхстагом будет окончательно упразднён. Реорганизация штабов снимет штраф к организации от имперского перенапряжения.
 
-Описание EN: Remove Wilhelm III and the last dynastic restraints. Alfred Hugenberg heads a radical nationalist government, and the crown-Reichstag balance of power is abolished permanently.
+Описание EN: Remove Wilhelm III and the last dynastic restraints. Alfred Hugenberg heads a radical nationalist government, and the crown-Reichstag balance of power is abolished permanently. Reorganise the staff to remove the organisation penalty from Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:663`. Стоимость: 10 (70 дней). Координаты: x=22, y=5. Иконка: `GFX_focus_GER_the_supreme_leader`.
+Источник: `common/national_focus/GER_political.txt:669`. Стоимость: 10 (70 дней). Координаты: x=22, y=5. Иконка: `GFX_focus_GER_the_supreme_leader`.
 
 Предпосылки: (Пангерманский триумф [GER_the_pan_germanic_triumph]).
 
@@ -1293,6 +1771,7 @@ focus = {
         has_government = fascism
     }
     completion_reward = {
+        GER_nww_partial_army_reform = yes
         retire_character = GER_wilhelm_iii
         GER_alfred_hugenberg = {
             add_country_leader_role = {
@@ -1329,7 +1808,7 @@ EN: Anschluss by Force.
 
 Описание EN: Demand Austria consent to annexation into the new German state. A refusal grants an annexation war goal. The demand is delivered only to an independent Austria at peace.
 
-Источник: `common/national_focus/GER_political.txt:702`. Стоимость: 10 (70 дней). Координаты: x=22, y=6. Иконка: `GFX_focus_GER_anschluss`.
+Источник: `common/national_focus/GER_political.txt:709`. Стоимость: 10 (70 дней). Координаты: x=22, y=6. Иконка: `GFX_focus_GER_anschluss`.
 
 Предпосылки: (Упразднить власть Гогенцоллернов [GER_abolish_the_hohenzollerns]).
 
@@ -1412,7 +1891,7 @@ EN: Expansion in the East.
 
 Описание EN: The Pan-German leadership claims the eastern borderlands as its sphere of expansion. Prepare annexation war goals against independent, non-allied Lithuania-Belarus and Poland, only after the eastern gate opens.\n\n$GER_eastern_1939_gate_tt$
 
-Источник: `common/national_focus/GER_political.txt:758`. Стоимость: 10 (70 дней). Координаты: x=22, y=7. Иконка: `GFX_focus_GER_the_eastern_border`.
+Источник: `common/national_focus/GER_political.txt:765`. Стоимость: 10 (70 дней). Координаты: x=22, y=7. Иконка: `GFX_focus_GER_the_eastern_border`.
 
 Предпосылки: (Аншлюс силой [GER_anschluss_by_force]).
 
@@ -1458,11 +1937,11 @@ focus = {
 
 EN: The New Reich.
 
-Описание RU: Милитаризованное националистическое государство готовит дивизии к наступательной войне: +15% атаки, +20% прорыва и +10% скорости дивизий.
+Описание RU: Милитаризованное националистическое государство готовит дивизии к наступательной войне: +15% атаки, +20% прорыва и +10% скорости дивизий. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.
 
-Описание EN: A militarised nationalist state mobilises its divisions for offensive war: +15% division attack, +20% breakthrough and +10% division speed.
+Описание EN: A militarised nationalist state mobilises its divisions for offensive war: +15% division attack, +20% breakthrough and +10% division speed. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:781`. Стоимость: 10 (70 дней). Координаты: x=22, y=8. Иконка: `GFX_focus_GER_german_army_invincible`.
+Источник: `common/national_focus/GER_political.txt:788`. Стоимость: 10 (70 дней). Координаты: x=22, y=8. Иконка: `GFX_focus_GER_german_army_invincible`.
 
 Предпосылки: (Экспансия на Восток [GER_lebensraum_in_the_east]).
 
@@ -1470,10 +1949,12 @@ EN: The New Reich.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
 
-Прямые продолжения: нет.
+Прямые продолжения: GER_drang_nach_osten_expanded.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
+- `remove_ideas`: GER_imperial_overstretch
+- `remove_ideas`: GER_imperial_overstretch_2
 - `add_ideas`: GER_the_new_reich
 
 Полное определение фокуса:
@@ -1492,12 +1973,312 @@ focus = {
         has_government = fascism
     }
     completion_reward = {
+        remove_ideas = GER_imperial_overstretch
+        remove_ideas = GER_imperial_overstretch_2
         add_ideas = GER_the_new_reich
     }
 }
 ```
 
-## Спартакистский путь — 6
+### Расширить натиск на Восток — `GER_drang_nach_osten_expanded`
+
+EN: Expand the Eastern Offensive.
+
+Описание RU: С 1941 года радикальное правительство готовит цели войны на завоевание Советской России и Махновщины, если они сохраняют независимость и не являются нашими союзниками.
+
+Описание EN: From 1941 the radical government prepares conquest war goals against Soviet Russia and the Makhnovist state, provided they still exist as independent, non-allied states.
+
+Источник: `common/national_focus/GER_political.txt:1087`. Стоимость: 10 (70 дней). Координаты: x=22, y=9. Иконка: `GFX_focus_GER_the_eastern_border`.
+
+Предпосылки: (Новый рейх [GER_the_new_reich]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_total_assimilation.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `create_wargoal`: type = annex_everything; target = SOV
+- `create_wargoal`: type = annex_everything; target = MKN
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_drang_nach_osten_expanded
+    icon = GFX_focus_GER_the_eastern_border
+    x = 22
+    y = 9
+    cost = 10
+    prerequisite = {
+        focus = GER_the_new_reich
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = fascism
+        is_subject = no
+        date > 1940.12.31
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                SOV = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = SOV
+                }
+                NOT = {
+                    has_war_with = SOV
+                }
+                NOT = {
+                    has_wargoal_against = SOV
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = SOV
+            }
+        }
+        if = {
+            limit = {
+                MKN = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = MKN
+                }
+                NOT = {
+                    has_war_with = MKN
+                }
+                NOT = {
+                    has_wargoal_against = MKN
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = MKN
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Тотальная ассимиляция — `GER_total_assimilation`
+
+EN: Total Assimilation.
+
+Описание RU: Принудительная администрация ускорит рост подчинения на оккупированных нами территориях на 10% и снизит целевое сопротивление на 10 процентных пунктов. Полицейский аппарат увеличит потребность в гарнизонах на 10%. Эти меры не дают новых национальных территорий.
+
+Описание EN: A coercive occupation administration accelerates compliance growth in our occupied territories by 10% and lowers the resistance target by 10 percentage points. Its extensive policing increases required garrisons by 10%. These measures grant no new national cores.
+
+Источник: `common/national_focus/GER_political.txt:1122`. Стоимость: 10 (70 дней). Координаты: x=22, y=10. Иконка: `GFX_focus_GER_realpolitik`.
+
+Предпосылки: (Расширить натиск на Восток [GER_drang_nach_osten_expanded]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_hegemony_over_europe_focus.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_total_assimilation
+    icon = GFX_focus_GER_realpolitik
+    x = 22
+    y = 10
+    cost = 10
+    prerequisite = {
+        focus = GER_drang_nach_osten_expanded
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = fascism
+        is_subject = no
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = GER_the_new_reich
+            add_idea = GER_the_new_reich_integrated
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Гегемония над Европой — `GER_hegemony_over_europe_focus`
+
+EN: Hegemony over Europe.
+
+Описание RU: Новый рейх получит цели войны на завоевание независимых Дании, Норвегии, Швеции, Финляндии и Швейцарии. Союзники и страны, с которыми мы уже воюем, исключаются.
+
+Описание EN: The New Reich issues conquest war goals against independent Denmark, Norway, Sweden, Finland and Switzerland, excluding our allies and existing wars.
+
+Источник: `common/national_focus/GER_political.txt:1139`. Стоимость: 10 (70 дней). Координаты: x=22, y=11. Иконка: `GFX_focus_GER_hegemony_over_europe`.
+
+Предпосылки: (Тотальная ассимиляция [GER_total_assimilation]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `create_wargoal`: type = annex_everything; target = DEN
+- `create_wargoal`: type = annex_everything; target = NOR
+- `create_wargoal`: type = annex_everything; target = SWE
+- `create_wargoal`: type = annex_everything; target = FIN
+- `create_wargoal`: type = annex_everything; target = SWI
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_hegemony_over_europe_focus
+    icon = GFX_focus_GER_hegemony_over_europe
+    x = 22
+    y = 11
+    cost = 10
+    prerequisite = {
+        focus = GER_total_assimilation
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = fascism
+        is_subject = no
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                DEN = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = DEN
+                }
+                NOT = {
+                    has_war_with = DEN
+                }
+                NOT = {
+                    has_wargoal_against = DEN
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = DEN
+            }
+        }
+        if = {
+            limit = {
+                NOR = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = NOR
+                }
+                NOT = {
+                    has_war_with = NOR
+                }
+                NOT = {
+                    has_wargoal_against = NOR
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = NOR
+            }
+        }
+        if = {
+            limit = {
+                SWE = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = SWE
+                }
+                NOT = {
+                    has_war_with = SWE
+                }
+                NOT = {
+                    has_wargoal_against = SWE
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = SWE
+            }
+        }
+        if = {
+            limit = {
+                FIN = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = FIN
+                }
+                NOT = {
+                    has_war_with = FIN
+                }
+                NOT = {
+                    has_wargoal_against = FIN
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = FIN
+            }
+        }
+        if = {
+            limit = {
+                SWI = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = SWI
+                }
+                NOT = {
+                    has_war_with = SWI
+                }
+                NOT = {
+                    has_wargoal_against = SWI
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = SWI
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+## Спартакистский путь — 9
 
 ### Спартакистское восстание — `GER_the_spartacist_uprising`
 
@@ -1507,7 +2288,7 @@ EN: The Spartacist Uprising.
 
 Описание EN: With workers organised and at least 40% Communist support, rise against the monarchy. A real civil war begins; the player switches to the Communist insurgents with 40% of the initial military strength. Victory is required before proclaiming the republic.
 
-Источник: `common/national_focus/GER_political.txt:797`. Стоимость: 10 (70 дней). Координаты: x=30, y=4. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
+Источник: `common/national_focus/GER_political.txt:806`. Стоимость: 10 (70 дней). Координаты: x=30, y=4. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -1570,11 +2351,11 @@ focus = {
 
 EN: The German Soviet Republic.
 
-Описание RU: После победы спартакистов над имперскими лоялистами в гражданской войне учредим германскую республику советов во главе с Эрнстом Тельманом. Необходима победа восстания, а не просто прекращение боёв.
+Описание RU: После победы спартакистов над имперскими лоялистами в гражданской войне учредим германскую республику советов во главе с Эрнстом Тельманом. Необходима победа восстания, а не просто прекращение боёв. Воссоздать штабы и заменить имперское перенапряжение облегчённой версией.
 
-Описание EN: After the Spartacists defeat the imperial loyalists in the civil war, establish a German council republic under Ernst Thalmann. The uprising must have won; simply waiting for the fighting to end is insufficient.
+Описание EN: After the Spartacists defeat the imperial loyalists in the civil war, establish a German council republic under Ernst Thalmann. The uprising must have won; simply waiting for the fighting to end is insufficient. Reconstitute the staff and replace Imperial Overstretch with its reduced version.
 
-Источник: `common/national_focus/GER_political.txt:837`. Стоимость: 10 (70 дней). Координаты: x=30, y=5. Иконка: `GFX_focus_GER_the_peoples_victory`.
+Источник: `common/national_focus/GER_political.txt:846`. Стоимость: 10 (70 дней). Координаты: x=30, y=5. Иконка: `GFX_focus_GER_the_peoples_victory`.
 
 Предпосылки: (Спартакистское восстание [GER_the_spartacist_uprising]).
 
@@ -1609,6 +2390,7 @@ focus = {
         }
     }
     completion_reward = {
+        GER_nww_partial_army_reform = yes
         set_politics = {
             ruling_party = communism
             elections_allowed = no
@@ -1639,11 +2421,11 @@ focus = {
 
 EN: Workers Militias.
 
-Описание RU: Создадим единую организацию ополчений на основе фабричных советов: +5 процентных пунктов военнообязанного населения и +10% восстановления организации.
+Описание RU: Создадим единую организацию ополчений на основе фабричных советов: +5 процентных пунктов военнообязанного населения и +10% восстановления организации. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.
 
-Описание EN: Build a common militia organisation around the factory councils, granting +5 percentage points of recruitable population and +10% organisation recovery.
+Описание EN: Build a common militia organisation around the factory councils, granting +5 percentage points of recruitable population and +10% organisation recovery. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:879`. Стоимость: 10 (70 дней). Координаты: x=30, y=6. Иконка: `GFX_focus_GER_proletarian_solidarity`.
+Источник: `common/national_focus/GER_political.txt:889`. Стоимость: 10 (70 дней). Координаты: x=30, y=6. Иконка: `GFX_focus_GER_proletarian_solidarity`.
 
 Предпосылки: (Германская советская республика [GER_german_soviet_republic]).
 
@@ -1655,6 +2437,8 @@ EN: Workers Militias.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
+- `remove_ideas`: GER_imperial_overstretch
+- `remove_ideas`: GER_imperial_overstretch_2
 - `add_ideas`: GER_workers_militias
 
 Полное определение фокуса:
@@ -1673,6 +2457,8 @@ focus = {
         has_government = communism
     }
     completion_reward = {
+        remove_ideas = GER_imperial_overstretch
+        remove_ideas = GER_imperial_overstretch_2
         add_ideas = GER_workers_militias
     }
 }
@@ -1686,7 +2472,7 @@ EN: Dismantle Imperial Borders.
 
 Описание EN: End German overlordship over Lithuania-Belarus and Poland. Only our own existing subjects are freed; independent countries and the possessions of third powers are not annexed or transferred.
 
-Источник: `common/national_focus/GER_political.txt:895`. Стоимость: 10 (70 дней). Координаты: x=30, y=7. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
+Источник: `common/national_focus/GER_political.txt:907`. Стоимость: 10 (70 дней). Координаты: x=30, y=7. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
 
 Предпосылки: (Рабочие ополчения [GER_workers_militias]).
 
@@ -1730,7 +2516,7 @@ EN: The Berlin-Moscow Axis.
 
 Описание EN: Ask the Soviet government to admit our republic into its alliance, or create a common Communist alliance if it has none. Soviet consent is required; a refusal does not start a war.
 
-Источник: `common/national_focus/GER_political.txt:912`. Стоимость: 10 (70 дней). Координаты: x=30, y=8. Иконка: `GFX_focus_GER_SOV_treaty`.
+Источник: `common/national_focus/GER_political.txt:924`. Стоимость: 10 (70 дней). Координаты: x=30, y=8. Иконка: `GFX_focus_GER_SOV_treaty`.
 
 Предпосылки: (Демонтировать имперские границы [GER_dismantle_imperial_borders]).
 
@@ -1812,7 +2598,7 @@ EN: World Revolution.
 
 Описание EN: Prepare annexation war goals against independent, non-allied France and Britain. These western objectives never waive Germany’s eastern restrictions.
 
-Источник: `common/national_focus/GER_political.txt:967`. Стоимость: 10 (70 дней). Координаты: x=30, y=9. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
+Источник: `common/national_focus/GER_political.txt:979`. Стоимость: 10 (70 дней). Координаты: x=30, y=9. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
 
 Предпосылки: (Ось Берлин — Москва [GER_berlin_moscow_axis]).
 
@@ -1820,7 +2606,7 @@ EN: World Revolution.
 
 Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
 
-Прямые продолжения: нет.
+Прямые продолжения: GER_red_rhine.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
@@ -1845,6 +2631,255 @@ focus = {
     }
     completion_reward = {
         nww_GER_western_revolution_wargoals = yes
+    }
+}
+```
+
+### Красный Рейн — `GER_red_rhine`
+
+EN: The Red Rhine.
+
+Описание RU: Поддержим коммунистические организации Франции, Нидерландов, Бельгии и Люксембурга. Каждая независимая страна сможет допустить агитацию или подавить её. Коммунистическое восстание возможно лишь при значительной местной поддержке и наличии более одной контролируемой области.
+
+Описание EN: Support communist organisations in France, the Netherlands, Belgium and Luxembourg. Each independent recipient may tolerate agitation or suppress it. A communist uprising is possible only with a substantial local movement and more than one controlled state.
+
+Источник: `common/national_focus/GER_political.txt:1276`. Стоимость: 10 (70 дней). Координаты: x=30, y=10. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
+
+Предпосылки: (Мировая революция [GER_world_revolution]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_nva_mass_mobilization.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `country_event`: id = ger_crisis.70; days = 1
+- `country_event`: id = ger_crisis.70; days = 1
+- `country_event`: id = ger_crisis.70; days = 1
+- `country_event`: id = ger_crisis.70; days = 1
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_red_rhine
+    icon = GFX_focus_GER_support_the_proletarian_uprising
+    x = 30
+    y = 10
+    cost = 10
+    prerequisite = {
+        focus = GER_world_revolution
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = communism
+        is_subject = no
+    }
+    completion_reward = {
+        FRA = {
+            if = {
+                limit = {
+                    exists = yes
+                    is_subject = no
+                    NOT = {
+                        has_government = communism
+                    }
+                    has_civil_war = no
+                }
+                country_event = {
+                    id = ger_crisis.70
+                    days = 1
+                }
+            }
+        }
+        HOL = {
+            if = {
+                limit = {
+                    exists = yes
+                    is_subject = no
+                    NOT = {
+                        has_government = communism
+                    }
+                    has_civil_war = no
+                }
+                country_event = {
+                    id = ger_crisis.70
+                    days = 1
+                }
+            }
+        }
+        BEL = {
+            if = {
+                limit = {
+                    exists = yes
+                    is_subject = no
+                    NOT = {
+                        has_government = communism
+                    }
+                    has_civil_war = no
+                }
+                country_event = {
+                    id = ger_crisis.70
+                    days = 1
+                }
+            }
+        }
+        LUX = {
+            if = {
+                limit = {
+                    exists = yes
+                    is_subject = no
+                    NOT = {
+                        has_government = communism
+                    }
+                    has_civil_war = no
+                }
+                country_event = {
+                    id = ger_crisis.70
+                    days = 1
+                }
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Массовая мобилизация ННА — `GER_nva_mass_mobilization`
+
+EN: National People’s Army.
+
+Описание RU: Преобразуем рабочие ополчения в постоянную массовую армию. Увеличим долю военнообязанного населения ещё на 5 процентных пунктов, доведя общий бонус до 10. Сохраним +10% к восстановлению организации и сократим время подготовки армии на 10%. Приоритет пехоты оборачивается штрафом 20% к скорости исследований авиационной и морской техники.
+
+Описание EN: Turn the workers’ militias into a permanent mass army. Raise recruitable population by another 5 percentage points, to 10 in total. Retain +10% organisation recovery and reduce army training time by 10%. Prioritising infantry imposes a 20% research-speed penalty on aircraft and naval equipment.
+
+Источник: `common/national_focus/GER_political.txt:1296`. Стоимость: 10 (70 дней). Координаты: x=30, y=11. Иконка: `GFX_focus_GER_proletarian_solidarity`.
+
+Предпосылки: (Красный Рейн [GER_red_rhine]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: GER_challenge_moscow.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_nva_mass_mobilization
+    icon = GFX_focus_GER_proletarian_solidarity
+    x = 30
+    y = 11
+    cost = 10
+    prerequisite = {
+        focus = GER_red_rhine
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = communism
+        is_subject = no
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = GER_workers_militias
+            add_idea = GER_nva_mass_army
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
+```
+
+### Бросить вызов Москве — `GER_challenge_moscow`
+
+EN: Challenge Moscow.
+
+Описание RU: С 1941 года, в мирное время, оспорим притязания Москвы на руководство революцией. Выйдем из советского союза либо исключим Советскую Россию, если возглавляем альянс, затем подготовим цель войны на завоевание независимого советского государства.
+
+Описание EN: From 1941, at peace, dispute Moscow’s claim to lead the revolution. Leave the Soviet alliance, or expel the Soviet Union if we lead it, then prepare a conquest war goal against an independent Soviet state.
+
+Источник: `common/national_focus/GER_political.txt:1313`. Стоимость: 10 (70 дней). Координаты: x=30, y=12. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
+
+Предпосылки: (Массовая мобилизация ННА [GER_nva_mass_mobilization]).
+
+Взаимоисключения: нет.
+
+Дополнительные focus-gates в available (полная логика OR/NOT ниже): нет.
+
+Прямые продолжения: нет.
+
+Обзор возможной награды; условия и области действия сохранены в полном коде:
+
+- `create_wargoal`: type = annex_everything; target = SOV
+
+Полное определение фокуса:
+
+```pdx
+focus = {
+    id = GER_challenge_moscow
+    icon = GFX_focus_GER_strengthen_the_proletarian_international
+    x = 30
+    y = 12
+    cost = 10
+    prerequisite = {
+        focus = GER_nva_mass_mobilization
+    }
+    available_if_capitulated = no
+    available = {
+        has_government = communism
+        is_subject = no
+        date > 1940.12.31
+        has_war = no
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                is_in_faction_with = SOV
+            }
+            if = {
+                limit = {
+                    is_faction_leader = yes
+                }
+                remove_from_faction = SOV
+            }
+            else = {
+                leave_faction = yes
+            }
+        }
+        if = {
+            limit = {
+                SOV = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = SOV
+                }
+                NOT = {
+                    has_war_with = SOV
+                }
+                NOT = {
+                    has_wargoal_against = SOV
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = SOV
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
     }
 }
 ```
@@ -4389,8 +5424,11 @@ ideas = {
             removal_cost = -1
             modifier = {
                 political_power_gain = -0.25
-                consumer_goods_factor = 0.08
-                war_support_factor = -0.15
+                consumer_goods_factor = 0.30
+                war_support_factor = -0.30
+                army_org_factor = -0.20
+                training_time_army_factor = 0.40
+                planning_speed = -0.30
             }
         }
         GER_master_of_mitteleuropa = {
@@ -4477,6 +5515,92 @@ ideas = {
             removal_cost = -1
             modifier = {
                 consumer_goods_factor = -0.05
+            }
+        }
+        GER_imperial_overstretch_2 = {
+            picture = generic_oppression
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.25
+                consumer_goods_factor = 0.15
+                war_support_factor = -0.15
+                training_time_army_factor = 0.20
+                planning_speed = -0.15
+            }
+        }
+        GER_gott_mit_uns_naval = {
+            picture = generic_industrial_concern_1
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                army_core_defence_factor = 0.15
+                army_attack_factor = 0.10
+                breakthrough_factor = 0.10
+                production_speed_dockyard_factor = 0.15
+                industrial_capacity_dockyard = 0.10
+            }
+        }
+        GER_the_new_reich_integrated = {
+            picture = generic_oppression
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.15
+                breakthrough_factor = 0.20
+                army_speed_factor = 0.10
+                compliance_growth_on_our_occupied_states = 0.10
+                resistance_target_on_our_occupied_states = -0.10
+                required_garrison_factor = 0.10
+            }
+        }
+        GER_federal_investment = {
+            picture = generic_industrial_concern_1
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.10
+                industrial_capacity_factory = 0.05
+            }
+        }
+        GER_arsenal_of_democracy_shield = {
+            picture = generic_army_war_college
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                army_core_defence_factor = 0.15
+                stability_factor = 0.15
+                political_power_gain = 0.20
+                industrial_capacity_factory = 0.20
+                army_defence_factor = 0.10
+                send_volunteer_size = 2
+                send_volunteers_tension = -0.50
+            }
+        }
+        GER_nva_mass_army = {
+            picture = generic_reserve_divisions
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription = 0.10
+                army_morale_factor = 0.10
+                training_time_army_factor = -0.10
+            }
+            research_bonus = {
+                air_equipment = -0.20
+                naval_equipment = -0.20
             }
         }
     }
@@ -4656,6 +5780,46 @@ on_actions = {
                     has_focus_tree = GER_focus
                 }
                 GER_nww_refresh_industry = yes
+            }
+        }
+    }
+}
+```
+
+### `common/on_actions/GER_lategame_on_actions.txt`
+
+```pdx
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = {
+                    original_tag = GER
+                    has_focus_tree = GER_focus
+                }
+                GER_nww_repair_army_reform = yes
+                GER_nww_refresh_western_wargoals = yes
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            every_country = {
+                limit = {
+                    original_tag = GER
+                    has_focus_tree = GER_focus
+                }
+                GER_nww_repair_army_reform = yes
+                GER_nww_refresh_western_wargoals = yes
+            }
+            every_country = {
+                limit = {
+                    OR = {
+                        is_in_faction = yes
+                        has_idea = GER_federal_investment
+                    }
+                }
+                GER_nww_refresh_federal_investment = yes
             }
         }
     }
@@ -6128,6 +7292,187 @@ GER_nww_build_energy_infrastructure = {
 }
 ```
 
+### `common/scripted_effects/GER_lategame_effects.txt`
+
+```pdx
+GER_nww_partial_army_reform = {
+    if = {
+        limit = {
+            has_idea = GER_imperial_overstretch
+        }
+        swap_ideas = {
+            remove_idea = GER_imperial_overstretch
+            add_idea = GER_imperial_overstretch_2
+        }
+    }
+}
+GER_nww_refresh_western_wargoals = {
+    if = {
+        limit = {
+            GER_nww_western_mandate = yes
+        }
+        if = {
+            limit = {
+                FRA = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = FRA
+                }
+                NOT = {
+                    has_war_with = FRA
+                }
+                NOT = {
+                    has_wargoal_against = FRA
+                }
+                nww_GER_ai_can_target_FRA = yes
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = FRA
+            }
+        }
+        if = {
+            limit = {
+                OR = {
+                    has_completed_focus = GER_world_revolution
+                    has_completed_focus = GER_the_second_naval_race
+                }
+                ENG = {
+                    exists = yes
+                    is_subject = no
+                }
+                NOT = {
+                    is_ally_with = ENG
+                }
+                NOT = {
+                    has_war_with = ENG
+                }
+                NOT = {
+                    has_wargoal_against = ENG
+                }
+                nww_GER_ai_can_target_ENG = yes
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ENG
+            }
+        }
+    }
+}
+GER_nww_repair_army_reform = {
+    if = {
+        limit = {
+            OR = {
+                has_idea = GER_imperial_overstretch
+                has_idea = GER_imperial_overstretch_2
+            }
+            OR = {
+                has_completed_focus = GER_gott_mit_uns
+                has_completed_focus = GER_arsenal_of_democracy
+                has_completed_focus = GER_the_new_reich
+                has_completed_focus = GER_workers_militias
+            }
+        }
+        remove_ideas = GER_imperial_overstretch
+        remove_ideas = GER_imperial_overstretch_2
+    }
+    else_if = {
+        limit = {
+            has_idea = GER_imperial_overstretch
+            OR = {
+                has_completed_focus = GER_fund_the_reichswehr
+                has_completed_focus = GER_true_constitutional_monarchy
+                has_completed_focus = GER_abolish_the_hohenzollerns
+                has_completed_focus = GER_german_soviet_republic
+            }
+        }
+        GER_nww_partial_army_reform = yes
+    }
+}
+GER_nww_austrian_guarantee = {
+    if = {
+        limit = {
+            CZE = {
+                exists = yes
+                is_subject = no
+                NOT = {
+                    has_war_with = GER
+                }
+                NOT = {
+                    has_war_with = AUS
+                }
+                NOT = {
+                    is_ally_with = GER
+                }
+            }
+        }
+        CZE = {
+            give_guarantee = AUS
+        }
+    }
+    else_if = {
+        limit = {
+            FRA = {
+                exists = yes
+                is_subject = no
+                NOT = {
+                    has_war_with = GER
+                }
+                NOT = {
+                    has_war_with = AUS
+                }
+                NOT = {
+                    is_ally_with = GER
+                }
+            }
+        }
+        FRA = {
+            give_guarantee = AUS
+        }
+    }
+}
+GER_nww_refresh_federal_investment = {
+    if = {
+        limit = {
+            is_in_faction = yes
+            OR = {
+                AND = {
+                    original_tag = GER
+                    has_focus_tree = GER_focus
+                    has_completed_focus = GER_european_federation
+                    has_government = democratic
+                    is_faction_leader = yes
+                }
+                any_other_country = {
+                    original_tag = GER
+                    has_focus_tree = GER_focus
+                    has_completed_focus = GER_european_federation
+                    has_government = democratic
+                    is_faction_leader = yes
+                    is_in_faction_with = PREV
+                }
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    has_idea = GER_federal_investment
+                }
+            }
+            add_ideas = GER_federal_investment
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = GER_federal_investment
+        }
+        remove_ideas = GER_federal_investment
+    }
+}
+```
+
 ### `common/scripted_triggers/GER_bohemian_triggers.txt`
 
 ```pdx
@@ -6188,52 +7533,60 @@ nww_GER_ai_campaign_ready = {
     }
 }
 nww_GER_ai_target_safe = {
-    exists = yes
-    is_subject = no
-    NOT = {
-        is_ally_with = GER
-    }
-    NOT = {
-        has_war_with_major = yes
-    }
-    strength_ratio = {
-        tag = GER
-        ratio < 0.80
-    }
-    NOT = {
-        any_other_country = {
-            has_guaranteed = PREV
-            OR = {
-                is_major = yes
-                is_in_faction = yes
-                is_subject = yes
-            }
-        }
-    }
     OR = {
-        is_in_faction = no
+        GER_nww_lategame_western_target = yes
         AND = {
-            OR = {
-                is_faction_leader = yes
-                is_major = no
+            exists = yes
+            is_subject = no
+            NOT = {
+                is_ally_with = GER
+            }
+            NOT = {
+                has_war_with_major = yes
+            }
+            strength_ratio = {
+                tag = GER
+                ratio < 0.80
             }
             NOT = {
                 any_other_country = {
-                    is_major = yes
-                    is_in_faction_with = PREV
+                    has_guaranteed = PREV
+                    OR = {
+                        is_major = yes
+                        is_in_faction = yes
+                        is_subject = yes
+                    }
                     NOT = {
-                        is_faction_leader = yes
+                        GER_nww_containable_austrian_guarantor = yes
                     }
                 }
             }
-            NOT = {
-                any_other_country = {
-                    is_faction_leader = yes
-                    is_in_faction_with = PREV
+            OR = {
+                is_in_faction = no
+                AND = {
+                    OR = {
+                        is_faction_leader = yes
+                        is_major = no
+                    }
                     NOT = {
-                        strength_ratio = {
-                            tag = GER
-                            ratio < 0.67
+                        any_other_country = {
+                            is_major = yes
+                            is_in_faction_with = PREV
+                            NOT = {
+                                is_faction_leader = yes
+                            }
+                        }
+                    }
+                    NOT = {
+                        any_other_country = {
+                            is_faction_leader = yes
+                            is_in_faction_with = PREV
+                            NOT = {
+                                strength_ratio = {
+                                    tag = GER
+                                    ratio < 0.67
+                                }
+                            }
                         }
                     }
                 }
@@ -6382,6 +7735,148 @@ nww_GER_ai_can_target_SOV = {
 }
 ```
 
+### `common/scripted_triggers/GER_lategame_triggers.txt`
+
+```pdx
+GER_nww_containable_austrian_guarantor = {
+    is_subject = no
+    OR = {
+        is_in_faction = no
+        is_faction_leader = yes
+    }
+    OR = {
+        tag = CZE
+        tag = FRA
+    }
+    PREV = {
+        tag = AUS
+    }
+    strength_ratio = {
+        tag = GER
+        ratio < 0.67
+    }
+    GER = {
+        has_focus_tree = GER_focus
+        date > 1940.12.31
+        OR = {
+            AND = {
+                has_government = neutrality
+                has_completed_focus = GER_gott_mit_uns
+            }
+            AND = {
+                has_government = fascism
+                has_completed_focus = GER_the_new_reich
+            }
+        }
+    }
+}
+GER_nww_eastern_campaigns_settled = {
+    OR = {
+        AND = {
+            POL = {
+                exists = no
+            }
+            owns_state = 10
+        }
+        POL = {
+            exists = yes
+            is_subject_of = PREV
+        }
+        POL = {
+            exists = yes
+            has_capitulated = yes
+            has_war_with = PREV
+        }
+    }
+    OR = {
+        AND = {
+            AUS = {
+                exists = no
+            }
+            owns_state = 4
+        }
+        AUS = {
+            exists = yes
+            is_subject_of = PREV
+        }
+        AUS = {
+            exists = yes
+            has_capitulated = yes
+            has_war_with = PREV
+        }
+    }
+}
+GER_nww_western_mandate = {
+    original_tag = GER
+    has_focus_tree = GER_focus
+    is_subject = no
+    date > 1940.12.31
+    GER_nww_eastern_campaigns_settled = yes
+    OR = {
+        AND = {
+            has_government = neutrality
+            has_completed_focus = GER_strike_the_west
+        }
+        AND = {
+            has_government = communism
+            has_completed_focus = GER_world_revolution
+        }
+    }
+}
+GER_nww_lategame_western_target = {
+    OR = {
+        tag = FRA
+        tag = ENG
+    }
+    exists = yes
+    is_subject = no
+    NOT = {
+        is_ally_with = GER
+    }
+    GER = {
+        GER_nww_western_mandate = yes
+    }
+    strength_ratio = {
+        tag = GER
+        ratio < 1.25
+    }
+}
+GER_nww_red_rhine_offer_valid = {
+    exists = yes
+    is_subject = no
+    has_civil_war = no
+    NOT = {
+        has_government = communism
+    }
+    OR = {
+        tag = FRA
+        tag = HOL
+        tag = BEL
+        tag = LUX
+    }
+    FROM = {
+        exists = yes
+        original_tag = GER
+        has_focus_tree = GER_focus
+        has_government = communism
+        is_subject = no
+        has_completed_focus = GER_red_rhine
+    }
+}
+GER_nww_red_rhine_revolt_ready = {
+    check_variable = {
+        num_owned_controlled_states > 1
+    }
+    OR = {
+        communism > 0.29
+        AND = {
+            communism > 0.14
+            has_stability < 0.40
+        }
+    }
+}
+```
+
 ### `common/scripted_triggers/GER_pacing_triggers.txt`
 
 ```pdx
@@ -6504,6 +7999,469 @@ GER_nww_bohemian_autonomists = {
     }
     ai_will_do = {
         factor = 20
+    }
+}
+```
+
+### `common/ai_strategy/GER_lategame_strategies.txt`
+
+```pdx
+GER_nww_lategame_france = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        GER_nww_western_mandate = yes
+        FRA = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = FRA
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = FRA
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = FRA
+        value = 200
+    }
+}
+GER_nww_lategame_britain = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        GER_nww_western_mandate = yes
+        ENG = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = ENG
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = ENG
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ENG
+        value = 200
+    }
+}
+GER_nww_support_threatened_democracies = {
+    reversed = yes
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        exists = yes
+        is_subject = no
+        NOT = {
+            original_tag = GER
+        }
+        NOT = {
+            has_government = fascism
+        }
+        NOT = {
+            has_government = communism
+        }
+        has_war = yes
+        any_enemy_country = {
+            OR = {
+                has_government = communism
+                has_government = fascism
+            }
+        }
+        NOT = {
+            has_war_with = GER
+        }
+        GER = {
+            has_focus_tree = GER_focus
+            has_government = democratic
+            is_subject = no
+            has_completed_focus = GER_arsenal_of_democracy
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = GER
+        value = 200
+    }
+    ai_strategy = {
+        type = protect
+        id = GER
+        value = 200
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = GER
+        target = guarantee
+        value = 200
+    }
+}
+GER_nww_schlieffen_reborn_HOL = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = neutrality
+        has_completed_focus = GER_schlieffen_reborn
+        is_subject = no
+        HOL = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = HOL
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = HOL
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = HOL
+        value = 200
+    }
+}
+GER_nww_schlieffen_reborn_BEL = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = neutrality
+        has_completed_focus = GER_schlieffen_reborn
+        is_subject = no
+        BEL = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = BEL
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = BEL
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = BEL
+        value = 200
+    }
+}
+GER_nww_drang_nach_osten_expanded_SOV = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_drang_nach_osten_expanded
+        is_subject = no
+        SOV = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = SOV
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SOV
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SOV
+        value = 200
+    }
+}
+GER_nww_drang_nach_osten_expanded_MKN = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_drang_nach_osten_expanded
+        is_subject = no
+        MKN = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = MKN
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = MKN
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = MKN
+        value = 200
+    }
+}
+GER_nww_hegemony_over_europe_focus_DEN = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_hegemony_over_europe_focus
+        is_subject = no
+        DEN = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = DEN
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = DEN
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = DEN
+        value = 200
+    }
+}
+GER_nww_hegemony_over_europe_focus_NOR = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_hegemony_over_europe_focus
+        is_subject = no
+        NOR = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = NOR
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = NOR
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = NOR
+        value = 200
+    }
+}
+GER_nww_hegemony_over_europe_focus_SWE = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_hegemony_over_europe_focus
+        is_subject = no
+        SWE = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = SWE
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SWE
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SWE
+        value = 200
+    }
+}
+GER_nww_hegemony_over_europe_focus_FIN = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_hegemony_over_europe_focus
+        is_subject = no
+        FIN = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = FIN
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = FIN
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = FIN
+        value = 200
+    }
+}
+GER_nww_hegemony_over_europe_focus_SWI = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = fascism
+        has_completed_focus = GER_hegemony_over_europe_focus
+        is_subject = no
+        SWI = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = SWI
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SWI
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SWI
+        value = 200
+    }
+}
+GER_nww_challenge_moscow_SOV = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = communism
+        has_completed_focus = GER_challenge_moscow
+        is_subject = no
+        SOV = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = {
+            is_ally_with = SOV
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SOV
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SOV
+        value = 200
+    }
+}
+GER_nww_anti_imperialist_crusade_FRA = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = democratic
+        has_completed_focus = GER_anti_imperialist_crusade
+        is_subject = no
+        FRA = {
+            exists = yes
+            is_subject = no
+            NOT = {
+                has_government = democratic
+            }
+        }
+        NOT = {
+            is_ally_with = FRA
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = FRA
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = FRA
+        value = 200
+    }
+}
+GER_nww_anti_imperialist_crusade_ENG = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_government = democratic
+        has_completed_focus = GER_anti_imperialist_crusade
+        is_subject = no
+        ENG = {
+            exists = yes
+            is_subject = no
+            NOT = {
+                has_government = democratic
+            }
+        }
+        NOT = {
+            is_ally_with = ENG
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = ENG
+        value = 200
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ENG
+        value = 200
     }
 }
 ```
@@ -6799,6 +8757,9 @@ NWW_GER_historical = {
         GER_9
         GER_10
         GER_nww_industrial_research
+        GER_schlieffen_reborn
+        GER_strike_the_west
+        GER_the_second_naval_race
     }
     focus_factors = {
         GER_empower_the_chancellor = 0
@@ -7000,6 +8961,7 @@ country_event = {
                     }
                 }
             }
+            GER_nww_austrian_guarantee = yes
         }
     }
 }
@@ -7294,6 +9256,7 @@ country_event = {
                     }
                 }
             }
+            GER_nww_austrian_guarantee = yes
         }
     }
 }
@@ -7475,6 +9438,73 @@ country_event = {
         name = ger_crisis.60.b
         ai_chance = {
             factor = 20
+        }
+    }
+}
+country_event = {
+    id = ger_crisis.70
+    title = ger_crisis.70.t
+    desc = ger_crisis.70.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        GER_nww_red_rhine_offer_valid = yes
+    }
+    option = {
+        name = ger_crisis.70.a
+        trigger = {
+            GER_nww_red_rhine_revolt_ready = yes
+        }
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 3
+                has_stability < 0.40
+            }
+        }
+        if = {
+            limit = {
+                GER_nww_red_rhine_offer_valid = yes
+                GER_nww_red_rhine_revolt_ready = yes
+            }
+            start_civil_war = {
+                ideology = communism
+                size = 0.30
+            }
+        }
+    }
+    option = {
+        name = ger_crisis.70.b
+        ai_chance = {
+            factor = 30
+        }
+        if = {
+            limit = {
+                GER_nww_red_rhine_offer_valid = yes
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.15
+            }
+            add_stability = -0.05
+        }
+    }
+    option = {
+        name = ger_crisis.70.c
+        ai_chance = {
+            factor = 60
+        }
+        if = {
+            limit = {
+                GER_nww_red_rhine_offer_valid = yes
+            }
+            add_political_power = -50
+            add_stability = -0.05
+            add_popularity = {
+                ideology = communism
+                popularity = -0.05
+            }
         }
     }
 }
@@ -10451,7 +12481,7 @@ state = {
 
 ## Неигровая совместимость с ванильными ID
 
-В `GER_native_compatibility.txt` определено 437 неимпортированных shared_focus. Это заглушки для внешних ссылок, не дополнительные ветки. В дереве GER_focus их нет.
+В `GER_native_compatibility.txt` определено 436 неимпортированных shared_focus. Это заглушки для внешних ссылок, не дополнительные ветки. В дереве GER_focus их нет.
 
 ```text
 GER_a_new_and_better_germany
@@ -10857,7 +12887,6 @@ GER_the_proletarian_legion
 GER_the_proud_eagle_and_the_resurgent_dragon
 GER_the_prussian_legacy
 GER_the_second_berlin_award
-GER_the_second_naval_race
 GER_the_sino_germanic_pact
 GER_the_supreme_leader
 GER_the_swiss_gold
@@ -10958,16 +12987,28 @@ GER_zentrale_planung
     "en": "New military factories and improved output build on the completed industrial and engineering program."
   },
   "GER_abolish_the_hohenzollerns_desc": {
-    "ru": "Устраним Вильгельма III и последние династические ограничения. Альфред Гугенберг возглавит радикальное националистическое правительство; баланс между короной и рейхстагом будет окончательно упразднён.",
-    "en": "Remove Wilhelm III and the last dynastic restraints. Alfred Hugenberg heads a radical nationalist government, and the crown-Reichstag balance of power is abolished permanently."
+    "ru": "Устраним Вильгельма III и последние династические ограничения. Альфред Гугенберг возглавит радикальное националистическое правительство; баланс между короной и рейхстагом будет окончательно упразднён. Реорганизация штабов снимет штраф к организации от имперского перенапряжения.",
+    "en": "Remove Wilhelm III and the last dynastic restraints. Alfred Hugenberg heads a radical nationalist government, and the crown-Reichstag balance of power is abolished permanently. Reorganise the staff to remove the organisation penalty from Imperial Overstretch."
   },
   "GER_anschluss_by_force_desc": {
     "ru": "Потребуем от Австрии согласиться на присоединение к новому германскому государству. Отказ даёт цель войны для аннексии. Требование направляется только независимой Австрии, находящейся в мире.",
     "en": "Demand Austria consent to annexation into the new German state. A refusal grants an annexation war goal. The demand is delivered only to an independent Austria at peace."
   },
+  "GER_anti_imperialist_crusade_desc": {
+    "ru": "Подготовим цели войны на освобождение против Франции и Британии, если они независимы, недемократичны и не входят в наш союз. Освобождение предстоит обеспечить войной и мирным урегулированием.",
+    "en": "Prepare liberation war goals against France and Britain if they are independent, non-democratic states outside our alliance. Liberation must be achieved through war and the peace settlement."
+  },
   "GER_arsenal_of_democracy_desc": {
-    "ru": "Укрепим конституционные институты оборонной промышленной программой: +20% выпуска фабрик и +10% защиты дивизий с сохранением бонусов стабильности и политической власти. Гарантируем независимость суверенных Литвы-Беларуси и Польши от внешней агрессии.",
-    "en": "Strengthen our constitutional institutions with a defensive industrial programme: +20% factory output and +10% division defence, retaining their stability and political-power bonuses. Guarantee independent Lithuania-Belarus and Poland against foreign aggression."
+    "ru": "Укрепим конституционные институты оборонной промышленной программой: +20% выпуска фабрик и +10% защиты дивизий с сохранением бонусов стабильности и политической власти. Гарантируем независимость суверенных Литвы-Беларуси и Польши от внешней агрессии. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.",
+    "en": "Strengthen our constitutional institutions with a defensive industrial programme: +20% factory output and +10% division defence, retaining their stability and political-power bonuses. Guarantee independent Lithuania-Belarus and Poland against foreign aggression. Complete military and administrative reform, removing both versions of Imperial Overstretch."
+  },
+  "GER_arsenal_of_democracy_shield": {
+    "ru": "Демократический щит",
+    "en": "Democratic Shield"
+  },
+  "GER_arsenal_of_democracy_shield_desc": {
+    "ru": "Сохраним институциональные и промышленные преимущества арсенала демократии, укрепим оборону родины и организуем расширенный добровольческий контингент для поддержки независимых государств под угрозой.",
+    "en": "Retain the Arsenal of Democracy’s institutional and industrial benefits, strengthen homeland defence and organise a larger volunteer contingent to support threatened independent states."
   },
   "GER_berlin_moscow_axis_desc": {
     "ru": "Предложим советскому правительству принять нашу республику в его союз или создать общий коммунистический альянс, если такого ещё нет. Необходимо согласие СССР; отказ не приводит к войне.",
@@ -11016,6 +13057,14 @@ GER_zentrale_planung
   "GER_bop_total_reichstag": {
     "ru": "Верховенство парламента",
     "en": "Parliamentary Supremacy"
+  },
+  "GER_capital_ship_research": {
+    "ru": "Программа крупных кораблей",
+    "en": "Capital Ship Programme"
+  },
+  "GER_challenge_moscow_desc": {
+    "ru": "С 1941 года, в мирное время, оспорим притязания Москвы на руководство революцией. Выйдем из советского союза либо исключим Советскую Россию, если возглавляем альянс, затем подготовим цель войны на завоевание независимого советского государства.",
+    "en": "From 1941, at peace, dispute Moscow’s claim to lead the revolution. Leave the Soviet alliance, or expel the Soviet Union if we lead it, then prepare a conquest war goal against an independent Soviet state."
   },
   "GER_communism_party": {
     "ru": "Спартакизм",
@@ -11077,6 +13126,10 @@ GER_zentrale_planung
     "ru": "Парламент больше не будет препятствовать императорским указам. Корона и Верховное командование получают всю полноту власти; баланс сил закрепляется, а демократические политические советники лишаются должностей и доступа к ним.",
     "en": "Parliament will no longer obstruct imperial commands. The crown and OHL take complete control, the balance of power is locked, and democratic political advisors lose their posts and eligibility."
   },
+  "GER_drang_nach_osten_expanded_desc": {
+    "ru": "С 1941 года радикальное правительство готовит цели войны на завоевание Советской России и Махновщины, если они сохраняют независимость и не являются нашими союзниками.",
+    "en": "From 1941 the radical government prepares conquest war goals against Soviet Russia and the Makhnovist state, provided they still exist as independent, non-allied states."
+  },
   "GER_eastern_1939_gate_tt": {
     "ru": "§YМы не готовы к масштабной войне на Востоке. Этот фокус будет доступен только с 1 января 1939 года.§!",
     "en": "§YWe are not ready for a major war in the East. This focus will be available only from 1 January 1939.§!"
@@ -11097,6 +13150,14 @@ GER_zentrale_planung
     "ru": "Вильгельм II олицетворял империю, не знавшую мировой войны. Его смерть положит конец долгому политическому застою и откроет борьбу за наследство. Фокус завершается только событием престолонаследия между августом и концом 1936 года.",
     "en": "Wilhelm II personified an empire that never faced a world war. His death will end its long political suspension and open the struggle over the succession. This focus is completed only by the succession event, between August and the end of 1936."
   },
+  "GER_european_federation_desc": {
+    "ru": "Преобразуем наш добровольный союз в Европейскую федерацию. Все участники получат +10% к скорости строительства гражданских фабрик и +5% к производительности военных заводов, пока демократическая Германия возглавляет федерацию. Программа распространяется на новых участников и прекращается при выходе.",
+    "en": "Transform our voluntary alliance into the European Federation. Every member receives +10% civilian factory construction speed and +5% factory output while democratic Germany leads the federation. Future entrants share the programme; leaving ends its benefits."
+  },
+  "GER_european_federation_faction": {
+    "ru": "Европейская федерация",
+    "en": "European Federation"
+  },
   "GER_fascism_party": {
     "ru": "Пангерманизм",
     "en": "Pan-Germanism"
@@ -11104,6 +13165,14 @@ GER_zentrale_planung
   "GER_fascism_party_long": {
     "ru": "Пангерманизм",
     "en": "Pan-Germanism"
+  },
+  "GER_federal_investment": {
+    "ru": "Федеральная инвестиционная программа",
+    "en": "Federal Investment Programme"
+  },
+  "GER_federal_investment_desc": {
+    "ru": "Общие промышленные стандарты и добровольные инвестиционные соглашения ускоряют гражданское строительство и выпуск военных заводов. Преимущества прекращаются при выходе страны или утрате демократического германского руководства федерацией.",
+    "en": "Common industrial standards and voluntary investment agreements improve civilian construction and military factory output. Membership benefits end when the federation loses its democratic German leadership or this country leaves it."
   },
   "GER_focus": {
     "ru": "Германская империя",
@@ -11114,20 +13183,32 @@ GER_zentrale_planung
     "en": "The national focus tree of the Kaiserreich."
   },
   "GER_fund_the_reichswehr_desc": {
-    "ru": "Предоставим имперской армии требуемые средства и доступ к власти. Генеральный штаб усилит влияние за счёт парламентского контроля.",
-    "en": "Give the imperial army the funds and access it demands. The General Staff gains influence at the expense of parliamentary oversight."
+    "ru": "Предоставим имперской армии требуемые средства и доступ к власти. Генеральный штаб усилит влияние за счёт парламентского контроля. Начать реформу штабов и заменить имперское перенапряжение облегчённой версией без штрафа к организации.",
+    "en": "Give the imperial army the funds and access it demands. The General Staff gains influence at the expense of parliamentary oversight. Begin staff reform and replace Imperial Overstretch with its reduced version, removing the organisation penalty."
   },
   "GER_german_soviet_republic_desc": {
-    "ru": "После победы спартакистов над имперскими лоялистами в гражданской войне учредим германскую республику советов во главе с Эрнстом Тельманом. Необходима победа восстания, а не просто прекращение боёв.",
-    "en": "After the Spartacists defeat the imperial loyalists in the civil war, establish a German council republic under Ernst Thalmann. The uprising must have won; simply waiting for the fighting to end is insufficient."
+    "ru": "После победы спартакистов над имперскими лоялистами в гражданской войне учредим германскую республику советов во главе с Эрнстом Тельманом. Необходима победа восстания, а не просто прекращение боёв. Воссоздать штабы и заменить имперское перенапряжение облегчённой версией.",
+    "en": "After the Spartacists defeat the imperial loyalists in the civil war, establish a German council republic under Ernst Thalmann. The uprising must have won; simply waiting for the fighting to end is insufficient. Reconstitute the staff and replace Imperial Overstretch with its reduced version."
   },
   "GER_gott_mit_uns_desc": {
-    "ru": "Железная империя объединяет корону, армию и нацию общей имперской целью. Дивизии получают +15% к защите на национальной территории, +10% к атаке и +10% к прорыву.",
-    "en": "The Iron Kaiserreich binds crown, army and nation to a single imperial purpose. Its divisions gain 15% core defence, 10% attack and 10% breakthrough."
+    "ru": "Железная империя объединяет корону, армию и нацию общей имперской целью. Дивизии получают +15% к защите на национальной территории, +10% к атаке и +10% к прорыву. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.",
+    "en": "The Iron Kaiserreich binds crown, army and nation to a single imperial purpose. Its divisions gain 15% core defence, 10% attack and 10% breakthrough. Complete military and administrative reform, removing both versions of Imperial Overstretch."
+  },
+  "GER_gott_mit_uns_naval": {
+    "ru": "С нами Бог: океанская империя",
+    "en": "Gott mit uns: Oceanic Empire"
+  },
+  "GER_gott_mit_uns_naval_desc": {
+    "ru": "Имперское военное устройство сохраняет армейские преимущества, а долгосрочные контракты ускоряют строительство верфей и выпуск кораблей океанского флота.",
+    "en": "The imperial military settlement retains its army bonuses while long-term contracts expand dockyard construction and naval output for an ocean-going fleet."
   },
   "GER_guardians_of_the_reich_desc": {
     "ru": "Укрепим государственные и производственные учреждения империи.",
     "en": "Strengthen the imperial institutions and production system."
+  },
+  "GER_hegemony_over_europe_focus_desc": {
+    "ru": "Новый рейх получит цели войны на завоевание независимых Дании, Норвегии, Швеции, Финляндии и Швейцарии. Союзники и страны, с которыми мы уже воюем, исключаются.",
+    "en": "The New Reich issues conquest war goals against independent Denmark, Norway, Sweden, Finland and Switzerland, excluding our allies and existing wars."
   },
   "GER_imperial_autocracy": {
     "ru": "Имперская автократия",
@@ -11149,9 +13230,17 @@ GER_zentrale_planung
     "ru": "Имперское перенапряжение",
     "en": "Imperial Overstretch"
   },
+  "GER_imperial_overstretch_2": {
+    "ru": "Имперское перенапряжение: реформа штабов",
+    "en": "Imperial Overstretch: Reformed Staff"
+  },
+  "GER_imperial_overstretch_2_desc": {
+    "ru": "Реформа штабов снимает штраф к организации, но бюрократия и устаревшие институты продолжают обременять потребительское производство, поддержку войны, планирование и подготовку. Лишь завершение военной программы избранного политического пути позволит устранить эти обязательства.",
+    "en": "Staff reform removes the organisation penalty, but bureaucracy and obsolete institutions still burden consumer production, war support, planning and training. Only the political programme’s final military settlement can end these obligations."
+  },
   "GER_imperial_overstretch_desc": {
-    "ru": "Колониальные гарнизоны, континентальные гарантии и негибкий двор истощают империю, уже не способную нести все обязательства.",
-    "en": "Colonial garrisons, continental guarantees and an inflexible court drain an empire that can no longer afford every obligation."
+    "ru": "Колониальные гарнизоны, континентальные гарантии и негибкий двор истощают империю, уже не способную нести все обязательства. Неиспытанный в современной войне аристократический штаб держится за доктрины XIX века: организация падает, обучение новобранцев затягивается, оперативные планы буксуют.",
+    "en": "Colonial garrisons, continental guarantees and an inflexible court drain an empire that can no longer afford every obligation. An untested, aristocratic staff clings to nineteenth-century doctrine: organisation falls, recruits train slowly and operational plans stagnate."
   },
   "GER_kaiser_vs_reichstag": {
     "ru": "Кайзер и рейхстаг",
@@ -11216,6 +13305,18 @@ GER_zentrale_planung
   "GER_neutrality_party_long": {
     "ru": "Имперская автократия",
     "en": "Imperial Autocracy"
+  },
+  "GER_nva_mass_army": {
+    "ru": "Национальная народная армия",
+    "en": "National People’s Army"
+  },
+  "GER_nva_mass_army_desc": {
+    "ru": "Постоянная преемница рабочих ополчений добавляет ещё 5 процентных пунктов военнообязанного населения, сохраняет восстановление организации и ускоряет обучение пехоты, но сокращает приоритет авиационных и морских исследований.",
+    "en": "A permanent successor to the workers’ militias adds another 5 percentage points of recruitable population, retains their recovery benefits and trains infantry faster, while air and naval research loses priority."
+  },
+  "GER_nva_mass_mobilization_desc": {
+    "ru": "Преобразуем рабочие ополчения в постоянную массовую армию. Увеличим долю военнообязанного населения ещё на 5 процентных пунктов, доведя общий бонус до 10. Сохраним +10% к восстановлению организации и сократим время подготовки армии на 10%. Приоритет пехоты оборачивается штрафом 20% к скорости исследований авиационной и морской техники.",
+    "en": "Turn the workers’ militias into a permanent mass army. Raise recruitable population by another 5 percentage points, to 10 in total. Retain +10% organisation recovery and reduce army training time by 10%. Prioritising infantry imposes a 20% research-speed penalty on aircraft and naval equipment."
   },
   "GER_nww_arsenal_contracts_desc": {
     "ru": "Вместо чрезвычайных займов арсеналы получат предсказуемые многолетние заказы. Это повышает выпуск уже существующих военных заводов.",
@@ -11421,6 +13522,10 @@ GER_zentrale_planung
     "ru": "Потратить 50 политической власти, чтобы получить 10 процентных пунктов поддержки пангерманистов. Повторяется через 30 дней до выбора политического пути; баланс сил не меняется.",
     "en": "Spend 50 political power to gain 10 percentage points of Pan-German support. Repeatable every 30 days before committing to a political path; the balance does not move."
   },
+  "GER_red_rhine_desc": {
+    "ru": "Поддержим коммунистические организации Франции, Нидерландов, Бельгии и Люксембурга. Каждая независимая страна сможет допустить агитацию или подавить её. Коммунистическое восстание возможно лишь при значительной местной поддержке и наличии более одной контролируемой области.",
+    "en": "Support communist organisations in France, the Netherlands, Belgium and Luxembourg. Each independent recipient may tolerate agitation or suppress it. A communist uprising is possible only with a substantial local movement and more than one controlled state."
+  },
   "GER_reichstag_locked_tt": {
     "ru": "Баланс сил навсегда закрепляется за рейхстагом. Решения об усилении военных становятся недоступны.",
     "en": "The balance of power is permanently fixed at full Reichstag control. Military influence decisions are disabled."
@@ -11440,6 +13545,14 @@ GER_zentrale_planung
   "GER_reign_in_mitteleuropa_desc": {
     "ru": "Потребуем полного подчинения Литвы-Беларуси и Польши. Наши зависимые страны станут интегрированными марионетками, если система автономии это допускает; независимые правительства могут принять статус марионетки или отказаться. Германия не сможет начать войну с ЛитБелом до 1939 года.\\n\\n$GER_eastern_1939_gate_tt$",
     "en": "Demand binding subordination from Lithuania-Belarus and Poland. Our existing subjects become integrated puppets where the autonomy system permits; independent governments may accept puppet status or refuse. No German war against Lithuania-Belarus may begin before 1939.\\n\\n$GER_eastern_1939_gate_tt$"
+  },
+  "GER_schlieffen_reborn_desc": {
+    "ru": "Современная штабная работа заменит планы прошлого столетия. С 1941 года мы сможем добиваться подчинения Нидерландов и Бельгии. Исторический ИИ сначала должен завершить польскую и австрийскую кампании.",
+    "en": "Modern staff work replaces a plan inherited from the last century. From 1941 we can demand the subordination of the Netherlands and Belgium. The historical AI must first settle its Polish and Austrian campaigns."
+  },
+  "GER_shield_against_the_reds_desc": {
+    "ru": "Демократия должна уметь защищаться. Мы получим +15% к обороне на национальных территориях, ещё две добровольческие дивизии и снижение порога мировой напряжённости для добровольцев на 50 пунктов. Разрешим отправку добровольцев и поддержим независимые страны, сопротивляющиеся фашистской или коммунистической агрессии.",
+    "en": "Democracy must be able to defend itself. Gain +15% defence on our core territory, two additional volunteer divisions and a 50-point reduction to the volunteer world-tension requirement. Authorise volunteers and support independent states resisting fascist or communist aggression."
   },
   "GER_social_budget": {
     "ru": "Социальный бюджет парламента",
@@ -11473,6 +13586,10 @@ GER_zentrale_planung
     "ru": "Совместные учения улучшают планирование и восстановление частей.",
     "en": "Coordinated exercises strengthen planning and the recovery of formations."
   },
+  "GER_strike_the_west_desc": {
+    "ru": "Реформированная императорская армия готовит поход против Франции. Цель войны на полное завоевание создаёт дипломатическую основу, но победу ещё предстоит одержать на поле боя.",
+    "en": "The reformed imperial army prepares a campaign against France. A conquest war goal supplies the diplomatic instrument; victory still has to be won on the battlefield."
+  },
   "GER_the_austrian_question_desc": {
     "ru": "Вена должна признать верховенство Берлина и принять статус марионетки. Австрия может отказаться; в этом случае мы получим цель войны для её подчинения.",
     "en": "Vienna must acknowledge the supremacy of Berlin and accept puppet status. Austria may refuse; such a refusal gives us a war goal to enforce its submission."
@@ -11498,8 +13615,16 @@ GER_zentrale_planung
     "en": "Strengthen the imperial institutions and production system."
   },
   "GER_the_new_reich_desc": {
-    "ru": "Милитаризованное националистическое государство готовит дивизии к наступательной войне: +15% атаки, +20% прорыва и +10% скорости дивизий.",
-    "en": "A militarised nationalist state mobilises its divisions for offensive war: +15% division attack, +20% breakthrough and +10% division speed."
+    "ru": "Милитаризованное националистическое государство готовит дивизии к наступательной войне: +15% атаки, +20% прорыва и +10% скорости дивизий. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.",
+    "en": "A militarised nationalist state mobilises its divisions for offensive war: +15% division attack, +20% breakthrough and +10% division speed. Complete military and administrative reform, removing both versions of Imperial Overstretch."
+  },
+  "GER_the_new_reich_integrated": {
+    "ru": "Новый рейх: оккупационная администрация",
+    "en": "The New Reich: Occupation Administration"
+  },
+  "GER_the_new_reich_integrated_desc": {
+    "ru": "Новый рейх сохраняет армейские преимущества и расширяет аппарат принуждения для управления оккупированными территориями ценой увеличения гарнизонов.",
+    "en": "The New Reich retains its army bonuses and expands its coercive bureaucracy to manage occupied territories, at the cost of larger garrisons."
   },
   "GER_the_pan_germanic_triumph_desc": {
     "ru": "При поддержке националистов не менее 40% и балансе в тупиковом диапазоне от −0,30 до +0,30 пангерманское движение захватит правительство. Вильгельм III останется номинальным главой до упразднения династии.",
@@ -11509,17 +13634,25 @@ GER_zentrale_planung
     "ru": "Опираясь на Генеральный штаб, Вильгельм III сосредоточит в своих руках власть, ослабевшую при его отце. Необходимы предварительная поддержка армии, смещение баланса более чем на 10% влево от центра и не менее 40% поддержки монархистов.",
     "en": "With the General Staff behind him, Wilhelm III will seize the powers his father allowed to decay. The army must already have received our backing; military influence must exceed 10% to the left of centre, and the monarchists need at least 40% support."
   },
+  "GER_the_second_naval_race_desc": {
+    "ru": "Прежнее соперничество за океаны возобновляется. Скорость строительства верфей возрастёт на 15%, их производительность — на 10%. Две технологии крупных кораблей или их модулей получат бонус к исследованиям 100%. Цель войны на завоевание Британии завершит нашу западную стратегию.",
+    "en": "An earlier rivalry for the oceans resumes. Shipyard construction rises by 15%, dockyard output by 10%, and two capital-ship or related module technologies receive a 100% research bonus. A conquest war goal against Britain completes our western strategy."
+  },
   "GER_the_spartacist_uprising_desc": {
     "ru": "При организованных рабочих и поддержке коммунистов не менее 40% выступим против монархии. Начнётся настоящая гражданская война; игрок перейдёт к коммунистическим повстанцам с 40% исходной военной силы. Для провозглашения республики необходима победа.",
     "en": "With workers organised and at least 40% Communist support, rise against the monarchy. A real civil war begins; the player switches to the Communist insurgents with 40% of the initial military strength. Victory is required before proclaiming the republic."
   },
+  "GER_total_assimilation_desc": {
+    "ru": "Принудительная администрация ускорит рост подчинения на оккупированных нами территориях на 10% и снизит целевое сопротивление на 10 процентных пунктов. Полицейский аппарат увеличит потребность в гарнизонах на 10%. Эти меры не дают новых национальных территорий.",
+    "en": "A coercive occupation administration accelerates compliance growth in our occupied territories by 10% and lowers the resistance target by 10 percentage points. Its extensive policing increases required garrisons by 10%. These measures grant no new national cores."
+  },
   "GER_true_constitutional_monarchy_desc": {
-    "ru": "Вильгельм III сохраняет корону как конституционный символ, а исполнительная власть переходит избранным министрам. Парламентские институты дают +15% стабильности и +0,20 политической власти в день.",
-    "en": "Wilhelm III retains the crown as a constitutional symbol while elected ministers exercise executive power. Parliamentary institutions grant +15% stability and +0.20 daily political power."
+    "ru": "Вильгельм III сохраняет корону как конституционный символ, а исполнительная власть переходит избранным министрам. Парламентские институты дают +15% стабильности и +0,20 политической власти в день. Гражданский контроль запускает ту же реформу штабов, что и финансирование армии, снимая штраф к организации.",
+    "en": "Wilhelm III retains the crown as a constitutional symbol while elected ministers exercise executive power. Parliamentary institutions grant +15% stability and +0.20 daily political power. Civilian oversight begins the same staff reform as army funding, removing the organisation penalty."
   },
   "GER_workers_militias_desc": {
-    "ru": "Создадим единую организацию ополчений на основе фабричных советов: +5 процентных пунктов военнообязанного населения и +10% восстановления организации.",
-    "en": "Build a common militia organisation around the factory councils, granting +5 percentage points of recruitable population and +10% organisation recovery."
+    "ru": "Создадим единую организацию ополчений на основе фабричных советов: +5 процентных пунктов военнообязанного населения и +10% восстановления организации. Завершить военную и административную реформу, удалив обе версии имперского перенапряжения.",
+    "en": "Build a common militia organisation around the factory councils, granting +5 percentage points of recruitable population and +10% organisation recovery. Complete military and administrative reform, removing both versions of Imperial Overstretch."
   },
   "GER_world_revolution_desc": {
     "ru": "Подготовим цели войны для аннексии независимых несоюзных Франции и Британии. Эти западные цели не отменяют ограничений Германии на восточном направлении.",
@@ -11693,6 +13826,26 @@ GER_zentrale_planung
     "ru": "Предложение Берлина Москве",
     "en": "The Berlin-Moscow Proposal"
   },
+  "ger_crisis.70.a": {
+    "ru": "Здесь начинается революция!",
+    "en": "The revolution begins here!"
+  },
+  "ger_crisis.70.b": {
+    "ru": "Допустить мирную рабочую агитацию.",
+    "en": "Allow peaceful workers’ agitation."
+  },
+  "ger_crisis.70.c": {
+    "ru": "Пресечь деятельность организаций с иностранным финансированием.",
+    "en": "Disrupt the foreign-funded organisations."
+  },
+  "ger_crisis.70.d": {
+    "ru": "Германские спартакисты связались с местными коммунистическими группами. Их деньги и пропаганда могут усилить движение, но правительство ещё способно его подавить. Там, где коммунисты уже располагают значительной поддержкой, радикалы требуют немедленного вооружённого восстания.",
+    "en": "German Spartacist organisers have contacted local communist groups. Their funds and propaganda may strengthen the movement, but the government can still suppress it. Where communist support is already substantial, radicals demand an immediate armed uprising."
+  },
+  "ger_crisis.70.t": {
+    "ru": "Революционная агитация из Германии",
+    "en": "Revolutionary Agitation from Germany"
+  },
   "ger_news.1.a": {
     "ru": "Европа следит за Берлином.",
     "en": "Europe watches Berlin."
@@ -11785,10 +13938,11 @@ GER_zentrale_planung
 Повторный экспорт: `python tools/export_ger_focuses.py --snapshot-date YYYY-MM-DD`. В каталоге фокусов только прямые definitions и shared_focus, действительно импортированные в GER_focus. SHA-256 источников:
 
 ```text
+8dc22c30b80bd2423d01389fe6becd58070582eafbe1fc9756356f11f031e854  common/ai_strategy/GER_lategame_strategies.txt
 4b6d65bbbf81c4635e958b49087921d0fe7e4687d2ae1b9c6b5a33ad5d053928  common/ai_strategy/GER_pacing.txt
 0699d57eaaa35a3620b17f0a2302c3a7f2c47549ec6a33a7d708d416132daacf  common/ai_strategy/GER_politics.txt
 43e6d2e1e53da0f48f6be2e9182ab46f24c57afac9779d0df630ef950e057eda  common/ai_strategy_plans/GER_alternate_strategy_plan.txt
-3856b9d485917f7d5f91f9c682dcb70923b52529718ca49ace33385797cc97b2  common/ai_strategy_plans/GER_historical.txt
+8a673de5c60ce79f95d1b93dfb0ae03a918712ae4b02549aa8e30e345b1d3023  common/ai_strategy_plans/GER_historical.txt
 280c7a25da36b07e475987735bbec6373bb652ea7892b6aba19dcc78b045b698  common/ai_strategy_plans/GER_historical_strategy_plan.txt
 6a57fad20988de4bc4756a103274278709d0ae01a02a9a18535e1f7e38906d45  common/bop/GER_bop.txt
 cbd921fe03ed1ddf89d82cf829f00d0308b4f204829a288c35b814710ad5037a  common/country_leader/GER_traits.txt
@@ -11796,13 +13950,14 @@ cbd921fe03ed1ddf89d82cf829f00d0308b4f204829a288c35b814710ad5037a  common/country
 c77a52c8234db9609f9b07889061e93e07d17f81fa2963862099575a403e23c4  common/decisions/categories/GER_categories.txt
 398bcbf55a32226b819f24d23f8afe20b7c89fd623110ab1471da9ee43f0f7d5  common/dynamic_modifiers/GER_industry_modifiers.txt
 8e4cc97b767f392d4b1c1bb3d02a4bc6f123406a413889bc9a5d75150e47648a  common/factions/templates/GER_templates.txt
-65da06488b2a8b64c2c6615668676acfc4fcbdf69f496fe7a297353560660f6c  common/ideas/GER_ideas.txt
+b6e79f4540203d53d813b883f9a7a996a3490dd137bbdb92482c1809623b91a7  common/ideas/GER_ideas.txt
 770033acf846e5bf7bf1514484c075d1b1497820e67032b58e51c686f375a2bc  common/national_focus/GER_focuses.txt
-d066856d147a018cb7da235a278d1c310a1afdba8f6ab699d6fa917e6928cd7c  common/national_focus/GER_native_compatibility.txt
-9aba1808df0d37b3364979bbbb7d374d933f948f82a46695787d57ba11f466ff  common/national_focus/GER_political.txt
+23722e3f91518daf83a3d85ba105a7558b30ae18f78700f02c8221dd509f0fec  common/national_focus/GER_native_compatibility.txt
+deeeafa22258ee1a845995b0c110e7e79b878e4abb11219a876144cfa3aed592  common/national_focus/GER_political.txt
 1d650d24534b7568e1ce936db87e1287fbbd3ce6f0899f4b41aefc90a060456d  common/on_actions/GER_campaign_safety_on_actions.txt
 fbb8e625b727452470b0f4a516c18d582da19d4c9f83424ba0b94ac22b3f8ced  common/on_actions/GER_diplomacy_on_actions.txt
 2f390aef428593b31cfa9a417b0b8a44682caed292c2a5d56769cc6cfbadbfd7  common/on_actions/GER_industry_on_actions.txt
+df883c3a94e0037df5639534c96a3510350b2bfbc6425156aeabd6e61469acb1  common/on_actions/GER_lategame_on_actions.txt
 65c35216335290bfab21df581b66636108ce2f13103049658c25fe238f738b3a  common/on_actions/GER_on_actions.txt
 fd6ddea6913bf0cb3af7be5dc926577be61890645e875c8ccd789aed82736d87  common/on_actions/GER_pacing_on_actions.txt
 504c38f190784c24dde335fc9117a8f86dad64f782c45f76bbeb2774fda70262  common/operations/GER_bohemian_operations.txt
@@ -11812,15 +13967,17 @@ bfe2c32a037407f8d74fe369e44868ae51d73d8cebd7743f8a69c982e196071b  common/scripte
 cd1e7caaa2decbce7eccd31836b60b50fc2bbee2b0ff06384c4d0bf124298007  common/scripted_effects/GER_diplomacy_effects.txt
 c741479db9559ef7031b0365cb9f759cf89d84481e5a2dc1e8dc21de0e0e1dd2  common/scripted_effects/GER_effects.txt
 917fbba8e0f29394c8f94644fc295fd04b0b63c11c700da5a9cb38bfcb39979a  common/scripted_effects/GER_industry_effects.txt
+9a6e116974a251efd39c047255cc8722214c281fcace84403a02105d52ec8248  common/scripted_effects/GER_lategame_effects.txt
 2f85642f7c03a6aba64a18615d78373b3b0de03fb64ddec14403b4c40b725773  common/scripted_triggers/GER_bohemian_triggers.txt
-a90124e02c324c7f085a8e50456e2da6774870d59994bf92a4cf4407a0023bd2  common/scripted_triggers/GER_campaign_safety_triggers.txt
+48e7e6d96526ba3f767330f9cee2b5db1edb827162aa465cb818b550881bf6ac  common/scripted_triggers/GER_campaign_safety_triggers.txt
+c1f51c6f30fccbc3799a94445195f91fdefeb352f947d9c06b909cfe30663854  common/scripted_triggers/GER_lategame_triggers.txt
 1a33babdc53c31201d795756641203061ba376909c4a2d81a163ce68f493a357  common/scripted_triggers/GER_pacing_triggers.txt
 2b143ba94e7ce12c8ee4af0753a8017af7d57794328237e7aad5e0b5787f0d79  common/scripted_triggers/GER_triggers.txt
 06b9bf16c8e6bc1a7b17176e1269f87d5d9270ab877457a69275e132a13c94a1  docs/GER_industry_rework.json
 6f19d21f1981c3786bceec9a51e1039d348060dc013256cab9410bb6cdc478cb  docs/GER_overseas_setup.json
 b3e48ec6d79e0bdc6d691941ad02cf51bb18cd91d0406b28599592655136217b  events/AUS_overhaul_events.txt
 70670a1568e4bfd0a36afffa8bf6f4a107b6f9324b2caa2d3f6a178ae559ed8e  events/GER_bohemian_events.txt
-81b97ecccd402b395e20295879dc3874eb15b3b03fb48e3ab5a4d56e7fc93f1b  events/GER_events.txt
+c9fd9f1a29de9daca904472b8341c2fd2fcdc32b3cfe81eeb978e52341768659  events/GER_events.txt
 ee2f27fd571eb9bb9a0d64f32f5f01a438fe58620aeedd57a7eba8a8b0c552bc  history/countries/GER - Germany.txt
 a0d2a12c7c249eed4058ebc462088870f344fb17f9b175e043a35b7c5fb372fc  history/states/42-Rhineland.txt
 60bffb081c095ff95005d261cffb298603e4d6c8e76cd934865c71de70b78cf8  history/states/541-South West Africa.txt
@@ -11831,7 +13988,7 @@ dc1dacbd2ce3290c31ab68cf9aa2d8cff541031d0fb752b98367ec6a1d1a6711  history/states
 b5d3e4e53a12b1a914ed0d7eb36e73b185949de595bb6f826dcaa7a1511e0a7d  history/states/74-East Sudatenland.txt
 7820b754a01bd47e476e11d0baa1409816bf2d7ec338ffc62fb7ee08c3817b88  history/states/75-Moravia.txt
 6db87b5fe32cf7d38f51f7071dce07812460c4299be74358a8d73c648ac7b48e  history/states/9-Czechoslovakia.txt
-a82db20381fa927c7680c599933814aa06766b0a3f2d42f5ec884b896a31afea  localisation/english/GER_l_english.yml
+d6b4f93e50987ec5922a5c6ca8fc5e1fcca7c02fb549dbfe24f457108c41d340  localisation/english/GER_l_english.yml
 a0df213a05f9f83101c6786d7c1005830bd41323bc0412fb2b3175cbefa66c30  localisation/english/GER_parties_l_english.yml
 4b361dfe8f467d9bbff12c2a0160d97f66d29f9cbdd29f8f7cec97cace0142d2  localisation/mod_countries_l_english.yml
 10e7ea988d46a6d9f84080f3f989b848aef9b60b2dcb1d5dec6813ff63332a6e  localisation/mod_countries_l_russian.yml
@@ -11843,9 +14000,9 @@ c900e99e0e5aa12a2a26affe735af52610677f543cfee120ec10a89629fa242f  localisation/m
 b0cfdb851a7b966e4d739fb6a525f2be29b1062d3f47d9b419c097dd9d633cea  localisation/replace/GER_l_russian.yml
 96914d9dc42a9c3fbd267a53da170e9f290ae668e4f1616f415f9385ec1207ec  localisation/replace/GER_rework_l_english.yml
 afabf24164e129361835650ccf95642568035341de7c6043281e3c94edc104e9  localisation/replace/GER_rework_l_russian.yml
-202eda17e15621b23668911d7160629b054798e2a24bfe65df97266de9035b58  localisation/russian/GER_l_russian.yml
+279640ec32fcf9029646eb240c65335225ec2209b29dfbfb9ffd815f67820a6e  localisation/russian/GER_l_russian.yml
 907646c625b180f234ae8d16cc1da1be8c06d16ad21fb23d1154c20cb230a8c2  localisation/russian/GER_parties_l_russian.yml
-3741410ffb55d83a84def2485187dc799edf955d91e6717b6c1b6683cd326e2e  tools/export_ger_focuses.py
+56acf194afc2d26190c06b3ed74fb17913f519568f9cd7caf5cac6187bfcb007  tools/export_ger_focuses.py
 6a1698fca9a56fd34464a36b4a309ed1595e09290dfe0638623a7bb592b4f3aa  tools/export_mkn_industrial_focuses.py
 05a0b3facf4d97366afef978722e4e2e1dbb6b7d39bbdbc3c3458d1bd47ecc61  tools/hoi4_script.py
 ```

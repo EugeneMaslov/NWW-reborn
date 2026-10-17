@@ -21,6 +21,7 @@ class Scenario:
         self.flag_timers={}
         self.triggers.update({k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_triggers/GER_pacing_triggers.txt')})
         self.triggers.update({k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_triggers/GER_campaign_safety_triggers.txt')})
+        self.triggers.update({k:v for k,v,o in read(Path(__file__).resolve().parents[1]/'common/scripted_triggers/GER_lategame_triggers.txt')})
         self.countries = {tag: dict(exists=True, subject=None, autonomy=None, flags=set(),
             focuses=set(), wars=set(), allies=set(), goals=set(), government='neutrality',
             balance=None, rules=set(), neutrality=0.65, democratic=0.20, fascism=0.10,
@@ -28,7 +29,7 @@ class Scenario:
             original=tag, tree='GER_focus' if tag=='GER' else None, civil_war=False,
             capitulated=False, faction=None, factories=0, ideas=set(), guarantees=set(),
             variables={}, parties={}, dynamic_modifiers=set(), missions=set())
-            for tag in ('GER','LTB','POL','AUS','MKN','UKR','SOV','FRA','ENG')}
+            for tag in ('GER','LTB','POL','AUS','MKN','UKR','SOV','FRA','ENG','CZE')}
         self.character_owner = {name:'GER' for name in ('GER_wilhelm_ii','GER_wilhelm_iii',
             'GER_hans_vogel','GER_wilhelm_pieck','GER_ernst_thalmann','GER_alfred_hugenberg')}
         self.queue, self.news, self.fired = [], [], set()
@@ -59,6 +60,12 @@ class Scenario:
                 result = self.condition(value,self.target(key,actor,root,stack),root,(*stack,actor))
             elif key == 'any_other_country':
                 result = any(self.condition(value,tag,root,(*stack,actor)) for tag,state in self.countries.items() if tag!=actor and state['exists'])
+            elif key == 'owns_state': result = value in s.get('owned_states',set())
+            elif key == 'check_variable' and one(value,'num_owned_controlled_states') is not None:
+                entry = next(e for e in value if e[0]=='num_owned_controlled_states')
+                result = self.compare(s.get('controlled_states',2),int(entry[1]),entry[2])
+            elif key == 'any_enemy_country':
+                result = any(self.condition(value,tag,root,(*stack,actor)) for tag in s['wars'])
             elif key == 'date':
                 as_date = lambda x: tuple(map(int,x.split('.')))
                 result = self.compare(as_date(self.date),as_date(value),op)
@@ -206,12 +213,12 @@ def validate_germany(root, game, check):
     political = {one(f, 'id'): f for f in values(focuses_doc, 'shared_focus')}
     tree = one(read(root / 'common/national_focus/GER_focuses.txt'), 'focus_tree')
     fs = {one(f, 'id'): f for f in tree_focuses(tree, root / 'common/national_focus')}
-    effects = dict((k, v) for k, v, op in read(root / 'common/scripted_effects/GER_effects.txt'))
+    effects = {k:v for filename in ('GER_effects.txt','GER_lategame_effects.txt') for k,v,op in read(root/'common/scripted_effects'/filename)}
     events = {one(v, 'id'): v for k, v, op in read(root / 'events/GER_events.txt') if k.endswith('_event')}
     decisions = one(read(root / 'common/decisions/GER_bop_decisions.txt'), 'GER_bop_decisions_category')
     history = read(root / 'history/countries/GER - Germany.txt')
     on_actions = one(read(root / 'common/on_actions/GER_on_actions.txt'), 'on_actions')
-    check(len(political) == 28 and len(fs) == 64, 'GER: expected twenty-eight political and thirty-six industrial/military/intelligence focuses')
+    check(len(political) == 40 and len(fs) == 76, 'GER: expected forty political and thirty-six industrial/military/intelligence focuses')
     check(set(political) <= fs.keys() and values(tree, 'shared_focus') == ['GER_the_gilded_colossus'],
           'GER: shared political root must import the entire branch exactly once')
     rows = {}
@@ -251,7 +258,7 @@ def validate_germany(root, game, check):
         check(set(tokens) <= docs[kind], f'GER: undocumented {kind} tokens')
     country_ideas = one(one(read(root / 'common/ideas/GER_ideas.txt'), 'ideas'), 'country')
     expected_ideas = {
-        'GER_imperial_overstretch': {'political_power_gain': -0.25, 'consumer_goods_factor': 0.08, 'war_support_factor': -0.15},
+        'GER_imperial_overstretch': {'political_power_gain': -0.25, 'consumer_goods_factor': 0.30, 'war_support_factor': -0.30, 'army_org_factor': -0.20, 'training_time_army_factor': 0.40, 'planning_speed': -0.30},
         'GER_master_of_mitteleuropa': {'trade_laws_cost_factor': -0.20, 'master_ideology_drift': 0.05},
         'GER_prussian_martial_spirit': {'army_org_factor': 0.10, 'planning_speed': 0.15},
         'GER_gott_mit_uns': {'army_core_defence_factor': 0.15, 'army_attack_factor': 0.10, 'breakthrough_factor': 0.10},

@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { original_tag = GER has_focus_tree = GER_focus }
+				GER_nww_repair_army_reform = yes
+				GER_nww_refresh_western_wargoals = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			# Includes a victorious Spartacist Germany retaining a dynamic tag.
+			every_country = {
+				limit = { original_tag = GER has_focus_tree = GER_focus }
+				GER_nww_repair_army_reform = yes
+				GER_nww_refresh_western_wargoals = yes
+			}
+			every_country = {
+				limit = { OR = { is_in_faction = yes has_idea = GER_federal_investment } }
+				GER_nww_refresh_federal_investment = yes
+			}
+		}
+	}
+}

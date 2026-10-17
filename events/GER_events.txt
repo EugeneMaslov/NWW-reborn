@@ -148,6 +148,7 @@ country_event = {
 					}
 				}
 			}
+			GER_nww_austrian_guarantee = yes
 		}
 	}
 }
@@ -442,6 +443,7 @@ country_event = {
 					}
 				}
 			}
+			GER_nww_austrian_guarantee = yes
 		}
 	}
 }
@@ -623,6 +625,45 @@ country_event = {
 		name = ger_crisis.60.b
 		ai_chance = {
 			factor = 20
+		}
+	}
+}
+
+# German-funded agitation requires local support; a stable neighbour can suppress it.
+country_event = {
+	id = ger_crisis.70
+	title = ger_crisis.70.t
+	desc = ger_crisis.70.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { GER_nww_red_rhine_offer_valid = yes }
+	option = {
+		name = ger_crisis.70.a
+		trigger = { GER_nww_red_rhine_revolt_ready = yes }
+		ai_chance = { factor = 40 modifier = { factor = 3 has_stability < 0.40 } }
+		if = {
+			limit = { GER_nww_red_rhine_offer_valid = yes GER_nww_red_rhine_revolt_ready = yes }
+			start_civil_war = { ideology = communism size = 0.30 }
+		}
+	}
+	option = {
+		name = ger_crisis.70.b
+		ai_chance = { factor = 30 }
+		if = {
+			limit = { GER_nww_red_rhine_offer_valid = yes }
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = ger_crisis.70.c
+		ai_chance = { factor = 60 }
+		if = {
+			limit = { GER_nww_red_rhine_offer_valid = yes }
+			add_political_power = -50
+			add_stability = -0.05
+			add_popularity = { ideology = communism popularity = -0.05 }
 		}
 	}
 }

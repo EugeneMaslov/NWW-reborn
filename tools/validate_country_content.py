@@ -627,6 +627,8 @@ from validate_repository_layout import validate_layout
 validate_layout(ROOT, check)
 from validate_germany_politics import validate_germany
 validate_germany(ROOT, GAME, check)
+from validate_germany_lategame import validate_lategame
+validate_lategame(ROOT, GAME, check)
 
 for message in dict.fromkeys(errors):
     print('ERROR:', message)

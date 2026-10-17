@@ -1,0 +1,74 @@
+# Owner: GER. A foreign annexation/capitulation does not count as a German victory.
+# Guarantor scope, PREV is Austria. The new refusal guarantee must raise the
+# required preparation rather than permanently disabling the historical route.
+GER_nww_containable_austrian_guarantor = {
+	is_subject = no
+	OR = { is_in_faction = no is_faction_leader = yes }
+	OR = { tag = CZE tag = FRA }
+	PREV = { tag = AUS }
+	strength_ratio = { tag = GER ratio < 0.67 }
+	GER = {
+		has_focus_tree = GER_focus
+		date > 1940.12.31
+		OR = {
+			AND = { has_government = neutrality has_completed_focus = GER_gott_mit_uns }
+			AND = { has_government = fascism has_completed_focus = GER_the_new_reich }
+		}
+	}
+}
+GER_nww_eastern_campaigns_settled = {
+	OR = {
+		AND = { POL = { exists = no } owns_state = 10 }
+		POL = { exists = yes is_subject_of = PREV }
+		POL = { exists = yes has_capitulated = yes has_war_with = PREV }
+	}
+	OR = {
+		AND = { AUS = { exists = no } owns_state = 4 }
+		AUS = { exists = yes is_subject_of = PREV }
+		AUS = { exists = yes has_capitulated = yes has_war_with = PREV }
+	}
+}
+GER_nww_western_mandate = {
+	original_tag = GER
+	has_focus_tree = GER_focus
+	is_subject = no
+	date > 1940.12.31
+	GER_nww_eastern_campaigns_settled = yes
+	OR = {
+		AND = { has_government = neutrality has_completed_focus = GER_strike_the_west }
+		AND = { has_government = communism has_completed_focus = GER_world_revolution }
+	}
+}
+# Target scope. A prepared major war may involve guarantees and a major-led faction.
+# Peacetime recovery/readiness remains checked separately in the declaration rule.
+GER_nww_lategame_western_target = {
+	OR = { tag = FRA tag = ENG }
+	exists = yes
+	is_subject = no
+	NOT = { is_ally_with = GER }
+	GER = { GER_nww_western_mandate = yes }
+	strength_ratio = { tag = GER ratio < 1.25 }
+}
+# Recipient scope, shared by the event trigger and each reply's execution guard.
+GER_nww_red_rhine_offer_valid = {
+	exists = yes
+	is_subject = no
+	has_civil_war = no
+	NOT = { has_government = communism }
+	OR = { tag = FRA tag = HOL tag = BEL tag = LUX }
+	FROM = {
+		exists = yes
+		original_tag = GER
+		has_focus_tree = GER_focus
+		has_government = communism
+		is_subject = no
+		has_completed_focus = GER_red_rhine
+	}
+}
+GER_nww_red_rhine_revolt_ready = {
+	check_variable = { num_owned_controlled_states > 1 }
+	OR = {
+		communism > 0.29
+		AND = { communism > 0.14 has_stability < 0.40 }
+	}
+}
