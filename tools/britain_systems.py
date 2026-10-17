@@ -102,21 +102,26 @@ def emit_systems(write,loc,foci,game):
         if kind=='dockyard': limit+=' is_coastal = yes'
         if kind in ('infrastructure','airbase'):
             limit+=f' {building} < {4 if kind=="infrastructure" else 9}'
-        effect('build_'+kind,f'random_owned_controlled_state = {{ limit = {{ {limit} }} '+
-               ('add_extra_state_shared_building_slots = $AMOUNT$ ' if kind in ('civilian','military','dockyard') else '')+
-               f'add_building_construction = {{ type = {building} level = $AMOUNT$ instant_build = yes }} }}')
+        for amount in range(1,6):
+            effect('build_'+kind+'_'+str(amount),f'random_owned_controlled_state = {{ limit = {{ {limit} }} '+
+                   (f'add_extra_state_shared_building_slots = {amount} ' if kind in ('civilian','military','dockyard') else '')+
+                   f'add_building_construction = {{ type = {building} level = {amount} instant_build = yes }} }}')
     for key,resource,amount in [('coal','coal',6),('steel','steel',4)]:
         effect(key+'_project',f'random_owned_controlled_state = {{ limit = {{ is_core_of = ENG }} add_resource = {{ type = {resource} amount = {amount} }} }}')
     effect('radar_project','random_owned_controlled_state = { limit = { is_core_of = ENG radar_station < 5 } add_building_construction = { type = radar_station level = 2 instant_build = yes } }')
     effect('research_facility','random_owned_controlled_state = { limit = { is_core_of = ENG air_facility < 1 } add_building_construction = { type = air_facility level = 1 instant_build = yes } }')
-    effect('trust_all','\n'.join(f'add_to_variable = {{ {P}trust_{tag} = $AMOUNT$ }} clamp_variable = {{ var = {P}trust_{tag} min = 0 max = 100 }}' for tag,_,_ in PARTNERS))
+    for amount in [-15,-10,-5,5,10]:
+        tip=P+'trust_change_'+str(amount).replace('-','minus')+'_tt'
+        loc(tip,f'Доверие Канады, Австралии, Южной Африки, Новой Зеландии и Индии к Лондону: {amount:+d} пунктов (в пределах 0–100).',
+            f'Trust in London in Canada, Australia, South Africa, New Zealand and India: {amount:+d} points (bounded to 0–100).')
+        effect('trust_all_'+str(amount).replace('-','minus'),'custom_effect_tooltip = '+tip+'\n'+'\n'.join(f'add_to_variable = {{ {P}trust_{tag} = {amount} }} clamp_variable = {{ var = {P}trust_{tag} min = 0 max = 100 }}' for tag,_,_ in PARTNERS))
 
     # Country initialization: one-time state only, then idempotent spirit repair.
     init=['if = { limit = { NOT = { has_country_flag = ENG_nww_initialized } }',
           'set_country_flag = ENG_nww_initialized',
           'set_variable = { ENG_nww_labour_mandate = 10 } set_variable = { ENG_nww_irish_pressure = 30 }',
           'add_ideas = { ENG_nww_markets ENG_nww_finance }',
-          'remove_ideas = stiff_upper_lip remove_ideas = MTG_naval_treaty_adherent remove_ideas = MTG_naval_treaty_adherent_reduced',
+          'remove_ideas = stiff_upper_lip',
           'remove_from_tech_sharing_group = commonwealth_research',
           'clr_country_flag = ENG_nww_project_busy']
     for tag,_,_ in PARTNERS:
@@ -173,7 +178,7 @@ def emit_systems(write,loc,foci,game):
         else: body+='promote_character = ENG_harry_pollitt set_country_flag = ENG_nww_social_settlement remove_ideas = george_v remove_ideas = ENG_king_edward remove_ideas = ENG_george_vi '
         body+=f'set_politics = {{ ruling_party = {party} elections_allowed = no }} add_stability = -0.10 ENG_nww_trust_all = {{ AMOUNT = -15 }} '
         if key!='socialist': body+='add_timed_idea = { idea = ENG_nww_strikes days = 365 } '
-        body+='if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }'
+        body+='if = { limit = { has_stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }'
         effect(key+'_transition',body)
     loc('ENG_nww_directory_leader','Совет национальной обороны','Council of National Defence')
     effect('labour_transition','recruit_character = ENG_nww_attlee promote_character = ENG_nww_attlee set_politics = { ruling_party = democratic elections_allowed = yes election_frequency = 48 } add_ideas = ENG_nww_pacifism')
@@ -196,7 +201,7 @@ def emit_systems(write,loc,foci,game):
         'Open routes: [?ENG_nww_open_routes|0]/4.\\nNorth Atlantic: [?ENG_nww_route_atlantic|0] • Mediterranean: [?ENG_nww_route_suez|0] • Cape route: [?ENG_nww_route_cape|0] • Indian Ocean: [?ENG_nww_route_indian|0].\\n1 means key base access and transport reserves; 0 means disruption. Losing two routes suspends new overseas projects. Transport combat losses remain governed by the game.')
     cats=[]
     for cat in ('imperial','cabinet','routes'):
-        cats.append(f'{P+cat}_category = {{ icon = GFX_decision_category_{P+cat} scripted_gui = {P+cat}_ui allowed = {{ original_tag = ENG }} visible = {{ tag = ENG has_focus_tree = ENG_nww_focus }} }}')
+        cats.append(f'{P+cat}_category = {{ icon = GFX_decision_category_{P+cat} scripted_gui = {P+cat}_ui visible_when_empty = yes allowed = {{ original_tag = ENG }} visible = {{ tag = ENG has_focus_tree = ENG_nww_focus }} }}')
     write('common/decisions/categories/ENG_categories.txt','\n'.join(cats))
 
     decision('imperial','hold_conference','Открыть сессию Имперской конференции','Open an Imperial Conference Session',
@@ -483,9 +488,9 @@ def emit_systems(write,loc,foci,game):
     # Daily repair grants no PP, factories, ships, territory, elections or treaty votes.
     daily=['if = { limit = { NOT = { has_focus_tree = ENG_nww_focus } has_civil_war = no } load_focus_tree = { tree = ENG_nww_focus keep_completed = yes } }',
            'if = { limit = { NOT = { has_country_flag = ENG_nww_initialized } } ENG_nww_initialize = yes }',
-           'if = { limit = { OR = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_state } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_economy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_army } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_air } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_navy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_science } } } } ENG_nww_rebuild_spirits = yes }',
+           'if = { limit = { OR = { has_country_flag = ENG_nww_spirit_refresh_pending NOT = { has_dynamic_modifier = { modifier = ENG_nww_state } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_economy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_army } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_air } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_navy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_science } } } } ENG_nww_rebuild_spirits = yes clr_country_flag = ENG_nww_spirit_refresh_pending }',
            'if = { limit = { has_completed_focus = ENG_nww_belfast has_country_flag = ENG_nww_irish_agreement } set_country_flag = ENG_nww_irish_final }',
-           'ENG_nww_recount_partners = yes ENG_nww_update_routes = yes']
+           'ENG_nww_clamp = yes ENG_nww_recount_partners = yes ENG_nww_update_routes = yes']
     # Synchronize treaty benefits and unlocks from the actual settlement. Repeated
     # repair must not replay a factory grant, a vote, an election or an annexation.
     for tag,_,_ in PARTNERS:

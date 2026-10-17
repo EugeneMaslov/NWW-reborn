@@ -884,8 +884,6 @@ FRA_suspend_native_systems = {
 	remove_ideas = FRA_inefficient_economy_1
 	remove_ideas = FRA_inefficient_economy_2
 	remove_ideas = FRA_matignon_agreements
-	remove_ideas = MTG_naval_treaty_adherent
-	remove_ideas = MTG_naval_treaty_adherent_reduced
 }
 FRA_repair_reform_stages = {
 	if = {

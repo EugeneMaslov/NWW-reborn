@@ -95,24 +95,104 @@ if = { limit = { has_completed_focus = ENG_nww_army_readiness } add_to_variable 
 if = { limit = { has_country_flag = ENG_nww_social_settlement } add_to_variable = { ENG_nww_state_stability_factor = 0.05 } }
 }
 
-ENG_nww_build_civilian = {
-random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = $AMOUNT$ add_building_construction = { type = industrial_complex level = $AMOUNT$ instant_build = yes } }
+ENG_nww_build_civilian_1 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 }
 
-ENG_nww_build_military = {
-random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = $AMOUNT$ add_building_construction = { type = arms_factory level = $AMOUNT$ instant_build = yes } }
+ENG_nww_build_civilian_2 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
 }
 
-ENG_nww_build_dockyard = {
-random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = $AMOUNT$ add_building_construction = { type = dockyard level = $AMOUNT$ instant_build = yes } }
+ENG_nww_build_civilian_3 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 3 add_building_construction = { type = industrial_complex level = 3 instant_build = yes } }
 }
 
-ENG_nww_build_infrastructure = {
-random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = $AMOUNT$ instant_build = yes } }
+ENG_nww_build_civilian_4 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 4 add_building_construction = { type = industrial_complex level = 4 instant_build = yes } }
 }
 
-ENG_nww_build_airbase = {
-random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = $AMOUNT$ instant_build = yes } }
+ENG_nww_build_civilian_5 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 5 add_building_construction = { type = industrial_complex level = 5 instant_build = yes } }
+}
+
+ENG_nww_build_military_1 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+}
+
+ENG_nww_build_military_2 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 2 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+}
+
+ENG_nww_build_military_3 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 3 add_building_construction = { type = arms_factory level = 3 instant_build = yes } }
+}
+
+ENG_nww_build_military_4 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 4 add_building_construction = { type = arms_factory level = 4 instant_build = yes } }
+}
+
+ENG_nww_build_military_5 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG } add_extra_state_shared_building_slots = 5 add_building_construction = { type = arms_factory level = 5 instant_build = yes } }
+}
+
+ENG_nww_build_dockyard_1 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+}
+
+ENG_nww_build_dockyard_2 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = 2 add_building_construction = { type = dockyard level = 2 instant_build = yes } }
+}
+
+ENG_nww_build_dockyard_3 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = 3 add_building_construction = { type = dockyard level = 3 instant_build = yes } }
+}
+
+ENG_nww_build_dockyard_4 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = 4 add_building_construction = { type = dockyard level = 4 instant_build = yes } }
+}
+
+ENG_nww_build_dockyard_5 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG is_coastal = yes } add_extra_state_shared_building_slots = 5 add_building_construction = { type = dockyard level = 5 instant_build = yes } }
+}
+
+ENG_nww_build_infrastructure_1 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+}
+
+ENG_nww_build_infrastructure_2 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+}
+
+ENG_nww_build_infrastructure_3 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = 3 instant_build = yes } }
+}
+
+ENG_nww_build_infrastructure_4 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = 4 instant_build = yes } }
+}
+
+ENG_nww_build_infrastructure_5 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG infrastructure < 4 } add_building_construction = { type = infrastructure level = 5 instant_build = yes } }
+}
+
+ENG_nww_build_airbase_1 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = 1 instant_build = yes } }
+}
+
+ENG_nww_build_airbase_2 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = 2 instant_build = yes } }
+}
+
+ENG_nww_build_airbase_3 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = 3 instant_build = yes } }
+}
+
+ENG_nww_build_airbase_4 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = 4 instant_build = yes } }
+}
+
+ENG_nww_build_airbase_5 = {
+random_owned_controlled_state = { limit = { is_core_of = ENG is_controlled_by = ENG air_base < 9 } add_building_construction = { type = air_base level = 5 instant_build = yes } }
 }
 
 ENG_nww_coal_project = {
@@ -131,12 +211,49 @@ ENG_nww_research_facility = {
 random_owned_controlled_state = { limit = { is_core_of = ENG air_facility < 1 } add_building_construction = { type = air_facility level = 1 instant_build = yes } }
 }
 
-ENG_nww_trust_all = {
-add_to_variable = { ENG_nww_trust_CAN = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
-add_to_variable = { ENG_nww_trust_AST = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
-add_to_variable = { ENG_nww_trust_SAF = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
-add_to_variable = { ENG_nww_trust_NZL = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
-add_to_variable = { ENG_nww_trust_RAJ = $AMOUNT$ } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+ENG_nww_trust_all_minus15 = {
+custom_effect_tooltip = ENG_nww_trust_change_minus15_tt
+add_to_variable = { ENG_nww_trust_CAN = -15 } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_AST = -15 } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_SAF = -15 } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_NZL = -15 } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_RAJ = -15 } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+}
+
+ENG_nww_trust_all_minus10 = {
+custom_effect_tooltip = ENG_nww_trust_change_minus10_tt
+add_to_variable = { ENG_nww_trust_CAN = -10 } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_AST = -10 } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_SAF = -10 } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_NZL = -10 } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_RAJ = -10 } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+}
+
+ENG_nww_trust_all_minus5 = {
+custom_effect_tooltip = ENG_nww_trust_change_minus5_tt
+add_to_variable = { ENG_nww_trust_CAN = -5 } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_AST = -5 } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_SAF = -5 } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_NZL = -5 } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_RAJ = -5 } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+}
+
+ENG_nww_trust_all_5 = {
+custom_effect_tooltip = ENG_nww_trust_change_5_tt
+add_to_variable = { ENG_nww_trust_CAN = 5 } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_AST = 5 } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_SAF = 5 } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_NZL = 5 } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_RAJ = 5 } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
+}
+
+ENG_nww_trust_all_10 = {
+custom_effect_tooltip = ENG_nww_trust_change_10_tt
+add_to_variable = { ENG_nww_trust_CAN = 10 } clamp_variable = { var = ENG_nww_trust_CAN min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_AST = 10 } clamp_variable = { var = ENG_nww_trust_AST min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_SAF = 10 } clamp_variable = { var = ENG_nww_trust_SAF min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_NZL = 10 } clamp_variable = { var = ENG_nww_trust_NZL min = 0 max = 100 }
+add_to_variable = { ENG_nww_trust_RAJ = 10 } clamp_variable = { var = ENG_nww_trust_RAJ min = 0 max = 100 }
 }
 
 ENG_nww_initialize = {
@@ -144,7 +261,7 @@ if = { limit = { NOT = { has_country_flag = ENG_nww_initialized } }
 set_country_flag = ENG_nww_initialized
 set_variable = { ENG_nww_labour_mandate = 10 } set_variable = { ENG_nww_irish_pressure = 30 }
 add_ideas = { ENG_nww_markets ENG_nww_finance }
-remove_ideas = stiff_upper_lip remove_ideas = MTG_naval_treaty_adherent remove_ideas = MTG_naval_treaty_adherent_reduced
+remove_ideas = stiff_upper_lip
 remove_from_tech_sharing_group = commonwealth_research
 clr_country_flag = ENG_nww_project_busy
 set_variable = { ENG_nww_trust_CAN = 55 }
@@ -191,15 +308,15 @@ clr_country_flag = ENG_nww_project_busy remove_ideas = ENG_nww_project_cost
 }
 
 ENG_nww_fascist_transition = {
-promote_character = ENG_oswald_mosley set_politics = { ruling_party = fascism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -15 } add_timed_idea = { idea = ENG_nww_strikes days = 365 } if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+promote_character = ENG_oswald_mosley set_politics = { ruling_party = fascism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all_minus15 = yes add_timed_idea = { idea = ENG_nww_strikes days = 365 } if = { limit = { has_stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
 }
 
 ENG_nww_directory_transition = {
-create_country_leader = { name = ENG_nww_directory_leader ideology = despotism expire = "1965.1.1" } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -15 } add_timed_idea = { idea = ENG_nww_strikes days = 365 } if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+create_country_leader = { name = ENG_nww_directory_leader ideology = despotism expire = "1965.1.1" } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all_minus15 = yes add_timed_idea = { idea = ENG_nww_strikes days = 365 } if = { limit = { has_stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
 }
 
 ENG_nww_socialist_transition = {
-promote_character = ENG_harry_pollitt set_country_flag = ENG_nww_social_settlement remove_ideas = george_v remove_ideas = ENG_king_edward remove_ideas = ENG_george_vi set_politics = { ruling_party = communism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all = { AMOUNT = -15 } if = { limit = { stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
+promote_character = ENG_harry_pollitt set_country_flag = ENG_nww_social_settlement remove_ideas = george_v remove_ideas = ENG_king_edward remove_ideas = ENG_george_vi set_politics = { ruling_party = communism elections_allowed = no } add_stability = -0.10 ENG_nww_trust_all_minus15 = yes if = { limit = { has_stability < 0.40 has_civil_war = no } country_event = { id = nww_eng.4 days = 1 } }
 }
 
 ENG_nww_labour_transition = {
@@ -252,9 +369,9 @@ if = { limit = { has_war = no RAJ = { exists = yes is_subject_of = ENG has_capit
 ENG_nww_daily = {
 if = { limit = { NOT = { has_focus_tree = ENG_nww_focus } has_civil_war = no } load_focus_tree = { tree = ENG_nww_focus keep_completed = yes } }
 if = { limit = { NOT = { has_country_flag = ENG_nww_initialized } } ENG_nww_initialize = yes }
-if = { limit = { OR = { NOT = { has_dynamic_modifier = { modifier = ENG_nww_state } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_economy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_army } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_air } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_navy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_science } } } } ENG_nww_rebuild_spirits = yes }
+if = { limit = { OR = { has_country_flag = ENG_nww_spirit_refresh_pending NOT = { has_dynamic_modifier = { modifier = ENG_nww_state } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_economy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_army } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_air } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_navy } } NOT = { has_dynamic_modifier = { modifier = ENG_nww_science } } } } ENG_nww_rebuild_spirits = yes clr_country_flag = ENG_nww_spirit_refresh_pending }
 if = { limit = { has_completed_focus = ENG_nww_belfast has_country_flag = ENG_nww_irish_agreement } set_country_flag = ENG_nww_irish_final }
-ENG_nww_recount_partners = yes ENG_nww_update_routes = yes
+ENG_nww_clamp = yes ENG_nww_recount_partners = yes ENG_nww_update_routes = yes
 if = { limit = { CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_CAN } CAN = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_CAN } CAN = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { CAN = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }
 if = { limit = { has_country_flag = ENG_nww_science_unlocked has_country_flag = ENG_nww_compact_CAN NOT = { has_country_flag = ENG_nww_research_joined_CAN } CAN = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } set_country_flag = ENG_nww_research_joined_CAN CAN = { add_to_tech_sharing_group = ENG_nww_research } }
 if = { limit = { AST = { exists = yes has_capitulated = no NOT = { has_war_with = ENG } OR = { is_subject = no is_subject_of = ENG } } } if = { limit = { has_country_flag = ENG_nww_compact_AST } AST = { if = { limit = { NOT = { has_idea = ENG_nww_trade_partner } } add_ideas = ENG_nww_trade_partner } } } if = { limit = { has_country_flag = ENG_nww_federal_AST } AST = { if = { limit = { NOT = { has_idea = ENG_nww_federal_partner } } add_ideas = ENG_nww_federal_partner } } } } else = { AST = { remove_ideas = ENG_nww_trade_partner remove_ideas = ENG_nww_federal_partner } }

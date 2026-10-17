@@ -12,22 +12,21 @@ bookmarks = {
 		}
 		GER = {
 			history = NWW_GER_DESC
-			ideology = fascism
 			version = base_game
 			ideas = {
-				GER_mefo_bills_1936_fake_ns
-				GER_army_1936_fake_ns
-				GER_airforce_fake_ns
+				GER_imperial_overstretch
+				GER_master_of_mitteleuropa
+				GER_prussian_martial_spirit
 			}
 			focuses = {
-				GER_fuhrerprinzip
-				GER_revive_the_kaiserreich
-				GER_reestablish_free_elections
+				GER_the_kaiser_endures
+				GER_prussian_traditions
+				GER_the_gilded_colossus
 			}
+			ideology = neutrality
 		}
 		FRA = {
 			history = NWW_FRA_DESC
-			ideology = democratic
 			version = base_game
 			ideas = {
 				FRA_nww_preview_state
@@ -39,36 +38,37 @@ bookmarks = {
 				FRA_nww_right
 				FRA_nww_republic
 			}
+			ideology = democratic
 		}
 		ENG = {
 			history = NWW_ENG_DESC
-			ideology = democratic
 			version = base_game
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+				ENG_nww_preview_state
+				ENG_nww_preview_economy
+				ENG_nww_preview_navy
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
+				ENG_nww_report
+				ENG_nww_federal
+				ENG_nww_labour
 			}
+			ideology = democratic
 		}
 		SOV = {
 			history = NWW_SOV_DESC
-			ideology = communism
 			version = base_game
 			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
+				NWW_SOV_state_0
+				NWW_SOV_economy_0
+				NWW_SOV_army_0
 			}
 			focuses = {
-				SOV_behead_the_snake
-				SOV_father_of_nations
-				SOV_the_supreme_soviet
+				SOV_the_revolution_endures
+				SOV_second_five_year_plan
+				NWW_SOV_scientific_network
 			}
+			ideology = communism
 		}
 		ITA = {
 			history = NWW_ITA_DESC
@@ -134,8 +134,16 @@ bookmarks = {
 		AUS = {
 			minor = yes
 			history = NWW_AUS_DESC
-			ideology = neutrality
 			version = base_game
+			ideas = {
+				AUS_nww_preview_bohemia
+			}
+			focuses = {
+				AUS_nww_rebuild
+				AUS_not_germany
+				AUS_nww_army
+			}
+			ideology = neutrality
 		}
 		HUN = {
 			minor = yes
@@ -146,8 +154,16 @@ bookmarks = {
 		TUR = {
 			minor = yes
 			history = NWW_TUR_DESC
-			ideology = neutrality
 			version = base_game
+			ideas = {
+				NWW_TUR_imperial_crisis
+			}
+			focuses = {
+				TUR_reform_the_army
+				TUR_political_rw
+				TUR_prom
+			}
+			ideology = neutrality
 		}
 		YUG = {
 			minor = yes
@@ -164,20 +180,48 @@ bookmarks = {
 		LTB = {
 			minor = yes
 			history = NWW_LTB_DESC
-			ideology = neutrality
 			version = base_game
+			ideas = {
+				LTB_unresolved_national_question
+				LTB_semi_agrarian_economy
+				LTB_disorganized_army
+			}
+			focuses = {
+				LTB_consolidate_the_union
+				LTB_rebuild_the_bridge
+				LTB_union_general_staff
+			}
+			ideology = neutrality
 		}
 		MKN = {
 			minor = yes
 			history = NWW_MKN_DESC
-			ideology = communism
 			version = base_game
+			ideas = {
+				MKN_free_territory
+				MKN_decaying_batko
+				MKN_cult_of_railways
+			}
+			focuses = {
+				MKN_dneprostroi
+				MKN_free_cooperatives
+				MKN_steppe_general_staff
+			}
+			ideology = communism
 		}
 		UKR = {
 			minor = yes
 			history = NWW_UKR_DESC
-			ideology = communism
 			version = base_game
+			ideas = {
+				UKR_breadbasket_of_the_union
+			}
+			focuses = {
+				UKR_rebuild_kiev
+				UKR_dnieper_industry
+				UKR_guardians_of_the_steppe
+			}
+			ideology = communism
 		}
 		LAT = {
 			minor = yes
@@ -203,7 +247,7 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 		}
-		"---" = {
+		--- = {
 			history = NWW_OTHER_DESC
 		}
 		effect = {

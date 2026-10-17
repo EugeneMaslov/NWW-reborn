@@ -95,3 +95,6 @@ clr_country_flag = AUS_nww_political_settlement
 clr_country_flag = AUS_nww_political_settlement
 AUS_nww_install_absolute = yes
 clr_country_flag = AUS_nww_political_settlement
+
+# NWW scenario institutions; startup repair is idempotent.
+AUS_nww_initialize = yes

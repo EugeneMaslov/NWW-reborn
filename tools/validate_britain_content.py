@@ -24,7 +24,7 @@ def main(argv=None):
     def check(ok,message):
         if not ok: errors.append(message)
     paths=sorted({*ROOT.glob('common/**/ENG*.txt'),*ROOT.glob('events/*Britain.txt'),
-                  ROOT/'events/ENG_events.txt',ROOT/'common/national_focus/uk.txt',
+                  *ROOT.glob('events/ENG*.txt'),ROOT/'common/national_focus/uk.txt',
                   ROOT/'history/units/ENG_nww_ulster_revolt.txt'})
     docs={}
     for path in paths:
@@ -167,7 +167,7 @@ def main(argv=None):
         for k,v,o in replacement:
             if k in ('country_event','news_event'):
                 check(one(v,'is_triggered_only')=='yes' and not one(v,'immediate') and not values(v,'option'),f'{name}: active native callback')
-    events={one(v,'id'):v for k,v,o in read(ROOT/'events/ENG_events.txt') if k=='country_event'}
+    events={one(v,'id'):v for path in ROOT.glob('events/ENG*.txt') for k,v,o in read(path) if k=='country_event'}
     callback_ids=set(events)
     callback_ids.update(one(v,'id') for name in ('Britain.txt','MTG_Britain.txt','WTT_Britain.txt') for k,v,o in read(ROOT/'events'/name) if k in ('country_event','news_event'))
     for eid,node in events.items():
@@ -201,11 +201,22 @@ def main(argv=None):
         text=str(one(focuses[P+key],'available'))
         check(party in text and '0.40' in text,f'{key}: missing exact mandate')
     alltext='\n'.join(p.read_text(encoding='utf-8-sig') for p in docs)
+    technology_categories={v for base in (game,ROOT) for path in (base/'common/technology_tags').glob('*.txt') for _,v,_ in one(read(path),'technology_categories',[]) if isinstance(v,str)}
+    for path,doc in docs.items():
+        for key,node,_ in walk(doc):
+            if key=='add_tech_bonus':
+                for category in values(node,'category'):
+                    check(category in technology_categories,f'{path.name}: unknown research category {category}')
+            if key=='limit':check(not any(k=='stability' for k,_,_ in walk(node)),f'{path.name}: stability is not a native trigger; use has_stability')
+    check('AMOUNT' not in alltext and '$AMOUNT$' not in alltext,
+          'Unsupported parameter blocks/placeholders truncate the native focus/effect parser')
     check('num_of_convoys' not in alltext and 'has_building =' not in alltext,'Unsupported guessed trigger')
     check('target = KUW' not in alltext,'British Kuwait dependency recreated')
     check('add_core_of = ENG' not in alltext,'Automatic colonial cores')
     from validate_britain_gui import validate_gui
     validate_gui(check)
+    from validate_britain_focus_art import validate_focus_art
+    validate_focus_art(ROOT,game,check)
     if errors:
         print('\n'.join('ERROR: '+e for e in errors));return 1
     print(f'PASS: ENG: {len(focuses)} focuses, coordinates/graph, bilateral localization, installed sprites/modifiers/stats, mandates, native isolation and MIO inheritance')

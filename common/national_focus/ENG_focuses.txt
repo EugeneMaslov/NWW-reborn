@@ -165,30 +165,30 @@ shared_focus = uk_south_africa_focus
 shared_focus = uk_spain_focus
 shared_focus = uk_turkey_focus
 shared_focus = uk_waves_focus
-focus = { id = ENG_nww_report icon = GFX_goal_generic_political_pressure x = 18 y = 0 cost = 5
+focus = { id = ENG_nww_report icon = GFX_goal_generic_intelligence_exchange x = 18 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { add_political_power = 35
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_session icon = GFX_goal_generic_political_pressure x = 18 y = 1 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_session icon = GFX_focus_ETH_re-convene_the_parliament x = 18 y = 1 cost = 5
 prerequisite = { focus = ENG_nww_report }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { add_political_power = 35
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_budget icon = GFX_goal_generic_political_pressure x = 18 y = 2 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_budget icon = GFX_goal_generic_consumer_goods x = 18 y = 2 cost = 5
 prerequisite = { focus = ENG_nww_session }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { country_event = { id = nww_eng.1 days = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_continuity icon = GFX_goal_generic_political_pressure x = 2 y = 4 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_continuity icon = GFX_focus_ENG_nww_continuity x = 2 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_budget }
 mutually_exclusive = { focus = ENG_nww_federal focus = ENG_nww_emergency focus = ENG_nww_labour focus = ENG_nww_island }
 available = { has_capitulated = no  }
@@ -197,8 +197,8 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_continuity } }
 }
 completion_reward = { add_political_power = 50
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_federal icon = GFX_goal_generic_political_pressure x = 10 y = 4 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_federal icon = GFX_focus_ENG_nww_federal x = 10 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_budget }
 mutually_exclusive = { focus = ENG_nww_continuity focus = ENG_nww_emergency focus = ENG_nww_labour focus = ENG_nww_island }
 available = { has_capitulated = no  }
@@ -207,8 +207,8 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_federal } }
 }
 completion_reward = { add_political_power = 50
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_emergency icon = GFX_goal_generic_political_pressure x = 18 y = 4 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_emergency icon = GFX_focus_ENG_nww_emergency x = 18 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_budget }
 mutually_exclusive = { focus = ENG_nww_continuity focus = ENG_nww_federal focus = ENG_nww_labour focus = ENG_nww_island }
 available = { has_capitulated = no  }
@@ -217,8 +217,8 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_right } }
 }
 completion_reward = { add_political_power = 50
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_labour icon = GFX_goal_generic_political_pressure x = 26 y = 4 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_labour icon = GFX_focus_ENG_nww_labour x = 26 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_budget }
 mutually_exclusive = { focus = ENG_nww_continuity focus = ENG_nww_federal focus = ENG_nww_emergency focus = ENG_nww_island }
 available = { has_capitulated = no  }
@@ -227,8 +227,9 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_labour } }
 }
 completion_reward = { add_political_power = 50 set_country_flag = ENG_nww_labour_campaign
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_island icon = GFX_goal_generic_political_pressure x = 34 y = 4 cost = 5
+custom_effect_tooltip = ENG_nww_reward_labour_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_island icon = GFX_focus_ENG_nww_island x = 34 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_budget }
 mutually_exclusive = { focus = ENG_nww_continuity focus = ENG_nww_federal focus = ENG_nww_emergency focus = ENG_nww_labour }
 available = { has_capitulated = no  }
@@ -237,8 +238,8 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_island } }
 }
 completion_reward = { add_political_power = 50
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_majority icon = GFX_goal_generic_political_pressure x = 2 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_majority icon = GFX_goal_generic_national_unity x = 2 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_continuity }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -246,7 +247,7 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_civil_service icon = GFX_goal_generic_political_pressure x = 2 y = 6 cost = 5
 prerequisite = { focus = ENG_nww_majority }
 available = { has_capitulated = no  }
@@ -254,24 +255,25 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 50
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_premiers icon = GFX_goal_generic_political_pressure x = 2 y = 7 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_premiers icon = GFX_goal_generic_improve_relations x = 2 y = 7 cost = 5
 prerequisite = { focus = ENG_nww_civil_service }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_conferences_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_local_parliaments icon = GFX_goal_generic_political_pressure x = 2 y = 8 cost = 5
+custom_effect_tooltip = ENG_nww_reward_premiers_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_local_parliaments icon = GFX_goal_generic_alliance x = 2 y = 8 cost = 5
 prerequisite = { focus = ENG_nww_premiers }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_trust_all = { AMOUNT = 10 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_commonwealth_budget icon = GFX_goal_generic_political_pressure x = 2 y = 9 cost = 5
+completion_reward = { ENG_nww_trust_all_10 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_commonwealth_budget icon = GFX_goal_generic_positive_trade_relations x = 2 y = 9 cost = 5
 prerequisite = { focus = ENG_nww_local_parliaments }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -279,8 +281,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { navy_experience = 20
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_commonwealth_charter icon = GFX_goal_generic_political_pressure x = 2 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_commonwealth_charter icon = GFX_goal_generic_alliance x = 2 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_commonwealth_budget }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -288,8 +290,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_commonwealth_settlement
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_cabinet_accountability icon = GFX_goal_generic_political_pressure x = 2 y = 11 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_cabinet_accountability icon = GFX_goal_support_democracy x = 2 y = 11 cost = 5
 prerequisite = { focus = ENG_nww_commonwealth_charter }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -297,16 +299,17 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 75
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_treaty_diplomacy icon = GFX_goal_generic_political_pressure x = 2 y = 12 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_treaty_diplomacy icon = GFX_goal_generic_alliance x = 2 y = 12 cost = 5
 prerequisite = { focus = ENG_nww_cabinet_accountability }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_diplomacy_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_constitutional_crown icon = GFX_goal_generic_political_pressure x = 2 y = 13 cost = 10
+custom_effect_tooltip = ENG_nww_reward_treaty_diplomacy_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_constitutional_crown icon = GFX_focus_eng_god_save_the_king x = 2 y = 13 cost = 10
 prerequisite = { focus = ENG_nww_treaty_diplomacy }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -314,24 +317,25 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_conference icon = GFX_goal_generic_political_pressure x = 10 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_conference icon = GFX_goal_generic_major_alliance x = 10 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_federal }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_conferences_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_federal_defence icon = GFX_goal_generic_political_pressure x = 10 y = 6 cost = 5
+custom_effect_tooltip = ENG_nww_reward_conference_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_federal_defence icon = GFX_focus_generic_commonwealth_build_infantry x = 10 y = 6 cost = 5
 prerequisite = { focus = ENG_nww_conference }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { navy_experience = 20
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_federal_budget icon = GFX_goal_generic_political_pressure x = 10 y = 7 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_federal_budget icon = GFX_goal_generic_consumer_goods x = 10 y = 7 cost = 5
 prerequisite = { focus = ENG_nww_federal_defence }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -339,32 +343,33 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 50
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_representation icon = GFX_goal_generic_political_pressure x = 10 y = 8 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_representation icon = GFX_goal_generic_national_unity x = 10 y = 8 cost = 10
 prerequisite = { focus = ENG_nww_federal_budget }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_trust_all = { AMOUNT = 10 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_two_chambers icon = GFX_goal_generic_political_pressure x = 10 y = 9 cost = 5
+completion_reward = { ENG_nww_trust_all_10 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_two_chambers icon = GFX_focus_ETH_re-convene_the_parliament x = 10 y = 9 cost = 5
 prerequisite = { focus = ENG_nww_representation }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_ratification icon = GFX_goal_generic_political_pressure x = 10 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_ratification icon = GFX_goal_generic_improve_relations x = 10 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_two_chambers }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_ratification_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_federal_parliament icon = GFX_goal_generic_political_pressure x = 10 y = 11 cost = 10
+custom_effect_tooltip = ENG_nww_reward_ratification_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_federal_parliament icon = GFX_focus_ENG_nww_federal_parliament x = 10 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_ratification }
 available = { has_capitulated = no date > 1938.1.1 check_variable = { var = ENG_nww_federal_count value = 2 compare = greater_than_or_equals } }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -372,8 +377,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_federation_settlement
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_federal_treasury icon = GFX_goal_generic_political_pressure x = 10 y = 12 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_federal_treasury icon = GFX_goal_generic_trade x = 10 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_federal_parliament }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -381,24 +386,24 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 75
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_federal_command icon = GFX_goal_generic_political_pressure x = 10 y = 13 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_federal_command icon = GFX_goal_generic_military_sphere x = 10 y = 13 cost = 10
 prerequisite = { focus = ENG_nww_federal_treasury }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { army_experience = 25 air_experience = 25 navy_experience = 25
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_equal_union icon = GFX_goal_generic_political_pressure x = 10 y = 14 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_equal_union icon = GFX_focus_eng_imperial_federation x = 10 y = 14 cost = 10
 prerequisite = { focus = ENG_nww_federal_command }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_trust_all = { AMOUNT = 10 }
+completion_reward = { ENG_nww_trust_all_10 = yes
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_emergency_powers icon = GFX_goal_generic_political_pressure x = 18 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_emergency }
 available = { has_capitulated = no  }
@@ -406,24 +411,25 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 50 add_stability = -0.05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_national_press icon = GFX_goal_generic_political_pressure x = 18 y = 6 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_national_press icon = GFX_goal_generic_propaganda x = 18 y = 6 cost = 5
 prerequisite = { focus = ENG_nww_emergency_powers }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_right_campaign
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_officers_council icon = GFX_goal_generic_political_pressure x = 18 y = 7 cost = 5
+custom_effect_tooltip = ENG_nww_reward_national_press_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_officers_council icon = GFX_focus_eng_chiefs_of_staff_committee x = 18 y = 7 cost = 5
 prerequisite = { focus = ENG_nww_national_press }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_command_power = 20
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_blackshirts icon = GFX_goal_generic_political_pressure x = 16 y = 8 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_blackshirts icon = GFX_focus_eng_organise_the_blackshirts x = 16 y = 8 cost = 10
 prerequisite = { focus = ENG_nww_officers_council }
 mutually_exclusive = { focus = ENG_nww_directory }
 available = { has_capitulated = no NOT = { fascism < 0.40 } }
@@ -432,8 +438,8 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_fascist } }
 }
 completion_reward = { ENG_nww_fascist_transition = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_directory icon = GFX_goal_generic_political_pressure x = 20 y = 8 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_directory icon = GFX_goal_generic_position_armies x = 20 y = 8 cost = 10
 prerequisite = { focus = ENG_nww_officers_council }
 mutually_exclusive = { focus = ENG_nww_blackshirts }
 available = { has_capitulated = no NOT = { neutrality < 0.40 } }
@@ -442,8 +448,8 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_directory } }
 }
 completion_reward = { ENG_nww_directory_transition = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_corporate_chambers icon = GFX_goal_generic_political_pressure x = 16 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_corporate_chambers icon = GFX_goal_generic_production2 x = 16 y = 9 cost = 10
 prerequisite = { focus = ENG_nww_blackshirts }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -451,8 +457,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 50
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_party_police icon = GFX_goal_generic_political_pressure x = 16 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_party_police icon = GFX_goal_generic_military_sphere x = 16 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_corporate_chambers }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -460,8 +466,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = -0.05
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_labour_charter icon = GFX_goal_generic_political_pressure x = 16 y = 11 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_labour_charter icon = GFX_focus_eng_concessions_to_the_trade_unions x = 16 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_party_police }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -469,17 +475,18 @@ ai_will_do = { factor = 3
 }
 completion_reward = { remove_ideas = ENG_nww_strikes
 custom_effect_tooltip = ENG_nww_bonus_economy_industrial_capacity_factory_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_imperial_discipline icon = GFX_goal_generic_political_pressure x = 16 y = 12 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_imperial_discipline icon = GFX_focus_eng_move_to_secure_the_dominions x = 16 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_labour_charter }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_coercive_settlement
+custom_effect_tooltip = ENG_nww_reward_imperial_discipline_tt
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_minus0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_defence_council icon = GFX_goal_generic_political_pressure x = 20 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_defence_council icon = GFX_focus_eng_chiefs_of_staff_committee x = 20 y = 9 cost = 10
 prerequisite = { focus = ENG_nww_directory }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -487,16 +494,16 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_command_power = 25
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_administrative_order icon = GFX_goal_generic_political_pressure x = 20 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_administrative_order icon = GFX_goal_generic_national_unity x = 20 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_defence_council }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_labour_arbitration icon = GFX_goal_generic_political_pressure x = 20 y = 11 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_labour_arbitration icon = GFX_focus_eng_concessions_to_the_trade_unions x = 20 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_administrative_order }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -504,34 +511,35 @@ ai_will_do = { factor = 3
 }
 completion_reward = { remove_ideas = ENG_nww_strikes
 custom_effect_tooltip = ENG_nww_bonus_economy_production_factory_efficiency_gain_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_crown_directory icon = GFX_goal_generic_political_pressure x = 20 y = 12 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_crown_directory icon = GFX_focus_eng_god_save_the_king x = 20 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_labour_arbitration }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_coercive_settlement
+custom_effect_tooltip = ENG_nww_reward_crown_directory_tt
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_minus0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_public_works icon = GFX_goal_generic_political_pressure x = 26 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_public_works icon = GFX_goal_generic_construction x = 26 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_labour }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_civilian = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_union_agreement icon = GFX_goal_generic_political_pressure x = 26 y = 6 cost = 10
+completion_reward = { ENG_nww_build_civilian_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_union_agreement icon = GFX_goal_generic_alliance x = 26 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_public_works }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { remove_ideas = ENG_nww_strikes add_stability = 0.05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_labour_election icon = GFX_goal_generic_political_pressure x = 26 y = 7 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_labour_election icon = GFX_focus_generic_election x = 26 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_union_agreement }
 available = { has_capitulated = no check_variable = { var = ENG_nww_labour_mandate value = 40 compare = greater_than_or_equals } NOT = { democratic < 0.40 } }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -539,8 +547,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { ENG_nww_labour_transition = yes
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_public_energy icon = GFX_goal_generic_political_pressure x = 26 y = 8 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_public_energy icon = GFX_focus_generic_hydroelectric_energy x = 26 y = 8 cost = 10
 prerequisite = { focus = ENG_nww_labour_election }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -548,24 +556,25 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_economy_energy_gain_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_public_railways icon = GFX_goal_generic_political_pressure x = 26 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_public_railways icon = GFX_goal_generic_construct_infrastructure x = 26 y = 9 cost = 10
 prerequisite = { focus = ENG_nww_public_energy }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_infrastructure = { AMOUNT = 2 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_colonial_review icon = GFX_goal_generic_political_pressure x = 26 y = 10 cost = 10
+completion_reward = { ENG_nww_build_infrastructure_2 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_colonial_review icon = GFX_focus_eng_decolonization x = 26 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_public_railways }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_decolonisation_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_parliamentary_socialism icon = GFX_goal_generic_political_pressure x = 24 y = 11 cost = 10
+custom_effect_tooltip = ENG_nww_reward_colonial_review_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_parliamentary_socialism icon = GFX_focus_generic_social_democracy x = 24 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_colonial_review }
 mutually_exclusive = { focus = ENG_nww_social_republic }
 available = { has_capitulated = no  }
@@ -574,8 +583,9 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_social } }
 }
 completion_reward = { set_country_flag = ENG_nww_social_settlement add_stability = 0.05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_social_republic icon = GFX_goal_generic_political_pressure x = 28 y = 11 cost = 10
+custom_effect_tooltip = ENG_nww_reward_parliamentary_socialism_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_social_republic icon = GFX_goal_generic_national_unity x = 28 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_colonial_review }
 mutually_exclusive = { focus = ENG_nww_parliamentary_socialism }
 available = { has_capitulated = no NOT = { communism < 0.40 } }
@@ -584,17 +594,17 @@ ai_will_do = { factor = 3
 modifier = { factor = 0 NOT = { has_country_flag = ENG_nww_plan_republic } }
 }
 completion_reward = { ENG_nww_socialist_transition = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_housing_parliament icon = GFX_goal_generic_political_pressure x = 24 y = 12 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_housing_parliament icon = GFX_focus_generic_low_cost_housing x = 24 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_parliamentary_socialism }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_civilian = { AMOUNT = 1 }
+completion_reward = { ENG_nww_build_civilian_1 = yes
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_welfare_parliament icon = GFX_goal_generic_political_pressure x = 24 y = 13 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_welfare_parliament icon = GFX_focus_generic_welfare x = 24 y = 13 cost = 10
 prerequisite = { focus = ENG_nww_housing_parliament }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -602,17 +612,17 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_housing_republic icon = GFX_goal_generic_political_pressure x = 28 y = 12 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_housing_republic icon = GFX_focus_generic_low_cost_housing x = 28 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_social_republic }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_civilian = { AMOUNT = 1 }
+completion_reward = { ENG_nww_build_civilian_1 = yes
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_welfare_republic icon = GFX_goal_generic_political_pressure x = 28 y = 13 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_welfare_republic icon = GFX_focus_generic_welfare x = 28 y = 13 cost = 10
 prerequisite = { focus = ENG_nww_housing_republic }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -620,40 +630,41 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_price_presence icon = GFX_goal_generic_political_pressure x = 34 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_price_presence icon = GFX_goal_generic_trade x = 34 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_island }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_political_power = 50
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_regional_defence icon = GFX_goal_generic_political_pressure x = 34 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_regional_defence icon = GFX_goal_generic_defence x = 34 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_price_presence }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_trust_all = { AMOUNT = -5 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_island_treaties icon = GFX_goal_generic_political_pressure x = 34 y = 7 cost = 10
+completion_reward = { ENG_nww_trust_all_minus5 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_island_treaties icon = GFX_goal_generic_neutrality_focus x = 34 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_regional_defence }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_decolonisation_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_home_ports icon = GFX_goal_generic_political_pressure x = 34 y = 8 cost = 10
+custom_effect_tooltip = ENG_nww_reward_island_treaties_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_home_ports icon = GFX_goal_generic_construct_naval_dockyard x = 34 y = 8 cost = 10
 prerequisite = { focus = ENG_nww_island_treaties }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_dockyard = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_coastal_watch icon = GFX_goal_generic_political_pressure x = 34 y = 9 cost = 10
+completion_reward = { ENG_nww_build_dockyard_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_coastal_watch icon = GFX_goal_generic_radar x = 34 y = 9 cost = 10
 prerequisite = { focus = ENG_nww_home_ports }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -661,25 +672,26 @@ ai_will_do = { factor = 3
 }
 completion_reward = { air_experience = 20
 custom_effect_tooltip = ENG_nww_bonus_air_air_intercept_efficiency_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_island_fortress icon = GFX_goal_generic_political_pressure x = 34 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_island_fortress icon = GFX_goal_generic_fortify_city x = 34 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_coastal_watch }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_island_settlement
+custom_effect_tooltip = ENG_nww_reward_island_fortress_tt
 custom_effect_tooltip = ENG_nww_bonus_state_political_power_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_island_housing icon = GFX_goal_generic_political_pressure x = 34 y = 11 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_island_housing icon = GFX_focus_generic_low_cost_housing x = 34 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_island_fortress }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_civilian = { AMOUNT = 2 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_armed_neutrality icon = GFX_goal_generic_political_pressure x = 34 y = 12 cost = 10
+completion_reward = { ENG_nww_build_civilian_2 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_armed_neutrality icon = GFX_goal_generic_neutrality_focus x = 34 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_island_housing }
 available = { has_capitulated = no has_war = no NOT = { any_subject_country = { exists = yes } } }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -687,8 +699,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_war_support = 0.05 if = { limit = { is_in_faction = yes } remove_from_faction = ENG }
 custom_effect_tooltip = ENG_nww_bonus_army_army_core_defence_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_home_charter icon = GFX_goal_generic_political_pressure x = 34 y = 13 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_home_charter icon = GFX_goal_generic_national_unity x = 34 y = 13 cost = 10
 prerequisite = { focus = ENG_nww_armed_neutrality }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -696,31 +708,34 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_irish_report icon = GFX_goal_generic_political_pressure x = 42 y = 0 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_irish_report icon = GFX_goal_generic_intelligence_exchange x = 42 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { set_country_flag = ENG_nww_irish_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_border_inquiry icon = GFX_goal_generic_political_pressure x = 42 y = 1 cost = 10
+custom_effect_tooltip = ENG_nww_reward_irish_report_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_border_inquiry icon = GFX_goal_generic_improve_relations x = 42 y = 1 cost = 10
 prerequisite = { focus = ENG_nww_irish_report }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { add_to_variable = { ENG_nww_irish_pressure = -10 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_irish_talks icon = GFX_goal_generic_political_pressure x = 42 y = 2 cost = 5
+custom_effect_tooltip = ENG_nww_irish_pressure_change_minus10_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_irish_talks icon = GFX_goal_generic_alliance x = 42 y = 2 cost = 5
 prerequisite = { focus = ENG_nww_border_inquiry }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { set_country_flag = ENG_nww_irish_talks_ready
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_belfast icon = GFX_goal_generic_political_pressure x = 40 y = 3 cost = 10
+custom_effect_tooltip = ENG_nww_reward_irish_talks_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_belfast icon = GFX_focus_ENG_nww_belfast x = 40 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_irish_talks }
 mutually_exclusive = { focus = ENG_nww_irish_emergency }
 available = { has_capitulated = no  }
@@ -728,8 +743,8 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 30
 }
 completion_reward = { country_event = { id = nww_eng.20 days = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_irish_emergency icon = GFX_goal_generic_political_pressure x = 44 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_irish_emergency icon = GFX_goal_generic_forceful_treaty x = 44 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_irish_talks }
 mutually_exclusive = { focus = ENG_nww_belfast }
 available = { has_capitulated = no  }
@@ -737,16 +752,17 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_irish_coercion add_to_variable = { ENG_nww_irish_pressure = -10 } add_timed_idea = { idea = ENG_nww_ulster_garrison days = 365 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_community_rights icon = GFX_goal_generic_political_pressure x = 40 y = 4 cost = 5
+custom_effect_tooltip = ENG_nww_irish_pressure_change_minus10_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_community_rights icon = GFX_goal_generic_national_unity x = 40 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_belfast }
 available = { has_capitulated = no has_country_flag = ENG_nww_irish_agreement }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_stability = 0.05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_irish_commission icon = GFX_goal_generic_political_pressure x = 40 y = 5 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_irish_commission icon = GFX_goal_generic_positive_trade_relations x = 40 y = 5 cost = 5
 prerequisite = { focus = ENG_nww_community_rights }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -754,15 +770,16 @@ ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_irish_final
 custom_effect_tooltip = ENG_nww_bonus_state_stability_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_ulster_police icon = GFX_goal_generic_political_pressure x = 44 y = 4 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_ulster_police icon = GFX_goal_generic_position_armies x = 44 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_irish_emergency }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_to_variable = { ENG_nww_irish_pressure = -15 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+custom_effect_tooltip = ENG_nww_irish_pressure_change_minus15_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_ulster_review icon = GFX_goal_generic_political_pressure x = 44 y = 5 cost = 5
 prerequisite = { focus = ENG_nww_ulster_police }
 available = { has_capitulated = no  }
@@ -770,30 +787,32 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { clr_country_flag = ENG_nww_irish_coercion remove_ideas = ENG_nww_ulster_garrison set_country_flag = ENG_nww_irish_talks_ready
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_irish_future icon = GFX_goal_generic_political_pressure x = 42 y = 7 cost = 10
+custom_effect_tooltip = ENG_nww_reward_ulster_review_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_irish_future icon = GFX_focus_eng_decolonization x = 42 y = 7 cost = 10
 available = { has_capitulated = no has_country_flag = ENG_nww_irish_agreement has_completed_focus = ENG_nww_budget }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_border_vote_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_industrial_survey icon = GFX_goal_generic_construction x = 52 y = 0 cost = 5
+custom_effect_tooltip = ENG_nww_reward_irish_future_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_industrial_survey icon = GFX_goal_generic_construction2 x = 52 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_political_power = 35
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_coalfields icon = GFX_goal_generic_construction x = 52 y = 1 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_coalfields icon = GFX_focus_generic_coal_mining x = 52 y = 1 cost = 10
 prerequisite = { focus = ENG_nww_industrial_survey }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { ENG_nww_coal_project = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_machine_tools icon = GFX_goal_generic_construction x = 52 y = 2 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_machine_tools icon = GFX_goal_generic_production x = 52 y = 2 cost = 10
 prerequisite = { focus = ENG_nww_coalfields }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -801,8 +820,8 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_economy_production_factory_efficiency_gain_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_electric_grid icon = GFX_goal_generic_construction x = 52 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_electric_grid icon = GFX_focus_generic_hydroelectric_energy x = 52 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_machine_tools }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -810,24 +829,24 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_economy_energy_gain_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_northern_cities icon = GFX_goal_generic_construction x = 52 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_northern_cities icon = GFX_goal_generic_construct_civ_factory x = 52 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_electric_grid }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_civilian = { AMOUNT = 2 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_freight_routes icon = GFX_goal_generic_construction x = 52 y = 5 cost = 5
+completion_reward = { ENG_nww_build_civilian_2 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_freight_routes icon = GFX_goal_generic_construct_infrastructure x = 52 y = 5 cost = 5
 prerequisite = { focus = ENG_nww_northern_cities }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_infrastructure = { AMOUNT = 2 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_industrial_standards icon = GFX_goal_generic_construction x = 52 y = 6 cost = 10
+completion_reward = { ENG_nww_build_infrastructure_2 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_industrial_standards icon = GFX_goal_generic_production2 x = 52 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_freight_routes }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -835,8 +854,8 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_economy_production_speed_buildings_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_free_trade icon = GFX_goal_generic_construction x = 50 y = 7 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_free_trade icon = GFX_goal_generic_positive_trade_relations x = 50 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_industrial_standards }
 mutually_exclusive = { focus = ENG_nww_protection }
 available = { has_capitulated = no  }
@@ -845,105 +864,108 @@ ai_will_do = { factor = 8
 }
 completion_reward = { set_country_flag = ENG_nww_trade_unlocked
 custom_effect_tooltip = ENG_nww_bonus_economy_industrial_capacity_factory_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_protection icon = GFX_goal_generic_construction x = 54 y = 7 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_protection icon = GFX_goal_generic_trade x = 54 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_industrial_standards }
 mutually_exclusive = { focus = ENG_nww_free_trade }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_trust_all = { AMOUNT = -5 }
+completion_reward = { ENG_nww_trust_all_minus5 = yes
 custom_effect_tooltip = ENG_nww_bonus_economy_production_factory_max_efficiency_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_civil_reconstruction icon = GFX_goal_generic_construction x = 52 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_civil_reconstruction icon = GFX_goal_generic_construct_civilian x = 52 y = 9 cost = 10
 available = { has_capitulated = no OR = { has_completed_focus = ENG_nww_free_trade has_completed_focus = ENG_nww_protection } }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_civilian = { AMOUNT = 1 }
+completion_reward = { ENG_nww_build_civilian_1 = yes
 custom_effect_tooltip = ENG_nww_bonus_economy_production_speed_buildings_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_imperial_investment icon = GFX_goal_generic_construction x = 52 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_imperial_investment icon = GFX_focus_generic_british_trade x = 52 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_civil_reconstruction }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { set_country_flag = ENG_nww_investment_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_canadian_corridors icon = GFX_goal_generic_construction x = 52 y = 11 cost = 10
+custom_effect_tooltip = ENG_nww_reward_imperial_investment_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_canadian_corridors icon = GFX_goal_generic_construct_infrastructure x = 52 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_imperial_investment }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { ENG_nww_offer_canadian_project = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_indian_electricity icon = GFX_goal_generic_construction x = 52 y = 12 cost = 10
+custom_effect_tooltip = ENG_nww_reward_canadian_corridors_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_indian_electricity icon = GFX_focus_generic_hydroelectric_energy x = 52 y = 12 cost = 10
 prerequisite = { focus = ENG_nww_canadian_corridors }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { ENG_nww_offer_indian_project = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_commercial_ports icon = GFX_goal_generic_construction x = 52 y = 13 cost = 10
+custom_effect_tooltip = ENG_nww_reward_indian_electricity_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_commercial_ports icon = GFX_goal_generic_construct_naval_dockyard x = 52 y = 13 cost = 10
 prerequisite = { focus = ENG_nww_indian_electricity }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_dockyard = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_armament_board icon = GFX_goal_generic_construction x = 58 y = 0 cost = 5
+completion_reward = { ENG_nww_build_dockyard_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_armament_board icon = GFX_goal_generic_construct_mil_factory x = 58 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_political_power = 35
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_ordnance icon = GFX_goal_generic_construction x = 58 y = 1 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_ordnance icon = GFX_goal_generic_small_arms x = 58 y = 1 cost = 10
 prerequisite = { focus = ENG_nww_armament_board }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_military = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_steel_contracts icon = GFX_goal_generic_construction x = 58 y = 2 cost = 10
+completion_reward = { ENG_nww_build_military_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_steel_contracts icon = GFX_focus_generic_steel_mill x = 58 y = 2 cost = 10
 prerequisite = { focus = ENG_nww_ordnance }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { ENG_nww_steel_project = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_admiralty_yards icon = GFX_goal_generic_construction x = 58 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_admiralty_yards icon = GFX_goal_generic_construct_naval_dockyard x = 58 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_steel_contracts }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_dockyard = { AMOUNT = 2 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_shadow_factories icon = GFX_goal_generic_construction x = 58 y = 4 cost = 10
+completion_reward = { ENG_nww_build_dockyard_2 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_shadow_factories icon = GFX_goal_generic_air_production x = 58 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_admiralty_yards }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_military = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_engine_plants icon = GFX_goal_generic_construction x = 58 y = 5 cost = 10
+completion_reward = { ENG_nww_build_military_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_engine_plants icon = GFX_goal_generic_construct_military x = 58 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_shadow_factories }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_engine_plants bonus = 0.5 uses = 1 category = air_equipment } if = { limit = { has_dlc = "Arms Against Tyranny" } mio:ENG_hawker_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_hawker_organization_programme } }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_quality icon = GFX_goal_generic_construction x = 56 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_quality icon = GFX_goal_generic_production2 x = 56 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_engine_plants }
 mutually_exclusive = { focus = ENG_nww_mass_contracts }
 available = { has_capitulated = no  }
@@ -952,8 +974,8 @@ ai_will_do = { factor = 8
 }
 completion_reward = { set_country_flag = ENG_nww_quality_program
 custom_effect_tooltip = ENG_nww_bonus_economy_production_factory_max_efficiency_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_mass_contracts icon = GFX_goal_generic_construction x = 60 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_mass_contracts icon = GFX_goal_generic_production x = 60 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_engine_plants }
 mutually_exclusive = { focus = ENG_nww_quality }
 available = { has_capitulated = no  }
@@ -962,15 +984,15 @@ ai_will_do = { factor = 8
 }
 completion_reward = { add_timed_idea = { idea = ENG_nww_retooling days = 180 }
 custom_effect_tooltip = ENG_nww_bonus_economy_industrial_capacity_factory_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_vickers icon = GFX_goal_generic_construction x = 58 y = 8 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_vickers icon = GFX_goal_generic_build_tank x = 58 y = 8 cost = 10
 available = { has_capitulated = no OR = { has_completed_focus = ENG_nww_quality has_completed_focus = ENG_nww_mass_contracts } }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_vickers bonus = 0.5 uses = 1 category = armor } if = { limit = { has_dlc = "Arms Against Tyranny" } mio:ENG_vickers_armstrong_eng_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_vickers_armstrong_eng_organization_programme } }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_standard_ammunition icon = GFX_goal_generic_construction x = 58 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_standard_ammunition icon = GFX_goal_generic_small_arms x = 58 y = 9 cost = 10
 prerequisite = { focus = ENG_nww_vickers }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -978,8 +1000,8 @@ ai_will_do = { factor = 8
 }
 completion_reward = {  if = { limit = { has_dlc = "Arms Against Tyranny" } mio:ENG_rsaf_enfield_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_rsaf_enfield_organization_programme } }
 custom_effect_tooltip = ENG_nww_bonus_economy_production_factory_efficiency_gain_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_production_inspection icon = GFX_goal_generic_construction x = 58 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_production_inspection icon = GFX_goal_generic_production2 x = 58 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_standard_ammunition }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -987,23 +1009,23 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_economy_production_factory_max_efficiency_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_strategic_reserves icon = GFX_goal_generic_construction x = 58 y = 11 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_strategic_reserves icon = GFX_goal_generic_consumer_goods x = 58 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_production_inspection }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_military = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_university_grants icon = GFX_goal_generic_scientific_exchange x = 64 y = 0 cost = 5
+completion_reward = { ENG_nww_build_military_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_university_grants icon = GFX_focus_generic_university_1 x = 64 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_university_grants bonus = 0.5 uses = 1 category = electronics }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_research_council icon = GFX_goal_generic_scientific_exchange x = 64 y = 1 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_research_council icon = GFX_focus_research2 x = 64 y = 1 cost = 10
 prerequisite = { focus = ENG_nww_university_grants }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1011,7 +1033,7 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_science_research_speed_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_scientific_exchange icon = GFX_goal_generic_scientific_exchange x = 64 y = 2 cost = 5
 prerequisite = { focus = ENG_nww_research_council }
 available = { has_capitulated = no  }
@@ -1019,24 +1041,24 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { set_country_flag = ENG_nww_science_unlocked add_to_tech_sharing_group = ENG_nww_research
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_radar_network icon = GFX_goal_generic_scientific_exchange x = 64 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_radar_network icon = GFX_goal_generic_radar x = 64 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_scientific_exchange }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { ENG_nww_radar_project = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_computing icon = GFX_goal_generic_scientific_exchange x = 64 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_computing icon = GFX_focus_research2 x = 64 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_radar_network }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_computing bonus = 0.5 uses = 1 category = electronics }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_research_capacity icon = GFX_goal_generic_scientific_exchange x = 64 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_research_capacity icon = GFX_focus_generic_university_2 x = 64 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_computing }
 available = { has_capitulated = no date > 1938.1.1 amount_research_slots < 6 }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1044,32 +1066,32 @@ bypass = { amount_research_slots > 5 }
 ai_will_do = { factor = 3
 }
 completion_reward = { add_research_slot = 1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_jet_research icon = GFX_goal_generic_scientific_exchange x = 64 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_jet_research icon = GFX_focus_generic_air_research_boost x = 64 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_research_capacity }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_breakthrough_progress = { specialization = specialization_air value = 0.25 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_closed_laboratories icon = GFX_goal_generic_scientific_exchange x = 64 y = 7 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_closed_laboratories icon = GFX_goal_generic_secret_weapon x = 64 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_jet_research }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { ENG_nww_research_facility = yes
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_nuclear_committee icon = GFX_goal_generic_scientific_exchange x = 64 y = 8 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_nuclear_committee icon = GFX_focus_generic_nuclear_development x = 64 y = 8 cost = 10
 prerequisite = { focus = ENG_nww_closed_laboratories }
 available = { has_capitulated = no date > 1940.1.1 }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_nuclear_committee bonus = 0.5 uses = 1 category = nuclear }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_scientific_service icon = GFX_goal_generic_scientific_exchange x = 64 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_scientific_service icon = GFX_focus_research x = 64 y = 9 cost = 10
 prerequisite = { focus = ENG_nww_nuclear_committee }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1077,22 +1099,22 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_science_research_speed_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_naval_review icon = GFX_goal_generic_navy_doctrines_tactics x = 72 y = 0 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_naval_review icon = GFX_goal_generic_build_navy x = 72 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { navy_experience = 25
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_repair_bases icon = GFX_goal_generic_navy_doctrines_tactics x = 72 y = 1 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_repair_bases icon = GFX_goal_generic_construct_naval_dockyard x = 72 y = 1 cost = 10
 prerequisite = { focus = ENG_nww_naval_review }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
-completion_reward = { ENG_nww_build_dockyard = { AMOUNT = 1 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+completion_reward = { ENG_nww_build_dockyard_1 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_naval_planning icon = GFX_goal_generic_navy_doctrines_tactics x = 72 y = 2 cost = 5
 prerequisite = { focus = ENG_nww_repair_bases }
 available = { has_capitulated = no  }
@@ -1100,8 +1122,9 @@ cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { set_country_flag = ENG_nww_routes_unlocked
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_escort icon = GFX_goal_generic_navy_doctrines_tactics x = 70 y = 3 cost = 10
+custom_effect_tooltip = ENG_nww_reward_naval_planning_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_escort icon = GFX_goal_generic_navy_anti_submarine x = 70 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_naval_planning }
 mutually_exclusive = { focus = ENG_nww_strike }
 available = { has_capitulated = no  }
@@ -1110,8 +1133,8 @@ ai_will_do = { factor = 8
 }
 completion_reward = { navy_experience = 20
 custom_effect_tooltip = ENG_nww_bonus_navy_convoy_escort_efficiency_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_strike icon = GFX_goal_generic_navy_doctrines_tactics x = 74 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_strike icon = GFX_goal_generic_navy_battleship x = 74 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_naval_planning }
 mutually_exclusive = { focus = ENG_nww_escort }
 available = { has_capitulated = no  }
@@ -1120,8 +1143,8 @@ ai_will_do = { factor = 8
 }
 completion_reward = { navy_experience = 20
 custom_effect_tooltip = ENG_nww_bonus_navy_navy_capital_ship_attack_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_escort_groups icon = GFX_goal_generic_navy_doctrines_tactics x = 70 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_escort_groups icon = GFX_goal_generic_navy_cruiser x = 70 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_escort }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1129,24 +1152,24 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_navy_naval_detection_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_asw_schools icon = GFX_goal_generic_navy_doctrines_tactics x = 70 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_asw_schools icon = GFX_goal_generic_navy_anti_submarine x = 70 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_escort_groups }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_asw_schools bonus = 0.5 uses = 1 category = dd_tech }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_convoy_reserve icon = GFX_goal_generic_navy_doctrines_tactics x = 70 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_convoy_reserve icon = GFX_goal_generic_build_navy x = 70 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_asw_schools }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_equipment_to_stockpile = { type = convoy amount = 50 producer = ENG }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_ocean_watch icon = GFX_goal_generic_navy_doctrines_tactics x = 70 y = 7 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_ocean_watch icon = GFX_goal_generic_radar x = 70 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_convoy_reserve }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1154,31 +1177,31 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_navy_convoy_escort_efficiency_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_carrier_operations icon = GFX_goal_generic_navy_doctrines_tactics x = 74 y = 4 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_carrier_operations icon = GFX_goal_generic_navy_carrier x = 74 y = 4 cost = 5
 prerequisite = { focus = ENG_nww_strike }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_carrier_operations bonus = 0.5 uses = 1 category = cv_tech }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_carrier_airgroups icon = GFX_goal_generic_navy_doctrines_tactics x = 74 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_carrier_airgroups icon = GFX_goal_generic_air_naval_bomber x = 74 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_carrier_operations }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_carrier_airgroups bonus = 0.5 uses = 1 category = naval_air }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_ocean_carrier icon = GFX_goal_generic_navy_doctrines_tactics x = 74 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_ocean_carrier icon = GFX_goal_generic_navy_carrier x = 74 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_carrier_airgroups }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_ocean_carrier bonus = 0.5 uses = 1 category = cv_tech }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_naval_strike_control icon = GFX_goal_generic_navy_doctrines_tactics x = 74 y = 7 cost = 10
 prerequisite = { focus = ENG_nww_ocean_carrier }
 available = { has_capitulated = no  }
@@ -1187,23 +1210,24 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_navy_navy_capital_ship_attack_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_cape_route icon = GFX_goal_generic_navy_doctrines_tactics x = 72 y = 9 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_cape_route icon = GFX_focus_eng_global_defense x = 72 y = 9 cost = 10
 available = { has_capitulated = no OR = { has_completed_focus = ENG_nww_ocean_watch has_completed_focus = ENG_nww_naval_strike_control } }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { set_country_flag = ENG_nww_cape_ready
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_naval_supply icon = GFX_goal_generic_navy_doctrines_tactics x = 72 y = 10 cost = 5
+custom_effect_tooltip = ENG_nww_reward_cape_route_tt
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_naval_supply icon = GFX_goal_generic_construct_infrastructure x = 72 y = 10 cost = 5
 prerequisite = { focus = ENG_nww_cape_route }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 8
 }
 completion_reward = { navy_experience = 25
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_two_ocean_fleet icon = GFX_goal_generic_navy_doctrines_tactics x = 72 y = 11 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_two_ocean_fleet icon = GFX_focus_ENG_nww_two_ocean_fleet x = 72 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_naval_supply }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1211,22 +1235,22 @@ ai_will_do = { factor = 8
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_navy_industrial_capacity_dockyard_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_air_service icon = GFX_goal_generic_air_fighter x = 80 y = 0 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_air_service icon = GFX_goal_generic_build_airforce x = 80 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { air_experience = 25
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_pilot_reserve icon = GFX_goal_generic_air_fighter x = 80 y = 1 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_pilot_reserve icon = GFX_goal_generic_air_doctrine x = 80 y = 1 cost = 5
 prerequisite = { focus = ENG_nww_air_service }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { air_experience = 25
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_fighter_command icon = GFX_goal_generic_air_fighter x = 78 y = 2 cost = 10
 prerequisite = { focus = ENG_nww_pilot_reserve }
 mutually_exclusive = { focus = ENG_nww_bomber_command }
@@ -1236,8 +1260,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_intercept_efficiency_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_bomber_command icon = GFX_goal_generic_air_fighter x = 82 y = 2 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_bomber_command icon = GFX_goal_generic_air_bomber x = 82 y = 2 cost = 10
 prerequisite = { focus = ENG_nww_pilot_reserve }
 mutually_exclusive = { focus = ENG_nww_fighter_command }
 available = { has_capitulated = no  }
@@ -1246,8 +1270,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_strategic_bomber_bombing_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_sector_hq icon = GFX_goal_generic_air_fighter x = 78 y = 3 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_sector_hq icon = GFX_goal_generic_radar x = 78 y = 3 cost = 5
 prerequisite = { focus = ENG_nww_fighter_command }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1255,16 +1279,16 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_mission_efficiency_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_supermarine icon = GFX_goal_generic_air_fighter x = 78 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_supermarine icon = GFX_goal_generic_air_fighter2 x = 78 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_sector_hq }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_supermarine bonus = 0.5 uses = 1 category = light_fighter } if = { limit = { has_dlc = "Arms Against Tyranny" } mio:ENG_supermarine_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_supermarine_organization_programme } }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_home_air_shield icon = GFX_goal_generic_air_fighter x = 78 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_home_air_shield icon = GFX_goal_generic_defence x = 78 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_supermarine }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1272,8 +1296,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_intercept_efficiency_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_navigation icon = GFX_goal_generic_air_fighter x = 82 y = 3 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_navigation icon = GFX_goal_generic_radar x = 82 y = 3 cost = 5
 prerequisite = { focus = ENG_nww_bomber_command }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1281,16 +1305,16 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_mission_efficiency_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_heavy_airgroups icon = GFX_goal_generic_air_fighter x = 82 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_heavy_airgroups icon = GFX_goal_generic_air_bomber x = 82 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_navigation }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { add_tech_bonus = { name = ENG_nww_heavy_airgroups bonus = 0.5 uses = 1 category = heavy_bomber }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_strategic_campaign icon = GFX_goal_generic_air_fighter x = 82 y = 5 cost = 10
+completion_reward = { add_tech_bonus = { name = ENG_nww_heavy_airgroups bonus = 0.5 uses = 1 category = cat_strategic_bomber }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_strategic_campaign icon = GFX_goal_generic_air_doctrine x = 82 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_heavy_airgroups }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1298,23 +1322,23 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_strategic_bomber_bombing_factor_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_coastal_command icon = GFX_goal_generic_air_fighter x = 80 y = 7 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_coastal_command icon = GFX_goal_generic_air_naval_bomber x = 80 y = 7 cost = 5
 available = { has_capitulated = no OR = { has_completed_focus = ENG_nww_home_air_shield has_completed_focus = ENG_nww_strategic_campaign } }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_coastal_command bonus = 0.5 uses = 1 category = naval_air }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_fairey icon = GFX_goal_generic_air_fighter x = 80 y = 8 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_fairey icon = GFX_goal_generic_air_production x = 80 y = 8 cost = 5
 prerequisite = { focus = ENG_nww_coastal_command }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { air_experience = 25 if = { limit = { has_dlc = "Arms Against Tyranny" } mio:ENG_fairey_aviation_organization = { add_mio_size = 1 unlock_mio_trait_tooltip = ENG_nww_ENG_fairey_aviation_organization_programme } }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_air_ground_liaison icon = GFX_goal_generic_air_fighter x = 80 y = 9 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_air_ground_liaison icon = GFX_goal_generic_CAS x = 80 y = 9 cost = 5
 prerequisite = { focus = ENG_nww_fairey }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1322,23 +1346,23 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_air_air_cas_efficiency_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_air_logistics icon = GFX_goal_generic_air_fighter x = 80 y = 10 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_air_logistics icon = GFX_goal_generic_construct_infrastructure x = 80 y = 10 cost = 10
 prerequisite = { focus = ENG_nww_air_ground_liaison }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
-completion_reward = { ENG_nww_build_airbase = { AMOUNT = 2 }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+completion_reward = { ENG_nww_build_airbase_2 = yes
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 focus = { id = ENG_nww_army_review icon = GFX_goal_generic_army_doctrines x = 88 y = 0 cost = 5
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { army_experience = 25
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_staff_college icon = GFX_goal_generic_army_doctrines x = 88 y = 1 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_staff_college icon = GFX_focus_eng_chiefs_of_staff_committee x = 88 y = 1 cost = 5
 prerequisite = { focus = ENG_nww_army_review }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1346,8 +1370,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { army_experience = 25
 custom_effect_tooltip = ENG_nww_bonus_army_planning_speed_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_expeditionary icon = GFX_goal_generic_army_doctrines x = 86 y = 2 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_expeditionary icon = GFX_goal_generic_special_forces x = 86 y = 2 cost = 10
 prerequisite = { focus = ENG_nww_staff_college }
 mutually_exclusive = { focus = ENG_nww_continental }
 available = { has_capitulated = no  }
@@ -1356,8 +1380,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_army_org_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_continental icon = GFX_goal_generic_army_doctrines x = 90 y = 2 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_continental icon = GFX_goal_generic_position_armies x = 90 y = 2 cost = 10
 prerequisite = { focus = ENG_nww_staff_college }
 mutually_exclusive = { focus = ENG_nww_expeditionary }
 available = { has_capitulated = no  }
@@ -1366,8 +1390,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_war_support = 0.05
 custom_effect_tooltip = ENG_nww_bonus_army_army_org_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_overseas_supply icon = GFX_goal_generic_army_doctrines x = 86 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_overseas_supply icon = GFX_goal_generic_amphibious_assault x = 86 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_expeditionary }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1375,16 +1399,16 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_supply_consumption_factor_minus0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_expedition_engineers icon = GFX_goal_generic_army_doctrines x = 86 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_expedition_engineers icon = GFX_goal_generic_construct_infrastructure x = 86 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_overseas_supply }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_expedition_engineers bonus = 0.5 uses = 1 category = support_tech }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_professional_rotations icon = GFX_goal_generic_army_doctrines x = 86 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_professional_rotations icon = GFX_focus_generic_commonwealth_build_infantry x = 86 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_expedition_engineers }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1392,8 +1416,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_army_org_regain_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_rapid_expedition icon = GFX_goal_generic_army_doctrines x = 86 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_rapid_expedition icon = GFX_focus_eng_special_air_service x = 86 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_professional_rotations }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1401,8 +1425,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_army_speed_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_reserve_act icon = GFX_goal_generic_army_doctrines x = 90 y = 3 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_reserve_act icon = GFX_focus_generic_commonwealth_build_infantry x = 90 y = 3 cost = 10
 prerequisite = { focus = ENG_nww_continental }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1410,16 +1434,16 @@ ai_will_do = { factor = 3
 }
 completion_reward = { add_war_support = 0.05
 custom_effect_tooltip = ENG_nww_bonus_army_training_time_army_factor_minus0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_tank_trials icon = GFX_goal_generic_army_doctrines x = 90 y = 4 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_tank_trials icon = GFX_goal_generic_army_tanks x = 90 y = 4 cost = 10
 prerequisite = { focus = ENG_nww_reserve_act }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_tank_trials bonus = 0.5 uses = 1 category = armor }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_combined_arms icon = GFX_goal_generic_army_doctrines x = 90 y = 5 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_combined_arms icon = GFX_goal_generic_build_tank x = 90 y = 5 cost = 10
 prerequisite = { focus = ENG_nww_tank_trials }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1427,8 +1451,8 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_max_planning_0_1
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_mechanised_logistics icon = GFX_goal_generic_army_doctrines x = 90 y = 6 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_mechanised_logistics icon = GFX_goal_generic_army_motorized x = 90 y = 6 cost = 10
 prerequisite = { focus = ENG_nww_combined_arms }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1436,31 +1460,31 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_army_speed_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_army_signals icon = GFX_goal_generic_army_doctrines x = 88 y = 8 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_army_signals icon = GFX_goal_generic_radar x = 88 y = 8 cost = 5
 available = { has_capitulated = no OR = { has_completed_focus = ENG_nww_rapid_expedition has_completed_focus = ENG_nww_mechanised_logistics } }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_army_signals bonus = 0.5 uses = 1 category = support_tech }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_artillery_board icon = GFX_goal_generic_army_doctrines x = 88 y = 9 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_artillery_board icon = GFX_goal_generic_army_artillery2 x = 88 y = 9 cost = 5
 prerequisite = { focus = ENG_nww_army_signals }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { add_tech_bonus = { name = ENG_nww_artillery_board bonus = 0.5 uses = 1 category = artillery }
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_army_exercises icon = GFX_goal_generic_army_doctrines x = 88 y = 10 cost = 5
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_army_exercises icon = GFX_goal_generic_position_armies x = 88 y = 10 cost = 5
 prerequisite = { focus = ENG_nww_artillery_board }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
 ai_will_do = { factor = 3
 }
 completion_reward = { army_experience = 40
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
-focus = { id = ENG_nww_army_readiness icon = GFX_goal_generic_army_doctrines x = 88 y = 11 cost = 10
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
+focus = { id = ENG_nww_army_readiness icon = GFX_goal_generic_defence x = 88 y = 11 cost = 10
 prerequisite = { focus = ENG_nww_army_exercises }
 available = { has_capitulated = no  }
 cancel_if_invalid = yes continue_if_invalid = no
@@ -1468,5 +1492,5 @@ ai_will_do = { factor = 3
 }
 completion_reward = {
 custom_effect_tooltip = ENG_nww_bonus_army_army_org_factor_0_05
-hidden_effect = { ENG_nww_rebuild_spirits = yes } } }
+hidden_effect = { set_country_flag = ENG_nww_spirit_refresh_pending ENG_nww_clamp = yes ENG_nww_rebuild_spirits = yes } } }
 }
