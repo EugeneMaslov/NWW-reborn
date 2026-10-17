@@ -41,16 +41,7 @@ GER_bop_decisions_category = {
 				add_political_power = 50
 			}
 		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				power_balance_value = {
-					id = GER_kaiser_vs_reichstag
-					value < -0.20
-				}
-			}
-		}
+		ai_will_do = { factor = 10 modifier = { factor = 0 NOT = { has_country_flag = GER_nww_ai_authoritarian } } }
 	}
 	GER_concede_to_parliament = {
 		icon = GFX_focus_GER_monarchy_compromise
@@ -94,9 +85,7 @@ GER_bop_decisions_category = {
 				add_political_power = 50
 			}
 		}
-		ai_will_do = {
-			factor = 0
-		}
+		ai_will_do = { factor = 10 modifier = { factor = 0 NOT = { has_country_flag = GER_nww_ai_democratic } } }
 	}
 	GER_rally_pan_german_leagues = {
 		icon = GFX_focus_GER_brothers_in_arms
@@ -126,13 +115,7 @@ GER_bop_decisions_category = {
 				add_political_power = 50
 			}
 		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
+		ai_will_do = { factor = 10 modifier = { factor = 0 NOT = { has_country_flag = GER_nww_ai_fascist } } }
 	}
 	GER_organize_workers_councils = {
 		icon = GFX_focus_GER_legacy_of_the_spartacus_league
@@ -162,13 +145,7 @@ GER_bop_decisions_category = {
 				add_political_power = 50
 			}
 		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
+		ai_will_do = { factor = 10 modifier = { factor = 0 NOT = { has_country_flag = GER_nww_ai_communist } } }
 	}
 	GER_imperial_field_exercises = {
 		icon = generic_army_support

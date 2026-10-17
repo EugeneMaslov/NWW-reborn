@@ -1,0 +1,1 @@
+POL_institutional_politics = { icon = generic_political_actions allowed = { original_tag = POL } visible = { NOT = { POL_no_political_path = yes } } }

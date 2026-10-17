@@ -1,1 +1,1 @@
-# Native German alternate plans target a different tree. NWW Phase 1 uses focus weights.
+# Native German alternate plans are disabled. Four NWW routes: GER_historical.txt; initialization: GER_ai_effects.txt.

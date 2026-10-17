@@ -1,0 +1,28 @@
+# Owner LTB. Paid reserve reform, available equally to player and AI.
+LTB_union_defence_category = {
+ LTB_expand_reserve_register = {
+  icon = generic_prepare_civil_war
+  cost = 75
+  days_remove = 60
+  fire_only_once = yes
+  visible = { has_completed_focus = LTB_union_general_staff NOT = { has_country_flag = LTB_reserve_register_completed } }
+  available = {
+   has_completed_focus = LTB_the_vilnius_compromise
+   NOT = { has_country_flag = LTB_split_choice_available }
+   date > 1937.12.31
+   has_war_support > 0.25
+   OR = { has_idea = disarmed_nation has_idea = volunteer_only }
+  }
+  cancel_trigger = { has_country_flag = LTB_split_choice_available }
+  cancel_effect = { add_political_power = 75 }
+  remove_effect = {
+   if = {
+    limit = { has_completed_focus = LTB_the_vilnius_compromise NOT = { has_country_flag = LTB_split_choice_available } OR = { has_idea = disarmed_nation has_idea = volunteer_only } }
+    add_ideas = limited_conscription
+    set_country_flag = LTB_reserve_register_completed
+   }
+   else = { add_political_power = 75 }
+  }
+  ai_will_do = { factor = 20 }
+ }
+}

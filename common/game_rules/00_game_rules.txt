@@ -1,4 +1,4 @@
-# Only FRA_ai_behavior is replaced; country implementation: FRA_focuses.txt and FRA_plans.txt.
+﻿# Only FRA_ai_behavior is replaced; country implementation: FRA_focuses.txt and FRA_plans.txt.
 allow_wargoals = {
 	name = RULE_ALLOW_WARGOALS
 	group = RULE_GROUP_GENERAL_FOREIGN_POLICY
@@ -424,13 +424,11 @@ GER_ai_behavior = {
 		desc = RULE_OPTION_GER_ALT_FASCIST_AI_DESC
 	}
 	option = {
-		required_dlc = Gotterdammerung
 		name = GER_COMMUNIST_STALINIST
 		text = RULE_OPTION_GER_COMMUNIST_STALINIST
 		desc = RULE_OPTION_GER_COMMUNIST_STALINIST_AI_DESC
 	}
 	option = {
-		required_dlc = Gotterdammerung
 		name = GER_COMMUNIST_SPARTACUS
 		text = RULE_OPTION_GER_COMMUNIST_SPARTACUS
 		desc = RULE_OPTION_GER_COMMUNIST_SPARTACUS_AI_DESC

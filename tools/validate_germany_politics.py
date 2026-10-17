@@ -138,6 +138,10 @@ class Scenario:
             elif key == 'add_power_balance_value': s['balance']=round(max(-1,min(1,s['balance']+float(one(value,'value')))),6)
             elif key == 'add_relation_rule_override': s['rules'].add(('trigger',one(value,'trigger')) if one(value,'trigger') else one(value,'target'))
             elif key == 'remove_relation_rule_override': s['rules'].discard(('trigger',one(value,'trigger')) if one(value,'trigger') else one(value,'target'))
+            elif key in ('set_rule','clear_rule'):
+                for name,enabled,operator in value:
+                    token=('country',name)
+                    (s['rules'].add if key=='set_rule' else s['rules'].discard)(token)
             elif key == 'create_wargoal': s['goals'].add(one(value,'target'))
             elif key == 'set_autonomy':
                 target=self.target(one(value,'target'),actor,root,stack)
@@ -408,7 +412,7 @@ def validate_germany(root, game, check):
         w.apply(effects['nww_GER_initialize_politics'])
         w.apply(effects['nww_GER_mitteleuropa_refusal_wargoals'])
         s = w.countries['GER']; early = date.startswith(('1936','1938'))
-        check(('LTB' in s['rules']) == early and ('LTB' in s['goals']) != early, f'GER: LTB date guard fails on {date}')
+        check(not s['rules'] and ('LTB' in s['goals']) != early, f'GER: LTB date guard fails on {date}')
         first = deepcopy(w.countries)
         w.apply(effects['nww_GER_initialize_politics']); w.apply(effects['nww_GER_mitteleuropa_refusal_wargoals'])
         check(w.countries == first, 'GER: daily/save repair repeats rewards or wargoals')
@@ -509,7 +513,8 @@ def validate_germany(root, game, check):
         check(s[ideology] >= 0.40, f'{fid}: no viable path to the mandate')
         scenarios+=1
 
-    # All eastern targets stay protected for every ideology and for dynamic German tags.
+    # Compatibility cleanup does not install unsupported target-specific declaration overrides.
+    # Actual focus/effect dates are checked below; AI country rules have separate scenarios.
     eastern={'LTB','POL','MKN','UKR','SOV'}
     for government in ('neutrality','democratic','fascism','communism'):
         for actor in ('GER','D01'):
@@ -518,7 +523,7 @@ def validate_germany(root, game, check):
                 if actor=='D01': w.countries[actor]=deepcopy(w.countries['GER'])
                 s=w.countries[actor];s['government']=government
                 w.apply(effects['nww_GER_initialize_politics'],actor)
-                check(s['rules']==(eastern if date=='1938.12.31' else set()), f'GER: eastern rule leak for {government}/{actor}/{date}')
+                check(not s['rules'], f'GER: eastern rule leak for {government}/{actor}/{date}')
                 scenarios+=1
     for fid in ('GER_reign_in_mitteleuropa','GER_crush_eastern_syndicates','GER_lebensraum_in_the_east'):
         gate=one(political[fid],'available')
@@ -562,7 +567,7 @@ def validate_germany(root, game, check):
     check(w.player=='D01' and rebel['original']=='GER' and rebel['government']=='communism', 'GER: player does not control the communist uprising')
     check(rebel['focuses']==s['focuses'] and rebel['pp']==s['pp'],'GER: civil-war focus copying repeats rewards or drops progress')
     check(w.character_owner['GER_ernst_thalmann']=='D01','GER: Thalmann not transferred to the revolt')
-    check(rebel['rules']==eastern and rebel['balance'] is None, 'GER: uprising loses date protection or inherits OHL')
+    check(not rebel['rules'] and rebel['balance'] is None, 'GER: uprising loses date protection or inherits OHL')
     republic_gate=one(political['GER_german_soviet_republic'],'available')
     check(not w.condition(republic_gate,'D01'), 'GER: republic available during civil war')
     s['exists']=False;rebel['civil_war']=False;rebel['wars'].clear()

@@ -65,7 +65,7 @@ UKR_MKN_settle_actual_capitulation = {
 	}
 	else_if = {
 		limit = { ROOT = { tag = MKN has_capitulated = yes } FROM = { tag = UKR } }
-		ROOT = { every_owned_state = { add_core_of = FROM } }
+		ROOT = { every_owned_state = { set_state_flag = UKR_former_makhnovist_region } }
 		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 }

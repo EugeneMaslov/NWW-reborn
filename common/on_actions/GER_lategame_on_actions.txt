@@ -3,6 +3,8 @@ on_actions = {
 		effect = {
 			every_country = {
 				limit = { original_tag = GER has_focus_tree = GER_focus }
+				GER_nww_initialize_ai_route = yes
+				nww_GER_ai_observe_campaign = yes
 				GER_nww_repair_army_reform = yes
 				GER_nww_refresh_western_wargoals = yes
 			}
@@ -13,6 +15,8 @@ on_actions = {
 			# Includes a victorious Spartacist Germany retaining a dynamic tag.
 			every_country = {
 				limit = { original_tag = GER has_focus_tree = GER_focus }
+				GER_nww_initialize_ai_route = yes
+				nww_GER_ai_observe_campaign = yes
 				GER_nww_repair_army_reform = yes
 				GER_nww_refresh_western_wargoals = yes
 			}

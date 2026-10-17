@@ -1,8 +1,19 @@
-# Owner TUR. Negative relation rules combine without clearing other protections.
+# Owner TUR. The engine rejects declaration bans in relation overrides.
+# Use an owned country rule while unready, plus per-target AI strategies.
 nww_TUR_ai_install_campaign_guard = {
- remove_relation_rule_override = { trigger = nww_TUR_ai_unsafe_declaration can_not_declare_war = yes }
- add_relation_rule_override = { trigger = nww_TUR_ai_unsafe_declaration usage_desc = NWW_TUR_campaign_safety_tt can_not_declare_war = yes }
  set_country_flag = NWW_TUR_campaign_guard_installed
+}
+nww_TUR_ai_refresh_declaration_rule = {
+ if = {
+  limit = { is_ai = yes OR = { NOT = { nww_TUR_ai_campaign_ready = yes } } }
+  set_rule = { can_not_declare_war = yes }
+  set_country_flag = NWW_TUR_declaration_rule_owned
+ }
+ else_if = {
+  limit = { has_country_flag = NWW_TUR_declaration_rule_owned }
+  clear_rule = { can_not_declare_war = yes }
+  clr_country_flag = NWW_TUR_declaration_rule_owned
+ }
 }
 nww_TUR_ai_observe_campaign = {
  if = { limit = { NOT = { has_country_flag = NWW_TUR_campaign_guard_installed } } nww_TUR_ai_install_campaign_guard = yes }
@@ -18,4 +29,5 @@ nww_TUR_ai_observe_campaign = {
   clr_country_flag = NWW_TUR_campaign_was_at_war
   clr_country_flag = NWW_TUR_campaign_defeat_pending
  }
+ nww_TUR_ai_refresh_declaration_rule = yes
 }

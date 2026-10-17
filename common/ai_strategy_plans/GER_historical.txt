@@ -1,12 +1,22 @@
+# Owner GER. Four NWW routes; unavailable dated objectives yield to domestic development.
 NWW_GER_historical = {
- name = GER_nww_historical_plan
- desc = GER_nww_historical_plan_desc
+ name = GER_nww_authoritarian_plan
+ desc = GER_nww_authoritarian_plan_desc
  allowed = { original_tag = GER }
- enable = { is_historical_focus_on = yes has_focus_tree = GER_focus }
+ enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_authoritarian }
  abort = { is_subject = yes }
  ai_national_focuses = {
   GER_the_gilded_colossus
   GER_fund_the_reichswehr
+  GER_the_potsdam_coup
+  GER_dissolve_the_reichstag
+  GER_reign_in_mitteleuropa
+  GER_the_austrian_question
+  GER_crush_eastern_syndicates
+  GER_gott_mit_uns
+  GER_schlieffen_reborn
+  GER_strike_the_west
+  GER_the_second_naval_race
   GER_krupp_and_thyssen
   GER_the_kaiser_endures
   GER_prussian_traditions
@@ -17,33 +27,165 @@ NWW_GER_historical = {
   GER_mitteleuropa_trade
   GER_guardians_of_the_reich
   GER_nww_prague_network
-  GER_the_potsdam_coup
-  GER_dissolve_the_reichstag
   GER_nww_silesian_steel
   GER_3
   GER_7
   GER_nww_machine_tools
   GER_nww_arsenal_contracts
   GER_nww_industrial_standards
-  GER_the_austrian_question
   GER_nww_technical_colleges
   GER_4
   GER_8
-  GER_reign_in_mitteleuropa
   GER_2
   GER_nww_freight_corridors
   GER_nww_merchant_contracts
   GER_nww_export_credit
   GER_nww_investment_guarantees
-  GER_crush_eastern_syndicates
-  GER_gott_mit_uns
   GER_9
   GER_10
   GER_nww_industrial_research
-  GER_schlieffen_reborn
-  GER_strike_the_west
-  GER_the_second_naval_race
  }
- focus_factors = { GER_empower_the_chancellor = 0 }
+ weight = { factor = 100 }
+}
+NWW_GER_democratic = {
+ name = GER_nww_democratic_plan
+ desc = GER_nww_democratic_plan_desc
+ allowed = { original_tag = GER }
+ enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_democratic }
+ abort = { is_subject = yes }
+ ai_national_focuses = {
+  GER_the_gilded_colossus
+  GER_empower_the_chancellor
+  GER_parliamentary_spring
+  GER_true_constitutional_monarchy
+  GER_mitteleuropa_economic_community
+  GER_the_austrian_referendum
+  GER_arsenal_of_democracy
+  GER_european_federation
+  GER_anti_imperialist_crusade
+  GER_shield_against_the_reds
+  GER_krupp_and_thyssen
+  GER_the_kaiser_endures
+  GER_prussian_traditions
+  GER_1
+  GER_nww_electrical_grid
+  GER_5
+  GER_6
+  GER_mitteleuropa_trade
+  GER_guardians_of_the_reich
+  GER_nww_prague_network
+  GER_nww_silesian_steel
+  GER_3
+  GER_7
+  GER_nww_machine_tools
+  GER_nww_arsenal_contracts
+  GER_nww_industrial_standards
+  GER_nww_technical_colleges
+  GER_4
+  GER_8
+  GER_2
+  GER_nww_freight_corridors
+  GER_nww_merchant_contracts
+  GER_nww_export_credit
+  GER_nww_investment_guarantees
+  GER_9
+  GER_10
+  GER_nww_industrial_research
+ }
+ weight = { factor = 100 }
+}
+NWW_GER_fascist = {
+ name = GER_nww_fascist_plan
+ desc = GER_nww_fascist_plan_desc
+ allowed = { original_tag = GER }
+ enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_fascist }
+ abort = { is_subject = yes }
+ ai_national_focuses = {
+  GER_the_gilded_colossus
+  GER_pan_german_leagues
+  GER_the_pan_germanic_triumph
+  GER_abolish_the_hohenzollerns
+  GER_anschluss_by_force
+  GER_lebensraum_in_the_east
+  GER_the_new_reich
+  GER_drang_nach_osten_expanded
+  GER_total_assimilation
+  GER_hegemony_over_europe_focus
+  GER_krupp_and_thyssen
+  GER_the_kaiser_endures
+  GER_prussian_traditions
+  GER_1
+  GER_nww_electrical_grid
+  GER_5
+  GER_6
+  GER_mitteleuropa_trade
+  GER_guardians_of_the_reich
+  GER_nww_prague_network
+  GER_nww_silesian_steel
+  GER_3
+  GER_7
+  GER_nww_machine_tools
+  GER_nww_arsenal_contracts
+  GER_nww_industrial_standards
+  GER_nww_technical_colleges
+  GER_4
+  GER_8
+  GER_2
+  GER_nww_freight_corridors
+  GER_nww_merchant_contracts
+  GER_nww_export_credit
+  GER_nww_investment_guarantees
+  GER_9
+  GER_10
+  GER_nww_industrial_research
+ }
+ weight = { factor = 100 }
+}
+NWW_GER_communist = {
+ name = GER_nww_communist_plan
+ desc = GER_nww_communist_plan_desc
+ allowed = { original_tag = GER }
+ enable = { has_focus_tree = GER_focus has_country_flag = GER_nww_ai_communist }
+ abort = { is_subject = yes }
+ ai_national_focuses = {
+  GER_the_gilded_colossus
+  GER_organize_ruhr_workers
+  GER_the_spartacist_uprising
+  GER_german_soviet_republic
+  GER_workers_militias
+  GER_dismantle_imperial_borders
+  GER_berlin_moscow_axis
+  GER_world_revolution
+  GER_red_rhine
+  GER_nva_mass_mobilization
+  GER_challenge_moscow
+  GER_krupp_and_thyssen
+  GER_the_kaiser_endures
+  GER_prussian_traditions
+  GER_1
+  GER_nww_electrical_grid
+  GER_5
+  GER_6
+  GER_mitteleuropa_trade
+  GER_guardians_of_the_reich
+  GER_nww_prague_network
+  GER_nww_silesian_steel
+  GER_3
+  GER_7
+  GER_nww_machine_tools
+  GER_nww_arsenal_contracts
+  GER_nww_industrial_standards
+  GER_nww_technical_colleges
+  GER_4
+  GER_8
+  GER_2
+  GER_nww_freight_corridors
+  GER_nww_merchant_contracts
+  GER_nww_export_credit
+  GER_nww_investment_guarantees
+  GER_9
+  GER_10
+  GER_nww_industrial_research
+ }
  weight = { factor = 100 }
 }

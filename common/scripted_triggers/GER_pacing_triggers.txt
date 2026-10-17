@@ -1,6 +1,6 @@
 GER_nww_historical_pressure_ready = {
- OR = { is_ai = no is_historical_focus_on = no date > 1939.12.31 }
+ OR = { is_ai = no is_historical_focus_on = no date > 1938.12.31 }
 }
 GER_nww_historical_eastern_war_ready = {
- OR = { is_ai = no is_historical_focus_on = no date > 1940.12.31 }
+ OR = { is_ai = no is_historical_focus_on = no date > 1939.12.31 }
 }

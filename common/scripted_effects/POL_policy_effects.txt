@@ -1,0 +1,18 @@
+# Owner POL. Reconstructed after focus-based values; never pays rewards.
+POL_apply_policy_bonuses = {
+ if = { limit = { has_country_flag = POL_policy_presidential_audit } add_to_variable = { POL_state_stability = 0.05 } add_to_variable = { POL_state_power = -0.10 } }
+ if = { limit = { has_country_flag = POL_policy_colonels_secretariat } add_to_variable = { POL_state_power = 0.10 } add_to_variable = { POL_state_stability = -0.05 } }
+ if = { limit = { has_country_flag = POL_policy_civic_administration } add_to_variable = { POL_state_stability = 0.05 } add_to_variable = { POL_state_resistance = -0.05 } }
+ if = { limit = { has_country_flag = POL_policy_compulsory_administration } add_to_variable = { POL_state_compliance = 0.05 } add_to_variable = { POL_state_resistance = 0.05 } }
+ if = { limit = { has_country_flag = POL_policy_transit_board } add_to_variable = { POL_cop_construction = 0.05 } add_to_variable = { POL_state_power = -0.10 } }
+ if = { limit = { has_country_flag = POL_policy_defence_protocol } add_to_variable = { POL_army_defence = 0.05 } add_to_variable = { POL_state_war_support = 0.05 } }
+ if = { limit = { has_country_flag = POL_policy_council_autonomy } add_to_variable = { POL_state_stability = 0.05 } add_to_variable = { POL_state_power = -0.10 } }
+ if = { limit = { has_country_flag = POL_policy_planning_commissariat } add_to_variable = { POL_state_power = 0.10 } add_to_variable = { POL_state_stability = -0.05 } }
+ if = { limit = { has_country_flag = POL_policy_rural_mediation } add_to_variable = { POL_state_stability = 0.05 } }
+ if = { limit = { has_country_flag = POL_policy_national_technical_schools } add_to_variable = { POL_cop_research = 0.05 } }
+ if = { limit = { has_country_flag = POL_policy_contract_inspection } add_to_variable = { POL_cop_efficiency = 0.05 } }
+ if = { limit = { has_country_flag = POL_policy_workers_supply_councils } add_to_variable = { POL_army_supply = -0.05 } }
+ if = { limit = { OR = { has_country_flag = POL_policy_civic_administration has_country_flag = POL_policy_colonels_secretariat has_country_flag = POL_policy_compulsory_administration has_country_flag = POL_policy_council_autonomy has_country_flag = POL_policy_defence_protocol has_country_flag = POL_policy_planning_commissariat has_country_flag = POL_policy_presidential_audit has_country_flag = POL_policy_rural_mediation has_country_flag = POL_policy_transit_board } NOT = { has_dynamic_modifier = { modifier = POL_state_program } } } add_dynamic_modifier = { modifier = POL_state_program } }
+ if = { limit = { OR = { has_country_flag = POL_policy_contract_inspection has_country_flag = POL_policy_national_technical_schools has_country_flag = POL_policy_transit_board } NOT = { has_dynamic_modifier = { modifier = POL_cop_program } } } add_dynamic_modifier = { modifier = POL_cop_program } }
+ if = { limit = { OR = { has_country_flag = POL_policy_defence_protocol has_country_flag = POL_policy_workers_supply_councils } NOT = { has_dynamic_modifier = { modifier = POL_army_program } } } add_dynamic_modifier = { modifier = POL_army_program } }
+}

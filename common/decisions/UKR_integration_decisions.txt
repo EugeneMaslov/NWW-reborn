@@ -1,0 +1,26 @@
+# Owner UKR. Native state-targeted timed integration; one administration at a time.
+UKR_makhnovist_integration_category = {
+ UKR_integrate_makhnovist_region = {
+  icon = generic_political_discourse
+  allowed = { tag = UKR }
+  state_target = any_owned_state
+  target_root_trigger = { MKN = { exists = no } }
+  target_trigger = { FROM = { UKR_can_integrate_makhnovist_state = yes } }
+  visible = { MKN = { exists = no } FROM = { UKR_can_integrate_makhnovist_state = yes } }
+  available = { has_war = no NOT = { has_country_flag = UKR_makhnovist_integration_active } FROM = { compliance > 30 resistance < 25 } }
+  cost = 75
+  days_remove = 90
+  complete_effect = { set_country_flag = UKR_makhnovist_integration_active }
+  cancel_trigger = { OR = { MKN = { exists = yes } has_war = yes FROM = { NOT = { UKR_can_integrate_makhnovist_state = yes } } } }
+  cancel_effect = { clr_country_flag = UKR_makhnovist_integration_active add_political_power = 75 }
+  remove_effect = {
+   clr_country_flag = UKR_makhnovist_integration_active
+   if = {
+    limit = { has_war = no FROM = { UKR_can_integrate_makhnovist_state = yes compliance > 30 resistance < 25 } }
+    FROM = { add_core_of = ROOT }
+   }
+   else = { add_political_power = 75 }
+  }
+  ai_will_do = { factor = 20 }
+ }
+}

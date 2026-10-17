@@ -1,4 +1,6 @@
-"""Execute GER/TUR named declaration rules, cached goals and recovery callbacks."""
+"""Replay GER/TUR country readiness rules, target AI policy and recovery callbacks.
+
+Strategy desires are evaluated as policy, not as engine-enforced target bans."""
 import argparse
 from copy import deepcopy
 from pathlib import Path
@@ -12,10 +14,12 @@ class World(Scenario):
         effects={k:v for tag in ('GER','TUR') for k,v,o in read(ROOT/f'common/scripted_effects/{tag}_campaign_safety_effects.txt')}
         super().__init__(effects,{})
         self.ai=True
-        for tag in ('TUR','BUL','GRE','YUG','ALB','ROM','CRO','USA'):
+        self.date="1941.1.1"
+        for tag in ('TUR','BUL','GRE','YUG','ALB','ROM','CRO','USA','HOL','BEL','LUX','DEN','NOR','SWE','FIN','SWI','HUN','ITA'):
             self.countries[tag]=deepcopy(self.countries['POL']);self.countries[tag].update(original=tag,tree='turkish_focus' if tag=='TUR' else 'other_tree')
         for tag,data in self.countries.items():
             data.update(strength=100 if tag in ('GER','TUR') else 30,major=tag in ('GER','ENG','FRA','SOV','USA'),stability=0.6,war_support=0.6)
+        self.strategies={tag:read(ROOT/f'common/ai_strategy/{tag}_campaign_safety.txt') for tag in ('GER','TUR')}
         self.hooks=[]
         for tag in ('GER','TUR'):
             self.triggers.update({k:v for k,v,o in read(ROOT/f'common/scripted_triggers/{tag}_campaign_safety_triggers.txt')})
@@ -43,11 +47,17 @@ class World(Scenario):
                     actor,flag=key;self.countries[actor]['flags'].discard(flag);del self.flag_timers[key]
             for actor in ('GER','TUR'):self.hook('on_daily_'+actor,actor)
     def permitted(self,actor,target):
+        # Refresh the supported country rule, then evaluate source-script strategy policy.
+        # A negative AI desire is not an absolute engine prohibition against a particular tag.
+        self.apply(self.effects[f'nww_{actor}_ai_refresh_declaration_rule'],actor)
         previous=self.from_country;self.from_country=target
         try:
-            for rule in self.countries[actor]['rules']:
-                if rule==target:return False
-                if isinstance(rule,tuple) and rule[0]=='trigger' and self.condition(self.triggers[rule[1]],actor,actor):return False
+            rules=self.countries[actor]['rules']
+            if target in rules or ('country','can_not_declare_war') in rules:return False
+            if self.ai:
+                for name,body,op in self.strategies[actor]:
+                    if self.condition(one(body,'enable'),actor):
+                        if any(one(v,'type')=='declare_war' and one(v,'id')==target and float(one(v,'value'))<0 for v in values(body,'ai_strategy')):return False
             return True
         finally:self.from_country=previous
     def start_war(self,actor,target):
@@ -66,7 +76,7 @@ class World(Scenario):
 count=0
 for actor,first,second in [('GER','AUS','POL'),('TUR','BUL','GRE')]:
     w=World();assert w.permitted(actor,first)
-    # Existing and newly granted goals never override the native relation guard.
+    # Readiness rule and AI target policy also inspect an already-granted objective.
     w.countries[actor]['goals']|={first,second,'ENG','FRA','SOV'}
     w.start_war(actor,first)
     assert not w.permitted(actor,second)
@@ -160,9 +170,12 @@ for tag in ('GER','TUR'):
     for name in ('scripted_effects','scripted_triggers','on_actions'):
         for path in (ROOT/'common'/name).glob(f'{tag}_campaign_safety*.txt'):assert not list(engine_script_errors(read(path))),path
     text=(ROOT/f'common/scripted_effects/{tag}_campaign_safety_effects.txt').read_text()
-    assert 'remove_relation_rule_override = { trigger =' in text
-    assert 'remove_relation_rule_override = { target =' not in text
+    assert 'relation_rule_override' not in text
+    assert 'set_rule = { can_not_declare_war = yes }' in text
+    assert 'clear_rule = { can_not_declare_war = yes }' in text
+    assert f'NWW_{tag}_declaration_rule_owned' in text
 docs=(game/'documentation/effects_documentation.md').read_text(encoding='utf-8-sig')
 assert 'trigger = is_democratic_country' in docs
-assert 'OR logic for negative rules' in docs
-print(f'PASS: {count} AI readiness/recovery/coalition cases; cached-goal and same-tick second-front blocking, 180/730-day peace recovery, save reload, human control and {awards} guarded goal awards')
+# Documentation advertises negative relation overrides, but the observed 1.19.3 log rejects them.
+assert 'clear_rule' in docs
+print(f'PASS: {count} AI readiness/recovery/coalition policy cases; supported country rule and war callbacks, 180/730-day peace recovery, save reload, human control and {awards} guarded goal awards')

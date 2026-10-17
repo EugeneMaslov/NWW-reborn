@@ -1,4 +1,5 @@
-# Owner GER. Ready/target triggers are also evaluated by a native relation rule.
+# Owner GER. Readiness is a supported country rule; target risk is AI strategy policy.
+# Target checks are called from a German actor (PREV), including a civil-war successor.
 nww_GER_ai_campaign_ready = {
  has_war = no
  has_capitulated = no
@@ -17,9 +18,9 @@ nww_GER_ai_target_safe = {
   AND = {
    exists = yes
    is_subject = no
-   NOT = { is_ally_with = GER }
+   NOT = { is_ally_with = PREV }
    NOT = { has_war_with_major = yes }
-   strength_ratio = { tag = GER ratio < 0.80 }
+   strength_ratio = { tag = PREV ratio < 0.80 }
    NOT = {
     any_other_country = {
      has_guaranteed = PREV
@@ -32,7 +33,7 @@ nww_GER_ai_target_safe = {
     AND = {
      OR = { is_faction_leader = yes is_major = no }
      NOT = { any_other_country = { is_major = yes is_in_faction_with = PREV NOT = { is_faction_leader = yes } } }
-     NOT = { any_other_country = { is_faction_leader = yes is_in_faction_with = PREV NOT = { strength_ratio = { tag = GER ratio < 0.67 } } } }
+     NOT = { any_other_country = { is_faction_leader = yes is_in_faction_with = PREV NOT = { strength_ratio = { tag = PREV.PREV ratio < 0.67 } } } }
     }
    }
   }
@@ -42,8 +43,8 @@ nww_GER_ai_target_safe = {
 # FROM is the proposed target, following ETH has_lon_arms_embargo.
 # Use the explicit owner for readiness, independently of the calling event ROOT.
 nww_GER_ai_unsafe_declaration = {
- GER = { is_ai = yes has_focus_tree = GER_focus }
- OR = { GER = { NOT = { nww_GER_ai_campaign_ready = yes } } FROM = { NOT = { nww_GER_ai_target_safe = yes } } }
+ original_tag = GER is_ai = yes has_focus_tree = GER_focus
+ OR = { NOT = { nww_GER_ai_campaign_ready = yes } FROM = { NOT = { nww_GER_ai_target_safe = yes } } }
 }
 nww_GER_ai_can_prepare_campaign = {
  custom_trigger_tooltip = { tooltip = nww_GER_ai_can_prepare_campaign OR = { is_ai = no nww_GER_ai_campaign_ready = yes } }

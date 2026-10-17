@@ -1,0 +1,153 @@
+# Owner POL. Opening narrative and institutional choices for the four paths.
+add_namespace = nww_pol
+country_event = {
+ id = nww_pol.1
+ title = nww_pol.1.t
+ desc = nww_pol.1.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_focus_tree = POL_focus }
+ option = { name = nww_pol.1.a }
+}
+country_event = {
+ id = nww_pol.2
+ title = nww_pol.2.t
+ desc = nww_pol.2.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_focus_tree = POL_focus }
+ option = { name = nww_pol.2.a }
+}
+country_event = {
+ id = nww_pol.3
+ title = nww_pol.3.t
+ desc = nww_pol.3.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_focus_tree = POL_focus }
+ option = { name = nww_pol.3.a }
+}
+country_event = {
+ id = nww_pol.50
+ title = nww_pol.50.t
+ desc = nww_pol.50.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_country_flag = POL_path_sanation has_completed_focus = POL_professional_civil_service }
+ option = {
+ name = nww_pol.50.a
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_presidential_audit } NOT = { has_country_flag = POL_policy_colonels_secretariat } }
+ ai_chance = { factor = 75 }
+ if = { limit = { has_country_flag = POL_path_sanation has_completed_focus = POL_professional_civil_service has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_presidential_audit } NOT = { has_country_flag = POL_policy_colonels_secretariat } }
+ add_political_power = -50
+ set_country_flag = POL_policy_presidential_audit
+ custom_effect_tooltip = POL_policy_presidential_audit_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = {
+ name = nww_pol.50.b
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_colonels_secretariat } NOT = { has_country_flag = POL_policy_presidential_audit } }
+ ai_chance = { factor = 25 }
+ if = { limit = { has_country_flag = POL_path_sanation has_completed_focus = POL_professional_civil_service has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_colonels_secretariat } NOT = { has_country_flag = POL_policy_presidential_audit } }
+ add_political_power = -50
+ set_country_flag = POL_policy_colonels_secretariat
+ custom_effect_tooltip = POL_policy_colonels_secretariat_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = { name = nww_pol.50.c ai_chance = { factor = 10 } custom_effect_tooltip = POL_institutions_unlocked_tt }
+}
+country_event = {
+ id = nww_pol.51
+ title = nww_pol.51.t
+ desc = nww_pol.51.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_country_flag = POL_path_endecja has_completed_focus = POL_national_bloc }
+ option = {
+ name = nww_pol.51.a
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_civic_administration } NOT = { has_country_flag = POL_policy_compulsory_administration } }
+ ai_chance = { factor = 75 }
+ if = { limit = { has_country_flag = POL_path_endecja has_completed_focus = POL_national_bloc has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_civic_administration } NOT = { has_country_flag = POL_policy_compulsory_administration } }
+ add_political_power = -50
+ set_country_flag = POL_policy_civic_administration
+ custom_effect_tooltip = POL_policy_civic_administration_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = {
+ name = nww_pol.51.b
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_compulsory_administration } NOT = { has_country_flag = POL_policy_civic_administration } }
+ ai_chance = { factor = 25 }
+ if = { limit = { has_country_flag = POL_path_endecja has_completed_focus = POL_national_bloc has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_compulsory_administration } NOT = { has_country_flag = POL_policy_civic_administration } }
+ add_political_power = -50
+ set_country_flag = POL_policy_compulsory_administration
+ custom_effect_tooltip = POL_policy_compulsory_administration_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = { name = nww_pol.51.c ai_chance = { factor = 10 } custom_effect_tooltip = POL_institutions_unlocked_tt }
+}
+country_event = {
+ id = nww_pol.52
+ title = nww_pol.52.t
+ desc = nww_pol.52.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_country_flag = POL_path_german has_completed_focus = POL_customs_commission }
+ option = {
+ name = nww_pol.52.a
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_transit_board } NOT = { has_country_flag = POL_policy_defence_protocol } }
+ ai_chance = { factor = 75 }
+ if = { limit = { has_country_flag = POL_path_german has_completed_focus = POL_customs_commission has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_transit_board } NOT = { has_country_flag = POL_policy_defence_protocol } }
+ add_political_power = -50
+ set_country_flag = POL_policy_transit_board
+ custom_effect_tooltip = POL_policy_transit_board_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = {
+ name = nww_pol.52.b
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_defence_protocol } NOT = { has_country_flag = POL_policy_transit_board } }
+ ai_chance = { factor = 25 }
+ if = { limit = { has_country_flag = POL_path_german has_completed_focus = POL_customs_commission has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_defence_protocol } NOT = { has_country_flag = POL_policy_transit_board } }
+ add_political_power = -50
+ set_country_flag = POL_policy_defence_protocol
+ custom_effect_tooltip = POL_policy_defence_protocol_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = { name = nww_pol.52.c ai_chance = { factor = 10 } custom_effect_tooltip = POL_institutions_unlocked_tt }
+}
+country_event = {
+ id = nww_pol.53
+ title = nww_pol.53.t
+ desc = nww_pol.53.d
+ picture = GFX_report_event_generic_conference
+ is_triggered_only = yes
+ trigger = { original_tag = POL has_country_flag = POL_path_communist has_completed_focus = POL_council_republic }
+ option = {
+ name = nww_pol.53.a
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_council_autonomy } NOT = { has_country_flag = POL_policy_planning_commissariat } }
+ ai_chance = { factor = 75 }
+ if = { limit = { has_country_flag = POL_path_communist has_completed_focus = POL_council_republic has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_council_autonomy } NOT = { has_country_flag = POL_policy_planning_commissariat } }
+ add_political_power = -50
+ set_country_flag = POL_policy_council_autonomy
+ custom_effect_tooltip = POL_policy_council_autonomy_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = {
+ name = nww_pol.53.b
+ trigger = { has_political_power > 49 NOT = { has_country_flag = POL_policy_planning_commissariat } NOT = { has_country_flag = POL_policy_council_autonomy } }
+ ai_chance = { factor = 25 }
+ if = { limit = { has_country_flag = POL_path_communist has_completed_focus = POL_council_republic has_civil_war = no has_political_power > 49 NOT = { has_country_flag = POL_policy_planning_commissariat } NOT = { has_country_flag = POL_policy_council_autonomy } }
+ add_political_power = -50
+ set_country_flag = POL_policy_planning_commissariat
+ custom_effect_tooltip = POL_policy_planning_commissariat_tt
+ hidden_effect = { POL_refresh_programs = yes }
+ }
+}
+ option = { name = nww_pol.53.c ai_chance = { factor = 10 } custom_effect_tooltip = POL_institutions_unlocked_tt }
+}

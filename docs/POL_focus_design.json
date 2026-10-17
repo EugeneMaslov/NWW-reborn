@@ -18,9 +18,10 @@
         }
       },
       "reward": "",
-      "available": "",
+      "available": " has_completed_focus = POL_aftermath_of_the_marshal",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_the_four_year_plan"
     },
     {
       "id": "POL_industrial_census",
@@ -39,7 +40,8 @@
       "reward": "add_political_power = 40",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_common_organization_of_society"
     },
     {
       "id": "POL_accept_german_capital",
@@ -60,7 +62,8 @@
       "exclusive": [
         "POL_economic_independence"
       ],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_beck_ribbentrop"
     },
     {
       "id": "POL_economic_independence",
@@ -85,7 +88,8 @@
       "exclusive": [
         "POL_accept_german_capital"
       ],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_polish_revanchism"
     },
     {
       "id": "POL_public_works_board",
@@ -129,7 +133,8 @@
       "reward": "POL_improve_inland_transport = yes",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_warsaw_main_station"
     },
     {
       "id": "POL_southern_workshops",
@@ -233,7 +238,8 @@
       "reward": "add_tech_bonus = { category = industry bonus = 0.50 uses = 1 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_the_four_year_plan"
     },
     {
       "id": "POL_university_consortium",
@@ -319,7 +325,7 @@
         }
       },
       "reward": "army_experience = 15",
-      "available": "",
+      "available": " has_completed_focus = POL_aftermath_of_the_marshal",
       "exclusive": [],
       "extra": ""
     },
@@ -396,7 +402,8 @@
       "exclusive": [
         "POL_cavalry_traditions"
       ],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_prussia_line"
     },
     {
       "id": "POL_motorized_columns",
@@ -466,7 +473,8 @@
       "reward": "add_tech_bonus = { category = support_tech bonus = 0.50 uses = 1 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_prepare_for_the_inevitable"
     },
     {
       "id": "POL_vistula_reserve_battalions",
@@ -489,7 +497,8 @@
       "reward": "",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_resistance"
     },
     {
       "id": "POL_unified_general_staff",
@@ -514,7 +523,8 @@
       "available": "",
       "exclusive": [],
       "extra": "",
-      "or_parents": true
+      "or_parents": true,
+      "icon": "GFX_focus_POL_plan_east"
     },
     {
       "id": "POL_quartermaster_service",
@@ -537,7 +547,8 @@
       "reward": "",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_warsaw_main_station"
     },
     {
       "id": "POL_reserve_officer_network",
@@ -560,7 +571,8 @@
       "reward": "",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_reach_out_to_underground_state"
     },
     {
       "id": "POL_national_manoeuvres",
@@ -583,7 +595,8 @@
       "reward": "army_experience = 25",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_plan_west"
     },
     {
       "id": "POL_pzl_research_bureau",
@@ -598,7 +611,7 @@
       "parents": [],
       "bonus": {},
       "reward": "add_tech_bonus = { category = air_equipment bonus = 0.50 uses = 1 }",
-      "available": "",
+      "available": " has_completed_focus = POL_aftermath_of_the_marshal",
       "exclusive": [],
       "extra": ""
     },
@@ -729,7 +742,12 @@
       "reward": "",
       "available": "has_any_controlled_coastal_state = yes",
       "exclusive": [],
-      "extra": "allow_branch = { has_any_controlled_coastal_state = yes }\nai_will_do = { factor = 1 }"
+      "extra": "allow_branch = { has_any_controlled_coastal_state = yes }\nai_will_do = { factor = 1 }",
+      "icon": "GFX_focus_POL_develop_polish_shipbuilding",
+      "reward_note": [
+        "Подготовительный проект: открывает фокус первой верфи. Сам проект не создаёт кораблей, дивизий или зданий.",
+        "Preparatory project: unlocks the first dockyard focus. The project itself creates no ships, divisions or buildings."
+      ]
     },
     {
       "id": "POL_first_coastal_dockyard",
@@ -748,7 +766,8 @@
       "reward": "random_owned_controlled_state = {\n limit = { is_coastal = yes }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = dockyard level = 1 instant_build = yes }\n}\nadd_tech_bonus = { category = naval_equipment bonus = 0.50 uses = 1 }",
       "available": "any_owned_state = { is_controlled_by = ROOT is_coastal = yes }",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_develop_polish_shipbuilding"
     },
     {
       "id": "POL_aftermath_of_the_marshal",
@@ -762,10 +781,15 @@
       "branch": "politics",
       "parents": [],
       "bonus": {},
-      "reward": "add_political_power = 50",
+      "reward": "add_political_power = 50\ncountry_event = { id = nww_pol.2 days = 1 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_the_castle",
+      "reward_note": [
+        "Открывает хозяйственную и военную подготовку, кампании поддержки партий и событие о наследии Маршала.",
+        "Unlocks economic and military preparation, party support campaigns and the Marshal’s legacy event."
+      ]
     },
     {
       "id": "POL_castle_and_colonels_dialogue",
@@ -784,7 +808,12 @@
       "reward": "add_popularity = { ideology = neutrality popularity = 0.10 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_sanation_right",
+      "reward_note": [
+        "Открывает платную кампанию поддержки Санации; необходимы бюджетная комиссия и мандат 40%.",
+        "Unlocks the paid Sanation support campaign; the budget commission and a 40% mandate are required."
+      ]
     },
     {
       "id": "POL_national_democratic_leagues",
@@ -803,7 +832,12 @@
       "reward": "add_popularity = { ideology = fascism popularity = 0.10 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_nationalist_education",
+      "reward_note": [
+        "Открывает платную агитацию Эндеции для достижения поддержки 40%.",
+        "Unlocks paid Endecja campaigning towards 40% support."
+      ]
     },
     {
       "id": "POL_berlin_trade_delegation",
@@ -822,7 +856,12 @@
       "reward": "add_popularity = { ideology = neutrality popularity = 0.05 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_beck_ribbentrop",
+      "reward_note": [
+        "Открывает кампанию прагматиков и подготовку переговоров с Германией.",
+        "Unlocks pragmatic campaigning and preparation for talks with Germany."
+      ]
     },
     {
       "id": "POL_workers_defence_committees",
@@ -841,7 +880,12 @@
       "reward": "add_popularity = { ideology = communism popularity = 0.10 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_riot_of_37",
+      "reward_note": [
+        "Открывает платную рабочую агитацию для достижения поддержки коммунистов 40%.",
+        "Unlocks paid worker campaigning towards 40% communist support."
+      ]
     },
     {
       "id": "POL_state_budget_commission",
@@ -857,10 +901,15 @@
         "POL_aftermath_of_the_marshal"
       ],
       "bonus": {},
-      "reward": "set_country_flag = POL_budget_commission_done\nPOL_refresh_crisis = yes",
+      "reward": "set_country_flag = POL_budget_commission_done\nPOL_refresh_crisis = yes\ncountry_event = { id = nww_pol.3 days = 1 }",
       "available": "",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_complete_april_constitution",
+      "reward_note": [
+        "Кризис Санации ослабляется: штраф стабильности меняется с −15% на −10%, политическая власть в день — с −0.20 на −0.10. Завершение кризиса требует институтов выбранного пути.",
+        "Eases the Sanation Crisis: stability penalty changes from −15% to −10%, daily political power from −0.20 to −0.10. Institutions of the selected path must finish the settlement."
+      ]
     },
     {
       "id": "POL_the_colonels_regime",
@@ -887,7 +936,8 @@
         "POL_pragmatic_deal",
         "POL_the_lodz_uprising"
       ],
-      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_sanation } } }"
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_sanation } } }",
+      "icon": "GFX_focus_POL_consolidate_sanation_government"
     },
     {
       "id": "POL_endecja_ascendant",
@@ -914,7 +964,8 @@
         "POL_pragmatic_deal",
         "POL_the_lodz_uprising"
       ],
-      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_endecja } } }"
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_endecja } } }",
+      "icon": "GFX_focus_POL_OZON"
     },
     {
       "id": "POL_pragmatic_deal",
@@ -937,7 +988,12 @@
         "POL_endecja_ascendant",
         "POL_the_lodz_uprising"
       ],
-      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_german } } }"
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_german } } }",
+      "icon": "GFX_focus_POL_beck_ribbentrop",
+      "reward_note": [
+        "Фиксирует прогерманский политический путь и открывает подготовку соглашения с Берлином. Союз и марионеточный статус этим фокусом не устанавливаются.",
+        "Commits to the German political path and unlocks preparations for a Berlin compact. This focus establishes neither an alliance nor puppet status."
+      ]
     },
     {
       "id": "POL_the_lodz_uprising",
@@ -960,7 +1016,8 @@
         "POL_endecja_ascendant",
         "POL_pragmatic_deal"
       ],
-      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_communist } } }"
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_communist } } }",
+      "icon": "GFX_focus_POL_riot_of_37"
     },
     {
       "id": "POL_castle_compact",
@@ -983,7 +1040,8 @@
       "reward": "",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_the_castle"
     },
     {
       "id": "POL_professional_civil_service",
@@ -1003,10 +1061,11 @@
           "stability": 0.05
         }
       },
-      "reward": "POL_finish_crisis = yes",
+      "reward": "POL_finish_crisis = yes\ncountry_event = { id = nww_pol.50 days = 1 }",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_complete_april_constitution"
     },
     {
       "id": "POL_fortify_the_borders",
@@ -1029,7 +1088,8 @@
       "reward": "POL_build_border_forts = yes",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_prussia_line"
     },
     {
       "id": "POL_intermarium_concept",
@@ -1048,7 +1108,12 @@
       "reward": "POL_create_intermarium = yes",
       "available": "has_government = neutrality is_subject = no OR = { is_in_faction = no is_faction_leader = yes }",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_romania_bridgehead_strategy",
+      "reward_note": [
+        "Создаёт польскую оборонительную фракцию. Вступление Румынии и ЛитБела требует отдельных переговоров.",
+        "Creates a Polish defensive faction. Romanian and Lithuanian-Belarusian membership requires separate negotiations."
+      ]
     },
     {
       "id": "POL_vilnius_settlement",
@@ -1067,7 +1132,12 @@
       "reward": "POL_offer_vilnius_settlement = yes",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_belarus_army",
+      "reward_note": [
+        "Направляет ЛитБелу предложение отказаться от взаимных претензий, если Союз сохранился после своего Виленского компромисса. Открывает платные повторные переговоры.",
+        "Sends Lithuania-Belarus an offer to renounce mutual claims if the Union survived its own Vilnius compromise. Unlocks paid renewed talks."
+      ]
     },
     {
       "id": "POL_baltic_danubian_congress",
@@ -1086,7 +1156,12 @@
       "reward": "POL_offer_intermarium_membership = yes",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_common_organization_of_society",
+      "reward_note": [
+        "Направляет приглашения подходящим Румынии и ЛитБелу; каждое правительство вправе отказать.",
+        "Invites eligible Romania and Lithuania-Belarus; each government may refuse."
+      ]
     },
     {
       "id": "POL_agrarian_conciliation",
@@ -1109,7 +1184,8 @@
       "reward": "",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_sanation_left"
     },
     {
       "id": "POL_national_defence_fund_nww",
@@ -1128,7 +1204,8 @@
       "reward": "random_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = arms_factory level = 1 instant_build = yes }\n}",
       "available": "has_government = neutrality is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_prepare_for_the_inevitable"
     },
     {
       "id": "POL_republic_survives",
@@ -1154,7 +1231,8 @@
       "reward": "",
       "available": "has_government = neutrality is_subject = no date > 1940.12.31",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_resistance"
     },
     {
       "id": "POL_national_bloc",
@@ -1174,10 +1252,11 @@
           "war_support": 0.1
         }
       },
-      "reward": "POL_finish_crisis = yes",
+      "reward": "POL_finish_crisis = yes\ncountry_event = { id = nww_pol.51 days = 1 }",
       "available": "has_government = fascism is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_nationalist_education"
     },
     {
       "id": "POL_radical_polonization",
@@ -1201,7 +1280,8 @@
       "reward": "",
       "available": "has_government = fascism is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_OZON"
     },
     {
       "id": "POL_western_claims_dossier",
@@ -1220,6 +1300,34 @@
       "reward": "POL_add_western_claims = yes",
       "available": "has_government = fascism is_subject = no",
       "exclusive": [],
+      "extra": "",
+      "icon": "GFX_focus_POL_reassert_silesian_claims",
+      "reward_note": [
+        "Добавляет претензии на Познань, Померанию, Данциг и Верхнюю Силезию. Владение и национальный статус не меняются.",
+        "Adds claims on Poznan, Pomerelia, Danzig and Upper Silesia. Ownership and core status do not change."
+      ]
+    },
+    {
+      "id": "POL_wartime_conversion",
+      "ru": "Военная конверсия",
+      "en": "Wartime Conversion",
+      "ru_desc": "Переориентируем промышленные заказы и окончательно расторгнем германские концессии.",
+      "en_desc": "Redirect industrial orders and terminate German concessions.",
+      "x": 52,
+      "y": 7,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_western_claims_dossier"
+      ],
+      "bonus": {
+        "cop": {
+          "output": 0.1
+        }
+      },
+      "reward": "POL_end_german_dependence = yes",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
       "extra": ""
     },
     {
@@ -1229,17 +1337,18 @@
       "ru_desc": "С 1939 года подготовим ограниченную цель войны против Германии за западные области. ИИ должен дождаться уязвимости противника.",
       "en_desc": "From 1939 prepare a limited war goal against Germany for the western states. The AI must wait until Germany is vulnerable.",
       "x": 52,
-      "y": 7,
+      "y": 8,
       "cost": 10,
       "branch": "endecja",
       "parents": [
-        "POL_western_claims_dossier"
+        "POL_wartime_conversion"
       ],
       "bonus": {},
       "reward": "POL_prepare_western_war = yes",
       "available": "has_government = fascism is_subject = no date > 1938.12.31 POL_can_prepare_western_war = yes",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_plan_west"
     },
     {
       "id": "POL_secure_the_corridor",
@@ -1248,7 +1357,7 @@
       "ru_desc": "Восстановим управление только после фактического владения и контроля западных областей.",
       "en_desc": "Rebuild administration only after actually owning and controlling western territory.",
       "x": 52,
-      "y": 8,
+      "y": 9,
       "cost": 10,
       "branch": "endecja",
       "parents": [
@@ -1262,30 +1371,8 @@
       "reward": "POL_rebuild_western_regions = yes",
       "available": "has_government = fascism is_subject = no POL_controls_western_recovery_area = yes",
       "exclusive": [],
-      "extra": ""
-    },
-    {
-      "id": "POL_wartime_conversion",
-      "ru": "Военная конверсия",
-      "en": "Wartime Conversion",
-      "ru_desc": "Переориентируем промышленные заказы и окончательно расторгнем германские концессии.",
-      "en_desc": "Redirect industrial orders and terminate German concessions.",
-      "x": 52,
-      "y": 9,
-      "cost": 10,
-      "branch": "endecja",
-      "parents": [
-        "POL_secure_the_corridor"
-      ],
-      "bonus": {
-        "cop": {
-          "output": 0.1
-        }
-      },
-      "reward": "POL_end_german_dependence = yes",
-      "available": "has_government = fascism is_subject = no",
-      "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_clamp_down_on_danzig"
     },
     {
       "id": "POL_silesian_reconstruction",
@@ -1298,13 +1385,14 @@
       "cost": 10,
       "branch": "endecja",
       "parents": [
-        "POL_wartime_conversion"
+        "POL_secure_the_corridor"
       ],
       "bonus": {},
       "reward": "POL_rebuild_silesia = yes",
       "available": "has_government = fascism is_subject = no 762 = { is_owned_and_controlled_by = ROOT }",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_reassert_silesian_claims"
     },
     {
       "id": "POL_continental_army",
@@ -1328,7 +1416,8 @@
       "reward": "",
       "available": "has_government = fascism is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_prepare_for_the_inevitable"
     },
     {
       "id": "POL_sovereign_national_state",
@@ -1352,7 +1441,8 @@
       "reward": "",
       "available": "has_government = fascism is_subject = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_polish_revanchism"
     },
     {
       "id": "POL_customs_commission",
@@ -1372,10 +1462,11 @@
           "efficiency": 0.05
         }
       },
-      "reward": "POL_finish_crisis = yes",
+      "reward": "POL_finish_crisis = yes\ncountry_event = { id = nww_pol.52 days = 1 }",
       "available": "POL_german_path_active = yes",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_common_organization_of_society"
     },
     {
       "id": "POL_guaranteed_transit",
@@ -1398,7 +1489,8 @@
       "reward": "add_tech_bonus = { category = industry bonus = 0.50 uses = 1 }",
       "available": "POL_german_path_active = yes",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_warsaw_main_station"
     },
     {
       "id": "POL_join_mitteleuropa_officially",
@@ -1417,7 +1509,12 @@
       "reward": "POL_align_with_germany = yes\nPOL_offer_german_compact = yes",
       "available": "POL_german_path_active = yes POL_german_ideology_mandate = yes",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_beck_ribbentrop",
+      "reward_note": [
+        "При мандате 40% принимает идеологию действующего германского правительства и направляет предложение союза и гарантии. Берлин вправе отказать; доступны платные повторные переговоры.",
+        "With a 40% mandate, adopts the current German government’s ideology and offers an alliance and guarantee. Berlin may refuse; paid renewed talks remain available."
+      ]
     },
     {
       "id": "POL_licensed_machine_tools",
@@ -1463,7 +1560,8 @@
       "reward": "army_experience = 20",
       "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_plan_east"
     },
     {
       "id": "POL_recognize_the_western_frontier",
@@ -1482,7 +1580,12 @@
       "reward": "POL_renounce_western_claims = yes",
       "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_ban_nazi_party",
+      "reward_note": [
+        "Снимает польские претензии на германские западные области без передачи территории.",
+        "Removes Polish claims on German western states without transferring territory."
+      ]
     },
     {
       "id": "POL_galician_assurances",
@@ -1505,7 +1608,8 @@
       "reward": "POL_build_southern_forts = yes",
       "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_romania_bridgehead_strategy"
     },
     {
       "id": "POL_joint_armament_contracts",
@@ -1548,7 +1652,8 @@
       "reward": "",
       "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_the_castle"
     },
     {
       "id": "POL_council_republic",
@@ -1568,10 +1673,11 @@
           "stability": 0.05
         }
       },
-      "reward": "POL_finish_crisis = yes",
+      "reward": "POL_finish_crisis = yes\ncountry_event = { id = nww_pol.53 days = 1 }",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_common_organization_of_society"
     },
     {
       "id": "POL_land_and_food_committees",
@@ -1594,7 +1700,8 @@
       "reward": "",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_sanation_left"
     },
     {
       "id": "POL_nationalize_german_assets",
@@ -1617,7 +1724,8 @@
       "reward": "POL_end_german_dependence = yes",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_polish_revanchism"
     },
     {
       "id": "POL_workers_militias_nww",
@@ -1641,7 +1749,8 @@
       "reward": "army_experience = 20",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_reach_out_to_underground_state"
     },
     {
       "id": "POL_alliance_with_the_east",
@@ -1660,7 +1769,12 @@
       "reward": "POL_offer_eastern_alliance = yes",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_plan_east",
+      "reward_note": [
+        "После реальной победы восставших направляет предложение союза коммунистической России либо подходящему ЛитБелу. Принятие не гарантировано.",
+        "After actual rebel victory, offers an alliance to communist Russia or eligible Lithuania-Belarus. Acceptance is not guaranteed."
+      ]
     },
     {
       "id": "POL_socialist_constitution",
@@ -1683,7 +1797,8 @@
       "reward": "",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_complete_april_constitution"
     },
     {
       "id": "POL_eastern_trade_protocols",
@@ -1729,7 +1844,8 @@
       "reward": "",
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
-      "extra": ""
+      "extra": "",
+      "icon": "GFX_focus_POL_warsaw_main_station"
     },
     {
       "id": "POL_red_wisla",
@@ -1757,7 +1873,8 @@
       "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
       "exclusive": [],
       "extra": "",
-      "or_parents": true
+      "or_parents": true,
+      "icon": "GFX_focus_POL_resistance"
     }
   ],
   "programs": {

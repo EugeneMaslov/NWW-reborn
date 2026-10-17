@@ -148,6 +148,7 @@ country_event = {
 					}
 				}
 			}
+			set_country_flag = GER_austrian_demand_refused
 			GER_nww_austrian_guarantee = yes
 		}
 	}
@@ -456,6 +457,7 @@ country_event = {
 					}
 				}
 			}
+			set_country_flag = GER_austrian_demand_refused
 			GER_nww_austrian_guarantee = yes
 		}
 	}

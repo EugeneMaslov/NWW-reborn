@@ -1,0 +1,141 @@
+# Owner GER. Strategy restraint supplements the owned country-wide readiness rule.
+NWW_GER_unsafe_target_POL = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes POL = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = POL value = -1000 }
+ ai_strategy = { type = antagonize id = POL value = -1000 }
+}
+NWW_GER_unsafe_target_LTB = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes LTB = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = LTB value = -1000 }
+ ai_strategy = { type = antagonize id = LTB value = -1000 }
+}
+NWW_GER_unsafe_target_AUS = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes AUS = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = AUS value = -1000 }
+ ai_strategy = { type = antagonize id = AUS value = -1000 }
+}
+NWW_GER_unsafe_target_MKN = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes MKN = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = MKN value = -1000 }
+ ai_strategy = { type = antagonize id = MKN value = -1000 }
+}
+NWW_GER_unsafe_target_UKR = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes UKR = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = UKR value = -1000 }
+ ai_strategy = { type = antagonize id = UKR value = -1000 }
+}
+NWW_GER_unsafe_target_SOV = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes SOV = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = SOV value = -1000 }
+ ai_strategy = { type = antagonize id = SOV value = -1000 }
+}
+NWW_GER_unsafe_target_FRA = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes FRA = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = FRA value = -1000 }
+ ai_strategy = { type = antagonize id = FRA value = -1000 }
+}
+NWW_GER_unsafe_target_ENG = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes ENG = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = ENG value = -1000 }
+ ai_strategy = { type = antagonize id = ENG value = -1000 }
+}
+NWW_GER_unsafe_target_HOL = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes HOL = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = HOL value = -1000 }
+ ai_strategy = { type = antagonize id = HOL value = -1000 }
+}
+NWW_GER_unsafe_target_BEL = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes BEL = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = BEL value = -1000 }
+ ai_strategy = { type = antagonize id = BEL value = -1000 }
+}
+NWW_GER_unsafe_target_LUX = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes LUX = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = LUX value = -1000 }
+ ai_strategy = { type = antagonize id = LUX value = -1000 }
+}
+NWW_GER_unsafe_target_DEN = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes DEN = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = DEN value = -1000 }
+ ai_strategy = { type = antagonize id = DEN value = -1000 }
+}
+NWW_GER_unsafe_target_NOR = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes NOR = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = NOR value = -1000 }
+ ai_strategy = { type = antagonize id = NOR value = -1000 }
+}
+NWW_GER_unsafe_target_SWE = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes SWE = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = SWE value = -1000 }
+ ai_strategy = { type = antagonize id = SWE value = -1000 }
+}
+NWW_GER_unsafe_target_FIN = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes FIN = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = FIN value = -1000 }
+ ai_strategy = { type = antagonize id = FIN value = -1000 }
+}
+NWW_GER_unsafe_target_SWI = {
+ allowed = { original_tag = GER }
+ enable = { is_ai = yes SWI = { exists = yes NOT = { nww_GER_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = SWI value = -1000 }
+ ai_strategy = { type = antagonize id = SWI value = -1000 }
+}
+# A completed demand is not merely a cosmetic unlock. Pressure leads to an objective
+# only while prepared, without forcing a new front during an ongoing war.
+GER_nww_prepared_mitteleuropa_POL = {
+ allowed = { original_tag = GER }
+ enable = {
+  has_government = neutrality date > 1938.12.31
+  has_completed_focus = GER_reign_in_mitteleuropa
+  nww_GER_ai_campaign_ready = yes
+  POL = { has_country_flag = ger_mitteleuropa_refused nww_GER_ai_target_safe = yes }
+  has_wargoal_against = POL
+ }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = prepare_for_war id = POL value = 200 }
+ ai_strategy = { type = declare_war id = POL value = 200 }
+}
+GER_nww_prepared_mitteleuropa_LTB = {
+ allowed = { original_tag = GER }
+ enable = {
+  has_government = neutrality date > 1938.12.31
+  has_completed_focus = GER_reign_in_mitteleuropa
+  nww_GER_ai_campaign_ready = yes
+  LTB = { has_country_flag = ger_mitteleuropa_refused nww_GER_ai_target_safe = yes }
+  has_wargoal_against = LTB
+ }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = prepare_for_war id = LTB value = 200 }
+ ai_strategy = { type = declare_war id = LTB value = 200 }
+}
