@@ -5,6 +5,17 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 
@@ -15,16 +26,23 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
 units = {
-	division = { name = "1. Povstancheskaya Rota" location = 11437 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
-	division = { name = "2. Povstancheskaya Rota" location = 721 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
-	division = { name = "3. Povstancheskaya Rota" location = 11405 division_template = "Повстанческая дивизия" start_experience_factor = 0.2 start_equipment_factor = 0.45 }
-	division = { name = "1. Konny Otryad" location = 429 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
-	division = { name = "2. Konny Otryad" location = 11561 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
-	division = { name = "3. Konny Otryad" location = 11437 division_template = "Конный отряд" start_experience_factor = 0.2 start_equipment_factor = 0.35 }
+	division = { name = "1-я Повстанческая дивизия" location = 11437 division_template = "Повстанческая дивизия" start_experience_factor = 0.3 start_equipment_factor = 0.95 }
+	division = { name = "2-я Повстанческая дивизия" location = 721 division_template = "Повстанческая дивизия" start_experience_factor = 0.3 start_equipment_factor = 0.95 }
+	division = { name = "3-я Повстанческая дивизия" location = 11405 division_template = "Повстанческая дивизия" start_experience_factor = 0.3 start_equipment_factor = 0.95 }
+	division = { name = "1-й Конный отряд" location = 429 division_template = "Конный отряд" start_experience_factor = 0.3 start_equipment_factor = 0.95 }
+	division = { name = "2-й Конный отряд" location = 11561 division_template = "Конный отряд" start_experience_factor = 0.3 start_equipment_factor = 0.95 }
+	division = { name = "3-й Конный отряд" location = 11437 division_template = "Конный отряд" start_experience_factor = 0.3 start_equipment_factor = 0.95 }
 }
 
 instant_effect = {
@@ -33,6 +51,18 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "MKN"
 		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = { type = artillery_equipment_1 creator = "MKN" }
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = { type = support_equipment_1 creator = "MKN" }
 		requested_factories = 1
 		progress = 0.2
 		efficiency = 80

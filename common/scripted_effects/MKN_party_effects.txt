@@ -33,6 +33,16 @@ MKN_prepare_party_revival = {
  }
 }
 MKN_sync_party_spirits = {
+ # The emergency terror is a removable crisis stage, not a permanent earned policy.
+ if = {
+  limit = { has_completed_focus = MKN_purge_irreconcilables }
+  set_country_flag = MKN_revkom_terror_resolved
+ }
+ if = {
+  limit = { has_country_flag = MKN_revkom_terror_resolved }
+  clr_country_flag = MKN_earned_MKN_revkom_terror
+  remove_ideas = MKN_revkom_terror
+ }
  if = { limit = { has_idea = MKN_autonomous_rail_crews_idea } set_country_flag = MKN_earned_MKN_autonomous_rail_crews_idea }
  if = {
   limit = { has_government = democratic OR = { has_country_flag = MKN_earned_MKN_autonomous_rail_crews_idea
@@ -249,9 +259,9 @@ MKN_sync_party_spirits = {
   if = { limit = { NOT = { has_idea = MKN_red_beacon_idea } } add_ideas = MKN_red_beacon_idea }
  }
  else = { remove_ideas = MKN_red_beacon_idea }
- if = { limit = { has_idea = MKN_revkom_terror } set_country_flag = MKN_earned_MKN_revkom_terror }
+ if = { limit = { has_idea = MKN_revkom_terror NOT = { has_country_flag = MKN_revkom_terror_resolved } } set_country_flag = MKN_earned_MKN_revkom_terror }
  if = {
-  limit = { has_government = communism OR = { has_country_flag = MKN_earned_MKN_revkom_terror
+  limit = { has_government = communism NOT = { has_country_flag = MKN_revkom_terror_resolved } OR = { has_country_flag = MKN_earned_MKN_revkom_terror
    has_completed_focus = MKN_emergency_revkom
   } }
   if = { limit = { NOT = { has_idea = MKN_revkom_terror } } add_ideas = MKN_revkom_terror }

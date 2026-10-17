@@ -91,7 +91,9 @@
       "party": "communism",
       "focuses": [
         "MKN_emergency_revkom"
-      ]
+      ],
+      "until_focus": "MKN_purge_irreconcilables",
+      "resolved_flag": "MKN_revkom_terror_resolved"
     },
     "MKN_field_counter_intelligence_idea": {
       "party": "fascism",

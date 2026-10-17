@@ -3,6 +3,7 @@
 Runs source scripts and native-token checks; does not reproduce engine UI/combat.
 """
 from copy import deepcopy
+from collections import Counter
 from itertools import product
 import json
 from PIL import Image
@@ -67,6 +68,10 @@ class GameplayWorld(RevkomWorld):
                 for token in c['operatives']:
                     if self.test(one(v,'limit',[]),token,current):self.apply([n for n in v if n[0]!='limit'],token,current)
             elif k=='remove_unit_leader_trait':c['traits'].discard(v)
+            elif k=='retire_ideology_leader':c.setdefault('leaders',{}).pop(v,None)
+            elif k=='create_country_leader':
+                c['leader']=one(v,'name')
+                c['traits']={value for key,value,op in one(v,'traits',[])}
             elif k=='remove_core_of':c['cores'].discard(self.scope(v,current,previous) or v)
             elif k=='annex_country':
                 target=self.scope(one(v,'target'),current,previous) or one(v,'target')
@@ -94,11 +99,38 @@ def validate_gameplay_fixes(root,game,check,localized):
         w.run('MKN_sync_party_spirits');w.run('MKN_sync_party_spirits')
         for iid,item in registry['ideas'].items():
             eligible=item['party']==gov and bool(item['focuses'])
+            if item.get('until_focus') in c['focuses']:eligible=False
             if iid=='MKN_field_counter_intelligence_reserve_idea':eligible=False
             if iid=='MKN_field_counter_intelligence_idea':eligible=gov=='fascism'
             check((iid in c['ideas'])==eligible,'MKN party switch: inactive/unearned spirit '+iid+' at '+gov)
         check(before==(c['pp'],c.get('manpower',0),w.states,set(c['focuses'])),'MKN party switch: repeats a physical focus reward or clears progress')
         cases+=1
+    # Terror ends at the second Revkom focus, including old saves and party returns.
+    for subject,purged,earned in product((False,True),repeat=3):
+        w=GameplayWorld(root);c=w.countries['MKN'];c.update(government='communism',subject=subject)
+        c['focuses']={'MKN_emergency_revkom'}
+        if purged:c['focuses'].add('MKN_purge_irreconcilables')
+        if earned:c['flags']['MKN_earned_MKN_revkom_terror']=-1
+        c['ideas'].add('MKN_revkom_terror')
+        before=(c['pp'],c['stability'],deepcopy(w.states),set(c['focuses']))
+        for gov in ('communism','fascism','democratic','neutrality','communism','communism'):
+            c['government']=gov;w.run('MKN_sync_party_spirits')
+            check(('MKN_revkom_terror' in c['ideas'])==(gov=='communism' and not purged),'MKN terror: resolved crisis is restored after daily repair or party change')
+            check(w.test(one(w.definitions['MKN_revkom_terror'],'cancel'))==(gov!='communism' or purged),'MKN terror: native idea cancellation disagrees with crisis stage')
+        check(before==(c['pp'],c['stability'],w.states,set(c['focuses'])),'MKN terror repair repeats purge rewards or changes progress')
+        if purged:check('MKN_earned_MKN_revkom_terror' not in c['flags'],'MKN terror: obsolete earned flag survives settlement')
+        cases+=1
+    w=GameplayWorld(root);c=w.countries['MKN'];c['focuses']={'MKN_emergency_revkom'}
+    w.run('MKN_sync_party_spirits');check('MKN_revkom_terror' in c['ideas'],'MKN terror: initial emergency stage missing')
+    c['focuses'].add('MKN_purge_irreconcilables');w.apply(one(fs['MKN_purge_irreconcilables'],'completion_reward'))
+    check('MKN_revkom_terror' not in c['ideas'] and c['leader']=='MKN_osyp_tsebriy','MKN purge: actual second-focus reward fails to remove terror or install Tsebriy')
+    before=(c['pp'],c['stability']);w.run('MKN_sync_party_spirits');w.run('MKN_sync_party_spirits')
+    check('MKN_revkom_terror' not in c['ideas'] and (c['pp'],c['stability'])==before,'MKN purge: next daily synchronization undoes the focus reward')
+    # A legacy earned flag cannot resurrect a stage already resolved before a tree change.
+    c['focuses'].clear();c['flags']['MKN_earned_MKN_revkom_terror']=-1
+    w.run('MKN_sync_party_spirits')
+    check('MKN_revkom_terror' not in c['ideas'],'MKN terror: resolved-stage marker loses to legacy earned flag')
+    cases+=1
     for gov,entry in ((g,f) for f,g in registry['entries'].items()):
         w=GameplayWorld(root);c=w.countries['MKN'];c.update(government=gov,tree='generic_focus',subject=True)
         c['flags']['MKN_crisis_legacy_settled']=-1;c['focuses']={'MKN_congress_1936','MKN_question_of_supply',*registry['entries']}
@@ -203,7 +235,52 @@ def validate_gameplay_fixes(root,game,check,localized):
     for file,token in (('MKN_traits','mkn_batko_legend'),('MKN_eugen_traits','mkn_eugen_under_fire')):
         trait=one(one(read(root/f'common/unit_leader/{file}.txt'),'leader_traits'),token)
         check(one(trait,'type')=='land' and one(one(trait,'new_commander_weight'),'factor')=='0','MKN unique trait still belongs to random operative pool')
-    check(one(read(root/'history/countries/MKN - Makhnovists.txt'),'set_convoys')=='60','MKN does not start with exactly 60 convoys')
+    history=read(root/'history/countries/MKN - Makhnovists.txt')
+    check(one(history,'set_convoys')=='60','MKN does not start with exactly 60 convoys')
+    # Validate equipment, unlocks and placement against actual installed definitions.
+    starting=read(root/'history/units/MKN_1936.txt')
+    templates={one(t,'name'):t for t in values(starting,'division_template')}
+    expected_templates={
+        'Повстанческая дивизия':(Counter(infantry=8,artillery_brigade=1),{'engineer','recon','artillery'}),
+        'Конный отряд':(Counter(cavalry=6),{'recon','artillery'}),
+    }
+    check(set(templates)==set(expected_templates),'MKN starting army: missing native template names')
+    unit_files={p.name:p for p in (game/'common/units').glob('*.txt')}
+    unit_files.update({p.name:p for p in (root/'common/units').glob('*.txt')})
+    subunits={k:v for p in unit_files.values() for k,v,o in one(read(p),'sub_units',[])}
+    tech_files={p.name:p for p in (game/'common/technologies').glob('*.txt')}
+    tech_files.update({p.name:p for p in (root/'common/technologies').glob('*.txt')})
+    technologies={k:v for p in tech_files.values() for k,v,o in one(read(p),'technologies',[])}
+    unlocked_units={k for k,v in subunits.items() if one(v,'active','yes')=='yes'}
+    unlocked_equipment=set()
+    for tech,level,o in one(history,'set_technology'):
+        check(tech in technologies,'MKN starting army: undefined starting technology '+tech)
+        if int(level)>0:
+            unlocked_units.update(v for k,v,o in one(technologies[tech],'enable_subunits',[]))
+            unlocked_equipment.update(v for k,v,o in one(technologies[tech],'enable_equipments',[]))
+    for name,(regiments,support) in expected_templates.items():
+        template=templates[name]
+        check(Counter(k for k,v,o in one(template,'regiments'))==regiments and {k for k,v,o in one(template,'support')}==support,'MKN starting army: wrong battalions/support '+name)
+        for section in ('regiments','support'):
+            cells=[]
+            for token,position,o in one(template,section):
+                check(token in subunits and token in unlocked_units,'MKN starting army: locked/undefined battalion '+token)
+                cells.append((one(position,'x'),one(position,'y')))
+            check(len(cells)==len(set(cells)),'MKN starting army: overlapping battalions in '+name)
+    states=[one(read(p),'state') for p in (root/'history/states').glob('*.txt')]
+    own_states=[s for s in states if one(one(s,'history',[]),'owner')=='MKN']
+    own_provinces={v for s in own_states for k,v,o in one(s,'provinces',[])}
+    units=values(one(starting,'units'),'division')
+    check(Counter(one(u,'division_template') for u in units)==Counter({'Повстанческая дивизия':3,'Конный отряд':3}),'MKN starting army: wrong deployed divisions')
+    for u in units:
+        check(one(u,'location') in own_provinces,'MKN starting army: division spawned outside owned land')
+        check(float(one(u,'start_equipment_factor'))==0.95 and float(one(u,'start_experience_factor'))==0.3,'MKN starting army: inadequate equipment or training')
+    lines=values(one(starting,'instant_effect'),'add_equipment_production')
+    production={one(one(line,'equipment'),'type'):int(one(line,'requested_factories')) for line in lines}
+    check(production=={'infantry_equipment_0':1,'artillery_equipment_1':1,'support_equipment_1':1},'MKN starting army: missing ongoing equipment production')
+    check(set(production)<=unlocked_equipment,'MKN starting army: production uses equipment unavailable to starting technology')
+    factories=sum(int(one(one(one(s,'history',[]),'buildings',[]),'arms_factory','0')) for s in own_states)
+    check(sum(production.values())<=factories,'MKN starting army: production allocates more factories than actually owned')
     for sid in ('196','200','226','1082'):
         p=next(p for p in (root/'history/states').glob('*.txt') if one(one(read(p),'state'),'id')==sid)
         check(values(one(one(read(p),'state'),'history'),'add_core_of')==['MKN'],'MKN starting state retains a foreign core '+sid)
