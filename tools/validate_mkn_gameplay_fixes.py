@@ -164,7 +164,12 @@ def validate_gameplay_fixes(root,game,check,localized):
         should=capitulated and {winner,loser}=={'MKN','UKR'}
         check(w.countries[loser]['exists']!=should,'MKN–UKR settlement annexes an unrelated or undefeated country')
         for sid,s in w.states.items():
-            if should and before[sid]['owner']==loser:check(s['owner']==winner and winner in s['cores'],'MKN–UKR victor lacks annexation/core '+sid)
+            if should and before[sid]['owner']==loser:
+                check(s['owner']==winner,'MKN–UKR victor lacks annexation '+sid)
+                if winner=='MKN':check(winner in s['cores'],'MKN: established Ukrainian integration regressed '+sid)
+                else:
+                    check(s['cores']==before[sid]['cores'],'UKR: annexation must not bypass paid state integration '+sid)
+                    check('UKR_former_makhnovist_region' in s['flags'],'UKR: annexation footprint missing '+sid)
             else:check(s==before[sid],'MKN–UKR settlement changes unrelated land '+sid)
         cases+=1
     # Timeline gates and actual-war-length policy, without destroying alliances.

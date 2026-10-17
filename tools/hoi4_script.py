@@ -110,6 +110,10 @@ def engine_script_errors(node, parents=()):
             yield f'{context}: political_power is not a trigger; use has_political_power'
         if key == 'modifier_army_sub_unit_motorized_attack_factor':
             yield f'{context}: unregistered motorized modifier; use motorized_attack_factor'
+        if key in ('add_relation_rule_override','remove_relation_rule_override') and isinstance(value,list) and one(value,'can_not_declare_war') is not None:
+            yield f'{context}: HOI4 1.19.3 rejects declaration bans as relation overrides; use country rules and AI strategies'
+        if key == 'equipment' and isinstance(value,list) and isinstance(one(value,'civilian_factories'),str):
+            yield f'{context}: operation civilian_factories needs an amount/days block'
         if key == 'check_variable' and isinstance(value, list):
             try:
                 variable_check(value)

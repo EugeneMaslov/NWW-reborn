@@ -1,0 +1,5 @@
+﻿l_english:
+ LTB_union_defence_category:0 "Union Reserves"
+ LTB_union_defence_category_desc:0 "After the Vilnius compromise, the joint staff can agree an expanded reserve register."
+ LTB_expand_reserve_register:0 "Expand the Reserve Register"
+ LTB_expand_reserve_register_desc:0 "Spend 75 political power and 60 days to replace a volunteer or disarmed army with Limited Conscription (2.5% of population). Available from 1938 with the Union preserved and war support above 25%. Manpower arrives through normal mobilization; equipment must be produced."

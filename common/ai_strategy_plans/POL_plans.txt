@@ -1,41 +1,249 @@
-# Owner: POL. Historical Sanation; explicit rules override historical mode.
+# Owner POL. Political institutions, one doctrine, then sustained economic development.
 NWW_POL_sanation = {
- name = POL_plan_sanation
- desc = POL_plan_sanation_desc
- allowed = { original_tag = POL }
- enable = { has_focus_tree = POL_focus has_country_flag = POL_ai_sanation }
- abort = { always = no }
- ai_national_focuses = { POL_aftermath_of_the_marshal POL_cop_plan POL_industrial_census POL_castle_and_colonels_dialogue POL_state_budget_commission POL_the_colonels_regime POL_castle_compact POL_professional_civil_service POL_accept_german_capital POL_public_works_board POL_vistula_rail_corridor POL_modernize_the_army POL_officer_academy POL_defend_the_wisla POL_southern_workshops POL_rural_electrification POL_domestic_coal_survey POL_lublin_arsenals POL_precision_machine_tools POL_university_consortium POL_export_diversification POL_four_year_balance_sheet POL_cavalry_traditions POL_motorized_columns POL_mobile_signals POL_fortress_engineers POL_vistula_reserve_battalions POL_unified_general_staff POL_quartermaster_service POL_reserve_officer_network POL_national_manoeuvres POL_pzl_research_bureau POL_air_training_schools POL_defence_of_the_skies POL_army_air_liaison POL_dispersed_air_workshops POL_integrated_air_command POL_baltic_fleet_program POL_first_coastal_dockyard POL_fortify_the_borders POL_intermarium_concept POL_vilnius_settlement POL_baltic_danubian_congress POL_agrarian_conciliation POL_national_defence_fund_nww POL_republic_survives }
- 
- weight = { factor = 100 }
+	name = POL_plan_sanation
+	desc = POL_plan_sanation_desc
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		has_focus_tree = POL_focus
+		has_country_flag = POL_ai_sanation
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		POL_aftermath_of_the_marshal
+		POL_cop_plan
+		POL_industrial_census
+		POL_castle_and_colonels_dialogue
+		POL_state_budget_commission
+		POL_the_colonels_regime
+		POL_castle_compact
+		POL_professional_civil_service
+		POL_accept_german_capital
+		POL_modernize_the_army
+		POL_officer_academy
+		POL_defend_the_wisla
+		POL_fortress_engineers
+		POL_vistula_reserve_battalions
+		POL_fortify_the_borders
+		POL_intermarium_concept
+		POL_vilnius_settlement
+		POL_baltic_danubian_congress
+		POL_public_works_board
+		POL_vistula_rail_corridor
+		POL_southern_workshops
+		POL_rural_electrification
+		POL_domestic_coal_survey
+		POL_lublin_arsenals
+		POL_precision_machine_tools
+		POL_university_consortium
+		POL_export_diversification
+		POL_four_year_balance_sheet
+		POL_unified_general_staff
+		POL_quartermaster_service
+		POL_reserve_officer_network
+		POL_national_manoeuvres
+		POL_pzl_research_bureau
+		POL_air_training_schools
+		POL_defence_of_the_skies
+		POL_army_air_liaison
+		POL_dispersed_air_workshops
+		POL_integrated_air_command
+		POL_baltic_fleet_program
+		POL_first_coastal_dockyard
+		POL_agrarian_conciliation
+		POL_national_defence_fund_nww
+		POL_republic_survives
+	}
+	weight = {
+		factor = 100
+	}
 }
 NWW_POL_endecja = {
- name = POL_plan_endecja
- desc = POL_plan_endecja_desc
- allowed = { original_tag = POL }
- enable = { has_focus_tree = POL_focus has_country_flag = POL_ai_endecja }
- abort = { always = no }
- ai_national_focuses = { POL_aftermath_of_the_marshal POL_cop_plan POL_industrial_census POL_national_democratic_leagues POL_state_budget_commission POL_endecja_ascendant POL_national_bloc POL_economic_independence POL_public_works_board POL_vistula_rail_corridor POL_modernize_the_army POL_officer_academy POL_cavalry_traditions POL_accept_german_capital POL_southern_workshops POL_rural_electrification POL_domestic_coal_survey POL_lublin_arsenals POL_precision_machine_tools POL_university_consortium POL_export_diversification POL_four_year_balance_sheet POL_defend_the_wisla POL_motorized_columns POL_mobile_signals POL_fortress_engineers POL_vistula_reserve_battalions POL_unified_general_staff POL_quartermaster_service POL_reserve_officer_network POL_national_manoeuvres POL_pzl_research_bureau POL_air_training_schools POL_defence_of_the_skies POL_army_air_liaison POL_dispersed_air_workshops POL_integrated_air_command POL_baltic_fleet_program POL_first_coastal_dockyard POL_radical_polonization POL_western_claims_dossier POL_march_to_the_sea POL_secure_the_corridor POL_wartime_conversion POL_silesian_reconstruction POL_continental_army POL_sovereign_national_state }
- 
- weight = { factor = 100 }
+	name = POL_plan_endecja
+	desc = POL_plan_endecja_desc
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		has_focus_tree = POL_focus
+		has_country_flag = POL_ai_endecja
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		POL_aftermath_of_the_marshal
+		POL_cop_plan
+		POL_industrial_census
+		POL_national_democratic_leagues
+		POL_state_budget_commission
+		POL_endecja_ascendant
+		POL_national_bloc
+		POL_economic_independence
+		POL_modernize_the_army
+		POL_officer_academy
+		POL_cavalry_traditions
+		POL_motorized_columns
+		POL_mobile_signals
+		POL_radical_polonization
+		POL_western_claims_dossier
+		POL_wartime_conversion
+		POL_march_to_the_sea
+		POL_public_works_board
+		POL_vistula_rail_corridor
+		POL_southern_workshops
+		POL_rural_electrification
+		POL_domestic_coal_survey
+		POL_lublin_arsenals
+		POL_precision_machine_tools
+		POL_university_consortium
+		POL_export_diversification
+		POL_four_year_balance_sheet
+		POL_unified_general_staff
+		POL_quartermaster_service
+		POL_reserve_officer_network
+		POL_national_manoeuvres
+		POL_pzl_research_bureau
+		POL_air_training_schools
+		POL_defence_of_the_skies
+		POL_army_air_liaison
+		POL_dispersed_air_workshops
+		POL_integrated_air_command
+		POL_baltic_fleet_program
+		POL_first_coastal_dockyard
+		POL_secure_the_corridor
+		POL_silesian_reconstruction
+		POL_continental_army
+		POL_sovereign_national_state
+	}
+	weight = {
+		factor = 100
+	}
 }
 NWW_POL_german = {
- name = POL_plan_german
- desc = POL_plan_german_desc
- allowed = { original_tag = POL }
- enable = { has_focus_tree = POL_focus has_country_flag = POL_ai_german }
- abort = { always = no }
- ai_national_focuses = { POL_aftermath_of_the_marshal POL_cop_plan POL_industrial_census POL_berlin_trade_delegation POL_state_budget_commission POL_pragmatic_deal POL_customs_commission POL_accept_german_capital POL_public_works_board POL_vistula_rail_corridor POL_modernize_the_army POL_officer_academy POL_cavalry_traditions POL_southern_workshops POL_rural_electrification POL_domestic_coal_survey POL_lublin_arsenals POL_precision_machine_tools POL_university_consortium POL_export_diversification POL_four_year_balance_sheet POL_defend_the_wisla POL_motorized_columns POL_mobile_signals POL_fortress_engineers POL_vistula_reserve_battalions POL_unified_general_staff POL_quartermaster_service POL_reserve_officer_network POL_national_manoeuvres POL_pzl_research_bureau POL_air_training_schools POL_defence_of_the_skies POL_army_air_liaison POL_dispersed_air_workshops POL_integrated_air_command POL_baltic_fleet_program POL_first_coastal_dockyard POL_guaranteed_transit POL_join_mitteleuropa_officially POL_licensed_machine_tools POL_staff_exchange POL_recognize_the_western_frontier POL_galician_assurances POL_joint_armament_contracts POL_polish_institutions_in_mitteleuropa }
- 
- weight = { factor = 100 }
+	name = POL_plan_german
+	desc = POL_plan_german_desc
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		has_focus_tree = POL_focus
+		has_country_flag = POL_ai_german
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		POL_aftermath_of_the_marshal
+		POL_cop_plan
+		POL_industrial_census
+		POL_berlin_trade_delegation
+		POL_state_budget_commission
+		POL_pragmatic_deal
+		POL_customs_commission
+		POL_accept_german_capital
+		POL_modernize_the_army
+		POL_officer_academy
+		POL_cavalry_traditions
+		POL_motorized_columns
+		POL_mobile_signals
+		POL_guaranteed_transit
+		POL_join_mitteleuropa_officially
+		POL_licensed_machine_tools
+		POL_staff_exchange
+		POL_public_works_board
+		POL_vistula_rail_corridor
+		POL_southern_workshops
+		POL_rural_electrification
+		POL_domestic_coal_survey
+		POL_lublin_arsenals
+		POL_precision_machine_tools
+		POL_university_consortium
+		POL_export_diversification
+		POL_four_year_balance_sheet
+		POL_unified_general_staff
+		POL_quartermaster_service
+		POL_reserve_officer_network
+		POL_national_manoeuvres
+		POL_pzl_research_bureau
+		POL_air_training_schools
+		POL_defence_of_the_skies
+		POL_army_air_liaison
+		POL_dispersed_air_workshops
+		POL_integrated_air_command
+		POL_baltic_fleet_program
+		POL_first_coastal_dockyard
+		POL_recognize_the_western_frontier
+		POL_galician_assurances
+		POL_joint_armament_contracts
+		POL_polish_institutions_in_mitteleuropa
+	}
+	weight = {
+		factor = 100
+	}
 }
 NWW_POL_communist = {
- name = POL_plan_communist
- desc = POL_plan_communist_desc
- allowed = { original_tag = POL }
- enable = { has_focus_tree = POL_focus has_country_flag = POL_ai_communist }
- abort = { always = no }
- ai_national_focuses = { POL_aftermath_of_the_marshal POL_cop_plan POL_industrial_census POL_workers_defence_committees POL_state_budget_commission POL_the_lodz_uprising POL_council_republic POL_accept_german_capital POL_public_works_board POL_vistula_rail_corridor POL_modernize_the_army POL_officer_academy POL_defend_the_wisla POL_southern_workshops POL_rural_electrification POL_domestic_coal_survey POL_lublin_arsenals POL_precision_machine_tools POL_university_consortium POL_export_diversification POL_four_year_balance_sheet POL_cavalry_traditions POL_motorized_columns POL_mobile_signals POL_fortress_engineers POL_vistula_reserve_battalions POL_unified_general_staff POL_quartermaster_service POL_reserve_officer_network POL_national_manoeuvres POL_pzl_research_bureau POL_air_training_schools POL_defence_of_the_skies POL_army_air_liaison POL_dispersed_air_workshops POL_integrated_air_command POL_baltic_fleet_program POL_first_coastal_dockyard POL_land_and_food_committees POL_nationalize_german_assets POL_workers_militias_nww POL_alliance_with_the_east POL_socialist_constitution POL_eastern_trade_protocols POL_red_logistics_service POL_red_wisla }
- 
- weight = { factor = 100 }
+	name = POL_plan_communist
+	desc = POL_plan_communist_desc
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		has_focus_tree = POL_focus
+		has_country_flag = POL_ai_communist
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		POL_aftermath_of_the_marshal
+		POL_cop_plan
+		POL_industrial_census
+		POL_workers_defence_committees
+		POL_state_budget_commission
+		POL_the_lodz_uprising
+		POL_council_republic
+		POL_land_and_food_committees
+		POL_nationalize_german_assets
+		POL_economic_independence
+		POL_modernize_the_army
+		POL_officer_academy
+		POL_defend_the_wisla
+		POL_fortress_engineers
+		POL_vistula_reserve_battalions
+		POL_workers_militias_nww
+		POL_alliance_with_the_east
+		POL_socialist_constitution
+		POL_public_works_board
+		POL_vistula_rail_corridor
+		POL_southern_workshops
+		POL_rural_electrification
+		POL_domestic_coal_survey
+		POL_lublin_arsenals
+		POL_precision_machine_tools
+		POL_university_consortium
+		POL_export_diversification
+		POL_four_year_balance_sheet
+		POL_unified_general_staff
+		POL_quartermaster_service
+		POL_reserve_officer_network
+		POL_national_manoeuvres
+		POL_pzl_research_bureau
+		POL_air_training_schools
+		POL_defence_of_the_skies
+		POL_army_air_liaison
+		POL_dispersed_air_workshops
+		POL_integrated_air_command
+		POL_baltic_fleet_program
+		POL_first_coastal_dockyard
+		POL_eastern_trade_protocols
+		POL_red_logistics_service
+		POL_red_wisla
+	}
+	weight = {
+		factor = 100
+	}
 }

@@ -831,4 +831,5 @@ POL_refresh_programs = {
 			modifier = POL_state_program
 		}
 	}
+	POL_apply_policy_bonuses = yes
 }

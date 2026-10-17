@@ -1,0 +1,37 @@
+# Owner LTB. Native AI template progression; no equipment or divisions are spawned.
+infantry_LTB_nww = {
+ available_for = { LTB }
+ role = infantry
+ upgrade_prio = { factor = 5 }
+ LTB_infantry_start = {
+  upgrade_prio = { factor = 1 }
+  target_template = { regiments = { infantry = 9 } }
+  replace_at_match = 1.5
+  replace_with = LTB_infantry_field
+  target_min_match = 0.5
+ }
+ LTB_infantry_field = {
+  enable = { has_completed_focus = LTB_officers_of_two_nations num_of_military_factories > 3 has_equipment = { infantry_equipment > 500 } }
+  upgrade_prio = { factor = 4 }
+  can_upgrade_in_field = { has_equipment = { infantry_equipment > 500 support_equipment > 50 } }
+  target_template = { regiments = { infantry = 9 } support = { engineer = 1 } }
+ }
+}
+cavalry_LTB_nww = {
+ available_for = { LTB }
+ role = cavalry
+ upgrade_prio = { factor = 2 }
+ LTB_cavalry_start = {
+  upgrade_prio = { factor = 1 }
+  target_template = { regiments = { cavalry = 4 } }
+  replace_at_match = 1.5
+  replace_with = LTB_cavalry_field
+  target_min_match = 0.5
+ }
+ LTB_cavalry_field = {
+  enable = { has_completed_focus = LTB_officers_of_two_nations has_equipment = { infantry_equipment > 500 } }
+  upgrade_prio = { factor = 3 }
+  can_upgrade_in_field = { has_equipment = { infantry_equipment > 500 } }
+  target_template = { regiments = { cavalry = 6 } }
+ }
+}

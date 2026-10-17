@@ -51,7 +51,9 @@ def main():
             entry['export_sha256'] = hashlib.sha256((ROOT / target).read_bytes()).hexdigest()
         outputs.append(entry)
 
-    source = 'docs/art/MKN_eugen_advisor_painted.png'
+    target = 'gfx/interface/ideas/nww_portraits/MKN_eugen.dds'
+    advisor = previous.get(target, {})
+    source = advisor.get('source', 'docs/art/MKN_eugen_advisor_painted.png')
     original = Image.open(ROOT / source).convert('RGBA')
     assert original.getchannel('A').getextrema()[0] == 0, 'Advisor must have real transparency'
     portrait = original.crop(original.getchannel('A').getbbox())
@@ -60,9 +62,13 @@ def main():
     card.alpha_composite(portrait, ((65 - portrait.width) // 2, 2))
     bounds = card.getchannel('A').getbbox()
     assert bounds and bounds[3] <= 61, bounds
-    target = 'gfx/interface/ideas/nww_portraits/MKN_eugen.dds'
     card.save(ROOT / target, format='DDS')
-    outputs.append(dict(source=source, target=target, size=[65, 67], alpha_bounds=bounds))
+    entry = dict(source=source, target=target, size=[65, 67], alpha_bounds=bounds)
+    for key in ('identity_reference', 'identity_reference_sha256', 'prompt',
+                'generation_tool', 'style_reference'):
+        if key in advisor:
+            entry[key] = advisor[key]
+    outputs.append(entry)
     previews.insert(1, ('Eugen advisor', card))
     for entry in outputs:
         entry['source_sha256'] = hashlib.sha256((ROOT / entry['source']).read_bytes()).hexdigest()

@@ -1,0 +1,64 @@
+# Owner TUR. Strategy restraint supplements the owned country-wide readiness rule.
+NWW_TUR_unsafe_target_BUL = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes BUL = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = BUL value = -1000 }
+ ai_strategy = { type = antagonize id = BUL value = -1000 }
+}
+NWW_TUR_unsafe_target_GRE = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes GRE = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = GRE value = -1000 }
+ ai_strategy = { type = antagonize id = GRE value = -1000 }
+}
+NWW_TUR_unsafe_target_YUG = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes YUG = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = YUG value = -1000 }
+ ai_strategy = { type = antagonize id = YUG value = -1000 }
+}
+NWW_TUR_unsafe_target_ALB = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes ALB = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = ALB value = -1000 }
+ ai_strategy = { type = antagonize id = ALB value = -1000 }
+}
+NWW_TUR_unsafe_target_ROM = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes ROM = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = ROM value = -1000 }
+ ai_strategy = { type = antagonize id = ROM value = -1000 }
+}
+NWW_TUR_unsafe_target_HUN = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes HUN = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = HUN value = -1000 }
+ ai_strategy = { type = antagonize id = HUN value = -1000 }
+}
+NWW_TUR_unsafe_target_ITA = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes ITA = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = ITA value = -1000 }
+ ai_strategy = { type = antagonize id = ITA value = -1000 }
+}
+NWW_TUR_unsafe_target_ENG = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes ENG = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = ENG value = -1000 }
+ ai_strategy = { type = antagonize id = ENG value = -1000 }
+}
+NWW_TUR_unsafe_target_FRA = {
+ allowed = { original_tag = TUR }
+ enable = { is_ai = yes FRA = { exists = yes NOT = { nww_TUR_ai_target_safe = yes } } }
+ abort_when_not_enabled = yes
+ ai_strategy = { type = declare_war id = FRA value = -1000 }
+ ai_strategy = { type = antagonize id = FRA value = -1000 }
+}

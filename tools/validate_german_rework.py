@@ -123,15 +123,17 @@ assert len(fs)==76
 assert all(one(fs[f],'cost') in ('5','10') for f in meta['focuses'])
 plan=one(read(ROOT/'common/ai_strategy_plans/GER_historical.txt'),'NWW_GER_historical')
 order=[v for k,v,o in one(plan,'ai_national_focuses')]
-assert order.index('GER_the_austrian_question')<order.index('GER_reign_in_mitteleuropa')<order.index('GER_crush_eastern_syndicates')
-assert len([f for f in order[:order.index('GER_the_austrian_question')] if f in meta['focuses']])>=10
+assert order.index('GER_dissolve_the_reichstag')<order.index('GER_reign_in_mitteleuropa')<order.index('GER_crush_eastern_syndicates')
+assert order.index('GER_dissolve_the_reichstag')<order.index('GER_the_austrian_question')
+# Dated foreign objectives yield to the industrial tail; do not postpone institutions behind ten unrelated projects.
+assert len([f for f in order if f in meta['focuses']])>=10
 # Use the established GER interpreter to check human/history boundaries and stale replies.
 ger_effects={k:v for filename in ('GER_effects.txt','GER_lategame_effects.txt') for k,v,o in read(ROOT/'common/scripted_effects'/filename)}
 ger_events={one(e,'id'):e for k,e,o in read(ROOT/'events/GER_events.txt') if k.endswith('_event')}
 for year in range(1936,1942):
     for ai,historical in ((False,True),(True,True),(True,False)):
         s=Scenario(ger_effects,ger_events);s.date=f'{year}.1.1';s.ai=ai;s.historical=historical
-        for fid,minimum in [('GER_the_austrian_question',1939),('GER_reign_in_mitteleuropa',1940 if ai and historical else 1939),('GER_crush_eastern_syndicates',1941 if ai and historical else 1939)]:
+        for fid,minimum in [('GER_the_austrian_question',1939),('GER_reign_in_mitteleuropa',1939),('GER_crush_eastern_syndicates',1940 if ai and historical else 1939)]:
             assert s.condition(one(fs[fid],'available'))==(year>=minimum),(fid,year,ai,historical)
     s=Scenario(ger_effects,ger_events);s.date=f'{year}.1.1';s.countries['GER']['focuses'].add('GER_the_austrian_question')
     s.apply(ger_effects['GER_nww_dispatch_austrian_demand'])
@@ -142,4 +144,4 @@ for year in range(1936,1942):
         if year<1939:assert before==s.countries
 for folder in ('common','events'):
     for path in (ROOT/folder).rglob('GER*.txt'):assert not list(engine_script_errors(read(path))),path
-print(f'PASS: {count} source-script Bohemian operation/reform/secession cases, strict 60% boundary and protected existing countries; 60 idempotent industry repairs; native modifiers and 1939/1940/1941 history gates')
+print(f'PASS: {count} source-script Bohemian operation/reform/secession cases, strict 60% boundary and protected existing countries; 60 idempotent industry repairs; native modifiers and 1939 pressure / 1940 historical eastern gates')

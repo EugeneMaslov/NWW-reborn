@@ -22,6 +22,7 @@ MKN_fascism_plan = {
 		MKN_question_of_discipline
 		MKN_military_takes_charge
 		MKN_arrest_demagogues
+		MKN_steppe_general_staff
 		MKN_abolish_election_of_commanders
 		MKN_militarize_communes
 		MKN_standardize_workshops
@@ -75,6 +76,7 @@ MKN_democratic_plan = {
 		MKN_question_of_discipline
 		MKN_triumph_of_free_soviets
 		MKN_pact_of_free_communes
+		MKN_steppe_general_staff
 		MKN_abolish_general_staff
 		MKN_arms_to_the_people
 		MKN_propaganda_by_deed
@@ -128,6 +130,7 @@ MKN_neutrality_plan = {
 		MKN_question_of_discipline
 		MKN_peasant_delegates
 		MKN_grain_ultimatum
+		MKN_steppe_general_staff
 		MKN_sever_urban_ties
 		MKN_every_farm_a_fortress
 		MKN_steppe_snipers
@@ -181,6 +184,7 @@ MKN_historical = {
 		MKN_question_of_discipline
 		MKN_emergency_revkom
 		MKN_purge_irreconcilables
+		MKN_steppe_general_staff
 		MKN_embassy_to_kharkov
 		MKN_integrate_steel_lines
 		MKN_red_military_specialists

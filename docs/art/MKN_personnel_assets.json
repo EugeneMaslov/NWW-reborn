@@ -42,7 +42,7 @@
     "source_sha256": "7c91ebe87e1504f3b3082bd62ad29a0f2394f7e3ad0e39fd7b91c28a434b2aee"
   },
   {
-    "source": "docs/art/MKN_eugen_advisor_painted.png",
+    "source": "docs/art/eugen_advisor_2026_10_17/generated.png",
     "target": "gfx/interface/ideas/nww_portraits/MKN_eugen.dds",
     "size": [
       65,
@@ -52,8 +52,13 @@
       4,
       2,
       61,
-      60
+      61
     ],
-    "source_sha256": "89c9d2d2d7dbec12323da9fa8ca6ecfb38dbc6250849f7a5ef42db6d4b047e25"
+    "identity_reference": "docs/eugen-advisor-new.jpg",
+    "identity_reference_sha256": "d24083967855bbad650190e8703ea4a68b79a757ab34737a1590db3fa5a987dd",
+    "prompt": "docs/art/eugen_advisor_2026_10_17/prompt.txt",
+    "generation_tool": "image_gen.imagegen (built-in)",
+    "style_reference": "Installed HOI4 gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds; rendering style only",
+    "source_sha256": "41d0056979cd0b4b6352d810371183dc4d84ef62aa32dbbe665428f77bab7937"
   }
 ]

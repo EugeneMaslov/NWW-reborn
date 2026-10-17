@@ -200,6 +200,13 @@ focus = {
     }
     ai_will_do = {
         factor = 10
+        modifier = {
+            factor = 0
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_authoritarian
+            }
+        }
     }
     x = 10
     y = 1
@@ -214,7 +221,7 @@ EN: Empower the Chancellor.
 
 Описание EN: The chancellor must negotiate budgets through the Reichstag rather than defer to the court and General Staff. Civilian institutions gain a stronger voice.
 
-Источник: `common/national_focus/GER_political.txt:49`. Стоимость: 5 (35 дней). Координаты: x=14, y=1. Иконка: `GFX_focus_GER_monarchy_compromise`.
+Источник: `common/national_focus/GER_political.txt:50`. Стоимость: 5 (35 дней). Координаты: x=14, y=1. Иконка: `GFX_focus_GER_monarchy_compromise`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -260,10 +267,13 @@ focus = {
         }
     }
     ai_will_do = {
-        factor = 1
+        factor = 10
         modifier = {
             factor = 0
-            is_historical_focus_on = yes
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_democratic
+            }
         }
     }
     x = 14
@@ -279,7 +289,7 @@ EN: The Pan-German Leagues.
 
 Описание EN: Organise nationalist associations into a coherent political movement. Their rallies can build the 40% mandate needed to break a parliamentary deadlock.
 
-Источник: `common/national_focus/GER_political.txt:325`. Стоимость: 5 (35 дней). Координаты: x=22, y=1. Иконка: `GFX_focus_GER_brothers_in_arms`.
+Источник: `common/national_focus/GER_political.txt:319`. Стоимость: 5 (35 дней). Координаты: x=22, y=1. Иконка: `GFX_focus_GER_brothers_in_arms`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -315,10 +325,13 @@ focus = {
         }
     }
     ai_will_do = {
-        factor = 1
+        factor = 10
         modifier = {
             factor = 0
-            is_historical_focus_on = yes
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_fascist
+            }
         }
     }
 }
@@ -332,7 +345,7 @@ EN: Organise the Ruhr Workers.
 
 Описание EN: Rebuild the workers councils and prepare a Spartacist challenge to the imperial order. Councils can raise support for the coming uprising.
 
-Источник: `common/national_focus/GER_political.txt:351`. Стоимость: 5 (35 дней). Координаты: x=26, y=1. Иконка: `GFX_focus_GER_legacy_of_the_spartacus_league`.
+Источник: `common/national_focus/GER_political.txt:342`. Стоимость: 5 (35 дней). Координаты: x=26, y=1. Иконка: `GFX_focus_GER_legacy_of_the_spartacus_league`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -368,10 +381,13 @@ focus = {
         }
     }
     ai_will_do = {
-        factor = 1
+        factor = 10
         modifier = {
             factor = 0
-            is_historical_focus_on = yes
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_communist
+            }
         }
     }
 }
@@ -385,7 +401,7 @@ EN: End of an Era.
 
 Описание EN: Wilhelm II personified an empire that never faced a world war. His death will end its long political suspension and open the struggle over the succession. This focus is completed only by the succession event, between August and the end of 1936.
 
-Источник: `common/national_focus/GER_political.txt:86`. Стоимость: 0 (0 дней). Координаты: x=18, y=3. Иконка: `GFX_focus_GER_tend_to_the_future`.
+Источник: `common/national_focus/GER_political.txt:84`. Стоимость: 0 (0 дней). Координаты: x=18, y=3. Иконка: `GFX_focus_GER_tend_to_the_future`.
 
 Предпосылки: (Позолоченный колосс [GER_the_gilded_colossus]).
 
@@ -433,7 +449,7 @@ EN: The Potsdam Coup.
 
 Описание EN: With the General Staff behind him, Wilhelm III will seize the powers his father allowed to decay. The army must already have received our backing; military influence must exceed 10% to the left of centre, and the monarchists need at least 40% support.
 
-Источник: `common/national_focus/GER_political.txt:105`. Стоимость: 10 (70 дней). Координаты: x=6, y=4. Иконка: `GFX_focus_GER_glory_to_the_imperial_army`.
+Источник: `common/national_focus/GER_political.txt:103`. Стоимость: 10 (70 дней). Координаты: x=6, y=4. Иконка: `GFX_focus_GER_glory_to_the_imperial_army`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -491,6 +507,13 @@ focus = {
     }
     ai_will_do = {
         factor = 10
+        modifier = {
+            factor = 0
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_authoritarian
+            }
+        }
     }
     x = 6
     y = 4
@@ -510,7 +533,7 @@ EN: Dissolve the Reichstag.
 
 Описание EN: Parliament will no longer obstruct imperial commands. The crown and OHL take complete control, the balance of power is locked, and democratic political advisors lose their posts and eligibility.
 
-Источник: `common/national_focus/GER_political.txt:152`. Стоимость: 10 (70 дней). Координаты: x=6, y=5. Иконка: `GFX_focus_GER_realpolitik`.
+Источник: `common/national_focus/GER_political.txt:151`. Стоимость: 10 (70 дней). Координаты: x=6, y=5. Иконка: `GFX_focus_GER_realpolitik`.
 
 Предпосылки: (Потсдамский переворот [GER_the_potsdam_coup]).
 
@@ -569,11 +592,11 @@ focus = {
 
 EN: Rein in Mitteleuropa.
 
-Описание RU: Потребуем полного подчинения Литвы-Беларуси и Польши. Наши зависимые страны станут интегрированными марионетками, если система автономии это допускает; независимые правительства могут принять статус марионетки или отказаться. Германия не сможет начать войну с ЛитБелом до 1939 года.\n\n$GER_eastern_1939_gate_tt$
+Описание RU: С 1939 года предъявим независимым Польше и ЛитБелу требования политического подчинения. Экономическая сфера влияния ещё не означает власти: оба правительства могут отказаться. Отказ сохраняется до готовности германской кампании; цель войны не теряется из-за временной слабости армии.
 
-Описание EN: Demand binding subordination from Lithuania-Belarus and Poland. Our existing subjects become integrated puppets where the autonomy system permits; independent governments may accept puppet status or refuse. No German war against Lithuania-Belarus may begin before 1939.\n\n$GER_eastern_1939_gate_tt$
+Описание EN: From 1939, demand political subordination from independent Poland and Lithuania-Belarus. An economic sphere is not political control: both governments may refuse. A refusal remains a standing objective until Germany is ready to prepare its campaign.
 
-Источник: `common/national_focus/GER_political.txt:188`. Стоимость: 10 (70 дней). Координаты: x=4, y=6. Иконка: `GFX_focus_GER_extend_mitteleuropa`.
+Источник: `common/national_focus/GER_political.txt:187`. Стоимость: 10 (70 дней). Координаты: x=4, y=6. Иконка: `GFX_focus_GER_extend_mitteleuropa`.
 
 Предпосылки: (Распустить рейхстаг [GER_dissolve_the_reichstag]).
 
@@ -585,7 +608,7 @@ EN: Rein in Mitteleuropa.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
-- Награда вызывает вспомогательные эффекты: см. completion_reward и раздел определений.
+- `add_political_power`: 50
 
 Полное определение фокуса:
 
@@ -609,9 +632,9 @@ focus = {
             tooltip = GER_eastern_1939_gate_tt
             date > 1938.12.31
         }
-        nww_GER_ai_can_prepare_campaign = yes
     }
     completion_reward = {
+        add_political_power = 50
         custom_effect_tooltip = GER_eastern_1939_gate_tt
         custom_effect_tooltip = GER_mitteleuropa_demand_tt
         hidden_effect = {
@@ -639,7 +662,7 @@ EN: The Austrian Question.
 
 Описание EN: Vienna must acknowledge the supremacy of Berlin and accept puppet status. Austria may refuse; such a refusal gives us a war goal to enforce its submission.
 
-Источник: `common/national_focus/GER_political.txt:227`. Стоимость: 10 (70 дней). Координаты: x=8, y=6. Иконка: `GFX_focus_GER_the_austrian_question`.
+Источник: `common/national_focus/GER_political.txt:226`. Стоимость: 10 (70 дней). Координаты: x=8, y=6. Иконка: `GFX_focus_GER_the_austrian_question`.
 
 Предпосылки: (Распустить рейхстаг [GER_dissolve_the_reichstag]).
 
@@ -669,8 +692,9 @@ focus = {
                 exists = no
             }
             AUS = {
-                is_subject_of = GER
+                is_subject = yes
             }
+            is_in_faction_with = AUS
         }
     }
     available = {
@@ -688,7 +712,6 @@ focus = {
         NOT = {
             has_war_with = AUS
         }
-        nww_GER_ai_can_target_AUS = yes
     }
     completion_reward = {
         GER_nww_dispatch_austrian_demand = yes
@@ -705,11 +728,11 @@ focus = {
 
 EN: Crush the Eastern Syndicates.
 
-Описание RU: Подготовим уничтожение независимых синдикалистских центров на территории махновцев и Украины. Цели войны выдаются только против существующих независимых стран вне нашего союза.\n\n$GER_eastern_1939_gate_tt$
+Описание RU: После давления на Миттельевропу подготовим военные цели против независимых Украины и Махновщины вне нашего союза. Общий порог — 1939 год; исторический ИИ начинает этот этап в 1940 году. Если армия временно не готова, подготовленные цели будут выданы позже без повторения наград фокуса.
 
-Описание EN: Prepare the destruction of the independent syndicalist centres in the Makhnovist territory and Ukraine. War goals are granted only against existing independent countries outside our alliance.\n\n$GER_eastern_1939_gate_tt$
+Описание EN: After pressure on Mitteleuropa, prepare war goals against independent Ukraine and Makhnovists outside our alliance. The general threshold is 1939; historical AI begins this stage in 1940. Temporarily unsafe objectives are retried later without repeating focus rewards.
 
-Источник: `common/national_focus/GER_political.txt:270`. Стоимость: 10 (70 дней). Координаты: x=4, y=7. Иконка: `GFX_focus_GER_end_european_communism`.
+Источник: `common/national_focus/GER_political.txt:265`. Стоимость: 10 (70 дней). Координаты: x=4, y=7. Иконка: `GFX_focus_GER_end_european_communism`.
 
 Предпосылки: (Обуздать Миттельевропу [GER_reign_in_mitteleuropa]).
 
@@ -745,7 +768,6 @@ focus = {
             tooltip = GER_eastern_1939_gate_tt
             date > 1938.12.31
         }
-        nww_GER_ai_can_prepare_campaign = yes
     }
     completion_reward = {
         custom_effect_tooltip = GER_eastern_1939_gate_tt
@@ -767,7 +789,7 @@ EN: Gott mit uns.
 
 Описание EN: The Iron Kaiserreich binds crown, army and nation to a single imperial purpose. Its divisions gain 15% core defence, 10% attack and 10% breakthrough. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:301`. Стоимость: 10 (70 дней). Координаты: x=6, y=8. Иконка: `GFX_focus_GER_army`.
+Источник: `common/national_focus/GER_political.txt:295`. Стоимость: 10 (70 дней). Координаты: x=6, y=8. Иконка: `GFX_focus_GER_army`.
 
 Предпосылки: (Разгромить восточные синдикаты [GER_crush_eastern_syndicates]) И (Австрийский вопрос [GER_the_austrian_question]).
 
@@ -820,7 +842,7 @@ EN: Schlieffen Reborn.
 
 Описание EN: Modern staff work replaces a plan inherited from the last century. From 1941 we can demand the subordination of the Netherlands and Belgium. The historical AI must first settle its Polish and Austrian campaigns.
 
-Источник: `common/national_focus/GER_political.txt:999`. Стоимость: 10 (70 дней). Координаты: x=6, y=9. Иконка: `GFX_focus_GER_army`.
+Источник: `common/national_focus/GER_political.txt:949`. Стоимость: 10 (70 дней). Координаты: x=6, y=9. Иконка: `GFX_focus_GER_army`.
 
 Предпосылки: (С нами Бог [GER_gott_mit_uns]).
 
@@ -915,7 +937,7 @@ EN: Strike the West.
 
 Описание EN: The reformed imperial army prepares a campaign against France. A conquest war goal supplies the diplomatic instrument; victory still has to be won on the battlefield.
 
-Источник: `common/national_focus/GER_political.txt:1035`. Стоимость: 10 (70 дней). Координаты: x=6, y=10. Иконка: `GFX_focus_GER_hegemony_over_europe`.
+Источник: `common/national_focus/GER_political.txt:985`. Стоимость: 10 (70 дней). Координаты: x=6, y=10. Иконка: `GFX_focus_GER_hegemony_over_europe`.
 
 Предпосылки: (План Шлиффена 2.0 [GER_schlieffen_reborn]).
 
@@ -983,7 +1005,7 @@ EN: The Second Naval Race.
 
 Описание EN: An earlier rivalry for the oceans resumes. Shipyard construction rises by 15%, dockyard output by 10%, and two capital-ship or related module technologies receive a 100% research bonus. A conquest war goal against Britain completes our western strategy.
 
-Источник: `common/national_focus/GER_political.txt:1060`. Стоимость: 10 (70 дней). Координаты: x=6, y=11. Иконка: `GFX_focus_GER_our_place_in_the_sun`.
+Источник: `common/national_focus/GER_political.txt:1010`. Стоимость: 10 (70 дней). Координаты: x=6, y=11. Иконка: `GFX_focus_GER_our_place_in_the_sun`.
 
 Предпосылки: (Удар на Запад [GER_strike_the_west]).
 
@@ -1064,7 +1086,7 @@ EN: Parliamentary Spring.
 
 Описание EN: With at least 40% democratic support, a strengthened chancellor and the balance to the right of +0.10, parliament can take charge of the succession. Hans Vogel forms a social democratic government; the balance is permanently fixed at full Reichstag control.
 
-Источник: `common/national_focus/GER_political.txt:377`. Стоимость: 10 (70 дней). Координаты: x=14, y=4. Иконка: `GFX_focus_GER_defender_of_democracy`.
+Источник: `common/national_focus/GER_political.txt:365`. Стоимость: 10 (70 дней). Координаты: x=14, y=4. Иконка: `GFX_focus_GER_defender_of_democracy`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -1115,14 +1137,6 @@ focus = {
             elections_allowed = yes
             election_frequency = 48
         }
-        if = {
-            limit = {
-                NOT = {
-                    has_character = GER_hans_vogel
-                }
-            }
-            recruit_character = GER_hans_vogel
-        }
         GER_hans_vogel = {
             set_portraits = {
                 civilian = {
@@ -1147,10 +1161,13 @@ focus = {
         custom_effect_tooltip = GER_reichstag_locked_tt
     }
     ai_will_do = {
-        factor = 5
+        factor = 10
         modifier = {
             factor = 0
-            is_historical_focus_on = yes
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_democratic
+            }
         }
     }
     mutually_exclusive = {
@@ -1169,7 +1186,7 @@ EN: A True Constitutional Monarchy.
 
 Описание EN: Wilhelm III retains the crown as a constitutional symbol while elected ministers exercise executive power. Parliamentary institutions grant +15% stability and +0.20 daily political power. Civilian oversight begins the same staff reform as army funding, removing the organisation penalty.
 
-Источник: `common/national_focus/GER_political.txt:453`. Стоимость: 10 (70 дней). Координаты: x=14, y=5. Иконка: `GFX_focus_GER_monarchy_compromise`.
+Источник: `common/national_focus/GER_political.txt:431`. Стоимость: 10 (70 дней). Координаты: x=14, y=5. Иконка: `GFX_focus_GER_monarchy_compromise`.
 
 Предпосылки: (Парламентская весна [GER_parliamentary_spring]).
 
@@ -1219,7 +1236,7 @@ EN: Mitteleuropa Economic Community.
 
 Описание EN: Free Lithuania-Belarus and Poland if they are our subjects, and invite them to the voluntary Mitteleuropa alliance. Each partner that accepts contributes one off-map civilian factory to economic integration, up to two in total. Refusal brings no war goal.
 
-Источник: `common/national_focus/GER_political.txt:475`. Стоимость: 10 (70 дней). Координаты: x=12, y=6. Иконка: `GFX_focus_GER_customs_union`.
+Источник: `common/national_focus/GER_political.txt:453`. Стоимость: 10 (70 дней). Координаты: x=12, y=6. Иконка: `GFX_focus_GER_customs_union`.
 
 Предпосылки: (Подлинная конституционная монархия [GER_true_constitutional_monarchy]).
 
@@ -1275,7 +1292,7 @@ EN: The Austrian Referendum.
 
 Описание EN: Offer Vienna peaceful unification if its government is democratic, or an alliance between sovereign states. Austria decides freely and must be at peace; refusing either arrangement has no military consequences.
 
-Источник: `common/national_focus/GER_political.txt:504`. Стоимость: 10 (70 дней). Координаты: x=16, y=6. Иконка: `GFX_focus_GER_european_confederation`.
+Источник: `common/national_focus/GER_political.txt:482`. Стоимость: 10 (70 дней). Координаты: x=16, y=6. Иконка: `GFX_focus_GER_european_confederation`.
 
 Предпосылки: (Подлинная конституционная монархия [GER_true_constitutional_monarchy]).
 
@@ -1307,8 +1324,9 @@ focus = {
                 exists = no
             }
             AUS = {
-                is_subject_of = ROOT
+                is_subject = yes
             }
+            is_in_faction_with = AUS
         }
     }
     available = {
@@ -1352,7 +1370,7 @@ EN: Arsenal of Democracy.
 
 Описание EN: Strengthen our constitutional institutions with a defensive industrial programme: +20% factory output and +10% division defence, retaining their stability and political-power bonuses. Guarantee independent Lithuania-Belarus and Poland against foreign aggression. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:554`. Стоимость: 10 (70 дней). Координаты: x=14, y=7. Иконка: `GFX_focus_GER_integrated_economies`.
+Источник: `common/national_focus/GER_political.txt:529`. Стоимость: 10 (70 дней). Координаты: x=14, y=7. Иконка: `GFX_focus_GER_integrated_economies`.
 
 Предпосылки: (Экономическое сообщество Миттельевропы [GER_mitteleuropa_economic_community]) И (Австрийский референдум [GER_the_austrian_referendum]).
 
@@ -1429,7 +1447,7 @@ EN: European Federation.
 
 Описание EN: Transform our voluntary alliance into the European Federation. Every member receives +10% civilian factory construction speed and +5% factory output while democratic Germany leads the federation. Future entrants share the programme; leaving ends its benefits.
 
-Источник: `common/national_focus/GER_political.txt:1200`. Стоимость: 10 (70 дней). Координаты: x=14, y=8. Иконка: `GFX_focus_GER_european_confederation`.
+Источник: `common/national_focus/GER_political.txt:1150`. Стоимость: 10 (70 дней). Координаты: x=14, y=8. Иконка: `GFX_focus_GER_european_confederation`.
 
 Предпосылки: (Арсенал демократии [GER_arsenal_of_democracy]).
 
@@ -1494,7 +1512,7 @@ EN: Anti-Imperialist Crusade.
 
 Описание EN: Prepare liberation war goals against France and Britain if they are independent, non-democratic states outside our alliance. Liberation must be achieved through war and the peace settlement.
 
-Источник: `common/national_focus/GER_political.txt:1224`. Стоимость: 10 (70 дней). Координаты: x=14, y=9. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
+Источник: `common/national_focus/GER_political.txt:1174`. Стоимость: 10 (70 дней). Координаты: x=14, y=9. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
 
 Предпосылки: (Европейская федерация [GER_european_federation]).
 
@@ -1590,7 +1608,7 @@ EN: Shield against the Reds.
 
 Описание EN: Democracy must be able to defend itself. Gain +15% defence on our core territory, two additional volunteer divisions and a 50-point reduction to the volunteer world-tension requirement. Authorise volunteers and support independent states resisting fascist or communist aggression.
 
-Источник: `common/national_focus/GER_political.txt:1258`. Стоимость: 10 (70 дней). Координаты: x=14, y=10. Иконка: `GFX_focus_GER_defender_of_democracy`.
+Источник: `common/national_focus/GER_political.txt:1208`. Стоимость: 10 (70 дней). Координаты: x=14, y=10. Иконка: `GFX_focus_GER_defender_of_democracy`.
 
 Предпосылки: (Поход против империализма [GER_anti_imperialist_crusade]).
 
@@ -1646,7 +1664,7 @@ EN: The Pan-Germanic Triumph.
 
 Описание EN: With at least 40% nationalist support and a deadlocked balance between -0.30 and +0.30, the Pan-German movement seizes government. Wilhelm III remains its nominal head until the dynasty is abolished.
 
-Источник: `common/national_focus/GER_political.txt:603`. Стоимость: 10 (70 дней). Координаты: x=22, y=4. Иконка: `GFX_focus_GER_hegemony_over_europe`.
+Источник: `common/national_focus/GER_political.txt:578`. Стоимость: 10 (70 дней). Координаты: x=22, y=4. Иконка: `GFX_focus_GER_hegemony_over_europe`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -1719,10 +1737,13 @@ focus = {
         }
     }
     ai_will_do = {
-        factor = 5
+        factor = 10
         modifier = {
             factor = 0
-            is_historical_focus_on = yes
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_fascist
+            }
         }
     }
     mutually_exclusive = {
@@ -1741,7 +1762,7 @@ EN: Abolish the Hohenzollerns.
 
 Описание EN: Remove Wilhelm III and the last dynastic restraints. Alfred Hugenberg heads a radical nationalist government, and the crown-Reichstag balance of power is abolished permanently. Reorganise the staff to remove the organisation penalty from Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:669`. Стоимость: 10 (70 дней). Координаты: x=22, y=5. Иконка: `GFX_focus_GER_the_supreme_leader`.
+Источник: `common/national_focus/GER_political.txt:641`. Стоимость: 10 (70 дней). Координаты: x=22, y=5. Иконка: `GFX_focus_GER_the_supreme_leader`.
 
 Предпосылки: (Пангерманский триумф [GER_the_pan_germanic_triumph]).
 
@@ -1808,7 +1829,7 @@ EN: Anschluss by Force.
 
 Описание EN: Demand Austria consent to annexation into the new German state. A refusal grants an annexation war goal. The demand is delivered only to an independent Austria at peace.
 
-Источник: `common/national_focus/GER_political.txt:709`. Стоимость: 10 (70 дней). Координаты: x=22, y=6. Иконка: `GFX_focus_GER_anschluss`.
+Источник: `common/national_focus/GER_political.txt:681`. Стоимость: 10 (70 дней). Координаты: x=22, y=6. Иконка: `GFX_focus_GER_anschluss`.
 
 Предпосылки: (Упразднить власть Гогенцоллернов [GER_abolish_the_hohenzollerns]).
 
@@ -1835,8 +1856,14 @@ focus = {
         focus = GER_abolish_the_hohenzollerns
     }
     bypass = {
-        AUS = {
-            exists = no
+        OR = {
+            AUS = {
+                exists = no
+            }
+            AUS = {
+                is_subject = yes
+            }
+            is_in_faction_with = AUS
         }
     }
     available = {
@@ -1853,7 +1880,6 @@ focus = {
         AUS = {
             has_war = no
         }
-        nww_GER_ai_can_target_AUS = yes
     }
     completion_reward = {
         if = {
@@ -1891,7 +1917,7 @@ EN: Expansion in the East.
 
 Описание EN: The Pan-German leadership claims the eastern borderlands as its sphere of expansion. Prepare annexation war goals against independent, non-allied Lithuania-Belarus and Poland, only after the eastern gate opens.\n\n$GER_eastern_1939_gate_tt$
 
-Источник: `common/national_focus/GER_political.txt:765`. Стоимость: 10 (70 дней). Координаты: x=22, y=7. Иконка: `GFX_focus_GER_the_eastern_border`.
+Источник: `common/national_focus/GER_political.txt:738`. Стоимость: 10 (70 дней). Координаты: x=22, y=7. Иконка: `GFX_focus_GER_the_eastern_border`.
 
 Предпосылки: (Аншлюс силой [GER_anschluss_by_force]).
 
@@ -1925,7 +1951,6 @@ focus = {
             tooltip = GER_eastern_1939_gate_tt
             date > 1938.12.31
         }
-        nww_GER_ai_can_prepare_campaign = yes
     }
     completion_reward = {
         nww_GER_pan_german_eastern_wargoals = yes
@@ -1941,7 +1966,7 @@ EN: The New Reich.
 
 Описание EN: A militarised nationalist state mobilises its divisions for offensive war: +15% division attack, +20% breakthrough and +10% division speed. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:788`. Стоимость: 10 (70 дней). Координаты: x=22, y=8. Иконка: `GFX_focus_GER_german_army_invincible`.
+Источник: `common/national_focus/GER_political.txt:760`. Стоимость: 10 (70 дней). Координаты: x=22, y=8. Иконка: `GFX_focus_GER_german_army_invincible`.
 
 Предпосылки: (Экспансия на Восток [GER_lebensraum_in_the_east]).
 
@@ -1988,7 +2013,7 @@ EN: Expand the Eastern Offensive.
 
 Описание EN: From 1941 the radical government prepares conquest war goals against Soviet Russia and the Makhnovist state, provided they still exist as independent, non-allied states.
 
-Источник: `common/national_focus/GER_political.txt:1087`. Стоимость: 10 (70 дней). Координаты: x=22, y=9. Иконка: `GFX_focus_GER_the_eastern_border`.
+Источник: `common/national_focus/GER_political.txt:1037`. Стоимость: 10 (70 дней). Координаты: x=22, y=9. Иконка: `GFX_focus_GER_the_eastern_border`.
 
 Предпосылки: (Новый рейх [GER_the_new_reich]).
 
@@ -2079,7 +2104,7 @@ EN: Total Assimilation.
 
 Описание EN: A coercive occupation administration accelerates compliance growth in our occupied territories by 10% and lowers the resistance target by 10 percentage points. Its extensive policing increases required garrisons by 10%. These measures grant no new national cores.
 
-Источник: `common/national_focus/GER_political.txt:1122`. Стоимость: 10 (70 дней). Координаты: x=22, y=10. Иконка: `GFX_focus_GER_realpolitik`.
+Источник: `common/national_focus/GER_political.txt:1072`. Стоимость: 10 (70 дней). Координаты: x=22, y=10. Иконка: `GFX_focus_GER_realpolitik`.
 
 Предпосылки: (Расширить натиск на Восток [GER_drang_nach_osten_expanded]).
 
@@ -2130,7 +2155,7 @@ EN: Hegemony over Europe.
 
 Описание EN: The New Reich issues conquest war goals against independent Denmark, Norway, Sweden, Finland and Switzerland, excluding our allies and existing wars.
 
-Источник: `common/national_focus/GER_political.txt:1139`. Стоимость: 10 (70 дней). Координаты: x=22, y=11. Иконка: `GFX_focus_GER_hegemony_over_europe`.
+Источник: `common/national_focus/GER_political.txt:1089`. Стоимость: 10 (70 дней). Координаты: x=22, y=11. Иконка: `GFX_focus_GER_hegemony_over_europe`.
 
 Предпосылки: (Тотальная ассимиляция [GER_total_assimilation]).
 
@@ -2288,7 +2313,7 @@ EN: The Spartacist Uprising.
 
 Описание EN: With workers organised and at least 40% Communist support, rise against the monarchy. A real civil war begins; the player switches to the Communist insurgents with 40% of the initial military strength. Victory is required before proclaiming the republic.
 
-Источник: `common/national_focus/GER_political.txt:806`. Стоимость: 10 (70 дней). Координаты: x=30, y=4. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
+Источник: `common/national_focus/GER_political.txt:778`. Стоимость: 10 (70 дней). Координаты: x=30, y=4. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
 
 Предпосылки: (Конец эпохи [GER_end_of_an_era]).
 
@@ -2333,10 +2358,13 @@ focus = {
         nww_GER_start_spartacist_civil_war = yes
     }
     ai_will_do = {
-        factor = 5
+        factor = 10
         modifier = {
             factor = 0
-            is_historical_focus_on = yes
+            is_ai = yes
+            NOT = {
+                has_country_flag = GER_nww_ai_communist
+            }
         }
     }
     mutually_exclusive = {
@@ -2355,7 +2383,7 @@ EN: The German Soviet Republic.
 
 Описание EN: After the Spartacists defeat the imperial loyalists in the civil war, establish a German council republic under Ernst Thalmann. The uprising must have won; simply waiting for the fighting to end is insufficient. Reconstitute the staff and replace Imperial Overstretch with its reduced version.
 
-Источник: `common/national_focus/GER_political.txt:846`. Стоимость: 10 (70 дней). Координаты: x=30, y=5. Иконка: `GFX_focus_GER_the_peoples_victory`.
+Источник: `common/national_focus/GER_political.txt:815`. Стоимость: 10 (70 дней). Координаты: x=30, y=5. Иконка: `GFX_focus_GER_the_peoples_victory`.
 
 Предпосылки: (Спартакистское восстание [GER_the_spartacist_uprising]).
 
@@ -2425,7 +2453,7 @@ EN: Workers Militias.
 
 Описание EN: Build a common militia organisation around the factory councils, granting +5 percentage points of recruitable population and +10% organisation recovery. Complete military and administrative reform, removing both versions of Imperial Overstretch.
 
-Источник: `common/national_focus/GER_political.txt:889`. Стоимость: 10 (70 дней). Координаты: x=30, y=6. Иконка: `GFX_focus_GER_proletarian_solidarity`.
+Источник: `common/national_focus/GER_political.txt:858`. Стоимость: 10 (70 дней). Координаты: x=30, y=6. Иконка: `GFX_focus_GER_proletarian_solidarity`.
 
 Предпосылки: (Германская советская республика [GER_german_soviet_republic]).
 
@@ -2472,7 +2500,7 @@ EN: Dismantle Imperial Borders.
 
 Описание EN: End German overlordship over Lithuania-Belarus and Poland. Only our own existing subjects are freed; independent countries and the possessions of third powers are not annexed or transferred.
 
-Источник: `common/national_focus/GER_political.txt:907`. Стоимость: 10 (70 дней). Координаты: x=30, y=7. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
+Источник: `common/national_focus/GER_political.txt:876`. Стоимость: 10 (70 дней). Координаты: x=30, y=7. Иконка: `GFX_focus_GER_liberate_exploited_colonial_workers`.
 
 Предпосылки: (Рабочие ополчения [GER_workers_militias]).
 
@@ -2512,11 +2540,11 @@ focus = {
 
 EN: The Berlin-Moscow Axis.
 
-Описание RU: Предложим советскому правительству принять нашу республику в его союз или создать общий коммунистический альянс, если такого ещё нет. Необходимо согласие СССР; отказ не приводит к войне.
+Описание RU: Выделим политические ресурсы на международную координацию и предложим коммунистической России союз, если дипломатическая ситуация это допускает. Москва может отказать. Отсутствие подходящего партнёра не блокирует собственную революционную программу.
 
-Описание EN: Ask the Soviet government to admit our republic into its alliance, or create a common Communist alliance if it has none. Soviet consent is required; a refusal does not start a war.
+Описание EN: Allocate political resources to international coordination and offer communist Russia an alliance when diplomacy permits. Moscow may refuse. The absence of a suitable partner does not block our own revolutionary programme.
 
-Источник: `common/national_focus/GER_political.txt:924`. Стоимость: 10 (70 дней). Координаты: x=30, y=8. Иконка: `GFX_focus_GER_SOV_treaty`.
+Источник: `common/national_focus/GER_political.txt:893`. Стоимость: 10 (70 дней). Координаты: x=30, y=8. Иконка: `GFX_focus_GER_SOV_treaty`.
 
 Предпосылки: (Демонтировать имперские границы [GER_dismantle_imperial_borders]).
 
@@ -2528,6 +2556,7 @@ EN: The Berlin-Moscow Axis.
 
 Обзор возможной награды; условия и области действия сохранены в полном коде:
 
+- `add_political_power`: 50
 - `country_event`: id = ger_crisis.60; days = 1
 
 Полное определение фокуса:
@@ -2545,27 +2574,9 @@ focus = {
     available = {
         has_government = communism
         is_subject = no
-        SOV = {
-            exists = yes
-            has_government = communism
-            is_subject = no
-        }
-        NOT = {
-            has_war_with = SOV
-        }
-        OR = {
-            is_in_faction = no
-            is_in_faction_with = SOV
-        }
-        SOV = {
-            OR = {
-                is_faction_leader = yes
-                is_in_faction = no
-                is_in_faction_with = ROOT
-            }
-        }
     }
     completion_reward = {
+        add_political_power = 50
         if = {
             limit = {
                 has_government = communism
@@ -2598,7 +2609,7 @@ EN: World Revolution.
 
 Описание EN: Prepare annexation war goals against independent, non-allied France and Britain. These western objectives never waive Germany’s eastern restrictions.
 
-Источник: `common/national_focus/GER_political.txt:979`. Стоимость: 10 (70 дней). Координаты: x=30, y=9. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
+Источник: `common/national_focus/GER_political.txt:930`. Стоимость: 10 (70 дней). Координаты: x=30, y=9. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
 
 Предпосылки: (Ось Берлин — Москва [GER_berlin_moscow_axis]).
 
@@ -2627,7 +2638,6 @@ focus = {
     available = {
         has_government = communism
         is_subject = no
-        nww_GER_ai_can_prepare_campaign = yes
     }
     completion_reward = {
         nww_GER_western_revolution_wargoals = yes
@@ -2643,7 +2653,7 @@ EN: The Red Rhine.
 
 Описание EN: Support communist organisations in France, the Netherlands, Belgium and Luxembourg. Each independent recipient may tolerate agitation or suppress it. A communist uprising is possible only with a substantial local movement and more than one controlled state.
 
-Источник: `common/national_focus/GER_political.txt:1276`. Стоимость: 10 (70 дней). Координаты: x=30, y=10. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
+Источник: `common/national_focus/GER_political.txt:1226`. Стоимость: 10 (70 дней). Координаты: x=30, y=10. Иконка: `GFX_focus_GER_support_the_proletarian_uprising`.
 
 Предпосылки: (Мировая революция [GER_world_revolution]).
 
@@ -2757,7 +2767,7 @@ EN: National People’s Army.
 
 Описание EN: Turn the workers’ militias into a permanent mass army. Raise recruitable population by another 5 percentage points, to 10 in total. Retain +10% organisation recovery and reduce army training time by 10%. Prioritising infantry imposes a 20% research-speed penalty on aircraft and naval equipment.
 
-Источник: `common/national_focus/GER_political.txt:1296`. Стоимость: 10 (70 дней). Координаты: x=30, y=11. Иконка: `GFX_focus_GER_proletarian_solidarity`.
+Источник: `common/national_focus/GER_political.txt:1246`. Стоимость: 10 (70 дней). Координаты: x=30, y=11. Иконка: `GFX_focus_GER_proletarian_solidarity`.
 
 Предпосылки: (Красный Рейн [GER_red_rhine]).
 
@@ -2808,7 +2818,7 @@ EN: Challenge Moscow.
 
 Описание EN: From 1941, at peace, dispute Moscow’s claim to lead the revolution. Leave the Soviet alliance, or expel the Soviet Union if we lead it, then prepare a conquest war goal against an independent Soviet state.
 
-Источник: `common/national_focus/GER_political.txt:1313`. Стоимость: 10 (70 дней). Координаты: x=30, y=12. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
+Источник: `common/national_focus/GER_political.txt:1263`. Стоимость: 10 (70 дней). Координаты: x=30, y=12. Иконка: `GFX_focus_GER_strengthen_the_proletarian_international`.
 
 Предпосылки: (Массовая мобилизация ННА [GER_nva_mass_mobilization]).
 
@@ -4937,12 +4947,11 @@ GER_bop_decisions_category = {
             }
         }
         ai_will_do = {
-            factor = 1
+            factor = 10
             modifier = {
                 factor = 0
-                power_balance_value = {
-                    id = GER_kaiser_vs_reichstag
-                    value < -0.20
+                NOT = {
+                    has_country_flag = GER_nww_ai_authoritarian
                 }
             }
         }
@@ -4990,7 +4999,13 @@ GER_bop_decisions_category = {
             }
         }
         ai_will_do = {
-            factor = 0
+            factor = 10
+            modifier = {
+                factor = 0
+                NOT = {
+                    has_country_flag = GER_nww_ai_democratic
+                }
+            }
         }
     }
     GER_rally_pan_german_leagues = {
@@ -5022,10 +5037,12 @@ GER_bop_decisions_category = {
             }
         }
         ai_will_do = {
-            factor = 1
+            factor = 10
             modifier = {
                 factor = 0
-                is_historical_focus_on = yes
+                NOT = {
+                    has_country_flag = GER_nww_ai_fascist
+                }
             }
         }
     }
@@ -5058,10 +5075,12 @@ GER_bop_decisions_category = {
             }
         }
         ai_will_do = {
-            factor = 1
+            factor = 10
             modifier = {
                 factor = 0
-                is_historical_focus_on = yes
+                NOT = {
+                    has_country_flag = GER_nww_ai_communist
+                }
             }
         }
     }
@@ -5682,7 +5701,7 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    tag = GER
+                    original_tag = GER
                     has_focus_tree = GER_focus
                 }
                 nww_GER_ai_observe_campaign = yes
@@ -5693,7 +5712,7 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    tag = GER
+                    original_tag = GER
                     has_focus_tree = GER_focus
                 }
                 nww_GER_ai_observe_campaign = yes
@@ -5701,7 +5720,7 @@ on_actions = {
             FROM = {
                 if = {
                     limit = {
-                        tag = GER
+                        original_tag = GER
                         has_focus_tree = GER_focus
                     }
                     nww_GER_ai_observe_campaign = yes
@@ -5713,7 +5732,7 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    tag = GER
+                    original_tag = GER
                     has_focus_tree = GER_focus
                 }
                 set_country_flag = NWW_GER_campaign_defeat_pending
@@ -5724,7 +5743,7 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    tag = GER
+                    original_tag = GER
                     has_focus_tree = GER_focus
                 }
                 set_country_flag = NWW_GER_campaign_was_at_war
@@ -5797,6 +5816,8 @@ on_actions = {
                     original_tag = GER
                     has_focus_tree = GER_focus
                 }
+                GER_nww_initialize_ai_route = yes
+                nww_GER_ai_observe_campaign = yes
                 GER_nww_repair_army_reform = yes
                 GER_nww_refresh_western_wargoals = yes
             }
@@ -5809,6 +5830,8 @@ on_actions = {
                     original_tag = GER
                     has_focus_tree = GER_focus
                 }
+                GER_nww_initialize_ai_route = yes
+                nww_GER_ai_observe_campaign = yes
                 GER_nww_repair_army_reform = yes
                 GER_nww_refresh_western_wargoals = yes
             }
@@ -5946,7 +5969,8 @@ on_actions = {
                         exists = yes
                         has_focus_tree = GER_focus
                     }
-                    GER_nww_dispatch_austrian_demand = yes
+                    GER_nww_initialize_ai_route = yes
+                    GER_nww_refresh_political_objectives = yes
                 }
             }
         }
@@ -5957,9 +5981,130 @@ on_actions = {
                 limit = {
                     has_focus_tree = GER_focus
                 }
-                GER_nww_dispatch_austrian_demand = yes
+                GER_nww_initialize_ai_route = yes
+                GER_nww_refresh_political_objectives = yes
             }
         }
+    }
+}
+```
+
+### `common/scripted_effects/GER_ai_effects.txt`
+
+```pdx
+GER_nww_initialize_ai_route = {
+    if = {
+        limit = {
+            is_ai = yes
+            has_focus_tree = GER_focus
+            NOT = {
+                has_country_flag = GER_nww_ai_route_selected
+            }
+        }
+        if = {
+            limit = {
+                has_completed_focus = GER_the_potsdam_coup
+            }
+            set_country_flag = GER_nww_ai_authoritarian
+        }
+        else_if = {
+            limit = {
+                has_completed_focus = GER_parliamentary_spring
+            }
+            set_country_flag = GER_nww_ai_democratic
+        }
+        else_if = {
+            limit = {
+                has_completed_focus = GER_the_pan_germanic_triumph
+            }
+            set_country_flag = GER_nww_ai_fascist
+        }
+        else_if = {
+            limit = {
+                has_completed_focus = GER_the_spartacist_uprising
+            }
+            set_country_flag = GER_nww_ai_communist
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    has_game_rule = {
+                        rule = GER_ai_behavior
+                        option = KAISER
+                    }
+                }
+            }
+            set_country_flag = GER_nww_ai_authoritarian
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    has_game_rule = {
+                        rule = GER_ai_behavior
+                        option = DEMOCRATIC
+                    }
+                }
+            }
+            set_country_flag = GER_nww_ai_democratic
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    has_game_rule = {
+                        rule = GER_ai_behavior
+                        option = FASCIST
+                    }
+                    has_game_rule = {
+                        rule = GER_ai_behavior
+                        option = GER_ALT_FASCIST
+                    }
+                }
+            }
+            set_country_flag = GER_nww_ai_fascist
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    has_game_rule = {
+                        rule = GER_ai_behavior
+                        option = GER_COMMUNIST_STALINIST
+                    }
+                    has_game_rule = {
+                        rule = GER_ai_behavior
+                        option = GER_COMMUNIST_SPARTACUS
+                    }
+                }
+            }
+            set_country_flag = GER_nww_ai_communist
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule = GER_ai_behavior
+                    option = DEFAULT
+                }
+                is_historical_focus_on = yes
+            }
+            set_country_flag = GER_nww_ai_authoritarian
+        }
+        else = {
+            random_list = {
+                seed = random
+                25 = {
+                    set_country_flag = GER_nww_ai_authoritarian
+                }
+                25 = {
+                    set_country_flag = GER_nww_ai_democratic
+                }
+                25 = {
+                    set_country_flag = GER_nww_ai_fascist
+                }
+                25 = {
+                    set_country_flag = GER_nww_ai_communist
+                }
+            }
+        }
+        set_country_flag = GER_nww_ai_route_selected
     }
 }
 ```
@@ -6117,16 +6262,33 @@ GER_nww_settle_bohemian_influence = {
 
 ```pdx
 nww_GER_ai_install_campaign_guard = {
-    remove_relation_rule_override = {
-        trigger = nww_GER_ai_unsafe_declaration
-        can_not_declare_war = yes
-    }
-    add_relation_rule_override = {
-        trigger = nww_GER_ai_unsafe_declaration
-        usage_desc = NWW_GER_campaign_safety_tt
-        can_not_declare_war = yes
-    }
     set_country_flag = NWW_GER_campaign_guard_installed
+}
+nww_GER_ai_refresh_declaration_rule = {
+    if = {
+        limit = {
+            is_ai = yes
+            OR = {
+                NOT = {
+                    nww_GER_ai_campaign_ready = yes
+                }
+                date < 1939.1.1
+            }
+        }
+        set_rule = {
+            can_not_declare_war = yes
+        }
+        set_country_flag = NWW_GER_declaration_rule_owned
+    }
+    else_if = {
+        limit = {
+            has_country_flag = NWW_GER_declaration_rule_owned
+        }
+        clear_rule = {
+            can_not_declare_war = yes
+        }
+        clr_country_flag = NWW_GER_declaration_rule_owned
+    }
 }
 nww_GER_ai_observe_campaign = {
     if = {
@@ -6175,6 +6337,7 @@ nww_GER_ai_observe_campaign = {
         clr_country_flag = NWW_GER_campaign_was_at_war
         clr_country_flag = NWW_GER_campaign_defeat_pending
     }
+    nww_GER_ai_refresh_declaration_rule = yes
 }
 ```
 
@@ -6486,7 +6649,6 @@ GER_nww_dispatch_austrian_demand = {
             NOT = {
                 has_wargoal_against = AUS
             }
-            nww_GER_ai_can_target_AUS = yes
         }
         set_country_flag = GER_nww_austrian_demand_sent
         AUS = {
@@ -6513,13 +6675,25 @@ nww_GER_mitteleuropa_demand = {
                 has_government = neutrality
             }
             date > 1938.12.31
-            nww_GER_ai_can_prepare_campaign = yes
         }
         if = {
             limit = {
                 is_subject_of = GER
-                NOT = {
-                    has_autonomy_state = autonomy_integrated_puppet
+                OR = {
+                    AND = {
+                        has_dlc = "Together for Victory"
+                        NOT = {
+                            has_autonomy_state = autonomy_integrated_puppet
+                        }
+                    }
+                    AND = {
+                        NOT = {
+                            has_dlc = "Together for Victory"
+                        }
+                        NOT = {
+                            has_autonomy_state = autonomy_puppet
+                        }
+                    }
                 }
             }
             if = {
@@ -6549,7 +6723,14 @@ nww_GER_mitteleuropa_demand = {
         else_if = {
             limit = {
                 is_subject = no
+                NOT = {
+                    has_country_flag = GER_mitteleuropa_demand_sent
+                }
+                NOT = {
+                    has_country_flag = ger_mitteleuropa_refused
+                }
             }
+            set_country_flag = GER_mitteleuropa_demand_sent
             country_event = {
                 id = ger_crisis.20
                 days = 1
@@ -6591,9 +6772,6 @@ nww_GER_mitteleuropa_refusal_wargoals = {
                 target = LTB
             }
         }
-        LTB = {
-            clr_country_flag = ger_mitteleuropa_refused
-        }
     }
     if = {
         limit = {
@@ -6624,9 +6802,6 @@ nww_GER_mitteleuropa_refusal_wargoals = {
                 type = puppet_wargoal_focus
                 target = POL
             }
-        }
-        POL = {
-            clr_country_flag = ger_mitteleuropa_refused
         }
     }
 }
@@ -6691,82 +6866,8 @@ nww_GER_eastern_wargoals = {
     }
 }
 nww_GER_eastern_war_guard = {
-    if = {
-        limit = {
-            date < 1939.1.1
-            NOT = {
-                has_country_flag = ger_eastern_war_guard
-            }
-        }
-        add_relation_rule_override = {
-            target = LTB
-            usage_desc = GER_eastern_war_guard_tt
-            can_not_declare_war = yes
-        }
-        add_relation_rule_override = {
-            target = POL
-            usage_desc = GER_eastern_war_guard_tt
-            can_not_declare_war = yes
-        }
-        add_relation_rule_override = {
-            target = UKR
-            usage_desc = GER_eastern_war_guard_tt
-            can_not_declare_war = yes
-        }
-        add_relation_rule_override = {
-            target = MKN
-            usage_desc = GER_eastern_war_guard_tt
-            can_not_declare_war = yes
-        }
-        add_relation_rule_override = {
-            target = SOV
-            usage_desc = GER_eastern_war_guard_tt
-            can_not_declare_war = yes
-        }
-        set_country_flag = ger_eastern_war_guard
-    }
-    else_if = {
-        limit = {
-            NOT = {
-                date < 1939.1.1
-            }
-            has_country_flag = ger_eastern_war_guard
-        }
-        remove_relation_rule_override = {
-            target = LTB
-            can_not_declare_war = yes
-        }
-        remove_relation_rule_override = {
-            target = POL
-            can_not_declare_war = yes
-        }
-        remove_relation_rule_override = {
-            target = UKR
-            can_not_declare_war = yes
-        }
-        remove_relation_rule_override = {
-            target = MKN
-            can_not_declare_war = yes
-        }
-        remove_relation_rule_override = {
-            target = SOV
-            can_not_declare_war = yes
-        }
-        clr_country_flag = ger_eastern_war_guard
-    }
-    if = {
-        limit = {
-            NOT = {
-                date < 1939.1.1
-            }
-            has_country_flag = ger_litbel_war_guard
-        }
-        remove_relation_rule_override = {
-            target = LTB
-            can_not_declare_war = yes
-        }
-        clr_country_flag = ger_litbel_war_guard
-    }
+    clr_country_flag = ger_eastern_war_guard
+    clr_country_flag = ger_litbel_war_guard
 }
 nww_GER_set_party_labels = {
     if = {
@@ -7473,6 +7574,348 @@ GER_nww_refresh_federal_investment = {
 }
 ```
 
+### `common/scripted_effects/GER_military_setup_effects.txt`
+
+```pdx
+GER_nww_1936_military_technology = {
+    set_technology = {
+        electronic_mechanical_engineering = 1
+        radio = 1
+        basic_machine_tools = 1
+        construction1 = 1
+        concentrated_industry = 1
+        excavation1 = 1
+        support_weapons = 1
+        tech_logistics_company = 1
+        tech_field_hospital = 1
+    }
+    if = {
+        limit = {
+            has_dlc = "Man the Guns"
+        }
+        set_technology = {
+            early_ship_hull_carrier = 1
+            basic_ship_hull_carrier = 1
+            basic_fire_control_system = 1
+            basic_heavy_armor_scheme = 1
+            smoke_generator = 1
+        }
+        create_equipment_variant = {
+            type = ship_hull_heavy_1
+            modules = {
+                fixed_ship_battery_slot = ship_heavy_battery_1
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = heavy_ship_engine_1
+                fixed_ship_secondaries_slot = ship_secondaries_1
+                fixed_ship_armor_slot = ship_armor_bb_1
+                front_1_custom_slot = empty
+                mid_1_custom_slot = empty
+                mid_2_custom_slot = ship_secondaries_1
+                rear_1_custom_slot = ship_heavy_battery_1
+            }
+            name = "NWW Kaiser"
+        }
+        create_equipment_variant = {
+            type = ship_hull_heavy_1
+            modules = {
+                fixed_ship_battery_slot = ship_heavy_battery_1
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = heavy_ship_engine_1
+                fixed_ship_armor_slot = ship_armor_bb_1
+                front_1_custom_slot = empty
+                mid_1_custom_slot = ship_airplane_launcher_1
+                mid_2_custom_slot = ship_secondaries_1
+                rear_1_custom_slot = ship_heavy_battery_1
+                fixed_ship_secondaries_slot = ship_secondaries_1
+            }
+            name = "NWW Koenig"
+        }
+        create_equipment_variant = {
+            type = ship_hull_heavy_1
+            modules = {
+                fixed_ship_battery_slot = ship_heavy_battery_1
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = heavy_ship_engine_1
+                fixed_ship_armor_slot = ship_armor_bb_1
+                front_1_custom_slot = empty
+                mid_1_custom_slot = ship_airplane_launcher_1
+                mid_2_custom_slot = ship_secondaries_1
+                rear_1_custom_slot = ship_heavy_battery_1
+                fixed_ship_secondaries_slot = ship_secondaries_1
+            }
+            name = "NWW Bayern"
+        }
+        create_equipment_variant = {
+            type = ship_hull_heavy_2
+            modules = {
+                fixed_ship_battery_slot = ship_heavy_battery_2
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = heavy_ship_engine_2
+                fixed_ship_secondaries_slot = ship_secondaries_1
+                front_1_custom_slot = ship_anti_air_1
+                mid_1_custom_slot = empty
+                mid_2_custom_slot = ship_secondaries_1
+                rear_1_custom_slot = ship_heavy_battery_2
+                fixed_ship_armor_slot = ship_armor_bb_1
+            }
+            name = "NWW Preussen"
+        }
+        create_equipment_variant = {
+            type = ship_hull_heavy_1
+            modules = {
+                fixed_ship_battery_slot = ship_heavy_battery_1
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = heavy_ship_engine_2
+                fixed_ship_armor_slot = ship_armor_bc_1
+                front_1_custom_slot = ship_anti_air_1
+                mid_1_custom_slot = ship_airplane_launcher_1
+                mid_2_custom_slot = ship_secondaries_1
+                rear_1_custom_slot = empty
+                fixed_ship_secondaries_slot = ship_secondaries_1
+            }
+            name = "NWW Derfflinger"
+        }
+        create_equipment_variant = {
+            type = ship_hull_cruiser_1
+            modules = {
+                fixed_ship_battery_slot = ship_medium_battery_2
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_armor_slot = ship_armor_cruiser_1
+                mid_1_custom_slot = ship_airplane_launcher_1
+                mid_2_custom_slot = ship_torpedo_1
+                rear_1_custom_slot = ship_medium_battery_2
+                fixed_ship_secondaries_slot = ship_secondaries_1
+            }
+            name = "NWW Admiral"
+        }
+        create_equipment_variant = {
+            type = ship_hull_cruiser_2
+            modules = {
+                fixed_ship_battery_slot = ship_light_medium_battery_1
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = cruiser_ship_engine_1
+                fixed_ship_armor_slot = ship_armor_cruiser_1
+                front_1_custom_slot = ship_anti_air_1
+                mid_1_custom_slot = ship_torpedo_1
+                mid_2_custom_slot = ship_light_medium_battery_1
+                rear_1_custom_slot = ship_airplane_launcher_1
+            }
+            name = "NWW Kreuzer"
+        }
+        create_equipment_variant = {
+            type = ship_hull_carrier_conversion_bb
+            modules = {
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_radar_slot = empty
+                fixed_ship_engine_slot = heavy_ship_engine_2
+                mid_1_custom_slot = ship_deck_space
+                fixed_ship_secondaries_slot = ship_secondaries_1
+            }
+            name = "NWW Europa"
+        }
+        create_equipment_variant = {
+            type = ship_hull_carrier_1
+            modules = {
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_radar_slot = empty
+                front_1_custom_slot = ship_deck_space
+                fixed_ship_secondaries_slot = ship_secondaries_1
+                fixed_ship_engine_slot = carrier_ship_engine_1
+            }
+            name = "NWW Flugzeugtraeger"
+        }
+        else = {
+            set_technology = {
+                early_carrier = 1
+                basic_carrier = 1
+                basic_battlecruiser = 1
+            }
+            create_equipment_variant = {
+                name = "NWW Europa Legacy"
+                type = carrier_1
+                upgrades = {
+                    ship_deckspace_upgrade = 2
+                }
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            basic_small_airframe = 1
+            basic_medium_airframe = 1
+            air_torpedoe_1 = 1
+        }
+        create_equipment_variant = {
+            name = "NWW Jagdflugzeug 36"
+            type = small_plane_airframe_1
+            modules = {
+                fixed_main_weapon_slot = light_mg_4x
+                engine_type_slot = engine_2_1x
+            }
+        }
+        create_equipment_variant = {
+            name = "NWW Sturzkampfflugzeug 36"
+            type = small_plane_cas_airframe_1
+            modules = {
+                fixed_main_weapon_slot = bomb_locks
+                engine_type_slot = engine_2_1x
+            }
+        }
+        create_equipment_variant = {
+            name = "NWW Kampfflugzeug 36"
+            type = medium_plane_airframe_1
+            modules = {
+                fixed_main_weapon_slot = medium_bomb_bay
+                engine_type_slot = engine_2_2x
+            }
+        }
+        create_equipment_variant = {
+            name = "NWW Seeaufklaerer 36"
+            type = small_plane_naval_bomber_airframe_1
+            modules = {
+                fixed_main_weapon_slot = torpedo_mounting
+                engine_type_slot = engine_2_1x
+            }
+        }
+        create_equipment_variant = {
+            name = "NWW Fernbomber 34"
+            type = large_plane_airframe_0
+            modules = {
+                fixed_main_weapon_slot = large_bomb_bay
+                engine_type_slot = engine_1_4x
+            }
+        }
+        create_equipment_variant = {
+            name = "NWW Traegerjaeger 36"
+            type = cv_small_plane_airframe_1
+            modules = {
+                fixed_main_weapon_slot = light_mg_4x
+                engine_type_slot = engine_2_1x
+            }
+        }
+        create_equipment_variant = {
+            name = "NWW Traegertorpedoflugzeug 36"
+            type = cv_small_plane_naval_bomber_airframe_1
+            modules = {
+                fixed_main_weapon_slot = torpedo_mounting
+                engine_type_slot = engine_2_1x
+            }
+        }
+        else = {
+            set_technology = {
+                cv_early_fighter = 1
+                cv_fighter1 = 1
+                cv_naval_bomber1 = 1
+            }
+        }
+    }
+}
+```
+
+### `common/scripted_effects/GER_political_objectives_effects.txt`
+
+```pdx
+GER_nww_refresh_political_objectives = {
+    if = {
+        limit = {
+            has_government = neutrality
+            is_subject = no
+        }
+        if = {
+            limit = {
+                has_completed_focus = GER_reign_in_mitteleuropa
+            }
+            POL = {
+                nww_GER_mitteleuropa_demand = yes
+            }
+            LTB = {
+                nww_GER_mitteleuropa_demand = yes
+            }
+            nww_GER_mitteleuropa_refusal_wargoals = yes
+        }
+        if = {
+            limit = {
+                has_completed_focus = GER_crush_eastern_syndicates
+                GER_nww_historical_eastern_war_ready = yes
+            }
+            nww_GER_eastern_wargoals = yes
+        }
+        GER_nww_dispatch_austrian_demand = yes
+    }
+    if = {
+        limit = {
+            has_government = fascism
+            is_subject = no
+            has_completed_focus = GER_lebensraum_in_the_east
+        }
+        nww_GER_pan_german_eastern_wargoals = yes
+    }
+    if = {
+        limit = {
+            is_subject = no
+            AUS = {
+                exists = yes
+                is_subject = no
+                has_country_flag = GER_austrian_demand_refused
+            }
+            NOT = {
+                has_war_with = AUS
+            }
+            NOT = {
+                is_ally_with = AUS
+            }
+            NOT = {
+                has_wargoal_against = AUS
+            }
+            date > 1938.12.31
+            nww_GER_ai_can_target_AUS = yes
+        }
+        if = {
+            limit = {
+                has_government = neutrality
+                has_completed_focus = GER_the_austrian_question
+            }
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = AUS
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = fascism
+                has_completed_focus = GER_anschluss_by_force
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = AUS
+            }
+        }
+    }
+}
+```
+
 ### `common/scripted_triggers/GER_bohemian_triggers.txt`
 
 ```pdx
@@ -7539,13 +7982,13 @@ nww_GER_ai_target_safe = {
             exists = yes
             is_subject = no
             NOT = {
-                is_ally_with = GER
+                is_ally_with = PREV
             }
             NOT = {
                 has_war_with_major = yes
             }
             strength_ratio = {
-                tag = GER
+                tag = PREV
                 ratio < 0.80
             }
             NOT = {
@@ -7583,7 +8026,7 @@ nww_GER_ai_target_safe = {
                             is_in_faction_with = PREV
                             NOT = {
                                 strength_ratio = {
-                                    tag = GER
+                                    tag = PREV.PREV
                                     ratio < 0.67
                                 }
                             }
@@ -7595,15 +8038,12 @@ nww_GER_ai_target_safe = {
     }
 }
 nww_GER_ai_unsafe_declaration = {
-    GER = {
-        is_ai = yes
-        has_focus_tree = GER_focus
-    }
+    original_tag = GER
+    is_ai = yes
+    has_focus_tree = GER_focus
     OR = {
-        GER = {
-            NOT = {
-                nww_GER_ai_campaign_ready = yes
-            }
+        NOT = {
+            nww_GER_ai_campaign_ready = yes
         }
         FROM = {
             NOT = {
@@ -7811,11 +8251,11 @@ GER_nww_western_mandate = {
     has_focus_tree = GER_focus
     is_subject = no
     date > 1940.12.31
-    GER_nww_eastern_campaigns_settled = yes
     OR = {
         AND = {
             has_government = neutrality
             has_completed_focus = GER_strike_the_west
+            GER_nww_eastern_campaigns_settled = yes
         }
         AND = {
             has_government = communism
@@ -7831,13 +8271,13 @@ GER_nww_lategame_western_target = {
     exists = yes
     is_subject = no
     NOT = {
-        is_ally_with = GER
+        is_ally_with = PREV
     }
-    GER = {
+    PREV = {
         GER_nww_western_mandate = yes
     }
     strength_ratio = {
-        tag = GER
+        tag = PREV
         ratio < 1.25
     }
 }
@@ -7884,14 +8324,14 @@ GER_nww_historical_pressure_ready = {
     OR = {
         is_ai = no
         is_historical_focus_on = no
-        date > 1939.12.31
+        date > 1938.12.31
     }
 }
 GER_nww_historical_eastern_war_ready = {
     OR = {
         is_ai = no
         is_historical_focus_on = no
-        date > 1940.12.31
+        date > 1939.12.31
     }
 }
 ```
@@ -7953,7 +8393,10 @@ GER_nww_bohemian_autonomists = {
         }
     }
     equipment = {
-        civilian_factories = 2
+        civilian_factories = {
+            amount = 2
+            days = 45
+        }
         infantry_equipment = 100
         support_equipment = 25
     }
@@ -7999,6 +8442,465 @@ GER_nww_bohemian_autonomists = {
     }
     ai_will_do = {
         factor = 20
+    }
+}
+```
+
+### `common/ai_strategy/GER_campaign_safety.txt`
+
+```pdx
+NWW_GER_unsafe_target_POL = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        POL = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = POL
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = POL
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_LTB = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        LTB = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = LTB
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = LTB
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_AUS = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        AUS = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = AUS
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = AUS
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_MKN = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        MKN = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = MKN
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = MKN
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_UKR = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        UKR = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = UKR
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = UKR
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_SOV = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        SOV = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SOV
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = SOV
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_FRA = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        FRA = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = FRA
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = FRA
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_ENG = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        ENG = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = ENG
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = ENG
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_HOL = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        HOL = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = HOL
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = HOL
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_BEL = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        BEL = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = BEL
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = BEL
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_LUX = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        LUX = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = LUX
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = LUX
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_DEN = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        DEN = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = DEN
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = DEN
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_NOR = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        NOR = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = NOR
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = NOR
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_SWE = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        SWE = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SWE
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = SWE
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_FIN = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        FIN = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = FIN
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = FIN
+        value = -1000
+    }
+}
+NWW_GER_unsafe_target_SWI = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        is_ai = yes
+        SWI = {
+            exists = yes
+            NOT = {
+                nww_GER_ai_target_safe = yes
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = declare_war
+        id = SWI
+        value = -1000
+    }
+    ai_strategy = {
+        type = antagonize
+        id = SWI
+        value = -1000
+    }
+}
+GER_nww_prepared_mitteleuropa_POL = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_government = neutrality
+        date > 1938.12.31
+        has_completed_focus = GER_reign_in_mitteleuropa
+        nww_GER_ai_campaign_ready = yes
+        POL = {
+            has_country_flag = ger_mitteleuropa_refused
+            nww_GER_ai_target_safe = yes
+        }
+        has_wargoal_against = POL
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = POL
+        value = 200
+    }
+    ai_strategy = {
+        type = declare_war
+        id = POL
+        value = 200
+    }
+}
+GER_nww_prepared_mitteleuropa_LTB = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_government = neutrality
+        date > 1938.12.31
+        has_completed_focus = GER_reign_in_mitteleuropa
+        nww_GER_ai_campaign_ready = yes
+        LTB = {
+            has_country_flag = ger_mitteleuropa_refused
+            nww_GER_ai_target_safe = yes
+        }
+        has_wargoal_against = LTB
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = LTB
+        value = 200
+    }
+    ai_strategy = {
+        type = declare_war
+        id = LTB
+        value = 200
     }
 }
 ```
@@ -8512,7 +9414,7 @@ GER_nww_historical_restraint_LTB = {
         original_tag = GER
         has_focus_tree = GER_focus
         is_historical_focus_on = yes
-        date < 1940.1.1
+        date < 1939.1.1
     }
     abort_when_not_enabled = yes
     ai_strategy = {
@@ -8531,7 +9433,7 @@ GER_nww_historical_restraint_POL = {
         original_tag = GER
         has_focus_tree = GER_focus
         is_historical_focus_on = yes
-        date < 1940.1.1
+        date < 1939.1.1
     }
     abort_when_not_enabled = yes
     ai_strategy = {
@@ -8550,7 +9452,7 @@ GER_nww_historical_restraint_MKN = {
         original_tag = GER
         has_focus_tree = GER_focus
         is_historical_focus_on = yes
-        date < 1941.1.1
+        date < 1940.1.1
     }
     abort_when_not_enabled = yes
     ai_strategy = {
@@ -8569,7 +9471,7 @@ GER_nww_historical_restraint_UKR = {
         original_tag = GER
         has_focus_tree = GER_focus
         is_historical_focus_on = yes
-        date < 1941.1.1
+        date < 1940.1.1
     }
     abort_when_not_enabled = yes
     ai_strategy = {
@@ -8588,7 +9490,7 @@ GER_nww_historical_restraint_SOV = {
         original_tag = GER
         has_focus_tree = GER_focus
         is_historical_focus_on = yes
-        date < 1941.1.1
+        date < 1940.1.1
     }
     abort_when_not_enabled = yes
     ai_strategy = {
@@ -8709,14 +9611,14 @@ NWW_GER_sov_restraint = {
 
 ```pdx
 NWW_GER_historical = {
-    name = GER_nww_historical_plan
-    desc = GER_nww_historical_plan_desc
+    name = GER_nww_authoritarian_plan
+    desc = GER_nww_authoritarian_plan_desc
     allowed = {
         original_tag = GER
     }
     enable = {
-        is_historical_focus_on = yes
         has_focus_tree = GER_focus
+        has_country_flag = GER_nww_ai_authoritarian
     }
     abort = {
         is_subject = yes
@@ -8724,6 +9626,15 @@ NWW_GER_historical = {
     ai_national_focuses = {
         GER_the_gilded_colossus
         GER_fund_the_reichswehr
+        GER_the_potsdam_coup
+        GER_dissolve_the_reichstag
+        GER_reign_in_mitteleuropa
+        GER_the_austrian_question
+        GER_crush_eastern_syndicates
+        GER_gott_mit_uns
+        GER_schlieffen_reborn
+        GER_strike_the_west
+        GER_the_second_naval_race
         GER_krupp_and_thyssen
         GER_the_kaiser_endures
         GER_prussian_traditions
@@ -8734,35 +9645,192 @@ NWW_GER_historical = {
         GER_mitteleuropa_trade
         GER_guardians_of_the_reich
         GER_nww_prague_network
-        GER_the_potsdam_coup
-        GER_dissolve_the_reichstag
         GER_nww_silesian_steel
         GER_3
         GER_7
         GER_nww_machine_tools
         GER_nww_arsenal_contracts
         GER_nww_industrial_standards
-        GER_the_austrian_question
         GER_nww_technical_colleges
         GER_4
         GER_8
-        GER_reign_in_mitteleuropa
         GER_2
         GER_nww_freight_corridors
         GER_nww_merchant_contracts
         GER_nww_export_credit
         GER_nww_investment_guarantees
-        GER_crush_eastern_syndicates
-        GER_gott_mit_uns
         GER_9
         GER_10
         GER_nww_industrial_research
-        GER_schlieffen_reborn
-        GER_strike_the_west
-        GER_the_second_naval_race
     }
-    focus_factors = {
-        GER_empower_the_chancellor = 0
+    weight = {
+        factor = 100
+    }
+}
+NWW_GER_democratic = {
+    name = GER_nww_democratic_plan
+    desc = GER_nww_democratic_plan_desc
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_country_flag = GER_nww_ai_democratic
+    }
+    abort = {
+        is_subject = yes
+    }
+    ai_national_focuses = {
+        GER_the_gilded_colossus
+        GER_empower_the_chancellor
+        GER_parliamentary_spring
+        GER_true_constitutional_monarchy
+        GER_mitteleuropa_economic_community
+        GER_the_austrian_referendum
+        GER_arsenal_of_democracy
+        GER_european_federation
+        GER_anti_imperialist_crusade
+        GER_shield_against_the_reds
+        GER_krupp_and_thyssen
+        GER_the_kaiser_endures
+        GER_prussian_traditions
+        GER_1
+        GER_nww_electrical_grid
+        GER_5
+        GER_6
+        GER_mitteleuropa_trade
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_nww_silesian_steel
+        GER_3
+        GER_7
+        GER_nww_machine_tools
+        GER_nww_arsenal_contracts
+        GER_nww_industrial_standards
+        GER_nww_technical_colleges
+        GER_4
+        GER_8
+        GER_2
+        GER_nww_freight_corridors
+        GER_nww_merchant_contracts
+        GER_nww_export_credit
+        GER_nww_investment_guarantees
+        GER_9
+        GER_10
+        GER_nww_industrial_research
+    }
+    weight = {
+        factor = 100
+    }
+}
+NWW_GER_fascist = {
+    name = GER_nww_fascist_plan
+    desc = GER_nww_fascist_plan_desc
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_country_flag = GER_nww_ai_fascist
+    }
+    abort = {
+        is_subject = yes
+    }
+    ai_national_focuses = {
+        GER_the_gilded_colossus
+        GER_pan_german_leagues
+        GER_the_pan_germanic_triumph
+        GER_abolish_the_hohenzollerns
+        GER_anschluss_by_force
+        GER_lebensraum_in_the_east
+        GER_the_new_reich
+        GER_drang_nach_osten_expanded
+        GER_total_assimilation
+        GER_hegemony_over_europe_focus
+        GER_krupp_and_thyssen
+        GER_the_kaiser_endures
+        GER_prussian_traditions
+        GER_1
+        GER_nww_electrical_grid
+        GER_5
+        GER_6
+        GER_mitteleuropa_trade
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_nww_silesian_steel
+        GER_3
+        GER_7
+        GER_nww_machine_tools
+        GER_nww_arsenal_contracts
+        GER_nww_industrial_standards
+        GER_nww_technical_colleges
+        GER_4
+        GER_8
+        GER_2
+        GER_nww_freight_corridors
+        GER_nww_merchant_contracts
+        GER_nww_export_credit
+        GER_nww_investment_guarantees
+        GER_9
+        GER_10
+        GER_nww_industrial_research
+    }
+    weight = {
+        factor = 100
+    }
+}
+NWW_GER_communist = {
+    name = GER_nww_communist_plan
+    desc = GER_nww_communist_plan_desc
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_focus_tree = GER_focus
+        has_country_flag = GER_nww_ai_communist
+    }
+    abort = {
+        is_subject = yes
+    }
+    ai_national_focuses = {
+        GER_the_gilded_colossus
+        GER_organize_ruhr_workers
+        GER_the_spartacist_uprising
+        GER_german_soviet_republic
+        GER_workers_militias
+        GER_dismantle_imperial_borders
+        GER_berlin_moscow_axis
+        GER_world_revolution
+        GER_red_rhine
+        GER_nva_mass_mobilization
+        GER_challenge_moscow
+        GER_krupp_and_thyssen
+        GER_the_kaiser_endures
+        GER_prussian_traditions
+        GER_1
+        GER_nww_electrical_grid
+        GER_5
+        GER_6
+        GER_mitteleuropa_trade
+        GER_guardians_of_the_reich
+        GER_nww_prague_network
+        GER_nww_silesian_steel
+        GER_3
+        GER_7
+        GER_nww_machine_tools
+        GER_nww_arsenal_contracts
+        GER_nww_industrial_standards
+        GER_nww_technical_colleges
+        GER_4
+        GER_8
+        GER_2
+        GER_nww_freight_corridors
+        GER_nww_merchant_contracts
+        GER_nww_export_credit
+        GER_nww_investment_guarantees
+        GER_9
+        GER_10
+        GER_nww_industrial_research
     }
     weight = {
         factor = 100
@@ -8961,6 +10029,7 @@ country_event = {
                     }
                 }
             }
+            set_country_flag = GER_austrian_demand_refused
             GER_nww_austrian_guarantee = yes
         }
     }
@@ -9283,6 +10352,7 @@ country_event = {
                     }
                 }
             }
+            set_country_flag = GER_austrian_demand_refused
             GER_nww_austrian_guarantee = yes
         }
     }
@@ -9568,7 +10638,7 @@ add_breakthrough_progress = {
     value = 0.3
 }
 set_grand_doctrine = new_mobile_warfare
-set_grand_doctrine = new_convoy_raiding
+set_grand_doctrine = new_fleet_in_being
 set_grand_doctrine = new_battlefield_support
 if = {
     limit = {
@@ -9613,7 +10683,7 @@ if = {
         photo_reconnaisance = 1
     }
 }
-starting_train_buffer = 2
+starting_train_buffer = 4
 set_fuel_ratio = 0.8
 set_technology = {
     infantry_weapons = 1
@@ -10506,7 +11576,7 @@ set_war_support = 0.3
         basic_fortification_tech = 1
     }
     set_grand_doctrine = new_mobile_warfare
-    set_grand_doctrine = new_convoy_raiding
+    set_grand_doctrine = new_fleet_in_being
     set_grand_doctrine = new_battlefield_support
     set_sub_doctrine = mobile_infantry
     add_mastery = {
@@ -11635,6 +12705,7 @@ if = {
         obsolete = yes
     }
 }
+GER_nww_1936_military_technology = yes
 nww_GER_disable_mefo = yes
 nww_GER_initialize_politics = yes
 add_ideas = MTG_naval_treaty_adherent
@@ -11815,6 +12886,48 @@ AUS_nww_release_bohemia = {
 ## Регионы, используемые наградами, и заморский старт
 
 История региона содержит начальные и датированные записи. Условная награда в регионе не означает, что Германия владеет им в начале игры.
+
+### `history/states/25-Limousin.txt`
+
+```pdx
+state = {
+    id = 25
+    name = STATE_25
+    manpower = 1343700
+    resources = {
+        coal = 2
+    }
+    state_category = large_town
+    history = {
+        owner = FRA
+        buildings = {
+            infrastructure = 3
+        }
+        victory_points = {
+            620
+            5
+        }
+        add_core_of = OCC
+        add_core_of = FRA
+    }
+    provinces = {
+        620
+        625
+        755
+        3598
+        3771
+        6618
+        6775
+        6792
+        9717
+        9734
+        9751
+        11718
+        11720
+    }
+    local_supplies = 0.0
+}
+```
 
 ### `history/states/42-Rhineland.txt`
 
@@ -13059,8 +14172,8 @@ GER_zentrale_planung
     "en": "Retain the Arsenal of Democracy’s institutional and industrial benefits, strengthen homeland defence and organise a larger volunteer contingent to support threatened independent states."
   },
   "GER_berlin_moscow_axis_desc": {
-    "ru": "Предложим советскому правительству принять нашу республику в его союз или создать общий коммунистический альянс, если такого ещё нет. Необходимо согласие СССР; отказ не приводит к войне.",
-    "en": "Ask the Soviet government to admit our republic into its alliance, or create a common Communist alliance if it has none. Soviet consent is required; a refusal does not start a war."
+    "ru": "Выделим политические ресурсы на международную координацию и предложим коммунистической России союз, если дипломатическая ситуация это допускает. Москва может отказать. Отсутствие подходящего партнёра не блокирует собственную революционную программу.",
+    "en": "Allocate political resources to international coordination and offer communist Russia an alliance when diplomacy permits. Moscow may refuse. The absence of a suitable partner does not block our own revolutionary programme."
   },
   "GER_berlin_moscow_faction": {
     "ru": "Рабочий союз Берлина и Москвы",
@@ -13155,8 +14268,8 @@ GER_zentrale_planung
     "en": "Invite the generals to shape imperial policy. Moves the balance 10% left and increases monarchist support by 5 percentage points. Repeatable every 30 days until the Reichstag is dissolved."
   },
   "GER_crush_eastern_syndicates_desc": {
-    "ru": "Подготовим уничтожение независимых синдикалистских центров на территории махновцев и Украины. Цели войны выдаются только против существующих независимых стран вне нашего союза.\\n\\n$GER_eastern_1939_gate_tt$",
-    "en": "Prepare the destruction of the independent syndicalist centres in the Makhnovist territory and Ukraine. War goals are granted only against existing independent countries outside our alliance.\\n\\n$GER_eastern_1939_gate_tt$"
+    "ru": "После давления на Миттельевропу подготовим военные цели против независимых Украины и Махновщины вне нашего союза. Общий порог — 1939 год; исторический ИИ начинает этот этап в 1940 году. Если армия временно не готова, подготовленные цели будут выданы позже без повторения наград фокуса.",
+    "en": "After pressure on Mitteleuropa, prepare war goals against independent Ukraine and Makhnovists outside our alliance. The general threshold is 1939; historical AI begins this stage in 1940. Temporarily unsafe objectives are retried later without repeating focus rewards."
   },
   "GER_democratic_party": {
     "ru": "Социал-демократия",
@@ -13179,12 +14292,8 @@ GER_zentrale_planung
     "en": "From 1941 the radical government prepares conquest war goals against Soviet Russia and the Makhnovist state, provided they still exist as independent, non-allied states."
   },
   "GER_eastern_1939_gate_tt": {
-    "ru": "§YМы не готовы к масштабной войне на Востоке. Этот фокус будет доступен только с 1 января 1939 года.§!",
-    "en": "§YWe are not ready for a major war in the East. This focus will be available only from 1 January 1939.§!"
-  },
-  "GER_eastern_war_guard_tt": {
-    "ru": "Германия не может объявлять войну Литве-Беларуси, Польше, Украине, махновцам или СССР до 1 января 1939 года.",
-    "en": "Germany cannot declare war on Lithuania-Belarus, Poland, Ukraine, the Makhnovists or the Soviet Union before 1 January 1939."
+    "ru": "Германские восточные ультиматумы и цели фокусов открываются с §Y1939 года§!. Исторический ИИ переходит к Украине и МКН с §Y1940 года§!; война требует отдельной готовности.",
+    "en": "German eastern ultimatums and focus war goals open in §Y1939§!. Historical AI turns to Ukraine and MKN from §Y1940§!; war requires separate readiness."
   },
   "GER_economic_community_tt": {
     "ru": "Освобождаем зависимые от нас Литву-Беларусь и Польшу и приглашаем их в Миттельевропу. Согласие каждого партнёра один раз даёт одну внемаповую гражданскую фабрику.",
@@ -13374,6 +14483,14 @@ GER_zentrale_planung
     "ru": "Ультиматум Австрии доступен §Yне ранее 1 января 1939 года§!.",
     "en": "The Austrian ultimatum is available §Yno earlier than 1 January 1939§!."
   },
+  "GER_nww_authoritarian_plan": {
+    "ru": "Железный кайзеррейх",
+    "en": "The Iron Kaiserreich"
+  },
+  "GER_nww_authoritarian_plan_desc": {
+    "ru": "Престолонаследие, власть короны и подготовленное давление на независимую Миттельевропу.",
+    "en": "Imperial succession, crown authority and prepared pressure on independent Mitteleuropa."
+  },
   "GER_nww_balanced_orders_desc": {
     "ru": "Гражданские и военные предприятия получают сбалансированную программу заказов. Имперская промышленность должна выдержать длительное напряжение без долговых миссий.",
     "en": "Balance civilian and military orders by building one enterprise of each kind on owned and controlled German core territory."
@@ -13398,6 +14515,22 @@ GER_zentrale_planung
     "ru": "Складские и перерабатывающие мощности поддержат заморские перевозки. Программа не передаёт чужие территории и не создаёт германские колониальные коры.",
     "en": "Expand civilian storage and processing capacity for overseas shipping without transferring territory or creating colonial cores."
   },
+  "GER_nww_communist_plan": {
+    "ru": "Спартакистский путь",
+    "en": "The Spartacist Path"
+  },
+  "GER_nww_communist_plan_desc": {
+    "ru": "Рабочий мандат, настоящая гражданская война и революционная республика.",
+    "en": "A worker mandate, a real civil war and a revolutionary republic."
+  },
+  "GER_nww_democratic_plan": {
+    "ru": "Парламентская весна",
+    "en": "Parliamentary Spring"
+  },
+  "GER_nww_democratic_plan_desc": {
+    "ru": "Подготовка парламентского мандата, добровольное экономическое сообщество и оборона демократии.",
+    "en": "Build a parliamentary mandate, a voluntary economic community and democratic defence."
+  },
   "GER_nww_electrical_grid_desc": {
     "ru": "Объединим региональные электростанции и промышленные сети. Уголь и генерация останутся основой энергетики, а единая сеть уменьшит потери.",
     "en": "Link regional generating stations and industrial grids to improve energy supply. Coal extraction and efficient distribution must support new factories."
@@ -13414,25 +14547,25 @@ GER_zentrale_planung
     "ru": "Государственные гарантии экспортных контрактов поддержат гражданские предприятия. Торговля станет подготовкой к переговорам, а не поводом для немедленной войны.",
     "en": "Export guarantees support another civilian enterprise. Trade prepares the ground for diplomacy rather than an immediate war."
   },
+  "GER_nww_fascist_plan": {
+    "ru": "Пангерманский триумф",
+    "en": "Pan-German Triumph"
+  },
+  "GER_nww_fascist_plan_desc": {
+    "ru": "Поддержка лиг, смена режима и подготовленная экспансия националистов.",
+    "en": "League support, regime change and prepared nationalist expansion."
+  },
   "GER_nww_freight_corridors_desc": {
     "ru": "Улучшим инфраструктуру двух собственных германских промышленных регионов. Заводы должны получать уголь и комплектующие до начала новой гонки вооружений.",
     "en": "Improve infrastructure twice in eligible owned and controlled German core regions so industry can receive coal and components."
   },
   "GER_nww_historical_eastern_war_ready": {
-    "ru": "Исторический ИИ переходит к восточным военным целям с §Y1941 года§!.",
-    "en": "Historical AI pursues eastern war goals in §Y1941§!."
-  },
-  "GER_nww_historical_plan": {
-    "ru": "Железная империя",
-    "en": "The Iron Kaiserreich"
-  },
-  "GER_nww_historical_plan_desc": {
-    "ru": "Престолонаследие, усиление военной власти и давление на германскую сферу влияния.",
-    "en": "An imperial succession followed by military consolidation and pressure on the German sphere."
+    "ru": "Исторический ИИ переходит к восточным военным целям с §Y1940 года§!.",
+    "en": "Historical AI pursues eastern war goals in §Y1940§!."
   },
   "GER_nww_historical_pressure_ready": {
-    "ru": "Исторический ИИ начинает давление на Миттельевропу с §Y1940 года§!.",
-    "en": "Historical AI begins coercive pressure in Mitteleuropa in §Y1940§!."
+    "ru": "Исторический ИИ начинает давление на Миттельевропу с §Y1939 года§!.",
+    "en": "Historical AI begins coercive pressure in Mitteleuropa in §Y1939§!."
   },
   "GER_nww_industrial_program": {
     "ru": "Имперская промышленная программа",
@@ -13591,8 +14724,8 @@ GER_zentrale_planung
     "en": "Parliament funds civilian construction and social peace, accepting a less martial public mood."
   },
   "GER_reign_in_mitteleuropa_desc": {
-    "ru": "Потребуем полного подчинения Литвы-Беларуси и Польши. Наши зависимые страны станут интегрированными марионетками, если система автономии это допускает; независимые правительства могут принять статус марионетки или отказаться. Германия не сможет начать войну с ЛитБелом до 1939 года.\\n\\n$GER_eastern_1939_gate_tt$",
-    "en": "Demand binding subordination from Lithuania-Belarus and Poland. Our existing subjects become integrated puppets where the autonomy system permits; independent governments may accept puppet status or refuse. No German war against Lithuania-Belarus may begin before 1939.\\n\\n$GER_eastern_1939_gate_tt$"
+    "ru": "С 1939 года предъявим независимым Польше и ЛитБелу требования политического подчинения. Экономическая сфера влияния ещё не означает власти: оба правительства могут отказаться. Отказ сохраняется до готовности германской кампании; цель войны не теряется из-за временной слабости армии.",
+    "en": "From 1939, demand political subordination from independent Poland and Lithuania-Belarus. An economic sphere is not political control: both governments may refuse. A refusal remains a standing objective until Germany is ready to prepare its campaign."
   },
   "GER_schlieffen_reborn_desc": {
     "ru": "Современная штабная работа заменит планы прошлого столетия. С 1941 года мы сможем добиваться подчинения Нидерландов и Бельгии. Исторический ИИ сначала должен завершить польскую и австрийскую кампании.",
@@ -13722,10 +14855,6 @@ GER_zentrale_planung
     "ru": "Лондонский компромисс Британии, Италии, Германии, Франции, Японии, Китая и США сдерживает стоимость новых морских вооружений. Пределы стоимости проектов (крейсер / тяжёлый корабль / авианосец): 5300 / 10000 / 9500. Существующий флот не подлежит автоматическому списанию.",
     "en": "The London compromise between Britain, Italy, Germany, France, Japan, China and the United States limits the cost of new naval armaments. Design cost limits (cruiser / heavy ship / carrier): 5300 / 10000 / 9500. Existing fleets are not automatically scrapped."
   },
-  "NWW_GER_campaign_safety_tt": {
-    "ru": "Германия восстанавливает силы или цель втянет её в неподготовленную войну. ИИ ведёт одну наступательную кампанию за раз; после мира требуется 180 дней восстановления, после капитуляции — два года.",
-    "en": "Germany is recovering or the target would draw it into an unprepared war. AI conducts one offensive campaign at a time, with 180 days of recovery after peace and two years after capitulation."
-  },
   "NWW_GER_quality": {
     "ru": "Промышленная стандартизация",
     "en": "Industrial standardisation"
@@ -13743,8 +14872,8 @@ GER_zentrale_planung
     "en": "Endecja Ascendant"
   },
   "POL_endecja_ascendant_desc": {
-    "ru": "Национал-демократы сменят режим при поддержке не менее 40% и подготовленном политическом движении.",
-    "en": "The National Democrats replace the regime with at least 40% support and a prepared political movement."
+    "ru": "Национал-демократы сменят режим при поддержке не менее 40% и подготовленном политическом движении.\\n\\nИзменение постоянной программы: Стабильность: +5%.",
+    "en": "The National Democrats replace the regime with at least 40% support and a prepared political movement.\\n\\nPersistent programme change: Stability: +5%."
   },
   "POL_pragmatic_deal": {
     "ru": "Прагматическая сделка",
@@ -13759,8 +14888,8 @@ GER_zentrale_planung
     "en": "The Colonels’ Regime"
   },
   "POL_the_colonels_regime_desc": {
-    "ru": "Сохраним независимость и власть Санации при мандате не менее 40%.",
-    "en": "Preserve independence and Sanation rule with at least 40% support."
+    "ru": "Сохраним независимость и власть Санации при мандате не менее 40%.\\n\\nИзменение постоянной программы: Стабильность: +5%.",
+    "en": "Preserve independence and Sanation rule with at least 40% support.\\n\\nPersistent programme change: Stability: +5%."
   },
   "communism": {
     "ru": "Коммунизм",
@@ -14018,15 +15147,16 @@ GER_zentrale_planung
 Повторный экспорт: `python tools/export_ger_focuses.py --snapshot-date YYYY-MM-DD`. В каталоге фокусов только прямые definitions и shared_focus, действительно импортированные в GER_focus. SHA-256 источников:
 
 ```text
+1b4bd9b5cbc099d5ac43fa4a493543352950dcbe853435dc542b21e5103a4f88  common/ai_strategy/GER_campaign_safety.txt
 8dc22c30b80bd2423d01389fe6becd58070582eafbe1fc9756356f11f031e854  common/ai_strategy/GER_lategame_strategies.txt
-4b6d65bbbf81c4635e958b49087921d0fe7e4687d2ae1b9c6b5a33ad5d053928  common/ai_strategy/GER_pacing.txt
+e43259a06cf4ef3cddd060c64a5451a9c0640fdc3da00492ddc1360cc42392fb  common/ai_strategy/GER_pacing.txt
 0699d57eaaa35a3620b17f0a2302c3a7f2c47549ec6a33a7d708d416132daacf  common/ai_strategy/GER_politics.txt
-43e6d2e1e53da0f48f6be2e9182ab46f24c57afac9779d0df630ef950e057eda  common/ai_strategy_plans/GER_alternate_strategy_plan.txt
-8a673de5c60ce79f95d1b93dfb0ae03a918712ae4b02549aa8e30e345b1d3023  common/ai_strategy_plans/GER_historical.txt
+97b1576d70aadbae7ae4da7a8e6d65e1ff081b8015fd806dc9c9390e5629e335  common/ai_strategy_plans/GER_alternate_strategy_plan.txt
+277e9c8f7e567aff4fd9543be75a246507e8a5b9ed3986f3f4586ae5f6951436  common/ai_strategy_plans/GER_historical.txt
 280c7a25da36b07e475987735bbec6373bb652ea7892b6aba19dcc78b045b698  common/ai_strategy_plans/GER_historical_strategy_plan.txt
 6a57fad20988de4bc4756a103274278709d0ae01a02a9a18535e1f7e38906d45  common/bop/GER_bop.txt
 cbd921fe03ed1ddf89d82cf829f00d0308b4f204829a288c35b814710ad5037a  common/country_leader/GER_traits.txt
-2f3b58c76aa8ad10a4a6f52a337497b993d944409dcdcebee0513041eb675e17  common/decisions/GER_bop_decisions.txt
+5cf39dcd8e42634ef9bc469a7d64aa32c021b5d0f5f030aa1dbe3aca606c7456  common/decisions/GER_bop_decisions.txt
 c77a52c8234db9609f9b07889061e93e07d17f81fa2963862099575a403e23c4  common/decisions/categories/GER_categories.txt
 398bcbf55a32226b819f24d23f8afe20b7c89fd623110ab1471da9ee43f0f7d5  common/dynamic_modifiers/GER_industry_modifiers.txt
 8e4cc97b767f392d4b1c1bb3d02a4bc6f123406a413889bc9a5d75150e47648a  common/factions/templates/GER_templates.txt
@@ -14034,32 +15164,36 @@ cd73161d2064ebbfc9c8426927cd556cfa7963d6cb4789e5837be0738776c74f  common/ideas/G
 793a1aae0e549854e696edfc78d94a67a6c3ddb6eb263a08e44460d0c2c96dda  common/ideas/zzz_generic.txt
 770033acf846e5bf7bf1514484c075d1b1497820e67032b58e51c686f375a2bc  common/national_focus/GER_focuses.txt
 23722e3f91518daf83a3d85ba105a7558b30ae18f78700f02c8221dd509f0fec  common/national_focus/GER_native_compatibility.txt
-deeeafa22258ee1a845995b0c110e7e79b878e4abb11219a876144cfa3aed592  common/national_focus/GER_political.txt
-1d650d24534b7568e1ce936db87e1287fbbd3ce6f0899f4b41aefc90a060456d  common/on_actions/GER_campaign_safety_on_actions.txt
+0d682494179729aa75dd301de5c2fac6c7b096263a783cc7d05df428e6cd74a7  common/national_focus/GER_political.txt
+14ff0756be8dba4053697f780106254675bca734b93d6a5e7b6547ca057dc95f  common/on_actions/GER_campaign_safety_on_actions.txt
 fbb8e625b727452470b0f4a516c18d582da19d4c9f83424ba0b94ac22b3f8ced  common/on_actions/GER_diplomacy_on_actions.txt
 2f390aef428593b31cfa9a417b0b8a44682caed292c2a5d56769cc6cfbadbfd7  common/on_actions/GER_industry_on_actions.txt
-df883c3a94e0037df5639534c96a3510350b2bfbc6425156aeabd6e61469acb1  common/on_actions/GER_lategame_on_actions.txt
+bc192e49c813a3a211a04d2d508863ee3ab6646f8218624095259c3c1ce4d027  common/on_actions/GER_lategame_on_actions.txt
 65c35216335290bfab21df581b66636108ce2f13103049658c25fe238f738b3a  common/on_actions/GER_on_actions.txt
-fd6ddea6913bf0cb3af7be5dc926577be61890645e875c8ccd789aed82736d87  common/on_actions/GER_pacing_on_actions.txt
-504c38f190784c24dde335fc9117a8f86dad64f782c45f76bbeb2774fda70262  common/operations/GER_bohemian_operations.txt
+afe55c16ede4a44da0233bfd4c146271b0ec12191344229f35c6471ba0f6c805  common/on_actions/GER_pacing_on_actions.txt
+9ae6d078865cb3395a551bf4f5a7a721ea8086c90606fce8b23a119a42a5f092  common/operations/GER_bohemian_operations.txt
 e46b3bd3f0eae111f8c8bb48e03b07bcfcab5fd16d6ff7d610686e90b935be17  common/scripted_effects/AUS_overhaul_effects.txt
+1265ad07105a05cd78a807bf5e124182aeacd56ad278357f6c9136584439d672  common/scripted_effects/GER_ai_effects.txt
 bfe2c32a037407f8d74fe369e44868ae51d73d8cebd7743f8a69c982e196071b  common/scripted_effects/GER_bohemian_effects.txt
-20592257c16f8ab730c670c706807aec38eb3f0454690ed3d0f1a92482d33e3d  common/scripted_effects/GER_campaign_safety_effects.txt
+85d1aaa5fa58a7d523314accfc65faafc8ae5e9db3d966c475cc6aeaebf9ccd7  common/scripted_effects/GER_campaign_safety_effects.txt
 cd1e7caaa2decbce7eccd31836b60b50fc2bbee2b0ff06384c4d0bf124298007  common/scripted_effects/GER_diplomacy_effects.txt
-c741479db9559ef7031b0365cb9f759cf89d84481e5a2dc1e8dc21de0e0e1dd2  common/scripted_effects/GER_effects.txt
+b663a11da58bb5825fe450c71a50d3c889d65964d2478460190cecd08a3b3b4d  common/scripted_effects/GER_effects.txt
 917fbba8e0f29394c8f94644fc295fd04b0b63c11c700da5a9cb38bfcb39979a  common/scripted_effects/GER_industry_effects.txt
 9a6e116974a251efd39c047255cc8722214c281fcace84403a02105d52ec8248  common/scripted_effects/GER_lategame_effects.txt
+5e407a188cfae33d4926c72af3d716b13bdd5d65d4b0f75a1a8b727212b91c8f  common/scripted_effects/GER_military_setup_effects.txt
+a13ff9c44bf0fb74ae335180b80eccb733477473dcce7e59fa49647de4994a93  common/scripted_effects/GER_political_objectives_effects.txt
 2f85642f7c03a6aba64a18615d78373b3b0de03fb64ddec14403b4c40b725773  common/scripted_triggers/GER_bohemian_triggers.txt
-48e7e6d96526ba3f767330f9cee2b5db1edb827162aa465cb818b550881bf6ac  common/scripted_triggers/GER_campaign_safety_triggers.txt
-c1f51c6f30fccbc3799a94445195f91fdefeb352f947d9c06b909cfe30663854  common/scripted_triggers/GER_lategame_triggers.txt
-1a33babdc53c31201d795756641203061ba376909c4a2d81a163ce68f493a357  common/scripted_triggers/GER_pacing_triggers.txt
+1a645afb725a1ce6cb32d356d8fca85f89759fef6584df18c77208e06cf0c15f  common/scripted_triggers/GER_campaign_safety_triggers.txt
+c3aaa333c4a0b4610e919444beb02ce81d2d1c86efccf5b3b62dd62af689613e  common/scripted_triggers/GER_lategame_triggers.txt
+74f81e404952f838ca3798fad9a681cf2a7aa7a553691cc98c05e2e8d0fb0132  common/scripted_triggers/GER_pacing_triggers.txt
 2b143ba94e7ce12c8ee4af0753a8017af7d57794328237e7aad5e0b5787f0d79  common/scripted_triggers/GER_triggers.txt
 06b9bf16c8e6bc1a7b17176e1269f87d5d9270ab877457a69275e132a13c94a1  docs/GER_industry_rework.json
 6f19d21f1981c3786bceec9a51e1039d348060dc013256cab9410bb6cdc478cb  docs/GER_overseas_setup.json
 b3e48ec6d79e0bdc6d691941ad02cf51bb18cd91d0406b28599592655136217b  events/AUS_overhaul_events.txt
 70670a1568e4bfd0a36afffa8bf6f4a107b6f9324b2caa2d3f6a178ae559ed8e  events/GER_bohemian_events.txt
-78392fcab30b96cc8ba1f99bd15119a01f49460b3551464a99d4ec69c35b3243  events/GER_events.txt
-2715c039727a63e99adae2cf2e5374c2117c9e4b666e77791327b7ae86e4e104  history/countries/GER - Germany.txt
+ce5449ee28983b4fcaa1fff087d8bbe6aace45c30ee8f6b9590f0a490bd89167  events/GER_events.txt
+1c64f512f6011dc683618d8c6adf06b036bf296a22c4f059621ff4b9408f091c  history/countries/GER - Germany.txt
+beb626ad852645cebf2ce0426d4e0c13912028dea399ef2b90dca7e1ea2f0b40  history/states/25-Limousin.txt
 a0d2a12c7c249eed4058ebc462088870f344fb17f9b175e043a35b7c5fb372fc  history/states/42-Rhineland.txt
 60bffb081c095ff95005d261cffb298603e4d6c8e76cd934865c71de70b78cf8  history/states/541-South West Africa.txt
 dc1dacbd2ce3290c31ab68cf9aa2d8cff541031d0fb752b98367ec6a1d1a6711  history/states/546-Tanganyika.txt
@@ -14069,8 +15203,9 @@ dc1dacbd2ce3290c31ab68cf9aa2d8cff541031d0fb752b98367ec6a1d1a6711  history/states
 b5d3e4e53a12b1a914ed0d7eb36e73b185949de595bb6f826dcaa7a1511e0a7d  history/states/74-East Sudatenland.txt
 7820b754a01bd47e476e11d0baa1409816bf2d7ec338ffc62fb7ee08c3817b88  history/states/75-Moravia.txt
 6db87b5fe32cf7d38f51f7071dce07812460c4299be74358a8d73c648ac7b48e  history/states/9-Czechoslovakia.txt
-d6b4f93e50987ec5922a5c6ca8fc5e1fcca7c02fb549dbfe24f457108c41d340  localisation/english/GER_l_english.yml
+2e3f27d690e54860223bf326d4f4e0f2dcd70186b53ab6379e4c1b33bffd8f14  localisation/english/GER_l_english.yml
 a0df213a05f9f83101c6786d7c1005830bd41323bc0412fb2b3175cbefa66c30  localisation/english/GER_parties_l_english.yml
+73e80fd436e4a146cf351ddd6ad4135f2b17cc6a6d4d1fd64f65bd29a85571bd  localisation/english/GER_political_audit_l_english.yml
 b69d77b78f33ac5ff628e2b0ab8010a7bcf7a3731b22bb81aed11c83e2e43bf5  localisation/mod_countries_l_english.yml
 a028273b52862db67f5a9cae5d4612c333a97c2dded85e7dc350c6bb5fd38160  localisation/mod_countries_l_russian.yml
 836619e11268066723b123ca7d75a78edb836c0404e1da156079cb566160374b  localisation/mod_focus_l_english.yml
@@ -14079,11 +15214,12 @@ c900e99e0e5aa12a2a26affe735af52610677f543cfee120ec10a89629fa242f  localisation/m
 55c29fc2158c518c560ec63c0a26a538165eed2074f0a111c0950135bc4278fc  localisation/replace/GER_campaign_safety_l_russian.yml
 8954e3307aaffe44be2a208ff20b255c0be96bdbefef207931174669cb4cea9a  localisation/replace/GER_l_english.yml
 b0cfdb851a7b966e4d739fb6a525f2be29b1062d3f47d9b419c097dd9d633cea  localisation/replace/GER_l_russian.yml
-96914d9dc42a9c3fbd267a53da170e9f290ae668e4f1616f415f9385ec1207ec  localisation/replace/GER_rework_l_english.yml
-afabf24164e129361835650ccf95642568035341de7c6043281e3c94edc104e9  localisation/replace/GER_rework_l_russian.yml
-279640ec32fcf9029646eb240c65335225ec2209b29dfbfb9ffd815f67820a6e  localisation/russian/GER_l_russian.yml
+b5345f90b1054a204ffe1ecbe5803a44ba3806770d89b151a9fd1edee703b910  localisation/replace/GER_rework_l_english.yml
+b80fe7ab54c0c94eaa9a1493866e132448c6a6596c28224a643309db239b2ab2  localisation/replace/GER_rework_l_russian.yml
+c8e0a1dbabebadc25796cc34c3c24175337c8676ca4abb6989c10dae5123ab21  localisation/russian/GER_l_russian.yml
 907646c625b180f234ae8d16cc1da1be8c06d16ad21fb23d1154c20cb230a8c2  localisation/russian/GER_parties_l_russian.yml
+273485fe58ee96cb892a7618995a8bae5688a2d3dc954b64a3ba90fbf7fe4d29  localisation/russian/GER_political_audit_l_russian.yml
 56acf194afc2d26190c06b3ed74fb17913f519568f9cd7caf5cac6187bfcb007  tools/export_ger_focuses.py
 6a1698fca9a56fd34464a36b4a309ed1595e09290dfe0638623a7bb592b4f3aa  tools/export_mkn_industrial_focuses.py
-05a0b3facf4d97366afef978722e4e2e1dbb6b7d39bbdbc3c3458d1bd47ecc61  tools/hoi4_script.py
+2694579b6cb85eb4edafb88fa617978af25ba00b4c7eb71616b124e53077e268  tools/hoi4_script.py
 ```

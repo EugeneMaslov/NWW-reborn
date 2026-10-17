@@ -1,0 +1,1 @@
+LTB_union_defence_category = { icon = generic_prepare_civil_war allowed = { original_tag = LTB } visible = { has_completed_focus = LTB_the_vilnius_compromise NOT = { has_country_flag = LTB_split_choice_available } } }

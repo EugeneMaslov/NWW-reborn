@@ -342,5 +342,277 @@
   "POL_communism_party_long": {
     "russian": "Коммунистическая партия Польши",
     "english": "Communist Party of Poland"
+  },
+  "POL_policy_presidential_audit": {
+    "russian": "Президентский контроль бюджета",
+    "english": "Presidential Budget Oversight"
+  },
+  "POL_policy_presidential_audit_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Стабильность: +5%; Политическая власть в день: -0.10.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Stability: +5%; Daily political power: -0.10."
+  },
+  "POL_policy_presidential_audit_tt": {
+    "russian": "Стабильность: +5%; Политическая власть в день: -0.10.",
+    "english": "Stability: +5%; Daily political power: -0.10."
+  },
+  "POL_policy_colonels_secretariat": {
+    "russian": "Секретариат полковников",
+    "english": "Colonels Secretariat"
+  },
+  "POL_policy_colonels_secretariat_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Политическая власть в день: +0.10; Стабильность: -5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Daily political power: +0.10; Stability: -5%."
+  },
+  "POL_policy_colonels_secretariat_tt": {
+    "russian": "Политическая власть в день: +0.10; Стабильность: -5%.",
+    "english": "Daily political power: +0.10; Stability: -5%."
+  },
+  "POL_policy_civic_administration": {
+    "russian": "Гражданская администрация меньшинств",
+    "english": "Civic Minority Administration"
+  },
+  "POL_policy_civic_administration_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Стабильность: +5%; Целевое сопротивление на оккупированных землях: -5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Stability: +5%; Resistance target in occupied territory: -5%."
+  },
+  "POL_policy_civic_administration_tt": {
+    "russian": "Стабильность: +5%; Целевое сопротивление на оккупированных землях: -5%.",
+    "english": "Stability: +5%; Resistance target in occupied territory: -5%."
+  },
+  "POL_policy_compulsory_administration": {
+    "russian": "Принудительная администрация",
+    "english": "Compulsory Administration"
+  },
+  "POL_policy_compulsory_administration_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Рост подчинения: +5%; Целевое сопротивление на оккупированных землях: +5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Compliance growth: +5%; Resistance target in occupied territory: +5%."
+  },
+  "POL_policy_compulsory_administration_tt": {
+    "russian": "Рост подчинения: +5%; Целевое сопротивление на оккупированных землях: +5%.",
+    "english": "Compliance growth: +5%; Resistance target in occupied territory: +5%."
+  },
+  "POL_policy_transit_board": {
+    "russian": "Польское транзитное управление",
+    "english": "Polish Transit Board"
+  },
+  "POL_policy_transit_board_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Скорость строительства: +5%; Политическая власть в день: -0.10.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Construction speed: +5%; Daily political power: -0.10."
+  },
+  "POL_policy_transit_board_tt": {
+    "russian": "Скорость строительства: +5%; Политическая власть в день: -0.10.",
+    "english": "Construction speed: +5%; Daily political power: -0.10."
+  },
+  "POL_policy_defence_protocol": {
+    "russian": "Протокол оборонной координации",
+    "english": "Defence Coordination Protocol"
+  },
+  "POL_policy_defence_protocol_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Оборона национальных территорий: +5%; Поддержка войны: +5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Core defence: +5%; War support: +5%."
+  },
+  "POL_policy_defence_protocol_tt": {
+    "russian": "Оборона национальных территорий: +5%; Поддержка войны: +5%.",
+    "english": "Core defence: +5%; War support: +5%."
+  },
+  "POL_policy_council_autonomy": {
+    "russian": "Самоуправление местных советов",
+    "english": "Local Council Autonomy"
+  },
+  "POL_policy_council_autonomy_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Стабильность: +5%; Политическая власть в день: -0.10.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Stability: +5%; Daily political power: -0.10."
+  },
+  "POL_policy_council_autonomy_tt": {
+    "russian": "Стабильность: +5%; Политическая власть в день: -0.10.",
+    "english": "Stability: +5%; Daily political power: -0.10."
+  },
+  "POL_policy_planning_commissariat": {
+    "russian": "Плановый комиссариат",
+    "english": "Planning Commissariat"
+  },
+  "POL_policy_planning_commissariat_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Политическая власть в день: +0.10; Стабильность: -5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Daily political power: +0.10; Stability: -5%."
+  },
+  "POL_policy_planning_commissariat_tt": {
+    "russian": "Политическая власть в день: +0.10; Стабильность: -5%.",
+    "english": "Daily political power: +0.10; Stability: -5%."
+  },
+  "POL_policy_rural_mediation": {
+    "russian": "Сельская согласительная комиссия",
+    "english": "Rural Mediation Commission"
+  },
+  "POL_policy_rural_mediation_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Стабильность: +5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Stability: +5%."
+  },
+  "POL_policy_rural_mediation_tt": {
+    "russian": "Стабильность: +5%.",
+    "english": "Stability: +5%."
+  },
+  "POL_policy_national_technical_schools": {
+    "russian": "Национальные технические училища",
+    "english": "National Technical Schools"
+  },
+  "POL_policy_national_technical_schools_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Скорость исследований: +5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Research speed: +5%."
+  },
+  "POL_policy_national_technical_schools_tt": {
+    "russian": "Скорость исследований: +5%.",
+    "english": "Research speed: +5%."
+  },
+  "POL_policy_contract_inspection": {
+    "russian": "Инспекция промышленных контрактов",
+    "english": "Industrial Contract Inspection"
+  },
+  "POL_policy_contract_inspection_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Рост эффективности производства: +5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Production efficiency growth: +5%."
+  },
+  "POL_policy_contract_inspection_tt": {
+    "russian": "Рост эффективности производства: +5%.",
+    "english": "Production efficiency growth: +5%."
+  },
+  "POL_policy_workers_supply_councils": {
+    "russian": "Рабочие советы снабжения",
+    "english": "Workers Supply Councils"
+  },
+  "POL_policy_workers_supply_councils_desc": {
+    "russian": "Проект занимает 60 дней и стоит 50 политической власти. Постоянные изменения: Потребление снабжения: -5%.",
+    "english": "The project takes 60 days and costs 50 political power. Permanent changes: Supply consumption: -5%."
+  },
+  "POL_policy_workers_supply_councils_tt": {
+    "russian": "Потребление снабжения: -5%.",
+    "english": "Supply consumption: -5%."
+  },
+  "POL_institutional_politics": {
+    "russian": "Государственное устройство: соглашения и институты",
+    "english": "State Institutions: Compacts and Administration"
+  },
+  "POL_institutional_politics_desc": {
+    "russian": "Выбранный путь требует учреждений и оплаченных решений. Взаимоисключающие проекты нельзя совместить; одновременно действует один проект.",
+    "english": "The chosen path needs institutions and paid decisions. Opposed projects are exclusive; only one project may run at a time."
+  },
+  "nww_pol.1.t": {
+    "russian": "Польша: непокорный буфер",
+    "english": "Poland: The Defiant Buffer"
+  },
+  "nww_pol.1.d": {
+    "russian": "Независимость родилась в Великой смуте 1918–1922 годов. Галиция удержана, но Познань, Силезия и Данциг остаются германскими. У Польши нет порта и флота; германские инвестиции поддерживают заводы ценой зависимости. После смерти Пилсудского Замок и полковники спорят о будущем республики. Начните со «Смерти Маршала»: затем откроются подготовка, партийные кампании и четыре курса.",
+    "english": "Independence was won during the Great Tumult of 1918–1922. Galicia is held, but Poznan, Silesia and Danzig remain German. Poland has neither ports nor a fleet; German investment supports industry at the price of dependence. After Pilsudski’s death the Castle and the colonels dispute the republic’s future. Begin with After the Marshal to unlock preparation, party campaigns and four paths."
+  },
+  "nww_pol.1.a": {
+    "russian": "Республика должна выстоять.",
+    "english": "The republic must endure."
+  },
+  "nww_pol.2.t": {
+    "russian": "Наследие Маршала",
+    "english": "The Marshal’s Legacy"
+  },
+  "nww_pol.2.d": {
+    "russian": "Замок ищет соглашения с полковниками, Эндеция собирает национальные союзы, а рабочие Лодзи создают свои комитеты. Прогерманские прагматики предлагают обменять часть самостоятельности на безопасность. Выбор ещё не сделан: подготовьте движение, бюджетную комиссию и поддержку не менее 40%, прежде чем менять режим.",
+    "english": "The Castle seeks agreement with the colonels, Endecja organizes national leagues, and Lodz workers form their own committees. Pro-German pragmatists offer security in exchange for autonomy. No path has been chosen: prepare a movement, the budget commission and at least 40% support before changing the regime."
+  },
+  "nww_pol.2.a": {
+    "russian": "Республика должна выстоять.",
+    "english": "The republic must endure."
+  },
+  "nww_pol.3.t": {
+    "russian": "Бюджетный компромисс",
+    "english": "The Budget Compromise"
+  },
+  "nww_pol.3.d": {
+    "russian": "Комиссия ослабила кризис Санации, но не разрешила спор о власти. Последнее слово остаётся за институтами выбранного режима. Нельзя одновременно обещать независимое Междуморье и политическое подчинение Берлину.",
+    "english": "The commission has eased the Sanation crisis without settling the struggle for power. The selected regime must establish its institutions. An independent Intermarium and political subordination to Berlin cannot both be promised."
+  },
+  "nww_pol.3.a": {
+    "russian": "Республика должна выстоять.",
+    "english": "The republic must endure."
+  },
+  "nww_pol.50.t": {
+    "russian": "Санация: президент и полковники",
+    "english": "Sanation: President and Colonels"
+  },
+  "nww_pol.50.d": {
+    "russian": "Гражданская администрация работает, но вопрос о пределах военной власти остаётся открытым. Мосьцицкий требует отчётности перед Замком; полковники требуют свободы действий.",
+    "english": "The civil service works, but military authority remains unsettled. Moscicki demands presidential accountability; the colonels demand freedom of action."
+  },
+  "nww_pol.50.a": {
+    "russian": "Президентский контроль бюджета (50 политической власти)",
+    "english": "Presidential Budget Oversight (50 political power)"
+  },
+  "nww_pol.50.b": {
+    "russian": "Секретариат полковников (50 политической власти)",
+    "english": "Colonels Secretariat (50 political power)"
+  },
+  "nww_pol.50.c": {
+    "russian": "Вернёмся к вопросу через решения.",
+    "english": "Return to this through decisions."
+  },
+  "nww_pol.51.t": {
+    "russian": "Эндеция: государство и гражданство",
+    "english": "Endecja: State and Citizenship"
+  },
+  "nww_pol.51.d": {
+    "russian": "Национальный блок победил. Теперь предстоит решить, укреплять ли лояльность через гражданские учреждения или расширять принудительную администрацию.",
+    "english": "The National Bloc has prevailed. It must now choose between civic institutions and an expanded coercive administration."
+  },
+  "nww_pol.51.a": {
+    "russian": "Гражданская администрация меньшинств (50 политической власти)",
+    "english": "Civic Minority Administration (50 political power)"
+  },
+  "nww_pol.51.b": {
+    "russian": "Принудительная администрация (50 политической власти)",
+    "english": "Compulsory Administration (50 political power)"
+  },
+  "nww_pol.51.c": {
+    "russian": "Вернёмся к вопросу через решения.",
+    "english": "Return to this through decisions."
+  },
+  "nww_pol.52.t": {
+    "russian": "Сделка с Берлином: цена безопасности",
+    "english": "The Berlin Deal: The Price of Security"
+  },
+  "nww_pol.52.d": {
+    "russian": "Таможенная комиссия готова к работе. Промышленники требуют облегчить транзит; военные настаивают на оборонных обязательствах. Союз с Германией всё ещё требует её согласия.",
+    "english": "The customs commission is ready. Industrialists demand transit reform; officers want defence commitments. An alliance still requires German consent."
+  },
+  "nww_pol.52.a": {
+    "russian": "Польское транзитное управление (50 политической власти)",
+    "english": "Polish Transit Board (50 political power)"
+  },
+  "nww_pol.52.b": {
+    "russian": "Протокол оборонной координации (50 политической власти)",
+    "english": "Defence Coordination Protocol (50 political power)"
+  },
+  "nww_pol.52.c": {
+    "russian": "Вернёмся к вопросу через решения.",
+    "english": "Return to this through decisions."
+  },
+  "nww_pol.53.t": {
+    "russian": "Красная Висла: кому принадлежат советы?",
+    "english": "The Red Vistula: Who Rules the Councils?"
+  },
+  "nww_pol.53.d": {
+    "russian": "Гражданская война закончена. Местные советы требуют самостоятельности, а партийный аппарат — единого управления. Польская республика должна определить собственные институты.",
+    "english": "The civil war is over. Local councils demand autonomy; the party apparatus demands unified control. The Polish republic must define its own institutions."
+  },
+  "nww_pol.53.a": {
+    "russian": "Самоуправление местных советов (50 политической власти)",
+    "english": "Local Council Autonomy (50 political power)"
+  },
+  "nww_pol.53.b": {
+    "russian": "Плановый комиссариат (50 политической власти)",
+    "english": "Planning Commissariat (50 political power)"
+  },
+  "nww_pol.53.c": {
+    "russian": "Вернёмся к вопросу через решения.",
+    "english": "Return to this through decisions."
+  },
+  "POL_institutions_unlocked_tt": {
+    "russian": "Открывает государственные проекты выбранного пути в категории «Государственное устройство».",
+    "english": "Unlocks institutional projects for the chosen path under State Institutions."
   }
 }

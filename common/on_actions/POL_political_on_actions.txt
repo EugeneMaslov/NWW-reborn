@@ -1,0 +1,10 @@
+# Owner POL. One introductory event in a new campaign; no repeated rewards on save load.
+on_actions = {
+ on_daily_POL = { effect = {
+  if = {
+   limit = { has_focus_tree = POL_focus date < 1937.1.1 NOT = { has_country_flag = POL_nww_introduction_seen } }
+   set_country_flag = POL_nww_introduction_seen
+   country_event = { id = nww_pol.1 days = 1 }
+  }
+ } }
+}

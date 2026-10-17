@@ -19,11 +19,14 @@ focus_tree = {
 	# ECONOMY: Central Industrial District and financing
 	focus = {
 		id = POL_cop_plan
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_POL_the_four_year_plan
 		x = 6
 		y = 0
 		cost = 5
 		available_if_capitulated = no
+		available = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+		}
 		completion_reward = {
 			custom_effect_tooltip = POL_cop_plan_bonus_tt
 			hidden_effect = {
@@ -38,7 +41,7 @@ focus_tree = {
 	# ECONOMY: Central Industrial District and financing
 	focus = {
 		id = POL_industrial_census
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_POL_common_organization_of_society
 		x = 6
 		y = 1
 		cost = 5
@@ -56,7 +59,7 @@ focus_tree = {
 	# ECONOMY: Central Industrial District and financing
 	focus = {
 		id = POL_accept_german_capital
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_POL_beck_ribbentrop
 		x = 4
 		y = 2
 		cost = 10
@@ -99,7 +102,7 @@ focus_tree = {
 	# ECONOMY: Central Industrial District and financing
 	focus = {
 		id = POL_economic_independence
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_POL_polish_revanchism
 		x = 8
 		y = 2
 		cost = 10
@@ -158,7 +161,7 @@ focus_tree = {
 	# ECONOMY: Central Industrial District and financing
 	focus = {
 		id = POL_vistula_rail_corridor
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_POL_warsaw_main_station
 		x = 6
 		y = 4
 		cost = 10
@@ -281,7 +284,7 @@ focus_tree = {
 	# ECONOMY: Central Industrial District and financing
 	focus = {
 		id = POL_precision_machine_tools
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_POL_the_four_year_plan
 		x = 6
 		y = 7
 		cost = 10
@@ -391,6 +394,9 @@ focus_tree = {
 		y = 0
 		cost = 5
 		available_if_capitulated = no
+		available = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+		}
 		completion_reward = {
 			army_experience = 15
 			custom_effect_tooltip = POL_modernize_the_army_bonus_tt
@@ -458,7 +464,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_defend_the_wisla
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_prussia_line
 		x = 24
 		y = 2
 		cost = 10
@@ -538,7 +544,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_fortress_engineers
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_prepare_for_the_inevitable
 		x = 24
 		y = 3
 		cost = 10
@@ -565,7 +571,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_vistula_reserve_battalions
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_resistance
 		x = 24
 		y = 4
 		cost = 10
@@ -587,7 +593,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_unified_general_staff
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_plan_east
 		x = 20
 		y = 5
 		cost = 10
@@ -611,7 +617,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_quartermaster_service
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_warsaw_main_station
 		x = 20
 		y = 6
 		cost = 10
@@ -633,7 +639,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_reserve_officer_network
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_reach_out_to_underground_state
 		x = 20
 		y = 7
 		cost = 10
@@ -655,7 +661,7 @@ focus_tree = {
 	# ARMY: mobile or Vistula doctrine
 	focus = {
 		id = POL_national_manoeuvres
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_POL_plan_west
 		x = 20
 		y = 8
 		cost = 10
@@ -683,6 +689,9 @@ focus_tree = {
 		y = 0
 		cost = 5
 		available_if_capitulated = no
+		available = {
+			has_completed_focus = POL_aftermath_of_the_marshal
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				category = air_equipment
@@ -828,7 +837,7 @@ focus_tree = {
 	# NAVY: hidden until a controlled coastline exists
 	focus = {
 		id = POL_baltic_fleet_program
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		x = 80
 		y = 0
 		cost = 5
@@ -837,7 +846,7 @@ focus_tree = {
 			has_any_controlled_coastal_state = yes
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = POL_baltic_fleet_program_reward_tt
 		}
 		allow_branch = {
 			has_any_controlled_coastal_state = yes
@@ -849,7 +858,7 @@ focus_tree = {
 	# NAVY: hidden until a controlled coastline exists
 	focus = {
 		id = POL_first_coastal_dockyard
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		x = 80
 		y = 1
 		cost = 10
@@ -888,13 +897,18 @@ focus_tree = {
 	# POLITICS: common crisis preparation
 	focus = {
 		id = POL_aftermath_of_the_marshal
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_the_castle
 		x = 56
 		y = 0
 		cost = 5
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 50
+			country_event = {
+				id = nww_pol.2
+				days = 1
+			}
+			custom_effect_tooltip = POL_aftermath_of_the_marshal_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -903,7 +917,7 @@ focus_tree = {
 	# POLITICS: common crisis preparation
 	focus = {
 		id = POL_castle_and_colonels_dialogue
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_sanation_right
 		x = 44
 		y = 1
 		cost = 5
@@ -916,6 +930,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.10
 			}
+			custom_effect_tooltip = POL_castle_and_colonels_dialogue_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -924,7 +939,7 @@ focus_tree = {
 	# POLITICS: common crisis preparation
 	focus = {
 		id = POL_national_democratic_leagues
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_nationalist_education
 		x = 52
 		y = 1
 		cost = 5
@@ -937,6 +952,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.10
 			}
+			custom_effect_tooltip = POL_national_democratic_leagues_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -945,7 +961,7 @@ focus_tree = {
 	# POLITICS: common crisis preparation
 	focus = {
 		id = POL_berlin_trade_delegation
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_beck_ribbentrop
 		x = 60
 		y = 1
 		cost = 5
@@ -958,6 +974,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.05
 			}
+			custom_effect_tooltip = POL_berlin_trade_delegation_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -966,7 +983,7 @@ focus_tree = {
 	# POLITICS: common crisis preparation
 	focus = {
 		id = POL_workers_defence_committees
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_riot_of_37
 		x = 68
 		y = 1
 		cost = 5
@@ -979,6 +996,7 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.10
 			}
+			custom_effect_tooltip = POL_workers_defence_committees_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -987,7 +1005,7 @@ focus_tree = {
 	# POLITICS: common crisis preparation
 	focus = {
 		id = POL_state_budget_commission
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_complete_april_constitution
 		x = 56
 		y = 2
 		cost = 5
@@ -998,6 +1016,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = POL_budget_commission_done
 			POL_refresh_crisis = yes
+			country_event = {
+				id = nww_pol.3
+				days = 1
+			}
+			custom_effect_tooltip = POL_state_budget_commission_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1006,7 +1029,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_the_colonels_regime
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_consolidate_sanation_government
 		x = 44
 		y = 3
 		cost = 10
@@ -1050,7 +1073,7 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_endecja_ascendant
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_OZON
 		x = 52
 		y = 3
 		cost = 10
@@ -1094,7 +1117,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_pragmatic_deal
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_beck_ribbentrop
 		x = 60
 		y = 3
 		cost = 10
@@ -1127,6 +1150,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = POL_path_german
+			custom_effect_tooltip = POL_pragmatic_deal_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1142,7 +1166,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_the_lodz_uprising
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_riot_of_37
 		x = 68
 		y = 3
 		cost = 10
@@ -1184,7 +1208,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_castle_compact
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_the_castle
 		x = 44
 		y = 4
 		cost = 10
@@ -1210,7 +1234,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_professional_civil_service
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_complete_april_constitution
 		x = 44
 		y = 5
 		cost = 10
@@ -1224,6 +1248,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_finish_crisis = yes
+			country_event = {
+				id = nww_pol.50
+				days = 1
+			}
 			custom_effect_tooltip = POL_professional_civil_service_bonus_tt
 			hidden_effect = {
 				set_country_flag = POL_professional_civil_service_reform_done
@@ -1237,7 +1265,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_fortify_the_borders
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_prussia_line
 		x = 44
 		y = 6
 		cost = 10
@@ -1264,7 +1292,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_intermarium_concept
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_romania_bridgehead_strategy
 		x = 44
 		y = 7
 		cost = 10
@@ -1282,6 +1310,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_create_intermarium = yes
+			custom_effect_tooltip = POL_intermarium_concept_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1290,7 +1319,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_vilnius_settlement
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_belarus_army
 		x = 44
 		y = 8
 		cost = 10
@@ -1304,6 +1333,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_offer_vilnius_settlement = yes
+			custom_effect_tooltip = POL_vilnius_settlement_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1312,7 +1342,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_baltic_danubian_congress
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_common_organization_of_society
 		x = 44
 		y = 9
 		cost = 10
@@ -1326,6 +1356,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_offer_intermarium_membership = yes
+			custom_effect_tooltip = POL_baltic_danubian_congress_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1334,7 +1365,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_agrarian_conciliation
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_sanation_left
 		x = 44
 		y = 10
 		cost = 10
@@ -1360,7 +1391,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_national_defence_fund_nww
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_prepare_for_the_inevitable
 		x = 44
 		y = 11
 		cost = 10
@@ -1392,7 +1423,7 @@ focus_tree = {
 	# SANATION: independent defensive republic
 	focus = {
 		id = POL_republic_survives
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_resistance
 		x = 44
 		y = 12
 		cost = 10
@@ -1419,7 +1450,7 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_national_bloc
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_nationalist_education
 		x = 52
 		y = 4
 		cost = 10
@@ -1433,6 +1464,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_finish_crisis = yes
+			country_event = {
+				id = nww_pol.51
+				days = 1
+			}
 			custom_effect_tooltip = POL_national_bloc_bonus_tt
 			hidden_effect = {
 				set_country_flag = POL_national_bloc_reform_done
@@ -1446,7 +1481,7 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_radical_polonization
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_OZON
 		x = 52
 		y = 5
 		cost = 10
@@ -1472,7 +1507,7 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_western_claims_dossier
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_reassert_silesian_claims
 		x = 52
 		y = 6
 		cost = 10
@@ -1486,6 +1521,34 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_add_western_claims = yes
+			custom_effect_tooltip = POL_western_claims_dossier_reward_tt
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# ENDECJA: prepared western campaign
+	focus = {
+		id = POL_wartime_conversion
+		icon = GFX_goal_support_fascism
+		x = 52
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = POL_western_claims_dossier
+		}
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			POL_end_german_dependence = yes
+			custom_effect_tooltip = POL_wartime_conversion_bonus_tt
+			hidden_effect = {
+				set_country_flag = POL_wartime_conversion_reform_done
+				POL_refresh_programs = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1494,13 +1557,13 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_march_to_the_sea
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_plan_west
 		x = 52
-		y = 7
+		y = 8
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = {
-			focus = POL_western_claims_dossier
+			focus = POL_wartime_conversion
 		}
 		available = {
 			has_government = fascism
@@ -1518,9 +1581,9 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_secure_the_corridor
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_clamp_down_on_danzig
 		x = 52
-		y = 8
+		y = 9
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = {
@@ -1545,41 +1608,14 @@ focus_tree = {
 	}
 	# ENDECJA: prepared western campaign
 	focus = {
-		id = POL_wartime_conversion
-		icon = GFX_goal_support_fascism
-		x = 52
-		y = 9
-		cost = 10
-		available_if_capitulated = no
-		prerequisite = {
-			focus = POL_secure_the_corridor
-		}
-		available = {
-			has_government = fascism
-			is_subject = no
-		}
-		completion_reward = {
-			POL_end_german_dependence = yes
-			custom_effect_tooltip = POL_wartime_conversion_bonus_tt
-			hidden_effect = {
-				set_country_flag = POL_wartime_conversion_reform_done
-				POL_refresh_programs = yes
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	# ENDECJA: prepared western campaign
-	focus = {
 		id = POL_silesian_reconstruction
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_reassert_silesian_claims
 		x = 52
 		y = 10
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = {
-			focus = POL_wartime_conversion
+			focus = POL_secure_the_corridor
 		}
 		available = {
 			has_government = fascism
@@ -1598,7 +1634,7 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_continental_army
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_prepare_for_the_inevitable
 		x = 52
 		y = 11
 		cost = 10
@@ -1624,7 +1660,7 @@ focus_tree = {
 	# ENDECJA: prepared western campaign
 	focus = {
 		id = POL_sovereign_national_state
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_POL_polish_revanchism
 		x = 52
 		y = 12
 		cost = 10
@@ -1650,7 +1686,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_customs_commission
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_common_organization_of_society
 		x = 60
 		y = 4
 		cost = 10
@@ -1663,6 +1699,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_finish_crisis = yes
+			country_event = {
+				id = nww_pol.52
+				days = 1
+			}
 			custom_effect_tooltip = POL_customs_commission_bonus_tt
 			hidden_effect = {
 				set_country_flag = POL_customs_commission_reform_done
@@ -1676,7 +1716,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_guaranteed_transit
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_warsaw_main_station
 		x = 60
 		y = 5
 		cost = 10
@@ -1706,7 +1746,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_join_mitteleuropa_officially
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_beck_ribbentrop
 		x = 60
 		y = 6
 		cost = 10
@@ -1721,6 +1761,7 @@ focus_tree = {
 		completion_reward = {
 			POL_align_with_germany = yes
 			POL_offer_german_compact = yes
+			custom_effect_tooltip = POL_join_mitteleuropa_officially_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1760,7 +1801,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_staff_exchange
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_plan_east
 		x = 60
 		y = 8
 		cost = 10
@@ -1787,7 +1828,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_recognize_the_western_frontier
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_ban_nazi_party
 		x = 60
 		y = 9
 		cost = 10
@@ -1801,6 +1842,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_renounce_western_claims = yes
+			custom_effect_tooltip = POL_recognize_the_western_frontier_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -1809,7 +1851,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_galician_assurances
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_romania_bridgehead_strategy
 		x = 60
 		y = 10
 		cost = 10
@@ -1868,7 +1910,7 @@ focus_tree = {
 	# GERMAN COMPACT: consent and ideological mandate
 	focus = {
 		id = POL_polish_institutions_in_mitteleuropa
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_POL_the_castle
 		x = 60
 		y = 12
 		cost = 10
@@ -1894,7 +1936,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_council_republic
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_common_organization_of_society
 		x = 68
 		y = 4
 		cost = 10
@@ -1909,6 +1951,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_finish_crisis = yes
+			country_event = {
+				id = nww_pol.53
+				days = 1
+			}
 			custom_effect_tooltip = POL_council_republic_bonus_tt
 			hidden_effect = {
 				set_country_flag = POL_council_republic_reform_done
@@ -1922,7 +1968,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_land_and_food_committees
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_sanation_left
 		x = 68
 		y = 5
 		cost = 10
@@ -1949,7 +1995,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_nationalize_german_assets
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_polish_revanchism
 		x = 68
 		y = 6
 		cost = 10
@@ -1977,7 +2023,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_workers_militias_nww
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_reach_out_to_underground_state
 		x = 68
 		y = 7
 		cost = 10
@@ -2005,7 +2051,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_alliance_with_the_east
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_plan_east
 		x = 68
 		y = 8
 		cost = 10
@@ -2020,6 +2066,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			POL_offer_eastern_alliance = yes
+			custom_effect_tooltip = POL_alliance_with_the_east_reward_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -2028,7 +2075,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_socialist_constitution
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_complete_april_constitution
 		x = 68
 		y = 9
 		cost = 10
@@ -2088,7 +2135,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_red_logistics_service
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_warsaw_main_station
 		x = 66
 		y = 10
 		cost = 10
@@ -2115,7 +2162,7 @@ focus_tree = {
 	# COMMUNISTS: civil war and council republic
 	focus = {
 		id = POL_red_wisla
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_POL_resistance
 		x = 68
 		y = 11
 		cost = 10

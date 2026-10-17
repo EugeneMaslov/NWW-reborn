@@ -13,10 +13,20 @@ NWW_LTB_historical = {
 	ai_national_focuses = {
 		LTB_consolidate_the_union
 		LTB_the_vilnius_compromise
+		LTB_union_general_staff
+		LTB_officers_of_two_nations
 		LTB_belarusian_schools
 		LTB_land_for_the_tillers
 		LTB_the_union_endures
-		LTB_union_general_staff
+		LTB_rebuild_the_bridge
+		LTB_minsk_arsenal_works
+		LTB_union_industrial_plan
+		LTB_armaments_plant
+		LTB_military_contracts
+		LTB_cavalry_inspectorate
+		LTB_border_guard_corps
+		LTB_joint_maneuvers
+		LTB_professional_contract_army
 	}
 	weight = {
 		factor = 100

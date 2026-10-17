@@ -1,0 +1,5 @@
+﻿l_english:
+ UKR_makhnovist_integration_category:0 "Integrating the Former Free Territory"
+ UKR_makhnovist_integration_category_desc:0 "After the Makhnovist state has been annexed, its former regions may enter the common citizenship system. Each state requires its own administrative project."
+ UKR_integrate_makhnovist_region:0 "Integrate [FROM.GetName]"
+ UKR_integrate_makhnovist_region_desc:0 "Cost: 75 political power; duration: 90 days. Requires peace, ownership and control, compliance above 30% and resistance below 25%. Completion makes the state a core. Only one project can run at a time. Losing the state, war or MKN restoration cancels the project and refunds the cost."

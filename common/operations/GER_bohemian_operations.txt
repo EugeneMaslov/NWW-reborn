@@ -13,7 +13,7 @@ GER_nww_bohemian_autonomists = {
  visible = { has_completed_focus = GER_nww_prague_network FROM = { GER_nww_bohemian_target_open = yes } }
  available = { FROM = { GER_nww_bohemian_target_open = yes } }
  requirements = { FROM = { GER_nww_bohemian_target_open = yes } }
- equipment = { civilian_factories = 2 infantry_equipment = 100 support_equipment = 25 }
+ equipment = { civilian_factories = { amount = 2 days = 45 } infantry_equipment = 100 support_equipment = 25 }
  risk_chance = 0.15
  experience = 1
  outcome_extra_chance = 0

@@ -129,7 +129,7 @@ def validate_lategame(root, game, check):
                 t['capitulated']=True;t['wars'].add('GER' if mode=='capitulated' else 'SOV')
             check(w.condition(w.triggers['GER_nww_eastern_campaigns_settled']) == (mode in ('subject','annexed','capitulated')),f'{target}/{mode}: wrong eastern settlement')
             count+=1
-    # Native relation guard: only late, prepared, reformed Germany can face major coalitions.
+    # Prepared target policy: the Kaiser settles the east; revolution does not require eastern puppets.
     for government,focus in [('neutrality','GER_strike_the_west'),('communism','GER_world_revolution')]:
         for date in ('1940.12.31','1941.1.1','1942.1.1'):
             w=World();w.ai=True;w.date=date;w.settled();g=w.countries['GER']
@@ -154,7 +154,8 @@ def validate_lategame(root, game, check):
             if blocked=='ally':g['faction']='ENG'
             if blocked=='subject':f['subject']='ENG'
             w.from_country='FRA'
-            check(w.condition(w.triggers['nww_GER_ai_unsafe_declaration']),f'{focus}/{blocked}: safety bypass')
+            expected = not (government=='communism' and blocked=='unsettled')
+            check(w.condition(w.triggers['nww_GER_ai_unsafe_declaration'])==expected,f'{focus}/{blocked}: safety bypass')
             count+=1
     # Refresh previously blocked/expired goals only after a valid western mandate.
     for fid,expected in [('GER_strike_the_west',{'FRA'}),('GER_the_second_naval_race',{'FRA','ENG'}),('GER_world_revolution',{'FRA','ENG'})]:

@@ -1,0 +1,183 @@
+# Owner POL. Paid institutional choices; one serialized project, no repeatable permanent bonuses.
+POL_institutional_politics = {
+ POL_policy_presidential_audit = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no NOT = { has_country_flag = POL_policy_presidential_audit } NOT = { has_country_flag = POL_policy_colonels_secretariat } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_presidential_audit_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no NOT = { has_country_flag = POL_policy_presidential_audit } NOT = { has_country_flag = POL_policy_colonels_secretariat } } set_country_flag = POL_policy_presidential_audit POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 8 }
+ }
+ POL_policy_colonels_secretariat = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no NOT = { has_country_flag = POL_policy_colonels_secretariat } NOT = { has_country_flag = POL_policy_presidential_audit } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_colonels_secretariat_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no NOT = { has_country_flag = POL_policy_colonels_secretariat } NOT = { has_country_flag = POL_policy_presidential_audit } } set_country_flag = POL_policy_colonels_secretariat POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_civic_administration = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no NOT = { has_country_flag = POL_policy_civic_administration } NOT = { has_country_flag = POL_policy_compulsory_administration } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_civic_administration_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no NOT = { has_country_flag = POL_policy_civic_administration } NOT = { has_country_flag = POL_policy_compulsory_administration } } set_country_flag = POL_policy_civic_administration POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 8 }
+ }
+ POL_policy_compulsory_administration = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no NOT = { has_country_flag = POL_policy_compulsory_administration } NOT = { has_country_flag = POL_policy_civic_administration } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_compulsory_administration_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no NOT = { has_country_flag = POL_policy_compulsory_administration } NOT = { has_country_flag = POL_policy_civic_administration } } set_country_flag = POL_policy_compulsory_administration POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_transit_board = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no NOT = { has_country_flag = POL_policy_transit_board } NOT = { has_country_flag = POL_policy_defence_protocol } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_transit_board_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no NOT = { has_country_flag = POL_policy_transit_board } NOT = { has_country_flag = POL_policy_defence_protocol } } set_country_flag = POL_policy_transit_board POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 8 }
+ }
+ POL_policy_defence_protocol = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no NOT = { has_country_flag = POL_policy_defence_protocol } NOT = { has_country_flag = POL_policy_transit_board } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_defence_protocol_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no NOT = { has_country_flag = POL_policy_defence_protocol } NOT = { has_country_flag = POL_policy_transit_board } } set_country_flag = POL_policy_defence_protocol POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_council_autonomy = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no NOT = { has_country_flag = POL_policy_council_autonomy } NOT = { has_country_flag = POL_policy_planning_commissariat } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_council_autonomy_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no NOT = { has_country_flag = POL_policy_council_autonomy } NOT = { has_country_flag = POL_policy_planning_commissariat } } set_country_flag = POL_policy_council_autonomy POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 8 }
+ }
+ POL_policy_planning_commissariat = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no NOT = { has_country_flag = POL_policy_planning_commissariat } NOT = { has_country_flag = POL_policy_council_autonomy } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_planning_commissariat_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no NOT = { has_country_flag = POL_policy_planning_commissariat } NOT = { has_country_flag = POL_policy_council_autonomy } } set_country_flag = POL_policy_planning_commissariat POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_rural_mediation = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no NOT = { has_country_flag = POL_policy_rural_mediation } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_rural_mediation_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_professional_civil_service has_country_flag = POL_path_sanation has_civil_war = no NOT = { has_country_flag = POL_policy_rural_mediation } } set_country_flag = POL_policy_rural_mediation POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_national_technical_schools = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no NOT = { has_country_flag = POL_policy_national_technical_schools } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_national_technical_schools_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_national_bloc has_country_flag = POL_path_endecja has_civil_war = no NOT = { has_country_flag = POL_policy_national_technical_schools } } set_country_flag = POL_policy_national_technical_schools POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_contract_inspection = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no NOT = { has_country_flag = POL_policy_contract_inspection } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_contract_inspection_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_customs_commission has_country_flag = POL_path_german has_civil_war = no NOT = { has_country_flag = POL_policy_contract_inspection } } set_country_flag = POL_policy_contract_inspection POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+ POL_policy_workers_supply_councils = {
+  icon = generic_political_discourse
+  cost = 50
+  days_remove = 60
+  visible = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no NOT = { has_country_flag = POL_policy_workers_supply_councils } }
+  available = { NOT = { has_country_flag = POL_institutional_project_active } }
+  complete_effect = { custom_effect_tooltip = POL_policy_workers_supply_councils_tt set_country_flag = POL_institutional_project_active }
+  cancel_trigger = { NOT = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no } }
+  cancel_effect = { clr_country_flag = POL_institutional_project_active add_political_power = 50 }
+  remove_effect = {
+   clr_country_flag = POL_institutional_project_active
+   if = { limit = { has_completed_focus = POL_council_republic has_country_flag = POL_path_communist has_civil_war = no NOT = { has_country_flag = POL_policy_workers_supply_councils } } set_country_flag = POL_policy_workers_supply_councils POL_refresh_programs = yes }
+   else = { add_political_power = 50 }
+  }  ai_will_do = { factor = 3 }
+ }
+}

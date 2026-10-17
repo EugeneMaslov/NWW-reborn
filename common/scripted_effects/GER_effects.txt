@@ -270,7 +270,6 @@ GER_nww_dispatch_austrian_demand = {
 			NOT = {
 				has_wargoal_against = AUS
 			}
-			nww_GER_ai_can_target_AUS = yes
 		}
 		set_country_flag = GER_nww_austrian_demand_sent
 		AUS = {
@@ -297,13 +296,13 @@ nww_GER_mitteleuropa_demand = {
 				has_government = neutrality
 			}
 			date > 1938.12.31
-			nww_GER_ai_can_prepare_campaign = yes
 		}
 		if = {
 			limit = {
 				is_subject_of = GER
-				NOT = {
-					has_autonomy_state = autonomy_integrated_puppet
+				OR = {
+					AND = { has_dlc = "Together for Victory" NOT = { has_autonomy_state = autonomy_integrated_puppet } }
+					AND = { NOT = { has_dlc = "Together for Victory" } NOT = { has_autonomy_state = autonomy_puppet } }
 				}
 			}
 			if = {
@@ -333,7 +332,10 @@ nww_GER_mitteleuropa_demand = {
 		else_if = {
 			limit = {
 				is_subject = no
+				NOT = { has_country_flag = GER_mitteleuropa_demand_sent }
+				NOT = { has_country_flag = ger_mitteleuropa_refused }
 			}
+			set_country_flag = GER_mitteleuropa_demand_sent
 			country_event = {
 				id = ger_crisis.20
 				days = 1
@@ -375,9 +377,6 @@ nww_GER_mitteleuropa_refusal_wargoals = {
 				target = LTB
 			}
 		}
-		LTB = {
-			clr_country_flag = ger_mitteleuropa_refused
-		}
 	}
 	if = {
 		limit = {
@@ -408,9 +407,6 @@ nww_GER_mitteleuropa_refusal_wargoals = {
 				type = puppet_wargoal_focus
 				target = POL
 			}
-		}
-		POL = {
-			clr_country_flag = ger_mitteleuropa_refused
 		}
 	}
 }
@@ -474,83 +470,11 @@ nww_GER_eastern_wargoals = {
 		}
 	}
 }
+# Compatibility entry. The 1939 gate is implemented by focus/effect dates and
+# GER_campaign_safety_effects.txt's supported country rule for AI.
 nww_GER_eastern_war_guard = {
-	if = {
-		limit = {
-			date < 1939.1.1
-			NOT = {
-				has_country_flag = ger_eastern_war_guard
-			}
-		}
-		add_relation_rule_override = {
-			target = LTB
-			usage_desc = GER_eastern_war_guard_tt
-			can_not_declare_war = yes
-		}
-		add_relation_rule_override = {
-			target = POL
-			usage_desc = GER_eastern_war_guard_tt
-			can_not_declare_war = yes
-		}
-		add_relation_rule_override = {
-			target = UKR
-			usage_desc = GER_eastern_war_guard_tt
-			can_not_declare_war = yes
-		}
-		add_relation_rule_override = {
-			target = MKN
-			usage_desc = GER_eastern_war_guard_tt
-			can_not_declare_war = yes
-		}
-		add_relation_rule_override = {
-			target = SOV
-			usage_desc = GER_eastern_war_guard_tt
-			can_not_declare_war = yes
-		}
-		set_country_flag = ger_eastern_war_guard
-	}
-	else_if = {
-		limit = {
-			NOT = {
-				date < 1939.1.1
-			}
-			has_country_flag = ger_eastern_war_guard
-		}
-		remove_relation_rule_override = {
-			target = LTB
-			can_not_declare_war = yes
-		}
-		remove_relation_rule_override = {
-			target = POL
-			can_not_declare_war = yes
-		}
-		remove_relation_rule_override = {
-			target = UKR
-			can_not_declare_war = yes
-		}
-		remove_relation_rule_override = {
-			target = MKN
-			can_not_declare_war = yes
-		}
-		remove_relation_rule_override = {
-			target = SOV
-			can_not_declare_war = yes
-		}
-		clr_country_flag = ger_eastern_war_guard
-	}
-	if = {
-		limit = {
-			NOT = {
-				date < 1939.1.1
-			}
-			has_country_flag = ger_litbel_war_guard
-		}
-		remove_relation_rule_override = {
-			target = LTB
-			can_not_declare_war = yes
-		}
-		clr_country_flag = ger_litbel_war_guard
-	}
+	clr_country_flag = ger_eastern_war_guard
+	clr_country_flag = ger_litbel_war_guard
 }
 nww_GER_set_party_labels = {
 	if = {

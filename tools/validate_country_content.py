@@ -632,6 +632,8 @@ validate_lategame(ROOT, GAME, check)
 from validate_polish_content import validate_poland
 validate_poland(ROOT, GAME, check)
 counts["POL_focus"] = 80
+from validate_regional_politics import validate_regional_politics
+validate_regional_politics(ROOT, GAME, check)
 from validate_britain_content import main as validate_britain
 check(validate_britain(['--game', str(GAME)]) == 0, 'ENG country package validation failed')
 from test_britain_lifecycle import main as test_britain_lifecycle
