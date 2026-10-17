@@ -182,6 +182,17 @@ country_event = {
 			factor = 35
 			modifier = {
 				factor = 0
+				tag = POL
+				OR = {
+					has_completed_focus = POL_the_colonels_regime
+					has_completed_focus = POL_endecja_ascendant
+					AND = { is_historical_focus_on = yes NOT = { has_completed_focus = POL_pragmatic_deal } NOT = { has_country_flag = POL_ai_german } }
+				}
+			}
+			modifier = { add = 65 tag = POL has_completed_focus = POL_pragmatic_deal }
+
+			modifier = {
+				factor = 0
 				is_historical_focus_on = yes
 				tag = LTB
 			}
@@ -213,6 +224,8 @@ country_event = {
 		name = ger_crisis.20.b
 		ai_chance = {
 			factor = 65
+			modifier = { factor = 0 tag = POL has_completed_focus = POL_pragmatic_deal }
+
 		}
 		if = {
 			limit = {

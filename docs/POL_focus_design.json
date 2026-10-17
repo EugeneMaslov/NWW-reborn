@@ -1,0 +1,1909 @@
+{
+  "focus_count": 80,
+  "focuses": [
+    {
+      "id": "POL_cop_plan",
+      "ru": "План ЦИО",
+      "en": "The COP Plan",
+      "ru_desc": "Сосредоточим ограниченные средства на внутреннем промышленном округе, вдали от германских заводов.",
+      "en_desc": "Concentrate scarce funds on an inland industrial district beyond German industrial ownership.",
+      "x": 6,
+      "y": 0,
+      "cost": 5,
+      "branch": "economy",
+      "parents": [],
+      "bonus": {
+        "cop": {
+          "construction": 0.05
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_industrial_census",
+      "ru": "Промышленная перепись",
+      "en": "Industrial Census",
+      "ru_desc": "Учтём мощности и транзитные обязательства прежде, чем выдавать новые концессии.",
+      "en_desc": "Audit capacity and transit obligations before granting new concessions.",
+      "x": 6,
+      "y": 1,
+      "cost": 5,
+      "branch": "economy",
+      "parents": [
+        "POL_cop_plan"
+      ],
+      "bonus": {},
+      "reward": "add_political_power = 40",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_accept_german_capital",
+      "ru": "Принять германский капитал",
+      "en": "Accept German Capital",
+      "ru_desc": "Две гражданские фабрики достанутся нам ценой более тяжёлых потребительских и торговых обязательств.",
+      "en_desc": "Two civilian factories come with heavier consumer-goods and trade obligations.",
+      "x": 4,
+      "y": 2,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_industrial_census"
+      ],
+      "bonus": {},
+      "reward": "POL_accept_capital = yes\nrandom_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 2\n add_building_construction = { type = industrial_complex level = 2 instant_build = yes }\n}",
+      "available": "GER = { exists = yes } NOT = { has_war_with = GER } NOT = { has_completed_focus = POL_nationalize_german_assets }",
+      "exclusive": [
+        "POL_economic_independence"
+      ],
+      "extra": ""
+    },
+    {
+      "id": "POL_economic_independence",
+      "ru": "Экономическая независимость",
+      "en": "Economic Independence",
+      "ru_desc": "Выкупим зависимые предприятия за 100 политической власти. Германские инвестиционные льготы исчезнут вместе с удавкой.",
+      "en_desc": "Buy out dependent enterprises for 100 political power. German investment benefits end with the stranglehold.",
+      "x": 8,
+      "y": 2,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_industrial_census"
+      ],
+      "bonus": {
+        "cop": {
+          "construction": 0.1
+        }
+      },
+      "reward": "add_political_power = -100\nPOL_end_german_dependence = yes",
+      "available": "has_political_power > 99 NOT = { is_subject_of = GER } NOT = { has_completed_focus = POL_pragmatic_deal }",
+      "exclusive": [
+        "POL_accept_german_capital"
+      ],
+      "extra": ""
+    },
+    {
+      "id": "POL_public_works_board",
+      "ru": "Управление общественных работ",
+      "en": "Public Works Board",
+      "ru_desc": "Объединим ведомственные заказы и перестанем строить конкурирующие объекты в одних городах.",
+      "en_desc": "Coordinate departmental orders rather than building competing facilities in the same towns.",
+      "x": 6,
+      "y": 3,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_accept_german_capital",
+        "POL_economic_independence"
+      ],
+      "bonus": {
+        "cop": {
+          "construction": 0.05
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": "",
+      "or_parents": true
+    },
+    {
+      "id": "POL_vistula_rail_corridor",
+      "ru": "Вислинский железнодорожный коридор",
+      "en": "Vistula Rail Corridor",
+      "ru_desc": "Улучшим внутренние перевозки между Варшавой и промышленными областями.",
+      "en_desc": "Improve inland transport between Warsaw and the industrial districts.",
+      "x": 6,
+      "y": 4,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_public_works_board"
+      ],
+      "bonus": {},
+      "reward": "POL_improve_inland_transport = yes",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_southern_workshops",
+      "ru": "Южные машиностроительные мастерские",
+      "en": "Southern Engineering Workshops",
+      "ru_desc": "Построим военный завод на собственной территории, а не на обещанной карте.",
+      "en_desc": "Build a military factory on territory we actually own and control.",
+      "x": 2,
+      "y": 5,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_vistula_rail_corridor"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = arms_factory level = 1 instant_build = yes }\n}",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_rural_electrification",
+      "ru": "Электрификация села",
+      "en": "Rural Electrification",
+      "ru_desc": "Энергоснабжение отстаёт от промышленного плана; расширим собственную генерацию.",
+      "en_desc": "Power supply lags behind the industrial plan; expand domestic generation.",
+      "x": 10,
+      "y": 5,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_vistula_rail_corridor"
+      ],
+      "bonus": {
+        "cop": {
+          "energy": 0.1
+        }
+      },
+      "reward": "POL_build_power = yes",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_domestic_coal_survey",
+      "ru": "Разведка внутренних угольных пластов",
+      "en": "Domestic Coal Survey",
+      "ru_desc": "Разработаем собственные залежи, не рассчитывая на германскую Верхнюю Силезию.",
+      "en_desc": "Develop domestic deposits rather than relying on German Upper Silesia.",
+      "x": 10,
+      "y": 6,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_rural_electrification"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = { limit = { is_core_of = PREV } add_resource = { type = coal amount = 8 } }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_lublin_arsenals",
+      "ru": "Люблинские арсеналы",
+      "en": "Lublin Arsenals",
+      "ru_desc": "Расширим мощности военного округа ещё одним заводом.",
+      "en_desc": "Add another factory to the inland armaments district.",
+      "x": 2,
+      "y": 6,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_southern_workshops"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = arms_factory level = 1 instant_build = yes }\n}",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_precision_machine_tools",
+      "ru": "Точное станкостроение",
+      "en": "Precision Machine Tools",
+      "ru_desc": "Поднимем качество серийного производства и освоим современные станки.",
+      "en_desc": "Improve series production and master modern machine tools.",
+      "x": 6,
+      "y": 7,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_lublin_arsenals",
+        "POL_domestic_coal_survey"
+      ],
+      "bonus": {
+        "cop": {
+          "efficiency": 0.1
+        }
+      },
+      "reward": "add_tech_bonus = { category = industry bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_university_consortium",
+      "ru": "Университетский консорциум",
+      "en": "University Consortium",
+      "ru_desc": "Свяжем университеты и заводские лаборатории: ещё одна исследовательская ячейка, до общего предела в пять.",
+      "en_desc": "Connect universities and factory laboratories: one research slot, up to a total of five.",
+      "x": 4,
+      "y": 8,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_precision_machine_tools"
+      ],
+      "bonus": {},
+      "reward": "if = { limit = { amount_research_slots < 5 } add_research_slot = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_export_diversification",
+      "ru": "Диверсификация заказов",
+      "en": "Diversify Industrial Orders",
+      "ru_desc": "Освоим альтернативные комплектующие и повысим выпуск военных заводов. Сухопутная торговля всё ещё требует реального маршрута.",
+      "en_desc": "Develop alternative components and improve military output. Land trade still requires a real route.",
+      "x": 8,
+      "y": 8,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_precision_machine_tools"
+      ],
+      "bonus": {
+        "cop": {
+          "output": 0.05
+        }
+      },
+      "reward": "add_tech_bonus = { category = electronics bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_four_year_balance_sheet",
+      "ru": "Итоги четырёхлетнего плана",
+      "en": "Four-Year Balance Sheet",
+      "ru_desc": "Закрепим производственную кооперацию и техническое образование.",
+      "en_desc": "Consolidate industrial cooperation and technical education.",
+      "x": 6,
+      "y": 9,
+      "cost": 10,
+      "branch": "economy",
+      "parents": [
+        "POL_university_consortium",
+        "POL_export_diversification"
+      ],
+      "bonus": {
+        "cop": {
+          "output": 0.05,
+          "research": 0.05
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_modernize_the_army",
+      "ru": "Модернизировать армию",
+      "en": "Modernize the Army",
+      "ru_desc": "Армии нужны обученные штабы и снабжение, а не новая легенда о кавалерии.",
+      "en_desc": "The army needs trained staffs and supplies rather than another cavalry legend.",
+      "x": 20,
+      "y": 0,
+      "cost": 5,
+      "branch": "army",
+      "parents": [],
+      "bonus": {
+        "army": {
+          "planning": 0.05
+        }
+      },
+      "reward": "army_experience = 15",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_officer_academy",
+      "ru": "Высшая военная школа",
+      "en": "Officer Academy",
+      "ru_desc": "Согласуем подготовку офицеров и управление соединениями.",
+      "en_desc": "Coordinate officer training and formation command.",
+      "x": 20,
+      "y": 1,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_modernize_the_army"
+      ],
+      "bonus": {
+        "army": {
+          "org": 0.05
+        }
+      },
+      "reward": "add_tech_bonus = { category = infantry_weapons bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_cavalry_traditions",
+      "ru": "Кавалерийские традиции",
+      "en": "Cavalry Traditions",
+      "ru_desc": "Сохраним разведывательную и манёвренную роль конницы, готовя её сотрудничество с моторизованной пехотой.",
+      "en_desc": "Keep cavalry in reconnaissance and manoeuvre roles while preparing cooperation with motorized infantry.",
+      "x": 16,
+      "y": 2,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_officer_academy"
+      ],
+      "bonus": {
+        "army": {
+          "cavalry": 0.1,
+          "cavalry_speed": 0.1
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [
+        "POL_defend_the_wisla"
+      ],
+      "extra": ""
+    },
+    {
+      "id": "POL_defend_the_wisla",
+      "ru": "Защитить Вислу",
+      "en": "Defend the Vistula",
+      "ru_desc": "Укрепим национальные пограничные области и улучшим организацию и окапывание сухопутных войск.",
+      "en_desc": "Fortify our controlled core border states and improve army organisation and entrenchment.",
+      "x": 24,
+      "y": 2,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_officer_academy"
+      ],
+      "bonus": {
+        "army": {
+          "org": 0.05,
+          "dig_in": 0.1
+        }
+      },
+      "reward": "POL_build_border_forts = yes",
+      "available": "",
+      "exclusive": [
+        "POL_cavalry_traditions"
+      ],
+      "extra": ""
+    },
+    {
+      "id": "POL_motorized_columns",
+      "ru": "Моторизованные колонны",
+      "en": "Motorized Columns",
+      "ru_desc": "Дадим подвижным частям грузовики и стандарты взаимодействия с кавалерией.",
+      "en_desc": "Supply mobile formations with trucks and common operating standards.",
+      "x": 16,
+      "y": 3,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_cavalry_traditions"
+      ],
+      "bonus": {
+        "army": {
+          "motorized": 0.1,
+          "speed": 0.05
+        }
+      },
+      "reward": "add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = ROOT }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_mobile_signals",
+      "ru": "Связь подвижных соединений",
+      "en": "Mobile Signals",
+      "ru_desc": "Ускорим передачу приказов в манёвренной армии.",
+      "en_desc": "Speed up orders within the mobile army.",
+      "x": 16,
+      "y": 4,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_motorized_columns"
+      ],
+      "bonus": {
+        "army": {
+          "planning": 0.1
+        }
+      },
+      "reward": "add_tech_bonus = { category = support_tech bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_fortress_engineers",
+      "ru": "Крепостные инженеры",
+      "en": "Fortress Engineers",
+      "ru_desc": "Инженерные команды подготовят укрепления и полевые позиции.",
+      "en_desc": "Engineer teams will prepare fortifications and field positions.",
+      "x": 24,
+      "y": 3,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_defend_the_wisla"
+      ],
+      "bonus": {
+        "army": {
+          "dig_speed": 0.1
+        }
+      },
+      "reward": "add_tech_bonus = { category = support_tech bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_vistula_reserve_battalions",
+      "ru": "Вислинские резервные батальоны",
+      "en": "Vistula Reserve Battalions",
+      "ru_desc": "Организуем сменные части для обороны национальной территории.",
+      "en_desc": "Organize replacement battalions for homeland defence.",
+      "x": 24,
+      "y": 4,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_fortress_engineers"
+      ],
+      "bonus": {
+        "army": {
+          "defence": 0.1
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_unified_general_staff",
+      "ru": "Единый генеральный штаб",
+      "en": "Unified General Staff",
+      "ru_desc": "Подчиним выбранную доктрину единой системе планирования.",
+      "en_desc": "Place the chosen doctrine within a unified planning system.",
+      "x": 20,
+      "y": 5,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_mobile_signals",
+        "POL_vistula_reserve_battalions"
+      ],
+      "bonus": {
+        "army": {
+          "planning": 0.05
+        }
+      },
+      "reward": "army_experience = 20",
+      "available": "",
+      "exclusive": [],
+      "extra": "",
+      "or_parents": true
+    },
+    {
+      "id": "POL_quartermaster_service",
+      "ru": "Интендантская служба",
+      "en": "Quartermaster Service",
+      "ru_desc": "Сократим потери снабжения при внутренних перевозках.",
+      "en_desc": "Reduce supply waste in inland transport.",
+      "x": 20,
+      "y": 6,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_unified_general_staff"
+      ],
+      "bonus": {
+        "army": {
+          "supply": -0.1
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_reserve_officer_network",
+      "ru": "Сеть офицеров запаса",
+      "en": "Reserve Officer Network",
+      "ru_desc": "Подготовленные инструкторы ускорят обучение пополнений.",
+      "en_desc": "Trained instructors will accelerate replacement training.",
+      "x": 20,
+      "y": 7,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_quartermaster_service"
+      ],
+      "bonus": {
+        "army": {
+          "training": -0.1
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_national_manoeuvres",
+      "ru": "Общенациональные манёвры",
+      "en": "National Manoeuvres",
+      "ru_desc": "Проверим реформы в учениях и закрепим управляемость армии.",
+      "en_desc": "Test the reforms in exercises and consolidate army cohesion.",
+      "x": 20,
+      "y": 8,
+      "cost": 10,
+      "branch": "army",
+      "parents": [
+        "POL_reserve_officer_network"
+      ],
+      "bonus": {
+        "army": {
+          "org": 0.05
+        }
+      },
+      "reward": "army_experience = 25",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_pzl_research_bureau",
+      "ru": "Конструкторское бюро PZL",
+      "en": "PZL Design Bureau",
+      "ru_desc": "Разовьём авиационные проекты собственного производства.",
+      "en_desc": "Develop domestic aircraft designs.",
+      "x": 32,
+      "y": 0,
+      "cost": 5,
+      "branch": "air",
+      "parents": [],
+      "bonus": {},
+      "reward": "add_tech_bonus = { category = air_equipment bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_air_training_schools",
+      "ru": "Лётные училища",
+      "en": "Flying Schools",
+      "ru_desc": "Единая программа подготовки снизит аварийность.",
+      "en_desc": "A common training syllabus will reduce accidents.",
+      "x": 32,
+      "y": 1,
+      "cost": 10,
+      "branch": "air",
+      "parents": [
+        "POL_pzl_research_bureau"
+      ],
+      "bonus": {
+        "air": {
+          "accidents": -0.1
+        }
+      },
+      "reward": "",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_defence_of_the_skies",
+      "ru": "Защита польского неба",
+      "en": "Defence of Polish Skies",
+      "ru_desc": "Подготовим истребительную авиацию к обороне внутренних промышленных районов.",
+      "en_desc": "Prepare fighters to defend inland industrial districts.",
+      "x": 30,
+      "y": 2,
+      "cost": 10,
+      "branch": "air",
+      "parents": [
+        "POL_air_training_schools"
+      ],
+      "bonus": {
+        "air": {
+          "range": 0.1
+        }
+      },
+      "reward": "add_tech_bonus = { category = light_air bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_army_air_liaison",
+      "ru": "Связь авиации с армией",
+      "en": "Army-Air Liaison",
+      "ru_desc": "Наладим обмен разведданными и вызов поддержки.",
+      "en_desc": "Coordinate reconnaissance and requests for air support.",
+      "x": 34,
+      "y": 2,
+      "cost": 10,
+      "branch": "air",
+      "parents": [
+        "POL_air_training_schools"
+      ],
+      "bonus": {
+        "air": {
+          "efficiency": 0.05
+        }
+      },
+      "reward": "add_tech_bonus = { category = cas_bomber bonus = 0.50 uses = 1 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_dispersed_air_workshops",
+      "ru": "Рассредоточенные авиамастерские",
+      "en": "Dispersed Air Workshops",
+      "ru_desc": "Построим ещё один военный завод и защищённую внутреннюю авиабазу.",
+      "en_desc": "Build another military factory and an inland air base.",
+      "x": 32,
+      "y": 3,
+      "cost": 10,
+      "branch": "air",
+      "parents": [
+        "POL_defence_of_the_skies",
+        "POL_army_air_liaison"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = arms_factory level = 1 instant_build = yes }\n}\nPOL_build_air_base = yes",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_integrated_air_command",
+      "ru": "Объединённое командование ВВС",
+      "en": "Integrated Air Command",
+      "ru_desc": "Закрепим взаимодействие воздушных округов.",
+      "en_desc": "Consolidate cooperation between air districts.",
+      "x": 32,
+      "y": 4,
+      "cost": 10,
+      "branch": "air",
+      "parents": [
+        "POL_dispersed_air_workshops"
+      ],
+      "bonus": {
+        "air": {
+          "efficiency": 0.05
+        }
+      },
+      "reward": "air_experience = 25",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_baltic_fleet_program",
+      "ru": "Программа Балтийского флота",
+      "en": "Baltic Fleet Programme",
+      "ru_desc": "Пока мы не контролируем побережье, это лишь проект будущего флота. Этот фокус сам не создаёт кораблей.",
+      "en_desc": "Until we control a coastline this remains a future proposal. This focus creates no ships.",
+      "x": 80,
+      "y": 0,
+      "cost": 5,
+      "branch": "navy",
+      "parents": [],
+      "bonus": {},
+      "reward": "",
+      "available": "has_any_controlled_coastal_state = yes",
+      "exclusive": [],
+      "extra": "allow_branch = { has_any_controlled_coastal_state = yes }\nai_will_do = { factor = 1 }"
+    },
+    {
+      "id": "POL_first_coastal_dockyard",
+      "ru": "Первая прибрежная верфь",
+      "en": "First Coastal Dockyard",
+      "ru_desc": "Перейдём от проекта к одной верфи в собственной контролируемой прибрежной области.",
+      "en_desc": "Move from plans to one dockyard in an owned, controlled coastal state.",
+      "x": 80,
+      "y": 1,
+      "cost": 10,
+      "branch": "navy",
+      "parents": [
+        "POL_baltic_fleet_program"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = {\n limit = { is_coastal = yes }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = dockyard level = 1 instant_build = yes }\n}\nadd_tech_bonus = { category = naval_equipment bonus = 0.50 uses = 1 }",
+      "available": "any_owned_state = { is_controlled_by = ROOT is_coastal = yes }",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_aftermath_of_the_marshal",
+      "ru": "Смерть Маршала",
+      "en": "After the Marshal",
+      "ru_desc": "Пилсудский умер. Независимость, добытая в годы Великой смуты, переживёт его лишь при новом государственном компромиссе.",
+      "en_desc": "Pilsudski is dead. Independence won during the Great Tumult will outlive him only through a new political settlement.",
+      "x": 56,
+      "y": 0,
+      "cost": 5,
+      "branch": "politics",
+      "parents": [],
+      "bonus": {},
+      "reward": "add_political_power = 50",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_castle_and_colonels_dialogue",
+      "ru": "Диалог Замка и полковников",
+      "en": "Castle-Colonels Dialogue",
+      "ru_desc": "Подготовим соглашение гражданского и военного крыла Санации.",
+      "en_desc": "Prepare an agreement between Sanation’s civilian and military wings.",
+      "x": 44,
+      "y": 1,
+      "cost": 5,
+      "branch": "politics",
+      "parents": [
+        "POL_aftermath_of_the_marshal"
+      ],
+      "bonus": {},
+      "reward": "add_popularity = { ideology = neutrality popularity = 0.10 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_national_democratic_leagues",
+      "ru": "Национал-демократические союзы",
+      "en": "National Democratic Leagues",
+      "ru_desc": "Эндеция создаёт политическую организацию; одной уличной агитации для смены власти недостаточно.",
+      "en_desc": "Endecja builds an organization; street agitation alone cannot justify a change of government.",
+      "x": 52,
+      "y": 1,
+      "cost": 5,
+      "branch": "politics",
+      "parents": [
+        "POL_aftermath_of_the_marshal"
+      ],
+      "bonus": {},
+      "reward": "add_popularity = { ideology = fascism popularity = 0.10 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_berlin_trade_delegation",
+      "ru": "Торговая делегация в Берлин",
+      "en": "Trade Delegation to Berlin",
+      "ru_desc": "Подготовим внутреннюю коалицию сторонников прагматической сделки с Германией.",
+      "en_desc": "Prepare a domestic coalition for a pragmatic agreement with Germany.",
+      "x": 60,
+      "y": 1,
+      "cost": 5,
+      "branch": "politics",
+      "parents": [
+        "POL_aftermath_of_the_marshal"
+      ],
+      "bonus": {},
+      "reward": "add_popularity = { ideology = neutrality popularity = 0.05 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_workers_defence_committees",
+      "ru": "Комитеты защиты рабочих",
+      "en": "Workers Defence Committees",
+      "ru_desc": "Создадим рабочую организацию Лодзи, способную добиваться массовой поддержки.",
+      "en_desc": "Build a Lodz workers’ organization capable of winning mass support.",
+      "x": 68,
+      "y": 1,
+      "cost": 5,
+      "branch": "politics",
+      "parents": [
+        "POL_aftermath_of_the_marshal"
+      ],
+      "bonus": {},
+      "reward": "add_popularity = { ideology = communism popularity = 0.10 }",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_state_budget_commission",
+      "ru": "Комиссия государственного бюджета",
+      "en": "State Budget Commission",
+      "ru_desc": "Уменьшим остроту кризиса Санации, но окончательные институты ещё предстоит создать.",
+      "en_desc": "Ease the Sanation crisis, while leaving its final institutional settlement unfinished.",
+      "x": 56,
+      "y": 2,
+      "cost": 5,
+      "branch": "politics",
+      "parents": [
+        "POL_aftermath_of_the_marshal"
+      ],
+      "bonus": {},
+      "reward": "set_country_flag = POL_budget_commission_done\nPOL_refresh_crisis = yes",
+      "available": "",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_the_colonels_regime",
+      "ru": "Режим полковников",
+      "en": "The Colonels’ Regime",
+      "ru_desc": "Сохраним независимость и власть Санации при мандате не менее 40%.",
+      "en_desc": "Preserve independence and Sanation rule with at least 40% support.",
+      "x": 44,
+      "y": 3,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_castle_and_colonels_dialogue"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "POL_establish_sanation = yes",
+      "available": "POL_no_political_path = yes\nis_subject = no\nhas_civil_war = no\nhas_completed_focus = POL_state_budget_commission\nNOT = { neutrality < 0.40 }",
+      "exclusive": [
+        "POL_endecja_ascendant",
+        "POL_pragmatic_deal",
+        "POL_the_lodz_uprising"
+      ],
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_sanation } } }"
+    },
+    {
+      "id": "POL_endecja_ascendant",
+      "ru": "Триумф Эндеции",
+      "en": "Endecja Ascendant",
+      "ru_desc": "Национал-демократы сменят режим при поддержке не менее 40% и подготовленном политическом движении.",
+      "en_desc": "The National Democrats replace the regime with at least 40% support and a prepared political movement.",
+      "x": 52,
+      "y": 3,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_national_democratic_leagues"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "POL_establish_endecja = yes",
+      "available": "POL_no_political_path = yes\nis_subject = no\nhas_civil_war = no\nhas_completed_focus = POL_state_budget_commission\nNOT = { fascism < 0.40 }",
+      "exclusive": [
+        "POL_the_colonels_regime",
+        "POL_pragmatic_deal",
+        "POL_the_lodz_uprising"
+      ],
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_endecja } } }"
+    },
+    {
+      "id": "POL_pragmatic_deal",
+      "ru": "Прагматическая сделка",
+      "en": "A Pragmatic Deal",
+      "ru_desc": "Выберем переговоры с Берлином; политический союз всё ещё потребует согласия Германии.",
+      "en_desc": "Choose negotiations with Berlin; a political alliance still requires German consent.",
+      "x": 60,
+      "y": 3,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_berlin_trade_delegation"
+      ],
+      "bonus": {},
+      "reward": "set_country_flag = POL_path_german",
+      "available": "POL_no_political_path = yes\nis_subject = no\nhas_civil_war = no\nhas_completed_focus = POL_state_budget_commission\nNOT = { neutrality < 0.40 }\nGER = { exists = yes }\nNOT = { has_war_with = GER }\nNOT = { has_completed_focus = POL_economic_independence }",
+      "exclusive": [
+        "POL_the_colonels_regime",
+        "POL_endecja_ascendant",
+        "POL_the_lodz_uprising"
+      ],
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_german } } }"
+    },
+    {
+      "id": "POL_the_lodz_uprising",
+      "ru": "Лодзинское восстание",
+      "en": "The Lodz Uprising",
+      "ru_desc": "При поддержке коммунистов не менее 40% рабочее движение бросит вооружённый вызов режиму.",
+      "en_desc": "With at least 40% communist support, the workers’ movement launches an armed challenge to the regime.",
+      "x": 68,
+      "y": 3,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_workers_defence_committees"
+      ],
+      "bonus": {},
+      "reward": "custom_effect_tooltip = POL_civil_war_tt\nhidden_effect = { POL_start_communist_civil_war = yes }",
+      "available": "POL_no_political_path = yes\nis_subject = no\nhas_civil_war = no\nhas_completed_focus = POL_state_budget_commission\nNOT = { communism < 0.40 }",
+      "exclusive": [
+        "POL_the_colonels_regime",
+        "POL_endecja_ascendant",
+        "POL_pragmatic_deal"
+      ],
+      "extra": "ai_will_do = { factor = 1 modifier = { factor = 0 is_ai = yes NOT = { has_country_flag = POL_ai_communist } } }"
+    },
+    {
+      "id": "POL_castle_compact",
+      "ru": "Соглашение с Замком",
+      "en": "Compact with the Castle",
+      "ru_desc": "Уточним пределы власти президента и генерального инспектора.",
+      "en_desc": "Define the powers of the president and the inspector-general.",
+      "x": 44,
+      "y": 4,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_the_colonels_regime"
+      ],
+      "bonus": {
+        "state": {
+          "power": 0.1
+        }
+      },
+      "reward": "",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_professional_civil_service",
+      "ru": "Профессиональная администрация",
+      "en": "Professional Civil Service",
+      "ru_desc": "Закончим кризис разделённого управления и закрепим бюджетную ответственность.",
+      "en_desc": "End divided administration and establish budgetary accountability.",
+      "x": 44,
+      "y": 5,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_castle_compact"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "POL_finish_crisis = yes",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_fortify_the_borders",
+      "ru": "Укрепить границы",
+      "en": "Fortify the Borders",
+      "ru_desc": "Подготовим реальные национальные пограничные области к обороне.",
+      "en_desc": "Prepare our actual controlled core border states for defence.",
+      "x": 44,
+      "y": 6,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_professional_civil_service"
+      ],
+      "bonus": {
+        "army": {
+          "defence": 0.05
+        }
+      },
+      "reward": "POL_build_border_forts = yes",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_intermarium_concept",
+      "ru": "Концепция Междуморья",
+      "en": "The Intermarium Concept",
+      "ru_desc": "Создадим собственный оборонительный альянс; соседи смогут принять или отклонить приглашение.",
+      "en_desc": "Create a defensive alliance of our own; neighbours may accept or reject an invitation.",
+      "x": 44,
+      "y": 7,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_fortify_the_borders"
+      ],
+      "bonus": {},
+      "reward": "POL_create_intermarium = yes",
+      "available": "has_government = neutrality is_subject = no OR = { is_in_faction = no is_faction_leader = yes }",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_vilnius_settlement",
+      "ru": "Виленское урегулирование",
+      "en": "The Vilnius Settlement",
+      "ru_desc": "Предложим ЛитБелу взаимный отказ от пограничных претензий без автоматической передачи областей.",
+      "en_desc": "Offer Lithuania-Belarus mutual renunciation of border claims without automatic state transfers.",
+      "x": 44,
+      "y": 8,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_intermarium_concept"
+      ],
+      "bonus": {},
+      "reward": "POL_offer_vilnius_settlement = yes",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_baltic_danubian_congress",
+      "ru": "Балтийско-Дунайский конгресс",
+      "en": "Baltic-Danubian Congress",
+      "ru_desc": "Пригласим Румынию и, после урегулирования спора, ЛитБел в Междуморье.",
+      "en_desc": "Invite Romania and, after settling the dispute, Lithuania-Belarus into the Intermarium.",
+      "x": 44,
+      "y": 9,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_vilnius_settlement"
+      ],
+      "bonus": {},
+      "reward": "POL_offer_intermarium_membership = yes",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_agrarian_conciliation",
+      "ru": "Соглашение с деревней",
+      "en": "Agrarian Conciliation",
+      "ru_desc": "Крестьянское представительство укрепит устойчивость независимой республики.",
+      "en_desc": "Rural representation strengthens the independent republic.",
+      "x": 44,
+      "y": 10,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_baltic_danubian_congress"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_national_defence_fund_nww",
+      "ru": "Национальный фонд обороны",
+      "en": "National Defence Fund",
+      "ru_desc": "Профинансируем ещё один собственный военный завод.",
+      "en_desc": "Finance another domestic military factory.",
+      "x": 44,
+      "y": 11,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_agrarian_conciliation"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = arms_factory level = 1 instant_build = yes }\n}",
+      "available": "has_government = neutrality is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_republic_survives",
+      "ru": "Республика выстояла",
+      "en": "The Republic Endures",
+      "ru_desc": "После 1941 года закрепим институты независимой оборонительной республики.",
+      "en_desc": "After 1941, consolidate the institutions of an independent defensive republic.",
+      "x": 44,
+      "y": 12,
+      "cost": 10,
+      "branch": "sanation",
+      "parents": [
+        "POL_national_defence_fund_nww"
+      ],
+      "bonus": {
+        "state": {
+          "power": 0.1
+        },
+        "army": {
+          "defence": 0.05
+        }
+      },
+      "reward": "",
+      "available": "has_government = neutrality is_subject = no date > 1940.12.31",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_national_bloc",
+      "ru": "Национальный блок",
+      "en": "National Bloc",
+      "ru_desc": "Укрепим политическую организацию национального правительства.",
+      "en_desc": "Consolidate the nationalist government’s political organization.",
+      "x": 52,
+      "y": 4,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_endecja_ascendant"
+      ],
+      "bonus": {
+        "state": {
+          "war_support": 0.1
+        }
+      },
+      "reward": "POL_finish_crisis = yes",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_radical_polonization",
+      "ru": "Радикальная полонизация",
+      "en": "Radical Polonization",
+      "ru_desc": "Принудительная администрация ускорит подчинение оккупированных земель, но усилит сопротивление.",
+      "en_desc": "Coercive administration accelerates occupied-territory compliance but increases resistance.",
+      "x": 52,
+      "y": 5,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_national_bloc"
+      ],
+      "bonus": {
+        "state": {
+          "compliance": 0.05,
+          "resistance": 0.1
+        }
+      },
+      "reward": "",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_western_claims_dossier",
+      "ru": "Досье западных претензий",
+      "en": "Western Claims Dossier",
+      "ru_desc": "Сформулируем претензии на Познань, Померанию, Данциг и Верхнюю Силезию, не объявляя эти области своими владениями.",
+      "en_desc": "Formulate claims to Poznan, Pomerelia, Danzig and Upper Silesia without treating them as already owned.",
+      "x": 52,
+      "y": 6,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_radical_polonization"
+      ],
+      "bonus": {},
+      "reward": "POL_add_western_claims = yes",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_march_to_the_sea",
+      "ru": "Марш к морю",
+      "en": "March to the Sea",
+      "ru_desc": "С 1939 года подготовим ограниченную цель войны против Германии за западные области. ИИ должен дождаться уязвимости противника.",
+      "en_desc": "From 1939 prepare a limited war goal against Germany for the western states. The AI must wait until Germany is vulnerable.",
+      "x": 52,
+      "y": 7,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_western_claims_dossier"
+      ],
+      "bonus": {},
+      "reward": "POL_prepare_western_war = yes",
+      "available": "has_government = fascism is_subject = no date > 1938.12.31 POL_can_prepare_western_war = yes",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_secure_the_corridor",
+      "ru": "Закрепить коридор",
+      "en": "Secure the Corridor",
+      "ru_desc": "Восстановим управление только после фактического владения и контроля западных областей.",
+      "en_desc": "Rebuild administration only after actually owning and controlling western territory.",
+      "x": 52,
+      "y": 8,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_march_to_the_sea"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "POL_rebuild_western_regions = yes",
+      "available": "has_government = fascism is_subject = no POL_controls_western_recovery_area = yes",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_wartime_conversion",
+      "ru": "Военная конверсия",
+      "en": "Wartime Conversion",
+      "ru_desc": "Переориентируем промышленные заказы и окончательно расторгнем германские концессии.",
+      "en_desc": "Redirect industrial orders and terminate German concessions.",
+      "x": 52,
+      "y": 9,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_secure_the_corridor"
+      ],
+      "bonus": {
+        "cop": {
+          "output": 0.1
+        }
+      },
+      "reward": "POL_end_german_dependence = yes",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_silesian_reconstruction",
+      "ru": "Силезская реконструкция",
+      "en": "Silesian Reconstruction",
+      "ru_desc": "Промышленные вложения поступят лишь в действительно возвращённые области.",
+      "en_desc": "Industrial investment goes only to genuinely recovered states.",
+      "x": 52,
+      "y": 10,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_wartime_conversion"
+      ],
+      "bonus": {},
+      "reward": "POL_rebuild_silesia = yes",
+      "available": "has_government = fascism is_subject = no 762 = { is_owned_and_controlled_by = ROOT }",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_continental_army",
+      "ru": "Континентальная армия",
+      "en": "Continental Army",
+      "ru_desc": "Закрепим организацию и снабжение армии после западной кампании.",
+      "en_desc": "Consolidate army organization and supplies after the western campaign.",
+      "x": 52,
+      "y": 11,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_silesian_reconstruction"
+      ],
+      "bonus": {
+        "army": {
+          "org": 0.05,
+          "supply": -0.05
+        }
+      },
+      "reward": "",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_sovereign_national_state",
+      "ru": "Суверенное национальное государство",
+      "en": "A Sovereign National State",
+      "ru_desc": "Закрепим институты государства, отказавшегося от германского протектората.",
+      "en_desc": "Consolidate the institutions of a state that rejected a German protectorate.",
+      "x": 52,
+      "y": 12,
+      "cost": 10,
+      "branch": "endecja",
+      "parents": [
+        "POL_continental_army"
+      ],
+      "bonus": {
+        "state": {
+          "power": 0.1,
+          "war_support": 0.05
+        }
+      },
+      "reward": "",
+      "available": "has_government = fascism is_subject = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_customs_commission",
+      "ru": "Таможенная комиссия",
+      "en": "Customs Commission",
+      "ru_desc": "Подготовим условия транзита и промышленного кредита.",
+      "en_desc": "Prepare terms for transit and industrial credit.",
+      "x": 60,
+      "y": 4,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_pragmatic_deal"
+      ],
+      "bonus": {
+        "cop": {
+          "efficiency": 0.05
+        }
+      },
+      "reward": "POL_finish_crisis = yes",
+      "available": "POL_german_path_active = yes",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_guaranteed_transit",
+      "ru": "Гарантированный транзит",
+      "en": "Guaranteed Transit",
+      "ru_desc": "Согласуем процедуры перевозок. Фокус не создаёт морских портов или несуществующих торговых маршрутов.",
+      "en_desc": "Agree transport procedures. This focus creates neither ports nor imaginary trade routes.",
+      "x": 60,
+      "y": 5,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_customs_commission"
+      ],
+      "bonus": {
+        "cop": {
+          "output": 0.05
+        }
+      },
+      "reward": "add_tech_bonus = { category = industry bonus = 0.50 uses = 1 }",
+      "available": "POL_german_path_active = yes",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_join_mitteleuropa_officially",
+      "ru": "Официально войти в Миттельевропу",
+      "en": "Officially Join Mitteleuropa",
+      "ru_desc": "При мандате 40% для идеологии Германии примем соответствующий режим и запросим у Берлина союз и гарантию. Германия может отказать.",
+      "en_desc": "With 40% support for Germany’s ideology, align our government and request Berlin’s alliance and guarantee. Germany may refuse.",
+      "x": 60,
+      "y": 6,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_guaranteed_transit"
+      ],
+      "bonus": {},
+      "reward": "POL_align_with_germany = yes\nPOL_offer_german_compact = yes",
+      "available": "POL_german_path_active = yes POL_german_ideology_mandate = yes",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_licensed_machine_tools",
+      "ru": "Лицензионное станкостроение",
+      "en": "Licensed Machine Tools",
+      "ru_desc": "Сохраним польское производство на базе согласованных технических лицензий.",
+      "en_desc": "Maintain Polish production through agreed technical licences.",
+      "x": 60,
+      "y": 7,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_join_mitteleuropa_officially"
+      ],
+      "bonus": {
+        "cop": {
+          "efficiency": 0.05
+        }
+      },
+      "reward": "add_tech_bonus = { category = industry bonus = 0.50 uses = 1 }",
+      "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_staff_exchange",
+      "ru": "Обмен штабными миссиями",
+      "en": "Staff Exchange",
+      "ru_desc": "Обучим офицеров работе с партнёрами, сохранив собственные соединения.",
+      "en_desc": "Train officers to cooperate with partners while retaining Polish formations.",
+      "x": 60,
+      "y": 8,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_licensed_machine_tools"
+      ],
+      "bonus": {
+        "army": {
+          "planning": 0.1
+        }
+      },
+      "reward": "army_experience = 20",
+      "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_recognize_the_western_frontier",
+      "ru": "Признать западную границу",
+      "en": "Recognize the Western Frontier",
+      "ru_desc": "Откажемся от политических претензий на германские западные области; чужая территория не будет передана автоматически.",
+      "en_desc": "Renounce political claims to German western states; no foreign territory is transferred automatically.",
+      "x": 60,
+      "y": 9,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_staff_exchange"
+      ],
+      "bonus": {},
+      "reward": "POL_renounce_western_claims = yes",
+      "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_galician_assurances",
+      "ru": "Галицийские гарантии",
+      "en": "Galician Assurances",
+      "ru_desc": "Укрепим собственную оборону юга; союз с Германией не аннексирует Австрию.",
+      "en_desc": "Strengthen our own southern defence; an alliance with Germany does not annex Austria.",
+      "x": 60,
+      "y": 10,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_recognize_the_western_frontier"
+      ],
+      "bonus": {
+        "army": {
+          "defence": 0.05
+        }
+      },
+      "reward": "POL_build_southern_forts = yes",
+      "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_joint_armament_contracts",
+      "ru": "Совместные оружейные контракты",
+      "en": "Joint Armament Contracts",
+      "ru_desc": "Расширим военное производство одной собственной фабрикой.",
+      "en_desc": "Expand armaments production with one domestic factory.",
+      "x": 60,
+      "y": 11,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_galician_assurances"
+      ],
+      "bonus": {},
+      "reward": "random_owned_controlled_state = {\n limit = { is_core_of = PREV }\n add_extra_state_shared_building_slots = 1\n add_building_construction = { type = arms_factory level = 1 instant_build = yes }\n}",
+      "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_polish_institutions_in_mitteleuropa",
+      "ru": "Польские институты в Миттельевропе",
+      "en": "Polish Institutions in Mitteleuropa",
+      "ru_desc": "Закрепим административную устойчивость внутри германской системы.",
+      "en_desc": "Consolidate administrative stability within the German system.",
+      "x": 60,
+      "y": 12,
+      "cost": 10,
+      "branch": "german",
+      "parents": [
+        "POL_joint_armament_contracts"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.1,
+          "power": 0.1
+        }
+      },
+      "reward": "",
+      "available": "POL_german_path_active = yes has_country_flag = POL_german_compact_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_council_republic",
+      "ru": "Республика советов",
+      "en": "Council Republic",
+      "ru_desc": "Только победа восставших в гражданской войне позволяет учредить новое государство.",
+      "en_desc": "Only an actual rebel victory in the civil war permits the new state to be constituted.",
+      "x": 68,
+      "y": 4,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_the_lodz_uprising"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "POL_finish_crisis = yes",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_land_and_food_committees",
+      "ru": "Земельные и продовольственные комитеты",
+      "en": "Land and Food Committees",
+      "ru_desc": "Организуем снабжение городов и представительство деревни.",
+      "en_desc": "Organize urban food supply and rural representation.",
+      "x": 68,
+      "y": 5,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_council_republic"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        }
+      },
+      "reward": "",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_nationalize_german_assets",
+      "ru": "Национализировать германские активы",
+      "en": "Nationalize German Assets",
+      "ru_desc": "Ликвидируем зависимость от германских концессий вместе с инвестиционными преимуществами.",
+      "en_desc": "End German concession dependence together with its investment benefits.",
+      "x": 68,
+      "y": 6,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_land_and_food_committees"
+      ],
+      "bonus": {
+        "cop": {
+          "construction": 0.05
+        }
+      },
+      "reward": "POL_end_german_dependence = yes",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_workers_militias_nww",
+      "ru": "Рабочие ополчения",
+      "en": "Workers Militias",
+      "ru_desc": "Сформируем систему военной подготовки рабочих без бесплатного создания дивизий.",
+      "en_desc": "Build a workers’ military training system without conjuring free divisions.",
+      "x": 68,
+      "y": 7,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_nationalize_german_assets"
+      ],
+      "bonus": {
+        "army": {
+          "training": -0.1,
+          "defence": 0.05
+        }
+      },
+      "reward": "army_experience = 20",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_alliance_with_the_east",
+      "ru": "Союз с Востоком",
+      "en": "Alliance with the East",
+      "ru_desc": "Предложим союз коммунистической России либо ЛитБелу. Получатель сохраняет право отказа.",
+      "en_desc": "Offer an alliance to communist Russia or Lithuania-Belarus. The recipient retains the right to refuse.",
+      "x": 68,
+      "y": 8,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_workers_militias_nww"
+      ],
+      "bonus": {},
+      "reward": "POL_offer_eastern_alliance = yes",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_socialist_constitution",
+      "ru": "Социалистическая конституция",
+      "en": "Socialist Constitution",
+      "ru_desc": "Определим пределы центральной власти и полномочия местных советов.",
+      "en_desc": "Define central authority and the powers of local councils.",
+      "x": 68,
+      "y": 9,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_alliance_with_the_east"
+      ],
+      "bonus": {
+        "state": {
+          "power": 0.1
+        }
+      },
+      "reward": "",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_eastern_trade_protocols",
+      "ru": "Восточные торговые протоколы",
+      "en": "Eastern Trade Protocols",
+      "ru_desc": "Согласуем контракты с принявшим союз партнёром.",
+      "en_desc": "Agree industrial contracts with the partner that accepted our alliance.",
+      "x": 70,
+      "y": 10,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_socialist_constitution"
+      ],
+      "bonus": {
+        "cop": {
+          "output": 0.05
+        }
+      },
+      "reward": "add_tech_bonus = { category = industry bonus = 0.50 uses = 1 }",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no has_country_flag = POL_eastern_alliance_accepted",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_red_logistics_service",
+      "ru": "Красная служба снабжения",
+      "en": "Red Logistics Service",
+      "ru_desc": "Согласуем железнодорожные поставки и армейские склады.",
+      "en_desc": "Coordinate rail deliveries and army depots.",
+      "x": 66,
+      "y": 10,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_socialist_constitution"
+      ],
+      "bonus": {
+        "army": {
+          "supply": -0.1
+        }
+      },
+      "reward": "",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": ""
+    },
+    {
+      "id": "POL_red_wisla",
+      "ru": "Красная Висла",
+      "en": "The Red Vistula",
+      "ru_desc": "Завершим восстановление институтов и обороны польской советской республики.",
+      "en_desc": "Complete institutional reconstruction and the defence of the Polish council republic.",
+      "x": 68,
+      "y": 11,
+      "cost": 10,
+      "branch": "communist",
+      "parents": [
+        "POL_eastern_trade_protocols",
+        "POL_red_logistics_service"
+      ],
+      "bonus": {
+        "state": {
+          "stability": 0.05
+        },
+        "army": {
+          "org": 0.05
+        }
+      },
+      "reward": "",
+      "available": "has_government = communism has_country_flag = POL_communist_victory has_civil_war = no",
+      "exclusive": [],
+      "extra": "",
+      "or_parents": true
+    }
+  ],
+  "programs": {
+    "cop": [
+      "POL_cop_program",
+      "generic_industrial_concern_1",
+      {
+        "construction": [
+          "production_speed_buildings_factor",
+          "Construction speed",
+          "Скорость строительства"
+        ],
+        "output": [
+          "industrial_capacity_factory",
+          "Military factory output",
+          "Выпуск военных заводов"
+        ],
+        "efficiency": [
+          "production_factory_efficiency_gain_factor",
+          "Production efficiency growth",
+          "Рост эффективности производства"
+        ],
+        "energy": [
+          "energy_gain_factor",
+          "Energy gain",
+          "Выработка энергии"
+        ],
+        "research": [
+          "research_speed_factor",
+          "Research speed",
+          "Скорость исследований"
+        ]
+      }
+    ],
+    "army": [
+      "POL_army_program",
+      "generic_army_war_college",
+      {
+        "org": [
+          "army_org_factor",
+          "Army organisation",
+          "Организация армии"
+        ],
+        "planning": [
+          "planning_speed",
+          "Planning speed",
+          "Скорость планирования"
+        ],
+        "cavalry": [
+          "cavalry_attack_factor",
+          "Cavalry attack",
+          "Атака кавалерии"
+        ],
+        "motorized": [
+          "motorized_attack_factor",
+          "Motorized attack",
+          "Атака моторизованной пехоты"
+        ],
+        "cavalry_speed": [
+          "modifier_army_sub_unit_cavalry_speed_factor",
+          "Cavalry speed",
+          "Скорость кавалерии"
+        ],
+        "speed": [
+          "army_speed_factor",
+          "Army speed",
+          "Скорость армии"
+        ],
+        "dig_in": [
+          "max_dig_in_factor",
+          "Maximum entrenchment",
+          "Максимальная укреплённость"
+        ],
+        "dig_speed": [
+          "dig_in_speed_factor",
+          "Entrenchment speed",
+          "Скорость окапывания"
+        ],
+        "supply": [
+          "supply_consumption_factor",
+          "Supply consumption",
+          "Потребление снабжения"
+        ],
+        "training": [
+          "training_time_army_factor",
+          "Army training time",
+          "Время подготовки армии"
+        ],
+        "defence": [
+          "army_core_defence_factor",
+          "Defence on core territory",
+          "Оборона национальных территорий"
+        ]
+      }
+    ],
+    "air": [
+      "POL_air_program",
+      "generic_air_bonus",
+      {
+        "range": [
+          "air_range_factor",
+          "Air range",
+          "Дальность авиации"
+        ],
+        "efficiency": [
+          "air_mission_efficiency",
+          "Air mission efficiency",
+          "Эффективность авиазаданий"
+        ],
+        "accidents": [
+          "air_accidents_factor",
+          "Air accident chance",
+          "Вероятность авиапроисшествий"
+        ]
+      }
+    ],
+    "state": [
+      "POL_state_program",
+      "generic_political_support",
+      {
+        "stability": [
+          "stability_factor",
+          "Stability",
+          "Стабильность"
+        ],
+        "power": [
+          "political_power_gain",
+          "Daily political power",
+          "Политическая власть в день"
+        ],
+        "war_support": [
+          "war_support_factor",
+          "War support",
+          "Поддержка войны"
+        ],
+        "compliance": [
+          "compliance_growth",
+          "Compliance growth in our occupied states",
+          "Рост подчинения на оккупированных нами территориях"
+        ],
+        "resistance": [
+          "resistance_target",
+          "Resistance target in our occupied states",
+          "Целевое сопротивление на оккупированных нами территориях"
+        ]
+      }
+    ]
+  }
+}

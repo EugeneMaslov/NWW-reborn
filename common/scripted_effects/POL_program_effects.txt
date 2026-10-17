@@ -1,0 +1,834 @@
+# Owner: POL. Deterministic program repair.
+POL_refresh_programs = {
+	set_variable = {
+		POL_cop_construction = 0
+	}
+	set_variable = {
+		POL_cop_output = 0
+	}
+	set_variable = {
+		POL_cop_efficiency = 0
+	}
+	set_variable = {
+		POL_cop_energy = 0
+	}
+	set_variable = {
+		POL_cop_research = 0
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_cop_plan
+				has_country_flag = POL_cop_plan_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_construction = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_economic_independence
+				has_country_flag = POL_economic_independence_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_construction = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_public_works_board
+				has_country_flag = POL_public_works_board_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_construction = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_rural_electrification
+				has_country_flag = POL_rural_electrification_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_energy = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_precision_machine_tools
+				has_country_flag = POL_precision_machine_tools_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_efficiency = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_export_diversification
+				has_country_flag = POL_export_diversification_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_output = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_four_year_balance_sheet
+				has_country_flag = POL_four_year_balance_sheet_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_output = 0.05
+		}
+		add_to_variable = {
+			POL_cop_research = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_wartime_conversion
+				has_country_flag = POL_wartime_conversion_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_output = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_customs_commission
+				has_country_flag = POL_customs_commission_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_efficiency = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_guaranteed_transit
+				has_country_flag = POL_guaranteed_transit_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_output = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_licensed_machine_tools
+				has_country_flag = POL_licensed_machine_tools_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_efficiency = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_nationalize_german_assets
+				has_country_flag = POL_nationalize_german_assets_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_construction = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_eastern_trade_protocols
+				has_country_flag = POL_eastern_trade_protocols_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_cop_output = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_cop_plan
+				has_country_flag = POL_cop_plan_reform_done
+				has_completed_focus = POL_economic_independence
+				has_country_flag = POL_economic_independence_reform_done
+				has_completed_focus = POL_public_works_board
+				has_country_flag = POL_public_works_board_reform_done
+				has_completed_focus = POL_rural_electrification
+				has_country_flag = POL_rural_electrification_reform_done
+				has_completed_focus = POL_precision_machine_tools
+				has_country_flag = POL_precision_machine_tools_reform_done
+				has_completed_focus = POL_export_diversification
+				has_country_flag = POL_export_diversification_reform_done
+				has_completed_focus = POL_four_year_balance_sheet
+				has_country_flag = POL_four_year_balance_sheet_reform_done
+				has_completed_focus = POL_wartime_conversion
+				has_country_flag = POL_wartime_conversion_reform_done
+				has_completed_focus = POL_customs_commission
+				has_country_flag = POL_customs_commission_reform_done
+				has_completed_focus = POL_guaranteed_transit
+				has_country_flag = POL_guaranteed_transit_reform_done
+				has_completed_focus = POL_licensed_machine_tools
+				has_country_flag = POL_licensed_machine_tools_reform_done
+				has_completed_focus = POL_nationalize_german_assets
+				has_country_flag = POL_nationalize_german_assets_reform_done
+				has_completed_focus = POL_eastern_trade_protocols
+				has_country_flag = POL_eastern_trade_protocols_reform_done
+			}
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = POL_cop_program
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = POL_cop_program
+		}
+	}
+	set_variable = {
+		POL_army_org = 0
+	}
+	set_variable = {
+		POL_army_planning = 0
+	}
+	set_variable = {
+		POL_army_cavalry = 0
+	}
+	set_variable = {
+		POL_army_motorized = 0
+	}
+	set_variable = {
+		POL_army_cavalry_speed = 0
+	}
+	set_variable = {
+		POL_army_speed = 0
+	}
+	set_variable = {
+		POL_army_dig_in = 0
+	}
+	set_variable = {
+		POL_army_dig_speed = 0
+	}
+	set_variable = {
+		POL_army_supply = 0
+	}
+	set_variable = {
+		POL_army_training = 0
+	}
+	set_variable = {
+		POL_army_defence = 0
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_modernize_the_army
+				has_country_flag = POL_modernize_the_army_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_planning = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_officer_academy
+				has_country_flag = POL_officer_academy_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_org = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_cavalry_traditions
+				has_country_flag = POL_cavalry_traditions_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_cavalry = 0.10
+		}
+		add_to_variable = {
+			POL_army_cavalry_speed = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_defend_the_wisla
+				has_country_flag = POL_defend_the_wisla_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_org = 0.05
+		}
+		add_to_variable = {
+			POL_army_dig_in = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_motorized_columns
+				has_country_flag = POL_motorized_columns_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_motorized = 0.10
+		}
+		add_to_variable = {
+			POL_army_speed = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_mobile_signals
+				has_country_flag = POL_mobile_signals_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_planning = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_fortress_engineers
+				has_country_flag = POL_fortress_engineers_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_dig_speed = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_vistula_reserve_battalions
+				has_country_flag = POL_vistula_reserve_battalions_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_defence = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_unified_general_staff
+				has_country_flag = POL_unified_general_staff_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_planning = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_quartermaster_service
+				has_country_flag = POL_quartermaster_service_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_supply = -0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_reserve_officer_network
+				has_country_flag = POL_reserve_officer_network_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_training = -0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_national_manoeuvres
+				has_country_flag = POL_national_manoeuvres_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_org = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_fortify_the_borders
+				has_country_flag = POL_fortify_the_borders_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_defence = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_republic_survives
+				has_country_flag = POL_republic_survives_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_defence = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_continental_army
+				has_country_flag = POL_continental_army_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_org = 0.05
+		}
+		add_to_variable = {
+			POL_army_supply = -0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_staff_exchange
+				has_country_flag = POL_staff_exchange_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_planning = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_galician_assurances
+				has_country_flag = POL_galician_assurances_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_defence = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_workers_militias_nww
+				has_country_flag = POL_workers_militias_nww_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_training = -0.10
+		}
+		add_to_variable = {
+			POL_army_defence = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_red_logistics_service
+				has_country_flag = POL_red_logistics_service_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_supply = -0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_red_wisla
+				has_country_flag = POL_red_wisla_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_army_org = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_modernize_the_army
+				has_country_flag = POL_modernize_the_army_reform_done
+				has_completed_focus = POL_officer_academy
+				has_country_flag = POL_officer_academy_reform_done
+				has_completed_focus = POL_cavalry_traditions
+				has_country_flag = POL_cavalry_traditions_reform_done
+				has_completed_focus = POL_defend_the_wisla
+				has_country_flag = POL_defend_the_wisla_reform_done
+				has_completed_focus = POL_motorized_columns
+				has_country_flag = POL_motorized_columns_reform_done
+				has_completed_focus = POL_mobile_signals
+				has_country_flag = POL_mobile_signals_reform_done
+				has_completed_focus = POL_fortress_engineers
+				has_country_flag = POL_fortress_engineers_reform_done
+				has_completed_focus = POL_vistula_reserve_battalions
+				has_country_flag = POL_vistula_reserve_battalions_reform_done
+				has_completed_focus = POL_unified_general_staff
+				has_country_flag = POL_unified_general_staff_reform_done
+				has_completed_focus = POL_quartermaster_service
+				has_country_flag = POL_quartermaster_service_reform_done
+				has_completed_focus = POL_reserve_officer_network
+				has_country_flag = POL_reserve_officer_network_reform_done
+				has_completed_focus = POL_national_manoeuvres
+				has_country_flag = POL_national_manoeuvres_reform_done
+				has_completed_focus = POL_fortify_the_borders
+				has_country_flag = POL_fortify_the_borders_reform_done
+				has_completed_focus = POL_republic_survives
+				has_country_flag = POL_republic_survives_reform_done
+				has_completed_focus = POL_continental_army
+				has_country_flag = POL_continental_army_reform_done
+				has_completed_focus = POL_staff_exchange
+				has_country_flag = POL_staff_exchange_reform_done
+				has_completed_focus = POL_galician_assurances
+				has_country_flag = POL_galician_assurances_reform_done
+				has_completed_focus = POL_workers_militias_nww
+				has_country_flag = POL_workers_militias_nww_reform_done
+				has_completed_focus = POL_red_logistics_service
+				has_country_flag = POL_red_logistics_service_reform_done
+				has_completed_focus = POL_red_wisla
+				has_country_flag = POL_red_wisla_reform_done
+			}
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = POL_army_program
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = POL_army_program
+		}
+	}
+	set_variable = {
+		POL_air_range = 0
+	}
+	set_variable = {
+		POL_air_efficiency = 0
+	}
+	set_variable = {
+		POL_air_accidents = 0
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_air_training_schools
+				has_country_flag = POL_air_training_schools_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_air_accidents = -0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_defence_of_the_skies
+				has_country_flag = POL_defence_of_the_skies_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_air_range = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_army_air_liaison
+				has_country_flag = POL_army_air_liaison_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_air_efficiency = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_integrated_air_command
+				has_country_flag = POL_integrated_air_command_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_air_efficiency = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_air_training_schools
+				has_country_flag = POL_air_training_schools_reform_done
+				has_completed_focus = POL_defence_of_the_skies
+				has_country_flag = POL_defence_of_the_skies_reform_done
+				has_completed_focus = POL_army_air_liaison
+				has_country_flag = POL_army_air_liaison_reform_done
+				has_completed_focus = POL_integrated_air_command
+				has_country_flag = POL_integrated_air_command_reform_done
+			}
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = POL_air_program
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = POL_air_program
+		}
+	}
+	set_variable = {
+		POL_state_stability = 0
+	}
+	set_variable = {
+		POL_state_power = 0
+	}
+	set_variable = {
+		POL_state_war_support = 0
+	}
+	set_variable = {
+		POL_state_compliance = 0
+	}
+	set_variable = {
+		POL_state_resistance = 0
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_the_colonels_regime
+				has_country_flag = POL_the_colonels_regime_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_endecja_ascendant
+				has_country_flag = POL_endecja_ascendant_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_castle_compact
+				has_country_flag = POL_castle_compact_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_power = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_professional_civil_service
+				has_country_flag = POL_professional_civil_service_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_agrarian_conciliation
+				has_country_flag = POL_agrarian_conciliation_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_republic_survives
+				has_country_flag = POL_republic_survives_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_power = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_national_bloc
+				has_country_flag = POL_national_bloc_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_war_support = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_radical_polonization
+				has_country_flag = POL_radical_polonization_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_compliance = 0.05
+		}
+		add_to_variable = {
+			POL_state_resistance = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_secure_the_corridor
+				has_country_flag = POL_secure_the_corridor_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_sovereign_national_state
+				has_country_flag = POL_sovereign_national_state_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_power = 0.10
+		}
+		add_to_variable = {
+			POL_state_war_support = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_polish_institutions_in_mitteleuropa
+				has_country_flag = POL_polish_institutions_in_mitteleuropa_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.10
+		}
+		add_to_variable = {
+			POL_state_power = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_council_republic
+				has_country_flag = POL_council_republic_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_land_and_food_committees
+				has_country_flag = POL_land_and_food_committees_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_socialist_constitution
+				has_country_flag = POL_socialist_constitution_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_power = 0.10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_red_wisla
+				has_country_flag = POL_red_wisla_reform_done
+			}
+		}
+		add_to_variable = {
+			POL_state_stability = 0.05
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = POL_the_colonels_regime
+				has_country_flag = POL_the_colonels_regime_reform_done
+				has_completed_focus = POL_endecja_ascendant
+				has_country_flag = POL_endecja_ascendant_reform_done
+				has_completed_focus = POL_castle_compact
+				has_country_flag = POL_castle_compact_reform_done
+				has_completed_focus = POL_professional_civil_service
+				has_country_flag = POL_professional_civil_service_reform_done
+				has_completed_focus = POL_agrarian_conciliation
+				has_country_flag = POL_agrarian_conciliation_reform_done
+				has_completed_focus = POL_republic_survives
+				has_country_flag = POL_republic_survives_reform_done
+				has_completed_focus = POL_national_bloc
+				has_country_flag = POL_national_bloc_reform_done
+				has_completed_focus = POL_radical_polonization
+				has_country_flag = POL_radical_polonization_reform_done
+				has_completed_focus = POL_secure_the_corridor
+				has_country_flag = POL_secure_the_corridor_reform_done
+				has_completed_focus = POL_sovereign_national_state
+				has_country_flag = POL_sovereign_national_state_reform_done
+				has_completed_focus = POL_polish_institutions_in_mitteleuropa
+				has_country_flag = POL_polish_institutions_in_mitteleuropa_reform_done
+				has_completed_focus = POL_council_republic
+				has_country_flag = POL_council_republic_reform_done
+				has_completed_focus = POL_land_and_food_committees
+				has_country_flag = POL_land_and_food_committees_reform_done
+				has_completed_focus = POL_socialist_constitution
+				has_country_flag = POL_socialist_constitution_reform_done
+				has_completed_focus = POL_red_wisla
+				has_country_flag = POL_red_wisla_reform_done
+			}
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = POL_state_program
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = POL_state_program
+		}
+	}
+}

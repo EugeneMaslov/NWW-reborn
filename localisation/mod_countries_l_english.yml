@@ -14,7 +14,7 @@
  NWW_TUR_DESC: "The Ottoman Empire."
  NWW_YUG_DESC: "The Kingdom of Yugoslavia."
  NWW_CRO_DESC: "The State of Croatia."
- NWW_POL_DESC: "The Republic of Poland."
+ NWW_POL_DESC:0 "Poland regained independence during the Great Tumult of 1918–1922 and occupied Galicia, but remained landlocked. Poznan, Danzig and Silesia belong to Germany. After Pilsudski’s death, Sanation is divided between the Castle and the Colonels; German investment supports industry at the price of dependence. Austria demands Galicia, while the Vilnius dispute obstructs agreement with Lithuania-Belarus. Will the republic preserve independence, bargain with Berlin, pursue national revolution or embrace the Red Vistula?"
  NWW_ROM_DESC: "The Kingdom of Romania."
  NWW_OTHER_DESC: "The rest of the world."
  GER_WILHELM_II_DESC: "Emperor and King of Prussia, the last Kaiser."

@@ -1,0 +1,39 @@
+# Owner: POL. Diplomacy supports selected institutions and actual vulnerability.
+POL_nww_independent_buffer = {
+	allowed = { original_tag = POL }
+	enable = { has_focus_tree = POL_focus has_country_flag = POL_path_sanation is_subject = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = GER value = -1000 }
+	ai_strategy = { type = declare_war id = AUS value = -1000 }
+	ai_strategy = { type = declare_war id = LTB value = -1000 }
+	ai_strategy = { type = befriend id = ROM value = 200 }
+}
+POL_nww_march_to_the_sea = {
+	allowed = { original_tag = POL }
+	enable = {
+		has_focus_tree = POL_focus
+		has_country_flag = POL_path_endecja
+		has_completed_focus = POL_march_to_the_sea
+		date > 1938.12.31
+		POL_can_prepare_western_war = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = declare_war id = GER value = 200 }
+	ai_strategy = { type = prepare_for_war id = GER value = 200 }
+}
+POL_nww_german_compact = {
+	allowed = { original_tag = POL }
+	enable = { has_focus_tree = POL_focus has_country_flag = POL_path_german NOT = { has_war_with = GER } }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = befriend id = GER value = 200 }
+	ai_strategy = { type = alliance id = GER value = 200 }
+	ai_strategy = { type = declare_war id = GER value = -1000 }
+}
+POL_nww_eastern_solidarity = {
+	allowed = { original_tag = POL }
+	enable = { has_focus_tree = POL_focus has_country_flag = POL_path_communist has_government = communism }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = befriend id = SOV value = 200 }
+	ai_strategy = { type = alliance id = SOV value = 200 }
+	ai_strategy = { type = declare_war id = SOV value = -1000 }
+}

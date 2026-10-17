@@ -1,0 +1,20 @@
+# Owner: POL. Dynamic original-POL tags receive the same deterministic repair.
+on_actions = {
+	on_startup = { effect = { every_country = { limit = { original_tag = POL } POL_initialize_country = yes } } }
+	on_daily = { effect = { every_country = { limit = { original_tag = POL has_focus_tree = POL_focus } POL_initialize_country = yes } } }
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					has_country_flag = POL_communist_rebels
+					has_government = communism
+					FROM = { original_tag = POL has_country_flag = POL_sanation_loyalists }
+				}
+				set_country_flag = POL_communist_victory
+				load_focus_tree = { tree = POL_focus keep_completed = yes }
+				POL_refresh_programs = yes
+			}
+		}
+	}
+}

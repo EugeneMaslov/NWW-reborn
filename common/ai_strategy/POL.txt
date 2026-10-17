@@ -1,0 +1,1 @@
+# Owner: POL. Detached native subsystem; country-owned NWW definitions use the POL_ prefix.

@@ -1,0 +1,121 @@
+# Owner: POL. Every reply validates current diplomacy; nobody is forcibly annexed.
+add_namespace = nww_pol
+country_event = {
+	id = nww_pol.10
+	title = nww_pol.10.t
+	desc = nww_pol.10.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	trigger = { POL_german_offer_valid = yes }
+	option = {
+		name = nww_pol.10.a
+		ai_chance = { factor = 80 }
+		if = {
+			limit = { POL_german_offer_valid = yes }
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = { template = faction_template_POL_mitteleuropa name = POL_mitteleuropa_faction }
+			}
+			add_to_faction = FROM
+			give_guarantee = FROM
+			FROM = {
+				clr_country_flag = POL_german_offer_pending
+				set_country_flag = POL_german_compact_accepted
+				clr_country_flag = POL_german_compact_refused
+			}
+		}
+	}
+	option = {
+		name = nww_pol.10.b
+		ai_chance = { factor = 20 }
+		if = {
+			limit = { POL_german_offer_valid = yes }
+			FROM = { clr_country_flag = POL_german_offer_pending set_country_flag = POL_german_compact_refused }
+		}
+	}
+}
+country_event = {
+	id = nww_pol.20
+	title = nww_pol.20.t
+	desc = nww_pol.20.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	trigger = { POL_vilnius_offer_valid = yes }
+	option = {
+		name = nww_pol.20.a
+		ai_chance = { factor = 65 }
+		if = {
+			limit = { POL_vilnius_offer_valid = yes }
+			set_country_flag = POL_vilnius_accord
+			diplomatic_relation = { country = FROM relation = non_aggression_pact active = yes }
+			every_owned_state = { limit = { is_core_of = PREV } remove_claim_by = FROM }
+			FROM = {
+				set_country_flag = POL_vilnius_accord
+				clr_country_flag = POL_vilnius_offer_pending
+				clr_country_flag = POL_vilnius_offer_refused
+				every_owned_state = { remove_claim_by = ROOT }
+			}
+		}
+	}
+	option = {
+		name = nww_pol.20.b
+		ai_chance = { factor = 35 }
+		if = {
+			limit = { POL_vilnius_offer_valid = yes }
+			FROM = { clr_country_flag = POL_vilnius_offer_pending set_country_flag = POL_vilnius_offer_refused }
+		}
+	}
+}
+country_event = {
+	id = nww_pol.30
+	title = nww_pol.30.t
+	desc = nww_pol.30.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	trigger = { POL_intermarium_offer_valid = yes }
+	option = {
+		name = nww_pol.30.a
+		ai_chance = { factor = 65 }
+		if = {
+			limit = { POL_intermarium_offer_valid = yes }
+			FROM = { add_to_faction = ROOT }
+			set_country_flag = POL_intermarium_member
+		}
+	}
+	option = { name = nww_pol.30.b ai_chance = { factor = 35 } }
+}
+country_event = {
+	id = nww_pol.40
+	title = nww_pol.40.t
+	desc = nww_pol.40.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	trigger = { POL_eastern_offer_valid = yes }
+	option = {
+		name = nww_pol.40.a
+		ai_chance = { factor = 70 }
+		if = {
+			limit = { POL_eastern_offer_valid = yes }
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = { template = faction_template_POL_eastern_compact name = POL_eastern_faction }
+			}
+			add_to_faction = FROM
+			FROM = {
+				clr_country_flag = POL_eastern_offer_pending
+				set_country_flag = POL_eastern_alliance_accepted
+				clr_country_flag = POL_eastern_alliance_refused
+			}
+		}
+	}
+	option = {
+		name = nww_pol.40.b
+		ai_chance = { factor = 30 }
+		if = {
+			limit = { POL_eastern_offer_valid = yes }
+			FROM = { clr_country_flag = POL_eastern_offer_pending set_country_flag = POL_eastern_alliance_refused }
+		}
+	}
+}

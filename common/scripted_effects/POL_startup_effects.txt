@@ -1,0 +1,729 @@
+# Owner: POL. Initialization and old-save migration.
+POL_cleanup_native_subsystems = {
+	if = {
+		limit = {
+			has_idea = POL_new_military_academy_idea
+		}
+		remove_ideas = POL_new_military_academy_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_looming_peasants_strike
+		}
+		remove_ideas = POL_looming_peasants_strike
+	}
+	if = {
+		limit = {
+			has_idea = POL_great_peasants_strike
+		}
+		remove_ideas = POL_great_peasants_strike
+	}
+	if = {
+		limit = {
+			has_idea = POL_four_year_plan_idea
+		}
+		remove_ideas = POL_four_year_plan_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_four_year_plan_complete_bad
+		}
+		remove_ideas = POL_four_year_plan_complete_bad
+	}
+	if = {
+		limit = {
+			has_idea = POL_four_year_plan_complete_1
+		}
+		remove_ideas = POL_four_year_plan_complete_1
+	}
+	if = {
+		limit = {
+			has_idea = POL_four_year_plan_complete_2
+		}
+		remove_ideas = POL_four_year_plan_complete_2
+	}
+	if = {
+		limit = {
+			has_idea = POL_four_year_plan_complete_3
+		}
+		remove_ideas = POL_four_year_plan_complete_3
+	}
+	if = {
+		limit = {
+			has_idea = POL_four_year_plan_complete_4
+		}
+		remove_ideas = POL_four_year_plan_complete_4
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_left_opposition_1
+		}
+		remove_ideas = POL_sanation_left_opposition_1
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_left_opposition_2
+		}
+		remove_ideas = POL_sanation_left_opposition_2
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_left_opposition_3
+		}
+		remove_ideas = POL_sanation_left_opposition_3
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_left_opposition_4
+		}
+		remove_ideas = POL_sanation_left_opposition_4
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_right_opposition_1
+		}
+		remove_ideas = POL_sanation_right_opposition_1
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_right_opposition_2
+		}
+		remove_ideas = POL_sanation_right_opposition_2
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_right_opposition_3
+		}
+		remove_ideas = POL_sanation_right_opposition_3
+	}
+	if = {
+		limit = {
+			has_idea = POL_sanation_right_opposition_4
+		}
+		remove_ideas = POL_sanation_right_opposition_4
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_1
+		}
+		remove_ideas = POL_april_constitution_1
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_2
+		}
+		remove_ideas = POL_april_constitution_2
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_3
+		}
+		remove_ideas = POL_april_constitution_3
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_4
+		}
+		remove_ideas = POL_april_constitution_4
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_left
+		}
+		remove_ideas = POL_april_constitution_left
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_right
+		}
+		remove_ideas = POL_april_constitution_right
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_dem
+		}
+		remove_ideas = POL_april_constitution_dem
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_dem_left
+		}
+		remove_ideas = POL_april_constitution_dem_left
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_dem_right
+		}
+		remove_ideas = POL_april_constitution_dem_right
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_fas
+		}
+		remove_ideas = POL_april_constitution_fas
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_fas_left
+		}
+		remove_ideas = POL_april_constitution_fas_left
+	}
+	if = {
+		limit = {
+			has_idea = POL_april_constitution_fas_right
+		}
+		remove_ideas = POL_april_constitution_fas_right
+	}
+	if = {
+		limit = {
+			has_idea = POL_walery_slawek_chairman
+		}
+		remove_ideas = POL_walery_slawek_chairman
+	}
+	if = {
+		limit = {
+			has_idea = POL_edward_rydz_smigly_chairman
+		}
+		remove_ideas = POL_edward_rydz_smigly_chairman
+	}
+	if = {
+		limit = {
+			has_idea = POL_right_paramilitarism_idea
+		}
+		remove_ideas = POL_right_paramilitarism_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_common_organization_of_society_idea
+		}
+		remove_ideas = POL_common_organization_of_society_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_eastern_conscription_idea
+		}
+		remove_ideas = POL_eastern_conscription_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_expand_intelligence_idea
+		}
+		remove_ideas = POL_expand_intelligence_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_push_home_idea
+		}
+		remove_ideas = POL_push_home_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_ideological_fanaticism
+		}
+		remove_ideas = POL_ideological_fanaticism
+	}
+	if = {
+		limit = {
+			has_idea = POL_segregated_seating_abolished
+		}
+		remove_ideas = POL_segregated_seating_abolished
+	}
+	if = {
+		limit = {
+			has_idea = POL_national_defence_fund_idea
+		}
+		remove_ideas = POL_national_defence_fund_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_central_defence_of_poland_idea
+		}
+		remove_ideas = POL_central_defence_of_poland_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_militarism_focus
+		}
+		remove_ideas = POL_militarism_focus
+	}
+	if = {
+		limit = {
+			has_idea = POL_authoritarianism_focus
+		}
+		remove_ideas = POL_authoritarianism_focus
+	}
+	if = {
+		limit = {
+			has_idea = POL_polish_revanchism_focus
+		}
+		remove_ideas = POL_polish_revanchism_focus
+	}
+	if = {
+		limit = {
+			has_idea = POL_slavic_revanchism
+		}
+		remove_ideas = POL_slavic_revanchism
+	}
+	if = {
+		limit = {
+			has_idea = POL_internationalism_focus
+		}
+		remove_ideas = POL_internationalism_focus
+	}
+	if = {
+		limit = {
+			has_idea = POL_empowered_sejm_idea
+		}
+		remove_ideas = POL_empowered_sejm_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_leftist_sejm_idea
+		}
+		remove_ideas = POL_leftist_sejm_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_democratic_sejm_idea
+		}
+		remove_ideas = POL_democratic_sejm_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_royal_sejm_idea
+		}
+		remove_ideas = POL_royal_sejm_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_polish_socialism
+		}
+		remove_ideas = POL_polish_socialism
+	}
+	if = {
+		limit = {
+			has_idea = POL_anti_imperialism_idea
+		}
+		remove_ideas = POL_anti_imperialism_idea
+	}
+	if = {
+		limit = {
+			has_idea = anti_fascist_army_idea
+		}
+		remove_ideas = anti_fascist_army_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_leftist_economics
+		}
+		remove_ideas = POL_leftist_economics
+	}
+	if = {
+		limit = {
+			has_idea = POL_committee_of_national_liberation_idea
+		}
+		remove_ideas = POL_committee_of_national_liberation_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_committee_of_international_liberation
+		}
+		remove_ideas = POL_committee_of_international_liberation
+	}
+	if = {
+		limit = {
+			has_idea = POL_non_discriminatory_recruitment_idea
+		}
+		remove_ideas = POL_non_discriminatory_recruitment_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_lower_class_education_idea
+		}
+		remove_ideas = POL_lower_class_education_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_sold_colony_expensive
+		}
+		remove_ideas = POL_sold_colony_expensive
+	}
+	if = {
+		limit = {
+			has_idea = POL_sold_colony_cheap
+		}
+		remove_ideas = POL_sold_colony_cheap
+	}
+	if = {
+		limit = {
+			has_idea = POL_investments_monarchist
+		}
+		remove_ideas = POL_investments_monarchist
+	}
+	if = {
+		limit = {
+			has_idea = POL_dabrowszczacy
+		}
+		remove_ideas = POL_dabrowszczacy
+	}
+	if = {
+		limit = {
+			has_idea = POL_balachowicz_brigades
+		}
+		remove_ideas = POL_balachowicz_brigades
+	}
+	if = {
+		limit = {
+			has_idea = POL_state_catholicism
+		}
+		remove_ideas = POL_state_catholicism
+	}
+	if = {
+		limit = {
+			has_idea = POL_polish_peoples_republic
+		}
+		remove_ideas = POL_polish_peoples_republic
+	}
+	if = {
+		limit = {
+			has_idea = POL_legion_of_merit
+		}
+		remove_ideas = POL_legion_of_merit
+	}
+	if = {
+		limit = {
+			has_idea = POL_aces_in_exile
+		}
+		remove_ideas = POL_aces_in_exile
+	}
+	if = {
+		limit = {
+			has_idea = POL_nationalist_constitution
+		}
+		remove_ideas = POL_nationalist_constitution
+	}
+	if = {
+		limit = {
+			has_idea = POL_nationalist_constitution_1
+		}
+		remove_ideas = POL_nationalist_constitution_1
+	}
+	if = {
+		limit = {
+			has_idea = POL_german_training
+		}
+		remove_ideas = POL_german_training
+	}
+	if = {
+		limit = {
+			has_idea = POL_konfederacja_narodu
+		}
+		remove_ideas = POL_konfederacja_narodu
+	}
+	if = {
+		limit = {
+			has_idea = POL_german_staff
+		}
+		remove_ideas = POL_german_staff
+	}
+	if = {
+		limit = {
+			has_idea = POL_polish_shock_battallions
+		}
+		remove_ideas = POL_polish_shock_battallions
+	}
+	if = {
+		limit = {
+			has_idea = POL_underground_conscripts
+		}
+		remove_ideas = POL_underground_conscripts
+	}
+	if = {
+		limit = {
+			has_idea = POL_polish_upper_class
+		}
+		remove_ideas = POL_polish_upper_class
+	}
+	if = {
+		limit = {
+			has_idea = POL_privatized_education
+		}
+		remove_ideas = POL_privatized_education
+	}
+	if = {
+		limit = {
+			has_idea = POL_radicalized_anti_germans
+		}
+		remove_ideas = POL_radicalized_anti_germans
+	}
+	if = {
+		limit = {
+			has_idea = POL_anti_blitz_tactics
+		}
+		remove_ideas = POL_anti_blitz_tactics
+	}
+	if = {
+		limit = {
+			has_idea = POL_anti_germans_abroad
+		}
+		remove_ideas = POL_anti_germans_abroad
+	}
+	if = {
+		limit = {
+			has_idea = POL_falangist_propaganda
+		}
+		remove_ideas = POL_falangist_propaganda
+	}
+	if = {
+		limit = {
+			has_idea = POL_influx_of_exiles
+		}
+		remove_ideas = POL_influx_of_exiles
+	}
+	if = {
+		limit = {
+			has_idea = POL_anti_blitz_vehicles
+		}
+		remove_ideas = POL_anti_blitz_vehicles
+	}
+	if = {
+		limit = {
+			has_idea = POL_morges_economic_union
+		}
+		remove_ideas = POL_morges_economic_union
+	}
+	if = {
+		limit = {
+			has_idea = POL_royal_hussars_idea
+		}
+		remove_ideas = POL_royal_hussars_idea
+	}
+	if = {
+		limit = {
+			has_idea = POL_royal_guard
+		}
+		remove_ideas = POL_royal_guard
+	}
+	if = {
+		limit = {
+			has_idea = POL_royal_officer_corps
+		}
+		remove_ideas = POL_royal_officer_corps
+	}
+	if = {
+		limit = {
+			has_active_mission = POL_sanation_left_irritation
+		}
+		remove_mission = POL_sanation_left_irritation
+	}
+	if = {
+		limit = {
+			has_active_mission = POL_sanation_right_irritation
+		}
+		remove_mission = POL_sanation_right_irritation
+	}
+	if = {
+		limit = {
+			has_active_mission = POL_looming_peasants_strike_mission
+		}
+		remove_mission = POL_looming_peasants_strike_mission
+	}
+	if = {
+		limit = {
+			has_active_mission = POL_peasants_strike
+		}
+		remove_mission = POL_peasants_strike
+	}
+}
+POL_initialize_country = {
+	if = {
+		limit = {
+			NOT = {
+				has_focus_tree = POL_focus
+			}
+		}
+		load_focus_tree = {
+			tree = POL_focus
+			keep_completed = yes
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = POL_nww_initialized
+			}
+		}
+		POL_cleanup_native_subsystems = yes
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = POL_nww_start_configured
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = POL_german_dependence_ended
+					}
+					NOT = {
+						has_completed_focus = POL_economic_independence
+					}
+					NOT = {
+						has_completed_focus = POL_nationalize_german_assets
+					}
+				}
+				add_ideas = POL_german_economic_stranglehold
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = POL_crisis_resolved
+					}
+				}
+				add_ideas = POL_sanation_crisis
+			}
+			set_country_flag = POL_nww_start_configured
+		}
+		POL_install_campaign_guard = yes
+		set_country_flag = POL_nww_initialized
+	}
+	if = {
+		limit = {
+			has_completed_focus = POL_the_colonels_regime
+		}
+		set_country_flag = POL_path_sanation
+	}
+	if = {
+		limit = {
+			has_completed_focus = POL_endecja_ascendant
+		}
+		set_country_flag = POL_path_endecja
+	}
+	if = {
+		limit = {
+			has_completed_focus = POL_pragmatic_deal
+		}
+		set_country_flag = POL_path_german
+	}
+	if = {
+		limit = {
+			has_completed_focus = POL_the_lodz_uprising
+		}
+		set_country_flag = POL_path_communist
+	}
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = POL_german_dependence_ended
+				has_completed_focus = POL_economic_independence
+				has_completed_focus = POL_nationalize_german_assets
+				has_completed_focus = POL_wartime_conversion
+				has_war_with = GER
+			}
+		}
+		POL_end_german_dependence = yes
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = POL_accept_german_capital
+			NOT = {
+				has_idea = POL_german_economic_stranglehold_2
+			}
+		}
+		POL_accept_capital = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = POL_campaign_guard_installed
+			}
+		}
+		POL_install_campaign_guard = yes
+	}
+	if = {
+		limit = {
+			is_ai = yes
+			NOT = {
+				has_country_flag = POL_ai_selected
+			}
+		}
+		POL_select_ai_path = yes
+	}
+	POL_refresh_crisis = yes
+	POL_refresh_programs = yes
+	POL_refresh_coast = yes
+	if = {
+		limit = {
+			has_completed_focus = POL_march_to_the_sea
+		}
+		POL_prepare_western_war = yes
+	}
+}
+POL_select_ai_path = {
+ if = { limit = { has_country_flag = POL_path_sanation } set_country_flag = POL_ai_sanation }
+ else_if = { limit = { has_country_flag = POL_path_endecja } set_country_flag = POL_ai_endecja }
+ else_if = { limit = { has_country_flag = POL_path_german } set_country_flag = POL_ai_german }
+ else_if = { limit = { has_country_flag = POL_path_communist } set_country_flag = POL_ai_communist }
+ else_if = {
+		limit = {
+			has_game_rule = {
+				rule = POL_ai_behavior
+				option = COMMUNIST
+			}
+		}
+		set_country_flag = POL_ai_communist
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = POL_ai_behavior
+				option = FASCIST_INDEPENDENT
+			}
+		}
+		set_country_flag = POL_ai_endecja
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				rule = POL_ai_behavior
+				option = FASCIST
+			}
+		}
+		set_country_flag = POL_ai_german
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_game_rule = {
+					rule = POL_ai_behavior
+					option = HISTORICAL
+				}
+				AND = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = POL_ai_behavior
+						option = DEFAULT
+					}
+				}
+			}
+		}
+		set_country_flag = POL_ai_sanation
+	}
+	else = {
+		random_list = {
+			35 = {
+				set_country_flag = POL_ai_sanation
+			}
+			25 = {
+				set_country_flag = POL_ai_endecja
+			}
+			20 = {
+				set_country_flag = POL_ai_german
+			}
+			20 = {
+				set_country_flag = POL_ai_communist
+			}
+		}
+	}
+	set_country_flag = POL_ai_selected
+}
