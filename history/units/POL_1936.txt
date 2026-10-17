@@ -105,7 +105,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 6464
+		location = 9427
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -274,7 +274,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 6464
+		location = 3544
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -435,7 +435,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 6464
+		location = 11399
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7

@@ -462,7 +462,7 @@
     "tag": "GER",
     "name": "Германская империя",
     "status": "full",
-    "states": 49,
+    "states": 50,
     "focuses": 76,
     "sources": [
       "common/national_focus/GER_focuses.txt",
@@ -923,17 +923,19 @@
   {
     "tag": "POL",
     "name": "Польша",
-    "status": "none",
-    "states": 9,
-    "focuses": 0,
-    "sources": [],
+    "status": "full",
+    "states": 8,
+    "focuses": 80,
+    "sources": [
+      "common/national_focus/POL_focus.txt"
+    ],
     "box": [
       3083,
       458,
       3220,
       577
     ],
-    "description": "В текущем моде нет собственного дерева NWW. Стандартные деревья игры и DLC не считаются уникальным контентом мода."
+    "description": "80 фокусов: Санация, национальная демократия, германский путь и советская республика. Центральный индустриальный округ, германские концессии, модернизация армии и авиации."
   },
   {
     "tag": "POR",

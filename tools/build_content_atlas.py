@@ -15,14 +15,16 @@ from hoi4_script import read, one, values, walk
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'sites/nww-atlas'
-FULL = {'LTB', 'MKN', 'UKR', 'SOV', 'AUS', 'TUR', 'GER', 'FRA', 'ENG'}
+FULL = {'LTB', 'MKN', 'UKR', 'SOV', 'AUS', 'TUR', 'GER', 'FRA', 'ENG', 'POL'}
 LEGACY = {'HUN', 'AFG'}
 NAMES = {'LTB': 'Литовско-Белорусский Союз', 'MKN': 'Вольная территория Махно',
          'UKR': 'Советская Украина', 'SOV': 'Советская Россия', 'AUS': 'Австрийская империя',
          'TUR': 'Османская империя', 'GER': 'Германская империя', 'HUN': 'Венгрия',
          'AFG': 'Афганистан', 'BYE': 'Беларусь', 'LIT': 'Литва', 'LAT': 'Латвия',
-         'EST': 'Эстония', 'CRO': 'Хорватия', 'FRA': 'Франция', 'ENG': 'Великобритания'}
+         'EST': 'Эстония', 'CRO': 'Хорватия', 'FRA': 'Франция', 'ENG': 'Великобритания',
+         'POL': 'Польша'}
 DETAILS = {
+    'POL': '80 фокусов: Санация, национальная демократия, германский путь и советская республика. Центральный индустриальный округ, германские концессии, модернизация армии и авиации.',
     'LTB': 'Виленский компромисс, кризис и распад Союза, политические мандаты, предприятия и реорганизация штаба.',
     'MKN': 'Преемники Махно, вольные советы и штаб, гражданская война, коммуны и пограничная эскалация.',
     'UKR': 'Политические мандаты, промышленная реконструкция и дипломатия через согласие или отказ соседей.',
@@ -241,6 +243,7 @@ def build(game, snapshot_date=None):
     (SITE / 'classification.json').write_text(json.dumps(countries, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     assert all(state_owner[t['state']] == 'GER' for t in json.loads((ROOT / 'docs/GER_overseas_setup.json').read_text())['territories'])
     assert state_owner[656] == 'TUR'
+    assert state_owner[762] == 'GER', 'Katowice must remain German on the 1936 map'
     with zipfile.ZipFile(SITE / 'NWW-Reborn-Atlas.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
         archive.write(out / 'index.html', 'NWW-Reborn-Atlas.html')
         archive.writestr('README.txt',
